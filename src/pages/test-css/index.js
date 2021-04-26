@@ -6,7 +6,29 @@ function Hello() {
   return (
     <Layout title="Hello">
       <div>
-        <div className={styles.navbar}>Navbar</div>
+        <div className={styles.navbar}>
+          Navbar
+          <div class="dropdown dropdown--hoverable">
+            <button class="button button--primary">Hover Me</button>
+            <ul class="dropdown__menu">
+              <li>
+                <a class="dropdown__link" href="#url">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="#url">
+                  Docs
+                </a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="#url">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div className={styles.heading}>
           <h1>Hi!</h1>
         </div>

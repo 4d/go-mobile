@@ -6,5 +6,9 @@
 }
 
 .navbar {
+    margin: 0 1em;
     background-color: rgb(235, 187, 187);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
