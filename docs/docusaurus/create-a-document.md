@@ -1,5 +1,5 @@
 ---
-title: Create a Document
+title: Creating a Document
 ---
 
 Documents are pages with a **sidebar**, a **previous/next navigation** and many other useful features.
