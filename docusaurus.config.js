@@ -25,7 +25,7 @@ module.exports = {
         },
         // { to: "blog", label: "Blog", position: "left" },
         {
-          href: "https://blog.4d.com/",
+          href: "https://blog.4d.com/4d-for-ios/",
           label: "Blog",
           position: "left",
         },

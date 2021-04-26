@@ -1,6 +1,6 @@
 ---
 id: insert-tabs
-title: Insert Tabs in Markdown Files
+title: Inserting Tabs in Markdown
 ---
 
 You can now insert tabs in markdown files:
