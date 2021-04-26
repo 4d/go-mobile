@@ -8,7 +8,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "4D",
+      label: "4D for iOS",
       collapsed: false,
       items: [
         "4D/4d-for-ios-overview",
