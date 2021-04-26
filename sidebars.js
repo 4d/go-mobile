@@ -1,19 +1,22 @@
 module.exports = {
-  docs: [
+  mySidebar: [
     {
-      type: 'category',
-      label: 'Docusaurus Tutorial',
-      items: [
-        'getting-started',
-        'create-a-page',
-        'create-a-document',
-        'create-a-blog-post',
-        'markdown-features',
-        'thank-you',
-	]},{ 
-      type: 'link',
-      label: 'Test',
-      href: 'https://doc.4d.com',
-      },
+      type: "category",
+      label: "Docs",
+      collapsed: false,
+      items: ["docusaurus/create-a-blog-post", "docusaurus/create-a-document"],
+    },
+    {
+      type: "category",
+      label: "4D",
+      collapsed: false,
+      items: ["4D/define-first-action", "4D/actions-getting-started"],
+    },
   ],
 };
+
+// {
+//   type: "link",
+//   label: "Test",
+//   href: "https://doc.4d.com",
+// },
