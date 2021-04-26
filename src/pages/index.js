@@ -72,7 +72,7 @@ export default function Home() {
                 "button button--outline button--secondary button--lg",
                 styles.getStarted
               )}
-              to={useBaseUrl("docs/")}
+              to={useBaseUrl("docs/4D/4d-for-ios-overview")}
             >
               Get Started
             </Link>

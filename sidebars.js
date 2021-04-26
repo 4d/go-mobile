@@ -4,13 +4,17 @@ module.exports = {
       type: "category",
       label: "Docs",
       collapsed: false,
-      items: ["docusaurus/create-a-blog-post", "docusaurus/create-a-document"],
+      items: ["docusaurus/insert-tabs", "docusaurus/create-a-document"],
     },
     {
       type: "category",
       label: "4D",
       collapsed: false,
-      items: ["4D/define-first-action", "4D/actions-getting-started"],
+      items: [
+        "4D/4d-for-ios-overview",
+        "4D/define-first-action",
+        "4D/actions-getting-started",
+      ],
     },
   ],
 };
