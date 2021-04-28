@@ -1,5 +1,5 @@
 ---
-id: testPage
+id: test-page
 title: Test Page
 ---
 
