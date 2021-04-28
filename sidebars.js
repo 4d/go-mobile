@@ -14,6 +14,7 @@ module.exports = {
         "4D/4d-for-ios-overview",
         "4D/define-first-action",
         "4D/actions-getting-started",
+        "4D/testPage",
       ],
     },
   ],
