@@ -1,14 +1,14 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: "Go Mobile with 4D",
-  tagline: "Easily create native iOS and Android apps from 4D projects",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  title: 'Go Mobile with 4D',
+  tagline: 'Easily create native iOS and Android apps from 4D projects',
+  url: 'https://doc4d.github.io',
+  baseUrl: '/go-mobile/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  organizationName: 'doc4d', // Usually your GitHub org/user name.
+  projectName: 'go-mobile', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "Go Mobile",
@@ -74,7 +74,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} 4D SAS - All rights reserved`,
     },
   },
   presets: [
