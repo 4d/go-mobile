@@ -10,6 +10,11 @@ module.exports = {
       label: "4D for iOS",
       items: [
         "4D/overview",
+        {
+          type: "category",
+          label: "Parent-element",
+          items: ["4D/third-level-item", "4D/third-level-item-2"],
+        },
         "4D/prerequisites",
         "4D/mdx-example",
         "4D/getting-started",
