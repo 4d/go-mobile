@@ -10,6 +10,9 @@ module.exports = {
   organizationName: "doc4d", // Usually your GitHub org/user name.
   projectName: "go-mobile", // Usually your repo name.
   themeConfig: {
+    prism: {
+      theme: require('./src/theme/highlight/themes/palenight'),
+    },
     navbar: {
       title: "Go Mobile",
       logo: {
