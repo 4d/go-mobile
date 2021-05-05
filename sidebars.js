@@ -1,19 +1,19 @@
 module.exports = {
-  docs: [
+  mySidebar: [
     {
       type: 'category',
-      label: 'Docusaurus Tutorial',
-      items: [
-        'getting-started',
-        'create-a-page',
-        'create-a-document',
-        'create-a-blog-post',
-        'markdown-features',
-        'thank-you',
-	]},{ 
+      label: 'Prerequisites',
+      items: ['Prerequisites/prerequisites'],     
+	},
+	 {
+      type: 'category',
+      label: 'Create',
+      items: ['Create/Features/authentication'],     
+	},
+	{ 
       type: 'link',
       label: 'Test',
       href: 'https://doc.4d.com',
-      },
+	} ,
   ],
 };
