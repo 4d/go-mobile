@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import Translate from '@docusaurus/Translate';
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -8,32 +9,29 @@ import styles from "./styles.module.css";
 
 const features = [
   {
-    title: "Easy to Use",
-    imageUrl: "img/undraw_docusaurus_mountain.svg",
+    title: "Native apps builder",
+    imageUrl: "img/generateTest.png",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Build your apps in pure Xcode/Swift or Android using an integrated 4D component without needing any prior expertise.
       </>
     ),
   },
   {
-    title: "Focus on What Matters",
-    imageUrl: "img/undraw_docusaurus_tree.svg",
+    title: "Open solution",
+    imageUrl: "img/deploy.png",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        You can reopen your generated projects with Xcode or Android Studio and continue to work on them. 
       </>
     ),
   },
   {
-    title: "Powered by React",
-    imageUrl: "img/undraw_docusaurus_react.svg",
+    title: "Online and offline",
+    imageUrl: "img/structure.png",
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+		Define a subset of your physical structure to replicate. All of your data is embedded in your app and available without needing an internet connection.
       </>
     ),
   },
@@ -59,7 +57,7 @@ export default function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
       <header className={clsx("hero hero--primary", styles.heroBanner)}>

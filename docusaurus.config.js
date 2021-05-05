@@ -17,7 +17,7 @@ module.exports = {
       title: "Go Mobile",
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.svg",
+        src: "img/logo.png",
       },
       items: [
         {
@@ -32,47 +32,87 @@ module.exports = {
           label: "Blog",
           position: "left",
         },
+		{
+          type: 'localeDropdown',
+          position: 'left',
+        },
       ],
     },
     footer: {
       style: "dark",
       links: [
         {
-          title: "Docs",
-          items: [
-            {
-              label: "Getting Started",
-              to: "docs/",
-            },
-          ],
-        },
-        {
           title: "Community",
           items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                     {
+              label: "4D Blog",
+              href: "https://blog.4d.com",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "4D Forum",
+              href: "https://discuss.4d.com",
             },
-            {
+			{
+              label: "Facebook",
+              href: "https://www.facebook.com/4Dsoftware/",
+            },
+			{
               label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              href: "https://twitter.com/4Dsoftware",
+            },
+			{
+              label: "Youtube",
+              href: "https://www.youtube.com/user/4Dsoftware",
+            },
+			{
+              label: "Github",
+              href: "https://github.com/4D/",
             },
           ],
         },
         {
-          title: "More",
+          title: "Support",
           items: [
-            {
-              label: "Blog",
-              to: "blog",
+             {
+              label: "4D Doc Center (legacy)",
+              to: "https://doc.4d.com/",
+            },
+			{
+              label: "Knowledge Base",
+              to: "http://kb.4d.com/",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "Downloads",
+              href: "https://us.4d.com/product-download",
+            },
+			{
+              label: "Resources",
+              href: "https://us.4d.com/resources",
+            },
+			{
+              label: "Get Support",
+              href: "https://us.4d.com/4d-technical-support",
+            },
+          ],
+        },
+        {
+          title: "Company",
+          items: [
+            {
+              label: "About 4D",
+              to: "https://us.4d.com/about-us",
+            },
+			{
+              label: "Contact us",
+              to: "https://us.4d.com/contact-us",
+            },
+            {
+              label: "4D around the world",
+              href: "https://us.4d.com/4d-around-the-world",
+            },
+			{
+              label: "Careers",
+              href: "https://us.4d.com/careers",
             },
           ],
         },
@@ -102,4 +142,16 @@ module.exports = {
       },
     ],
   ],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'fr'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      fr: {
+        label: 'Français',
+      },
+    },
+  },
 };
