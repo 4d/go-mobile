@@ -4,5 +4,3 @@ files:
       /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%
   - source: /i18n/en/**/*
     translation: /i18n/%two_letters_code%/**/%original_file_name%
-  - source: /docs/assets/en/**/*.png
-    translation: /docs/assets/%two_letters_code%/**/%original_file_name%
