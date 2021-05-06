@@ -1,16 +1,14 @@
 module.exports = {
   mySidebar: [
     {
-    
-
       type: 'category',
-      label: 'Prerequisites',
-      items: ['Prerequisites/prerequisites'],     
+      label: 'Getting started',
+      items: ['Getting-started/requirements']
 	},
 	 {
       type: 'category',
       label: 'Create',
-      items: ['Create/Features/authentication'],     
+      items: ['Create/project-editor-main-menu-section'],     
 	},
 	{ 
       type: 'link',
