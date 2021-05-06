@@ -1,0 +1,53 @@
+---
+id: mdx-example
+title: MDX syntax example
+---
+
+:::important This page is still in development. :::
+
+## Making the syntax mdx-compatible
+
+The initial html code for the following examples is located in the define-first-action.md file in 4d for iOS.
+
+For .md files, the following syntax is fine:
+
+```html
+<div markdown="1" style="text-align: center; margin-top: 20px; margin-bottom: 20px"> 
+
+<a class="button"
+href="https://github.com/4d-for-ios/tutorial-Actions/releases/latest/download/tutorial-Actions.zip">STARTER PROJECT</a>
+
+</div>
+```
+
+With MDX, html tags are supported but you need to use the JSX syntax. So to get the same result, you would write it like this:
+
+
+```jsx {1,3}
+<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+
+<a className="button"
+href="https://github.com/4d-for-ios/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">STARTER PROJECT</a>
+
+</div>
+```
+Here are the main differences between css and jsx for styling:
+- class becomes className
+- curly brackets indicate that you're inserting javascript inside html
+- use camelCase for property names (text-align becomes textAlign)
+- values are strings ("center")
+
+Here's the result :
+<div style= {{ display: "flex", justifyContent: "center", marginTop: "20px", marginBottom: "20px" }}>
+<a class="button button--primary" href="https://github.com/4d-for-ios/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">Starter Project</a>
+</div>
+
+> Adding a global customized style instead of writing all the css properties here would probably be more efficient.
+
+Here's another example:
+
+*You can download the **Final project** that includes various actions:*
+
+<div style= {{ display: "flex", justifyContent: "center", marginTop: "20px", marginBottom: "20px" }}>
+<a class="button button--primary" href="https://github.com/4d-for-ios/tutorial-Actions/releases/latest/download/tutorial-Actions.zip">Final Project</a>
+</div>
