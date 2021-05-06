@@ -14,7 +14,6 @@ Here, you can define a subset of your physical structure to replicate for mobile
 
 ## Many to One relations
 
-* 4D 17R5 allows you to visualize table relations in the generated app publishing them from the Structure section. Then when your related fields are published, they can be used like any other field in the [app creation process](many-to-one-relations.html).
 
 ![Publish related tables](img/toto.png)
 
@@ -46,7 +45,7 @@ All you have to do is:
 
 Then, when your related fields are published, they can be used like any other field. So you will be able to:
 
-* Define relations properties in the [Labels and Icons](labels-and-icons.html#relations-properties) section.
+* Define relations properties in the Labels and Icons section.
 
 * Drop the One to Many relation in a Detail form from the Forms Section to create a link between a detail form and a related table.
 
@@ -54,7 +53,6 @@ Then, when your related fields are published, they can be used like any other fi
 
 Basically a Relation button will be created in detail forms to go straight to the related view.
 
-[Tutorials](one-to-many-relations.html) are available to help you use One to Many relation in your 4D for iOS project.
 
 
 

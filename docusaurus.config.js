@@ -21,7 +21,7 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/4D/overview",
+          to: "docs/4D/test-page",
           activeBasePath: "docs",
           label: "Docs",
           position: "left",
