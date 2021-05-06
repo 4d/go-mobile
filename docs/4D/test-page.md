@@ -7,6 +7,7 @@ Testing docusaurus features
 
 ## JSX
 
+````mdx-code-block
 export const Highlight = ({children, color}) => (
   <span
     style={{
@@ -18,6 +19,7 @@ export const Highlight = ({children, color}) => (
     {children}
   </span>
 );
+````
 
 <Highlight color="#25c2a0">Docusaurus green</Highlight> and <Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors.
 
@@ -25,6 +27,7 @@ I can write **Markdown** alongside my _JSX_!
 
 ## Tabs 
 
+````mdx-code-block
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -39,6 +42,7 @@ import TabItem from '@theme/TabItem';
   <TabItem value="orange">This is an orange 🍊</TabItem>
   <TabItem value="banana">This is a banana 🍌</TabItem>
 </Tabs>;
+````
 
 ## Code title 
 
@@ -68,6 +72,7 @@ function HighlightSomeText(highlight) {
 
 ## Multi-language support code blocks
 
+````mdx-code-block
 <Tabs
   defaultValue="js"
   values={[
@@ -105,6 +110,7 @@ class HelloWorld {
 
 </TabItem>
 </Tabs>
+````
 
 ## Admonitions 
 
@@ -113,6 +119,7 @@ class HelloWorld {
 The content and title *can* include markdown.
 
 :::
+
 
 :::tip You can specify an optional title
 
@@ -135,11 +142,5 @@ Warning! You better pay attention!
 :::danger
 
 Danger danger, mayday!
-
-:::
-
-:::test
-
-this doesn't seem to be working 
 
 :::
