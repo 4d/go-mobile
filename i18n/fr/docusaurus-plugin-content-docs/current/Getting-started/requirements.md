@@ -9,7 +9,7 @@ title: Requirements
 * 4D Server v17 R2 64-bit (Deployment)
 * [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) installed on your Mac (optional).
 
-Apple configurator 2 requires **macOS 10.14** or later. Install this software if you want to automate app installation on your physical device.
+Apple configurator 2 nécessite **macOS 10.14** ou une version plus récente. Installez ce logiciel si vous souhaitez installer votre application automatiquement sur votre appareil.
 
 Xcode 10.2 requieres **macOS 10.14** or later.
 
@@ -49,9 +49,9 @@ You can replace the internal user component `4D Mobile App.4dbase`, that you can
 <a class="button"
 href="https://download.4d.com/Products/Current/4D_v17R4/4D%20Mobile%20App%20-%20Xcode%2010.2/4D%20Mobile%20App.4dbase.zip">4D Mobile App.4dbase.zip</a>
 
-## Hardware requirements
+## Configuration matérielle requise
 
-* 8GB of RAM (Minimum recommended)
+* 8 Go de RAM (Minimum recommandé)
 
 ## Configuration
 
