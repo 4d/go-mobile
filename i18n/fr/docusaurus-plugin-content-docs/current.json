@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.mySidebar.category.Test": {
+    "message": "Test",
+    "description": "The label for category Test in sidebar mySidebar"
+  },
+  "sidebar.mySidebar.category.Getting started": {
+    "message": "Getting started",
+    "description": "The label for category Getting started in sidebar mySidebar"
+  },
+  "sidebar.mySidebar.category.Create": {
+    "message": "Create",
+    "description": "The label for category Create in sidebar mySidebar"
+  },
+  "sidebar.mySidebar.link.Test": {
+    "message": "Test",
+    "description": "The label for link Test in sidebar mySidebar, linking to https://doc.4d.com"
+  }
+}

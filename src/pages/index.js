@@ -13,7 +13,7 @@ const features = [
     imageUrl: "img/generateTest.png",
     description: (
       <>
-        Build your apps in pure Xcode/Swift or Android using an integrated 4D component without needing any prior expertise.
+        <Translate>Build your apps in pure Xcode/Swift or Android using an integrated 4D component without needing any prior expertise.</Translate>
       </>
     ),
   },
