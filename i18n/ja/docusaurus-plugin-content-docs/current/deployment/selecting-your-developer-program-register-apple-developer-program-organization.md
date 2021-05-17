@@ -1,5 +1,5 @@
 ---
-id: register-apple-developer-program-organization
+id: selecting-your-developer-program-register-apple-developer-program-organization
 title: Apple Developer Program as an Organization
 ---
 
