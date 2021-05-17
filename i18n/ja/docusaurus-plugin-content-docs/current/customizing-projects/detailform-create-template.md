@@ -1,5 +1,5 @@
 ---
-id: creating-detailform-templates
+id: detailform-create-template
 title: Detail form templates
 ---
 
@@ -9,7 +9,7 @@ title: Detail form templates
 
 > **PREREQUISITES**
 > 
-> Click [here](prerequisites.html) to see what you'll need to get started!
+> Click [here]`(../getting-started/requirements)` to see what you'll need to get started!
 
 In this tutorial, we'll guide you through the creation of a detail form template. It will display an **image header**, as well as **title and content fields** that will be duplicated in the generated iOS app.
 
@@ -20,12 +20,9 @@ In this tutorial, we'll guide you through the creation of a detail form template
 To begin, download the **Starter Project**, which includes:
 
 * A **Custom Detail form** folder (custom Detail form template folder)
-* A **Contact.4dbase** file (Contact demo database with a ready to use mobile app project)
-
-<div markdown="1" style="text-align: center; margin-top: 20px; margin-bottom: 20px">
+* A **Contact.4dbase** file (Contact demo database with a ready to use mobile app project)<div markdown="1" style={{textAlign: 'center', marginTop: '20px', marginBottom: '20px'}}>
 <a class="button"
-href="https://github.com/4d-for-ios/tutorial-CustomDetailFormStarter/archive/67c9c2f4672083e999a4a592a069d7ca45b3351e.zip">CUSTOM DETAIL FORM STARTER PROJECT</a>
-</div>
+href="https://github.com/4d-for-ios/tutorial-CustomDetailFormStarter/archive/67c9c2f4672083e999a4a592a069d7ca45b3351e.zip">CUSTOM DETAIL FORM STARTER PROJECT</a></div>
 
 You are now ready to create your first detail form template !
 
