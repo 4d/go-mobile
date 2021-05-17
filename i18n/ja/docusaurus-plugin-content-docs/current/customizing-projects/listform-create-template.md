@@ -1,5 +1,5 @@
 ---
-id: creating-listform-templates
+id: listform-create-template
 title: List form templates
 ---
 
@@ -9,7 +9,7 @@ title: List form templates
 
 > **PREREQUISITES**
 > 
-> Click [here](prerequisites.html) to see what you'll need to get started!
+> Click [here]`(requirements.html)` to see what you'll need to get started!
 
 In this tutorial, we'll cover nearly all aspects of creating a list form template such as: creating a list form with a **searchBar** and a table displaying an **image**, a **title**, and a **subtitle** for each cell.
 
@@ -20,12 +20,9 @@ In this tutorial, we'll cover nearly all aspects of creating a list form templat
 Before we begin, be sure to download the **Starter Project** which includes:
 
 * A **List form** folder
-* A **Contact.4dbase** file (a demo database with a ready-to-use mobile app project)
-
-<div markdown="1" style="text-align: center; margin-top: 20px; margin-bottom: 20px">
+* A **Contact.4dbase** file (a demo database with a ready-to-use mobile app project)<div markdown="1" style={{textAalign: 'center', marginTop: '20px', marginBottom: '20px'}}>
 <a class="button"
-href="https://github.com/4d-for-ios/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">LISTFORM STARTER PROJECT</a>
-</div>
+href="https://github.com/4d-for-ios/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">LISTFORM STARTER PROJECT</a></div>
 
 You are now ready to create your first list form template!
 
