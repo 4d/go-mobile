@@ -1,5 +1,5 @@
 ---
-id: gallery-template-install
+id: gallery-install-template
 title: Install a template
 ---
 
@@ -13,13 +13,11 @@ Go to the form section and select on one of your table to choose a List Form.
 
 As you can see, a “More” icon is available at the bottom.
 
-![More template button](img/Forms-more-button.png)
 
 Just click on that icon to display the entire list.
 
 Then, the only thing you have to do is selecting the template that suits your needs and 4D for iOS will handle all the installation process to help you work faster and more efficiently.
 
-![Template picker more button](img/Forms-template-gallery.png)
 
 Select the Client List template.
 
