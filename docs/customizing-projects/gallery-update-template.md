@@ -1,5 +1,5 @@
 ---
-id: gallery-template-update
+id: gallery-update-template
 title: Update a template
 ---
 
@@ -23,7 +23,7 @@ To modify a template that have downloaded from the Gallery :
 
 * This will automatically open in Xcode with all sources to allow you modifying your template.
 
-![Open with Xcode](img/gallery/open-with-xcode.png)
+![Open with Xcode](img/open-with-xcode.png)
 
 ## Update your template 
 

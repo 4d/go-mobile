@@ -1,5 +1,5 @@
 ---
-id: register-apple-developer-enterprise-program
+id: selecting-your-developer-program-register-apple-developer-enterprise-program
 title: Apple Developer Enterprise Program
 ---
 
@@ -66,12 +66,12 @@ You can register as a developer [here](https://developer.apple.com/programs/ente
 * Select **Company / Organization** from the Entity Type dropdown list.
 * Click **Continue**.
 
-![Apple Developer Enterprise Program](../assets/en/Apple-Developer-Enterprise-Program-4D-for-iOS.png)
+![Apple Developer Enterprise Program](img/Apple-Developer-Enterprise-Program-4D-for-iOS.png)
 
 * Complete the form. 
 * Click **Continue**.
 
-![Apple Developer Enterprise Program Enrollment](../assets/en/Apple-Developer-Enterprise-Program-Enrollment-4D-for-iOS.png)
+![Apple Developer Enterprise Program Enrollment](img/Apple-Developer-Enterprise-Program-Enrollment-4D-for-iOS.png)
 
 ## STEP 7. Apple verification
 

@@ -1,5 +1,5 @@
 ---
-id: deploy-app-store-app-store-connect
+id: deploy-on-app-store-create-appstore-record
 title: Create App Store record
 ---
 
@@ -10,7 +10,7 @@ title: Create App Store record
 
 > **PREREQUISITES**
 >
-> [Apple Developer Program for organization](register-apple-developer-program-organization.html) or [individual](register-apple-developer-program-individual.html)
+> ```[Apple Developer Program for organization](selecting-your-developer-program-register-apple-developer-program-organization.html) or [individual](selecting-your-developer-program-register-apple-developer-program-individual.html)```
 
 
 ## STEP 1. Create an App ID

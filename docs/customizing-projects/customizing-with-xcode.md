@@ -1,5 +1,5 @@
 ---
-id: 4d-for-ios-project-organization
+id: customizing-with-xcode
 title: 4D for iOS project organization
 ---
 

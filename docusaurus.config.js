@@ -27,7 +27,20 @@ module.exports = {
           position: "left",
         },
         // { to: "blog", label: "Blog", position: "left" },
-        {
+        		
+		{
+          to: "docs/4D/test-page",
+          activeBasePath: "tutorials",
+          label: "Tutorials",
+          position: "left",
+        },
+		{
+          to: "docs/faq/faq",
+          activeBasePath: "faq",
+          label: "FAQ",
+          position: "left",
+        },
+		{
           href: "https://blog.4d.com/4d-for-ios/",
           label: "Blog",
           position: "left",

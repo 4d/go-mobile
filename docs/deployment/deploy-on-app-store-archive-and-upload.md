@@ -1,5 +1,5 @@
 ---
-id: deploy-app-store-archive-and-upload
+id: deploy-on-app-store-archive-and-upload
 title: Archive and upload your Project
 ---
 

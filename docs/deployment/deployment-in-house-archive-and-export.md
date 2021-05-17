@@ -1,5 +1,5 @@
 ---
-id: deploy-in-house-archive-and-export
+id: deployment-in-house-archive-and-export
 title: Archive and export your Project
 ---
 
@@ -10,7 +10,7 @@ title: Archive and export your Project
 
 > **PREREQUISITES**
 >
-> * [Apple Enterprise Developer Program](register-apple-developer-enterprise-program.html)
+> * [Apple Enterprise Developer Program]```(selecting-your-developer-program-register-apple-developer-enterprise-program.html)```
 > * A secured web server
 > * 57 x 57 px icon
 > * 512 x 512 px icon
