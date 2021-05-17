@@ -1,4 +1,4 @@
-img/--- id: deploy-in-house-distribution
+img/--- id: deployment-in-house-distribute
 title: Distribute your app in-House
 ---
 
