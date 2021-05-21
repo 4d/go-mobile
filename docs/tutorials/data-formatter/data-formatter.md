@@ -1,0 +1,24 @@
+---
+id: data-formatter
+title: Data formatter
+---
+
+4D v17 R3 includes a new concept: Data formatting!
+
+You can now choose pre-packaged formats from Labels & Icons in Sections.
+
+> **Available formats:**
+>
+> * **Text**: Text
+> *  **Date**: Date, Short date, Long date, Full date
+> *  **Time**: Time, Short time, Duration, Integer number
+> *  **Boolean**: "No" or "Yes", "False" or "True"
+> *  **Integer**: Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out
+
+Let's get started by downloading the Starter Project:
+
+<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+<a className="button"
+href="https://github.com/4d-for-ios/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">DATA FORMATTER STARTER PROJECT</a>
+</div>
+

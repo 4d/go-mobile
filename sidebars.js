@@ -1,5 +1,5 @@
 module.exports = {
-  mySidebar: [
+  docs: [
     {
       type: "category",
       label: "Getting started",
@@ -61,6 +61,25 @@ module.exports = {
       type: "category",
       label: "Tutorials",
       items: ["tutorials/first-page"],
+    },
+  ],
+  tutorials: [
+    "tutorials/first-page",
+    {
+      type: "category",
+      label: "Creating your iOS App",
+      items: [
+        "tutorials/creating-ios-app/create-contact-app",
+        "tutorials/creating-ios-app/custom-login-form",
+      ],
+    },
+    {
+      type: "category",
+      label: "Customizing with Xcode",
+      items: [
+        "tutorials/customizing-with-xcode/working-with-xcode",
+        "tutorials/customizing-with-xcode/what-is-xcode",
+      ],
     },
   ],
 };

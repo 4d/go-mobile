@@ -14,27 +14,34 @@ module.exports = {
       theme: require("./src/theme/highlight/themes/palenight"),
     },
     navbar: {
+      hideOnScroll: true,
       title: "Go Mobile",
       logo: {
-        alt: "My Site Logo",
+        alt: "4D Logo",
         src: "img/logo.png",
       },
       items: [
+        // {
+        //   type: "doc",
+        //   position: "left",
+        //   docId: "create-your-first-app-with-4d-for-ios",
+        //   label: "Docs",
+        // },
+        // { type: "doc", position: "left", docId: "first-page", label: "Docs" },
+        // {
+        //   to: "docs/faq/faq",
+        //   label: "FAQ",
+        //   position: "left",
+        // },
         {
           to: "docs/getting-started/create-your-first-app-with-4d-for-ios",
           label: "Docs",
           position: "left",
         },
-        // { to: "blog", label: "Blog", position: "left" },
-
+        { to: "blog", label: "Blog", position: "left" },
         {
           to: "docs/tutorials/first-page",
           label: "Tutorials",
-          position: "left",
-        },
-        {
-          to: "docs/faq/faq",
-          label: "FAQ",
           position: "left",
         },
         {
