@@ -1,5 +1,5 @@
 ---
-id: create-list-form-template
+id: list-form-template
 title: List form templates
 ---
 

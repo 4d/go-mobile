@@ -1,5 +1,5 @@
 ---
-id: icon-detailform-template
+id: create-detail-form-icon
 title: Creating detail form icons
 ---
 

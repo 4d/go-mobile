@@ -24,7 +24,7 @@ module.exports = {
         // {
         //   type: "doc",
         //   position: "left",
-        //   docId: "create-your-first-app-with-4d-for-ios",
+        //   docId: "requirements",
         //   label: "Docs",
         // },
         // { type: "doc", position: "left", docId: "first-page", label: "Docs" },
@@ -38,7 +38,7 @@ module.exports = {
           label: "Docs",
           position: "left",
         },
-        { to: "blog", label: "Blog", position: "left" },
+        // { to: "blog", label: "Blog", position: "left" },
         {
           to: "docs/tutorials/first-page",
           label: "Tutorials",

@@ -57,11 +57,6 @@ module.exports = {
       label: "Test",
       href: "https://doc.4d.com",
     },
-    {
-      type: "category",
-      label: "Tutorials",
-      items: ["tutorials/first-page"],
-    },
   ],
   tutorials: [
     "tutorials/first-page",
@@ -77,8 +72,51 @@ module.exports = {
       type: "category",
       label: "Customizing with Xcode",
       items: [
-        "tutorials/customizing-with-xcode/working-with-xcode",
         "tutorials/customizing-with-xcode/what-is-xcode",
+        "tutorials/customizing-with-xcode/working-with-xcode",
+        "tutorials/customizing-with-xcode/xcode-overview",
+        "tutorials/customizing-with-xcode/4d-for-ios-project-organization",
+        "tutorials/customizing-with-xcode/customize-your-ios-app",
+      ],
+    },
+    {
+      type: "category",
+      label: "Creating List forms",
+      items: [
+        "tutorials/creating-list-forms/list-form-template",
+        "tutorials/creating-list-forms/list-form-icon",
+        "tutorials/creating-list-forms/list-form-manifest",
+        "tutorials/creating-list-forms/list-form-svg-file",
+        "tutorials/creating-list-forms/list-form-storyboard",
+      ],
+    },
+    {
+      type: "category",
+      label: "Creating Detail forms",
+      items: [
+        "tutorials/creating-detail-forms/create-detail-form-template",
+        "tutorials/creating-detail-forms/create-detail-form-icon",
+        "tutorials/creating-detail-forms/detail-form-template-manifest",
+        "tutorials/creating-detail-forms/detail-form-template-svg",
+        "tutorials/creating-detail-forms/detail-form-template-storyboard",
+      ],
+    },
+    {
+      type: "category",
+      label: "Gallery",
+      items: [
+        "tutorials/gallery/install-gallery-template",
+        "tutorials/gallery/update-gallery-template",
+      ],
+    },
+    {
+      type: "category",
+      label: "Using icons",
+      items: [
+        "tutorials/using-icons/using-icons",
+        "tutorials/using-icons/create-icons",
+        "tutorials/using-icons/include-icons",
+        "tutorials/using-icons/select-icons",
       ],
     },
   ],
