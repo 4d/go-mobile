@@ -9,11 +9,11 @@ title: One to Many - Actions
 
 It is very easy to create an entity using **parent Entity** !
 
-Let's get started by downloading the Starter Project:
+Let's get started by downloading the Starter project:
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-<a className="button"
-href="https://github.com/4d-for-ios/tutorial-RelationsActions/archive/6c649733f5efd3c799e4e04c05a85e17eeadf7f0.zip">STARTER PROJECT - ONE TO MANY & ACTIONS</a>
+<a className="button button--primary"
+href="https://github.com/4d-for-ios/tutorial-RelationsActions/archive/6c649733f5efd3c799e4e04c05a85e17eeadf7f0.zip">Starter project - ONE TO MANY & ACTIONS</a>
 </div>
 
 ## Create addProject action
@@ -98,6 +98,6 @@ $0:=$out
 And that's it you can then add some task to your employees easily using the parent Entity !
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-<a className="button"
+<a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-RelationsActions/releases/latest/download/tutorial-RelationsActions.zip">FINAL PROJECT - ONE TO MANY & ACTIONS</a>
 </div>

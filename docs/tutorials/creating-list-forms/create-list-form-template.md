@@ -15,16 +15,16 @@ In this tutorial, we'll cover nearly all aspects of creating a list form templat
 
 ```![List form template final result](assets/en/custom-listform/custom-template-final-result.png)```
 
-## Download the Starter Project
+## Download the Starter project
 
-Before we begin, be sure to download the **Starter Project** which includes:
+Before we begin, be sure to download the **Starter project** which includes:
 
 * A **List form** folder 
 * A **Contact.4dbase** file (a demo database with a ready-to-use mobile app project)
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-<a className="button"
-href="https://github.com/4d-for-ios/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">LISTFORM STARTER PROJECT</a>
+<a className="button button--primary"
+href="https://github.com/4d-for-ios/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">LISTFORM Starter project</a>
 </div>
 
 You are now ready to create your first list form template!

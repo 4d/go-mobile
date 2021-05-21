@@ -13,16 +13,16 @@ title: Create data formatter
 
 In this tutorial, we'll guide you through the creation of various formatter examples.
 
-## Download the Starter Project
+## Download the Starter project
 
-To begin, download the **Starter Project**, which includes:
+To begin, download the **Starter project**, which includes:
 
 * **integerToImage_Images** and **textToImage_Images** folders that contain images (to use later for formatters that include images)
 * A **Task Management.4dbase** file (with a ready to use mobile app project)
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-<a className="button"
-href="https://github.com/4d-for-ios/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">CUSTOM FORMATTER STARTER PROJECT</a>
+<a className="button button--primary"
+href="https://github.com/4d-for-ios/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">CUSTOM FORMATTER Starter project</a>
 </div>
 
 You're now ready to create your first formatters!
@@ -184,6 +184,6 @@ Click on **FORMATTER FINAL** below to download the completed formatter template 
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 
-<a className="button"
+<a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-CustomDataFormatter/releases/latest/download/tutorial-CustomDataFormatter.zip">FORMATTER FINAL</a>
 </div>

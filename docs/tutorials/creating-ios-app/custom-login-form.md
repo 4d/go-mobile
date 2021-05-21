@@ -33,12 +33,12 @@ In this tutorial, we're going to:
 * Include a custom login form
 * Add the ability for your app users to login just by scanning a QRCode
 
-First download our Starter Project, which contains a database file and ready to use webpages in the Webfolder folder.
+First download our Starter project, which contains a database file and ready to use webpages in the Webfolder folder:
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 
-<a className="button"
-href="https://github.com/4d-for-ios/tutorial-CustomLoginForm/archive/main.zip">STARTER PROJECT</a>
+<a className="button button--primary"
+href="https://github.com/4d-for-ios/tutorial-CustomLoginForm/archive/main.zip">Starter project</a>
 
 </div>
 

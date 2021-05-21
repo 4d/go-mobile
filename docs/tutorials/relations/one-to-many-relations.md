@@ -11,11 +11,11 @@ This tutorial will show you how easy it can be to include One to Many relations 
 > In this tutorial, we will use the relation names between your tables.
 Giving descriptive relation names can make your project structure definition easier.
 
-Let's get started by downloading the Starter Project:
+Let's get started by downloading the Starter project:
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-<a className="button"
-href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/archive/c006015afeb0e134d872152f53b8cd5e4dcb59bb.zip">ONE TO MANY STARTER PROJECT</a>
+<a className="button button--primary"
+href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/archive/c006015afeb0e134d872152f53b8cd5e4dcb59bb.zip">ONE TO MANY Starter project</a>
 </div>
 
 In this tutorial, we are going to build a colorful **Task app** using 4D for iOS.
@@ -73,6 +73,6 @@ So, in the Labels & Icons section you will define:
 And voila, this is how One to Many relations work in 4D for iOS !
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-<a className="button"
+<a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/releases/latest/download/tutorial-OneToManyRelations.zip">ONE TO MANY FINAL PROJECT</a>
 </div>

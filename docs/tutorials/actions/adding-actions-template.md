@@ -13,9 +13,9 @@ title: Adding actions in templates
 
 In this tutorial, we are going to see how easy it can be to **add actions to custom templates**.
 
-## STEP 1. Download the Starter Project
+## STEP 1. Download the Starter project
 
-To begin, download the Starter Project, which includes:
+To begin, download the Starter project, which includes:
 
 * 2 custom List form templates (TasksList and TasksCollection)
 * 1 custom Detail form template (TasksDetail)
@@ -23,8 +23,8 @@ To begin, download the Starter Project, which includes:
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 
-<a className="button"
-href="https://github.com/4d-for-ios/tutorial-AddingActionToTemplates/archive/1dc5aecfbea62a9999d571cb1a956f1ef6983111.zip">STARTER PROJECT</a>
+<a className="button button--primary"
+href="https://github.com/4d-for-ios/tutorial-AddingActionToTemplates/archive/1dc5aecfbea62a9999d571cb1a956f1ef6983111.zip">Starter project</a>
 
 </div>
 
@@ -156,7 +156,7 @@ Congratulations, your Tasks iOS app is now complete and includes actions in List
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 
-<a className="button"
+<a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-AddingActionToTemplates/releases/latest/download/tutorial-AddingActionToTemplates.zip">FINAL PROJECT</a>
 
 </div>

@@ -10,14 +10,14 @@ As for custom templates or custom formatters, you can create custom Relation But
 To that end, nothing more simple! You just have to drop your custom button in your custom template.
 
 
-Let's get started by downloading the Starter Project that includes:
+Let's get started by downloading the Starter project that includes:
 
 * a database with its mobile project
 * a standard Relation button
 
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-<a className="button"
+<a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-OneToManyCustomButton/archive/c507e764e97e006c6c785dfc468f71f5bd708845.zip">STARTER CUSTOM BUTTON</a>
 </div>
 
@@ -159,6 +159,6 @@ And that's it! Your button is now fully duplicable if you have more that one rel
 In this tutorial, we've covered the basics for creating custom relation buttons. Click on Final Project below to download the custom relation button.
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-<a className="button"
+<a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-OneToManyCustomButton/releases/latest/download/tutorial-OneToManyCustomButton.zip">FINAL CUSTOM BUTTON</a>
 </div>

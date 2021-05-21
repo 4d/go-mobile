@@ -9,7 +9,7 @@ It's highly recommended having colored versions of your custom icons to better v
 For this tutorial, you can download the following icons:
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-<a className="button"
+<a className="button button--primary"
 href="../assets/en/custom-icons/Custom-Icons.zip">CUSTOM ICONS</a>
 </div>
 

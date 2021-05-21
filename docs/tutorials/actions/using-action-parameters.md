@@ -17,12 +17,12 @@ In this tutorial, we're going to go further and create:
 * a Delete action to **delete an entity**, and
 * an action that will enable you to **email a comment for a specific task**.
 
-To begin, let's first download the **Starter Project** based on our existing Tasks iOS app.
+To begin, let's first download the **Starter project** based on our existing Tasks iOS app.
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 
-<a className="button"
-href="https://github.com/4d-for-ios/tutorial-ActionParameters/archive/159a7b73bd3556890a205024af42440faf0b277c.zip">STARTER PROJECT</a>
+<a className="button button--primary"
+href="https://github.com/4d-for-ios/tutorial-ActionParameters/archive/159a7b73bd3556890a205024af42440faf0b277c.zip">Starter project</a>
 
 </div>
 
@@ -407,7 +407,7 @@ Congratulations! Your Tasks iOS app is now complete and you can now modify your 
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 
-<a className="button"
+<a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-ActionParameters/archive/0.0.1.zip">FINAL PROJECT</a>
 
 </div>

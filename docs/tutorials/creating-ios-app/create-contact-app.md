@@ -20,13 +20,10 @@ This tutorial will let you dive right into 4D for iOS development. It will allow
 We're going to create an iPhone directory app to search for contact names from a list and then view the details of each contact. We'll call it "Contact". 
 
 ## STEP 1. Getting started
-Download our Starter Project, which contains a database file and project icon, but no mobile project yet.
+Download our Starter project, which contains a database file and project icon, but no mobile project yet:
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-
-<a className="button"
-href="https://github.com/4d-for-ios/tutorial-ContactApp/archive/acbb699c3c9d9edd3a8bbb715e87c17140b7e15f.zip">STARTER PROJECT</a>
-
+<a className="button button--primary" href="https://github.com/4d-for-ios/tutorial-ContactApp/archive/acbb699c3c9d9edd3a8bbb715e87c17140b7e15f.zip">Starter project</a>
 </div>
 
 ## STEP 2. Creating the project
@@ -142,6 +139,6 @@ We've covered basic app creation in this tutorial, and you should now be able to
 Click on **Final Project** below to download the final Contact app.
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-<a className="button"
+<a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-ContactApp/releases/latest/download/tutorial-ContactApp.zip">FINAL PROJECT</a>
 </div>

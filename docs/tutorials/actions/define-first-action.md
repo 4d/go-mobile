@@ -13,8 +13,8 @@ Download the **Starter project** and go right to the **Actions section**.
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 
-<a className="button"
-href="https://github.com/4d-for-ios/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">STARTER PROJECT</a>
+<a className="button button--primary"
+href="https://github.com/4d-for-ios/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">Starter project</a>
 
 </div>
 
@@ -249,7 +249,7 @@ You can download the **Final project** that includes various actions:
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 
-<a className="button"
+<a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-Actions/releases/latest/download/tutorial-Actions.zip">FINAL PROJECT</a>
 
 </div>

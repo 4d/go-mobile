@@ -16,11 +16,11 @@ title: Working with Xcode
 
 
 We'll use the Contact application we created [here](contact-app.html). 
-Download the Starter Project!
+Download the Starter project!
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-<a className="button"
-href="../assets/en/customize-with-xcode/ContactStarter.zip">STARTER PROJECT</a>
+<a className="button button--primary"
+href="../assets/en/customize-with-xcode/ContactStarter.zip">Starter project</a>
 </div>
 
 ## STEP 1. Generate your iOS Project

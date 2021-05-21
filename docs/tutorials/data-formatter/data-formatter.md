@@ -15,10 +15,10 @@ You can now choose pre-packaged formats from Labels & Icons in Sections.
 > *  **Boolean**: "No" or "Yes", "False" or "True"
 > *  **Integer**: Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out
 
-Let's get started by downloading the Starter Project:
+Let's get started by downloading the Starter project:
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-<a className="button"
-href="https://github.com/4d-for-ios/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">DATA FORMATTER STARTER PROJECT</a>
+<a className="button button--primary"
+href="https://github.com/4d-for-ios/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">DATA FORMATTER Starter project</a>
 </div>
 

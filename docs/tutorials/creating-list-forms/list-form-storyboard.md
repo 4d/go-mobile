@@ -187,11 +187,11 @@ You can now build your project from the project editor!
 
 ## Where to go from here?
 
-In this tutorial, we've covered the basics for creating list form templates. You are now able to create simple templates on your own using the Starter Project ressources. But wait - there’s more! In the next tutorial, you’ll learn how to build detail form templates!
+In this tutorial, we've covered the basics for creating list form templates. You are now able to create simple templates on your own using the Starter project ressources. But wait - there’s more! In the next tutorial, you’ll learn how to build detail form templates!
 Click on **Final Project** below to download the completed template list folder.
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-<a className="button"
+<a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-CustomListForm/archive/53ac1d5f506aa4ca2a8d78760ef799044c5c8bdc.zip">CUSTOM LISTFORM FINAL TEMPLATE</a>
 </div>
 
