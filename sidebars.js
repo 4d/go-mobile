@@ -119,5 +119,60 @@ module.exports = {
         "tutorials/using-icons/select-icons",
       ],
     },
+    {
+      type: "category",
+      label: "Data formatter",
+      items: [
+        "tutorials/data-formatter/data-formatter",
+        "tutorials/data-formatter/open-mobile-project",
+        "tutorials/data-formatter/build-and-run",
+        "tutorials/data-formatter/create-data-formatter",
+      ],
+    },
+    {
+      type: "category",
+      label: "Multi-criteria search",
+      items: ["tutorials/multi-criteria-search/multi-criteria-search"],
+    },
+    {
+      type: "category",
+      label: "Restricted queries",
+      items: [
+        "tutorials/restricted-queries/filter-query-introduction",
+        "tutorials/restricted-queries/define-filter-query",
+        "tutorials/restricted-queries/user-information-query",
+      ],
+    },
+    {
+      type: "category",
+      label: "Actions",
+      items: [
+        "tutorials/actions/getting-started",
+        "tutorials/actions/define-first-action",
+        "tutorials/actions/adding-actions-template",
+        "tutorials/actions/using-action-parameters",
+      ],
+    },
+    {
+      type: "category",
+      label: "Relations",
+      items: [
+        "tutorials/relations/many-to-one-relations",
+        "tutorials/relations/one-to-many-relations",
+        "tutorials/relations/one-to-many-title-definition",
+        "tutorials/relations/one-to-many-custom-button",
+        "tutorials/relations/one-to-many-actions",
+        "tutorials/relations/relation-interactions",
+      ],
+    },
+    {
+      type: "category",
+      label: "Features",
+      items: [
+        "tutorials/features/email-authentication",
+        "tutorials/features/push-notifications",
+        "tutorials/features/deep-linking",
+      ],
+    },
   ],
 };

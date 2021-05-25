@@ -1,5 +1,5 @@
 ---
-id: push-notification
+id: push-notifications
 title: Push notifications
 ---
 

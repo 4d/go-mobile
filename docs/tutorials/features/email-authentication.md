@@ -1,5 +1,5 @@
 ---
-id: authentication
+id: email-authentication
 title: Email authentication
 ---
 
