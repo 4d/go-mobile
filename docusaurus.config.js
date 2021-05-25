@@ -28,20 +28,19 @@ module.exports = {
         //   label: "Docs",
         // },
         // { type: "doc", position: "left", docId: "first-page", label: "Docs" },
-        // {
-        //   to: "docs/faq/faq",
-        //   label: "FAQ",
-        //   position: "left",
-        // },
         {
           to: "docs/getting-started/create-your-first-app-with-4d-for-ios",
           label: "Docs",
           position: "left",
         },
-        // { to: "blog", label: "Blog", position: "left" },
         {
           to: "docs/tutorials/first-page",
           label: "Tutorials",
+          position: "left",
+        },
+        {
+          to: "docs/faq/faq",
+          label: "FAQ",
           position: "left",
         },
         {
@@ -49,6 +48,7 @@ module.exports = {
           label: "Blog",
           position: "left",
         },
+        // { to: "blog", label: "Blog", position: "left" },
         {
           type: "localeDropdown",
           position: "left",
