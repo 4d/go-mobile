@@ -24,8 +24,8 @@ module.exports = {
         // {
         //   type: "doc",
         //   position: "left",
-        //   docId: "requirements",
-        //   label: "Docs",
+        //   docId: "tutorials/adding-actions-template",
+        //   label: "test",
         // },
         // { type: "doc", position: "left", docId: "first-page", label: "Docs" },
         {
