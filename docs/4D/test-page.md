@@ -79,6 +79,7 @@ function HighlightSomeText(highlight) {
     { label: 'JavaScript', value: 'js', },
     { label: 'Python', value: 'py', },
     { label: 'Java', value: 'java', },
+    { label: '4D', value: '4D', }
   ]
 }>
 <TabItem value="js">
@@ -109,8 +110,32 @@ class HelloWorld {
 ```
 
 </TabItem>
+<TabItem value="4D">
+
+```4d 
+// cs.City class
+
+Class extends DataClass
+
+Function getCityName()
+    var $1; $zipcode : Integer
+    var $zip : 4D.Entity
+    var $0 : Text
+
+    $zipcode:=$1
+    $zip:=ds.ZipCode.get($zipcode)
+    $0:="" 
+
+    If ($zip#Null)
+        $0:=$zip.city.name
+    End if
+```
+</TabItem>
+
 </Tabs>
 ````
+
+
 
 ## Admonitions 
 

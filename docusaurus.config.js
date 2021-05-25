@@ -11,43 +11,47 @@ module.exports = {
   projectName: "go-mobile", // Usually your repo name.
   themeConfig: {
     prism: {
-      theme: require('./src/theme/highlight/themes/palenight'),
+      theme: require("./src/theme/highlight/themes/palenight"),
     },
     navbar: {
+      hideOnScroll: true,
       title: "Go Mobile",
       logo: {
-        alt: "My Site Logo",
+        alt: "4D Logo",
         src: "img/logo.png",
       },
       items: [
+        // {
+        //   type: "doc",
+        //   position: "left",
+        //   docId: "tutorials/adding-actions-template",
+        //   label: "test",
+        // },
+        // { type: "doc", position: "left", docId: "first-page", label: "Docs" },
         {
-          to: "docs/4D/test-page",
-          activeBasePath: "docs",
+          to: "docs/getting-started/create-your-first-app-with-4d-for-ios",
           label: "Docs",
           position: "left",
         },
-        // { to: "blog", label: "Blog", position: "left" },
-        		
-		{
-          to: "docs/4D/test-page",
-          activeBasePath: "tutorials",
+        {
+          to: "docs/tutorials/first-page",
           label: "Tutorials",
           position: "left",
         },
-		{
+        {
           to: "docs/faq/faq",
-          activeBasePath: "faq",
           label: "FAQ",
           position: "left",
         },
-		{
+        {
           href: "https://blog.4d.com/4d-for-ios/",
           label: "Blog",
           position: "left",
         },
-		{
-          type: 'localeDropdown',
-          position: 'left',
+        // { to: "blog", label: "Blog", position: "left" },
+        {
+          type: "localeDropdown",
+          position: "left",
         },
       ],
     },
@@ -57,7 +61,7 @@ module.exports = {
         {
           title: "Community",
           items: [
-                     {
+            {
               label: "4D Blog",
               href: "https://blog.4d.com",
             },
@@ -65,19 +69,19 @@ module.exports = {
               label: "4D Forum",
               href: "https://discuss.4d.com",
             },
-			{
+            {
               label: "Facebook",
               href: "https://www.facebook.com/4Dsoftware/",
             },
-			{
+            {
               label: "Twitter",
               href: "https://twitter.com/4Dsoftware",
             },
-			{
+            {
               label: "Youtube",
               href: "https://www.youtube.com/user/4Dsoftware",
             },
-			{
+            {
               label: "Github",
               href: "https://github.com/4D/",
             },
@@ -86,11 +90,11 @@ module.exports = {
         {
           title: "Support",
           items: [
-             {
+            {
               label: "4D Doc Center (legacy)",
               to: "https://doc.4d.com/",
             },
-			{
+            {
               label: "Knowledge Base",
               to: "http://kb.4d.com/",
             },
@@ -98,11 +102,11 @@ module.exports = {
               label: "Downloads",
               href: "https://us.4d.com/product-download",
             },
-			{
+            {
               label: "Resources",
               href: "https://us.4d.com/resources",
             },
-			{
+            {
               label: "Get Support",
               href: "https://us.4d.com/4d-technical-support",
             },
@@ -115,7 +119,7 @@ module.exports = {
               label: "About 4D",
               to: "https://us.4d.com/about-us",
             },
-			{
+            {
               label: "Contact us",
               to: "https://us.4d.com/contact-us",
             },
@@ -123,7 +127,7 @@ module.exports = {
               label: "4D around the world",
               href: "https://us.4d.com/4d-around-the-world",
             },
-			{
+            {
               label: "Careers",
               href: "https://us.4d.com/careers",
             },
@@ -156,14 +160,14 @@ module.exports = {
     ],
   ],
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
+    defaultLocale: "en",
+    locales: ["en", "fr"],
     localeConfigs: {
       en: {
-        label: 'English',
+        label: "English",
       },
       fr: {
-        label: 'Français',
+        label: "Français",
       },
     },
   },

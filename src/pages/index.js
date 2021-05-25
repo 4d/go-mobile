@@ -1,6 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-import Translate from '@docusaurus/Translate';
+import Translate from "@docusaurus/Translate";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -13,7 +13,10 @@ const features = [
     imageUrl: "img/generateTest.png",
     description: (
       <>
-        <Translate>Build your apps in pure Xcode/Swift or Android using an integrated 4D component without needing any prior expertise.</Translate>
+        <Translate>
+          Build your apps in pure Xcode/Swift or Android using an integrated 4D
+          component without needing any prior expertise.
+        </Translate>
       </>
     ),
   },
@@ -22,7 +25,8 @@ const features = [
     imageUrl: "img/deploy.png",
     description: (
       <>
-        You can reopen your generated projects with Xcode or Android Studio and continue to work on them. 
+        You can reopen your generated projects with Xcode or Android Studio and
+        continue to work on them.
       </>
     ),
   },
@@ -31,7 +35,9 @@ const features = [
     imageUrl: "img/structure.png",
     description: (
       <>
-		Define a subset of your physical structure to replicate. All of your data is embedded in your app and available without needing an internet connection.
+        Define a subset of your physical structure to replicate. All of your
+        data is embedded in your app and available without needing an internet
+        connection.
       </>
     ),
   },
@@ -70,7 +76,9 @@ export default function Home() {
                 "button button--outline button--secondary button--lg",
                 styles.getStarted
               )}
-              to={useBaseUrl("docs/4D/test-page")}
+              to={useBaseUrl(
+                "docs/getting-started/create-your-first-app-with-4d-for-ios"
+              )}
             >
               Get Started
             </Link>
