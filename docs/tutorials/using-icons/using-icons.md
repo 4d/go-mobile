@@ -9,7 +9,7 @@ title: Using icons
 
 >**PREREQUISITES**
 >
->Click [here](prerequisites.html) to see what you'll need to get started!
+>Click ```[here](prerequisites.html)``` to see what you'll need to get started!
 
 4D for iOS already provides a number of icons in the **Labels & Icons** section for your tables and fields.
 

@@ -145,13 +145,13 @@ End case
 
 # PUSH NOTIFICATION
 
-A great thing about Deep Linking is that it is completely compatible with [push notifications](push-notification.html). This means that you can send Deep links to your users and lead them directly to the right page.
+A great thing about Deep Linking is that it is completely compatible with ```[push notifications](push-notification.html)```. This means that you can send Deep links to your users and lead them directly to the right page.
 
 As you can see, this feature open a large range of possibilities for using 4D for iOS with minimal effort.
 
 Deep linking is a crucial feature in today’s apps, especially as users consume content faster and faster. This feature brings them directly to the desired location. So I strongly recommend that you use it in your 4D for iOS apps.
 
-The documentation is [here](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/18R4/Documentation/Classes/PushNotification.md) to help you manage your push notifications and Deep linking.
+The documentation is ```[here](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/18R4/Documentation/Classes/PushNotification.md)``` to help you manage your push notifications and Deep linking.
 
 ## MobileApps folder
 

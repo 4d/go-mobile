@@ -15,7 +15,7 @@ title: Working with Xcode
 >If you customize your project on Xcode and rebuild it from the Project Editor All of your modifications will be lost!
 
 
-We'll use the Contact application we created [here](contact-app.html). 
+We'll use the Contact application we created ```[here](contact-app.html)```. 
 Download the Starter project!
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>

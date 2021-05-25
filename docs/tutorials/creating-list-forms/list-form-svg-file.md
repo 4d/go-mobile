@@ -73,7 +73,7 @@ The searchable field is optional.
 
 > **NOTE**
 >
-> All Field and Variable Types are available [here](http://doc.4d.com/4Dv17/4D/17/Field-and-Variable-Types.302-3729410.en.html).
+> All Field and Variable Types are available ```[here](http://doc.4d.com/4Dv17/4D/17/Field-and-Variable-Types.302-3729410.en.html).```
 
 > **TIP**
 >

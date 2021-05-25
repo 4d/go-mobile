@@ -11,7 +11,7 @@ title: Contact App
 
 >**PREREQUISITES**
 >
->Click [here](prerequisites.html) to see what you'll need to get started!
+>Click ```[here](prerequisites.html)``` to see what you'll need to get started!
 
 This tutorial will let you dive right into 4D for iOS development. It will allow you to quickly and easily create your first application.
 

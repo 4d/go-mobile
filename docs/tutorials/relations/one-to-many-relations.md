@@ -44,7 +44,7 @@ This will now operate as any other field for the rest of the app creation proces
 
 ## Labels & Icons section
 
-The One to Many relation is now available in the [Labels and Icons](labels-and-icons.html) section.
+The One to Many relation is now available in the ```[Labels and Icons](labels-and-icons.html)``` section.
 
 It is important to know that including a One to Many relation will create a button into the genrated iOS app.
 
@@ -52,7 +52,7 @@ So, in the Labels & Icons section you will define:
 
 * a button Label
 * a button icon
-* a [title](one-to-n-relations-title-definition.html) that will be displayed in the destination view (to indicate where you come from for example).
+* a ```[title](one-to-n-relations-title-definition.html)``` that will be displayed in the destination view (to indicate where you come from for example).
 
 ```![Labels & Icons section Relations properties](assets/en/project-editor/Relations-properties-Labels-icons-section-4D-for-iOS.png)```
 

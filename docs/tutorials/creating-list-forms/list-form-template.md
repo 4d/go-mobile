@@ -9,7 +9,7 @@ title: List form templates
 
 > **PREREQUISITES**
 >
-> Click [here](prerequisites.html) to see what you'll need to get started!
+> Click ```[here](prerequisites.html)``` to see what you'll need to get started!
 
 In this tutorial, we'll cover nearly all aspects of creating a list form template such as: creating a list form with a **searchBar** and a table displaying an **image**, a **title**, and a **subtitle** for each cell.
 

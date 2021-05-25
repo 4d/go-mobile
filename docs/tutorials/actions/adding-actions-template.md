@@ -9,7 +9,7 @@ title: Adding actions in templates
 
 > **PREREQUISITES**
 >
-> Click [here](prerequisites.html) to see what you'll need to get started!
+> Click ```[here](prerequisites.html)``` to see what you'll need to get started!
 
 In this tutorial, we are going to see how easy it can be to **add actions to custom templates**.
 
@@ -40,7 +40,7 @@ First, drop:
 
 ## STEP 3. Add actions in List forms
 
-As we have seen previously in the [actions section description](actions.html), two types of actions are availble (Table actions and Entity actions). 
+As we have seen previously in the ```[actions section description](actions.html)```, two types of actions are availble (Table actions and Entity actions). 
 
 Let's first open the ```list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard``` file.
 

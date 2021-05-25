@@ -26,7 +26,7 @@ Let’s focus on the different parts of your SVG file and what you'll need to ed
 Add the title for your template here.
 
 ## Areas position, height and width and type
-You can define position, height, and width for all of your fields like  we did for the [Custom list view tutorial](creating-listform.html).
+You can define position, height, and width for all of your fields like  we did for the ```[Custom list view tutorial](creating-listform.html)```.
 
 ### Field properties
 
@@ -88,7 +88,7 @@ Now that you have an **icon**, a **basic template description** in the manifest.
 
 > **NOTE**
 >
-> All types are available [here](https://developer.4d.com/docs/en/Concepts/data-types.html).
+> All types are available ```[here](https://developer.4d.com/docs/en/Concepts/data-types.html)```.
 
 > **TIP**
 >

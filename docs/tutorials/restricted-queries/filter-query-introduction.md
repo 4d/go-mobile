@@ -10,7 +10,7 @@ title: Restricted queries
 
 >**PREREQUISITES**
 >
->Click [here](prerequisites.html) to see what you'll need to get started!
+>Click ```[here](prerequisites.html)``` to see what you'll need to get started!
 
 
 In this tutorial, we'll cover **restricted queries** with a simple use case: imagine you're an account manager and you want to consult your *In Progress* contracts simply by connecting to your app with your email address.

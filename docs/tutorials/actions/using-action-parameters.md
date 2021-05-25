@@ -8,7 +8,7 @@ title: Using action parameters
 > Define action parameters to edit the content of your app.
 
 
-In the [previous tutorial](define-first-action.html), we discovered how to execute 4D code from an iOS app by defining actions from the [Actions section](actions.html).
+In the ```[previous tutorial](define-first-action.html)```, we discovered how to execute 4D code from an iOS app by defining actions from the ```[Actions section](actions.html)```.
 
 In this tutorial, we're going to go further and create:
 
@@ -105,7 +105,7 @@ Your Actions section should look like this:
 
 ## STEP 5. Create the On Mobile App Action
 
-As described in the [documentation](actions.html), click on the Create button to create the *On Mobile App Action* database method.
+As described in the ```[documentation](actions.html)```, click on the Create button to create the *On Mobile App Action* database method.
 
 All of your actions will automatically be included in this database method.
 
