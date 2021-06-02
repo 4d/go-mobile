@@ -21,23 +21,29 @@ module.exports = {
         src: "img/logo.png",
       },
       items: [
-        // {
-        //   type: "doc",
-        //   position: "left",
-        //   docId: "tutorials/adding-actions-template",
-        //   label: "test",
-        // },
-        // { type: "doc", position: "left", docId: "first-page", label: "Docs" },
         {
-          to: "docs/getting-started/create-your-first-app-with-4d-for-ios",
+           type: "doc",
+           position: "left",
+           docId: "getting-started/create-your-first-app",
           label: "Docs",
-          position: "left",
-        },
+         },
+        // { type: "doc", position: "left", docId: "first-page", label: "Docs" },
+        //{
+        //  to: "docs/getting-started/create-your-first-app",
+        //  label: "Docs",
+        //  position: "left",
+        //},
         {
-          to: "docs/tutorials/first-page",
+           type: "doc",
+           position: "left",
+           docId: "tutorials/first-page",
           label: "Tutorials",
-          position: "left",
-        },
+         },
+		 //{
+         // to: "tutorials/first-page",
+         // label: "Tutorials",
+         // position: "left",
+        //},
         {
           to: "docs/faq/faq",
           label: "FAQ",

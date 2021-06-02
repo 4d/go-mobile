@@ -5,7 +5,7 @@ module.exports = {
       label: "Getting started",
       items: [
         "getting-started/requirements",
-        "getting-started/create-your-first-app-with-4d-for-ios",
+        "getting-started/create-your-first-app",
       ],
     },
     {
