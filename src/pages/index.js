@@ -77,7 +77,7 @@ export default function Home() {
                 styles.getStarted
               )}
               to={useBaseUrl(
-                "docs/getting-started/create-your-first-app-with-4d-for-ios"
+                "docs/getting-started/create-your-first-app"
               )}
             >
               Get Started

@@ -79,7 +79,7 @@ For our example, select **ID**, **First Name**, **Last Name**, **Job**, **Compan
 
 :::note
 
-[**Data**](project-definition/data.md) and [**Actions**](project-definition/action.md) pages allow to configure your app's data and to trigger code on the server. To keep this example simple, we will use default behaviors. 
+[**Data**](project-definition/data.md) and [**Actions**](project-definition/actions.md) pages allow to configure your app's data and to trigger code on the server. To keep this example simple, we will use default behaviors. 
 
 :::
 
