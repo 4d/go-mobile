@@ -32,13 +32,13 @@ Let's start with a very simple structure using a single table. From 4D, go to **
 
 Give your project a name and click **Create**.
 
-```![Project Creation](assets/en/contact-app/Project-creation-4D-for-iOS.png)```
+![Project Creation](img/create-project.png)
 
 ## STEP 3. Opening the Project Editor
 
 Welcome to 4D for iOS! The Welcome screen displays the main app-creation stages of this magnificent tool. 🙂
 
-```![Welcome Screen](assets/en/contact-app/Welcome-Screen-4D-for-iOS.png)```
+![Welcome Screen](img/welcome-screen.png)
 
 Click **Continue**.
 
