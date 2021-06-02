@@ -88,6 +88,7 @@ module.exports = {
         "tutorials/creating-list-forms/list-form-manifest",
         "tutorials/creating-list-forms/list-form-svg-file",
         "tutorials/creating-list-forms/list-form-storyboard",
+		"tutorials/creating-list-forms/list-form-layout",
       ],
     },
     {

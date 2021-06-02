@@ -245,7 +245,7 @@ You can now build your project from the project editor!
 
 ## Where to go from here?
 
-In this tutorial, we've covered the basics for creating list form templates with iOS. You are now able to create simple templates on your own using the Starter project ressources. You can also see how to build [detail form templates](creating-detail-forms/create-detail-form-template.md).
+In this tutorial, we've covered the basics for creating list form templates with iOS. You are now able to create simple templates on your own using the Starter project ressources. You can also see how to build [detail form templates](../creating-detail-forms/create-detail-form-template.md).
 
 Click on **Final Project** below to download the completed template list folder.
 
