@@ -20,10 +20,8 @@ To begin, download the **Starter project**, which includes:
 * **integerToImage_Images** and **textToImage_Images** folders that contain images (to use later for formatters that include images)
 * A **Task Management.4dbase** file (with a ready to use mobile app project)
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">CUSTOM FORMATTER Starter project</a>
-</div>
+href="https://github.com/4d-for-ios/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">Starter project</a>
 
 You're now ready to create your first formatters!
 
@@ -31,7 +29,7 @@ You're now ready to create your first formatters!
 
 First, create a *Task Management.4dbase/Resources/Mobile/formatters* folder.
 
-```![Formatter folder](assets/en/custom-formatter/formatter-folder.png)```
+![Formatter folder](img/formatter-folder.png)
 
 ## Integer formatters
 
@@ -40,7 +38,7 @@ First, create a *Task Management.4dbase/Resources/Mobile/formatters* folder.
 * Create an **integerToString** folder in the formatters folder you've just created.
 * Then create a **manifest.json** file in the **integerToString** folder.
 
-```![Formatter folder](assets/en/custom-formatter/formatter-folder-integertostring.png)```
+![Formatter folder](img/formatter-folder-integertostring.png)
 
 Let's look at the contents of the **manifest.json** file:
 
@@ -67,11 +65,11 @@ Let's look at the contents of the **manifest.json** file:
 
 * Create a **manifest.json** file in the **integerToImage** folder.
 
-```![Formatter folder](assets/en/custom-formatter/formatter-folder-integertoimage.png)```
+![Formatter folder](img/formatter-folder-integertoimage.png)
 
 * Then create an **Images** folder in the **integerToImage** folder. You can add the images from the **integerToImage_Images** in the StarterProject.zip to this new folder.
 
-```![Formatter images](assets/en/custom-formatter/formatter-images-integertoimage.png)```
+![Formatter images](img/formatter-images-integertoimage.png)
 
 Let's look at the contents of the **manifest.json** file:
 
@@ -107,7 +105,7 @@ Let's look at the contents of the **manifest.json** file:
 
 * Create a **manifest.json** file in the **textToString** folder.
 
-```![Formatter folder](assets/en/custom-formatter/formatter-folder-texttostring.png)```
+![Formatter folder](img/formatter-folder-texttostring.png)
 
 Let's look at the contents of the **manifest.json** file:
 
@@ -134,11 +132,11 @@ Let's look at the contents of the **manifest.json** file:
 
 * Create a **manifest.json** file in the **textToImage** folder.
 
-```![Formatter folder](assets/en/custom-formatter/formatter-folder-textToImage.png)```
+![Formatter folder](img/formatter-folder-textToImage.png)
 
 * Then create an **Images** folder in the **textToImage** folder. You can add the images from the **textToImage_Images** in the StarterProject.zip to this new folder.
 
-```![Formatter images](assets/en/custom-formatter/formatter-images-textToImage.png)```
+![Formatter images](img/formatter-images-textToImage.png)
 
 Let's look at the contents of the **manifest.json** file:
 
@@ -172,18 +170,15 @@ Next, go to the **Labels & Icons section** in the project editor. All of your fo
 * Select the **integerToImage** formatter for the **Task Status**
 * Select the **textToImage** formatter for the **Manager**
 
-```![Text formatter](assets/en/custom-formatter/formatters-icons-&-labels.png)```
+![Text formatter](img/formatters-icons-&-labels.png)
 
 ## Build your 4D for iOS app
 
 Build your 4D of iOS app and you'll see that your data formatter is well applied depending on the credit limit.
 
-```![Text formatter](assets/en/custom-formatter/formatters-final-result.png)```
+![Text formatter](img/formatters-final-result.png)
 
-Click on **FORMATTER FINAL** below to download the completed formatter template folder.
-
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+Download the completed formatter template folder:
 
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-CustomDataFormatter/releases/latest/download/tutorial-CustomDataFormatter.zip">FORMATTER FINAL</a>
-</div>
+href="https://github.com/4d-for-ios/tutorial-CustomDataFormatter/releases/latest/download/tutorial-CustomDataFormatter.zip">Download</a>

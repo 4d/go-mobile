@@ -32,13 +32,13 @@ Let's start with a very simple structure using a single table. From 4D, go to **
 
 Give your project a name and click **Create**.
 
-![Project Creation](img/create-project.png)
+![Project Creation](img/create-contact-app/create-project.png)
 
 ## STEP 3. Opening the Project Editor
 
 Welcome to 4D for iOS! The Welcome screen displays the main app-creation stages of this magnificent tool. 🙂
 
-![Welcome Screen](img/welcome-screen.png)
+![Welcome Screen](img/create-contact-app/welcome-screen.png)
 
 Click **Continue**.
 
@@ -53,7 +53,7 @@ Here, you'll configure your app's primary information:
 * **Icons:** Drag and drop an icon for your app into the icon area.
 * **Developer:** This is automatically filled from the user name on your computer. Copy/paste your developer team reference (from your developer account) into the Team field. You can also leave it empty to build your application on the Simulator only.
 
-```![General](assets/en/contact-app/Contact-app-general-section-4D-for-iOS.png)```
+![General](img/create-contact-app/general-section.png)
 
 ## STEP 5. Sections - Structure
 
@@ -66,7 +66,7 @@ For our example, select **ID**, **First Name**, **Last Name**, **Job**, **Compan
 > We highly recommend publishing your primary key in order to identify each record of your database
 
 
-```![Structure](assets/en/contact-app/Contact-app-structure-section-4D-for-iOS.png)```
+![Structure](img/create-contact-app/structure-section.png)
 
 ## STEP 6. Sections - Icons & Labels
 
@@ -86,7 +86,7 @@ You can also opt to leave the icon field empty. 4D for iOS will generate a defau
 	* If at least one icon has been defined and other fields are left empty, 4D for iOS will generate default icons for you
 	* You can simply leave them empty to not display any field icons. 
 
-```![Icons & Labels](assets/en/contact-app/Contact-app-icons-labels-section-4D-for-iOS.png)```
+![Icons & Labels](img/create-contact-app/labels-section.png)
 
 ## STEP 7. Sections - Main Menu
 
@@ -95,7 +95,7 @@ Next up is defining the order of the tables in the app's main menu.
 * **Available Tables:** Displays the table(s) to be used.
 * **Selected Tables:** Displays your app's menu items. Even though our example has only one item, you can drag and drop your items to reorder them.
 
-```![Main Menu](assets/en/contact-app/Contact-app-main-menu-section-4D-for-iOS.png)```
+![Main Menu](img/create-contact-app/main-menu-section.png)
 
 ## STEP 8. Sections - Forms
 
@@ -103,24 +103,24 @@ We're almost done, but first we need to decide on the app's layout. There are bo
 
 * Select a list form template to display your table as a list. For our Contact app, let’s use the **Profile** template.
 
-```![List form template](assets/en/contact-app/ListformTemplate-form-section-4D-for-iOS.png)```
+![List form template](img/create-contact-app/listform-template-form-section.png)
 
 At this point, the bottom of the configuration window has changed from template selection to content definition.
  
-* Drag and drop the fields you want displayed onto the template, <i>i.e.</i>, Last Name into the search and Title fields. The Search and Section fields are optional, leave the Section field empty for the moment.
+* Drag and drop the fields you want displayed onto the template, for example Last Name into the search and Title fields. The Search and Section fields are optional, leave the Section field empty for the moment.
 
-```![List form content](assets/en/contact-app/ListformContent-form-section-4D-for-iOS.png)```
+![List form content](img/create-contact-app/listform-content-form-section.png)
 
 And finally, we'll define the detail form. 
 
 * Select a template that is best suited for your app. For our Contact app, let’s use the **Visual Contact**template.
 
-```![Detail form template](assets/en/contact-app/DetailformTemplate-form-section-4D-for-iOS.png)```
+![Detail form template](img/create-contact-app/detail-form-form-section.png)
 
 
-* Drag and drop the content onto the appropriate places on the detail form template, <i>i.e.</i>, First Name, Last Name, and Photo.
+* Drag and drop the content onto the appropriate places on the detail form template, for example First Name, Last Name, and Photo.
 
-```![Detail form content](assets/en/contact-app/DetailformContent-form-section-4D-for-iOS.png)```
+![Detail form content](img/create-contact-app/detail-form-content-form-section.png)
 
 ## STEP 9. Build the app
 
@@ -131,7 +131,7 @@ Now the fun part! It's time to build your app and test it on the Simulator to se
 * Click  **Build and Run**.
 * Wait a few seconds and …. voila! Your iOS app is alive!
 
-```![Build and Run](assets/en/contact-app/Build-the-app-simulator.png)```
+![Build and Run](img/create-contact-app/build-the-app-simulator.png)
 
 ## STEP 10. Where to go from here?
 

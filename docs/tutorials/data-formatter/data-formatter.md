@@ -17,8 +17,5 @@ You can now choose pre-packaged formats from Labels & Icons in Sections.
 
 Let's get started by downloading the Starter project:
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">DATA FORMATTER Starter project</a>
-</div>
-
+href="https://github.com/4d-for-ios/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">Starter project</a>

@@ -13,7 +13,7 @@ title: List form templates
 
 In this tutorial, we'll cover nearly all aspects of creating a list form template such as: creating a list form with a **searchBar** and a table displaying an **image**, a **title**, and a **subtitle** for each cell.
 
-```![List form template final result](assets/en/custom-listform/custom-template-final-result.png)```
+![List form template final result](img/custom-template-final-result.png)
 
 ## Download the Starter project
 
@@ -24,7 +24,7 @@ Before we begin, be sure to download the **Starter project** which includes:
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">LISTFORM Starter project</a>
+href="https://github.com/4d-for-ios/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">Starter project</a>
 </div>
 
 You are now ready to create your first list form template!
@@ -33,13 +33,13 @@ You are now ready to create your first list form template!
 
 The first thing you'll need to do is create a *Contact.4dbase/Resources/Mobile/form/list* folder. Then drag and drop your **list form** folder into it.
 
-```![Mobile folder list form template](assets/en/custom-listform/mobile-folder-custom-template.png)```
+![Mobile folder list form template](img/mobile-folder-custom-template.png)
 
 Next, open the Contact.4dbase file with 4D. (File > open > Mobile Project > **Contact Demo App**) 
 
 Finally, in the **Forms section** of the project editor, you'll see that your list form template has been successfully added to the list of available list form templates!
 
-```![Forms section](assets/en/custom-listform/custom-listform-template.png)```
+![Forms section](img/custom-listform-template.png)
 
 Now let's focus on the contents of the **Custom List form** folder.
 

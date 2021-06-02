@@ -11,14 +11,10 @@ More globally, we want to **change all tasks status** to postponed or in Progres
 
 Download the **Starter project** and go right to the **Actions section**.
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">Starter project</a>
 
-</div>
-
-As we've seen before in the ```[Action section documentation](actions.html#ios-app-side)```, you can define action for two levels:
+You can define actions for two levels:
 
 * Entity actions
 * Table actions
@@ -34,7 +30,7 @@ In this Actions section, you will be able to define all your actions **names**, 
 
 The action section is quite empty when you open it for the first time, so click on the **Plus button** at the bottom left to add your first action!
 
-```![Create action](assets/en/actions/Create-action.png)```
+![Create action](img/Create-action.png)
 
 Let's define first an action that will **change a task status** to "Complete" and put the **percentage of completion** to 100%.
 
@@ -47,11 +43,11 @@ To define this action:
 * Select the **Tasks** table from **Tables** list
 * Select **Current record** from **Scope** list
 
-```![Done action definition](assets/en/actions/Done-action-definition.png)```
+![Done action definition](img/Done-action-definition.png)
 
 ### STEP 2. Create and edit the Action Database Method
 
-Now that your action is defined in the Project Editor, you have to create the ```[**On Mobile App Action**](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)``` database Method.
+Now that your action is defined in the Project Editor, you have to create the **[On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)** database Method.
 
 Do to so, click on **Create button** at the bottom right of the action table and enter the following code in the **On Mobile App Action** database method:
 
@@ -136,7 +132,7 @@ $0:=$out
 
 Build and Run you app and there you go! Your **Done action** is available when you swipe left a cell in Listform, as well as when you click on the **generic action button** in the navigation bar of the Detail form.
 
-```![Done action](assets/en/actions/Entity-action-Done.png)```
+![Done action](img/Entity-action-Done.png)
 
 ## Table actions
 
@@ -153,7 +149,7 @@ Let's define this action from the Action section:
 * Select the **Tasks** table from **Tables** list
 * Select **Table** from **Scope** list
 
-```![Postponed action definition](assets/en/actions/PostponedAll-action-definition.png)```
+![Postponed action definition](img/PostponedAll-action-definition.png)
 
 ### STEP 2. Edit the Action method
 
@@ -237,19 +233,15 @@ $0:=$out
 
 Build and Run your app! You will find a new **generic button** in the navigation bar of your Lisform. Click on it to trigger the **Postpone All** action.
 
-```![Final result Postponed Action](assets/en/actions/ListForm-table-action-tableview-tuto.png)```
+![Final result Postponed Action](img/ListForm-table-action-tableview-tuto.png)
 
 ## Where to Go From Here?
 
 Congratulations! You've just added 2 actions to your iOS app. You are now able to add all actions you need to your Tasks app!
 
-```![Final result All Action](assets/en/actions/ListForm-entity-action-tableview.png)```
+![Final result All Action](img/ListForm-entity-action-tableview.png)
 
-You can download the **Final project** that includes various actions:
-
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+Download the completed project that includes various actions:
 
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-Actions/releases/latest/download/tutorial-Actions.zip">FINAL PROJECT</a>
-
-</div>
+href="https://github.com/4d-for-ios/tutorial-Actions/releases/latest/download/tutorial-Actions.zip">Completed project</a>
