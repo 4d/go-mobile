@@ -5,7 +5,7 @@ module.exports = {
       label: "Getting started",
       items: [
         "getting-started/requirements",
-        "getting-started/create-your-first-app-with-4d-for-ios",
+        "getting-started/create-your-first-app",
       ],
     },
     {
@@ -88,6 +88,7 @@ module.exports = {
         "tutorials/creating-list-forms/list-form-manifest",
         "tutorials/creating-list-forms/list-form-svg-file",
         "tutorials/creating-list-forms/list-form-storyboard",
+		"tutorials/creating-list-forms/list-form-layout",
       ],
     },
     {
