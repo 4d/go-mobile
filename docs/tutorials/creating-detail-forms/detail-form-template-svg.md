@@ -8,11 +8,11 @@ The template.svg file is a basic template representation. In this svg file, you'
 
 Here's a finished version:
 
-```![Template svg file](assets/en/custom-detailform/detailform-template-svg-file.png)```
+![Template svg file](img/detailform-template-svg-file.png)
 
 This template has dynamic field numbering, meaning that this template will allow you to add an **image** and you can put **as many fields** depending on your needs. So when you build your detail form in the Forms section and drag and drop a field, a new empty field appears below the previous one for you to add a new field:
 
-```![Template svg file](assets/en/custom-detailform/detailform-dynamic-field-number.png)```
+![Template svg file](img/detailform-dynamic-field-number.png)
 
 Open the template.svg file with your favorite code editor.
 
@@ -25,8 +25,8 @@ Let’s focus on the different parts of your SVG file and what you'll need to ed
 
 Add the title for your template here.
 
-## Areas position, height and width and type
-You can define position, height, and width for all of your fields like  we did for the ```[Custom list view tutorial](creating-listform.html)```.
+## Area position, height and width and type
+You can define position, height, and width for all of your fields. This process is the same as [the one you use for custom list forms](../creating-list-forms/list-form-svg-file.md#area-position-height-width-and-type).
 
 ### Field properties
 
@@ -88,7 +88,7 @@ Now that you have an **icon**, a **basic template description** in the manifest.
 
 > **NOTE**
 >
-> All types are available ```[here](https://developer.4d.com/docs/en/Concepts/data-types.html)```.
+> A [list of all the available data types](https://developer.4d.com/docs/en/Concepts/data-types.html) is available on developer.4d.com.
 
 > **TIP**
 >

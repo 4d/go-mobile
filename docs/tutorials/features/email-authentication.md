@@ -21,7 +21,7 @@ In short, the principle is the following:
 
 You integrate a login form into your app, from the project editor in the Publishing section.
 
-```![Email authentication activation](assets/en/authentication/email-authentication-publishing-section.png)```
+![Email authentication activation](img/email-authentication-publishing-section.png)
 
 
 ### 2. Enter your email address
@@ -40,7 +40,7 @@ That’s quite simple, right?
 
 So, to make the validation process easier and secure, 4D for iOS handles:
 
-```![Authentication](assets/en/authentication/4D-for-iOS-email-auth.png)```
+![Authentication](img/4D-for-iOS-email-auth.png)
 
 But let's figure out how this works, using our special component!
 

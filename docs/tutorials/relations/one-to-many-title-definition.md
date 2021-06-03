@@ -9,20 +9,18 @@ To keep track of the view you come from in your app, 4D for iOS allows you to de
 
 In this tutorial, we will use the following project:
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-OneToManyTitleDefinition/archive/4b831959e7efe4777071af0b2904d458918cfbc2.zip">TITLE DEFINITION Starter project</a>
-</div>
+href="https://github.com/4d-for-ios/tutorial-OneToManyTitleDefinition/archive/4b831959e7efe4777071af0b2904d458918cfbc2.zip">Starter project</a>
 
 Now go straight to Open menu > Mobile project... select *Time Keeper* and go to the **Labels & Icons section**.
 
 From here, open the relation tab to define the *tasks* relation title and enter the following line in the **Titles column**: ```%Name% tasks```
 
-```![Labels & Icons relation title](assets/en/relations/labels-icons-title-definition.png)```
+![Labels & Icons relation title](img/labels-icons-title-definition.png)
 
 As you may have guessed, it will allow you to display **Employee's Name value** on the destination view depending on the Employee detail form you were on previously. 
 
-```![Labels & Icons relation title](assets/en/relations/relations-title-definition.png)```
+![Labels & Icons relation title](img/relations-title-definition.png)
 
 This is a great way to keep track of the view you come from!
 
