@@ -5,7 +5,7 @@ title: List form icon
 
 You can create your own icon for a list form template. 
 
-It must be 160px x 160px and must be named **layoutIconx2.png**.
+It must be 160x160 px and must be named **layoutIconx2.png**.
 
 The icon will be used:
 
@@ -14,10 +14,10 @@ The icon will be used:
 
 ![Custom listform template](img/custom-listform-template.png)
 
-If this icon is missing from your list form template folder, the **template.svg** file (we're going to learn about this later) will be displayed in the template selector window and a question mark icon will be displayed above each table that's missing an icon.
+If this icon is missing from your list form template folder, the [**template.svg**](list-form-template.md) file will be displayed in the template selector window and a question mark icon will be displayed above each table that's missing an icon.
 
 ![Missing listform icon custom template](img/missing-listform-icon-custom-template.png)
 
-We've used Photoshop to create the list form template icon in our example, but you can use any image software.
+You can use any image software to create the png list form template icon.
 
 ![Custom listform template icon](img/custom-list-form-icon.png)

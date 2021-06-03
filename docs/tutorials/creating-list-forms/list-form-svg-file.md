@@ -1,24 +1,23 @@
 ---
 id: list-form-svg-file
-title: About the Template.svg File
+title: Template.svg
 ---
 
-The template.svg file is a basic visual representation of a template. In this file, you'll need to define areas in order to be able to add fields to your list form template from the project editor.
+The `template.svg` file is a basic visual representation of a template. In this file, you'll need to define areas in order to be able to add fields to your list form template from the project editor.
 
 Here's a finished version:
 
 ![Template svg file](img/template-svg-file.png)
 
-Open the template.svg file with your favorite code editor.
-
-Let’s focus on the different parts of your SVG file and what you'll need to edit.
+Let’s focus on the different parts of this svg file and what you'll need to edit.
 
 ## Title
+
 ```xml
 <title>Custom List form</title>
 ```
 
-Add the title for your template here.
+Title of the template.
 
 ## ios:values
 
@@ -26,13 +25,14 @@ Add the title for your template here.
 <text id="cookery" ios:values="search,section,f1,f2,f3"/>
 ```
 
-Inclues IDs which define your form areas:
+Includes IDs which define your form areas:
 
-* **search ID**: Refers to the search field area. This will allow you to drag and drop a field as the search criteria in your list form (optional).
-*  **section ID**: Refers to the section field area. This will allow you drag and drop a field as the sort criteria in your list form (optional).
-*  **f1, f2 and f3 IDs**: Refers to the fields to display in each cell of your list form. This will allow you to drag and drop fields to appear in your list form cells.
+* **search**: Refers to the search field area. This will allow you to drag and drop a field as the search criteria in your list form (optional).
+* **section**: Refers to the section field area. This will allow you drag and drop a field as the sort criteria in your list form (optional).
+* **f1, f2 and f3**: Refers to the fields to display in each cell of your list form. This will allow you to drag and drop fields to appear in your list form cells.
 
-## Area position, height, width and type
+## Area position, height, and width
+
 You can define the position, height and width for:
 
 * Searchfield
@@ -41,7 +41,7 @@ You can define the position, height and width for:
 
 ### SearchableField area:
 
-```xml
+```svg
 //1
 <g transform="translate(0,60)”>
 
@@ -55,10 +55,10 @@ You can define the position, height and width for:
 <textArea id="search.label" class="label" x="14" y="8" width="238"/>
 
 //5
-<rect id="search" class="droppable field optional" x="14" y="0" width="238" height="30" stroke-dasharray="5,2" ios:type=“0,1,2,4,8,9,11,25,35"  ios:bind="searchableField”/>
+<rect id="search" class="droppable field optional" x="14" y="0" width="238" height="30" stroke-dasharray="5,2" ios:type="0,1,2,4,8,9,11,25,35"  ios:bind="searchableField"/>
 
 //6
-<use id="search.cancel" x="224" y="1" xlink:href="#cancel" visibility="hidden”/> //6
+<use id="search.cancel" x="224" y="1" xlink:href="#cancel" visibility="hidden"/>
 </g>
 ```
 
@@ -66,24 +66,15 @@ You can define the position, height and width for:
 2. Area background position, height, and width
 3. Icon to display a magnifying glass icon into the searchable field
 4. Define the text area position and width
-5. Define the droppable field position, height, and width, as well as accepted **field types**
+5. Define the droppable field position, height and width, as well as accepted [**field types**](#iostypes)
 6. Define a cancel button that will be displayed to delete the current content
 
 The searchable field is optional.
 
-> **NOTE**
->
-> All Field and Variable Types are available ```[here](http://doc.4d.com/4Dv17/4D/17/Field-and-Variable-Types.302-3729410.en.html).```
-
-> **TIP**
->
-> To make field type definition easier, 4D for iOS allows you to include field types with **positive values** and also exclude field types with **negative values**. For example, ```ios:type="-3,-4"``` will allow you to drag and drop every field exept images and dates.
->
-> To include all types, just type ios:type="all".
 
 ### SectionField area:
 
-```
+```svg
 //1
 <rect class="bg field" x="10" y="110" width="246" height="30”/>
 
@@ -99,14 +90,14 @@ The searchable field is optional.
 
 1. Area background position, height and width
 2. Define the text area position and width
-3. Define the droppable field position, height and width as well as accepted **field types**
+3. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
 4. Define a cancel button that will be displayed to delete the current content
 
 The section field is optional.
 
 ### ImageField area:
 
-```
+```svg
 //1
 <g transform="translate(0,162)">
 
@@ -131,12 +122,12 @@ The section field is optional.
 2. Area background position, height and width
 3. Icon to display an image in the imageField
 4. Define the text area position and width
-5. Define the droppable field position, height and width as well as accepted **field types**
+5. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
 6. Define a cancel button that will be displayed to delete the current content
 
 ### Title Field area:
 
-```
+```svg
 //1
 <g transform="translate(0,162)”>
 
@@ -157,11 +148,12 @@ The section field is optional.
 1. Entire area Y position
 2. Area background position, height and width
 3. Define the text area position and width
-4. Define the droppable field position, height and width as well as accepted **field types**
+4. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
 5. Define a cancel button that will be displayed to delete the current content
 
 ### Subtitle Field area:
-```
+
+```svg
 //1
 <g transform="translate(0,198)”>
 
@@ -182,7 +174,35 @@ The section field is optional.
 1. Entire area Y position
 2. Area background position, height and width
 3. Define the text area position and width
-4. Define the droppable field position, height and width as well as accepted **field types**
+4. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
 5. Define a cancel button that will be displayed to delete the current content
 
-Now that you have an **icon**, a **basic template description** in the manifest.json file, and your **svg file** ... let's move on to the fun part with Xcode!
+
+## ios:types
+
+The following field types are supported:
+
+|Code|Type|
+|---|---|
+|0|alpha|
+|1|real|
+|2|text|
+|3|picture|
+|4|date|
+|8|integer|
+|9|longint|
+|11|time|
+|25|integer 64 bit|
+
+:::note
+
+For more information on these field types, refer to [**this page**](https://developer.4d.com/docs/en/Concepts/data-types.html). 
+
+:::
+
+:::tip
+
+To make field type definition easier, 4D for iOS allows you to include field types with **positive values** and also exclude field types with **negative values**. For example, `ios:type="-3,-4"` will allow you to drag and drop every field except images and dates.
+To include all types, just type `ios:type="all"`.
+
+:::

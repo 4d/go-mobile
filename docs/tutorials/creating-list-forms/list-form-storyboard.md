@@ -1,9 +1,9 @@
 ---
 id: list-form-storyboard
-title: Storyboard
+title: iOS Storyboard
 ---
 
-Now it's time to create your iOS list form interface with Xcode!
+Now it's time to create your iOS list form interface with Xcode.
 
 Here's the result we want to achieve:
 
@@ -41,7 +41,7 @@ Finally, click on the **Align button** (at the bottom of the Interface Builder w
 
 ![Image View align vertically](img/imageview-align-vertically.png)
 
-Your Image View is now well positioned!
+Your Image View is now well positioned.
 
 ![Image View final](img/imageview-final.png)
 
@@ -103,15 +103,17 @@ To complete the customizations, select both labels and **enter 0 for Lines** in 
 
 ![Label lines number](img/label-lines-number.png)
 
-> **NOTE**
->
-> The provided storyboard is optimized to have a **variable cell height** depending on the contents of each cell.
->
-> ![Row height tableview cell](img/row-height-tableview-cell.png)
+:::note
+
+The provided storyboard is optimized to have a **variable cell height** depending on the contents of each cell.
+
+![Row height tableview cell](img/row-height-tableview-cell.png)
+:::
 
 ## How to get data into your cells
 
 ### Image View
+
 Select your Image View and go to **Identity inspector** > User Defined Runtime Attributes. Click the **+ button** to add a row.
 
 ![User defined runtime attributes](img/user-defined-runtime-attributes.png)
@@ -187,13 +189,13 @@ You can now build your project from the project editor!
 
 ## Where to go from here?
 
-In this tutorial, we've covered the basics for creating list form templates. You are now able to create simple templates on your own using the Starter project ressources. But wait - there’s more! In the next tutorial, you’ll learn how to build detail form templates!
-Click on **Final Project** below to download the completed template list folder.
+In this tutorial, we've covered the basics for creating list form templates with iOS. You are now able to create simple templates on your own using the Starter project ressources. You can also see how to build [detail form templates](../creating-detail-forms/create-detail-form-template.md).
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+Download the completed template list folder:
+
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-CustomListForm/archive/53ac1d5f506aa4ca2a8d78760ef799044c5c8bdc.zip">CUSTOM LISTFORM FINAL TEMPLATE</a>
-</div>
+href="https://github.com/4d-for-ios/tutorial-CustomListForm/archive/53ac1d5f506aa4ca2a8d78760ef799044c5c8bdc.zip">Download</a>
+
 
 
 
