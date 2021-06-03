@@ -5,10 +5,7 @@ title: List form templates
 
 In this tutorial, we'll cover nearly all aspects of creating a list form template, including the use of a **searchBar**, a table displaying an **image**, a **title**, and a **subtitle** for each cell.
 
-
-```
-![List form template final result](assets/en/custom-listform/custom-template-final-result.png)
-```
+![List form template final result](img/custom-template-final-result.png)
 
 ## Download the Starter project
 
@@ -17,18 +14,14 @@ Before we begin, be sure to download and unzip the **Starter project** which inc
 * A **List form** folder
 * A demo 4D project ("Contact") with a ready-to-use mobile app project.
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">LISTFORM Starter project</a>
-</div>
+href="https://github.com/4d-for-ios/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">Starter project</a>
 
 ## Add a list form template to your mobile project
 
 The first thing you'll need to do is create a `list` folder in *Contact.4dbase/Resources/Mobile/form/* locatton. Then drag and drop your **list form** folder into it.
 
-```
-![Mobile folder list form template](assets/en/custom-listform/mobile-folder-custom-template.png)
-```
+![Mobile folder list form template](img/mobile-folder-custom-template.png)
 
 Now, launch your 4D application and open the "Contact" 4D project.
 
@@ -36,9 +29,7 @@ Then, select the "Contact Demo App" mobile project: **File > Open > Mobile Proje
 
 In the **Forms section** of the mobile project editor, you can see that your list form template has been successfully added to the list of available list form templates:
 
-```
-![Forms section](assets/en/custom-listform/custom-listform-template.png)
-```
+![Forms section](img/custom-listform-template.png)
 
 Now let's focus on the contents of the **Custom List form** folder.
 
