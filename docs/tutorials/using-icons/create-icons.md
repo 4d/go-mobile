@@ -10,8 +10,7 @@ For this tutorial, you can download the following icons:
 
 <a
   className="button button--primary"
-  target="_blank"
-  href={require('./assets/custom-icons.zip').default}>
-  Starter project
+  href="#">
+  Download custom icons
 </a>
 
