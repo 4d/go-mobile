@@ -1,5 +1,7 @@
 files:
   - source: /docs/**/*
+    ignore:
+      - /docs/**/assets/*.zip
     translation: >-
       /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%
   - source: /i18n/en/**/*
