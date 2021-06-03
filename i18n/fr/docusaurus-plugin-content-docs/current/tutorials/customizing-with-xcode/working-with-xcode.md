@@ -21,8 +21,7 @@ Download the Starter project:
 
 <a
   className="button button--primary"
-  target="_blank"
-  href={require('./assets/customizing-with-xcode/contact-app-starter.zip').default}>
+  href="#">
   Starter project
 </a>
 
