@@ -21,7 +21,7 @@ But what about the architecture to implement, in order to integrate this functio
 
 Here are the different elements needed to create, send and receive a mobile push notification:
 
-`![Push notification process](assets/en/push-notification/4D-for-ios-push-notification.png)`
+![Push notification process](img/4D-for-ios-push-notification.png)
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ In order to send push notifications, an AuthKey_XXXYYY.p8 authentication file fr
 
 * Finally, activate the Push notification feature integrate your certificate in your 4D for iOS project from the Publishing section.
 
-`![Publishing section](assets/en/push-notification/push-notification-publishing-section.png)`
+![Publishing section](img/push-notification-publishing-section.png)
 
 You can find more information about this process [here](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) in the component documentation.
 
@@ -117,7 +117,8 @@ $notification.userInfo:=New object("dataSynchro"; True)
 $response:=$pushNotification.send($notification; $recipients)
 
 ```
-`![Data synchronization animation](assets/en/push-notification/pushandSynchro.gif)`
+
+![Data synchronization animation](img/pushandSynchro.gif)
 
 ## Windows Configuration
 
