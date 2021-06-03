@@ -1,32 +1,27 @@
 ---
-id: create-your-first-app-with-4d-for-ios
-title: Create your first app with 4d for iOS
+id: create-contact-app
+title: Contact App
 ---
 
 
 > **OBJECTIVES**
->
->Create your first app with 4D for iOS
-
-
->**PREREQUISITES**
->
->Click [here]```(requirements.html) ```to see what you'll need to get started!
+> 
+> Create your first app with 4D for iOS
+> **PREREQUISITES**
+> 
+> Click `[here](prerequisites.html)` to see what you'll need to get started!
 
 This tutorial will let you dive right into 4D for iOS development. It will allow you to quickly and easily create your first application.
 
 *Scenario: You're a commercial business manager and you want to consult your contact information on the go.*
 
-We're going to create an iPhone directory app to search for contact names from a list and then view the details of each contact. We'll call it "Contact". 
+We're going to create an iPhone directory app to search for contact names from a list and then view the details of each contact. We'll call it "Contact".
 
 ## STEP 1. Getting started
-Download our Starter Project, which contains a database file and project icon, but no mobile project yet.
+Download our Starter project, which contains a database file and project icon, but no mobile project yet:
 
-<div markdown="1" style={{textAlign: 'center', marginTop: '20px'}}>
-
-<a class="button"
-href="https://github.com/4d-for-ios/tutorial-ContactApp/archive/acbb699c3c9d9edd3a8bbb715e87c17140b7e15f.zip">STARTER PROJECT</a>
-
+<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+<a className="button button--primary" href="https://github.com/4d-for-ios/tutorial-ContactApp/archive/acbb699c3c9d9edd3a8bbb715e87c17140b7e15f.zip">Starter project</a>
 </div>
 
 ## STEP 2. Creating the project
@@ -35,13 +30,13 @@ Let's start with a very simple structure using a single table. From 4D, go to **
 
 Give your project a name and click **Create**.
 
-![Project Creation](img/Project-creation-4D-for-iOS.png)
+`![Project Creation](assets/en/contact-app/Project-creation-4D-for-iOS.png)`
 
 ## STEP 3. Opening the Project Editor
 
 Welcome to 4D for iOS! The Welcome screen displays the main app-creation stages of this magnificent tool. 🙂
 
-![Welcome Screen](img/Welcome-Screen-4D-for-iOS.png)
+`![Welcome Screen](assets/en/contact-app/Welcome-Screen-4D-for-iOS.png)`
 
 Click **Continue**.
 
@@ -56,7 +51,7 @@ Here, you'll configure your app's primary information:
 * **Icons:** Drag and drop an icon for your app into the icon area.
 * **Developer:** This is automatically filled from the user name on your computer. Copy/paste your developer team reference (from your developer account) into the Team field. You can also leave it empty to build your application on the Simulator only.
 
-![General](img/Contact-app-general-section-4D-for-iOS.png)
+`![General](assets/en/contact-app/Contact-app-general-section-4D-for-iOS.png)`
 
 ## STEP 5. Sections - Structure
 
@@ -65,11 +60,11 @@ This is where you'll define a subset of your data (the database tables and field
 For our example, select **ID**, **First Name**, **Last Name**, **Job**, **Company**, **Phone**, **Notes** and **Photo**.
 
 > **NOTE**
->
+> 
 > We highly recommend publishing your primary key in order to identify each record of your database
 
 
-![Structure](img/Contact-app-structure-section-4D-for-iOS.png)
+`![Structure](assets/en/contact-app/Contact-app-structure-section-4D-for-iOS.png)`
 
 ## STEP 6. Sections - Icons & Labels
 
@@ -78,18 +73,17 @@ Now it's time to define some labels and icons for the selected tables and fields
 **Table Properties:**
 
 * Define a short and a long label for your Contact table
-* Click on the icon field. The icon library will appear and you can select an icon to illustrate the Contacts table.
-You can also opt to leave the icon field empty. 4D for iOS will generate a default icon for you!
+* Click on the icon field. The icon library will appear and you can select an icon to illustrate the Contacts table. You can also opt to leave the icon field empty. 4D for iOS will generate a default icon for you!
 
 **Field Properties:**
 
 * Define a short and a long label for your selected fields.
 * Click on the icon field and select icons for each field. There are several options for field icons:
-	* You can select an icon for each field,
-	* If at least one icon has been defined and other fields are left empty, 4D for iOS will generate default icons for you
-	* You can simply leave them empty to not display any field icons. 
+    * You can select an icon for each field,
+    * If at least one icon has been defined and other fields are left empty, 4D for iOS will generate default icons for you
+    * You can simply leave them empty to not display any field icons.
 
-![Icons & Labels](img/Contact-app-icons-labels-section-4D-for-iOS.png)
+`![Icons & Labels](assets/en/contact-app/Contact-app-icons-labels-section-4D-for-iOS.png)`
 
 ## STEP 7. Sections - Main Menu
 
@@ -98,7 +92,7 @@ Next up is defining the order of the tables in the app's main menu.
 * **Available Tables:** Displays the table(s) to be used.
 * **Selected Tables:** Displays your app's menu items. Even though our example has only one item, you can drag and drop your items to reorder them.
 
-![Main Menu](img/Contact-app-main-menu-section-4D-for-iOS.png)
+`![Main Menu](assets/en/contact-app/Contact-app-main-menu-section-4D-for-iOS.png)`
 
 ## STEP 8. Sections - Forms
 
@@ -106,24 +100,24 @@ We're almost done, but first we need to decide on the app's layout. There are bo
 
 * Select a list form template to display your table as a list. For our Contact app, let’s use the **Profile** template.
 
-![List form template](img/ListformTemplate-form-section-4D-for-iOS.png)
+`![List form template](assets/en/contact-app/ListformTemplate-form-section-4D-for-iOS.png)`
 
 At this point, the bottom of the configuration window has changed from template selection to content definition.
- 
+
 * Drag and drop the fields you want displayed onto the template, <i>i.e.</i>, Last Name into the search and Title fields. The Search and Section fields are optional, leave the Section field empty for the moment.
 
-![List form content](img/ListformContent-form-section-4D-for-iOS.png)
+`![List form content](assets/en/contact-app/ListformContent-form-section-4D-for-iOS.png)`
 
-And finally, we'll define the detail form. 
+And finally, we'll define the detail form.
 
 * Select a template that is best suited for your app. For our Contact app, let’s use the **Visual Contact**template.
 
-![Detail form template](img/DetailformTemplate-form-section-4D-for-iOS.png)
+`![Detail form template](assets/en/contact-app/DetailformTemplate-form-section-4D-for-iOS.png)`
 
 
 * Drag and drop the content onto the appropriate places on the detail form template, <i>i.e.</i>, First Name, Last Name, and Photo.
 
-![Detail form content](img/DetailformContent-form-section-4D-for-iOS.png)
+`![Detail form content](assets/en/contact-app/DetailformContent-form-section-4D-for-iOS.png)`
 
 ## STEP 9. Build the app
 
@@ -134,14 +128,13 @@ Now the fun part! It's time to build your app and test it on the Simulator to se
 * Click  **Build and Run**.
 * Wait a few seconds and …. voila! Your iOS app is alive!
 
-![Build and Run](img/Build-the-app-simulator.png)
+`![Build and Run](assets/en/contact-app/Build-the-app-simulator.png)`
 
 ## STEP 10. Where to go from here?
 
-We've covered basic app creation in this tutorial, and you should now be able to create simple apps on your own. But wait - there’s more! In the next tutorial, you’ll learn how to build an even more complex app.
-Click on **Final Project** below to download the final Contact app.
+We've covered basic app creation in this tutorial, and you should now be able to create simple apps on your own. But wait - there’s more! In the next tutorial, you’ll learn how to build an even more complex app. Click on **Final Project** below to download the final Contact app.
 
-<div markdown="1" style={{textAlign: 'center', marginTop: '20px', marginBottom: '20px'}}>
-<a class="button"
+<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+<a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-ContactApp/releases/latest/download/tutorial-ContactApp.zip">FINAL PROJECT</a>
 </div>

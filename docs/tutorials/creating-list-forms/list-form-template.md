@@ -5,7 +5,6 @@ title: List form templates
 
 In this tutorial, we'll cover nearly all aspects of creating a list form template, including the use of a **searchBar**, a table displaying an **image**, a **title**, and a **subtitle** for each cell.
 
-
 ![List form template final result](img/custom-template-final-result.png)
 
 ## Download the Starter project
