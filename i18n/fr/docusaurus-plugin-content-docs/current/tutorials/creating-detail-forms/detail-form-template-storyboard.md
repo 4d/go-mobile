@@ -1,15 +1,15 @@
 ---
 id: detail-form-template-storyboard
-title: Detail Form Template Storyboard
+title: iOS Storyboard
 ---
 
-Now it's time to create your iOS detail form interface with Xcode!
+Now it's time to create your iOS detail form interface with Xcode.
 
 Here's the result we want to achieve:
 
 ![Storyboard custom detailform](img/storyboard-custom-detailform.png)
 
-For each cell, we're going to add a:
+For this template, we're going to add a:
 
 * Profile header image
 * A field to be duplicated
@@ -71,7 +71,7 @@ Select **Field View 1** add three constraints by clicking on the **Add New Const
 
 For the Stack View to have the same width as the Scroll View, you need to add a constraint:
 
-Press Ctrl and drag the Stack View to the Scroll View. When you release the mouse button, the Interface Builder displays a menu with a list of possible constraints. Choose Equal Width!
+Press **Ctrl** and drag the Stack View to the Scroll View. When you release the mouse button, the Interface Builder displays a menu with a list of possible constraints. Choose Equal Width!
 
 ![Stack View Equal Width](img/stackview-equal-width-scrollview.png)
 
@@ -129,7 +129,7 @@ Select the Content and Title labels and add four constraints by clicking on the 
 
 ![Title and Content labels constraints](img/titlelabel-contentlabel-contraints.png)
 
-You're done with graphical elements! All of your constraints are well defined :)
+You're done with graphical elements! All of your constraints are well defined.
 
 ## How to get data into your cells
 
@@ -170,7 +170,7 @@ Select the **second label** and add a row in the Defined Runtime Attributes:
 
 Field View 2 includes elements that will be duplicated so you can have as many field as you define in the project editor.
 
-Each storyboard element has a Object ID. For example, if you select Field View 2 and go to the **Identity inspector**, you'll see its Object ID:
+Each storyboard element has an Object ID. For example, if you select Field View 2 and go to the **Identity inspector**, you'll see its Object ID:
 
 ![Object ID Storyboard](img/object-id-storyboard.png)
 
@@ -196,7 +196,7 @@ Save the storyboard xml file. As you can see, the Field View 2 Object ID has cha
 
 ![Label 1 Object ID](img/label1-object-id.png)
 
-Done with the first label!
+Done with the first label.
 
 ### Second label
 
@@ -218,7 +218,7 @@ Go to your project editor and select your detail template from the Forms section
 
 ![Custom detail template forms](img/custom-detail-template-forms.png)
 
-Not bad for a first attempt! :)
+Not bad for a first attempt!
 
 ![iPhone Demo](img/iphone-demo.png)
 
@@ -266,9 +266,5 @@ In this tutorial, we've covered the basics for creating detail form templates. Y
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-CustomDetailForm/archive/c1be487dcbb83e5812c5fd8dd5e7422a79956c48.zip">CUSTOM DETAILFORM FINAL TEMPLATE</a>
+href="https://github.com/4d-for-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">CUSTOM DETAILFORM FINAL TEMPLATE</a>
 </div>
-
-
-
-
