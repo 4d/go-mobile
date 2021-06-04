@@ -95,11 +95,12 @@ module.exports = {
       type: "category",
       label: "Creating Detail forms",
       items: [
-        "tutorials/creating-detail-forms/create-detail-form-template",
-        "tutorials/creating-detail-forms/create-detail-form-icon",
+        "tutorials/creating-detail-forms/detail-form-template",
+        "tutorials/creating-detail-forms/detail-form-icon",
         "tutorials/creating-detail-forms/detail-form-template-manifest",
         "tutorials/creating-detail-forms/detail-form-template-svg",
         "tutorials/creating-detail-forms/detail-form-template-storyboard",
+		"tutorials/creating-detail-forms/detail-form-template-layout",
       ],
     },
     {

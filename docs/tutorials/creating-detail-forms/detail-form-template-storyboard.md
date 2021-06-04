@@ -1,17 +1,17 @@
 ---
 id: detail-form-template-storyboard
-title: Detail Form Template Storyboard 
+title: iOS Storyboard
 ---
 
-Now it's time to create your iOS detail form interface with Xcode!
+Now it's time to create your iOS detail form interface with Xcode.
 
 Here's the result we want to achieve:
 
 ![Storyboard custom detailform](img/storyboard-custom-detailform.png)
 
-For each cell, we're going to add a:
+For this template, we're going to add a:
 
-* Profile header image 
+* Profile header image
 * A field to be duplicated
 
 ## Open the storyboard file with Xcode
@@ -71,7 +71,7 @@ Select **Field View 1** add three constraints by clicking on the **Add New Const
 
 For the Stack View to have the same width as the Scroll View, you need to add a constraint:
 
-Press Ctrl and drag the Stack View to the Scroll View. When you release the mouse button, the Interface Builder displays a menu with a list of possible constraints. Choose Equal Width!
+Press **Ctrl** and drag the Stack View to the Scroll View. When you release the mouse button, the Interface Builder displays a menu with a list of possible constraints. Choose Equal Width!
 
 ![Stack View Equal Width](img/stackview-equal-width-scrollview.png)
 
@@ -107,7 +107,7 @@ In the **Size inspector panel** change the Intrinsic Size from **Default** to **
 
 ### Title label
 
-In the **Object library**, drag and drop a  **Label** into Field View 2 and set the Width value to 343 and the Height value to 22. Then set the X value to 8 and the Y value to 8. 
+In the **Object library**, drag and drop a  **Label** into Field View 2 and set the Width value to 343 and the Height value to 22. Then set the X value to 8 and the Y value to 8.
 
 ![Add label](img/add-label1-storyboard.png)
 
@@ -117,7 +117,7 @@ Double click on the label and name it "```___FIELD_LABEL___```". Then in the **a
 
 ### Content label
 
-Duplicate the Title label and set the duplicate's Width value to 339 and the Height value to 44. Then set the X value to 12 and the Y value to 37. 
+Duplicate the Title label and set the duplicate's Width value to 339 and the Height value to 44. Then set the X value to 12 and the Y value to 37.
 
 ![Add label](img/add-label2-storyboard.png)
 
@@ -129,7 +129,7 @@ Select the Content and Title labels and add four constraints by clicking on the 
 
 ![Title and Content labels constraints](img/titlelabel-contentlabel-contraints.png)
 
-You're done with graphical elements! All of your constraints are well defined :)
+You're done with graphical elements! All of your constraints are well defined.
 
 ## How to get data into your cells
 
@@ -140,7 +140,7 @@ Select your Image View and go to **Identity inspector** > User Defined Runtime A
 
 * **Key Path**: Start with bindTo to activate binding on the component. Enter ```bindTo.record.___FIELD_1___```
 
-* **Type**: Always ```String``` 
+* **Type**: Always ```String```
 
 * **Value**: The attribute name. Enter ```___FIELD_1_BINDING_TYPE___```
 
@@ -152,7 +152,7 @@ For the **first label** we are going to add several lines mainly to display icon
 
 ![Label1 User Defined Runtime Attributes](img/label1-user-defined-runtime-attributes.png)
 
-You also need to set the Class to ```IconLabel``` and check the **Inherit Module From Target** checkbox as we can see below:
+You also need to set the Class to `IconLabel` and check the **Inherit Module From Target** checkbox as we can see below:
 
 ![Label1 Custom Class](img/label1-custom-class.png)
 
@@ -160,7 +160,7 @@ Select the **second label** and add a row in the Defined Runtime Attributes:
 
 * **Key Path**: ```bindTo.record.___FIELD___```
 
-* **Type**: ```String``` 
+* **Type**: ```String```
 
 * **Value**: ```___FIELD_BINDING_TYPE___```
 
@@ -170,7 +170,7 @@ Select the **second label** and add a row in the Defined Runtime Attributes:
 
 Field View 2 includes elements that will be duplicated so you can have as many field as you define in the project editor.
 
-Each storyboard element has a Object ID. For example, if you select Field View 2 and go to the **Identity inspector**, you'll see its Object ID:
+Each storyboard element has an Object ID. For example, if you select Field View 2 and go to the **Identity inspector**, you'll see its Object ID:
 
 ![Object ID Storyboard](img/object-id-storyboard.png)
 
@@ -182,7 +182,7 @@ The process is a little bit tricky... Let's begin by opening the storyboard file
 
 * Select **Field View 2** and get its Object ID from the Identity Inspector (on the right side of the Interface Builder window). In our project, Field View 2 ID is: **SiX-3H-lNB**.
 
-* Search for this ID in the storyboard xml code and replace it with **TAG-FD-001** each time it appears. As you can see, this Object ID is mentioned several times so be careful! 
+* Search for this ID in the storyboard xml code and replace it with **TAG-FD-001** each time it appears. As you can see, this Object ID is mentioned several times so be careful!
 
 ![Storyboard xml](img/storyboard-xml.png)
 
@@ -196,7 +196,7 @@ Save the storyboard xml file. As you can see, the Field View 2 Object ID has cha
 
 ![Label 1 Object ID](img/label1-object-id.png)
 
-Done with the first label!
+Done with the first label.
 
 ### Second label
 
@@ -218,7 +218,7 @@ Go to your project editor and select your detail template from the Forms section
 
 ![Custom detail template forms](img/custom-detail-template-forms.png)
 
-Not bad for a first attempt! :)
+Not bad for a first attempt!
 
 ![iPhone Demo](img/iphone-demo.png)
 
@@ -233,14 +233,14 @@ Select your Image View and add the two following lines in the User Defined Runti
 * **Key Path**: ```cornerRadius```
 
 * **Type**: ```Number```
- 
+
 * **Value**: ```12```
 
 and
 
 * **Key Path**: ```layer.masksToBounds```
 
-* **Type**: ```Boolean``` 
+* **Type**: ```Boolean```
 
 * **Value**: Check the box
 
@@ -251,7 +251,7 @@ Next, select Field View 2 and add the following:
 * **Key Path**: ```cornerRadius```
 
 * **Type**: ```Number```
- 
+
 * **Value**: ```12```
 
 ![iPhone Demo](img/fieldview2-corner-radius.png)
@@ -266,9 +266,5 @@ In this tutorial, we've covered the basics for creating detail form templates. Y
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-CustomDetailForm/archive/c1be487dcbb83e5812c5fd8dd5e7422a79956c48.zip">CUSTOM DETAILFORM FINAL TEMPLATE</a>
+href="https://github.com/4d-for-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">CUSTOM DETAILFORM FINAL TEMPLATE</a>
 </div>
-
-
-
-

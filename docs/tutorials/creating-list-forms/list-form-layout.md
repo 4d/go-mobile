@@ -17,7 +17,7 @@ For each cell, we're going to add a:
 
 ## Open the layout file with Android Studio
 
-The best way to edit or create a tempalte is to :
+The best way to edit or create a template is to :
 
 * Open Android Studio and create a new empty mobile project clicking on File > New > New Project...
 
