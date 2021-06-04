@@ -100,6 +100,7 @@ module.exports = {
         "tutorials/creating-detail-forms/detail-form-template-manifest",
         "tutorials/creating-detail-forms/detail-form-template-svg",
         "tutorials/creating-detail-forms/detail-form-template-storyboard",
+		"tutorials/creating-detail-forms/detail-form-template-layout",
       ],
     },
     {
