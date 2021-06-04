@@ -14,7 +14,7 @@ The icon will be used:
 
 ![Custom detailform template](img/custom-detailform-template.png)
 
-If this icon is missing from your detail form template folder, the [**template.svg file**](detail-form-template-svg.md) will be displayed in the template selector window and a question mark icon will be displayed above each table that's missing an icon.
+If this icon is missing from your detail form template folder, the **template.svg file** will be displayed in the template selector window and a question mark icon will be displayed above each table that's missing an icon.
 
 ![Missing listform icon custom template](img/missing-detailform-icon-custom-template.png)
 
