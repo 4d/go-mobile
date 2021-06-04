@@ -8,11 +8,11 @@ The `template.svg` file is a basic template representation. In this svg file, yo
 
 Here's a finished version:
 
-```
-![Template svg file](assets/en/custom-detailform/detailform-template-svg-file.png)
-```
+![Template svg file](img/detailform-template-svg-file.png)
 
 This template has dynamic field numbering, meaning that this template will allow you to add an **image** and you can put **as many fields** as you need. So when you build your detail form in the Forms section and drag and drop a field, a new empty field appears below the previous one for you to add a new field:
+
+![Template svg file](img/detailform-dynamic-field-number.png)
 
 ```
 ![Template svg file](assets/en/custom-detailform/detailform-dynamic-field-number.png)
@@ -28,9 +28,8 @@ Let’s focus on the different parts of this svg file and what you'll need to ed
 
 Add the title for your template here.
 
-## Areas position, height, and width
-
-You can define position, height, and width for all of your fields like  we did for the ```[Custom list view tutorial](list-form-svg-file.md)```.
+## Area position, height and width and type
+You can define position, height, and width for all of your fields. This process is the same as [the one you use for custom list forms](../creating-list-forms/list-form-svg-file.md#area-position-height-width-and-type).
 
 ### Field properties
 

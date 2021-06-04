@@ -15,13 +15,16 @@ title: Working with Xcode
 >If you customize your project on Xcode and rebuild it from the Project Editor All of your modifications will be lost!
 
 
-We'll use the Contact application we created ```[here](contact-app.html)```. 
+We'll use the [contact application](../creating-ios-app/create-contact-app.md) we created. 
+
 Download the Starter project:
-```Button commented to avoid broken link```
-<!-- <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
-<a className="button button--primary"
-href="../assets/en/customize-with-xcode/ContactStarter.zip">Starter project</a>
-</div> -->
+
+<a
+  className="button button--primary"
+  href="#">
+  Starter project
+</a>
+
 
 ## STEP 1. Generate your iOS Project
 
@@ -35,7 +38,7 @@ From the Project Editor BUILD tab:
 * Select the device to use as a Simulator by clicking on the device button.
 * Click the **Build and Run** button.
 
-```![Build and Run](assets/en/customize-with-xcode/build-and-run-4D-for-iOS.png)```
+![Build and Run](img/build-and-run.png)
 
 ## STEP 3. Open your Project with Xcode
 
@@ -43,6 +46,6 @@ From the Project Editor BUILD tab:
 
 * Click on Project > Open the project with Xcode
 
-```![Open your Project with Xcode](assets/en/customize-with-xcode/Open-your-project-Xcode-4D-for-iOS.png)```
+![Open your Project with Xcode](img/Open-your-project-Xcode-4D-for-iOS.png)
 
 Now you're ready to start working on your 4D for iOS project in Xcode, keep reading to learn how!

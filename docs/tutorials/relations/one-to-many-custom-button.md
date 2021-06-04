@@ -15,11 +15,8 @@ Let's get started by downloading the Starter project that includes:
 * a database with its mobile project
 * a standard Relation button
 
-
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-OneToManyCustomButton/archive/c507e764e97e006c6c785dfc468f71f5bd708845.zip">STARTER CUSTOM BUTTON</a>
-</div>
+href="https://github.com/4d-for-ios/tutorial-OneToManyCustomButton/archive/c507e764e97e006c6c785dfc468f71f5bd708845.zip">Starter project</a>
 
 ## Include the button
 
@@ -27,7 +24,7 @@ The first step is including the button.xib button into your custom template so t
 
 To use the button, you just need to drop it in the ```YourDatabase.4dbase/Resources/Mobile/form/detail/BlackVisual Contact``` folder.
 
-```![Custom button path](assets/en/relations/Relation-custom-button-path.png)```
+![Custom button path](img/Relation-custom-button-path.png)
 
 The first step is done!
 
@@ -37,7 +34,7 @@ Open the .xib file with Xcode.
 
 It should look like this:
 
-```![Custom relation button](assets/en/relations/Relations-custom-button-relationButton-4D-for-iOS.png)```
+![Custom relation button](img/Relations-custom-button-relationButton-4D-for-iOS.png)
 
 And from the attribute inspector, you can change for example:
 
@@ -57,11 +54,11 @@ For the font color let's put a System background color with a helvetica Neue Med
 
 Finally, don't forget to select the System background color Tint to apply this color to the button icon.
 
-```![Custom relation button](assets/en/relations/Relations-custom-button-relationButton-4D-for-iOS-font-and-Color.png)```
+![Custom relation button](img/Relations-custom-button-relationButton-4D-for-iOS-font-and-Color.png)
 
 You should get this result in your Simulator in Dark and in Light mode:
 
-```![Custom relation color and font](assets/en/relations/Custom-relation-button-Light-and-Dark-mode-font-and-color.png)```
+![Custom relation color and font](img/Custom-relation-button-Light-and-Dark-mode-font-and-color.png)
 
 ### Button round corners
 
@@ -85,13 +82,13 @@ and
 
 * **Value**: Check the box
 
-```![Custom relation color and font](assets/en/relations/Custom-relation-button-Xcode-round-corners.png)```
+![Custom relation color and font](img/Custom-relation-button-Xcode-round-corners.png)
 
 You can now build your project from the project editor!
 
 The result should look like this:
 
-```![Custom relation color and font](assets/en/relations/Custom-relation-button-round-corners.png)```
+![Custom relation color and font](img/Custom-relation-button-round-corners.png)
 
 ### Size and constraints
 
@@ -105,25 +102,25 @@ For this tutorial, we are just going to add a button height because we want it t
 
 Step 1. First select the view and change the height from 123 to 40
 
-```![Button view height](assets/en/relations/Button-view-height.png)```
+![Button view height](img/Button-view-height.png)
 
 Step 2. Double click on the **Top Space Constraint** and change it from 8 to 0
 
-```![Top Space constraint](assets/en/relations/Top-Space-constraint.png)```
+![Top Space constraint](img/Top-Space-constraint.png)
 
 Step 3. Do the same thing with **Bottom Space Constraint** and change it from 8 to 0
 
 You should get this:
 
-```![Custom  button constraints](assets/en/relations/Custom-button-constraints.png)```
+![Custom  button constraints](img/Custom-button-constraints.png)
 
 Step 4. Add a height constraint of 40
 
-```![Button height constraint](assets/en/relations/Button-height-constraint.png)```
+![Button height constraint](img/Button-height-constraint.png)
 
 You should get this:
 
-```![Horizontal in container](assets/en/relations/Custom-relation-button-constraints.png)```
+![Horizontal in container](img/Custom-relation-button-constraints.png)
 
 In order to indicate in the project editor that all of the elements included in this view will be duplicated, we need to add a TAG to each element and constraint.
 
@@ -132,7 +129,7 @@ In order to indicate in the project editor that all of the elements included in 
 
 Each storyboard element has an Object ID. For example, if you select Field View 2 and go to the **Identity inspector**, you'll see its Object ID:
 
-```![Object ID Storyboard](assets/en/relations/Custom-button-object-id-storyboard.png)```
+![Object ID Storyboard](img/Custom-button-object-id-storyboard.png)
 
 The process is a little bit tricky... So let's begin by opening the storyboard file with your favorite code editor!
 
@@ -140,17 +137,17 @@ The process is a little bit tricky... So let's begin by opening the storyboard f
 
 Step 1. Select it from the Storyboard to get the Object ID
 
-```![Horizontal constraint object ID](assets/en/relations/Horizontal-constraint-object-ID.png)```
+![Horizontal constraint object ID](img/Horizontal-constraint-object-ID.png)
 
 Step 2. Search for this ID in the xml file and put **TAG-RL-007** instead (a Tag that is not already used).
 
 Step 3. Save the xml file 
 
-```![Horizontal constraint xml file](assets/en/relations/Horizontal-constraint-xml-file.png)```
+![Horizontal constraint xml file](img/Horizontal-constraint-xml-file.png)
 
 Step 4. Focus on the Storyboard to check if the constraint has been updated correctly
 
-```![Horizontal object ID updated](assets/en/relations/Horizontal-object-id-updated.png)```
+![Horizontal object ID updated](img/Horizontal-object-id-updated.png)
 
 And that's it! Your button is now fully duplicable if you have more that one relation button to display...
 
@@ -158,7 +155,7 @@ And that's it! Your button is now fully duplicable if you have more that one rel
 
 In this tutorial, we've covered the basics for creating custom relation buttons. Click on Final Project below to download the custom relation button.
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+Download the completed project:
+
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-OneToManyCustomButton/releases/latest/download/tutorial-OneToManyCustomButton.zip">FINAL CUSTOM BUTTON</a>
-</div>
+href="https://github.com/4d-for-ios/tutorial-OneToManyCustomButton/releases/latest/download/tutorial-OneToManyCustomButton.zip">Completed project</a>

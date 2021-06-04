@@ -13,18 +13,16 @@ Giving descriptive relation names can make your project structure definition eas
 
 Let's get started by downloading the Starter project:
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/archive/c006015afeb0e134d872152f53b8cd5e4dcb59bb.zip">ONE TO MANY Starter project</a>
-</div>
+href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/archive/c006015afeb0e134d872152f53b8cd5e4dcb59bb.zip">Starter project</a>
 
 In this tutorial, we are going to build a colorful **Task app** using 4D for iOS.
 
-```![Task App Final result](assets/en/relations/4D-for-iOS-dark-mode-card-relation-ios-13.gif)```
+![Task App Final result](img/4D-for-iOS-dark-mode-card-relation-ios-13.gif)
 
 But first, let's have a look at the structure of our database:
 
-```![Select link from structure section](assets/en/relations/Database-1-to-N-relations-4D-for-iOS.png)```
+![Select link from structure section](img/Database-1-to-N-relations-4D-for-iOS.png)
 
 As you can see, there is a One to Many link named **tasks** that we will use in our iOS app to display the employees'(**One**) tasks(**to Many**).
 
@@ -36,7 +34,7 @@ You can see the **tasks relation** we have seen earlier... Publish it !
 
 This will now operate as any other field for the rest of the app creation process.
 
-```![Structure section Relations properties](assets/en/relations/Structure-section-relations-4D-for-iOS.png)```
+![Structure section Relations properties](img/Structure-section-relations-4D-for-iOS.png)
 
 > **TIPS**
 >
@@ -44,7 +42,7 @@ This will now operate as any other field for the rest of the app creation proces
 
 ## Labels & Icons section
 
-The One to Many relation is now available in the ```[Labels and Icons](labels-and-icons.html)``` section.
+The One to Many relation is now available in the **Labels and Icons** section.
 
 It is important to know that including a One to Many relation will create a button into the genrated iOS app.
 
@@ -52,15 +50,15 @@ So, in the Labels & Icons section you will define:
 
 * a button Label
 * a button icon
-* a ```[title](one-to-n-relations-title-definition.html)``` that will be displayed in the destination view (to indicate where you come from for example).
+* a title that will be displayed in the destination view (to indicate where you come from for example).
 
-```![Labels & Icons section Relations properties](assets/en/project-editor/Relations-properties-Labels-icons-section-4D-for-iOS.png)```
+![Labels & Icons section Relations properties](img/Relations-properties-Labels-icons-section-4D-for-iOS.png)
 
 ## Forms section
 
 * Go to the Forms section and drop the *tasks* relation on the Employee Task Detail form.
 
-```![Related field in Forms section](assets/en/relations/1-to-n-relations-forms-section.png)```
+![Related field in Forms section](img/1-to-n-relations-forms-section.png)
 
 ## Build and Run
 
@@ -68,11 +66,11 @@ So, in the Labels & Icons section you will define:
 2. This will open the employee's detail form, where you should see a new **Relation button** !
 3. Click on this Relation button to display the employee's tasks. 
 
-```![Related field in Forms section](assets/en/relations/One-to-n-relations-task-ios-app.png)```
+![Related field in Forms section](img/One-to-n-relations-task-ios-app.png)
 
-And voila, this is how One to Many relations work in 4D for iOS !
+And voilà ! This is how One to Many relations work in 4D for iOS !
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+Download the completed project:
+
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/releases/latest/download/tutorial-OneToManyRelations.zip">ONE TO MANY FINAL PROJECT</a>
-</div>
+href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/releases/latest/download/tutorial-OneToManyRelations.zip">Completed project</a>

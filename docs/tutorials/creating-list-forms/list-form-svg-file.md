@@ -7,9 +7,7 @@ The `template.svg` file is a basic visual representation of a template. In this 
 
 Here's a finished version:
 
-```
-![Template svg file](assets/en/custom-listform/template-svg-file.png)
-```
+![Template svg file](img/template-svg-file.png)
 
 Let’s focus on the different parts of this svg file and what you'll need to edit.
 
