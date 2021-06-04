@@ -41,7 +41,7 @@ This will now operate as any other field for the rest of the app creation proces
 
 ## Labels & Icons section
 
-The One to Many relation is now available in the [Labels and Icons](../../project-definition/labels-and-icons.md) section.
+The One to Many relation is now available in the **Labels and Icons** section.
 
 It is important to know that including a One to Many relation will create a button into the genrated iOS app.
 
