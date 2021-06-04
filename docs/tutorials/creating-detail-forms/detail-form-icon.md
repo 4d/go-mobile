@@ -1,5 +1,5 @@
 ---
-id: detail-form-icon
+id: Detail-form-icon
 title: Detail form icons
 ---
 
@@ -12,18 +12,11 @@ The icon will be used:
 * above the table name when the template has been selected, and
 * in the template selector window in the **Forms section**
 
-```
-![Custom detailform template](assets/en/custom-detailform/custom-detailform-template.png)
-```
+![Custom detailform template](img/custom-detailform-template.png)
 
 If this icon is missing from your detail form template folder, the [**template.svg file**](detail-form-template-svg.md) will be displayed in the template selector window and a question mark icon will be displayed above each table that's missing an icon.
-
-```
-![Missing listform icon custom template](assets/en/custom-detailform/missing-detailform-icon-custom-template.png)
-```
+![Missing listform icon custom template](img/missing-detailform-icon-custom-template.png)
 
 You can use any image software to create the detail form template icon.
 
-```
-![Custom listform template icon](assets/en/custom-detailform/custom-detail-form-icon.png)
-```
+![Custom listform template icon](img/custom-detail-form-icon.png)
