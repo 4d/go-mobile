@@ -6,9 +6,7 @@ title: Detail form templates
 
 In this tutorial, we'll guide you through the creation of a detail form template. It will display an **image header**, as well as **title and content fields** that will be duplicated in the generated iOS and Android Apps.
 
-```
-![Custom template final result](assets/en/custom-detailform/custom-template-final-result.png)
-```
+![Custom template final result](img/custom-template-final-result.png)
 
 ## Download the Starter project
 
@@ -22,22 +20,17 @@ To begin, download the **Starter project**, which includes:
 href="https://github.com/4d-for-ios/tutorial-CustomDetailFormStarter/archive/67c9c2f4672083e999a4a592a069d7ca45b3351e.zip">CUSTOM DETAIL FORM Starter project</a>
 </div>
 
-
 ## Add a detail form template to your mobile project
 
-The first thing you'll need to do is to create a `detail` folder in *Contact.4dbase/Resources/Mobile/form/* location and drag and drop the **Custom Detail form** folder in it.
+First, create a *Contact.4dbase/Resources/Mobile/form/detail* folder and drag and drop the **Custom Detail form** folder in it.
 
-```
-![Mobile folder custom template](assets/en/custom-detailform/mobile-folder-custom-template.png)
-```
+![Mobile folder custom template](img/mobile-folder-custom-template.png)
 
 Now, launch your 4D application and open the "Contact" 4D project. Then, select the "Contact Demo App" mobile project: **File > Open > Mobile Project > Contact Demo App**.
 
 In the **Forms section** in the project editor, you can see that the Custom Detail form template has been successfully added to the Detail form template list:
 
-```
-![Forms section](assets/en/custom-detailform/custom-detailform-template.png)
-```
+![Forms section](img/custom-detailform-template.png)
 
 Now let's focus on the **Custom Detail form** folder content.
 
