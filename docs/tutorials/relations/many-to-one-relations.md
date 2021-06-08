@@ -50,4 +50,3 @@ You should see your related field in your app detail form !
 
 ![Related field in Forms section](img/final-result-n-to-one-relations.png)
 
-

@@ -1,5 +1,5 @@
 ---
-id: actions-include-action-custom-template.md
+id: actions-include-action-custom-template
 title: Adding actions in templates
 ---
 

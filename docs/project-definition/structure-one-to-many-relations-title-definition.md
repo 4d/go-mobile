@@ -1,5 +1,5 @@
 ---
-id: structure-relations-one-to-many-relations-title-definition
+id: structure-one-to-many-relations-title-definition
 title: One to Many - Title definition
 ---
 
