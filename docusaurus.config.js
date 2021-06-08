@@ -44,16 +44,22 @@ module.exports = {
          // label: "Tutorials",
          // position: "left",
         //},
+		 {
+           type: "doc",
+           position: "left",
+           docId: "templates/templates",
+          label: "Templates & Formatters",
+         },
         {
           to: "docs/faq/faq",
           label: "FAQ",
           position: "left",
         },
-        {
-          href: "https://blog.4d.com/4d-for-ios/",
-          label: "Blog",
-          position: "left",
-        },
+        //{
+        //  href: "https://blog.4d.com/4d-for-ios/",
+        //  label: "Blog",
+        //  position: "left",
+        //},
         // { to: "blog", label: "Blog", position: "left" },
         {
           type: "localeDropdown",
