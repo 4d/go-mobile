@@ -177,4 +177,16 @@ module.exports = {
       ],
     },
   ],
+  templates: [
+    {
+      type: "category",
+      label: "Templates & Formatters",
+      items: [
+        "templates/templates",
+        "templates/custom-listform-templates",
+		"templates/custom-detailform-templates",
+		"templates/custom-data-formatters",
+      ],
+    },
+  ],
 };
