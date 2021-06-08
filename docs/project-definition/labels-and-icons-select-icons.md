@@ -1,5 +1,5 @@
 ---
-id: lables-and-icons-select-icons
+id: labels-and-icons-select-icons
 title: Select your icons
 ---
 
