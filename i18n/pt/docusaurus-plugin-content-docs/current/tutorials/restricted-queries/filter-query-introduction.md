@@ -19,21 +19,19 @@ First, from the Data section we're going define a **basic filter query** to only
 
 Before we begin, be sure to download the **Starter project** which includes a **4DforiOSQueries.4dbase** file (a demo database with a ready-to-use mobile app project)
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-RestrictedQueries/releases/latest/download/tutorial-RestrictedQueries.zip">Starter project</a>
-</div>
 
 The database includes a:
 
 * **CRM table** with all the data we want to display in the generated iOS app
 * **AccountManager table** with basic information about the account managers (email and name).
 
-`![CRM database](assets/en/restricted-queries/CRMDatabase.png)`
+![CRM database](img/CRMDatabase.png)
 
 > **NOTE**
 > 
-> This project uses [custom templates](https://4d.github.io/4d-for-ios/docs/en/creating-listform-templates.html), [custom icons](https://4d.github.io/4d-for-ios/docs/en/using-icons.html) and custom [data formatters](https://4d.github.io/4d-for-ios/docs/en/creating-data-formatter.html).
+> This project uses [custom templates](../creating-list-forms/list-form-template.md), [custom icons](../using-icons/using-icons.md) and custom [data formatters](../data-formatter/create-data-formatter.md).
 
 You're now ready to define your first restricted query!
 

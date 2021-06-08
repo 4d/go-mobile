@@ -51,11 +51,11 @@ To use a custom login form, the first thing you'll need to do is creating a *You
 
 Download the Sign in With [QRCode login form](https://github.com/mesopelagique/form-login-SignInWithQRCode/archive/master.zip) and simply drop it in the login folder you've just created.
 
-`![login folder](assets/en/custom-login-form/login-folder.png)`
+![login folder](img/custom-login-form/login-folder.png)
 
 Then open the *YourDatabase.4dbase/Mobile Projects/ContactQRCodeLogin/project.4dmobileapp* file
 
-`![project.4dmobileapp](assets/en/custom-login-form/4dmobileapp-file.png)`
+![project.4dmobileapp](img/custom-login-form/4dmobileapp-file.png)
 
 With your project closed, and add the following line : *"login": "/SignInWithQRCode",*
 
@@ -84,7 +84,7 @@ Open the QRCode mobile project and go right to the Publishing section.
 
 From here check the Authentication feature and Create the database method clicking on the Create button.
 
-`![Publishing section](assets/en/custom-login-form/publishing-section.png)`
+![Publishing section](img/custom-login-form/publishing-section.png)
 
 
 This is how it should look to authenticate users :
@@ -203,11 +203,12 @@ Let's have a focus on those three pages :
 Here, we just use a 4DACTION to post login and password to be used in the *Authentication Project Method* that we are going to see in step 4:
 
 ```
-
-
-
-
-
+  <form class="box" ACTION="/4DACTION/Authentication" METHOD=post>
+  <h1>1. Login</h1>
+  <input type="text" id="login" placeholder="Username" name=VLOGIN >
+  <input type="password" id="login" placeholder="Password" name=VPASS>
+  <input type="submit" name="" value="Login">
+  </form>
 ```
 
 ### createQRCode.html
@@ -215,11 +216,7 @@ Here, we just use a 4DACTION to post login and password to be used in the *Authe
 Here, we use call the *GenerateQRCODE Project Method* using a 4DACTION:
 
 ```
-
-
 <h1>2. GENERATE YOUR QRCODE</h1>
-
-
     <div>
         <p>Create your QRCode to authenticate clicking <a href="/4DACTION/GenerateQRCODE">Here</a></p>
     </div>
@@ -270,18 +267,18 @@ In this last page, we use `[4D tags](https://doc.4d.com/4Dv18R6/4D/18-R6/4D-Tran
 
 Enter **david@4D.com** in the Login field and **TEST** in the Password field in your website home page and click Login (Which is an existing record in the User table).
 
-`![Login form](assets/en/custom-login-form/login-form.png)`
+![Login form](img/custom-login-form/login-form.png)
 
 
-### Generate the QRCode
+### Generate the QR Code
 
-Click on the **HERE** button to generate the QRCode.
+Click on the **HERE** button to generate the QR Code.
 
-`![Create QRCode](assets/en/custom-login-form/create-QRCode.png)`
+![Create QR Code](img/custom-login-form/create-qr-code.png)
 
-You will be redirected to the final QRCode page.
+You will be redirected to the final QR Code page.
 
-`![Generated QRCode](assets/en/custom-login-form/generated-QRCode.png)`
+![Generated QR Code](img/custom-login-form/generated-qr-code.png)
 
 ### Build your app on a real device
 
@@ -291,7 +288,7 @@ Then the custom login form will appear to allow you scanning the generated QRCod
 
 Here is the final result :
 
-`![Sign in with QRCode](assets/en/custom-login-form/sign-in-with-QRCode.gif)`
+![Sign in with QR Code](img/custom-login-form/sign-in-with-qr-code.gif)
 
 ## STEP 7. Where to go from here?
 

@@ -15,7 +15,7 @@ title: Deep Linking
 
 Here's an illustration demonstrating deep linking:
 
-`![Deep linking animation](assets/en/deeplinking/4d-for-ios-deeplinking.gif)`
+![Deep linking animation](img/4d-for-ios-deeplinking.gif)
 
 There are two ways to implement deep linking in iOS: **URL scheme** and **Universal Links**. While URL schemes are a well-known method for deep linking, Universal links are the new way that Apple has implemented to easily connect your webpage and your app under the same link.
 
@@ -56,7 +56,7 @@ It's very simple to include an URL scheme to your 4D for iOS app:
 2. Activate the **Deep Linking** feature in the **Publishing** section of the project editor
 3. The URL Scheme information is automatically filled in with the app name that you previously defined in the **General** section. However, you can still edit it:
 
-`![Deep linking Project editor](assets/en/deeplinking/deep-linking-project-editor-publishing-section.png)`
+![Deep linking Project editor](img/deep-linking-project-editor-publishing-section.png)
 
 4. Fill in your **On Mobile App Action** method
 5. Build your app
@@ -145,17 +145,17 @@ End case
 
 # PUSH NOTIFICATION
 
-A great thing about Deep Linking is that it is completely compatible with `[push notifications](push-notification.html)`. This means that you can send Deep links to your users and lead them directly to the right page.
+A great thing about Deep Linking is that it is completely compatible with [push notifications](push-notification.md). This means that you can send Deep links to your users and lead them directly to the right page.
 
 As you can see, this feature open a large range of possibilities for using 4D for iOS with minimal effort.
 
 Deep linking is a crucial feature in today’s apps, especially as users consume content faster and faster. This feature brings them directly to the desired location. So I strongly recommend that you use it in your 4D for iOS apps.
 
-The documentation is `[here](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/18R4/Documentation/Classes/PushNotification.md)` to help you manage your push notifications and Deep linking.
+Check out the [documentation](../../extra-features/push-notification.md) for more information on how to manage your push notifications and Deep linking.
 
 ## MobileApps folder
 
-Whether you're working on Windows or on macOS, you need to copy the 4DBASE/MobileApps/ID.BundleID/manifest.json file from your Design database to your production database.  
+Whether you're working on Windows or on macOS, you need to copy the `4DBASE/MobileApps/ID.BundleID/manifest.json` file from your Design database to your production database.  
 
 
 

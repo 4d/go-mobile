@@ -13,10 +13,8 @@ title: Many to One relations
 
 Let's get started by downloading the Starter project:
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-ManyToOneRelations/releases/latest/download/tutorial-ManyToOneRelations.zip">MANY TO ONE Starter project</a>
-</div>
+href="https://github.com/4d-for-ios/tutorial-ManyToOneRelations/releases/latest/download/tutorial-ManyToOneRelations.zip">Starter project</a>
 
 Here we want to display the category for each task in the detail form of your generated app. To do so, open the **StarteriOSProject** from **Open > Mobile Project...**
 
@@ -30,26 +28,26 @@ Then go right to your Structure section and select the **Task table**.
 
 * Select the **Name field**
 
-`![Select link from structure section](assets/en/relations/select-link-from-structure.png)`
+![Select link from structure section](img/select-link-from-structure.png)
 
 * This field will operate as any other field for the rest of the app creation process
 
 * You can also filter your app content using related fields from the Data section. To do so enter `TaskCategory.Name != 'Personal'` in the Filter query field to exclude personal tasks.
 
- `![Related field from Data section](assets/en/relations/Related-field-from-Data-section.png)`
+ ![Related field from Data section](img/Related-field-from-Data-section.png)
 
 * You can then select an **icon** as well as **formatters** and define **short and long labels** from the Labels and Icons section
 
-`![Related field from Labels and Icons section](assets/en/relations/related-field-from-labels-icons.png)`
+![Related field from Labels and Icons section](img/related-field-from-labels-icons.png)
 
 * Go to the Forms section and drag the field on the Task Detail form
 
-`![Related field in Forms section](assets/en/relations/related-field-forms.png)`
+![Related field in Forms section](img/related-field-forms.png)
 
 * Build and Run
 
 You should see your related field in your app detail form !
 
-`![Related field in Forms section](assets/en/relations/final-result-n-to-one-relations.png)`
+![Related field in Forms section](img/final-result-n-to-one-relations.png)
 
 
