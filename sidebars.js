@@ -2,6 +2,11 @@ module.exports = {
 
   docs: [
     {
+      type: 'doc',
+	  id: 'getting-started/introduction',
+      label: 'Introduction',
+	},
+	{
       type: 'category',
       label: 'Getting started',
       items: [

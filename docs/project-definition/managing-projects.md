@@ -8,7 +8,9 @@ The 4D Mobile Project editor allows you to design, test, and build your native m
 
 The 4D Mobile Project editor is available from the 4D development environment. Since a mobile project is linked to a 4D database, a 4D project must be launched.  
 
-## Creating a mobile project
+## Mobile project management
+
+### Creating a mobile project
 
 To create a new mobile project:
 
@@ -28,7 +30,7 @@ The welcome dialog box is displayed:
 
 The Mobile project editor is displayed and the mobile file architecture is automatically created in your 4D project.  
 
-## Opening a mobile project
+### Opening a mobile project
 
 To open a mobile project:
 
@@ -43,7 +45,7 @@ The icon on the left side indicates if the project was created for Android, iOS,
 
 3. Double-click on the project to open, or select the project and click **Open**.
 
-### Open another project
+#### Open another project
 
 The **Open another project...** link allows you to select any valid [`.4dmobileapp`](#mobile-project-architecture) file that is not listed in the dialog box.
 
@@ -53,16 +55,17 @@ The selected mobile project must match the current database structure, otherwise
 
 ::: 
 
-## Deleting a mobile project
+### Deleting a mobile project
 
 To delete a mobile project, just remove the mobile project folder from the 4D project folder. 
 
 
-## Mobile project architecture
+### Mobile project architecture
 
 Mobile projects are created inside the main 4D project folder:
 
 - My4DProject (*main 4D project folder*)
+	+ Project
 	+ Mobile Projects
 		* MyMobileProject
 			- project.4dmobileapp
