@@ -13,28 +13,27 @@ title: Requirements
 
 ## Software requirements
 
-* Development: 4D v18 (4D Developer Pro licence)
-* Deployment: 4D Server v18
-* [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) installed on your Mac (optional). Apple configurator 2 requires **macOS 10.14** or later. Install this software if you want to automate app installation on your physical device.
+### 4D
+
+- **Development**: 4D v18 with a 4D Developer Pro licence
+
+- **Deployment**: 4D Server v18
+	- The 4D Web Server must be started.
+	- HTTP and HTTPS ports must be enabled and correctly configured. HTTPS is mandatory for 4D for iOS and 4D for Android deployment.
+
+
+### iOS
+
+[Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) installed on your Mac (optional). Apple configurator 2 requires **macOS 10.14** or later. Install this software if you want to automate app installation on your physical device.
 
 Xcode 10.2 requires **macOS 10.14** or later.
 
-### Current version table
-
-4D for iOS:
+Version table:
 
 | Xcode | Swift | iOS | 4D | macOS |
 |---|---|---|---|---|
 | 12.4 | 5.3.2| 14.4 | 18R6 beta | 10.15.4 |
 | 12.2 | 5.3 | 14.2 | 18R5 & 18.3 | 10.15.4 |
-
-
-4D for Android:
-
-| Android | 4D | Windows |
-|---|---|---|
-| 12.4 | 19R2 beta | Windows 10 64-bit |
-
 
 <details><summary>Version history</summary>
 
@@ -54,10 +53,21 @@ Xcode 10.2 requires **macOS 10.14** or later.
 | 9.3.1| 4.1| 11.3 | 17R2 | 10.13.2 |
 </details>
 
+### Android
+
+4D for Android requires the Android SDK, including Android Studio. If not installed, it will be automatically downloaded at the launch of the 4D mobile editor on Windows:
+
+![sdk](img/install-android.png)
+
+Version table:
+
+| Android | 4D | Windows |
+|---|---|---|
+| 12.4 | 19 beta | Windows 10 64-bit |
 
 
-## 4D Configuration
 
-* The 4D Web Server must be started.
 
-* HTTP and HTTPS ports must be enabled and correctly configured. HTTPS is mandatory for 4D for iOS and 4D for Android deployment.
+
+
+

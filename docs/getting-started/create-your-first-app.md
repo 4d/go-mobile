@@ -32,25 +32,32 @@ Launch your 4D application and select "Contact.4DProject". It contains a very si
 
 Go to **New > Mobile project**. In the Welcome screen, give your mobile project a name. 
 
-:::note
 
-If you are on macOS, select both **Android** and **iOS** targets. 
-
-:::
-
-![Project Creation](img/Project-creation-4D-for-iOS.png)
+![Project Name](img/new-project.png)
 
 Click **Continue**.
 
 Additional components are required to develop an Android project. Click **OK** to download them:
 
-```
-![Project Creation](img/Contact-app-android-sdk-download.png)
-```
+![Android](img/install-android.png)
+
+
+
 
 ## STEP 3. General page
 
 Here, you configure your app's primary information:
+
+![Android](img/main-page.png)
+
+* **Target:** Mobile platform(s) to build
+ 
+:::note
+
+If you are on Windows, only **Android** is available. If you are on macOS, you can select both **Android** and **iOS** targets. 
+
+:::
+
 
 * **Organization:** Name of your company and identifier of the application.
 * **Product:** 

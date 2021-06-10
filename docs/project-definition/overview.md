@@ -4,9 +4,32 @@ title: Overview
 ---
 
 
-The 4D Mobile Project editor allows you to design, test, and build your native mobile projects for iOS and Android. 
+The 4D Mobile Project editor allows you to design, test, and build your native mobile projects for iOS and Android using a graphical interface. The window has two tabs: **Sections** and **Build**.
 
-The 4D Mobile Project editor is available from the 4D development environment. Since a mobile project is linked to a 4D database, a 4D project must be launched.  
+![General section](img/General-section-4D-for-iOS.png)
+
+In the **Sections** tab, you'll find all of the necessary steps to create your mobile application:
+
+* General
+* Structure
+* Data
+* Actions
+* Labels & Icons
+* Main Menu
+* Forms
+* Publishing
+
+In the **Build** tab, you'll find embedded tools to build and test you mobile app:
+
+* Build and Run 
+* Simulator selection
+* Project and product browser
+* Install 
+
+The 4D Mobile Project editor is available from the **4D** application development environment (a 4D Developer Pro license is required). 
+
+A 4D mobile project is strongly linked to a 4D data model. To be able to create or open a 4D mobile project, you must open the associated 4D project database beforehand.  
+
 
 ## Creating a mobile project
 
@@ -49,7 +72,7 @@ The **Open another project...** link allows you to select any valid [`.4dmobilea
 
 :::warning
 
-The selected mobile project must match the current database structure, otherwise it will be updated and may not work as expected.
+The selected mobile project must match the current data model, otherwise it will be updated and may not work as expected.
 
 ::: 
 
@@ -69,24 +92,3 @@ Mobile projects are created inside the main 4D project folder:
 			- *other files and folders*
 
 
-## Sections
-
-In the Sections tab, you'll find all of the necessary steps to create your 4D for iOS application:
-
-* General
-* Structure
-* Data
-* Actions
-* Labels & Icons
-* Main Menu
-* Forms
-* Publishing
-
-## Build
-
-The Build tab has four options:
-
-* Build and Run 
-* Simulator selection
-* Project and product browser
-* Install 

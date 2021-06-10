@@ -3,33 +3,78 @@ id: general
 title: General
 ---
 
-This section allows you to define your app's main information.
+This page allows you to define your app's main information.
 
-![General section](img/General-section-4D-for-iOS.png)
+![General section](img/main-page.png)
 
-**Organization:** Enter either your or your company’s name.
+## Target OS
 
-**Identifier:** Enter your organization’s bundle identifier. This will be used to identify your application. The product name you enter is concatenated to create the default “Bundle ID” using reverse domain name service notation. This bundle ID must be unique to your app.
+Select the mobile OS for which you want to build the app. This setting will define the available mobile editor options. 
 
-For example, if your company’s name is “MyCompany” and your app’s name is “MyApp”, you could choose “com.MyCompany” as your company identifier and your App bundle ID would be com.MyCompany.MyApp.
+- On macOS, you can select **Android**, **iOS**, or **both targets**
+- On Windows, you can only select the **Android** target.
 
-> **NOTE**
->
-> Help links are available for the Name and Identifier fields.
+## Organization
+ 
+**Name:** Name of your company, or your name.
 
-**Product name:** Your app’s name. As described above, the product name is used to create the bundle identifier. This Bundle ID must be the same as the Bundle ID you create in your Apple Development account.
+**Identifier:** Enter your organization’s bundle identifier. This will be used to identify your application. The product name you enter is concatenated to create the "Bundle ID" using reverse domain name service notation (see **ID** below). This bundle ID must be unique to your app.
+
+For example, if your company’s name is "MyCompany" and your app’s name is "MyApp", you could choose "com.MyCompany" as your organization’s bundle identifier and your App bundle ID would be "com.MyCompany.MyApp".
+
+:::note
+
+The Bundle ID name must not contain space or special characters such as "*,%,/". They are automatically filtered and replaced with -. 
+
+::: 
+
+
+## Product
+
+
+**Name:** Your app’s name. As described above, the product name is used to create the "Bundle ID". This Bundle ID must be the same as the Bundle ID you created in your Apple Development account.
+
+:::note
+
+The Bundle ID name must not contain space or special characters such as "*,%,/". They are automatically filtered and replaced with -. 
+
+::: 
 
 **Version:** The version of your app. Add version numbers in ascending, sequential order starting with 1.0.
 
-**Copyright:** Your app's copyright. 4D for iOS suggests a copyright format but you can create your own.
+**ID:** (Bundle ID): This area is automatically generated as a composition of your organization identifier and product name. It is not editable. 
 
-**Icons:** 4D for iOS allows you to create app icons in various ways, in accordance with  Apple's guidelines, including dragging and dropping your icons directly from your computer to the icon area. 4D for iOS will generate all of the required formats for you!
+**Copyright:** Your app's copyright. The mobile editor suggests a copyright format but you can create your own.
+
+**Icons:** Master icon that will be used in various locations in you app. You just need to designate your icon and the mobile editor generates all of the required formats for you, in accordance with standard mobile guidelines. 
+
+To select an icon:
+
+- Drag and drop a picture directly into the icon area, or
+- Use the image menu to select or copy your picture.
+
+![icon](img/iconselect.png)
+
+You can also double-click the area to display the picture selection dialog box. 
+
+:::note
+
+On Windows, you must use an "image file" (*.public.image). 
+
+:::
+
+
+You can access the generated icon formats by selecting **Show the icon folder** in the image menu.
+
+:::info tip
  
-> **TIPS**
->
-> * If you already have an icon for your desktop application, you can drag and drop it directly into the icon area.
-> * **Here's the magic trick:** 4D for iOS automatically determines the dominant color of your app's icon and uses it to generate a custom color scheme for your app!
+Magic trick: The mobile editor automatically determines the dominant color of your app's icon and uses it to generate a custom color scheme for your app.
 
-**Developer:** This field is automatically filled with your user account name.
+:::
 
-**Team:** Your Developer Account Team ID.
+
+## Developer
+
+**Name:** This field is automatically prefilled with your user account name. You can enter any name. 
+
+**Team:** Your Developer Account Team ID, that will be used during the deployment phase. This ID can be get from your Developer Account (see XXX). 
