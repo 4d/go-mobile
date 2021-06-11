@@ -63,14 +63,17 @@ On Windows, you must use an "image file" (*.public.image).
 
 :::
 
+Once the icon is selected, the mobile editor automatically creates all required icons for the app. You can access the generated icon formats by selecting **Show the icons folder** in the image menu.
 
-You can access the generated icon formats by selecting **Show the icon folder** in the image menu.
+### Main color
 
-:::info tip
- 
-Magic trick: The mobile editor automatically determines the dominant color of your app's icon and uses it to generate a custom color scheme for your app.
+This menu allows you to select how to define the main color of your app. The main color is used to generate a custom color scheme for your app.
 
-:::
+![icon](img/main-color.png)
+
+- **Use the system color selector**: displays the system color picker in which you can designate the main color
+- **Use the main color of the icon**: let the mobile editor determine automatically the main color from your app's icon.
+
 
 
 ## Developer

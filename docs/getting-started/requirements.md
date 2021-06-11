@@ -6,9 +6,11 @@ title: Requirements
 4D for iOS and 4D for Android require a specific minimum configuration.
 
 
-## Hardware requirements
+## System requirements
 
-* 8GB of RAM (Minimum recommended)
+System requirements are the same as [4D's minimum system requirements](https://us.4d.com/product-download/Feature-Release).
+
+8GB of RAM is recommended.
 
 
 ## Software requirements

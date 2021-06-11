@@ -6,9 +6,9 @@ title: Create your first mobile app with 4D
 
 Welcome to the 4D mobile application builder. This tutorial will let you dive right into mobile development for iOS and Android with 4D. 
 
-:::note
+:::note Reminder
 
-Before starting, please check the hardware and software requirements for 4D mobile project development.  
+Before starting, please check that your configuration meets hardware and software [requirements](requirements.md) for 4D mobile project development.  
 
 :::
 
