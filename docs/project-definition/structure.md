@@ -7,11 +7,6 @@ This page displays all of the tables and fields that are exposed as REST resourc
 
 ![Structure section](img/Structure-section-4D-for-iOS.png)
 
-:::note
-
-Tables and fields that do not comply with [ORDA rules](https://developer.4d.com/docs/en/ORDA/dsmapping.html#structure-mapping) are not listed in this page.  
-
-:::
 
 Use this page to define a subset of your physical structure to replicate for mobile devices by selecting the specific tables and fields to publish. 
 
@@ -20,9 +15,12 @@ Use this page to define a subset of your physical structure to replicate for mob
 - Published relation fields (many-to-one and one-to-many) will be available when defining your [list and detail forms] and come with additional navigation features such as a Relation button.
 
 
-:::note Tip
+:::note
 
-Tables and fields whose name start with "`__`" (double underscore) are not listed in the Structure page.
+The following tables and fields are not listed in this page:
+
+- tables and fields that do not comply with [ORDA rules](https://developer.4d.com/docs/en/ORDA/dsmapping.html#structure-mapping).
+- tables and fields whose name start with "`__`" (double underscore).
 
 :::
 
