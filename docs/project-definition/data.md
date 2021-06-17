@@ -101,7 +101,7 @@ You can define one filter query per table. This list allows you to:
 
 ![embed](img/embed-option.png)
 
-When this option is checked (default), the editor will preload data of the selected in the mobile app when it is built or when [data are regenerated](#do-not-regenerate-data-at-each-build). This option is useful for static data like cities or countries, since it accelerates data access from the mobile app. 
+When this option is checked (default), the editor will preload data of the selected in the mobile app when it is built or when [data are regenerated](#do-not-regenerate-data-at-each-build). This option accelerates data access from the mobile app since it only requires updates and not full downloads. It is particularly suited for stable data like cities or countries. 
 
 You can uncheck the option if preloading the table data is not accurate.  
 
@@ -124,24 +124,18 @@ A query uses the following syntax:
 field comparator value {logicalOperator field comparator value}   
 ```
 
-For example:
-
-```
-FirstName = 'Lisa'
-```
-
-:::info
-
-Refer to the [?filter REST documentation](https://developer.4d.com/docs/en/REST/filter.html) for a detailed description of query syntaxes. The string entered in the **Filter query** area is directly passed to the `$filter=` REST command.
-
-:::
 
 2. Validate your query by clicking on the **Validate** button. This must be done each time you modify it (a query that has been edited and not validated appears in red in the query editor). 
 
-3. If required, check the **Embed the data from this table into application** option to embed the data into the application when it's built. Leave unchecked if you don't want the data embedded.
-
 When a query filter is valid, an icon appears near the table name (![filter](img/query-static.png) for static filters and ![filter-user](img/query-user.png) for filters with user information).
- 
+
+
+:::info
+
+Refer to the [?filter REST documentation](https://developer.4d.com/docs/en/REST/filter.html) for a detailed description of query syntaxes. The string entered in the **Filter query** area is directly passed as parameter to the `$filter=` REST command.
+
+:::
+
 
 #### Example
 
