@@ -81,7 +81,7 @@ All you have to do is:
 
 Then, when your related fields are published, they can be used like any other field. So you will be able to:
 
-* Define relations properties in the [Labels and Icons](labels-and-icons.mds) page.
+* Define relations properties in the [Labels and Icons](labels-and-icons.md) page.
 * Drop the One to Many relation in a Detail form from the [Forms](forms.md) page to create a link between a detail form and a related table. A Relation button will be automatically created in detail forms to go straight to the related view.
 
 :::tip Tutorial
