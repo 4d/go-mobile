@@ -37,7 +37,7 @@ To keep everything consistent, **default icons** are generated for blank fields 
 You can also leave the icon area empty if you don’t want to display icons in your application.
 
 
-### Customizing the icon library
+### Adding custom icons
 
 You can add your own icons to the library, so that you can select them in your project. You can use any icon format (SVG or PNG is recommended to preserve transparency) and size. It's highly recommended having colored versions of your custom icons to better visualize them in the project editor. 
 
@@ -95,7 +95,7 @@ By default, the mobile editor uses the table and field names as defined in the s
 
 This property allows you to format the data to display in the app. When you click on a field row, a format menu is displayed. 
 
-![formats](img/formats-menus.png)
+![formats](img/formats-menu.png)
 
 Available built-in formats depend on the field type:
 
@@ -115,10 +115,17 @@ The mobile editor allows you to add customized formats (called "formatters") in 
 
 To add custom formats to your mobile project, you can:
 
-- Create your own formats (refer to [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format)
 - Download and install customized formats from the [**go-mobile formatters github repository**](https://4d-for-ios.github.io/gallery/#/type/formatter/picker/0).
 
-To install a custom formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` project folder. Once installed, a custom format can be selected from the Formats menu, just like a built-in formats.
+- Create your own formats.
+
+:::tip tutorial
+
+Visit [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format
+
+:::
+
+To install a custom formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a custom format can be selected from the Formats menu, just like a built-in formats.
 
 
 ## Title
@@ -133,6 +140,6 @@ Use a pair of `%` characters to include the value of the related field in the ti
 
 :::tip tutorial
 
-A [tutorial](one-to-many-relations-title-definition.html) is available to guide you through the Title definition process.
+A [**tutorial**](../tutorials/one-to-many-relations-title-definition) is available to guide you through the Title definition process.
 
 :::
