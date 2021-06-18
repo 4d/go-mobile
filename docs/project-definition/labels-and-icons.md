@@ -91,6 +91,35 @@ For relation fields, labels will be displayed in the **Relation** button that al
 By default, the mobile editor uses the table and field names as defined in the structure as labels in the app, and the same string is used for short and long labels.
 
 
+## Formats
+
+This property allows you to format the data to display in the app. When you click on a field row, a format menu is displayed. 
+
+![formats](img/formats-menus.png)
+
+Available built-in formats depend on the field type:
+
+|Field type|Formats|
+|---|---|
+|**Text**|Text|
+|**Date**|Date, Short date, Long date, Full date|
+|**Time**|Time, Short time, Duration, Integer number|
+|**Image**|Image|
+|**Boolean**|"No" or "Yes", "False" or "True"|
+|**Integer number**|Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out|
+
+
+### Adding custom formats
+
+The mobile editor allows you to add customized formats (called "formatters") in your projects. For example, you can define custom formats for emails, invoice numbers, etc. 
+
+To add custom formats to your mobile project, you can:
+
+- Create your own formats (refer to [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format)
+- Download and install customized formats from the [**go-mobile formatters github repository**](https://4d-for-ios.github.io/gallery/#/type/formatter/picker/0).
+
+To install a custom formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` project folder. Once installed, a custom format can be selected from the Formats menu, just like a built-in formats.
+
 
 ## Title
 
