@@ -28,15 +28,8 @@ module.exports = {
 				'project-definition/actions-include-action-custom-template', 
 				'project-definition/actions-parameters', 
 				'project-definition/labels-and-icons', 
-				'project-definition/labels-and-icons-data-formatter',
-				'project-definition/labels-and-icons-create-data-formatter', 
-				'project-definition/labels-and-icons-data-formatter-build-and-run-project',
-				'project-definition/labels-and-icons-icons-getting-started', 
-				'project-definition/labels-and-icons-create-icons',
-				'project-definition/labels-and-icons-include-icons',
-				'project-definition/labels-and-icons-select-icons',
-				'project-definition/labels-and-icons-mobile-project',
-				'project-definition/main-menu', 'project-definition/forms',
+				'project-definition/main-menu', 
+				'project-definition/forms',
 				'project-definition/forms-multi-critera-search',
 				'project-definition/publishing'
 				
@@ -45,11 +38,11 @@ module.exports = {
 	},
 	{
       type: 'category',
-      label: 'Extra features',
+      label: 'Special features',
       items: [
-	             'extra-features/deep-linking',
-				 'extra-features/email-authentication', 
-				 'extra-features/push-notification'
+	        'special-features/email-authentication', 
+			'special-features/push-notification',
+			'special-features/deep-linking'			
 			],     
 	},
 	{
