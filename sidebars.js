@@ -40,7 +40,8 @@ module.exports = {
       type: 'category',
       label: 'Special features',
       items: [
-	        'special-features/email-authentication', 
+	        'special-features/authentication', 
+			'special-features/session-management', 
 			'special-features/push-notification',
 			'special-features/deep-linking'			
 			],     

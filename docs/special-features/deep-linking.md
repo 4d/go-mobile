@@ -3,25 +3,18 @@ id: deep-linking
 title: Deep Linking
 ---
 
-> **OBJECTIVES**
->
-> Share iOS app content using Deep Linking.
 
-> **PREREQUISITES**
->
-> Apple Developer account
-
-4D v18 R5 includes a new great feature! You're now able to share the content that you're currently viewing with all of your collegues. How does it work?
-
-Here's an illustration demonstrating deep linking:
+Thanks to the **deep linking** feature, you can share the content that you're currently viewing with all of your collegues. Here's an illustration demonstrating deep linking:
 
 ![Deep linking animation](img/4d-for-ios-deeplinking.gif)
 
 There are two ways to implement deep linking in iOS: **URL scheme** and **Universal Links**. While URL schemes are a well-known method for deep linking, Universal links are the new way that Apple has implemented to easily connect your webpage and your app under the same link.
 
-Here's a comparision between the two options which are available in the project editor:
+## Comparison of deep linking modes
 
-## URL Scheme
+### URL Scheme
+
+Here is a comparison between the two options which are available in the project editor:
 
 | PROS  | CONS | 
 |---------------|----------------| 
@@ -29,7 +22,7 @@ Here's a comparision between the two options which are available in the project 
 |No extra backend required|Doesn't work if app isn't installed|
 |      			|Doesn't work in Android|
 
-## Universal links
+### Universal links
 
 | PROS  | CONS | 
 |---------------|----------------| 
@@ -38,15 +31,11 @@ Here's a comparision between the two options which are available in the project 
 |Compatible with Android|   |
 |Fallback URL if app isn't installed|   |
 
-# CUSTOM URL SCHEME
+## Custom URL Scheme
 
-## AN OLD BUT EFFICIENT APPROACH
+At the simplest level, URL schemes allow users to open an app from other apps. But the true power of URL schemes is in the ability to perform specific actions as your app opens.
 
-At the simplest level, URL schemes allow users to open an app from other apps. 
-
-But the true power of URL schemes is in the ability to perform specific actions as your app opens.
-
-## CUSTOM URL SCHEME IN THE PROJECT EDITOR
+### Custom URL scheme in the project editor
 
 It's very simple to include an URL scheme to your 4D for iOS app:
 
