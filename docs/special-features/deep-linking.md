@@ -176,10 +176,6 @@ Refer to the [**4D Mobile App Server** component documentation](https://github.c
 
 
 
-## MobileApps folder
-
-Whether you're working on Windows or on macOS, you need to copy the 4DBASE/MobileApps/ID.BundleID/manifest.json file from your Design database to your production database.  
-
 
 
 

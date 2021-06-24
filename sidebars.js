@@ -30,7 +30,6 @@ module.exports = {
 				'project-definition/labels-and-icons', 
 				'project-definition/main-menu', 
 				'project-definition/forms',
-				'project-definition/forms-multi-critera-search',
 				'project-definition/publishing'
 				
 		],     
