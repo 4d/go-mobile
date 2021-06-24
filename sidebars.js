@@ -139,16 +139,6 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Using icons",
-      items: [
-        "tutorials/using-icons/using-icons",
-        "tutorials/using-icons/create-icons",
-        "tutorials/using-icons/include-icons",
-        "tutorials/using-icons/select-icons",
-      ],
-    },
-    {
-      type: "category",
       label: "Data formatter",
       items: [
         "tutorials/data-formatter/data-formatter",

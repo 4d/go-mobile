@@ -123,8 +123,8 @@ The Gallery is also directly available on Github.
 ## Creating your own templates 
 
 
-If you want to customize a built-in template or create your own templates, **several tutorials** can guide you through the whole process:
+If you want to customize a downloaded template or create your own templates, **several tutorials** can guide you through these tasks:
 
-- [**Updating a template form**](../tutorials/update-gallery-template.md)
-- [**Creating list forms**](../tutorials/list-form-template.md)
-- [**Creating details forms**](../tutorials/detail-form-template.md)
+- [**Customizing a template form**](../tutorials/gallery/update-gallery-template.md)
+- [**Creating list forms**](../tutorials/creating-list-forms/list-form-template.md)
+- [**Creating details forms**](../tutorials/creating-details-forms/detail-form-template.md)
