@@ -140,6 +140,6 @@ Use a pair of `%` characters to include the value of the related field in the ti
 
 :::tip tutorial
 
-A [**tutorial**](../tutorials/relations/one-to-many-relations-title-definition) is available to guide you through the Title definition process.
+A [**tutorial**](../tutorials/relations/one-to-many-title-definition) is available to guide you through the Title definition process.
 
 :::
