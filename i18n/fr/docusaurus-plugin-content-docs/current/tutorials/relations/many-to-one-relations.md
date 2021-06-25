@@ -3,18 +3,22 @@ id: many-to-one-relations
 title: Many to One relations
 ---
 
-4D v17 R5 includes a new concept: Many to One relations
 
-> **NOTE**
-> 
-> In this tutorial, we will use the relation names between your tables.
-> 
-> Giving descriptive relation names can make your project structure definition easier.
+This tutorial will show you how easy it can be to include Many to one relations in your mobile projects.
+
+:::note
+
+In this tutorial, we will use the relation names between your tables. Giving descriptive relation names can make your project structure definition easier.
+
+:::
 
 Let's get started by downloading the Starter project:
 
-<a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-ManyToOneRelations/releases/latest/download/tutorial-ManyToOneRelations.zip">Starter project</a>
+<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+
+<a className="button button--primary" href="https://github.com/4d-for-ios/tutorial-ManyToOneRelations/releases/latest/download/tutorial-ManyToOneRelations.zip">Starter project</a>
+
+</div>
 
 Here we want to display the category for each task in the detail form of your generated app. To do so, open the **StarteriOSProject** from **Open > Mobile Project...**
 
@@ -49,5 +53,4 @@ Then go right to your Structure section and select the **Task table**.
 You should see your related field in your app detail form !
 
 ![Related field in Forms section](img/final-result-n-to-one-relations.png)
-
 
