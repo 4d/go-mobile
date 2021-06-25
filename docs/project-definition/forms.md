@@ -127,4 +127,4 @@ If you want to customize a downloaded template or create your own templates, **s
 
 - [**Customizing a template form**](../tutorials/gallery/update-gallery-template.md)
 - [**Creating list forms**](../tutorials/creating-list-forms/list-form-template.md)
-- [**Creating details forms**](../tutorials/creating-details-forms/detail-form-template.md)
+- [**Creating details forms**](../tutorials/creating-detail-forms/detail-form-template.md)

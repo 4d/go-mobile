@@ -87,7 +87,7 @@ You can easily update your remote url from iPhone Settings :
 This area allows you to select and configure several mobile app's special features. These features are documented in dedicated sections:
 
 - [Authentication](../special-features/authentication.md)
-- [Push notifications](../special-features/push-notifications.md)
+- [Push notifications](../special-features/push-notification.md)
 - [Deep linking](../special-features/deep-linking)
 
 
