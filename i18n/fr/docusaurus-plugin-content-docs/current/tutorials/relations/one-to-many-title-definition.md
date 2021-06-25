@@ -9,10 +9,14 @@ To keep track of the view you come from in your app, 4D for iOS allows you to de
 
 In this tutorial, we will use the following project:
 
+<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-OneToManyTitleDefinition/archive/4b831959e7efe4777071af0b2904d458918cfbc2.zip">Starter project</a>
 
-Now go straight to Open menu > Mobile project... select *Time Keeper* and go to the **Labels & Icons section**.
+</div>
+
+Now go straight to **Open menu > Mobile project...**, select *Time Keeper* and go to the **Labels & Icons section**.
 
 From here, open the relation tab to define the *tasks* relation title and enter the following line in the **Titles column**: `%Name% tasks`
 
