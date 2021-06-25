@@ -19,7 +19,7 @@ Before starting, please check that your configuration meets hardware and softwar
 
 ## STEP 1. Download the Starter project
 
-Download and unzip our Starter Project, which contains a database file and a project icon (but no mobile project yet).  
+Download and unzip our 4D Starter project, which contains a database file and a project icon (but no mobile project yet).  
 
 <div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
 <a className="button button--primary" href="https://github.com/4d-for-ios/tutorial-ContactApp/archive/acbb699c3c9d9edd3a8bbb715e87c17140b7e15f.zip">Starter project</a>

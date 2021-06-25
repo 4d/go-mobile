@@ -26,15 +26,14 @@ System requirements are the same as [4D's minimum system requirements](https://u
 
 ### iOS
 
-[Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) installed on your Mac (optional). Apple configurator 2 requires **macOS 10.14** or later. Install this software if you want to automate app installation on your physical device.
-
-Xcode 10.2 requires **macOS 10.14** or later.
+[Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) installed on your Mac (optional). 
 
 Version table:
 
 | Xcode | Swift | iOS | 4D | macOS |
 |---|---|---|---|---|
-| 12.4 | 5.3.2| 14.4 | 18R6 beta | 10.15.4 |
+| 12.5 | 5.4| 14.6 | 19 | 11.0.1 |  
+| 12.4 | 5.3.2| 14.4 | 18R6 | 10.15.4 |
 | 12.2 | 5.3 | 14.2 | 18R5 & 18.3 | 10.15.4 |
 
 <details><summary>Version history</summary>
@@ -57,15 +56,16 @@ Version table:
 
 ### Android
 
-4D for Android requires the Android SDK, including Android Studio. If not installed, it will be automatically downloaded at the launch of the 4D mobile editor on Windows:
-
-![sdk](img/install-android.png)
-
 Version table:
 
 | Android | 4D | Windows |
 |---|---|---|
-| 12.4 | 19 beta | Windows 10 64-bit |
+| [4.1.2](https://developer.android.com/studio/archive) | 19 | Windows 10 64-bit |
+
+4D for Android requires the Android SDK, including Android Studio. If not installed, it will be automatically downloaded at the launch of the 4D mobile editor on Windows:
+
+![sdk](img/install-android.png)
+
 
 
 

@@ -10,34 +10,34 @@ import styles from "./styles.module.css";
 const features = [
   {
     title: "Native apps builder",
-    imageUrl: "img/generateTest.png",
+    imageUrl: "img/native.png",
     description: (
       <>
         <Translate>
-          Build your apps in pure Xcode/Swift or Android using an integrated 4D
-          component without needing any prior expertise.
+          Build your native iOS and Android apps in pure Swift and Kotlin 
+		  using an integrated 4D component without needing any prior expertise.
         </Translate>
       </>
     ),
   },
   {
     title: "Open solution",
-    imageUrl: "img/deploy.png",
+    imageUrl: "img/open.png",
     description: (
       <>
-        You can reopen your generated projects with Xcode or Android Studio and
-        continue to work on them.
+        You can reopen your generated projects with Xcode or Android Studio 
+		and continue to work on them.
+
       </>
     ),
   },
   {
     title: "Online and offline",
-    imageUrl: "img/structure.png",
+    imageUrl: "img/offline.png",
     description: (
       <>
-        Define a subset of your physical structure to replicate. All of your
-        data is embedded in your app and available without needing an internet
-        connection.
+        All of your data is embedded in your app and available 
+		without needing an internet connection.
       </>
     ),
   },
@@ -68,7 +68,7 @@ export default function Home() {
     >
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
+		<h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
@@ -77,7 +77,7 @@ export default function Home() {
                 styles.getStarted
               )}
               to={useBaseUrl(
-                "docs/getting-started/create-your-first-app"
+                "docs/getting-started/introduction"
               )}
             >
               Get Started
@@ -85,6 +85,10 @@ export default function Home() {
           </div>
         </div>
       </header>
+	  <div className={clsx(styles.announcement, styles.announcementDark)}>
+          <div className={styles.announcementInner}>
+	  <p className="hero__subtitle">BETA DOCUMENTATION SITE</p></div></div>
+		
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>

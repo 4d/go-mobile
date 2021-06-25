@@ -24,7 +24,7 @@ module.exports = {
         {
            type: "doc",
            position: "left",
-           docId: "getting-started/create-your-first-app",
+           docId: "getting-started/introduction",
           label: "Docs",
          },
         // { type: "doc", position: "left", docId: "first-page", label: "Docs" },
