@@ -10,7 +10,8 @@ title: Create App Store record
 
 > **PREREQUISITES**
 >
-> ```[Apple Developer Program for organization](selecting-your-developer-program-register-apple-developer-program-organization.html) or [individual](selecting-your-developer-program-register-apple-developer-program-individual.html)```
+> * [Apple Developer Program for organization](../tutorials/developer-program/register-apple-developer-program-organization) or
+> * [Apple Developer Program as an individual](../tutorials/developer-program/register-apple-developer-program-individual)
 
 
 ## STEP 1. Create an App ID

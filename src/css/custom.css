@@ -24,3 +24,6 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+.button--primary:hover {
+  background-color: #267BE3;
+}

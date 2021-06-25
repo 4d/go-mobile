@@ -36,7 +36,7 @@ module.exports = {
         {
            type: "doc",
            position: "left",
-           docId: "tutorials/first-page",
+           docId: "tutorials/create-your-first-app",
           label: "Tutorials",
          },
 		 //{

@@ -10,7 +10,7 @@ title: Archive and export your Project
 
 > **PREREQUISITES**
 >
-> * [Apple Enterprise Developer Program]```(selecting-your-developer-program-register-apple-developer-enterprise-program.html)```
+> * [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program)
 > * A secured web server
 > * 57 x 57 px icon
 > * 512 x 512 px icon
@@ -45,7 +45,7 @@ Xcode will automatically install required provisioning and certificates.
 
 ## STEP 4. Open your project with Xcode
 
-* From the 4D for iOS Project Editor's BUILD tab, click on Project > Open the project with Xcode
+* From the 4D for iOS Project Editor's BUILD tab, click on **Project > Open the project with Xcode**
 
 ![pen your project with Xcode ](img/Open-your-project-Xcode-4D-for-iOS.png)
 

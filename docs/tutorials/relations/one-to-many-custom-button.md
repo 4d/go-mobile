@@ -3,7 +3,7 @@ id: one-to-many-custom-button
 title: One to Many - Custom button
 ---
 
-As we have seen with all previous tutorials, 4D for iOS give you the freedom to create lots of custom things!
+As we have seen with all previous tutorials, the 4D mobile editor give you the freedom to create lots of custom things.
 
 As for custom templates or custom formatters, you can create custom Relation Buttons.
 
@@ -15,8 +15,11 @@ Let's get started by downloading the Starter project that includes:
 * a database with its mobile project
 * a standard Relation button
 
+<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-OneToManyCustomButton/archive/c507e764e97e006c6c785dfc468f71f5bd708845.zip">Starter project</a>
+</div>
 
 ## Include the button
 
@@ -157,5 +160,8 @@ In this tutorial, we've covered the basics for creating custom relation buttons.
 
 Download the completed project:
 
+<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-OneToManyCustomButton/releases/latest/download/tutorial-OneToManyCustomButton.zip">Completed project</a>
+</div>
