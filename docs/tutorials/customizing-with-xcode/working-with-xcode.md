@@ -15,7 +15,7 @@ title: Working with Xcode
 >If you customize your project on Xcode and rebuild it from the Project Editor All of your modifications will be lost!
 
 
-We'll use the [contact application](../creating-ios-app/create-contact-app.md) we created. 
+We'll use the [contact application](../create-your-first-app) we created. 
 
 Download the Starter project:
 
