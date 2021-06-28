@@ -6,6 +6,7 @@
  */
 
 /* You can override the default Infima variables here.   --ifm-color-primary: #25c2a0;*/
+
 :root {
   --ifm-color-primary: #269de3;
   --ifm-color-primary-dark: rgb(33, 175, 144);
@@ -27,3 +28,22 @@
 .button--primary:hover {
   background-color: #267BE3;
 }
+
+.wrap-template-formatter {
+  text-align:center; 
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  height: 250px;
+  width: 100%;
+}
+
+.wrap-template-formatter p {
+  font-size: 20px;
+}
+
+.wrap-template-formatter img {
+  vertical-align: middle;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
