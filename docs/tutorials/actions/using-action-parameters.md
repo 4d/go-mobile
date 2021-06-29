@@ -19,9 +19,10 @@ In this tutorial, we're going to go further and create:
 
 To begin, let's first download the **Starter project** based on our existing Tasks iOS app.
 
-<a className="button button--primary button-download"
+<div className="center-button">
+<a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-ActionParameters/archive/159a7b73bd3556890a205024af42440faf0b277c.zip">Starter project</a>
-
+</div>
 
 ## STEP 1. Add action
 
@@ -405,7 +406,7 @@ Congratulations! Your Tasks iOS app is now complete and you can now modify your 
 
 Donwload the completed project: 
 
-<a className="button button--primary button-download"
+<a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-ActionParameters/archive/0.0.1.zip">Download completed project</a>
 
 

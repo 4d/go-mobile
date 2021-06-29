@@ -377,11 +377,12 @@ Here we suppose the title is the second view in the svg, and its view ID is `__S
 ## Where to go from here?
 
 In this tutorial, we've covered the basics for creating Android list form templates. You are now able to create simple templates on your own using the Starter Project ressources. But wait - there’s more! In the next tutorial, you’ll learn how to build Android detail form templates!
-Click on **Final Project** below to download the completed template list folder.
 
-<div>
-<a className="button button--primary button-download"
-href="https://github.com/4d-for-ios/tutorial-CustomListForm/releases/latest/download/tutorial-CustomListForm.zip">CUSTOM LISTFORM FINAL TEMPLATE</a>
+Download the completed template list folder:
+
+<div className="center-button">
+<a className="button button--primary"
+href="https://github.com/4d-for-ios/tutorial-CustomListForm/releases/latest/download/tutorial-CustomListForm.zip">Download</a>
 </div>
 
 

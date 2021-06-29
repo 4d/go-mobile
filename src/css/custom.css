@@ -29,9 +29,10 @@
   background-color: #267BE3;
 }
 
-.button-download {
-  text-align:center;
-  margin-top: 20px;
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 

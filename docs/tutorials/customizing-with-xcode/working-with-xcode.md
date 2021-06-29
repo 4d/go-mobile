@@ -19,11 +19,13 @@ We'll use the [contact application](../create-your-first-app) we created.
 
 Download the Starter project:
 
+<div className="center-button">
 <a
-  className="button button--primary button-download"
+  className="button button--primary"
   href="#">
   Starter project
 </a>
+</div>
 
 
 ## STEP 1. Generate your iOS Project
