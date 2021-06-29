@@ -22,7 +22,7 @@ module.exports = {
 				'project-definition/main-menu', 
 				'project-definition/forms',
 				'project-definition/publishing',
-				'project-definition/build-and-run'
+				'project-definition/build-panel'
 				
 		],     
 
@@ -38,6 +38,16 @@ module.exports = {
 			],     
 	},
 	{
+      type: 'category',
+      label: 'Debugging',
+      items: [
+				   	'debug/from-project-editor', 
+				   	'debug/from-xcode', 
+				   	'debug/from-iphone', 		
+			],     
+
+	},
+   {
       type: 'category',
       label: 'Deploying In-House',
       items: [
@@ -106,11 +116,11 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Restricted queries",
+      label: "Filter queries",
       items: [
-        "tutorials/restricted-queries/filter-query-introduction",
-        "tutorials/restricted-queries/define-filter-query",
-        "tutorials/restricted-queries/user-information-query",
+        "tutorials/filter-queries/filter-query-introduction",
+        "tutorials/filter-queries/define-filter-query",
+        "tutorials/filter-queries/user-information-query",
       ],
     },
     {
