@@ -26,7 +26,7 @@ Next you'll need to define the following:
 
 ### Add parameters to your action
 
-As of **4D v17R6**, you can add **action parameters** and **edit** data directly from your app.
+You can add **action parameters** and **edit** data directly from your app.
 
 For each parameter, you can edit the following properties:
 
@@ -144,17 +144,17 @@ Here are the different **Formats** you can select for a parameter:
 
 </table>
 
-### Preset actions
+## Preset actions
 
-4D for iOS includes three preset (predefined) actions to manage your app content:
+4D mobile projects include three preset (predefined) actions to manage your app content:
 
 * Edit 
 * Add 
 * Delete 
 
-#### 1. Add action
+### 1. Add action
 
-4D for iOS makes the **Add actions** creation process very simple.
+4D mobile projects makes the **Add actions** creation process very simple.
 
 The only thing you need to do is select the **Add action for** option, accessible from the **+ button** at the bottom of the Actions table. 
 
@@ -167,13 +167,13 @@ This will **automatically create** all the parameters for you in the Project Edi
 For those kind of action, you will see that all **properties** are already filled in for your convenience at the right side of the parameter's list.
 
 
-#### 2. Edit action
+### 2. Edit action
 
 **Edit actions** creation follows the same process as the Add actions, with the exception that you will not be able to define default values from the Actions section.
 
 
 
-#### 3. Delete action
+### 3. Delete action
 
 **Delete action** creation follows the same process as the Edit action. The only difference is that this action allows you to remove an entity.
 
@@ -194,17 +194,17 @@ The [On Mobile App Action]```(https://livedoc.4d.com/4D-Language-Reference-17-R5
 
 After creating all of your actions, just click on the Create button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
 
-> **NOTE**
->
-> * You can refresh the selection after executing an action using ```$out.dataSynchro:=True```.
-> * You can notify the app user when action has been executed using ```$out.statusText:="Message you want to display"```.
-> * You can also decide to force close the Edition form using ```$out.close:=True```.
+:::notes
 
+- You can refresh the selection after executing an action using ```$out.dataSynchro:=True```.
+- You can notify the app user when action has been executed using ```$out.statusText:="Message you want to display"```.
+- You can also decide to force close the Edition form using ```$out.close:=True```.
 
+:::
 
-### Offline mode actions
+## Offline mode actions
 
-The user of an iOS app can draft, store and queue action requests, even if he’s working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.).  All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
+The user of an app can draft, store and queue action requests, even if he’s working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.).  All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
 
 Pending tasks can be visualized and opened from:
 
@@ -220,11 +220,12 @@ They display all the tasks related to the table or to the entity that you are cu
 
 ![Action section](img/screen2.png)
 
-> **Notes**
->
-> * The "Share" predefined action is only executable online.
-> * Actions are editable while pending, but they can no longer be modified once they switch to the "Completed" mode.
+:::notes
 
+- The "Share" predefined action is only executable online
+- Actions are editable while pending, but they can no longer be modified once they switch to the "Completed" mode.
+
+:::
 
 ## iOS app Side
 
@@ -240,10 +241,11 @@ In your iOS app, actions are available in different ways in your List and Detail
 
 ![Table Listform Tableview](img/ListForm-table-action-tableview.png)
 
-> **TIPS**
->
-> Actions will be displayed in the same order as defined in the Action section.
+:::tip
 
+Actions will be displayed in the same order as defined in the Action section.
+
+::: 
 
 ### Collection List forms
 
