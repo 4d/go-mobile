@@ -17,5 +17,5 @@ You can now choose pre-packaged formats from Labels & Icons in Sections.
 
 Let's get started by downloading the Starter project:
 
-<a className="button button--primary"
+<a className="button button--primary button-download"
 href="https://github.com/4d-for-ios/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">Starter project</a>

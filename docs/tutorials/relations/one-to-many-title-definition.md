@@ -11,7 +11,7 @@ In this tutorial, we will use the following project:
 
 <div>
 
-<a className="button button--primary"
+<a className="button button--primary button-download"
 href="https://github.com/4d-for-ios/tutorial-OneToManyTitleDefinition/archive/4b831959e7efe4777071af0b2904d458918cfbc2.zip">Starter project</a>
 
 </div>

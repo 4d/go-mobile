@@ -380,7 +380,7 @@ In this tutorial, we've covered the basics for creating Android list form templa
 Click on **Final Project** below to download the completed template list folder.
 
 <div>
-<a className="button button--primary"
+<a className="button button--primary button-download"
 href="https://github.com/4d-for-ios/tutorial-CustomListForm/releases/latest/download/tutorial-CustomListForm.zip">CUSTOM LISTFORM FINAL TEMPLATE</a>
 </div>
 

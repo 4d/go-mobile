@@ -192,7 +192,7 @@ In this tutorial, we've covered the basics for creating list form templates with
 
 Download the completed template list folder:
 
-<a className="button button--primary"
+<a className="button button--primary button-download"
 href="https://github.com/4d-for-ios/tutorial-CustomListForm/archive/53ac1d5f506aa4ca2a8d78760ef799044c5c8bdc.zip">Download</a>
 
 

@@ -16,7 +16,7 @@ Let's get started by downloading the Starter project:
 
 <div>
 
-<a className="button button--primary" href="https://github.com/4d-for-ios/tutorial-ManyToOneRelations/releases/latest/download/tutorial-ManyToOneRelations.zip">Starter project</a>
+<a className="button button--primary button-download" href="https://github.com/4d-for-ios/tutorial-ManyToOneRelations/releases/latest/download/tutorial-ManyToOneRelations.zip">Starter project</a>
 
 </div>
 

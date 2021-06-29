@@ -20,7 +20,7 @@ To begin, download the **Starter project**, which includes:
 * **integerToImage_Images** and **textToImage_Images** folders that contain images (to use later for formatters that include images)
 * A **Task Management.4dbase** file (with a ready to use mobile app project)
 
-<a className="button button--primary"
+<a className="button button--primary button-download"
 href="https://github.com/4d-for-ios/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">Starter project</a>
 
 You're now ready to create your first formatters!
@@ -180,5 +180,5 @@ Build your 4D of iOS app and you'll see that your data formatter is well applied
 
 Download the completed formatter template folder:
 
-<a className="button button--primary"
+<a className="button button--primary button-download"
 href="https://github.com/4d-for-ios/tutorial-CustomDataFormatter/releases/latest/download/tutorial-CustomDataFormatter.zip">Download</a>

@@ -20,7 +20,7 @@ We'll use the [contact application](../create-your-first-app) we created.
 Download the Starter project:
 
 <a
-  className="button button--primary"
+  className="button button--primary button-download"
   href="#">
   Starter project
 </a>

@@ -37,7 +37,7 @@ First download our Starter project, which contains a database file and ready to 
 
 <div>
 
-<a className="button button--primary"
+<a className="button button--primary button-download"
 href="https://github.com/4d-for-ios/tutorial-CustomLoginForm/archive/main.zip">Starter project</a>
 
 </div>

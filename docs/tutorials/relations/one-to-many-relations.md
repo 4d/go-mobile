@@ -9,7 +9,7 @@ Let's get started by downloading the Starter project:
 
 <div>
 
-<a className="button button--primary"
+<a className="button button--primary button-download"
 href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/archive/c006015afeb0e134d872152f53b8cd5e4dcb59bb.zip">Starter project</a>
 
 </div>
@@ -74,7 +74,7 @@ Download the completed project:
 
 <div>
 
-<a className="button button--primary"
+<a className="button button--primary button-download"
 href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/releases/latest/download/tutorial-OneToManyRelations.zip">Completed project</a>
 
 </div>

@@ -17,7 +17,7 @@ Let's get started by downloading the Starter project that includes:
 
 <div>
 
-<a className="button button--primary"
+<a className="button button--primary button-download"
 href="https://github.com/4d-for-ios/tutorial-OneToManyCustomButton/archive/c507e764e97e006c6c785dfc468f71f5bd708845.zip">Starter project</a>
 </div>
 
@@ -162,6 +162,6 @@ Download the completed project:
 
 <div>
 
-<a className="button button--primary"
+<a className="button button--primary button-download"
 href="https://github.com/4d-for-ios/tutorial-OneToManyCustomButton/releases/latest/download/tutorial-OneToManyCustomButton.zip">Completed project</a>
 </div>

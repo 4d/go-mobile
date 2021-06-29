@@ -12,7 +12,7 @@ Let's get started by downloading the Starter project:
 
 <div>
 
-<a className="button button--primary"
+<a className="button button--primary button-download"
 href="https://github.com/4d-for-ios/tutorial-RelationsActions/archive/6c649733f5efd3c799e4e04c05a85e17eeadf7f0.zip">Starter project</a>
 
 </div>
@@ -102,6 +102,6 @@ Download the completed project:
 
 <div>
 
-<a className="button button--primary"
+<a className="button button--primary button-download"
 href="https://github.com/4d-for-ios/tutorial-RelationsActions/releases/latest/download/tutorial-RelationsActions.zip">Completed Project</a>
 </div>

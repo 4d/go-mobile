@@ -11,7 +11,7 @@ More globally, we want to **change all tasks status** to postponed or in Progres
 
 Download the **Starter project** and go right to the **Actions section**.
 
-<a className="button button--primary"
+<a className="button button--primary button-download"
 href="https://github.com/4d-for-ios/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">Starter project</a>
 
 You can define actions for two levels:
@@ -243,5 +243,5 @@ Congratulations! You've just added 2 actions to your iOS app. You are now able t
 
 Download the completed project that includes various actions:
 
-<a className="button button--primary"
+<a className="button button--primary button-download"
 href="https://github.com/4d-for-ios/tutorial-Actions/releases/latest/download/tutorial-Actions.zip">Completed project</a>

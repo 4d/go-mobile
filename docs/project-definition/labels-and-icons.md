@@ -44,7 +44,7 @@ You can add your own icons to the library, so that you can select them in your p
 For example, here are a set of custom icons that you can use:
 
 <a
-  className="button button--primary"
+  className="button button--primary button-download"
   href="#">
   Download custom icons
 </a>
