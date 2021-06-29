@@ -15,7 +15,7 @@ Let's get started by downloading the Starter project that includes:
 * a database with its mobile project
 * a standard Relation button
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+<div>
 
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-OneToManyCustomButton/archive/c507e764e97e006c6c785dfc468f71f5bd708845.zip">Starter project</a>
@@ -160,7 +160,7 @@ In this tutorial, we've covered the basics for creating custom relation buttons.
 
 Download the completed project:
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+<div>
 
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-OneToManyCustomButton/releases/latest/download/tutorial-OneToManyCustomButton.zip">Completed project</a>

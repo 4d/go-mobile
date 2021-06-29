@@ -19,8 +19,8 @@ First, from the Data section we're going define a **basic filter query** to only
 
 Before we begin, be sure to download the **Starter project** which includes a **4DforiOSQueries.4dbase** file (a demo database with a ready-to-use mobile app project)
 
-<a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-RestrictedQueries/releases/latest/download/tutorial-RestrictedQueries.zip">Starter project</a>
+<div><a className="button button--primary"
+href="https://github.com/4d-for-ios/tutorial-RestrictedQueries/releases/latest/download/tutorial-RestrictedQueries.zip">Starter project</a></div>
 
 The database includes a:
 
@@ -29,10 +29,7 @@ The database includes a:
 
 ![CRM database](img/CRMDatabase.png)
 
-> **NOTE**
-> 
-> This project uses [custom templates](../creating-list-forms/list-form-template.md), [custom icons](../using-icons/using-icons.md) and custom [data formatters](../data-formatter/create-data-formatter.md).
 
-You're now ready to define your first restricted query!
+You're now ready to define your first restricted query.
 
 Open the mobile project by clicking on Open > Mobile Project... and select CRM app > **project.4dmobileapp**.

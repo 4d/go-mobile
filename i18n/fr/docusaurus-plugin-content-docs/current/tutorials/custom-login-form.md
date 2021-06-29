@@ -34,7 +34,7 @@ In this tutorial, we're going to:
 
 First download our Starter project, which contains a database file and ready to use webpages in the Webfolder folder:
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+<div>
 
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-CustomLoginForm/archive/main.zip">Starter project</a>

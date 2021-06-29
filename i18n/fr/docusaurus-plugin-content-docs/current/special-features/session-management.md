@@ -54,7 +54,7 @@ If you want the ability to manually validate the first login for every user sess
 
 Sessions can be managed by the **Mobile Session Management** component:
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+<div>
 <a className="button button--primary"
 href="https://github.com/4d/Mobile-Session-Management/releases/latest">Mobile Session Management component</a>
 </div>
