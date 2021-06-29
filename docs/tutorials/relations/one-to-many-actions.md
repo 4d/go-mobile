@@ -10,11 +10,9 @@ It is very easy to create an entity using **parent Entity** !
 
 Let's get started by downloading the Starter project:
 
-<div>
-
+<div className="center-button">
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-RelationsActions/archive/6c649733f5efd3c799e4e04c05a85e17eeadf7f0.zip">Starter project</a>
-
 </div>
 
 ## Create addProject action
@@ -100,8 +98,7 @@ And that's it you can then add some task to your employees easily using the pare
 
 Download the completed project: 
 
-<div>
-
+<div className="center-button">
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-RelationsActions/releases/latest/download/tutorial-RelationsActions.zip">Completed Project</a>
 </div>

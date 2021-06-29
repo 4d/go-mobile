@@ -7,11 +7,9 @@ This tutorial will show you how easy it can be to include One to Many relations 
 
 Let's get started by downloading the Starter project:
 
-<div>
-
+<div className="center-button">
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/archive/c006015afeb0e134d872152f53b8cd5e4dcb59bb.zip">Starter project</a>
-
 </div>
 
 In this tutorial, we are going to build a colorful **Task app** using 4D for iOS.

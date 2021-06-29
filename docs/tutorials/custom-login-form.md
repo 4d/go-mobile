@@ -35,11 +35,9 @@ In this tutorial, we're going to:
 
 First download our Starter project, which contains a database file and ready to use webpages in the Webfolder folder:
 
-<div>
-
+<div className="center-button">
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-CustomLoginForm/archive/main.zip">Starter project</a>
-
 </div>
 
 :::info
