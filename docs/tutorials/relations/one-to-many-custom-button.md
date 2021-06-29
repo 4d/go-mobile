@@ -15,8 +15,7 @@ Let's get started by downloading the Starter project that includes:
 * a database with its mobile project
 * a standard Relation button
 
-<div>
-
+<div className="center-button">
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-OneToManyCustomButton/archive/c507e764e97e006c6c785dfc468f71f5bd708845.zip">Starter project</a>
 </div>

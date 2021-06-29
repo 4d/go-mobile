@@ -29,6 +29,13 @@
   background-color: #267BE3;
 }
 
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .wrap-template-formatter {
   text-align:center; 
   margin-top: 20px;

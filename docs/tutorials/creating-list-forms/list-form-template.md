@@ -14,9 +14,10 @@ Before we begin, be sure to download and unzip the **Starter project** which inc
 * A **List form** folder 
 * A demo 4D project ("Contact") with a ready-to-use mobile app project.
 
+<div className="center-button">
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">Starter project</a>
-
+</div>
 
 ## Add a list form template to your mobile project
 

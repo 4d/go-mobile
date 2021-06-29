@@ -19,9 +19,10 @@ In this tutorial, we're going to go further and create:
 
 To begin, let's first download the **Starter project** based on our existing Tasks iOS app.
 
+<div className="center-button">
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-ActionParameters/archive/159a7b73bd3556890a205024af42440faf0b277c.zip">Starter project</a>
-
+</div>
 
 ## STEP 1. Add action
 

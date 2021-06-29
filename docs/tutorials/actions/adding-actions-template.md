@@ -21,9 +21,10 @@ To begin, download the Starter project, which includes:
 * 1 custom Detail form template (TasksDetail)
 * a Tasks.4dbase file
 
+<div className="center-button">
 <a class="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-AddingActionToTemplates/archive/1dc5aecfbea62a9999d571cb1a956f1ef6983111.zip">Starter project</a>
-
+</div>
 
 ## STEP 2. Add custom templates to 4D for iOS Project
 
