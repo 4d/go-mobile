@@ -7,7 +7,7 @@ This tutorial will show you how easy it can be to include One to Many relations 
 
 Let's get started by downloading the Starter project:
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+<div>
 
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/archive/c006015afeb0e134d872152f53b8cd5e4dcb59bb.zip">Starter project</a>
@@ -72,7 +72,7 @@ And voilà ! This is how One to Many relations work in 4D for iOS !
 
 Download the completed project:
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+<div>
 
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/releases/latest/download/tutorial-OneToManyRelations.zip">Completed project</a>

@@ -21,7 +21,7 @@ Before starting, please check that your configuration meets hardware and softwar
 
 Download and unzip our 4D Starter project, which contains a database file and a project icon (but no mobile project yet).  
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+<div>
 <a className="button button--primary" href="https://github.com/4d-for-ios/tutorial-ContactApp/archive/acbb699c3c9d9edd3a8bbb715e87c17140b7e15f.zip">Starter project</a>
 </div>
 
@@ -139,7 +139,7 @@ Now the fun part! It's time to build your app and test it on the Simulator to se
 
 We've covered basic app creation in this tutorial, and you should now be able to create simple apps on your own. Of course, many other options and features are available. Right now, you can click on **Final Project** below to download the final Contact app.
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+<div>
 <a className="button button--primary"
 href="https://github.com/4d-for-ios/tutorial-ContactApp/releases/latest/download/tutorial-ContactApp.zip">FINAL PROJECT</a>
 </div>

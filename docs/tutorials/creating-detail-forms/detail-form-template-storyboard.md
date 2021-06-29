@@ -264,7 +264,7 @@ You can now build your project from the project editor!
 
 In this tutorial, we've covered the basics for creating detail form templates. You can now create simple templates on your own using the Starter project resources. Click on **Final Project** below to download the completed template folder.
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+<div>
 <a className="button button--primary"
 href="https://github.com/4d-for-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">CUSTOM DETAILFORM FINAL TEMPLATE</a>
 </div>

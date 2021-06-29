@@ -15,9 +15,9 @@ To begin, download the **Starter project**, which includes:
 * A **Custom Detail form** folder (custom Detail form template folder)
 * A demo 4D project ("Contact") with a ready to use mobile app project.
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+<div>
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-CustomDetailFormStarter/archive/67c9c2f4672083e999a4a592a069d7ca45b3351e.zip">CUSTOM DETAIL FORM Starter project</a>
+href="https://github.com/4d-for-ios/tutorial-CustomDetailFormStarter/archive/67c9c2f4672083e999a4a592a069d7ca45b3351e.zip">Starter project</a>
 </div>
 
 ## Add a detail form template to your mobile project
