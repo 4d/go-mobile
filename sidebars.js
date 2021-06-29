@@ -39,6 +39,16 @@ module.exports = {
 	},
 	{
       type: 'category',
+      label: 'Debugging',
+      items: [
+				   	'debug/from-project-editor', 
+				   	'debug/from-xcode', 
+				   	'debug/from-iphone', 		
+			],     
+
+	},
+   {
+      type: 'category',
       label: 'Deploying In-House',
       items: [
 	               'deployment/testing-on-your-device',
