@@ -194,7 +194,7 @@ The [On Mobile App Action]```(https://livedoc.4d.com/4D-Language-Reference-17-R5
 
 After creating all of your actions, just click on the Create button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
 
-:::notes
+:::note notes
 
 - You can refresh the selection after executing an action using ```$out.dataSynchro:=True```.
 - You can notify the app user when action has been executed using ```$out.statusText:="Message you want to display"```.
@@ -220,7 +220,7 @@ They display all the tasks related to the table or to the entity that you are cu
 
 ![Action section](img/screen2.png)
 
-:::notes
+:::note notes
 
 - The "Share" predefined action is only executable online
 - Actions are editable while pending, but they can no longer be modified once they switch to the "Completed" mode.
