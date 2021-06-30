@@ -154,5 +154,16 @@
   "theme.common.skipToMainContent": {
     "message": "Aller au contenu principal",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "Build your native iOS and Android apps in pure Swift and Kotlin using an integrated 4D component without needing any prior expertise.": {
+    "message": "Build your native iOS and Android apps in pure Swift and Kotlin using an integrated 4D component without needing any prior expertise."
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog recent posts navigation",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Sidebar navigation",
+    "description": "The ARIA label for documentation menu"
   }
 }
