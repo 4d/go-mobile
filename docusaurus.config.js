@@ -4,7 +4,7 @@ module.exports = {
   tagline: "Easily create native iOS and Android apps from 4D projects",
   url: "https://doc4d.github.io",
   baseUrl: "/go-mobile/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "doc4d", // Usually your GitHub org/user name.
