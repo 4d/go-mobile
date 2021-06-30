@@ -152,7 +152,7 @@ Here are the different **Formats** you can select for a parameter:
 * Add 
 * Delete 
 
-### 1. Add action
+### Add action
 
 4D mobile projects makes the **Add actions** creation process very simple.
 
@@ -167,13 +167,13 @@ This will **automatically create** all the parameters for you in the Project Edi
 For those kind of action, you will see that all **properties** are already filled in for your convenience at the right side of the parameter's list.
 
 
-### 2. Edit action
+### Edit action
 
 **Edit actions** creation follows the same process as the Add actions, with the exception that you will not be able to define default values from the Actions section.
 
 
 
-### 3. Delete action
+### Delete action
 
 **Delete action** creation follows the same process as the Edit action. The only difference is that this action allows you to remove an entity.
 
