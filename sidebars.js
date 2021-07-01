@@ -29,7 +29,7 @@ module.exports = {
 	},
 	{
       type: 'category',
-      label: 'Special features',
+      label: 'Smart features',
       items: [
 	        'special-features/authentication', 
 			'special-features/session-management', 
