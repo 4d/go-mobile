@@ -75,9 +75,9 @@ No. 4D for iOS is included in 4D Server v17 R2 and up.
 
 
 <details>
-<summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Is there a test or evaluation license available?</summary>
+<summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Existe-t-il une licence de test ou d’évaluation ?</summary>
 
-If you already have a 4D Developer Pro or 4D Server license for 4D v17 R2 or newer, 4D for iOS is included.
+Si vous avez déjà une licence 4D Developer Pro ou 4D Server de 4D v17 R2 ou de versions plus récentes, 4D for iOS y est inclus.
 
 If you're not a 4D Partner or don't participate in the 4D Maintenance program, you have to wait for 4D v18.
 
