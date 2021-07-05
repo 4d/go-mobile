@@ -27,6 +27,7 @@
 .features {
   display: flex;
   align-items: center;
+ text-align: center;
   padding: 2rem 0;
   width: 100%;
 }
@@ -34,4 +35,22 @@
 .featureImage {
   height: 200px;
   width: 200px;
+}
+
+.announcement {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 48px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.announcementDark {
+  background-color: #20232a;
+  color: #fff;
+}
+
+.announcementInner {
+  margin: 0 auto;
+  max-width: 768px;
 }

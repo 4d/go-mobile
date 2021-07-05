@@ -1,102 +1,202 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Go Mobile with 4D',
-  tagline: 'Easily create native iOS and Android apps from 4D projects',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  title: "Go Mobile with 4D",
+  tagline: "Easily create native iOS and Android apps from 4D projects",
+  url: "https://doc4d.github.io",
+  baseUrl: "/go-mobile/",
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "doc4d", // Usually your GitHub org/user name.
+  projectName: "go-mobile", // Usually your repo name.
   themeConfig: {
+    prism: {
+      theme: require("./src/theme/highlight/themes/palenight"),
+    },
     navbar: {
-      title: 'Go Mobile',
+      hideOnScroll: true,
+      title: "Go Mobile",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "4D Logo",
+        src: "img/logo.png",
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
-        {to: 'blog', label: 'Blog', position: 'left'},
+           type: "doc",
+           position: "left",
+           docId: "getting-started/introduction",
+          label: "Docs",
+         },
+        // { type: "doc", position: "left", docId: "first-page", label: "Docs" },
+        //{
+        //  to: "docs/getting-started/create-your-first-app",
+        //  label: "Docs",
+        //  position: "left",
+        //},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+           type: "doc",
+           position: "left",
+           docId: "tutorials/create-your-first-app",
+          label: "Tutorials",
+         },
+		 //{
+         // to: "tutorials/first-page",
+         // label: "Tutorials",
+         // position: "left",
+        //},
+		 {
+           type: "doc",
+           position: "left",
+           docId: "templates/templates",
+          label: "Templates & Formatters",
+         },
+        {
+          to: "docs/faq/faq",
+          label: "FAQ",
+          position: "left",
+        },
+        //{
+        //  href: "https://blog.4d.com/4d-for-ios/",
+        //  label: "Blog",
+        //  position: "left",
+        //},
+        // { to: "blog", label: "Blog", position: "left" },
+        {
+          type: "localeDropdown",
+          position: "left",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Community",
           items: [
             {
-              label: 'Getting Started',
-              to: 'docs/',
+              label: "4D Blog",
+              href: "https://blog.4d.com",
+            },
+            {
+              label: "4D Forum",
+              href: "https://discuss.4d.com",
+            },
+            {
+              label: "Facebook",
+              href: "https://www.facebook.com/4Dsoftware/",
+            },
+            {
+              label: "Twitter",
+              href: "https://twitter.com/4Dsoftware",
+            },
+            {
+              label: "Youtube",
+              href: "https://www.youtube.com/user/4Dsoftware",
+            },
+            {
+              label: "Github",
+              href: "https://github.com/4D/",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Support",
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: "4D Doc Center (legacy)",
+              to: "https://doc.4d.com/",
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: "Knowledge Base",
+              to: "http://kb.4d.com/",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: "Downloads",
+              href: "https://us.4d.com/product-download",
+            },
+            {
+              label: "Resources",
+              href: "https://us.4d.com/resources",
+            },
+            {
+              label: "Get Support",
+              href: "https://us.4d.com/4d-technical-support",
             },
           ],
         },
         {
-          title: 'More',
+          title: "Company",
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: "About 4D",
+              to: "https://us.4d.com/about-us",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: "Contact us",
+              to: "https://us.4d.com/contact-us",
+            },
+            {
+              label: "4D around the world",
+              href: "https://us.4d.com/4d-around-the-world",
+            },
+            {
+              label: "Careers",
+              href: "https://us.4d.com/careers",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} 4D SAS - All rights reserved`,
+    },
+	algolia: {
+      apiKey: 'YOUR_API_KEY',
+      indexName: 'YOUR_INDEX_NAME',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: see doc section below
+      appId: 'YOUR_APP_ID',
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
     },
   },
+  
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            "https://github.com/facebook/docusaurus/edit/master/website/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
   ],
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "fr"],
+    localeConfigs: {
+      en: {
+        label: "English",
+      },
+	fr: {
+		label: "Français",
+		},
+    },
+  },
 };

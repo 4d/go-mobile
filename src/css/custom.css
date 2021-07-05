@@ -5,9 +5,10 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* You can override the default Infima variables here.   --ifm-color-primary: #25c2a0;*/
+
 :root {
-  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary: #269de3;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -23,3 +24,33 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+.button--primary:hover {
+  background-color: #267BE3;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wrap-template-formatter {
+  text-align:center; 
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  height: 250px;
+  width: 100%;
+}
+
+.wrap-template-formatter p {
+  font-size: 20px;
+}
+
+.wrap-template-formatter img {
+  vertical-align: middle;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
