@@ -148,8 +148,7 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} 4D SAS - All rights reserved`,
     },
-  },
-  algolia: {
+	algolia: {
       apiKey: 'YOUR_API_KEY',
       indexName: 'YOUR_INDEX_NAME',
 
@@ -164,6 +163,8 @@ module.exports = {
 
       //... other Algolia params
     },
+  },
+  
   presets: [
     [
       "@docusaurus/preset-classic",
