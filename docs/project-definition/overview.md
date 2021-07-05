@@ -41,6 +41,7 @@ To create a new mobile project:
 :::note
 
 You need a 4D Developer Pro license to open the 4D mobile editor.
+
 :::
 
 The welcome dialog box is displayed:
