@@ -107,6 +107,8 @@ To complete the customizations, select both labels and **enter 0 for Lines** in 
 
 The provided storyboard is optimized to have a **variable cell height** depending on the contents of each cell.
 
+:::
+
 ![Row height tableview cell](img/row-height-tableview-cell.png)
 
 ## How to get data into your cells
