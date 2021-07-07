@@ -37,7 +37,7 @@ First download our Starter project, which contains a database file and ready to 
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-CustomLoginForm/archive/main.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomLoginForm/archive/main.zip">Starter project</a>
 </div>
 
 :::info

@@ -43,11 +43,13 @@ You can add your own icons to the library, so that you can select them in your p
 
 For example, here are a set of custom icons that you can use:
 
+<div className="center-button">
 <a
-  className="button button--primary button-download"
+  className="button button--primary"
   href="#">
   Download custom icons
 </a>
+</div>
 
 
 
