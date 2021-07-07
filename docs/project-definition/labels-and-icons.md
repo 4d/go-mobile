@@ -43,11 +43,13 @@ You can add your own icons to the library, so that you can select them in your p
 
 For example, here are a set of custom icons that you can use:
 
+<div className="center-button">
 <a
-  className="button button--primary button-download"
-  href="#">
+  className="button button--primary"
+  href="https://github.com/4d-go-mobile/tutorial-CustomIcons/archive/refs/tags/0.0.1.zip">
   Download custom icons
 </a>
+</div>
 
 
 

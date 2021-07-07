@@ -17,7 +17,7 @@ To begin, download the **Starter project**, which includes:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-CustomDetailFormStarter/archive/67c9c2f4672083e999a4a592a069d7ca45b3351e.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomDetailFormStarter/archive/67c9c2f4672083e999a4a592a069d7ca45b3351e.zip">Starter project</a>
 </div>
 
 ## Add a detail form template to your mobile project
