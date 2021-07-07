@@ -15,15 +15,15 @@ In this tutorial, we are going to see how easy it can be to **add actions to cus
 
 ## STEP 1. Download the Starter project
 
-To begin, download the Starter project, which includes:
+To begin, download the **Starter project**, which includes:
 
-* 2 custom List form templates (TasksList and TasksCollection)
-* 1 custom Detail form template (TasksDetail)
+* two custom List form templates (TasksList and TasksCollection)
+* a custom Detail form template (TasksDetail)
 * a Tasks.4dbase file
 
 <div className="center-button">
 <a class="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-AddingActionToTemplates/archive/1dc5aecfbea62a9999d571cb1a956f1ef6983111.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1dc5aecfbea62a9999d571cb1a956f1ef6983111.zip">Download</a>
 </div>
 
 ## STEP 2. Add custom templates to 4D for iOS Project
@@ -156,7 +156,9 @@ Congratulations, your Tasks iOS app is now complete and includes actions in List
 
 Download the completed project:
 
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-AddingActionToTemplates/releases/latest/download/tutorial-AddingActionToTemplates.zip">Download completed project</a>
+href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/releases/latest/download/tutorial-AddingActionToTemplates.zip">Download</a>
+</div>
 
 
