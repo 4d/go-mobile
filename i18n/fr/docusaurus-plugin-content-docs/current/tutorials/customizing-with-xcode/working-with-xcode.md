@@ -23,7 +23,7 @@ Download the Starter project:
 <a
   className="button button--primary"
   href="#">
-  Starter project
+  Download
 </a>
 </div>
 
@@ -49,4 +49,4 @@ From the Project Editor BUILD tab:
 
 ![Open your Project with Xcode](img/Open-your-project-Xcode-4D-for-iOS.png)
 
-Now you're ready to start working on your 4D for iOS project in Xcode, keep reading to learn how!
+Now you're ready to start working on your 4D for iOS project in Xcode.
