@@ -46,7 +46,7 @@ For example, here are a set of custom icons that you can use:
 <div className="center-button">
 <a
   className="button button--primary"
-  href="https://github.com/4d-go-mobile/tutorial-CustomIcons/archive/refs/tags/0.0.1.zip">
+  href="https://github.com/4d-go-mobile/tutorial-CustomIcons/releases/latest/download/tutorial-CustomIcons.zip">
   Download custom icons
 </a>
 </div>
