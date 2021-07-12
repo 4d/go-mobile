@@ -227,6 +227,20 @@ They display all the tasks related to the table or to the entity that you are cu
 
 :::
 
+### Update pending tasks that failed
+
+Due to your server business logic, some tasks could be rejected. For mobile users, it is then possible to edit and to retry sending the relevant pending tasks. To do so, you can display a status text describing, in the "Complete" actions history, the reason of the failure. For example, you can reject an action sent by a mobile user to the server and inform him that the operation has failed. In that case, you can set the `success` value to `False` and provide a message in `statusText`, as follows:
+
+ ```4d
+ $response:=New object("success"; False; "statusText"; "Operation failed"))
+ ```
+ You can even add some errors by action parameters for the `alphaField` parameter, for example:
+
+  ```4d
+$response.errors:=New collection(New object("parameter"; "alphaField"; "message"; "Alpha field must contains a valide value")
+  ```
+
+
 ## iOS app Side
 
 In your iOS app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section.
