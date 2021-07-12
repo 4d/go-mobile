@@ -74,7 +74,9 @@ This menu allows you to select how to define the main color of your app. The mai
 - **Use the system color selector**: displays the system color picker in which you can designate the main color
 - **Use the main color of the icon**: let the mobile editor determine automatically the main color from your app's icon.
 
+![General section](assets/en/project-editor/General-section-main-color-selector.png) 
 
+At any time, you can reset the main color and get back to the icon's preset main color, by clicking on "Use the main color of the icon".
 
 ## Developer
 
