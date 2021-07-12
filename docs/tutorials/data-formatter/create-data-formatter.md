@@ -189,7 +189,7 @@ Here is the result in light mode and in dark mode:
 
 To optimize the color pictures displayed on your app and adapt them to your color mode, you need to have two pictures: one for the light mode, and one for the dark mode suffixed with ```_dark```, as follows:
 
-<img src="assets/en/data-formatter/Architecture.jpg" alt="drawing" width="600">
+![Data formatter](img/architecture.png)
 
 ```json
 {
