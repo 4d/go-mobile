@@ -204,7 +204,7 @@ To optimize the color pictures displayed on your app and adapt them to your colo
 ```
 Here is the result in light mode and in dark mode: 
 
-<img src="assets/en/data-formatter/light-color.png" alt="drawing" width="250"> <img src="assets/en/data-formatter/dark-color.png" alt="drawing" width="250">
+![Data formatter](img/light-color.png) ![Data formatter](img/dark-color.png)
 
 ## Open mobile project
 
