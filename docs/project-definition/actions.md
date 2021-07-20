@@ -192,7 +192,7 @@ Selecting the **Share action** will allow your mobile users to share content wit
 - **entity**: to share content from a detail form
 - **table**: to share a list form
 
-See the [Deep Linking](Features-DeepLinking.md) page for more details.
+See the [Deep Linking](../special-features/deep-linking.md) page for more details.
 
 ### Sort action
 
