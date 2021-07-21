@@ -117,11 +117,11 @@ A github icon is displayed at the top left of a template icon in the Forms templ
 
 The Gallery is also directly available on Github.
 - [**gallery of list form templates**](https://4d-for-ios.github.io/gallery/#/type/list-detail/picker/0)
-- [**gallery of detail form templates**](https://4d-for-ios.github.io/gallery/#/type/form-detail/picker/0)  
+- [**gallery of detail form templates**](https://4d-for-ios.github.io/gallery/#/type/form-detail/picker/0)
+
 :::
 
 ## Creating your own templates 
-
 
 If you want to customize a downloaded template or create your own templates, **several tutorials** can guide you through these tasks:
 

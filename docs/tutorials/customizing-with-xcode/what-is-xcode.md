@@ -11,7 +11,7 @@ Xcode is an IDE and a set of developer tools for macOS used to create iPad, iPod
 
 To download the lastest version of Xcode go to the App Store.
 
-<div>
+<div className="center-button">
 <a className="button button--primary" href="macappstore://itunes.apple.com/app/id497799835?mt=12">View in Mac App Store </a>
 </div>
 

@@ -17,11 +17,11 @@ In this tutorial, we're going to go further and create:
 * a Delete action to **delete an entity**, and
 * an action that will enable you to **email a comment for a specific task**.
 
-To begin, let's first download the **Starter project** based on our existing Tasks iOS app.
+To begin, let's first download the **Starter project** based on our existing Tasks iOS app:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-ActionParameters/archive/159a7b73bd3556890a205024af42440faf0b277c.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/159a7b73bd3556890a205024af42440faf0b277c.zip">Download</a>
 </div>
 
 ## STEP 1. Add action
@@ -404,9 +404,11 @@ And finally you can delete an entity using the **Delete...** action.
 Congratulations! Your Tasks iOS app is now complete and you can now modify your app data direclty from your device and sychronize it with your server!
 
 
-Donwload the completed project: 
+Download the completed project: 
 
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-ActionParameters/archive/0.0.1.zip">Download completed project</a>
+href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/0.0.1.zip">Download completed project</a>
+</div>
 
 

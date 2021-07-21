@@ -3,13 +3,13 @@ id: one-to-many-relations
 title: One to Many relations
 ---
 
-This tutorial will show you how easy it can be to include One to Many relations in 4D for iOS.
+This tutorial will show you how easy it can be to include One to Many relations in your mobile project.
 
 Let's get started by downloading the Starter project:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/archive/c006015afeb0e134d872152f53b8cd5e4dcb59bb.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-OneToManyRelations/archive/c006015afeb0e134d872152f53b8cd5e4dcb59bb.zip">Starter project</a>
 </div>
 
 In this tutorial, we are going to build a colorful **Task app** using 4D for iOS.
@@ -66,13 +66,11 @@ So, in the Labels & Icons section you will define:
 
 ![Related field in Forms section](img/One-to-n-relations-task-ios-app.png)
 
-And voilà ! This is how One to Many relations work in 4D for iOS !
+Well done! You've successfully included One to Many relations in your mobile project.
 
 Download the completed project:
 
-<div>
-
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/releases/latest/download/tutorial-OneToManyRelations.zip">Completed project</a>
-
+href="https://github.com/4d-go-mobile/tutorial-OneToManyRelations/releases/latest/download/tutorial-OneToManyRelations.zip">Download</a>
 </div>

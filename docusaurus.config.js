@@ -148,7 +148,23 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} 4D SAS - All rights reserved`,
     },
+	algolia: {
+      apiKey: 'YOUR_API_KEY',
+      indexName: 'YOUR_INDEX_NAME',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: see doc section below
+      appId: 'YOUR_APP_ID',
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    },
   },
+  
   presets: [
     [
       "@docusaurus/preset-classic",
@@ -157,7 +173,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+			"https://github.com/4d/go-mobile/edit/main",
         },
         blog: {
           showReadingTime: true,
