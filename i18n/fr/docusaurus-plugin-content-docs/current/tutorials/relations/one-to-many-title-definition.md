@@ -11,7 +11,7 @@ In this tutorial, we will use the following project:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-OneToManyTitleDefinition/archive/4b831959e7efe4777071af0b2904d458918cfbc2.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-OneToManyTitleDefinition/archive/4b831959e7efe4777071af0b2904d458918cfbc2.zip">Starter project</a>
 </div>
 
 Now go straight to **Open menu > Mobile project...**, select *Time Keeper* and go to the **Labels & Icons section**.

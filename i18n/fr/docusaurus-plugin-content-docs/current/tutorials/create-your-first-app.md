@@ -22,7 +22,7 @@ Before starting, please check that your configuration meets hardware and softwar
 Download and unzip our 4D Starter project, which contains a database file and a project icon (but no mobile project yet).
 
 <div className="center-button">
-<a className="button button--primary" href="https://github.com/4d-for-ios/tutorial-ContactApp/archive/acbb699c3c9d9edd3a8bbb715e87c17140b7e15f.zip">Starter project</a>
+<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-ContactApp/archive/acbb699c3c9d9edd3a8bbb715e87c17140b7e15f.zip">Starter project</a>
 </div>
 
 ## STEP 2. Create the mobile project
@@ -140,5 +140,5 @@ We've covered basic app creation in this tutorial, and you should now be able to
 
 <div>
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-ContactApp/releases/latest/download/tutorial-ContactApp.zip">FINAL PROJECT</a>
+href="https://github.com/4d-go-mobile/tutorial-ContactApp/releases/latest/download/tutorial-ContactApp.zip">FINAL PROJECT</a>
 </div>
