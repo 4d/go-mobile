@@ -181,10 +181,17 @@ To optimize the color contrast of your black and white images on your app depend
      }
 }
 ```
-Here is the result in light mode and in dark mode: 
+Here is the result in light and dark modes: 
 
-<img src="assets/en/data-formatter/light-black-and-white.png" alt="drawing"  width="250"/> 
-<img src="assets/en/data-formatter/dark-black-and-white.png" alt="drawing" width="250"/>
+| Light mode      | Dark mode          |
+| ------------- |:-------------:|
+| ![Data formatter](img/light-bw.png) | ![Data formatter](img/dark-bw.png) |
+
+
+
+
+
+
 
 ### Optimized color pictures
 
@@ -205,7 +212,9 @@ To optimize the color pictures displayed on your app and adapt them to your colo
 ```
 Here is the result in light mode and in dark mode: 
 
-![Data formatter](img/light-color.png) ![Data formatter](img/dark-color.png)
+| Light mode      | Dark mode          |
+| ------------- |:-------------:|
+| ![Data formatter](img/light-color.png) | ![Data formatter](img/dark-color.png) |
 
 ## Open mobile project
 
