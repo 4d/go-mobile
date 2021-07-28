@@ -1,6 +1,6 @@
 ---
 id: one-to-many-actions
-title: One to Many - Actions
+title: Liens 1 vers N - Actions
 ---
 
 
@@ -15,16 +15,16 @@ Let's get started by downloading the Starter project:
 href="https://github.com/4d-go-mobile/tutorial-RelationsActions/archive/6c649733f5efd3c799e4e04c05a85e17eeadf7f0.zip">Starter project</a>
 </div>
 
-## Create addProject action
+## Créer une action addProject
 
-* Open the project editor and go to the Action section.
+* Ouvrez l'éditeur de projet et cliquez sur la section Action.
 
 * Add a `addProject` Action
 
 ![create addProject Method](img/create-addProject-Method-4D-for-iOS-relation-parent-ID.png)
 
 
-## On Mobile App Action method
+## Sur une action app mobile
 
 The only thing you have to do is defining the **addProject** action in the **On Mobile App Action method** as follows :
 
@@ -42,7 +42,7 @@ $result:=addProject ($o)
 
 ```
 
-## addProject Method
+## Méthode addProject
 
 
 Then enter thoses lines in your **addProject Method**:
@@ -58,7 +58,7 @@ $out:=New object("success";False)
 
 If ($in.dataClass#Null)
 
-    $entity:=ds[$in.dataClass].new()  //Create a reference
+    $entity:=ds[$in.dataClass].new()  //Créer une référence
 
     For each ($key;$in.parameters)
 
@@ -66,19 +66,19 @@ If ($in.dataClass#Null)
 
     End for each 
 
-    $primaryKey:=$in.parent.primaryKey   //Get parent primary key
+    $primaryKey:=$in.parent.primaryKey   //Lire clé primaire parente 
 
     $parent:=ds[$in.parent.dataClass].get($primaryKey)
 
-  $inverseRelationName:=$in.entity.relationName   //Get parent relation name
+  $inverseRelationName:=$in.entity.relationName   //Lire nom du lien parent
 
     $entity[$inverseRelationName]:=$parent
 
-    $status:=$entity.save()  //save the entity
+    $status:=$entity.save()  //sauvegarder l'entité
 
-    $out.success:=True  // notify App that action success
+    $out.success:=True  // notifier l'application que l'action est réussie
 
-    $out.dataSynchro:=True  // notify App to refresh the selection
+    $out.dataSynchro:=True  // notifier l'application pour mettre à jour la sélection
 
     $out.statusText:="Task added"
 
