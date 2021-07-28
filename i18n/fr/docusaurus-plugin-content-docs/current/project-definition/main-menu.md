@@ -1,6 +1,6 @@
 ---
 id: main-menu
-title: Main Menu
+title: Menu
 ---
 
 This page allows you to select and order the tables that will be available in the navigation bar of your app.
