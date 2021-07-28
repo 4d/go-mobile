@@ -6,17 +6,17 @@ title: Push notifications
 
 ## What is a push notification?
 
-On a mobile phone, a push notification is an alert message, received via an application, that you can open, delete, allow or block. It can be very useful for example to notify your app users that a new version is available.
+Sur un téléphone mobile, une notification Push est un message d'alerte, reçu via une application, que vous pouvez ouvrir, supprimer, autoriser ou bloquer. Cela peut être très utile, par exemple, pour informer les utilisateurs de votre application qu'une nouvelle version est disponible.
 
-But what about the architecture to implement, in order to integrate this functionality into a mobile application? And what is the process of a push notification, from creation to display on the user's mobile?
+Mais qu'en est-il de l'architecture à mettre en œuvre, pour intégrer cette fonctionnalité dans une application mobile ? Et quel est le processus d'une notification push, partant de la création à l'affichage sur le mobile de l'utilisateur ?
 
 ## Technical architecture
 
-Here are the different elements needed to create, send and receive a mobile push notification:
+Voici les différents éléments nécessaires pour créer, envoyer et recevoir une notification push mobile :
 
 ![Push notification process](img/4D-for-ios-push-notification.png)
 
-## Prerequisites
+## Conditions préalables
 
 In order to send push notifications, an `AuthKey_XXXYYY.p8` authentication file from Apple is required.
 
