@@ -1,10 +1,10 @@
 ---
 id: custom-listform-templates
-title: List Forms Templates
+title: Modèles de formulaires Liste
 ---
 
 
-> **BEFORE STARTING**
+> **AVANT DE COMMENCER**
 > 
 > To use a custom list form template, the first thing you'll need to do is create a `YourDatabase.4dbase/Resources/Mobile/form/list` folder.
 > 
