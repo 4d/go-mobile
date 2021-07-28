@@ -4,21 +4,24 @@ title: Template.svg
 sidebar_label: Template.svg
 ---
 
-The template.svg file is a basic template representation. In this svg file, you'll need to define areas in order to be able to add fields to your detail form template from the project editor.
+The `template.svg` file is a basic template representation. プロジェクターエディターでリストフォームのテンプレートにフィールドが追加できるように，ドラッグ＆ドロップ用のエリアを定義しておきます。
 
-Here's a finished version:
+図は完成したファイルのイメージです。
 
-![Template svg file](img/detailform-template-svg-file.png)
+![テンプレートSVGファイル](img/detailform-template-svg-file.png)
 
-This template has dynamic field numbering, meaning that this template will allow you to add an **image** and you can put **as many fields** depending on your needs. So when you build your detail form in the Forms section and drag and drop a field, a new empty field appears below the previous one for you to add a new field:
+This template has dynamic field numbering, meaning that this template will allow you to add an **image** and you can put **as many fields** as you need. 「フォーム」セクションの詳細画面エディターでは，最後にドラッグ＆ドロップしたフィールドの下に空白のフィールドが現れるようになっているので，フィールドをさらに追加することができます。
 
-![Template svg file](img/detailform-dynamic-field-number.png)
+![テンプレートSVGファイル](img/detailform-dynamic-field-number.png)
 
-Open the template.svg file with your favorite code editor.
+```
+![Template svg file](assets/en/custom-detailform/detailform-dynamic-field-number.png)
+```
 
-Let’s focus on the different parts of your SVG file and what you'll need to edit.
+Let’s focus on the different parts of this svg file and what you'll need to edit.
 
 ## Title
+
 ```xml
 <title>Custom Detail form</title>
 ```
@@ -30,7 +33,7 @@ You can define position, height, and width for all of your fields. This process 
 
 ### Field properties
 
-```
+```xml
 //1
 <g id="f" visibility="hidden" ios:dy="35">
 
@@ -48,15 +51,15 @@ You can define position, height, and width for all of your fields. This process 
 </g>
 ```
 
-1. Entire area Y position
-2. Area background position, height, and width
-3. Define the text area position and width
-4. Define the droppable field position, height, and width, as well as accepted fields types (all types are accepted in this example)
-5. Define a cancel button that will be displayed to the delete current content
+1. エリア全体の垂直位置です。（g要素のtransform属性）
+2. エリア背景の位置とサイズです。（rect要素）
+3. 入力エリアの位置とサイズです。（textArea要素）
+4. Define the droppable field position, height, and width, as well as accepted [**field types**](../creating-list-forms/list-form-svg-file.md#iostypes) (all types are accepted in this example)
+5. 内容をクリアするためのキャンセルボタンです。（use要素）
 
-### Image field area
+### ピクチャフィールド
 
-```
+```xml
 //1
 <g transform="translate(0,60)">
 
@@ -77,22 +80,18 @@ You can define position, height, and width for all of your fields. This process 
 </g>
 ```
 
-1. Entire area Y position
-2. Area background position, height, and width
-3. Icon to display an image in the imageField
-4. Define the text area position and width
-5. Define the droppable field position, height, and width, as well as accepted fields types
-6. Define a cancel button that will be displayed to delete the current content
+1. エリア全体の垂直位置です。（g要素のtransform属性）
+2. エリア背景の位置とサイズです。（rect要素）
+3. ピクチャエリアに表示されるアイコン画像です。（path要素）
+4. 入力エリアの位置とサイズです。（textArea要素）
+5. Define the droppable field position, height, and width, as well as accepted [**field types**](../creating-list-forms/list-form-svg-file.md#iostypes)
+6. 内容をクリアするためのキャンセルボタンです。（use要素）
 
 Now that you have an **icon**, a **basic template description** in the manifest.json file, and your **svg file**, let's move on to the fun part with Xcode!
 
-> **NOTE**
-> 
-> A [list of all the available data types](https://developer.4d.com/docs/en/Concepts/data-types.html) is available on developer.4d.com.
 
-> **TIP**
-> 
-> * To make field type definition easier, 4D for iOS allows you to include field types with **positive values** and also exclude field types with **negative values**. For example, `ios:type="-3,-4"` will allow you to drag and drop every field exept images and dates.
-> 
-> * To include all types, just type `ios:type="all"`.
+:::tip
 
+To make field type definition easier, 4D for iOS allows you to include field types with **positive values** and also exclude field types with **negative values**. For example, `ios:type="-3,-4"` will allow you to drag and drop every field except images and dates. To include all types, just type `ios:type="all"`.
+
+:::
