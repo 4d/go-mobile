@@ -5,109 +5,111 @@ title: Using action parameters
 
 > **OBJECTIVES**
 > 
-> Define action parameters to edit the content of your app.
+> Define parâmetros ação para editar o conteúdo de sua aplicação.
 
 
 In the tutorial on defining actions, we discovered how to execute 4D code from an iOS app by defining actions from the actions section.
 
-In this tutorial, we're going to go further and create:
+Neste tutorial vamos nos aprofundar mais e criar:
 
-* an Add action to **create a new task**,
-* an Edit action that will allow you to **edit existing tasks** from the iOS app,
-* a Delete action to **delete an entity**, and
-* an action that will enable you to **email a comment for a specific task**.
+* uma ação de adição para **criar uma nova tarefa**,
+* uma ação de edição que lhe permitirá **editar as tarefas existentes** desde a aplicação iOS,
+* uma ação de eliminação para **eliminar uma entidade**, e
+* uma ação que lhe permitirá **enviar um comentário por correio eletrônico para uma tarefa específica**.
 
-To begin, let's first download the **Starter project** based on our existing Tasks iOS app.
+To begin, let's first download the **Starter project** based on our existing Tasks iOS app:
 
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-ActionParameters/archive/159a7b73bd3556890a205024af42440faf0b277c.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/159a7b73bd3556890a205024af42440faf0b277c.zip">Download</a>
+</div>
 
-## STEP 1. Add action
+## PASSO 1. Add action
 
-Let's begin simple. Open the Tasks mobile project and go directly to the **Actions section**.
+Comecemos por uma tarefa simples. Abra o projeto móvel Tasks e vá diretamente a **seção Actions**.
 
 ![Action section](img/Actions-section.png)
 
-It's quite empty for the moment... Here is what we want: **create a new task from the iOS app**.
+Está bastante vazio por enquanto... Issoé o que queremos: **criar uma nova tarefa desde a aplicação iOS**.
 
-For this, let's create an action using a preset **Add** action:
+Para isto, criamos uma ação utilizando uma ação preestabelecida **Agregar**:
 
-* Click on the arrow in the **+ button** at the bottom of the Actions table.
-* Select the **Add action for** option.
-* Select the **Task table**.
+* Clique na flecha no **botão +**, na parte inferior da tabela Ações.
+* Selecione a opção **ação de adicionar**.
+* Seleccione a **tabela Task**.
 
 ![Add action creation](img/Add-action-creation.png)
 
-* **A new action** named *"addTasks"* with *"Add..."* as default label is displayed.
-* All available **parameters** and their **properties** are shown in the **Actions Parameters** section.
+* É mostrada uma **nova ação** chamada *"addTasks"* com *"Add..."* como etiqueta predeterminada.
+* Todos os **parâmetros**disponíveis e suas **propriedades** são mostrados na seção **Parâmetros das ações**.
 
 ![Add action parameters](img/Add-action-parameters.png)
 
-At this point, all **Add action parameters** are created automatically and ready to use.
+Neste ponto, todos os **parâmetros das ações de adição** são criados automaticamente e estão prontos para serem usados.
 
-## STEP 2. Edit action
+## PASSO 2. Edit action
 
-Now let's create an action that will allow you to **edit your app content**.
+Agora criamos uma ação que lhe permitirá **editar o conteúdo de sua aplicação**.
 
-For this, we'll create an action using a preset **Edit** action:
+Para isso, criamos uma ação utilizando uma ação preestabelecida de **edição**:
 
-* Click on the arrow in the **+ button** at the bottom of the Actions table.
-* Select the **Edit action for** option.
-* Select the Tasks table.
+* Clique na flecha no **botão +**, na parte inferior da tabela Ações.
+* Selecione a opção **ação de edição**.
+* Selecione a tabela Tasks.
 
 ![Edit action creation](img/Edit-action-creation.png)
 
-At this point, you will see:
+Neste ponto verá:
 
-* **A new action** named *"editTasks"* with *"Edit..."* as the default label.
-* All available action **parameters** and their **properties** are displayed in the **Actions parameters** section.
+* É mostrada **uma nova ação** chamada *"editTasks"* com*"Add..."* como etiqueta predeterminada.
+* Todos os **parâmetros**disponíveis e suas **propriedades** são mostradas na seção **Parâmetros das ações**.
 
 
 ![Edit action parameters](img/Edit-action-parameters.png)
 
-Don't worry, we'll handle the 4D code for these actions later. :-)
+No se preocupe, manejaremos o código 4D para estas ações mais adiante. :-)
 
-## STEP 3. Delete action
+## PASSO 3. Delete action
 
-The preset **Delete** action creation process is nearly the same as the Edit action:
+O processo de criação da ação predefinida **Eliminar** é quase o mesmo da ação Editar:
 
-* Click on the arrow in the **+ button** at the bottom of the Actions table.
-* Select the **Delete action for** option.
-* Select the Tasks table.
+* Clique na flecha no **botão +**, na parte inferior da tabela Ações.
+* Selecione a opção **ação de eliminação**.
+* Selecione a tabela Tasks.
 
 ![Delete action creation](img/Delete-action-creation.png)
 
-At this point, you will see a **new action** named *"deleteTasks"* with *"Remove"* as the default label.
+Neste ponto, verá uma **nova ação** chamada *"deleteTasks"* com *"Remove"* como a etiqueta predeterminada.
 
 ![Delete action](img/Delete-action-final.png)
 
-You don't need to worry about parameters or properties for this type of action.
+Não necessita preocupar-se pelos parâmetros ou propriedades deste tipo de ação.
 
-## STEP 4. Send a comment action
+## PASSO 4. Ação de envio de comentário
 
-Now we want to **send a comment** to a **specific email** depending on a specific task. To do so, click on the + button and create a new action named **sendComment**.
+Agora queremos **enviar um comentário** a um **correio eletrônico específico** dependendo de uma tarefa específica. Para fazer isso, clique no botão+ e crie uma nova ação chamada **sendComment**.
 
 ![Delete action creation](img/Send-comment-action-creation.png)
 
-Now let's create three parameters:
+Agora vamos criar três parâmetros:
 
-* Click on the + button and select **Title** in the Action Parameters list to include it in the email you're going to send.
-* Create a **Comment** parameter and select Text area as the format property.
-* Create an **email** parameter and select Email address as the format property.
+* Clique no botão + e selecione **Title** na lista de parâmetros das ações, para incluí-lo no correio eletrônico que vai enviar.
+* Cria um parâmetro **Comment** e seleciona o formato Área de texto.
+* Crie um parâmetro **email** e selecione o formato Email address.
 
-Your Actions section should look like this:
+Sua seção Actions deveria parecer com isto:
 
 ![Send comment action creation](img/Send-comment-action-definition.png)
 
-## STEP 5. Create the On Mobile App Action
+## PASSO 5. Criação de On Mobile App Action
 
 Click on the Create button to create the *On Mobile App Action* database method.
 
-All of your actions will automatically be included in this database method.
+Todas suas ações se incluirão automaticamente no método banco.
 
-The only thing you need to do is add a reference to your method(s) for the scenario(s) your want to handle.
+O único que deve fazer é agregar uma referência a seus métodos para os cenários que quiser manejar.
 
-Here's the final *On Mobile App Action* database method:
+Aqui o método banco de dados *On Mobile App Action* final:
 
 ```4d
 C_OBJECT($0;$response)
@@ -115,7 +117,7 @@ C_OBJECT($1;$request)
 
 C_OBJECT($o;$context;$request;$result;$parameters)
 
-$request:=$1  // Informations provided by mobile application
+$request:=$1  // Informação oferecida pela aplicação móvel
 
 $context:=$request.context
 $parameters:=$request.parameters
@@ -124,7 +126,7 @@ Case of
 
     : ($request.action="addTasks")
 
-          // Insert here the code for the action "Add…"
+          // Inserir aqui o código para a ação "Add…"
 
         $o:=New object(\
         "dataClass";$context.dataClass;\
@@ -134,7 +136,7 @@ Case of
 
     : ($request.action="editTasks")
 
-          // Insert here the code for the action "Edit…"
+          // Inserir aqui o código para a ação "Edit…"
 
         $o:=New object(\
         "dataClass";$context.dataClass;\
@@ -146,7 +148,7 @@ Case of
 
     : ($request.action="deleteTasks")
 
-          // Insert here the code for the action "Remove"
+          // Inserir aqui o código para a ação "Remove"
 
         $o:=New object(\
         "dataClass";$context.dataClass;\
@@ -156,7 +158,7 @@ Case of
 
     : ($request.action="sendComment")
 
-          // Insert here the code for the action "Send Comment"
+          // Inserir aqui o código para a ação "Send Comment"
 
         $o:=New object(\
         "dataClass";$context.dataClass;\
@@ -168,15 +170,14 @@ Case of
 
     Else 
 
-          // Unknown action
-
+          // Ação desconhecida
 End case 
 
 $0:=$result
 
 ```
 
-## STEP 6. Create All the methods you need
+## PASSO 6. Criação de todos os métodos necessários
 
 
 ### addAction
@@ -247,19 +248,19 @@ If ($selection.length=1)
 
     If ($status.success)
 
-        $out.success:=True  // notify App that action success
-        $out.dataSynchro:=True  // notify App to refresh this entity
+        $out.success:=True  // notificar o App que a ação teve sucesso
+        $out.dataSynchro:=True  // notificar o App para refrescar esta entidade
         $out.statusText:="Task edited"
 
     Else 
 
-        $out:=$status  // return status to the App
+        $out:=$status  // devolver o estado do App
 
     End if 
 
 Else 
 
-    $out.success:=False  // notify App that action failed
+    $out.success:=False  // notificar o App que a ação falhou
 
 End if 
 
@@ -289,19 +290,19 @@ If ($selection.length=1)
 
     If ($entity.length=0)
 
-        $out.success:=True  // notify App that action success
-        $out.dataSynchro:=True  // notify App to refresh this entity
+        $out.success:=True  // notificar o App que a ação teve sucesso
+        $out.dataSynchro:=True  // notificar o App para refrescar esta entidade
         $out.statusText:="Task deleted"
 
     Else 
 
-        $out:=$status  // return status to the App
+        $out:=$status  // devolver estado do App
 
     End if 
 
 Else 
 
-    $out.success:=False  // notify App that action failed
+    $out.success:=False  // notificar o App que a ação falhou
 
 End if 
 
@@ -352,18 +353,18 @@ If ($selection.length=1)
 
     $status:=$transporter.send($email)
     If ($status.success)
-        $out.success:=True  // notify App that action success
+        $out.success:=True  // notificar o App que a ação teve sucesso
         $out.statusText:="Mail sent"
 
     Else 
-        $out.success:=False  // notify App that action failed
+        $out.success:=False  // notificar o App que a ação falhou
         $out.statusText:="Mail not sent"
 
     End if 
 
 Else 
 
-    $out.success:=False  // notify App that action failed
+    $out.success:=False  // notificar o App que a ção falhou
 
 End if 
 
@@ -372,39 +373,41 @@ $0:=$out
 
 ```
 
-Don't forget to add your own values for the **sendEmail** action.
+Não esqueça de agregar seus próprios valores para a ação **sendEmail**.
 
 
 
-## STEP 7. Build your app
+## PASSO 7. Criação da aplicação
 
 
-It's time to build your app!
+É hora de gerar sua aplicação!
 
-Now, if you click on the Action button in the navigation bar, you'll be able to **create a new task**.
+Agora, se clicar no botão Ação da barra de navegação, poderá **criar uma nova tarefa**.
 
 ![Create new task](img/Action-parameters-addAction.png)
 
-Holding and maintaining pressure on your new task cell in the List Form, will show that an **Edit...** action is available in the action list.
+Se manter a pressão sobre sua nova célula de tarefas no Formulário Lista, se mostrará uma ação **Editar...** na lista de ações.
 
 ![Edit task](img/Action-parameters-editAction.png)
 
-Send a comment using the **Send comment** action.
+Envie um comentário utilizando a ação **Send comment**.
 
 ![Send task comment](img/Action-parameters-sendComment.png)
 
-And finally you can delete an entity using the **Delete...** action.
+e finalmente pode eliminar uma entidade utilizando a ação **Eliminar... **.
 
 ![Delete task](img/Action-parameters-deleteAction.png)
 
-## STEP 8. Where to go from here?
+## PASSO 8. Where to go from here?
 
-Congratulations! Your Tasks iOS app is now complete and you can now modify your app data direclty from your device and sychronize it with your server!
+Congratulations! Sua aplicação iOS Tasks agora está completa e agora pode modificar os dados de sua aplicação diretamente desde seu dispositivo e sincronizá-los com seu servidor.
 
 
-Donwload the completed project:
+Download the completed project:
 
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-ActionParameters/archive/0.0.1.zip">Download completed project</a>
+href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/0.0.1.zip">Download completed project</a>
+</div>
 
 
