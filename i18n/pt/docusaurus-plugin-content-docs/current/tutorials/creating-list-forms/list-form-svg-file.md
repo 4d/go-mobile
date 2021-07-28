@@ -3,9 +3,9 @@ id: list-form-svg-file
 title: Template.svg
 ---
 
-The `template.svg` file is a basic visual representation of a template. In this file, you'll need to define areas in order to be able to add fields to your list form template from the project editor.
+The `template.svg` file is a basic visual representation of a template. Neste arquivo, precisa definir áreas para poder adicionar campos para seu modelo de formulário lista do editor de projeto.
 
-Here's a finished version:
+Aqui está a versão terminada:
 
 ![Template svg file](img/template-svg-file.png)
 
@@ -27,19 +27,19 @@ Title of the template.
 
 Includes IDs which define your form areas:
 
-* **search**: Refers to the search field area. This will allow you to drag and drop a field as the search criteria in your list form (optional).
-* **section**: Refers to the section field area. This will allow you drag and drop a field as the sort criteria in your list form (optional).
-* **f1, f2 and f3**: Refers to the fields to display in each cell of your list form. This will allow you to drag and drop fields to appear in your list form cells.
+* **search**: Refers to the search field area. Isso permite que arraste e solte um campo como um critério de pesquisa em seu formulário lista (opcional).
+* **section**: Refers to the section field area. Isso permite que arraste e solte um campo como o critério de ordenação em seu formulário lista (opcional).
+* **f1, f2 and f3**: Refers to the fields to display in each cell of your list form. Isso permite que arraste e solte campos para aparecer em suas células de formulário lista.
 
 ## Area position, height, and width
 
 You can define the position, height and width for:
 
-* Searchfield
-* Sectionfield
-* Other general fields that will be displayed in each table cell
+* Campo de pesquisa
+* Pesquisa seção
+* Outros campos gerais que serão exibidas em cada célula tabela
 
-### SearchableField area:
+### Área searchableField:
 
 ```svg
 //1
@@ -62,17 +62,17 @@ You can define the position, height and width for:
 </g>
 ```
 
-1. Entire area Y position
-2. Area background position, height, and width
-3. Icon to display a magnifying glass icon into the searchable field
-4. Define the text area position and width
+1. Posição Y toda a área
+2. Posição fundo, altura e largura da Área
+3. Ícone para exibir um ícone lupa no campo de pesquisa
+4. Define a posição da área de texto e a largura
 5. Define the droppable field position, height and width, as well as accepted [**field types**](#iostypes)
-6. Define a cancel button that will be displayed to delete the current content
+6. Define um botão de cancelar que será mostrado para eliminar o conteúdo atual
 
 The searchable field is optional.
 
 
-### SectionField area:
+### Área SectionField:
 
 ```svg
 //1
@@ -88,14 +88,14 @@ The searchable field is optional.
 <use id="section.cancel" x="224" y="111" xlink:href="#cancel" visibility="hidden"/>
 ```
 
-1. Area background position, height and width
-2. Define the text area position and width
+1. Posição, altura e largura da Área de fundo
+2. Define a posição da área de texto e a largura
 3. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
-4. Define a cancel button that will be displayed to delete the current content
+4. Define um botão de cancelar que será mostrado para eliminar o conteúdo atual
 
 The section field is optional.
 
-### ImageField area:
+### Área ImageField:
 
 ```svg
 //1
@@ -118,14 +118,14 @@ The section field is optional.
 </g>
 ```
 
-1. Entire area Y position
-2. Area background position, height and width
-3. Icon to display an image in the imageField
-4. Define the text area position and width
+1. Posição Y toda a área
+2. Posição, altura e largura da Área de fundo
+3. Icone para mostrar uma imagem no imageField
+4. Define a posição da área de texto e a largura
 5. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
-6. Define a cancel button that will be displayed to delete the current content
+6. Define um botão de cancelar que será mostrado para eliminar o conteúdo atual
 
-### Title Field area:
+### Área Title Field:
 
 ```svg
 //1
@@ -145,13 +145,13 @@ The section field is optional.
 </g>
 ```
 
-1. Entire area Y position
-2. Area background position, height and width
-3. Define the text area position and width
+1. Posição Y toda a área
+2. Posição, altura e largura da Área de fundo
+3. Define a posição da área de texto e a largura
 4. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
-5. Define a cancel button that will be displayed to delete the current content
+5. Define um botão de cancelar que será mostrado para eliminar o conteúdo atual
 
-### Subtitle Field area:
+### Área Subtitle Field:
 
 ```svg
 //1
@@ -171,11 +171,11 @@ The section field is optional.
 </g>
 ```
 
-1. Entire area Y position
-2. Area background position, height and width
-3. Define the text area position and width
+1. Posição Y toda a área
+2. Posição, altura e largura da Área de fundo
+3. Define a posição da área de texto e a largura
 4. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
-5. Define a cancel button that will be displayed to delete the current content
+5. Define um botão de cancelar que será mostrado para eliminar o conteúdo atual
 
 
 ## ios:types
