@@ -8,7 +8,7 @@ This tutorial will show you how to:
 
 - Create and use a custom [login form](https://4d-for-ios.github.io/gallery/#/type/form-login).
 - Allow authenticated users to login by scanning a QRCode.
-> **PREREQUISITES**
+> **CONDITIONS PRÉALABLES**
 > 
 > A website with authenticated users
 > 
@@ -25,7 +25,7 @@ Selecting a custom login form from the Project editor is not implemented yet but
 
 :::
 
-## STEP 1. Getting started
+## ÉTAPE 1. Prise en main
 
 In this tutorial, we're going to:
 
@@ -45,7 +45,7 @@ This project already includes a Users table with a Login and a Password for each
 
 :::
 
-## STEP 2. Include and use a custom login form
+## ÉTAPE 2. Include and use a custom login form
 
 To use a custom login form, the first thing you'll need to do is creating a *YourDatabase.4dbase/Resources/Mobile/form/login* folder.
 
@@ -78,7 +78,7 @@ This will allow to initialize the custom template and use it during the build pr
 You are done for the custom template intégration! So quite an easy process :)
 
 
-## STEP 3. On Mobile app Authentication database method
+## ÉTAPE 3. On Mobile app Authentication database method
 
 Open the QRCode mobile project and go right to the Publishing section.
 
@@ -124,7 +124,7 @@ $0:=$response
 ```
 
 
-## STEP 4. Project Methods
+## ÉTAPE 4. Project Methods
 
 ### Authentication method
 
@@ -249,7 +249,7 @@ In this last page, we use [4D tags](https://developer.4d.com/docs/en/Tags/tags.h
 
 ```
 
-## STEP 6. Get the entire senario
+## ÉTAPE 6. Get the entire senario
 
 ### Login into your website home page
 
@@ -278,7 +278,7 @@ Here is the final result :
 
 ![Sign in with QR Code](img/sign-in-with-qr-code.gif)
 
-## STEP 7. Where to go from here?
+## ÉTAPE 7. Where to go from here?
 
 The step 2 covers how to include easily any custom login form in your mobile app. So you should now be able just followin this step, to create your own custom login form and use it on your own.
 
