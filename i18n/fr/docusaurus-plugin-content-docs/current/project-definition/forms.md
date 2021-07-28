@@ -7,7 +7,7 @@ The Forms page allows you to select both list and detail forms for each publishe
 
 The 4D mobile editor provides various templates with custom transition effects to build fresh and modern mobile applications. Simple, empty templates are used by default for an app's list and detail forms.
 
-Here's the breakdown of this screen, from top to bottom:
+Voici la répartition de cet écran, de haut en bas :
 
 * **List Forms / Detail Forms:** Allows switching between list and detail form definitions for each table.
 * **Published tables:** Displays all tables published in the [Structure](structure.md) section.
@@ -94,7 +94,7 @@ If you want to try another template after dispatching your fields, just select i
 :::
 
 
-## Gallery
+## Galerie
 
 When you select a template in the form section, a "More" icon is available for both list and detail forms.
 
