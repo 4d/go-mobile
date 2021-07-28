@@ -1,67 +1,67 @@
 ---
 id: register-apple-developer-program-individual
-title: Apple Developer Program as an Individual
+title: Apple Developer Program pour les particuliers
 ---
 
-> **OBJECTIVES**
+> **OBJECTIFS**
 > 
 > Register for the Apple Developer Enterprise Program as an individual to deploy your app in-house.
 
-## STEP 1. Apple ID
+## ÉTAPE 1. Identifiant Apple
 
-If you don’t have any Apple ID go to [Step 2](#step-2-create-your-apple-id)
+Si vous n’avez pas d'identifiant Apple, passez à l'[Étape 2](#step-2-create-your-apple-id).
 
-If you already have an Apple ID, go to [Step 3](#step-3-register-as-a-developer)
+Si vous possédez déjà un identifiant Apple, passez à l'[Étape 3](#step-3-register-as-a-developer)
 
-## STEP 2. Create your Apple ID
+## ÉTAPE 2. Créez votre identifiant Apple
 
-Go the the [Apple ID creation page](https://appleid.apple.com/)
+Cliquez sur la [page de création de l'identifiant Apple](https://appleid.apple.com/)
 
-![Create your Apple ID](img/Apple-ID-Creation-Page-4D-for-iOS.png)
+![Créez votre identifiant Apple](img/Apple-ID-Creation-Page-4D-for-iOS.png)
 
-* Complete the form and security questions.
-* You'll receive a verification code by email.
-* Enter the verification code to validate your account creation.
+* Remplissez le formulaire et répondez aux questions de sécurité.
+* Vous recevrez un code de vérification par e-mail.
+* Entrez le code de vérification pour valider la création de votre compte.
 
 ![Register Developer Program](img/Register-developer-program-4D-for-iOS.png)
 
-* Once you have your Apple ID, you can continue to Step 3.
+* Une fois que vous obtenez votre identifiant Apple, passez à l’Étape 3.
 
-## STEP 3. Register as a developer
+## ÉTAPE 3. Souscrivez en tant que développeur
 
-* You can register as a developer [here](https://developer.apple.com/account/).
+* Vous pouvez souscrire [ici](https://developer.apple.com/account/) en tant que développeur .
 
-* Read and accept the Apple Developer Agreement.
+* Lisez et acceptez les termes du contrat "Apple Developer Agreement".
 * Click **Submit**.
 
 ![Register Developer Program](img/Register-developer-4D-for-iOS.png)
 
-## STEP 4. Join the Apple Developer Program
+## ÉTAPE 4. Rejoignez l'Apple Developer Program
 
-* Click on **Join the Apple Developer Program** at the bottom of the page.
+* Cliquez sur **Join the Apple Developer Program** au bas de la page.
 
-![Join the Apple Developer Program](img/Join-Apple-Developer-Program-individuals-4D-for-iOS.png)
+![Rejoignez l'Apple Developer Program](img/Join-Apple-Developer-Program-individuals-4D-for-iOS.png)
 
-## STEP 5. Enroll as an individual
+## STEP 5. Inscrivez-vous en tant que particulier
 
-* Click on the **Start your Enrollment** button.
-* Select **Individuals / Sole Proprietor / Single Person Business** from the Entity Type dropdown list.
-* Click **Continue**.
+* Cliquez sur le bouton **Start your Enrollment**.
+* Sélectionnez **Individuals / Sole Proprietor / Single Person Business** dans la liste déroulante "Entity Type".
+* Cliquez sur **Continue**.
 
 ![Start your Enrollment](img/Apple-Developer-Program-Individuals-4D-for-iOS.png)
 
-* Complete the form
-* Read and accept the Apple Developer Program License Agreement.
-* Click **Continue**.
+* Remplissez le formulaire
+* Lisez et acceptez les termes du contrat de licence "Apple Developer Program License Agreement".
+* Cliquez sur **Continue**.
 
-![Enroll as an individual](img/Apple-Developer-Program-Enrollment-4D-for-iOS.png)
+![Inscrivez-vous en tant que particulier](img/Apple-Developer-Program-Enrollment-4D-for-iOS.png)
 
-## STEP 6. Complete your purchase
+## ÉTAPE 6. Finalisez votre souscription
 
-* Click **Purchase** and make payment to complete your enrollment.
+* Cliquez sur **Purchase** et procédez au paiement pour finaliser votre souscription.
 
-![Complete your purchase](img/Complete-Purchase-Apple-Developer-Program-4D-for-iOS.png)
+![Finalisez votre souscription](img/Complete-Purchase-Apple-Developer-Program-4D-for-iOS.png)
 
-* When you have completed your purchase, you'll receive an email confirming your membership in the program.
+* Lorsque vous aurez finalisé votre achat, vous recevrez un e-mail de confirmation de votre adhésion au programme.
 
-Congratulations! You are now ready to publish apps to the App Store!
+Félicitations ! Vous êtes maintenant prêt à publier des applications sur l’App Store !
