@@ -3,23 +3,23 @@ id: what-is-xcode
 title: Xcode
 ---
 
-## What is Xcode?
+## Qu'est-ce que Xcode ?
 
-Xcode is an IDE and a set of developer tools for macOS used to create iPad, iPod, iPhone, and Mac apps.
+Xcode est un environnement de développement intégré (IDE) et un ensemble d’outils de développement pour macOS qui permet de créer des applications Mac, iPod, iPhone et iPad.
 
 ## Download
 
-To download the lastest version of Xcode go to the App Store.
+Pour télécharger la dernière version de Xcode, rendez-vous dans l’App Store.
 
 <div className="center-button">
 <a className="button button--primary" href="macappstore://itunes.apple.com/app/id497799835?mt=12">View in Mac App Store </a>
 </div>
 
-Registered developers can download preview releases and prior versions of the suite through the Apple Developer website.
+Les développeurs enregistrés peuvent télécharger des aperçu des sorties ainsi que les versions antérieures de la suite 4D via le site Web d'Apple Developer.
 
 🔗 https://developer.apple.com/download/more/ 🔗 https://developer.apple.com/xcode/
 
-## Version comparison table
+## Tableau de comparaison de version
 
 | Xcode  | Swift | iOS  | 4D          | macOS   |
 | ------ | ----- | ---- | ----------- | ------- |
@@ -39,17 +39,17 @@ Registered developers can download preview releases and prior versions of the su
 | 9.3.1  | 4.1   | 11.3 | 17R2        | 10.13.2 |
 
 
-### Use 17R6 with macOS 10.14.3
+### Utilisation de 17R6 avec macOS 10.14.3
 
-4D 17R6 requires Swift5.0 runtime. (already installed with macOS 10.14.4)
+4d 17R6 requiert Swift5.0. (déjà installé sur macOS 10.14.4)
 
- - Install `Swift 5 Runtime Support for Command Line Tools` from [More Downloads for Apple Developers](https://developer.apple.com/download/more/)
+ - Installez `Swift 5 Runtime Support for Command Line Tools` à partir de [More Downloads for Apple Developers](https://developer.apple.com/download/more/)
 
 
-### Compatibility
+### Compatibilité
 
-Frameworks compiled with one version of Xcode could not be used with another version.
+Les structures compilées avec une version de Xcode peuvent être incompatibles avec une autre version.
 
-The current release of swift(5) has ABI stability but no Module Stability. This two condition are needed to ship pre-compiled libraries.
+Dans la version courante de swift(5), la stabilité de l'ABI est garantie, contrairement à la stabilité du Module. Ces deux conditions sont nécessaires pour livrer les bibliothèques pré-compilées.
 
-Please see the Swift blog for more details. https://swift.org/blog/abi-stability-and-more/
+Pour plus d'informations, veuillez consulter le blog de Swift. https://swift.org/blog/abi-stability-and-more/
