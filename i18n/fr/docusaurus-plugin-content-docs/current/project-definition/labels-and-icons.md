@@ -1,6 +1,6 @@
 ---
 id: labels-and-icons
-title: Labels & Icons
+title: Libellés et icônes
 ---
 
 This page allows you to define display properties for your tables, fields and relations in the mobile app.
@@ -101,7 +101,7 @@ Available built-in formats depend on the field type:
 
 | Field type         | Formats                                                                                                                |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| **Text**           | Text                                                                                                                   |
+| **Texte**          | Texte                                                                                                                  |
 | **Date**           | Date, Short date, Long date, Full date                                                                                 |
 | **Time**           | Time, Short time, Duration, Integer number                                                                             |
 | **Image**          | Image                                                                                                                  |
