@@ -5,136 +5,136 @@ title: iOS Storyboard
 
 Now it's time to create your iOS detail form interface with Xcode.
 
-Here's the result we want to achieve:
+Voici le résultat que nous souhaitons obtenir :
 
 ![Storyboard custom detailform](img/storyboard-custom-detailform.png)
 
 For this template, we're going to add a:
 
-* Profile header image
-* A field to be duplicated
+* Une photo de profil dans l'en-tête
+* Un champ à dupliquer
 
-## Open the storyboard file with Xcode
+## Ouvrir le fichier storyboard avec Xcode
 
-First, open your storyboard file in Xcode.
+Dans un premier temps, ouvrez votre fichier storyboard dans Xcode.
 
 ![Empty storyboard custom template](img/empty-storyboard-custom-detailform-template.png)
 
 It's quite empty, so let's add some content!
 
-## Add a Scroll View
+## Ajouter une "Scroll View"
 
-For our detail form to be scrollable, the first step is to drag and drop a "Scroll View" from the **Object library**.
+Pour que notre formulaire détaillé soit déroulant, la première étape consiste à faire glisser et déposer une « Scroll View » (vue de défilement) depuis la **Bibliothèque d'objets**.
 
 ![Add Scroll View Storyboard](img/add-scrollview-storyboard.png)
 
 
-From the **Size inspector panel** (on the right side of the Interface Builder window), set the Scroll View Width value to 359 and the Height value to 667. Then set the X value to 8 and the Y value to 0.
+À partir du **Size inspector** (sur le côté droit de l’Interface Builder), définissez la largeur de la Scroll vue à 359 et la valeur de sa hauteur à 667. Définissez ensuite la valeur de X sur 8 et la valeur de Y sur 0.
 
 ![Scroll View position height and width](img/scrollview-position-height-width.png)
 
 
-Next, add four constraints by clicking on the **Add New Constraints button** (Trailing: 8, Leading: 8, Top: 0, and Bottom: 0) as shown below:
+Ajoutez ensuite quatre contraintes en cliquant sur le bouton **Add New Constraints** (Trailing: 8, Leading: 8, Top: 0, et Bottom: Multiple) comme suit :
 
 ![Scrollview Constraints](img/scrollview-constraints.png)
 
-## Add a Vertical Stack View
+## Ajouter une "Vertical Stack View"
 
-Drag and drop a Vertical Stack View from the **Object library** in Scroll View. Then, from the **Size inspector panel** (on the right side of the Interface Builder window) set the Width value to 359 and the Height value to 202. Finally, set the X value to 0 and the Y value to 8.
+Glissez et déposez une "Vertical Stack View" depuis la **bibliothèque d'objets** vers la "Scroll view". A partir du **Size inspector** (sur le côté droit de l’Interface Builder), définissez ensuite la largeur de la vue sur 359 et sa hauteur sur 202. Enfin, définissez la valeur de X sur 0 et la valeur de Y sur 8.
 
 ![Add stackview Storyboard](img/add-vertical-stackview-storyboard.png)
 
-Since the Stack View width and height are defined by the elements inside it, we will configure the size and constraints later.
+La hauteur et la largeur de la "Stack View" étant définies par les éléments qu'elle contient, nous allons configurer les dimensions et les contraintes plus tard.
 
-## Add Views to the Stack Views
+## Ajouter des vues au Stack Views
 
-Drag and drop a view from the **Object library** to the Stack View you've just added to your storyboard. Let's name it **Field View 1**.
+Glissez et déposez une vue depuis la **bibliothèque d'objets** vers la Stack View que vous venez d’ajouter à votre Storyboard. Nommons-la **Field View 1**.
 
 ![Add Field View 1](img/add-view1-storyboard.png)
 
-Then drag and drop another view from the **Object library** directly into the Document Outline at the same level as Field View 1 (to include it in the Stack View) and name it **Field View 2**.
+Faites ensuite glisser directement une autre vue depuis la **bibliothèque d'objets** et déposez-la dans le "Document Outline" au même niveau que Field View 1 (pour l’intégrer à la Stack View) et nommez-la **Field View 2**.
 
 ![Add Field View 2](img/add-view2-storyboard.png)
 
 
-To add space between the views, select your Stack View and set the spacing value to 8 (in the Attributes Inspector).
+Pour ajouter des espaces entre les vues, sélectionnez votre "Stack View" et affectez-lui une valeur d’espacement de 8 (dans l’Attributes Inspector).
 
 ![Stackview spacing](img/stackview-spacing.png)
 
-Select both **Field View 1** and **Field View 2** and in the **Size inspector panel** (on the right side of the Interface Builder window), set Width value to 359 and the Height value to 97.
+Sélectionnez **Field View 1** et **Field View 2** et définissez, dans le **Size inspector** (à droite de l'Interface Builder), la valeur de la largeur sur 359 et celle de la hauteur à 97.
 
 ![views position height and width](img/views-position-height-width-storyboard.png)
 
-Select **Field View 1** add three constraints by clicking on the **Add New Constraints button** (Trailing: 0, Leading: 0, and Top: 0):
+Sélectionnez **Field View 1** et ajoutez trois contraintes en cliquant sur le bouton **Add New Constraints button** (Trailing: 0, Leading: 0 et Top: 0) :
 
 ![Field Views constraints](img/fieldView-1-Field-View-2-constraints.png)
 
-For the Stack View to have the same width as the Scroll View, you need to add a constraint:
+Pour que les "Stack View" et "Scroll View" soient de la même largeur, vous devez ajouter une contrainte :
 
-Press **Ctrl** and drag the Stack View to the Scroll View. When you release the mouse button, the Interface Builder displays a menu with a list of possible constraints. Choose Equal Width!
+Press **Ctrl** and drag the Stack View to the Scroll View. Lorsque vous relâchez le bouton de la souris, l’Interface Builder affiche un menu avec une liste de contraintes éventuelles. Sélectionnez "Equal Width" !
 
 ![Stack View Equal Width](img/stackview-equal-width-scrollview.png)
 
-Next, with the Stack View selected add four constraints by clicking on the **Add New Constraints button** (Trailing: 0, Leading: 0, Top: 8, and Bottom: 0) as shown below:
+Ajoutez ensuite quatre contraintes avec la Stack View en cliquant sur le bouton **Add New Constraints** (Trailing: 0, Leading: 0, Top: 8, et Bottom: 0) comme suit :
 
 ![Stackview constraints](img/stackview-constraints.png)
 
-Here's what you'll see when constraints have been added :
+Voilà ce qui s'affichera lorsque les contraintes auront été ajoutées :
 
 ![Stackview final constraints](img/stackview-constraints-final.png)
 
-Now that you have two views in your Stack View and you've defined constraints, let's focus on Field View 1.
+Maintenant que vous disposez de deux vues dans votre Stack View et que vous avez défini les contraintes, concentrons-nous sur Field View 1.
 
-## Add an Image View to Field View 1
+## Ajoutez une Image View au Field View 1
 
-From the **Object library**, drag and drop an  **Image View** into Field View 1.
+À partir de l'**Object library** (la bibiliothèque d'objets), glissez-déposez une  **Image View** (une vue d'image) dans Field View 1.
 
 ![Add Image View storyboard](img/add-imageview-storyboard.png)
 
-In the **Size inspector panel** (on the right side of the Interface Builder window), set the Image View Width value to 359 and the Height value to 97. Then set the X value to 0 and the Y value to 0.
+À partir du **Size inspector** (à droite de l’Interface Builder), définissez la largeur de l'Image View sur 359 et sa hauteur sur 97. Définissez ensuite la valeur de X sur 0 et la valeur de Y sur 0.
 
 ![Image View position height and width](img/imageview-position-height-width.png)
 
-Next, add four constraints by clicking on the **Add New Constraints button** (Trailing:0, Leading:0, Top:0, and Bottom:0) as shown below:
+Ajoutez ensuite quatre contraintes en cliquant sur le bouton **Add New Constraints** (Trailing: 0, Leading: 0, Top: 0, et Bottom: 0) comme suit :
 
 ![Image View constraints](img/imageview-constraints.png)
 
-In the **Size inspector panel** change the Intrinsic Size from **Default** to **Placeholder**.
+Dans le **Size inspector**, remplacez la valeur **Default** de l'Intrinsic Size par **Placeholder**.
 
 ![Intrinsic size Image View](img/intrinsic-size-imageview.png)
 
-## Add Labels to Field View 2
+## Ajouter des libellés au Field View 2
 
-### Title label
+### Libellé Titre
 
-In the **Object library**, drag and drop a  **Label** into Field View 2 and set the Width value to 343 and the Height value to 22. Then set the X value to 8 and the Y value to 8.
+Dans la **bibliothèque d'objets**, glissez-déposez un **Libellé** dans Field View 2 et définissez la largeur sur 342 et la hauteur sur 22. Définissez ensuite la valeur de X sur 8 et la valeur de Y sur 8.
 
 ![Add label](img/add-label1-storyboard.png)
 
-Double click on the label and name it "`___FIELD_LABEL___`". Then in the **attribute inspector** set the font to **Helvetica Neue Light 18.0** and the color to **BackgroundColor**:
+Double click on the label and name it "`___FIELD_LABEL___`". Ensuite, à partir de l'**attribute inspector**, sélectionnez la police **Helvetica Neue Light 18.0** et la couleur **BackgroundColor** :
 
 ![Title label font and color](img/title-label-font-and-color.png)
 
-### Content label
+### Libellé Contenu
 
-Duplicate the Title label and set the duplicate's Width value to 339 and the Height value to 44. Then set the X value to 12 and the Y value to 37.
+Dupliquez le libellé Titre et définissez la largeur du libellé dupliqué sur 339 et sa hauteur sur 44. Définissez ensuite la valeur de X sur 12 et la valeur de Y sur 37.
 
 ![Add label](img/add-label2-storyboard.png)
 
-Double click on the label and name it "`<___FIELD_LABEL___>`". Then from the **attribute inspector** set the font to **Helvetica Neue Light 20.0** and the color to **Black Color**:
+Double click on the label and name it "`<___FIELD_LABEL___>`". Ensuite, à partir de l'**attribute inspector**, sélectionnez la police **Helvetica Neue Light 20.0** et la couleur **Black Color** :
 
 ![Content label font and color](img/content-label-font-and-color.png)
 
-Select the Content and Title labels and add four constraints by clicking on the **Add New Constraints button** (Trailing: 8, Leading: Multiple, Top: Multiple, and Bottom: Multiple) as shown below:
+Sélectionnez les deux libellés Contenu et Titre et ajoutez quatre contraintes en cliquant sur le bouton **Add New Constraints** (Trailing: 8, Leading: Multiple, Top: Multiple, et Bottom: Multiple) comme suit :
 
 ![Title and Content labels constraints](img/titlelabel-contentlabel-contraints.png)
 
-You're done with graphical elements! All of your constraints are well defined.
+La partie sur les éléments graphiques est terminée ! All of your constraints are well defined.
 
-## How to get data into your cells
+## Comment entrer des données dans vos cellules
 
 ### Image View
-Select your Image View and go to **Identity inspector** > User Defined Runtime Attributes. Click the **+ button** to add a row.
+Sélectionnez votre Vue Image, cliquez sur **Identity inspector** et allez dans User Defined Runtime Attributes. Cliquez sur le **bouton +** pour ajouter une ligne.
 
 ![User defined runtime attributes](img/user-defined-runtime-attributes.png)
 
@@ -146,9 +146,9 @@ Select your Image View and go to **Identity inspector** > User Defined Runtime A
 
 ![Identity inspector storyboard](img/identity-inspector-storyboard.png)
 
-### Labels
+### Libellés
 
-For the **first label** we are going to add several lines mainly to display icons:
+Pour le **premier libellé**, nous allons ajouter plusieurs lignes, principalement pour afficher des icônes :
 
 ![Label1 User Defined Runtime Attributes](img/label1-user-defined-runtime-attributes.png)
 
@@ -166,55 +166,55 @@ Select the **second label** and add a row in the Defined Runtime Attributes:
 
 ![Label2 User Defined Runtime Attributes](img/label2-user-defined-runtime-attributes.png)
 
-## Add TAGS to the cells to be duplicated
+## Ajouter des TAGS aux cellules dupliquées
 
-Field View 2 includes elements that will be duplicated so you can have as many field as you define in the project editor.
+Field View 2 inclut des éléments qui seront dupliqués, pour vous permettre d'avoir autant de champs que d'éléments définis dans l’éditeur de projet.
 
 Each storyboard element has an Object ID. For example, if you select Field View 2 and go to the **Identity inspector**, you'll see its Object ID:
 
 ![Object ID Storyboard](img/object-id-storyboard.png)
 
-In order to tell the project editor that all of the elements included in this view will be duplicated, we need to add TAG to each element and constraints.
+Pour informer l'éditeur de projet que tous les éléments compris dans cette vue seront dupliqués, nous devons ajouter TAG à chaque élément et à chaque contrainte.
 
-The process is a little bit tricky... Let's begin by opening the storyboard file with your favorite code editor!
+Le processus est un peu délicat... Nous allons commencer par ouvrir le fichier storyboard avec l'éditeur de code de votre choix !
 
 ### Field View 2
 
-* Select **Field View 2** and get its Object ID from the Identity Inspector (on the right side of the Interface Builder window). In our project, Field View 2 ID is: **SiX-3H-lNB**.
+* Sélectionnez **Field View 2** et obtenez ses identifiants d'objet à partir de l'Identity Inspector (à droite de l'Interface Builder). Dans notre projet, l'identifiant de Field View 2 est le suivant : **SiX-3H-lNB**.
 
-* Search for this ID in the storyboard xml code and replace it with **TAG-FD-001** each time it appears. As you can see, this Object ID is mentioned several times so be careful!
+* Recherchez cet identifiant dans le code xml du storyboard et remplacez-le par **TAG-FD-001** à chaque fois qu'il apparait. Soyez prudent, car, comme vous pouvez le voir, l'identifiant de cet objet est mentionné plusieurs fois !
 
 ![Storyboard xml](img/storyboard-xml.png)
 
-Save the storyboard xml file. As you can see, the Field View 2 Object ID has changed in your storyboard in Xcode:
+Sauvegardez le fichier xml du storyboard. Comme vous pouvez le voir, l'identifiant d'objet de Field View 2 a été modifié dans le storyboard dans Xcode :
 
 ![Field View 2 Object ID](img/field-view-2-object-id.png)
 
-### First label
+### Premier libellé
 
-* Now, get the **first label** Object ID from the Identity Inspector and replace it with **TAG-FD-002** each time it appears in the storyboard xml code.
+* Obtenez l'identifiant d'objet du **premier libellé** à partir de l'Identity Inspector et remplacez-le par **TAG-FD-002** chaque fois qu’il apparaît dans le code xml du storyboard.
 
 ![Label 1 Object ID](img/label1-object-id.png)
 
 Done with the first label.
 
-### Second label
+### Deuxième libellé
 
-* Next, get the **second label** Oject ID from the Identity Inspector and replace it with **TAG-FD-003** each time it appears in the storyboard xml code.
+* Obtenez ensuite l'identifiant d'objet du **deuxième libellé** à partir de l'Identity Inspector et remplacez-le par **TAG-FD-003** chaque fois qu’il apparaît dans le code xml du storyboard.
 
 ![Label 2 Object ID](img/label2-object-id.png)
 
-Voilà!
+Et voilà !
 
-### Constraints
+### Contraintes
 
-Both labels have constraints that we need to tag, too:
+Les deux libellés contiennent des contraintes que nous devons également identifier :
 
 ![Tag constraints](img/duplicated-constraints.png)
 
-Just like View Field 2 and label, get all **7 Constraints** Object IDs from the Identity Inspector and replace them with: **TAG-FD-004**, **TAG-FD-005**, **TAG-FD-006**, **TAG-FD-007**, **TAG-FD-008**, **TAG-FD-009** and **TAG-FD-010**.
+Tout comme pour View Field 2 et le libellé, obtenez tous les identifiants d'objets des **7 Contraintes** depuis l’Identity Inspector et remplacez-les par : **TAG-FD-004**, **TAG-FD-005**, **TAG-FD-006**, **TAG-FD-007**, **TAG-FD-008**, **TAG-FD-009** and **TAG-FD-010**.
 
-Go to your project editor and select your detail template from the Forms section, then click on Build.
+Ouvrez votre éditeur de projet, sélectionnez votre modèle de formulaire détaillé depuis la section Formulaires, puis cliquez sur Créer & exécuter.
 
 ![Custom detail template forms](img/custom-detail-template-forms.png)
 
@@ -222,13 +222,13 @@ Not bad for a first attempt!
 
 ![iPhone Demo](img/iphone-demo.png)
 
-Field View 2 is well duplicated! Let's see if we can make this app a bit more interesting!
+Field View 2 a bien été dupliqué ! Voyons comment rendre cette application un peu plus intéressante !
 
-### Customize your app
+### Personnaliser votre application
 
-We're going to add a corner radius to the Image View, as well as Field View 2.
+Nous allons ajouter un bord arrondi à l'Image View et à Field View 2.
 
-Select your Image View and add the two following lines in the User Defined Runtime Attributes:
+Sélectionnez votre Vue Image et ajoutez les deux lignes suivantes dans la zone User Defined Runtime Attributes :
 
 * **Key Path**: `cornerRadius`
 
@@ -236,7 +236,7 @@ Select your Image View and add the two following lines in the User Defined Runti
 
 * **Value**: `12`
 
-and
+et
 
 * **Key Path**: `layer.masksToBounds`
 
@@ -246,7 +246,7 @@ and
 
 ![iPhone Demo](img/imageview-corner-radius.png)
 
-Next, select Field View 2 and add the following:
+Sélectionnez ensuite Field View 2 et ajoutez ce qui suit :
 
 * **Key Path**: `cornerRadius`
 
@@ -256,7 +256,7 @@ Next, select Field View 2 and add the following:
 
 ![iPhone Demo](img/fieldview2-corner-radius.png)
 
-You can now build your project from the project editor!
+Vous pouvez désormais créer votre projet depuis l'éditeur de projet !
 
 ![Custom template final result](img/custom-template-final-result.png)
 
