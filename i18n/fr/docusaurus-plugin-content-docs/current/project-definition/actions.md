@@ -3,70 +3,70 @@ id: actions
 title: Actions
 ---
 
-This section allows you to:
+Cette section vous permet :
 
-* create actions to execute 4D code from your iOS app.
-* define and add parameters to your actions.
+* de créer des actions permettant d'exécuter du code 4D à partir de votre application iOS.
+* de définir et d'ajouter des paramètres à vos actions.
 
-## Project Editor Side
+## Éditeur de projet
 
-### Create your action
+### Créez votre application
 
-You can create a new action by clicking on the + button at the bottom of the Actions table. A new line will appear in the Actions table.
+Vous pouvez créer de nouvelles actions en cliquant sur le bouton +, situé en-dessous du tableau d'Actions. Une nouvelle ligne apparaîtra alors dans le tableau.
 
-Next you'll need to define the following:
+Vous définirez ensuite les éléments suivants :
 
-* **Names:** The action name to use in the [On Mobile App Action](https://developer.4d.com/4d-for-ios/docs/en/actions.html#on-mobile-app-action) database method to trigger your 4D code.
-* **Icons:** The icon to choose from your icon library. You can also add your own icon by following this [tutorial]`(using-icons.html)`.
-* **Short and long Labels:** The labels for the actions to display in your app.
-* **Table:** The table on which you want to apply the action.
-* **Scope:** Where to use the action, an **entity** or a **table**.
+* **Noms :** Définissez le nom de l'action à utiliser dans la méthode base [Sur une action app mobile](https://developer.4d.com/4d-for-ios/docs/en/actions.html#on-mobile-app-action) pour lancer votre code 4D.
+* **Icônes :** Sélectionnez une icône pour votre action à partir de la librairie d'icônes. You can also add your own icon by following this [tutorial]`(using-icons.html)`.
+* **Libellés long et court :** Définissez les libellés correspondant aux actions que vous souhaitez afficher dans votre application.
+* **Table :** Sélectionnez la table à laquelle vous souhaitez appliquer une action.
+* **Portée :** Choisissez d'appliquer l'action à une **entité** ou à une **table**.
 
 ![Action section](img/Actions-section-4D-for-iOS.png)
 
-### Add parameters to your action
+### Ajoutez des paramètres à votre action
 
 You can add **action parameters** and **edit** data directly from your app.
 
-For each parameter, you can edit the following properties:
+Pour chaque paramètre, vous pouvez éditer les propriétés suivantes :
 
-* Name
-* Long label
-* Short label
+* Le nom
+* Le libellé long
+* Le libellé court
 * Format
-* Input constraints (define minimum or maximum values)
-* Placeholder
-* Mandatory field definition
-* Default value
+* Les contraintes (définir des valeurs minimales ou maximales)
+* Le placeholder
+* La définition d'un champ obligatoire
+* La valeur par défaut
 
 ![Action parameters](img/Actions-parameters-4D-for-iOS.png)
 
-You are free to change the order of parameters using drag and drop.
+Vous êtes libres de choisir l'ordre des paramètres à l'aide du glisser-déposer.
 
-Here are the different **Formats** you can select for a parameter:
+Voici les différents **formats** que vous pouvez sélectionner en tant que paramètre :
 
 <table>
 
 <tr>
-<th colspan="2"  style={{textAlign: 'center'}}>TEXT</th>
+<th colspan="2"  style={{textAlign: 'center'}}>TEXTE</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Format</th><th>Description</th>
 </tr><tr>
-<td>Text</td><td>Capitalize the first letter of a string</td>
+<td>Texte</td><td>Première lettre de la chaîne en majuscule</td>
 </tr><tr>
-<td>Email Address</td><td>Optimized iOS keyboard for email entry</td>
+<td>Adresse mail</td><td>Clavier iOS optimisé pour la saisie de l'e-mail</td>
 </tr><tr>
-<td>Phone Number</td><td>iOS keypad for entering telephone numbers.</td>
+<td>Numéro de téléphone</td><td>Clavier iOS pour la saisie des numéros de téléphone.</td>
 </tr><tr>
-<td>Account</td><td>Optimized iOS keyboard for username entry</td>
+<td>Compte</td><td>Clavier iOS optimisé pour la saisie du nom d'utilisateur</td>
 </tr><tr>
-<td>Password</td><td>Optimized to handle passwords</td>
+<td>Mot de passe</td><td>Clavier optimisé pour la gestion des mots de passe</td>
 </tr><tr>
-<td>URL</td><td>Optimized iOS keyboard for URL entry</td>
+<td>URL</td><td>Clavier iOS optimisé pour la saisie de l'URL</td>
 </tr><tr>
-<td>Zip Code</td><td>Optimized iOS keyboard for zip code entry</td>
+<td>Code postal</td><td>Clavier iOS optimisé pour la saisie du code postal</td>
 </tr><tr>
-<td>Text area</td><td>Includes multiple lines of text in a single field</td>
+<td>Zone de texte</td><td>Inclut plusieurs lignes de texte dans un même champ</td>
 </tr><tr>
 <td>Barcode</td><td>Extract barcode associated value. Supported formats : EAN8, EAN13, Code 39, Code 93, Code 128, QR Code, UPC, PDF417</td>
 </tr>
@@ -148,9 +148,9 @@ Here are the different **Formats** you can select for a parameter:
 
 4D mobile projects include the following (predefined) preset actions to manage your app content:
 
-* Edit
-* Add
-* Delete
+* Action d'édition
+* Action d'ajout
+* Action de suppression
 * Share
 * Sort
 
@@ -158,30 +158,30 @@ Here are the different **Formats** you can select for a parameter:
 
 4D mobile projects makes the **Add actions** creation process very simple.
 
-The only thing you need to do is select the **Add action for** option, accessible from the **+ button** at the bottom of the Actions table.
+Vous n'avez qu'à sélectionner l'option **Action d'ajout pour**, accessible à partir du **bouton +**, situé en-dessous de la table Actions.
 
 ![Add actions](img/Actions-Add-action-4D-for-iOS.png)
 
 Then just **select the table** you want to link to this add action.
 
-This will **automatically create** all the parameters for you in the Project Editor. In the generated app, this will allow you to edit each field value.
+Cela **créera automatiquement** tous les paramètres dans l'éditeur de projets et vous permettra de modifier chaque valeur d'un champ.
 
-For those kind of action, you will see that all **properties** are already filled in for your convenience at the right side of the parameter's list.
+Pour ce genre d'actions, vous constaterez que toutes les **propriétés** sont déjà saisies à des fins pratiques, à droite de la liste de paramètres.
 
 
 ### Edit action
 
-**Edit actions** creation follows the same process as the Add actions, with the exception that you will not be able to define default values from the Actions section.
+La création des **actions d'édition** suit le même principe que les actions d'ajout, à l'exception du fait que vous ne serez pas en mesure de définir des valeurs par défaut à partir de la section Actions.
 
 
 
 ### Delete action
 
-**Delete action** creation follows the same process as the Edit action. The only difference is that this action allows you to remove an entity.
+**Delete action** creation follows the same process as the Edit action. La seule différence est que cette action vous permet de supprimer une entité.
 
 To create a Delete action, select the **Delete action for** option accessible from the **+ button** at the bottom of the Actions table.
 
-This type of action should be used with caution.
+Ce type d'actions doit être utilisé avec précaution.
 
 ![Delete actions](img/Actions-Delete-action-4D-for-iOS.png)
 
