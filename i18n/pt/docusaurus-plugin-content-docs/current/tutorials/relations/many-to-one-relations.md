@@ -1,20 +1,22 @@
 ---
-id: many-to-one-relations
+id: n-to-one-relations
 title: Many to One relations
 ---
 
-4D v17 R5 includes a new concept: Many to One relations
 
-> **NOTE**
-> 
-> In this tutorial, we will use the relation names between your tables.
-> 
-> Giving descriptive relation names can make your project structure definition easier.
+This tutorial will show you how easy it can be to include Many to one relations in your mobile projects.
+
+:::note
+
+In this tutorial, we will use the relation names between your tables. Giving descriptive relation names can make your project structure definition easier.
+
+:::
 
 Let's get started by downloading the Starter project:
 
-<a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-ManyToOneRelations/releases/latest/download/tutorial-ManyToOneRelations.zip">Starter project</a>
+<div className="center-button">
+<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-ManyToOneRelations/releases/latest/download/tutorial-ManyToOneRelations.zip">Starter project</a>
+</div>
 
 Here we want to display the category for each task in the detail form of your generated app. To do so, open the **StarteriOSProject** from **Open > Mobile Project...**
 
@@ -22,25 +24,25 @@ Then go right to your Structure section and select the **Task table**.
 
 ### Structure section
 
-* You can notice that the **TaskCategory relation** is underlined
+* Pode verificar que a **relação TaskCategory** está sublinhado
 
-* Clicking on it will display available fields through this relation
+* Ao clicar nele, serão mostrados os campos disponíveis através dessa relação.
 
-* Select the **Name field**
+* Selecione o  **campo Name**
 
 ![Select link from structure section](img/select-link-from-structure.png)
 
-* This field will operate as any other field for the rest of the app creation process
+* Este campo funcionará como qualquer outro campo durante o resto do processo de criação da aplicação
 
 * You can also filter your app content using related fields from the Data section. To do so enter `TaskCategory.Name != 'Personal'` in the Filter query field to exclude personal tasks.
 
  ![Related field from Data section](img/Related-field-from-Data-section.png)
 
-* You can then select an **icon** as well as **formatters** and define **short and long labels** from the Labels and Icons section
+* Então pode selecionar um **ícone** assim como **formatadores** e definir **etiquetas curtas e longas** na seção Etiquetas e Ícones
 
 ![Related field from Labels and Icons section](img/related-field-from-labels-icons.png)
 
-* Go to the Forms section and drag the field on the Task Detail form
+* Vá para a seção Formulários e arraste o campo no formulário detalhado Tasks
 
 ![Related field in Forms section](img/related-field-forms.png)
 
@@ -49,5 +51,4 @@ Then go right to your Structure section and select the **Task table**.
 You should see your related field in your app detail form !
 
 ![Related field in Forms section](img/final-result-n-to-one-relations.png)
-
 
