@@ -28,7 +28,7 @@ With **4D for iOS** and **4D for android**, you can easily create mobile project
 
 Structure access and data queries benefit from ORDA technology for an object-oriented and optimized server-side code.
 
-## Create native apps
+## Créer des applications natives
 
 4D handles the complexity and generates - in a totally transparent way - an Xcode project in pure Swift with an optimized UI/UX.
 
