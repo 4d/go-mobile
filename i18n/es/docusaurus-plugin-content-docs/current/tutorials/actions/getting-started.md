@@ -1,6 +1,6 @@
 ---
 id: getting-started
-title: Getting started
+title: Comencemos
 ---
 
 > **OBJECTIVES**
@@ -14,10 +14,10 @@ title: Getting started
 
 In 4D v17 R5, you can [define actions](define-first-action.md) directly from the Project Editor and execute 4D code from your generated iOS app!
 
-From here, when you build your app from the Project Editor using actions, you can decide to use:
+A partir de aquí, cuando crea su aplicación desde el editor de proyectos utilizando acciones, puede decidir utilizar:
 
-* **4D for iOS templates** from the Form section. In this case, actions are already included. You just need to [define actions](define-first-action.md) in the Actions section and create appropriate methods in 4D.
+* **Plantillas 4D for iOS templates** de la sección Formularios. En este caso, las acciones ya están incluidas. You just need to [define actions](define-first-action.md) in the Actions section and create appropriate methods in 4D.
 
-* **Your own custom templates** you developed. An important additional step is required for your actions to work in the generated iOS app. Indeed, it is necessary to manually [include action Tags](adding-actions-template.md) in your Listform and Detailforms templates.
+* **Sus propias plantillas personalizadas** que desarrolló. Se requiere un paso adicional importante para que sus acciones funcionen en la aplicación iOS generada. Indeed, it is necessary to manually [include action Tags](adding-actions-template.md) in your Listform and Detailforms templates.
 
-Now it's time to enjoy building a **Tasks app**, using 4D for iOS actions.
+Ahora es el momento de disfrutar creando una aplicación **Tasks**, utilizando acciones de 4D for iOS.
