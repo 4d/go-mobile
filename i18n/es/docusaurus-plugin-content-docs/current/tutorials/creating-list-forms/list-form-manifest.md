@@ -3,7 +3,7 @@ id: list-form-manifest
 title: Manifest.json
 ---
 
-The manifest file includes information about your list form template, such as the **Storyboard type** (list form or detail form), **name** and **number of fields per cell**.
+The manifest file includes information about your list form template, such as the storyboard **type** (list form or detail form), **name** and **number of fields per cell**.
 
 ```json
 {
@@ -19,7 +19,7 @@ The manifest file includes information about your list form template, such as th
 
 ```
 
-For example, the manifest file for the above list form template includes the following information:
+For example, the above manifest file includes the following information:
 
 1. **Template type**: listform
 2. **Template Name**: Custom List form
