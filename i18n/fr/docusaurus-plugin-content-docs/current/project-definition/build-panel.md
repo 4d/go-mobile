@@ -10,9 +10,9 @@ You can test your app at any moment during the development, thanks to the Simula
 
 Let’s take a closer look at the Build tab options:
 
-* **Build and Run:** Launches the app in the Simulator.
+* **Créer & exécuter :** Lance l'application dans le simulateur.
 
-* **iPhone X:** The default Simulator. Clicking here will reveal a dropdown list with all available simulators.
+* **iPhone X :** Le simulateur par défaut. En cliquant ici, vous afficherez une liste déroulante des simulateurs disponibles.
 
 * **Project:** Reveals a dropdown list where you can **open the project folder** or **product folder**, or **open the product with Xcode**. This dropdown list is useful for [debug operations](../debug/from-project-editor).
 
