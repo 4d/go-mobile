@@ -1,6 +1,6 @@
 ---
 id: deployment-in-house-archive-and-export
-title: Archive and export your Project
+title: Archivar y exportar un proyecto
 ---
 
 > **OBJECTIVES**
@@ -10,29 +10,29 @@ title: Archive and export your Project
 
 > **PREREQUISITES**
 > 
-> * [Apple Enterprise Developer Program]`(selecting-your-developer-program-register-apple-developer-enterprise-program.html)`
+> * [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program)
 > * A secured web server
 > * 57 x 57 px icon
 > * 512 x 512 px icon
 
 
-## STEP 1. Xcode configuration
+## PASO 1. Configuración Xcode
 
-Following validation of your account by Apple, open Xcode and add your Apple Enterprise Developer account in Preferences > Accounts.
+Tras la validación de su cuenta por parte de Apple, abra Xcode y añada su cuenta de Apple Enterprise Developer en Preferences > Accounts.
 
-Xcode will automatically install required provisioning and certificates.
+Xcode instalará automáticamente los elementos de provisión y certificados necesarios.
 
-## STEP 2. Get your Team ID
+## PASO 2. Obtenga su Team ID
 
-* Log into your Apple Developer Account. You can find your Team ID in Membership.
+* Inicie sesión en su cuenta de desarrollador Apple. Encuentre su ITeam ID en Membership.
 
-![Get your Team ID](img/Team-ID-4D-for-iOS.png)
+![Obtenga su Team ID](img/Team-ID-4D-for-iOS.png)
 
-## STEP 3. 4D for iOS configuration
+## PASO 3. Configure 4D for iOS
 
-* Launch 4D for iOS
+* Lance 4D for iOS
 
-* On the SECTIONS tab:
+* En la pestaña SECTIONS:
 
     * General: Enter your Team ID.
 
@@ -40,61 +40,61 @@ Xcode will automatically install required provisioning and certificates.
 
     * Publishing: Enter your production URL (HTTPS is mandatory for deployment).
 
-* On the BUILD tab:
-    * Build and Run: Build your project.
+* En la pestaña BUILD:
+    * Crear y ejecutar: cree su proyecto.
 
-## STEP 4. Open your project with Xcode
+## PASO 4. Abra su proyecto con Xcode
 
-* From the 4D for iOS Project Editor's BUILD tab, click on Project > Open the project with Xcode
+* From the 4D for iOS Project Editor's BUILD tab, click on **Project > Open the project with Xcode**
 
 ![pen your project with Xcode ](img/Open-your-project-Xcode-4D-for-iOS.png)
 
-## STEP 5. Archive your project from Xcode
+## PASO 5. Archive su proyecto desde Xcode
 
-* From Xcode, go to the simulator Menu and select **Generic iOS Device**
+* Desde Xcode, vaya al menú del simulador y seleccione **Generic iOS Device**
 
 ![Generic iOS Device](img/Deployment-Generic-iOS-Device.png)
 
-* Then from the menu, click on Product and select **Archive**
+* Luego desde el menú, haga clic en Product y seleccione **Archive**
 
 ![Archive your Project](img/Archive-your-Project.png)
 
-## STEP 6. Export your project
+## PASO 6. Exporte su proyecto
 
-* At the end of the archive process, the Organizer window appears with the archive you just created
+* Al final del proceso de archivo, aparece la ventana del Organizador con el archivo que acaba de crear
 
-* Click **Export**.
+* Haga clic en **Export**.
 
-![Export your project](img/Organizer-window-archive.png)
+![Exporte su proyecto](img/Organizer-window-archive.png)
 
-## STEP 7. Select your distribution method
+## PASO 7. Seleccione su método de distribución
 
-* Select **Enterprise** and click **Next**.
+* Seleccione **Enterprise** y haga clic en **Next**.
 
 ![Distribution Method](img/Distribution-Method-selection.png)
 
-## STEP 8. Select your Enterprise distribution options
+## PASO 8. Seleccione las opciones de distribución de su empresa
 
-* You can leave all option boxes checked.
+* Puede dejar todas las casillas de selección marcadas.
 
 ![Enterprise distribution options](img/Enterprise-distribution-options.png)
 
-* You can choose to let Xcode generate a manifest.plist file for you or generate it manually.
+* Puede elegir dejar que Xcode genere un archivo manifest.plist por usted o generarlo manualmente.
 
-* Click **Next**.
+* Haga clic en **Next**.
 
-#### What is a manifest?
+#### ¿Qué es un manifiesto?
 
-The manifest is an XML-based property list and should contain:
+El manifiesto es una lista de propiedades basada en XML y debe contener:
 
-* **URL** : URL pointing to the .ipa file.
-* **display-image**: URL pointing to a 57 x 57 px (72 x 72 px for iPad) PNG icon used during download and installation.
-* **full-size-image**: URL pointing to a 512 x 512 px PNG image representing the iTunes app.
-* **bundle-identifier**: Your app identifier string. You can get it from your app's .plist file.
-* **bundle-version**: Your app's current bundle version string. You can get it from your app's .plist file.
-* **title**: Your app's name.
+* **URL**: URL que apunta al archivo .ipa.
+* **display-image**: URL que apunta a un icono PNG de 57 x 57 px (72 x 72 px para iPad) utilizado durante la descarga y la instalación.
+* **full-size-image**: URL que apunta a una imagen PNG de 512 x 512 px que representa la aplicación iTunes.
+* **bundle-identifier**: la cadena de identificación de su aplicación. Puedes obtenerlo desde el archivo .plist de su aplicación.
+* **bundle-version**: la cadena de la versión actual del paquete de su aplicación. Puedes obtenerlo desde el archivo .plist de su aplicación.
+* **title**: el nombre de su aplicación.
 
-Here is an example of a manifest.plist file :
+Aquí hay un ejemplo de archivo manifest.plist:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -143,27 +143,27 @@ Here is an example of a manifest.plist file :
 ```
 
 
-## STEP 9. Distribution manifest information
+## PASO 9. Información del manifiesto de distribución
 
-* We recommand letting Xcode do the job of entering your app URL as well as the icons URLs. You will, of course, have the option to change those URLs later.
+* Recomendamos dejar que Xcode haga el trabajo de ingresar la URL de su aplicación, así como también los URL de los iconos. Por supuesto, tendrá la opción de cambiar los URL más adelante.
 
-![Distribution manifest information](img/Distribution-manifest-information.png)
+![Información del manifiesto de distribución](img/Distribution-manifest-information.png)
 
-* Click **Next**.
+* Haga clic en **Next**.
 
 
-## STEP 10. Re-sign your application
+## PASO 10. Vuelva a firmar su aplicación
 
-* Let Xcode manage the **Automatically manage signing** option.
+* Deje que Xcode administre la opción **Automatically manage signing**.
 
-![Re-sign your application](img/Re-sign-your-application.png)
+![Vuelva a firmar su aplicación](img/Re-sign-your-application.png)
 
-* Click **Next**.
+* Haga clic en **Next**.
 
-## STEP 11. Review your app.ipa content
+## PASO 11. Verifique el contenido de su aplicación .ipa
 
-* Here you can verify that your application identifier is correct as well as your Team ID.
+* Aquí puede verificar que su identificador de aplicación sea correcto, así como también su Team ID.
 
-![Review your app.ipa content](img/Review-ipa-content.png)
+![Verifique el contenido de su aplicación .ipa](img/Review-ipa-content.png)
 
-* Click on **Export** and select where to save your app folder on your computer.
+* Haga clic en **Export** y seleccione dónde guardar la carpeta de su aplicación en su computador.
