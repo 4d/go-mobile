@@ -1,6 +1,6 @@
 ---
 id: requirements
-title: Requirements
+title: Pré-requis
 ---
 
 4D for iOS and 4D for Android require a specific minimum configuration.
