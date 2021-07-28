@@ -5,47 +5,48 @@ title: Working with Xcode
 
 > **OBJECTIVES**
 > 
-> * Open a 4D for iOS project from the Project Editor.
-> * Customize the generated 4D for iOS app.
+> * Abrir um projeto 4D for iOS do Editor de Projetos.
+> * Personalizar a aplicação 4D for iOS gerada.
 
-4D for iOS generates a native iOS app for you which you can modify and customize with Xcode. Let's take a look at the process!
+4D for iOS gera uma aplicação iOS nativa modificável e personalizável com Xcode. Vamos olhar o processo!
 
 > **NOTE**
 > 
-> If you customize your project on Xcode and rebuild it from the Project Editor All of your modifications will be lost!
+> Se personalizar seu projeto em Xcode e reconstruí-lo a partir do Editor de Projeto, todas as modificações serão perdidas!
 
 
-We'll use the [contact application](../creating-ios-app/create-contact-app.md) we created.
+We'll use the [contact application](../create-your-first-app) we created.
 
 Download the Starter project:
 
+<div className="center-button">
 <a
   className="button button--primary"
-  target="_blank"
-  href={require('./assets/customizing-with-xcode/contact-app-starter.zip').default}>
-  Starter project
+  href="#">
+  Download
 </a>
+</div>
 
-## STEP 1. Generate your iOS Project
+## PASSO 1. Gerar seu iOS projeto
 
-* If your haven't built your project yet, go to step 2.
-* If you've already built your project, go to step 3.
+* Se ainda não construiu seu projeto, vá para a etapa 2.
+* Se você já construiu o seu projeto, vá para a etapa 3.
 
-## STEP 2. Build your Project
+## PASSO 2. Crie seu projeto
 
 From the Project Editor BUILD tab:
 
-* Select the device to use as a Simulator by clicking on the device button.
-* Click the **Build and Run** button.
+* Selecione um aparelho a usar como um Simulador clicando no botão do aparelho.
+* Clique no botão **Criar e executar**.
 
 ![Build and Run](img/build-and-run.png)
 
-## STEP 3. Open your Project with Xcode
+## PASSO 3. Abra seu projeto com o Xcode
 
 From the Project Editor BUILD tab:
 
-* Click on Project > Open the project with Xcode
+* Clique em Projeto > Abrir o projeto com Xcode
 
-![Open your Project with Xcode](img/Open-your-project-Xcode-4D-for-iOS.png)
+![Abra seu projeto com o Xcode](img/Open-your-project-Xcode-4D-for-iOS.png)
 
-Now you're ready to start working on your 4D for iOS project in Xcode, keep reading to learn how!
+Now you're ready to start working on your 4D for iOS project in Xcode.
