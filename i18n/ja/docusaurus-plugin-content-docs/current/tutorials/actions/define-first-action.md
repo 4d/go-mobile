@@ -1,6 +1,6 @@
 ---
 id: define-first-action
-title: Defining your first action
+title: はじめてのアクション
 ---
 
 In this tutorial, we are going to work on a **Tasks iOS app** and see how to deal with actions in this app.
@@ -11,30 +11,32 @@ More globally, we want to **change all tasks status** to postponed or in Progres
 
 Download the **Starter project** and go right to the **Actions section**.
 
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">Download</a>
+</div>
 
 You can define actions for two levels:
 
-* Entity actions
-* Table actions
+* エンティティに対するアクション
+* テーブルに対するアクション
 
-Let's focus first on Entity actions!
+まずはエンティティに対するアクションから始めましょう！
 
 
-## Entity actions
+## エンティティに対するアクション
 
-### STEP 1. Entity action in Action section
+### ⒈ 「アクション」セクションで設定すること
 
 In this Actions section, you will be able to define all your actions **names**, **icons**, **labels**, the **table** you want the action to be available in and the **scope** you want actions to be applied on.
 
 The action section is quite empty when you open it for the first time, so click on the **Plus button** at the bottom left to add your first action!
 
-![Create action](img/Create-action.png)
+![アクションの追加](img/Create-action.png)
 
 Let's define first an action that will **change a task status** to "Complete" and put the **percentage of completion** to 100%.
 
-To define this action:
+下記のステップで実現することができます。
 
 * Enter **taskDone** in **Names field**
 * Select the **Done icon** from the icon library
@@ -43,9 +45,9 @@ To define this action:
 * Select the **Tasks** table from **Tables** list
 * Select **Current record** from **Scope** list
 
-![Done action definition](img/Done-action-definition.png)
+![完了アクションの設定](img/Done-action-definition.png)
 
-### STEP 2. Create and edit the Action Database Method
+### ⒉ データベースメソッドの作成と編集
 
 Now that your action is defined in the Project Editor, you have to create the **[On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)** database Method.
 
@@ -57,7 +59,7 @@ C_OBJECT($1)
 
 C_OBJECT($o;$context;$request;$result)
 
-$request:=$1  // Informations provided by mobile application
+$request:=$1  // モバイルアプリから送られた情報
 
 $context:=$request.context
 
@@ -79,11 +81,11 @@ Case of
 
 End case
 
-$0:=$result  // Informations returned to mobile application
+$0:=$result  // モバイルアプリに返される情報
 
 ```
 
-### STEP 3. Create a "modifyStatus" Method
+### ⒊ "modifyStatus" メソッドの作成
 
 Once your database method has been edited, you have to create a **modifyStatus** Method that will make the job :
 
@@ -111,18 +113,18 @@ If ($selection.length=1)
 
     If ($status.success)
 
-        $out.success:=True  // notify App that action is successful
-        $out.dataSynchro:=True  // notify App to refresh this entity
+        $out.success:=True  // アクションの成功を通知
+        $out.dataSynchro:=True  // セレクションの更新を要求
 
     Else
 
-        $out:=$status  // return status to the App
+        $out:=$status  // モバイルアプリに返される情報
 
     End if
 
 Else
 
-    $out.success:=False  // notify App that action failed
+    $out.success:=False  // アクションの失敗を通知
 
 End if
 
@@ -130,17 +132,17 @@ $0:=$out
 
 ```
 
-Build and Run you app and there you go! Your **Done action** is available when you swipe left a cell in Listform, as well as when you click on the **generic action button** in the navigation bar of the Detail form.
+アプリをビルドして実行しましょう！ Your **Done action** is available when you swipe left a cell in Listform, as well as when you click on the **generic action button** in the navigation bar of the Detail form.
 
-![Done action](img/Entity-action-Done.png)
+![完了アクション](img/Entity-action-Done.png)
 
-## Table actions
+## テーブルに対するアクション
 
-### STEP 1. Table action in Action section
+### ⒈ 「アクション」セクションで設定すること
 
 Now, imagine that you are going on holidays and you want to **change all your tasks status** to "Postponed".
 
-Let's define this action from the Action section:
+下記のステップで実現することができます。
 
 * Enter **postponeAll** in **Names field**
 * Select the **Postponed icon** from the icon library
@@ -149,9 +151,9 @@ Let's define this action from the Action section:
 * Select the **Tasks** table from **Tables** list
 * Select **Table** from **Scope** list
 
-![Postponed action definition](img/PostponedAll-action-definition.png)
+![延期アクションの設定](img/PostponedAll-action-definition.png)
 
-### STEP 2. Edit the Action method
+### ⒉ データベースメソッドの編集
 
 Click on the **Edit button** at the bottom right of the action table to complete the **On Mobile App Action** database method :
 
@@ -161,7 +163,7 @@ C_OBJECT($1)
 
 C_OBJECT($o;$context;$request;$result)
 
-$request:=$1  // Informations provided by mobile application
+$request:=$1  // モバイルアプリから送られた情報
 
 $context:=$request.context
 
@@ -190,12 +192,12 @@ Case of
 
 End case
 
-$0:=$result  // Informations returned to mobile application
+$0:=$result  // モバイルアプリに返される情報
 
 ```
 
 
-### STEP 3. Create a "postponeAll" Method
+### ⒊ "postponeAll" メソッドの作成
 
 As you create the **modifyStatus** Method, follow the same process and create a new **postponeAll** Method that will modify all record status:
 
@@ -218,8 +220,8 @@ If ($in.dataClass#Null)
 
     End for each
 
-    $out.success:=True  // notify App that action success
-    $out.dataSynchro:=True  // notify App to refresh the selection
+    $out.success:=True  // アクションの成功を通知
+    $out.dataSynchro:=True  // セレクションの更新を要求
 
 Else
 
@@ -231,17 +233,19 @@ $0:=$out
 
 ```
 
-Build and Run your app! You will find a new **generic button** in the navigation bar of your Lisform. Click on it to trigger the **Postpone All** action.
+アプリをビルドして実行しましょう！ You will find a new **generic button** in the navigation bar of your Lisform. Click on it to trigger the **Postpone All** action.
 
-![Final result Postponed Action](img/ListForm-table-action-tableview-tuto.png)
+![延期アクション（完成）](img/ListForm-table-action-tableview-tuto.png)
 
-## Where to Go From Here?
+## これからどうする？
 
-Congratulations! You've just added 2 actions to your iOS app. You are now able to add all actions you need to your Tasks app!
+おつかれさまでした！ You've just added 2 actions to your iOS app. You are now able to add all actions you need to your Tasks app!
 
-![Final result All Action](img/ListForm-entity-action-tableview.png)
+![まとめて設定アクション（完成）](img/ListForm-entity-action-tableview.png)
 
 Download the completed project that includes various actions:
 
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-Actions/releases/latest/download/tutorial-Actions.zip">Completed project</a>
+href="https://github.com/4d-go-mobile/tutorial-Actions/releases/latest/download/tutorial-Actions.zip">Download</a>
+</div>
