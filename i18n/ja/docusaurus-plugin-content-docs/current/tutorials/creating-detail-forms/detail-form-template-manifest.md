@@ -1,16 +1,9 @@
 ---
 id: detail-form-template-manifest
-title: Manifest.json
+title: manifest.json
 ---
 
-The manifest file includes information about your detail form template such as the :
-
-* **Storyboard type:** list form or detail form
-* **name**
-* **renderer:** version number
-* **hOffset:** the vertical offset of the first field that is going to be duplicated
-* **number of static fields**
-* **Icon properties:** width and height
+The manifest file includes information about your detail form template,  such as the storyboard **type** ("listform" or "detailform"), **name**, and **number of static fields**.
 
 
 ```json
@@ -35,11 +28,14 @@ The manifest file includes information about your detail form template such as t
 
 ```
 
-For example, the manifest file for the detail form template below includes the following information:
+For example, the above manifest file includes the following information:
 
-1. **Storyboard type:** detailform
-2. **Template Name:** Custom Detail form
-3. **Version:** 2
-4. **hOffset:** the first field that is going to be duplicated is at 91 pixels from the top
-5. **Field number:** One static field (and 0 for infinite duplicated fields (a header image, and duplicated fields))
-6. **Icon properties:** Icon width and height
+
+
+* **type:**storyboard type. In this example, "detailform"
+* **name:**template name. In the this example, "Custom Detail form" below
+* **renderer:** version number
+* **hOffset:** vertical offset of the first field that is going to be duplicated. In this example, 91 pixels from the top.
+* **fields**: number of static fields. In this example, 1 static field and 0 for infinite duplicated fields (a header image, and duplicated fields)
+* **Icon properties:** Icon width and height (16 px)
+
