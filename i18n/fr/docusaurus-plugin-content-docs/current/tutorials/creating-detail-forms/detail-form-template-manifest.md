@@ -34,7 +34,7 @@ For example, the above manifest file includes the following information:
 
 * **type:**storyboard type. In this example, "detailform"
 * **name:**template name. In the this example, "Custom Detail form" below
-* **renderer:** version number
+* **Rendu :** numéro de version
 * **hOffset:** vertical offset of the first field that is going to be duplicated. In this example, 91 pixels from the top.
 * **fields**: number of static fields. In this example, 1 static field and 0 for infinite duplicated fields (a header image, and duplicated fields)
 * **Icon properties:** Icon width and height (16 px)
