@@ -22,7 +22,7 @@ Deep linking feature is currently not available in 4D for Android.
 
 Here is a comparison between the two options which are available in the project editor:
 
-| PROS                      | CONS                                |
+| AVANTAGES                 | INCONVÉNIENTS                       |
 | ------------------------- | ----------------------------------- |
 | Easy to implement         | Always requires permission          |
 | No extra backend required | Doesn't work if app isn't installed |
@@ -30,7 +30,7 @@ Here is a comparison between the two options which are available in the project 
 
 ### Universal links
 
-| PROS                                | CONS                           |
+| AVANTAGES                           | INCONVÉNIENTS                  |
 | ----------------------------------- | ------------------------------ |
 | Doesn't require permission          | Static backend with SSL needed |
 | Doesn't open the browser            | More complex to implement      |
