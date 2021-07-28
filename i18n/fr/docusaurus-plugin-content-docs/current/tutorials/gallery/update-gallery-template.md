@@ -1,53 +1,53 @@
 ---
 id: update-gallery-template
-title: Update a template
+title: Mettre à jour un template
 ---
 
-> **OBJECTIVES**
+> **OBJECTIFS**
 > 
 > Open and update a template from the gallery and improve it
 
-## Open a template
+## Ouvrir un template
 
-To modify a template that have downloaded from the Gallery :
+Pour modifier un modèle téléchargé depuis la galerie :
 
-* The first thing you'll need to do is going to your *YourDatabase.4dbase/Resources/Mobile/form/list* folder.
+* La première chose à faire est d'aller dans votre dossier *YourDatabase.4dbase/Resources/Mobile/form/list*.
 
-![Template resources folder](img/template-resources-folder.png)
+![Dossiers de ressources des templates](img/template-resources-folder.png)
 
-* From here, you can see the template you have just downloaded previously is availble.
-* Unzip and opent it
-* Then double click on the package.swift file.
+* Vous pouvez voir que le modèle que vous venez de télécharger précédemment est disponible.
+* Décompressez et ouvrez-le
+* Puis, double-cliquez sur le fichier package.swift.
 
-![Open package.swift](img/open-package-swift.png)
+![Ouvrir package.swift](img/open-package-swift.png)
 
-* This will automatically open in Xcode with all sources to allow you modifying your template.
+* Cela ouvrira automatiquement Xcode avec toutes les sources pour vous permettre de modifier votre modèle.
 
-![Open with Xcode](img/open-with-xcode.png)
+![Ouvrir avec Xcode](img/open-with-xcode.png)
 
-## Update your template
+## Mettez à jour votre modèle
 
-From here you will be able to add swift code and optimize your stroybord template.
+De là, vous pourrez ajouter du code Swift et optimiser votre modèle stroybord.
 
-So easy to use !
+C'est si facile à utiliser !
 
-Let's for example update the FIELD_1_LABEL color and font using the Attributes inspector.
+Par exemple, mettons à jour la couleur et la police FIELD_1_LABEL à l'aide de l'inspecteur d'attributs.
 
-![Update with Xcode](img/update-template.png)
+![Mettre à jour avec Xcode](img/update-template.png)
 
-Then after you've done your template improvements, you can use your template selecting it from the Forms template picker in the project editor.
+Ensuite, une fois que vous avez amélioré vos modèles, vous pouvez utiliser votre modèle en le sélectionnant dans le sélecteur de modèles Formulaires de l'éditeur de projet.
 
-![Select updated template](img/selelect-update-template.png)
+![Sélectionner un template mis à jour](img/selelect-update-template.png)
 
-## Share your template
+## Partagez votre modèle
 
-When your template is ready and you added significat improvements, you probably want to share it.
+Lorsque votre modèle est prêt et que vous avez apporté des améliorations significatives, vous souhaiterez probablement le partager.
 
-A sharing button is directly accessible at the bottom of the template Gallery picker!
+Un bouton de partage est directement accessible en bas du sélecteur de modèles !
 
-![Share your template](img/share-template.png)
+![Partagez votre modèle](img/share-template.png)
 
-All the sharing process is detailed on the contribution page for you to help you in the sharing process and where good proctices are described.
+Tout le processus de partage est détaillé sur la page de contribution, où les bonnes procédures sont décrites, pour vous aider dans le processus de partage.
 
 ## Where to go from here?
 
