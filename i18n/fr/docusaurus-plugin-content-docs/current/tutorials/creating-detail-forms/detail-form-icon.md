@@ -3,14 +3,14 @@ id: detail-form-icon
 title: Detail form icons
 ---
 
-You can create your own template icon.
+Vous pouvez créer votre propre icône pour votre modèle.
 
-It must be 160x160px and must be named **layoutIconx2.png**
+L'icône doit avoir une résolution de 160x160px et doit être nommée **layoutIconx2.png**
 
-The icon will be used:
+L’icône sera utilisée :
 
-* above the table name when the template has been selected, and
-* in the template selector window in the **Forms section**
+* au-dessus du nom de la table, une fois que le modèle est sélectionné, et
+* dans la fenêtre de sélection des modèles dans la **section Formulaires**
 
 ![Custom detailform template](img/custom-detailform-template.png)
 
