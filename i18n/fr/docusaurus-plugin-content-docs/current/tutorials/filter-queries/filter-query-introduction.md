@@ -20,8 +20,8 @@ href="https://github.com/4d-go-mobile/tutorial-RestrictedQueries/releases/latest
 
 The database includes a:
 
-* **CRM table** with all the data we want to display in the generated iOS app
-* **AccountManager table** with basic information about the account managers (email and name).
+* **La table CRM** qui comprend l'ensemble des données que nous souhaitons afficher dans l'application iOS générée
+* **La table AccountManager** qui comprend les informations de base sur les chargés de clientèle (nom et e-mail).
 
 ![CRM database](img/CRMDatabase.png)
 
