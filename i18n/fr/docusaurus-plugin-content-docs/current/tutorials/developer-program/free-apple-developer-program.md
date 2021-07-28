@@ -1,34 +1,34 @@
 ---
 id: free-apple-developer-account
-title: Free Apple Developer account
+title: Compte Apple Developer gratuit
 ---
 
-Even if you don’t wish to pay $99 a year to join the Apple Developer Program, you can still create a free Apple ID and use it to access a limited set of developer-oriented privileges.
+Même si vous ne souhaitez pas payer 99 $ par an pour adhérer au Apple Developer Program, vous pouvez toujours créer un identifiant Apple gratuit et l'utiliser pour accéder à un ensemble limité d'exclusivités destinées aux développeurs.
 
-## STEP 1. Apple ID
+## ÉTAPE 1. Identifiant Apple
 
-If you don’t have any Apple ID go to [Step 2](#step-2-create-your-apple-id)
+Si vous n’avez pas d'identifiant Apple, passez à l'[Étape 2](#step-2-create-your-apple-id).
 
-If you already have an Apple ID, go to [Step 3](#step-3-open-xcode)
+Si vous possédez déjà un identifiant Apple, passez à l'[Étape 3](#step-3-open-xcode).
 
-## STEP 2. Create your Apple ID
+## ÉTAPE 2. Créez votre identifiant Apple
 
-Go the the [Apple ID creation page](https://appleid.apple.com/).
+Cliquez sur la [page de création de l'identifiant Apple](https://appleid.apple.com/).
 
-![Create your Apple ID](img/Apple-ID-Creation-Page-4D-for-iOS.png)
+![Créez votre identifiant Apple](img/Apple-ID-Creation-Page-4D-for-iOS.png)
 
-* Complete the form and security questions.
-* You'll receive a verification code by email.
-* Enter the verification code to validate your account creation.
+* Remplissez le formulaire et répondez aux questions de sécurité.
+* Vous recevrez un code de vérification par e-mail.
+* Entrez le code de vérification pour valider la création de votre compte.
 
 ![Register Developer Program](img/Register-developer-program-4D-for-iOS.png)
 
-* Once you have your Apple ID, you can continue to Step 3.
+* Une fois que vous obtenez votre identifiant Apple, passez à l’Étape 3.
 
-## STEP 3. Open Xcode
+## ÉTAPE 3. Ouvrez Xcode
 
-* Launch Xcode > Preferences > Accounts
-* Add your Apple ID and sign in
+* Lancez Xcode > Preferences > Accounts
+* Ajoutez votre identifiant Apple et connectez-vous
 
-Congratulations! You're now ready to use your free Apple ID!
+Félicitations ! You're now ready to use your free Apple ID!
 
