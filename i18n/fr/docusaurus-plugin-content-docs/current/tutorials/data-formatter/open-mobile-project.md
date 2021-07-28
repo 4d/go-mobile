@@ -1,21 +1,21 @@
 ---
 id: open-mobile-project
-title: Open mobile project
+title: Ouvrir un projet mobile
 ---
 
-Go to Labels & Icons in Sections, you'll see that a new Formatters column is available in the Field Properties:
+Dans Sections, cliquez sur Libellés et icônes. Vous verrez qu’une nouvelle colonne Formats est disponible dans les Propriétés des champs :
 
 ![Data formatter labels icons](img//data-formatter-labels-icons.png)
 
-From here, you can select specific formats depeding on your needs. Let's define the Available Credit field as a Currency:
+Vous pouvez y sélectionner des formats spécifiques en fonction de vos besoins. Nous allons attribuer le format monnaie au champ "Available Credit" :
 
 ![Available credit currency](img/available-credit-currency.png)
 
-Let's do the same process for all of the other fields:
+Nous ferons de même pour tous les autres champs :
 
-* Set Current Balance as a **Currency $**
-* Set Percent Used as a **Percentage**
-* Set Credit Limit as a **No or Yes**
-* Set Credit Date as a **Short Date**
+* Attribuez le format **Monnaie $** au champ "Current Balance"
+* Attribuez le format **Pourcentage** au champ "Percent Used"
+* Attribuez le format **Oui ou non** au champ "Credit Limit"
+* Attribuez le format **Date courte** au champ "Credit Date"
 
 ![Select field formatters](img/select-field-formatters.png)
