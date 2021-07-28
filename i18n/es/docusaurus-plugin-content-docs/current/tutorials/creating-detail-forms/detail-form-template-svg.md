@@ -4,21 +4,24 @@ title: Template.svg
 sidebar_label: Template.svg
 ---
 
-The template.svg file is a basic template representation. In this svg file, you'll need to define areas in order to be able to add fields to your detail form template from the project editor.
+The `template.svg` file is a basic template representation. En este archivo svg, deberá definir áreas para poder agregar campos a la plantilla de formulario detallado desde el editor de proyecto.
 
-Here's a finished version:
+Aquí hay una versión final:
 
 ![Template svg file](img/detailform-template-svg-file.png)
 
-This template has dynamic field numbering, meaning that this template will allow you to add an **image** and you can put **as many fields** depending on your needs. So when you build your detail form in the Forms section and drag and drop a field, a new empty field appears below the previous one for you to add a new field:
+This template has dynamic field numbering, meaning that this template will allow you to add an **image** and you can put **as many fields** as you need. Entonces, durante la creación de su formulario detallado en la sección Formularios y arrastra y suelta un campo, aparece un nuevo campo vacío debajo del anterior para que agregue un nuevo campo:
 
 ![Template svg file](img/detailform-dynamic-field-number.png)
 
-Open the template.svg file with your favorite code editor.
+```
+![Template svg file](assets/en/custom-detailform/detailform-dynamic-field-number.png)
+```
 
-Let’s focus on the different parts of your SVG file and what you'll need to edit.
+Let’s focus on the different parts of this svg file and what you'll need to edit.
 
 ## Title
+
 ```xml
 <title>Custom Detail form</title>
 ```
@@ -28,9 +31,9 @@ Add the title for your template here.
 ## Area position, height and width and type
 You can define position, height, and width for all of your fields. This process is the same as [the one you use for custom list forms](../creating-list-forms/list-form-svg-file.md#area-position-height-width-and-type).
 
-### Field properties
+### Propiedades de los campos
 
-```
+```xml
 //1
 <g id="f" visibility="hidden" ios:dy="35">
 
@@ -48,15 +51,15 @@ You can define position, height, and width for all of your fields. This process 
 </g>
 ```
 
-1. Entire area Y position
-2. Area background position, height, and width
-3. Define the text area position and width
-4. Define the droppable field position, height, and width, as well as accepted fields types (all types are accepted in this example)
-5. Define a cancel button that will be displayed to the delete current content
+1. Posición de toda el área Y
+2. Posición, alto y ancho del área de fondo
+3. Definir la posición del área de texto y el ancho
+4. Define the droppable field position, height, and width, as well as accepted [**field types**](../creating-list-forms/list-form-svg-file.md#iostypes) (all types are accepted in this example)
+5. Definir un botón de cancelación que se mostrará para eliminar el contenido actual
 
-### Image field area
+### Área Image field
 
-```
+```xml
 //1
 <g transform="translate(0,60)">
 
@@ -77,22 +80,18 @@ You can define position, height, and width for all of your fields. This process 
 </g>
 ```
 
-1. Entire area Y position
-2. Area background position, height, and width
-3. Icon to display an image in the imageField
-4. Define the text area position and width
-5. Define the droppable field position, height, and width, as well as accepted fields types
-6. Define a cancel button that will be displayed to delete the current content
+1. Posición de toda el área Y
+2. Posición, alto y ancho del área de fondo
+3. Icono para mostrar una imagen en el imageField
+4. Definir la posición del área de texto y el ancho
+5. Define the droppable field position, height, and width, as well as accepted [**field types**](../creating-list-forms/list-form-svg-file.md#iostypes)
+6. Definir un botón de cancelación que se mostrará para eliminar el contenido actual
 
 Now that you have an **icon**, a **basic template description** in the manifest.json file, and your **svg file**, let's move on to the fun part with Xcode!
 
-> **NOTE**
-> 
-> A [list of all the available data types](https://developer.4d.com/docs/en/Concepts/data-types.html) is available on developer.4d.com.
 
-> **TIP**
-> 
-> * To make field type definition easier, 4D for iOS allows you to include field types with **positive values** and also exclude field types with **negative values**. For example, `ios:type="-3,-4"` will allow you to drag and drop every field exept images and dates.
-> 
-> * To include all types, just type `ios:type="all"`.
+:::tip
 
+To make field type definition easier, 4D for iOS allows you to include field types with **positive values** and also exclude field types with **negative values**. For example, `ios:type="-3,-4"` will allow you to drag and drop every field except images and dates. To include all types, just type `ios:type="all"`.
+
+:::
