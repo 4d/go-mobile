@@ -1,6 +1,6 @@
 ---
 id: list-form-template
-title: List form templates
+title: Plantillas de formulario listado
 ---
 
 In this tutorial, we'll cover nearly all aspects of creating a list form template, including the use of a **searchBar**, a table displaying an **image**, a **title**, and a **subtitle** for each cell.
@@ -11,15 +11,17 @@ In this tutorial, we'll cover nearly all aspects of creating a list form templat
 
 Before we begin, be sure to download and unzip the **Starter project** which includes:
 
-* A **List form** folder
+* Una carpeta **List form**
 * A demo 4D project ("Contact") with a ready-to-use mobile app project.
 
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">Starter project</a>
+</div>
 
-## Add a list form template to your mobile project
+## Añada una plantilla de formulario listado a su proyecto móvil
 
-The first thing you'll need to do is create a `list` folder in *Contact.4dbase/Resources/Mobile/form/* locatton. Then drag and drop your **list form** folder into it.
+The first thing you'll need to do is to create a `list` folder in *Contact.4dbase/Resources/Mobile/form/* location and drag and drop your **list form** folder into it.
 
 ![Mobile folder list form template](img/mobile-folder-custom-template.png)
 
@@ -31,9 +33,9 @@ In the **Forms section** of the mobile project editor, you can see that your lis
 
 ![Forms section](img/custom-listform-template.png)
 
-Now let's focus on the contents of the **Custom List form** folder.
+Ahora concentrémonos en el contenido de la carpeta **Custom List form**.
 
-## List form template content
+## Contenido de la plantilla de formulario Lista
 
 In this folder, you will find:
 
@@ -43,4 +45,4 @@ In this folder, you will find:
 * an **ios folder** that includes the storyboard (graphical interface) and **Swift** file (code for the form) in `Source/Forms/Tables/___TABLE___` folder
 * an **android folder** that includes the layout.xml file (graphical interface) in `app/src/main/res/layout` folder.
 
-These files and folder are detailed in the next sections. 
+These files and folders are detailed in the next sections. 
