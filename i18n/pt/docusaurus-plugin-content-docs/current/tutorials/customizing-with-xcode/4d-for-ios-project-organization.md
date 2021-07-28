@@ -3,23 +3,23 @@ id: 4d-for-ios-project-organization
 title: 4D for iOS project organization
 ---
 
-From the Navigation tab, go to Sources.
+A partir da guia de Navegação, vá para Fontes (sources).
 
-Here you'll find the Structure and Forms folders. They contain all of the files for your defined database structures and forms, including:
+Aqui você vai encontrar as pastas de estrutura e formulários. Eles contêm todos os arquivos para seu banco de dados estruturas e formulários definidos, incluindo:
 
-* Launch screen - Appears when the app is launched.
-* Login screen - Appears when authentication is activated.
-* Settings screen - Includes the reload and logout buttons.
-* All published tables - Files for the authorized data.
+* Tela de lançamento - aparece quando o aplicativo é iniciado.
+* Tela de login - aparece quando a autenticação é ativada.
+* Tela de configurações - inclui os botões de recarregar e logout.
+* Todas as tabelas publicadas - arquivos correspondentes aos dados autorizados.
 
-Instead, you'll find a Swift file and a Storyboard file. These files are described below.
+Você vai encontrar um arquivo Swift e um arquivo Storyboard. Estes arquivos estão descritos abaixo.
 
-### A Swift file - which can be used to add custom code.
+### Um arquivo Swift - o qual pode ser usado para adicionar um código personalizado.
 
 ![Swift file](img/swift-file-Xcode-4D-for-iOS.png)
 
-### Storyboard file - Allows customizing your app design.
+### Arquivo de storyboard - permite personalizar o seu projeto de app.
 
-![Storyboard file](img/storyboard-file-Xcode-4D-for-iOS.png)
+![Archivo Storyboard](img/storyboard-file-Xcode-4D-for-iOS.png)
 
-Next, let's look at how to customize the Contacts application detail view!
+Em seguida, vamos examinar como personalizar a visualização de detalhes do aplicativo contatos!
