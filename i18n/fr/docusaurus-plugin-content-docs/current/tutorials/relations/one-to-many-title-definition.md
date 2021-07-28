@@ -1,13 +1,13 @@
 ---
 id: one-to-many-title-definition
-title: One to Many - Title definition
+title: 1 vers N - Définition du titre
 ---
 
-### Defining a title for your destination views
+### Définir un titre pour vos vues de destination
 
-To keep track of the view you come from in your app, 4D for iOS allows you to define custom Title.
+Pour garder une trace de la vue que vous étiez en train de visualiser dans votre application, 4D for iOS vous permet de définir un Titre personnalisé.
 
-In this tutorial, we will use the following project:
+Dans ce tutoriel nous utiliserons le projet suivant :
 
 <div className="center-button">
 <a className="button button--primary"
@@ -16,14 +16,14 @@ href="https://github.com/4d-go-mobile/tutorial-OneToManyTitleDefinition/archive/
 
 Now go straight to **Open menu > Mobile project...**, select *Time Keeper* and go to the **Labels & Icons section**.
 
-From here, open the relation tab to define the *tasks* relation title and enter the following line in the **Titles column**: `%Name% tasks`
+Ouvrez ensuite l'onglet Liens pour définir le titre du lien *tasks* et saisissez la ligne suivante dans **la colonnes Titles** : `%Name% tasks`
 
 ![Labels & Icons relation title](img/labels-icons-title-definition.png)
 
-As you may have guessed, it will allow you to display **Employee's Name value** on the destination view depending on the Employee detail form you were on previously.
+Vous l'aurez deviné, il vous permet d'afficher **la valeur du nom de l'Employé** dans la vue de destination en fonction du formulaire détaillé Employee sur lequel vous étiez en train de travailler précédemment.
 
 ![Labels & Icons relation title](img/relations-title-definition.png)
 
-This is a great way to keep track of the view you come from!
+Ceci est un excellent moyen de garder une trace de la vue précédente sur laquelle vous étiez !
 
-Now let's see how you can create and add your own Relation button in the next tutorial!
+Voyons maintenant comment créer et ajouter votre propre bouton Relation dans le prochain tutoriel !
