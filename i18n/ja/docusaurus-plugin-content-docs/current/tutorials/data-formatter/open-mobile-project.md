@@ -1,21 +1,21 @@
 ---
 id: open-mobile-project
-title: Open mobile project
+title: モバイルプロジェクトを開く
 ---
 
-Go to Labels & Icons in Sections, you'll see that a new Formatters column is available in the Field Properties:
+セクション内のラベル & アイコンを見ると、フィールドプロパティにおいて、新しくフォーマッターカラムが追加されているのが分かります:
 
-![Data formatter labels icons](img//data-formatter-labels-icons.png)
+![データフォーマッターラベルアイコン](img//data-formatter-labels-icons.png)
 
-From here, you can select specific formats depeding on your needs. Let's define the Available Credit field as a Currency:
+ここから、必要に応じて適切なフォーマットを選択することができます。 Available Credit フィールドを、通貨として定義してみましょう:
 
-![Available credit currency](img/available-credit-currency.png)
+![利用可能なクレジットの通貨](img/available-credit-currency.png)
 
-Let's do the same process for all of the other fields:
+他のフィールドに対しても、同じように処理してみましょう:
 
 * Set Current Balance as a **Currency $**
 * Set Percent Used as a **Percentage**
 * Set Credit Limit as a **No or Yes**
 * Set Credit Date as a **Short Date**
 
-![Select field formatters](img/select-field-formatters.png)
+![フィールドフォーマッターを選択](img/select-field-formatters.png)

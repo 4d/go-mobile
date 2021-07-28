@@ -5,19 +5,19 @@ title: Android Layout
 
 In this section you will see how to create your Android list form interface with Android Studio.
 
-Here's the result we want to achieve:
+Aqui está o resultado que queremos atingir:
 
 ![Storyboard custom listform](img/xml-custom-listform.png)
 
-For each cell, we're going to add a:
+Para cada célula, vamos adicionar:
 
-* Profile image
+* Imagem de perfil
 * Title
-* Subtitle
+* Subtítulo
 
 ## Open the layout file with Android Studio
 
-The best way to edit or create a tempalte is to :
+The best way to edit or create a template is to :
 
 * Open Android Studio and create a new empty mobile project clicking on File > New > New Project...
 
@@ -358,7 +358,7 @@ For example, a basic TextView should be in `@Body1@` scale.
 android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
 ```
 
-## How to get data into your cells
+## Como entrar os dados em suas células
 
 ### Image View
 
@@ -366,7 +366,7 @@ In our list form template we used `app:imageUrl="__IMAGE_1__"`
 
 Here we suppose the ImageView is the first view in the svg, and its view ID is `__SPECIFIC_ID_1__`. If it would be the third view, it would be `__IMAGE_3__` and its view ID would be `__SPECIFIC_ID_3__`.
 
-### Labels
+### Etiquetas
 
 In our list form template we used `android:text="__TEXT_2__"` for the title.
 
@@ -375,11 +375,13 @@ Here we suppose the title is the second view in the svg, and its view ID is `__S
 
 ## Where to go from here?
 
-In this tutorial, we've covered the basics for creating Android list form templates. You are now able to create simple templates on your own using the Starter Project ressources. But wait - there’s more! In the next tutorial, you’ll learn how to build Android detail form templates! Click on **Final Project** below to download the completed template list folder.
+In this tutorial, we've covered the basics for creating Android list form templates. You are now able to create simple templates on your own using the Starter Project ressources. But wait - there’s more! In the next tutorial, you’ll learn how to build Android detail form templates!
 
-<div style= {{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}>
+Download the completed template list folder:
+
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-CustomListForm/releases/latest/download/tutorial-CustomListForm.zip">CUSTOM LISTFORM FINAL TEMPLATE</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomListForm/releases/latest/download/tutorial-CustomListForm.zip">Download</a>
 </div>
 
 

@@ -1,22 +1,22 @@
 ---
 id: deployment-in-house-distribute
-title: Distribute your app in-House
+title: Distribuer une application interne
 ---
 
-> **OBJECTIVES**
+> **OBJECTIFS**
 > 
 > Upload your app to a secured server.
 
 
-## STEP 1. Upload your app
+## ÉTAPE 1. Téléchargez votre application
 
-Upload your app files to a secured server:
+Téléchargez votre application sur un serveur sécurisé :
 
-* assets (display-image and full-size-image)
+* Ressources (image d'affichage et image en taille réelle)
 * `manifest.plist` file
 * `.ipa` file
 
-You can use any cloud storage service to distribute your app as soon as it is secured (Dropbox, Google Drive, etc.).
+Vous pouvez utiliser n’importe quel service de stockage en nuage pour distribuer votre application à partir du moment où il est sécurisé (Dropbox, Google Drive, etc.).
 
 :::note
 
@@ -24,7 +24,7 @@ Your asset and ipa URLs must match the URLs defined in your `manifest.plist` fil
 
 :::
 
-## STEP 2. Create the installation link
+## ÉTAPE 2. Créez le lien d’installation
 
 Create an **ITMS Serices link** (iTUnes Music Store) with the full web address of your manifest file as a parameter:
 
@@ -41,24 +41,24 @@ Here is a simple example:
 
 *The QR Code used for this documentation is not active.*
 
-## STEP 3. Install your enterprise app on iOS
+## ÉTAPE 3. Installez votre application sur iOS
 
-* Install the app by clicking on the link or scanning a QR Code
+* Installez l’application en cliquant sur le lien ou en scannant un Code QR.
 
 ![Scan and install](img/Scan-and-install.png)
 
-* When you first open an enterprise app that you've manually installed, a notification will be displayed stating that the developer of the app isn't trusted on your device.
+* Lorsque vous ouvrez une application installée manuellement, une notification s’affichera, indiquant que le développeur de l’application n’est pas fiable sur votre appareil.
 
-* Ignore this message and click **Cancel**.
+* Ignorez ce message et cliquez sur **Annuler**.
 
-* In Settings > General > Profiles or Profiles & Device Management, in the "Enterprise App" heading, the profile for the developer is listed.
+* Dans Réglages > Général > Gestion de l'appareil, dans la rubrique « Application d'Entreprise », le profil du développeur est répertorié.
 
 ![Untrust developer](img/Untrust-developer.png)
 
-* Tap the name of the developer profile to establish trust for this developer.
+* Saisissez le nom du profil développeur pour que ce dernier soit reconnu comme fiable.
 
 ![Trust-confirmation](img/Trust-confirmation.png)
 
-* You can then go to your app and open it.
+* Vous pouvez ensuite accéder à votre application et l'ouvrir.
 
 Congratulations... you can now distribute your app in-house.

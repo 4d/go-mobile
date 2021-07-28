@@ -1,23 +1,23 @@
 ---
 id: from-iphone
-title: From your iPhone
+title: Depuis votre iPhone
 ---
 
-From your app if you have a crash, you can display, edit and send feedback.
+Depuis votre application, en cas de plantage, vous pouvez afficher, modifier et envoyer des commentaires.
 
-For that:
-* Go to your iPhone Settings
-* find your app scrolling down
-* Switch on the feedback
+Pour ce faire :
+* Accédez aux paramètres de votre iPhone
+* Recherchez votre application en déroulant la liste
+* Activez les commentaires (feedback)
 
-![Activate feedback and logs](img/activate-feedback-logs.png)
+![Activer les commentaires et les journaux](img/activate-feedback-logs.png)
 
-From here, the only thing you have to do is opening again your app. An action sheet will appear to allow you :
-* Sends messages
-* Suggest an improvement
-* Show current log
-* Report a problem
+À partir de là, il vous suffit de rouvrir votre application. Une feuille d'action apparaîtra pour vous permettre de :
+* Envoyer des messages
+* Suggérer une amélioration
+* Afficher le journal courant
+* Signaler un problème
 
-![Display and send logs](img/display-send-logs.png)
+![Afficher envoyer des logs](img/display-send-logs.png)
 
 

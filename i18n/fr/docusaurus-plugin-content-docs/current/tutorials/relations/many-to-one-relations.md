@@ -24,25 +24,25 @@ Then go right to your Structure section and select the **Task table**.
 
 ### Structure section
 
-* You can notice that the **TaskCategory relation** is underlined
+* Vous pouvez constater que le **lien TaskCategory** est souligné
 
-* Clicking on it will display available fields through this relation
+* En cliquant dessus, vous afficherez les champs disponibles à travers ce lien
 
-* Select the **Name field**
+* Sélectionnez le **champ Name**
 
 ![Select link from structure section](img/select-link-from-structure.png)
 
-* This field will operate as any other field for the rest of the app creation process
+* Ce champ aura le même fonctionnement que n’importe quel autre champ pour la suite de la création de l’application
 
 * You can also filter your app content using related fields from the Data section. To do so enter `TaskCategory.Name != 'Personal'` in the Filter query field to exclude personal tasks.
 
- ![Related field from Data section](img/Related-field-from-Data-section.png)
+ ![Champs liés depuis la section Données](img/Related-field-from-Data-section.png)
 
-* You can then select an **icon** as well as **formatters** and define **short and long labels** from the Labels and Icons section
+* Vous pouvez ensuite sélectionner une **icône** et des **formats** et définir des **libellés courts et longs** dans la section Libellés et icônes
 
 ![Related field from Labels and Icons section](img/related-field-from-labels-icons.png)
 
-* Go to the Forms section and drag the field on the Task Detail form
+* Cliquez sur la section Formulaires et faites glisser le champ dans le formulaire détaillé Tasks
 
 ![Related field in Forms section](img/related-field-forms.png)
 

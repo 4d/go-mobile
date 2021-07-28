@@ -7,16 +7,16 @@ For the moment, if you build the Starter project app and enter "michelle.simpson
 
 ![iOS app without queries](img/ios-app-without-queries.png)
 
-As we discussed earlier, we want the account managers to access their *In Progress* contracts by logging into their mobile app with their email. To do this:
+Comme indiqué précédemment, nous souhaiterions que les chargés de clientèle puissent consulter leurs contrats *en cours* (In progress) en se connectant à leur application mobile via leur e-mail. Pour ce faire :
 
-* Go to the **Data section**
-* Right-click in the **Filter query** field to make the **Field, Comparators and Operators buttons** appear.
-* Click on the **Fields** button and select **Status**.
-* Click on the **Comparators** button and select **Equal to**.
-* Because you want to display *open* contracts, enter **In progress**
-* Remember to validate your query by clicking on the **Validate** button, otherwise you won't be able to build your app.
+* Accédez à la **section "Données"**
+* Faites un clic droit dans le champ **filtre de recherche** pour faire apparaitre les **boutons Champs, Comparateurs et Opérateurs**.
+* Cliquez sur le bouton **Champs** et sélectionnez **Status**.
+* Cliquez sur le bouton **Comparateurs** et sélectionnez **Égal à**.
+* Si vous souhaitez afficher les contrats *ouverts*, tapez **In progress**
+* N’oubliez pas de valider votre recherche en cliquant sur le bouton **Valider**, sinon vous ne pourrez pas créer votre application.
 
-You should have this result:
+Vous devriez avoir ce résultat :
 
 ![CRM database](img/filterquery.png)
 
@@ -26,10 +26,10 @@ You should have this result:
 > * For these kinds of filter queries, you can choose to embed data into the app or to load the data after login by checking the **Embed data into the built application** checkbox.
 > * Size will be calculated at the first build for you to visualize the **size of your data**.
 
-If you build your app and enter "michelle.simpson@mail.com" as the login email, you'll see that all contracts *In Progress* are displayed in the Simulator!
+Si vous générez votre application et que vous tapez « michelle.simpson@mail.com » comme étant l’e-mail de connexion, vous verrez que tous les contrats *In Progress* s’affichent dans le simulateur !
 
 ![iOS app with basic query](img/restrited-queries-basic-query.png)
 
-Not exactly what we expected! What we want now is for each account manager to visualize only their own *In Progress* contracts, so let's complete our query!
+Cela ne correspond pas tout à fait à ce que nous avions prévu ! Nous ne souhaitons maintenant que seuls les contrats *In Progress* de chaque chargé de clientèle soient visualisés. Finalisons donc notre recherche !
 
 

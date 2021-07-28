@@ -3,15 +3,15 @@ id: faq
 title: FAQ
 ---
 
-## Prerequisites
+## Conditions préalables
 
 
 
-<details><summary style= {{ fontWeight: "bold", marginBottom: "20px" }}>Do I need specific expertise to use 4D for iOS or 4D for Android?</summary>
+<details><summary style= {{ fontWeight: "bold", marginBottom: "20px" }}>Dois-je avoir des connaissances spécialisées pour utiliser 4D for iOS et 4D for Android ?</summary>
 
-No. With 4D for iOS and 4D for Android, you can easily create mobile projects directly from 4D, without needing any prior expertise building native iOS or Android apps!
+Non. Avec 4D for iOS et 4D for Android, vous pouvez facilement créer de nouveaux projets mobiles directement depuis 4D, sans aucune connaissance préalable en matière de création d’applications iOS natives !
 
-The mobile project editor has been designed so that you don't need any specific knowledge in mobile app developement.
+L'éditeur de projet mobile a été conçu de façon à être utilisé sans aucune connaissance spécifique en développement d’applications mobiles.
 
 </details>
 
@@ -20,7 +20,7 @@ The mobile project editor has been designed so that you don't need any specific 
 <details>
 <summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Are there any prerequisites for 4D for iOS?</summary>
 
-### Version comparison table
+### Tableau de comparaison de version
 
 | Xcode  | Swift | iOS  | 4D          | macOS   |
 | ------ | ----- | ---- | ----------- | ------- |
@@ -39,9 +39,9 @@ The mobile project editor has been designed so that you don't need any specific 
 | 9.4    | 4.1.2 | 11.4 | 17R2        | 10.13.2 |
 | 9.3.1  | 4.1   | 11.3 | 17R2        | 10.13.2 |
 
-In case you need an older Xcode version you can download it here: https://developer.apple.com/download/more/
+Si vous souhaitez une version antérieure de Xcode, vous pouvez la télécharger ici : https://developer.apple.com/download/more/
 
-=> Only registered developers can download preview releases through the Apple Developer website.
+=> Seuls les développeurs ayant souscrit au Apple Developer Program peuvent télécharger des versions antérieures sur le site web Apple Developer.
 
 See the prerequisites list [here]`(requirements.html)`.
 
@@ -64,7 +64,7 @@ For the iOS platform, we need XCode to compile the final application and to run 
 
 
 
-## License
+## Licence
 
 <details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Do I need a 4D Web Server to run 4D for iOS?</summary>
 
@@ -109,7 +109,7 @@ You can use up to four mobile devices.
 </details>
 
 
-## MISC
+## Questions diverses
 
 <details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Can I modify and update data from my iOS app?</summary>
 

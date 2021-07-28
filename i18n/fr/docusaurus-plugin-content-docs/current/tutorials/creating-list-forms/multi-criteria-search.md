@@ -30,7 +30,7 @@ to:
 
 There you go! The class is the only thing you need to modify for the multi-search criteria to be active.
 
-## Project editor
+## Éditeur de projet
 
 Next, you can go to the project editor and drop several fields into the list form search area.
 
@@ -42,4 +42,4 @@ A menu will appear to allow you to **remove specific fields** or **remove all fi
 
 ![Modify Multi-criteria search fields](img/multi-criteria-search-forms-section-remove-fields.png)
 
-Congratulations! You can now base your search(es) on multiple fields in your mobile app!
+Félicitations ! You can now base your search(es) on multiple fields in your mobile app!

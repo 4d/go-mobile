@@ -1,10 +1,10 @@
 ---
 id: detail-form-template
-title: Detail form templates
+title: Modèles de formulaires détaillés
 ---
 
 
-In this tutorial, we'll guide you through the creation of a detail form template. It will display an **image header**, as well as **title and content fields** that will be duplicated in the generated iOS and Android Apps.
+Dans ce tutoriel, nous vous guiderons dans la création d'un modèle de formulaire détaillé. It will display an **image header**, as well as **title and content fields** that will be duplicated in the generated iOS and Android Apps.
 
 ![Custom template final result](img/custom-template-final-result.png)
 
@@ -12,7 +12,7 @@ In this tutorial, we'll guide you through the creation of a detail form template
 
 To begin, download the **Starter project**, which includes:
 
-* A **Custom Detail form** folder (custom Detail form template folder)
+* Un dossier **Custom Detail form** (dossier contenant le modèle personnalisé du formulaire détaillé)
 * A demo 4D project ("Contact") with a ready to use mobile app project.
 
 <div className="center-button">
@@ -20,7 +20,7 @@ To begin, download the **Starter project**, which includes:
 href="https://github.com/4d-go-mobile/tutorial-CustomDetailFormStarter/archive/67c9c2f4672083e999a4a592a069d7ca45b3351e.zip">Starter project</a>
 </div>
 
-## Add a detail form template to your mobile project
+## Ajoutez un modèle de formulaire détaillé à votre projet mobile
 
 First, create a *Contact.4dbase/Resources/Mobile/form/detail* folder and drag and drop the **Custom Detail form** folder in it.
 
@@ -34,7 +34,7 @@ In the **Forms section** in the project editor, you can see that the Custom Deta
 
 Now let's focus on the **Custom Detail form** folder content.
 
-## Detail form template folder content
+## Le dossier du modèle de formulaire détaillé et son contenu
 
 In this folder, you will find:
 

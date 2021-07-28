@@ -1,31 +1,32 @@
 ---
 id: one-to-many-actions
-title: One to Many - Actions
+title: Relações Um para Muitos - Ações
 ---
 
-> **OBJECTIVES**
-> 
-> We are now going to go a little bit further and **create a task for a specific employee**.
 
-It is very easy to create an entity using **parent Entity** !
+We are now going to go a little bit further and **create a task for a specific employee**.
+
+É fácil criar uma entidade usando **parent Entity** !
 
 Let's get started by downloading the Starter project:
 
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-RelationsActions/archive/6c649733f5efd3c799e4e04c05a85e17eeadf7f0.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-RelationsActions/archive/6c649733f5efd3c799e4e04c05a85e17eeadf7f0.zip">Starter project</a>
+</div>
 
-## Create addProject action
+## Criar ação addProject
 
-* Open the project editor and go to the Action section.
+* Abra o editor de projeto e vá para a seção Ação.
 
-* Add a addProject Action
+* Add a `addProject` Action
 
 ![create addProject Method](img/create-addProject-Method-4D-for-iOS-relation-parent-ID.png)
 
 
-## On Mobile App Action method
+## Método On Mobile App Action
 
-The only thing you have to do is defining the **addProject** action in the **On Mobile App Action method** as follows :
+A única coisa que precisa fazer é definir a ação **addProject** no método **On Mobile App Action** como abaixo :
 
 ```4d
 : ($request.action="addProjects")
@@ -41,10 +42,10 @@ $result:=addProject ($o)
 
 ```
 
-## addProject Method
+## Método addProject
 
 
-Then enter thoses lines in your **addProject Method**:
+Agora entre estas linhas em seu método **addProject**:
 
 ```4d
 C_OBJECT($0)
@@ -57,7 +58,7 @@ $out:=New object("success";False)
 
 If ($in.dataClass#Null)
 
-    $entity:=ds[$in.dataClass].new()  //Create a reference
+    $entity:=ds[$in.dataClass].new()  //Cria uma referência
 
     For each ($key;$in.parameters)
 
@@ -65,19 +66,19 @@ If ($in.dataClass#Null)
 
     End for each 
 
-    $primaryKey:=$in.parent.primaryKey   //Get parent primary key
+    $primaryKey:=$in.parent.primaryKey   //Obtém a chave primária pai
 
     $parent:=ds[$in.parent.dataClass].get($primaryKey)
 
-  $inverseRelationName:=$in.entity.relationName   //Get parent relation name
+  $inverseRelationName:=$in.entity.relationName   //Obtém o nome de relação pai
 
     $entity[$inverseRelationName]:=$parent
 
-    $status:=$entity.save()  //save the entity
+    $status:=$entity.save()  //salva a entidade
 
-    $out.success:=True  // notify App that action success
+    $out.success:=True  // notififca o App que a ação teve sucesso
 
-    $out.dataSynchro:=True  // notify App to refresh the selection
+    $out.dataSynchro:=True  // notifica o App para refrescar a seleção
 
     $out.statusText:="Task added"
 
@@ -93,9 +94,11 @@ $0:=$out
 
 ```
 
-And that's it you can then add some task to your employees easily using the parent Entity !
+E isso é tudo, agora pode adicionar uma tarefa para seus funcionários facilmente usando a Entity pai!
 
 Download the completed project:
 
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-RelationsActions/releases/latest/download/tutorial-RelationsActions.zip">Completed Project</a>
+href="https://github.com/4d-go-mobile/tutorial-RelationsActions/releases/latest/download/tutorial-RelationsActions.zip">Download</a>
+</div>

@@ -7,7 +7,7 @@ It may happen that you encounter issues using the 4D mobile project editor or yo
 
 To access log files, press the **Alt** key and select **Project** from the BUILD panel of the project editor:
 
-![Debugging](img/debug-from-4D-for-iOS.png)
+![Débogage](img/debug-from-4D-for-iOS.png)
 
 Additional debug menu items appear for the [currently selected simulator](../project-definition/build-panel#using-the-simulator):
 

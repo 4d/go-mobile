@@ -10,10 +10,11 @@ title: Create App Store record
 
 > **PREREQUISITES**
 > 
-> `[Apple Developer Program for organization](selecting-your-developer-program-register-apple-developer-program-organization.html) or [individual](selecting-your-developer-program-register-apple-developer-program-individual.html)`
+> * [Apple Developer Program for organization](../tutorials/developer-program/register-apple-developer-program-organization) or
+> * [Apple Developer Program as an individual](../tutorials/developer-program/register-apple-developer-program-individual)
 
 
-## STEP 1. Create an App ID
+## ⒈ Create an App ID
 
 #### What is an App ID ?
 
@@ -40,14 +41,14 @@ To create your App ID, go to your developer account and select [Certificates, ID
 
 ![Confirm App ID](img/Confirm-App-ID.png)
 
-## STEP 2. Sign in to App Store Connect
+## ⒉ Sign in to App Store Connect
 
 * Sign in to your [App Store Connect Account](https://appstoreconnect.apple.com)
 * Click on **My Apps**.
 
 ![App Store Connect](img/App-Store-Connect-home-page.png)
 
-## STEP 3. Create a new iOS App
+## ⒊ Create a new iOS App
 
 Click the **+** sign in the top left corner to create a new iOS App.
 
@@ -68,7 +69,7 @@ Add the following information:
 > 
 > If your Bundle ID is not available, it may already be used by another app in the App Store. You'll need to change yours in your Xcode project.
 
-## STEP 4. App information
+## ⒋ App information
 
 From App Store Connect > App Information:
 
@@ -78,7 +79,7 @@ From App Store Connect > App Information:
 
 ![App information](img/App-Store-Connect-app-information.png)
 
-## STEP 5. Pricing and Availability
+## ⒌ Pricing and Availability
 
 This is where you define the price for your app.
 
@@ -86,7 +87,7 @@ This is where you define the price for your app.
 > 
 > You can define limited-time discounts by specifying start and end dates.
 
-## STEP 6. Prepare for Submission
+## ⒍ Prepare for Submission
 
 Add all of the assets for your app to appear in the App Store in **Version Information**:
 

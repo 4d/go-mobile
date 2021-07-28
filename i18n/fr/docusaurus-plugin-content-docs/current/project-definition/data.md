@@ -1,6 +1,6 @@
 ---
 id: data
-title: Data
+title: Données
 ---
 
 This page is used to configure the data that will be handled by your mobile app. It allows you to:
@@ -76,7 +76,7 @@ This button requires a valid `key.mobileapp` file if you use the [production ser
 
 
 
-## Properties
+## Propriétés
 
 ![Data section](img/Properties-Panel-4D-for-iOS.png)
 

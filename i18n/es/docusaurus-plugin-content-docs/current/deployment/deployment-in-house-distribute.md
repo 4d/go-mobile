@@ -1,5 +1,6 @@
-img/--- id: deployment-in-house-distribute
-title: Distribute your app in-House
+---
+id: deployment-in-house-distribute
+title: Distribuir una aplicación interna
 ---
 
 > **OBJECTIVES**
@@ -7,25 +8,27 @@ title: Distribute your app in-House
 > Upload your app to a secured server.
 
 
-## STEP 1. Upload your app
+## PASO 1. Suba su aplicación
 
-Upload your app files to a secured server:
+Suba su aplicación a un servidor seguro:
 
-* assets (display-image and full-size-image)
-* manifest.plist file
-* .ipa file
+* recursos (imagen de visualización e imagen de tamaño completo)
+* `manifest.plist` file
+* `.ipa` file
 
-You can use any cloud storage service to distribute your app as soon as it is secured (Dropbox, Google Drive, etc.).
+Puede utilizar cualquier servicio de almacenamiento en la nube para distribuir su aplicación siempre que esté protegida (Dropbox, Google Drive, etc.).
 
-> **NOTE**
-> 
-> Your asset and ipa URLs must match the URLs defined in your manifest.plist file.
+:::note
 
-## STEP 2. Create the installation link
+Your asset and ipa URLs must match the URLs defined in your `manifest.plist` file.
+
+:::
+
+## PASO 2. Cree el enlace de instalación
 
 Create an **ITMS Serices link** (iTUnes Music Store) with the full web address of your manifest file as a parameter:
 
-```
+```html
 itms-services://?action=download-manifest&url=https://mywebserver.com/manifest.plist
 
 ```
@@ -38,24 +41,24 @@ Here is a simple example:
 
 *The QR Code used for this documentation is not active.*
 
-## STEP 3. Install your enterprise app on iOS
+## PASO 3. Instale su aplicación en iOS
 
-* Install the app by clicking on the link or scanning a QR Code
+* Instale la aplicación haciendo clic en el enlace o escaneando un código QR
 
 ![Scan and install](img/Scan-and-install.png)
 
-* When you first open an enterprise app that you've manually installed, a notification will be displayed stating that the developer of the app isn't trusted on your device.
+* Cuando abre por primera vez una aplicación empresarial que instaló manualmente, se mostrará una notificación que indica que el desarrollador de la aplicación no es de confianza en su dispositivo.
 
-* Ignore this message and click **Cancel**.
+* Ignore este mensaje y haga clic en **Cancel**.
 
-* In Settings > General > Profiles or Profiles & Device Management, in the "Enterprise App" heading, the profile for the developer is listed.
+* En Reglas > General > Gestión de perfiles & Gestión de dispositivo, en el encabezado "Enterprise App", se lista el perfil del desarrollador.
 
 ![Untrust developer](img/Untrust-developer.png)
 
-* Tap the name of the developer profile to establish trust for this developer.
+* Introduzca el nombre del perfil del desarrollador para que sea reconocido como confiable.
 
 ![Trust-confirmation](img/Trust-confirmation.png)
 
-* You can then go to your app and open it.
+* Luego puede ir a su aplicación y abrirla.
 
-Congratulations ... you can now distribute your first app in-house!
+Congratulations... you can now distribute your app in-house.

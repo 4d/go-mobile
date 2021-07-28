@@ -1,9 +1,9 @@
 ---
 id: custom-data-formatters
-title: Data Formatters
+title: Format des données
 ---
 
-> **BEFORE STARTING**
+> **AVANT DE COMMENCER**
 > 
 > To use a custom formatter, the first thing you'll need to do is create a `YourDatabase.4dbase/Resources/Mobile/formatters` folder.
 > 

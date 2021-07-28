@@ -1,6 +1,6 @@
 ---
 id: general
-title: General
+title: Général
 ---
 
 This page allows you to define your app's main information.

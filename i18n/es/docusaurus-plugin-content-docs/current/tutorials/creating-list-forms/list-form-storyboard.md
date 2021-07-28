@@ -5,19 +5,19 @@ title: iOS Storyboard
 
 Now it's time to create your iOS list form interface with Xcode.
 
-Here's the result we want to achieve:
+Este es el resultado que queremos lograr:
 
 ![Storyboard custom listform](img/storyboard-custom-listform.png)
 
-For each cell, we're going to add a:
+Para cada celda, vamos a añadir:
 
-* Profile image
+* Una foto de perfil
 * Title
-* Subtitle
+* Subtitulo
 
-## Open the storyboard file with Xcode
+## Abrir el archivo storyboard con Xcode
 
-First, open your storyboard file in Xcode.
+Primero, abra su archivo storyboard en Xcode.
 
 ![Empty storyboard custom template](img/empty-storyboard-custom-template.png)
 
@@ -25,19 +25,19 @@ It's quite empty, so let's add some content!
 
 ## Add an Image View
 
-From the **Object library**, drag and drop an  **Image View** into a cell. You can search for "Image View" in the search bar at the bottom of the Object Library.
+Desde la **Object library** (la librería de objetos), arrastre y suelte una **Image View** (una vista de imagen) en una celda. Puede buscar una "Image View" en la barra de búsqueda en la parte inferior de la librería de objetos.
 
 ![Add Image View storyboard](img/add-imageview-storyboard.png)
 
-From the **Size inspector panel** (on the right side of the Interface Builder window), set the Image View Width value to 110 and the Height value to 110. Then set the X value to 8 and the Y value to 3.
+Desde el **Size inspector** (al lado derecho del Interface Builder), defina el ancho de la imagen en 110 y su altura en 110. Luego, defina el valor de X en 8 y el valor de Y en 3.
 
 ![Image View position height and width](img/imageview-position-height-width.png)
 
-Next, add a constraint (Leading: 8) by clicking on the **Add New Constraints button** (at the bottom of the Interface Builder window). Add width and height constraints too, as shown:
+A continuación, agregue una restricción (Leading: 8) haciendo clic en el botón ** Add New Constraints button** (en la parte inferior de la ventana del Generador de interfaz). Agregue también restricciones de ancho y alto, como se muestra:
 
 ![Image View leading space width height](img/imageview-leading-space-width-height.png)
 
-Finally, click on the **Align button** (at the bottom of the Interface Builder window) and check the "Vertically in Container" checkbox.
+Haga clic en el botón **Align**(en la parte inferior del Interface Builder) y marque la casilla "Vertically in Container".
 
 ![Image View align vertically](img/imageview-align-vertically.png)
 
@@ -45,61 +45,61 @@ Your Image View is now well positioned.
 
 ![Image View final](img/imageview-final.png)
 
-Now let's work on the cell's labels.
+Ahora, vamos a trabajar en las etiquetas de celdas.
 
-## Add title and subtitle labels
+## Añadir etiquetas de título y subtítulo
 
-Let's begin by **adding a View**. Search for "View" in the **Object library** and drag it into the cell container.
+Comencemos por **agregar una vista**. Busque "View" en la **Librería de objetos** y arrastre la vista al contenedor de celdas.
 
 ![Add View Storyboard](img/add-view-storyboard.png)
 
-From the **Size inspector panel** (on the right side of the Interface Builder window), set the View Width value to 277 and the Height value to 94. Then set the X value to 126 and the Y value to 10.
+Desde el panel **Size inspector** (al lado derecho del Interface Builder), defina el ancho de la imagen en 277 y su altura en 94. Luego, defina el valor de X en 126 y el valor de Y en 10.
 
 ![View position height and width](img/view-position-height-width.png)
 
-For the Image View, add four constraints by clicking on the **Add New Constraints button** (Trailing: 11, Leading: 8, Top: 11, and Bottom: 10.67) for the view to be well positioned, as shown:
+Para la vista de imagen, agregue cuatro restricciones haciendo clic en el botón **Add New Constraints** (Trailing: 11, Leading: 8, Top: 11, y Bottom: 10.67) para posicionarla correctamente como se muestra a continuación:
 
 ![View contraints Storyboard](img/view-constraints-storyboard.png)
 
-Drag and drop a label into the View you just added from the Object Library.
+Arrastre y suelte una etiqueta en la Vista que acaba de agregar desde la Librería de objetos.
 
 ![Add label Storyboard](img/add-label-storyboard.png)
 
-From the **Size inspector panel**, set the Label View Width value to 269 and the Height value to 32. Then set the X value to 8 and the Y value to 8.
+Desde el panel ** Size inspector**, defina el valor de ancho de etiqueta vista en 269 y el valor de alto en 32. A continuación, defina el valor de X en 8 y el valor de Y en 8.
 
-**Duplicate the label** and in the **Size inspector panel**, set the X value to 8 and the Y value to 48.
+**Duplique la etiqueta** y en el panel **Size inspector**, defina el valor de X en 8 y el valor de Y en 48.
 
 ![Duplicate the label](img/duplicated-label-storyboard.png)
 
-Select both labels add four constraints by clicking on the **Add New Constraints button** (Trailing: 0, Leading: 8, Top: 8, and Bottom: Multiple) as shown:
+Seleccione las dos etiquetas y añada cuatro restricciones haciendo clic en el botón **Add New Constraints** (Trailing: 0, Leading: 8, Top:, y Bottom: Multiple) como se muestra a continuación:
 
 ![Labels contraints storyboard](img/labels-contraints-storyboard.png)
 
-With a label selected, double-click on the **Height constraint** to edit it.
+Con una etiqueta seleccionada, haga doble clic en **Height constraint** para editarla.
 
 ![Label height constraint edition](img/label-height-constraint-edition.png)
 
-Change the relation from Equal to **Greater Than or Equal** so it can have a variable height (to handle multiline labels).
+Cambie la relación "Equal" por **Greater Than or Equal** para que pueda tener una altura variable (para manejar etiquetas multilíneas).
 
 ![Change relation label height constraint](img/change-relation-label-height-constraint.png)
 
-Repeat the process for the second label.
+Repita el proceso para la segunda etiqueta.
 
 ## Label customization
 
-From the attribute inspector (on the right side of the Interface Builder window),  you can customize your label's font colors. Let's make the second label **Dark Grey Color** :
+Desde el inspector de atributos (al lado derecho de la ventana del Interface Builder), puede personalizar los colores de fuente de su etiqueta. Apliquemos el color **Dark Grey Color** a la segunda etiqueta:
 
 ![Label color dark grey](img/label-color-dark-grey.png)
 
-You can also select the dominant color for your app:
+También puede seleccionar el color principal de su aplicación:
 
 ![Label color background color](img/label-color-background-color.png)
 
-From the attribute inspector, you can also customize the font. Select both labels and select Font > Custom > **Helvetica Neue**:
+Desde el inspector de atributos, también puede personalizar la fuente. Seleccione las dos etiquetas y seleccione Font > Custom > **Helvetica Neue**:
 
 ![Label font custom](img/label-font-custom.png)
 
-To complete the customizations, select both labels and **enter 0 for Lines** in the inspector window. This allows the number of lines to be unlimited.
+Para finalizar las personalizaciones, seleccione ambas etiquetas y en la ventana del inspector ** ingrese el valor 0 en Lines**. Esto permite que el número de líneas sea ilimitado.
 
 ![Label lines number](img/label-lines-number.png)
 
@@ -107,31 +107,33 @@ To complete the customizations, select both labels and **enter 0 for Lines** in 
 
 The provided storyboard is optimized to have a **variable cell height** depending on the contents of each cell.
 
+:::
+
 ![Row height tableview cell](img/row-height-tableview-cell.png)
 
-## How to get data into your cells
+## Cómo obtener datos en sus celdas
 
 ### Image View
 
-Select your Image View and go to **Identity inspector** > User Defined Runtime Attributes. Click the **+ button** to add a row.
+Seleccione su Vista imagen y vaya a **Identity inspector** > User Defined Runtime Attributes. Haga clic en el **botón +** para añadir una línea.
 
 ![User defined runtime attributes](img/user-defined-runtime-attributes.png)
 
-* **Key Path**: Begin with bindTo to activate binding on the component. Enter `bindTo.record.___FIELD_1___`
+* **Key Path**: comience con bindTo para activar la unión del componente. Introduzca `bindTo.record.___FIELD_1___`
 
-* **Type**: Always `String`
+* **Type**: siempre `String`
 
-* **Value**: The attribute name. Enter `___FIELD_1_BINDING_TYPE___`
+* **Value**: nombre del atributo. Introduzca `___FIELD_1_BINDING_TYPE___`
 
 ![Identity inspector storyboard](img/identity-inspector-storyboard.png)
 
-### Labels
+### Etiquetas
 
 Select the first label and add a row in the Defined Runtime Attributes:
 
 * **Key Path**: `bindTo.record.___FIELD_2___`
 
-* **Type**: `String`
+* **Tipo**: `Cadena`
 
 * **Value**: `___FIELD_2_BINDING_TYPE___`
 
@@ -141,7 +143,7 @@ Select the second label and add a row in the Defined Runtime Attributes:
 
 * **Key Path**: `bindTo.record.___FIELD_3___`
 
-* **Type**: `String`
+* **Tipo**: `Cadena`
 
 * **Value**: `___FIELD_3_BINDING_TYPE___`
 
@@ -149,8 +151,8 @@ Select the second label and add a row in the Defined Runtime Attributes:
 
 You can change the **storyboard display labels** to have better visibility:
 
-* Double-click the first label to edit it and enter `___FIELD_2_LABEL___`
-* Double-click the second label to edit it and enter `___FIELD_3_LABEL___`
+* Haga doble clic en la primera etiqueta para editarla e ingresar `___FIELD_2_LABEL___`
+* Haga doble clic en la segunda etiqueta para editarla e ingresar `___FIELD_3_LABEL___`
 
 ![Storyboard label display names](img/storyboard-label-display-name.png)
 
@@ -160,11 +162,11 @@ Here is the simulator result :
 
 ![Simulator result](img/simulator-result.png)
 
-## Customize your app
+## Personalice su aplicación
 
 The last step is adding a corner radius to the Image View to have a better design.
 
-Select your Image View and add the two following lines in the User Defined Runtime Attributes:
+Seleccione su Vista imagen y añada las dos líneas siguientes en el área User Defined Runtime Attributes:
 
 * **Key Path**: `cornerRadius`
 
@@ -172,30 +174,30 @@ Select your Image View and add the two following lines in the User Defined Runti
 
 * **Value**: `12`
 
-and
+y
 
 * **Key Path**: `layer.masksToBounds`
 
 * **Type**: `Boolean`
 
-* **Value**: Check the box
+* **Value**: seleccione la casilla
 
 ![ImageView corner Radius](img/imageview-corner-radius.png)
 
-You can now build your project from the project editor!
+¡Ahora puede crear su proyecto desde el editor de proyectos!
 
 ![Custom template final result](img/custom-template-final-result.png)
 
 ## Where to go from here?
 
-In this tutorial, we've covered the basics for creating list form templates with iOS. You are now able to create simple templates on your own using the Starter project ressources. You can also see how to build [detail form templates](../creating-detail-forms/create-detail-form-template.md).
+In this tutorial, we've covered the basics for creating list form templates with iOS. You are now able to create simple templates on your own using the Starter project ressources. You can also see how to build [detail form templates](../creating-detail-forms/detail-form-template.md).
 
 Download the completed template list folder:
 
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-CustomListForm/archive/53ac1d5f506aa4ca2a8d78760ef799044c5c8bdc.zip">Download</a>
-
-
+href="https://github.com/4d-go-mobile/tutorial-CustomListForm/archive/53ac1d5f506aa4ca2a8d78760ef799044c5c8bdc.zip">Download</a>
+</div>
 
 
 

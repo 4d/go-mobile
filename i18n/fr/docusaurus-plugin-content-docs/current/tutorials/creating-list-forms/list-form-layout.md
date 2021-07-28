@@ -5,15 +5,15 @@ title: Android Layout
 
 In this section you will see how to create your Android list form interface with Android Studio.
 
-Here's the result we want to achieve:
+Voici le résultat que nous souhaitons obtenir :
 
 ![Storyboard custom listform](img/xml-custom-listform.png)
 
-For each cell, we're going to add a:
+Pour chaque cellule, nous allons ajouter :
 
-* Profile image
+* Une photo de profil
 * Title
-* Subtitle
+* Un sous-titre
 
 ## Open the layout file with Android Studio
 
@@ -358,7 +358,7 @@ For example, a basic TextView should be in `@Body1@` scale.
 android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
 ```
 
-## How to get data into your cells
+## Comment entrer des données dans vos cellules
 
 ### Image View
 
@@ -366,7 +366,7 @@ In our list form template we used `app:imageUrl="__IMAGE_1__"`
 
 Here we suppose the ImageView is the first view in the svg, and its view ID is `__SPECIFIC_ID_1__`. If it would be the third view, it would be `__IMAGE_3__` and its view ID would be `__SPECIFIC_ID_3__`.
 
-### Labels
+### Libellés
 
 In our list form template we used `android:text="__TEXT_2__"` for the title.
 

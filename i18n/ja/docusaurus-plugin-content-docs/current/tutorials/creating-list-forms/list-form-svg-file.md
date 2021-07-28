@@ -3,11 +3,11 @@ id: list-form-svg-file
 title: Template.svg
 ---
 
-The `template.svg` file is a basic visual representation of a template. In this file, you'll need to define areas in order to be able to add fields to your list form template from the project editor.
+The `template.svg` file is a basic visual representation of a template. プロジェクターエディターでリストフォームのテンプレートにフィールドが追加できるように，ドラッグ＆ドロップ用のエリアを定義しておきます。
 
-Here's a finished version:
+図は完成したファイルのイメージです。
 
-![Template svg file](img/template-svg-file.png)
+![テンプレートSVGファイル](img/template-svg-file.png)
 
 Let’s focus on the different parts of this svg file and what you'll need to edit.
 
@@ -27,19 +27,19 @@ Title of the template.
 
 Includes IDs which define your form areas:
 
-* **search**: Refers to the search field area. This will allow you to drag and drop a field as the search criteria in your list form (optional).
-* **section**: Refers to the section field area. This will allow you drag and drop a field as the sort criteria in your list form (optional).
-* **f1, f2 and f3**: Refers to the fields to display in each cell of your list form. This will allow you to drag and drop fields to appear in your list form cells.
+* **search**: Refers to the search field area. このエリアにドラッグ＆ドロップしたフィールドは，リストに表示されるレコードの検索に使用されます（任意）。
+* **section**: Refers to the section field area. このエリアにドラッグ＆ドロップしたフィールドは，リストに表示されるレコードの並び替えに使用されます（任意）。
+* **f1, f2 and f3**: Refers to the fields to display in each cell of your list form. セルに表示されるフィールドは，ドラッグ＆ドロップで追加することができます。
 
 ## Area position, height, and width
 
 You can define the position, height and width for:
 
-* Searchfield
-* Sectionfield
-* Other general fields that will be displayed in each table cell
+* 検索フィールド
+* セクションフィールド
+* 各行（セル）に表示されるフィールド
 
-### SearchableField area:
+### 検索フィールド
 
 ```svg
 //1
@@ -62,17 +62,17 @@ You can define the position, height and width for:
 </g>
 ```
 
-1. Entire area Y position
-2. Area background position, height, and width
-3. Icon to display a magnifying glass icon into the searchable field
-4. Define the text area position and width
+1. エリア全体の垂直位置です。（g要素のtransform属性）
+2. エリア背景の位置とサイズです。（rect要素）
+3. 検索エリアに表示されるルーペアイコンです。（path要素）
+4. 入力エリアの位置とサイズです。（textArea要素）
 5. Define the droppable field position, height and width, as well as accepted [**field types**](#iostypes)
-6. Define a cancel button that will be displayed to delete the current content
+6. 内容をクリアするためのキャンセルボタンです。（use要素）
 
 The searchable field is optional.
 
 
-### SectionField area:
+### セクションフィールド
 
 ```svg
 //1
@@ -88,14 +88,14 @@ The searchable field is optional.
 <use id="section.cancel" x="224" y="111" xlink:href="#cancel" visibility="hidden"/>
 ```
 
-1. Area background position, height and width
-2. Define the text area position and width
+1. エリア背景の位置とサイズです。（rect要素）
+2. 入力エリアの位置とサイズです。（textArea要素）
 3. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
-4. Define a cancel button that will be displayed to delete the current content
+4. 内容をクリアするためのキャンセルボタンです。（use要素）
 
 The section field is optional.
 
-### ImageField area:
+### ピクチャフィールド
 
 ```svg
 //1
@@ -118,14 +118,14 @@ The section field is optional.
 </g>
 ```
 
-1. Entire area Y position
-2. Area background position, height and width
-3. Icon to display an image in the imageField
-4. Define the text area position and width
+1. エリア全体の垂直位置です。（g要素のtransform属性）
+2. エリア背景の位置とサイズです。（rect要素）
+3. ピクチャエリアに表示されるアイコン画像です。（path要素）
+4. 入力エリアの位置とサイズです。（textArea要素）
 5. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
-6. Define a cancel button that will be displayed to delete the current content
+6. 内容をクリアするためのキャンセルボタンです。（use要素）
 
-### Title Field area:
+### タイトルフィールド
 
 ```svg
 //1
@@ -145,13 +145,13 @@ The section field is optional.
 </g>
 ```
 
-1. Entire area Y position
-2. Area background position, height and width
-3. Define the text area position and width
+1. エリア全体の垂直位置です。（g要素のtransform属性）
+2. エリア背景の位置とサイズです。（rect要素）
+3. 入力エリアの位置とサイズです。（textArea要素）
 4. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
-5. Define a cancel button that will be displayed to delete the current content
+5. 内容をクリアするためのキャンセルボタンです。（use要素）
 
-### Subtitle Field area:
+### サブタイトルフィールド
 
 ```svg
 //1
@@ -171,11 +171,11 @@ The section field is optional.
 </g>
 ```
 
-1. Entire area Y position
-2. Area background position, height and width
-3. Define the text area position and width
+1. エリア全体の垂直位置です。（g要素のtransform属性）
+2. エリア背景の位置とサイズです。（rect要素）
+3. 入力エリアの位置とサイズです。（textArea要素）
 4. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
-5. Define a cancel button that will be displayed to delete the current content
+5. 内容をクリアするためのキャンセルボタンです。（use要素）
 
 
 ## ios:types

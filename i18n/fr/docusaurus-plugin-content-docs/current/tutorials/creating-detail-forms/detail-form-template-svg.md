@@ -4,13 +4,13 @@ title: Template.svg
 sidebar_label: Template.svg
 ---
 
-The `template.svg` file is a basic template representation. In this svg file, you'll need to define areas in order to be able to add fields to your detail form template from the project editor.
+The `template.svg` file is a basic template representation. Dans ce fichier svg, vous définirez des zones afin d'ajouter des champs à votre modèle de formulaire détaillé depuis l’éditeur de projet.
 
-Here's a finished version:
+Voici une version finale :
 
 ![Template svg file](img/detailform-template-svg-file.png)
 
-This template has dynamic field numbering, meaning that this template will allow you to add an **image** and you can put **as many fields** as you need. So when you build your detail form in the Forms section and drag and drop a field, a new empty field appears below the previous one for you to add a new field:
+This template has dynamic field numbering, meaning that this template will allow you to add an **image** and you can put **as many fields** as you need. Ainsi, lors de la création de votre formulaire détaillé dans la section Formulaires et lors du glisser-déposer d'un champ, un nouveau champ vide apparait en dessous du champ précédent pour vous permettre d'ajouter un nouveau champ :
 
 ![Template svg file](img/detailform-dynamic-field-number.png)
 
@@ -31,7 +31,7 @@ Add the title for your template here.
 ## Area position, height and width and type
 You can define position, height, and width for all of your fields. This process is the same as [the one you use for custom list forms](../creating-list-forms/list-form-svg-file.md#area-position-height-width-and-type).
 
-### Field properties
+### Propriétés des champs
 
 ```xml
 //1
@@ -51,13 +51,13 @@ You can define position, height, and width for all of your fields. This process 
 </g>
 ```
 
-1. Entire area Y position
-2. Area background position, height, and width
-3. Define the text area position and width
+1. Position de toute la zone Y
+2. Position, hauteur et largeur de la zone d'arrière-plan
+3. Définir la position de la zone de texte et la largeur
 4. Define the droppable field position, height, and width, as well as accepted [**field types**](../creating-list-forms/list-form-svg-file.md#iostypes) (all types are accepted in this example)
-5. Define a cancel button that will be displayed to the delete current content
+5. Définir un bouton "Annuler" qui s’affichera pour effacer le contenu courant
 
-### Image field area
+### Zone ImageField 
 
 ```xml
 //1
@@ -80,12 +80,12 @@ You can define position, height, and width for all of your fields. This process 
 </g>
 ```
 
-1. Entire area Y position
-2. Area background position, height, and width
-3. Icon to display an image in the imageField
-4. Define the text area position and width
+1. Position de toute la zone Y
+2. Position, hauteur et largeur de la zone d'arrière-plan
+3. Icône affichant une image dans imageField
+4. Définir la position de la zone de texte et la largeur
 5. Define the droppable field position, height, and width, as well as accepted [**field types**](../creating-list-forms/list-form-svg-file.md#iostypes)
-6. Define a cancel button that will be displayed to delete the current content
+6. Définir un bouton "Annuler" qui s’affichera pour effacer le contenu courant
 
 Now that you have an **icon**, a **basic template description** in the manifest.json file, and your **svg file**, let's move on to the fun part with Xcode!
 

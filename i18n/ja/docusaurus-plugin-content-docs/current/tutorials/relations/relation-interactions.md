@@ -3,9 +3,9 @@ id: relation-interactions
 title: Relation interactions
 ---
 
-R6 allows to add very nice interaction into your apps. For instance you will be able to publish One to Many and Many to One relation from [many to one relation](many-to-one-relations.md).
+4D mobile projects allow to add very nice interaction into your apps. For instance you will be able to publish One to Many and Many to One relation from [many to one relation](many-to-one-relations.md).
 
-# Project editor
+# プロジェクトエディター
 
 ## Structure section
 

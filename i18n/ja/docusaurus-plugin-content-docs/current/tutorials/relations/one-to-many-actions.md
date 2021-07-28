@@ -1,31 +1,32 @@
 ---
 id: one-to-many-actions
-title: One to Many - Actions
+title: １対Ｎとアクション
 ---
 
-> **OBJECTIVES**
-> 
-> We are now going to go a little bit further and **create a task for a specific employee**.
 
-It is very easy to create an entity using **parent Entity** !
+We are now going to go a little bit further and **create a task for a specific employee**.
+
+**親エンティティ**さえきちんと特定できていれば，子エンティティを作成するのは少しも難しいことはではありません！
 
 Let's get started by downloading the Starter project:
 
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-RelationsActions/archive/6c649733f5efd3c799e4e04c05a85e17eeadf7f0.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-RelationsActions/archive/6c649733f5efd3c799e4e04c05a85e17eeadf7f0.zip">Starter project</a>
+</div>
 
-## Create addProject action
+## addProject アクションを作成する
 
-* Open the project editor and go to the Action section.
+* プロジェクトエディターを開いて「アクション」セクションに移動します。
 
-* Add a addProject Action
+* Add a `addProject` Action
 
-![create addProject Method](img/create-addProject-Method-4D-for-iOS-relation-parent-ID.png)
+![addProject メソッドの作成](img/create-addProject-Method-4D-for-iOS-relation-parent-ID.png)
 
 
-## On Mobile App Action method
+## On Mobile App Action データベースメソッド
 
-The only thing you have to do is defining the **addProject** action in the **On Mobile App Action method** as follows :
+あとは下記のように**On Mobile App Action**データベースメソッド内で**addProject** アクションの動作を定義するだけです。
 
 ```4d
 : ($request.action="addProjects")
@@ -41,10 +42,10 @@ $result:=addProject ($o)
 
 ```
 
-## addProject Method
+## addProject プロジェクトメソッド
 
 
-Then enter thoses lines in your **addProject Method**:
+**addProject**メソッドには，下記のコードを入力します。
 
 ```4d
 C_OBJECT($0)
@@ -57,7 +58,7 @@ $out:=New object("success";False)
 
 If ($in.dataClass#Null)
 
-    $entity:=ds[$in.dataClass].new()  //Create a reference
+    $entity:=ds[$in.dataClass].new()  //エンティティを作成
 
     For each ($key;$in.parameters)
 
@@ -65,19 +66,19 @@ If ($in.dataClass#Null)
 
     End for each 
 
-    $primaryKey:=$in.parent.primaryKey   //Get parent primary key
+    $primaryKey:=$in.parent.primaryKey   //親エンティティのプライマリーキー
 
     $parent:=ds[$in.parent.dataClass].get($primaryKey)
 
-  $inverseRelationName:=$in.entity.relationName   //Get parent relation name
+  $inverseRelationName:=$in.entity.relationName   //親エンティティのリレーション名
 
     $entity[$inverseRelationName]:=$parent
 
-    $status:=$entity.save()  //save the entity
+    $status:=$entity.save()  //エンティティを保存
 
-    $out.success:=True  // notify App that action success
+    $out.success:=True  //モバイルアプリにアクションの成功を通知
 
-    $out.dataSynchro:=True  // notify App to refresh the selection
+    $out.dataSynchro:=True  //モバイルアプリにセレクションのリフレッシュを要求
 
     $out.statusText:="Task added"
 
@@ -93,9 +94,11 @@ $0:=$out
 
 ```
 
-And that's it you can then add some task to your employees easily using the parent Entity !
+親エンティティを使用することにより，幾つでも担当者にタスクを追加することができるようになりました！
 
 Download the completed project:
 
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-RelationsActions/releases/latest/download/tutorial-RelationsActions.zip">Completed Project</a>
+href="https://github.com/4d-go-mobile/tutorial-RelationsActions/releases/latest/download/tutorial-RelationsActions.zip">Download</a>
+</div>

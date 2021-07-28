@@ -17,7 +17,7 @@ Before starting, please check that your configuration meets hardware and softwar
 
 
 
-## STEP 1. Download the Starter project
+## ÉTAPE 1. Download the Starter project
 
 Download and unzip our 4D Starter project, which contains a database file and a project icon (but no mobile project yet).
 
@@ -25,7 +25,7 @@ Download and unzip our 4D Starter project, which contains a database file and a 
 <a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-ContactApp/archive/acbb699c3c9d9edd3a8bbb715e87c17140b7e15f.zip">Starter project</a>
 </div>
 
-## STEP 2. Create the mobile project
+## ÉTAPE 2. Create the mobile project
 
 Launch your 4D application and select "Contact.4DProject". It contains a very simple database structure using a single table.
 
@@ -34,7 +34,7 @@ Go to **New > Mobile project**. In the Welcome screen, give your mobile project 
 
 ![Project Name](img/new-project.png)
 
-Click **Continue**.
+Cliquez sur **Continue**.
 
 Additional components are required to develop an Android project. Click **OK** to download them:
 
@@ -43,7 +43,7 @@ Additional components are required to develop an Android project. Click **OK** t
 
 
 
-## STEP 3. General page
+## ÉTAPE 3. General page
 
 Here, you configure your app's primary information:
 
@@ -68,9 +68,9 @@ If you are on Windows, only **Android** is available. If you are on macOS, you c
     - **Name:** Automatically filled from the user name on your computer.
     - **Team**: Developer team reference from your developer account. You can leave it empty to build your application on the Simulator only.
 
-![General](img/Contact-app-general-section-4D-for-iOS.png)
+![Général](img/Contact-app-general-section-4D-for-iOS.png)
 
-## STEP 4. Structure page
+## ÉTAPE 4. Structure page
 
 This is where you define the subset of data to expose to mobile devices. Select the table(s) in the left area and the field(s) in the right area.
 
@@ -98,7 +98,7 @@ Select **Labels & Icons** page. Here you can define some labels and icons that w
 ![Icons & Labels](img/Contact-app-icons-labels-section-4D-for-iOS.png)
 
 
-## STEP 6. Forms
+## ÉTAPE 6. Forms
 
 We're almost done, but we still need to decide on the app's layout. There are both List and Details forms to choose from.
 
@@ -123,7 +123,7 @@ And finally, we'll define the Detail form.
 
 ![Detail form content](img/DetailformContent-form-section-4D-for-iOS.png)
 
-## STEP 7. Build the app
+## ÉTAPE 7. Build the app
 
 Now the fun part! It's time to build your app and test it on the Simulator to see the final result!
 

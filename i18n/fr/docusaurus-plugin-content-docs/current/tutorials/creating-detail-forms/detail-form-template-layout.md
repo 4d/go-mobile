@@ -5,15 +5,15 @@ title: Android Layout
 
 In this section you will see how to create your detail form interface with Android Studio.
 
-Here's the result we want to achieve:
+Voici le résultat que nous souhaitons obtenir :
 
 ![Storyboard custom detailform](img/xml-custom-detailform.png)
 
 
 For this template, we're going to add a:
 
-* Profile header image
-* A field to be duplicated
+* Une photo de profil dans l'en-tête
+* Un champ à dupliquer
 
 ## Open the layout file with Android Studio
 

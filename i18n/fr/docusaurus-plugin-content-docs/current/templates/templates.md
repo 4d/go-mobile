@@ -1,6 +1,6 @@
 ---
 id: templates
-title: Templates & Formatters
+title: Modèles & Formats
 ---
 
 <div className="wrap-template-formatter">

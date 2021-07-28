@@ -1,11 +1,11 @@
 ---
 id: data-formatter
-title: Data formatter
+title: データフォーマッター
 ---
 
-4D v17 R3 includes a new concept: Data formatting!
+4D v17 R3以降，データにフォーマッターが適用できるようになりました！
 
-You can now choose pre-packaged formats from Labels & Icons in Sections.
+「ラベル＆アイコン」セクションでは，データ型に応じた既定のフォーマッターが選択できるようになっています。
 
 > **Available formats:**
 > 
@@ -17,5 +17,7 @@ You can now choose pre-packaged formats from Labels & Icons in Sections.
 
 Let's get started by downloading the Starter project:
 
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">Download</a>
+</div>

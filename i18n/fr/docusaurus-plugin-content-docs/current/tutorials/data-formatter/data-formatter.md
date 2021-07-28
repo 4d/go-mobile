@@ -1,11 +1,11 @@
 ---
 id: data-formatter
-title: Data formatter
+title: Format des données
 ---
 
-4D v17 R3 includes a new concept: Data formatting!
+4D v17 R3 intègre un nouveau concept : le format des données !
 
-You can now choose pre-packaged formats from Labels & Icons in Sections.
+Vous pouvez désormais choisir des formats prédéfinis à partir de la section Libellés et icônes.
 
 > **Available formats:**
 > 

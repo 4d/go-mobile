@@ -1,6 +1,6 @@
 ---
 id: create-data-formatter
-title: Create data formatter
+title: カスタムのデータフォーマッター
 ---
 
 > **OBJECTIVES**
@@ -11,7 +11,7 @@ title: Create data formatter
 > 
 > Click `[here](prerequisites.html)` to see what you'll need to get started!
 
-In this tutorial, we'll guide you through the creation of various formatter examples.
+このチュートリアルでは、様々なフォーマッターの例を作成していくことを案内していきます。
 
 ## Download the Starter project
 
@@ -20,25 +20,27 @@ To begin, download the **Starter project**, which includes:
 * **integerToImage_Images** and **textToImage_Images** folders that contain images (to use later for formatters that include images)
 * A **Task Management.4dbase** file (with a ready to use mobile app project)
 
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">Starter project</a>
+</div>
 
-You're now ready to create your first formatters!
+これでフォーマッターを作成する準備が整いました！
 
-## Create the formatters folder
+## formatters フォルダを作成
 
 First, create a *Task Management.4dbase/Resources/Mobile/formatters* folder.
 
-![Formatter folder](img/formatter-folder.png)
+![Formatter フォルダー](img/formatter-folder.png)
 
-## Integer formatters
+## 整数用フォーマッター
 
-### Integer to string
+### 整数から文字列へ
 
 * Create an **integerToString** folder in the formatters folder you've just created.
 * Then create a **manifest.json** file in the **integerToString** folder.
 
-![Formatter folder](img/formatter-folder-integertostring.png)
+![Formatter フォルダー](img/formatter-folder-integertostring.png)
 
 Let's look at the contents of the **manifest.json** file:
 
@@ -59,17 +61,17 @@ Let's look at the contents of the **manifest.json** file:
 3. **binding**: can be **localized text** for strings or **imageNamed** for images
 4. **choiceList**: mapped values
 
-### Integer to image
+### 整数から画像へ
 
 * Create an **integerToImage** folder in the **formatters** folder you've created.
 
 * Create a **manifest.json** file in the **integerToImage** folder.
 
-![Formatter folder](img/formatter-folder-integertoimage.png)
+![Formatter フォルダー](img/formatter-folder-integertoimage.png)
 
 * Then create an **Images** folder in the **integerToImage** folder. You can add the images from the **integerToImage_Images** in the StarterProject.zip to this new folder.
 
-![Formatter images](img/formatter-images-integertoimage.png)
+![フォーマッターで使用する画像](img/formatter-images-integertoimage.png)
 
 Let's look at the contents of the **manifest.json** file:
 
@@ -97,15 +99,15 @@ Let's look at the contents of the **manifest.json** file:
 4. **choiceList**: mapped values
 5. **assets**: adjust the display size (width and height)
 
-## Text formatters
+## テキストフォーマッター
 
-### Text to string
+### テキストから文字列へ
 
 * Create a **textToString** folder in the formatters folder you've just created.
 
 * Create a **manifest.json** file in the **textToString** folder.
 
-![Formatter folder](img/formatter-folder-texttostring.png)
+![Formatter フォルダー](img/formatter-folder-texttostring.png)
 
 Let's look at the contents of the **manifest.json** file:
 
@@ -126,17 +128,17 @@ Let's look at the contents of the **manifest.json** file:
 3. **binding**: can be **localized text** for strings or **imageNamed** for images
 4. **choiceList**: mapped values
 
-### Text to image
+### テキストから画像へ
 
 * Create a **textToImage** folder in the formatters folder you've just created.
 
 * Create a **manifest.json** file in the **textToImage** folder.
 
-![Formatter folder](img/formatter-folder-textToImage.png)
+![Formatter フォルダー](img/formatter-folder-textToImage.png)
 
 * Then create an **Images** folder in the **textToImage** folder. You can add the images from the **textToImage_Images** in the StarterProject.zip to this new folder.
 
-![Formatter images](img/formatter-images-textToImage.png)
+![フォーマッターで使用する画像](img/formatter-images-textToImage.png)
 
 Let's look at the contents of the **manifest.json** file:
 
@@ -159,7 +161,62 @@ Let's look at the contents of the **manifest.json** file:
 
 ```
 
-## Open mobile project
+## Dark mode support
+
+Whether your device is in dark or light mode, whether you're working on iOS or Android, you can easily use the custom data formatters containing images. The pictures will be adapted depending on the phone's color mode.
+
+### Tintable color
+
+To optimize the color contrast of your black and white images on your app depending on the color mode (light or dark), you can set the images as follows, with the `"tintable": true` code line:
+
+```json
+{
+   "name": "textToImage",
+   "type": ["text"],
+   "binding": "imageNamed",
+   "choiceList": {"car":"car.png","plane":"plane.png","bus":"bus.png"},
+   "assets": {
+     "size": 54, 
+     "tintable": true
+     }
+}
+```
+Here is the result in light and dark modes:
+
+| Light mode                      |           Dark mode            |
+| ------------------------------- |:------------------------------:|
+| ![データフォーマッター](img/light-bw.png) | ![データフォーマッター](img/dark-bw.png) |
+
+
+
+
+
+
+
+### Optimized color pictures
+
+To optimize the color pictures displayed on your app and adapt them to your color mode, you need to have two pictures: one for the light mode, and one for the dark mode suffixed with `_dark`, as follows:
+
+![データフォーマッター](img/Architecture.jpg)
+
+```json
+{
+   "name": "textToImage",
+   "type": ["text"],
+   "binding": "imageNamed",
+   "choiceList": {"car":"car.png","plane":"plane.png","bus":"bus.png"},
+   "assets": {
+     "size": 54
+   }
+}
+```
+Here is the result in light mode and in dark mode:
+
+| Light mode                         |             Dark mode             |
+| ---------------------------------- |:---------------------------------:|
+| ![データフォーマッター](img/light-color.png) | ![データフォーマッター](img/dark-color.png) |
+
+## モバイルプロジェクトを開く
 
 Open the Task Management.4dbase with 4D and go to File > open > Mobile Project... to open the **Tasks**
 
@@ -180,5 +237,7 @@ Build your 4D of iOS app and you'll see that your data formatter is well applied
 
 Download the completed formatter template folder:
 
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-CustomDataFormatter/releases/latest/download/tutorial-CustomDataFormatter.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/releases/latest/download/tutorial-CustomDataFormatter.zip">Download</a>
+</div>

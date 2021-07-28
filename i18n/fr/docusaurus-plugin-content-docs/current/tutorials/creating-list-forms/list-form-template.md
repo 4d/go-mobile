@@ -1,6 +1,6 @@
 ---
 id: list-form-template
-title: List form templates
+title: Modèles de formulaire Liste
 ---
 
 In this tutorial, we'll cover nearly all aspects of creating a list form template, including the use of a **searchBar**, a table displaying an **image**, a **title**, and a **subtitle** for each cell.
@@ -11,7 +11,7 @@ In this tutorial, we'll cover nearly all aspects of creating a list form templat
 
 Before we begin, be sure to download and unzip the **Starter project** which includes:
 
-* A **List form** folder
+* Un dossier **List form**
 * A demo 4D project ("Contact") with a ready-to-use mobile app project.
 
 <div className="center-button">
@@ -19,7 +19,7 @@ Before we begin, be sure to download and unzip the **Starter project** which inc
 href="https://github.com/4d-go-mobile/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">Starter project</a>
 </div>
 
-## Add a list form template to your mobile project
+## Ajoutez un modèle de formulaire Liste à votre projet mobile
 
 The first thing you'll need to do is to create a `list` folder in *Contact.4dbase/Resources/Mobile/form/* location and drag and drop your **list form** folder into it.
 
@@ -33,9 +33,9 @@ In the **Forms section** of the mobile project editor, you can see that your lis
 
 ![Forms section](img/custom-listform-template.png)
 
-Now let's focus on the contents of the **Custom List form** folder.
+Nous allons maintenant nous concentrer sur le contenu du dossier **Custom List form**.
 
-## List form template content
+## Contenu du modèle de formulaire Liste
 
 In this folder, you will find:
 

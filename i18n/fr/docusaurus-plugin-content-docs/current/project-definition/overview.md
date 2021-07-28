@@ -10,12 +10,12 @@ The 4D Mobile Project editor allows you to design, test, and build your native m
 
 In the **Sections** tab, you'll find all of the necessary steps to create your mobile application:
 
-* General
+* Général
 * Structure
-* Data
+* Données
 * Actions
-* Labels & Icons
-* Main Menu
+* Libellés et icônes
+* Menu
 * Forms
 * Publishing
 

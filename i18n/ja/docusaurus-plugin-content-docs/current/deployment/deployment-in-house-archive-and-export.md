@@ -10,25 +10,25 @@ title: Archive and export your Project
 
 > **PREREQUISITES**
 > 
-> * [Apple Enterprise Developer Program]`(selecting-your-developer-program-register-apple-developer-enterprise-program.html)`
+> * [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program)
 > * A secured web server
 > * 57 x 57 px icon
 > * 512 x 512 px icon
 
 
-## STEP 1. Xcode configuration
+## ⒈ Xcode configuration
 
 Following validation of your account by Apple, open Xcode and add your Apple Enterprise Developer account in Preferences > Accounts.
 
 Xcode will automatically install required provisioning and certificates.
 
-## STEP 2. Get your Team ID
+## ⒉ Get your Team ID
 
 * Log into your Apple Developer Account. You can find your Team ID in Membership.
 
 ![Get your Team ID](img/Team-ID-4D-for-iOS.png)
 
-## STEP 3. 4D for iOS configuration
+## ⒊ 4D for iOS configuration
 
 * Launch 4D for iOS
 
@@ -43,13 +43,13 @@ Xcode will automatically install required provisioning and certificates.
 * On the BUILD tab:
     * Build and Run: Build your project.
 
-## STEP 4. Open your project with Xcode
+## ⒋ Open your project with Xcode
 
-* From the 4D for iOS Project Editor's BUILD tab, click on Project > Open the project with Xcode
+* From the 4D for iOS Project Editor's BUILD tab, click on **Project > Open the project with Xcode**
 
 ![pen your project with Xcode ](img/Open-your-project-Xcode-4D-for-iOS.png)
 
-## STEP 5. Archive your project from Xcode
+## ⒌ Archive your project from Xcode
 
 * From Xcode, go to the simulator Menu and select **Generic iOS Device**
 
@@ -59,7 +59,7 @@ Xcode will automatically install required provisioning and certificates.
 
 ![Archive your Project](img/Archive-your-Project.png)
 
-## STEP 6. Export your project
+## ⒍ Export your project
 
 * At the end of the archive process, the Organizer window appears with the archive you just created
 
@@ -67,13 +67,13 @@ Xcode will automatically install required provisioning and certificates.
 
 ![Export your project](img/Organizer-window-archive.png)
 
-## STEP 7. Select your distribution method
+## ⒎ Select your distribution method
 
 * Select **Enterprise** and click **Next**.
 
 ![Distribution Method](img/Distribution-Method-selection.png)
 
-## STEP 8. Select your Enterprise distribution options
+## ⒏ Select your Enterprise distribution options
 
 * You can leave all option boxes checked.
 
@@ -143,7 +143,7 @@ Here is an example of a manifest.plist file :
 ```
 
 
-## STEP 9. Distribution manifest information
+## ⒐ Distribution manifest information
 
 * We recommand letting Xcode do the job of entering your app URL as well as the icons URLs. You will, of course, have the option to change those URLs later.
 
@@ -152,7 +152,7 @@ Here is an example of a manifest.plist file :
 * Click **Next**.
 
 
-## STEP 10. Re-sign your application
+## ⒑ Re-sign your application
 
 * Let Xcode manage the **Automatically manage signing** option.
 

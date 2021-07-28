@@ -1,6 +1,6 @@
 ---
 id: xcode-overview
-title: Xcode Overview
+title: Xcode ガイド
 ---
 
 > **OBJECTIVES**
@@ -11,7 +11,7 @@ Xcode displays various areas that we're going to review:
 
 ![Xcode](img/Discover-Xcode-4D-for-iOS.png)
 
-## Toolbar
+## ツールバー
 
 * **Run** and **Stop** buttons are located on the left side of the toolbar. Pressing the **Run** button will build, run, and launch your application in the selected iOS Simulator.
 
@@ -21,33 +21,33 @@ Xcode displays various areas that we're going to review:
 
 ![Toolbar Target](img/Toolbar-Target-simulator-Xcode-4D-for-iOS.png)
 
-* On the right side of the toolbar, you'll find buttons to change the display.
+* ツールバーの右側には，表示形式を切り替えるためのボタンがあります。
 
 ![Toolbar View buttons](img/Toolbar-View-buttons-Xcode-4D-for-iOS.png)
 
-## Editor Area
+## エディターエリア
 
-![Editor Area](img/Editor-Xcode-4D-for-iOS.png)
+![エディターエリア](img/Editor-Xcode-4D-for-iOS.png)
 
 This is where the coding happens when a Swift file is selected. When a Storyboard file is selected, the view changes and the Interface Builder appears.
 
-## Interface Builder Area
+## インターフェースビルダー
 
-![Interface Builder Area](img/Interface-Builder-Xcode-4D-for-iOS.png)
+![インターフェースビルダー](img/Interface-Builder-Xcode-4D-for-iOS.png)
 
 This is a graphical interface which allows you to build a Storyboard or XIB file. All of your scenes are accessible on the left side.
 
-## Utility Area
+## ユーティリティーエリア
 
 The Utility area of Xcode has two panes: the Inspector pane and the Library pane.
 
-![Utility Area](img/Utility-Xcode-4D-for-iOS.png)
+![ユーティリティーエリア](img/Utility-Xcode-4D-for-iOS.png)
 
-### Inspector pane
+### インスペクターペイン
 
 Within the Properties section, there are six different Inspector Tabs, as shown in the following illustration:
 
-![Inspector pane](img/Xcode-Inspector-pane.png)
+![インスペクターペイン](img/Xcode-Inspector-pane.png)
 
 From left-to-right, these tabs are:
 
@@ -57,33 +57,33 @@ From left-to-right, these tabs are:
 
 * **Identity inspector**: For viewing object metadata such as an object’s class, runtime attributes, label.
 
-* **Attributes inspector**: For configuring the attributes specific to the selected interface object. For example, some text field attributes include text alignment and color, border type, and editability.
+* **Attributes inspector**: For configuring the attributes specific to the selected interface object. たとえば，テキストフィールドには，文字の整列・フォントカラー・ボーダータイプ・入力の可否といった属性があります。
 
 * **Size inspector**: For specifying characteristics such as the size and position of an interface object.
 
 * **Connections inspector**: View the outlets and actions for an interface object, make new connections, and delete existing connections.
 
-### Library pane
+### ライブラリペイン
 
 Within the Properties section, there are four different Library Tabs, as shown in the following illustration:
 
 From left-to-right, these tabs are:
 
-![Library pane](img/Xcode-Library-pane.png)
+![ライブラリペイン](img/Xcode-Library-pane.png)
 
 * **File templates**: These templates are for the common types of files listed as choices in the New File menu.
 
-* **Code snippets**: These are short pieces of source code for use in your application. To use one, drag it directly into your source code file.
+* **Code snippets**: These are short pieces of source code for use in your application. 直接，ソースコードにドラッグ＆ドロップすることができます。
 
-* **Objects**: This library contains the kinds of interface objects you’d use to make up your user interface. To add one to a view, drag it directly into your storyboard in the Interface Builder editor.
+* **Objects**: This library contains the kinds of interface objects you’d use to make up your user interface. 直接，インターフェースビルダーに表示されているストーリーボードにドラッグ＆ドロップすることができます。
 
-* **Media files**: This library contains all your graphics, icons, and sound files. To use one, drag it directly to your storyboard in the Interface Builder editor.
+* **Media files**: This library contains all your graphics, icons, and sound files. 直接，インターフェースビルダーに表示されているストーリーボードにドラッグ＆ドロップすることができます。
 
-## Debug Area
+## デバッグエリア
 
 This area displays the output and the state of various variables when running your app.
 
-## Navigation Area
+## ナビゲーションエリア
 
 Several tabs are included here, the most important of which are:
 
@@ -97,8 +97,8 @@ Several tabs are included here, the most important of which are:
 
 * **Issue navigator tab**: Displays all errors in an iOS project.
 
-    - Errors in red are critical issues that need to be corrected in order to build your application.
-    - Errors in yellow are warnings about issues which have the potential to cause problems but do not block the building of the application.
+    - 赤のメッセージは，無視できない問題であり，アプリをビルドするためには，解消する必要があることを示しています。
+    - 黄のメッセージは，警告であり，不具合を引き起こす可能性があるものの，アプリのビルドを阻止するものではない問題を示しています。
 
 You can click on errors and warnings to visualize them in the project.
 

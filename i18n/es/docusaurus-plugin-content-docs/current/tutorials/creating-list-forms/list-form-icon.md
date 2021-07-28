@@ -3,14 +3,14 @@ id: list-form-icon
 title: List form icon
 ---
 
-You can create your own icon for a list form template.
+Puede crear su propio icono para una plantilla de formulario Lista.
 
 It must be 160x160 px and must be named **layoutIconx2.png**.
 
-The icon will be used:
+El icono se utilizará:
 
-* above the table name when the template has been selected, and
-* in the template selector window in the **Forms section**
+* sobre el nombre de la tabla cuando la plantilla haya sido seleccionada, y
+* en la ventana de selección de plantillas en la **sección Formularios**
 
 ![Custom listform template](img/custom-listform-template.png)
 
