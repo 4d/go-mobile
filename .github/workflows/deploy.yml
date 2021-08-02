@@ -33,7 +33,6 @@ jobs:
           node-version: '13.x'
       - name: Setup config file
         run: |
-          echo ${{ github.repository_owner }}
           if [ ${{ github.repository_owner }} == 'doc4d' ]; then
           sed -i 's/noIndex:\ false/noIndex:\ true/g' docusaurus.config.js
           fi
