@@ -8,7 +8,7 @@ This tutorial will show you how to:
 
 - Create and use a custom [login form](https://4d-for-ios.github.io/gallery/#/type/form-login).
 - Allow authenticated users to login by scanning a QRCode.
-> **PREREQUISITES**
+> **REQUISITOS PREVIOS**
 > 
 > A website with authenticated users
 > 
