@@ -24,7 +24,7 @@ When you select a list form template for a table, the content definition screen 
 
 ![List form content definition](img/Forms-section-content-definition-4D-for-iOS.png)
 
-:::note
+:::nota
 
 In list forms, you cannot add more fields than those included in the template.
 
