@@ -20,7 +20,7 @@ Debería obtener este resultado:
 
 ![CRM database](img/filterquery.png)
 
-> **NOTE**
+> **NOTA**
 > 
 > * Se muestra un icono de **filtro** a la derecha de cada tabla cuando se le aplica un filtro básico.
 > * Para este tipo de filtros de búsqueda, puede optar por integrar los datos en la aplicación o cargar los datos después de iniciar sesión marcando la casilla de verificación **Integrar los datos en la aplicación**.
