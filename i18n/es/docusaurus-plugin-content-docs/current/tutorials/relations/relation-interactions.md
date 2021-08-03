@@ -3,7 +3,7 @@ id: relation-interactions
 title: Interacciones entre relaciones
 ---
 
-4D mobile projects allow to add very nice interaction into your apps. For instance you will be able to publish One to Many and Many to One relation from [many to one relation](many-to-one-relations.md).
+Los proyectos móviles 4D permiten añadir una interacción muy agradable a sus aplicaciones. Por ejemplo, podrá publicar una relación de Uno a Muchos y de Muchos a Uno desde [Relación muchos a uno](many-to-one-relations.md).
 
 # Editor de proyecto
 
