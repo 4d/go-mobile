@@ -16,7 +16,7 @@ Descargue el **proyect Starter** y vaya directamente a la sección **Actions**.
 href="https://github.com/4d-go-mobile/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">Download</a>
 </div>
 
-You can define actions for two levels:
+Puede definir acciones para dos niveles:
 
 * Acciones de entidad
 * Acciones de tabla
@@ -49,7 +49,7 @@ Para definir esta acción:
 
 ### PASO 2. Crear y editar el método On Mobile App Action
 
-Now that your action is defined in the Project Editor, you have to create the **[On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)** database Method.
+Ahora que su acción está definida en el editor de proyectos, debe crear el método base **[On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)**.
 
 Para hacerlo, haga clic en el **botón Crear** en la parte inferior derecha de la tabla de acciones e ingrese el siguiente código en el método base **On Mobile App Action**:
 
@@ -243,7 +243,7 @@ $0:=$out
 
 ![Final result All Action](img/ListForm-entity-action-tableview.png)
 
-Download the completed project that includes various actions:
+Descargue el proyecto terminado que incluye varias acciones:
 
 <div className="center-button">
 <a className="button button--primary"
