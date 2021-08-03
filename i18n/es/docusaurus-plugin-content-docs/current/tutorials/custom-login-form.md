@@ -19,7 +19,7 @@ This tutorial will show you how to:
 
 *Scenario: You already have a website with authenticated users and you want then to login into their app just by scanning a QRCode*
 
-:::note
+:::nota
 
 Selecting a custom login form from the Project editor is not implemented yet but let's see how to do that manually
 
