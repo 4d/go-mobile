@@ -104,8 +104,12 @@ module.exports = {
           title: "Support",
           items: [
             {
-              label: "4D Doc Center (legacy)",
+              label: "4D Doc Center",
               to: "https://doc.4d.com/",
+            },
+			{
+              label: "4D for iOS (archive)",
+              to: "https://developer.4d.com/4d-for-ios",
             },
             {
               label: "Knowledge Base",
