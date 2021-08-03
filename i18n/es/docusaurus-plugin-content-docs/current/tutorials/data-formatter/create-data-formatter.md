@@ -5,15 +5,15 @@ title: Crear el formato de datos
 
 > **OBJETIVOS**
 > 
-> Create your first data formatters.
+> Crear sus primeros formatos de datos.
 
 > **REQUISITOS PREVIOS**
 > 
-> Click `[here](prerequisites.html)` to see what you'll need to get started!
+> Haga clic `[here](prerequisites.html)` para ver lo que necesita para empezar
 
 En este tutorial, lo guiaremos a través de la creación de varios ejemplos de formatos.
 
-## Download the Starter project
+## Descargue el proyecto Starter
 
 To begin, download the **Starter project**, which includes:
 
