@@ -3,14 +3,14 @@ id: working-with-xcode
 title: Trabajar con Xcode
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > * Open a 4D for iOS project from the Project Editor.
 > * Customize the generated 4D for iOS app.
 
 4D for iOS genera una aplicación iOS nativa modificable y personalizable con Xcode. ¡Miremos el proceso!
 
-> **NOTE**
+> **NOTA**
 > 
 > If you customize your project on Xcode and rebuild it from the Project Editor All of your modifications will be lost!
 
