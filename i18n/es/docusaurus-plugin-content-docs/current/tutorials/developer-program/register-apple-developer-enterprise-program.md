@@ -3,11 +3,11 @@ id: register-apple-developer-enterprise-program
 title: Apple Developer Enterprise Program
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Regístrese al Apple Developer Enterprise Program para desplegar su aplicación <b>de forma interna</b>.
 
-> **NOTE**
+> **NOTA**
 > 
 > To enroll in the Apple Developer Enterprise Program, your Apple ID must be associated with an email address using your organization’s domain name.
 
