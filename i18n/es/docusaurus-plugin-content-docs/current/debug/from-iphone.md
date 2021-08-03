@@ -8,7 +8,7 @@ Desde su aplicación, si tiene un bloqueo, puede mostrar, editar y enviar coment
 Para eso:
 * Vaya a la configuración de su iPhone
 * encuentre su aplicación desplazándose hacia abajo
-* Encienda la retroalimentación
+* Active los comentarios
 
 ![Activate feedback and logs](img/activate-feedback-logs.png)
 
@@ -18,6 +18,6 @@ A partir de aquí, lo único que tiene que hacer es volver a abrir su aplicació
 * Mostrar el historial actual
 * Reportar un problema
 
-![Display and send logs](img/display-send-logs.png)
+![Mostrar y enviar los historiales](img/display-send-logs.png)
 
 
