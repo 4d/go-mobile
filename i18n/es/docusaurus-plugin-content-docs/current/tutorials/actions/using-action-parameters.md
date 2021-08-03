@@ -403,7 +403,7 @@ Y finalmente puede eliminar una entidad utilizando la acción **Eliminar... **.
 ¡Felicitaciones! Su aplicación iOS Tasks ahora está completa y ahora puede modificar los datos de su aplicación directamente desde su dispositivo y sincronizarlos con su servidor.
 
 
-Download the completed project:
+Descargar el proyecto terminado:
 
 <div className="center-button">
 <a className="button button--primary"
