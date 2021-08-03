@@ -3,26 +3,26 @@ id: testing-on-your-device
 title: Instalar en su dispositivo iOS
 ---
 
-You can install and test your mobile application on a connected device.
+Puede instalar y probar su aplicación móvil en un dispositivo conectado.
 
 
 ## Requisitos
 
-You need to subscribe to an Apple Developer Program. Depending on your objectives and preferences, you can choose to enroll in one of the following:
+Tiene que suscribirse a un programa de desarrolladores de Apple. Dependiendo de sus objetivos y de sus preferencias, puede optar por inscribirse en uno de los siguientes programas:
 
-* [Free Apple Developer Program]`(free-developer-account.html)-- to add`: For testing only
-* [Apple Developer Program for organization](../tutorials/developer-program/register-apple-developer-program-organization) or [individual](../tutorials/developer-program/register-apple-developer-program-individual): For an App Store Deployment
-* [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program): To deploy your app in-house
+* [Free Apple Developer Program]`(free-developer-account.html)-- to add`: para pruebas únicamente
+* [Apple Developer Program para las empresas](../tutorials/developer-program/register-apple-developer-program-organization) o [para los particulares](../tutorials/developer-program/register-apple-developer-program-individual): con el fin de desplegar en el App Store
+* [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program): para desplegar su aplicación internamente
 
 
-:::note
+:::nota
 
-You need [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) installed on your Mac to automate app installation (optional).
+Necesita [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) instalado en su Mac para automatizar la instalación de la aplicación (opcional).
 
 :::
 
 
-## PASO 1. Account creation
+## PASO 1. Crear cuenta
 
 * **Identificador Apple**: cree su identificador Apple. Si no tienen uno, haga clic [aquí](https://appleid.apple.com/account#!&page=create).
 
@@ -34,10 +34,10 @@ You need [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurat
 
 ## PASO 3. Obtenga su Team ID
 
-* If your are using a [Free Apple Developer Program]`(free-developer-account.html--to addd)` go to [step 4](#step-4-team-id-for-free-account).
-* If your are using an [Apple Developer Program for organization](../tutorials/developer-program/register-apple-developer-program-organization), [individual](../tutorials/developer-program/register-apple-developer-program-individual) or an [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program) go to [step 5](#step-5-team-id-for-paid-subscription-account).
+* Si está utilizando un [Programa gratuito para desarrolladores de Apple]`(free-developer-account.html--to addd)` vaya a [paso 4](#paso-4-team-id-for-free-account).
+* Si está utilizando un [Apple Developer Program para empresas](../tutorials/developer-program/register-apple-developer-program-organization), [ para particulares ](../tutorials/developer-program/register-apple-developer-program-individual) o un [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program) vaya al [paso 5](#step-5-team-id-for-paid-subscription-account).
 
-## PASO 4. Team ID for Free account
+## PASO 4. Team ID para una cuenta gratuita
 
 ### Deje que Xcode genere su perfil y certificado
 
@@ -45,7 +45,7 @@ You need [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurat
 
 ![Build tab](img/Open-your-project-Xcode-4D-for-iOS.png)
 
-* Verify that the **Automatically manage signing** option is checked and select the account you added [here]`(free-developer-account.html)` from the Team dropdown list.
+* Verifique que la opción **Automatically manage signing** esté marcada y seleccione la cuenta que agregó [here]`(free-developer-account.html)` de la lista desplegable "Team".
 
 ![Account-Selection](img/account-Selection-Free-Account.png)
 
@@ -61,7 +61,7 @@ You need [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurat
 
 ![Build and Run](img/Build-Run-Free-Account.png)
 
-## PASO 5. Team ID for paid subscription account
+## PASO 5. Team ID para una cuenta paga
 
 * **Team ID**: Haga clic en Developer Account > Membership y obtenga su Team ID. ![Developer Account membership](img/Team-ID-4D-for-iOS.png)
 
@@ -69,7 +69,7 @@ You need [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurat
 
 * Vaya al PASO 6 para ejecutar su proyecto en su dispositivo.
 
-## PASO 6. Installation
+## PASO 6. Instalación
 
 ### Instalación automática con Apple Configurator 2
 
@@ -101,7 +101,7 @@ You need [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurat
 
 ![Devices and Simulators](img/Devices-and-Simulators-4D-for-iOS.png)
 
-* The app is now being installed on your device.
+* ¡La aplicación se está instalando en su dispositivo!
 
 
 
