@@ -17,7 +17,7 @@ Before starting, please check that your configuration meets hardware and softwar
 
 
 
-## PASO 1. Download the Starter project
+## PASO 1. Descargue el proyecto Starter
 
 Download and unzip our 4D Starter project, which contains a database file and a project icon (but no mobile project yet).
 
@@ -51,7 +51,7 @@ Here, you configure your app's primary information:
 
 * **Target:** Mobile platform(s) to build
 
-:::note
+:::nota
 
 If you are on Windows, only **Android** is available. If you are on macOS, you can select both **Android** and **iOS** targets.
 
@@ -83,7 +83,7 @@ For our example, select **ID**, **First Name**, **Last Name**, **Job**, **Compan
 
 ## PASO 5. Labels & Icons page
 
-:::note
+:::nota
 
 [**Data**](project-definition/data.md) and [**Actions**](project-definition/actions.md) pages allow to configure your app's data and to trigger code on the server. To keep this example simple, we will use default behaviors.
 
