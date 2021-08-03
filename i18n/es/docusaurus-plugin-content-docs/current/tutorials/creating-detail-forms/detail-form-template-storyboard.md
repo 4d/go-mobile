@@ -3,7 +3,7 @@ id: detail-form-template-storyboard
 title: iOS Storyboard
 ---
 
-Now it's time to create your iOS detail form interface with Xcode.
+Ahora es el momento de crear su interfaz iOS de formulario detallado con Xcode.
 
 Este es el resultado que queremos lograr:
 
@@ -71,7 +71,7 @@ Seleccione **Field View 1** y añada tres restricciones haciendo clic en el bot�
 
 Para que los "Stack View" y "Scroll View" tengan el mismo ancho, debe agregar un restricción:
 
-Press **Ctrl** and drag the Stack View to the Scroll View. Cuando suelte el botón del ratón, el Interface Builder muestra un menú con una lista de posibles restricciones. Seleccione "Equal Width".
+Presione **Ctrl** y arrastre la vista Pila a la vista Desplazamiento. Cuando suelte el botón del ratón, el Interface Builder muestra un menú con una lista de posibles restricciones. Seleccione "Equal Width".
 
 ![Stack View Equal Width](img/stackview-equal-width-scrollview.png)
 
@@ -129,7 +129,7 @@ Seleccione las etiquetas Contenido y Título y agregue cuatro restricciones haci
 
 ![Title and Content labels constraints](img/titlelabel-contentlabel-contraints.png)
 
-¡Ya ha terminado la parte de los elementos gráficos! All of your constraints are well defined.
+¡Ya ha terminado la parte de los elementos gráficos! Todas sus restricciones están bien definidas.
 
 ## Cómo obtener datos en sus celdas
 
@@ -170,7 +170,7 @@ Seleccione la **segunda etiqueta** y agregue una línea en el área "Defined Run
 
 Field View 2 incluye los elementos que se duplicarán para que pueda tener tantos campos como defina en el editor del proyecto.
 
-Each storyboard element has an Object ID. Por ejemplo, si selecciona Field View 2 y va al **Identity inspector**, verá sus identificadores de objetos:
+Cada elemento del storyboard tiene un identificador de objeto. Por ejemplo, si selecciona Field View 2 y va al **Identity inspector**, verá sus identificadores de objetos:
 
 ![Object ID Storyboard](img/object-id-storyboard.png)
 
@@ -196,7 +196,7 @@ Guarde el archivo xml del storyboard. Como puede ver, el ID de objeto de Field V
 
 ![Label 1 Object ID](img/label1-object-id.png)
 
-Done with the first label.
+Lista la primera etiqueta.
 
 ### Segunda etiqueta
 
@@ -218,7 +218,7 @@ Vaya al editor de su proyecto y seleccione su plantilla de formulario detallado 
 
 ![Custom detail template forms](img/custom-detail-template-forms.png)
 
-Not bad for a first attempt!
+¡No está mal para un primer intento!
 
 ![iPhone Demo](img/iphone-demo.png)
 
@@ -262,7 +262,7 @@ A continuación, seleccione Field View 2 y agregue lo siguiente:
 
 ## Where to go from here?
 
-In this tutorial, we've covered the basics for creating detail form templates. You can now create simple templates on your own using the Starter project resources.
+In this tutorial, we've covered the basics for creating detail form templates. Ahora puede crear plantillas simples por su cuenta utilizando los recursos del proyecto Starter.
 
 Download the completed template folder:
 
