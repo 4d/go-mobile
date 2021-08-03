@@ -3,7 +3,7 @@ id: update-gallery-template
 title: Actualizar una plantilla
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Abra y actualice una plantilla de la galería y mejórela
 

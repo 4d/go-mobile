@@ -3,7 +3,7 @@ id: deployment-in-house-distribute
 title: Distribuir una aplicación interna
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Upload your app to a secured server.
 

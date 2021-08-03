@@ -3,11 +3,11 @@ id: adding-actions-template
 title: Añadir acciones a las plantillas
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Add actions to custom List and Detail forms templates.
 
-> **PREREQUISITES**
+> **REQUISITOS PREVIOS**
 > 
 > Click `[here](prerequisites.html)` to see what you'll need to get started!
 
