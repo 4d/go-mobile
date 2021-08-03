@@ -3,12 +3,12 @@ id: deployment-in-house-archive-and-export
 title: Archivar y exportar un proyecto
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > * Archive and export your 4D for iOS project
 > * Generate .ipa and manifest files
 
-> **PREREQUISITES**
+> **REQUISITOS PREVIOS**
 > 
 > * [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program)
 > * A secured web server
