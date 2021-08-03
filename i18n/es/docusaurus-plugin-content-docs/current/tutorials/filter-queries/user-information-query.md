@@ -19,7 +19,7 @@ Status = 'In Progress' & manager.Email = :email
 
 La búsqueda filtrará los datos en función del estado **In Progress** Y de la **dirección de correo electrónico del administrador de cuentas** (accesible desde la tabla AccountManager gracias a la relación *Muchos a Uno* en el nombre del gerente).
 
-> **NOTE**
+> **NOTA**
 > 
 > * Se muestra un **icono usuario** a la derecha de cada tabla cuando se le aplica un filtro de información de usuario.
 > * Tan pronto como una búsqueda se base en la información del usuario y se valide, debe editar el **Método de autenticación de la aplicación móvil**. Para hacerlo, haga clic con el botón derecho en el botón **Edit authentication method** para abrir la ventana de edición del método de base de datos.
