@@ -5,7 +5,7 @@ title: One to Many relations
 
 This tutorial will show you how easy it can be to include One to Many relations in your mobile project.
 
-Let's get started by downloading the Starter project:
+Comencemos descargando el proyecto Starter:
 
 <div className="center-button">
 <a className="button button--primary"
@@ -68,7 +68,7 @@ So, in the Labels & Icons section you will define:
 
 Well done! You've successfully included One to Many relations in your mobile project.
 
-Download the completed project:
+Descargar el proyecto terminado:
 
 <div className="center-button">
 <a className="button button--primary"
