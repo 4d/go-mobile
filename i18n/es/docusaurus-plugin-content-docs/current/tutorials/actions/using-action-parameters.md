@@ -3,12 +3,12 @@ id: using-action-parameters
 title: Utilizar parámetros de acción
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
-> Define action parameters to edit the content of your app.
+> Definir parámetros de acción para editar el contenido de su aplicación.
 
 
-In the tutorial on defining actions, we discovered how to execute 4D code from an iOS app by defining actions from the actions section.
+En el tutorial al definir acciones, descubrimos cómo ejecutar código 4D desde una aplicación iOS definiendo acciones en la sección acciones.
 
 En este tutorial, iremos más allá y crearemos:
 
@@ -17,7 +17,7 @@ En este tutorial, iremos más allá y crearemos:
 * una acción de eliminación para **eliminar una entidad**, y
 * una acción que le permitirá **enviar un comentario por correo electrónico para una tarea específica**.
 
-To begin, let's first download the **Starter project** based on our existing Tasks iOS app:
+Para comenzar, primero descarguemos el **proyecto Starter** basado en nuestra aplicación iOS Tasks:
 
 <div className="center-button">
 <a className="button button--primary"
@@ -103,7 +103,7 @@ Su sección Actions debería verse así:
 
 ## PASO 5. Creación del método base On Mobile App Action
 
-Click on the Create button to create the *On Mobile App Action* database method.
+Haga clic en el botón Crear para crear el método base *On Mobile App Action*.
 
 Todas sus acciones se incluirán automáticamente en el método base.
 
@@ -407,7 +407,7 @@ Download the completed project:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/0.0.1.zip">Download completed project</a>
+href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/0.0.1.zip">Descargar el proyecto completo</a>
 </div>
 
 
