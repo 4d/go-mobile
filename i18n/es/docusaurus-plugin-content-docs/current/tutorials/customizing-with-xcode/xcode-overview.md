@@ -3,7 +3,7 @@ id: xcode-overview
 title: Presentación de Xcode
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Ensure a basic understanding of working with Xcode.
 
