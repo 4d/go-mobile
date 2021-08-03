@@ -8,7 +8,7 @@ En este tutorial, lo guiaremos en la creación de varios ejemplos de plantilla d
 
 ![Custom template final result](img/custom-template-final-result.png)
 
-## Download the Starter project
+## Descargue el proyecto Starter
 
 To begin, download the **Starter project**, which includes:
 
