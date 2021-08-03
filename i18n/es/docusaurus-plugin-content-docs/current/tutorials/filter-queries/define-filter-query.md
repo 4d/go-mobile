@@ -1,9 +1,9 @@
 ---
 id: define-filter-query
-title: Define a Filter Query
+title: Definir un Filter Query
 ---
 
-For the moment, if you build the Starter project app and enter "michelle.simpson@mail.com" as the login email (one of the account managers), you'll see **all manager contracts and statuses** (*Closed* and *In Progress*).
+Por el momento, si genera la aplicación del proyecto Starter e introduce "michelle.simpson@mail.com" como correo electrónico de inicio de sesión (uno de los administradores de cuentas), verá **todos los contratos y estados de los administradores** (*Closed* y *In Progress*).
 
 ![iOS app without queries](img/ios-app-without-queries.png)
 
