@@ -3,11 +3,11 @@ id: adding-actions-template
 title: Adicionar ações em modelos
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Add actions to custom List and Detail forms templates.
 
-> **PREREQUISITES**
+> **PRÉ-REQUISITOS**
 > 
 > Click `[here](prerequisites.html)` to see what you'll need to get started!
 
