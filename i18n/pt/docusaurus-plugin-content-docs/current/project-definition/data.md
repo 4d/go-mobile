@@ -68,7 +68,7 @@ By defaut, each time you build your app, preloaded data (if any) are regenerated
 
 This button regenerates the data to preload from the data file. It allows you to control the data generation during the development phase, specially when the **Do not regenerate data at each build** is checked.
 
-:::note
+:::nota
 
 This button requires a valid `key.mobileapp` file if you use the [production server data file](#data-file).
 
