@@ -3,11 +3,11 @@ id: create-data-formatter
 title: Create data formatter
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Criar seus primeiros formatos de dados.
 
-> **PREREQUISITES**
+> **PRÉ-REQUISITOS**
 > 
 > Click `[here](prerequisites.html)` to see what you'll need to get started!
 
