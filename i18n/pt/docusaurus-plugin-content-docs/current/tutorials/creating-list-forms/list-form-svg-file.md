@@ -194,7 +194,7 @@ The following field types are supported:
 | 11   | time           |
 | 25   | integer 64 bit |
 
-:::note
+:::nota
 
 For more information on these field types, refer to [**this page**](https://developer.4d.com/docs/en/Concepts/data-types.html).
 
