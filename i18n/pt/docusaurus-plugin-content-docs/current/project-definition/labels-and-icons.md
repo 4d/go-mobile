@@ -59,7 +59,7 @@ To include custom icons in your project:
 <my4DProjetFolder>/Resources/Mobile/medias
 ```
 
-:::note
+:::nota
 
 You may have to create the `medias` folder.
 
