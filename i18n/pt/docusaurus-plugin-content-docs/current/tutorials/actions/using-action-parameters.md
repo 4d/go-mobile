@@ -3,7 +3,7 @@ id: using-action-parameters
 title: Using action parameters
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Define parâmetros ação para editar o conteúdo de sua aplicação.
 
