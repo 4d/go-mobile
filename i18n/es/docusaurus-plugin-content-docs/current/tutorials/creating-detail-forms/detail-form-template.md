@@ -4,16 +4,16 @@ title: Plantillas de formulario detallado
 ---
 
 
-En este tutorial, lo guiaremos en la creación de varios ejemplos de plantilla de formulario detallado. It will display an **image header**, as well as **title and content fields** that will be duplicated in the generated iOS and Android Apps.
+En este tutorial, lo guiaremos en la creación de varios ejemplos de plantilla de formulario detallado. Se mostrará un **encabezado de imagen **, así como también **los campos de título y contenido** que se duplicarán en las aplicaciones iOS y Android generadas.
 
 ![Custom template final result](img/custom-template-final-result.png)
 
 ## Descargue el proyecto Starter
 
-To begin, download the **Starter project**, which includes:
+Para comenzar, descargue el **proyecto Starter**, que incluye:
 
 * Una carpeta **Custom Detail form** (Carpeta de plantilla personalizada de formulario detallado)
-* A demo 4D project ("Contact") with a ready to use mobile app project.
+* Un proyecto de demostración en 4D ("Contact") con un proyecto de aplicación móvil listo para usar.
 
 <div className="center-button">
 <a className="button button--primary"
@@ -22,26 +22,26 @@ href="https://github.com/4d-go-mobile/tutorial-CustomDetailFormStarter/archive/6
 
 ## Añada una plantilla de formulario detallado a su proyecto móvil
 
-First, create a *Contact.4dbase/Resources/Mobile/form/detail* folder and drag and drop the **Custom Detail form** folder in it.
+Primero, cree una carpeta *Contact.4dbase/Resources/Mobile/form/detail* y arrastre y suelte la carpeta **Custom Detail form** en ella.
 
 ![Mobile folder custom template](img/mobile-folder-custom-template.png)
 
-Now, launch your 4D application and open the "Contact" 4D project. Then, select the "Contact Demo App" mobile project: **File > Open > Mobile Project > Contact Demo App**.
+Ahora, inicie su aplicación 4D y abra el proyecto 4D "Contact". A continuación, seleccione el proyecto móvil "Contact Demo App": **Archivo > Abrir > Proyecto móvil > App Demo Contact**.
 
-In the **Forms section** in the project editor, you can see that the Custom Detail form template has been successfully added to the Detail form template list:
+En la **sección Formulario** en el editor del proyecto, puede ver que su plantilla de formulario detallado se ha agregado exitosamente a la lista de plantillas de formularios detallados disponibles:
 
 ![Forms section](img/custom-detailform-template.png)
 
-Now let's focus on the **Custom Detail form** folder content.
+Ahora vamos a centrarnos en el contenido de la carpeta **Formulario detallado personalizado**.
 
 ## La carpeta de plantillas de formulario detallado y su contenido
 
-In this folder, you will find:
+En esta carpeta, encontrará:
 
-* **a layoutIconx2.png** icon in 160x160px: displayed in the project editor when you select your custom template among others
-* **a manifest.json** file: includes a basic description of the template
-* **a template.svg** file: the representation of your template that will be display when you define your detailForm content and where you will drag and drop your fields
-* an **ios folder** that includes the storyboard (graphical interface) and **Swift** file (code for the form) in `Source > Forms > Tables 'TABLE'` folder
-* an **android folder** that includes the layout.xml file (graphical interface) in `app > src > main > res > layout` folder.
+* Un icono **a layoutIconx2.png** de 160x160px: mostrado en el editor del proyecto cuando seleccione su plantilla personalizada entre otras
+* Un archivo **a manifest.json**: incluye una descripción básica de la plantilla
+* Un archivo **template.svg**: la representación de su plantilla que se mostrará cuando defina el contenido de su formulario detallado y dónde arrastrará y soltará sus campos
+* una carpeta **ios** que incluye el storyboard (interfaz gráfica) y el archivo **Swift** (código del formulario) en la carpeta `Source > Forms > Tables 'TABLE'`
+* una **carpeta android** que incluya el archivo layout.xml (interfaz gráfica) en la carpeta `app > src > main > res > layout`.
 
-These files and folders are detailed in the next sections.
+Estos archivos y carpetas se detallan en las siguientes secciones.
