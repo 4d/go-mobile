@@ -30,5 +30,5 @@ Vá para  [a página de criação de Apple ID](https://appleid.apple.com/).
 * Abra Xcode > Preferences > Accounts
 * Adicione sua Apple ID e inicie sessão
 
-Congratulations! You're now ready to use your free Apple ID!
+Parabéns! You're now ready to use your free Apple ID!
 
