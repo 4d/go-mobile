@@ -1,18 +1,18 @@
 ---
 id: list-form-template
-title: Plantillas de formulario listado
+title: Plantillas de formulario lista
 ---
 
-In this tutorial, we'll cover nearly all aspects of creating a list form template, including the use of a **searchBar**, a table displaying an **image**, a **title**, and a **subtitle** for each cell.
+En este tutorial, cubriremos casi todos los aspectos de la creación de una plantilla de formulario lista, incluyendo el uso de una **barra de búsqueda**, una tabla que muestra una **imagen**, un **título**, y un **subtítulo** para cada celda.
 
 ![List form template final result](img/custom-template-final-result.png)
 
 ## Descargue el proyecto Starter
 
-Before we begin, be sure to download and unzip the **Starter project** which includes:
+Antes de comenzar, asegúrese de descargar y descomprimir el **Starter project**, que incluye:
 
 * Una carpeta **List form**
-* A demo 4D project ("Contact") with a ready-to-use mobile app project.
+* Un proyecto de demostración en 4D ("Contact") con un proyecto de aplicación móvil listo para usar.
 
 <div className="center-button">
 <a className="button button--primary"
@@ -21,15 +21,15 @@ href="https://github.com/4d-go-mobile/tutorial-CustomListFormStarter/archive/470
 
 ## Añada una plantilla de formulario listado a su proyecto móvil
 
-The first thing you'll need to do is to create a `list` folder in *Contact.4dbase/Resources/Mobile/form/* location and drag and drop your **list form** folder into it.
+Lo primero que deberá hacer es crear una carpeta `list` en *Contact.4dbase/Resources/Mobile/form/* ubicación y arrastrar y soltar su carpeta **list form** en ella.
 
-![Mobile folder list form template](img/mobile-folder-custom-template.png)
+![Mobile folder custom template](img/mobile-folder-custom-template.png)
 
 Now, launch your 4D application and open the "Contact" 4D project.
 
 Then, select the "Contact Demo App" mobile project: **File > Open > Mobile Project > Contact Demo App**.
 
-In the **Forms section** of the mobile project editor, you can see that your list form template has been successfully added to the list of available list form templates:
+En la **sección Formulario** del editor del proyecto móvil, verá que su plantilla de formulario lista se ha agregado exitosamente a la lista de plantillas de formularios lista disponibles:
 
 ![Forms section](img/custom-listform-template.png)
 
@@ -39,10 +39,10 @@ Ahora concentrémonos en el contenido de la carpeta **Custom List form**.
 
 In this folder, you will find:
 
-* **a layoutIconx2.png** icon in 160x160px: displayed in the project editor when you select your template
-* **a manifest.json file**: includes a basic description of the template
-* **a template.svg file**: the visual representation of your template displayed when you define your list form content.
-* an **ios folder** that includes the storyboard (graphical interface) and **Swift** file (code for the form) in `Source/Forms/Tables/___TABLE___` folder
-* an **android folder** that includes the layout.xml file (graphical interface) in `app/src/main/res/layout` folder.
+* Un icono **layoutIconx2.png** de 160x160px: mostrado en el editor del proyecto cuando seleccione su plantilla
+* **Un archivo manifest.json**: incluye una descripción básica de la plantilla
+* **Un archivo template.svg**: la representación visual de su plantilla que se muestra cuando define el contenido de su formulario listado.
+* una carpeta **ios** que incluye el storyboard (interfaz gráfica) y el archivo **Swift** (código del formulario) en la carpeta `Source/Forms/Tables/___TABLE___`
+* una **carpeta android** que incluya el archivo layout.xml (interfaz gráfica) en la carpeta `app/src/main/res/layout`.
 
 These files and folders are detailed in the next sections. 
