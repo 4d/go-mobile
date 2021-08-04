@@ -17,7 +17,7 @@ Before starting, please check that your configuration meets hardware and softwar
 
 
 
-## PASSO 1. Download the Starter project
+## PASSO 1. Baixe o Starter Project
 
 Download and unzip our 4D Starter project, which contains a database file and a project icon (but no mobile project yet).
 
