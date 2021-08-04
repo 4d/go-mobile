@@ -3,7 +3,7 @@ id: xcode-overview
 title: Xcode Overview
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Garantir uma compreensão básica do funcionamento de Xcode.
 
