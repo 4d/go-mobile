@@ -3,7 +3,7 @@ id: update-gallery-template
 title: Actualizar una plantilla
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Abra y actualice una plantilla de la galería y mejórela
 
@@ -51,7 +51,7 @@ Todo el proceso de compartir se detalla en la página de contribución para que 
 
 ## Where to go from here?
 
-You could try following the [contribution guide](https://github.com/4d-go-mobile/gallery/blob/master/.github/CONTRIBUTING.md#how-do-you-add-a-package) to share your templates in github and make them appear in the project editor.
+Puede intentar seguir la [guía de contribución](https://github.com/4d-go-mobile/gallery/blob/master/.github/CONTRIBUTING.md#how-do-you-add-a-package) para compartir sus plantillas en github y hacerlas aparecer en el editor de proyectos.
 
 
 

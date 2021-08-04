@@ -3,7 +3,7 @@ id: custom-detailform-templates
 title: Plantillas de formularios detallados
 ---
 
-> **BEFORE STARTING**
+> **ANTES DE COMENZAR**
 > 
 > Para utilizar una plantilla de formulario detallado, lo primero que deberá hacer es crear una carpeta `YourDatabase.4dbase/Resources/Mobile/form/detail`.
 > 

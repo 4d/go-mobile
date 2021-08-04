@@ -1,11 +1,11 @@
 ---
-id: deployment-in-house-distribute
+id: deploy-in-house-distribution
 title: Distribuir una aplicación interna
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
-> Upload your app to a secured server.
+> Subir su aplicación a un servidor seguro.
 
 
 ## PASO 1. Suba su aplicación
@@ -13,33 +13,33 @@ title: Distribuir una aplicación interna
 Suba su aplicación a un servidor seguro:
 
 * recursos (imagen de visualización e imagen de tamaño completo)
-* `manifest.plist` file
-* `.ipa` file
+* archivo `manifest.plist`
+* archivo `.ipa`
 
 Puede utilizar cualquier servicio de almacenamiento en la nube para distribuir su aplicación siempre que esté protegida (Dropbox, Google Drive, etc.).
 
-:::note
+:::nota
 
-Your asset and ipa URLs must match the URLs defined in your `manifest.plist` file.
+Su recurso y sus URL ipa deben coincidir con las URL definidas en su archivo `manifest.plist`.
 
 :::
 
 ## PASO 2. Cree el enlace de instalación
 
-Create an **ITMS Serices link** (iTUnes Music Store) with the full web address of your manifest file as a parameter:
+Cree un **enlace de servicios ITMS**(iTUnes Music Store) con la dirección web completa de su archivo manifiesto como parámetro:
 
 ```html
 itms-services://?action=download-manifest&url=https://mywebserver.com/manifest.plist
 
 ```
 
-This link can be used when sending emails, embedded in an html page, or even within a QR code.
+Este enlace se puede utilizar al enviar correos electrónicos, anidados en una página html o incluso dentro de un código QR.
 
-Here is a simple example:
+Aquí un ejemplo simple:
 
 ![Contact demo app install](img/Contact-demo-app-install.png)
 
-*The QR Code used for this documentation is not active.*
+*El código QR utilizado para esta documentación no está activo.*
 
 ## PASO 3. Instale su aplicación en iOS
 
@@ -61,4 +61,4 @@ Here is a simple example:
 
 * Luego puede ir a su aplicación y abrirla.
 
-Congratulations... you can now distribute your app in-house.
+Felicitaciones... ahora puede distribuir su primera aplicación interna.

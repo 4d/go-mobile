@@ -3,7 +3,7 @@ id: install-gallery-template
 title: Instalar una plantilla
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Descargue una plantilla de la galería y mejórela
 

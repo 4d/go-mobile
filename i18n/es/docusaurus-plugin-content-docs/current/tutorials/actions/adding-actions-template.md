@@ -3,22 +3,22 @@ id: adding-actions-template
 title: Añadir acciones a las plantillas
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
-> Add actions to custom List and Detail forms templates.
+> Agregue acciones a plantillas de formularios de Lista y formularios detallados.
 
-> **PREREQUISITES**
+> **REQUISITOS PREVIOS**
 > 
-> Click `[here](prerequisites.html)` to see what you'll need to get started!
+> Haga clic `[here](prerequisites.html)` para ver lo que necesita para empezar
 
 En este tutorial, veremos lo fácil que puede ser **agregar acciones a plantillas personalizadas**.
 
-## PASO 1. Download the Starter project
+## PASO 1. Descargue el proyecto Starter
 
 To begin, download the **Starter project**, which includes:
 
-* two custom List form templates (TasksList and TasksCollection)
-* a custom Detail form template (TasksDetail)
+* dos plantillas de formularios Lista personalizadas (TasksList y TasksCollection)
+* una plantilla de formulario detallado personalizada (TasksDetail)
 * un archivo Tasks.4dbase
 
 <div className="center-button">
@@ -40,9 +40,9 @@ Primero, suelte:
 
 ## PASO 3. Añadir las acciones en los formularios Lista
 
-Two types of actions are available:
-* table actions
-* entity actions
+Hay dos tipos de acciones disponibles:
+* acciones tabla
+* acciones entidad
 
 Primero abramos el archivo `list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard`.
 
@@ -79,7 +79,7 @@ Ahora agreguemos las etiquetas de acción a la plantilla personalizada TasksColl
 
 ### Añadir las acciones a la plantilla personalizada TasksCollection
 
-To do so, open the `list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` file.
+Para hacerlo, abra el archivo `list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard`.
 
 #### A. Añadir un Tag de acción de tabla
 
@@ -111,7 +111,7 @@ Para optimizar la interacción, puede agregar un efecto escalar con una retroali
 
 * Key Path: `touch.zoomScale`
 * Type: `Number`
-* Value: `0,96` (adapt the scale ratio depending on the result you want to get)
+* Value: `0,96` (adapte la relación de escala según el resultado que desee obtener)
 
 Puede seleccionar la plantilla personalizada TasksCollection en la **sección Formularios** y agregar los siguientes campos:
 
@@ -130,7 +130,7 @@ Para el botón genérico integrado en la barra de navegación, seleccione el Con
 
 ![Add detailform entity action tag](img/Detail-form-action-navigationBar.png)
 
-In our tutorial, we want to build our own generic button. Para eso, abra el archivo Storyboard `detail/TasksDetail/Sources/Forms/Tables/___TABLE___/___TABLE___DetailsForm.storyboard`.
+En nuestro tutorial, queremos crear nuestro propio botón genérico. Para eso, abra el archivo Storyboard `detail/TasksDetail/Sources/Forms/Tables/___TABLE___/___TABLE___DetailsForm.storyboard`.
 
 Ábralo, seleccione el botón en la parte inferior derecha y agregue esta línea en el **User Defined Runtime Attributes** (Identity inspector):
 
@@ -154,7 +154,7 @@ Puede seleccionar la plantilla personalizada TasksDetail en la **sección Formul
 
 ![Template ressources](img/ListForm-entity-action-tableview.png)
 
-Download the completed project:
+Descargar el proyecto terminado:
 
 <div className="center-button">
 <a className="button button--primary"

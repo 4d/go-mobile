@@ -1,21 +1,21 @@
 ---
 id: from-project-editor
-title: From the Project editor
+title: Desde el editor del proyecto
 ---
 
-It may happen that you encounter issues using the 4D mobile project editor or your iOS or Android app. Reading log files can provide useful information in these cases.
+Puede suceder que encuentre problemas al utilizar el editor de proyectos 4D mobile o al usar su aplicación Android. La lectura de los archivos de historial puede ofrecer información útil en estos casos.
 
-To access log files, press the **Alt** key and select **Project** from the BUILD panel of the project editor:
+Para acceder a los archivos de historial, presione la tecla **Alt** y seleccione **Proyecto** en el panel CREAR del editor de proyectos:
 
 ![Depuración](img/debug-from-4D-for-iOS.png)
 
-Additional debug menu items appear for the [currently selected simulator](../project-definition/build-panel#using-the-simulator):
+Aparecen elementos del menú de depuración adicionales para el [simulador seleccionado en ese momento](../project-definition/build-panel#using-the-simulator):
 
 
-* **Open Simulator logs**: where you can find the `CrashReporter MobileInstallation` folder
+* **Registros del Simulador Abierto**: donde se encuentra la carpeta `CrashReporter MobileInstallation`
 
-* **Open Simulator Diagnostic Reports**
+* **Abrir los informes de diagnóstico del simulador**
 
-* **Open Current Simulator Folder**
+* **Abrir la carpeta del simulador actual**
 
-* **Open Application Simulator Folder**: opens a submenu for each application
+* **Abrir carpeta del simulador de aplicaciones**: abre un submenú para cada aplicación

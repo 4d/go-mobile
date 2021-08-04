@@ -3,9 +3,9 @@ id: one-to-many-relations
 title: One to Many relations
 ---
 
-This tutorial will show you how easy it can be to include One to Many relations in your mobile project.
+Este tutorial le mostrará lo fácil que puede ser incluir relaciones Uno a Muchos en sus proyectos móviles.
 
-Let's get started by downloading the Starter project:
+Comencemos descargando el proyecto Starter:
 
 <div className="center-button">
 <a className="button button--primary"
@@ -34,21 +34,21 @@ Este campo ahora funcionará como cualquier otro campo durante el resto del proc
 
 :::tip
 
-On mouse over, a tip displays the table name originating the relation.
+Al pasar el ratón, una sugerencia muestra el nombre de la tabla fuente que origina la relación.
 
 :::
 
 ## Sección Etiquetas e Iconos
 
-The One to Many relation is now available in the **Labels and Icons** section.
+La relación Uno a Muchos está ahora disponible en la sección **Etiquetas e Iconos**.
 
-It is important to know that including a One to Many relation will create a button into the genrated iOS app.
+Es importante saber que incluir una relación de Uno a Muchos creará un botón en la aplicación iOS generada.
 
-So, in the Labels & Icons section you will define:
+En la sección Etiquetas e iconos definirá:
 
 * una etiqueta de botón
 * un icono de botón
-* a title that will be displayed in the destination view (to indicate where you come from for example).
+* un título que se mostrará en la vista de destino (para indicar de dónde viene, por ejemplo).
 
 ![Labels & Icons section Relations properties](img/Relations-properties-Labels-icons-section-4D-for-iOS.png)
 
@@ -66,9 +66,9 @@ So, in the Labels & Icons section you will define:
 
 ![Related field in Forms section](img/One-to-n-relations-task-ios-app.png)
 
-Well done! You've successfully included One to Many relations in your mobile project.
+¡Bien hecho! Ha incluido con éxito las relaciones Uno a Muchos en su proyecto móvil.
 
-Download the completed project:
+Descargar el proyecto terminado:
 
 <div className="center-button">
 <a className="button button--primary"

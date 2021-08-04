@@ -3,7 +3,7 @@ id: list-form-svg-file
 title: Template.svg
 ---
 
-The `template.svg` file is a basic visual representation of a template. En este archivo, deberá definir áreas para poder agregar campos a su plantilla de formulario listado desde el editor de proyecto.
+El archivo `template.svg` es una representación visual básica de una plantilla. En este archivo, deberá definir áreas para poder agregar campos a su plantilla de formulario listado desde el editor de proyecto.
 
 Aquí hay una versión final:
 
@@ -17,7 +17,7 @@ Let’s focus on the different parts of this svg file and what you'll need to ed
 <title>Custom List form</title>
 ```
 
-Title of the template.
+Título de la plantilla.
 
 ## ios:values
 
@@ -25,15 +25,15 @@ Title of the template.
 <text id="cookery" ios:values="search,section,f1,f2,f3"/>
 ```
 
-Includes IDs which define your form areas:
+Incluye las identificaciones que definen sus áreas de formulario:
 
-* **search**: Refers to the search field area. Esto le permitirá arrastrar y soltar un campo como criterio de búsqueda en su formulario Lista (opcional).
-* **section**: Refers to the section field area. Esto le permitirá arrastrar y soltar un campo como criterio de ordenación en su formulario Lista (opcional).
-* **f1, f2 and f3**: Refers to the fields to display in each cell of your list form. Esto le permitirá arrastrar y soltar campos para que aparezcan en las celdas de su formulario Lista.
+* **search**: se refiere al área del campo de búsqueda. Esto le permitirá arrastrar y soltar un campo como criterio de búsqueda en su formulario Lista (opcional).
+* **section**: se refiere al área de campo de la sección. Esto le permitirá arrastrar y soltar un campo como criterio de ordenación en su formulario Lista (opcional).
+* **f1, f2 y f3**: se refiere a los campos a mostrar en cada celda de su formulario listado. Esto le permitirá arrastrar y soltar campos para que aparezcan en las celdas de su formulario Lista.
 
-## Area position, height, and width
+## Posición, alto y ancho del área
 
-You can define the position, height and width for:
+Puede definir la posición, el alto y ancho para:
 
 * Searchfield
 * Sectionfield
@@ -66,10 +66,10 @@ You can define the position, height and width for:
 2. Posición, alto y ancho del área de fondo
 3. Icono para mostrar un icono de lupa en el campo de búsqueda
 4. Definir la posición del área de texto y el ancho
-5. Define the droppable field position, height and width, as well as accepted [**field types**](#iostypes)
+5. Definir la posición del campo soltable, su alto y su ancho, así como los [**tipos de campos**](#iostypes) aceptados
 6. Definir un botón de cancelación que se mostrará para eliminar el contenido actual
 
-The searchable field is optional.
+El campo de búsqueda es opcional.
 
 
 ### Área SectionField:
@@ -90,10 +90,10 @@ The searchable field is optional.
 
 1. Posición, alto y ancho del área de fondo
 2. Definir la posición del área de texto y el ancho
-3. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
+3. Definir la posición del campo soltable, su alto y su ancho y también los [**tipos de campos**](#iostypes) aceptados
 4. Definir un botón de cancelación que se mostrará para eliminar el contenido actual
 
-The section field is optional.
+El campo de sección es opcional.
 
 ### Área ImageField:
 
@@ -122,7 +122,7 @@ The section field is optional.
 2. Posición, alto y ancho del área de fondo
 3. Icono para mostrar una imagen en el imageField
 4. Definir la posición del área de texto y el ancho
-5. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
+5. Definir la posición del campo soltable, su alto y su ancho y también los [**tipos de campos**](#iostypes) aceptados
 6. Definir un botón de cancelación que se mostrará para eliminar el contenido actual
 
 ### Área Title Field:
@@ -148,7 +148,7 @@ The section field is optional.
 1. Posición de toda el área Y
 2. Posición, alto y ancho del área de fondo
 3. Definir la posición del área de texto y el ancho
-4. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
+4. Definir la posición del campo soltable, su alto y su ancho y también los [**tipos de campos**](#iostypes) aceptados
 5. Definir un botón de cancelación que se mostrará para eliminar el contenido actual
 
 ### Área Subtitle Field:
@@ -174,29 +174,29 @@ The section field is optional.
 1. Posición de toda el área Y
 2. Posición, alto y ancho del área de fondo
 3. Definir la posición del área de texto y el ancho
-4. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
+4. Definir la posición del campo soltable, su alto y su ancho y también los [**tipos de campos**](#iostypes) aceptados
 5. Definir un botón de cancelación que se mostrará para eliminar el contenido actual
 
 
-## ios:types
+## tipos:ios
 
-The following field types are supported:
+Se soportan los siguientes tipos de campos:
 
 | Code | Type           |
 | ---- | -------------- |
-| 0    | alpha          |
+| 0    | alfa           |
 | 1    | real           |
-| 2    | text           |
-| 3    | picture        |
-| 4    | date           |
-| 8    | integer        |
-| 9    | longint        |
-| 11   | time           |
-| 25   | integer 64 bit |
+| 2    | texto          |
+| 3    | imagen         |
+| 4    | fecha          |
+| 8    | entero         |
+| 9    | entero largo   |
+| 11   | hora           |
+| 25   | entero 64 bits |
 
-:::note
+:::nota
 
-For more information on these field types, refer to [**this page**](https://developer.4d.com/docs/en/Concepts/data-types.html).
+Para más información sobre estos tipos de campo, consulte [**esta página**](https://developer.4d.com/docs/en/Concepts/data-types.html).
 
 :::
 

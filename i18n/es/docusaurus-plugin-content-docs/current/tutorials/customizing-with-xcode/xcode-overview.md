@@ -3,9 +3,9 @@ id: xcode-overview
 title: Presentación de Xcode
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
-> Ensure a basic understanding of working with Xcode.
+> Garantizar una comprensión básica del funcionamiento de Xcode.
 
 Xcode muestra las diferentes áreas que vamos a revisar:
 

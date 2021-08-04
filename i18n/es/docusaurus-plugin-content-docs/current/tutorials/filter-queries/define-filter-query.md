@@ -1,9 +1,9 @@
 ---
 id: define-filter-query
-title: Define a Filter Query
+title: Definir un Filter Query
 ---
 
-For the moment, if you build the Starter project app and enter "michelle.simpson@mail.com" as the login email (one of the account managers), you'll see **all manager contracts and statuses** (*Closed* and *In Progress*).
+Por el momento, si genera la aplicación del proyecto Starter e introduce "michelle.simpson@mail.com" como correo electrónico de inicio de sesión (uno de los administradores de cuentas), verá **todos los contratos y estados de los administradores** (*Closed* y *In Progress*).
 
 ![iOS app without queries](img/ios-app-without-queries.png)
 
@@ -20,7 +20,7 @@ Debería obtener este resultado:
 
 ![CRM database](img/filterquery.png)
 
-> **NOTE**
+> **NOTA**
 > 
 > * Se muestra un icono de **filtro** a la derecha de cada tabla cuando se le aplica un filtro básico.
 > * Para este tipo de filtros de búsqueda, puede optar por integrar los datos en la aplicación o cargar los datos después de iniciar sesión marcando la casilla de verificación **Integrar los datos en la aplicación**.

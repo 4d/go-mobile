@@ -5,20 +5,20 @@ title: Filter queries
 
 In this tutorial, we'll show how to create **filter queries** to display filtered content in the generated mobile app.
 
-Imagine you're an account manager and you want to consult your *In Progress* contracts simply by connecting to your app with your email address.
+Imagine que es un gestor de cuentas y quiere consultar sus contratos *En curso* simplemente conectándose a su aplicación con su dirección de correo electrónico.
 
-First, from the Data section we're going define a **basic filter query** to only display *In Progress* contracts. Then we're going to apply a **user information-based filter** which will depend on the account manager's email.
+Primero, desde la sección Datos definiremos un **filtro de búsqueda básico** para mostrar solo los contratos *En curso*. Luego, vamos a aplicar un **filtro basado en información del usuario** que dependerá del correo electrónico del administrador de la cuenta.
 
-## Download the Starter project
+## Descargue el proyecto Starter
 
-Before we begin, be sure to download the **Starter project** which includes a **4DforiOSQueries.4dbase** file (a demo database with a ready-to-use mobile app project)
+Antes de comenzar, asegúrese de descargar el **proyecto Starter** que incluye un archivo **4DforiOSQueries.4dbase** (una base de datos de demostración y un proyecto de aplicación móvil listo para usar)
 
 <div className="center-button">
 <a className="button button--primary"
 href="https://github.com/4d-go-mobile/tutorial-RestrictedQueries/releases/latest/download/tutorial-RestrictedQueries.zip">Starter project</a>
 </div>
 
-The database includes a:
+La base de datos incluye:
 
 * **La tabla CRM** con todos los datos que queremos mostrar en la aplicación iOS generada
 * **La tabla AccountManager** con información básica sobre los administradores de cuentas (correo electrónico y nombre).
@@ -26,6 +26,6 @@ The database includes a:
 ![CRM database](img/CRMDatabase.png)
 
 
-You're now ready to define your first restricted query.
+Ahora está listo para definir su primera búsqueda limitada.
 
-Open the mobile project by clicking on Open > Mobile Project... and select CRM app > **project.4dmobileapp**.
+Abra el proyecto móvil haciendo clic en Open > Mobile Project... y seleccione CRM app > **project.4dmobileapp**.

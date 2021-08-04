@@ -33,7 +33,7 @@ Para cada parámetro, puede editar las siguientes propiedades:
 * Nombre
 * Etiqueta larga
 * Etiqueta corta
-* Format
+* Formato
 * Restricciones de entrada (definir valores mínimos o máximos)
 * Placeholder
 * Definición de un campo obligatorio
@@ -50,7 +50,7 @@ Estos son los diferentes **formatos** que puede seleccionar para un parámetro:
 <tr>
 <th colspan="2"  style={{textAlign: 'center'}}>TEXTO</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Descripción</th>
+<th>Formato</th><th>Descripción</th>
 </tr><tr>
 <td>Texto</td><td>Poner en mayúscula la primera letra de una cadena</td>
 </tr><tr>
@@ -77,7 +77,7 @@ Estos son los diferentes **formatos** que puede seleccionar para un parámetro:
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>NUMBER</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Descripción</th>
+<th>Formato</th><th>Descripción</th>
 </tr><tr>
 <td>Number</td><td>Numbers with decimals</td>
 </tr><tr>
@@ -96,7 +96,7 @@ Estos son los diferentes **formatos** que puede seleccionar para un parámetro:
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>DATE</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Descripción</th>
+<th>Formato</th><th>Descripción</th>
 </tr><tr>
 <td>Date</td><td>Nov 23, 1937</td>
 </tr><tr>
@@ -112,7 +112,7 @@ Estos son los diferentes **formatos** que puede seleccionar para un parámetro:
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>TIME</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Descripción</th>
+<th>Formato</th><th>Descripción</th>
 </tr><tr>
 <td>Time</td><td>3:30 PM</td>
 </tr><tr>
@@ -125,7 +125,7 @@ Estos son los diferentes **formatos** que puede seleccionar para un parámetro:
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>BOOLEAN</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Descripción</th>
+<th>Formato</th><th>Descripción</th>
 </tr><tr>
 <td>Boolean</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
 </tr><tr>

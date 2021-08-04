@@ -3,15 +3,15 @@ id: deploy-on-app-store-create-appstore-record
 title: Crear una ficha en App Store
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > * Crear un identificador de aplicación en su cuenta desarrollador
-> * Create your app in App Store Connect
+> * Crear su aplicación en el App Store Connect
 
-> **PREREQUISITES**
+> **REQUISITOS PREVIOS**
 > 
-> * [Apple Developer Program for organization](../tutorials/developer-program/register-apple-developer-program-organization) or
-> * [Apple Developer Program as an individual](../tutorials/developer-program/register-apple-developer-program-individual)
+> * [Apple Developer Program para empresas](../tutorials/developer-program/register-apple-developer-program-organization) o
+> * [Apple Developer Program para particulares](../tutorials/developer-program/register-apple-developer-program-individual)
 
 
 ## PASO 1. Crear una identificación de aplicación
@@ -20,10 +20,10 @@ title: Crear una ficha en App Store
 
 *Un identificador de aplicación es una cadena compuesta de dos partes que se utiliza para identificar una o más aplicaciones de un solo equipo de desarrollo. La cadena consta de un Team ID y de un Bundle ID, con un punto (.) que separa las dos partes (por ejemplo, TeamID.BundleID).*
 
-> **NOTE**
+> **NOTA**
 > 
-> * If you have chosen an Apple Developer Account as an individual, your account is available immediately and you can create your App ID.
-> * If you have chosen an Apple Developer Account as an organization, you must wait for Apple validation to create your App ID.
+> * Si ha elegido una cuenta de desarrollador Apple individual, su cuenta estará disponible de inmediato y puede crear su identificador de aplicación.
+> * Si ha elegido una cuenta de desarrollador Apple como organización, debe esperar la validación de Apple para crear su identificador de aplicación.
 
 Para crear su identificador de aplicación, seleccione [Certificates, IDs & Profile](https://developer.apple.com/account/ios/identifier/bundle) desde su cuenta de desarrollador.
 
@@ -65,9 +65,9 @@ Agregue la siguiente información:
 
 ![Change BundleID](img/Change-BundleID-Xcode-Project.png)
 
-> **NOTE**
+> **NOTA**
 > 
-> If your Bundle ID is not available, it may already be used by another app in the App Store. You'll need to change yours in your Xcode project.
+> Si su Bundle ID no está disponible, es posible que ya lo esté utilizando otra aplicación en la App Store. Tendrá que cambiar el suyo en su proyecto Xcode.
 
 ## PASO 4. Información sobre la aplicación
 
@@ -83,15 +83,15 @@ En App Store Connect > App Information:
 
 Aquí es donde se define el precio de su aplicación.
 
-> **TIPS**
+> **CONSEJOS**
 > 
-> You can define limited-time discounts by specifying start and end dates.
+> Puede definir descuentos por tiempo limitado especificando las fechas de inicio y de finalización.
 
 ## PASO 6. Preparación para la inscripción
 
 En **Version Information**, agregue todos los recursos de su aplicación que desee incluir en la App Store:
 
-> **TIPS**
+> **CONSEJOS**
 > 
 > Puede generar todas sus capturas de pantalla en el simulador (File > New Screen Shot).
 

@@ -3,7 +3,7 @@ id: from-xcode
 title: Desde Xcode
 ---
 
-If you have issues during the build process, you can open your generated project with Xcode selecting the **Open the product with Xcode** option from the **Project** Menu.
+Si tiene problemas durante el proceso de creación, puede abrir su proyecto generado con Xcode seleccionando la opción ** Abrir el producto con Xcode ** en el menú **Project**.
 
 ![Abra el proyecto con Xcode](img/open-project-Xcode.png)
 
@@ -44,7 +44,7 @@ Los **valores disponibles** son los siguientes:
 
 Entonces, para este ejemplo, si define el valor log.level Value en 3, obtendrá una **advertencia, un error y un severo ** en su consola Xcode.
 
-## Format
+## Formato
 
 Puede mostrar diferentes indicadores visuales en la consola Xcode para **resaltar diferentes tipos de historiales**.
 

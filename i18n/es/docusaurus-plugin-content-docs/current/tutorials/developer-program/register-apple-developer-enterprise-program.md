@@ -3,13 +3,13 @@ id: register-apple-developer-enterprise-program
 title: Apple Developer Enterprise Program
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Regístrese al Apple Developer Enterprise Program para desplegar su aplicación <b>de forma interna</b>.
 
-> **NOTE**
+> **NOTA**
 > 
-> To enroll in the Apple Developer Enterprise Program, your Apple ID must be associated with an email address using your organization’s domain name.
+> Para inscribirse al Apple Developer Enterprise Program, su identificación de Apple debe estar asociada a una dirección de correo electrónico con el nombre de dominio de su empresa.
 
 
 ## PASO 1. Identificador Apple
@@ -55,7 +55,7 @@ Puede registrarte como desarrollador [aquí](https://developer.apple.com/program
 
 * Haga clic en el botón **Start your Enrollment**.
 * Lea y acepte los términos del contrato "Apple Developer Agreement".
-* Click **Submit**.
+* Haga clic en **Submit**.
 
 ![Regístrese como desarrollador](img/Register-developer-4D-for-iOS.png)
 
@@ -63,7 +63,7 @@ Puede registrarte como desarrollador [aquí](https://developer.apple.com/program
 
 * Puede suscribirse al Apple Developer Program [aquí](https://developer.apple.com/enroll/enterprise/).
 * Haga clic en el botón **Start your Enrollment**.
-* Select **Company / Organization** from the Entity Type dropdown list.
+* Seleccione **Company / Organization** en la lista desplegable "Entity Type".
 * Haga clic en **Continue**.
 
 ![Apple Developer Enterprise Program](img/Apple-Developer-Enterprise-Program-4D-for-iOS.png)

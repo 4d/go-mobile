@@ -12,7 +12,7 @@ Xcode es un entorno de desarrollo integrado(IDE) y un conjunto de herramientas d
 Para descargar la última versión de Xcode vaya a la App Store.
 
 <div className="center-button">
-<a className="button button--primary" href="macappstore://itunes.apple.com/app/id497799835?mt=12">View in Mac App Store </a>
+<a className="button button--primary" href="macappstore://itunes.apple.com/app/id497799835?mt=12">Ver in Mac App Store </a>
 </div>
 
 Los desarrolladores registrados pueden descargar las versiones previas y las versiones anteriores de la suite a través del sitio web de desarrolladores de Apple.
