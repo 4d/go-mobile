@@ -3,7 +3,7 @@ id: update-gallery-template
 title: Atualizar um modelo
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Abrir e atualizar um modelo da galeria e melhorá-lo
 
