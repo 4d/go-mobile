@@ -1,6 +1,6 @@
 ---
 id: open-mobile-project
-title: Open mobile project
+title: Abrir projeto móvel
 ---
 
 Vá em Labels &amp Icons em Seções, verá que a nova coluna Formatadores está disponível na propriedades Campos:
