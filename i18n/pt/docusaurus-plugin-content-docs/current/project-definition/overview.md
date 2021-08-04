@@ -38,7 +38,7 @@ To create a new mobile project:
 1. Start your 4D application and open the 4D project for which you want to create a mobile project.
 2. Select **New > Mobile Project** from the **File** or the toolbar menu.
 
-:::note
+:::nota
 
 You need a 4D Developer Pro license to open the 4D mobile editor.
 
