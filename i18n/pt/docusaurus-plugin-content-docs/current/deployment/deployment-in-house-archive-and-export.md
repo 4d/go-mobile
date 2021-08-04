@@ -3,12 +3,12 @@ id: deployment-in-house-archive-and-export
 title: Arquive e exporte seu Projeto
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > * Arquivar e exportar seu projeto 4D for iOS
 > * Gerar .ipa e manifestar arquivos
 
-> **PREREQUISITES**
+> **PRÉ-REQUISITOS**
 > 
 > * [Programa Apple Enterprise Developer](../tutorials/developer-program/register-apple-developer-enterprise-program)
 > * Um servidor web seguro
@@ -34,7 +34,7 @@ Xcode instalará automaticamente os elementos de provisão e certificados necess
 
 * Na aba SEÇÕES:
 
-    * General: Enter your Team ID.
+    * Geral: introduza seu Team ID.
 
     ![Enterprise-Team-ID](img/Enterprise-Team-ID.png)
 
@@ -45,7 +45,7 @@ Xcode instalará automaticamente os elementos de provisão e certificados necess
 
 ## PASSO 4. Abra seu projeto com Xcode
 
-* From the 4D for iOS Project Editor's BUILD tab, click on **Project > Open the project with Xcode**
+* Desde a aba BUILD do editor de projetos de 4D for iOS, clique em **Project > Abrir o projeto com Xcode**
 
 ![pen your project with Xcode ](img/Open-your-project-Xcode-4D-for-iOS.png)
 
