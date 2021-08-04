@@ -15,7 +15,7 @@ You need to subscribe to an Apple Developer Program. Depending on your objective
 * [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program): To deploy your app in-house
 
 
-:::note
+:::nota
 
 You need [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) installed on your Mac to automate app installation (optional).
 
