@@ -3,7 +3,7 @@ id: deployment-in-house-distribute
 title: Distribua seu app in-House
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Suba sua aplicação para um servidor seguro.
 
@@ -13,20 +13,20 @@ title: Distribua seu app in-House
 Suba sua aplicação a um servidor seguro:
 
 * Recursos (exibir imagem e imagem em tamanho real)
-* `manifest.plist` file
-* `.ipa` file
+* arquivo `manifest.plist`
+* arquivo `.ipa`
 
 Pode usar qualquer serviço de armazenamento na nuvem para distribuir seu app logo que estiver protegida (Dropbox, Google Drive, etc).
 
-:::note
+:::nota
 
-Your asset and ipa URLs must match the URLs defined in your `manifest.plist` file.
+Seu recurso e suas URL ipa devem coincidir com as URL definidas em seu arquivo `manifest.plist`.
 
 :::
 
 ## PASSO 2. Crie o link da instalação
 
-Create an **ITMS Serices link** (iTUnes Music Store) with the full web address of your manifest file as a parameter:
+Crie um **link de serviços ITMS**(iTUnes Music Store) com o endereço web completo de seu arquivo manifesto como parâmetro:
 
 ```html
 itms-services://?action=download-manifest&url=https://mywebserver.com/manifest.plist
