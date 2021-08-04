@@ -9,11 +9,11 @@ title: Create data formatter
 
 > **PRÉ-REQUISITOS**
 > 
-> Click `[here](prerequisites.html)` to see what you'll need to get started!
+> Clique em`[here](prerequisites.html)` para ver o que necessita para  começar
 
 Neste tutorial, vamos guiá-lo através da criação de vários exemplos de formatador.
 
-## Download the Starter project
+## Baixe o Starter Project
 
 To begin, download the **Starter project**, which includes:
 
@@ -216,7 +216,7 @@ Here is the result in light mode and in dark mode:
 | -------------------------------------- |:-------------------------------------:|
 | ![Data formatter](img/light-color.png) | ![Data formatter](img/dark-color.png) |
 
-## Open mobile project
+## Abrir projeto móvel
 
 Open the Task Management.4dbase with 4D and go to File > open > Mobile Project... to open the **Tasks**
 
