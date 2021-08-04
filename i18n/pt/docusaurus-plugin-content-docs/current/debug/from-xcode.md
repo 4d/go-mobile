@@ -1,9 +1,9 @@
 ---
-id: from-xcode
+id: a partir de Xcode
 title: A partir de Xcode
 ---
 
-If you have issues during the build process, you can open your generated project with Xcode selecting the **Open the product with Xcode** option from the **Project** Menu.
+Se tiver problemas durante o processo de compilação pode abrir seu projeto gerado com Xcode selecionando a opção**Open the product with Xcode** a partir do menu **Project**
 
 ![Abrir o projeto com Xcode](img/open-project-Xcode.png)
 
@@ -44,7 +44,7 @@ Os **valores disponíveis** são os abaixo:
 
 Para este exemplo, se estabelecer o valor de log.level para 3, vai obter **um aviso, um erro e severidade** no console  Xcode.
 
-## Format
+## Formato
 
 Pode exibir indicadores visuais diferentes no console Xcode para **ressaltar diferentes tipos de log**.
 
