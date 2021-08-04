@@ -32,7 +32,7 @@ Vá para a página de criação de Identidade[Apple ID ](https://appleid.apple.c
 * Você pode se registrar como um desenvolvedor [aqui](https://developer.apple.com/account/).
 
 * Leia e Aceite o Contrato de Desenvolvedor de Licença "Apple Developer Agreement".
-* Click **Submit**.
+* Clique **Submit**.
 
 ![Register Developer Program](img/Register-developer-4D-for-iOS.png)
 
@@ -64,4 +64,4 @@ Vá para a página de criação de Identidade[Apple ID ](https://appleid.apple.c
 
 * Quando tiver completado sua compra, receberá um email confirmando sua inscrição no programa.
 
-Congratulations! Você já pode publicar apps na App Store!
+Parabéns! Você já pode publicar apps na App Store!
