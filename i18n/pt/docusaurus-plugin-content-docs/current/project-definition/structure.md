@@ -15,7 +15,7 @@ Use this page to define a subset of your physical structure to replicate for mob
 - Published relation fields (many-to-one and one-to-many) will be available when defining your [list and detail forms] and come with additional navigation features such as a Relation button.
 
 
-:::note
+:::nota
 
 The following tables and fields are not listed in this page:
 
@@ -134,7 +134,7 @@ To enable this optimization, 4D for iOS and 4D for Android need the following st
 
 You can let the 4D mobile editor do all the work for you and add the necessary structure elements: just select **Allow 4D to make necessary structure adjustments for an optimized mobile data update** option.
 
-:::note
+:::nota
 
 These optimizations are required for both local and server databases.
 
@@ -148,7 +148,7 @@ In normal use, simply swipe down from any listform to reload your data.
 
 From iPhone settings, you can now reset your app data and find information about your app.
 
-:::note
+:::nota
 
 When an important maintenance operation is performed on the database side (Recover by tag / Restoration / Compacting) a Full reload is necessary on the mobile app. In this case, the admin shall notify mobile app users.
 
