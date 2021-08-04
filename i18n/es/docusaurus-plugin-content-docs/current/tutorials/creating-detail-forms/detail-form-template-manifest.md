@@ -32,10 +32,10 @@ Por ejemplo, el archivo de manifiesto anterior incluye la siguiente información
 
 
 
-* **type:**storyboard type. In this example, "detailform"
-* **name:**template name. In the this example, "Custom Detail form" below
+* **tipo:**tipo storyboard. En este ejemplo, "detailform"
+* **nombre:**nombre de la plantilla. En este ejemplo, "Formulario detallado personalizado" a continuación
 * **renderer:** número de versión
-* **hOffset:** vertical offset of the first field that is going to be duplicated. In this example, 91 pixels from the top.
-* **fields**: number of static fields. In this example, 1 static field and 0 for infinite duplicated fields (a header image, and duplicated fields)
-* **Icon properties:** Icon width and height (16 px)
+* **hOffset:** desplazamiento vertical del primer campo que se va a duplicar. En este ejemplo, 91 píxeles desde la parte superior.
+* **campos**: número de campos estáticos. En este ejemplo, 1 campo estático y 0 para un infinito de campos duplicados (una imagen de encabezado y los campos duplicados)
+* **Propiedades del icono: **ancho y alto del icono (16 px)
 
