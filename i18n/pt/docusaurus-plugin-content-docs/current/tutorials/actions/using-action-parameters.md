@@ -1,6 +1,6 @@
 ---
 id: using-action-parameters
-title: Using action parameters
+title: Usar parâmetros de ação
 ---
 
 > **OBJETIVOS**
@@ -8,7 +8,7 @@ title: Using action parameters
 > Define parâmetros ação para editar o conteúdo de sua aplicação.
 
 
-In the tutorial on defining actions, we discovered how to execute 4D code from an iOS app by defining actions from the actions section.
+No tutorial anterior, mostramos como executar código 4D desde um app iOS ao definir ações na seção Actions .
 
 Neste tutorial vamos nos aprofundar mais e criar:
 
@@ -103,7 +103,7 @@ Sua seção Actions deveria parecer com isto:
 
 ## PASSO 5. Criação de On Mobile App Action
 
-Click on the Create button to create the *On Mobile App Action* database method.
+Clique no botão Criar para criar o método database *On Mobile App Action*.
 
 Todas suas ações se incluirão automaticamente no método banco.
 
@@ -194,7 +194,7 @@ $out:=New object("success";False)
 
 If ($in.dataClass#Null)
 
-    $entity:=ds.Tasks.new()  //create a reference
+    $entity:=ds.Tasks.new()  //cria uma referência
 
     For each ($key;$in.parameters)
 
@@ -202,11 +202,11 @@ If ($in.dataClass#Null)
 
     End for each 
 
-    $entity.save()  //save the entity
+    $entity.save()  //salva a entidade
 
 
-    $out.success:=True  // notify App that action success
-    $out.dataSynchro:=True  // notify App to refresh the selection
+    $out.success:=True  // notifica o App que a ação teve sucesso
+    $out.dataSynchro:=True  // notifique o App para refrescar a seleção
     $out.statusText:="Task added"
 
 Else 
@@ -400,14 +400,14 @@ e finalmente pode eliminar uma entidade utilizando a ação **Eliminar... **.
 
 ## PASSO 8. Where to go from here?
 
-Congratulations! Sua aplicação iOS Tasks agora está completa e agora pode modificar os dados de sua aplicação diretamente desde seu dispositivo e sincronizá-los com seu servidor.
+Parabéns! Sua aplicação iOS Tasks agora está completa e agora pode modificar os dados de sua aplicação diretamente desde seu dispositivo e sincronizá-los com seu servidor.
 
 
-Download the completed project:
+Baixe o projeto terminado:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/0.0.1.zip">Download completed project</a>
+href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/0.0.1.zip">Baixe o projeto terminado</a>
 </div>
 
 
