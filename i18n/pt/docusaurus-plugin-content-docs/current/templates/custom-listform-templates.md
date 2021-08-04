@@ -4,7 +4,7 @@ title: Modelos Formulário lista
 ---
 
 
-> **BEFORE STARTING**
+> **ANTES DE COMEÇAR**
 > 
 > Para usar um modelo de formulário lista, precisa primeiro criar uma pasta `YourDatabase.4dbase/Resources/Mobile/form/list` .
 > 
