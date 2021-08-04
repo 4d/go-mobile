@@ -1,5 +1,5 @@
 ---
-id: autenticación
+id: authentication
 title: Authentication
 ---
 
