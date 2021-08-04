@@ -3,7 +3,7 @@ id: install-gallery-template
 title: Instalar um modelo
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Baixe um modelo da galeria e o melhore
 
