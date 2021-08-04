@@ -3,7 +3,7 @@ id: register-apple-developer-program-individual
 title: Apple Developer Program para particulares
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Registre-se para o programa Apple Developer Enterprise como um indivíduo para lançar seu app in-house.
 
