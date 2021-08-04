@@ -3,7 +3,7 @@ id: detail-form-template-manifest
 title: Manifest.json
 ---
 
-The manifest file includes information about your detail form template,  such as the storyboard **type** ("listform" or "detailform"), **name**, and **number of static fields**.
+El archivo de manifiesto incluye información sobre la plantilla de formulario detallado, como el **tipo** Storyboard (formulario listado o formulario detallado), **el nombre** y **el número de campos estáticos**.
 
 
 ```json
@@ -28,7 +28,7 @@ The manifest file includes information about your detail form template,  such as
 
 ```
 
-For example, the above manifest file includes the following information:
+Por ejemplo, el archivo de manifiesto anterior incluye la siguiente información:
 
 
 
