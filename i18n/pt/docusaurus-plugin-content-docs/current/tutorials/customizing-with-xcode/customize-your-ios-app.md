@@ -1,6 +1,6 @@
 ---
 id: customize-your-ios-app
-title: Customize your 4D for iOS App
+title: Personalizar seu app 4D for iOS
 ---
 
 Vamos fazer modificações no storyboard... do simples ao complexo.
@@ -53,7 +53,7 @@ A imagem possui atualmente as seguintes restrições:
 * Heigh Equals: Uma altura fixa de 78 pixels.
 * Align Center x: centra a imagem em um eixo horizontal definido anteriormente.
 * Top Space: Uma quantia fixa de espaço da parte superior da imagem até o topo da vista.
-* Bottom space to `<First Name>`: The previously defined space between the First Name label and the image.
+* Estácio inferior a `<First Name>`: o espaço previamente definido entre a etiqueta do Nome e a imagem.
 
 ![Profil picture constraints](img/Profil-picture-constraints-Xcode-4D-for-iOS.png)
 
@@ -69,7 +69,7 @@ Depois clique no botão **Add New Constraints** e adiciona uma nova restrição 
 
 Nesse ponto, todas as restrições de imagem de perfil devem estar em azul.
 
-Congratulations! Sua foto do perfil está agora bem posicionada com as restrições corretas.
+Parabéns! Sua foto do perfil está agora bem posicionada com as restrições corretas.
 
 > **DICAS**
 > 
