@@ -15,7 +15,7 @@ En este tutorial, lo guiaremos a través de la creación de varios ejemplos de f
 
 ## Descargue el proyecto Starter
 
-To begin, download the **Starter project**, which includes:
+Para comenzar, descargue el **proyecto Starter**, que incluye:
 
 * Las carpetas **integerToImage_Images** y **textToImage_Images**, que contienen las imágenes (a utilizar más adelante para los formatos que contienen imágenes)
 * Un archivo **Task Management.4dbase** (con una aplicación de proyecto móvil lista para utilizar)
