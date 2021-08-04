@@ -3,15 +3,15 @@ id: deploy-on-app-store-create-appstore-record
 title: Criar uma ficha em App Store
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > * Criar um identificador de aplicação em sua conta de desenvolvedor
 > * Criar sua aplicação na App Store Connect
 
-> **PREREQUISITES**
+> **PRÉ-REQUISITOS**
 > 
-> * [Apple Developer Program for organization](../tutorials/developer-program/register-apple-developer-program-organization) or
-> * [Apple Developer Program as an individual](../tutorials/developer-program/register-apple-developer-program-individual)
+> * [Apple Developer Program para organizações](../tutorials/developer-program/register-apple-developer-program-organization)
+> * [Apple Developer Program para particulares](../tutorials/developer-program/register-apple-developer-program-individual)
 
 
 ## PASSO 1. Criar uma ID de aplicação
@@ -20,7 +20,7 @@ title: Criar uma ficha em App Store
 
 *Uma ID de aplicação é uma string de duas partes usada para identificar um ou mais apps para um único time de desenvolvimento. Esta string consiste de uma ID de Time e uma ID Bundle, com um ponto(.) que separa as duas partes (exemplo: TimeID.BundleID).*
 
-> **NOTE**
+> **NOTA**
 > 
 > * Se escolher uma Conta Apple Developer como indivíduo, sua conta estará disponível imediatamente e pode criar sua App ID.
 > * Se escolher uma conta Apple Developer como uma empresa, tem que esperar até a validação de Apple para criar sua App ID.
@@ -65,7 +65,7 @@ Agregue a informação abaixo:
 
 ![Change BundleID](img/Change-BundleID-Xcode-Project.png)
 
-> **NOTE**
+> **NOTA**
 > 
 > Se seu Bundle ID não estiver disponível, pode ser que já esteja sendo usada por outro app na App Store. Terá que mudar a sua no projeto Xcode.
 
@@ -83,7 +83,7 @@ Em App Store Connect > App Information:
 
 Aqui você define o preço de sua aplicação.
 
-> **TIPS**
+> **DICAS**
 > 
 > Pode definir descontos por tempo limitado especificando as datas de começo e fim.
 
@@ -91,7 +91,7 @@ Aqui você define o preço de sua aplicação.
 
 Agregue todos os recursos de sua aplicação que quiser incluir na App Store em **Version Information**:
 
-> **TIPS**
+> **DICAS**
 > 
 > Pode gerar todas as suas capturas de tela no Simulator (File>New Screen Shot).
 
