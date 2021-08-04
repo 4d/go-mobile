@@ -8,7 +8,7 @@ Neste tutorial, vamos guiá-lo através da criação de um modelo de formulário
 
 ![Custom template final result](img/custom-template-final-result.png)
 
-## Download the Starter project
+## Baixe o Starter Project
 
 To begin, download the **Starter project**, which includes:
 
