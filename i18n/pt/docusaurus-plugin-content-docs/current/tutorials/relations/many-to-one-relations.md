@@ -1,12 +1,12 @@
 ---
-id: n-to-one-relations
+id: many-to-one-relations
 title: Many to One relations
 ---
 
 
 This tutorial will show you how easy it can be to include Many to one relations in your mobile projects.
 
-:::note
+:::nota
 
 In this tutorial, we will use the relation names between your tables. Giving descriptive relation names can make your project structure definition easier.
 
