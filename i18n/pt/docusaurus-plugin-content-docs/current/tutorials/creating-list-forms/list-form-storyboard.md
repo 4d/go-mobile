@@ -103,7 +103,7 @@ Para completar a personalização, selecione ambas as etiquetas e **ingresse o v
 
 ![Label lines number](img/label-lines-number.png)
 
-:::note
+:::nota
 
 The provided storyboard is optimized to have a **variable cell height** depending on the contents of each cell.
 
