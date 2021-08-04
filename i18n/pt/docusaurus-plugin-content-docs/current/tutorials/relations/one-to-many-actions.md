@@ -96,7 +96,7 @@ $0:=$out
 
 E isso é tudo, agora pode adicionar uma tarefa para seus funcionários facilmente usando a Entity pai!
 
-Download the completed project:
+Baixe o projeto terminado:
 
 <div className="center-button">
 <a className="button button--primary"
