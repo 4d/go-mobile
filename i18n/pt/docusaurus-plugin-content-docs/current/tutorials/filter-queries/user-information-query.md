@@ -19,7 +19,7 @@ Status = 'In Progress' & manager.Email = :email
 
 A pesquisa vai filtrar os dados dependendo do status de **In Progress** E do **endereço de email do gerente de conta** (acessível da tabela AccountManager graças a relação  *Many-to-One* no nome do gerente).
 
-> **NOTE**
+> **NOTA**
 > 
 > * Um  **ícone usuário** é mostrado à direita de cada tabela quando um filtro de informação de usuário é aplicado a ela.
 > * Logo que uma pesquisa baseada em informação de usuário for validada, precisa editar o método **Mobile app authentication**. Para fazer isso, dê um clique direito no botão **Edit authentication method** para abrir a janela de edição do método de banco de dados.
