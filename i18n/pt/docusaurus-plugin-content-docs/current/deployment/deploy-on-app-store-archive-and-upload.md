@@ -3,7 +3,7 @@ id: deploy-on-app-store-archive-and-upload
 title: Arquive e atualize seu Projeto
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Arquivar e publicar seu projeto para o App Store Connect.
 
