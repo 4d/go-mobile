@@ -3,7 +3,7 @@ id: list-form-storyboard
 title: iOS Storyboard
 ---
 
-Now it's time to create your iOS list form interface with Xcode.
+Ahora es el momento de crear su interfaz iOS de formulario listado con Xcode.
 
 Este es el resultado que queremos lograr:
 
@@ -41,7 +41,7 @@ Haga clic en el botón **Align**(en la parte inferior del Interface Builder) y m
 
 ![Image View align vertically](img/imageview-align-vertically.png)
 
-Your Image View is now well positioned.
+Su vista Imagen ahora está bien ubicada.
 
 ![Image View final](img/imageview-final.png)
 
@@ -103,9 +103,9 @@ Para finalizar las personalizaciones, seleccione ambas etiquetas y en la ventana
 
 ![Label lines number](img/label-lines-number.png)
 
-:::note
+:::nota
 
-The provided storyboard is optimized to have a **variable cell height** depending on the contents of each cell.
+El Storyboard se optimiza para tener una **altura de celda variable** en función del contenido de cada celda.
 
 :::
 
@@ -129,7 +129,7 @@ Seleccione su Vista imagen y vaya a **Identity inspector** > User Defined Runtim
 
 ### Etiquetas
 
-Select the first label and add a row in the Defined Runtime Attributes:
+Seleccione la primera etiqueta y agregue una línea en el área "Defined Runtime Attributes":
 
 * **Key Path**: `bindTo.record.___FIELD_2___`
 
@@ -139,7 +139,7 @@ Select the first label and add a row in the Defined Runtime Attributes:
 
 ![Field 2 Binding](img/field-2-binding.png)
 
-Select the second label and add a row in the Defined Runtime Attributes:
+Seleccione la segunda etiqueta y agregue una línea en el área "Defined Runtime Attributes":
 
 * **Key Path**: `bindTo.record.___FIELD_3___`
 
@@ -149,22 +149,22 @@ Select the second label and add a row in the Defined Runtime Attributes:
 
 ![Field 3 Binding](img/field-3-binding.png)
 
-You can change the **storyboard display labels** to have better visibility:
+Puede cambiar las **etiquetas del storyboard** para tener una mejor visibilidad:
 
 * Haga doble clic en la primera etiqueta para editarla e ingresar `___FIELD_2_LABEL___`
 * Haga doble clic en la segunda etiqueta para editarla e ingresar `___FIELD_3_LABEL___`
 
 ![Storyboard label display names](img/storyboard-label-display-name.png)
 
-Go to your project editor, select your list form template from the Forms section, then select Build and Run.
+Vaya al editor de su proyecto y seleccione su plantilla de formulario listado en la sección Formularios, luego haga clic en Crear y Ejecutar.
 
-Here is the simulator result :
+Este es el el resultado del simulador:
 
 ![Simulator result](img/simulator-result.png)
 
 ## Personalice su aplicación
 
-The last step is adding a corner radius to the Image View to have a better design.
+El último paso es agregar un radio de esquina a la vista de imagen para tener un mejor diseño.
 
 Seleccione su Vista imagen y añada las dos líneas siguientes en el área User Defined Runtime Attributes:
 
@@ -190,7 +190,7 @@ y
 
 ## Where to go from here?
 
-In this tutorial, we've covered the basics for creating list form templates with iOS. You are now able to create simple templates on your own using the Starter project ressources. You can also see how to build [detail form templates](../creating-detail-forms/detail-form-template.md).
+En este tutorial, hemos cubierto los conceptos básicos para crear plantillas con iOS. Ahora puede crear plantillas simples por su cuenta utilizando los recursos del proyecto Starter. También puede ver cómo construir [plantillas de formularios detallados](../creating-detail-forms/detail-form-template.md).
 
 Download the completed template list folder:
 

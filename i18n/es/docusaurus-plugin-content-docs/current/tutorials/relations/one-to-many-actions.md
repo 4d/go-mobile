@@ -4,11 +4,11 @@ title: Relaciones Uno a Muchos - Acciones
 ---
 
 
-We are now going to go a little bit further and **create a task for a specific employee**.
+Ahora vamos a ir un poco más lejos y **crear una tarea para un empleado específico**.
 
-It is very easy to create an entity using **parent Entity** !
+¡Es muy fácil crear una entidad utilizando una **Entidad padre**!
 
-Let's get started by downloading the Starter project:
+Comencemos descargando el proyecto Starter:
 
 <div className="center-button">
 <a className="button button--primary"
@@ -19,14 +19,14 @@ href="https://github.com/4d-go-mobile/tutorial-RelationsActions/archive/6c649733
 
 * Abra el editor del proyecto y vaya a la sección Action.
 
-* Add a `addProject` Action
+* Añadir una acción `addProject`
 
 ![create addProject Method](img/create-addProject-Method-4D-for-iOS-relation-parent-ID.png)
 
 
 ## Método On Mobile App Action
 
-The only thing you have to do is defining the **addProject** action in the **On Mobile App Action method** as follows :
+Lo único que debe hacer es definir la acción **addProject** en el **método On Mobile App Action** de la siguiente manera:
 
 ```4d
 : ($request.action="addProjects")
@@ -45,7 +45,7 @@ $result:=addProject ($o)
 ## Método addProject
 
 
-Then enter thoses lines in your **addProject Method**:
+Luego introduzca esas líneas de código en su **addProject Method**:
 
 ```4d
 C_OBJECT($0)
@@ -94,9 +94,9 @@ $0:=$out
 
 ```
 
-And that's it you can then add some task to your employees easily using the parent Entity !
+¡Y eso es todo, puede agregar alguna tarea a sus empleados fácilmente usando la entidad padre!
 
-Download the completed project:
+Descargar el proyecto terminado:
 
 <div className="center-button">
 <a className="button button--primary"

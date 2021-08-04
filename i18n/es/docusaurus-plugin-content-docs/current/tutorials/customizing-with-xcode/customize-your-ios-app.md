@@ -53,7 +53,7 @@ La imagen actualmente tiene las restricciones siguientes:
 * Height Equals: una alto de 78 píxeles.
 * Align Center X: centra la imagen en un eje horizontal previamente definido.
 * Top Space: un espacio entre la parte superior de la imagen hasta la parte superior de la vista.
-* Bottom space to `<First Name>`: The previously defined space between the First Name label and the image.
+* Espacio inferior a `<First Name>`: el espacio previamente definido entre la etiqueta del Nombre y la imagen.
 
 ![Profil picture constraints](img/Profil-picture-constraints-Xcode-4D-for-iOS.png)
 
@@ -73,9 +73,9 @@ En este punto, todas las restricciones de la foto de perfil deben ser azules.
 
 > **CONSEJOS**
 > 
-> * To create a constraint between two views, press Ctrl and drag one of the views to the other. Cuando suelte el botón del ratón, el Interface Builder muestra un menú con una lista de posibles restricciones.
+> * Para crear una restricción entre dos vistas, presione Ctrl y arrastre una de las vistas a la otra. Cuando suelte el botón del ratón, el Interface Builder muestra un menú con una lista de posibles restricciones.
 > 
-> * You can delete constraints by either selecting them from the Size inspector or from the Interface Builder.
+> * Puede eliminar las restricciones o seleccionarlas desde el inspector Size o desde el Interface Builder.
 
 ## PASO 4. Actualizar la posición y las restricciones de etiquetas
 
