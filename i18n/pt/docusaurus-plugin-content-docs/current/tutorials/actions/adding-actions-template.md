@@ -5,20 +5,20 @@ title: Adicionar ações em modelos
 
 > **OBJETIVOS**
 > 
-> Add actions to custom List and Detail forms templates.
+> Adicionar ações para modelos de formulários de Lista e formulários detalhados.
 
 > **PRÉ-REQUISITOS**
 > 
-> Click `[here](prerequisites.html)` to see what you'll need to get started!
+> Clique em`[here](prerequisites.html)` para ver o que necessita para  começar
 
 Neste tutorial, veremos como é fácil **agregar ações a planilhas personalizadas**.
 
-## PASSO 1. Download the Starter project
+## PASSO 1. Baixe o Starter Project
 
 To begin, download the **Starter project**, which includes:
 
-* two custom List form templates (TasksList and TasksCollection)
-* a custom Detail form template (TasksDetail)
+* 2 modelos personalizados formulários Lista (TaskList e TasksCollection)
+* 1 modelo personalizado Formulário Detalhado (TasksDetails)
 * um arquivo Tasks.4dbase
 
 <div className="center-button">
@@ -40,11 +40,11 @@ Primeiro, solte:
 
 ## PASSO 3. Adicione ações em formulários Lista
 
-Two types of actions are available:
-* table actions
-* entity actions
+Há dois tipos de ações disponíveis:
+* ações de Tabela
+* ações de entidade
 
-Let's first open the `list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` file.
+Primeiro vamos abrir o arquivo `list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm..Storyboard` .
 
 ### Adicione ações para o modelo personalizado TasksList
 
@@ -79,7 +79,7 @@ Agora vamos agregar as etiquetas de ação ao modelo personalizado TasksCollecti
 
 ### Adicionar ações para o modelo personalizado TasksCollection
 
-To do so, open the `list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` file.
+Para fazer isso, abra o arquivo `list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard`.
 
 #### A. Adicionar uma Tag de ação de tabela
 
@@ -111,7 +111,7 @@ Para otimizar a interação, pode agregar um efeito escalar com uma haptic feedb
 
 * Key Path: `touch.zoomScale`
 * Type: `Number`
-* Value: `0,96` (adapt the scale ratio depending on the result you want to get)
+* Valor: `0,96` (adapte a relação de escala segundo o resultado que quiser obter)
 
 Pode selecionar o modelo personalizado TasksCollection na **seção Formulários** e adicionar os campos abaixo:
 
@@ -130,7 +130,7 @@ Para o botão genérico integrado na barra de navegação, selecione o Controlad
 
 ![Add detailform entity action tag](img/Detail-form-action-navigationBar.png)
 
-In our tutorial, we want to build our own generic button. Para isso, abra o arquivo Storyboard `detail/TasksDetail/Sources/Forms/Tables/___TABLE___/___TABLE___DetailsForm.storyboard`.
+Em nosso tutorial, queremos construir nosso próprio botão genérico. Para isso, abra o arquivo Storyboard `detail/TasksDetail/Sources/Forms/Tables/___TABLE___/___TABLE___DetailsForm.storyboard`.
 
 Abra o arquivo, selecione o botão na parte inferior direita e agregue esta linha em **User Defined Runtime Attributes** (Identity inspector):
 
@@ -154,7 +154,7 @@ Parabéns, sua aplicação iOS Tasks agora está completa e inclui ações nos f
 
 ![Template ressources](img/ListForm-entity-action-tableview.png)
 
-Download the completed project:
+Baixe o projeto terminado:
 
 <div className="center-button">
 <a className="button button--primary"
