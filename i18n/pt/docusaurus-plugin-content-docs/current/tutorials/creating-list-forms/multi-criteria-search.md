@@ -42,4 +42,4 @@ A menu will appear to allow you to **remove specific fields** or **remove all fi
 
 ![Modify Multi-criteria search fields](img/multi-criteria-search-forms-section-remove-fields.png)
 
-Congratulations! You can now base your search(es) on multiple fields in your mobile app!
+Parabéns! You can now base your search(es) on multiple fields in your mobile app!
