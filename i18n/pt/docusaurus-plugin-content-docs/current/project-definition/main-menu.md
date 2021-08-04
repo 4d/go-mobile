@@ -1,5 +1,5 @@
 ---
-id: menu principal
+id: main-menu
 title: Main Menu
 ---
 
