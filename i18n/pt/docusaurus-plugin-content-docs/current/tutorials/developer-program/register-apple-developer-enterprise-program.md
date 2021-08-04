@@ -55,7 +55,7 @@ Pode se registrar como desenvolvedor [aqui](https://developer.apple.com/programs
 
 * Clique no botão **Start your Enrollment**.
 * Leia e Aceite o Contrato de Desenvolvedor de Licença "Apple Developer Agreement".
-* Click **Submit**.
+* Clique **Submit**.
 
 ![Registre-se como um desenvolvedor.](img/Register-developer-4D-for-iOS.png)
 
@@ -63,7 +63,7 @@ Pode se registrar como desenvolvedor [aqui](https://developer.apple.com/programs
 
 * Pode se inscrever no Programa Apple Developer Enterprise [aqui](https://developer.apple.com/enroll/enterprise/).
 * Clique no botão **Start your Enrollment**.
-* Select **Company / Organization** from the Entity Type dropdown list.
+* Selecione **Company / Organization** na lista suspensa "Entity Type".
 * Clique em **Continue**.
 
 ![Apple Developer Enterprise Program](img/Apple-Developer-Enterprise-Program-4D-for-iOS.png)
