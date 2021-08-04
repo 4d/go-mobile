@@ -12,7 +12,7 @@ Xcode é um IDE e um conjunto de ferramentas de desenvolvimento para macOS usado
 Para baixar a última versão de Xcode vá para a App Store.
 
 <div className="center-button">
-<a className="button button--primary" href="macappstore://itunes.apple.com/app/id497799835?mt=12">View in Mac App Store </a>
+<a className="button button--primary" href="macappstore://itunes.apple.com/app/id497799835?mt=12">Veja na Loja Mac App </a>
 </div>
 
 Desenvolvedores registrados podem baixar lançamentos preview e versões prévias através do website Apple Developer.
