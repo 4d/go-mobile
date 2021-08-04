@@ -1,5 +1,5 @@
 ---
-id: deploy-in-house-distribution
+id: deployment-in-house-distribute
 title: Distribuir una aplicación interna
 ---
 
