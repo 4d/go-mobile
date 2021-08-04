@@ -3,14 +3,14 @@ id: one-to-many-custom-button
 title: Um para Muitos - botão personalizado
 ---
 
-As we have seen with all previous tutorials, the 4D mobile editor give you the freedom to create lots of custom things.
+Como vimos em tutoriais anteriores, 4D editor móvel lhe dá a liberdade de criar várias coisas personalizadas.
 
 Em relação a modelos e formatadores personalizados, pode criar Botões de Relação personalizados.
 
 Para fazer isso, nada é mais simples! Só precisa soltar seu botão personalizado em seu modelo personalizado.
 
 
-Let's get started by downloading the Starter project that includes:
+Vamos começar baixando o Starter Project que inclui:
 
 * um banco de dados com seu projeto móvel
 * um botão Relação padrão
@@ -129,7 +129,7 @@ Para indicar no editor de projeto que todos os elementos incluídos nesta vista 
 
 ### adicionar TAGS
 
-Each storyboard element has an Object ID. Por exemplo, se selecionar Field View 2 e for a** identity Inspector**, verá seus identificadores de objetos:
+Cada elemento de storyboard tem um identificador de Objeto. Por exemplo, se selecionar Field View 2 e for a** identity Inspector**, verá seus identificadores de objetos:
 
 ![Object ID Storyboard](img/Custom-button-object-id-storyboard.png)
 
@@ -157,7 +157,7 @@ E isso é tudo! Seu botão agora é completamente duplicável se tiver mais de u
 
 Nesse tutorial, vimos o básico para criar botões de relação personalizados. Clique no botão abaixo Final Project para baixar o botão de relação personalizado.
 
-Download the completed project:
+Baixe o projeto terminado:
 
 <div className="center-button">
 <a className="button button--primary"
