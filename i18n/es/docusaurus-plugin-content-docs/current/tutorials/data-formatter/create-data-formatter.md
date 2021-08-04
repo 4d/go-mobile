@@ -38,7 +38,7 @@ Primero, cree una carpeta *Task Management.4dbase/Resources/Mobile/formatters*.
 ### Número entero a cadena
 
 * Cree una carpeta **integerToString** en la carpeta de Formats que acaba de crear.
-* Cree un archivo </strong>manifest.json** en la carpeta **integerToString**.</li> </ul>
+* Cree un archivo **manifest.json** en la carpeta **integerToString**.
 
 ![Formatter folder](img/formatter-folder-integertostring.png)
 
