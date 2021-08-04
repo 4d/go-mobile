@@ -1,6 +1,6 @@
 ---
 id: xcode-overview
-title: Xcode Overview
+title: Apresentação do Xcode
 ---
 
 > **OBJETIVOS**
