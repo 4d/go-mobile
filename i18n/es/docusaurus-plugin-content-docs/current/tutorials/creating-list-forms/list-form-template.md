@@ -25,9 +25,9 @@ Lo primero que deberá hacer es crear una carpeta `list` en *Contact.4dbase/Reso
 
 ![Mobile folder custom template](img/mobile-folder-custom-template.png)
 
-Now, launch your 4D application and open the "Contact" 4D project.
+Ahora, inicie su aplicación 4D y abra el proyecto 4D "Contact".
 
-Then, select the "Contact Demo App" mobile project: **File > Open > Mobile Project > Contact Demo App**.
+A continuación, seleccione el proyecto móvil "Contact Demo App": **Archivo > Abrir > Proyecto móvil > App Demo Contact**.
 
 En la **sección Formulario** del editor del proyecto móvil, verá que su plantilla de formulario lista se ha agregado exitosamente a la lista de plantillas de formularios lista disponibles:
 
@@ -37,7 +37,7 @@ Ahora concentrémonos en el contenido de la carpeta **Custom List form**.
 
 ## Contenido de la plantilla de formulario Lista
 
-In this folder, you will find:
+En esta carpeta, encontrará:
 
 * Un icono **layoutIconx2.png** de 160x160px: mostrado en el editor del proyecto cuando seleccione su plantilla
 * **Un archivo manifest.json**: incluye una descripción básica de la plantilla
@@ -45,4 +45,4 @@ In this folder, you will find:
 * una carpeta **ios** que incluye el storyboard (interfaz gráfica) y el archivo **Swift** (código del formulario) en la carpeta `Source/Forms/Tables/___TABLE___`
 * una **carpeta android** que incluya el archivo layout.xml (interfaz gráfica) en la carpeta `app/src/main/res/layout`.
 
-These files and folders are detailed in the next sections. 
+Estos archivos y carpetas se detallan en las siguientes secciones. 
