@@ -3,7 +3,7 @@ id: custom-detailform-templates
 title: Modelos de formulários detalhados
 ---
 
-> **BEFORE STARTING**
+> **ANTES DE COMEÇAR**
 > 
 > Para usar um modelo de formulário detalhe personalizado, é preciso primeiro criar uma pasta `YourDatabase.4dbase/Resources/Mobile/form/detail` 
 > 
