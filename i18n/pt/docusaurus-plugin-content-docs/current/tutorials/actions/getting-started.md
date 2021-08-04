@@ -3,12 +3,12 @@ id: getting-started
 title: Getting started
 ---
 
-> **OBJECTIVES**
+> **OBJETIVOS**
 > 
 > Use actions in the generated iOS app.
 
 
-> **PREREQUISITES**
+> **PRÉ-REQUISITOS**
 > 
 > Click `[here](prerequisites.html)` to see what you'll need to get started!
 
