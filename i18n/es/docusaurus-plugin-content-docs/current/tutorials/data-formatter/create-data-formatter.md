@@ -29,7 +29,7 @@ href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/archive/66d7e
 
 ## Crear la carpeta Formats
 
-Primero, cree una carpeta Task Management.4dbase/Resources/Mobile/formatters</em>.
+Primero, cree una carpeta *Task Management.4dbase/Resources/Mobile/formatters*.
 
 ![Formatter folder](img/formatter-folder.png)
 
