@@ -3,7 +3,7 @@ id: custom-data-formatters
 title: Formatadores de Dados
 ---
 
-> **BEFORE STARTING**
+> **ANTES DE COMEÇAR**
 > 
 > Para usar um formatador personalizado, a primeira coisa é criar uma pasta `YourDatabase.4dbase/Resources/Mobile/formatters` .
 > 
