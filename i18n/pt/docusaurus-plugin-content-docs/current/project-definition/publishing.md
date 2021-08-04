@@ -36,7 +36,7 @@ The **Edit...** button opens the **Web** page of the 4D settings dialog box. Use
 - **Enable HTTP** option and **HTTP port**.
 - **Enable HTTPS** option and **HTTP port**.
 
-:::note
+:::nota
 
 If both HTTP and HTTPS are enabled, HTTP is used.
 
@@ -46,7 +46,7 @@ Activating the HTTPS port requires that you installed a valid [TLS certificate](
 
 These settings are taken into account only if the [production URL](#production-url) is defined. Otherwise, the local IP address is used.
 
-:::note
+:::nota
 
 The Simulator always works locally (127.0.0.1 or localhost).
 
