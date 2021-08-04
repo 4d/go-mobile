@@ -16,7 +16,7 @@ Baixe o **Starter project** e vá para a seção **Actions**.
 href="https://github.com/4d-go-mobile/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">Download</a>
 </div>
 
-You can define actions for two levels:
+Pode definir ações para dois níveis:
 
 * Ações de entidade
 * Ações de Tabela
@@ -49,7 +49,7 @@ Para definir essa ação:
 
 ### PASSO 2. Criar e editar o método Action Database
 
-Now that your action is defined in the Project Editor, you have to create the **[On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)** database Method.
+Agora que sua ação foi definida no Editor de Projeto, é preciso criar o método de banco de dados **[On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)**.
 
 Para fazer isso, clique no **botão Criar** na parte inferior direita da tabela de ações e ingresse o código abaixo no método banco de dados **On Mobile App Action**:
 
@@ -239,11 +239,11 @@ Criar e Executar seu app! Encontrará um novo **botão genérico** na barra de n
 
 ## O que fazer agora?
 
-Congratulations! Acaba de agregar 2 ações a sua aplicação iOS. Agora pode agregar todas as ações que precisar à sua aplicação Tasks!
+Parabéns! Acaba de agregar 2 ações a sua aplicação iOS. Agora pode agregar todas as ações que precisar à sua aplicação Tasks!
 
 ![Final result All Action](img/ListForm-entity-action-tableview.png)
 
-Download the completed project that includes various actions:
+Pode baixar o projeto Final que inclui várias ações:
 
 <div className="center-button">
 <a className="button button--primary"
