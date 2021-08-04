@@ -33,7 +33,7 @@ Para cada parâmetro, pode editar as propriedades abaixo:
 * Nome
 * Etiqueta longa
 * Etiqueta curta
-* Format
+* Formato
 * Restrições de input (define valores mínimos ou máximos)
 * Placeholder (valores provisórios)
 * Definição campo obrigatória
@@ -50,7 +50,7 @@ Aqui estão os diferentes **Formatos** que pode selecionar para um parâmetro:
 <tr>
 <th colspan="2"  style={{textAlign: 'center'}}>TEXTO</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Descrição</th>
+<th>Formato</th><th>Descrição</th>
 </tr><tr>
 <td>Texto</td><td>Colocar em maiúscula a primeira letra da string</td>
 </tr><tr>
@@ -77,7 +77,7 @@ Aqui estão os diferentes **Formatos** que pode selecionar para um parâmetro:
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>NUMBER</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Descrição</th>
+<th>Formato</th><th>Descrição</th>
 </tr><tr>
 <td>Number</td><td>Numbers with decimals</td>
 </tr><tr>
@@ -96,7 +96,7 @@ Aqui estão os diferentes **Formatos** que pode selecionar para um parâmetro:
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>DATE</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Descrição</th>
+<th>Formato</th><th>Descrição</th>
 </tr><tr>
 <td>Date</td><td>Nov 23, 1937</td>
 </tr><tr>
@@ -112,7 +112,7 @@ Aqui estão os diferentes **Formatos** que pode selecionar para um parâmetro:
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>TIME</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Descrição</th>
+<th>Formato</th><th>Descrição</th>
 </tr><tr>
 <td>Time</td><td>3:30 PM</td>
 </tr><tr>
@@ -125,7 +125,7 @@ Aqui estão os diferentes **Formatos** que pode selecionar para um parâmetro:
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>BOOLEAN</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Descrição</th>
+<th>Formato</th><th>Descrição</th>
 </tr><tr>
 <td>Boolean</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
 </tr><tr>
