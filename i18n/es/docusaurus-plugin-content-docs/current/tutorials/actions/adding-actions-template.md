@@ -15,7 +15,7 @@ En este tutorial, veremos lo fácil que puede ser **agregar acciones a plantilla
 
 ## PASO 1. Descargue el proyecto Starter
 
-To begin, download the **Starter project**, which includes:
+Para comenzar, descargue el **proyecto Starter**, que incluye:
 
 * dos plantillas de formularios Lista personalizadas (TasksList y TasksCollection)
 * una plantilla de formulario detallado personalizada (TasksDetail)
