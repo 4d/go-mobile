@@ -17,7 +17,7 @@ Puede crear una nueva acción haciendo clic en el botón + en la parte inferior 
 A continuación, deberá definir lo siguiente:
 
 * **Nombres:** define el nombre de la acción a utilizar en el método base [On Mobile App Action](https://developer.4d.com/4d-for-ios/docs/en/actions.html#on-mobile-app-action) para lanzar su código 4D.
-* **Iconos:** seleccione un icono para su acción de su librería de iconos. You can also add your own icon by following this [tutorial]`(using-icons.html)`.
+* **Iconos:** seleccione un icono para su acción de su librería de iconos. También puede agregar su propio icono siguiendo este [tutorial]`(using-icons.html)`.
 * **Etiquetas cortas y largas: **las etiquetas para las acciones que se mostrarán en su aplicación.
 * **Tabla:** seleccione la tabla en la que desea aplicar la acción.
 * **Alcance:** seleccione si desea aplicar la acción en una **entidad** o en una **tabla**.
@@ -26,7 +26,7 @@ A continuación, deberá definir lo siguiente:
 
 ### Añada parámetros a su acción
 
-You can add **action parameters** and **edit** data directly from your app.
+Puede añadir los **parámetros de acción** y **editar** datos directamente desde su aplicación.
 
 Para cada parámetro, puede editar las siguientes propiedades:
 
@@ -79,7 +79,7 @@ Estos son los diferentes **formatos** que puede seleccionar para un parámetro:
 </tr><tr style={{textAlign: 'center'}}>
 <th>Formato</th><th>Descripción</th>
 </tr><tr>
-<td>Number</td><td>Numbers with decimals</td>
+<td>Número</td><td>Números con decimales</td>
 </tr><tr>
 <td>Integer</td><td>Numbers without decimals</td>
 </tr><tr>
