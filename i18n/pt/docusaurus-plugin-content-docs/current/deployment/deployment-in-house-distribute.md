@@ -33,13 +33,13 @@ itms-services://?action=download-manifest&url=https://mywebserver.com/manifest.p
 
 ```
 
-This link can be used when sending emails, embedded in an html page, or even within a QR code.
+Esse link pode ser usado quando enviar emails, embebido na página html ou  mesmo em  um código QR.
 
-Here is a simple example:
+Aqui um exemplo simples:
 
 ![Contact demo app install](img/Contact-demo-app-install.png)
 
-*The QR Code used for this documentation is not active.*
+*O código QR usado por essa documentação não está ativo.*
 
 ## PASSO 3. Instale a sua aplicação em iOS
 
@@ -61,4 +61,4 @@ Here is a simple example:
 
 * Depois pode ir à sua aplicação e abri-la.
 
-Congratulations... you can now distribute your app in-house.
+Parabéns... já pode distribuir sua primeira aplicação interna.
