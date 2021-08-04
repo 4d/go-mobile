@@ -71,7 +71,7 @@ Nesse ponto, todas as restrições de imagem de perfil devem estar em azul.
 
 Congratulations! Sua foto do perfil está agora bem posicionada com as restrições corretas.
 
-> **TIPS**
+> **DICAS**
 > 
 > * Para criar uma restrição entre duas vistas, pressione Ctrl e arraste uma das vistas para a outra. Quando soltar o botão do mouse, a Interface Builder mostra um menu com uma lista de possíveis restrições.
 > 
