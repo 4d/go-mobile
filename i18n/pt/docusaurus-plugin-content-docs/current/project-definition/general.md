@@ -22,7 +22,7 @@ Select the mobile OS for which you want to build the app. This setting will defi
 
 For example, if your company’s name is "MyCompany" and your app’s name is "MyApp", you could choose "com.MyCompany" as your organization’s bundle identifier and your App bundle ID would be "com.MyCompany.MyApp".
 
-:::note
+:::nota
 
 The Bundle ID name must not contain space or special characters such as "*,%,/". They are automatically filtered and replaced with -.
 
@@ -34,7 +34,7 @@ The Bundle ID name must not contain space or special characters such as "*,%,/".
 
 **Name:** Your app’s name. As described above, the product name is used to create the "Bundle ID". This Bundle ID must be the same as the Bundle ID you created in your Apple Development account.
 
-:::note
+:::nota
 
 The Bundle ID name must not contain space or special characters such as "*,%,/". They are automatically filtered and replaced with -.
 
@@ -57,7 +57,7 @@ To select an icon:
 
 You can also double-click the area to display the picture selection dialog box.
 
-:::note
+:::nota
 
 On Windows, you must use an "image file" (*.public.image).
 
