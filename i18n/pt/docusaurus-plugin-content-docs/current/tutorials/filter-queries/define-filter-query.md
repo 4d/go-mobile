@@ -20,7 +20,7 @@ Deve obter este resultado:
 
 ![CRM database](img/filterquery.png)
 
-> **NOTE**
+> **NOTA**
 > 
 > * Um ícone **filter** é exibido à direita de cada tabela quando um filtro básico é aplicado.
 > * Para esses tipos de filtros de pesquisa, pode escolher incorporar os dados no app ou carregar os dados depois do login, marcando a checkbox **Embed data into the built application** .
