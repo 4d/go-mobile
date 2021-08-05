@@ -25,7 +25,7 @@ Selecting a custom login form from the Project editor is not implemented yet but
 
 :::
 
-## PASSO 1. Getting started
+## PASSO 1. Começando
 
 In this tutorial, we're going to:
 
