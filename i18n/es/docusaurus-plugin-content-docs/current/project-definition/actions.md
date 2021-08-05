@@ -94,7 +94,7 @@ Estos son los diferentes **formatos** que puede seleccionar para un parámetro:
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>DATE</th>
+<th colspan="2" style={{textAlign: 'center'}}>FECHA</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Formato</th><th>Descripción</th>
 </tr><tr>
