@@ -1,6 +1,6 @@
 ---
 id: create-data-formatter
-title: Create data formatter
+title: Criar formato de dados
 ---
 
 > **OBJETIVOS**
@@ -161,13 +161,13 @@ Vamos olhar o conteúdo do arquivo de**manifest.json **:
 
 ```
 
-## Dark mode support
+## Compatibilidade modo Escuro
 
-Whether your device is in dark or light mode, whether you're working on iOS or Android, you can easily use the custom data formatters containing images. The pictures will be adapted depending on the phone's color mode.
+Se seu dispositivo estiver no modo claro ou escuro, não importa se trabalhar em Android ou iOS, pode facilmente usar os formatadores de dados personalizados contendo imagens. As imagens se adaptarão dependendo do modo de cor do telefone.
 
-### Tintable color
+### Cor tintado
 
-To optimize the color contrast of your black and white images on your app depending on the color mode (light or dark), you can set the images as follows, with the `"tintable": true` code line:
+Para otimizar o contraste de cores em suas imagens branco e preto em seu app dependendo do modo de cor (claro ou escuro) pode estabelecer as imagens da seguinte forma, com a linha de código `"tintable": true` :
 
 ```json
 {
@@ -181,23 +181,23 @@ To optimize the color contrast of your black and white images on your app depend
      }
 }
 ```
-Here is the result in light and dark modes:
+Este é o resultado nos modos claro e escuro:
 
-| Light mode                          |             Dark mode              |
-| ----------------------------------- |:----------------------------------:|
-| ![Data formatter](img/light-bw.png) | ![Data formatter](img/dark-bw.png) |
-
-
+| Modo Claro                               |               Modo Escuro               |
+| ---------------------------------------- |:---------------------------------------:|
+| ![Formatador de dados](img/light-bw.png) | ![Formatador de dados](img/dark-bw.png) |
 
 
 
 
 
-### Optimized color pictures
 
-To optimize the color pictures displayed on your app and adapt them to your color mode, you need to have two pictures: one for the light mode, and one for the dark mode suffixed with `_dark`, as follows:
 
-![Data formatter](img/Architecture.jpg)
+### Imagens a cor otimizadas
+
+Para otimizar as imagens de cor que são mostradas em sua aplicação e adaptá-las a seu modo de cor, necessita ter duas imagens, uma para o modo claro e outra para o modo escuro com o sufixo `_dark`, como abaixo:
+
+![Formatador de dados](img/Architecture.jpg)
 
 ```json
 {
@@ -210,17 +210,17 @@ To optimize the color pictures displayed on your app and adapt them to your colo
    }
 }
 ```
-Here is the result in light mode and in dark mode:
+Este é o resultado nos modos claro e escuro:
 
-| Light mode                             |               Dark mode               |
-| -------------------------------------- |:-------------------------------------:|
-| ![Data formatter](img/light-color.png) | ![Data formatter](img/dark-color.png) |
+| Modo Claro                                  |                Modo Escuro                 |
+| ------------------------------------------- |:------------------------------------------:|
+| ![Formatador de dados](img/light-color.png) | ![Formatador de dados](img/dark-color.png) |
 
 ## Abrir projeto móvel
 
-Open the Task Management.4dbase with 4D and go to File > open > Mobile Project... to open the **Tasks**
+Abra Task Management.4dbase com 4D e vá para File > abra > Mobile Project... para abrir **Tasks**
 
-Next, go to the **Labels & Icons section** in the project editor. All of your formatters are available for the different field types you  previously defined in the different formatter manifest.json files:
+Agora, vá para a seção **Labels & Icons** no editor de projetos. Todos os formatadores estão disponíveis para os tipos de campo diferentes que você definir previamente nos arquivos manifest.json de diferentes  formatadores:
 
 * Selecione o formatador de**integerToString ** para o **campo Job**
 * Selecione o formatador de** textToString** para o **campo Country**
@@ -229,13 +229,13 @@ Next, go to the **Labels & Icons section** in the project editor. All of your fo
 
 ![Text formatter](img/formatters-icons-&-labels.png)
 
-## Build your 4D for iOS app
+## Construa seu app 4D for iOS
 
-Build your 4D of iOS app and you'll see that your data formatter is well applied depending on the credit limit.
+Construa seu app 4D de iOS e você verá que o formatador de dados é bem aplicado dependendo do limite de crédito.
 
 ![Text formatter](img/formatters-final-result.png)
 
-Download the completed formatter template folder:
+Baixe a pasta do modelo de formatador completo:
 
 <div className="center-button">
 <a className="button button--primary"
