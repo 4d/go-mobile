@@ -84,13 +84,11 @@ Pode definir a posição, a altura e a largura de todos seus campos. Esse proces
 2. Posição fundo, altura e largura da Área
 3. Icone para mostrar uma imagem no imageField
 4. Define a posição da área de texto e a largura
-5. Define a posição, altura e largura dos campos soltáveis, assim como
-
-tipos de campos aceitos**</li> 
-   
-   6 Define um botão de cancelar que será mostrado para eliminar o conteúdo atual</ol> 
+5. Define a posição, altura e largura dos campos soltáveis, assim como [**tipos de campos aceitos**](../creating-list-forms/list-form-svg-file.md#iostypes)
+6. Define um botão de cancelar que será mostrado para eliminar o conteúdo atual
 
 Agora que tem um **ícone**, uma **descrição básica do modelo** no arquivo manifest.json, e seus arquivos **svg **, vamos ver a parte divertida com Xcode!
+
 
 :::tip
 
