@@ -12,7 +12,7 @@ Este es el resultado que queremos lograr:
 Para cada celda, vamos a añadir:
 
 * Una foto de perfil
-* Title
+* Título
 * Subtitulo
 
 ## Abrir el archivo storyboard con Xcode
