@@ -4,14 +4,14 @@ title: Generalidades
 ---
 
 
-The 4D Mobile Project editor allows you to design, test, and build your native mobile projects for iOS and Android using a graphical interface. The window has two tabs: **Sections** and **Build**.
+El editor de proyectos de 4D Mobile le permite diseñar, probar y construir sus proyectos móviles nativos para iOS y Android utilizando una interfaz gráfica. La ventana tiene dos pestañas: **Secciones** y **Generar**.
 
 ![General section](img/General-section-4D-for-iOS.png)
 
-In the **Sections** tab, you'll find all of the necessary steps to create your mobile application:
+En la pestaña **Secciones**, encontrará todos los pasos necesarios para crear su aplicación móvil:
 
 * General
-* Structure
+* Estructura
 * Datos
 * Actions
 * Etiquetas e iconos
@@ -19,32 +19,32 @@ In the **Sections** tab, you'll find all of the necessary steps to create your m
 * Formularios
 * Publishing
 
-In the **Build** tab, you'll find embedded tools to build and test you mobile app:
+En la pestaña **Generar**, encontrará herramientas integradas para crear y probar su aplicación móvil:
 
 * Build and Run
 * Selección del simulador
 * Navegador de proyecto y de producto
 * Instalar
 
-The 4D Mobile Project editor is available from the **4D** application development environment (a 4D Developer Pro license is required).
+El editor de proyectos de 4D Mobile está disponible en el entorno de desarrollo de aplicaciones de **4D** (se requiere una licencia 4D Developer Pro).
 
-A 4D mobile project is strongly linked to a 4D data model. To be able to create or open a 4D mobile project, you must open the associated 4D project database beforehand.
+Un proyecto móvil 4D está fuertemente vinculado a un modelo de datos 4D. Para poder crear o abrir un proyecto 4D mobile, debe abrir previamente la base de proyectos 4D asociada.
 
 
-## Creating a mobile project
+## Crear un proyecto móvil
 
-To create a new mobile project:
+Para crear un nuevo proyecto móvil:
 
-1. Start your 4D application and open the 4D project for which you want to create a mobile project.
-2. Select **New > Mobile Project** from the **File** or the toolbar menu.
+1. Inicie su aplicación 4D y abra el proyecto 4D para el que desea crear un proyecto móvil.
+2. Seleccione **Nuevo > Proyecto móvil** en el menú **Archivo** o en la barra de herramientas.
 
 :::nota
 
-You need a 4D Developer Pro license to open the 4D mobile editor.
+Necesita una licencia 4D Developer Pro para abrir el editor 4D mobile.
 
 :::
 
-The welcome dialog box is displayed:
+Se muestra la caja de diálogo de bienvenida:
 
 ![Project Name](img/new-project.png)
 
