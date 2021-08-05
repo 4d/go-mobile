@@ -3,7 +3,7 @@ id: forms
 title: Formularios
 ---
 
-The Forms page allows you to select both list and detail forms for each published table. You can select one list form and one detail form per published table.
+La página Formularios le permite seleccionar ambos formularios Lista y detallados para cada tabla publicada. Puede seleccionar un formulario lista y un formulario detallado por tabla publicada.
 
 The 4D mobile editor provides various templates with custom transition effects to build fresh and modern mobile applications. Simple, empty templates are used by default for an app's list and detail forms.
 
