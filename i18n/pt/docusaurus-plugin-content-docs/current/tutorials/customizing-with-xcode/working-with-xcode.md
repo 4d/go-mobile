@@ -1,6 +1,6 @@
 ---
 id: working-with-xcode
-title: Working with Xcode
+title: Trabalhar com Xcode
 ---
 
 > **OBJETIVOS**
@@ -15,9 +15,9 @@ title: Working with Xcode
 > Se personalizar seu projeto em Xcode e reconstruí-lo a partir do Editor de Projeto, todas as modificações serão perdidas!
 
 
-We'll use the [contact application](../create-your-first-app) we created.
+Vamos usar [a aplicação de contato](../create-your-first-app) que criamos.
 
-Download the Starter project:
+Baixe o Starter Project:
 
 <div className="center-button">
 <a
@@ -34,7 +34,7 @@ Download the Starter project:
 
 ## PASSO 2. Crie seu projeto
 
-From the Project Editor BUILD tab:
+Na aba BUILD do Editor de projeto:
 
 * Selecione um aparelho a usar como um Simulador clicando no botão do aparelho.
 * Clique no botão **Criar e executar**.
@@ -43,10 +43,10 @@ From the Project Editor BUILD tab:
 
 ## PASSO 3. Abra seu projeto com o Xcode
 
-From the Project Editor BUILD tab:
+Na aba BUILD do Editor de projeto:
 
 * Clique em Projeto > Abrir o projeto com Xcode
 
 ![Abra seu projeto com o Xcode](img/Open-your-project-Xcode-4D-for-iOS.png)
 
-Now you're ready to start working on your 4D for iOS project in Xcode.
+Agora está pronto para começar a trabalhar em seu projeto 4D for iOS em Xcode.
