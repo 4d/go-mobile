@@ -1,9 +1,9 @@
 ---
-id: a partir de Xcode
+id: from-xcode
 title: A partir de Xcode
 ---
 
-Se tiver problemas durante o processo de compilação pode abrir seu projeto gerado com Xcode selecionando a opção**Open the product with Xcode** a partir do menu **Project**
+Se tiver problemas durante o processo de compilação pode abrir seu projeto gerado com Xcode selecionando a opção **Open the product with Xcode** a partir do menu **Project**.
 
 ![Abrir o projeto com Xcode](img/open-project-Xcode.png)
 
