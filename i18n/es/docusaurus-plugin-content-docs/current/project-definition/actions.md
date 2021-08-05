@@ -75,19 +75,19 @@ Estos son los diferentes **formatos** que puede seleccionar para un parámetro:
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>NUMBER</th>
+<th colspan="2" style={{textAlign: 'center'}}>NÚMERO</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Formato</th><th>Descripción</th>
 </tr><tr>
 <td>Número</td><td>Números con decimales</td>
 </tr><tr>
-<td>Integer</td><td>Numbers without decimals</td>
+<td>Entero</td><td>Números sin decimales</td>
 </tr><tr>
-<td>Scientific</td><td>Scientific Notation</td>
+<td>Científica</td><td>Notación científica</td>
 </tr><tr>
-<td>Percentage</td><td>Percent Notation</td>
+<td>Porcentaje</td><td>Notación en porcentaje</td>
 </tr><tr>
-<td>Spell Out</td><td>Convert numbers into strings</td>
+<td>Nombre en letras</td><td>Convierte los números en cadenas</td>
 </tr>
 <tr>
 <td colspan="2"></td>
@@ -98,45 +98,45 @@ Estos son los diferentes **formatos** que puede seleccionar para un parámetro:
 </tr><tr style={{textAlign: 'center'}}>
 <th>Formato</th><th>Descripción</th>
 </tr><tr>
-<td>Date</td><td>Nov 23, 1937</td>
+<td>Fecha</td><td>Nov 23, 1937</td>
 </tr><tr>
-<td>Short Date</td><td> 11/23/37</td>
+<td>Fecha corta</td><td> 11/23/37</td>
 </tr><tr>
-<td>Long Date</td><td>November 23, 1937</td>
+<td>Fecha larga</td><td>Noviembre 23, 1937</td>
 </tr><tr>
-<td>Full Date</td><td>Tuesday, November 23, 1937</td>
+<td>Fecha completa</td><td>Martes, 23 de noviembre 1937</td>
 </tr><tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>TIME</th>
+<th colspan="2" style={{textAlign: 'center'}}>HORA</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Formato</th><th>Descripción</th>
 </tr><tr>
-<td>Time</td><td>3:30 PM</td>
+<td>Hora</td><td>3:30 PM</td>
 </tr><tr>
-<td>Duration</td><td>2 hours 30 minutes</td>
+<td>Duración</td><td>2 horas 30 minutos</td>
 </tr>
 <tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>BOOLEAN</th>
+<th colspan="2" style={{textAlign: 'center'}}>BOOLEANO</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Formato</th><th>Descripción</th>
 </tr><tr>
-<td>Boolean</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
+<td>Booleano</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
 </tr><tr>
-<td>Check mark</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
+<td>Marca de verificación</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
 </tr>
 
 <tr>
 <td colspan="2"></td>
 </tr>
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>IMAGES</th>
+<th colspan="2" style={{textAlign: 'center'}}>IMÁGENES</th>
 </tr>
 <tr>
 <td>Firma</td><td>Permitir firmar con el dedo</td>
@@ -144,48 +144,48 @@ Estos son los diferentes **formatos** que puede seleccionar para un parámetro:
 
 </table>
 
-## Preset actions
+## Acciones predefinidas
 
-4D mobile projects include the following (predefined) preset actions to manage your app content:
+Los proyectos 4D mobile incluyen las siguientes acciones predefinidas para gestionar el contenido de su aplicación:
 
 * Acción de edición
 * Acción de añadir
 * Acción de eliminar
-* Share
-* Sort
+* Compartir
+* Ordenar
 
-### Add action
+### Añadir acción
 
-4D mobile projects makes the **Add actions** creation process very simple.
+Los proyectos móviles 4D simplifican el proceso de creación de **acciones de adición**.
 
 Lo único que debe hacer es seleccionar la opción **Acción de adición para**, accesible desde el **botón + ** en la parte inferior de la tabla Acciones.
 
 ![Add actions](img/Actions-Add-action-4D-for-iOS.png)
 
-Then just **select the table** you want to link to this add action.
+Luego **seleccione la tabla** que quiere asociar a la acción añadir.
 
 Esto **creará automáticamente** todos los parámetros en el Editor de proyectos. En la aplicación generada, esto le permitirá editar cada valor de campo.
 
 Para ese tipo de acción, verá que todas las **propiedades** ya están completadas para su conveniencia al lado derecho de la lista de parámetros.
 
 
-### Edit action
+### Acción de edición
 
 La creación de **acciones de edición** sigue el mismo proceso que las acciones de adición, con la excepción de que no podrá definir valores predeterminados desde la sección Acciones.
 
 
 
-### Delete action
+### Acción de eliminación
 
-**Delete action** creation follows the same process as the Edit action. The only difference is that this action allows you to remove an entity.
+La creación de **acciones de eliminación ** sigue el mismo proceso que las acciones de edición. La única diferencia es que esta acción le permite eliminar una entidad.
 
-To create a Delete action, select the **Delete action for** option accessible from the **+ button** at the bottom of the Actions table.
+Para crear una acción de eliminación, seleccione la opción **Acción de eliminación para**, accesible desde el **botón + ** en la parte inferior de la tabla Acciones.
 
-This type of action should be used with caution.
+Este tipo de acción debe utilizarse con precaución.
 
 ![Delete actions](img/Actions-Delete-action-4D-for-iOS.png)
 
-### Share action
+### Acción compartir
 
 Selecting the **Share action** will allow your mobile users to share content with other users. You just need to select the scope:
 
