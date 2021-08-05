@@ -20,7 +20,7 @@ Esta plantilla tiene una numeración de campos dinámica, lo que significa que l
 
 Centrémonos en las diferentes partes de este archivo svg y en lo que necesitará editar.
 
-## Title
+## Título
 
 ```xml
 <title>Custom Detail form</title>
