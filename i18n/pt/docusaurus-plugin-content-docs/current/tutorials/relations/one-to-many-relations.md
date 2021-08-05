@@ -3,9 +3,9 @@ id: one-to-many-relations
 title: One to Many relations
 ---
 
-This tutorial will show you how easy it can be to include One to Many relations in your mobile project.
+Este tutorial vai mostrar como é fácil incluir relações Um para Muitos em seu projeto móvel.
 
-Let's get started by downloading the Starter project:
+Vamos começar baixando o Projeto Starter:
 
 <div className="center-button">
 <a className="button button--primary"
@@ -34,21 +34,21 @@ Agora isso vai operar como qualquer outro campo pelo resto do processo de criaç
 
 :::tip
 
-On mouse over, a tip displays the table name originating the relation.
+Quando passar o mouse over, uma dica exibe o nome de tabela originando a relação.
 
 :::
 
 ## Labels & Icons section
 
-The One to Many relation is now available in the **Labels and Icons** section.
+A relação Um para Muitos está agora disponível na seção **Etiquetas e ìcones**.
 
-It is important to know that including a One to Many relation will create a button into the genrated iOS app.
+É importante saber que incluindo uma relação Um para Muitos vai criar um botão no app iOS gerado.
 
-So, in the Labels & Icons section you will define:
+Então, na seção Etiquetas & Icones você vai definir:
 
 * um botão Etiqueta
 * um botão ícone
-* a title that will be displayed in the destination view (to indicate where you come from for example).
+* um título será exibido na vista de destino (para indicar de onde vem, por exemplo).
 
 ![Labels & Icons section Relations properties](img/Relations-properties-Labels-icons-section-4D-for-iOS.png)
 
@@ -66,7 +66,7 @@ So, in the Labels & Icons section you will define:
 
 ![Related field in Forms section](img/One-to-n-relations-task-ios-app.png)
 
-Well done! You've successfully included One to Many relations in your mobile project.
+Muito bem!  Você incluiu com sucesso as relações Um a Muitos em seu projeto móvel.
 
 Baixe o projeto terminado:
 
