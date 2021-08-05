@@ -24,7 +24,7 @@ Para comenzar, primero descarguemos el **proyecto Starter** basado en nuestra ap
 href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/159a7b73bd3556890a205024af42440faf0b277c.zip">Download</a>
 </div>
 
-## PASO 1. Add action
+## PASO 1. Añadir acción
 
 Comencemos por una tarea simple. Abra el proyecto móvil Tasks y vaya directamente a la **sección Actions**.
 
@@ -47,7 +47,7 @@ Para esto, creemos una acción utilizando una acción preestablecida **Agregar**
 
 En este punto, todos los **parámetros de las acciones de adición** se crean automáticamente y están listos para usar.
 
-## PASO 2. Edit action
+## PASO 2. Acción de edición
 
 Ahora creemos una acción que le permitirá **editar el contenido de su aplicación**.
 
@@ -69,7 +69,7 @@ En este punto verá:
 
 No se preocupe, manejaremos el código 4D para estas acciones más adelante. :-)
 
-## PASO 3. Delete action
+## PASO 3. Acción de eliminación
 
 El proceso de creación de la acción predefinido **Eliminar** es casi el mismo que la acción Editar:
 
@@ -81,7 +81,7 @@ El proceso de creación de la acción predefinido **Eliminar** es casi el mismo 
 
 En este punto, verá una **nueva acción** llamada *"deleteTasks"* con *"Remove"* como la etiqueta predeterminada.
 
-![Delete action](img/Delete-action-final.png)
+![Acción de eliminación](img/Delete-action-final.png)
 
 No necesita preocuparse por los parámetros o propiedades de este tipo de acción.
 
