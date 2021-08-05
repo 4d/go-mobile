@@ -128,7 +128,7 @@ Visit [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to 
 To install a custom formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a custom format can be selected from the Formats menu, just like a built-in formats.
 
 
-## Title
+## Título
 
 This property is only available for Relation fields. The defined title will be displayed on top of the destination view when using a relation.
 
