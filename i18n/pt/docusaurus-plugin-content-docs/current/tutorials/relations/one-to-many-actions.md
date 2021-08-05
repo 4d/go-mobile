@@ -4,11 +4,11 @@ title: Relações Um para Muitos - Ações
 ---
 
 
-We are now going to go a little bit further and **create a task for a specific employee**.
+Vamos agora  **criar uma tarefa para um funcionário específico**.
 
 É fácil criar uma entidade usando **parent Entity** !
 
-Let's get started by downloading the Starter project:
+Vamos começar baixando o Projeto Starter:
 
 <div className="center-button">
 <a className="button button--primary"
@@ -19,7 +19,7 @@ href="https://github.com/4d-go-mobile/tutorial-RelationsActions/archive/6c649733
 
 * Abra o editor de projeto e vá para a seção Ação.
 
-* Add a `addProject` Action
+* Adicionar uma Ação `addProject`
 
 ![create addProject Method](img/create-addProject-Method-4D-for-iOS-relation-parent-ID.png)
 
