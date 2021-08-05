@@ -1,18 +1,18 @@
 ---
 id: session-management
-title: Session management
+title: Gestión de sesión
 ---
 
 
 
 
-## Session file
+## Archivo de sesión
 
-When a user opens the app for the first time, a session file is created and stored next to the current data file in the MobileApps folder.
+Cuando un usuario abre la aplicación por primera vez, se crea un archivo de sesión y se almacena junto al archivo de datos actual en la carpeta MobileApps.
 
-The session files are organized and grouped by app folder. The Team ID and app bundle ID are concatenated to create the app folder names.
+Los archivos de sesión están organizados y agrupados por carpeta de aplicación. Los TeamID y Bundle ID de la aplicación se concatenan para crear los nombres de las carpetas de la aplicación.
 
-Here is an example of a 4D for iOS-generated session file:
+Este es un ejemplo de un archivo de sesión generado para 4D for iOS:
 
 ```json
 {
@@ -47,36 +47,36 @@ Here is an example of a 4D for iOS-generated session file:
 
 ```
 
-If you want the ability to manually validate the first login for every user session, you must change the "accepted" default status to "pending" by adding `$response.verify:=True` to the [*On Mobile App Authentication*](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) database method.
+Si desea la posibilidad de validar manualmente el primer inicio de sesión para cada sesión usuario, debe cambiar el estado por defecto "aceptado" a "pendiente" añadiendo `$response.verify:=True` al método base [*On Mobile App Authentication*](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html).
 
 
-## Mobile Session Management Component
+## Componente Mobile Session Management
 
-Sessions can be managed by the **Mobile Session Management** component:
+Las sesiones pueden ser gestionadas por el componente **Gestión de sesiones móviles**:
 
 <div>
 <a className="button button--primary"
-href="https://github.com/4d/Mobile-Session-Management/releases/latest">Mobile Session Management component</a>
+href="https://github.com/4d/Mobile-Session-Management/releases/latest">Componente Mobile Session Management</a>
 </div>
 
-1. Download and unzip the zip file
-2. Go to Build / Components file and get the MOBILE SESSION MANAGEMENT.4dbase
-3. Create a **Components** folder next to the 4D project with the app's data.
-4. Place the **MOBILE SESSION MANAGEMENT** component in the newly created **Components** folder.
-5. Restart 4D.
-6. Click on the **Execute** button from the toolbar
-7. In the 4D Methods Explorer, select the **MOBILE SESSION MANAGEMENT** method and click on the **Execute** button.
-8. The Apps window will appear displaying all of your apps:
+1. Descargue y descomprima el archivo zip
+2. Vaya al archivo Generar / Componentes y obtenga el archivo MOBILE SESSION MANAGEMENT.4dbase
+3. Cree una carpeta **Componentes** junto al proyecto 4D con los datos de la aplicación.
+4. Coloque el componente **MOBILE SESSION MANAGEMENT** en la carpeta **Componentes** recién creada.
+5. Reinicie 4D.
+6. Haga clic en el botón **Ejecutar** de la barra de herramientas
+7. En el explorador de métodos 4D, seleccione el método **MOBILE SESSION MANAGEMENT** y haga clic en el botón **Ejecutar**.
+8. La ventana de aplicaciones aparecerá mostrando todas sus aplicaciones:
 
 ![Session](img/session-management.png)
 
-* Right click on a session to reveal the session file in the Finder or delete it.
-* You can change and define the session status for each device: accepted or pending
+* Haga clic derecho en una sesión para mostrar el archivo sesión en el Finder o elimínelo.
+* Puede cambiar y definir el estado de la sesión para cada dispositivo: aceptado o pendiente
 
 ![Session selected](img/session-management-selected.png)
 
 
-* The **Push** button will update the session in memory.
-* The **Refresh** button updates the session list. 
+* El botón **Push** actualizará la sesión en la memoria.
+* El botón **Refresh** actualiza la lista de sesiones. 
 
 
