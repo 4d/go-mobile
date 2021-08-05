@@ -48,48 +48,48 @@ Se muestra la caja de diálogo de bienvenida:
 
 ![Project Name](img/new-project.png)
 
-3. Give your project a name and click **Continue**.
+3. De un nombre a su proyecto y haga clic en **Continuar**.
 
-The Mobile project editor is displayed and the mobile file architecture is automatically created in your 4D project.
+Se muestra el editor de proyectos móviles y se crea automáticamente la arquitectura de archivos móviles en su proyecto 4D.
 
-## Opening a mobile project
+## Abrir un proyecto móvil
 
-To open a mobile project:
+Para abrir un proyecto móvil:
 
-1. Start your 4D application and open the 4D project for which you want to open the mobile project.
-2. Select **Open > Mobile Project** from the **File** or the toolbar menu.
+1. Inicie su aplicación 4D y abra el proyecto 4D para el que desea abrir el proyecto móvil.
+2. Seleccione **Abrir > Proyecto móvil** en el menú **Archivo** o en la barra de herramientas.
 
-The mobile project selection dialog box is displayed. It contains the list of mobile projects already defined for the current database:
+Se muestra la caja de diálogo de selección del proyecto móvil. Contiene la lista de proyectos móviles ya definidos para la base de datos actual:
 
 ![Project Name](img/select-project.png)
 
-The icon on the left side indicates if the project was created for Android, iOS, or both.
+El icono de la izquierda indica si el proyecto fue creado para Android, iOS o ambos.
 
-3. Double-click on the project to open, or select the project and click **Open**.
+3. Haga doble clic en el proyecto para abrirlo, o seleccione el proyecto y haga clic en **Abrir**.
 
-### Open another project
+### Abrir otro proyecto móvil
 
-The **Open another project...** link allows you to select any valid [`.4dmobileapp`](#mobile-project-architecture) file that is not listed in the dialog box.
+El enlace **Abrir otro proyecto...** permite seleccionar cualquier archivo [`.4dmobileapp`](#arquitectura-de-proyecto-móvil) válido que no aparezca en la caja de diálogo.
 
-:::warning
+:::advertencia
 
-The selected mobile project must match the current data model, otherwise it will be updated and may not work as expected.
+El proyecto móvil seleccionado debe coincidir con el modelo de datos actual, de lo contrario se actualizará y podría no funcionar como se espera.
 
 :::
 
-## Deleting a mobile project
+## Eliminar un proyecto móvil
 
-To delete a mobile project, just remove the mobile project folder from the 4D project folder.
+Para eliminar un proyecto móvil, basta con quitar la carpeta del proyecto móvil de la carpeta del proyecto 4D.
 
 
-## Mobile project architecture
+## Arquitectura de proyectos móviles
 
-Mobile projects are created inside the main 4D project folder:
+Los proyectos móviles se crean dentro de la carpeta principal del proyecto 4D:
 
-- My4DProject (*main 4D project folder*)
-    + Mobile Projects
+- My4DProject (*carpeta principal del proyecto 4D*)
+    + Proyectos móviles
         * MyMobileProject
             - project.4dmobileapp
-            - *other files and folders*
+            - *otros archivos y carpetas*
 
 
