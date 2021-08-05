@@ -3,13 +3,13 @@ id: list-form-svg-file
 title: Template.svg
 ---
 
-The `template.svg` file is a basic visual representation of a template. Neste arquivo, precisa definir áreas para poder adicionar campos para seu modelo de formulário lista do editor de projeto.
+O arquivo  `template.svg` é uma representação visual básica de um modelo. Neste arquivo, precisa definir áreas para poder adicionar campos para seu modelo de formulário lista do editor de projeto.
 
 Aqui está a versão terminada:
 
 ![Template svg file](img/template-svg-file.png)
 
-Let’s focus on the different parts of this svg file and what you'll need to edit.
+Vamos focar nas diferentes partes de seu arquivo SVG e o que vai precisar para editar.
 
 ## Title
 
@@ -17,7 +17,7 @@ Let’s focus on the different parts of this svg file and what you'll need to ed
 <title>Custom List form</title>
 ```
 
-Title of the template.
+Título do modelo.
 
 ## ios:values
 
@@ -25,18 +25,18 @@ Title of the template.
 <text id="cookery" ios:values="search,section,f1,f2,f3"/>
 ```
 
-Includes IDs which define your form areas:
+Inclui IDs que definem suas áreas formulário:
 
-* **search**: Refers to the search field area. Isso permite que arraste e solte um campo como um critério de pesquisa em seu formulário lista (opcional).
-* **section**: Refers to the section field area. Isso permite que arraste e solte um campo como o critério de ordenação em seu formulário lista (opcional).
-* **f1, f2 and f3**: Refers to the fields to display in each cell of your list form. Isso permite que arraste e solte campos para aparecer em suas células de formulário lista.
+* **search **: Refere a área campo pesquisa. Isso permite que arraste e solte um campo como um critério de pesquisa em seu formulário lista (opcional).
+* **section **: Refere a àrea campo da seção. Isso permite que arraste e solte um campo como o critério de ordenação em seu formulário lista (opcional).
+* **f1, f2 and f3 **: Refere aos campos a exibir em cada célula do formulário lista. Isso permite que arraste e solte campos para aparecer em suas células de formulário lista.
 
-## Area position, height, and width
+## Posição, altura e largura da área
 
-You can define the position, height and width for:
+Pode definir a posição, altura e largura para:
 
 * Campo de pesquisa
-* Pesquisa seção
+* Sectionfield
 * Outros campos gerais que serão exibidas em cada célula tabela
 
 ### Área searchableField:
@@ -66,10 +66,10 @@ You can define the position, height and width for:
 2. Posição fundo, altura e largura da Área
 3. Ícone para exibir um ícone lupa no campo de pesquisa
 4. Define a posição da área de texto e a largura
-5. Define the droppable field position, height and width, as well as accepted [**field types**](#iostypes)
+5. Define a posição, altura e largura dos campos soltáveis, assim como [**tipos de campos aceitos**](#iostypes)
 6. Define um botão de cancelar que será mostrado para eliminar o conteúdo atual
 
-The searchable field is optional.
+O campo pesquisável é opcional.
 
 
 ### Área SectionField:
@@ -90,10 +90,10 @@ The searchable field is optional.
 
 1. Posição, altura e largura da Área de fundo
 2. Define a posição da área de texto e a largura
-3. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
+3. Define a posição, altura e largura dos campos soltáveis, assim como [**tipos de campos aceitos**](#iostypes)
 4. Define um botão de cancelar que será mostrado para eliminar o conteúdo atual
 
-The section field is optional.
+O campo de seção é opcional.
 
 ### Área ImageField:
 
@@ -122,7 +122,7 @@ The section field is optional.
 2. Posição, altura e largura da Área de fundo
 3. Icone para mostrar uma imagem no imageField
 4. Define a posição da área de texto e a largura
-5. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
+5. Define a posição, altura e largura dos campos soltáveis, assim como [**tipos de campos aceitos**](#iostypes)
 6. Define um botão de cancelar que será mostrado para eliminar o conteúdo atual
 
 ### Área Title Field:
@@ -148,7 +148,7 @@ The section field is optional.
 1. Posição Y toda a área
 2. Posição, altura e largura da Área de fundo
 3. Define a posição da área de texto e a largura
-4. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
+4. Define a posição, altura e largura dos campos soltáveis, assim como [**tipos de campos aceitos**](#iostypes)
 5. Define um botão de cancelar que será mostrado para eliminar o conteúdo atual
 
 ### Área Subtitle Field:
@@ -174,34 +174,34 @@ The section field is optional.
 1. Posição Y toda a área
 2. Posição, altura e largura da Área de fundo
 3. Define a posição da área de texto e a largura
-4. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
+4. Define a posição, altura e largura dos campos soltáveis, assim como [**tipos de campos aceitos**](#iostypes)
 5. Define um botão de cancelar que será mostrado para eliminar o conteúdo atual
 
 
-## ios:types
+## tipos:ios
 
-The following field types are supported:
+Os tipos de campo abaixo são compatíveis:
 
-| Code | Type           |
-| ---- | -------------- |
-| 0    | alpha          |
-| 1    | real           |
-| 2    | text           |
-| 3    | picture        |
-| 4    | date           |
-| 8    | integer        |
-| 9    | longint        |
-| 11   | time           |
-| 25   | integer 64 bit |
+| Code | Type            |
+| ---- | --------------- |
+| 0    | alpha           |
+| 1    | real            |
+| 2    | texto           |
+| 3    | imagem          |
+| 4    | data            |
+| 8    | inteiro         |
+| 9    | inteiro longo   |
+| 11   | hora            |
+| 25   | inteiro 64 bits |
 
 :::nota
 
-For more information on these field types, refer to [**this page**](https://developer.4d.com/docs/en/Concepts/data-types.html).
+Para saber mais sobre estes tipos de campo, consulte [**esta página**](https://developer.4d.com/docs/en/Concepts/data-types.html).
 
 :::
 
 :::tip
 
-To make field type definition easier, 4D for iOS allows you to include field types with **positive values** and also exclude field types with **negative values**. For example, `ios:type="-3,-4"` will allow you to drag and drop every field except images and dates. To include all types, just type `ios:type="all"`.
+Para fazer com que a definição de tipo de campo seja mais fácil, 4D for iOS permite que inclua tipos de campo com  **valores positivos** e também excluir tipos de campos com **valores negativos**. Por exemplo, `ios:type="-3,-4"` permite que arraste e solte todos os campos exceto imagens e datas. Para incluir todos os tipos, apenas entre `ios:type="all"`.
 
 :::
