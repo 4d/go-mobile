@@ -5,15 +5,15 @@ title: Archiver et exporter un projet
 
 > **OBJECTIFS**
 > 
-> * Archive and export your 4D for iOS project
-> * Generate .ipa and manifest files
+> * Archiver et exporter un projet 4D for iOS
+> * Générer des fichiers .ipa et des fichiers manifest
 
 > **CONDITIONS PRÉALABLES**
 > 
 > * [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program)
-> * A secured web server
-> * 57 x 57 px icon
-> * 512 x 512 px icon
+> * Un serveur Web sécurisé
+> * Une icône de résolution 57 x 57 px
+> * Une icône de résolution 512 x 512 px
 
 
 ## ÉTAPE 1. Configurer Xcode
@@ -34,18 +34,18 @@ Xcode installera automatiquement les certificats et les éléments de provisioni
 
 * Dans l’onglet SECTIONS :
 
-    * General: Enter your Team ID.
+    * Général : Saisissez votre Team ID.
 
     ![Enterprise-Team-ID](img/Enterprise-Team-ID.png)
 
-    * Publishing: Enter your production URL (HTTPS is mandatory for deployment).
+    * Publication : Entrez votre URL de production (HTTP est obligatoire pour le déploiement).
 
 * Dans l’onglet GÉNÉRATION :
     * Créer & exécuter : Créez votre projet.
 
 ## ÉTAPE 4. Ouvrez votre projet avec Xcode
 
-* From the 4D for iOS Project Editor's BUILD tab, click on **Project > Open the project with Xcode**
+* À partir de l’onglet GÉNÉRATION de l'éditeur de projet, cliquez sur **Projet > Ouvrir le produit avec Xcode**
 
 ![pen your project with Xcode ](img/Open-your-project-Xcode-4D-for-iOS.png)
 
