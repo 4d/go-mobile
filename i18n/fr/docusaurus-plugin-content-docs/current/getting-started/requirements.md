@@ -6,18 +6,18 @@ title: Pré-requis
 4D for iOS and 4D for Android require a specific minimum configuration.
 
 
-## System requirements
+## Configuration système
 
 System requirements are the same as [4D's minimum system requirements](https://us.4d.com/product-download/Feature-Release).
 
 8GB of RAM is recommended.
 
 
-## Software requirements
+## Configuration logicielle
 
 ### 4D
 
-- **Development**: 4D v18 with a 4D Developer Pro licence
+- **Développement**: 4D avec une licence 4D Developer Pro
 
 - **Deployment**: 4D Server v18
     - The 4D Web Server must be started.
