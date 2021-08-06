@@ -260,11 +260,11 @@ A continuación, seleccione Field View 2 y agregue lo siguiente:
 
 ![Custom template final result](img/custom-template-final-result.png)
 
-## Where to go from here?
+## ¿Qué hacer ahora?
 
-In this tutorial, we've covered the basics for creating detail form templates. Ahora puede crear plantillas simples por su cuenta utilizando los recursos del proyecto Starter.
+En este tutorial, hemos cubierto los conceptos básicos para crear plantillas de formularios detallados. Ahora puede crear plantillas simples por su cuenta utilizando los recursos del proyecto Starter.
 
-Download the completed template folder:
+Descargue la carpeta de la plantilla terminada:
 
 <div className="center-button">
 <a className="button button--primary"
