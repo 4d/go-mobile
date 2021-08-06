@@ -76,7 +76,7 @@ This is where you define the subset of data to expose to mobile devices. Select 
 
 For our example, select **ID**, **First Name**, **Last Name**, **Job**, **Company**, **Phone**, **Notes**, and **Photo**.
 
-![Structure](img/Contact-app-structure-section-4D-for-iOS.png)
+![Estructura](img/Contact-app-structure-section-4D-for-iOS.png)
 
 > We highly recommend publishing your primary key in order to identify each record of the database.
 
