@@ -285,65 +285,65 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
   ```
 
 
-## iOS app Side
+## aplicación iOS
 
-In your iOS app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section.
+En su aplicación iOS, las acciones están disponibles de diferentes formas en sus formularios listados y detallados, según las plantillas que seleccione en la sección Formularios.
 
-### Table List forms
+### Formularios Lista en tabla
 
-* **Entity action:** Swipe left on a cell to display the available actions in a List form. A "More" button is displayed if you've defined more than three actions per entity.
+* **Acción de entidad:** deslice hacia la izquierda en una celda para mostrar las acciones disponibles en un formulario Lista. Se muestra un botón "+" si define más de 3 acciones por entidad.
 
 ![Entity Lisform Tableview](img/ListForm-entity-action-tableview.png)
 
-* **Table actions:** A generic actions button is available in the navigation bar to display a list of available table actions.
+* **Acciones de tabla:** un botón de acciones genéricas está disponible en la barra de navegación para mostrar una lista de acciones de tabla.
 
 ![Table Listform Tableview](img/ListForm-table-action-tableview.png)
 
-:::tip
+:::consejo
 
-Actions will be displayed in the same order as defined in the Action section.
+Las acciones se mostrarán en el mismo orden definido en la sección Acción.
 
 :::
 
-### Collection List forms
+### Formularios Lista en colección
 
-* **Entity action:** Depending on the template, actions are displayed by clicking on a generic button or by maintaing the pressure on a cell.
+* **Acción de entidad:**dependiendo de la plantilla seleccionada, las acciones se muestran al hacer clic en un botón genérico o al mantener el clic en una celda.
 
 ![Entity Listform Collectionview](img/ListForm-entity-action-collectionview.png)
 
-* **Table actions:** Like the Table List forms, a generic Actions button is available in the navigation bar to display a list of availble table actions.
+* **Acciones de tabla:** como para los formularios Lista en tablas, hay un botón de acciones genérico disponible en la barra de navegación para mostrar una lista de acciones de tabla.
 
 ![Table Listform Collectionview](img/ListForm-table-action-collectionview.png)
 
-### Detail forms
+### Formularios detallados
 
-As with Table actions in List forms, a generic Actions button is available in the navigation bar to display all your entity actions in a list.
+Como para las acciones de tabla en los formularios detallados, un botón de acciones genéricas está disponible en la barra de navegación para mostrar todas sus acciones de entidad en una lista.
 
 ![Entity Detailform](img/Detailform-final.png)
 
-### Edition forms
+### Formularios de edición
 
-If you have created an Edit or an Add action, as soon as you select it from the action list, an **Edition form** will appear.
+Si ha creado una acción de edición o de adición, tan pronto como la seleccione de la lista de acciones, aparecerá un **formulario de edición**.
 
 ![Send task comment](img/Action-parameters-sendComment.png)
 
-From here, you can:
+Desde acá, puede:
 
-* edit all of your fields by selecting them, and
-* validate or cancel your modifications using the **Done** or **Cancel** buttons (available in the navigation bar).
+* editar todos sus campos seleccionándolos y
+* validar o cancelar sus modificaciones con los botones **Listo** o **Cancelar** (disponibles en la barra de navegación).
 
-For your convenience, the Edition form includes a few **special features**:
+Para su comodidad, el formulario de Edición incluye algunas **funcionalidades especiales**:
 
-* The keyboard type depends on the selected parameter type in the Action section.
-* You can go to the next or previous field using the arrow on top of the keyboard.
-* The iOS keyboard can be closed by touching anywhere outside of a field.
-* Indication is given to the user when a value is not valid.
-* The view focuses on empty mandatory fields when the user clicks the Done button.
+* El tipo de teclado depende del tipo de parámetro seleccionado en la sección Actions.
+* Puede ir al campo siguiente o anterior utilizando la flecha en la parte superior del teclado.
+* El teclado iOS se puede cerrar tocando cualquier parte fuera de un campo.
+* Se le indica al usuario cuando un valor no es válido.
+* La vista se centra en los campos obligatorios vacíos cuando el usuario hace clic en el botón Done.
 
-## Where to go from here?
+## ¿Qué hacer ahora?
 
-* A [tutorial]`(actions-getting-started.html)` is available to guide you through the **action definition process**.
+* Un [tutorial]`(actions-getting-started.html)` está disponible para guiarlo a través del **proceso de definición de una acción**.
 
-* Another [tutorial]`(action-custom-template.html)` will guide you through the **action TAG integration** for custom templates.
+* Otro [tutorial]`(action-custom-template.html)` lo guiará a través de la **integración TAG de acción** en las plantillas personalizadas.
 
-* A final [tutorial]`(action-parameters.html)` will guide you through the **action parameters definition**.
+* Un [tutorial]`(action-parameters.html)` final lo guiará a lo largo de la **definición de los parámetros de una acción**.
