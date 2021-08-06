@@ -1,6 +1,6 @@
 ---
 id: list-form-layout
-title: Android Layout
+title: Layout Android
 ---
 
 In this section you will see how to create your Android list form interface with Android Studio.
@@ -15,31 +15,31 @@ Para cada célula, vamos adicionar:
 * Title
 * Subtítulo
 
-## Open the layout file with Android Studio
+## Abrir um arquivo layout com Android Studio
 
-The best way to edit or create a template is to :
+A melhor forma de editar ou criar um modelo é:
 
-* Open Android Studio and create a new empty mobile project clicking on File > New > New Project...
+* Abrir o Studio Android e criar um novo projeto móvel vazio clicando no Arquivo > New > New Project...
 
-* Select the Empty Activity template
+* Selecionar o modelo Empty Activity
 
 ![Android Studio project creation](img/template-selection.png)
 
-* Configure your project and click **Finish**
+* Configure seu projeto e clique em  **Finish**
 
 ![Configure Android project](img/configure-android-project.png)
 
-* Copy the layout.xml file in app > res > layout dropping it directly on the project layout folder
+* Copie o arquivo layout.xml no layout app > res > soltando diretamente na pasta de layout de projeto
 
 ![Copy layout.xml file](img/copy-layout.png)
 
-* You should have that at that point :
+* Nesse ponto deve ter:
 
 ![Android project](img/android-project.png)
 
-* Click on the top right **Split** option to visualize the template preview as well as the xml code.
+* Clique na opção direita superior**Split** para visualizar a visualização do modeloassim como código xml.
 
-It's quite empty, so let's add some content!
+Está vazio, então vamos adicionar conteúdo!
 
 
 ## Add a CardView container
@@ -78,7 +78,7 @@ Define the **width** and **height** of your container, the **margins** and as we
 
 
 
-Here is the full layout code at this stage :
+Aqui está o código de layout completo nesse estágio:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -149,12 +149,12 @@ In order to have a nice Image view display we are going to use agin a CardView c
             </androidx.cardview.widget.CardView>
 ```
 
-As you can see the ImageView is embedded into the CardView. That allows to add corner radius to it.
+Como pode ver ImageView está embebido no CardView. Isso permite adicionar bordas arrendondadas.
 
-The `app:imageUrl="__IMAGE_1__"` line will allow to bind image value that is situated in position 1 in the svg file that you previously defined.
+A linha `app:imageUrl="__IMAGE_1__"` permite fixar, bind o valor de imagem que está situado na posição 1 do arquivo svg definido previamente.
 
 
-The `tools:background="@tools:sample/avatars"` line simply there to display an ImageView placeholder.
+A linha `tools:background="@tools:sample/avatars"` está simplesmente para exibir um valor provisório para ImageView.
 
 
 ![Add ImageView](img/add-imageview.png)
@@ -364,7 +364,7 @@ android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
 
 In our list form template we used `app:imageUrl="__IMAGE_1__"`
 
-Here we suppose the ImageView is the first view in the svg, and its view ID is `__SPECIFIC_ID_1__`. If it would be the third view, it would be `__IMAGE_3__` and its view ID would be `__SPECIFIC_ID_3__`.
+Aqui supomos que a  ImageView seja a primeira vsita no svg, e sua ID de vista é  `__SPECIFIC_ID_1__`. Se fosse a terceira vista, seria `__IMAGE_3__` e sua vista de ID seria `__SPECIFIC_ID_3__`.
 
 ### Etiquetas
 
