@@ -15,7 +15,7 @@ Neste tutorial, veremos como é fácil **agregar ações a planilhas personaliza
 
 ## PASSO 1. Baixe o Starter Project
 
-To begin, download the **Starter project**, which includes:
+Para começar, baixe o **Starter Project**, que inclui:
 
 * 2 modelos personalizados formulários Lista (TaskList e TasksCollection)
 * 1 modelo personalizado Formulário Detalhado (TasksDetails)
