@@ -1,6 +1,6 @@
 ---
 id: structure
-title: Structure
+title: Estructura
 ---
 
 This page displays all of the tables and fields that are exposed as REST resources in the 4D database, including relation attributes (based upon many-to-one and one-to-many relations). In fact, the page displays a view similar to [ORDA's datastore](https://developer.4d.com/docs/en/ORDA/overview.html).
