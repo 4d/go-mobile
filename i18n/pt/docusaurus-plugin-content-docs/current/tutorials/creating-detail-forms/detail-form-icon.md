@@ -1,6 +1,6 @@
 ---
 id: detail-form-icon
-title: Detail form icons
+title: Ícone de formulário detalhado
 ---
 
 Pode criar seu próprio ícone de modelo
@@ -14,10 +14,10 @@ O ícone será usado:
 
 ![Custom detailform template](img/custom-detailform-template.png)
 
-If this icon is missing from your detail form template folder, the **template.svg file** will be displayed in the template selector window and a question mark icon will be displayed above each table that's missing an icon.
+Se este ícone estiver faltando na pasta de seu modelo de formulário detalhado, será exibido **template.svg file** será exibido na janela de seletor de modelo e um ícone de ponto de interrogação será exibido acima de cada tabela em que faltar um ícone.
 
 ![Missing listform icon custom template](img/missing-detailform-icon-custom-template.png)
 
-You can use any image software to create the detail form template icon.
+Pode usar qualquer software de imagem para criar o ícone do modelo de formulário detalhado.
 
 ![Custom listform template icon](img/custom-detail-form-icon.png)
