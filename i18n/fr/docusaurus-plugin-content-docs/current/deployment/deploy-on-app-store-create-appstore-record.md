@@ -5,13 +5,13 @@ title: Créer une fiche sur App Store
 
 > **OBJECTIFS**
 > 
-> * Create an App ID on your Developer Account
-> * Create your app in App Store Connect
+> * Créer un identifiant d’application sur son compte développeur ("Developer")
+> * Créer votre application dans l’App Store Connect
 
 > **CONDITIONS PRÉALABLES**
 > 
-> * [Apple Developer Program for organization](../tutorials/developer-program/register-apple-developer-program-organization) or
-> * [Apple Developer Program as an individual](../tutorials/developer-program/register-apple-developer-program-individual)
+> * [Apple Developer Program pour les entreprises](../tutorials/developer-program/register-apple-developer-program-organization) ou
+> * [Apple Developer Program pour les particuliers](../tutorials/developer-program/register-apple-developer-program-individual)
 
 
 ## ÉTAPE 1. Créez votre identifiant d'application
@@ -22,8 +22,8 @@ title: Créer une fiche sur App Store
 
 > **NOTE**
 > 
-> * If you have chosen an Apple Developer Account as an individual, your account is available immediately and you can create your App ID.
-> * If you have chosen an Apple Developer Account as an organization, you must wait for Apple validation to create your App ID.
+> * Si vous avez choisi un compte de développeur Apple en tant que particulier ("Apple Developer Account as an individual"), votre compte est immédiatement disponible et vous permet de créer votre identifiant d'application.
+> * Si vous avez choisi un compte de développeur Apple en tant qu’entreprise ("Apple Developer Account as an organization"), vous devez attendre la validation d’Apple pour pouvoir créer votre identifiant d'application.
 
 Pour créer votre identifiant d'application, sélectionnez [Certificates, IDs & Profile](https://developer.apple.com/account/ios/identifier/bundle) depuis votre compte développeur
 
@@ -43,7 +43,7 @@ Pour créer votre identifiant d'application, sélectionnez [Certificates, IDs & 
 
 ## ÉTAPE 2. Identifiez-vous sur l'App Store Connect
 
-* Sign in to your [App Store Connect Account](https://appstoreconnect.apple.com)
+* Connectez-vous à votre [compte App Store Connect](https://appstoreconnect.apple.com)
 * Cliquez sur **My Apps**.
 
 ![App Store Connect](img/App-Store-Connect-home-page.png)
@@ -67,7 +67,7 @@ Ajoutez les informations suivantes :
 
 > **NOTE**
 > 
-> If your Bundle ID is not available, it may already be used by another app in the App Store. You'll need to change yours in your Xcode project.
+> Si votre Bundle ID n’est pas disponible, il se peut qu'il soit déjà utilisé par une autre application disponible dans l’App Store. Vous devrez alors changer le vôtre dans votre projet Xcode.
 
 ## ÉTAPE 4. Informations sur l’application
 
@@ -75,7 +75,7 @@ Dans App Store Connect > App Information :
 
 * Définissez le "Privacy Policy URL" de votre application (facultatif).
 * Entrez un sous-titre pour votre application. Celui-ci apparaîtra en-dessous du nom de votre application dans l’App Store d'iOS 11.
-* Select a primary and secondary (optional) category for your app to appear in.
+* Sélectionnez une catégorie primaire et secondaire (facultatif) dans laquelle/lesquelles apparaitra votre application.
 
 ![Informations sur l’application](img/App-Store-Connect-app-information.png)
 
@@ -83,17 +83,17 @@ Dans App Store Connect > App Information :
 
 C’est ici que vous pourrez définir le prix de votre application.
 
-> **TIPS**
+> **ASTUCES**
 > 
-> You can define limited-time discounts by specifying start and end dates.
+> Vous pouvez appliquer des remises limitées dans le temps en précisant les dates de début et de fin de l'offre.
 
 ## ÉTAPE 6. Préparation à l'inscription
 
 Dans **Version Information**, renseignez tous les atouts de votre application que vous souhaitez faire figurer dans l’App Store :
 
-> **TIPS**
+> **ASTUCES**
 > 
-> You can generate all of your screenshots in Simulator (File > New Screen Shot).
+> Vous pouvez générer toutes vos captures d'écran dans le simulateur (File > New Screen Shot).
 
 ![Préparation à l'inscription](img/Prepare-for-submission-screenshot-description.png)
 
