@@ -61,7 +61,7 @@ To include custom icons in your project:
 
 :::nota
 
-You may have to create the `medias` folder.
+Puede que tenga que crear la carpeta `medias`.
 
 :::
 
