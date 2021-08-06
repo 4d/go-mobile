@@ -4,7 +4,7 @@ title: Deep Linking
 ---
 
 
-Thanks to the **deep linking** feature, you can share the content that you're currently viewing with all of your collegues. Here's an illustration demonstrating deep linking:
+Gracias a la funcionalidad **deep linking**, puede compartir el contenido que está viendo en ese momento con todos sus colegas. Here's an illustration demonstrating deep linking:
 
 ![Deep linking animation](img/4d-for-ios-deeplinking.gif)
 
