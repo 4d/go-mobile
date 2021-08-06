@@ -5,7 +5,7 @@ title: Distribuer une application interne
 
 > **OBJECTIFS**
 > 
-> Upload your app to a secured server.
+> Télécharger une application sur un serveur sécurisé.
 
 
 ## ÉTAPE 1. Téléchargez votre application
@@ -13,33 +13,33 @@ title: Distribuer une application interne
 Téléchargez votre application sur un serveur sécurisé :
 
 * Ressources (image d'affichage et image en taille réelle)
-* `manifest.plist` file
-* `.ipa` file
+* Fichier `manifest.plist`
+* Fichier `.ipa`
 
 Vous pouvez utiliser n’importe quel service de stockage en nuage pour distribuer votre application à partir du moment où il est sécurisé (Dropbox, Google Drive, etc.).
 
 :::note
 
-Your asset and ipa URLs must match the URLs defined in your `manifest.plist` file.
+Votre ressource et vos URL ipa doivent correspondre aux URL définis dans votre fichier `manifest.plist`.
 
 :::
 
 ## ÉTAPE 2. Créez le lien d’installation
 
-Create an **ITMS Serices link** (iTUnes Music Store) with the full web address of your manifest file as a parameter:
+Créez un **lien de Services ITMS** (iTunes Music Store) avec, comme paramètre, l’adresse web complète de votre fichier manifest :
 
 ```html
 itms-services://?action=download-manifest&url=https://mywebserver.com/manifest.plist
 
 ```
 
-This link can be used when sending emails, embedded in an html page, or even within a QR code.
+Ce lien peut être utilisé pour l’envoi d’e-mails, intégré dans une page html, ou même dans un code QR.
 
-Here is a simple example:
+Voici un exemple simple :
 
 ![Contact demo app install](img/Contact-demo-app-install.png)
 
-*The QR Code used for this documentation is not active.*
+*Le Code QR utilisé pour cette documentation n’est pas actif.*
 
 ## ÉTAPE 3. Installez votre application sur iOS
 
@@ -61,4 +61,4 @@ Here is a simple example:
 
 * Vous pouvez ensuite accéder à votre application et l'ouvrir.
 
-Congratulations... you can now distribute your app in-house.
+Félicitations ! Vous pouvez désormais déployer votre première application interne .
