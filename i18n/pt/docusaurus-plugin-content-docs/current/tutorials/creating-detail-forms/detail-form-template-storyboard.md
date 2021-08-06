@@ -9,7 +9,7 @@ Aqui está o resultado que queremos atingir:
 
 ![Storyboard custom detailform](img/storyboard-custom-detailform.png)
 
-For this template, we're going to add a:
+Para este modelo, vamos adicionar:
 
 * Foto de perfil no cabeçalho
 * Um campo a duplicar
@@ -20,7 +20,7 @@ Primeiro, abra seu arquivo storyboard em Xcode.
 
 ![Empty storyboard custom template](img/empty-storyboard-custom-detailform-template.png)
 
-It's quite empty, so let's add some content!
+Está vazio, então vamos adicionar conteúdo!
 
 ## Adicione um "Scroll view"
 
@@ -262,9 +262,9 @@ Agora pode construir seu projeto no editor de projetos!
 
 ## Where to go from here?
 
-In this tutorial, we've covered the basics for creating detail form templates. Agora pode criar modelos simples usando os recursos do Starter Project.
+Neste tutorial cobrimos os conceitos básicos para criar seu modelo de formulário detalhado. Agora pode criar modelos simples usando os recursos do Starter Project.
 
-Download the completed template folder:
+Baixe a pasta do modelo de formatador completo:
 
 <div className="center-button">
 <a className="button button--primary"
