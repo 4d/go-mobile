@@ -15,7 +15,7 @@ Neste tutorial, vamos guiá-lo através da criação de vários exemplos de form
 
 ## Baixe o Starter Project
 
-To begin, download the **Starter project**, which includes:
+Para começar, baixe o **Starter Project**, que inclui:
 
 * Pastas**integerToImage_Images** e **textToImage_Images** que contêm imagens (para usar mais tarde para formatadores que incluem imagens)
 * Um arquivo de **Task Management.4dbase** (com um projeto de app móvel pronto para usar)
