@@ -364,7 +364,7 @@ android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
 
 In our list form template we used `app:imageUrl="__IMAGE_1__"`
 
-Here we suppose the ImageView is the first view in the svg, and its view ID is `__SPECIFIC_ID_1__`. If it would be the third view, it would be `__IMAGE_3__` and its view ID would be `__SPECIFIC_ID_3__`.
+Aquí suponemos que la ImageView es la primera vista del svg, y su ID de vista es `__SPECIFIC_ID_1__`. Si fuera la tercera vista, sería `__IMAGE_3__` y su ID de vista sería `__SPECIFIC_ID_3__`.
 
 ### Etiquetas
 
@@ -373,7 +373,7 @@ In our list form template we used `android:text="__TEXT_2__"` for the title.
 Here we suppose the title is the second view in the svg, and its view ID is `__SPECIFIC_ID_2__`.
 
 
-## Where to go from here?
+## ¿Qué hacer ahora?
 
 In this tutorial, we've covered the basics for creating Android list form templates. You are now able to create simple templates on your own using the Starter Project ressources. But wait - there’s more! In the next tutorial, you’ll learn how to build Android detail form templates!
 
