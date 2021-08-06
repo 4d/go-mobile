@@ -324,18 +324,18 @@ Here is the full layout code at this stage :
 
 ```
 
-## How to get data into your detail form
+## Cómo obtener datos en su formulario detallado
 
 ### Image View
 
-In our detail form template we used `app:imageUrl="__IMAGE_1__"`
+En nuestra plantilla de formulario detallado hemos utilizado `app:imageUrl="__IMAGE_1__"`
 
-Here we suppose the ImageView is the first view in the svg, and its view ID is `__SPECIFIC_ID_1__`. If it would be the third view, it would be `__IMAGE_3__` and its view ID would be `__SPECIFIC_ID_3__`.
+Aquí suponemos que la ImageView es la primera vista del svg, y su ID de vista es `__SPECIFIC_ID_1__`. Si fuera la tercera vista, sería `__IMAGE_3__` y su ID de vista sería `__SPECIFIC_ID_3__`.
 
 
-## Where to go from here?
+## ¿Qué hacer ahora?
 
-In this tutorial, we've covered the basics for creating detail form templates. You can now create simple templates on your own using the Starter Project resources. Download the completed template folder:
+En este tutorial, hemos cubierto los conceptos básicos para crear plantillas de formularios detallados. Ahora puede crear plantillas simples por su cuenta utilizando los recursos del Proyecto Starter. Descargue la carpeta de la plantilla terminada:
 
 <div className="center-button">
 <a className="button button--primary"
