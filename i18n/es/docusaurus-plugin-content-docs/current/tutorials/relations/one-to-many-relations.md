@@ -32,7 +32,7 @@ Este campo ahora funcionará como cualquier otro campo durante el resto del proc
 
 ![Structure section Relations properties](img/Structure-section-relations-4D-for-iOS.png)
 
-:::tip
+:::consejo
 
 Al pasar el ratón, una sugerencia muestra el nombre de la tabla fuente que origina la relación.
 
