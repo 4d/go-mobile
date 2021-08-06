@@ -4,14 +4,14 @@ title: Generalidades
 ---
 
 
-The 4D Mobile Project editor allows you to design, test, and build your native mobile projects for iOS and Android using a graphical interface. The window has two tabs: **Sections** and **Build**.
+El editor de proyectos de 4D Mobile le permite diseñar, probar y construir sus proyectos móviles nativos para iOS y Android utilizando una interfaz gráfica. La ventana tiene dos pestañas: **Secciones** y **Generar**.
 
 ![General section](img/General-section-4D-for-iOS.png)
 
-In the **Sections** tab, you'll find all of the necessary steps to create your mobile application:
+En la pestaña **Secciones**, encontrará todos los pasos necesarios para crear su aplicación móvil:
 
 * General
-* Structure
+* Estructura
 * Datos
 * Actions
 * Etiquetas e iconos
@@ -19,77 +19,77 @@ In the **Sections** tab, you'll find all of the necessary steps to create your m
 * Formularios
 * Publishing
 
-In the **Build** tab, you'll find embedded tools to build and test you mobile app:
+En la pestaña **Generar**, encontrará herramientas integradas para crear y probar su aplicación móvil:
 
 * Build and Run
 * Selección del simulador
 * Navegador de proyecto y de producto
 * Instalar
 
-The 4D Mobile Project editor is available from the **4D** application development environment (a 4D Developer Pro license is required).
+El editor de proyectos de 4D Mobile está disponible en el entorno de desarrollo de aplicaciones de **4D** (se requiere una licencia 4D Developer Pro).
 
-A 4D mobile project is strongly linked to a 4D data model. To be able to create or open a 4D mobile project, you must open the associated 4D project database beforehand.
+Un proyecto móvil 4D está fuertemente vinculado a un modelo de datos 4D. Para poder crear o abrir un proyecto 4D mobile, debe abrir previamente la base de proyectos 4D asociada.
 
 
-## Creating a mobile project
+## Crear un proyecto móvil
 
-To create a new mobile project:
+Para crear un nuevo proyecto móvil:
 
-1. Start your 4D application and open the 4D project for which you want to create a mobile project.
-2. Select **New > Mobile Project** from the **File** or the toolbar menu.
+1. Inicie su aplicación 4D y abra el proyecto 4D para el que desea crear un proyecto móvil.
+2. Seleccione **Nuevo > Proyecto móvil** en el menú **Archivo** o en la barra de herramientas.
 
 :::nota
 
-You need a 4D Developer Pro license to open the 4D mobile editor.
+Necesita una licencia 4D Developer Pro para abrir el editor 4D mobile.
 
 :::
 
-The welcome dialog box is displayed:
+Se muestra la caja de diálogo de bienvenida:
 
 ![Project Name](img/new-project.png)
 
-3. Give your project a name and click **Continue**.
+3. De un nombre a su proyecto y haga clic en **Continuar**.
 
-The Mobile project editor is displayed and the mobile file architecture is automatically created in your 4D project.
+Se muestra el editor de proyectos móviles y se crea automáticamente la arquitectura de archivos móviles en su proyecto 4D.
 
-## Opening a mobile project
+## Abrir un proyecto móvil
 
-To open a mobile project:
+Para abrir un proyecto móvil:
 
-1. Start your 4D application and open the 4D project for which you want to open the mobile project.
-2. Select **Open > Mobile Project** from the **File** or the toolbar menu.
+1. Inicie su aplicación 4D y abra el proyecto 4D para el que desea abrir el proyecto móvil.
+2. Seleccione **Abrir > Proyecto móvil** en el menú **Archivo** o en la barra de herramientas.
 
-The mobile project selection dialog box is displayed. It contains the list of mobile projects already defined for the current database:
+Se muestra la caja de diálogo de selección del proyecto móvil. Contiene la lista de proyectos móviles ya definidos para la base de datos actual:
 
 ![Project Name](img/select-project.png)
 
-The icon on the left side indicates if the project was created for Android, iOS, or both.
+El icono de la izquierda indica si el proyecto fue creado para Android, iOS o ambos.
 
-3. Double-click on the project to open, or select the project and click **Open**.
+3. Haga doble clic en el proyecto para abrirlo, o seleccione el proyecto y haga clic en **Abrir**.
 
-### Open another project
+### Abrir otro proyecto móvil
 
-The **Open another project...** link allows you to select any valid [`.4dmobileapp`](#mobile-project-architecture) file that is not listed in the dialog box.
+El enlace **Abrir otro proyecto...** permite seleccionar cualquier archivo [`.4dmobileapp`](#arquitectura-de-proyecto-móvil) válido que no aparezca en la caja de diálogo.
 
-:::warning
+:::advertencia
 
-The selected mobile project must match the current data model, otherwise it will be updated and may not work as expected.
+El proyecto móvil seleccionado debe coincidir con el modelo de datos actual, de lo contrario se actualizará y podría no funcionar como se espera.
 
 :::
 
-## Deleting a mobile project
+## Eliminar un proyecto móvil
 
-To delete a mobile project, just remove the mobile project folder from the 4D project folder.
+Para eliminar un proyecto móvil, basta con quitar la carpeta del proyecto móvil de la carpeta del proyecto 4D.
 
 
-## Mobile project architecture
+## Arquitectura de proyectos móviles
 
-Mobile projects are created inside the main 4D project folder:
+Los proyectos móviles se crean dentro de la carpeta principal del proyecto 4D:
 
-- My4DProject (*main 4D project folder*)
-    + Mobile Projects
+- My4DProject (*carpeta principal del proyecto 4D*)
+    + Proyectos móviles
         * MyMobileProject
             - project.4dmobileapp
-            - *other files and folders*
+            - *otros archivos y carpetas*
 
 

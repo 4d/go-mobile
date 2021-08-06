@@ -1,6 +1,6 @@
 ---
 id: define-filter-query
-title: Define a Filter Query
+title: Definir un Filter Query
 ---
 
 For the moment, if you build the Starter project app and enter "michelle.simpson@mail.com" as the login email (one of the account managers), you'll see **all manager contracts and statuses** (*Closed* and *In Progress*).

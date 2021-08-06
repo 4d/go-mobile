@@ -4,23 +4,23 @@ title: Many to One relations
 ---
 
 
-This tutorial will show you how easy it can be to include Many to one relations in your mobile projects.
+Este tutorial vai mostrar como é fácil incluir relações Muitos para Um em seu projeto móvel.
 
 :::nota
 
-In this tutorial, we will use the relation names between your tables. Giving descriptive relation names can make your project structure definition easier.
+Neste tutorial, vamos usar os nomes das relações entre suas tabelas. Dar nomes de relação bem descritivos ajuda a facilitar a definição de sua estrutura de projeto.
 
 :::
 
-Let's get started by downloading the Starter project:
+Vamos começar baixando o Projeto Starter:
 
 <div className="center-button">
 <a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-ManyToOneRelations/releases/latest/download/tutorial-ManyToOneRelations.zip">Starter project</a>
 </div>
 
-Here we want to display the category for each task in the detail form of your generated app. To do so, open the **StarteriOSProject** from **Open > Mobile Project...**
+Aquí queremos mostrar la categoría de cada tarea en el formulario detallado de su aplicación generada. Para fazer isso, abra **StarteriOSProject** from **Open > Mobile Project...**
 
-Then go right to your Structure section and select the **Task table**.
+Depois vá para a seção Estrutura e selecione a **tabela Task**.
 
 ### Structure section
 
@@ -34,7 +34,7 @@ Then go right to your Structure section and select the **Task table**.
 
 * Este campo funcionará como qualquer outro campo durante o resto do processo de criação da aplicação
 
-* You can also filter your app content using related fields from the Data section. To do so enter `TaskCategory.Name != 'Personal'` in the Filter query field to exclude personal tasks.
+* Pode também filtrar seu conteúdo de app usando campos relacionados da seção Data. Para fazer isso digite `TaskCategory.Name != 'Personal'` no campo Filter query para excluir as tarefas pessoais.
 
  ![Related field from Data section](img/Related-field-from-Data-section.png)
 
@@ -48,7 +48,7 @@ Then go right to your Structure section and select the **Task table**.
 
 * Build and Run
 
-You should see your related field in your app detail form !
+Seu campo relacionado deve aparecer no formulário detalhado do app!
 
 ![Related field in Forms section](img/final-result-n-to-one-relations.png)
 

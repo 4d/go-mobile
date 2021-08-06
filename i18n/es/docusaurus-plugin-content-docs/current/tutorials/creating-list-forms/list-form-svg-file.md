@@ -11,7 +11,7 @@ Aquí hay una versión final:
 
 Centrémonos en las diferentes partes de este archivo svg y en lo que necesitará editar.
 
-## Title
+## Título
 
 ```xml
 <title>Custom List form</title>

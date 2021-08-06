@@ -1,6 +1,6 @@
 ---
 id: data-formatter
-title: Data formatter
+title: Formatador de dados
 ---
 
 4D v17 R3 inclui um novo conceito: formatação de Dados!
@@ -15,7 +15,7 @@ Agora pode escolher os formatos pré-definidos da seção Etiquetas e Ícones.
 > * **Booleano**: "Não" ou "Sim", "False" ou "True"
 > * **Número inteiro**: número inteiro, número decimal, porcentagem, número ordinal, moeda  $, Moeda €, Moeda ¥, número em letras
 
-Let's get started by downloading the Starter project:
+Vamos começar baixando o Projeto Starter:
 
 <div className="center-button">
 <a className="button button--primary"

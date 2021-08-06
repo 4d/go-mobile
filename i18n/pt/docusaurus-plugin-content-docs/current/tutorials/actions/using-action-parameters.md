@@ -17,7 +17,7 @@ Neste tutorial vamos nos aprofundar mais e criar:
 * uma ação de eliminação para **eliminar uma entidade**, e
 * uma ação que lhe permitirá **enviar um comentário por correio eletrônico para uma tarefa específica**.
 
-To begin, let's first download the **Starter project** based on our existing Tasks iOS app:
+Para começar, primeiro descarregamos  **Projeto Starter** baseado em nossa aplicação iOS Tasks:
 
 <div className="center-button">
 <a className="button button--primary"
