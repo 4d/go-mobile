@@ -188,7 +188,7 @@ y
 
 ![Custom template final result](img/custom-template-final-result.png)
 
-## Where to go from here?
+## ¿Qué hacer ahora?
 
 En este tutorial, hemos cubierto los conceptos básicos para crear plantillas con iOS. Ahora puede crear plantillas simples por su cuenta utilizando los recursos del proyecto Starter. También puede ver cómo construir [plantillas de formularios detallados](../creating-detail-forms/detail-form-template.md).
 
