@@ -19,7 +19,7 @@ The manifest file includes information about your list form template, such as th
 
 ```
 
-For example, the above manifest file includes the following information:
+Por exemplo, o arquivo de manifesto acima inclui as informações:
 
 1. **Template type**: listform
 2. **Template Name**: Custom List form
