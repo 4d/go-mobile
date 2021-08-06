@@ -21,9 +21,9 @@ Primeiro, abra seu arquivo storyboard em Xcode.
 
 ![Empty storyboard custom template](img/empty-storyboard-custom-template.png)
 
-It's quite empty, so let's add some content!
+Está vazio, então vamos adicionar conteúdo!
 
-## Add an Image View
+## Adicione uma "Image View"
 
 A partir da **Object library**(biblioteca de objetos), arraste e solte uma  **Image View** (vista de imagem) em uma célula. Pode pesquisar uma "Image View" na barra de pesquisas na parte inferior da biblioteca de Objetos
 
