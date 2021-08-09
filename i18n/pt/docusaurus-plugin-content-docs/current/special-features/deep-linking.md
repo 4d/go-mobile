@@ -47,21 +47,15 @@ No nível mais simples, os esquemas de URL permitem aos usuários abrir uma apli
 
 É muito simples incluir um esquema URL a sua aplicação móvel. Vamos ver um exemplo:
 
-1. Selecione  a ação predefinida **Share** da página
-
-Action** e selecione o alcance: 
-   
-       *   entidade - para compartilhar o conteúdo de um formulário detalhado
-    *   tabela - para compartilhar um formulário lista</li> 
-
-2 Marque a propriedade **Deep Linking** na seção **Publishing** do editor de projetos.
-3 A informação do esquema URL é preenchido automaticamente com o nome da aplicação definida previamente na página [**General**](../project-definition/general.md). Entretanto, ainda pode ser editado:</ol> 
+1. Selecione a ação predefinida **Share** da página [**Action**](../project-definition/actions.md) e selecione o alcance:
+    *   entidade - para compartilhar o conteúdo de um formulário detalhado
+    *   tabela - para compartilhar um formulário lista
+2. Marque a propriedade **Deep Linking** na seção **Publishing** do editor de projetos.
+3. A informação do esquema URL é preenchido automaticamente com o nome da aplicação definida previamente na página [**General**](../project-definition/general.md). Entretanto, ainda pode ser editado:
 
 ![Editor de projeto deep linking](img/deep-linking-project-editor-publishing-section.png)
 
 4. Preencha seu método **On Mobile App Action**:
-
-
 
 ```4d
 
@@ -87,21 +81,16 @@ End case
 
 ```
 
-
 5. Criação da aplicação.
-
-
 
 
 ### Usar esquemas URL em seu app móvel
 
-1. Clique no botão **Action** para mostrar todas as suas ações disponíveis atualmente 
+1. Clique no botão **Action** para mostrar todas as suas ações disponíveis atualmente
 2. Selecione a ação **Share** que foi previamente definida no editor de projetos
 3. Aparece uma nova vista que lhe permite começar a compartilhar o conteúdo
-4. Selecione o método de intercâmbio que quiser utilizar 
+4. Selecione o método de intercâmbio que quiser utilizar
 5. Envie.
-
-
 
 ## Universal links
 
@@ -117,22 +106,16 @@ Os Universal links oferecem vários benefícios chave que não estão disponíve
 
 * **Private**: outras aplicações podem se comunicar com sua aplicação sem necessidade de saber se sua aplicação estiver instalada.
 
-
-
 ### Links universais no Editor de Projeto
 
 Para incluir os links universais em sua aplicação, o processo é bastante similar ao processo dos esquemas URL:
 
-1. Selecione  a ação predefinida **Share** da página Action** e selecione o alcance: 
-   
-       *   entidade - para compartilhar um conteúdo de um formulário detalhado
-    *   tabela - para compartilhar um formulário lista</li> 
-
-2 Ativar a funcionalidade **Deep Linking** na seção **Publishing** no editor de projetos
-3 Introduza a URL de seu site web no campo **Universal links**
-4 Preencha seu método **On Mobile App Action**:</ol> 
-
-
+1. Selecione a ação predefinida **Share** da página [**Action**](../project-definition/actions.md) e selecione o alcance:
+    *   entidade - para compartilhar um conteúdo de um formulário detalhado
+    *   tabela - para compartilhar um formulário lista
+2. Ativar a funcionalidade **Deep Linking** na seção **Publishing** no editor de projetos
+3. Introduza a URL de seu site web no campo **Universal links**
+4. Preencha seu método **On Mobile App Action**:
 
 ```4d
 
@@ -158,11 +141,8 @@ End case
 
 ```
 
-
 5. Criação da aplicação.
 6. Ativar os links universais do método **On Web Connection**:
-
-
 
 ```4d
 // Método de banco On Web Connection
@@ -179,9 +159,6 @@ Case of
 End case
 
 ```
-
-
-
 
 
 
