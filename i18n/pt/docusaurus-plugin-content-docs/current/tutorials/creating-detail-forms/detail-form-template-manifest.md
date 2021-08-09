@@ -1,5 +1,5 @@
 ---
-id: detail-form-template-svg
+id: detail-form-template-manifest
 title: Manifest.json
 ---
 
