@@ -1,5 +1,5 @@
 ---
-id: list form template
+id: list-form-template
 title: Modelos de formulários Lista
 ---
 
