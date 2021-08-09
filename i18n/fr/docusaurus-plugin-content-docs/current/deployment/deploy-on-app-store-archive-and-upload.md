@@ -5,7 +5,7 @@ title: Archiver et télécharger un projet
 
 > **OBJECTIFS**
 > 
-> Archive and upload your project to App Store Connect.
+> Archiver et publier votre projet sur l'App Store Connect.
 
 ## ÉTAPE 1. Configurer Xcode
 * Si vous avez choisi un compte Apple Developer, celui-ci est immédiatement disponible.

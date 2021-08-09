@@ -1,50 +1,50 @@
 ---
 id: detail-form-template-layout
-title: Android Layout
+title: Layout Android
 ---
 
-In this section you will see how to create your detail form interface with Android Studio.
+Nessa seção veremos como criar sua interface de formulário detallhado com Android Studio.
 
 Aqui está o resultado que queremos atingir:
 
 ![Storyboard custom detailform](img/xml-custom-detailform.png)
 
 
-For this template, we're going to add a:
+Para este modelo, vamos adicionar:
 
 * Foto de perfil no cabeçalho
 * Um campo a duplicar
 
-## Open the layout file with Android Studio
+## Abrir um arquivo layout com Android Studio
 
-The best way to edit or create a template is to :
+A melhor forma de editar ou criar um modelo é:
 
-* Open Android Studio and create a new empty mobile project clicking on File > New > New Project...
+* Abrir o Studio Android e criar um novo projeto móvel vazio clicando no Arquivo > New > New Project...
 
-* Select the Empty Activity template
+* Selecionar o modelo Empty Activity
 
 ![Android Studio project creation](img/template-selection.png)
 
-* Configure your project and click **Finish**
+* Configure seu projeto e clique em  **Finish**
 
 ![Configure Android project](img/configure-android-project.png)
 
-* Copy the layout.xml file in app > res > layout dropping it directly on the project layout folder
+* Copie o arquivo layout.xml no layout app > res > soltando diretamente na pasta de layout de projeto
 
 ![Copy layout.xml file](img/copy-layout.png)
 
-* You should have that at that point :
+* Nesse ponto deve ter:
 
 ![Android project](img/android-project.png)
 
-* Click on the top right **Split** option to visualize the template preview as well as the xml code.
+* Clique na opção direita superior**Split** para visualizar a visualização do modeloassim como código xml.
 
-It's quite empty, so let's add some content!
+Está vazio, então vamos adicionar conteúdo!
 
 
-## What is available in this starter project
+## O que está disponível no projeto starter
 
-For the view to be scrollable, a scrollview is already included in the layout:
+Para que a vista seja rolável, uma scrollview já é incluída no layout:
 
 ```xml
     <androidx.core.widget.NestedScrollView
@@ -54,7 +54,7 @@ For the view to be scrollable, a scrollview is already included in the layout:
 
 ```
 
-The part that is going to be duplicated:
+A parte que vai ser duplicada:
 
 ```xml
  <androidx.cardview.widget.CardView
@@ -133,9 +133,9 @@ The part that is going to be duplicated:
 ```
 
 
-## Add an Image View
+## Adicione uma "Image View"
 
-In order to have a nice Image view display we are going to use a CardView container again. We want to add a nice corner radius to the ImageView to have a better design.
+Para ter uma boa exibição de Imagem vamos usar um container CardView. O último passo é agregar uma borda arredondada para a Image View para ter um melhor design
 
 ```xml
     <androidx.cardview.widget.CardView
@@ -164,14 +164,14 @@ In order to have a nice Image view display we are going to use a CardView contai
 
 ```
 
-As you can see the ImageView is embedded into the CardView. That allows to add corner radius to it.
+Como pode ver ImageView está embebido no CardView. Isso permite adicionar bordas arrendondadas.
 
-The `app:imageUrl="__IMAGE_1__"` line will allow to bind image value that is situated in position 1 in the svg file that you previously defined.
+A linha `app:imageUrl="__IMAGE_1__"` permite fixar, bind o valor de imagem que está situado na posição 1 do arquivo svg definido previamente.
 
 
-The `tools:background="@tools:sample/avatars"` line simply there to display an ImageView placeholder.
+A linha `tools:background="@tools:sample/avatars"` está simplesmente para exibir um valor provisório para ImageView.
 
-Here is the full layout code at this stage :
+Aqui está o código de layout completo nesse estágio:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -324,18 +324,18 @@ Here is the full layout code at this stage :
 
 ```
 
-## How to get data into your detail form
+## Como obter dados em seus formulários detalhe
 
 ### Image View
 
-In our detail form template we used `app:imageUrl="__IMAGE_1__"`
+Em nosso modelo de formulário detalhe usamos `app:imageUrl="__IMAGE_1__"`
 
-Here we suppose the ImageView is the first view in the svg, and its view ID is `__SPECIFIC_ID_1__`. If it would be the third view, it would be `__IMAGE_3__` and its view ID would be `__SPECIFIC_ID_3__`.
+Aqui supomos que a  ImageView seja a primeira vsita no svg, e sua ID de vista é  `__SPECIFIC_ID_1__`. Se fosse a terceira vista, seria `__IMAGE_3__` e sua vista de ID seria `__SPECIFIC_ID_3__`.
 
 
 ## Where to go from here?
 
-In this tutorial, we've covered the basics for creating detail form templates. You can now create simple templates on your own using the Starter Project resources. Download the completed template folder:
+Neste tutorial cobrimos os conceitos básicos para criar seu modelo de formulário detalhado. Agora pode criar modelos simples usando os recursos do Starter Project. Baixe a pasta do modelo de formatador completo:
 
 <div className="center-button">
 <a className="button button--primary"

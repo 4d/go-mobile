@@ -71,7 +71,7 @@ Cliquez ensuite sur le bouton **Add New Constraints** et ajoutez une contrainte 
 
 Félicitations ! Votre photo de profil est maintenant bien placée et respecte les contraintes définies.
 
-> **TIPS**
+> **ASTUCES**
 > 
 > * To create a constraint between two views, press Ctrl and drag one of the views to the other. Lorsque vous relâchez le bouton de la souris, l’Interface Builder affiche un menu avec une liste de contraintes éventuelles.
 > 

@@ -3,7 +3,7 @@ id: from-xcode
 title: Depuis Xcode
 ---
 
-If you have issues during the build process, you can open your generated project with Xcode selecting the **Open the product with Xcode** option from the **Project** Menu.
+Si vous rencontrez des problèmes au cours de la phase de création, vous pouvez ouvrir votre projet généré avec Xcode en sélectionnant l'option **Ouvrir le produit avec Xcode** dans le menu **Projet**.
 
 ![Ouvrez votre projet avec Xcode](img/open-project-Xcode.png)
 

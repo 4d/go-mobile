@@ -4,13 +4,13 @@ title: Push notifications
 ---
 
 
-## What is a push notification?
+## O que é uma notificação push?
 
 Em um telefone móvel, uma notificação Push é uma mensagem de alerta, recebido através de uma aplicação, que pode abrir, eliminar, autorizar ou bloquear. Pode ser muito útil por exemplo para notificar aos usuários da aplicação que há uma nova versão disponível.
 
 Mas o que acontece com a arquitetura de implementação, para poder integrar essa funcionalidade em uma aplicação móvel? E qual é o processo de uma notificação push, desde a criação até a visualização no telefone do usuário?
 
-## Technical architecture
+## Arquitetura técnica
 
 Esses são os elementos diferentes necessários para criar, enviar e receber uma notificação push móvel:
 
@@ -18,20 +18,20 @@ Esses são os elementos diferentes necessários para criar, enviar e receber uma
 
 ## Pré-requisitos
 
-In order to send push notifications, an `AuthKey_XXXYYY.p8` authentication file from Apple is required.
+Para enviar notificações push, é necessário um arquivo de autenticação  `AuthKey_XXXYYY.p8` 8 da Apple.
 
-1. Generate and download a .p8 key file as described in [this documentation](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Generate_p8.md).
+1. Gerar e baixar um arquivo chave .p8 está descrito [nesta documentação](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Generate_p8.md).
 
-2. In the [Publishing](../project-definition/publishing) page, check the **Push notifications** option and select your certificate in the mobile project.
+2. Na página [Publishing](../project-definition/publishing) marque a opção **Push notifications** e selecione seu certificado no projeto móvel.
 
 ![Publishing section](img/push-notification-publishing-section.png)
 
 
-## Basic example to manage push notifications
+## Exemplo básico para gerenciar suas notificações push
 
-The [4D Mobile App Server](https://github.com/4d-for-ios/4D-Mobile-App-Server/tree/master) component provides methods to push notifications to one or multiple recipients. For detailed information, please refer to the [PushNotification component documentation](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md).
+O componente [4D Mobile App Server](https://github.com/4d-for-ios/4D-Mobile-App-Server/tree/master) fornece métodos para notificações push para um ou múltiplos recebedores. Para informações detalhadas, veja a documentação de componente [PushNotification ](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md).
 
-Here is a simple example of push notification sent to `test@4d.com`:
+Este é um exemplo para enviar uma notificação push a `test@4d.com`:
 
 ```4d
 
@@ -47,29 +47,29 @@ It's as simple as that!
 
 :::tip
 
-Use the [**4D Mobile App Server** component](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) to easily adapt the push notifications to your own needs. Feel free to use it and to pick the most relevant aspects for your app. And of course, all contributors are welcome to this project, through feedback, bug reports and even better: pull requests.
+Veja a documentação [**4D Mobile App Server** ](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) para saber mais sobre como adaptar notificações push para suas necessidades. Pode usar e escolher quais os aspectos mais relevantes para sua aplicação. Todas as contribuições são bem vindas a este projeto, seja através de comentários, relatórios de erros ou ainda melhor: "pull requests".
 
 :::
 
-## Empurrar notificações co sincronização de dados
+## Empurrar notificações com sincronização de dados
 
-With a push notification, you can also launch a synchronization to update your data.
+Com uma notificação push, pode lançar uma sincronização para atualizar seus dados.
 
-For example, if your application has a delivery tracking option, the delivery information will be updated in the database thanks to a notification sent to the customer. This notification, containing a request to synchronize the data, will enable the customer to get the modified data on their smartphone.
+Por exemplo se sua aplicação tiver uma opção de acompanhamento de entrega, a informação de entrega será atualizada no banco de dados graças à notificação enviada ao cliente. Esta notificação, contendo uma petição para sincronizar os dados, vai permitir ao cliente modificar os dados no seu smartphone.
 
-To do so using the `4D Mobile App Server` component, you need to specify whether or not you want to force data synchronization in your push notification. Therefore, simply provide the `dataSynchro` boolean value in the `userInfo` object.
+Para fazer isso no componente  `4D Mobile App Server` , precisa especificar se vai ou não forçar a sincronização de dados em suas notificações push/empurrar. Para isso, simplesmente forneça o valor booleano `dataSynchro` no objeto `userInfo`.
 
 ### Sincronização de dados com uma notificação e abertura de registro
 
-By default, a notification opening a record automatically triggers a data synchronization.
+Como padrão normal, uma notificação de abertura de registro automaticamente ativa a sincronização de dados.
 
-For example, in a Contact app, if a contact’s specific information (*i.e.* a contact’s record, such as the address or the phone number) has been modified, the user receives a notification that automatically opens the relevant record and synchronizes the data contained in the record. When the user opens the notification, the contact’s information is fully updated.
+Por exemplo, em um app Contact, se uma informação específica de contato (*ou seja.* um registro do contato, tal como endereço ou número de telefone) for modificado, o usuário recebe uma notificação que automaticamente abre o registro relevante e sincroniza os dados contidos no registro. Quando o usuário abrir a notificação, a informação de contato é totalmente atualizada.
 
-Here's an example of the default behaviour, a `dataSynchro` request with the `open()` method:
+Aqui um exemplo do comportamento normal,  uma petição `dataSynchro` com o método `open()`:
 
 :::nota
 
-For `open()` method exclusively, this is the default behaviour. As a result, if you don't specify the `dataSynchro` boolean value, it is `true` by default.
+Note que exclusivamente para o método `open()`, esse é o comportamento padrão. Como resultado, se não especificar o valor booleano `dataSynchro` seu valor por padrão será `true`.
 
 :::
 
@@ -86,7 +86,7 @@ $response:=$pushNotification.open($entity; $notification; $recipients)
 
 ```
 
-However, you can also choose not to force a data synchronization, by preventing `dataSynchro`:
+Entretanto pode escolher não forçar uma sincronização de dados, para prevenir `dataSynchro`:
 
 ```4d
 
@@ -104,9 +104,9 @@ $response:=$pushNotification.open($entity; $notification; $recipients)
 
 ### Sincronização de dados com uma notificação simples
 
-You can also request a synchronization for a simple notification without opening a specific record. For example, some new entries have been added. You can then inform your user and update the data with no manipulation on their part.
+Também pode se pedir uma sincronização para uma notificação simples, sem abrir um registro específico. Por exemplo, algumas novas entradas foram adicionadas. Pode informar então a seu usuário e atualizar os dados sem manipulação do seu lado.
 
-Here is a code example that you can also use with other methods, as long as you fill the `userInfo` object with `dataSynchro` value.
+Aqui está um exemplo de código que pode usar com outros métodos, desde que preencha o objeto `userInfo` com o valor `dataSynchro`.
 
 ```4d
 
@@ -122,13 +122,13 @@ $response:=$pushNotification.send($notification; $recipients)
 ```
 ![Data synchronization animation](img/pushandSynchro.gif)
 
-## Windows Configuration
+## Configuração Windows
 
-Windows users need to download the [last CURL version](https://curl.se/download.html) to work on the variables of the environment of their machine. Or they can insert curl.exe in the Resources folder of their production database.
+Usuários de Windows precisam baixar a [última versão de CURL](https://curl.se/download.html) para trabalhar nas variáveis do ambiente de sua máquina. Ou podem inserir curl.exe na pasta Resources do banco de dados produção.
 
-## MobileApps folder
+## Pasta MobileApps
 
-Whether you're working on Windows or on macOS, you need to copy the following files from your development project to your production project:
+Não importa se trabalhar em Windows ou macOS é preciso copiar os arquivos abaixo de seu proejto de desenvolvimento para seu projeto de produção:
 
 - `4DBASE/MobileApps/ID.BundleID/AuthKey_XXXX.P8`
 - `4DBASE/MobileApps/ID.BundleID/manifest.json`

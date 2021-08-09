@@ -1,11 +1,11 @@
 ---
 id: list-form-icon
-title: List form icon
+title: Ìcones de formulários Lista
 ---
 
 Pode criar seu próprio ícone para um modelo de lista formulário.
 
-It must be 160x160 px and must be named **layoutIconx2.png**.
+Deve ter 160x160 px e deve ser nomeado **layoutIconx2.png**.
 
 O ícone será usado:
 
@@ -14,10 +14,10 @@ O ícone será usado:
 
 ![Custom listform template](img/custom-listform-template.png)
 
-If this icon is missing from your list form template folder, the [**template.svg**](list-form-template.md) file will be displayed in the template selector window and a question mark icon will be displayed above each table that's missing an icon.
+Se este ícone estiver faltando na pasta de seu modelo de formulário lista, será exibido [**template.svg file**](list-form-template.md)será exibido na janela de seletor de modelo e um ícone de ponto de interrogação será exibido acima de cada tabela em que faltar um ícone.
 
 ![Missing listform icon custom template](img/missing-listform-icon-custom-template.png)
 
-You can use any image software to create the png list form template icon.
+Pode usar qualquer software de imagem para criar o ícone do modelo de formulário lista.
 
 ![Custom listform template icon](img/custom-list-form-icon.png)

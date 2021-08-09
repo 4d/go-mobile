@@ -153,7 +153,7 @@ Paso 4. Concéntrese en el Storyboard para verificar si la restricción se ha ac
 
 ¡Y listo! Su botón ahora es completamente duplicable si tiene más de un botón de relación a mostrar...
 
-## Where to go from here?
+## ¿Qué hacer ahora?
 
 En este tutorial, hemos cubierto los conceptos básicos para crear botones Relación. Haga clic en el botón Final Project abajo para descargar el botón de relaciones personalizado.
 

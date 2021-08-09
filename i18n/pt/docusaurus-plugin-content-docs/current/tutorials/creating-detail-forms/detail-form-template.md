@@ -4,16 +4,16 @@ title: Modelos de formulário detalhado
 ---
 
 
-Neste tutorial, vamos guiá-lo através da criação de um modelo de formulário detalhado. It will display an **image header**, as well as **title and content fields** that will be duplicated in the generated iOS and Android Apps.
+Neste tutorial, vamos guiá-lo através da criação de um modelo de formulário detalhado. Se mostrará um **cabeçalho de imagem **, assim como **os campos de título e conteúdo** que se duplicarão na aplicação iOS ou Android geradas.
 
 ![Custom template final result](img/custom-template-final-result.png)
 
 ## Baixe o Starter Project
 
-To begin, download the **Starter project**, which includes:
+Para começar, baixe o **Starter Project**, que inclui:
 
 * Uma pasta **Custom Detail form** (pasta modelo de formulário detalhado)
-* A demo 4D project ("Contact") with a ready to use mobile app project.
+* Um projeto demo 4D ("Contact") com um projeto app móvel pronto para usar.
 
 <div className="center-button">
 <a className="button button--primary"
@@ -22,26 +22,26 @@ href="https://github.com/4d-go-mobile/tutorial-CustomDetailFormStarter/archive/6
 
 ## Adicione um modelo de formulário detalhado a seu projeto móvel
 
-First, create a *Contact.4dbase/Resources/Mobile/form/detail* folder and drag and drop the **Custom Detail form** folder in it.
+Primeiro, crie uma pasta *Contact.4dbase/Resources/Mobile/form/detail* e arraste e solte a pasta **Custom Detail form** nela.
 
 ![Mobile folder custom template](img/mobile-folder-custom-template.png)
 
-Now, launch your 4D application and open the "Contact" 4D project. Then, select the "Contact Demo App" mobile project: **File > Open > Mobile Project > Contact Demo App**.
+Agora lance sua aplicação 4D e abra o projeto  4D "Contact". Selecione o projeto móvel "Contact Demo App": **File > Open > Mobile Project > Contact Demo App**.
 
-In the **Forms section** in the project editor, you can see that the Custom Detail form template has been successfully added to the Detail form template list:
+Na seção **Forms** do editor de projeto, verá que seu modelo de lista formulário foi adicionado com sucesso à lista de modelos de formulários lista disponíveis:
 
 ![Forms section](img/custom-detailform-template.png)
 
-Now let's focus on the **Custom Detail form** folder content.
+Agora vamos focar na pasta de conteúdo **Custom Detail form** folder content.
 
 ## A pasta de modelos de formulário detalhado e seu conteúdo
 
-In this folder, you will find:
+Nesta pasta vai encontrar:
 
-* **a layoutIconx2.png** icon in 160x160px: displayed in the project editor when you select your custom template among others
-* **a manifest.json** file: includes a basic description of the template
-* **a template.svg** file: the representation of your template that will be display when you define your detailForm content and where you will drag and drop your fields
-* an **ios folder** that includes the storyboard (graphical interface) and **Swift** file (code for the form) in `Source > Forms > Tables 'TABLE'` folder
-* an **android folder** that includes the layout.xml file (graphical interface) in `app > src > main > res > layout` folder.
+* Um ícone **a layoutIconx2.png** de 160x160px que se mostrará no editor del projeto quando selecione seu modelo personalizado entre outras
+* Um arquivo ** manifest.json**  inclui uma descripção básica do modelo
+* Um arquivo **a template.svg** que será a representação de seu modelo que se mostrará quando defina o conteúdo de seu formulário detalhe e onde arrastará e soltará seus campos
+* uma pasta **ios** que inclui o storyboard (interface gráfica) e arquivo**Swift** (código par formulário) na pasta`Source > Forms > Tables 'TABLE'`
+* uma pasta **android** que inclui o arquivo layout.xml (interface gráfica) na pasta `app > src > main > res > layout` .
 
-These files and folders are detailed in the next sections.
+Esses arquivos e pastas são detalhados nas próximas seções.

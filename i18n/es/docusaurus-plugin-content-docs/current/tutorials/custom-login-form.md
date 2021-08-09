@@ -278,7 +278,7 @@ Here is the final result :
 
 ![Sign in with QR Code](img/sign-in-with-qr-code.gif)
 
-## PASO 7. Where to go from here?
+## PASO 7. ¿Qué hacer ahora?
 
 The step 2 covers how to include easily any custom login form in your mobile app. So you should now be able just followin this step, to create your own custom login form and use it on your own.
 

@@ -17,7 +17,7 @@ Pode criar uma nova ação clicando no botão +  no fundo da tabela Actions. Uma
 Depois precisa definir o abaixo:
 
 * **Names:** o nome da ação a usar no método de banco de dados [On Mobile App Action](https://developer.4d.com/4d-for-ios/docs/en/actions.html#on-mobile-app-action) para ativar seu código 4D.
-* **Icons:** O ícone a escolher de sua biblioteca ícone. You can also add your own icon by following this [tutorial]`(using-icons.html)`.
+* **Icons:** O ícone a escolher de sua biblioteca ícone. Também é possível adicioanr seu próprio ícone seguindo este [tutorial]`(using-icons.html)`.
 * **Short and long Labels:** As etiquetas para as ações para exibir em seu app.
 * **Table:** A tabela na qual quer aplicar a ação.
 * **Scope:** Onde usar a ação, uma **entidade** ou uma **tabela**.
@@ -26,7 +26,7 @@ Depois precisa definir o abaixo:
 
 ### Adicione parâmetros para sua ação
 
-You can add **action parameters** and **edit** data directly from your app.
+Você pode adicionar **parâmetros ação** e **editar** dados diretamente de seu app.
 
 Para cada parâmetro, pode editar as propriedades abaixo:
 
@@ -75,68 +75,68 @@ Aqui estão os diferentes **Formatos** que pode selecionar para um parâmetro:
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>NUMBER</th>
+<th colspan="2" style={{textAlign: 'center'}}>NÚMERO</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Formato</th><th>Descrição</th>
 </tr><tr>
-<td>Number</td><td>Numbers with decimals</td>
+<td>Número</td><td>Número com decimais</td>
 </tr><tr>
-<td>Integer</td><td>Numbers without decimals</td>
+<td>Inteiro</td><td>Números sem decimais</td>
 </tr><tr>
-<td>Scientific</td><td>Scientific Notation</td>
+<td>Científico</td><td>Notação científica</td>
 </tr><tr>
-<td>Percentage</td><td>Percent Notation</td>
+<td>Porcentagem</td><td>Notação de porcentagem</td>
 </tr><tr>
-<td>Spell Out</td><td>Convert numbers into strings</td>
+<td>Números como  letras</td><td>Converte os números em strings de texto</td>
 </tr>
 <tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>DATE</th>
+<th colspan="2" style={{textAlign: 'center'}}>DATA</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Formato</th><th>Descrição</th>
 </tr><tr>
-<td>Date</td><td>Nov 23, 1937</td>
+<td>Data</td><td>Nov 23, 1937</td>
 </tr><tr>
-<td>Short Date</td><td> 11/23/37</td>
+<td>Data curta</td><td> 11/23/37</td>
 </tr><tr>
-<td>Long Date</td><td>November 23, 1937</td>
+<td>Data longa</td><td>Novembro 23, 1937</td>
 </tr><tr>
-<td>Full Date</td><td>Tuesday, November 23, 1937</td>
+<td>Data completa</td><td>Terça, Novembro 23, 1937</td>
 </tr><tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>TIME</th>
+<th colspan="2" style={{textAlign: 'center'}}>HORA</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Formato</th><th>Descrição</th>
 </tr><tr>
-<td>Time</td><td>3:30 PM</td>
+<td>Hora</td><td>3:30 PM</td>
 </tr><tr>
-<td>Duration</td><td>2 hours 30 minutes</td>
+<td>Duração</td><td>2 horas 30 minutos</td>
 </tr>
 <tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>BOOLEAN</th>
+<th colspan="2" style={{textAlign: 'center'}}>BOOLEANO</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Formato</th><th>Descrição</th>
 </tr><tr>
 <td>Boolean</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
 </tr><tr>
-<td>Check mark</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
+<td>Marca de verificação</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
 </tr>
 
 <tr>
 <td colspan="2"></td>
 </tr>
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>IMAGES</th>
+<th colspan="2" style={{textAlign: 'center'}}>IMAGENS</th>
 </tr>
 <tr>
 <td>Assinatura</td><td>Permitir assinatura com o dedo</td>
@@ -144,70 +144,70 @@ Aqui estão os diferentes **Formatos** que pode selecionar para um parâmetro:
 
 </table>
 
-## Preset actions
+## Ações predefinidas
 
-4D mobile projects include the following (predefined) preset actions to manage your app content:
+Os projetos móveis incluem as ações predefinidas abaixo para gerenciar o conteúdo de seu app:
 
 * Ação de Editar
 * Ação de Adicionar
 * Ação de eliminar
-* Share
-* Sort
+* Partilhar
+* Ordenar
 
-### Add action
+### Adicionar ação
 
-4D mobile projects makes the **Add actions** creation process very simple.
+Projetos 4D móveis torna o processo de criação **Adicionar Ações** bem simples.
 
 A única coisa que precisa fazer é selecionar a opção **Ação adicionar** acessível a partir do  **+ botão** no fundo da tabela Ações.
 
 ![Add actions](img/Actions-Add-action-4D-for-iOS.png)
 
-Then just **select the table** you want to link to this add action.
+Depois **selecione a tabela** que quiser linkar à ação adicionar.
 
 Isso vai **criar automaticamente** todos os parâmetros para você no Editor de Projeto. No app gerado, isso permite que edite cada valor de campo.
 
 Para este tipo de ação, vai ver que todas as **propriedades** já estão preenchidas para sua conveniência no lado direito da lista de parâmetros.
 
 
-### Edit action
+### Ação de Edição
 
 A criação de **Ações Editar** segue o mesmo processo que as Ações Adicionar, com exceção que não é possível definir valores predeterminados a partir da seção Ações.
 
 
 
-### Delete action
+### Ação de eliminação
 
-**Delete action** creation follows the same process as the Edit action. The only difference is that this action allows you to remove an entity.
+A criação de **ações de eliminação ** segue o mesmo processo que as ações de edição. A única diferença é que essa ação permite que remova uma entidade.
 
-To create a Delete action, select the **Delete action for** option accessible from the **+ button** at the bottom of the Actions table.
+Para criar uma ação de eliminação, selecione a opção **Ação de eliminação para**, acessível desde o **botão + ** na parte inferior da tabela Ações.
 
-This type of action should be used with caution.
+Este tipo de ação deve ser utilizado com precaução.
 
 ![Delete actions](img/Actions-Delete-action-4D-for-iOS.png)
 
-### Share action
+### Ação Partilhar
 
-Selecting the **Share action** will allow your mobile users to share content with other users. You just need to select the scope:
+Selecionar **Ação Partilhar, ** permite a seus usuários móveis partilhar conteúdo com outros usuários. Só precisa selecionar o escopo:
 
-- **entity**: to share content from a detail form
-- **table**: to share a list form
+- **entidade**: para partilhar conteúdo com um formulário detalhada
+- **tabela**: para partilhar um formulário lista
 
-See the [Deep Linking](../special-features/deep-linking.md) page for more details.
+Ver a página [Deep Linking](../special-features/deep-linking.md) para saber mais.
 
-### Sort action
+### Ação Ordenar
 
-**Sort actions** are useful to:
+**Ações Ordenar** são úteis para:
 
-- define a default sort order for the table list forms
-- allow your mobile users to choose a list sort order
+- defina uma ordenação padrão para os formulários lista da tabela
+- permitir aos usuários móveis escolher a ordem de classificação da lista
 
-When you create a sort action for a table, you need to select the first field on which the sort will be done:
+Quando criar uma ação ordenação para uma tabela, precisa selecionar o primeiro campo no qual a ordenação será feita:
 
 ![Docusaurus](img/sort-select.png)
 
-The field is added to the Sort Criteria list. An ascending sort order is set by default, but you can change it using the **Sort order** menu.
+O campo é adicionado à lista de critérios de ordenação. Uma ordem ascendente é definida como o normal mas pode ser mudada usando o menu **Ordem de clasificação**.
 
-You can sort entities in more than one field. Each field you sort is referred to as a sort level. For example, the results of a two-level ascending sort of the `lastName` and `firstName` fields would produce a list such as this:
+Pode ordenar entidades de ordenação em mais de um campo. Cada campo que ordenar é denominado como um nível de ordenação. Por exemplo, os resultados de uma ordenação ascendente de dois níveiss dos campos `lastName` e `firstName` produziria uma lista como esta:
 
 ```4d
 Aardvark, Anthony
@@ -218,62 +218,62 @@ Zygote, Elena
 Zymosian, Elmer
 ```
 
-To add one or more sort level(s) in the Sort Criteria list, select the **+** button under the list and configure each level:
+Para adicionar mais níveis na lista de critérios de ordenação, selecione o botão **+** abaixo da lista e configure cada nível:
 
 ![sort](img/ascending.png)
 
 
-#### Sort order menu on the mobile app
+#### Menu de ordenação na aplicação móvel
 
-When you define more than one sort action for a table, mobile users automatically benefit from a **sort** menu. It contains all the predefined sort actions:
+Quando definir mais que uma ação de ordenação para uma tabela, usuários móveis automaticamente se beneficiam de um menu **de ordenação**. Contém todas as ações predefinidas de ordenação:
 
 ![sort](img/sort-go-mobile.gif)
 
 
-> When only one sort action is defined for a table, the **sort** menu is not displayed on the mobile app side.
+> Quando só se define uma ação de ordenação para uma tabela, o menu **ordenação** não é mostrada na parte da aplicação móvel.
 
 ### On Mobile App Action
 
-The [On Mobile App Action]`(https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)` database method is available to call all of your 4D methods.
+O método database [On Mobile App Action]`(https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)` está disponível para chamar a todos seus métodos 4D.
 
-After creating all of your actions, just click on the Create button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
+Depois de criar todas as suas ações, simplesmente clique no botão Criar da tabela Ações para gerar automaticamente um bloco de código *Case of* que inclua todos os nomes de suas ações no método *On Mobile App Action*.
 
-:::note notes
+:::nota notas
 
-- You can refresh the selection after executing an action using `$out.dataSynchro:=True`.
-- You can notify the app user when action has been executed using `$out.statusText:="Message you want to display"`.
-- You can also decide to force close the Edition form using `$out.close:=True`.
+- Pode renovar a seleção depois de executar uma ação usando `$out.dataSynchro:=True`.
+- Pode notificar o usuário da aplicação sobre quando uma ação tiver sido executada usando `$out.statusText:="Mensagem que quer exibir"`.
+- Pode decidir fechar à força o formulário Edition usando `$out.close:=True`.
 
 :::
 
-## Offline mode actions
+## Ações modo offline
 
-The user of an app can draft, store and queue action requests, even if he’s working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.).  All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
+O usuário de uma aplicação pode esboçar, armazenar, e colocar em fila petições de ação, mesmo se estiver trabalhando sem conexão (adicionar o número de telefone de um cliente, subir uma foto, imprimir uma fatura ou um orçamento, apagar um endereço, etc.).  Todas essas tarefas são colocadas em ações Pendentes até que a rede fique acessível. Quando o usuário estiver online, todas as ações pendentes são sincronizadas consistentemente, executadas e então visíveis nas ações Completadas.
 
-Pending tasks can be visualized and opened from:
+Tarefas pendentes podem ser visualizadas e abertas com:
 
-•   *The Settings screen*
+•   *Tela de Configurações*
 
-It displays a summary and a history of all pending and completed tasks.
+Exibe um sumário e a história de todas as ações pendentes ou completas.
 
 ![Action section](img/screen1.png)
 
-•   *The List & Detail forms*
+•   *Formulários Lista & Detalhado*
 
-They display all the tasks related to the table or to the entity that you are currently viewing.
+Exibe todas as tarefas pendentes relacionadas à tabela ou à entidade que está vendo no momento.
 
 ![Action section](img/screen2.png)
 
-:::note notes
+:::nota notas
 
-- The "Share" predefined action is only executable online
-- Actions are editable while pending, but they can no longer be modified once they switch to the "Completed" mode.
+- A ação pré-definida "Share" só é executável no modo online
+- As ações são editáveis enquanto estiverem pendentes, mas já não se podem modificar quanto passarem ao modo "Completado".
 
 :::
 
-### Update pending tasks that failed
+### Atualizar as tarefas pendentes que falham
 
-Due to your server business logic, some tasks could be rejected. For mobile users, it is then possible to edit and to retry sending the relevant pending tasks. To do so, you can display a status text describing, in the "Complete" actions history, the reason of the failure. For example, you can reject an action sent by a mobile user to the server and inform him that the operation has failed. In that case, you can set the `success` value to `False` and provide a message in `statusText`, as follows:
+Devido à lógica de negócio de seu servidor, algumas tarefas poderiam ser rejeitadas. For mobile users, it is then possible to edit and to retry sending the relevant pending tasks. To do so, you can display a status text describing, in the "Complete" actions history, the reason of the failure. For example, you can reject an action sent by a mobile user to the server and inform him that the operation has failed. In that case, you can set the `success` value to `False` and provide a message in `statusText`, as follows:
 
  ```4d
  $response:=New object("success"; False; "statusText"; "Operation failed"))

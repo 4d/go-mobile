@@ -49,7 +49,7 @@ Se puede acceder directamente a un botón para compartir en la parte inferior de
 
 Todo el proceso de compartir se detalla en la página de contribución para que lo ayude en el proceso de compartir y donde se describen las buenas prácticas.
 
-## Where to go from here?
+## ¿Qué hacer ahora?
 
 Puede intentar seguir la [guía de contribución](https://github.com/4d-go-mobile/gallery/blob/master/.github/CONTRIBUTING.md#how-do-you-add-a-package) para compartir sus plantillas en github y hacerlas aparecer en el editor de proyectos.
 

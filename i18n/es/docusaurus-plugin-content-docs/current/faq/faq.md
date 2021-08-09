@@ -86,7 +86,7 @@ Si no es un Partner 4D o no participa en el programa de mantenimiento de 4D, deb
 
 <details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>¿Qué licencia 4D necesito para desarrollar con 4D for iOS?</summary>
 
-You need a 4D Developer Pro v17 R2 or newer (macOS) license to develop 4D for iOS apps.
+Necesita una licencia 4D Developer Pro v17 R2 o superior (macOS) para desarrollar aplicaciones 4D for iOS.
 
 </details>
 
@@ -133,7 +133,7 @@ Sabemos que utiliza muchas tablas relacionadas para sus aplicaciones y estamos t
 
 <details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>¿Puedo utilizar campos calculados en 4D for iOS?</summary>
 
-You can create pre-calculated fields in 4D and publish them from the [Structure section]`(project-definition-structure.html)` of the 4D for iOS project editor.
+Puede crear campos precalculados en 4D y publicarlos desde la [Sección de estructura]`(project-definition-structure.html)` del editor de proyectos de 4D for iOS.
 
 </details>
 

@@ -187,27 +187,27 @@ Este tipo de acción debe utilizarse con precaución.
 
 ### Acción compartir
 
-Selecting the **Share action** will allow your mobile users to share content with other users. You just need to select the scope:
+La selección de **Compartir acción** permitirá a sus usuarios móviles compartir contenidos con otros usuarios. Sólo tiene que seleccionar el alcance:
 
-- **entity**: to share content from a detail form
-- **table**: to share a list form
+- **entidad**: para compartir el contenido de un formulario detallado
+- **tabla**: para compartir un formulario lista
 
-See the [Deep Linking](../special-features/deep-linking.md) page for more details.
+Ver la página [Deep Linking](../special-features/deep-linking.md) para más detalles.
 
-### Sort action
+### Acción ordenar
 
-**Sort actions** are useful to:
+**Acciones Ordenar** son útiles para:
 
-- define a default sort order for the table list forms
-- allow your mobile users to choose a list sort order
+- definir un orden por defecto para los formularios lista de la tabla
+- permitir a los usuarios móviles elegir el orden de clasificación de la lista
 
-When you create a sort action for a table, you need to select the first field on which the sort will be done:
+Cuando se crea una acción de ordenación para una tabla, es necesario seleccionar el primer campo sobre el que se realizará la ordenación:
 
 ![Docusaurus](img/sort-select.png)
 
-The field is added to the Sort Criteria list. An ascending sort order is set by default, but you can change it using the **Sort order** menu.
+El campo se añade a la lista de criterios de ordenación. Se define un orden ascendente por defecto, pero puede cambiarlo utilizando el menú **Orden de clasificación**.
 
-You can sort entities in more than one field. Each field you sort is referred to as a sort level. For example, the results of a two-level ascending sort of the `lastName` and `firstName` fields would produce a list such as this:
+Puede ordenar las entidades en más de un campo. Cada campo que ordena se denomina como nivel de ordenación. Por ejemplo, los resultados de una ordenación ascendente de dos niveles de los campos `lastName` y `firstName` producirían una lista como esta:
 
 ```4d
 Aardvark, Anthony
@@ -218,132 +218,132 @@ Zygote, Elena
 Zymosian, Elmer
 ```
 
-To add one or more sort level(s) in the Sort Criteria list, select the **+** button under the list and configure each level:
+Para añadir uno o más niveles de ordenación en la lista Criterios de ordenación, seleccione el botón **+** bajo la lista y configure cada nivel:
 
 ![sort](img/ascending.png)
 
 
-#### Sort order menu on the mobile app
+#### Menú de ordenación en la aplicación móvil
 
-When you define more than one sort action for a table, mobile users automatically benefit from a **sort** menu. It contains all the predefined sort actions:
+Cuando se define más de una acción de ordenación para una tabla, los usuarios móviles se benefician automáticamente de un menú **de ordenación**. Contiene todas las acciones de ordenación predefinidas:
 
 ![sort](img/sort-go-mobile.gif)
 
 
-> When only one sort action is defined for a table, the **sort** menu is not displayed on the mobile app side.
+> Cuando sólo se define una acción de ordenación para una tabla, el menú **ordenación** no se muestra en la parte de la aplicación móvil.
 
 ### On Mobile App Action
 
-The [On Mobile App Action]`(https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)` database method is available to call all of your 4D methods.
+El método base [On Mobile App Action]`(https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)` está disponible para llamar a todos sus métodos 4D.
 
-After creating all of your actions, just click on the Create button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
+Después de crear todas sus acciones, simplemente haga clic en el botón Crear de la tabla Acciones para generar automáticamente un bloque de código *Case of* que incluya todos los nombres de sus acciones en el método *On Mobile App Action*.
 
-:::note notes
+:::nota notas
 
-- You can refresh the selection after executing an action using `$out.dataSynchro:=True`.
-- You can notify the app user when action has been executed using `$out.statusText:="Message you want to display"`.
-- You can also decide to force close the Edition form using `$out.close:=True`.
+- Puede refrescar la selección después de ejecutar una acción utilizando `$out.dataSynchro:=True`.
+- Puede notificar al usuario de la aplicación cuando se ha ejecutado una acción utilizando `$out.statusText:="Message you want to display"`.
+- También puede decidir forzar el cierre del formulario de edición utilizando `$out.close:=True`.
 
 :::
 
-## Offline mode actions
+## Acciones en modo sin conexión
 
-The user of an app can draft, store and queue action requests, even if he’s working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.).  All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
+El usuario de una aplicación puede redactar, almacenar y poner en cola solicitudes de acción, incluso si está trabajando sin conexión (añadir el número de teléfono de un cliente, subir una foto, imprimir una factura o un presupuesto, borrar una dirección, etc.).  Todas estas tareas se colocan en la lista de acciones pendientes hasta que la red sea accesible. Una vez que el usuario está en línea, todas las acciones pendientes se sincronizan sistemáticamente, se ejecutan y son visibles en la lista de acciones completadas.
 
-Pending tasks can be visualized and opened from:
+Las tareas pendientes pueden visualizarse y abrirse desde:
 
-•   *The Settings screen*
+•   *La pantalla de configuración*
 
-It displays a summary and a history of all pending and completed tasks.
+Muestra un resumen y un historial de todas las tareas pendientes y completadas.
 
 ![Action section](img/screen1.png)
 
-•   *The List & Detail forms*
+•   *La Lista & Formularios detallados*
 
-They display all the tasks related to the table or to the entity that you are currently viewing.
+Muestran todas las tareas relacionadas con la tabla o con la entidad que se está viendo en ese momento.
 
 ![Action section](img/screen2.png)
 
-:::note notes
+:::nota notas
 
-- The "Share" predefined action is only executable online
-- Actions are editable while pending, but they can no longer be modified once they switch to the "Completed" mode.
+- La acción predefinida "Compartir" sólo es ejecutable en línea
+- Las acciones son editables mientras están pendientes, pero ya no se pueden modificar una vez que pasan al modo "Completado".
 
 :::
 
-### Update pending tasks that failed
+### Actualizar las tareas pendientes que han fallado
 
-Due to your server business logic, some tasks could be rejected. For mobile users, it is then possible to edit and to retry sending the relevant pending tasks. To do so, you can display a status text describing, in the "Complete" actions history, the reason of the failure. For example, you can reject an action sent by a mobile user to the server and inform him that the operation has failed. In that case, you can set the `success` value to `False` and provide a message in `statusText`, as follows:
+Debido a la lógica de negocio de su servidor, algunas tareas podrían ser rechazadas. Para los usuarios de móviles, es posible entonces editar y reintentar el envío de las tareas pendientes correspondientes. Para ello, puede mostrar un texto de estado que describa, en el historial de acciones "Completas", el motivo del fallo. Por ejemplo, puede rechazar una acción enviada por un usuario móvil al servidor e informarle que la operación ha fallado. En ese caso, puede definir el valor de `success` como `False` y poner un mensaje en `statusText`, como se indica a continuación:
 
  ```4d
- $response:=New object("success"; False; "statusText"; "Operation failed"))
+ $response:=New object("success"; False; "statusText"; "Operación fallida"))
  ```
- You can even add some errors by action parameters for the `alphaField` parameter, for example:
+ Incluso puede añadir algunos errores por parámetros de acción para el parámetro `alphaField`, por ejemplo:
 
   ```4d
-$response.errors:=New collection(New object("parameter"; "alphaField"; "message"; "Alpha field must contains a valide value")
+$response.errors:=New collection(New object("parameter"; "alphaField"; "message"; "El campo Alfa debe contener un valor válido")
   ```
 
 
-## iOS app Side
+## aplicación iOS
 
-In your iOS app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section.
+En su aplicación iOS, las acciones están disponibles de diferentes formas en sus formularios listados y detallados, según las plantillas que seleccione en la sección Formularios.
 
-### Table List forms
+### Formularios Lista en tabla
 
-* **Entity action:** Swipe left on a cell to display the available actions in a List form. A "More" button is displayed if you've defined more than three actions per entity.
+* **Acción de entidad:** deslice hacia la izquierda en una celda para mostrar las acciones disponibles en un formulario Lista. Se muestra un botón "+" si define más de 3 acciones por entidad.
 
 ![Entity Lisform Tableview](img/ListForm-entity-action-tableview.png)
 
-* **Table actions:** A generic actions button is available in the navigation bar to display a list of available table actions.
+* **Acciones de tabla:** un botón de acciones genéricas está disponible en la barra de navegación para mostrar una lista de acciones de tabla.
 
 ![Table Listform Tableview](img/ListForm-table-action-tableview.png)
 
-:::tip
+:::consejo
 
-Actions will be displayed in the same order as defined in the Action section.
+Las acciones se mostrarán en el mismo orden definido en la sección Acción.
 
 :::
 
-### Collection List forms
+### Formularios Lista en colección
 
-* **Entity action:** Depending on the template, actions are displayed by clicking on a generic button or by maintaing the pressure on a cell.
+* **Acción de entidad:**dependiendo de la plantilla seleccionada, las acciones se muestran al hacer clic en un botón genérico o al mantener el clic en una celda.
 
 ![Entity Listform Collectionview](img/ListForm-entity-action-collectionview.png)
 
-* **Table actions:** Like the Table List forms, a generic Actions button is available in the navigation bar to display a list of availble table actions.
+* **Acciones de tabla:** como para los formularios Lista en tablas, hay un botón de acciones genérico disponible en la barra de navegación para mostrar una lista de acciones de tabla.
 
 ![Table Listform Collectionview](img/ListForm-table-action-collectionview.png)
 
-### Detail forms
+### Formularios detallados
 
-As with Table actions in List forms, a generic Actions button is available in the navigation bar to display all your entity actions in a list.
+Como para las acciones de tabla en los formularios detallados, un botón de acciones genéricas está disponible en la barra de navegación para mostrar todas sus acciones de entidad en una lista.
 
 ![Entity Detailform](img/Detailform-final.png)
 
-### Edition forms
+### Formularios de edición
 
-If you have created an Edit or an Add action, as soon as you select it from the action list, an **Edition form** will appear.
+Si ha creado una acción de edición o de adición, tan pronto como la seleccione de la lista de acciones, aparecerá un **formulario de edición**.
 
 ![Send task comment](img/Action-parameters-sendComment.png)
 
-From here, you can:
+Desde acá, puede:
 
-* edit all of your fields by selecting them, and
-* validate or cancel your modifications using the **Done** or **Cancel** buttons (available in the navigation bar).
+* editar todos sus campos seleccionándolos y
+* validar o cancelar sus modificaciones con los botones **Listo** o **Cancelar** (disponibles en la barra de navegación).
 
-For your convenience, the Edition form includes a few **special features**:
+Para su comodidad, el formulario de Edición incluye algunas **funcionalidades especiales**:
 
-* The keyboard type depends on the selected parameter type in the Action section.
-* You can go to the next or previous field using the arrow on top of the keyboard.
-* The iOS keyboard can be closed by touching anywhere outside of a field.
-* Indication is given to the user when a value is not valid.
-* The view focuses on empty mandatory fields when the user clicks the Done button.
+* El tipo de teclado depende del tipo de parámetro seleccionado en la sección Actions.
+* Puede ir al campo siguiente o anterior utilizando la flecha en la parte superior del teclado.
+* El teclado iOS se puede cerrar tocando cualquier parte fuera de un campo.
+* Se le indica al usuario cuando un valor no es válido.
+* La vista se centra en los campos obligatorios vacíos cuando el usuario hace clic en el botón Done.
 
-## Where to go from here?
+## ¿Qué hacer ahora?
 
-* A [tutorial]`(actions-getting-started.html)` is available to guide you through the **action definition process**.
+* Un [tutorial]`(actions-getting-started.html)` está disponible para guiarlo a través del **proceso de definición de una acción**.
 
-* Another [tutorial]`(action-custom-template.html)` will guide you through the **action TAG integration** for custom templates.
+* Otro [tutorial]`(action-custom-template.html)` lo guiará a través de la **integración TAG de acción** en las plantillas personalizadas.
 
-* A final [tutorial]`(action-parameters.html)` will guide you through the **action parameters definition**.
+* Un [tutorial]`(action-parameters.html)` final lo guiará a lo largo de la **definición de los parámetros de una acción**.

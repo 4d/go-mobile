@@ -6,29 +6,29 @@ title: Pré-requis
 4D for iOS and 4D for Android require a specific minimum configuration.
 
 
-## System requirements
+## Configuration système
 
 System requirements are the same as [4D's minimum system requirements](https://us.4d.com/product-download/Feature-Release).
 
 8GB of RAM is recommended.
 
 
-## Software requirements
+## Configuration logicielle
 
 ### 4D
 
-- **Development**: 4D v18 with a 4D Developer Pro licence
+- **Développement**: 4D avec une licence 4D Developer Pro
 
-- **Deployment**: 4D Server v18
-    - The 4D Web Server must be started.
-    - HTTP and HTTPS ports must be enabled and correctly configured. HTTPS is mandatory for 4D for iOS and 4D for Android deployment.
+- **Déploiement **: 4D Server
+    - 4D Web Server doit être lancé.
+    - Les ports HTTP et HTTPS doivent être activés et configurés correctement. HTTPS est nécessaire pour le déploiement 4D for iOS et 4D for Android.
 
 
 ### iOS
 
-[Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) installed on your Mac (optional).
+[Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) installé sur votre Mac (facultatif).
 
-Version table:
+Tableau de versions :
 
 | Xcode | Swift | iOS  | 4D          | macOS   |
 | ----- | ----- | ---- | ----------- | ------- |
@@ -36,7 +36,7 @@ Version table:
 | 12.4  | 5.3.2 | 14.4 | 18R6        | 10.15.4 |
 | 12.2  | 5.3   | 14.2 | 18R5 & 18.3 | 10.15.4 |
 
-<details><summary>Version history</summary>
+<details><summary>Historique</summary>
 
 | Xcode  | Swift | iOS  | 4D   | macOS   |
 | ------ | ----- | ---- | ---- | ------- |
@@ -56,13 +56,13 @@ Version table:
 
 ### Android
 
-Version table:
+Tableau de versions :
 
 | Android                                               | 4D | Windows           |
 | ----------------------------------------------------- | -- | ----------------- |
 | [4.1.2](https://developer.android.com/studio/archive) | 19 | Windows 10 64-bit |
 
-4D for Android requires the Android SDK, including Android Studio. If not installed, it will be automatically downloaded at the launch of the 4D mobile editor on Windows:
+4D for Android nécessite le SDK Android, y compris Android Studio. S'il n'est pas installé, il sera automatiquement téléchargé au lancement de l'éditeur mobile 4D sur Windows :
 
 ![sdk](img/install-android.png)
 
