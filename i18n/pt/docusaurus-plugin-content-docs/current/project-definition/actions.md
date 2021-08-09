@@ -17,7 +17,7 @@ Pode criar uma nova ação clicando no botão +  no fundo da tabela Actions. Uma
 Depois precisa definir o abaixo:
 
 * **Names:** o nome da ação a usar no método de banco de dados [On Mobile App Action](https://developer.4d.com/4d-for-ios/docs/en/actions.html#on-mobile-app-action) para ativar seu código 4D.
-* **Icons:** O ícone a escolher de sua biblioteca ícone. You can also add your own icon by following this [tutorial]`(using-icons.html)`.
+* **Icons:** O ícone a escolher de sua biblioteca ícone. Também é possível adicioanr seu próprio ícone seguindo este [tutorial]`(using-icons.html)`.
 * **Short and long Labels:** As etiquetas para as ações para exibir em seu app.
 * **Table:** A tabela na qual quer aplicar a ação.
 * **Scope:** Onde usar a ação, uma **entidade** ou uma **tabela**.
@@ -26,7 +26,7 @@ Depois precisa definir o abaixo:
 
 ### Adicione parâmetros para sua ação
 
-You can add **action parameters** and **edit** data directly from your app.
+Você pode adicionar **parâmetros ação** e **editar** dados diretamente de seu app.
 
 Para cada parâmetro, pode editar as propriedades abaixo:
 
@@ -75,68 +75,68 @@ Aqui estão os diferentes **Formatos** que pode selecionar para um parâmetro:
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>NUMBER</th>
+<th colspan="2" style={{textAlign: 'center'}}>NÚMERO</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Formato</th><th>Descrição</th>
 </tr><tr>
-<td>Number</td><td>Numbers with decimals</td>
+<td>Número</td><td>Número com decimais</td>
 </tr><tr>
-<td>Integer</td><td>Numbers without decimals</td>
+<td>Inteiro</td><td>Números sem decimais</td>
 </tr><tr>
-<td>Scientific</td><td>Scientific Notation</td>
+<td>Científico</td><td>Notação científica</td>
 </tr><tr>
-<td>Percentage</td><td>Percent Notation</td>
+<td>Porcentagem</td><td>Notação de porcentagem</td>
 </tr><tr>
-<td>Spell Out</td><td>Convert numbers into strings</td>
+<td>Números como  letras</td><td>Converte os números em strings de texto</td>
 </tr>
 <tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>DATE</th>
+<th colspan="2" style={{textAlign: 'center'}}>DATA</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Formato</th><th>Descrição</th>
 </tr><tr>
-<td>Date</td><td>Nov 23, 1937</td>
+<td>Data</td><td>Nov 23, 1937</td>
 </tr><tr>
-<td>Short Date</td><td> 11/23/37</td>
+<td>Data curta</td><td> 11/23/37</td>
 </tr><tr>
-<td>Long Date</td><td>November 23, 1937</td>
+<td>Data longa</td><td>Novembro 23, 1937</td>
 </tr><tr>
-<td>Full Date</td><td>Tuesday, November 23, 1937</td>
+<td>Data completa</td><td>Terça, Novembro 23, 1937</td>
 </tr><tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>TIME</th>
+<th colspan="2" style={{textAlign: 'center'}}>HORA</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Formato</th><th>Descrição</th>
 </tr><tr>
-<td>Time</td><td>3:30 PM</td>
+<td>Hora</td><td>3:30 PM</td>
 </tr><tr>
-<td>Duration</td><td>2 hours 30 minutes</td>
+<td>Duração</td><td>2 horas 30 minutos</td>
 </tr>
 <tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>BOOLEAN</th>
+<th colspan="2" style={{textAlign: 'center'}}>BOOLEANO</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Formato</th><th>Descrição</th>
 </tr><tr>
 <td>Boolean</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
 </tr><tr>
-<td>Check mark</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
+<td>Marca de verificação</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
 </tr>
 
 <tr>
 <td colspan="2"></td>
 </tr>
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>IMAGES</th>
+<th colspan="2" style={{textAlign: 'center'}}>IMAGENS</th>
 </tr>
 <tr>
 <td>Assinatura</td><td>Permitir assinatura com o dedo</td>
@@ -144,48 +144,48 @@ Aqui estão os diferentes **Formatos** que pode selecionar para um parâmetro:
 
 </table>
 
-## Preset actions
+## Ações predefinidas
 
-4D mobile projects include the following (predefined) preset actions to manage your app content:
+Os projetos móveis incluem as ações predefinidas abaixo para gerenciar o conteúdo de seu app:
 
 * Ação de Editar
 * Ação de Adicionar
 * Ação de eliminar
-* Share
-* Sort
+* Partilhar
+* Ordenar
 
-### Add action
+### Adicionar ação
 
-4D mobile projects makes the **Add actions** creation process very simple.
+Projetos 4D móveis torna o processo de criação **Adicionar Ações** bem simples.
 
 A única coisa que precisa fazer é selecionar a opção **Ação adicionar** acessível a partir do  **+ botão** no fundo da tabela Ações.
 
 ![Add actions](img/Actions-Add-action-4D-for-iOS.png)
 
-Then just **select the table** you want to link to this add action.
+Depois **selecione a tabela** que quiser linkar à ação adicionar.
 
 Isso vai **criar automaticamente** todos os parâmetros para você no Editor de Projeto. No app gerado, isso permite que edite cada valor de campo.
 
 Para este tipo de ação, vai ver que todas as **propriedades** já estão preenchidas para sua conveniência no lado direito da lista de parâmetros.
 
 
-### Edit action
+### Ação de Edição
 
 A criação de **Ações Editar** segue o mesmo processo que as Ações Adicionar, com exceção que não é possível definir valores predeterminados a partir da seção Ações.
 
 
 
-### Delete action
+### Ação de eliminação
 
-**Delete action** creation follows the same process as the Edit action. The only difference is that this action allows you to remove an entity.
+A criação de **ações de eliminação ** segue o mesmo processo que as ações de edição. A única diferença é que essa ação permite que remova uma entidade.
 
-To create a Delete action, select the **Delete action for** option accessible from the **+ button** at the bottom of the Actions table.
+Para criar uma ação de eliminação, selecione a opção **Ação de eliminação para**, acessível desde o **botão + ** na parte inferior da tabela Ações.
 
-This type of action should be used with caution.
+Este tipo de ação deve ser utilizado com precaução.
 
 ![Delete actions](img/Actions-Delete-action-4D-for-iOS.png)
 
-### Share action
+### Ação Partilhar
 
 Selecting the **Share action** will allow your mobile users to share content with other users. You just need to select the scope:
 
