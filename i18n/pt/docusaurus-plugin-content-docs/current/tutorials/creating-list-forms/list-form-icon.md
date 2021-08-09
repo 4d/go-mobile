@@ -14,9 +14,7 @@ O ícone será usado:
 
 ![Custom listform template](img/custom-listform-template.png)
 
-Se este ícone estiver faltando na pasta de seu modelo de formulário lista, será exibido
-
-template.svg file** será exibido na janela de seletor de modelo e um ícone de ponto de interrogação será exibido acima de cada tabela em que faltar um ícone.</p> 
+Se este ícone estiver faltando na pasta de seu modelo de formulário lista, será exibido [**template.svg file**](list-form-template.md)será exibido na janela de seletor de modelo e um ícone de ponto de interrogação será exibido acima de cada tabela em que faltar um ícone.
 
 ![Missing listform icon custom template](img/missing-listform-icon-custom-template.png)
 
