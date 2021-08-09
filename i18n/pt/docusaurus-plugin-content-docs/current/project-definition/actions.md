@@ -248,32 +248,32 @@ Depois de criar todas as suas ações, simplesmente clique no botão Criar da ta
 
 ## Ações modo offline
 
-O usuário de uma aplicação pode esboçar, armazenar, e colocar em fila petições de ação, mesmo se estiver trabalhando sem conexãoff (añadir el número de teléfono de un cliente, subir una foto, imprimir una factura o un presupuesto, borrar una dirección, etc.).  All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
+O usuário de uma aplicação pode esboçar, armazenar, e colocar em fila petições de ação, mesmo se estiver trabalhando sem conexão (adicionar o número de telefone de um cliente, subir uma foto, imprimir uma fatura ou um orçamento, apagar um endereço, etc.).  Todas essas tarefas são colocadas em ações Pendentes até que a rede fique acessível. Quando o usuário estiver online, todas as ações pendentes são sincronizadas consistentemente, executadas e então visíveis nas ações Completadas.
 
-Pending tasks can be visualized and opened from:
+Tarefas pendentes podem ser visualizadas e abertas com:
 
-•   *The Settings screen*
+•   *Tela de Configurações*
 
-It displays a summary and a history of all pending and completed tasks.
+Exibe um sumário e a história de todas as ações pendentes ou completas.
 
 ![Action section](img/screen1.png)
 
-•   *The List & Detail forms*
+•   *Formulários Lista & Detalhado*
 
-They display all the tasks related to the table or to the entity that you are currently viewing.
+Exibe todas as tarefas pendentes relacionadas à tabela ou à entidade que está vendo no momento.
 
 ![Action section](img/screen2.png)
 
 :::nota notas
 
-- The "Share" predefined action is only executable online
-- Actions are editable while pending, but they can no longer be modified once they switch to the "Completed" mode.
+- A ação pré-definida "Share" só é executável no modo online
+- As ações são editáveis enquanto estiverem pendentes, mas já não se podem modificar quanto passarem ao modo "Completado".
 
 :::
 
-### Update pending tasks that failed
+### Atualizar as tarefas pendentes que falham
 
-Due to your server business logic, some tasks could be rejected. For mobile users, it is then possible to edit and to retry sending the relevant pending tasks. To do so, you can display a status text describing, in the "Complete" actions history, the reason of the failure. For example, you can reject an action sent by a mobile user to the server and inform him that the operation has failed. In that case, you can set the `success` value to `False` and provide a message in `statusText`, as follows:
+Devido à lógica de negócio de seu servidor, algumas tarefas poderiam ser rejeitadas. For mobile users, it is then possible to edit and to retry sending the relevant pending tasks. To do so, you can display a status text describing, in the "Complete" actions history, the reason of the failure. For example, you can reject an action sent by a mobile user to the server and inform him that the operation has failed. In that case, you can set the `success` value to `False` and provide a message in `statusText`, as follows:
 
  ```4d
  $response:=New object("success"; False; "statusText"; "Operation failed"))
