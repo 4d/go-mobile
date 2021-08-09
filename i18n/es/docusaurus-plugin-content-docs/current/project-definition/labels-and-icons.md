@@ -3,28 +3,28 @@ id: labels-and-icons
 title: Etiquetas e iconos
 ---
 
-This page allows you to define display properties for your tables, fields and relations in the mobile app.
+Esta página le permite definir las propiedades de visualización de sus tablas, campos y relaciones en la aplicación móvil.
 
 ![Sección Etiquetas e Iconos](img/Labels-&-icons-section-4D-for-iOS.png)
 
-Default properties are set. To modify a property, select an element and enter the new value in the appropriate column.
+Se definen las propiedades por defecto. Para modificar una propiedad, seleccione un elemento e introduzca el nuevo valor en la columna correspondiente.
 
-You can define the same properties for tables, fields and relations. Additionally, formats can be defined for fields/relations.
+Puede definir las mismas propiedades para las tablas, los campos y las relaciones. Además, se pueden definir formatos para los campos/relaciones.
 
-These elements will be displayed in detail and list forms, depending on the template in the generated app.
+Estos elementos se mostrarán en formularios detallados y en formularios listados, dependiendo de la plantilla en la aplicación generada.
 
 
-## Icons
+## Iconos
 
-Icon to associate to the table or field/element in the mobile app each time a template requires an icon.
+Icono para asociar a la tabla o campo/elemento en la aplicación móvil cada vez que una plantilla requiera un icono.
 
 :::info
 
-For relation fields, icons will be displayed at the left of the **Relation** button that allows to open a related table.
+Para los campos de relación, se mostrarán iconos a la izquierda del botón **Relación** que permite abrir una tabla relacionada.
 
 :::
 
-The 4D mobile editor provides a large library of icons to meet your needs. These include icons for business, finance, education, government, health, industry, real estate, services, etc. To select an icon, click on the **icon** button and choose an icon from the list:
+El editor de 4D mobile ofrece una amplia librería de iconos para satisfacer sus necesidades. Estos incluyen iconos para negocios, finanzas, educación, gobierno, salud, industria, bienes raíces, servicios, etc. To select an icon, click on the **icon** button and choose an icon from the list:
 
 ![Icons select](img/icon-library.png)
 
