@@ -187,27 +187,27 @@ Este tipo de ação deve ser utilizado com precaução.
 
 ### Ação Partilhar
 
-Selecting the **Share action** will allow your mobile users to share content with other users. You just need to select the scope:
+Selecionar **Ação Partilhar, ** permite a seus usuários móveis partilhar conteúdo com outros usuários. Só precisa selecionar o escopo:
 
-- **entity**: to share content from a detail form
-- **table**: to share a list form
+- **entidade**: para partilhar conteúdo com um formulário detalhada
+- **tabela**: para partilhar um formulário lista
 
-See the [Deep Linking](../special-features/deep-linking.md) page for more details.
+Ver a página [Deep Linking](../special-features/deep-linking.md) para saber mais.
 
-### Sort action
+### Ação Ordenar
 
-**Sort actions** are useful to:
+**Ações Ordenar** são úteis para:
 
-- define a default sort order for the table list forms
-- allow your mobile users to choose a list sort order
+- defina uma ordenação padrão para os formulários lista da tabela
+- permitir aos usuários móveis escolher a ordem de classificação da lista
 
-When you create a sort action for a table, you need to select the first field on which the sort will be done:
+Quando criar uma ação ordenação para uma tabela, precisa selecionar o primeiro campo no qual a ordenação será feita:
 
 ![Docusaurus](img/sort-select.png)
 
-The field is added to the Sort Criteria list. An ascending sort order is set by default, but you can change it using the **Sort order** menu.
+O campo é adicionado à lista de critérios de ordenação. Uma ordem ascendente é definida como o normal mas pode ser mudada usando o menu **Ordem de clasificação**.
 
-You can sort entities in more than one field. Each field you sort is referred to as a sort level. For example, the results of a two-level ascending sort of the `lastName` and `firstName` fields would produce a list such as this:
+Pode ordenar entidades de ordenação em mais de um campo. Cada campo que ordenar é denominado como um nível de ordenação. Por exemplo, os resultados de uma ordenação ascendente de dois níveiss dos campos `lastName` e `firstName` produziria uma lista como esta:
 
 ```4d
 Aardvark, Anthony
@@ -218,37 +218,37 @@ Zygote, Elena
 Zymosian, Elmer
 ```
 
-To add one or more sort level(s) in the Sort Criteria list, select the **+** button under the list and configure each level:
+Para adicionar mais níveis na lista de critérios de ordenação, selecione o botão **+** abaixo da lista e configure cada nível:
 
 ![sort](img/ascending.png)
 
 
-#### Sort order menu on the mobile app
+#### Menu de ordenação na aplicação móvel
 
-When you define more than one sort action for a table, mobile users automatically benefit from a **sort** menu. It contains all the predefined sort actions:
+Quando definir mais que uma ação de ordenação para uma tabela, usuários móveis automaticamente se beneficiam de um menu **de ordenação**. Contém todas as ações predefinidas de ordenação:
 
 ![sort](img/sort-go-mobile.gif)
 
 
-> When only one sort action is defined for a table, the **sort** menu is not displayed on the mobile app side.
+> Quando só se define uma ação de ordenação para uma tabela, o menu **ordenação** não é mostrada na parte da aplicação móvel.
 
 ### On Mobile App Action
 
-The [On Mobile App Action]`(https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)` database method is available to call all of your 4D methods.
+O método database [On Mobile App Action]`(https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)` está disponível para chamar a todos seus métodos 4D.
 
-After creating all of your actions, just click on the Create button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
+Depois de criar todas as suas ações, simplesmente clique no botão Criar da tabela Ações para gerar automaticamente um bloco de código *Case of* que inclua todos os nomes de suas ações no método *On Mobile App Action*.
 
-:::note notes
+:::nota notas
 
-- You can refresh the selection after executing an action using `$out.dataSynchro:=True`.
-- You can notify the app user when action has been executed using `$out.statusText:="Message you want to display"`.
-- You can also decide to force close the Edition form using `$out.close:=True`.
+- Pode renovar a seleção depois de executar uma ação usando `$out.dataSynchro:=True`.
+- Pode notificar o usuário da aplicação sobre quando uma ação tiver sido executada usando `$out.statusText:="Mensagem que quer exibir"`.
+- Pode decidir fechar à força o formulário Edition usando `$out.close:=True`.
 
 :::
 
-## Offline mode actions
+## Ações modo offline
 
-The user of an app can draft, store and queue action requests, even if he’s working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.).  All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
+O usuário de uma aplicação pode esboçar, armazenar, e colocar em fila petições de ação, mesmo se estiver trabalhando sem conexãoff (añadir el número de teléfono de un cliente, subir una foto, imprimir una factura o un presupuesto, borrar una dirección, etc.).  All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
 
 Pending tasks can be visualized and opened from:
 
@@ -264,7 +264,7 @@ They display all the tasks related to the table or to the entity that you are cu
 
 ![Action section](img/screen2.png)
 
-:::note notes
+:::nota notas
 
 - The "Share" predefined action is only executable online
 - Actions are editable while pending, but they can no longer be modified once they switch to the "Completed" mode.
