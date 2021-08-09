@@ -55,7 +55,7 @@ Action** e selecione o alcance:
     *   tabela - para compartilhar um formulário lista</li> 
 
 2 Marque a propriedade **Deep Linking** na seção **Publishing** do editor de projetos.
-3 A informação do esquema URL é preenchido automaticamente com o nome da aplicação definida previamente na página [**General** ](../project-definition/general.md). Entretanto, ainda pode ser editado:</ol> 
+3 A informação do esquema URL é preenchido automaticamente com o nome da aplicação definida previamente na página [**General**](../project-definition/general.md). Entretanto, ainda pode ser editado:</ol> 
 
 ![Editor de projeto deep linking](img/deep-linking-project-editor-publishing-section.png)
 
