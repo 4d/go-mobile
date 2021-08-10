@@ -72,9 +72,9 @@ Así que vamos a añadirlo a su archivo de diseño. No olvide cerrar el contened
 
 ```
 
-It is crucial to **give ids to your layout elements** to refer to it later and positioning them among themselves.
+Es fundamental **dar ids a sus elementos de diseño** para referirse a ellos posteriormente y posicionarlos entre sí.
 
-Define the **width** and **height** of your container, the **margins** and as we want the content to take all the parent space (minus the margins) we just have to **add constraints**.
+Defina el **ancho** y **alto** de su contenedor, los **márgenes** y como queremos que el contenido ocupe todo el espacio padre (menos los márgenes) sólo tenemos que **añadir restricciones**.
 
 
 
@@ -120,14 +120,14 @@ Aquí está el código de diseño completo en esta etapa:
 
 ```
 
-And here is the preview result you are supposed to get :
+Y aquí está el resultado de la vista previa que se espera obtener:
 
 ![Add CardView container](img/add-cardView-container.png)
 
 
 ## Añadir una "ImageView"
 
-In order to have a nice Image view display we are going to use agin a CardView container again as we want to add a nice corner radius to the ImageView to have a better design.
+Para tener una agradable vista de imagen vamos a utilizar de nuevo un contenedor CardView ya que queremos añadir un radio de esquina a la ImageView para tener un mejor diseño.
 
 ```xml
             <androidx.cardview.widget.CardView
