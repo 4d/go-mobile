@@ -166,12 +166,12 @@ Para tener una buena visualización de la imagen vamos a utilizar de nuevo un co
 
 Como puede ver, el ImageView está insertado en el CardView. Eso permite añadirle radios de esquina.
 
-The `app:imageUrl="__IMAGE_1__"` line will allow to bind image value that is situated in position 1 in the svg file that you previously defined.
+La línea `app:imageUrl="__IMAGE_1__"` permitirá enlazar el valor de la imagen que se encuentra en la posición 1 del archivo svg que se ha definido previamente.
 
 
-The `tools:background="@tools:sample/avatars"` line simply there to display an ImageView placeholder.
+La línea `tools:background="@tools:sample/avatars"` simplemente está ahí para mostrar un marcador de posición ImageView.
 
-Here is the full layout code at this stage :
+Aquí está el código de diseño completo en esta etapa:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -339,7 +339,7 @@ En este tutorial, hemos cubierto los conceptos básicos para crear plantillas de
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">Descargar</a>
 </div>
 
 
