@@ -84,22 +84,22 @@ Para los campos de relación, se mostrarán etiquetas en el botón **Relación**
 
 :::
 
-- Short labels should have 10 characters or less
-- Long labels can have up to 25 characters
-- You can use characters that are not allowed in structure names, such as "/","@", the space character, etc.
+- Las etiquetas cortas deben tener 10 caracteres o menos
+- Las etiquetas largas pueden tener hasta 25 caracteres
+- Puede utilizar caracteres no permitidos en los nombres de estructuras, como "/", "@", el caracter de espacio, etc.
 
-By default, the mobile editor uses the table and field names as defined in the structure as labels in the app, and the same string is used for short and long labels.
+Por defecto, el editor móvil utiliza los nombres de tablas y campos definidos en la estructura como etiquetas en la aplicación, y se utiliza la misma cadena para las etiquetas cortas y largas.
 
 
-## Formats
+## Formatos
 
-This property allows you to format the data to display in the app. When you click on a field row, a format menu is displayed.
+Esta propiedad permite dar formato a los datos que se mostrarán en la aplicación. When you click on a field row, a format menu is displayed.
 
 ![formats](img/formats-menu.png)
 
 Available built-in formats depend on the field type:
 
-| Field type         | Formats                                                                                                                |
+| Field type         | Formatos                                                                                                               |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
 | **Texto**          | Texto                                                                                                                  |
 | **Fecha**          | Date, Short date, Long date, Full date                                                                                 |
