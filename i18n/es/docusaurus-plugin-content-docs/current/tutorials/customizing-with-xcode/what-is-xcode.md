@@ -7,7 +7,7 @@ title: Xcode
 
 Xcode es un entorno de desarrollo integrado(IDE) y un conjunto de herramientas de desarrollo para macOS que se utilizan para crear aplicaciones para iPad, iPod, iPhone y Mac.
 
-## Download
+## Descargar
 
 Para descargar la última versión de Xcode vaya a la App Store.
 
