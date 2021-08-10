@@ -38,7 +38,7 @@ Al pasar el ratón, una sugerencia muestra el nombre de la tabla fuente que orig
 
 :::
 
-## Sección Etiquetas e Iconos
+## Labels & Icons section
 
 La relación Uno a Muchos está ahora disponible en la sección **Etiquetas e Iconos**.
 
@@ -72,5 +72,5 @@ Descargar el proyecto terminado:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-OneToManyRelations/releases/latest/download/tutorial-OneToManyRelations.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-OneToManyRelations/releases/latest/download/tutorial-OneToManyRelations.zip">Descargar</a>
 </div>
