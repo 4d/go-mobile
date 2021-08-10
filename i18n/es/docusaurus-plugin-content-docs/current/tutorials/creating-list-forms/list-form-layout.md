@@ -125,7 +125,7 @@ And here is the preview result you are supposed to get :
 ![Add CardView container](img/add-cardView-container.png)
 
 
-## Add an ImageView
+## Añadir una "ImageView"
 
 In order to have a nice Image view display we are going to use agin a CardView container again as we want to add a nice corner radius to the ImageView to have a better design.
 
@@ -160,11 +160,11 @@ La línea `tools:background="@tools:sample/avatars"` simplemente está ahí para
 ![Add ImageView](img/add-imageview.png)
 
 
-## Add a title
+## Añadir un título
 
-Here we want to add a title at the right of the CardView that contains an ImageView.
+Aquí queremos añadir un título a la derecha de la CardView que contiene una ImageView.
 
-To do so we are going to add a TextView :
+Para ello vamos a añadir un TextView:
 
 ```xml
  <TextView
@@ -187,9 +187,9 @@ To do so we are going to add a TextView :
 
 ```
 
-The `app: text="__TEXT_2__"` line will allow to bind text value that is situated in position 2 in the svg file that you previously defined.
+La línea `app: text="__TEXT_2__"` permitirá enlazar el valor del texto que se encuentra en la posición 2 del archivo svg que se ha definido previamente.
 
-We want to ImageView and the TextView to be top aligned. To do so, we are going to use the TextView id. You just have to add this line to the CardView that include the profile picture :
+Queremos que el ImageView y el TextView estén alineados arriba. Para ello, vamos a utilizar el id TextView. Sólo tiene que añadir esta línea a la CardView que incluye la foto de perfil:
 
 ```xml
 app:layout_constraintTop_toTopOf="@id/__SPECIFIC_ID_2__"
