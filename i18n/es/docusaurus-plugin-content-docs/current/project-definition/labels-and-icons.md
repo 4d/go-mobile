@@ -3,57 +3,57 @@ id: labels-and-icons
 title: Etiquetas e iconos
 ---
 
-This page allows you to define display properties for your tables, fields and relations in the mobile app.
+Esta página le permite definir las propiedades de visualización de sus tablas, campos y relaciones en la aplicación móvil.
 
 ![Sección Etiquetas e Iconos](img/Labels-&-icons-section-4D-for-iOS.png)
 
-Default properties are set. To modify a property, select an element and enter the new value in the appropriate column.
+Se definen las propiedades por defecto. Para modificar una propiedad, seleccione un elemento e introduzca el nuevo valor en la columna correspondiente.
 
-You can define the same properties for tables, fields and relations. Additionally, formats can be defined for fields/relations.
+Puede definir las mismas propiedades para las tablas, los campos y las relaciones. Además, se pueden definir formatos para los campos/relaciones.
 
-These elements will be displayed in detail and list forms, depending on the template in the generated app.
+Estos elementos se mostrarán en formularios detallados y en formularios listados, dependiendo de la plantilla en la aplicación generada.
 
 
-## Icons
+## Iconos
 
-Icon to associate to the table or field/element in the mobile app each time a template requires an icon.
+Icono para asociar a la tabla o campo/elemento en la aplicación móvil cada vez que una plantilla requiera un icono.
 
 :::info
 
-For relation fields, icons will be displayed at the left of the **Relation** button that allows to open a related table.
+Para los campos de relación, se mostrarán iconos a la izquierda del botón **Relación** que permite abrir una tabla relacionada.
 
 :::
 
-The 4D mobile editor provides a large library of icons to meet your needs. These include icons for business, finance, education, government, health, industry, real estate, services, etc. To select an icon, click on the **icon** button and choose an icon from the list:
+El editor de 4D mobile ofrece una amplia librería de iconos para satisfacer sus necesidades. Estos incluyen iconos para negocios, finanzas, educación, gobierno, salud, industria, bienes raíces, servicios, etc. Para seleccionar un icono, haga clic en el botón **icono** y elija un icono de la lista:
 
 ![Icons select](img/icon-library.png)
 
 :::info
 
-To keep everything consistent, **default icons** are generated for blank fields if at least one icon has been defined for a field.
+Para mantener todo consistente, los **iconos predeterminados** se generan para los campos vacíos, si se ha definido al menos un icono para un campo.
 
 :::
 
-You can also leave the icon area empty if you don’t want to display icons in your application.
+También puede dejar el área de iconos vacía si no desea mostrar los iconos en su aplicación.
 
 
-### Adding custom icons
+### Añadir iconos personalizados
 
-You can add your own icons to the library, so that you can select them in your project. You can use any icon format (SVG or PNG is recommended to preserve transparency) and size. It's highly recommended having colored versions of your custom icons to better visualize them in the project editor.
+Puede añadir sus propios iconos a la librería, para poder seleccionarlos en su proyecto. Puede utilizar cualquier formato de icono (se recomienda SVG o PNG para conservar la transparencia) y tamaño. Es muy recomendable tener iconos de colores personalizados para visualizarlos mejor en el editor de proyectos.
 
-For example, here are a set of custom icons that you can use:
+Por ejemplo, aquí tiene un conjunto de iconos personalizados que puede utilizar:
 
 <div className="center-button">
 <a
   className="button button--primary"
   href="https://github.com/4d-go-mobile/tutorial-CustomIcons/releases/latest/download/tutorial-CustomIcons.zip">
-  Download custom icons
+  Descargar iconos personalizados
 </a>
 </div>
 
-To include custom icons in your project:
+Para incluir iconos personalizados en su proyecto:
 
-1. Create an `icons` folder at the following location:
+1. Cree una carpeta `iconos` en la siguiente ubicación:
 
 ```
 <my4DProjetFolder>/Resources/Mobile/medias
@@ -65,22 +65,22 @@ Puede que tenga que crear la carpeta `medias`.
 
 :::
 
-2. Drag and drop your customized icons in the `icons` folder.
+2. Arrastre y suelte sus iconos personalizados en la carpeta `iconos`.
 
 ![Icons select2](img/mobile-folder-custom-icons.png)
 
-Your icons can now be selected for your project, they are listed after the standard icons.
+Ahora puede seleccionar sus iconos para su proyecto, que aparecen después de los iconos estándar.
 
 
 
 
-## Short and long labels
+## Etiquetas cortas y largas
 
-You can define custom labels for published tables, fields, and relations. These labels will be automatically used according to the available space in the template to optimize space and avoid overcrowding the tab bar.
+Puede definir etiquetas personalizadas para tablas, campos y relaciones publicadas. Estas etiquetas se utilizarán de acuerdo con el espacio disponible en la plantilla para optimizar espacio y evitar congestionamiento en la barra de pestañas.
 
 :::info
 
-For relation fields, labels will be displayed in the **Relation** button that allows to open a related table.
+Para los campos de relación, se mostrarán etiquetas en el botón **Relación** que permite abrir una tabla relacionada.
 
 :::
 
