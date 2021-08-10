@@ -268,5 +268,5 @@ Descargue la carpeta de la plantilla terminada:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">Download</a>
+href="https://github.com/4d-for-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">Descargar</a>
 </div>
