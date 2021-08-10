@@ -1,6 +1,6 @@
 ---
 id: list-form-layout
-title: Android Layout
+title: Diseño de Android
 ---
 
 In this section you will see how to create your Android list form interface with Android Studio.
@@ -15,31 +15,31 @@ Para cada celda, vamos a añadir:
 * Título
 * Subtitulo
 
-## Open the layout file with Android Studio
+## Abrir el archivo de diseño con Android Studio
 
-The best way to edit or create a template is to :
+La mejor manera de editar o crear una plantilla es:
 
-* Open Android Studio and create a new empty mobile project clicking on File > New > New Project...
+* Abrir Android Studio y crear un nuevo proyecto móvil vacío presionando en Archivo > Nuevo > Nuevo Proyecto...
 
-* Select the Empty Activity template
+* Seleccionar la plantilla Actividad vacía
 
 ![Android Studio project creation](img/template-selection.png)
 
-* Configure your project and click **Finish**
+* Configure su proyecto y haga clic en **Terminar**
 
 ![Configure Android project](img/configure-android-project.png)
 
-* Copy the layout.xml file in app > res > layout dropping it directly on the project layout folder
+* Copiar el archivo layout.xml en app > res > layout soltándolo directamente en la carpeta diseño del proyecto
 
 ![Copy layout.xml file](img/copy-layout.png)
 
-* You should have that at that point :
+* Debería tener eso en ese momento:
 
 ![Android project](img/android-project.png)
 
-* Click on the top right **Split** option to visualize the template preview as well as the xml code.
+* Haga clic en la opción superior derecha **Dividir** para visualizar la vista previa de la plantilla así como el código xml.
 
-It's quite empty, so let's add some content!
+Está vacío, así que vamos a agregar algo de contenido.
 
 
 ## Add a CardView container
@@ -149,7 +149,7 @@ In order to have a nice Image view display we are going to use agin a CardView c
             </androidx.cardview.widget.CardView>
 ```
 
-As you can see the ImageView is embedded into the CardView. That allows to add corner radius to it.
+Como puede ver, el ImageView está insertado en el CardView. Eso permite añadirle radios de esquina.
 
 The `app:imageUrl="__IMAGE_1__"` line will allow to bind image value that is situated in position 1 in the svg file that you previously defined.
 
