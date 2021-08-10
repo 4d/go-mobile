@@ -5,7 +5,7 @@ title: Etiquetas e iconos
 
 Esta página le permite definir las propiedades de visualización de sus tablas, campos y relaciones en la aplicación móvil.
 
-![Sección Etiquetas e Iconos](img/Labels-&-icons-section-4D-for-iOS.png)
+![Labels & Icons section](img/Labels-&-icons-section-4D-for-iOS.png)
 
 Se definen las propiedades por defecto. Para modificar una propiedad, seleccione un elemento e introduzca el nuevo valor en la columna correspondiente.
 
@@ -93,46 +93,46 @@ Por defecto, el editor móvil utiliza los nombres de tablas y campos definidos e
 
 ## Formatos
 
-Esta propiedad permite dar formato a los datos que se mostrarán en la aplicación. When you click on a field row, a format menu is displayed.
+Esta propiedad permite dar formato a los datos que se mostrarán en la aplicación. Al hacer clic en una línea de campo, se muestra un menú de formato.
 
 ![formats](img/formats-menu.png)
 
-Available built-in formats depend on the field type:
+Los formatos integrados disponibles dependen del tipo de campo:
 
-| Field type         | Formatos                                                                                                               |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| **Texto**          | Texto                                                                                                                  |
-| **Fecha**          | Date, Short date, Long date, Full date                                                                                 |
-| **Hora**           | Time, Short time, Duration, Integer number                                                                             |
-| **Image**          | Image                                                                                                                  |
-| **Booleano**       | "No" or "Yes", "False" or "True"                                                                                       |
-| **Integer number** | Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out |
+| Tipo de campo     | Formatos                                                                                                               |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Texto**         | Texto                                                                                                                  |
+| **Fecha**         | Fecha, Fecha corta, Fecha larga, Fecha completa                                                                        |
+| **Hora**          | Fecha, Fecha corta, Duración, Número entero                                                                            |
+| **Imagen**        | Imagen                                                                                                                 |
+| **Booleano**      | "No" o "Yes", "False" o "True"                                                                                         |
+| **Número entero** | Número entero, número decimal, número real, porcentaje, número ordinal, moneda $, moneda €, moneda ¥, número en letras |
 
 
-### Adding custom formats
+### Añadir formatos personalizados
 
-The mobile editor allows you to add customized formats (called "formatters") in your projects. For example, you can define custom formats for emails, invoice numbers, etc.
+El editor móvil le permite añadir formatos personalizados (llamados "formateadores") en sus proyectos. Por ejemplo, puede definir formatos personalizados para los correos electrónicos, los números de factura, etc.
 
-To add custom formats to your mobile project, you can:
+Para añadir formatos personalizados a su proyecto móvil, puede:
 
-- Download and install customized formats from the [**go-mobile formatters github repository**](https://4d-for-ios.github.io/gallery/#/type/formatter/picker/0).
+- descargar e instale los formatos personalizados desde el [**repositorio github de formateadores go-mobile**](https://4d-for-ios.github.io/gallery/#/type/formatter/picker/0).
 
-- Create your own formats.
+- crear sus propios formatos.
 
 :::tip tutorial
 
-Visit [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format
+Visite [**este tutorial**](../tutorials/data-formatter/create-data-formatter) para saber cómo definir un formato personalizado
 
 :::
 
-To install a custom formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a custom format can be selected from the Formats menu, just like a built-in formats.
+Para instalar un formateador personalizado, sólo tiene que soltar la carpeta del formateador en la carpeta `/Resources/Mobile/formatters` del proyecto 4D. Una vez instalado, se puede seleccionar un formato personalizado en el menú Formatos, al igual que los formatos integrados.
 
 
 ## Título
 
-This property is only available for Relation fields. The defined title will be displayed on top of the destination view when using a relation.
+Esta propiedad sólo está disponible para los campos Relación. El título definido se mostrará en la parte superior de la vista de destino al usar una relación.
 
-Use a pair of `%` characters to include the value of the related field in the title. For example, if you want that the title of the `Employee.employer` related field displays the name of the related `employee` field, you can write:
+Utilice un par de caracteres `%` para incluir el valor del campo relacionado en el título. Por ejemplo, si quiere que el título del campo relacionado `Employee.employer` muestre el nombre del campo relacionado `employee`, puede escribir:
 
 ```
 %Name%'s employer
@@ -140,6 +140,6 @@ Use a pair of `%` characters to include the value of the related field in the ti
 
 :::tip tutorial
 
-A [**tutorial**](../tutorials/relations/one-to-many-title-definition) is available to guide you through the Title definition process.
+Un [**tutorial**](../tutorials/relations/one-to-many-title-definition) está disponible para guiarlo a través del proceso de definición de un título.
 
 :::
