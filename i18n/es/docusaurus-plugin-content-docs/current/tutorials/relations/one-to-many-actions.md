@@ -100,5 +100,5 @@ Descargar el proyecto terminado:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-RelationsActions/releases/latest/download/tutorial-RelationsActions.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-RelationsActions/releases/latest/download/tutorial-RelationsActions.zip">Descargar</a>
 </div>
