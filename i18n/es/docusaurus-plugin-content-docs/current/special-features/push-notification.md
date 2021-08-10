@@ -4,13 +4,13 @@ title: Push notifications
 ---
 
 
-## What is a push notification?
+## ¿Qué es una notificación push?
 
 En un teléfono móvil, una notificación Push es un mensaje de alerta, recibido a través de una aplicación, que puede abrir, eliminar, autorizar o bloquear. Puede ser muy útil por ejemplo para notificar a los usuarios de la aplicación que hay una nueva versión disponible.
 
 Pero, ¿qué pasa con la arquitectura a implementar, para integrar esta funcionalidad en una aplicación móvil? Y ¿Cuál es el proceso de una notificación push, desde la creación hasta la visualización en el teléfono del usuario?
 
-## Technical architecture
+## Arquitectura técnica
 
 Estos son los diferentes elementos necesarios para crear, enviar y recibir una notificación push móvil:
 
