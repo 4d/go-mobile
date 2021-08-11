@@ -49,7 +49,7 @@ Um botão de compartilhar está acessível diretamente na parte inferior do sele
 
 Todo o processo de compartilhar é detalhado na página de contribuição para ajudar no processo de compartir, lá estão também listas de boas práticas.
 
-## Where to go from here?
+## O que fazer agora?
 
 Pode tentar seguir a [guia de contribuição](https://github.com/4d-go-mobile/gallery/blob/master/.github/CONTRIBUTING.md#how-do-you-add-a-package) para compartilhar seus modelos em github e fazer com que apareçam no editor de projetos.
 
