@@ -15,7 +15,7 @@ Dans ce tutoriel, nous verrons qu'il est très simple d'**ajouter des actions au
 
 ## ÉTAPE 1. Téléchargez le projet Starter
 
-To begin, download the **Starter project**, which includes:
+Pour commencer, téléchargez le **Projet Starter**, qui comprend :
 
 * 2 modèles de formulaires Liste personnalisés (TasksList et TasksCollection)
 * 1 modèle de formulaire détaillé personnalisé (TasksDetail)
