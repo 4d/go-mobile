@@ -188,7 +188,7 @@ Vous pouvez désormais créer votre projet depuis l'éditeur de projet !
 
 ![Custom template final result](img/custom-template-final-result.png)
 
-## Where to go from here?
+## Que faire ensuite ?
 
 In this tutorial, we've covered the basics for creating list form templates with iOS. You are now able to create simple templates on your own using the Starter project ressources. You can also see how to build [detail form templates](../creating-detail-forms/detail-form-template.md).
 
