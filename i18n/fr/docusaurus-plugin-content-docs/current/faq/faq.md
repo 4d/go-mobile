@@ -57,7 +57,7 @@ Vous pouvez développer à la fois pour les plateformes mobiles iOS et Android.
 
 Vous pouvez développer uniquement pour la plateforme Android.
 
-For the iOS platform, we need XCode to compile the final application and to run the Simulator.
+Pour la plateforme iOS, Xcode est nécessaire pour compiler l'application finale et lancer le Simulateur.
 
 </details>
 
@@ -79,7 +79,7 @@ Non – 4D for iOS est inclus dans 4D Server v17 R2 et dans les versions plus r�
 
 Si vous avez déjà une licence 4D Developer Pro ou 4D Server de 4D v17 R2 ou de versions plus récentes, 4D for iOS y est inclus.
 
-If you're not a 4D Partner or don't participate in the 4D Maintenance program, you have to wait for 4D v18.
+Si vous n’êtes pas un partenaire 4D ou si vous ne participez pas au programme de maintenance de 4D, vous devez attendre la sortie de 4D v18.
 
 </details>
 
@@ -142,7 +142,7 @@ Vous avez la possibilité de créer des champs pré-calculés dans 4D et de les 
 
 Les images ne sont pas obligatoires, mais nous vous recommandons d'en utiliser pour garantir la meilleure expérience utilisateur.
 
-4D for iOS offers a variety of [list form]`(list-form-templates.html)` and [detail form]`(detail-form-templates.html)` templates. With or without images, with charts...
+4D for iOS offre un large éventail de modèles de [list form]`(list-form-templates.html)` et de [detail form]`(detail-form-templates.html)`. Avec sou sans images, avec graphiques, etc.
 
 </details>
 
@@ -174,9 +174,9 @@ Tous les modèles disponibles dans 4D for iOS sont optimisés pour l'iPhone. Ils
 
 <details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Ai-je besoin d'un compte Apple Developer ?</summary>
 
-To test your app, you'll need to create at least a [free Apple Developer account]`(free-developer-account.html)`.
+Pour tester votre application, vous aurez besoin de créer au moins un [free Apple Developer account]`(free-developer-account.html)`.
 
-To deploy a 4D for iOS app, you'll need to enroll in the [Apple Developer Enterprise Program]`(register-apple-developer-enterprise-program.html)` (for an in-house deployment) or in the [Apple Developer Program]`(register-apple-developer-program-organization.html)` (for an App Store deployment).
+Pour déployer une application 4D for iOS, vous devez adhérer au [Apple Developer Enterprise Program]`(register-apple-developer-enterprise-program.html)` (pour un déploiement interne) ou au [Apple Developer Program]`(register-apple-developer-program-organization.html)` (pour un déploiement sur l'App Store).
 
 </details>
 
