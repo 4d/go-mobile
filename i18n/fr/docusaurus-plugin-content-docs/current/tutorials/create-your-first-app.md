@@ -17,7 +17,7 @@ Before starting, please check that your configuration meets hardware and softwar
 
 
 
-## ÉTAPE 1. Download the Starter project
+## ÉTAPE 1. Téléchargez le projet Starter
 
 Download and unzip our 4D Starter project, which contains a database file and a project icon (but no mobile project yet).
 
@@ -134,7 +134,7 @@ Now the fun part! It's time to build your app and test it on the Simulator to se
 
 ![Build and Run](img/Build-the-app-simulator.png)
 
-## Where to go from here?
+## Que faire ensuite ?
 
 We've covered basic app creation in this tutorial, and you should now be able to create simple apps on your own. Of course, many other options and features are available. Right now, you can click on **Final Project** below to download the final Contact app.
 
