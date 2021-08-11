@@ -47,15 +47,15 @@ Voir les conditions préalables [here]`(requirements.html)`.
 
 </details>
 
-<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>For which mobile platform(s) can I develop on macOS?</summary>
+<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Pour quelle(s) plateforme(s) mobile(s) puis-je développer sur macOS?</summary>
 
-You can develop for both the iOS and Android mobile platforms.
+Vous pouvez développer à la fois pour les plateformes mobiles iOS et Android.
 
 </details>
 
-<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>For which mobile platform(s) can I develop on Windows?</summary>
+<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Pour quelle(s) plateforme(s) mobile(s) puis-je développer sur Windows ?</summary>
 
-You can only develop for the Android platform.
+Vous pouvez développer uniquement pour la plateforme Android.
 
 For the iOS platform, we need XCode to compile the final application and to run the Simulator.
 
