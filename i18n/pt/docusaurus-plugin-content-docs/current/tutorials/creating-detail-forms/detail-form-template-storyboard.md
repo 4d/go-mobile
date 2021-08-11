@@ -260,7 +260,7 @@ Agora pode construir seu projeto no editor de projetos!
 
 ![Custom template final result](img/custom-template-final-result.png)
 
-## Where to go from here?
+## O que fazer agora?
 
 Neste tutorial cobrimos os conceitos básicos para criar seu modelo de formulário detalhado. Agora pode criar modelos simples usando os recursos do Starter Project.
 
