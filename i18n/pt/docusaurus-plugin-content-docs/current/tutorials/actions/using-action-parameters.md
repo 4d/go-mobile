@@ -398,7 +398,7 @@ e finalmente pode eliminar uma entidade utilizando a ação **Eliminar... **.
 
 ![Delete task](img/Action-parameters-deleteAction.png)
 
-## PASSO 8. Where to go from here?
+## PASSO 8. O que fazer agora?
 
 Parabéns! Sua aplicação iOS Tasks agora está completa e agora pode modificar os dados de sua aplicação diretamente desde seu dispositivo e sincronizá-los com seu servidor.
 
