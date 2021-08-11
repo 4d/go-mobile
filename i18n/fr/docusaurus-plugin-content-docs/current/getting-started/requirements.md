@@ -3,14 +3,14 @@ id: requirements
 title: Pré-requis
 ---
 
-4D for iOS and 4D for Android require a specific minimum configuration.
+4D for iOS et 4D for Android nécessitent une configuration minimale spécifique.
 
 
 ## Configuration système
 
-System requirements are the same as [4D's minimum system requirements](https://us.4d.com/product-download/Feature-Release).
+Les prérequis système sont identiques aux [prérequis système basiques de 4D](https://us.4d.com/product-download/Feature-Release).
 
-8GB of RAM is recommended.
+8 Go de RAM sont recommandés.
 
 
 ## Configuration logicielle

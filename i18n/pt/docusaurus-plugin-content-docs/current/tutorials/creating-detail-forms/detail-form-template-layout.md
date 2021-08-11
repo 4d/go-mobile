@@ -333,7 +333,7 @@ Em nosso modelo de formulário detalhe usamos `app:imageUrl="__IMAGE_1__"`
 Aqui supomos que a  ImageView seja a primeira vsita no svg, e sua ID de vista é  `__SPECIFIC_ID_1__`. Se fosse a terceira vista, seria `__IMAGE_3__` e sua vista de ID seria `__SPECIFIC_ID_3__`.
 
 
-## Where to go from here?
+## O que fazer agora?
 
 Neste tutorial cobrimos os conceitos básicos para criar seu modelo de formulário detalhado. Agora pode criar modelos simples usando os recursos do Starter Project. Baixe a pasta do modelo de formatador completo:
 

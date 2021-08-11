@@ -273,77 +273,77 @@ Exibe todas as tarefas pendentes relacionadas à tabela ou à entidade que está
 
 ### Atualizar as tarefas pendentes que falham
 
-Devido à lógica de negócio de seu servidor, algumas tarefas poderiam ser rejeitadas. For mobile users, it is then possible to edit and to retry sending the relevant pending tasks. To do so, you can display a status text describing, in the "Complete" actions history, the reason of the failure. For example, you can reject an action sent by a mobile user to the server and inform him that the operation has failed. In that case, you can set the `success` value to `False` and provide a message in `statusText`, as follows:
+Devido à lógica de negócio de seu servidor, algumas tarefas poderiam ser rejeitadas. Para usuários móveis, é possível editar e retentar o envio de tarefas pendentes relevantes. Para fazer isso, pode exibir um texto de status descrevendo, na história de ações "Completo", a razão da falha. Por exemplo, poderia rejeitar uma ação enviada por um usuário móvel ao servidor e informá-lo que a operação falhou. Nesse caso, poderia estabelecer o valor `success` como `False` e oferecer uma mensagem em  `statusText`, como abaixo:
 
  ```4d
- $response:=New object("success"; False; "statusText"; "Operation failed"))
+ $response:=New object("success"; False; "statusText"; "A operação falhou"))
  ```
- You can even add some errors by action parameters for the `alphaField` parameter, for example:
+ Também pode adicionar erros por parâmetros de ação para o parâmetro `alphaField` , por exemplo:
 
   ```4d
-$response.errors:=New collection(New object("parameter"; "alphaField"; "message"; "Alpha field must contains a valide value")
+$response.errors:=New collection(New object("parameter"; "alphaField"; "message"; "O campo alfa deve conter um valor válido")
   ```
 
 
-## iOS app Side
+## Aplicação iOS
 
-In your iOS app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section.
+Em sua aplicação iOS, as ações estão disponíveis de diferentes formas em seus formulários listados e detalhados, segundo os modelos que selecionar na seção Formulários.
 
-### Table List forms
+### Formulários Lista em tabela
 
-* **Entity action:** Swipe left on a cell to display the available actions in a List form. A "More" button is displayed if you've defined more than three actions per entity.
+* **Ação de entidade:** deslize até a esquerda em uma célula para mostrar as ações disponíveis em um formulário Lista. Um botão  "+" é mostrado se definir mais de 3 ações por entidade.
 
 ![Entity Lisform Tableview](img/ListForm-entity-action-tableview.png)
 
-* **Table actions:** A generic actions button is available in the navigation bar to display a list of available table actions.
+* **Ações de tabela:** um botão de ações genéricas está disponível na barra de navegação para mostrar uma lista de ações de tabela.
 
 ![Table Listform Tableview](img/ListForm-table-action-tableview.png)
 
 :::tip
 
-Actions will be displayed in the same order as defined in the Action section.
+Ações serão exibidas na mesma ordem que definidas na seção Ação
 
 :::
 
-### Collection List forms
+### Formulários Lista coleção
 
-* **Entity action:** Depending on the template, actions are displayed by clicking on a generic button or by maintaing the pressure on a cell.
+* **Ação Entidade** Dependendo do modelo selecionado, as ações são mostradas ao clicar no botão genérico ou ao manter o clique em uma célula.
 
 ![Entity Listform Collectionview](img/ListForm-entity-action-collectionview.png)
 
-* **Table actions:** Like the Table List forms, a generic Actions button is available in the navigation bar to display a list of availble table actions.
+* **Ações de tabela:** como para os formulários Lista em tabelas, há um botão de ações genérico disponível na barra de navegação para mostrar uma lista de ações de tabela.
 
 ![Table Listform Collectionview](img/ListForm-table-action-collectionview.png)
 
 ### Detail forms
 
-As with Table actions in List forms, a generic Actions button is available in the navigation bar to display all your entity actions in a list.
+Como para as ações de tabela nos formulários detalhados, um botão de ações genéricas está disponível na barra de navegação para mostrar todas suas ações de entidade em uma lista.
 
 ![Entity Detailform](img/Detailform-final.png)
 
-### Edition forms
+### Formulários de edição
 
-If you have created an Edit or an Add action, as soon as you select it from the action list, an **Edition form** will appear.
+Se criou uma ação de edição ou de adição, logo que selecioná-la da lista de ações, aparecerá um **formulário de Edição**.
 
 ![Send task comment](img/Action-parameters-sendComment.png)
 
-From here, you can:
+A partir desse ponto, você pode
 
-* edit all of your fields by selecting them, and
-* validate or cancel your modifications using the **Done** or **Cancel** buttons (available in the navigation bar).
+* editar todos seus campos ao selecioná-los, e
+* validar ou cancelar suas modificações com os botões **Pronto** ou **Cancelar** (disponíveis na barra de navegação).
 
-For your convenience, the Edition form includes a few **special features**:
+Para sua comodidade, o formulário de Edição inclui algumas **funcionalidades especiais**:
 
-* The keyboard type depends on the selected parameter type in the Action section.
-* You can go to the next or previous field using the arrow on top of the keyboard.
-* The iOS keyboard can be closed by touching anywhere outside of a field.
-* Indication is given to the user when a value is not valid.
-* The view focuses on empty mandatory fields when the user clicks the Done button.
+* O tipo de teclado depende do tipo de parâmetro selecionado na seção Actions.
+* Pode ir ao próximo campo ou ao anterior, utilizando a flecha na parte superior do teclado.
+* O teclado iOS pode ser fechado tocando em qualquer parte fora de um campo.
+* É indicado ao usuário quando um valor não for válido.
+* A vista foca em campos obrigatórios vazios quando o usuário clicar no botão Pronto.
 
-## Where to go from here?
+## O que fazer agora?
 
-* A [tutorial]`(actions-getting-started.html)` is available to guide you through the **action definition process**.
+* Um [tutorial]`(actions-getting-started.html)`  está disponível para guiá-lo através do **processo de definição de uma ação**.
 
-* Another [tutorial]`(action-custom-template.html)` will guide you through the **action TAG integration** for custom templates.
+* Outro  [tutorial]`(action-custom-template.html)` o guiará para integrar as **TAG de ação** nos modelos personalizados.
 
-* A final [tutorial]`(action-parameters.html)` will guide you through the **action parameters definition**.
+* Um [tutorial]`(action-parameters.html)` final o guiará ao longo do processo **definição dos parâmetros de uma ação**.
