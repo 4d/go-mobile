@@ -8,7 +8,7 @@ Dans ce tutoriel, nous vous guiderons dans la création d'un modèle de formulai
 
 ![Custom template final result](img/custom-template-final-result.png)
 
-## Download the Starter project
+## Téléchargez le projet Starter
 
 To begin, download the **Starter project**, which includes:
 
