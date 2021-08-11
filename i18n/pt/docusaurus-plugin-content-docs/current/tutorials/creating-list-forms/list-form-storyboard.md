@@ -188,7 +188,7 @@ Agora pode construir seu projeto no editor de projetos!
 
 ![Custom template final result](img/custom-template-final-result.png)
 
-## Where to go from here?
+## O que fazer agora?
 
 Neste tutorial cobrimos o básico da criação de modelos de formulário lista com iOS. Você já pode criar seus próprios modelos simples usando os recursos do Starter Project. Também pode ver como construir  [modelos de formulário detalhados](../creating-detail-forms/detail-form-template.md).
 
