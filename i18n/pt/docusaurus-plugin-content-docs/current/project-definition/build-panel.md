@@ -1,40 +1,40 @@
 ---
 id: build-panel
-title: Build Panel
+title: Painel Geração
 ---
 
-You can test your app at any moment during the development, thanks to the Simulator located on the BUILD tab of the Project Editor.
+Pode testar seu app a qualquer momento durante o desenvolvimento, graças ao Simulador na aba BUILD do Editor de Projeto.
 
 ![BuildTab](img/Build-Tab-4D-for-iOS.png)
 
 
-Let’s take a closer look at the Build tab options:
+Vamos olhar mais de perto as opções da aba  Build
 
 * **Criar e executar:** lança a aplicação no simulador.
 
 * **iPhone X:** simulador por padrão Ao clicar aqui, se mostrará uma lista dropdown com todos os simuladores disponíveis.
 
-* **Project:** Reveals a dropdown list where you can **open the project folder** or **product folder**, or **open the product with Xcode**. This dropdown list is useful for [debug operations](../debug/from-project-editor).
+* **Projet:** mostra uma lista suspensa onde pode **abrir a pasta do projeto** ou a **pasta de produto**, ou **abrir o produto com Xcode**. Essa lista dropdown é útil para [operações de debug](../debug/from-project-editor).
 
-* **Install:** Installs the application on a connected device (see [Installing on your iOS device](../deployment/testing-on-your-device)).
+* **Install:** Instalar a aplicação em um aparelho conectado (ver [Instalar em aparelho iOS ](../deployment/testing-on-your-device)).
 
 
-## Using the Simulator
+## Usando o Simulador
 
-You can use the Simulator by following these steps.
+Pode usar o Simulador com os passos a seguir.
 
-1. Select your device.
+1. Selecione seu aparelho.
 
-In the BUILD tab of  the Project Editor, select an iOS or Android device to use for running your app.
+Na aba BUILD do Editor de Projeto, selecione um aparelho iOS ou Android para usar para rodar seu app.
 
 ![Device selection](img/device-selection-4D-for-ios.png)
 
-2. Click on the **Build and Run** button.
+2. Clique no botão **Build and Run**.
 
 ![Build and Run](img/build-and-run-4D-for-iOS.png)
 
-3. Test your app.
+3. Teste seu app.
 
-Test navigating between the list and detail forms in your app.
+Teste navegar entre os formulários lista e detalhe em seu app.
 
 ![Test in Simulator](img/simulator-forms-4D-for-iOS.png) 
