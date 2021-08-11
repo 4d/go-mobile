@@ -7,7 +7,7 @@ In this tutorial, we'll cover nearly all aspects of creating a list form templat
 
 ![List form template final result](img/custom-template-final-result.png)
 
-## Download the Starter project
+## Téléchargez le projet Starter
 
 Before we begin, be sure to download and unzip the **Starter project** which includes:
 
