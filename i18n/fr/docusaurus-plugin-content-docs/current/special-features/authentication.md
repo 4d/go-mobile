@@ -1,10 +1,10 @@
 ---
 id: authentication
-title: Authentication
+title: Authentification
 ---
 
 
-## Enabling authentication
+## Activer l'authentification
 
 A mobile application can require that the user be authenticated or not.
 
@@ -70,7 +70,7 @@ $0:=$response
 ```
 
 
-## Email authentication
+## Authentification email
 
 The most common and comfortable way to authenticate mobile users is to rely on email authentication.
 
