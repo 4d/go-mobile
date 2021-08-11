@@ -1,26 +1,26 @@
 ---
 id: many-to-one-relations
-title: Many to One relations
+title: Liens N vers 1
 ---
 
 
-This tutorial will show you how easy it can be to include Many to one relations in your mobile projects.
+Grâce à ce tutoriel, vous pourrez facilement inclure des liens N vers 1 dans vos projets mobiles.
 
 :::note
 
-In this tutorial, we will use the relation names between your tables. Giving descriptive relation names can make your project structure definition easier.
+Dans ce tutoriel, nous allons utiliser les noms des liens reliant vos tables. En attribuant des noms de liens descriptifs, vous simplifierez la structure de votre projet.
 
 :::
 
-Let's get started by downloading the Starter project:
+Commençons par télécharger le Projet Starter :
 
 <div className="center-button">
-<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-ManyToOneRelations/releases/latest/download/tutorial-ManyToOneRelations.zip">Starter project</a>
+<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-ManyToOneRelations/releases/latest/download/tutorial-ManyToOneRelations.zip">Projet Starter</a>
 </div>
 
 Here we want to display the category for each task in the detail form of your generated app. To do so, open the **StarteriOSProject** from **Open > Mobile Project...**
 
-Then go right to your Structure section and select the **Task table**.
+Accédez directement à la section Structure, puis sélectionnez la **table Tasks**.
 
 ### Structure section
 
@@ -30,11 +30,11 @@ Then go right to your Structure section and select the **Task table**.
 
 * Sélectionnez le **champ Name**
 
-![Select link from structure section](img/select-link-from-structure.png)
+![Sélectionnez le lien à partir de la section Structure](img/select-link-from-structure.png)
 
 * Ce champ aura le même fonctionnement que n’importe quel autre champ pour la suite de la création de l’application
 
-* You can also filter your app content using related fields from the Data section. To do so enter `TaskCategory.Name != 'Personal'` in the Filter query field to exclude personal tasks.
+* Vous pouvez également filtrer le contenu de votre application à l’aide des champs liés, à partir de la section Données. To do so enter `TaskCategory.Name != 'Personal'` in the Filter query field to exclude personal tasks.
 
  ![Champs liés depuis la section Données](img/Related-field-from-Data-section.png)
 
@@ -48,7 +48,7 @@ Then go right to your Structure section and select the **Task table**.
 
 * Build and Run
 
-You should see your related field in your app detail form !
+Votre champ lié devrait apparaitre dans le formulaire détaillé de votre application !
 
 ![Related field in Forms section](img/final-result-n-to-one-relations.png)
 
