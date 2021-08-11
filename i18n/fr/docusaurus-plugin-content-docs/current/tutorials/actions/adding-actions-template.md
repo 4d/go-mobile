@@ -5,20 +5,20 @@ title: Ajouter des actions aux modèles
 
 > **OBJECTIFS**
 > 
-> Add actions to custom List and Detail forms templates.
+> Ajouter des actions aux modèles de formulaires Liste et formulaires détaillés personnalisés.
 
 > **CONDITIONS PRÉALABLES**
 > 
-> Click `[here](prerequisites.html)` to see what you'll need to get started!
+> Cliquez `[here](prerequisites.html)` pour commencer !
 
 Dans ce tutoriel, nous verrons qu'il est très simple d'**ajouter des actions aux modèles personnalisés**.
 
-## ÉTAPE 1. Download the Starter project
+## ÉTAPE 1. Téléchargez le projet Starter
 
 To begin, download the **Starter project**, which includes:
 
-* two custom List form templates (TasksList and TasksCollection)
-* a custom Detail form template (TasksDetail)
+* 2 modèles de formulaires Liste personnalisés (TasksList et TasksCollection)
+* 1 modèle de formulaire détaillé personnalisé (TasksDetail)
 * un fichier Tasks.4dbase
 
 <div className="center-button">
@@ -40,11 +40,11 @@ Tout d'abord, déposez :
 
 ## ÉTAPE 3. Ajouter des actions dans les formulaires Liste
 
-Two types of actions are available:
-* table actions
-* entity actions
+Deux types d'actions sont possibles :
+* actions de table
+* actions d'entité
 
-Let's first open the `list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` file.
+D'abord, ouvrons le fichier `list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard`.
 
 ### Ajouter des actions au modèle personnalisé TasksList
 
@@ -79,7 +79,7 @@ Ajoutons maintenant les tags d'actions au modèle personnalisé TasksCollection
 
 ### Ajouter des actions au modèle personnalisé TasksCollection
 
-To do so, open the `list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` file.
+Pour ce faire, ouvrez le fichier `list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard`.
 
 #### A. Ajouter un Tag d'action de table
 
@@ -154,11 +154,11 @@ Félicitations, votre application iOS Tasks est maintenant terminée et inclut d
 
 ![Template ressources](img/ListForm-entity-action-tableview.png)
 
-Download the completed project:
+Téléchargez le projet final :
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/releases/latest/download/tutorial-AddingActionToTemplates.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/releases/latest/download/tutorial-AddingActionToTemplates.zip">Téléchargement</a>
 </div>
 
 
