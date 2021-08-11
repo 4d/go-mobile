@@ -5,10 +5,10 @@ title: Utiliser des paramètres d'action
 
 > **OBJECTIFS**
 > 
-> Define action parameters to edit the content of your app.
+> Définir des paramètres d'action pour modifier le contenu de votre application.
 
 
-In the tutorial on defining actions, we discovered how to execute 4D code from an iOS app by defining actions from the actions section.
+Dans le tutoriel précédent, sur la définition des actions, nous avons appris à exécuter du code 4D à partir d'une application iOS en définissant des actions dans la section Actions.
 
 Dans ce tutoriel, nous irons encore plus loin et nous créerons :
 
@@ -17,14 +17,14 @@ Dans ce tutoriel, nous irons encore plus loin et nous créerons :
 * une action de suppression pour **supprimer une entité**, et
 * une action qui vous permettra d'**envoyer par e-mail un commentaire relatif à une tâche spécifique**.
 
-To begin, let's first download the **Starter project** based on our existing Tasks iOS app:
+Pour commencer, téléchargeons d'abord le **Projet Starter**, basé sur notre application iOS Tasks:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/159a7b73bd3556890a205024af42440faf0b277c.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/159a7b73bd3556890a205024af42440faf0b277c.zip">Téléchargement</a>
 </div>
 
-## ÉTAPE 1. Add action
+## ÉTAPE 1. Ajouter
 
 Commençons par une tâche simple. Ouvrez le projet mobile Tasks et cliquez directement sur la **section Actions**.
 
@@ -47,7 +47,7 @@ Pour ce faire, nous allons créer une action à l'aide de l'action d'**ajout** :
 
 A ce stade, tous les **paramètres des actions d'ajout** sont créés automatiquement et sont prêts à l'emploi.
 
-## ÉTAPE 2. Edit action
+## ÉTAPE 2. Editer
 
 Créons maintenant une action qui vous permettra d'**éditer le contenu de votre application**.
 
@@ -69,7 +69,7 @@ Vous allez donc voir :
 
 Pas de panique, nous reviendrons sur le code 4D de ces actions un peu plus tard. :-)
 
-## ÉTAPE 3. Delete action
+## ÉTAPE 3. Supprimer
 
 Le processus de création de l'action prédéfinie de **suppression** est à peu près identique à l'action d'édition :
 
@@ -81,7 +81,7 @@ Le processus de création de l'action prédéfinie de **suppression** est à peu
 
 Vous verrez apparaître une **nouvelle action** nommée *"deleteTasks"* avec, par défaut, le libellé *"Remove"*.
 
-![Delete action](img/Delete-action-final.png)
+![Supprimer](img/Delete-action-final.png)
 
 Vous n'avez pas à vous préoccuper des paramètres ou des propritées pour ce type d'action.
 
@@ -398,12 +398,12 @@ Enfin, vous pouvez supprimer une entité à l'aide de l'action de **suppression*
 
 ![Delete task](img/Action-parameters-deleteAction.png)
 
-## ÉTAPE 8. Where to go from here?
+## ÉTAPE 8. Que faire ensuite ?
 
 Félicitations ! Votre application iOS Tasks est désormais complète. Vous pouvez dès à présent modifier les données de votre application directement sur votre appareil et les synchroniser avec votre serveur !
 
 
-Download the completed project:
+Téléchargez le projet final :
 
 <div className="center-button">
 <a className="button button--primary"
