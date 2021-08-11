@@ -9,11 +9,11 @@ title: Créer le format de données
 
 > **CONDITIONS PRÉALABLES**
 > 
-> Click `[here](prerequisites.html)` to see what you'll need to get started!
+> Cliquez `[here](prerequisites.html)` pour commencer !
 
 Dans ce tutoriel, nous vous guiderons dans la création de divers exemples de formats.
 
-## Download the Starter project
+## Téléchargez le projet Starter
 
 To begin, download the **Starter project**, which includes:
 
