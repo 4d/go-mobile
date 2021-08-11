@@ -58,9 +58,9 @@ Tableau de versions :
 
 Tableau de versions :
 
-| Android                                               | 4D | Windows           |
-| ----------------------------------------------------- | -- | ----------------- |
-| [4.1.2](https://developer.android.com/studio/archive) | 19 | Windows 10 64-bit |
+| Android                                               | 4D | Windows                 |
+| ----------------------------------------------------- | -- | ----------------------- |
+| [4.1.2](https://developer.android.com/studio/archive) | 19 | Windows 10 64-bit xxxxx |
 
 4D for Android nécessite le SDK Android, y compris Android Studio. S'il n'est pas installé, il sera automatiquement téléchargé au lancement de l'éditeur mobile 4D sur Windows :
 
