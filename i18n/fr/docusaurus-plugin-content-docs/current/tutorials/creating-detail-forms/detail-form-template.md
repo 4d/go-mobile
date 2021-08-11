@@ -4,7 +4,7 @@ title: Modèles de formulaires détaillés
 ---
 
 
-Dans ce tutoriel, nous vous guiderons dans la création d'un modèle de formulaire détaillé. It will display an **image header**, as well as **title and content fields** that will be duplicated in the generated iOS and Android Apps.
+Dans ce tutoriel, nous vous guiderons dans la création d'un modèle de formulaire détaillé. Ce modèle affichera un **en-tête d'image** et **des champs titre et contenu** qui seront dupliqués dans les applications iOS et Android qui seront générés.
 
 ![Custom template final result](img/custom-template-final-result.png)
 
@@ -22,7 +22,7 @@ href="https://github.com/4d-go-mobile/tutorial-CustomDetailFormStarter/archive/6
 
 ## Ajoutez un modèle de formulaire détaillé à votre projet mobile
 
-First, create a *Contact.4dbase/Resources/Mobile/form/detail* folder and drag and drop the **Custom Detail form** folder in it.
+Créez d'abord un dossier *Contact.4dbase/Resources/Mobile/form/detail* dans lequel vous glisserez et déposerez le dossier **Custom Detail form**.
 
 ![Mobile folder custom template](img/mobile-folder-custom-template.png)
 
