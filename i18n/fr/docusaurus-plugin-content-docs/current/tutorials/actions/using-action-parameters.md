@@ -103,7 +103,7 @@ Votre section Actions devrait ressembler à ceci :
 
 ## STEP 5. Création de la méthode base Sur une action app mobile
 
-Click on the Create button to create the *On Mobile App Action* database method.
+Cliquez sur le bouton Créer pour créer la méthode base *On Mobile App Action*.
 
 Toutes vos actions seront comprises automatiquement dans la méthode base.
 
@@ -407,7 +407,7 @@ Téléchargez le projet final :
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/0.0.1.zip">Download completed project</a>
+href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/0.0.1.zip">Téléchargez le projet final</a>
 </div>
 
 
