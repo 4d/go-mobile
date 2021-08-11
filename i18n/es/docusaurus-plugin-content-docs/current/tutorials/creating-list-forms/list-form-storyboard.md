@@ -21,9 +21,9 @@ Primero, abra su archivo storyboard en Xcode.
 
 ![Empty storyboard custom template](img/empty-storyboard-custom-template.png)
 
-It's quite empty, so let's add some content!
+Está vacío, así que vamos a agregar algo de contenido.
 
-## Add an Image View
+## Añadir una "Image View"
 
 Desde la **Object library** (la librería de objetos), arrastre y suelte una **Image View** (una vista de imagen) en una celda. Puede buscar una "Image View" en la barra de búsqueda en la parte inferior de la librería de objetos.
 
@@ -85,7 +85,7 @@ Cambie la relación "Equal" por **Greater Than or Equal** para que pueda tener u
 
 Repita el proceso para la segunda etiqueta.
 
-## Label customization
+## Personalizar la etiqueta
 
 Desde el inspector de atributos (al lado derecho de la ventana del Interface Builder), puede personalizar los colores de fuente de su etiqueta. Apliquemos el color **Dark Grey Color** a la segunda etiqueta:
 
@@ -192,11 +192,11 @@ y
 
 En este tutorial, hemos cubierto los conceptos básicos para crear plantillas con iOS. Ahora puede crear plantillas simples por su cuenta utilizando los recursos del proyecto Starter. También puede ver cómo construir [plantillas de formularios detallados](../creating-detail-forms/detail-form-template.md).
 
-Download the completed template list folder:
+Descargue la carpeta lista de la plantilla terminada:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomListForm/archive/53ac1d5f506aa4ca2a8d78760ef799044c5c8bdc.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomListForm/archive/53ac1d5f506aa4ca2a8d78760ef799044c5c8bdc.zip">Descargar</a>
 </div>
 
 

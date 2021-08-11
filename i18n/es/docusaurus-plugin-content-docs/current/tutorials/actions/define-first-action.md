@@ -13,7 +13,7 @@ Descargue el **proyect Starter** y vaya directamente a la sección **Actions**.
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">Descargar</a>
 </div>
 
 Puede definir acciones para dos niveles:
@@ -247,5 +247,5 @@ Descargue el proyecto terminado que incluye varias acciones:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-Actions/releases/latest/download/tutorial-Actions.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-Actions/releases/latest/download/tutorial-Actions.zip">Descargar</a>
 </div>

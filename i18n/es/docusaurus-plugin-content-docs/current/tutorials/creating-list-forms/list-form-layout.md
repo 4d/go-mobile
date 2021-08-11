@@ -1,9 +1,9 @@
 ---
 id: list-form-layout
-title: Android Layout
+title: Diseño de Android
 ---
 
-In this section you will see how to create your Android list form interface with Android Studio.
+En esta sección verá cómo crear su interfaz de formulario lista Android con Android Studio.
 
 Este es el resultado que queremos lograr:
 
@@ -15,40 +15,40 @@ Para cada celda, vamos a añadir:
 * Título
 * Subtitulo
 
-## Open the layout file with Android Studio
+## Abrir el archivo de diseño con Android Studio
 
-The best way to edit or create a template is to :
+La mejor manera de editar o crear una plantilla es:
 
-* Open Android Studio and create a new empty mobile project clicking on File > New > New Project...
+* Abrir Android Studio y crear un nuevo proyecto móvil vacío presionando en Archivo > Nuevo > Nuevo Proyecto...
 
-* Select the Empty Activity template
+* Seleccionar la plantilla Actividad vacía
 
 ![Android Studio project creation](img/template-selection.png)
 
-* Configure your project and click **Finish**
+* Configure su proyecto y haga clic en **Terminar**
 
 ![Configure Android project](img/configure-android-project.png)
 
-* Copy the layout.xml file in app > res > layout dropping it directly on the project layout folder
+* Copiar el archivo layout.xml en app > res > layout soltándolo directamente en la carpeta diseño del proyecto
 
 ![Copy layout.xml file](img/copy-layout.png)
 
-* You should have that at that point :
+* Debería tener eso en ese momento:
 
 ![Android project](img/android-project.png)
 
-* Click on the top right **Split** option to visualize the template preview as well as the xml code.
+* Haga clic en la opción superior derecha **Dividir** para visualizar la vista previa de la plantilla así como el código xml.
 
-It's quite empty, so let's add some content!
+Está vacío, así que vamos a agregar algo de contenido.
 
 
-## Add a CardView container
+## Añadir un contenedor CardView
 
-To have a better rendering of your cells we are going to add a [CardView](https://developer.android.com/guide/topics/ui/layout/cardview).
+Para tener una mejor representación de sus celdas vamos a añadir un [CardView](https://developer.android.com/guide/topics/ui/layout/cardview).
 
-Adding a CardView container will allow you to display your list form cells as nice cards and gives you the ability to add shadow, elevation, corner radius, background color...
+Añadir un contenedor CardView le permitirá mostrar sus celdas de formulario lista como agradables tarjetas y le da la posibilidad de añadir sombra, elevación, radio de esquina, color de fondo...
 
-So let's add it to your layout file. Don't forget to close the container adding `</androidx.cardview.widget.CardView>` just before `</layout>`.
+Así que vamos a añadirlo a su archivo de diseño. No olvide cerrar el contenedor añadiendo `</androidx.cardview.widget.CardView>` justo antes de `</layout>`.
 
 ```xml
    <androidx.cardview.widget.CardView
@@ -72,13 +72,13 @@ So let's add it to your layout file. Don't forget to close the container adding 
 
 ```
 
-It is crucial to **give ids to your layout elements** to refer to it later and positioning them among themselves.
+Es fundamental **dar ids a sus elementos de diseño** para referirse a ellos posteriormente y posicionarlos entre sí.
 
-Define the **width** and **height** of your container, the **margins** and as we want the content to take all the parent space (minus the margins) we just have to **add constraints**.
+Defina el **ancho** y **alto** de su contenedor, los **márgenes** y como queremos que el contenido ocupe todo el espacio padre (menos los márgenes) sólo tenemos que **añadir restricciones**.
 
 
 
-Here is the full layout code at this stage :
+Aquí está el código de diseño completo en esta etapa:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -120,14 +120,14 @@ Here is the full layout code at this stage :
 
 ```
 
-And here is the preview result you are supposed to get :
+Y aquí está el resultado de la vista previa que se espera obtener:
 
 ![Add CardView container](img/add-cardView-container.png)
 
 
-## Add an ImageView
+## Añadir una "ImageView"
 
-In order to have a nice Image view display we are going to use agin a CardView container again as we want to add a nice corner radius to the ImageView to have a better design.
+Para tener una agradable vista de imagen vamos a utilizar de nuevo un contenedor CardView ya que queremos añadir un radio de esquina a la ImageView para tener un mejor diseño.
 
 ```xml
             <androidx.cardview.widget.CardView
@@ -149,22 +149,22 @@ In order to have a nice Image view display we are going to use agin a CardView c
             </androidx.cardview.widget.CardView>
 ```
 
-As you can see the ImageView is embedded into the CardView. That allows to add corner radius to it.
+Como puede ver, el ImageView está insertado en el CardView. Eso permite añadirle radios de esquina.
 
-The `app:imageUrl="__IMAGE_1__"` line will allow to bind image value that is situated in position 1 in the svg file that you previously defined.
+La línea `app:imageUrl="__IMAGE_1__"` permitirá enlazar el valor de la imagen que se encuentra en la posición 1 del archivo svg que se ha definido previamente.
 
 
-The `tools:background="@tools:sample/avatars"` line simply there to display an ImageView placeholder.
+La línea `tools:background="@tools:sample/avatars"` simplemente está ahí para mostrar un marcador de posición ImageView.
 
 
 ![Add ImageView](img/add-imageview.png)
 
 
-## Add a title
+## Añadir un título
 
-Here we want to add a title at the right of the CardView that contains an ImageView.
+Aquí queremos añadir un título a la derecha de la CardView que contiene una ImageView.
 
-To do so we are going to add a TextView :
+Para ello vamos a añadir un TextView:
 
 ```xml
  <TextView
@@ -187,9 +187,9 @@ To do so we are going to add a TextView :
 
 ```
 
-The `app: text="__TEXT_2__"` line will allow to bind text value that is situated in position 2 in the svg file that you previously defined.
+La línea `app: text="__TEXT_2__"` permitirá enlazar el valor del texto que se encuentra en la posición 2 del archivo svg que se ha definido previamente.
 
-We want to ImageView and the TextView to be top aligned. To do so, we are going to use the TextView id. You just have to add this line to the CardView that include the profile picture :
+Queremos que el ImageView y el TextView estén alineados arriba. Para ello, vamos a utilizar el id TextView. Sólo tiene que añadir esta línea a la CardView que incluye la foto de perfil:
 
 ```xml
 app:layout_constraintTop_toTopOf="@id/__SPECIFIC_ID_2__"
@@ -198,10 +198,10 @@ app:layout_constraintTop_toTopOf="@id/__SPECIFIC_ID_2__"
 ![Add Title](img/add-title.png)
 
 
-## Add a subtitle
+## Añadir un subtítulo
 
 
-We want to add a subtitle to this cell. For that you just have to add quite the same block as the title one:
+Queremos añadir un subtítulo a esta celda. Para ello, basta con añadir el mismo bloque que el del título:
 
 
 ```xml
@@ -227,21 +227,21 @@ We want to add a subtitle to this cell. For that you just have to add quite the 
 
 
 
-The `app: text="__TEXT_3__"` line will allow to bind text value that is situated in position 2 in the svg file that you previously defined.
+La línea `app: text="__TEXT_3__"` permitirá enlazar el valor del texto que se encuentra en la posición 2 del archivo svg que se ha definido previamente.
 
-We want to the subtitle to be at the bottom of the title. To do so, we are going to use the title TextView id. You just have to add this line to title TextView :
+Queremos que el subtítulo esté al final del título. Para ello, vamos a utilizar el id del título TextView. Sólo tiene que añadir esta línea al título TextView:
 
 ```xml
 app:layout_constraintBottom_toTopOf="@+id/__SPECIFIC_ID_3__"
 ```
 
 
-Your first list form template:
+Su primera plantilla de formulario lista:
 
 ![Final list form template](img/final-list-form-template.png)
 
 
-Here is the full layout code at this stage:
+Aquí está el código de diseño completo en esta etapa:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -339,20 +339,20 @@ Here is the full layout code at this stage:
 
 ```
 
-## Label customization
+## Personalizar la etiqueta
 
-From here you can customize your label's :
+Desde aquí puede personalizar la etiqueta de:
 
 * color => android:textColor
 
-* weight => android:textStyle with **normal**, **bold** or **italic** possible values
+* weight => android:textStyle con posibles valores **normal**, **negrita** o **itálica**
 
-* appearance of your font => android:textAppearance
+* apariencia de su fuente => android:textAppearance
 
-Try to keep consistency in your layout text sizes with appearance. The best way to achieve that is to follow the [Material Design type](https://material.io/design/typography/the-type-system.html#type-scale).
+Intente mantener la coherencia en los tamaños de texto de su diseño con la apariencia. La mejor manera de conseguirlo es seguir el [tipo de diseño de materiales](https://material.io/design/typography/the-type-system.html#type-scale).
 
 
-For example, a basic TextView should be in `@Body1@` scale.
+Por ejemplo, un TextView básico debe estar en escala `@Body1@`.
 
 ```xml
 android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
@@ -362,26 +362,26 @@ android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
 
 ### Image View
 
-In our list form template we used `app:imageUrl="__IMAGE_1__"`
+En nuestra plantilla de formulario lista hemos utilizado `app:imageUrl="__IMAGE_1__"`
 
 Aquí suponemos que la ImageView es la primera vista del svg, y su ID de vista es `__SPECIFIC_ID_1__`. Si fuera la tercera vista, sería `__IMAGE_3__` y su ID de vista sería `__SPECIFIC_ID_3__`.
 
 ### Etiquetas
 
-In our list form template we used `android:text="__TEXT_2__"` for the title.
+En nuestra plantilla de formulario de lista hemos utilizado `android:text="__TEXT_2__"` para el título.
 
-Here we suppose the title is the second view in the svg, and its view ID is `__SPECIFIC_ID_2__`.
+Aquí suponemos que el título es la segunda vista en el svg, y su ID de vista es `__SPECIFIC_ID_2__`.
 
 
 ## ¿Qué hacer ahora?
 
-In this tutorial, we've covered the basics for creating Android list form templates. You are now able to create simple templates on your own using the Starter Project ressources. But wait - there’s more! In the next tutorial, you’ll learn how to build Android detail form templates!
+En este tutorial, hemos cubierto los conceptos básicos para crear plantillas de formularios listados Android. Ahora puede crear plantillas simples por su cuenta utilizando los recursos del Proyecto Starter. Espere, ¡Hay más! En el siguiente tutorial, aprenderá cómo crear plantillas de formulario detalladas Android.
 
-Download the completed template list folder:
+Descargue la carpeta lista de la plantilla terminada:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomListForm/releases/latest/download/tutorial-CustomListForm.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomListForm/releases/latest/download/tutorial-CustomListForm.zip">Descargar</a>
 </div>
 
 

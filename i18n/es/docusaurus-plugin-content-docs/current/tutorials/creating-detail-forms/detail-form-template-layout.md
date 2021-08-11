@@ -1,50 +1,50 @@
 ---
 id: detail-form-template-layout
-title: Android Layout
+title: Diseño de Android
 ---
 
-In this section you will see how to create your detail form interface with Android Studio.
+En esta sección verá cómo crear su interfaz de formulario detallado con Android Studio.
 
 Este es el resultado que queremos lograr:
 
 ![Storyboard custom detailform](img/xml-custom-detailform.png)
 
 
-For this template, we're going to add a:
+Para esta plantilla, vamos a añadir:
 
-* Una foto de perfil en el encabezado
-* Un campo a duplicar
+* una foto de perfil en el encabezado
+* un campo a duplicar
 
-## Open the layout file with Android Studio
+## Abrir el archivo de diseño con Android Studio
 
-The best way to edit or create a template is to :
+La mejor manera de editar o crear una plantilla es:
 
-* Open Android Studio and create a new empty mobile project clicking on File > New > New Project...
+* Abrir Android Studio y crear un nuevo proyecto móvil vacío presionando en Archivo > Nuevo > Nuevo Proyecto...
 
-* Select the Empty Activity template
+* Seleccionar la plantilla Actividad vacía
 
 ![Android Studio project creation](img/template-selection.png)
 
-* Configure your project and click **Finish**
+* Configure su proyecto y haga clic en **Terminar**
 
 ![Configure Android project](img/configure-android-project.png)
 
-* Copy the layout.xml file in app > res > layout dropping it directly on the project layout folder
+* Copiar el archivo layout.xml en app > res > layout soltándolo directamente en la carpeta diseño del proyecto
 
 ![Copy layout.xml file](img/copy-layout.png)
 
-* You should have that at that point :
+* Debería tener eso en ese momento:
 
 ![Android project](img/android-project.png)
 
-* Click on the top right **Split** option to visualize the template preview as well as the xml code.
+* Haga clic en la opción superior derecha **Dividir** para visualizar la vista previa de la plantilla así como el código xml.
 
-It's quite empty, so let's add some content!
+Está vacío, así que vamos a agregar algo de contenido.
 
 
-## What is available in this starter project
+## Qué está disponible en este proyecto inicial
 
-For the view to be scrollable, a scrollview is already included in the layout:
+Para que la vista sea desplazable, ya se incluye una vista de desplazamiento en el diseño:
 
 ```xml
     <androidx.core.widget.NestedScrollView
@@ -54,7 +54,7 @@ For the view to be scrollable, a scrollview is already included in the layout:
 
 ```
 
-The part that is going to be duplicated:
+La parte que se va a duplicar:
 
 ```xml
  <androidx.cardview.widget.CardView
@@ -133,9 +133,9 @@ The part that is going to be duplicated:
 ```
 
 
-## Add an Image View
+## Añadir una "Image View"
 
-In order to have a nice Image view display we are going to use a CardView container again. We want to add a nice corner radius to the ImageView to have a better design.
+Para tener una buena visualización de la imagen vamos a utilizar de nuevo un contenedor CardView. Queremos añadir un radio de esquina a la ImageView para tener un mejor diseño.
 
 ```xml
     <androidx.cardview.widget.CardView
@@ -164,14 +164,14 @@ In order to have a nice Image view display we are going to use a CardView contai
 
 ```
 
-As you can see the ImageView is embedded into the CardView. That allows to add corner radius to it.
+Como puede ver, el ImageView está insertado en el CardView. Eso permite añadirle radios de esquina.
 
-The `app:imageUrl="__IMAGE_1__"` line will allow to bind image value that is situated in position 1 in the svg file that you previously defined.
+La línea `app:imageUrl="__IMAGE_1__"` permitirá enlazar el valor de la imagen que se encuentra en la posición 1 del archivo svg que se ha definido previamente.
 
 
-The `tools:background="@tools:sample/avatars"` line simply there to display an ImageView placeholder.
+La línea `tools:background="@tools:sample/avatars"` simplemente está ahí para mostrar un marcador de posición ImageView.
 
-Here is the full layout code at this stage :
+Aquí está el código de diseño completo en esta etapa:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -339,7 +339,7 @@ En este tutorial, hemos cubierto los conceptos básicos para crear plantillas de
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">Descargar</a>
 </div>
 
 

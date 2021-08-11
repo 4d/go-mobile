@@ -9,10 +9,10 @@ Este es el resultado que queremos lograr:
 
 ![Storyboard custom detailform](img/storyboard-custom-detailform.png)
 
-For this template, we're going to add a:
+Para esta plantilla, vamos a añadir:
 
-* Una foto de perfil en el encabezado
-* Un campo a duplicar
+* una foto de perfil en el encabezado
+* un campo a duplicar
 
 ## Abrir el archivo storyboard con Xcode
 
@@ -20,7 +20,7 @@ Primero, abra su archivo storyboard en Xcode.
 
 ![Empty storyboard custom template](img/empty-storyboard-custom-detailform-template.png)
 
-It's quite empty, so let's add some content!
+Está vacío, así que vamos a agregar algo de contenido.
 
 ## Añadir un "Scroll View"
 
@@ -268,5 +268,5 @@ Descargue la carpeta de la plantilla terminada:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">Download</a>
+href="https://github.com/4d-for-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">Descargar</a>
 </div>
