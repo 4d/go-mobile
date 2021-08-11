@@ -103,9 +103,9 @@ Available built-in formats depend on the field type:
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
 | **Texte**          | Texte                                                                                                                  |
 | **Date**           | Date, Short date, Long date, Full date                                                                                 |
-| **Time**           | Time, Short time, Duration, Integer number                                                                             |
+| **Heure**          | Time, Short time, Duration, Integer number                                                                             |
 | **Image**          | Image                                                                                                                  |
-| **Boolean**        | "No" or "Yes", "False" or "True"                                                                                       |
+| **Booléen**        | "No" or "Yes", "False" or "True"                                                                                       |
 | **Integer number** | Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out |
 
 
