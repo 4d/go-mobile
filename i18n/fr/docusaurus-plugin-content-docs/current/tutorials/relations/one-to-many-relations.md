@@ -68,7 +68,7 @@ So, in the Labels & Icons section you will define:
 
 Well done! You've successfully included One to Many relations in your mobile project.
 
-Download the completed project:
+Téléchargez le projet final :
 
 <div className="center-button">
 <a className="button button--primary"
