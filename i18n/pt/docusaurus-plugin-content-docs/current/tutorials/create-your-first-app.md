@@ -134,7 +134,7 @@ Now the fun part! It's time to build your app and test it on the Simulator to se
 
 ![Build and Run](img/Build-the-app-simulator.png)
 
-## Where to go from here?
+## O que fazer agora?
 
 We've covered basic app creation in this tutorial, and you should now be able to create simple apps on your own. Of course, many other options and features are available. Right now, you can click on **Final Project** below to download the final Contact app.
 
