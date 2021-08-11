@@ -15,7 +15,7 @@ Dans ce tutoriel, nous vous guiderons dans la création de divers exemples de fo
 
 ## Téléchargez le projet Starter
 
-To begin, download the **Starter project**, which includes:
+Pour commencer, téléchargez le **Projet Starter**, qui comprend :
 
 * Les dossiers **integerToImage_Images** et **textToImage_Images**, qui contiennent des images (à utiliser ultérieurement pour les formats contenant des images)
 * Un fichier **Task Management.4dbase** (accompagné d'une application de projet mobile prêt à l'emploi)
