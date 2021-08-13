@@ -5,42 +5,42 @@ title: Introdução
 
 
 
-The **4D go mobile** feature includes **4D for iOS** and **4D for Android**.
+A funcionalidade **4D go mobile** inclui **4D for iOS** e **4D for Android**.
 
-4D for iOS and 4D for Android allow you to configure, design, build, and deploy native iOS apps and/or Android apps based on a 4D database. Once generated and deployed, mobile clients can connect to 4D Server and interact with new or existing data with no extra requirements.
+4D for iOS e 4D for Android lhe permite configurar, projetar, construir e lançar aplicações nativas iOS ou Android baseadas em um banco de dados 4D. Quando gerado e lançado, clientes móveis podem se conectar a 4D Server e interagir com dados novos ou existentes sem exigências extras
 
-4D for iOS and 4D for Android are included in a single integrated 4D component. You can create a mobile project and decide to built it for iOS, for Android, or for both.
+4D for iOS and 4D for Android  estão incluídos em um único componente integrado 4D. Pode criar um projeto móvel e decidir construí-lo para iOS, Android, ou ambos.
 
-The [**4D Mobile App Server**](https://github.com/4d-for-ios/4D-Mobile-App-Server) component is also provided and contains useful methods to handle server-side authentication, push notifications, and much more.
+O componente [**4D Mobile App Server**](https://github.com/4d-for-ios/4D-Mobile-App-Server) é oferecido e contém métodos úteis para manejar autenticação no lado do servidor, notificações push e muito mais.
 
 :::nota
 
-You need to use 4D on macOS to build iOS apps.
+É preciso usar 4D em macOS para construir apps iOS.
 
 :::
 
 
-## Fully integrated in 4D
+## Totalmente integrado em 4D
 
-With **4D for iOS** and **4D for android**, you can easily create mobile projects directly from 4D, without needing any prior expertise building native mobile apps.
+Com **4D for iOS** e **4D for android**, pode facilmente criar projetos móveis diretamente de 4D, sem precisar de qualquer experiência construindo apps móveis nativos.
 
-## Powered by ORDA
+## Com tecnologia ORDA
 
-Structure access and data queries benefit from ORDA technology for an object-oriented and optimized server-side code.
+Estrutura de acesso e pesquisas de dados usam a tecnologia ORDA para código orientado a objetos e otimização do lado do servidor.
 
 ## Criando apps nativos
 
-4D handles the complexity and generates - in a totally transparent way - an Xcode project in pure Swift with an optimized UI/UX.
+4D gerencia a complexidade e gera - de modo transparente - um projeto Xcode em Swift puro com uma interface de usuário UI/UX otimizada.
 
-## One database, many apps
+## Um banco de dados, vários apps
 
-One of the strengths of 4D mobile projects is that you have the opportunity to create an unlimited number of apps from different subsets of a single database, according to your needs and goals.
+Um dos pontos fortes de projetos móveis 4D é que tem a oportunidade de criar um número ilimitado de aplicações de diferentes subconjuntos de seu banco de dados.... de acordo com suas necessidades e objetivos.
 
-## Offline mode
+## Modo Offline
 
-All of your data is embedded in your app and available without needing an internet connection.
+Todos os seus dados estão integrados em seu app e disponíveis sem precisar de uma conexão de internet.
 
-## Open solution
+## Solução aberta
 
-* Since native projects are generated, you can reopen them with Xcode (macOS) and Android Studio and continue to work on it.
-* All tables and forms are embedded into the generated app and are editable.
+* Já que projetos nativos são gerados, pode reabri-los com Xcode (macOS) e Android Studio e continuar trabalhando.
+* Todas as tabelas e formulários estão integrados no app gerado e são editáveis.
