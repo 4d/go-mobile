@@ -200,7 +200,7 @@ Para saber mais sobre estes tipos de campo, consulte [**esta página**](https://
 
 :::
 
-:::tip
+:::dica
 
 Para fazer com que a definição de tipo de campo seja mais fácil, 4D for iOS permite que inclua tipos de campo com  **valores positivos** e também excluir tipos de campos com **valores negativos**. Por exemplo, `ios:type="-3,-4"` permite que arraste e solte todos os campos exceto imagens e datas. Para incluir todos os tipos, apenas entre `ios:type="all"`.
 
