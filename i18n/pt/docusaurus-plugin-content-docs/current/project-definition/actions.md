@@ -315,7 +315,7 @@ Ações serão exibidas na mesma ordem que definidas na seção Ação
 
 ![Table Listform Collectionview](img/ListForm-table-action-collectionview.png)
 
-### Detail forms
+### Formulários detalhados
 
 Como para as ações de tabela nos formulários detalhados, um botão de ações genéricas está disponível na barra de navegação para mostrar todas suas ações de entidade em uma lista.
 
