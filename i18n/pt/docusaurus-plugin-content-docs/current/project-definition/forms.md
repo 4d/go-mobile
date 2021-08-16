@@ -72,37 +72,37 @@ A pesquisa de código de barras permite duas funcionalidades:
 
 ![Detail form template selection](img/Forms-section-detail-form-templates-selection-4D-for-iOS.png)
 
-Da mesma forma que com Formulários Lista, selecione um modelo e configure os campos. In detail forms, you can add as many fields as you want onto your detail form.
+Da mesma forma que com Formulários Lista, selecione um modelo e configure os campos. Em formulários detalhados é possível adicionar quantos campos quiser no formulário.
 
-You have several ways to add your fields in Detail forms:
+Você tem várias maneiras de adicionar seus campos nos formulários Detalhes:
 
-* Drag and drop a field anywhere into the rightmost view to add it and display it just after the last field added or between any other fields that are already displayed.
+* Pode arrastar e soltar os campos em qualquer parte na vista SVG para adicionar e exibir logo depois que o último campo tenha sido adicionado ou entre qualquer outros campos que já são exibidos.
 
-* Double-click on a field. Your field will be added at the end of the list.
+* Dê duplo-clique no campo. Seu campo será adicionado ao final da lista.
 
-* Right-click on an available field in the Fields table at the left and select **Add missing fields** from the contextual menu.
+* Dê um clique direito no campo disponível na tabela Campos à esquerda e selecione **Adicionar campos que faltam** do menu contextual.
 
 ![Detail form content definition](img/Forms-section-detail-form-content-definition-4D-for-iOS.png)
 
 
-You can reorder your fields at any moment using drag and drop in the detail form.
+Pode reordenar seus campos a qualquer momento usando arrastar e soltar no formulário detalhado.
 
-:::tip
+:::dica
 
-If you want to try another template after dispatching your fields, just select it: previously selected fields are automatically moved for you to the new template in appropriate areas, according to the template and field types.
+Se quiser tentar outro modelo depois de enviar seus campos, apenas selecione-os: campos selecionados previamente são movidos automaticamente para você para o novo modelo nas áreas apropriadas de acordo com o modelo e tipos de campos.
 
 :::
 
 
 ## Galería
 
-When you select a template in the form section, a "More" icon is available for both list and detail forms.
+Quando selecionar um modelo na seção formulário um ícone "Mais" está disponível para formulários detalhados ou lista.
 
 ![More template button](img/more.png)
 
 ![More template button](img/Forms-more-button.png)
 
-Just click on that icon to display a list of additional templates from the 4D mobile Gallery:
+Clique nesse ícone para exibir uma lista de modelos adicionais da Galeria de 4D móvel:
 
 ![Template picker more button](img/Forms-template-gallery.png)
 
@@ -113,7 +113,7 @@ A github icon is displayed at the top left of a template icon in the Forms templ
 ![Add template from gallery](img/indicator-template-github.png)
 
 
-:::tip
+:::dica
 
 The Gallery is also directly available on Github.
 - [**gallery of list form templates**](https://4d-for-ios.github.io/gallery/#/type/list-detail/picker/0)
