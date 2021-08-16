@@ -299,7 +299,7 @@ Em sua aplicação iOS, as ações estão disponíveis de diferentes formas em s
 
 ![Table Listform Tableview](img/ListForm-table-action-tableview.png)
 
-:::tip
+:::dica
 
 Ações serão exibidas na mesma ordem que definidas na seção Ação
 
