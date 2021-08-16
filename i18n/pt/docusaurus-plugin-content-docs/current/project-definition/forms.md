@@ -106,25 +106,25 @@ Clique nesse ícone para exibir uma lista de modelos adicionais da Galeria de 4D
 
 ![Template picker more button](img/Forms-template-gallery.png)
 
-Then, the only thing you have to do is selecting the template that suits your needs and the mobile editor will handle all the installation process. So you can directly start working on the template, as it is ready-to-use.
+A única coisa que precisa fazer é selecionar o modelo mais adequado às suas necessidades e o editor móvel vai gerenciar todo o processo de instalação. Portanto pode começar a trabalhar diretamente no modelo, já que é pronto para usar.
 
-A github icon is displayed at the top left of a template icon in the Forms template picker to indicate that it comes from Github:
+É mostrado um ícone github na parte superior esquerda de seu ícone de modelo no seletor de modelos Forms para indicar que vem de Github:
 
 ![Add template from gallery](img/indicator-template-github.png)
 
 
 :::dica
 
-The Gallery is also directly available on Github.
-- [**gallery of list form templates**](https://4d-for-ios.github.io/gallery/#/type/list-detail/picker/0)
-- [**gallery of detail form templates**](https://4d-for-ios.github.io/gallery/#/type/form-detail/picker/0)
+A galeria está disponível diretamente em Github.
+- [**galeria de modelos para formulários lista**](https://4d-for-ios.github.io/gallery/#/type/list-detail/picker/0)
+- [**galeria de modelos para formulários detalhados**](https://4d-for-ios.github.io/gallery/#/type/form-detail/picker/0)
 
 :::
 
-## Creating your own templates
+## Criar seus modelos
 
-If you want to customize a downloaded template or create your own templates, **several tutorials** can guide you through these tasks:
+Se quiser personalizar um modelo baixado ou criar seus modelos, há **vários tutoriais** para guiá-lo nessas tarefas:
 
-- [**Customizing a template form**](../tutorials/gallery/update-gallery-template.md)
-- [**Creating list forms**](../tutorials/creating-list-forms/list-form-template.md)
-- [**Creating details forms**](../tutorials/creating-detail-forms/detail-form-template.md)
+- [**Personalizar um formulário modelo**](../tutorials/gallery/update-gallery-template.md)
+- [**Criar formulários lista**](../tutorials/creating-list-forms/list-form-template.md)
+- [**Criar formulários detalhados**](../tutorials/creating-detail-forms/detail-form-template.md)
