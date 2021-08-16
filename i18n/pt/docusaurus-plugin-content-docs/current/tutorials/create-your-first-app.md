@@ -98,7 +98,7 @@ Select **Labels & Icons** page. Here you can define some labels and icons that w
 ![Icons & Labels](img/Contact-app-icons-labels-section-4D-for-iOS.png)
 
 
-## PASSO 6. Forms
+## PASSO 6. Formulários
 
 We're almost done, but we still need to decide on the app's layout. There are both List and Details forms to choose from.
 
