@@ -32,7 +32,7 @@ Agora isso vai operar como qualquer outro campo pelo resto do processo de criaç
 
 ![Structure section Relations properties](img/Structure-section-relations-4D-for-iOS.png)
 
-:::tip
+:::dica
 
 Quando passar o mouse over, uma dica exibe o nome de tabela originando a relação.
 
