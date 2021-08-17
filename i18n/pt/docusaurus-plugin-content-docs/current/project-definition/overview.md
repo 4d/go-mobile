@@ -67,29 +67,29 @@ O ícone no lado esquerdo indica se o projeto foi criado para Android, iOS ou am
 
 3. Dê um duplo clique no projeto para abrir ou selecionar o projeto e clique em **Abrir**.
 
-### Open another project
+### Abrir outro projeto
 
-The **Open another project...** link allows you to select any valid [`.4dmobileapp`](#mobile-project-architecture) file that is not listed in the dialog box.
+O link **Abrir outro projeto...** permite selecionar qualquer arquivo válido [`.4dmobileapp`](#mobile-project-architecture) que não esteja listado na caixa de diálogo.
 
-:::warning
+::: aviso
 
-The selected mobile project must match the current data model, otherwise it will be updated and may not work as expected.
+O projeto móvel selecionado deve corresponder com o modelo atual de dados senão será atualizado e pode não funcionar como esperado.
 
 :::
 
-## Deleting a mobile project
+## Apagar um projeto móvel
 
-To delete a mobile project, just remove the mobile project folder from the 4D project folder.
+Para apgar um projeto móvel, apenas remova a pasta do projeto móvel da pasta 4D project.
 
 
-## Mobile project architecture
+## Arquitetura de projeto móvel
 
-Mobile projects are created inside the main 4D project folder:
+Projetos móveis são criados dentro da pasta principal project 4D:
 
-- My4DProject (*main 4D project folder*)
-    + Mobile Projects
+- My4DProject (*pasta principal do projeto 4D*)
+    + Projetos móveis
         * MyMobileProject
             - project.4dmobileapp
-            - *other files and folders*
+            - *outros arquivos e pastas*
 
 
