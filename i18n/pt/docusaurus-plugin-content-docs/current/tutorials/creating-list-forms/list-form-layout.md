@@ -72,9 +72,9 @@ Vamos adicionar o arquivo layout. Não esqueça de fechar o container adicionand
 
 ```
 
-It is crucial to **give ids to your layout elements** to refer to it later and positioning them among themselves.
+É crucial para **dá IDs a seus elementos de layout** para poder fazer referência e eles depois e seu posicionamento relativo entre si.
 
-Define the **width** and **height** of your container, the **margins** and as we want the content to take all the parent space (minus the margins) we just have to **add constraints**.
+Defina a  **largura** e **altura** de seu container,  **margens** e como queremos que o conteúdo ocupe todo o espaço pai (menos as margens) só precisamos **adicionar restrições**.
 
 
 
@@ -120,14 +120,14 @@ Aqui está o código de layout completo nesse estágio:
 
 ```
 
-And here is the preview result you are supposed to get :
+E aqui está a preview de resultado que deve obter:
 
 ![Add CardView container](img/add-cardView-container.png)
 
 
-## Add an ImageView
+## Adicione uma "Image View"
 
-In order to have a nice Image view display we are going to use agin a CardView container again as we want to add a nice corner radius to the ImageView to have a better design.
+Para ter uma boa exibição de Imagem vamos usar uma CardView container quando adicionamos um canto arredondado para a ImageView ter um design melhor.
 
 ```xml
             <androidx.cardview.widget.CardView
@@ -160,11 +160,11 @@ A linha `tools:background="@tools:sample/avatars"` está simplesmente para exibi
 ![Add ImageView](img/add-imageview.png)
 
 
-## Add a title
+## Adicionar um título
 
-Here we want to add a title at the right of the CardView that contains an ImageView.
+Aqui queremos adicioanr um título para a direita da CardView que contenha uma ImageView.
 
-To do so we are going to add a TextView :
+Para fazer isso vamos adicionar um TextView:
 
 ```xml
  <TextView
@@ -187,9 +187,9 @@ To do so we are going to add a TextView :
 
 ```
 
-The `app: text="__TEXT_2__"` line will allow to bind text value that is situated in position 2 in the svg file that you previously defined.
+A linha `app:imageUrl="__TEXT_2__"` permite fixar, bind o valor de imagem que está situado na posição 2 do arquivo svg definido previamente.
 
-We want to ImageView and the TextView to be top aligned. To do so, we are going to use the TextView id. You just have to add this line to the CardView that include the profile picture :
+Queremos que o ImageView e o TextView estejam alinhados ao topo. Para fazer isso, usamos a Id do TextView. Precisa adicionar esta linha para o CardView que inclui a imagem de perfil:
 
 ```xml
 app:layout_constraintTop_toTopOf="@id/__SPECIFIC_ID_2__"
@@ -198,10 +198,10 @@ app:layout_constraintTop_toTopOf="@id/__SPECIFIC_ID_2__"
 ![Add Title](img/add-title.png)
 
 
-## Add a subtitle
+## Adicionar um subtítulo
 
 
-We want to add a subtitle to this cell. For that you just have to add quite the same block as the title one:
+Queremos adicionar um subtítulo para esta célula. Para isso precisa adicionar o mesmo bloco que o título:
 
 
 ```xml
@@ -227,21 +227,21 @@ We want to add a subtitle to this cell. For that you just have to add quite the 
 
 
 
-The `app: text="__TEXT_3__"` line will allow to bind text value that is situated in position 2 in the svg file that you previously defined.
+A linha `app:text="__TEXT_3__"` permite fixar, bind o valor de imagem que está situado na posição 2 do arquivo svg definido previamente.
 
-We want to the subtitle to be at the bottom of the title. To do so, we are going to use the title TextView id. You just have to add this line to title TextView :
+Queremos que o subtítulo esteja abaixo do título. Para fazer isso vamos uar a Id do TextView. Só precisa adicionar esta linha para o título TextView:
 
 ```xml
 app:layout_constraintBottom_toTopOf="@+id/__SPECIFIC_ID_3__"
 ```
 
 
-Your first list form template:
+Seu primeiro modelo formulário lista:
 
 ![Final list form template](img/final-list-form-template.png)
 
 
-Here is the full layout code at this stage:
+Aqui está o código de layout completo nesse estágio:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -339,20 +339,20 @@ Here is the full layout code at this stage:
 
 ```
 
-## Label customization
+## Personalizar a etiqueta
 
-From here you can customize your label's :
+Aqui pode personalizar suas etiquetas:
 
 * color => android:textColor
 
-* weight => android:textStyle with **normal**, **bold** or **italic** possible values
+* weight => android:textStyle com os valores possíveis **normal**, **negrito** ou **itálico**
 
-* appearance of your font => android:textAppearance
+* aparência da fonte => android:textAppearance
 
-Try to keep consistency in your layout text sizes with appearance. The best way to achieve that is to follow the [Material Design type](https://material.io/design/typography/the-type-system.html#type-scale).
+Tentar manter a consistência em seu tamanho de layout de texto com aparência. A melhor maneira de conseguir isso é seguir o  [Material Design type](https://material.io/design/typography/the-type-system.html#type-scale).
 
 
-For example, a basic TextView should be in `@Body1@` scale.
+Por exemplo, um TextView básico deveria estar na escala `@Body1@`.
 
 ```xml
 android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
@@ -362,7 +362,7 @@ android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
 
 ### Image View
 
-In our list form template we used `app:imageUrl="__IMAGE_1__"`
+Em nosso modelo de formulário lista usamos `app:imageUrl="__IMAGE_1__"`
 
 Aqui supomos que a  ImageView seja a primeira vsita no svg, e sua ID de vista é  `__SPECIFIC_ID_1__`. Se fosse a terceira vista, seria `__IMAGE_3__` e sua vista de ID seria `__SPECIFIC_ID_3__`.
 
