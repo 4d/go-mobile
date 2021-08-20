@@ -85,7 +85,7 @@ Mude a relação de  Equal para **Greater Than or Equal** para que tenha uma alt
 
 Repita o processo para a segunda etiqueta.
 
-## Label customization
+## Personalizar a etiqueta
 
 Desde o Inspetor de atributos (do lado direito da janela Interface Builder), é possível personalizar as cores de fonte de sua etiqueta. Vamos fazer a segunda etiqueta com a cor **Dark Grey Color** :
 
