@@ -15,7 +15,7 @@ Na aba **Seçõess**, encontra todos os passos para criar sua aplicação móvel
 * Data
 * Actions
 * Labels & Icons
-* Main Menu
+* Menu principal
 * Formulários
 * Publishing
 
