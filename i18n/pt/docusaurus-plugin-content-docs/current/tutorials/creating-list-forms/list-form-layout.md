@@ -3,7 +3,7 @@ id: list-form-layout
 title: Layout Android
 ---
 
-In this section you will see how to create your Android list form interface with Android Studio.
+Nesta seção você verá como criar sua interface de formulário lista Android com Android Studio.
 
 Aqui está o resultado que queremos atingir:
 
@@ -42,13 +42,13 @@ A melhor forma de editar ou criar um modelo é:
 Está vazio, então vamos adicionar conteúdo!
 
 
-## Add a CardView container
+## Adicione um container CardView
 
-To have a better rendering of your cells we are going to add a [CardView](https://developer.android.com/guide/topics/ui/layout/cardview).
+Para melhorar a renderização de suas células vamos adicionar um [CardView](https://developer.android.com/guide/topics/ui/layout/cardview).
 
-Adding a CardView container will allow you to display your list form cells as nice cards and gives you the ability to add shadow, elevation, corner radius, background color...
+Adicionar um CardView container permite exibir as células de seu formulário lista como cartelas e dá a habilidade de adicionar sombras, elevação, cantos arredondados, cor de fundo...
 
-So let's add it to your layout file. Don't forget to close the container adding `</androidx.cardview.widget.CardView>` just before `</layout>`.
+Vamos adicionar o arquivo layout. Não esqueça de fechar o container adicionando `</androidx.cardview.widget.CardView>` logo antes `</layout>`.
 
 ```xml
    <androidx.cardview.widget.CardView
