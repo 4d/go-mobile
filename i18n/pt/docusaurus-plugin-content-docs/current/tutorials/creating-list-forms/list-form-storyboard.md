@@ -192,11 +192,11 @@ Agora pode construir seu projeto no editor de projetos!
 
 Neste tutorial cobrimos o básico da criação de modelos de formulário lista com iOS. Você já pode criar seus próprios modelos simples usando os recursos do Starter Project. Também pode ver como construir  [modelos de formulário detalhados](../creating-detail-forms/detail-form-template.md).
 
-Download the completed template list folder:
+Baixe a pasta do modelo de lista completo:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomListForm/archive/53ac1d5f506aa4ca2a8d78760ef799044c5c8bdc.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomListForm/archive/53ac1d5f506aa4ca2a8d78760ef799044c5c8bdc.zip">Baixar</a>
 </div>
 
 
