@@ -368,20 +368,20 @@ Aqui supomos que a  ImageView seja a primeira vsita no svg, e sua ID de vista é
 
 ### Etiquetas
 
-In our list form template we used `android:text="__TEXT_2__"` for the title.
+Em nosso modelo formulário lista usamos `android:text="__TEXT_2__"` para o título.
 
-Here we suppose the title is the second view in the svg, and its view ID is `__SPECIFIC_ID_2__`.
+Aqui supomos que o título seja a segunda vista no svg, e sua ID de vista é `__SPECIFIC_ID_2__`.
 
 
 ## O que fazer agora?
 
-In this tutorial, we've covered the basics for creating Android list form templates. You are now able to create simple templates on your own using the Starter Project ressources. But wait - there’s more! In the next tutorial, you’ll learn how to build Android detail form templates!
+Neste tutorial cobrimos o básico da criação de modelos de formulário lista Android. Você já pode criar seus próprios modelos simples usando os recursos do Starter Project. Mas espere - ainda há mais! No próximo tutorial, você vai aprender como construir modelos de formulários detalhados Android!
 
-Download the completed template list folder:
+Baixe a pasta do modelo de lista completo:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomListForm/releases/latest/download/tutorial-CustomListForm.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomListForm/releases/latest/download/tutorial-CustomListForm.zip">Baixar</a>
 </div>
 
 
