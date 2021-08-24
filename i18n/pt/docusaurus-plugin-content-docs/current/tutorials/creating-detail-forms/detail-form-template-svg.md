@@ -20,7 +20,7 @@ Este modelo tem numeração de campos dinâmicos, o que significa que este model
 
 Vamos focar nas diferentes partes de seu arquivo SVG e o que vai precisar para editar.
 
-## Title
+## Titulo
 
 ```xml
 <title>Custom Detail form</title>
