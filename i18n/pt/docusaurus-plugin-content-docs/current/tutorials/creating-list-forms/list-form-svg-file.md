@@ -11,7 +11,7 @@ Aqui está a versão terminada:
 
 Vamos focar nas diferentes partes de seu arquivo SVG e o que vai precisar para editar.
 
-## Title
+## Titulo
 
 ```xml
 <title>Custom List form</title>
