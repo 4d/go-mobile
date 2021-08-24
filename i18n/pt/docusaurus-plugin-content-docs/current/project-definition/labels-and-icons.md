@@ -80,59 +80,59 @@ Pode definir as mesmas etiquetas para tabelas, campos e relações. Essas etique
 
 :::info
 
-For relation fields, labels will be displayed in the **Relation** button that allows to open a related table.
+Para campos de relação, etiquetas serão exibidos à esquerda do botão **Relação** que permite abrir uma tabela relacionada.
 
 :::
 
-- Short labels should have 10 characters or less
-- Long labels can have up to 25 characters
-- You can use characters that are not allowed in structure names, such as "/","@", the space character, etc.
+- Etiquetas curtas devem ter 10 caracteres ou menos
+- Etiquetas longas podem ter até 25 caracteres
+- Podem ser usados caracteres que não são permitidos em nomes de estrutura, por exemplo "/","@", o caractere de espaço e outros.
 
-By default, the mobile editor uses the table and field names as defined in the structure as labels in the app, and the same string is used for short and long labels.
+Como padrão, o editor móvel usa os nomes tabela  e campos como definidos na estrutura como etiquetas no app e a mesma string é usada para etiquetas curtas e longas.
 
 
-## Formats
+## Formato
 
-This property allows you to format the data to display in the app. When you click on a field row, a format menu is displayed.
+Essa propriedade permite formatar os dados para exibir no app. Quando clicar em um campo linha, um menu formato é exibido.
 
 ![formats](img/formats-menu.png)
 
-Available built-in formats depend on the field type:
+Formatos disponíveis integrados dependem do tipo campo:
 
-| Field type         | Formats                                                                                                                |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| **Texto**          | Texto                                                                                                                  |
-| **Data**           | Date, Short date, Long date, Full date                                                                                 |
-| **Hora**           | Time, Short time, Duration, Integer number                                                                             |
-| **Image**          | Image                                                                                                                  |
-| **Boolean**        | "No" or "Yes", "False" or "True"                                                                                       |
-| **Integer number** | Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out |
+| Tipo campo         | Formato                                                                                                               |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| **Texto**          | Texto                                                                                                                 |
+| **Data**           | Data, data curta, data longa, data completa                                                                           |
+| **Hora**           | Hora, hora curta, duração, número inteiro                                                                             |
+| **Imagem**         | Imagem                                                                                                                |
+| **Boolean**        | "No" ou "Yes", "False" ou"True"                                                                                       |
+| **Número inteiro** | Número inteiro, número decimal, número real, porcentagem, número ordinal, moeda $, moeda €, moeda ¥, número em letras |
 
 
-### Adding custom formats
+### Adicionar formatos personalizados
 
-The mobile editor allows you to add customized formats (called "formatters") in your projects. For example, you can define custom formats for emails, invoice numbers, etc.
+O editor móvel permite adicionar formatos personalizados (chamados "formatadores" em seus projetos. Por exemplo, pode definir formatadores personalizados para emails, faturas, números, etc.
 
-To add custom formats to your mobile project, you can:
+Para adicionar formatos personalizados para seus projetos móveis, pode:
 
-- Download and install customized formats from the [**go-mobile formatters github repository**](https://4d-for-ios.github.io/gallery/#/type/formatter/picker/0).
+- Baixar e instalar formatos personalizados  [**go-mobile formatters github repository**](https://4d-for-ios.github.io/gallery/#/type/formatter/picker/0).
 
-- Create your own formats.
+- Criar seus formatos próprios.
 
 :::tip tutorial
 
-Visit [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format
+Visitar [**este tutorial**](../tutorials/data-formatter/create-data-formatter) para saber como definir um formato personalizado
 
 :::
 
-To install a custom formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a custom format can be selected from the Formats menu, just like a built-in formats.
+Para instalar um formatador personalizado, precisa soltar a pasta formatador `/Resources/Mobile/formatters` da pasta 4D projeto. Quando instalado, um formato personalizado pode ser selecionado no menu Formatos, da mesma forma que os formatos integrados.
 
 
-## Title
+## Titulo
 
-This property is only available for Relation fields. The defined title will be displayed on top of the destination view when using a relation.
+Esta propriedade só está disponível para campos Relações. O título definido será exibido no topo da vista destino quando usar uma relação.
 
-Use a pair of `%` characters to include the value of the related field in the title. For example, if you want that the title of the `Employee.employer` related field displays the name of the related `employee` field, you can write:
+Utilize um par de caracteres `%` para incluir o valor de campo relacionado no título. Por exemplo se quiser que o titulo do campo relacionado`Employee.employer` exiba o nome do campo relacionado `employee` pode escrever:
 
 ```
 %Name%'s employer
@@ -140,6 +140,6 @@ Use a pair of `%` characters to include the value of the related field in the ti
 
 :::tip tutorial
 
-A [**tutorial**](../tutorials/relations/one-to-many-title-definition) is available to guide you through the Title definition process.
+Um [**tutorial**](../tutorials/relations/one-to-many-title-definition) está disponível para guiar você através do processo de definição de um título.
 
 :::
