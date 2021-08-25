@@ -13,7 +13,7 @@ Desde la sección de estructura, podrá publicar relaciones de Muchos a Uno muy 
 
 ![Publish relations from Structure section](img/structure-section.gif)
 
-## Sección Etiquetas e Iconos
+## Labels & Icons section
 
 Desde la sección Etiquetas e Iconos, podrá personalizar la etiqueta de su botón de relación.
 

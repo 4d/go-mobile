@@ -32,7 +32,7 @@ Agora isso vai operar como qualquer outro campo pelo resto do processo de criaç
 
 ![Structure section Relations properties](img/Structure-section-relations-4D-for-iOS.png)
 
-:::tip
+:::dica
 
 Quando passar o mouse over, uma dica exibe o nome de tabela originando a relação.
 
@@ -72,5 +72,5 @@ Baixe o projeto terminado:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-OneToManyRelations/releases/latest/download/tutorial-OneToManyRelations.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-OneToManyRelations/releases/latest/download/tutorial-OneToManyRelations.zip">Baixar</a>
 </div>

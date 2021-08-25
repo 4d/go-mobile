@@ -6,9 +6,9 @@ title: Modèles de formulaires Liste
 
 > **AVANT DE COMMENCER**
 > 
-> To use a custom list form template, the first thing you'll need to do is create a `YourDatabase.4dbase/Resources/Mobile/form/list` folder.
+> Pour utiliser un modèle de formulaire Liste, vous devez avant tout créer un dossier `YourDatabase.4dbase/Resources/Mobile/form/list`.
 > 
-> Then drop the list form folder into it.
+> Glissez ensuite le dossier du formulaire Liste dans le dossier que vous venez de créer.
 
 <div>
 <iframe  src="https://4d-for-ios.github.io/gallery/#/type/form-list/picker/0" scrolling="yes" height="2700" width="100%" mark="crwd-mark">

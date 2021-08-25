@@ -96,7 +96,7 @@ $0:=$out
 
 And that's it you can then add some task to your employees easily using the parent Entity !
 
-Download the completed project:
+Téléchargez le projet final :
 
 <div className="center-button">
 <a className="button button--primary"

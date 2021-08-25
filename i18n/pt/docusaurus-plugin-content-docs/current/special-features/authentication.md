@@ -76,7 +76,7 @@ The most common and comfortable way to authenticate mobile users is to rely on e
 
 It provides a way to verify that an email comes from whom it claims to be from, and will allow to block harmful or fraudulent uses of email.
 
-### Overview
+### Visão Geral
 
 In short, the principle is the following:
 

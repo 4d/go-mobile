@@ -49,7 +49,7 @@ Un bouton de partage est directement accessible en bas du sélecteur de modèles
 
 Tout le processus de partage est détaillé sur la page de contribution, où les bonnes procédures sont décrites, pour vous aider dans le processus de partage.
 
-## Where to go from here?
+## Que faire ensuite ?
 
 You could try following the [contribution guide](https://github.com/4d-go-mobile/gallery/blob/master/.github/CONTRIBUTING.md#how-do-you-add-a-package) to share your templates in github and make them appear in the project editor.
 

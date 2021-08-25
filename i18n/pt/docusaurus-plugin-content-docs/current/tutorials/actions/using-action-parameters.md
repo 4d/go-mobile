@@ -21,7 +21,7 @@ Para começar, primeiro descarregamos  **Projeto Starter** baseado em nossa apli
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/159a7b73bd3556890a205024af42440faf0b277c.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/159a7b73bd3556890a205024af42440faf0b277c.zip">Baixar</a>
 </div>
 
 ## PASSO 1. Adicionar ação

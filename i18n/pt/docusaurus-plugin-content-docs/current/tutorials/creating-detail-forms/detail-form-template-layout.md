@@ -339,7 +339,7 @@ Neste tutorial cobrimos os conceitos básicos para criar seu modelo de formulár
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">Baixar</a>
 </div>
 
 

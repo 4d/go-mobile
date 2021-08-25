@@ -3,57 +3,57 @@ id: labels-and-icons
 title: Labels & Icons
 ---
 
-This page allows you to define display properties for your tables, fields and relations in the mobile app.
+Essa página permite definir as propriedades de exibição para suas tabelas, campos e relações no app móvel.
 
 ![Labels & Icons section](img/Labels-&-icons-section-4D-for-iOS.png)
 
-Default properties are set. To modify a property, select an element and enter the new value in the appropriate column.
+Propriedades padrão são estabelecidas. Para modificar uma propriedade, selecione um elmeento e digite o novo valor na coluna apropriada.
 
-You can define the same properties for tables, fields and relations. Additionally, formats can be defined for fields/relations.
+Pode definir as mesmas propriedades para tabelas, campos e relações. Além disso, formatos podem ser definidos para campos/relações.
 
-These elements will be displayed in detail and list forms, depending on the template in the generated app.
+Esses elementos serão mostrados em formulários detalhados e lista, dependendo no modelo no app gerado.
 
 
-## Icons
+## Ícones
 
-Icon to associate to the table or field/element in the mobile app each time a template requires an icon.
+Ícones a associar a tabela ou campo/elemento no app móvel a cada vez que um modelo exigir um ícone.
 
 :::info
 
-For relation fields, icons will be displayed at the left of the **Relation** button that allows to open a related table.
+Para campos de relação, ícones serão exibidos à esquerda do botão **Relação** que permite abrir uma tabela relacionada.
 
 :::
 
-The 4D mobile editor provides a large library of icons to meet your needs. These include icons for business, finance, education, government, health, industry, real estate, services, etc. To select an icon, click on the **icon** button and choose an icon from the list:
+O editor móvel 4D oferece uma grande biblioteca de ícones para atender às suas necessidades. Isso inclui ícones para negócios, finanças, educação, governo, saúde, indústria, imóveis, serviços, etc. ´Para selecionar um ícione, clique no botão **icone** e escolha um ícone da lista:
 
 ![Icons select](img/icon-library.png)
 
 :::info
 
-To keep everything consistent, **default icons** are generated for blank fields if at least one icon has been defined for a field.
+Para manter tudo consistente, **os ícones por padrão** são gerados para campos em branco se ao menos um ícone tiver sido definido para um campo.
 
 :::
 
-You can also leave the icon area empty if you don’t want to display icons in your application.
+Também pode deixar a área ícone vazia se não quiser exibir ícones em sua aplicação.
 
 
-### Adding custom icons
+### Adicionar ícones personalizados
 
-You can add your own icons to the library, so that you can select them in your project. You can use any icon format (SVG or PNG is recommended to preserve transparency) and size. It's highly recommended having colored versions of your custom icons to better visualize them in the project editor.
+Pode adicionar seus próprios ícones à bibilioteca, para que possa selecioná-los no projeto. Pode usar qualquer formato de ícone (SVG ou PNG é recomendado para preservar transparência) e tamanho. É recomendado ter versões coloridas de seus ícones personalizados para melhor visualização no editor de projetos.
 
-For example, here are a set of custom icons that you can use:
+Por exemplo, aqui está um conjunto de ícones personalizados que pode usar:
 
 <div className="center-button">
 <a
   className="button button--primary"
   href="https://github.com/4d-go-mobile/tutorial-CustomIcons/releases/latest/download/tutorial-CustomIcons.zip">
-  Download custom icons
+  Baixar ícones personalizados
 </a>
 </div>
 
-To include custom icons in your project:
+Para incluir ícones personalizados em seu projeto:
 
-1. Create an `icons` folder at the following location:
+1. Criar uma pasta `icones` no local abaixo:
 
 ```
 <my4DProjetFolder>/Resources/Mobile/medias
@@ -61,78 +61,78 @@ To include custom icons in your project:
 
 :::nota
 
-You may have to create the `medias` folder.
+Pode ser necessário criar uma pasta `medias`.
 
 :::
 
-2. Drag and drop your customized icons in the `icons` folder.
+2. Arraste e solte seus ícones personalizados na pasta `icons`.
 
 ![Icons select2](img/mobile-folder-custom-icons.png)
 
-Your icons can now be selected for your project, they are listed after the standard icons.
+Seus ícones podem agora ser selecionados para seu projeto, são listados depois dos ícones padrão.
 
 
 
 
-## Short and long labels
+## Etiquetas curtas e longas
 
-You can define custom labels for published tables, fields, and relations. These labels will be automatically used according to the available space in the template to optimize space and avoid overcrowding the tab bar.
+Pode definir as mesmas etiquetas para tabelas, campos e relações. Essas etiquetas serão usadas automaticamente de acordo com o espaço disponível no modelo para otimizar os espaços e evitar lotar a barra de abas.
 
 :::info
 
-For relation fields, labels will be displayed in the **Relation** button that allows to open a related table.
+Para campos de relação, etiquetas serão exibidos à esquerda do botão **Relação** que permite abrir uma tabela relacionada.
 
 :::
 
-- Short labels should have 10 characters or less
-- Long labels can have up to 25 characters
-- You can use characters that are not allowed in structure names, such as "/","@", the space character, etc.
+- Etiquetas curtas devem ter 10 caracteres ou menos
+- Etiquetas longas podem ter até 25 caracteres
+- Podem ser usados caracteres que não são permitidos em nomes de estrutura, por exemplo "/","@", o caractere de espaço e outros.
 
-By default, the mobile editor uses the table and field names as defined in the structure as labels in the app, and the same string is used for short and long labels.
+Como padrão, o editor móvel usa os nomes tabela  e campos como definidos na estrutura como etiquetas no app e a mesma string é usada para etiquetas curtas e longas.
 
 
-## Formats
+## Formato
 
-This property allows you to format the data to display in the app. When you click on a field row, a format menu is displayed.
+Essa propriedade permite formatar os dados para exibir no app. Quando clicar em um campo linha, um menu formato é exibido.
 
 ![formats](img/formats-menu.png)
 
-Available built-in formats depend on the field type:
+Formatos disponíveis integrados dependem do tipo campo:
 
-| Field type         | Formats                                                                                                                |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| **Texto**          | Texto                                                                                                                  |
-| **Data**           | Date, Short date, Long date, Full date                                                                                 |
-| **Hora**           | Time, Short time, Duration, Integer number                                                                             |
-| **Image**          | Image                                                                                                                  |
-| **Boolean**        | "No" or "Yes", "False" or "True"                                                                                       |
-| **Integer number** | Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out |
+| Tipo campo         | Formato                                                                                                               |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| **Texto**          | Texto                                                                                                                 |
+| **Data**           | Data, data curta, data longa, data completa                                                                           |
+| **Hora**           | Hora, hora curta, duração, número inteiro                                                                             |
+| **Imagem**         | Imagem                                                                                                                |
+| **Boolean**        | "No" ou "Yes", "False" ou"True"                                                                                       |
+| **Número inteiro** | Número inteiro, número decimal, número real, porcentagem, número ordinal, moeda $, moeda €, moeda ¥, número em letras |
 
 
-### Adding custom formats
+### Adicionar formatos personalizados
 
-The mobile editor allows you to add customized formats (called "formatters") in your projects. For example, you can define custom formats for emails, invoice numbers, etc.
+O editor móvel permite adicionar formatos personalizados (chamados "formatadores" em seus projetos. Por exemplo, pode definir formatadores personalizados para emails, faturas, números, etc.
 
-To add custom formats to your mobile project, you can:
+Para adicionar formatos personalizados para seus projetos móveis, pode:
 
-- Download and install customized formats from the [**go-mobile formatters github repository**](https://4d-for-ios.github.io/gallery/#/type/formatter/picker/0).
+- Baixar e instalar formatos personalizados  [**go-mobile formatters github repository**](https://4d-for-ios.github.io/gallery/#/type/formatter/picker/0).
 
-- Create your own formats.
+- Criar seus formatos próprios.
 
 :::tip tutorial
 
-Visit [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format
+Visitar [**este tutorial**](../tutorials/data-formatter/create-data-formatter) para saber como definir um formato personalizado
 
 :::
 
-To install a custom formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a custom format can be selected from the Formats menu, just like a built-in formats.
+Para instalar um formatador personalizado, precisa soltar a pasta formatador `/Resources/Mobile/formatters` da pasta 4D projeto. Quando instalado, um formato personalizado pode ser selecionado no menu Formatos, da mesma forma que os formatos integrados.
 
 
-## Title
+## Titulo
 
-This property is only available for Relation fields. The defined title will be displayed on top of the destination view when using a relation.
+Esta propriedade só está disponível para campos Relações. O título definido será exibido no topo da vista destino quando usar uma relação.
 
-Use a pair of `%` characters to include the value of the related field in the title. For example, if you want that the title of the `Employee.employer` related field displays the name of the related `employee` field, you can write:
+Utilize um par de caracteres `%` para incluir o valor de campo relacionado no título. Por exemplo se quiser que o titulo do campo relacionado`Employee.employer` exiba o nome do campo relacionado `employee` pode escrever:
 
 ```
 %Name%'s employer
@@ -140,6 +140,6 @@ Use a pair of `%` characters to include the value of the related field in the ti
 
 :::tip tutorial
 
-A [**tutorial**](../tutorials/relations/one-to-many-title-definition) is available to guide you through the Title definition process.
+Um [**tutorial**](../tutorials/relations/one-to-many-title-definition) está disponível para guiar você através do processo de definição de um título.
 
 :::

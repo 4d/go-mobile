@@ -14,7 +14,7 @@ Dans ce tutoriel nous utiliserons le projet suivant :
 href="https://github.com/4d-go-mobile/tutorial-OneToManyTitleDefinition/archive/4b831959e7efe4777071af0b2904d458918cfbc2.zip">Starter project</a>
 </div>
 
-Now go straight to **Open menu > Mobile project...**, select *Time Keeper* and go to the **Labels & Icons section**.
+Rendez-vous directement dans le **menu Ouvrir> Projet mobile...**, sélectionnez *Time Keeper* puis la **section Étiquettes et icônes**.
 
 Ouvrez ensuite l'onglet Liens pour définir le titre du lien *tasks* et saisissez la ligne suivante dans **la colonnes Titles** : `%Name% tasks`
 

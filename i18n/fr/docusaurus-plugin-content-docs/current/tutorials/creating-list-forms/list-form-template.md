@@ -7,7 +7,7 @@ In this tutorial, we'll cover nearly all aspects of creating a list form templat
 
 ![List form template final result](img/custom-template-final-result.png)
 
-## Download the Starter project
+## Téléchargez le projet Starter
 
 Before we begin, be sure to download and unzip the **Starter project** which includes:
 
@@ -37,7 +37,7 @@ Nous allons maintenant nous concentrer sur le contenu du dossier **Custom List f
 
 ## Contenu du modèle de formulaire Liste
 
-In this folder, you will find:
+Dans ce dossier, vous trouverez :
 
 * **a layoutIconx2.png** icon in 160x160px: displayed in the project editor when you select your template
 * **a manifest.json file**: includes a basic description of the template
