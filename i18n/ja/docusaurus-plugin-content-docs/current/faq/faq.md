@@ -20,7 +20,7 @@ The mobile project editor has been designed so that you don't need any specific 
 <details>
 <summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Are there any prerequisites for 4D for iOS?</summary>
 
-See the requirements list [here](getting-started/requirements.md).
+See the requirements list [here](../getting-started/requirements.md).
 
 </details>
 
