@@ -19,9 +19,8 @@ Les prérequis système sont identiques aux [prérequis système basiques de 4D]
 
 - **Développement**: 4D avec une licence 4D Developer Pro
 
-- **Déploiement **: 4D Server
-    - 4D Web Server doit être lancé.
-    - Les ports HTTP et HTTPS doivent être activés et configurés correctement. HTTPS est nécessaire pour le déploiement 4D for iOS et 4D for Android.
+- **Déploiement**: 4D Server - le Serveur web 4D doit être lancé.
+    - Les ports HTTP et HTTPS doivent être activés et configurés correctement. HTTPS est nécessaire pour le déploiement de 4D for iOS et 4D for Android.
 
 
 ### iOS
@@ -30,37 +29,37 @@ Les prérequis système sont identiques aux [prérequis système basiques de 4D]
 
 Tableau de versions :
 
-| Xcode | Swift | iOS  | 4D          | macOS   |
-| ----- | ----- | ---- | ----------- | ------- |
-| 12.5  | 5.4   | 14.6 | 19          | 11.0.1  |
-| 12.4  | 5.3.2 | 14.4 | 18R6        | 10.15.4 |
-| 12.2  | 5.3   | 14.2 | 18R5 & 18.3 | 10.15.4 |
+| 4D          | Swift | iOS  | Xcode                                                                                                         | macOS   |
+| ----------- | ----- | ---- | ------------------------------------------------------------------------------------------------------------- | ------- |
+| 19          | 5.4   | 14.6 | [12.5](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.5/Xcode_12.5.xip) | 11.0.1  |
+| 18R6        | 5.3.2 | 14.4 | [12.4](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.4/Xcode_12.4.xip) | 10.15.4 |
+| 18R5 & 18.3 | 5.3   | 14.2 | [12.2](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.2/Xcode_12.2.xip) | 10.15.4 |
 
 <details><summary>Historique</summary>
 
-| Xcode  | Swift | iOS  | 4D   | macOS   |
-| ------ | ----- | ---- | ---- | ------- |
-| 12.0   | 5.3   | 14.0 | 18R4 | 10.15.4 |
-| 11.5   | 5.2.4 | 13.5 | 18R3 | 10.15.2 |
-| 11.4   | 5.2   | 13.4 | 18.2 | 10.15.2 |
-| 11.3.1 | 5.1.3 | 13.3 | 18.1 | 10.14.4 |
-| 11.3.1 | 5.1.3 | 13.3 | 18R2 | 10.14.4 |
-| 11.2   | 5.1   | 13.2 | 18   | 10.14.4 |
-| 10.2.1 | 5.0   | 12.2 | 17R6 | 10.14.4 |
-| 10.2   | 4.2.1 | 12.2 | 17R5 | 10.14.3 |
-| 10.1   | 4.2.1 | 12   | 17R4 | 10.13.6 |
-| 10.0   | 4.2   | 12   | 17R3 | 10.13.6 |
-| 9.4    | 4.1.2 | 11.4 | 17R2 | 10.13.2 |
-| 9.3.1  | 4.1   | 11.3 | 17R2 | 10.13.2 |
+| 4D   | Swift | iOS  | Xcode  | macOS   |
+| ---- | ----- | ---- | ------ | ------- |
+| 18R4 | 5.3   | 14.0 | 12.0   | 10.15.4 |
+| 18R3 | 5.2.4 | 13.5 | 11.5   | 10.15.2 |
+| 18.2 | 5.2   | 13.4 | 11.4   | 10.15.2 |
+| 18.1 | 5.1.3 | 13.3 | 11.3.1 | 10.14.4 |
+| 18R2 | 5.1.3 | 13.3 | 11.3.1 | 10.14.4 |
+| 18   | 5.1   | 13.2 | 11.2   | 10.14.4 |
+| 17R6 | 5.0   | 12.2 | 10.2.1 | 10.14.4 |
+| 17R5 | 4.2.1 | 12.2 | 10.2   | 10.14.3 |
+| 17R4 | 4.2.1 | 12   | 10.1   | 10.13.6 |
+| 17R3 | 4.2   | 12   | 10.0   | 10.13.6 |
+| 17R2 | 4.1.2 | 11.4 | 9.4    | 10.13.2 |
+| 17R2 | 4.1   | 11.3 | 9.3.1  | 10.13.2 |
 </details>
 
 ### Android
 
 Tableau de versions :
 
-| Android                                               | 4D | Windows           |
-| ----------------------------------------------------- | -- | ----------------- |
-| [4.1.2](https://developer.android.com/studio/archive) | 19 | Windows 10 64-bit |
+| 4D | Android                                               | Windows           |
+| -- | ----------------------------------------------------- | ----------------- |
+| 19 | [4.1.2](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 
 4D for Android nécessite le SDK Android, y compris Android Studio. S'il n'est pas installé, il sera automatiquement téléchargé au lancement de l'éditeur mobile 4D sur Windows :
 

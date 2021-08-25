@@ -5,9 +5,9 @@ title: Format des données
 
 > **AVANT DE COMMENCER**
 > 
-> To use a custom formatter, the first thing you'll need to do is create a `YourDatabase.4dbase/Resources/Mobile/formatters` folder.
+> Pour utiliser un format personnalisé, vous devez avant tout créer un dossier `YourDatabase.4dbase/Resources/Mobile/formatters`.
 > 
-> Then drop the formatter folder into it.
+> Glissez ensuite le dossier du format dans le dossier que vous venez de créer.
 
 
 <div markdown="1">

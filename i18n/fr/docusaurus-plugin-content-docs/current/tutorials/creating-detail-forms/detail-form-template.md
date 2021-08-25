@@ -4,13 +4,13 @@ title: Modèles de formulaires détaillés
 ---
 
 
-Dans ce tutoriel, nous vous guiderons dans la création d'un modèle de formulaire détaillé. It will display an **image header**, as well as **title and content fields** that will be duplicated in the generated iOS and Android Apps.
+Dans ce tutoriel, nous vous guiderons dans la création d'un modèle de formulaire détaillé. Ce modèle affichera un **en-tête d'image** et **des champs titre et contenu** qui seront dupliqués dans les applications iOS et Android qui seront générés.
 
 ![Custom template final result](img/custom-template-final-result.png)
 
-## Download the Starter project
+## Téléchargez le projet Starter
 
-To begin, download the **Starter project**, which includes:
+Pour commencer, téléchargez le **Projet Starter**, qui comprend :
 
 * Un dossier **Custom Detail form** (dossier contenant le modèle personnalisé du formulaire détaillé)
 * A demo 4D project ("Contact") with a ready to use mobile app project.
@@ -22,7 +22,7 @@ href="https://github.com/4d-go-mobile/tutorial-CustomDetailFormStarter/archive/6
 
 ## Ajoutez un modèle de formulaire détaillé à votre projet mobile
 
-First, create a *Contact.4dbase/Resources/Mobile/form/detail* folder and drag and drop the **Custom Detail form** folder in it.
+Créez d'abord un dossier *Contact.4dbase/Resources/Mobile/form/detail* dans lequel vous glisserez et déposerez le dossier **Custom Detail form**.
 
 ![Mobile folder custom template](img/mobile-folder-custom-template.png)
 
@@ -36,10 +36,10 @@ Now let's focus on the **Custom Detail form** folder content.
 
 ## Le dossier du modèle de formulaire détaillé et son contenu
 
-In this folder, you will find:
+Dans ce dossier, vous trouverez :
 
-* **a layoutIconx2.png** icon in 160x160px: displayed in the project editor when you select your custom template among others
-* **a manifest.json** file: includes a basic description of the template
+* Une icône **layoutIconx2.png** d'une résolution de 160x160px, qui sera affichée dans l'éditeur de projet lorsque vous sélectionnerez votre modèle personnalisé
+* Un fichier **manifest.json**, qui contient une description simple du modèle
 * **a template.svg** file: the representation of your template that will be display when you define your detailForm content and where you will drag and drop your fields
 * an **ios folder** that includes the storyboard (graphical interface) and **Swift** file (code for the form) in `Source > Forms > Tables 'TABLE'` folder
 * an **android folder** that includes the layout.xml file (graphical interface) in `app > src > main > res > layout` folder.

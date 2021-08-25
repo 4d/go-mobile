@@ -16,7 +16,7 @@ Téléchargez le **projet Starter** et reportez-vous directement à la **section
 href="https://github.com/4d-go-mobile/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">Download</a>
 </div>
 
-You can define actions for two levels:
+Vous pouvez définir des actions pour deux niveaux :
 
 * Actions d'entité
 * Actions de table
@@ -49,7 +49,7 @@ Pour définir cette action :
 
 ### ÉTAPE 2. Créer et modifier la méthode base "Sur une action app mobile"
 
-Now that your action is defined in the Project Editor, you have to create the **[On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)** database Method.
+Votre action est maintenant définie dans l'éditeur de projet. Vous pouvez donc créer la méthode base **[Sur une action app mobile](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)**.
 
 Pour ce faire, cliquez sur le **bouton Editer...** en bas à droite du tableau des actions et saisissez le code suivant dans la méthode base : **Sur une action app mobile** :
 
@@ -243,9 +243,9 @@ Félicitations ! Vous venez d'ajouter 2 actions à votre application iOS. Vous 
 
 ![Final result All Action](img/ListForm-entity-action-tableview.png)
 
-Download the completed project that includes various actions:
+Vous pouvez télécharger le projet final qui comprend diverses actions :
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-Actions/releases/latest/download/tutorial-Actions.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-Actions/releases/latest/download/tutorial-Actions.zip">Téléchargement</a>
 </div>

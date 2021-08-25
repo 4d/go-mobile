@@ -68,26 +68,26 @@ Voici les différents **formats** que vous pouvez sélectionner en tant que para
 </tr><tr>
 <td>Zone de texte</td><td>Inclut plusieurs lignes de texte dans un même champ</td>
 </tr><tr>
-<td>Code barres</td><td>Extract barcode associated value. Supported formats : EAN8, EAN13, Code 39, Code 93, Code 128, QR Code, UPC, PDF417</td>
+<td>Code barres</td><td>Extraire la valeur associée au code-barres. Formats pris en charge : EAN8, EAN13, Code 39, Code 93, Code 128, QR Code, UPC, PDF417</td>
 </tr>
 <tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>NUMBER</th>
+<th colspan="2" style={{textAlign: 'center'}}>NUMERIQUE</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Format</th><th>Description</th>
 </tr><tr>
-<td>Number</td><td>Numbers with decimals</td>
+<td>Numérique</td><td>Nombres avec décimales</td>
 </tr><tr>
-<td>Integer</td><td>Numbers without decimals</td>
+<td>Entier</td><td>Nombres sans décimales</td>
 </tr><tr>
-<td>Scientific</td><td>Scientific Notation</td>
+<td>Scientifique</td><td>Notation scientifique</td>
 </tr><tr>
-<td>Percentage</td><td>Percent Notation</td>
+<td>Pourcentage</td><td>Notation en pourcentage</td>
 </tr><tr>
-<td>Spell Out</td><td>Convert numbers into strings</td>
+<td>Nombre en lettres</td><td>Convertit les nombres en chaînes</td>
 </tr>
 <tr>
 <td colspan="2"></td>
@@ -100,36 +100,36 @@ Voici les différents **formats** que vous pouvez sélectionner en tant que para
 </tr><tr>
 <td>Date</td><td>Nov 23, 1937</td>
 </tr><tr>
-<td>Short Date</td><td> 11/23/37</td>
+<td>Date courte</td><td> 11/23/37</td>
 </tr><tr>
-<td>Long Date</td><td>November 23, 1937</td>
+<td>Date longue</td><td>November 23, 1937</td>
 </tr><tr>
-<td>Full Date</td><td>Tuesday, November 23, 1937</td>
+<td>Date complète</td><td>Tuesday, November 23, 1937</td>
 </tr><tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>TIME</th>
+<th colspan="2" style={{textAlign: 'center'}}>HEURE</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Format</th><th>Description</th>
 </tr><tr>
-<td>Time</td><td>3:30 PM</td>
+<td>Heure</td><td>3:30 PM</td>
 </tr><tr>
-<td>Duration</td><td>2 hours 30 minutes</td>
+<td>Durée</td><td>2 hours 30 minutes</td>
 </tr>
 <tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>BOOLEAN</th>
+<th colspan="2" style={{textAlign: 'center'}}>BOOLÉEN</th>
 </tr><tr style={{textAlign: 'center'}}>
 <th>Format</th><th>Description</th>
 </tr><tr>
-<td>Boolean</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
+<td>Booléen</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
 </tr><tr>
-<td>Check mark</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
+<td>Coche</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
 </tr>
 
 <tr>
@@ -139,55 +139,55 @@ Voici les différents **formats** que vous pouvez sélectionner en tant que para
 <th colspan="2" style={{textAlign: 'center'}}>IMAGES</th>
 </tr>
 <tr>
-<td>Signature</td><td>Allow to sign with the finger</td>
+<td>Signature</td><td>Permet d'effectuer une signature avec le doigt</td>
 </tr>
 
 </table>
 
-## Preset actions
+## Actions prédéfinies
 
-4D mobile projects include the following (predefined) preset actions to manage your app content:
+Les projets 4D mobile comprennent trois actions (prédéfinies) pour gérer le contenu de votre application :
 
-* Action d'édition
-* Action d'ajout
-* Action de suppression
-* Share
-* Sort
+* Editer
+* Ajouter
+* Supprimer
+* Partager
+* Trier
 
-### Add action
+### Ajouter
 
-4D mobile projects makes the **Add actions** creation process very simple.
+Les projets 4D mobile simplifient la création des **actions d'ajout**.
 
 Vous n'avez qu'à sélectionner l'option **Action d'ajout pour**, accessible à partir du **bouton +**, situé en-dessous de la table Actions.
 
 ![Add actions](img/Actions-Add-action-4D-for-iOS.png)
 
-Then just **select the table** you want to link to this add action.
+Puis, **sélectionnez la table** que vous souhaitez associer à l'action d'ajout.
 
 Cela **créera automatiquement** tous les paramètres dans l'éditeur de projets et vous permettra de modifier chaque valeur d'un champ.
 
 Pour ce genre d'actions, vous constaterez que toutes les **propriétés** sont déjà saisies à des fins pratiques, à droite de la liste de paramètres.
 
 
-### Edit action
+### Editer
 
 La création des **actions d'édition** suit le même principe que les actions d'ajout, à l'exception du fait que vous ne serez pas en mesure de définir des valeurs par défaut à partir de la section Actions.
 
 
 
-### Delete action
+### Supprimer
 
-**Delete action** creation follows the same process as the Edit action. La seule différence est que cette action vous permet de supprimer une entité.
+La création des **actions de suppression** suit le même principe que les actions d'édition. La seule différence est que cette action vous permet de supprimer une entité.
 
-To create a Delete action, select the **Delete action for** option accessible from the **+ button** at the bottom of the Actions table.
+Pour créer une action de suppression, sélectionnez l'option **Supprimer l'action pour**, accessible à partir du **bouton +** en-dessous du tableau d'actions.
 
 Ce type d'actions doit être utilisé avec précaution.
 
 ![Delete actions](img/Actions-Delete-action-4D-for-iOS.png)
 
-### Share action
+### Partager
 
-Selecting the **Share action** will allow your mobile users to share content with other users. You just need to select the scope:
+Sélectionner l'**action Partager** permettra à vos utilisateurs de partager du contenu avec d'autres utilisateurs. You just need to select the scope:
 
 - **entity**: to share content from a detail form
 - **table**: to share a list form
@@ -340,10 +340,10 @@ For your convenience, the Edition form includes a few **special features**:
 * Indication is given to the user when a value is not valid.
 * The view focuses on empty mandatory fields when the user clicks the Done button.
 
-## Where to go from here?
+## Que faire ensuite ?
 
-* A [tutorial]`(actions-getting-started.html)` is available to guide you through the **action definition process**.
+* Un [tutorial]`(actions-getting-started.html)` est disponible pour vous guider tout au long du **processus de définition d'une action**.
 
-* Another [tutorial]`(action-custom-template.html)` will guide you through the **action TAG integration** for custom templates.
+* Un autre [tutorial]`(action-custom-template.html)` vous guidera tout au long de **l'intégration des TAG d'action** dans des modèles personnalisés.
 
-* A final [tutorial]`(action-parameters.html)` will guide you through the **action parameters definition**.
+* Un dernier [tutorial]`(action-parameters.html)` vous guidera tout au long du processus de **définition des paramètres d'action**.

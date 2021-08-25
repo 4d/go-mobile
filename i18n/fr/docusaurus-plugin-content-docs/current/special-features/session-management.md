@@ -1,18 +1,18 @@
 ---
 id: session-management
-title: Session management
+title: Gestion des sessions
 ---
 
 
 
 
-## Session file
+## Fichier session
 
-When a user opens the app for the first time, a session file is created and stored next to the current data file in the MobileApps folder.
+Lorsqu'un utilisateur ouvre l'application pour la première fois, un fichier session est créé et stocké avec le fichier de données courant dans le dossier MobileApps.
 
-The session files are organized and grouped by app folder. The Team ID and app bundle ID are concatenated to create the app folder names.
+Les fichiers de session sont organisés et groupés par dossier d'application. Les Team ID et Bundle ID de l'application sont concaténés pour créer des noms de dossiers d'application.
 
-Here is an example of a 4D for iOS-generated session file:
+Voici un exemple de fichier de session généré par 4D for iOS :
 
 ```json
 {
@@ -47,10 +47,10 @@ Here is an example of a 4D for iOS-generated session file:
 
 ```
 
-If you want the ability to manually validate the first login for every user session, you must change the "accepted" default status to "pending" by adding `$response.verify:=True` to the [*On Mobile App Authentication*](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) database method.
+Si vous souhaitez pouvoir valider manuellement la première connexion pour chaque session utilisateur, vous devez changer le statut par défaut "accepté" en "en attente" en ajoutant `$response.verify:=True` à la méthode base [*On Mobile App Authentication*](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html).
 
 
-## Mobile Session Management Component
+## Composant Mobile Session Management
 
 Sessions can be managed by the **Mobile Session Management** component:
 

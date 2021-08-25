@@ -12,7 +12,7 @@ Aqui está o resultado que queremos atingir:
 Para cada célula, vamos adicionar:
 
 * Imagem de perfil
-* Title
+* Titulo
 * Subtítulo
 
 ## Abrir o arquivo storyboard com Xcode
@@ -85,7 +85,7 @@ Mude a relação de  Equal para **Greater Than or Equal** para que tenha uma alt
 
 Repita o processo para a segunda etiqueta.
 
-## Label customization
+## Personalizar a etiqueta
 
 Desde o Inspetor de atributos (do lado direito da janela Interface Builder), é possível personalizar as cores de fonte de sua etiqueta. Vamos fazer a segunda etiqueta com a cor **Dark Grey Color** :
 
@@ -192,11 +192,11 @@ Agora pode construir seu projeto no editor de projetos!
 
 Neste tutorial cobrimos o básico da criação de modelos de formulário lista com iOS. Você já pode criar seus próprios modelos simples usando os recursos do Starter Project. Também pode ver como construir  [modelos de formulário detalhados](../creating-detail-forms/detail-form-template.md).
 
-Download the completed template list folder:
+Baixe a pasta do modelo de lista completo:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomListForm/archive/53ac1d5f506aa4ca2a8d78760ef799044c5c8bdc.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomListForm/archive/53ac1d5f506aa4ca2a8d78760ef799044c5c8bdc.zip">Baixar</a>
 </div>
 
 

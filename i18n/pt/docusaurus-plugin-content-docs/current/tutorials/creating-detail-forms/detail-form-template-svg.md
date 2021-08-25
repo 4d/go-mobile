@@ -20,7 +20,7 @@ Este modelo tem numeração de campos dinâmicos, o que significa que este model
 
 Vamos focar nas diferentes partes de seu arquivo SVG e o que vai precisar para editar.
 
-## Title
+## Titulo
 
 ```xml
 <title>Custom Detail form</title>
@@ -90,7 +90,7 @@ Pode definir a posição, a altura e a largura de todos seus campos. Esse proces
 Agora que tem um **ícone**, uma **descrição básica do modelo** no arquivo manifest.json, e seus arquivos **svg **, vamos ver a parte divertida com Xcode!
 
 
-:::tip
+:::dica
 
 Para fazer com que a definição de tipo de campo seja mais fácil, 4D for iOS permite que inclua tipos de campo com  **valores positivos** e também excluir tipos de campos com **valores negativos**. Por exemplo, `ios:type="-3,-4"` permite que arraste e solte todos os campos exceto imagens e datas. Para incluir todos os tipos, apenas entre `ios:type="all"`.
 

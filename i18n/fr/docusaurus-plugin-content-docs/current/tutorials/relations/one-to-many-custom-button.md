@@ -153,11 +153,11 @@ Etape 4. Concentrez-vous sur le Storyboard pour vérifier si la contrainte a ét
 
 Et voilà ! Votre bouton est maintenant entièrement duplicable si vous avez plus d'un bouton de lien à afficher ...
 
-## Where to go from here?
+## Que faire ensuite ?
 
 Dans ce tutoriel, nous avons couvert les aspects fondamentaux de la création de boutons Relation. Cliquez sur le Projet final ci-dessous pour télécharger le bouton de liens personnalisé.
 
-Download the completed project:
+Téléchargez le projet final :
 
 <div className="center-button">
 <a className="button button--primary"

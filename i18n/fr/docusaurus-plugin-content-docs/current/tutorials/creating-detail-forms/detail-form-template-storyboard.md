@@ -260,7 +260,7 @@ Vous pouvez désormais créer votre projet depuis l'éditeur de projet !
 
 ![Custom template final result](img/custom-template-final-result.png)
 
-## Where to go from here?
+## Que faire ensuite ?
 
 In this tutorial, we've covered the basics for creating detail form templates. You can now create simple templates on your own using the Starter project resources.
 

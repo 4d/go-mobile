@@ -23,7 +23,7 @@ Baixe o Starter Project:
 <a
   className="button button--primary"
   href="#">
-  Download
+  Baixar
 </a>
 </div>
 

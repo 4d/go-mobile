@@ -1,130 +1,130 @@
 ---
 id: forms
-title: Forms
+title: Formulários
 ---
 
-The Forms page allows you to select both list and detail forms for each published table. You can select one list form and one detail form per published table.
+A página Formulários lhe permite selecionar os modelos de formulário Lista e de formulários detalhados para cada tabela publicada. Pode selecionar um formulário lista e um formulário detalhado por tabela publicada.
 
-The 4D mobile editor provides various templates with custom transition effects to build fresh and modern mobile applications. Simple, empty templates are used by default for an app's list and detail forms.
+O editor móvel 4D oferece vários modelos com efeitos de transição personalizados para gerar aplicações móveis novas e modernas. Os modelos simples e vazios são usados de forma pré-determinada para os formulários Lista e os formulários de detalhados de uma aplicação.
 
 Aqui está o detalhamento da tela, de cima para baixo:
 
-* **List Forms / Detail Forms:** Allows switching between list and detail form definitions for each table.
-* **Published tables:** Displays all tables published in the [Structure](structure.md) section.
-* **Forms:** List of available forms. Allows switching between template selection and content definition. In the content definition area, you can display tips that provide additional information on form fields.
+* **Os formulários lista e os formulários detalhados:** permitem mudar entre definições de  formulários Lista e  formulários detalhados para cada tabela.
+* **Tabelas publicadas:** Exibe todas as tabelas publicadas na seção  [Structure](structure.md)
+* **Formularios:** lista de formularios disponibles. Permite  mudar entre a seleção de modelos e definição de conteúdos. Na área de definição de conteúdos se pode exibir dicas que oferecem informações adicionais nos campos de formulário.
 
 
 ![List form template selection](img/Forms-section-templates-selection-4D-for-iOS.png)
 
 
 
-## List forms
+## Formulários Lista
 
-When you select a list form template for a table, the content definition screen appears. You can then drag and drop the fields from the Fields list directly onto the model displayed on the right.
+Quando seleciona um modelo de formulário lista para uma tabela, a tela de definição de conteúdo aparece. Depois pode arrastar e soltar os campos da lista diretamente no modelo mostrado à direita.
 
 ![List form content definition](img/Forms-section-content-definition-4D-for-iOS.png)
 
 :::nota
 
-In list forms, you cannot add more fields than those included in the template.
+Nos formulários lista não é possível adicionar mais campos do que aqueles incluídos no modelo.
 
 :::
 
-Most of the list forms include optional **Search** and **Section** fields. You can also enable the **barcode scanner**.
+A maioria dos formulários lista incluem campos opcionais de **Search** e **Section**. Também pode ativar o  **escaneador de código de barra**.
 
 
-### Search
+### Pesquisa
 
-A **search** field allows to filters dynamically the list contents depending on entered characters.
+Um campo de**pesquisa** permite filtrar dinamicamente a lista de conteúdos dependendo dos caracteres digitados.
 
-#### Multi-criteria search
+#### Pesquisa multicritério
 
-You can drop more than one field to the search field, in which case the field displays "Multi-criteria Search":
+Pode soltar mais de um campo no campo de pesquisa - nesse caso o campo vai mostrar "Pesquisa multicriterio":
 
 ![multi-criteria](img/multi-criteria.png)
 
-In this case, the app will search for entered characters in all the fields using the "OR" operator. To remove a field from the list, click on the search field's delete button to select the field(s) to remove:
+Nesse caso, o app vai pesquisar por caracteres digitados em todos os campos usando o operador "OR". Para remover um campo da lista, clique no botão apagar do campo de pesquisa para selecionar os campos a serem removidos:
 
 ![multi-criteria remove](img/multi-criteria-search-forms-section-remove-fields.png)
 
 
-### Section
+### Seções
 
-A section field will group and order entities in the list depending on their value for this field.
+Um campo de seção vai agrupar e ordenar entidades na lista dependendo de seu valor para esse campo.
 
 
 
-### Barcode Scanner
+### Escaner de código de barras
 
-To activate the Barcode search, click on the magnifying glass next to the search field and select **Enable barcode scanner** option.
+Para ativar a pesquisa por código de barra, clique na lupa do lado do campo pesquisa e selecionea opção **Ativar escaner de código de barras**.
 
 ![Barcode Search activation](img/project-editor-Qrcode-barcode-search-4D-for-iOS.gif)
 
-The Barcode search allows two features:
+A pesquisa de código de barras permite duas funcionalidades:
 
-* Filtering the list form by scanning a barcode that contains a text value. It fills the Search Bar and opens the detail form if there is only one value left after filtering.
-* Displaying specific list and detail forms just by scanning a barcode whose values are **URL Schemes** or **Universal Links** when the [**deep linking**](../special-features/deep-linking.md) feature is enabled.
+* Filtrar um formulário lista escaneando um código de barras que contenha um valor texto. Isso preenche a Barra de Pesquisae abre o formulário detalhado se houver apenas um valor após a filtragem.
+* Exibir formulários lista e detalhado apenas com o escaneamento de códigos de barras cujos valores são **URL Schemes** or **Universal Links** quando a funcionalidade [**deep linking**](../special-features/deep-linking.md) estiver ativada.
 
 ![Barcode Search app](img/text-Qrcode-barcode-search-4D-for-iOS.gif)
 
 
-## Detail forms
+## Formulários detalhados
 
 ![Detail form template selection](img/Forms-section-detail-form-templates-selection-4D-for-iOS.png)
 
-As with the List Form definition, select a template and configure the fields. In detail forms, you can add as many fields as you want onto your detail form.
+Da mesma forma que com Formulários Lista, selecione um modelo e configure os campos. Em formulários detalhados é possível adicionar quantos campos quiser no formulário.
 
-You have several ways to add your fields in Detail forms:
+Você tem várias maneiras de adicionar seus campos nos formulários Detalhes:
 
-* Drag and drop a field anywhere into the rightmost view to add it and display it just after the last field added or between any other fields that are already displayed.
+* Pode arrastar e soltar os campos em qualquer parte na vista SVG para adicionar e exibir logo depois que o último campo tenha sido adicionado ou entre qualquer outros campos que já são exibidos.
 
-* Double-click on a field. Your field will be added at the end of the list.
+* Dê duplo-clique no campo. Seu campo será adicionado ao final da lista.
 
-* Right-click on an available field in the Fields table at the left and select **Add missing fields** from the contextual menu.
+* Dê um clique direito no campo disponível na tabela Campos à esquerda e selecione **Adicionar campos que faltam** do menu contextual.
 
 ![Detail form content definition](img/Forms-section-detail-form-content-definition-4D-for-iOS.png)
 
 
-You can reorder your fields at any moment using drag and drop in the detail form.
+Pode reordenar seus campos a qualquer momento usando arrastar e soltar no formulário detalhado.
 
-:::tip
+:::dica
 
-If you want to try another template after dispatching your fields, just select it: previously selected fields are automatically moved for you to the new template in appropriate areas, according to the template and field types.
+Se quiser tentar outro modelo depois de enviar seus campos, apenas selecione-os: campos selecionados previamente são movidos automaticamente para você para o novo modelo nas áreas apropriadas de acordo com o modelo e tipos de campos.
 
 :::
 
 
 ## Galería
 
-When you select a template in the form section, a "More" icon is available for both list and detail forms.
+Quando selecionar um modelo na seção formulário um ícone "Mais" está disponível para formulários detalhados ou lista.
 
 ![More template button](img/more.png)
 
 ![More template button](img/Forms-more-button.png)
 
-Just click on that icon to display a list of additional templates from the 4D mobile Gallery:
+Clique nesse ícone para exibir uma lista de modelos adicionais da Galeria de 4D móvel:
 
 ![Template picker more button](img/Forms-template-gallery.png)
 
-Then, the only thing you have to do is selecting the template that suits your needs and the mobile editor will handle all the installation process. So you can directly start working on the template, as it is ready-to-use.
+A única coisa que precisa fazer é selecionar o modelo mais adequado às suas necessidades e o editor móvel vai gerenciar todo o processo de instalação. Portanto pode começar a trabalhar diretamente no modelo, já que é pronto para usar.
 
-A github icon is displayed at the top left of a template icon in the Forms template picker to indicate that it comes from Github:
+É mostrado um ícone github na parte superior esquerda de seu ícone de modelo no seletor de modelos Forms para indicar que vem de Github:
 
 ![Add template from gallery](img/indicator-template-github.png)
 
 
-:::tip
+:::dica
 
-The Gallery is also directly available on Github.
-- [**gallery of list form templates**](https://4d-for-ios.github.io/gallery/#/type/list-detail/picker/0)
-- [**gallery of detail form templates**](https://4d-for-ios.github.io/gallery/#/type/form-detail/picker/0)
+A galeria está disponível diretamente em Github.
+- [**galeria de modelos para formulários lista**](https://4d-for-ios.github.io/gallery/#/type/list-detail/picker/0)
+- [**galeria de modelos para formulários detalhados**](https://4d-for-ios.github.io/gallery/#/type/form-detail/picker/0)
 
 :::
 
-## Creating your own templates
+## Criar seus modelos
 
-If you want to customize a downloaded template or create your own templates, **several tutorials** can guide you through these tasks:
+Se quiser personalizar um modelo baixado ou criar seus modelos, há **vários tutoriais** para guiá-lo nessas tarefas:
 
-- [**Customizing a template form**](../tutorials/gallery/update-gallery-template.md)
-- [**Creating list forms**](../tutorials/creating-list-forms/list-form-template.md)
-- [**Creating details forms**](../tutorials/creating-detail-forms/detail-form-template.md)
+- [**Personalizar um formulário modelo**](../tutorials/gallery/update-gallery-template.md)
+- [**Criar formulários lista**](../tutorials/creating-list-forms/list-form-template.md)
+- [**Criar formulários detalhados**](../tutorials/creating-detail-forms/detail-form-template.md)

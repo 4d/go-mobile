@@ -1,47 +1,36 @@
 ---
 id: faq
-title: FAQ
+title: Perguntas Frequentes
 ---
 
 ## Pré-requisitos
 
 
 
-<details><summary style= {{ fontWeight: "bold", marginBottom: "20px" }}>Do I need specific expertise to use 4D for iOS or 4D for Android?</summary>
+<details><summary style= {{ fontWeight: "bold", marginBottom: "20px" }}>Preciso de experiência específica para usar o 4D for iOS ou 4D for Android?</summary>
 
-No. With 4D for iOS and 4D for Android, you can easily create mobile projects directly from 4D, without needing any prior expertise building native iOS or Android apps!
+Não. Com 4D for iOS e com 4D for Android, pode criar facilmente projetos móveis diretamente desde 4D, sem necessidade de experiência prévia na criação de aplicações iOS nativas!
 
-The mobile project editor has been designed so that you don't need any specific knowledge in mobile app developement.
+O editor de projetos móveis foi criado para que não precise de nenhum conhecimento específico no desenvolvimento de aplicações móveis.
 
 </details>
 
 
 
 <details>
-<summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Are there any prerequisites for 4D for iOS?</summary>
+<summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Há algum pré-requisito para 4D for iOS?</summary>
 
 ### Tabela de comparação de versões
 
-| Xcode  | Swift | iOS  | 4D          | macOS   |
-| ------ | ----- | ---- | ----------- | ------- |
-| 12.4   | 5.3.2 | 14.4 | 18R6 beta   | 10.15.4 |
-| 12.2   | 5.3   | 14.2 | 18R5 & 18.3 | 10.15.4 |
-| 12.0   | 5.3   | 14.0 | 18R4        | 10.15.4 |
-| 11.5   | 5.2.4 | 13.5 | 18R3        | 10.15.2 |
-| 11.4   | 5.2   | 13.4 | 18.2        | 10.15.2 |
-| 11.3.1 | 5.1.3 | 13.3 | 18.1        | 10.14.4 |
-| 11.3.1 | 5.1.3 | 13.3 | 18R2        | 10.14.4 |
-| 11.2   | 5.1   | 13.2 | 18          | 10.14.4 |
-| 10.2.1 | 5.0   | 12.2 | 17R6        | 10.14.4 |
-| 10.2   | 4.2.1 | 12.2 | 17R5        | 10.14.3 |
-| 10.1   | 4.2.1 | 12   | 17R4        | 10.13.6 |
-| 10.0   | 4.2   | 12   | 17R3        | 10.13.6 |
-| 9.4    | 4.1.2 | 11.4 | 17R2        | 10.13.2 |
-| 9.3.1  | 4.1   | 11.3 | 17R2        | 10.13.2 |
+| 4D          | Swift | iOS  | Xcode                                                                                                         | macOS   |
+| ----------- | ----- | ---- | ------------------------------------------------------------------------------------------------------------- | ------- |
+| 19          | 5.4   | 14.6 | [12.5](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.5/Xcode_12.5.xip) | 11.0.1  |
+| 18R6        | 5.3.2 | 14.4 | [12.4](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.4/Xcode_12.4.xip) | 10.15.4 |
+| 18R5 & 18.3 | 5.3   | 14.2 | [12.2](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.2/Xcode_12.2.xip) | 10.15.4 |
 
-Caso precise de uma versão antiga de Xcode pode baixá-la aqui: https://developer.apple.com/download/more/
-
-=> Só os desenvolvedores registrados podem descarregar versões prévias através do website de desenvolvedores de Apple.
+| 4D | Android                                               | Windows           |
+| -- | ----------------------------------------------------- | ----------------- |
+| 19 | [4.1.2](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 
 See the prerequisites list [here]`(requirements.html)`.
 

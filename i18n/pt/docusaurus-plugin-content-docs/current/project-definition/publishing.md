@@ -21,7 +21,7 @@ www.website.com/mobile
 
 During the development phase, you can leave this area empty and set the [Data source](data.md) to **Current data file**.
 
-:::tip
+:::dica
 
 The user will be able to [change the server url](#modify-remote-url) from the mobile device.
 

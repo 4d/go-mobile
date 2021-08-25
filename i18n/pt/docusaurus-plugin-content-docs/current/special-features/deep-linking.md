@@ -168,7 +168,7 @@ Algo genial sobre Deep Linking é que é completamente compatível com [notifica
 
 Como pode ver, essa funcionalidade abre uma grande gama de possibilidades. Deep linking é uma funcionalidade crucial nas aplicações de hoje em dia, especialmente já que os usuários consumem o conteúdo mais rapidamente. Esta funcionalidade leva diretamente ao lugar desejado. Assim é recomendado que usem isso em seus apps móveis.
 
-:::tip
+:::dica
 
 Veja a documentação [**4D Mobile App Server** ](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) para saber mais sobre como combinar notificações push com  deep linking.
 
