@@ -20,7 +20,7 @@ El editor de proyectos móviles se ha diseñado para que no necesite ningún con
 <details>
 <summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>¿Hay algún prerrequisito para la utilización de 4D for iOS?</summary>
 
-See the requirements list [here](getting-started/requirements.md).
+See the requirements list [here](../getting-started/requirements.md).
 
 </details>
 
