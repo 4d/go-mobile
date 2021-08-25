@@ -20,7 +20,7 @@ L'éditeur de projet mobile a été conçu de façon à être utilisé sans aucu
 <details>
 <summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Y a-t-il des conditions préalables à l'utilisation de 4D for iOS ?</summary>
 
-See the requirements list [here](getting-started/requirements.md).
+See the requirements list [here](../getting-started/requirements.md).
 
 </details>
 
