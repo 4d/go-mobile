@@ -35,7 +35,7 @@ Este é um exemplo para enviar uma notificação push a `test@4d.com`:
 
 ```4d
 
-$pushNotification:=MobileAppServer.PushNotification.new() 
+$pushNotification:=MobileAppServer. PushNotification.new() 
 $notification:=New object 
 $notification.title:="Este é o título" 
 $notification.body:="Aqui é o conteúdo da notificação" 
@@ -75,13 +75,13 @@ Note que exclusivamente para o método `open()`, esse é o comportamento padrão
 
 ```4d
 
-$pushNotification:=MobileAppServer.PushNotification.new()
+$pushNotification:=MobileAppServer. PushNotification.new()
 
 $notification:=New object
 $notification.title:="This is title" 
 $notification.body:="Here is the content of this notification" 
 
-$entity:=ds.Employees.get("456456")
+$entity:=ds. Employees.get("456456")
 $response:=$pushNotification.open($entity; $notification; $recipients)
 
 ```
@@ -90,14 +90,14 @@ Entretanto pode escolher não forçar uma sincronização de dados, para preveni
 
 ```4d
 
-$pushNotification:=MobileAppServer.PushNotification.new()
+$pushNotification:=MobileAppServer. PushNotification.new()
 
 $notification:=New object
 $notification.title:="This is title" 
 $notification.body:="Here is the content of this notification" 
 $notification.userInfo:=New object("dataSynchro"; False)
 
-$entity:=ds.Employees.get("456456")
+$entity:=ds. Employees.get("456456")
 $response:=$pushNotification.open($entity; $notification; $recipients)
 
 ```
@@ -110,7 +110,7 @@ Aqui está um exemplo de código que pode usar com outros métodos, desde que pr
 
 ```4d
 
-$pushNotification:=MobileAppServer.PushNotification.new()
+$pushNotification:=MobileAppServer. PushNotification.new()
 
 $notification:=New object
 $notification.title:="This is title" 
@@ -130,7 +130,7 @@ Usuários de Windows precisam baixar a [última versão de CURL](https://curl.se
 
 Não importa se trabalhar em Windows ou macOS é preciso copiar os arquivos abaixo de seu proejto de desenvolvimento para seu projeto de produção:
 
-- `4DBASE/MobileApps/ID.BundleID/AuthKey_XXXX.P8`
-- `4DBASE/MobileApps/ID.BundleID/manifest.json`
+- `4DBASE/MobileApps/ID. BundleID/AuthKey_XXXX.`
+- `4DBASE/MobileApps/ID. BundleID/manifest.json`
 
 
