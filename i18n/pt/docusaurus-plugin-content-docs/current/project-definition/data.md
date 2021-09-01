@@ -170,11 +170,9 @@ Here is how it works:
 2. The database method queries the 4D datastore to get appropriate information with regard to the business rules and can return any value as a custom property of the `userInfo` object. For example:
 
 ```4d
-$id:=ds.Salesperson.query("email == :1";$1.email).first().id 
-    //gets the id value of the salesperson from its email
-If($id#null)
-    $Obj_response.userInfo:=New object("id";$id) //stores id in the userInfo to return 
-End if  
+$id:=ds. Salesperson.query("email == :1";$1.email).first().id 
+    //gets the id value of the salesperson from its email If($id#null)
+    $Obj_response.userInfo:=New object("id";$id) //stores id in the userInfo to return End if  
 ...
 $0:=$Obj_response
 ```
