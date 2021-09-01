@@ -32,7 +32,7 @@ Download the Starter project:
 * まだプロジェクトをビルドしていないのであれば，⒉に進んでください。
 * すでにプロジェクトをビルドしたのであれば，⒊に進んでください。
 
-## ⒉ プロジェクトをビルドする
+## ⒉ ⒉ プロジェクトをビルドする
 
 From the Project Editor BUILD tab:
 
@@ -41,12 +41,12 @@ From the Project Editor BUILD tab:
 
 ![Build and Run](img/build-and-run.png)
 
-## ⒊ プロジェクトをXcodeで開く
+## ⒊ ⒊ プロジェクトをXcodeで開く
 
 From the Project Editor BUILD tab:
 
 * Click on Project > Open the project with Xcode
 
-![プロジェクトをXcodeで開く](img/Open-your-project-Xcode-4D-for-iOS.png)
+![⒊ プロジェクトをXcodeで開く](img/Open-your-project-Xcode-4D-for-iOS.png)
 
 Now you're ready to start working on your 4D for iOS project in Xcode.
