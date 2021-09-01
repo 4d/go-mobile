@@ -14,7 +14,7 @@ Ahora filtremos el contenido de nuestra aplicación según la dirección de corr
 ![Filtro de búsqueda usuario](img/user-information-query.png)
 
 ```4d
-Status = 'In Progress' & manager.Email = :email 
+Status = 'In Progress' & manager. Email = :email 
 ```
 
 La búsqueda filtrará los datos en función del estado **In Progress** Y de la **dirección de correo electrónico del administrador de cuentas** (accesible desde la tabla AccountManager gracias a la relación *Muchos a Uno* en el nombre del gerente).
