@@ -85,7 +85,7 @@ At this point, you will see a **new action** named *"deleteTasks"* with *"Remove
 
 You don't need to worry about parameters or properties for this type of action.
 
-## ⒋ コメント送信アクション
+## ⒋ ⒋ コメント送信アクション
 
 Now we want to **send a comment** to a **specific email** depending on a specific task. To do so, click on the + button and create a new action named **sendComment**.
 
@@ -93,8 +93,8 @@ Now we want to **send a comment** to a **specific email** depending on a specifi
 
 Now let's create three parameters:
 
-* ＋ボタンの三角部分をクリックし，アクションパラメーターのリストから**Title**を選択します。送信するメールにタスク名を含めるためです。
-* ＋ボタンをクリックし，**Comment**パラメーターを作成します。フォーマットは「テキスト」です。
+* ＋ボタンの三角部分をクリックし，アクションパラメーターのリストから**Title**を選択します。 送信するメールにタスク名を含めるためです。
+* ＋ボタンをクリックし，**Comment**パラメーターを作成します。 フォーマットは「テキスト」です。
 * 同じ要領で**email**パラメーターを追加し，フォーマットは「メールアドレス」に設定します。
 
 Your Actions section should look like this:
@@ -126,7 +126,9 @@ Case of
 
     : ($request.action="addTasks")
 
-          // Insert here the code for the action "Add…"
+          // Insert here the code for the action "Add…
+
+        "
 
         $o:=New object(\
         "dataClass";$context.dataClass;\
@@ -136,7 +138,9 @@ Case of
 
     : ($request.action="editTasks")
 
-          // Insert here the code for the action "Edit…"
+          // Insert here the code for the action "Edit…
+
+        "
 
         $o:=New object(\
         "dataClass";$context.dataClass;\
@@ -378,7 +382,7 @@ Don't forget to add your own values for the **sendEmail** action.
 
 
 
-## ⒎ アプリをビルドする
+## ⒎ ⒎ アプリをビルドする
 
 
 It's time to build your app!
