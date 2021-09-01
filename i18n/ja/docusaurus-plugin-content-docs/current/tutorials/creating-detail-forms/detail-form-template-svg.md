@@ -52,10 +52,10 @@ You can define position, height, and width for all of your fields. This process 
 ```
 
 1. エリア全体の垂直位置です。（g要素のtransform属性）
-2. エリア背景の位置とサイズです。（rect要素）
+2. エリア背景の位置とサイズです。
 3. 入力エリアの位置とサイズです。（textArea要素）
 4. Define the droppable field position, height, and width, as well as accepted [**field types**](../creating-list-forms/list-form-svg-file.md#iostypes) (all types are accepted in this example)
-5. 内容をクリアするためのキャンセルボタンです。（use要素）
+5. 内容をクリアするためのキャンセルボタンです。
 
 ### ピクチャフィールド
 
@@ -81,11 +81,11 @@ You can define position, height, and width for all of your fields. This process 
 ```
 
 1. エリア全体の垂直位置です。（g要素のtransform属性）
-2. エリア背景の位置とサイズです。（rect要素）
-3. ピクチャエリアに表示されるアイコン画像です。（path要素）
+2. エリア背景の位置とサイズです。
+3. ピクチャエリアに表示されるアイコン画像です。
 4. 入力エリアの位置とサイズです。（textArea要素）
 5. Define the droppable field position, height, and width, as well as accepted [**field types**](../creating-list-forms/list-form-svg-file.md#iostypes)
-6. 内容をクリアするためのキャンセルボタンです。（use要素）
+6. 内容をクリアするためのキャンセルボタンです。
 
 Now that you have an **icon**, a **basic template description** in the manifest.json file, and your **svg file**, let's move on to the fun part with Xcode!
 
