@@ -57,7 +57,7 @@ You can define position, height, and width for all of your fields. This process 
 4. Define the droppable field position, height, and width, as well as accepted [**field types**](../creating-list-forms/list-form-svg-file.md#iostypes) (all types are accepted in this example)
 5. Définir un bouton "Annuler" qui s’affichera pour effacer le contenu courant
 
-### Zone ImageField 
+### Zone ImageField
 
 ```xml
 //1
