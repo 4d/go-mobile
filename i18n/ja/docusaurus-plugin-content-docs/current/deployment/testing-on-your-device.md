@@ -22,22 +22,22 @@ You need [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurat
 :::
 
 
-## ⒈ Account creation
+## ⒈ ⒈ Account creation
 
 * **Apple ID**: Create your Apple ID. まだアカウントを持っていない場合，[ここ](https://appleid.apple.com/account#!&page=create)をクリックしてください。
 
 * **Developer Account**: Choose an Apple Developer Program (for organizations or individuals) for App Store deployment or the Apple Developer Enterprise Program (for in-house deployment).
 
-## ⒉ Xcode configuration
+## ⒉ ⒈ Xcode configuration
 
 * **Developer Account**: In Xcode > Preferences > Accounts, add your Apple ID. ![デベロッパーアカウント](img/Developer-Account-4D-for-iOS.png)
 
-## ⒊ Get your Team ID
+## ⒊ ⒉ Get your Team ID
 
 * If your are using a [Free Apple Developer Program]`(free-developer-account.html--to addd)` go to [step 4](#step-4-team-id-for-free-account).
 * If your are using an [Apple Developer Program for organization](../tutorials/developer-program/register-apple-developer-program-organization), [individual](../tutorials/developer-program/register-apple-developer-program-individual) or an [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program) go to [step 5](#step-5-team-id-for-paid-subscription-account).
 
-## ⒋ Team ID for Free account
+## ⒋ ⒋ Team ID for Free account
 
 ### Provisioning Profileおよび証明書は，Xcodeが自動的に生成します。
 
@@ -61,7 +61,7 @@ You need [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurat
 
 ![Build and Run](img/Build-Run-Free-Account.png)
 
-## ⒌ Team ID for paid subscription account
+## ⒌ ⒌ Team ID for paid subscription account
 
 * **Team ID**: Go to Developer Account > Membership and get your Team ID. ![デベロッパーアカウントのメンバーシップ](img/Team-ID-4D-for-iOS.png)
 
@@ -69,7 +69,7 @@ You need [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurat
 
 * ⒍に進んでプロジェクトのアプリをデバイスにインストールします。
 
-## ⒍ Installation
+## ⒍ ⒍ Installation
 
 ### Apple Configurator 2で自動的にインストールする
 
