@@ -47,7 +47,7 @@ Está vazio, então vamos adicionar conteúdo!
 Para que a vista seja rolável, uma scrollview já é incluída no layout:
 
 ```xml
-    <androidx.core.widget.NestedScrollView
+    <androidx.core.widget. NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
@@ -57,7 +57,7 @@ Para que a vista seja rolável, uma scrollview já é incluída no layout:
 A parte que vai ser duplicada:
 
 ```xml
- <androidx.cardview.widget.CardView
+ <androidx.cardview.widget. CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -65,7 +65,7 @@ A parte que vai ser duplicada:
                 android:layout_marginVertical="2dp"
                 card_view:cardCornerRadius="4dp">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <androidx.constraintlayout.widget. ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -78,7 +78,7 @@ A parte que vai ser duplicada:
                         android:layout_marginEnd="8dp"
                         android:scrollbars="none"
                         android:text="__LABEL__"
-                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textAppearance="@style/TextAppearance. Body1"
                         android:textColor="?colorPrimary"
                         app:layout_constraintBottom_toTopOf="@+id/__VALUE_ID__"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -118,7 +118,7 @@ A parte que vai ser duplicada:
                         android:text="__TEXT__"
                         android:textAlignment="textStart"
                         android:textAllCaps="false"
-                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                        android:textAppearance="@style/TextAppearance. Body2"
                         android:textColor="?colorOnSurface"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -127,9 +127,9 @@ A parte que vai ser duplicada:
                         tools:text="My field" />
                     <!--END_IF_IS_NOT_IMAGE-->
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget. ConstraintLayout>
 
-            </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.
 ```
 
 
@@ -138,7 +138,7 @@ A parte que vai ser duplicada:
 Para ter uma boa exibição de Imagem vamos usar um container CardView. O último passo é agregar uma borda arredondada para a Image View para ter um melhor design
 
 ```xml
-    <androidx.cardview.widget.CardView
+    <androidx.cardview.widget. CardView
                     android:id="@+id/cardview"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
@@ -160,7 +160,7 @@ Para ter uma boa exibição de Imagem vamos usar um container CardView. O últim
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:background="@tools:sample/avatars"/>
-                </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget. CardView>
 
 ```
 
@@ -189,7 +189,7 @@ Aqui está o código de layout completo nesse estágio:
 
     <!-- Generated with detail form template named "Visual Contact" -->
 
-    <androidx.core.widget.NestedScrollView
+    <androidx.core.widget. NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
@@ -201,11 +201,11 @@ Aqui está o código de layout completo nesse estágio:
 
             <!-- START EDITING HERE -->
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <androidx.constraintlayout.widget. ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <androidx.cardview.widget.CardView
+                <androidx.cardview.widget. CardView
                     android:id="@+id/cardview"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
@@ -228,10 +228,10 @@ Aqui está o código de layout completo nesse estágio:
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:background="@tools:sample/avatars"/>
-                </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget. CardView>
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget. ConstraintLayout>
 
             <!--
             THE FOLLOWING PART WILL BE DUPLICATED CARD VIEWS FOR EVERY FIELD
@@ -241,7 +241,7 @@ Aqui está o código de layout completo nesse estágio:
             <!--FOR_EACH_FIELD-->
             <!-- EVERYTHING BELOW WILL BE DUPLICATED FOR EACH FIELD YOU DROP AT THE BOTTOM OF THE
                  TEMPLATE IN THE PROJECT EDITOR -->
-            <androidx.cardview.widget.CardView
+            <androidx.cardview.widget. CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -249,7 +249,7 @@ Aqui está o código de layout completo nesse estágio:
                 android:layout_marginVertical="2dp"
                 card_view:cardCornerRadius="4dp">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <androidx.constraintlayout.widget. ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -262,7 +262,7 @@ Aqui está o código de layout completo nesse estágio:
                         android:layout_marginEnd="8dp"
                         android:scrollbars="none"
                         android:text="__LABEL__"
-                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textAppearance="@style/TextAppearance. Body1"
                         android:textColor="?colorPrimary"
                         app:layout_constraintBottom_toTopOf="@+id/__VALUE_ID__"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -301,7 +301,7 @@ Aqui está o código de layout completo nesse estágio:
                         android:text="__TEXT__"
                         android:textAlignment="textStart"
                         android:textAllCaps="false"
-                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                        android:textAppearance="@style/TextAppearance. Body2"
                         android:textColor="?colorOnSurface"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -310,17 +310,9 @@ Aqui está o código de layout completo nesse estágio:
                         tools:text="My field" />
                     <!--END_IF_IS_NOT_IMAGE-->
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget. ConstraintLayout>
 
-            </androidx.cardview.widget.CardView>
-
-            <!--END_FOR_EACH_FIELD-->
-
-        </LinearLayout>
-
-    </androidx.core.widget.NestedScrollView>
-
-</layout>
+            </androidx.cardview.widget.
 
 ```
 
