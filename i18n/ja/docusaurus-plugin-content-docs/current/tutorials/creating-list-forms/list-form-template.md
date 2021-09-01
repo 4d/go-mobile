@@ -7,7 +7,7 @@ In this tutorial, we'll cover nearly all aspects of creating a list form templat
 
 ![リストフォームテンプレート（完成）](img/custom-template-final-result.png)
 
-## Download the Starter project
+## ⒈ Download the Starter project
 
 Before we begin, be sure to download and unzip the **Starter project** which includes:
 
