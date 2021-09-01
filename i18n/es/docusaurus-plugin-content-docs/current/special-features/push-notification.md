@@ -31,7 +31,7 @@ Para enviar notificaciones push, se requiere un archivo de autenticación `AuthK
 
 El componente [4D Mobile App Server](https://github.com/4d-for-ios/4D-Mobile-App-Server/tree/master) ofrece métodos para enviar notificaciones push a uno o varios destinatarios. Para obtener información detallada, consulte la documentación del componente [PushNotification](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md).
 
-Este es un ejemplo simple para enviar una notificación push a `test@4d.com `:
+Este es un ejemplo simple para enviar una notificación push a `test@4d.com`:
 
 ```4d
 
