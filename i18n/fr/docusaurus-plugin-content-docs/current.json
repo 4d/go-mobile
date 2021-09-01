@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.docs.category.Getting started": {
-    "message": "Getting started",
+    "message": "Prise en main",
     "description": "The label for category Getting started in sidebar docs"
   },
   "sidebar.docs.category.Project definition": {
@@ -16,7 +16,7 @@
     "description": "The label for category Special features in sidebar docs"
   },
   "sidebar.docs.category.Debugging": {
-    "message": "Debugging",
+    "message": "Débogage",
     "description": "The label for category Debugging in sidebar docs"
   },
   "sidebar.docs.category.Deploying In-House": {
@@ -36,11 +36,11 @@
     "description": "The label for category Creating Detail forms in sidebar tutorials"
   },
   "sidebar.tutorials.category.Gallery": {
-    "message": "Gallery",
+    "message": "Galerie",
     "description": "The label for category Gallery in sidebar tutorials"
   },
   "sidebar.tutorials.category.Data formatter": {
-    "message": "Data formatter",
+    "message": "Format des données",
     "description": "The label for category Data formatter in sidebar tutorials"
   },
   "sidebar.tutorials.category.Filter queries": {
