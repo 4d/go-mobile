@@ -66,6 +66,11 @@ module.exports = {
           type: "localeDropdown",
           position: "left",
         },
+		{
+          type: "docsVersionDropdown",
+          position: "right",
+        },
+		
       ],
     },
     footer: {
@@ -183,6 +188,13 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
 			"https://github.com/4d/go-mobile/edit/main",
+			versions: {
+				'19-R2':{
+				label: 'v19 R2 beta',
+				path: '19-R2'
+				},
+			},
+		includeCurrentVersion: true, // for prod only
         },
         blog: {
           showReadingTime: true,
