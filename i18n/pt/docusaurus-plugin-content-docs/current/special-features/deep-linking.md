@@ -65,9 +65,7 @@ var $1 : Object  // Informação fonrecida por aplicação móvel
 var $0 : Object  // Informação retornada para aplicação móvel
 
 var $action : Object
-$action:=MobileAppServer.Action.new($1)
-
-Case of 
+$action:=MobileAppServer. Action.new($1) Case of 
 
     : ($1.action="shareContact")
 
@@ -75,9 +73,7 @@ Case of
 
     Else 
 
-        $0:=New object("success"; False;"statusText"; "Unknown action send to server")
-
-End case 
+        $0:=New object("success"; False;"statusText"; "Unknown action send to server") End case 
 
 ```
 
@@ -125,9 +121,7 @@ var $1 : Object  // Informação fonrecida por aplicação móvel
 var $0 : Object  // Informação retornada para aplicação móvel
 
 var $action : Object
-$action:=MobileAppServer.Action.new($1)
-
-Case of 
+$action:=MobileAppServer. Action.new($1) Case of 
 
     : ($1.action="shareContact")
 
@@ -135,9 +129,7 @@ Case of
 
     Else 
 
-        $0:=New object("success"; False;"statusText"; "Unknown action send to server")
-
-End case 
+        $0:=New object("success"; False;"statusText"; "Unknown action send to server") End case 
 
 ```
 
@@ -150,13 +142,12 @@ End case
 var $1; $2; $3; $4; $5; $6 : Text
 var $handler : Object
 
-$handler:=MobileAppServer.WebHandler.new()
+$handler:=MobileAppServer. WebHandler.new()
 Case of
     : ($handler.handle($1; $2; $3; $4; $5; $6))
         // Gerenciado por código móvel normal
     Else
-        // Seu código web
-End case
+        // Seu código web End case
 
 ```
 
