@@ -14,7 +14,7 @@ title: Create App Store record
 > * [Apple Developer Program as an individual](../tutorials/developer-program/register-apple-developer-program-individual)
 
 
-## ⒈ Create an App ID
+## ⒈ ⒈ Create an App ID
 
 #### What is an App ID ?
 
@@ -41,18 +41,18 @@ To create your App ID, go to your developer account and select [Certificates, ID
 
 ![Confirm App ID](img/Confirm-App-ID.png)
 
-## ⒉ Sign in to App Store Connect
+## ⒉ ⒉ Sign in to App Store Connect
 
 * Sign in to your [App Store Connect Account](https://appstoreconnect.apple.com)
 * Click on **My Apps**.
 
 ![App Store Connect](img/App-Store-Connect-home-page.png)
 
-## ⒊ Create a new iOS App
+## ⒊ ⒊ Create a new iOS App
 
 Click the **+** sign in the top left corner to create a new iOS App.
 
-![Create a new iOS App](img/Create-new-iOS-App.png)
+![⒊ Create a new iOS App](img/Create-new-iOS-App.png)
 
 Add the following information:
 
@@ -69,7 +69,7 @@ Add the following information:
 > 
 > If your Bundle ID is not available, it may already be used by another app in the App Store. You'll need to change yours in your Xcode project.
 
-## ⒋ App information
+## ⒋ ⒋ App information
 
 From App Store Connect > App Information:
 
@@ -77,9 +77,9 @@ From App Store Connect > App Information:
 * Enter a subtitle for your app. This will appear below your app's name throughout the App Store in iOS 11.
 * Select a primary and secondary (optional) category for your app to appear in.
 
-![App information](img/App-Store-Connect-app-information.png)
+![⒋ App information](img/App-Store-Connect-app-information.png)
 
-## ⒌ Pricing and Availability
+## ⒌ ⒌ Pricing and Availability
 
 This is where you define the price for your app.
 
@@ -87,7 +87,7 @@ This is where you define the price for your app.
 > 
 > You can define limited-time discounts by specifying start and end dates.
 
-## ⒍ Prepare for Submission
+## ⒍ ⒍ Prepare for Submission
 
 Add all of the assets for your app to appear in the App Store in **Version Information**:
 
@@ -95,7 +95,7 @@ Add all of the assets for your app to appear in the App Store in **Version Infor
 > 
 > You can generate all of your screenshots in Simulator (File > New Screen Shot).
 
-![Prepare for Submission](img/Prepare-for-submission-screenshot-description.png)
+![⒍ Prepare for Submission](img/Prepare-for-submission-screenshot-description.png)
 
 * Add your app screenshots. Screenshots for the iPhone 5.5" Super Retina Display and iPad 12.9" Retina Display are mandatory. For more details, see [Screenshot specifications](https://help.apple.com/app-store-connect/#/devd274dd925).
 
