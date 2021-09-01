@@ -210,12 +210,9 @@ O campo é adicionado à lista de critérios de ordenação. Uma ordem ascendent
 Pode ordenar entidades de ordenação em mais de um campo. Cada campo que ordenar é denominado como um nível de ordenação. Por exemplo, os resultados de uma ordenação ascendente de dois níveiss dos campos `lastName` e `firstName` produziria uma lista como esta:
 
 ```4d
-Aardvark, Anthony
-Aardvark, Artemis
-Aardvark, Arthur
+Aardvark, Anthony Aardvark, Artemis Aardvark, Arthur
 ...
-Zygote, Elena
-Zymosian, Elmer
+Zygote, Elena Zymosian, Elmer
 ```
 
 Para adicionar mais níveis na lista de critérios de ordenação, selecione o botão **+** abaixo da lista e configure cada nível:
