@@ -102,21 +102,21 @@ Keep in mind that if you **add constraints** into your button, you will also hav
 
 このチュートリアルでは，画面上でおおきく表示されるように，ボタンの高さに制約を追加する場合を考えます。
 
-⒈ ビューを選択し，高さを123から40に変更します。
+⒈ ⒈ ビューを選択し，高さを123から40に変更します。
 
 ![ボタンビューの高さ](img/Button-view-height.png)
 
-⒉ Double click on the **Top Space Constraint** and change it from 8 to 0
+⒉ ⒉ Double click on the **Top Space Constraint** and change it from 8 to 0
 
 ![上部余白の制約](img/Top-Space-constraint.png)
 
-⒊ Do the same thing with **Bottom Space Constraint** and change it from 8 to 0
+⒊ ⒊ Do the same thing with **Bottom Space Constraint** and change it from 8 to 0
 
 下図のようになっていれば成功です。
 
 ![カスタムボタンの制約](img/Custom-button-constraints.png)
 
-⒋ 高さの制約「40」を追加します。
+⒋ ⒋ 高さの制約「40」を追加します。
 
 ![ボタンの高さ制約](img/Button-height-constraint.png)
 
@@ -137,17 +137,17 @@ Each storyboard element has an Object ID. For example, if you select Field View 
 
 #### 高さの制約にタグを追加する
 
-⒈ ストーリーボード内で要素のオブジェクトIDを選択してコピーします。
+⒈ ⒈ ストーリーボード内で要素のオブジェクトIDを選択してコピーします。
 
 ![水平制約オブジェクトのID](img/Horizontal-constraint-object-ID.png)
 
-⒉ Search for this ID in the xml file and put **TAG-RL-007** instead (a Tag that is not already used).
+⒉ ⒉ Search for this ID in the xml file and put **TAG-RL-007** instead (a Tag that is not already used).
 
-⒊ XMLファイルを保存します。
+⒊ ⒊ XMLファイルを保存します。
 
 ![水平制約のXMLファイル](img/Horizontal-constraint-xml-file.png)
 
-⒋ ストーリーボードのウィンドウにフォーカスを移動し，制約が正しく更新されていることを確認します。
+⒋ ⒋ ストーリーボードのウィンドウにフォーカスを移動し，制約が正しく更新されていることを確認します。
 
 ![水平制約オブジェクトのID更新](img/Horizontal-object-id-updated.png)
 
