@@ -34,7 +34,9 @@ jobs:
       - name: Setup config file
         run: |
           if [ ${{ github.repository_owner }} == 'doc4d' ]; then
-          sed -i 's/noIndex:\ false/noIndex:\ true/g' docusaurus.config.js
+            sed -i 's/noIndex:\ false/noIndex:\ true/g' docusaurus.config.js
+          else
+            sed -i 's/includeCurrentVersion:\ true/includeCurrentVersion:\ false/g' docusaurus.config.js
           fi
       - name: Build
         run: |
