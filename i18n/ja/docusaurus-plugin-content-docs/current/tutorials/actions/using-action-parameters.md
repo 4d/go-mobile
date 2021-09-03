@@ -85,7 +85,7 @@ At this point, you will see a **new action** named *"deleteTasks"* with *"Remove
 
 You don't need to worry about parameters or properties for this type of action.
 
-## ⒋ ⒋ コメント送信アクション
+## ⒋ ⒋ ⒋ コメント送信アクション
 
 Now we want to **send a comment** to a **specific email** depending on a specific task. To do so, click on the + button and create a new action named **sendComment**.
 
@@ -382,7 +382,7 @@ Don't forget to add your own values for the **sendEmail** action.
 
 
 
-## ⒎ ⒎ アプリをビルドする
+## ⒎ ⒎ ⒎ アプリをビルドする
 
 
 It's time to build your app!
