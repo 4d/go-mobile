@@ -25,7 +25,7 @@ It's quite empty, so let's add some content!
 
 ## Add an Image View
 
-From the **Object library**, drag and drop an  **Image View** into a cell. オブジェクトライブラリは，ツールバー上部にある丸の中に四角が収まったアイコンをクリックすると表示されます。ツールバーが表示されていない場合，command+option+Tで表示を切り替えてください。command+shift+Lで直接ライブラリを表示することもできます。
+Let's begin by **adding a View**. Search for "View" in the **Object library** and drag it into the cell container.
 
 ![Add Image View storyboard](img/add-imageview-storyboard.png)
 
@@ -49,7 +49,7 @@ Your Image View is now well positioned.
 
 ## タイトルおよびサブタイトルのラベル
 
-Let's begin by **adding a View**. Search for "View" in the **Object library** and drag it into the cell container.
+Select your Image View and go to **Identity inspector** > User Defined Runtime Attributes. Click the **+ button** to add a row.
 
 ![Viewをストーリーボードに追加](img/add-view-storyboard.png)
 

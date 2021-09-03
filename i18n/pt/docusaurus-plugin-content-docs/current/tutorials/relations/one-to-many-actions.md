@@ -49,14 +49,10 @@ Agora entre estas linhas em seu método **addProject**:
 
 ```4d
 C_OBJECT($0)
-C_OBJECT($1)
-
-C_OBJECT($entity;$in;$out)
+C_OBJECT($1) C_OBJECT($entity;$in;$out)
 
 $in:=$1
-$out:=New object("success";False)
-
-If ($in.dataClass#Null)
+$out:=New object("success";False) If ($in.dataClass#Null)
 
     $entity:=ds[$in.dataClass].new()  //Cria uma referência
 
@@ -82,13 +78,9 @@ If ($in.dataClass#Null)
 
     $out.statusText:="Task added"
 
-    $out.close:=True
+    $out.close:=True Else 
 
-Else 
-
-    $out.errors:=New collection("No Selection")
-
-End if 
+    $out.errors:=New collection("No Selection") End if 
 
 $0:=$out
 

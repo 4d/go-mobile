@@ -48,10 +48,10 @@ Para melhorar a renderização de suas células vamos adicionar um [CardView](ht
 
 Adicionar um CardView container permite exibir as células de seu formulário lista como cartelas e dá a habilidade de adicionar sombras, elevação, cantos arredondados, cor de fundo...
 
-Vamos adicionar o arquivo layout. Não esqueça de fechar o container adicionando `</androidx.cardview.widget.CardView>` logo antes `</layout>`.
+Vamos adicionar o arquivo layout. Não esqueça de fechar o container adicionando `</androidx.cardview.widget. CardView>` logo antes `</layout>`.
 
 ```xml
-   <androidx.cardview.widget.CardView
+   <androidx.cardview.widget. CardView
         android:id="@+id/mainCardview" 
         android:layout_width="match_parent" 
         android:layout_height="wrap_content"
@@ -68,7 +68,7 @@ Vamos adicionar o arquivo layout. Não esqueça de fechar o container adicionand
 
         ...
 
-        </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget. CardView>
 
 ```
 
@@ -92,7 +92,7 @@ Aqui está o código de layout completo nesse estágio:
         <!--ENTITY_VARIABLE-->
     </data>
 
-    <androidx.cardview.widget.CardView
+    <androidx.cardview.widget. CardView
         android:id="@+id/mainCardview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -107,16 +107,13 @@ Aqui está o código de layout completo nesse estágio:
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <androidx.constraintlayout.widget. ConstraintLayout
         android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget. ConstraintLayout>
 
-    </androidx.cardview.widget.CardView>
-
-
-</layout>
+    </androidx.cardview.widget.
 
 ```
 
@@ -130,7 +127,7 @@ E aqui está a preview de resultado que deve obter:
 Para ter uma boa exibição de Imagem vamos usar uma CardView container quando adicionamos um canto arredondado para a ImageView ter um design melhor.
 
 ```xml
-            <androidx.cardview.widget.CardView
+            <androidx.cardview.widget. CardView
                 android:id="@+id/cardView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -146,7 +143,7 @@ Para ter uma boa exibição de Imagem vamos usar uma CardView container quando a
                 app:imageUrl="__IMAGE_1__"
                 tools:background="@tools:sample/avatars" /> 
 
-            </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.
 ```
 
 Como pode ver ImageView está embebido no CardView. Isso permite adicionar bordas arrendondadas.
@@ -177,7 +174,7 @@ Para fazer isso vamos adicionar um TextView:
                 android:layout_marginBottom="6dp"
                 android:scrollbars="none"
                 android:text="__TEXT_2__"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textAppearance="@style/TextAppearance. MaterialComponents. Body1"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -216,7 +213,7 @@ Queremos adicionar um subtítulo para esta célula. Para isso precisa adicionar 
                 android:layout_marginBottom="50dp"
                 android:scrollbars="none"
                 android:text="__TEXT_3__"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textAppearance="@style/TextAppearance. MaterialComponents. Body1"
                    android:textColor="?colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -256,7 +253,7 @@ Aqui está o código de layout completo nesse estágio:
         <!--ENTITY_VARIABLE-->
     </data>
 
-    <androidx.cardview.widget.CardView
+    <androidx.cardview.widget. CardView
         android:id="@+id/mainCardview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -271,11 +268,11 @@ Aqui está o código de layout completo nesse estágio:
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.widget. ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <androidx.cardview.widget.CardView
+        <androidx.cardview.widget. CardView
             android:id="@+id/cardView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -292,7 +289,7 @@ Aqui está o código de layout completo nesse estágio:
                 app:imageUrl="__IMAGE_1__"
                 tools:background="@tools:sample/avatars" />
 
-        </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget. CardView>
 
         <TextView
             android:id="@+id/__SPECIFIC_ID_2__"
@@ -304,7 +301,7 @@ Aqui está o código de layout completo nesse estágio:
             android:layout_marginBottom="6dp"
             android:scrollbars="none"
             android:text="__TEXT_2__"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textAppearance="@style/TextAppearance. Body1"
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -323,7 +320,7 @@ Aqui está o código de layout completo nesse estágio:
             android:layout_marginBottom="50dp"
             android:scrollbars="none"
             android:text="__TEXT_3__"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textAppearance="@style/TextAppearance. Body1"
             android:textColor="?colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -331,11 +328,9 @@ Aqui está o código de layout completo nesse estágio:
             app:layout_constraintTop_toBottomOf="@+id/__SPECIFIC_ID_2__"
             tools:text="My field 3" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget. ConstraintLayout>
 
-    </androidx.cardview.widget.CardView>
-
-</layout>
+    </androidx.cardview.widget.
 
 ```
 
@@ -355,7 +350,7 @@ Tentar manter a consistência em seu tamanho de layout de texto com aparência. 
 Por exemplo, um TextView básico deveria estar na escala `@Body1@`.
 
 ```xml
-android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+android:textAppearance="@style/TextAppearance. MaterialComponents. Body1"
 ```
 
 ## Como entrar os dados em suas células

@@ -28,7 +28,7 @@ a:
 
 ```
 
-¡Listo! La clase es lo único que necesita modificar para que los criterios de búsqueda múltiples estén activos.
+¡Listo! ¡Listo! La clase es lo único que necesita modificar para que los criterios de búsqueda múltiples estén activos.
 
 ## Editor de proyecto
 
@@ -42,4 +42,4 @@ Aparecerá un menú para permitirle **eliminar campos específicos** o **elimina
 
 ![Modify Multi-criteria search fields](img/multi-criteria-search-forms-section-remove-fields.png)
 
-¡Felicitaciones! ¡Ahora puede basar su(s) búsqueda(s) en múltiples campos en su aplicación móvil!
+¡Felicitaciones! ¡Felicitaciones! ¡Ahora puede basar su(s) búsqueda(s) en múltiples campos en su aplicación móvil!

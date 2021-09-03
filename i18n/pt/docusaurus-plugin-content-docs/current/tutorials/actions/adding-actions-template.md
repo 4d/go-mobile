@@ -44,11 +44,11 @@ Há dois tipos de ações disponíveis:
 * ações de Tabela
 * ações de entidade
 
-Primeiro vamos abrir o arquivo `list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm..Storyboard` .
+Primeiro vamos abrir o arquivo `list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.. Storyboard` .
 
 ### Adicione ações para o modelo personalizado TasksList
 
-#### A. Adicionar uma Tag de ação de tabela
+#### A. A. Adicionar uma Tag de ação de tabela
 
 Selecione o **List form Controller** e adicione esta linha em **User Defined Runtime Attributes** (Identity inspector):
 
@@ -59,7 +59,7 @@ Selecione o **List form Controller** e adicione esta linha em **User Defined Run
 ![Add table action tag](img/Add-table-tag-taskslist.png)
 
 
-#### B. Adicionar uma Tag de ação de Entidade
+#### B. B. Adicionar uma Tag de ação de Entidade
 
 Selecione a vista Animatable Table e adicione esta linha em **User Defined Runtime Attributes** (Identity inspector):
 
@@ -79,9 +79,9 @@ Agora vamos agregar as etiquetas de ação ao modelo personalizado TasksCollecti
 
 ### Adicionar ações para o modelo personalizado TasksCollection
 
-Para fazer isso, abra o arquivo `list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard`.
+Para fazer isso, abra o arquivo `list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm. Storyboard`.
 
-#### A. Adicionar uma Tag de ação de tabela
+#### A. A. Adicionar uma Tag de ação de tabela
 
 O processo é similar ao processo do modelo personalizado TasksList
 
@@ -93,7 +93,7 @@ Selecione o **List form Controller** e adicione esta linha em **User Defined Run
 
 ![Add collection table action tag](img/Add-collection-table-tag-taskslist.png)
 
-#### B. Adicionar uma Tag de ação de Entidade
+#### B. B. Adicionar uma Tag de ação de Entidade
 
 Para as entidades, a forma de mostrar as ações é bastante diferente de TableView: a ação de deslizar não está adaptada a CollectionViews.
 

@@ -48,21 +48,17 @@ var $request; $response : Object
 $request:=$1  // Information provided by mobile application
 $response:=New object  // Information returned to mobile application
 
-// Check user email
-If ($request.email=Null)
+// Check user email If ($request.email=Null)
     // No email means Guest mode - Allow connection
-    $response.success:=True
-Else 
+    $response.success:=True Else 
     // Authenticated mode - Allow or not the connection according to email or other device property
     $response.success:=True //access allowed
     // to deny access :
-    // $response.success:=False 
-End if 
+    // $response.success:=False End if 
 
 // Optional message to display on mobile App.
 If ($response.success)
-    $response.statusText:="You are successfully authenticated"
-Else 
+    $response.statusText:="You are successfully authenticated" Else 
     $response.statusText:="Sorry, you are not authorized to use this application."
 End if 
 
@@ -114,9 +110,7 @@ The [4D Mobile App Server](https://github.com/4d-for-ios/4D-Mobile-App-Server/tr
 1. Call the `Mobile App Email Checker` method from the `On Mobile App Authentication` database method with the information provided by the mobile application:
 
 ```4d
-// On Mobile App Authentication database method
-
-C_OBJECT($0)
+// On Mobile App Authentication database method C_OBJECT($0)
 C_OBJECT($1)
 $0:= Mobile App Email Checker($1)
 ```
@@ -124,13 +118,10 @@ $0:= Mobile App Email Checker($1)
 2. Call the `Mobile App Active Session` method from the `On Web Connection` database method with the `Session` ID parameter retrieved from the URL:
 
 ```4d
-// On Web Connection database method
-
-C_TEXT($1)
+// On Web Connection database method C_TEXT($1)
 Case of 
 : (Mobile App Active Session($1).success)
-    //add log if you want
-End case 
+    //add log if you want End case 
 
 ```
 
@@ -147,10 +138,7 @@ You can implement your own email authentication without using the 4D Mobile App 
 
 
 ```4d
-// On Mobile App Authentication database method
-
-
-C_OBJECT($0;$1;$response;$request;$email;$status)
+// On Mobile App Authentication database method C_OBJECT($0;$1;$response;$request;$email;$status)
 
   // parameters settings come from the mobile app
 $request:=$1
@@ -174,8 +162,7 @@ $response:=New object
   // Declare that the current session is being verified
 $response.verify:=True
 
-  // Check if the email was successsfully sent
-If ($status.success)
+  // Check if the email was successsfully sent If ($status.success)
       //create a share object to contain our sessions, accessible from all processes
     If (Storage.pendingSessions=Null)
         Use (Storage)
@@ -189,12 +176,10 @@ If ($status.success)
     End use 
 
     $response.success:=True
-    $response.statusText:="Please check your mail box"
-Else 
+    $response.statusText:="Please check your mail box" Else 
       // Display an error message on the smatphone
     $response.statusText:="The mail is not sent please try again later"
-    $response.success:=False
-End if 
+    $response.success:=False End if 
 
 $0:=$response
 
@@ -203,24 +188,15 @@ $0:=$response
 2. In the `On Web Connection` database method, write some code to activate the session after the user clicked on the link in the confirmation email.
 
 ```4d
-// On Web Connection database method
-
-C_TEXT($1;$2;$3;$4;$5;$6)
-
-C_TEXT($token;$session)
-C_OBJECT($sessionFile;$sessionObject)
-
-If ($1="/activation/@")
+// On Web Connection database method C_TEXT($1;$2;$3;$4;$5;$6) C_TEXT($token;$session)
+C_OBJECT($sessionFile;$sessionObject) If ($1="/activation/@")
     $token:=Substring($1;13)
 End if 
 
 
-  //get session from ID received from URL
-If (Storage.pendingSessions#Null)
+  //get session from ID received from URL If (Storage.pendingSessions#Null)
     $session:=Storage.pendingSessions[$token]
-End if 
-
-If ($session#"")
+End if If ($session#"")
       //get session folder
     $sessionFile:=Folder(fk mobileApps folder).folder($session).file($token)
     $sessionObject:=JSON Parse($sessionFile.getText())

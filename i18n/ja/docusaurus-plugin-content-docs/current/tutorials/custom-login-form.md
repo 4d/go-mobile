@@ -45,7 +45,7 @@ This project already includes a Users table with a Login and a Password for each
 
 :::
 
-## ⒉ Include and use a custom login form
+## ⒉ ⒉ Include and use a custom login form
 
 To use a custom login form, the first thing you'll need to do is creating a *YourDatabase.4dbase/Resources/Mobile/form/login* folder.
 
@@ -78,7 +78,7 @@ This will allow to initialize the custom template and use it during the build pr
 You are done for the custom template intégration! So quite an easy process :)
 
 
-## ⒊ On Mobile app Authentication database method
+## ⒊ ⒊ On Mobile app Authentication database method
 
 Open the QRCode mobile project and go right to the Publishing section.
 
@@ -124,7 +124,7 @@ $0:=$response
 ```
 
 
-## ⒋ Project Methods
+## ⒋ ⒋ Project Methods
 
 ### Authentication method
 
@@ -188,7 +188,7 @@ WEB SEND HTTP REDIRECT("/generatedQRCode.shtml")
 ```
 
 
-## ⒌ Website
+## ⒌ ⒌ Website
 
 For this tutorial, three html pages are already available into the WebFolder folder:
 
@@ -249,7 +249,7 @@ In this last page, we use [4D tags](https://developer.4d.com/docs/en/Tags/tags.h
 
 ```
 
-## ⒍ Get the entire senario
+## ⒍ ⒍ Get the entire senario
 
 ### Login into your website home page
 

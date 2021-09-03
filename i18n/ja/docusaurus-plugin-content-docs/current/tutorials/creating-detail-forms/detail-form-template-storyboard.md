@@ -83,7 +83,7 @@ Next, with the Stack View selected add four constraints by clicking on the **Add
 
 ![Stack Viewの最終的な制約](img/stackview-constraints-final.png)
 
-Stack Viewに２個ビューを追加し，制約もきちんと設定できました。Field View 1の作業に移りましょう。
+Stack Viewに２個ビューを追加し，制約もきちんと設定できました。 Field View 1の作業に移りましょう。
 
 ## Field View 1にImage Viewを追加する
 

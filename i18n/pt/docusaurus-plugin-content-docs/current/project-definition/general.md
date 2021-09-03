@@ -20,7 +20,7 @@ Select the mobile OS for which you want to build the app. This setting will defi
 
 **Identifier:** Enter your organization’s bundle identifier. This will be used to identify your application. The product name you enter is concatenated to create the "Bundle ID" using reverse domain name service notation (see **ID** below). This bundle ID must be unique to your app.
 
-For example, if your company’s name is "MyCompany" and your app’s name is "MyApp", you could choose "com.MyCompany" as your organization’s bundle identifier and your App bundle ID would be "com.MyCompany.MyApp".
+For example, if your company’s name is "MyCompany" and your app’s name is "MyApp", you could choose "com. MyCompany" as your organization’s bundle identifier and your App bundle ID would be "com. MyCompany. MyApp".
 
 :::nota
 

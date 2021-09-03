@@ -34,7 +34,7 @@ Depois vá para a seção Estrutura e selecione a **tabela Task**.
 
 * Este campo funcionará como qualquer outro campo durante o resto do processo de criação da aplicação
 
-* Pode também filtrar seu conteúdo de app usando campos relacionados da seção Data. Para fazer isso digite `TaskCategory.Name != 'Personal'` no campo Filter query para excluir as tarefas pessoais.
+* Pode também filtrar seu conteúdo de app usando campos relacionados da seção Data. Para fazer isso digite `TaskCategory. Name != 'Personal'` no campo Filter query para excluir as tarefas pessoais.
 
  ![Related field from Data section](img/Related-field-from-Data-section.png)
 

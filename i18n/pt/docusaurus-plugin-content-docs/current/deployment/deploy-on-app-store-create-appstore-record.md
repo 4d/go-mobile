@@ -10,7 +10,7 @@ title: Criar uma ficha em App Store
 
 > **PRÉ-REQUISITOS**
 > 
-> * [Apple Developer Program para organizações](../tutorials/developer-program/register-apple-developer-program-organization)
+> * ../tutorials/developer-program/register-apple-developer-program-organization
 > * [Apple Developer Program para particulares](../tutorials/developer-program/register-apple-developer-program-individual)
 
 
@@ -18,7 +18,7 @@ title: Criar uma ficha em App Store
 
 #### O que é uma identificação (ID) de aplicação?
 
-*Uma ID de aplicação é uma string de duas partes usada para identificar um ou mais apps para um único time de desenvolvimento. Esta string consiste de uma ID de Time e uma ID Bundle, com um ponto(.) que separa as duas partes (exemplo: TimeID.BundleID).*
+*Uma ID de aplicação é uma string de duas partes usada para identificar um ou mais apps para um único time de desenvolvimento. Esta string consiste de uma ID de Time e uma ID Bundle, com um ponto(.) que separa as duas partes (exemplo: TimeID. BundleID).*
 
 > **NOTA**
 > 
@@ -74,7 +74,7 @@ Agregue a informação abaixo:
 Em App Store Connect > App Information:
 
 * Define a Privacy Policy URL de sua aplicação (opcional).
-* Introduza uma legenda para seu app.  Isso vai aparecer abaixo do nome de sua aplicação na App Store em iOS 11.
+* Introduza uma legenda para seu app. Isso vai aparecer abaixo do nome de sua aplicação na App Store em iOS 11.
 * Selecione uma categoria primária e secundária (opcional) na qual sua aplicação vai aparecer.
 
 ![Informação sobre a aplicação](img/App-Store-Connect-app-information.png)
