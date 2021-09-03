@@ -170,6 +170,30 @@ $parameters:=$request.parameters
 
           // Ação desconhecida
 
+        C_OBJECT($0;$response)
+C_OBJECT($1;$request) C_OBJECT($o;$context;$request;$result;$parameters)
+
+$request:=$1  // Informação oferecida pela aplicação móvel
+
+$context:=$request.context
+$parameters:=$request.parameters
+
+        Case of 
+
+    : ($request.action="addTasks")
+
+          // Inserir aqui o código para a ação "Add…"
+
+        $o:=New object(\
+        "dataClass";$context.dataClass;\
+        "parameters";$parameters)
+
+        $result:=addAction ($o)
+
+    : ($request.action="editTasks")
+
+          // Inserir aqui o código para a ação "Edit…"
+
         $o:=New object(\
         "dataClass";$context.dataClass;\
         "ID";$context.entity.primaryKey;\
@@ -203,9 +227,40 @@ $parameters:=$request.parameters
     Else 
 
           // Ação desconhecida
-End case 
 
-$0:=$result
+        $o:=New object(\
+        "dataClass";$context.dataClass;\
+        "ID";$context.entity.primaryKey;\
+        "parameters";$parameters)
+
+        $result:=editAction ($o)
+
+
+    : ($request.action="deleteTasks")
+
+          // Inserir aqui o código para a ação "Remove"
+
+        $o:=New object(\
+        "dataClass";$context.dataClass;\
+        "ID";$context.entity.primaryKey)
+
+        $result:=deleteAction ($o)
+
+    : ($request.action="sendComment")
+
+          // Inserir aqui o código para a ação "Send Comment"
+
+        $o:=New object(\
+        "dataClass";$context.dataClass;\
+        "ID";$context.entity.primaryKey;\
+        "parameters";$parameters)
+
+
+        $result:=sendMail ($o)
+
+    Else 
+
+          // Ação desconhecida
 
 ```
 
