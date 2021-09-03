@@ -222,7 +222,7 @@ Não está mal para a primeira tentativa!
 
 ![iPhone Demo](img/iphone-demo.png)
 
-Field View 2 foi duplicado Field View 2 foi duplicado Vamos ver se podemos tornar o app um pouco mais interessante!
+Field View 2 foi duplicado Field View 2 foi duplicado Field View 2 foi duplicado Vamos ver se podemos tornar o app um pouco mais interessante!
 
 ### Personalize seu app
 
