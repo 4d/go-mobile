@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.docs.category.Getting started": {
-    "message": "Comencemos",
+    "message": "はじめてのアクション",
     "description": "The label for category Getting started in sidebar docs"
   },
   "sidebar.docs.category.Project definition": {
@@ -40,7 +40,7 @@
     "description": "The label for category Gallery in sidebar tutorials"
   },
   "sidebar.tutorials.category.Data formatter": {
-    "message": "Formato de datos",
+    "message": "データフォーマッター",
     "description": "The label for category Data formatter in sidebar tutorials"
   },
   "sidebar.tutorials.category.Filter queries": {
