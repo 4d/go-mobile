@@ -400,7 +400,7 @@ Y finalmente puede eliminar una entidad utilizando la acción **Eliminar... **.
 
 ## PASO 8. ¿Qué hacer ahora?
 
-¡Felicitaciones! ¡Felicitaciones! Su aplicación iOS Tasks ahora está completa y ahora puede modificar los datos de su aplicación directamente desde su dispositivo y sincronizarlos con su servidor.
+¡Felicitaciones! ¡Felicitaciones! ¡Felicitaciones! Su aplicación iOS Tasks ahora está completa y ahora puede modificar los datos de su aplicación directamente desde su dispositivo y sincronizarlos con su servidor.
 
 
 Descargar el proyecto terminado:
