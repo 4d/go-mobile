@@ -194,7 +194,7 @@ module.exports = {
 				path: '19-R2'
 				},
 			},
-		includeCurrentVersion: true, // for prod only
+		includeCurrentVersion: true, // false for prod only
         },
         blog: {
           showReadingTime: true,
