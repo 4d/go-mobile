@@ -30,5 +30,5 @@ Vaya a la [página de creación del identificador Apple](https://appleid.apple.c
 * Lance Xcode > Preferences > Accounts
 * Agregue su ID de Apple e inicie sesión
 
-¡Felicitaciones! ¡Felicitaciones! ¡Ahora está listo para utilizar su ID de Apple gratis!
+¡Felicitaciones! ¡Felicitaciones! ¡Felicitaciones! ¡Ahora está listo para utilizar su ID de Apple gratis!
 
