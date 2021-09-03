@@ -51,24 +51,25 @@ Adicionar um CardView container permite exibir as células de seu formulário li
 Vamos adicionar o arquivo layout. Não esqueça de fechar o container adicionando `</androidx.cardview.widget. CardView>` logo antes `</layout>`.
 
 ```xml
-   <androidx.cardview.widget. CardView
-        android:id="@+id/mainCardview" 
-        android:layout_width="match_parent" 
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:cardBackgroundColor="#FFFFFF"
-        app:cardCornerRadius="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+   <androidx.cardview.widget.
 
-        ...
+        CardView
+                android:id="@+id/cardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
 
-        </androidx.cardview.widget. CardView>
+            <ImageView
+                android:id="@+id/__SPECIFIC_ID_1__"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Image"
+                app:imageUrl="__IMAGE_1__"
+                tools:background="@tools:sample/avatars" /> 
+
+            </androidx.cardview.widget.
 
 ```
 
