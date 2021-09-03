@@ -47,7 +47,7 @@ Let's define first an action that will **change a task status** to "Complete" an
 
 ![完了アクションの設定](img/Done-action-definition.png)
 
-### ⒉ ⒉ データベースメソッドの作成と編集
+### ⒉ ⒉ ⒉ データベースメソッドの作成と編集
 
 Now that your action is defined in the Project Editor, you have to create the **[On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)** database Method.
 
@@ -85,7 +85,7 @@ $0:=$result  // モバイルアプリに返される情報
 
 ```
 
-### ⒊ ⒊ "modifyStatus" メソッドの作成
+### ⒊ ⒊ ⒊ "modifyStatus" メソッドの作成
 
 Once your database method has been edited, you have to create a **modifyStatus** Method that will make the job :
 
@@ -197,7 +197,7 @@ $0:=$result  // モバイルアプリに返される情報
 ```
 
 
-### ⒊ ⒊ "postponeAll" メソッドの作成
+### ⒊ ⒊ ⒊ "postponeAll" メソッドの作成
 
 As you create the **modifyStatus** Method, follow the same process and create a new **postponeAll** Method that will modify all record status:
 
