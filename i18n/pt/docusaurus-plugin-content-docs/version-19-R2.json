@@ -1,7 +1,7 @@
 {
   "version.label": {
     "message": "Next",
-    "description": "The label for version current"
+    "description": "The label for version 19-R2"
   },
   "sidebar.docs.category.Getting started": {
     "message": "Começando",
@@ -66,5 +66,9 @@
   "sidebar.templates.category.Templates & Formatters": {
     "message": "Templates & Formatters",
     "description": "The label for category Templates & Formatters in sidebar templates"
+  },
+  "sidebar.docs.category.Smart features": {
+    "message": "Smart features",
+    "description": "The label for category Smart features in sidebar docs"
   }
 }
