@@ -13,7 +13,7 @@ title: テンプレートにアクションを追加する
 
 In this tutorial, we are going to see how easy it can be to **add actions to custom templates**.
 
-## ⒈ ⒈ Download the Starter project
+## ⒈ ⒈ ⒈ Download the Starter project
 
 To begin, download the **Starter project**, which includes:
 
@@ -26,7 +26,7 @@ To begin, download the **Starter project**, which includes:
 href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1dc5aecfbea62a9999d571cb1a956f1ef6983111.zip">Download</a>
 </div>
 
-## ⒉ ⒉ 4D for iOS プロジェクトにカスタムテンプレートを追加する
+## ⒉ ⒉ ⒉ 4D for iOS プロジェクトにカスタムテンプレートを追加する
 
 テンプレートをインストールします。
 
@@ -38,7 +38,7 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 
 ![詳細画面のテンプレート](img/Detailform-template.png)
 
-## ⒊ ⒊ リスト画面にアクションを追加する
+## ⒊ ⒊ ⒊ リスト画面にアクションを追加する
 
 Two types of actions are available:
 * table actions
@@ -48,7 +48,7 @@ Let's first open the `list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE__
 
 ### TasksList カスタムテンプレートにアクションを追加する
 
-#### Ａ Ａ テーブルアクションタグを追加する
+#### Ａ Ａ Ａ テーブルアクションタグを追加する
 
 Select the **List form Controller** and add this line in the **User Defined Runtime Attributes** (Identity inspector):
 
@@ -59,7 +59,7 @@ Select the **List form Controller** and add this line in the **User Defined Runt
 ![テーブルアクションタグの追加](img/Add-table-tag-taskslist.png)
 
 
-#### Ｂ Ｂ エンティティアクションタグを追加する
+#### Ｂ Ｂ Ｂ エンティティアクションタグを追加する
 
 Select the Animatable Table View and add this line in the **User Defined Runtime Attributes** (Identity inspector):
 
@@ -81,7 +81,7 @@ You can select the TaskList custom template from the **Forms section** and add t
 
 To do so, open the `list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` file.
 
-#### Ａ Ａ テーブルアクションタグを追加する
+#### Ａ Ａ Ａ テーブルアクションタグを追加する
 
 作業は TasksList カスタムテンプレートの場合によく似ています。
 
@@ -93,7 +93,7 @@ Select the **List form Controller** and add this line in the **User Defined Runt
 
 ![リスト画面にテーブルアクションタグを追加](img/Add-collection-table-tag-taskslist.png)
 
-#### Ｂ Ｂ エンティティアクションタグを追加する
+#### Ｂ Ｂ Ｂ エンティティアクションタグを追加する
 
 エンティティアクションを表示する方法はリスト形式の TableView とグリッド形式の CollectionViews では異なります。 後者はスワイプ操作に不向きです。
 
