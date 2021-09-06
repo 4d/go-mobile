@@ -35,9 +35,13 @@
     "message": "Github",
     "description": "The label of footer link with label=Github linking to https://github.com/4D/"
   },
-  "link.item.label.4D Doc Center (legacy)": {
-    "message": "4D Doc Center (legacy)",
-    "description": "The label of footer link with label=4D Doc Center (legacy) linking to https://doc.4d.com/"
+  "link.item.label.4D Doc Center": {
+    "message": "4D Doc Center",
+    "description": "The label of footer link with label=4D Doc Center linking to https://doc.4d.com/"
+  },
+  "link.item.label.4D for iOS (archive)": {
+    "message": "4D for iOS (archive)",
+    "description": "The label of footer link with label=4D for iOS (archive) linking to https://developer.4d.com/4d-for-ios"
   },
   "link.item.label.Knowledge Base": {
     "message": "Knowledge Base",
