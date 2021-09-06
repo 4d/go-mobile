@@ -5,3 +5,5 @@ files:
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/%original_file_name%
   - source: /versioned_docs/**/*
     translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/**/%original_file_name%
+  - source: /i18n/%two_letters_code%/docusaurus-theme-classic/*.json
+    translation: /i18n/%two_letters_code%/docusaurus-theme-classic/%original_file_name%
