@@ -132,7 +132,7 @@ $0:=$out
 
 ```
 
-Cree y ejecute su aplicación y ¡listo! Cree y ejecute su aplicación y ¡listo! Cree y ejecute su aplicación y ¡listo! Su **acción Done ** está disponible cuando desliza hacia la izquierda una celda en el formulario Lista, así como cuando hace clic en el **botón genérico Actions** en la barra de navegación del formulario detallado.
+Cree y ejecute su aplicación y ¡listo! Cree y ejecute su aplicación y ¡listo! Cree y ejecute su aplicación y ¡listo! Cree y ejecute su aplicación y ¡listo! Su **acción Done ** está disponible cuando desliza hacia la izquierda una celda en el formulario Lista, así como cuando hace clic en el **botón genérico Actions** en la barra de navegación del formulario detallado.
 
 ![Done action](img/Entity-action-Done.png)
 
@@ -239,7 +239,7 @@ $0:=$out
 
 ## ¿Qué hacer ahora?
 
-¡Felicitaciones! ¡Felicitaciones! ¡Felicitaciones! Acaba de agregar 2 acciones a su aplicación iOS. ¡Ahora puede agregar todas las acciones que necesita a su aplicación Tasks!
+¡Felicitaciones! ¡Felicitaciones! ¡Felicitaciones! Acaba de agregar 2 acciones a su aplicación iOS. ¡Felicitaciones! ¡Felicitaciones! Acaba de agregar 2 acciones a su aplicación iOS. ¡Ahora puede agregar todas las acciones que necesita a su aplicación Tasks!
 
 ![Final result All Action](img/ListForm-entity-action-tableview.png)
 
