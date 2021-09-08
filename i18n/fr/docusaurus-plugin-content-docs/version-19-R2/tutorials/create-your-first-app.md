@@ -27,16 +27,16 @@ Téléchargez et dézippez notre projet Starter 4D. Il contient un fichier de ba
 
 ## ÉTAPE 2. Créez le projet mobile
 
-Launch your 4D application and select "Contact.4DProject". It contains a very simple database structure using a single table.
+Lancez votre application 4D et sélectionnez "Contact.4DProject". Elle contient une structure de base de données très simple avec une seule table.
 
-Cliquez sur **Nouveau > Projet mobile**. In the Welcome screen, give your mobile project a name.
+Cliquez sur **Nouveau > Projet mobile**. Dans l'écran de bienvenue, nommez votre projet mobile.
 
 
 ![Project Name](img/new-project.png)
 
 Cliquez sur **Continue**.
 
-Additional components are required to develop an Android project. Cliquez sur **OK** pour les télécharger :
+Des composants supplémentaires sont nécessaires pour développer un projet Android. Cliquez sur **OK** pour les télécharger :
 
 ![Android](img/install-android.png)
 
@@ -49,16 +49,16 @@ Vous pourrez configurer ici les principales informations de votre application :
 
 ![Android](img/main-page.png)
 
-* **Target:** Mobile platform(s) to build
+* **Cible :** plateforme(s) mobile(s) à créer
 
 :::note
 
-If you are on Windows, only **Android** is available. If you are on macOS, you can select both **Android** and **iOS** targets.
+Si vous êtes sous Windows, seul **Android** est disponible. Si vous êtes sur macOS, vous pouvez sélectionner à la fois **Android** et **iOS**.
 
 :::
 
 
-* **Organization:** Name of your company and identifier of the application.
+* **Organisation :** Nom de votre entreprise et identifiant de l'application.
 * **Produit :**
     * **Nom :** Nom de l'application. Appelons-la « Contacts ».
     * **ID :** (Bundle ID) généré automatiquement et composé de l’identifiant de votre entreprise et du nom de votre produit.
