@@ -1,6 +1,6 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "Suivant",
     "description": "The label for version current"
   },
   "sidebar.docs.category.Getting started": {
@@ -8,11 +8,11 @@
     "description": "The label for category Getting started in sidebar docs"
   },
   "sidebar.docs.category.Project definition": {
-    "message": "Project definition",
+    "message": "Définition du projet",
     "description": "The label for category Project definition in sidebar docs"
   },
   "sidebar.docs.category.Special features": {
-    "message": "Special features",
+    "message": "Fonctionnalités spécifiques",
     "description": "The label for category Special features in sidebar docs"
   },
   "sidebar.docs.category.Debugging": {
@@ -20,23 +20,23 @@
     "description": "The label for category Debugging in sidebar docs"
   },
   "sidebar.docs.category.Deploying In-House": {
-    "message": "Deploying In-House",
+    "message": "Déploiement interne",
     "description": "The label for category Deploying In-House in sidebar docs"
   },
   "sidebar.docs.category.Deploying on App Store": {
-    "message": "Deploying on App Store",
+    "message": "Déploiement sur App Store",
     "description": "The label for category Deploying on App Store in sidebar docs"
   },
   "sidebar.tutorials.category.Creating List forms": {
-    "message": "Creating List forms",
+    "message": "Créer des formulaires Liste",
     "description": "The label for category Creating List forms in sidebar tutorials"
   },
   "sidebar.tutorials.category.Creating Detail forms": {
-    "message": "Creating Detail forms",
+    "message": "Créer des formulaires détaillés",
     "description": "The label for category Creating Detail forms in sidebar tutorials"
   },
   "sidebar.tutorials.category.Gallery": {
-    "message": "Galería",
+    "message": "Galerie",
     "description": "The label for category Gallery in sidebar tutorials"
   },
   "sidebar.tutorials.category.Data formatter": {
@@ -52,19 +52,19 @@
     "description": "The label for category Actions in sidebar tutorials"
   },
   "sidebar.tutorials.category.Relations": {
-    "message": "Relations",
+    "message": "Liens",
     "description": "The label for category Relations in sidebar tutorials"
   },
   "sidebar.tutorials.category.Customizing with Xcode": {
-    "message": "Customizing with Xcode",
+    "message": "Personnaliser avec Xcode",
     "description": "The label for category Customizing with Xcode in sidebar tutorials"
   },
   "sidebar.tutorials.category.Selecting your Developer Program": {
-    "message": "Selecting your Developer Program",
+    "message": "Sélectionnez votre Apple Developer Program",
     "description": "The label for category Selecting your Developer Program in sidebar tutorials"
   },
   "sidebar.templates.category.Templates & Formatters": {
-    "message": "Templates & Formatters",
+    "message": "Modèles & Formats",
     "description": "The label for category Templates & Formatters in sidebar templates"
   },
   "sidebar.docs.category.Smart features": {

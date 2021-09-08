@@ -1,67 +1,67 @@
 ---
 id: create-your-first-app
-title: Create your first mobile app with 4D
+title: Créez votre première application mobile avec 4D
 ---
 
 
-Welcome to the 4D mobile application builder. This tutorial will let you dive right into mobile development for iOS and Android with 4D.
+Bienvenue dans le créateur d'applications mobiles de 4D. Ce tutoriel vous permettra de vous lancer directement dans le développement mobile pour iOS et Android avec 4D.
 
-:::note Reminder
+:::note Rappel
 
-Before starting, please check that your configuration meets hardware and software [requirements](../getting-started/requirements.md) for 4D mobile project development.
+Avant de commencer, veuillez vérifier que votre configuration répond aux [exigences](../getting-started/prérequis.md) matériels et logiciels pour le développement de projets mobiles 4D.
 
 :::
 
 
-**Scenario:** You are a commercial business manager and you want to consult your contact information on the go. We are going to create a mobile directory app for iOS and/or Android to search for contact names from a list and then view the details of each contact. We'll call it "Contact".
+**Scénario :** Vous êtes un commercial et souhaitez consulter vos coordonnées lorsque vous êtes en déplacement. Nous allons créer une application Répertoire mobile pour iOS et/ou Android pour rechercher des noms de contacts à partir d'une liste, puis afficher les détails de chaque contact. Nous l'appellerons "Contact".
 
 
 
 ## ÉTAPE 1. Téléchargez le projet Starter
 
-Download and unzip our 4D Starter project, which contains a database file and a project icon (but no mobile project yet).
+Téléchargez et dézippez notre projet Starter 4D. Il contient un fichier de base de données et l'icône du projet, (mais qui n'inclut pas encore de projet mobile).
 
 <div className="center-button">
-<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-ContactApp/archive/acbb699c3c9d9edd3a8bbb715e87c17140b7e15f.zip">Starter project</a>
+<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-ContactApp/archive/acbb699c3c9d9edd3a8bbb715e87c17140b7e15f.zip">Projet Starter</a>
 </div>
 
-## ÉTAPE 2. Create the mobile project
+## ÉTAPE 2. Créez le projet mobile
 
-Launch your 4D application and select "Contact.4DProject". It contains a very simple database structure using a single table.
+Lancez votre application 4D et sélectionnez "Contact.4DProject". Elle contient une structure de base de données très simple avec une seule table.
 
-Go to **New > Mobile project**. In the Welcome screen, give your mobile project a name.
+Cliquez sur **Nouveau > Projet mobile**. Dans l'écran de bienvenue, nommez votre projet mobile.
 
 
 ![Project Name](img/new-project.png)
 
 Cliquez sur **Continue**.
 
-Additional components are required to develop an Android project. Click **OK** to download them:
+Des composants supplémentaires sont nécessaires pour développer un projet Android. Cliquez sur **OK** pour les télécharger :
 
 ![Android](img/install-android.png)
 
 
 
 
-## ÉTAPE 3. General page
+## ÉTAPE 3. Page Général
 
-Here, you configure your app's primary information:
+Vous pourrez configurer ici les principales informations de votre application :
 
 ![Android](img/main-page.png)
 
-* **Target:** Mobile platform(s) to build
+* **Cible :** plateforme(s) mobile(s) à créer
 
 :::note
 
-If you are on Windows, only **Android** is available. If you are on macOS, you can select both **Android** and **iOS** targets.
+Si vous êtes sous Windows, seul **Android** est disponible. Si vous êtes sur macOS, vous pouvez sélectionner à la fois **Android** et **iOS**.
 
 :::
 
 
-* **Organization:** Name of your company and identifier of the application.
-* **Product:**
-    * **Name:** Name of the application. Let’s call this one "Contact".
-    * **ID:** (Bundle ID) this area is automatically generated as a composition of your organization identifier and product name.
+* **Organisation :** Nom de votre entreprise et identifiant de l'application.
+* **Produit :**
+    * **Nom :** Nom de l'application. Appelons-la « Contacts ».
+    * **ID :** (Bundle ID) généré automatiquement et composé de l’identifiant de votre entreprise et du nom de votre produit.
     * **Version** and **Copyright:** Leave the version as 1.0 and define your app's copyright.
     * **Icons:** Select a target OS and drag and drop icons for your app into the area.
 * **Developer:**
@@ -70,7 +70,7 @@ If you are on Windows, only **Android** is available. If you are on macOS, you c
 
 ![Général](img/Contact-app-general-section-4D-for-iOS.png)
 
-## ÉTAPE 4. Structure page
+## ÉTAPE 4. Page Structure
 
 This is where you define the subset of data to expose to mobile devices. Select the table(s) in the left area and the field(s) in the right area.
 
@@ -81,7 +81,7 @@ For our example, select **ID**, **First Name**, **Last Name**, **Job**, **Compan
 > We highly recommend publishing your primary key in order to identify each record of the database.
 
 
-## STEP 5. Labels & Icons page
+## STEP 5. Page libellés et icônes
 
 :::note
 
@@ -100,45 +100,45 @@ Select **Labels & Icons** page. Here you can define some labels and icons that w
 
 ## ÉTAPE 6. Forms
 
-We're almost done, but we still need to decide on the app's layout. There are both List and Details forms to choose from.
+Nous avons presque terminé, mais il faut d’abord configurer la mise en page de l’application. En choisissant des Formulaires Liste et des Formulaires détaillés.
 
-* Select a List form template to display your table as a list. For our Contact app, let’s use the **Profile** template.
+* Sélectionnez un modèle de formulaire Liste pour afficher votre table sous forme de liste. Pour notre application Contacts, nous allons utiliser le modèle **Profile**.
 
 ![List form template](img/ListformTemplate-form-section-4D-for-iOS.png)
 
-At this point, the bottom of the configuration window has changed from template selection to content definition.
+À ce stade, la partie inférieure de la fenêtre de configuration a changé, en passant de la sélection du modèle à la définition du contenu.
 
-* Drag and drop the fields you want displayed onto the template, <i>i.e.</i>, Last Name into the search and Title fields. The Search and Section fields are optional, leave the Section field empty for the moment.
+* Glissez et déposez les champs que vous souhaitez afficher sur le modèle, à savoir, "Last Name" dans le champ de recherche et le champ "Titre". Le champ de recherche et le champ Section sont facultatifs. Pour le moment, laissez le champ Section vide.
 
 ![List form content](img/ListformContent-form-section-4D-for-iOS.png)
 
-And finally, we'll define the Detail form.
+Enfin, nous allons définir le formulaire détaillé.
 
-* Select a template that is best suited for your app. For our Contact app, let’s use the **Visual Contact** template.
+* Sélectionnez un template qui répond au mieux à vos besoins. Pour notre application Contacts, nous allons utiliser le modèle **Visual Contact**.
 
 ![Detail form template](img/DetailformTemplate-form-section-4D-for-iOS.png)
 
 
-* Drag and drop the content onto the appropriate places on the detail form template, <i>i.e.</i>, First Name, Last Name, and Photo.
+* Glissez et déposez le contenu dans les sections appropriées du modèle de formulaire détaillé, à savoir, First Name, Last Name et Photo.
 
 ![Detail form content](img/DetailformContent-form-section-4D-for-iOS.png)
 
-## ÉTAPE 7. Build the app
+## ÉTAPE 7. Générez l’application
 
-Now the fun part! It's time to build your app and test it on the Simulator to see the final result!
+Passons maintenant à la phase la plus amusante ! Il est temps de créer votre application et de la tester sur le Simulateur pour voir le résultat final !
 
-* Click the **Build** tab.
-* Select a device to use as a Simulator by clicking on the device button.
-* Click  **Build and Run**.
-* Wait a few seconds and... voila! Your mobile app is alive!
+* Cliquez sur l’onglet **Génération**.
+* Sélectionnez un appareil à utiliser en tant que Simulateur en cliquant sur le bouton "appareil".
+* Cliquez sur  **Générer et exécuter**.
+* Patientez quelques secondes et voilà ! Votre application mobile est créée !
 
 ![Build and Run](img/Build-the-app-simulator.png)
 
 ## Que faire ensuite ?
 
-We've covered basic app creation in this tutorial, and you should now be able to create simple apps on your own. Of course, many other options and features are available. Right now, you can click on **Final Project** below to download the final Contact app.
+Dans ce tutoriel, nous avons fait le tour des étapes de création d’une application basique. Vous devriez maintenant être en mesure de créer, par vous-mêmes, de simples applications. Of course, many other options and features are available. Vous pouvez à présent cliquer sur le bouton **Projet final** ci-dessous pour télécharger l'application Contact finale.
 
 <div>
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-ContactApp/releases/latest/download/tutorial-ContactApp.zip">FINAL PROJECT</a>
+href="https://github.com/4d-go-mobile/tutorial-ContactApp/releases/latest/download/tutorial-ContactApp.zip">PROJET FINAL</a>
 </div>

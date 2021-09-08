@@ -22,7 +22,7 @@ Pour commencer, téléchargez le **Projet Starter**, qui comprend :
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">Projet Starter</a>
 </div>
 
 Vous êtes maintenant prêts à créer vos premiers formats !
