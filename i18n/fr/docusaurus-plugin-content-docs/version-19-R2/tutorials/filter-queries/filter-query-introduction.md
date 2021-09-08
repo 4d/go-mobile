@@ -15,7 +15,7 @@ Before we begin, be sure to download the **Starter project** which includes a **
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-RestrictedQueries/releases/latest/download/tutorial-RestrictedQueries.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-RestrictedQueries/releases/latest/download/tutorial-RestrictedQueries.zip">Projet Starter</a>
 </div>
 
 The database includes a:
