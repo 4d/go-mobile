@@ -11,7 +11,7 @@ Dans ce tutoriel nous utiliserons le projet suivant :
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-OneToManyTitleDefinition/archive/4b831959e7efe4777071af0b2904d458918cfbc2.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-OneToManyTitleDefinition/archive/4b831959e7efe4777071af0b2904d458918cfbc2.zip">Projet Starter</a>
 </div>
 
 Rendez-vous directement dans le **menu Ouvrir> Projet mobile...**, sélectionnez *Time Keeper* puis la **section Étiquettes et icônes**.
