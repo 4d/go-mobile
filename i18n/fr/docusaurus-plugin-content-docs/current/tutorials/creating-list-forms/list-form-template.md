@@ -16,7 +16,7 @@ Before we begin, be sure to download and unzip the **Starter project** which inc
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">Projet Starter</a>
 </div>
 
 ## Ajoutez un modèle de formulaire Liste à votre projet mobile
