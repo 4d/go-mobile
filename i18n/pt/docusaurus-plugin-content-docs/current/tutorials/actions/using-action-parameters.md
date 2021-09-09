@@ -170,6 +170,98 @@ $parameters:=$request.parameters
 
           // Ação desconhecida
 
+        C_OBJECT($0)
+C_OBJECT($1) C_OBJECT($entity;$in;$out)
+
+$in:=$1
+
+$out:=New object("success";False) If ($in.dataClass#Null)
+
+    $entity:=ds. Tasks.new()  //cria uma referência
+
+    For each ($key;$in.parameters)
+
+        $entity[$key]:=$in.parameters[$key]
+
+    End for each 
+
+    $entity.save()  //salva a entidade
+
+
+    $out.success:=True  // notifica o App que a ação teve sucesso
+    $out.dataSynchro:=True  // notifique o App para refrescar a seleção
+    $out.statusText:="Task added" Else 
+
+    $out.errors:=New collection("No Selection") End if 
+
+$0:=$out
+
+```
+
+## PASSO 6. Criação de todos os métodos necessários
+
+
+### addAction
+
+```4d
+C_OBJECT($0;$response)
+C_OBJECT($1;$request) C_OBJECT($o;$context;$request;$result;$parameters)
+
+$request:=$1  // Informação oferecida pela aplicação móvel
+
+$context:=$request.context
+$parameters:=$request.parameters
+
+        Case of 
+
+    : ($request.action="addTasks")
+
+          // Inserir aqui o código para a ação "Add…"
+
+        $o:=New object(\
+        "dataClass";$context.dataClass;\
+        "parameters";$parameters)
+
+        $result:=addAction ($o)
+
+    : ($request.action="editTasks")
+
+          // Inserir aqui o código para a ação "Edit…"
+
+        $o:=New object(\
+        "dataClass";$context.dataClass;\
+        "ID";$context.entity.primaryKey;\
+        "parameters";$parameters)
+
+        $result:=editAction ($o)
+
+
+    : ($request.action="deleteTasks")
+
+          // Inserir aqui o código para a ação "Remove"
+
+        $o:=New object(\
+        "dataClass";$context.dataClass;\
+        "ID";$context.entity.primaryKey)
+
+        $result:=deleteAction ($o)
+
+    : ($request.action="sendComment")
+
+          // Inserir aqui o código para a ação "Send Comment"
+
+        $o:=New object(\
+        "dataClass";$context.dataClass;\
+        "ID";$context.entity.primaryKey;\
+        "parameters";$parameters)
+
+
+        $result:=sendMail ($o)
+
+    Else 
+
+          // Ação desconhecida
+
         C_OBJECT($0;$response)
 C_OBJECT($1;$request) C_OBJECT($o;$context;$request;$result;$parameters)
 
@@ -261,40 +353,6 @@ $parameters:=$request.parameters
     Else 
 
           // Ação desconhecida
-
-```
-
-## PASSO 6. Criação de todos os métodos necessários
-
-
-### addAction
-
-```4d
-C_OBJECT($0)
-C_OBJECT($1) C_OBJECT($entity;$in;$out)
-
-$in:=$1
-
-$out:=New object("success";False) If ($in.dataClass#Null)
-
-    $entity:=ds. Tasks.new()  //cria uma referência
-
-    For each ($key;$in.parameters)
-
-        $entity[$key]:=$in.parameters[$key]
-
-    End for each 
-
-    $entity.save()  //salva a entidade
-
-
-    $out.success:=True  // notifica o App que a ação teve sucesso
-    $out.dataSynchro:=True  // notifique o App para refrescar a seleção
-    $out.statusText:="Task added" Else 
-
-    $out.errors:=New collection("No Selection") End if 
-
-$0:=$out
 
 
 ```
