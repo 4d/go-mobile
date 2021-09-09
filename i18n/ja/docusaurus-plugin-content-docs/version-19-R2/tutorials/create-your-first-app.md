@@ -17,7 +17,7 @@ Before starting, please check that your configuration meets hardware and softwar
 
 
 
-## ⒈ ⒈ ⒈ Download the Starter project
+## ⒈ ⒈ ⒈ ⒈ Download the Starter project
 
 Download and unzip our 4D Starter project, which contains a database file and a project icon (but no mobile project yet).
 
@@ -25,7 +25,7 @@ Download and unzip our 4D Starter project, which contains a database file and a 
 <a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-ContactApp/archive/acbb699c3c9d9edd3a8bbb715e87c17140b7e15f.zip">Starter project</a>
 </div>
 
-## ⒉ ⒉ ⒉ Create the mobile project
+## ⒉ ⒉ ⒉ ⒉ Create the mobile project
 
 Launch your 4D application and select "Contact.4DProject". It contains a very simple database structure using a single table.
 
@@ -43,7 +43,7 @@ Additional components are required to develop an Android project. Click **OK** t
 
 
 
-## ⒊ ⒊ ⒊ General page
+## ⒊ ⒊ ⒊ ⒊ General page
 
 Here, you configure your app's primary information:
 
@@ -70,7 +70,7 @@ If you are on Windows, only **Android** is available. If you are on macOS, you c
 
 ![General](img/Contact-app-general-section-4D-for-iOS.png)
 
-## ⒋ ⒋ ⒋ Structure page
+## ⒋ ⒋ ⒋ ⒋ Structure page
 
 This is where you define the subset of data to expose to mobile devices. Select the table(s) in the left area and the field(s) in the right area.
 
@@ -81,7 +81,7 @@ For our example, select **ID**, **First Name**, **Last Name**, **Job**, **Compan
 > We highly recommend publishing your primary key in order to identify each record of the database.
 
 
-## ⒌ ⒌ ⒌ Labels & Icons page
+## ⒌ ⒌ ⒌ ⒌ Labels & Icons page
 
 :::note
 
@@ -123,7 +123,7 @@ And finally, we'll define the Detail form.
 
 ![Detail form content](img/DetailformContent-form-section-4D-for-iOS.png)
 
-## ⒎ ⒎ ⒎ Build the app
+## ⒎ ⒎ ⒎ ⒎ Build the app
 
 Now the fun part! It's time to build your app and test it on the Simulator to see the final result!
 
