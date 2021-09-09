@@ -34,6 +34,10 @@
     "message": "Lectura de un minuto|{readingTime} min de lectura",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
+  "theme.tags.tagsListLabel": {
+    "message": "Etiquetas:",
+    "description": "The label alongside a tag list"
+  },
   "theme.blog.post.readMore": {
     "message": "Leer Más",
     "description": "The label used in blog post item excerpts to link to full blog posts"
@@ -51,8 +55,12 @@
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Navegación de publicaciones recientes",
+    "message": "Blog recent posts navigation",
     "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
   },
   "theme.blog.post.plurals": {
     "message": "Una publicación|{count} publicaciones",
@@ -95,7 +103,7 @@
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "Siguiente",
+    "message": "Next",
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
@@ -106,13 +114,17 @@
     "message": "Colapsar barra lateral",
     "description": "The title attribute for collapse button of doc sidebar"
   },
-  "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "One doc tagged|{count} docs tagged",
-    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  "theme.docs.sidebar.responsiveCloseButtonLabel": {
+    "message": "Close menu",
+    "description": "The ARIA label for close button of mobile doc sidebar"
   },
-  "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} with \"{tagName}\"",
-    "description": "The title of the page for a docs tag"
+  "theme.docs.sidebar.responsiveOpenButtonLabel": {
+    "message": "Open menu",
+    "description": "The ARIA label for open button of mobile doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Sidebar navigation",
+    "description": "The ARIA label for documentation menu"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
     "message": "Esta es documentación sin liberar para {siteTitle} {versionLabel} versión.",
@@ -124,7 +136,7 @@
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
     "message": "Para documentación actualizada, ver {latestVersionLink} ({versionLabel}).",
-    "description": "The label used to tell the user to check the latest version"
+    "description": "The label userd to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
     "message": "última versión",
@@ -150,25 +162,9 @@
     "message": "Última actualización{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
-  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Back to main menu",
-    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
-  },
-  "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versions",
-    "description": "The label for the navbar versions dropdown on mobile view"
-  },
   "theme.common.skipToMainContent": {
     "message": "Saltar al contenido principal",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
-  },
-  "theme.tags.tagsListLabel": {
-    "message": "Etiquetas:",
-    "description": "The label alongside a tag list"
-  },
-  "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "En esta página",
-    "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.SearchPage.documentsFound.plurals": {
     "message": "Un documento encontrado|{count} documentos encontrados",
@@ -214,24 +210,8 @@
     "message": "Buscar...",
     "description": "Placeholder shown in the searchbar if it is empty and a documentation version has been detected (available in the {version} placeholder"
   },
-  "cmfcmf/d-s-l.searchBar.clearButtonTitle": {
-    "message": "Borrar",
-    "description": "Title of the button to clear the current search input"
-  },
-  "cmfcmf/d-s-l.searchBar.detachedCancelButtonText": {
-    "message": "Cancelar",
-    "description": "Text of the button to close the detached search window"
-  },
-  "cmfcmf/d-s-l.searchBar.submitButtonTitle": {
-    "message": "Enviar",
-    "description": "Title of the button to submit a new search"
-  },
   "cmfcmf/d-s-l.searchBar.noResults": {
     "message": "No se han encontrado resultados.",
     "description": "message shown if no results are found"
-  },
-  "theme.tags.tagsPageTitle": {
-    "message": "Etiquetas",
-    "description": "The title of the tag list page"
   }
 }
