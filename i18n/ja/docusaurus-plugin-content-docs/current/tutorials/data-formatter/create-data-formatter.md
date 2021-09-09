@@ -13,7 +13,7 @@ title: カスタムのデータフォーマッター
 
 このチュートリアルでは、様々なフォーマッターの例を作成していくことを案内していきます。
 
-## ⒈ ⒈ Download the Starter project
+## ⒈ ⒈ ⒈ Download the Starter project
 
 To begin, download the **Starter project**, which includes:
 
