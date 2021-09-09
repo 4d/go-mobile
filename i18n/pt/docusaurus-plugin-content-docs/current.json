@@ -4,19 +4,19 @@
     "description": "The label for version current"
   },
   "sidebar.docs.category.Getting started": {
-    "message": "はじめてのアクション",
+    "message": "Começando",
     "description": "The label for category Getting started in sidebar docs"
   },
   "sidebar.docs.category.Project definition": {
     "message": "Project definition",
     "description": "The label for category Project definition in sidebar docs"
   },
-  "sidebar.docs.category.Special features": {
-    "message": "Special features",
-    "description": "The label for category Special features in sidebar docs"
+  "sidebar.docs.category.Smart features": {
+    "message": "Smart features",
+    "description": "The label for category Smart features in sidebar docs"
   },
   "sidebar.docs.category.Debugging": {
-    "message": "Débogage",
+    "message": "Depuração",
     "description": "The label for category Debugging in sidebar docs"
   },
   "sidebar.docs.category.Deploying In-House": {
@@ -40,7 +40,7 @@
     "description": "The label for category Gallery in sidebar tutorials"
   },
   "sidebar.tutorials.category.Data formatter": {
-    "message": "データフォーマッター",
+    "message": "Formatador de dados",
     "description": "The label for category Data formatter in sidebar tutorials"
   },
   "sidebar.tutorials.category.Filter queries": {
@@ -66,9 +66,5 @@
   "sidebar.templates.category.Templates & Formatters": {
     "message": "Templates & Formatters",
     "description": "The label for category Templates & Formatters in sidebar templates"
-  },
-  "sidebar.docs.category.Smart features": {
-    "message": "Smart features",
-    "description": "The label for category Smart features in sidebar docs"
   }
 }
