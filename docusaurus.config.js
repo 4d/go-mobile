@@ -51,11 +51,17 @@ module.exports = {
            docId: "templates/templates",
           label: "Templates & Formatters",
          },
-        {
-          to: "docs/faq/faq",
+		 {
+           type: "doc",
+           position: "left",
+           docId: "faq/faq",
           label: "FAQ",
-          position: "left",
-        },
+         },
+        //{
+         // to: "docs/faq/faq",
+         // label: "FAQ",
+         // position: "left",
+        //},
         //{
         //  href: "https://blog.4d.com/4d-for-ios/",
         //  label: "Blog",
@@ -69,6 +75,12 @@ module.exports = {
 		{
           type: "docsVersionDropdown",
           position: "right",
+		  dropdownItemsAfter: [
+		  {
+			  href: 'https://developer.4d.com/4d-for-ios', 
+			  label: 'Archive (4D for iOS)'
+			  },
+		  ],
         },
 		
       ],
@@ -81,27 +93,27 @@ module.exports = {
           items: [
             {
               label: "4D Blog",
-              href: "https://blog.4d.com",
+              to: "https://blog.4d.com",
             },
             {
               label: "4D Forum",
-              href: "https://discuss.4d.com",
+              to: "https://discuss.4d.com",
             },
             {
               label: "Facebook",
-              href: "https://www.facebook.com/4Dsoftware/",
+              to: "https://www.facebook.com/4Dsoftware/",
             },
             {
               label: "Twitter",
-              href: "https://twitter.com/4Dsoftware",
+              to: "https://twitter.com/4Dsoftware",
             },
             {
               label: "Youtube",
-              href: "https://www.youtube.com/user/4Dsoftware",
+              to: "https://www.youtube.com/user/4Dsoftware",
             },
             {
               label: "Github",
-              href: "https://github.com/4D/",
+              to: "https://github.com/4D/",
             },
           ],
         },
@@ -109,12 +121,12 @@ module.exports = {
           title: "Support",
           items: [
             {
-              label: "4D Doc Center",
-              to: "https://doc.4d.com/",
+              label: "4D Documentation",
+              to: "https://developer.4d.com/docs/",
             },
 			{
-              label: "4D for iOS (archive)",
-              to: "https://developer.4d.com/4d-for-ios",
+              label: "4D Doc Center (Legacy)",
+              to: "https://doc.4d.com/",
             },
             {
               label: "Knowledge Base",
@@ -122,15 +134,15 @@ module.exports = {
             },
             {
               label: "Downloads",
-              href: "https://us.4d.com/product-download",
+              to: "https://us.4d.com/product-download",
             },
             {
               label: "Resources",
-              href: "https://us.4d.com/resources",
+              to: "https://us.4d.com/resources",
             },
             {
               label: "Get Support",
-              href: "https://us.4d.com/4d-technical-support",
+              to: "https://us.4d.com/4d-technical-support",
             },
           ],
         },
@@ -147,11 +159,11 @@ module.exports = {
             },
             {
               label: "4D around the world",
-              href: "https://us.4d.com/4d-around-the-world",
+              to: "https://us.4d.com/4d-around-the-world",
             },
             {
               label: "Careers",
-              href: "https://us.4d.com/careers",
+              to: "https://us.4d.com/careers",
             },
           ],
         },
@@ -191,10 +203,11 @@ module.exports = {
 			versions: {
 				'19-R2':{
 				label: 'v19 R2 beta',
-				path: '19-R2'
+				path: '19-R2',
+				banner: 'none',
 				},
 			},
-		includeCurrentVersion: true, // false for prod only
+		includeCurrentVersion: false, // false for prod only
         },
         blog: {
           showReadingTime: true,
