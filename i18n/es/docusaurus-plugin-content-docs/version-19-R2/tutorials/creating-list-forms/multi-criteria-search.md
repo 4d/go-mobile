@@ -28,7 +28,7 @@ a:
 
 ```
 
-¡Listo! ¡Listo! ¡Listo! ¡Listo! La clase es lo único que necesita modificar para que los criterios de búsqueda múltiples estén activos.
+¡Listo! ¡Listo! ¡Listo! ¡Listo! ¡Listo! La clase es lo único que necesita modificar para que los criterios de búsqueda múltiples estén activos.
 
 ## Editor de proyecto
 

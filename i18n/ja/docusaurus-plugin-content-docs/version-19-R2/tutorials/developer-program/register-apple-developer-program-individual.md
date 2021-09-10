@@ -7,17 +7,17 @@ title: Apple Developer Program as an Individual
 > 
 > Register for the Apple Developer Enterprise Program as an individual to deploy your app in-house.
 
-## ⒈ Apple IDが作成できました。
+## ⒈ ⒈ Apple IDが作成できました。
 
 まだApple IDを持っていないのであれば，[⒉](#step-2-create-your-apple-id)に進んでください。
 
 If you already have an Apple ID, go to [Step 3](#step-3-register-as-a-developer)
 
-## ⒉ ⒉ Apple IDを作成する
+## ⒉ ⒉ ⒉ Apple IDを作成する
 
 Go the the [Apple ID creation page](https://appleid.apple.com/)
 
-![⒉ Apple IDを作成する](img/Apple-ID-Creation-Page-4D-for-iOS.png)
+![⒉ ⒉ Apple IDを作成する](img/Apple-ID-Creation-Page-4D-for-iOS.png)
 
 * 必要な情報をフォームに入力し，セキュリティの質問に答えます。
 * Appleから確認メールが送られます。
@@ -27,7 +27,7 @@ Go the the [Apple ID creation page](https://appleid.apple.com/)
 
 * ⒉ Apple IDを作成する
 
-## ⒊ ⒌ ⒌ Register as a developer
+## ⒊ ⒌ ⒌ ⒌ Register as a developer
 
 * You can register as a developer [here](https://developer.apple.com/account/).
 
@@ -36,13 +36,13 @@ Go the the [Apple ID creation page](https://appleid.apple.com/)
 
 ![確認コードの入力](img/Register-developer-4D-for-iOS.png)
 
-## ⒋ ⒋ ⒋ Join the Apple Developer Program
+## ⒋ ⒋ ⒋ ⒋ Join the Apple Developer Program
 
 * Click on **Join the Apple Developer Program** at the bottom of the page.
 
-![⒋ ⒋ Join the Apple Developer Program](img/Join-Apple-Developer-Program-individuals-4D-for-iOS.png)
+![⒋ ⒋ ⒋ Join the Apple Developer Program](img/Join-Apple-Developer-Program-individuals-4D-for-iOS.png)
 
-## ⒌ ⒌ ⒌ Enroll as an individual
+## ⒌ ⒌ ⒌ ⒌ Enroll as an individual
 
 * Click on the **Start your Enrollment** button.
 * Select **Individuals / Sole Proprietor / Single Person Business** from the Entity Type dropdown list.
@@ -54,13 +54,13 @@ Go the the [Apple ID creation page](https://appleid.apple.com/)
 * Read and accept the Apple Developer Program License Agreement.
 * Click **Continue**.
 
-![⒌ ⒌ Enroll as an individual](img/Apple-Developer-Program-Enrollment-4D-for-iOS.png)
+![⒌ ⒌ ⒌ Enroll as an individual](img/Apple-Developer-Program-Enrollment-4D-for-iOS.png)
 
-## ⒍ ⒏ ⒏ Complete your purchase
+## ⒍ ⒏ ⒏ ⒏ Complete your purchase
 
 * Click **Purchase** and make payment to complete your enrollment.
 
-![⒏ ⒏ Complete your purchase](img/Complete-Purchase-Apple-Developer-Program-4D-for-iOS.png)
+![⒏ ⒏ ⒏ Complete your purchase](img/Complete-Purchase-Apple-Developer-Program-4D-for-iOS.png)
 
 * When you have completed your purchase, you'll receive an email confirming your membership in the program.
 

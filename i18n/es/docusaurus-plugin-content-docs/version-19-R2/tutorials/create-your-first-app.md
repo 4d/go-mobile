@@ -125,7 +125,7 @@ And finally, we'll define the Detail form.
 
 ## PASO 7. Build the app
 
-Now the fun part! Now the fun part! Now the fun part! Now the fun part! It's time to build your app and test it on the Simulator to see the final result!
+Now the fun part! Now the fun part! Now the fun part! Now the fun part! Now the fun part! It's time to build your app and test it on the Simulator to see the final result!
 
 * Click the **Build** tab.
 * Select a device to use as a Simulator by clicking on the device button.

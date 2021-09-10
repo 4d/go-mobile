@@ -16,19 +16,19 @@ title: Archive and export your Project
 > * 512 x 512 px icon
 
 
-## ⒈ ⒈ ⒈ Xcode configuration
+## ⒈ ⒈ ⒈ ⒈ Xcode configuration
 
 Following validation of your account by Apple, open Xcode and add your Apple Enterprise Developer account in Preferences > Accounts.
 
 Xcode will automatically install required provisioning and certificates.
 
-## ⒉ ⒉ ⒉ Get your Team ID
+## ⒉ ⒉ ⒉ ⒉ Get your Team ID
 
 * Log into your Apple Developer Account. You can find your Team ID in Membership.
 
-![⒉ ⒉ Get your Team ID](img/Team-ID-4D-for-iOS.png)
+![⒉ ⒉ ⒉ Get your Team ID](img/Team-ID-4D-for-iOS.png)
 
-## ⒊ ⒊ ⒊ 4D for iOS configuration
+## ⒊ ⒊ ⒊ ⒊ 4D for iOS configuration
 
 * Launch 4D for iOS
 
@@ -43,13 +43,13 @@ Xcode will automatically install required provisioning and certificates.
 * On the BUILD tab:
     * Build and Run: Build your project.
 
-## ⒋ ⒋ ⒋ Open your project with Xcode
+## ⒋ ⒋ ⒋ ⒋ Open your project with Xcode
 
 * From the 4D for iOS Project Editor's BUILD tab, click on **Project > Open the project with Xcode**
 
 ![pen your project with Xcode ](img/Open-your-project-Xcode-4D-for-iOS.png)
 
-## ⒌ ⒌ ⒌ Archive your project from Xcode
+## ⒌ ⒌ ⒌ ⒌ Archive your project from Xcode
 
 * From Xcode, go to the simulator Menu and select **Generic iOS Device**
 
@@ -59,21 +59,21 @@ Xcode will automatically install required provisioning and certificates.
 
 ![Archive your Project](img/Archive-your-Project.png)
 
-## ⒍ ⒍ ⒍ Export your project
+## ⒍ ⒍ ⒍ ⒍ Export your project
 
 * At the end of the archive process, the Organizer window appears with the archive you just created
 
 * Click **Export**.
 
-![⒍ ⒍ Export your project](img/Organizer-window-archive.png)
+![⒍ ⒍ ⒍ Export your project](img/Organizer-window-archive.png)
 
-## ⒎ ⒎ ⒎ Select your distribution method
+## ⒎ ⒎ ⒎ ⒎ Select your distribution method
 
 * Select **Enterprise** and click **Next**.
 
 ![Distribution Method](img/Distribution-Method-selection.png)
 
-## ⒏ ⒏ ⒏ Select your Enterprise distribution options
+## ⒏ ⒏ ⒏ ⒏ Select your Enterprise distribution options
 
 * You can leave all option boxes checked.
 
@@ -143,11 +143,11 @@ Here is an example of a manifest.plist file :
 ```
 
 
-## ⒐ ⒐ ⒐ Distribution manifest information
+## ⒐ ⒐ ⒐ ⒐ Distribution manifest information
 
 * We recommand letting Xcode do the job of entering your app URL as well as the icons URLs. You will, of course, have the option to change those URLs later.
 
-![⒐ ⒐ Distribution manifest information](img/Distribution-manifest-information.png)
+![⒐ ⒐ ⒐ Distribution manifest information](img/Distribution-manifest-information.png)
 
 * Click **Next**.
 

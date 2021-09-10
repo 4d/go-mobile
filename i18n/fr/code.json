@@ -1,4 +1,7 @@
 {
+  "Build your native iOS and Android apps in pure Swift and Kotlin using an integrated 4D component without needing any prior expertise.": {
+    "message": "Build your native iOS and Android apps in pure Swift and Kotlin using an integrated 4D component without needing any prior expertise."
+  },
   "theme.NotFound.title": {
     "message": "Page introuvable",
     "description": "The title of the 404 page"
@@ -15,18 +18,6 @@
     "message": "Fermer",
     "description": "The ARIA label for close button of announcement bar"
   },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "Une minute de lecture|{readingTime} minutes de lecture",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.tags.tagsListLabel": {
-    "message": "Tags :",
-    "description": "The label alongside a tag list"
-  },
-  "theme.blog.post.readMore": {
-    "message": "Lire plus",
-    "description": "The label used in blog post item excerpts to link to full blog posts"
-  },
   "theme.blog.paginator.navAriaLabel": {
     "message": "Pagination de la liste des posts du blog",
     "description": "The ARIA label for the blog pagination"
@@ -39,6 +30,18 @@
     "message": "Anciennes entrées",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Une minute de lecture|{readingTime} minutes de lecture",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags :",
+    "description": "The label alongside a tag list"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Lire plus",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
   "theme.blog.post.paginator.navAriaLabel": {
     "message": "Pagination des blog posts",
     "description": "The ARIA label for the blog posts pagination"
@@ -50,6 +53,10 @@
   "theme.blog.post.paginator.olderPost": {
     "message": "Article plus ancien",
     "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog recent posts navigation",
+    "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
@@ -99,6 +106,14 @@
     "message": "Suivant",
     "description": "The label used to navigate to the next doc"
   },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Réduire le menu latéral",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Réduire le menu latéral",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
   "theme.docs.sidebar.responsiveCloseButtonLabel": {
     "message": "Fermer le menu latéral",
     "description": "The ARIA label for close button of mobile doc sidebar"
@@ -107,13 +122,9 @@
     "message": "Ouvrir le menu latéral",
     "description": "The ARIA label for open button of mobile doc sidebar"
   },
-  "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Réduire le menu latéral",
-    "description": "The title attribute for collapse button of doc sidebar"
-  },
-  "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Réduire le menu latéral",
-    "description": "The title attribute for collapse button of doc sidebar"
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Navigation barre latérale",
+    "description": "The ARIA label for documentation menu"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
     "message": "Ceci est la documentation de la prochaine version {versionLabel} de {siteTitle}.",
@@ -125,7 +136,7 @@
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
     "message": "Pour une documentation à jour, consultez la {latestVersionLink} ({versionLabel}).",
-    "description": "The label used to tell the user to check the latest version"
+    "description": "The label userd to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
     "message": "dernière version",
@@ -155,17 +166,6 @@
     "message": "Aller au contenu principal",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
-  "Build your native iOS and Android apps in pure Swift and Kotlin using an integrated 4D component without needing any prior expertise.": {
-    "message": "Build your native iOS and Android apps in pure Swift and Kotlin using an integrated 4D component without needing any prior expertise."
-  },
-  "theme.blog.sidebar.navAriaLabel": {
-    "message": "Blog recent posts navigation",
-    "description": "The ARIA label for recent posts in the blog sidebar"
-  },
-  "theme.docs.sidebar.navAriaLabel": {
-    "message": "Sidebar navigation",
-    "description": "The ARIA label for documentation menu"
-  },
   "theme.SearchPage.documentsFound.plurals": {
     "message": "Un document trouvé|{count} documents trouvés",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
@@ -183,7 +183,7 @@
     "description": "The placeholder for search page input"
   },
   "theme.SearchPage.inputLabel": {
-    "message": "Chercher",
+    "message": "Search",
     "description": "The ARIA label for search page input"
   },
   "theme.SearchPage.algoliaLabel": {
@@ -199,7 +199,7 @@
     "description": "The paragraph for fetching new search results"
   },
   "theme.SearchBar.label": {
-    "message": "Chercher",
+    "message": "Search",
     "description": "The ARIA label and placeholder for search button"
   },
   "cmfcmf/d-s-l.searchBar.placeholderWithVersion": {
@@ -213,37 +213,5 @@
   "cmfcmf/d-s-l.searchBar.noResults": {
     "message": "cmfcmf/d-s-l.searchBar.noResults",
     "description": "message shown if no results are found"
-  },
-  "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "Un document tagué|{count} documents tagués",
-    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} avec \"{tagName}\"",
-    "description": "The title of the page for a docs tag"
-  },
-  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Retour au menu principal",
-    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
-  },
-  "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versions",
-    "description": "The label for the navbar versions dropdown on mobile view"
-  },
-  "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "Sur cette page",
-    "description": "The label used by the button on the collapsible TOC component"
-  },
-  "cmfcmf/d-s-l.searchBar.clearButtonTitle": {
-    "message": "Effacer",
-    "description": "Title of the button to clear the current search input"
-  },
-  "cmfcmf/d-s-l.searchBar.detachedCancelButtonText": {
-    "message": "Annuler",
-    "description": "Text of the button to close the detached search window"
-  },
-  "cmfcmf/d-s-l.searchBar.submitButtonTitle": {
-    "message": "Chercher",
-    "description": "Title of the button to submit a new search"
   }
 }

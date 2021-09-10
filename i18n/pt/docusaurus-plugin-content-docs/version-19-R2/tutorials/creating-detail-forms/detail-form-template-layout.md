@@ -290,7 +290,7 @@ Aqui está o código de layout completo nesse estágio:
                     <!--IF_IS_NOT_IMAGE-->
                     <!-- IF THE DROPPED FIELD IS NOT AN IMAGE, THEN IT WILL BE A TEXT VIEW -->
 
-                    <TextView
+<TextView
                         android:id="@+id/__VALUE_ID__"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -301,18 +301,7 @@ Aqui está o código de layout completo nesse estágio:
                         android:text="__TEXT__"
                         android:textAlignment="textStart"
                         android:textAllCaps="false"
-                        android:textAppearance="@style/TextAppearance. Body2"
-                        android:textColor="?colorOnSurface"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/__LABEL_ID__"
-                        tools:text="My field" />
-                    <!--END_IF_IS_NOT_IMAGE-->
-
-                </androidx.constraintlayout.widget. ConstraintLayout>
-
-            </androidx.cardview.widget.
+                        android:textAppearance="@style/TextAppearance.
 
 ```
 

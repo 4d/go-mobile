@@ -8,7 +8,7 @@ In this tutorial, we'll guide you through the creation of a detail form template
 
 ![カスタムテンプレート（完成）](img/custom-template-final-result.png)
 
-## ⒈ ⒈ Download the Starter project
+## ⒈ ⒈ ⒈ Download the Starter project
 
 To begin, download the **Starter project**, which includes:
 
