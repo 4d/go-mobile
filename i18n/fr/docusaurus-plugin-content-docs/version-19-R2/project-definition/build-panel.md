@@ -8,7 +8,7 @@ You can test your app at any moment during the development, thanks to the Simula
 ![BuildTab](img/Build-Tab-4D-for-iOS.png)
 
 
-Let’s take a closer look at the Build tab options:
+Voici la description des options de l'onglet Génération :
 
 * **Créer & exécuter :** Lance l'application dans le simulateur.
 
