@@ -250,7 +250,7 @@ After creating all of your actions, just click on the Create button from the Act
 
 Action input controls display formatted elements (values, pictures, etc.) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. 
 These choice lists can be either static or dynamic: 
-- Static choicelists (static json) are located in an 'actionInput' folder (```mybase/Resources/mobile/inputControl```) and follow the same logic as [Labels & Icons custom formatters static forms](labels-and-icons.md).
+- Static choicelists (static json) are located in an 'actionInput' folder (```mybase/Resources/mobile/inputControl```) and follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md).
 
 - Dynamic choice lists use datasource (table field values). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated.
 For example, if you want to add a client's address on your mobile once you're in their premises, simply select the client's information from your phone contact list and fill the address field in your action form by selecting your position from a map. 
