@@ -1,6 +1,6 @@
 {
   "Build your native iOS and Android apps in pure Swift and Kotlin using an integrated 4D component without needing any prior expertise.": {
-    "message": "Build your native iOS and Android apps in pure Swift and Kotlin using an integrated 4D component without needing any prior expertise."
+    "message": "Créez des applications natives iOS et Android en pur Swift et Kotlin à l'aide d'un composant 4D intégré sans avoir besoin d'aucune expertise préalable."
   },
   "theme.NotFound.title": {
     "message": "Page introuvable",
@@ -203,15 +203,15 @@
     "description": "The ARIA label and placeholder for search button"
   },
   "cmfcmf/d-s-l.searchBar.placeholderWithVersion": {
-    "message": "cmfcmf/d-s-l.searchBar.placeholderWithVersion",
+    "message": "Rechercher... [{version}]",
     "description": "Placeholder shown in the searchbar if it is empty and no documentation version has been detected"
   },
   "cmfcmf/d-s-l.searchBar.placeholderWithoutVersion": {
-    "message": "cmfcmf/d-s-l.searchBar.placeholderWithoutVersion",
+    "message": "Rechercher...",
     "description": "Placeholder shown in the searchbar if it is empty and a documentation version has been detected (available in the {version} placeholder"
   },
   "cmfcmf/d-s-l.searchBar.noResults": {
-    "message": "cmfcmf/d-s-l.searchBar.noResults",
+    "message": "Aucun résultat trouvé.",
     "description": "message shown if no results are found"
   }
 }

@@ -12,7 +12,7 @@
     "description": "The label for category Project definition in sidebar docs"
   },
   "sidebar.docs.category.Smart features": {
-    "message": "Smart features",
+    "message": "Fonctionnalités spécifiques",
     "description": "The label for category Smart features in sidebar docs"
   },
   "sidebar.docs.category.Debugging": {
