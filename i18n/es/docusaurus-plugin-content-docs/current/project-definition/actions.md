@@ -248,10 +248,10 @@ Después de crear todas sus acciones, simplemente haga clic en el botón Crear d
 
 ## Action input controls (for iOS apps only)
 
-Action input controls display formatted elements (values, pictures, etc.) in your mobiles apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either static or dynamic:
-- Static choicelists (static json) are located in an 'actionInput' folder (`mybase/Resources/mobile/inputControl`) and follow the same logic as [Labels&Icons custom formatters](labels-and-icons.md).
+Action input controls display formatted elements (values, pictures, etc.) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either static or dynamic:
+- Static choicelists (static json) are located in an 'actionInput' folder (`mybase/Resources/mobile/inputControl`) and follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md).
 
-- Dynamic choice lists, however, use datasources. This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. For example, if you want to add a client's phone number on your mobile, simply select it from your phone contact list and fill the contact field with the information added in your action form.
+- Dynamic choice lists use datasource (table field values). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. For example, if you want to add a client's address on your mobile once you're in their premises, simply select the client's information from your phone contact list and fill the address field in your action form by selecting your position from a map.
 
 ### Custom input controls
 
