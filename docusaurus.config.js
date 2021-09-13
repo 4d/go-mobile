@@ -207,7 +207,7 @@ module.exports = {
 				banner: 'none',
 				},
 			},
-		includeCurrentVersion: false, // false for prod only
+		includeCurrentVersion: true, // false for prod only
         },
         blog: {
           showReadingTime: true,
