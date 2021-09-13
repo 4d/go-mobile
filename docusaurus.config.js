@@ -203,7 +203,6 @@ module.exports = {
 			versions: {
 				'19-R2':{
 				label: 'v19 R2 beta',
-				path: '19-R2',
 				banner: 'none',
 				},
 			},
