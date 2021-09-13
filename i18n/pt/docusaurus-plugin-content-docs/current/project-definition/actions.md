@@ -243,6 +243,19 @@ Depois de criar todas as suas ações, simplesmente clique no botão Criar da ta
 
 :::
 
+## Action input controls (for iOS apps only)
+
+Action input controls display formatted elements (values, pictures, etc.) in your mobiles apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either static or dynamic:
+- Static choicelists (static json) are located in an 'actionInput' folder (`mybase/Resources/mobile/inputControl`) and follow the same logic as [Labels&Icons custom formatters](labels-and-icons.md).
+
+- Dynamic choice lists, however, use datasources. This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. For example, if you want to add a client's phone number on your mobile, simply select it from your phone contact list and fill the contact field with the information added in your action form.
+
+### Custom input controls
+
+To create a custom input control, download some of them from our gallery and drop them in an “inputControls” folder (`mybase/Resources/mobile/inputControls`). They will then be available and selectable in the project editor input controls, in the action section’s parameter properties.
+
+![Architecture](img/code.png)
+
 ## Ações modo offline
 
 O usuário de uma aplicação pode esboçar, armazenar, e colocar em fila petições de ação, mesmo se estiver trabalhando sem conexão (adicionar o número de telefone de um cliente, subir uma foto, imprimir uma fatura ou um orçamento, apagar um endereço, etc.).  Todas essas tarefas são colocadas em ações Pendentes até que a rede fique acessível. Quando o usuário estiver online, todas as ações pendentes são sincronizadas consistentemente, executadas e então visíveis nas ações Completadas.
