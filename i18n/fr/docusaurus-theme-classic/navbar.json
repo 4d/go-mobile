@@ -7,16 +7,12 @@
     "message": "Docs",
     "description": "Navbar item with label Docs"
   },
-  "item.label.Blog": {
-    "message": "Blog",
-    "description": "Navbar item with label Blog"
-  },
   "item.label.Tutorials": {
-    "message": "Tutorials",
+    "message": "Tutoriaux",
     "description": "Navbar item with label Tutorials"
   },
   "item.label.Templates & Formatters": {
-    "message": "Templates & Formatters",
+    "message": "Modèles & Formats",
     "description": "Navbar item with label Templates & Formatters"
   },
   "item.label.FAQ": {

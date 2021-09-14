@@ -1,4 +1,7 @@
 {
+  "Build your native iOS and Android apps in pure Swift and Kotlin using an integrated 4D component without needing any prior expertise.": {
+    "message": "Créez des applications natives iOS et Android en pur Swift et Kotlin à l'aide d'un composant 4D intégré sans avoir besoin d'aucune expertise préalable."
+  },
   "theme.NotFound.title": {
     "message": "Page introuvable",
     "description": "The title of the 404 page"
@@ -15,18 +18,6 @@
     "message": "Fermer",
     "description": "The ARIA label for close button of announcement bar"
   },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "Une minute de lecture|{readingTime} minutes de lecture",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.tags.tagsListLabel": {
-    "message": "Tags :",
-    "description": "The label alongside a tag list"
-  },
-  "theme.blog.post.readMore": {
-    "message": "Lire plus",
-    "description": "The label used in blog post item excerpts to link to full blog posts"
-  },
   "theme.blog.paginator.navAriaLabel": {
     "message": "Pagination de la liste des posts du blog",
     "description": "The ARIA label for the blog pagination"
@@ -39,6 +30,18 @@
     "message": "Anciennes entrées",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Une minute de lecture|{readingTime} minutes de lecture",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags :",
+    "description": "The label alongside a tag list"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Lire plus",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
   "theme.blog.post.paginator.navAriaLabel": {
     "message": "Pagination des blog posts",
     "description": "The ARIA label for the blog posts pagination"
@@ -50,6 +53,10 @@
   "theme.blog.post.paginator.olderPost": {
     "message": "Article plus ancien",
     "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Blog recent posts navigation",
+    "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
@@ -99,6 +106,14 @@
     "message": "Suivant",
     "description": "The label used to navigate to the next doc"
   },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Réduire le menu latéral",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Réduire le menu latéral",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
   "theme.docs.sidebar.responsiveCloseButtonLabel": {
     "message": "Fermer le menu latéral",
     "description": "The ARIA label for close button of mobile doc sidebar"
@@ -107,13 +122,9 @@
     "message": "Ouvrir le menu latéral",
     "description": "The ARIA label for open button of mobile doc sidebar"
   },
-  "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Réduire le menu latéral",
-    "description": "The title attribute for collapse button of doc sidebar"
-  },
-  "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Réduire le menu latéral",
-    "description": "The title attribute for collapse button of doc sidebar"
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Navigation barre latérale",
+    "description": "The ARIA label for documentation menu"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
     "message": "Ceci est la documentation de la prochaine version {versionLabel} de {siteTitle}.",
@@ -155,15 +166,52 @@
     "message": "Aller au contenu principal",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
-  "Build your native iOS and Android apps in pure Swift and Kotlin using an integrated 4D component without needing any prior expertise.": {
-    "message": "Build your native iOS and Android apps in pure Swift and Kotlin using an integrated 4D component without needing any prior expertise."
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "Un document trouvé|{count} documents trouvés",
+    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
-  "theme.blog.sidebar.navAriaLabel": {
-    "message": "Blog recent posts navigation",
-    "description": "The ARIA label for recent posts in the blog sidebar"
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "Résultats de recherche pour « {query} »",
+    "description": "The search page title for non-empty query"
   },
-  "theme.docs.sidebar.navAriaLabel": {
-    "message": "Sidebar navigation",
-    "description": "The ARIA label for documentation menu"
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "Rechercher dans la documentation",
+    "description": "The search page title for empty query"
+  },
+  "theme.SearchPage.inputPlaceholder": {
+    "message": "Tapez votre recherche ici",
+    "description": "The placeholder for search page input"
+  },
+  "theme.SearchPage.inputLabel": {
+    "message": "Search",
+    "description": "The ARIA label for search page input"
+  },
+  "theme.SearchPage.algoliaLabel": {
+    "message": "Recherche par Algolia",
+    "description": "The ARIA label for Algolia mention"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "Aucun résultat trouvé",
+    "description": "The paragraph for empty search result"
+  },
+  "theme.SearchPage.fetchingNewResults": {
+    "message": "Chargement de nouveaux résultats...",
+    "description": "The paragraph for fetching new search results"
+  },
+  "theme.SearchBar.label": {
+    "message": "Search",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "cmfcmf/d-s-l.searchBar.placeholderWithVersion": {
+    "message": "Rechercher... [{version}]",
+    "description": "Placeholder shown in the searchbar if it is empty and no documentation version has been detected"
+  },
+  "cmfcmf/d-s-l.searchBar.placeholderWithoutVersion": {
+    "message": "Rechercher...",
+    "description": "Placeholder shown in the searchbar if it is empty and a documentation version has been detected (available in the {version} placeholder"
+  },
+  "cmfcmf/d-s-l.searchBar.noResults": {
+    "message": "Aucun résultat trouvé.",
+    "description": "message shown if no results are found"
   }
 }

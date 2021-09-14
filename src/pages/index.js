@@ -85,9 +85,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-	  <div className={clsx(styles.announcement, styles.announcementDark)}>
-          <div className={styles.announcementInner}>
-	  <p className="hero__subtitle">BETA DOCUMENTATION SITE</p></div></div>
+
 		
       <main>
         {features && features.length > 0 && (

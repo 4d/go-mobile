@@ -1,0 +1,404 @@
+{
+  "version-19-R2/docs": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Getting started",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/getting-started/introduction"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/getting-started/requirements"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Project definition",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/project-definition/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/project-definition/general"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/project-definition/structure"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/project-definition/data"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/project-definition/actions"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/project-definition/labels-and-icons"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/project-definition/main-menu"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/project-definition/forms"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/project-definition/publishing"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/project-definition/build-panel"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Smart features",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/special-features/authentication"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/special-features/session-management"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/special-features/push-notification"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/special-features/deep-linking"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Debugging",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/debug/from-project-editor"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/debug/from-xcode"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/debug/from-iphone"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Deploying In-House",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/deployment/testing-on-your-device"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/deployment/deployment-in-house-archive-and-export"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/deployment/deployment-in-house-distribute"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Deploying on App Store",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/deployment/deploy-on-app-store-create-appstore-record"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/deployment/deploy-on-app-store-archive-and-upload"
+        }
+      ]
+    }
+  ],
+  "version-19-R2/tutorials": [
+    {
+      "type": "doc",
+      "id": "version-19-R2/tutorials/create-your-first-app"
+    },
+    {
+      "type": "doc",
+      "id": "version-19-R2/tutorials/custom-login-form"
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Creating List forms",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/creating-list-forms/list-form-template"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/creating-list-forms/list-form-icon"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/creating-list-forms/list-form-manifest"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/creating-list-forms/list-form-svg-file"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/creating-list-forms/multi-criteria-search"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/creating-list-forms/list-form-storyboard"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/creating-list-forms/list-form-layout"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Creating Detail forms",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/creating-detail-forms/detail-form-template"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/creating-detail-forms/detail-form-icon"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/creating-detail-forms/detail-form-template-manifest"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/creating-detail-forms/detail-form-template-svg"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/creating-detail-forms/detail-form-template-storyboard"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/creating-detail-forms/detail-form-template-layout"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Gallery",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/gallery/install-gallery-template"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/gallery/update-gallery-template"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Data formatter",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/data-formatter/data-formatter"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/data-formatter/open-mobile-project"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/data-formatter/build-and-run"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/data-formatter/create-data-formatter"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Filter queries",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/filter-queries/filter-query-introduction"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/filter-queries/define-filter-query"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/filter-queries/user-information-query"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Actions",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/actions/getting-started"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/actions/define-first-action"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/actions/adding-actions-template"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/actions/using-action-parameters"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Relations",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/relations/many-to-one-relations"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/relations/one-to-many-relations"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/relations/one-to-many-title-definition"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/relations/one-to-many-custom-button"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/relations/one-to-many-actions"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/relations/relation-interactions"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Customizing with Xcode",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/customizing-with-xcode/what-is-xcode"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/customizing-with-xcode/working-with-xcode"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/customizing-with-xcode/xcode-overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/customizing-with-xcode/4d-for-ios-project-organization"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/customizing-with-xcode/customize-your-ios-app"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Selecting your Developer Program",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/developer-program/selecting-your-developer-program"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/developer-program/register-apple-developer-enterprise-program"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/developer-program/register-apple-developer-program-organization"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/tutorials/developer-program/register-apple-developer-program-individual"
+        }
+      ]
+    }
+  ],
+  "version-19-R2/templates": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Templates & Formatters",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-19-R2/templates/templates"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/templates/custom-listform-templates"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/templates/custom-detailform-templates"
+        },
+        {
+          "type": "doc",
+          "id": "version-19-R2/templates/custom-data-formatters"
+        }
+      ]
+    }
+  ]
+}

@@ -1,54 +1,54 @@
 ---
 id: many-to-one-relations
-title: Many to One relations
+title: Liens N vers 1
 ---
 
 
-This tutorial will show you how easy it can be to include Many to one relations in your mobile projects.
+Grâce à ce tutoriel, vous pourrez facilement inclure des liens N vers 1 dans vos projets mobiles.
 
 :::note
 
-In this tutorial, we will use the relation names between your tables. Giving descriptive relation names can make your project structure definition easier.
+Dans ce tutoriel, nous allons utiliser les noms des liens reliant vos tables. En attribuant des noms de liens descriptifs, vous simplifierez la structure de votre projet.
 
 :::
 
-Let's get started by downloading the Starter project:
+Commençons par télécharger le Projet Starter :
 
 <div className="center-button">
-<a className="button button--primary" href="https://github.com/4d-for-ios/tutorial-ManyToOneRelations/releases/latest/download/tutorial-ManyToOneRelations.zip">Starter project</a>
+<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-ManyToOneRelations/releases/latest/download/tutorial-ManyToOneRelations.zip">Projet Starter</a>
 </div>
 
 Here we want to display the category for each task in the detail form of your generated app. To do so, open the **StarteriOSProject** from **Open > Mobile Project...**
 
-Then go right to your Structure section and select the **Task table**.
+Accédez directement à la section Structure, puis sélectionnez la **table Tasks**.
 
 ### Structure section
 
-* You can notice that the **TaskCategory relation** is underlined
+* Vous pouvez constater que le **lien TaskCategory** est souligné
 
-* Clicking on it will display available fields through this relation
+* En cliquant dessus, vous afficherez les champs disponibles à travers ce lien
 
-* Select the **Name field**
+* Sélectionnez le **champ Name**
 
-![Select link from structure section](img/select-link-from-structure.png)
+![Sélectionnez le lien à partir de la section Structure](img/select-link-from-structure.png)
 
-* This field will operate as any other field for the rest of the app creation process
+* Ce champ aura le même fonctionnement que n’importe quel autre champ pour la suite de la création de l’application
 
-* You can also filter your app content using related fields from the Data section. To do so enter `TaskCategory.Name != 'Personal'` in the Filter query field to exclude personal tasks.
+* Vous pouvez également filtrer le contenu de votre application à l’aide des champs liés, à partir de la section Données. To do so enter `TaskCategory.Name != 'Personal'` in the Filter query field to exclude personal tasks.
 
- ![Related field from Data section](img/Related-field-from-Data-section.png)
+ ![Champs liés depuis la section Données](img/Related-field-from-Data-section.png)
 
-* You can then select an **icon** as well as **formatters** and define **short and long labels** from the Labels and Icons section
+* Vous pouvez ensuite sélectionner une **icône** et des **formats** et définir des **libellés courts et longs** dans la section Libellés et icônes
 
 ![Related field from Labels and Icons section](img/related-field-from-labels-icons.png)
 
-* Go to the Forms section and drag the field on the Task Detail form
+* Cliquez sur la section Formulaires et faites glisser le champ dans le formulaire détaillé Tasks
 
 ![Related field in Forms section](img/related-field-forms.png)
 
 * Build and Run
 
-You should see your related field in your app detail form !
+Votre champ lié devrait apparaitre dans le formulaire détaillé de votre application !
 
 ![Related field in Forms section](img/final-result-n-to-one-relations.png)
 

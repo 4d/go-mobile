@@ -205,6 +205,61 @@ Here is the result in light mode and in dark mode:
 
 <img src="assets/en/data-formatter/light-color.png" alt="drawing" width="250"> <img src="assets/en/data-formatter/dark-color.png" alt="drawing" width="250">
 
+## Dark mode support
+
+Whether your device is in dark or light mode, whether you're working on iOS or Android, you can easily use the custom data formatters containing images. The pictures will be adapted depending on the phone's color mode.
+
+### Tintable color
+
+To optimize the color contrast of your black and white images on your app depending on the color mode (light or dark), you can set the images as follows, with the `"tintable": true` code line:
+
+```json
+{
+   "name": "textToImage",
+   "type": ["text"],
+   "binding": "imageNamed",
+   "choiceList": {"car":"car.png","plane":"plane.png","bus":"bus.png"},
+   "assets": {
+     "size": 54, 
+     "tintable": true
+     }
+}
+```
+Here is the result in light and dark modes: 
+
+| Light mode      | Dark mode          |
+| ------------- |:-------------:|
+| ![Data formatter](img/light-bw.png) | ![Data formatter](img/dark-bw.png) |
+
+
+
+
+
+
+
+### Optimized color pictures
+
+To optimize the color pictures displayed on your app and adapt them to your color mode, you need to have two pictures: one for the light mode, and one for the dark mode suffixed with ```_dark```, as follows:
+
+![Data formatter](img/Architecture.jpg)
+
+```json
+{
+   "name": "textToImage",
+   "type": ["text"],
+   "binding": "imageNamed",
+   "choiceList": {"car":"car.png","plane":"plane.png","bus":"bus.png"},
+   "assets": {
+     "size": 54
+   }
+}
+```
+Here is the result in light mode and in dark mode: 
+
+| Light mode      | Dark mode          |
+| ------------- |:-------------:|
+| ![Data formatter](img/light-color.png) | ![Data formatter](img/dark-color.png) |
+
 ## Open mobile project
 
 Open the Task Management.4dbase with 4D and go to File > open > Mobile Project... to open the **Tasks**

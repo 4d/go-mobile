@@ -1,78 +1,76 @@
 ---
 id: one-to-many-relations
-title: One to Many relations
+title: Liens 1 vers N
 ---
 
-This tutorial will show you how easy it can be to include One to Many relations in 4D for iOS.
+Grâce à ce tutoriel, vous pourrez facilement inclure des liens 1 vers N dans vos projets mobiles.
 
-Let's get started by downloading the Starter project:
+Commençons par télécharger le Projet Starter :
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/archive/c006015afeb0e134d872152f53b8cd5e4dcb59bb.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-OneToManyRelations/archive/c006015afeb0e134d872152f53b8cd5e4dcb59bb.zip">Projet Starter</a>
 </div>
 
-In this tutorial, we are going to build a colorful **Task app** using 4D for iOS.
+Dans ce tutoriel, nous allons créer une **application Task** à l'aide de 4D for iOS.
 
 ![Task App Final result](img/4D-for-iOS-dark-mode-card-relation-ios-13.gif)
 
-But first, let's have a look at the structure of our database:
+Mais d'abord, jetons un œil à la structure de notre base :
 
-![Select link from structure section](img/Database-1-to-N-relations-4D-for-iOS.png)
+![Sélectionnez le lien à partir de la section Structure](img/Database-1-to-N-relations-4D-for-iOS.png)
 
-As you can see, there is a One to Many link named **tasks** that we will use in our iOS app to display the employees'(**One**) tasks(**to Many**).
+Vous remarquerez qu'il existe un lien 1 vers N nommé **tasks** qui utilisera une application iOS pour afficher les tâches (**vers N**) des employés (**1**).
 
-Now, go straight to Open menu > Mobile project... to select *Time Keeper* and go to the **Structure section**.
+Rendez-vous directement dans le menu Ouvrir> Projet mobile ... pour sélectionner *Time Keeper* puis dans la **section Structure**.
 
 ## Structure section
 
-You can see the **tasks relation** we have seen earlier... Publish it !
+Vous voyez ici le lien **tasks** que nous avons créé précédemment... Vous pouvez le publier !
 
-This will now operate as any other field for the rest of the app creation process.
+Il aura le même fonctionnement que n’importe quel autre champ pour la suite de la création de l’application.
 
 ![Structure section Relations properties](img/Structure-section-relations-4D-for-iOS.png)
 
 :::tip
 
-On mouse over, a tip displays the table name originating the relation.
+En survolant un élément, une astuce affiche le nom de la table source (qui est à l'origine) du lien.
 
 :::
 
 ## Labels & Icons section
 
-The One to Many relation is now available in the **Labels and Icons** section.
+Le lien 1 vers N est maintenant disponible dans la section **Libellés et icônes**.
 
-It is important to know that including a One to Many relation will create a button into the genrated iOS app.
+A noter qu'un lien 1 vers N créera un bouton dans l'application iOS générée.
 
-So, in the Labels & Icons section you will define:
+Dans la section Libellés & icônes, vous définirez :
 
-* a button Label
-* a button icon
-* a title that will be displayed in the destination view (to indicate where you come from for example).
+* un libellé de bouton
+* une icône de bouton
+* un titre qui sera affiché dans la vue de destination (pour indiquer d'où vous venez par exemple).
 
 ![Labels & Icons section Relations properties](img/Relations-properties-Labels-icons-section-4D-for-iOS.png)
 
 ## Forms section
 
-* Go to the Forms section and drop the *tasks* relation on the Employee Task Detail form.
+* Cliquez sur la section Formulaires et déposez le lien *tasks* dans le formulaire détaillé Employee Task.
 
 ![Related field in Forms section](img/1-to-n-relations-forms-section.png)
 
 ## Build and Run
 
-1. From the Employee List form, click on one employee
-2. This will open the employee's detail form, where you should see a new **Relation button** !
-3. Click on this Relation button to display the employee's tasks.
+1. A partir du formulaire Lise Employee, cliquez sur un employé
+2. Cela permettra d'ouvrir le formulaire détaillé des employés, où vous devriez voir apparaître un nouveau **bouton Relation** !
+3. Cliquez sur ce bouton Relation pour afficher les tâches de l'employé.
 
 ![Related field in Forms section](img/One-to-n-relations-task-ios-app.png)
 
-And voilà ! This is how One to Many relations work in 4D for iOS !
+Bravo ! Vous avez inclus des liens 1 vers N avec succès dans votre projet mobile.
 
-Download the completed project:
+Téléchargez le projet final :
 
-<div>
-
+<div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-ios/tutorial-OneToManyRelations/releases/latest/download/tutorial-OneToManyRelations.zip">Completed project</a>
-
+href="https://github.com/4d-go-mobile/tutorial-OneToManyRelations/releases/latest/download/tutorial-OneToManyRelations.zip">Download</a>
 </div>
