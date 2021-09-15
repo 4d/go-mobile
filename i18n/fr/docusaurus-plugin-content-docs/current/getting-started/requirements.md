@@ -61,7 +61,8 @@ Tableau de versions :
 | 4D   | Android                                               | Windows           |
 | ---- | ----------------------------------------------------- | ----------------- |
 | 19R2 | [4.1.2](https://developer.android.com/studio/archive) | Windows 10 64-bit |
-| 19   | [4.1.2](https://developer.android.com/studio/archive) | Windows 10 64-bit |
+
+:::note You can build Android apps both on Mac and PC. :::
 
 4D for Android nécessite le SDK Android, y compris Android Studio. S'il n'est pas installé, il sera automatiquement téléchargé au lancement de l'éditeur mobile 4D sur Windows :
 
