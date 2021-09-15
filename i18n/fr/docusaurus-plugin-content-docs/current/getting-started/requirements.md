@@ -5,6 +5,8 @@ title: Pré-requis
 
 4D for iOS et 4D for Android nécessitent une configuration minimale spécifique.
 
+![Welcome page](welcome-page.png)
+
 
 ## Configuration système
 
