@@ -11,7 +11,7 @@ This page displays all of the tables and fields that are exposed as REST resourc
 Use this page to define a subset of your physical structure to replicate for mobile devices by selecting the specific tables and fields to publish.
 
 - Published tables will be automatically added as tabs of your app.
-- Published scalar fields will be available when defining your [list and detail forms].
+- Published scalar fields will be available when defining your \[list and detail forms\] (https://developer.4d.com/go-mobile/docs/project-definition/forms).
 - Published relation fields (many-to-one and one-to-many) will be available when defining your [list and detail forms] and come with additional navigation features such as a Relation button.
 
 
