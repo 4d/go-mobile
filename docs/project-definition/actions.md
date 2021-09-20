@@ -286,7 +286,8 @@ For example, if you want to add a client's address on your mobile once you're in
 }
 ```
 ### Custom input controls with Swift code
-You can get a custom input control, download some of them from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control) and drop them in an “inputControls” folder (```mybase/Resources/mobile/inputControls```). They will then be available and selectable in the project editor input controls, in the parameter properties section of the action.
+
+To get a custom input control with iOS code, simply download some of them from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control) and drop them in an “inputControls” folder (```mybase/Resources/mobile/inputControls```). They will then be available and selectable in the project editor input controls, in the parameter properties section of the action.
 For example, the phoneControl input control template enables you to select and edit a phone number from your contact list using a picker.
 
 ![Architecture](img/code.png)
