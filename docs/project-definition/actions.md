@@ -248,7 +248,14 @@ After creating all of your actions, just click on the Create button from the Act
 
 ## Action input controls (for iOS apps only)
 
-### Custom input controls without Swift code
+### Custom input controls with Swift code
+
+To get a custom input control with iOS code, simply download some of them from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control) and drop them in an “inputControls” folder (```mybase/Resources/mobile/inputControls```). They will then be available and selectable in the project editor input controls, in the parameter properties section of the action.
+For example, the phoneControl input control template enables you to select and edit a phone number from your contact list using a picker.
+
+![Architecture](img/code.png)
+
+### Custom input controls 
 Action input controls display formatted elements (values, pictures, etc.) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. 
 These choice lists can be either static or dynamic: 
 - *Static* choicelists (static json) are located in an 'actionInput' folder (```mybase/Resources/mobile/inputControl```) in a manifest.json file. They are defined by several elements, as follows: 
@@ -285,12 +292,6 @@ For example, if you want to add a client's address on your mobile once you're in
     ]
 }
 ```
-### Custom input controls with Swift code
-
-To get a custom input control with iOS code, simply download some of them from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control) and drop them in an “inputControls” folder (```mybase/Resources/mobile/inputControls```). They will then be available and selectable in the project editor input controls, in the parameter properties section of the action.
-For example, the phoneControl input control template enables you to select and edit a phone number from your contact list using a picker.
-
-![Architecture](img/code.png)
 
 ## Offline mode actions
 
