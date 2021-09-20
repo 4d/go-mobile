@@ -234,7 +234,7 @@ Cuando se define más de una acción de ordenación para una tabla, los usuarios
 
 ### On Mobile App Action
 
-El método base [On Mobile App Action]`(https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)` está disponible para llamar a todos sus métodos 4D.
+The [On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html) database method is available to call all of your 4D methods.
 
 Después de crear todas sus acciones, simplemente haga clic en el botón Crear de la tabla Acciones para generar automáticamente un bloque de código *Case of* que incluya todos los nombres de sus acciones en el método *On Mobile App Action*.
 
@@ -248,14 +248,20 @@ Después de crear todas sus acciones, simplemente haga clic en el botón Crear d
 
 ## Action input controls (for iOS apps only)
 
+### Custom input controls without Swift code
 Action input controls display formatted elements (values, pictures, etc.) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either static or dynamic:
-- Static choicelists (static json) are located in an 'actionInput' folder (`mybase/Resources/mobile/inputControl`) and follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md).
+- *Static* choicelists (static json) are located in an 'actionInput' folder (`mybase/Resources/mobile/inputControl`) in a manifest.json file. They are defined by several elements, as follows:
 
-- Dynamic choice lists use datasource (table field values). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. For example, if you want to add a client's address on your mobile once you're in their premises, simply select the client's information from your phone contact list and fill the address field in your action form by selecting your position from a map.
+{ "name": "Status", "choiceList": { "0": "KO", "1": "OK" }, "format": "segmented", "type": [ "boolean" ] }
 
-### Custom input controls
+They follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md).
 
-To create a custom input control, download some of them from our gallery and drop them in an “inputControls” folder (`mybase/Resources/mobile/inputControls`). They will then be available and selectable in the project editor input controls, in the action section’s parameter properties.
+- *Dynamic* choice lists based on datasource. This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. For example, if you want to add a client's address on your mobile once you're in their premises, simply select the client's information from your phone contact list and fill the address field in your action form by selecting your position from a map.
+
+"name": "NamesFormatter", "choiceList": { "dataSource": { "dataClass": "TableNameIn4D", "field": "ID" "entityFormat": "%firstname% %lastname%" } "format": "picker", "type": [ "text" ] }
+
+### Custom input controls with Swift code
+You can get a custom input control, download some of them from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control) and drop them in an “inputControls” folder (`mybase/Resources/mobile/inputControls`). They will then be available and selectable in the project editor input controls, in the parameter properties section of the action. For example, the phoneControl input control template enables you to select and edit a phone number from your contact list using a picker.
 
 ![Architecture](img/code.png)
 
