@@ -252,7 +252,7 @@ After creating all of your actions, just click on the Create button from the Act
 Action input controls display formatted elements (values, pictures, etc.) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. 
 These choice lists can be either static or dynamic: 
 - *Static* choicelists (static json) are located in an 'actionInput' folder (```mybase/Resources/mobile/inputControl```) in a manifest.json file. They are defined by several elements, as follows: 
-
+```4d
 {
     "name": "Status",
     "choiceList": {
@@ -264,12 +264,14 @@ These choice lists can be either static or dynamic:
         "boolean" 
     ]
 }
+```
 
 They follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md).
 
 - *Dynamic* choice lists based on datasource. This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated.
 For example, if you want to add a client's address on your mobile once you're in their premises, simply select the client's information from your phone contact list and fill the address field in your action form by selecting your position from a map. 
 
+```4d
 "name": "NamesFormatter",
 "choiceList": {
   "dataSource": {
@@ -282,7 +284,7 @@ For example, if you want to add a client's address on your mobile once you're in
         "text" 
     ]
 }
-
+```
 ### Custom input controls with Swift code
 You can get a custom input control, download some of them from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control) and drop them in an “inputControls” folder (```mybase/Resources/mobile/inputControls```). They will then be available and selectable in the project editor input controls, in the parameter properties section of the action.
 For example, the phoneControl input control template enables you to select and edit a phone number from your contact list using a picker.
