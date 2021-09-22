@@ -67,6 +67,11 @@ A pesquisa de código de barras permite duas funcionalidades:
 
 ![Barcode Search app](img/text-Qrcode-barcode-search-4D-for-iOS.gif)
 
+:::informação 4D for Android
+
+This feature is currently not available in 4D for Android.
+
+:::
 
 ## Formulários detalhados
 
