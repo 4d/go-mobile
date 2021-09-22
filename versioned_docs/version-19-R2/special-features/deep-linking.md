@@ -3,6 +3,11 @@ id: deep-linking
 title: Deep Linking
 ---
 
+:::info 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
 
 Thanks to the **deep linking** feature, you can share the content that you're currently viewing with all of your collegues. Here's an illustration demonstrating deep linking:
 
