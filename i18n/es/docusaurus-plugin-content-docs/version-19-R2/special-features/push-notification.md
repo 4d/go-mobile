@@ -3,6 +3,11 @@ id: push-notification
 title: Push notifications
 ---
 
+:::información 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
 
 ## ¿Qué es una notificación push?
 
