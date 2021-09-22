@@ -3,6 +3,11 @@ id: deep-linking
 title: Deep Linking
 ---
 
+:::información 4D for Android
+
+This feature is currently not available in 4D for Android.
+
+:::
 
 Gracias a la funcionalidad **deep linking**, puede compartir el contenido que está viendo en ese momento con todos sus colegas. Aquí hay una ilustración que demuestra deep linking:
 
@@ -10,11 +15,6 @@ Gracias a la funcionalidad **deep linking**, puede compartir el contenido que es
 
 Hay dos maneras de implementar "deep linking" en IOS: **"URL scheme"** y **"Universal Links"**. Mientras que los "URL schemes" son un método bien conocido del "deep linking", los "Universal links" son el nuevo método que Apple ha implementado para conectar fácilmente su página web y su aplicación bajo el mismo enlace.
 
-:::información 4D for Android
-
-La funcionalidad Deep linking no está disponible actualmente en 4D for Android.
-
-:::
 
 ## Comparación de los modos deep linking
 
