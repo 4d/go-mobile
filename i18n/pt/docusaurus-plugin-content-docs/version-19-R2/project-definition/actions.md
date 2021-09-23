@@ -8,6 +8,12 @@ Esta seção permite que:
 * crie ações para executar o código 4D a partir de seu app iOS.
 * defina e adicione parâmetros para suas ações.
 
+:::informação 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
+
 ## No Editor de Projetos
 
 ### Crie sua ação
@@ -231,7 +237,7 @@ Quando definir mais que uma ação de ordenação para uma tabela, usuários mó
 
 ### On Mobile App Action
 
-O método database [On Mobile App Action]`(https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)` está disponível para chamar a todos seus métodos 4D.
+The [On Mobile App Action]`(https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)` database method is available to call all of your 4D methods.
 
 Depois de criar todas as suas ações, simplesmente clique no botão Criar da tabela Ações para gerar automaticamente um bloco de código *Case of* que inclua todos os nomes de suas ações no método *On Mobile App Action*.
 

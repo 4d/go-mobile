@@ -8,6 +8,12 @@ Esta sección le permite:
 * crear acciones para ejecutar código 4D desde su aplicación iOS.
 * definir y añadir parámetros a sus acciones.
 
+:::información 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
+
 ## En el editor de proyectos
 
 ### Cree su acción
