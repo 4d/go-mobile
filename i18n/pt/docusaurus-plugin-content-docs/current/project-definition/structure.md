@@ -108,6 +108,12 @@ See the [**Many to One relations tutorial**](../tutorials/relations/many-to-one-
 
 :::
 
+:::informação 4D for Android
+
+This feature is currently not available in 4D for Android.
+
+:::
+
 ### Many to Many relations
 
 Using the Structure page, you can publish Many to One and One to Many relations from your parent Many to One relations. It means that you can display Many to Many relations in your app and move directly from a List form to another List form.
