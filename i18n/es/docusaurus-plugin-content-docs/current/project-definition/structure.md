@@ -90,6 +90,12 @@ See the [**One to Many relations tutorial**](../tutorials/relations/one-to-many-
 
 :::
 
+:::información 4D for Android
+
+This feature is currently not available in 4D for Android.
+
+:::
+
 ### Many to One relations
 
 **Many to one relations** can be used like any other field in the app creation process. When you select a Many to One relation in the field list, you can to select which field(s) from the related table to publish in your app:
@@ -108,11 +114,6 @@ See the [**Many to One relations tutorial**](../tutorials/relations/many-to-one-
 
 :::
 
-:::información 4D for Android
-
-This feature is currently not available in 4D for Android.
-
-:::
 
 ### Many to Many relations
 
@@ -125,7 +126,11 @@ See the [**Relation interactions**](../tutorials/relations/relation-interactions
 
 :::
 
+:::información 4D for Android
 
+This feature is currently not available in 4D for Android.
+
+:::
 
 ## Incremental reload
 
