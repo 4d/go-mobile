@@ -316,7 +316,8 @@ Here is an example of a manifest.json file containing the contact information of
 |"type"|	text or collection|	one text or a collection of text to defined autorise type for formatter|
 |Optional "format"|	text|	to select interface: push(default if not defined)/segmented/popover/sheet/picker|
 
-
+Note: When the choicelist is extensive, the optional "search" element becomes available.  
+ 
 For example:
 
 ```4d
@@ -339,6 +340,9 @@ For example:
 ```
 
 On the Project editor side, once you fill the *Name*, the *Label* and the *Input control* (format) fields, the *dataSource* choice list will be displayed. Your app will then be updated and ready-to-use!
+ 
+Note: You can access your dataSource using the icon next to the "dataSource" field.
+
 
 ## Offline mode actions
 
