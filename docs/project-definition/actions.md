@@ -341,7 +341,8 @@ Here is an example of a dynamic choice list:
 On the Project editor side, once you fill the **Name**, the **Label** and the **Input control** (format) fields, the **dataSource** choice list will be displayed. Your app will then be updated and ready-to-use!
 
 Here is an example with the *push* format: 
-[customInput](img/customInput1.png) [customInput2](img/customInput2.png)
+
+![customInput](img/customInput1.png) ![customInput2](img/customInput2.png)
  
 **Note:** You can access your datasource using the icon next to the "dataSource" field.
 
