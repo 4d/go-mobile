@@ -257,6 +257,7 @@ After creating all of your actions, just click on the Create button from the Act
 ### How to install a custom input from gallery 
 
 You can easily interact with Apple native apps by using custom input controls, which follow the same logic as formatters, with iOS code. To do so, simply download some input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app, then drop them into a specific “inputControls” folder (```mybase/Resources/mobile/inputControls```). Unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties the action.
+
 For example, if you're at a new client's premises, the *currentLocationAddress* input control template enables you to automatically fill your current location in this client's address field.
 
 ![Architecture](img/code.png)
@@ -271,18 +272,20 @@ As you know, action input controls display formatted elements (values, pictures,
 These choice lists can be either static or dynamic: 
 - *Static* choicelists (static json) that are located in an 'actionInput' folder (```mybase/Resources/mobile/inputControl```) in a manifest.json file. They are defined by several elements, as follows: 
 
-|Type|	Description|
+| |Type|Description|
+|---|---|---|
 |"name"|	text|	action input control name|
 |Optional "binding"|	text|	"imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)|
 |"choiceList"|	object|	an object or collection to defined a list of key/value|
-|"type"|	text or collection|	one text or a collection of text to defined autorise type for formatter|
-|Optional "format"|	text|	to select interface: push(default if not defined)/segmented/popover/sheet/picker|
+|"type"|text or collection|	one text or a collection of text to defined autorise type for formatter|
+|Optional "format"|	text|to select interface: push(default if not defined)/segmented/popover/sheet/picker|
 
 They follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md).
 
 - *Dynamic* choice lists based on datasource. This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated.
 
 ||Type|Description|
+|---|---|---|
 |"name"|text|input control name|
 |"choiceList"|	object|	an object that contain "dataSource"|
 |"type"|	text or collection|	one text or a collection of text to defined autorise type for formatter|
