@@ -19,3 +19,19 @@ Aparecen elementos del menú de depuración adicionales para el [simulador selec
 * **Abrir la carpeta del simulador actual**
 
 * **Abrir carpeta del simulador de aplicaciones**: abre un submenú para cada aplicación
+
+
+## Debug your app (Android)
+
+Once your app is complete and the simulator’s result is satisfactory, you may want to test it on your smartphone.
+
+To do so, only one action is needed [on the smartphone](from-your-android-device.md) and another one in the project editor.
+
+In the Project editor, make sure you have plugged your smartphone, then select your physical device from the list and click on the “Build and Run" button.
+
+![AndroidDevice](img/android-device.png)
+
+4D shall then build the application and install it on the connected device.
+
+For Windows developers, make sure you have installed [a USB driver](https://developer.android.com/studio/run/oem-usb) corresponding to your device.
+
