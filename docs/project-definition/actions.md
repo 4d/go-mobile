@@ -254,21 +254,21 @@ After creating all of your actions, just click on the Create button from the Act
 
 ## Action input controls
 
-### How to install a custom input from gallery 
+### How to use a custom input from the gallery 
 
-You can easily interact with Apple native apps by using custom input controls, which follow the same logic as formatters, with iOS code. To do so, simply download some input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app, then drop them into a specific “inputControls” folder (```mybase/Resources/mobile/inputControls```). Unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties the action.
+You can easily interact with Apple native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with iOS code. 
+To do so, you can create your own input controls with Swift code, or you can download a few input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific “inputControls” folder (```mybase/Resources/mobile/inputControls```), unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties the action.
 
-For example, if you're at a new client's premises, the *currentLocationAddress* input control template enables you to automatically fill your current location in this client's address field.
+For example, if you want to edit a client's phone number, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
 
-![Architecture](img/code.png)
+![Architecture](img/inputWithSwift.png)
+![Edit](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png)
 
-Bear in mind that you can also create your own input control. Simply integrate them in your mobile projects !
-
-All input controls from the gallery are open source and available on Github. If you need any help, feel free to share your opinions on the Forum (lien). 
+Bear in mind that all input controls from the gallery are open source and available on Github. So feel free to share your own input controls or your feedback on the [4D Forum](https://discuss.4d.com/). 
 
 ### Custom input controls 
 
-As you know, action input controls display formatted elements (values, pictures, etc.) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. 
+As you know, action input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. 
 These choice lists can be either static or dynamic: 
 - *Static* choicelists (static json) that are located in an 'actionInput' folder (```mybase/Resources/mobile/inputControl```) in a manifest.json file. They are defined by several elements, as follows: 
 
@@ -280,33 +280,65 @@ These choice lists can be either static or dynamic:
 |"type"|text or collection|	one text or a collection of text to defined autorise type for formatter|
 |Optional "format"|	text|to select interface: push(default if not defined)/segmented/popover/sheet/picker|
 
-They follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md).
+Here is an example of a manifest.json file containing the contact information of a company's subsidiaries, that can be used as a static choice list:
+```4d
+{
+    "name": "choiceListSheet",
+    "type": [
+        "text"
+     ],
+    "format": "sheet",
+    "choiceList": {
+        "1":"Paris",
+        "2":"Tokyo",
+        "3":"Sydney",
+        "4":"San Jose",
+        "5":"Rabat",
+        "6":"Eching"
+     }
+}
+```
 
-- *Dynamic* choice lists based on datasource. This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated.
+- *Dynamic* choice lists based on datasource. This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The manifest.json file is composed of the following elements:
 
 ||Type|Description|
 |---|---|---|
 |"name"|text|input control name|
-|"choiceList"|	object|	an object that contain "dataSource"|
+|"choiceList"|	object|	an object that contain "dataSource" |
+|||Type|	Description|
+|---|---|---|---|
+|"dataSource"||		object|	an object that contain "dataClass", "field" and optional "entityFormat"|
+||"dataClass"|	text|	table name|
+||"field"|	text|	used to extract data to send to server|
+||Optional "sort"|	object / collection / text|	can be an object that contain "field"(sort criteria/fieldName), and optional "order" (sort order ascending by default)|
+||Optional "search"|	boolean / array|	can be an array that contain field to use for search|
+||Optional "entityFormat"|	text|	for the display value (if no format we use the extracted data from field)|
 |"type"|	text or collection|	one text or a collection of text to defined autorise type for formatter|
 |Optional "format"|	text|	to select interface: push(default if not defined)/segmented/popover/sheet/picker|
+
 
 For example:
 
 ```4d
-"name": "NamesFormatter",
-"choiceList": {
-  "dataSource": {
-    "dataClass": "TableNameIn4D",
-    "field": "ID" 
-    "entityFormat": "%firstname% %lastname%" 
-  }
-"format": "picker",
-"type": [
-        "text" 
-    ]
+{
+    "name": "datasourcePush"
+    "type": [
+        "text"
+    ],
+    "format":"push",
+    "choiceList": {
+        "dataSource": {
+            "dataClass": "Contact",
+            "field": "LastName",
+            "entityFormat": "%FirstName% %LastName% - %Job%",
+            "search": "LastName",
+            "order": "descending" 
+        }
+    }
 }
 ```
+
+On the Project editor side, once you fill the *Name*, the *Label* and the *Input control* (format) fields, the *dataSource* choice list will be displayed. Your app will then be updated and ready-to-use!
 
 ## Offline mode actions
 
