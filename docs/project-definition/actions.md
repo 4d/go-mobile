@@ -305,7 +305,7 @@ Here is an example of a manifest.json file containing the contact information of
 |---|---|---|---|---|---|
 |"name"|text|input control name||||
 |"choiceList"|	object|	an object that contain "dataSource" ||||
-|||||Type|Description|
+|||||**Type**|**Description**|
 |||"dataSource"||object|an object that contain "dataClass", "field" and optional "entityFormat"|
 ||||"dataClass"|text|table name|
 ||||"field"|text|used to extract data to send to server|
