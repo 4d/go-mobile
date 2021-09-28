@@ -1,5 +1,5 @@
 ---
-id: from-your-android-device-and-Android-studio
+id: from-your-android-device-and-android-studio
 title: From your Android device and Android studio
 ---
 
