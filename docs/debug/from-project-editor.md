@@ -29,7 +29,7 @@ To do so, only one action is needed [on the smartphone](from-your-android-device
 
 In the Project editor, make sure you have plugged your smartphone, then select your physical device from the list and click on the “Build and Run" button.
 
-![AndroidDevice](AndroidDevice.png)
+![AndroidDevice](img/android-device.png)
 
 4D shall then build the application and install it on the connected device.
 
