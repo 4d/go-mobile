@@ -251,45 +251,94 @@ Depois de criar todas as suas ações, simplesmente clique no botão Criar da ta
 
 ## Action input controls
 
-### How to install a custom input from gallery
+### How to use a custom input from the gallery
 
-You can easily interact with Apple native apps by using custom input controls, which follow the same logic as formatters, with iOS code. To do so, simply download some input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app, then drop them into a specific “inputControls” folder (`mybase/Resources/mobile/inputControls`). Unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties the action. For example, if you're at a new client's premises, the *currentLocationAddress* input control template enables you to automatically fill your current location in this client's address field.
+You can easily interact with Apple native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with iOS code. To do so, you can create your own input controls with Swift code, or you can download a few input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific “inputControls” folder (`mybase/Resources/mobile/inputControls`), unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties the action.
 
-![Architecture](img/code.png)
+For example, if you want to edit a client's phone number, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
 
-Bear in mind that you can also create your own input control. Simply integrate them in your mobile projects !
+![Architecture](img/inputWithSwift.png) ![Ação de Editar](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png)
 
-All input controls from the gallery are open source and available on Github. If you need any help, feel free to share your opinions on the Forum (lien).
+Bear in mind that all input controls from the gallery are open source and available on Github. So feel free to share your own input controls or your feedback on the [4D Forum](https://discuss.4d.com/).
 
-### Custom input controls
+### Input control selection
 
-As you know, action input controls display formatted elements (values, pictures, etc.) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either static or dynamic:
-- *Static* choicelists (static json) that are located in an 'actionInput' folder (`mybase/Resources/mobile/inputControl`) in a manifest.json file. They are defined by several elements, as follows:
+As you know, action input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either static or dynamic:
+- **Static** choicelists (predefined choices hard coded in json) that are located in an 'actionInput' folder (`mybase/Resources/mobile/inputControl`) in a manifest.json file. They are defined by several elements, as follows:
 
-|Type|  Description| |"name"|    text|   action input control name| |Optional "binding"|    text|   "imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)| |"choiceList"|  object| an object or collection to defined a list of key/value| |"type"|    text or collection| one text or a collection of text to defined autorise type for formatter| |Optional "format"| text|   to select interface: push(default if not defined)/segmented/popover/sheet/picker|
+|                    | Type               | Descrição                                                                                              |
+| ------------------ | ------------------ | ------------------------------------------------------------------------------------------------------ |
+| "name"             | texto              | action input control name                                                                              |
+| Optional "binding" | texto              | "imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder) |
+| "choiceList"       | object             | an object or collection to defined a list of key/value                                                 |
+| "type"             | text or collection | one text or a collection of text to defined autorise type for formatter                                |
+| Optional "format"  | texto              | to select interface: push(default if not defined)/segmented/popover/sheet/picker                       |
 
-They follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md).
-
-- *Dynamic* choice lists based on datasource. This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated.
-
-||Type|Description| |"name"|text|input control name| |"choiceList"|  object| an object that contain "dataSource"| |"type"|    text or collection| one text or a collection of text to defined autorise type for formatter| |Optional "format"| text|   to select interface: push(default if not defined)/segmented/popover/sheet/picker|
-
-For example:
-
+Here is an example of a manifest.json file containing the contact information of a company's subsidiaries, that can be used as a static choice list:
 ```4d
-"name": "NamesFormatter",
-"choiceList": {
-  "dataSource": {
-    "dataClass": "TableNameIn4D",
-    "field": "ID" 
-    "entityFormat": "%firstname% %lastname%" 
-  }
-"format": "picker",
-"type": [
-        "text" 
-    ]
+{
+    "name": "choiceListSheet",
+    "type": [
+        "text"
+     ],
+    "format": "sheet",
+    "choiceList": {
+        "1":"Paris",
+        "2":"Tokyo",
+        "3":"Sydney",
+        "4":"San Jose",
+        "5":"Rabat",
+        "6":"Eching"
+     }
 }
 ```
+
+- **Dynamic** choice lists based on datasource (choices depending on the database content). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The manifest.json file is composed of the following elements:
+
+|                   | Type               | Descrição                                                                        |                         |                            |                                                                                                                        |
+| ----------------- | ------------------ | -------------------------------------------------------------------------------- | ----------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| "name"            | texto              | input control name                                                               |                         |                            |                                                                                                                        |
+| "choiceList"      | object             | an object that contain "dataSource"                                              |                         |                            |                                                                                                                        |
+|                   |                    |                                                                                  |                         | **Type**                   | **Descrição**                                                                                                          |
+|                   |                    | "dataSource"                                                                     |                         | object                     | an object that contain "dataClass", "field" and optional "entityFormat"                                                |
+|                   |                    |                                                                                  | "dataClass"             | texto                      | table name                                                                                                             |
+|                   |                    |                                                                                  | "field"                 | texto                      | used to extract data to send to server                                                                                 |
+|                   |                    |                                                                                  | Optional "sort"         | object / collection / text | can be an object that contain "field"(sort criteria/fieldName), and optional "order" (sort order ascending by default) |
+|                   |                    |                                                                                  | Optional "search"       | boolean/array              | can be an array that contain field to use for search                                                                   |
+|                   |                    |                                                                                  | Optional "entityFormat" | texto                      | for the display value (if no format we use the extracted data from field)                                              |
+| "type"            | text or collection | one text or a collection of text to defined autorise type for formatter          |                         |                            |                                                                                                                        |
+| Optional "format" | texto              | to select interface: push(default if not defined)/segmented/popover/sheet/picker |                         |                            |                                                                                                                        |
+
+**Note:** When the choicelist is extensive, the optional "search" element becomes available.
+
+Here is an example of a dynamic choice list:
+
+```4d
+{
+    "name": "datasourcePush"
+    "type": [
+        "text"
+    ],
+    "format":"push",
+    "choiceList": {
+        "dataSource": {
+            "dataClass": "Contact",
+            "field": "LastName",
+            "entityFormat": "%FirstName% %LastName% - %Job%",
+            "search": "LastName",
+            "order": "descending" 
+        }
+    }
+}
+```
+
+On the Project editor side, once you fill the **Name**, the **Label** and the **Input control** (format) fields, the **dataSource** choice list will be displayed. Your app will then be updated and ready-to-use!
+
+Here is an example with the *push* format:
+
+![customInput](img/customInput1.png) ![customInput2](img/customInput2.png)
+
+**Note:** You can access your datasource using the icon next to the "dataSource" field.
 
 ## Ações modo offline
 
