@@ -31,7 +31,6 @@ In the Project editor, make sure you have plugged your smartphone, then select y
 
 ![AndroidDevice](AndroidDevice.png)
 
-
 4D shall then build the application and install it on the connected device.
 
 For Windows developers, make sure you have installed [a USB driver](https://developer.android.com/studio/run/oem-usb) corresponding to your device.
