@@ -78,5 +78,13 @@
   "copyright": {
     "message": "Copyright © 2021 4D SAS - All rights reserved",
     "description": "The footer copyright"
+  },
+  "link.item.label.4D Documentation": {
+    "message": "4D Documentation",
+    "description": "The label of footer link with label=4D Documentation linking to https://developer.4d.com/docs/"
+  },
+  "link.item.label.4D Doc Center (Legacy)": {
+    "message": "4D Doc Center (Legacy)",
+    "description": "The label of footer link with label=4D Doc Center (Legacy) linking to https://doc.4d.com/"
   }
 }
