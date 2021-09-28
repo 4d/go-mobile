@@ -301,18 +301,17 @@ Here is an example of a manifest.json file containing the contact information of
 
 - *Dynamic* choice lists based on datasource. This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The manifest.json file is composed of the following elements:
 
-||Type|Description|
-|---|---|---|
-|"name"|text|input control name|
-|"choiceList"|	object|	an object that contain "dataSource" |
-|||Type|	Description|
-|---|---|---|---|
-|"dataSource"||		object|	an object that contain "dataClass", "field" and optional "entityFormat"|
-||"dataClass"|	text|	table name|
-||"field"|	text|	used to extract data to send to server|
-||Optional "sort"|	object / collection / text|	can be an object that contain "field"(sort criteria/fieldName), and optional "order" (sort order ascending by default)|
-||Optional "search"|	boolean / array|	can be an array that contain field to use for search|
-||Optional "entityFormat"|	text|	for the display value (if no format we use the extracted data from field)|
+||Type|Description||||
+|---|---|---||---|---|---|
+|"name"|text|input control name||||
+|"choiceList"|	object|	an object that contain "dataSource" ||||
+|||||Type|	Description|
+|||"dataSource"||object|	an object that contain "dataClass", "field" and optional "entityFormat"|
+||||"dataClass"|	text|	table name|
+||||"field"|	text|	used to extract data to send to server|
+||||Optional "sort"|	object / collection / text|	can be an object that contain "field"(sort criteria/fieldName), and optional "order" (sort order ascending by default)|
+||||Optional "search"|	boolean / array|	can be an array that contain field to use for search|
+||||Optional "entityFormat"|	text|	for the display value (if no format we use the extracted data from field)|
 |"type"|	text or collection|	one text or a collection of text to defined autorise type for formatter|
 |Optional "format"|	text|	to select interface: push(default if not defined)/segmented/popover/sheet/picker|
 
