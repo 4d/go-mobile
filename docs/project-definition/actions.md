@@ -270,7 +270,7 @@ Bear in mind that all input controls from the gallery are open source and availa
 
 As you know, action input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. 
 These choice lists can be either static or dynamic: 
-- *Static* choicelists (static json) that are located in an 'actionInput' folder (```mybase/Resources/mobile/inputControl```) in a manifest.json file. They are defined by several elements, as follows: 
+- **Static** choicelists (static json) that are located in an 'actionInput' folder (```mybase/Resources/mobile/inputControl```) in a manifest.json file. They are defined by several elements, as follows: 
 
 | |Type|Description|
 |---|---|---|
@@ -299,7 +299,7 @@ Here is an example of a manifest.json file containing the contact information of
 }
 ```
 
-- *Dynamic* choice lists based on datasource. This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The manifest.json file is composed of the following elements:
+- **Dynamic** choice lists based on datasource. This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The manifest.json file is composed of the following elements:
 
 ||Type|Description||||
 |---|---|---||---|---|---|
@@ -315,9 +315,9 @@ Here is an example of a manifest.json file containing the contact information of
 |"type"|	text or collection|	one text or a collection of text to defined autorise type for formatter|
 |Optional "format"|	text|	to select interface: push(default if not defined)/segmented/popover/sheet/picker|
 
-Note: When the choicelist is extensive, the optional "search" element becomes available.  
+**Note:** When the choicelist is extensive, the optional "search" element becomes available.  
  
-For example:
+Here is an example of a dynamic choice list:
 
 ```4d
 {
@@ -338,10 +338,12 @@ For example:
 }
 ```
 
-On the Project editor side, once you fill the *Name*, the *Label* and the *Input control* (format) fields, the *dataSource* choice list will be displayed. Your app will then be updated and ready-to-use!
- 
-Note: You can access your dataSource using the icon next to the "dataSource" field.
+On the Project editor side, once you fill the **Name**, the **Label** and the **Input control** (format) fields, the **dataSource** choice list will be displayed. Your app will then be updated and ready-to-use!
 
+Here is an example with the *push* format: 
+[customInput](img/customInput1.png) [customInput2](img/customInput2.png)
+ 
+**Note:** You can access your datasource using the icon next to the "dataSource" field.
 
 ## Offline mode actions
 
