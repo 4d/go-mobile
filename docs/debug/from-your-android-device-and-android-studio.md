@@ -7,7 +7,7 @@ title: From your Android device and Android studio
 
 To make sure your development machine and your phone can be linked, a manipulation is necessary on your phone. 
 
-You need to ![enable **USB Debugging**](https://developer.android.com/studio/debug/dev-options#enable) in the Developer Options settings. If you can’t find the Developer Options item in your settings, simply click 7 times on the build number.
+You need to [enable **USB Debugging**](https://developer.android.com/studio/debug/dev-options#enable) in the Developer Options settings. If you can’t find the Developer Options item in your settings, simply click 7 times on the build number.
 
 If you can’t find it or if you don’t understand it, simply read [this Android user guide](https://developer.android.com/studio/debug/dev-options), which explains how to do it depending on the Android versions.
 
