@@ -21,4 +21,4 @@ You can also choose to debug your app from Android Studio.
 
 Make sure you have selected the following checkboxes:
 
-(screenshot).
+(screenshot)
