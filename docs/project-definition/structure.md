@@ -159,3 +159,41 @@ From iPhone settings, you can now reset your app data and find information about
 When an important maintenance operation is performed on the database side (Recover by tag / Restoration / Compacting) a Full reload is necessary on the mobile app. In this case, the admin shall notify mobile app users.  
 
 ::: 
+
+## Computed attributes
+
+Whether you're working on Android or iOS, you can display computed attributes in your app once it is generated, by configurating them from the project editor.
+
+Computed attributes are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. 
+For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
+
+The process is actually quite simple! 
+
+###4D Side
+
+In your code, specify the attributes you want to use and the computed attribute you want to get, using the ```Class extends```(https://developer.4d.com/docs/en/Concepts/classes.html#class-extends-classname) and ```exposed Function```(https://developer.4d.com/docs/en/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows: 
+
+```4d
+Class extends Entity
+exposed Function get fullName->$result : Text
+ $result:=This.FirstName+" "+This.LastName
+exposed Function get fullAdress->$result : Text
+ $result:=This.StreetNumber+" "+This.Street+" - "+This.Location
+ ```
+###Project editor side
+  
+In the project editor, once the code is written,your computed attributes become available, ready to be published and used as any other field in the creation process:
+ 
+In the structure section:
+ ![Structure section](img/Structure.png)
+ 
+In the Label & Icons section (Icons/short and long labels/ formats):
+![Labels&icons section](img/labels-and-icons.png)
+
+In the List and Detail forms:
+![Labels&icons section](img/Forms.png)
+
+ ###Mobile app side
+
+In the generated mobile application, on iOS or Android, both single attributes and computed attributes are displayed.
+![final app](img/final-app.png)
