@@ -19,13 +19,16 @@ If you can’t find the Developer Options item in your settings, simply click 7 
 
 If you can’t find it or if you don’t understand it, simply read [this Android user guide](https://developer.android.com/studio/debug/dev-options), which explains how to do it depending on the Android versions.
 
-:::notes 
+:::note notes
 
-- If you have a Google device, you can do it in Android Studio. You can find the details [here](https://developer.android.com/studio/run/win-usb).
+- To connect and debug with a Google device using Windows, you need to install the ![Google USB driver](https://developer.android.com/studio/run/win-usb).
+
+- If you're developing on Mac OS X or Linux, then you shouldn't need a USB driver. 
 
 - For the other devices, download and manually install a ![OEM USB driver](https://developer.android.com/studio/run/oem-usb) corresponding to your device.
 
 :::
+
 
 ### Android studio configuration
 
