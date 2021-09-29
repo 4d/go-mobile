@@ -1,6 +1,6 @@
 ---
 id: from-your-android-device-and-android-studio
-title: From your Android device and Android studio
+title: From your Android device
 ---
 
 ## Debug from your Android device

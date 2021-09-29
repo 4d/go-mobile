@@ -313,7 +313,7 @@ Here is an example of a manifest.json file containing the contact information of
 |---|---|---|---|
 |**"dataSource"**||object|an object that contain "dataClass", "field" and optional "entityFormat"| 
 ||**"dataClass"**|text|	table name|
-|**"field"**|text|	used to extract data to send to server|
+||**"field"**|text|	used to extract data to send to server|
 ||Optional **"sort"**|object / collection / text|	can be an object that contains **"field"**(sort criteria/fieldName), and optional **"order"** (sort order ascending by default)|
 ||Optional **"search"**|	boolean / array	can be an array that contain field to use for search|
 ||Optional **"entityFormat"**|	text|	for the display value (if no format we use the extracted data from field)|
