@@ -23,7 +23,7 @@ If you can’t find it or if you don’t understand it, simply read [this Androi
 
 - To connect and debug with a Google device using Windows, you need to install the [Google USB driver](https://developer.android.com/studio/run/win-usb).
 
-- If you're developing on Mac OS X or Linux, then you shouldn't need a USB driver. 
+- If you're developing on MacOS , then you shouldn't need a USB driver. 
 
 - For the other devices, download and manually install a [OEM USB driver](https://developer.android.com/studio/run/oem-usb) corresponding to your device.
 
@@ -38,7 +38,7 @@ For Android developers, you also need to configure your Android Studio from the 
 - **Android SDK Command-line Tools (latest)**. By selecting this checkbox, you will be able to visualize all your virtual devices directly from the 4D mobile Project Editor.
 - **Android Emulator**
 - **Android SDK Platform Tools**
-- **Google USB driver**
+- **Google USB driver** (only on Windows)
 - **Intel x86 Emulator Accelerator (HAXM installer)**
 
 ![Android-Studio-Settings](img/AndroidCaptureSetting.png)
