@@ -21,17 +21,18 @@ Additional debug menu items appear for the [currently selected simulator](../pro
 * **Open Application Simulator Folder**: opens a submenu for each application
 
 
-## Debug your app (Android)
+## How to debug your app
 
 Once your app is complete and the simulator’s result is satisfactory, you may want to test it on your smartphone.
 
-To do so, only one action is needed [on the smartphone](from-your-android-device.md) and another one in the project editor.
-
-In the Project editor, make sure you have plugged your smartphone, then select your physical device from the list and click on the “Build and Run" button.
+To do so, in the Project editor, make sure you have plugged your smartphone, then select your physical device from the list and click on the “Build and Run" button.
 
 ![AndroidDevice](img/android-device.png)
 
 4D shall then build the application and install it on the connected device.
 
-For Windows developers, make sure you have installed [a USB driver](https://developer.android.com/studio/run/oem-usb) corresponding to your device.
+:::note
 
+If you're an Android developer, you need to add an extra step to your debug process. More details [here](from-your-android-device-and-android-studio.md)
+
+:::
