@@ -5,20 +5,40 @@ title: From your Android device and Android studio
 
 ## Debug from your Android device
 
-To make sure your development machine and your phone can be linked, a manipulation is necessary on your phone.
+To make sure your development machine and your phone are linked, only one action is needed on the smartphone and another one in the [project editor](from-project-editor.md).
 
-You need to [enable **USB Debugging**](https://developer.android.com/studio/debug/dev-options#enable) in the Developer Options settings. If you can’t find the Developer Options item in your settings, simply click 7 times on the build number.
+On your device, you need to [enable **USB Debugging**](https://developer.android.com/studio/debug/dev-options#enable) in the Developer Options settings.
+
+![dev-options](img/dev-options-debug_2x.png)
+
+:::dica
+
+If you can’t find the Developer Options item in your settings, simply click 7 times on the build number.
+
+:::
 
 If you can’t find it or if you don’t understand it, simply read [this Android user guide](https://developer.android.com/studio/debug/dev-options), which explains how to do it depending on the Android versions.
 
-**Note:** If you have a google device, you can do it in Android Studio. You can find the details [here](https://developer.android.com/studio/run/win-usb).
+:::nota notas
 
-For the others devices, download and manually install the OEM driver. You can find the details [here](https://developer.android.com/studio/run/oem-usb).
+- To connect and debug with a Google device using Windows, you need to install the [Google USB driver](https://developer.android.com/studio/run/win-usb).
 
-## Debug from Android studio
+- If you're developing on MacOS , then you shouldn't need a USB driver.
 
-You can also choose to debug your app from Android Studio.
+- For the other devices, download and manually install a [OEM USB driver](https://developer.android.com/studio/run/oem-usb) corresponding to your device.
 
-Make sure you have selected the following checkboxes:
+:::
 
-(screenshot)
+
+### Android Studio configuration
+
+For Android developers, you also need to configure your Android Studio from the SDK Tools tab. So make sure you have checked and installed the following elements:
+
+- **Android SDK Build Tools 31**
+- **Android SDK Command-line Tools (latest)**. By selecting this checkbox, you will be able to visualize all your virtual devices directly from the 4D mobile Project Editor.
+- **Android Emulator**
+- **Android SDK Platform Tools**
+- **Google USB driver** (only on Windows)
+- **Intel x86 Emulator Accelerator (HAXM installer)**
+
+![Android-Studio-Settings](img/AndroidCaptureSetting.png)
