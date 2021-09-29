@@ -3,7 +3,6 @@ id: from-your-android-device-and-android-studio
 title: From your Android device
 ---
 
-## Debug from your Android device
 
 To make sure your development machine and your phone are linked, only one action is needed on the smartphone and another one in the [project editor](from-project-editor.md).
 
@@ -23,7 +22,7 @@ If you can’t find it or if you don’t understand it, simply read [this Androi
 
 - To connect and debug with a Google device using Windows, you need to install the [Google USB driver](https://developer.android.com/studio/run/win-usb).
 
-- If you're developing on MacOS , then you shouldn't need a USB driver. 
+- If you're developing on macOS , then you shouldn't need a USB driver. 
 
 - For the other devices, download and manually install a [OEM USB driver](https://developer.android.com/studio/run/oem-usb) corresponding to your device.
 
