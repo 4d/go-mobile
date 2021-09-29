@@ -171,7 +171,7 @@ The process is actually quite simple!
 
 ### 4D Side
 
-In your code, specify the attributes you want to use and the computed attribute you want to get, using the **[Class extends]**(https://developer.4d.com/docs/en/Concepts/classes.html#class-extends-classname) and **exposed Function**(https://developer.4d.com/docs/en/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows: 
+In your code, specify the attributes you want to use and the computed attribute you want to get, using the [*Class extends*](https://developer.4d.com/docs/en/Concepts/classes.html#class-extends-classname) and [exposed Function](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows: 
 
 ```4d 
  Class extends Entity
@@ -191,20 +191,23 @@ exposed Function set fullAddress($result : Text)
   
 In the project editor, once the code is written, your computed attributes become available, ready to be published and used as any other field in the creation process:
  
-In the structure section:
+In the Structure section:
+
 ![Structure section](img/Structure.png)
  
 In the Label & Icons section (Icons/short and long labels/ formats):
+
 ![Labels&icons section](img/labels-and-icons.png)
 
 In the List and Detail forms:
+
 ![Labels&icons section](img/Forms.png)
 
-:::note notes
+:::note 4D for iOS
 
-- Computed attributes parameters shall be available as linked to field when Add or Edit presets actions are created (if setter is available and if 4D allows it)
-- It shall not be possible to link computed attributes parameters to field in Action parameters
-- Sort actions shall work using computed attributes
+- Computed attributes can be used with Sort actions
+- When Add or Edit presets actions are created (if the setter is available and if 4D allows it), computed attributes parameters shall be available when linked to a field.
+- In Action parameters, it is not possible to link computed attributes parameters to a field.
 
 ::: 
 
@@ -212,4 +215,5 @@ In the List and Detail forms:
 ### Mobile app side
 
 In the generated mobile application, on iOS or Android, both single attributes and computed attributes are displayed.
+
 ![final app](img/final-app.png)
