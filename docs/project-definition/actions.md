@@ -315,8 +315,8 @@ Here is an example of a manifest.json file containing the contact information of
 ||**"dataClass"**|text|	table name|
 ||**"field"**|text|	used to extract data to send to server|
 ||Optional **"sort"**|object / collection / text|	can be an object that contains **"field"**(sort criteria/fieldName), and optional **"order"** (sort order ascending by default)|
-||Optional **"search"**|	boolean / array	can be an array that contain field to use for search|
-||Optional **"entityFormat"**|	text|	for the display value (if no format we use the extracted data from field)|
+||Optional **"search"**|	boolean / array	|can be an array that contain field to use for search|
+||Optional **"entityFormat"**|text|	for the display value (if no format we use the extracted data from field)|
 
 **Note:** When the choice list is extensive, the optional "search" element becomes available.  
  
@@ -346,7 +346,11 @@ On the Project editor side, once you select your **Input control** format, the *
 Here is an example with the *push* format: 
 
 ![customInput](img/customInput1.png) ![customInput2](img/customInput2.png)
- 
+
+Here are the different formats available on the generated application: 
+
+![customInput2](img/Sans-titre.png)
+
 **Note:** You can access your input control using the arrow icon next to the "Input Control" field.
 
 ## Offline mode actions
