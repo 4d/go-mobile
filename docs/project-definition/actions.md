@@ -259,7 +259,7 @@ After creating all of your actions, just click on the Create button from the Act
 You can easily interact with Apple native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with iOS code. 
 To do so, you can create your own input controls with Swift code, or you can download a few input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific “inputControls” folder (```mybase/Resources/mobile/inputControls```), unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties the action.
 
-For example, if you want to get a client's phone number from your mobile contact repertory, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
+For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
 
 ![Architecture](img/inputWithSwift.png)
 ![Edit](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png) ![Edit screen](img/phoneContactIcon4.png)

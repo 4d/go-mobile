@@ -1,8 +1,8 @@
 ---
-id: from-xcode
-title: From Xcode
+id: from-your-iphone-and-xcode
+title: From your iPhone and Xcode
 ---
-
+## Debug from Xcode
 If you have issues during the build process, you can open your generated project with Xcode selecting the **Open the product with Xcode** option from the **Project** Menu. 
 
 ![Open the project with Xcode](img/open-project-Xcode.png)
@@ -11,7 +11,7 @@ From here you can **launch your application** in the Simulator clicking on the *
 
 ![Xcode logs](img/Xcode-logs.png)
 
-## Logger
+### Logger
 
 A logger is an object that will allow you to log and trace.
 
@@ -22,7 +22,7 @@ You will find the logger settings definition in your Xcode project/Settings/Sett
 ![Xcode logs](img/settings-plist-xcode.png)
 
 
-## Levels
+### Levels
 
 You can filter and display different log level into your console adding log.level in you Settings.plist file.
 
@@ -44,7 +44,7 @@ The **available values** are the following :
 
 So for this example, if you set log.level Value to 3, you will get **warning, error and sever** in your Xcode console.
 
-## Format
+### Format
 
 You can display different visual indicators in the Xcode console to **highlight different log types**.
 
@@ -52,7 +52,7 @@ To do so, you just have to open your Xcode project/Settings/Settings.plist
 
 ![Log Format](img/log-format.png)
 
-### Emoticones
+#### Emoticones
 
  * prefixes[.verbose] = "🗯"
  * prefixes[.debug] = "🔹"
@@ -61,7 +61,7 @@ To do so, you just have to open your Xcode project/Settings/Settings.plist
  * prefixes[.error] = "‼️"
  * prefixes[.severe] = "💣"
 
-### Circles
+#### Circles
 
 * prefixes[.verbose] = "🔘"
 * prefixes[.debug] = "🔵"
@@ -70,3 +70,21 @@ To do so, you just have to open your Xcode project/Settings/Settings.plist
 * prefixes[.error] = "🔴"
 * prefixes[.severe] = "⚫"
 
+##Debug from your iPhone
+
+From your app, if you have a crash, you can display, edit and send feedback. 
+
+For that:
+* Go to your iPhone Settings
+* find your app scrolling down
+* Switch on the feedback
+
+![Activate feedback and logs](img/activate-feedback-logs.png)
+
+From here, the only thing you have to do is opening again your app. An action sheet will appear to allow you :
+* Sends messages
+* Suggest an improvement
+* Show current log
+* Report a problem
+
+![Display and send logs](img/display-send-logs.png)
