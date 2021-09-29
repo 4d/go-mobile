@@ -185,7 +185,7 @@ exposed Function get fullAdress->$result : Text
 In the project editor, once the code is written,your computed attributes become available, ready to be published and used as any other field in the creation process:
  
 In the structure section:
- ![Structure section](img/Structure.png)
+![Structure section](img/Structure.png)
  
 In the Label & Icons section (Icons/short and long labels/ formats):
 ![Labels&icons section](img/labels-and-icons.png)
@@ -193,7 +193,7 @@ In the Label & Icons section (Icons/short and long labels/ formats):
 In the List and Detail forms:
 ![Labels&icons section](img/Forms.png)
 
- ###Mobile app side
+###Mobile app side
 
 In the generated mobile application, on iOS or Android, both single attributes and computed attributes are displayed.
 ![final app](img/final-app.png)
