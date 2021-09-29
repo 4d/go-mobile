@@ -210,7 +210,7 @@ The computed attributes present in the data model are, like the fields, availabl
 
 In the **Data** panel, computed attributes are displayed in the list linked to the "Fields" button of the query filter box.
 
-:::notes 4D for iOS
+:::note 4D for iOS
 
 - Computed attributes can be used with Sort actions.
 - A computed attribute without a setter (readOnly) is not available for an Add or Edit action. 
