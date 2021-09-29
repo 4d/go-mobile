@@ -68,6 +68,12 @@ The names are based upon the relation names in the 4D Structure editor, see the 
 
 ## Using relations
 
+:::info 4D for Android
+
+Only Many-to-one relations are available in 4D for Android.
+
+:::
+
 ### One to Many relations
 
 You can include **One to Many relations** in your projects and display a list of related fields in a new page of your app.
@@ -90,11 +96,6 @@ See the [**One to Many relations tutorial**](../tutorials/relations/one-to-many-
 
 :::
 
-:::info 4D for Android
-
-This feature is currently not available in 4D for Android.
-
-:::
 
 ### Many to One relations
 
@@ -123,12 +124,6 @@ Using the Structure page, you can publish Many to One and One to Many relations 
 :::tip Tutorial
 
 See the [**Relation interactions**](../tutorials/relations/relation-interactions) for a detailed example of Many to One relation integration in a mobile project.
-
-:::
-
-:::info 4D for Android
-
-This feature is currently not available in 4D for Android.
 
 :::
 
