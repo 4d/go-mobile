@@ -31,4 +31,8 @@ To do so, in the Project editor, make sure you have plugged your smartphone, the
 
 4D shall then build the application and install it on the connected device.
 
+:::note 
 
+For Android users, you need to add an extra step to your debug process. More details [here](from-your-android-device-and-android-studio.md)
+
+:::
