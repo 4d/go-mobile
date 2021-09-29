@@ -258,7 +258,7 @@ After creating all of your actions, just click on the Create button from the Act
 
 You can easily interact with Apple native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with iOS code. 
 
-To do so, you can create your own input controls with Swift code, or you can download a few input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific “inputControls” folder (```mybase/Resources/mobile/inputControls```), unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties the action.
+To do so, you can create your own input controls with Swift code, or you can download a few input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific “inputControls” folder (```mybase/Resources/mobile/inputControls```), unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties of the action.
 
 For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
 
@@ -269,17 +269,17 @@ Bear in mind that all input controls from the gallery are open source and availa
 
 ### Input control selection
 
-As you know, action input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. 
+Action input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. 
 These choice lists can be either static or dynamic: 
-- **Static** choicelists (predefined choices hard coded in json) that are located in an 'actionInput' folder (```mybase/Resources/mobile/inputControl```) in a manifest.json file. They are defined by several elements, as follows: 
+- **Static** choice lists (predefined choices hard coded in json) that are located in an 'inputControls' folder (```mybase/Resources/mobile/inputControls```) in a manifest.json file. They are defined by several elements, as follows: 
 
-| |Type|Description|
+|Property |Type|Description|
 |---|---|---|
-|"name"|	text|	action input control name|
-|Optional "binding"|	text|	"imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)|
-|"choiceList"|	object|	an object or collection to defined a list of key/value|
-|"type"|text or collection|	one text or a collection of text to defined autorise type for formatter|
-|Optional "format"|	text|to select interface: push(default if not defined)/segmented/popover/sheet/picker|
+|**"name"**|	text|	action input control name|
+|Optional **"binding"**|	text|	"imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)|
+|**"choiceList"**|	object|	an object or collection to defined a list of key (data sent to server)/value(displayed value to the user)|
+|**"type"**|text or collection|	one text or a collection of text to defined autorise type for formatter|
+|Optional **"format"**|	text|to select interface: push(default if not defined)/segmented/popover/sheet/picker|
 
 Here is an example of a manifest.json file containing the contact information of a company's subsidiaries, that can be used as a static choice list:
 ```4d
@@ -302,21 +302,23 @@ Here is an example of a manifest.json file containing the contact information of
 
 - **Dynamic** choice lists based on datasource (choices depending on the database content). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The manifest.json file is composed of the following elements:
 
-||Type|Description||||
-|---|---|---|---|---|---|
-|"name"|text|input control name||||
-|"choiceList"|	object|	an object that contain "dataSource" ||||
-|||||**Type**|**Description**|
-|||"dataSource"||object|an object that contain "dataClass", "field" and optional "entityFormat"|
-||||"dataClass"|text|table name|
-||||"field"|text|used to extract data to send to server|
-||||Optional "sort"|object / collection / text|	can be an object that contain "field"(sort criteria/fieldName), and optional "order" (sort order ascending by default)|
-||||Optional "search"|boolean/array|can be an array that contain field to use for search|
-||||Optional "entityFormat"|text|for the display value (if no format we use the extracted data from field)|
-|"type"|text or collection|	one text or a collection of text to defined autorise type for formatter|
-|Optional "format"|text|to select interface: push(default if not defined)/segmented/popover/sheet/picker|
+|Property|Type|Description|
+|---|---|---|
+|**"name"**|text|input control name|
+|**"choiceList"**|	object|	an object that contain "dataSource" (see table below)|
+|**"type"**|text or collection|	one text or a collection of text to define a type of input control|
+|Optional **"format"**|text|to select interface: "push"(default if not defined), "segmented", "popover", "sheet", "picker"|
 
-**Note:** When the choicelist is extensive, the optional "search" element becomes available.  
+|Property||Type|Description|
+|---|---|---|---|
+|**"dataSource"**||object|an object that contain "dataClass", "field" and optional "entityFormat"| 
+||**"dataClass"**|text|	table name|
+|**"field"**|text|	used to extract data to send to server|
+||Optional **"sort"**|object / collection / text|	can be an object that contains **"field"**(sort criteria/fieldName), and optional **"order"** (sort order ascending by default)|
+||Optional **"search"**|	boolean / array	can be an array that contain field to use for search|
+||Optional **"entityFormat"**|	text|	for the display value (if no format we use the extracted data from field)|
+
+**Note:** When the choice list is extensive, the optional "search" element becomes available.  
  
 Here is an example of a dynamic choice list:
 
@@ -345,7 +347,7 @@ Here is an example with the *push* format:
 
 ![customInput](img/customInput1.png) ![customInput2](img/customInput2.png)
  
-**Note:** You can access your input control using the ![input-control-icon](img/input-control-icon2.png) icon next to the "Input Control" field.
+**Note:** You can access your input control using the arrow icon next to the "Input Control" field.
 
 ## Offline mode actions
 
