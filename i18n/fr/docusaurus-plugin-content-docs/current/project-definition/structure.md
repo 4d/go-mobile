@@ -68,6 +68,12 @@ The names are based upon the relation names in the 4D Structure editor, see the 
 
 ## Using relations
 
+:::info 4D for Android
+
+Only Many-to-one relations are available in 4D for Android.
+
+:::
+
 ### One to Many relations
 
 You can include **One to Many relations** in your projects and display a list of related fields in a new page of your app.
@@ -90,11 +96,6 @@ See the [**One to Many relations tutorial**](../tutorials/relations/one-to-many-
 
 :::
 
-:::info 4D for Android
-
-This feature is currently not available in 4D for Android.
-
-:::
 
 ### Many to One relations
 
@@ -123,12 +124,6 @@ Using the Structure page, you can publish Many to One and One to Many relations 
 :::tip Tutorial
 
 See the [**Relation interactions**](../tutorials/relations/relation-interactions) for a detailed example of Many to One relation integration in a mobile project.
-
-:::
-
-:::info 4D for Android
-
-This feature is currently not available in 4D for Android.
 
 :::
 
@@ -163,4 +158,61 @@ From iPhone settings, you can now reset your app data and find information about
 
 When an important maintenance operation is performed on the database side (Recover by tag / Restoration / Compacting) a Full reload is necessary on the mobile app. In this case, the admin shall notify mobile app users.
 
-::: 
+:::
+
+## Computed attributes
+
+Whether you're working on Android or iOS, you can display computed attributes in your app once it is generated, by configurating them from the project editor.
+
+Computed attributes are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
+
+The process is actually quite simple!
+
+### 4D Side
+
+In your code, specify the attributes you want to use and the computed attribute you want to get, using the [*Class extends*](https://developer.4d.com/docs/en/Concepts/classes.html#class-extends-classname) and [exposed Function](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows:
+
+```4d 
+ Class extends Entity
+
+exposed Function get fullName->$result : Text
+    $result:=This.FirstName+" "+This.LastName
+
+exposed Function set fullName($result : Text)
+
+exposed Function get fullAddress->$result : Text
+    $result:=This.StreetNumber+" "+This.Street+" - "+This.Location
+
+exposed Function set fullAddress($result : Text)
+ ```
+
+### Project editor side
+
+In the project editor, once the code is written, your computed attributes become available, ready to be published and used as any other field in the creation process:
+
+In the Structure section:
+
+![Structure section](img/Structure.png)
+
+In the Label & Icons section (Icons/short and long labels/ formats):
+
+![Labels&icons section](img/labels-and-icons.png)
+
+In the List and Detail forms:
+
+![Labels&icons section](img/Forms.png)
+
+:::note 4D for iOS
+
+- Computed attributes can be used with Sort actions
+- When Add or Edit presets actions are created (if the setter is available and if 4D allows it), computed attributes parameters shall be available when linked to a field.
+- In Action parameters, it is not possible to link computed attributes parameters to a field.
+
+:::
+
+
+### Mobile app side
+
+In the generated mobile application, on iOS or Android, both single attributes and computed attributes are displayed.
+
+![final app](img/final-app.png)
