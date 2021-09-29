@@ -23,9 +23,7 @@ If you can’t find it or if you don’t understand it, simply read [this Androi
 
 - If you have a Google device, you can do it in Android Studio. You can find the details [here](https://developer.android.com/studio/run/win-usb).
 
-- For the other devices, download and manually install the OEM driver. You can find the details [here](https://developer.android.com/studio/run/oem-usb). 
-
-- You also need to install a USB driver corresponding to your device.
+- For the other devices, download and manually install a ![OEM USB driver](https://developer.android.com/studio/run/oem-usb) corresponding to your device.
 
 :::
 
@@ -33,11 +31,11 @@ If you can’t find it or if you don’t understand it, simply read [this Androi
 
 For Windows developers, you also need to configure your Android Studio from the SDK Tools tab. So make sure you have checked and installed the following elements:
 
-- Android SDK Build Tools 31
-- Android SDK Command-line Tools (latest). By selecting this checkbox, you will be able to visualize all your virtual devices directly from the 4D mobile Project Editor.
-- Android Emulator
-- Android SDK Platform Tools
-- Google USB driver
-- Intel x86 Emulator Accelerator (HAXM installer)
+- **Android SDK Build Tools 31**
+- **Android SDK Command-line Tools (latest)**. By selecting this checkbox, you will be able to visualize all your virtual devices directly from the 4D mobile Project Editor.
+- **Android Emulator**
+- **Android SDK Platform Tools**
+- **Google USB driver**
+- **Intel x86 Emulator Accelerator (HAXM installer)**
 
 ![Android-Studio-Settings](img/AndroidCaptureSetting.png)
