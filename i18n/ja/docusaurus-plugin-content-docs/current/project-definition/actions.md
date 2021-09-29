@@ -256,11 +256,13 @@ After creating all of your actions, just click on the Create button from the Act
 
 ### How to use a custom input from the gallery
 
-You can easily interact with Apple native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with iOS code. To do so, you can create your own input controls with Swift code, or you can download a few input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific “inputControls” folder (`mybase/Resources/mobile/inputControls`), unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties the action.
+You can easily interact with Apple native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with iOS code.
 
-For example, if you want to edit a client's phone number, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
+To do so, you can create your own input controls with Swift code, or you can download a few input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific “inputControls” folder (`mybase/Resources/mobile/inputControls`), unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties the action.
 
-![Architecture](img/inputWithSwift.png) ![Edit](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png)
+For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
+
+![Architecture](img/inputWithSwift.png) ![Edit](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png)![Edit screen](img/phoneContactIcon4.png)
 
 Bear in mind that all input controls from the gallery are open source and available on Github. So feel free to share your own input controls or your feedback on the [4D Forum](https://discuss.4d.com/).
 
@@ -335,13 +337,13 @@ Here is an example of a dynamic choice list:
 }
 ```
 
-On the Project editor side, once you fill the **Name**, the **Label** and the **Input control** (format) fields, the **dataSource** choice list will be displayed. Your app will then be updated and ready-to-use!
+On the Project editor side, once you select your **Input control** format, the **dataSource** will be selectable from a filtered list based on the format you have selected. Your app will then be updated and ready-to-use!
 
 Here is an example with the *push* format:
 
 ![customInput](img/customInput1.png) ![customInput2](img/customInput2.png)
 
-**Note:** You can access your datasource using the icon next to the "dataSource" field.
+**Note:** You can access your input control using the ![input-control-icon](img/input-control-icon2.png) icon next to the "Input Control" field.
 
 ## Offline mode actions
 
