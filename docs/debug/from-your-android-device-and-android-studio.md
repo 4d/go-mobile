@@ -32,7 +32,7 @@ If you can’t find it or if you don’t understand it, simply read [this Androi
 
 ### Android Studio configuration
 
-For Windows developers, you also need to configure your Android Studio from the SDK Tools tab. So make sure you have checked and installed the following elements:
+For Android developers, you also need to configure your Android Studio from the SDK Tools tab. So make sure you have checked and installed the following elements:
 
 - **Android SDK Build Tools 31**
 - **Android SDK Command-line Tools (latest)**. By selecting this checkbox, you will be able to visualize all your virtual devices directly from the 4D mobile Project Editor.

@@ -33,6 +33,6 @@ To do so, in the Project editor, make sure you have plugged your smartphone, the
 
 :::note 
 
-For Android users, you need to add an extra step to your debug process. More details [here](from-your-android-device-and-android-studio.md)
+If you're an Android developer, you need to add an extra step to your debug process. More details [here](from-your-android-device-and-android-studio.md)
 
 :::
