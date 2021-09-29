@@ -262,7 +262,7 @@ To do so, you can create your own input controls with Swift code, or you can dow
 For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
 
 ![Architecture](img/inputWithSwift.png)
-![Edit](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png) ![Edit screen](img/phoneContactIcon4.png)
+![Edit](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png)![Edit screen](img/phoneContactIcon4.png)
 
 Bear in mind that all input controls from the gallery are open source and available on Github. So feel free to share your own input controls or your feedback on the [4D Forum](https://discuss.4d.com/). 
 
@@ -344,7 +344,7 @@ Here is an example with the *push* format:
 
 ![customInput](img/customInput1.png) ![customInput2](img/customInput2.png)
  
-**Note:** You can access your input control using the ![input-control-icon](img/input-control-icon2.png) icon next to the "Input Control" field. 
+**Note:** You can access your input control using the icon next to the "Input Control" field (![input-control-icon](img/input-control-icon2.png)).
 
 ## Offline mode actions
 

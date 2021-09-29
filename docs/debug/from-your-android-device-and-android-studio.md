@@ -29,7 +29,6 @@ If you can’t find it or if you don’t understand it, simply read [this Androi
 
 :::
 
-
 ### Android studio configuration
 
 For Windows developers, you also need to configure your Android Studio from the SDK Tools tab. So make sure you have checked and installed the following elements:
