@@ -21,11 +21,11 @@ If you can’t find it or if you don’t understand it, simply read [this Androi
 
 :::note notes
 
-- To connect and debug with a Google device using Windows, you need to install the ![Google USB driver](https://developer.android.com/studio/run/win-usb).
+- To connect and debug with a Google device using Windows, you need to install the [Google USB driver](https://developer.android.com/studio/run/win-usb).
 
 - If you're developing on Mac OS X or Linux, then you shouldn't need a USB driver. 
 
-- For the other devices, download and manually install a ![OEM USB driver](https://developer.android.com/studio/run/oem-usb) corresponding to your device.
+- For the other devices, download and manually install a [OEM USB driver](https://developer.android.com/studio/run/oem-usb) corresponding to your device.
 
 :::
 
