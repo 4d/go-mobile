@@ -27,7 +27,13 @@ Once your app is complete and the simulator’s result is satisfactory, you may 
 
 To do so, in the Project editor, make sure you have plugged your smartphone, then select your physical device from the list and click on the “Build and Run" button.
 
-![AndroidDevice](img/android-device.png)
+![AndroidDevice](img/Sans-titre.png)
+
+:::note 
+
+The **Updating the list of devices...** button enables to refresh the list of available devices.
+
+:::
 
 4D shall then build the application and install it on the connected device.
 
