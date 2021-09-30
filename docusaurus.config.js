@@ -205,6 +205,10 @@ module.exports = {
 				label: 'v19 R2',
 				banner: 'none',
 				},
+				'19-R3':{
+				label: 'v19 R3 BETA',
+				banner: 'none',
+				},
 			},
 		includeCurrentVersion: true, // false for prod only
         },
