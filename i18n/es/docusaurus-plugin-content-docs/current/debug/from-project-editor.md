@@ -23,16 +23,22 @@ Aparecen elementos del menú de depuración adicionales para el [simulador selec
 
 ## How to debug your app
 
-Once your app is complete and the simulator’s result is satisfactory, you may want to test it on your smartphone.
+Once your app is complete and the simulator’s result is satisfactory, you may want to test it on your smartphone, whether you're working on 4D for iOS or 4D for Android..
 
 To do so, in the Project editor, make sure you have plugged your smartphone, then select your physical device from the list and click on the “Build and Run" button.
 
-![AndroidDevice](img/android-device.png)
+![AndroidDevice](img/Sans-titre.png)
+
+:::nota
+
+The **Updating the list of devices...** button enables to refresh the list of available devices.
+
+:::
 
 4D shall then build the application and install it on the connected device.
 
 :::nota
 
-If you're an Android developer, you need to add an extra step to your debug process. More details [here](from-your-android-device-and-android-studio.md)
+If you're an Android developer, you need to add an extra step to the debug process. More details [here](from-your-android-device-and-android-studio.md)
 
 :::
