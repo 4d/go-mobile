@@ -190,26 +190,32 @@ exposed Function set fullAddress($result : Text)
 
 In the project editor, once the code is written, your computed attributes become available, ready to be published and used as any other field in the creation process:
 
-In the Structure section:
+
+In the **Structure** panel:
+
+The `exposed` computed attributes are displayed in the list of attributes of a `dataclass`.
 
 ![Structure section](img/Structure.png)
 
-In the Label & Icons section (Icons/short and long labels/ formats):
+In the **Label & Icons** panel (Icons/short and long labels/formats):
 
 ![Labels&icons section](img/labels-and-icons.png)
 
-In the List and Detail forms:
+In the **Forms** panel:
 
-![Labels&icons section](img/Forms.png)
+The computed attributes present in the data model are, like the fields, available in the list of fields of the Forms panel (list and detail). They behave in the same way as the storage attributes of the datastore.
+
+![Forms section](img/Forms.png)
+
+In the **Data** panel, computed attributes are displayed in the list linked to the "Fields" button of the query filter box.
 
 :::note 4D for iOS
 
-- Computed attributes can be used with Sort actions
+- Computed attributes can be used with Sort actions.
+- A computed attribute without a setter (readOnly) is not available for an Add or Edit action.
 - When Add or Edit presets actions are created (if the setter is available and if 4D allows it), computed attributes parameters shall be available when linked to a field.
-- In Action parameters, it is not possible to link computed attributes parameters to a field.
 
-:::
-
+:::note 4D for iOS
 
 ### Mobile app side
 
