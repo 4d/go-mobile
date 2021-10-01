@@ -350,8 +350,7 @@
           "id": "version-19-R3/tutorials/customizing-with-xcode/customize-your-ios-app"
         }
       ],
-      "collapsible": true,
-      "collapsed": true
+       "collapsed": true
     },
     {
       "type": "category",
