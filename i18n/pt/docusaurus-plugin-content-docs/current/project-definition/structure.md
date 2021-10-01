@@ -11,7 +11,7 @@ This page displays all of the tables and fields that are exposed as REST resourc
 Use this page to define a subset of your physical structure to replicate for mobile devices by selecting the specific tables and fields to publish.
 
 - Published tables will be automatically added as tabs of your app.
-- Published scalar fields will be available when defining your [list and detail forms].
+- Published scalar fields will be available when defining your \[list and detail forms\] (https://developer.4d.com/go-mobile/docs/project-definition/forms).
 - Published relation fields (many-to-one and one-to-many) will be available when defining your [list and detail forms] and come with additional navigation features such as a Relation button.
 
 
@@ -90,6 +90,12 @@ See the [**One to Many relations tutorial**](../tutorials/relations/one-to-many-
 
 :::
 
+:::informação 4D for Android
+
+This feature is currently not available in 4D for Android.
+
+:::
+
 ### Many to One relations
 
 **Many to one relations** can be used like any other field in the app creation process. When you select a Many to One relation in the field list, you can to select which field(s) from the related table to publish in your app:
@@ -108,6 +114,7 @@ See the [**Many to One relations tutorial**](../tutorials/relations/many-to-one-
 
 :::
 
+
 ### Many to Many relations
 
 Using the Structure page, you can publish Many to One and One to Many relations from your parent Many to One relations. It means that you can display Many to Many relations in your app and move directly from a List form to another List form.
@@ -119,7 +126,11 @@ See the [**Relation interactions**](../tutorials/relations/relation-interactions
 
 :::
 
+:::informação 4D for Android
 
+This feature is currently not available in 4D for Android.
+
+:::
 
 ## Incremental reload
 

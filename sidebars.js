@@ -42,8 +42,8 @@ module.exports = {
       label: 'Debugging',
       items: [
 				   	'debug/from-project-editor', 
-				   	'debug/from-xcode', 
-				   	'debug/from-iphone', 		
+				   	'debug/from-your-iphone-and-xcode', 
+				   	'debug/from-your-android-device-and-android-studio', 		
 			],     
 
 	},

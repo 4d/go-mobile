@@ -5,6 +5,8 @@ title: Requisitos
 
 4D for iOS and 4D for Android require a specific minimum configuration.
 
+![Welcome page](img/welcome-page.png)
+
 
 ## System requirements
 
@@ -61,7 +63,12 @@ Version table:
 | 4D   | Android                                               | Windows           |
 | ---- | ----------------------------------------------------- | ----------------- |
 | 19R2 | [4.1.2](https://developer.android.com/studio/archive) | Windows 10 64-bit |
-| 19   | [4.1.2](https://developer.android.com/studio/archive) | Windows 10 64-bit |
+
+:::nota
+
+You can build Android apps both on Mac and PC.
+
+:::
 
 4D for Android requires the Android SDK, including Android Studio. If not installed, it will be automatically downloaded at the launch of the 4D mobile editor on Windows:
 

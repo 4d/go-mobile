@@ -8,6 +8,12 @@ Esta sección le permite:
 * crear acciones para ejecutar código 4D desde su aplicación iOS.
 * definir y añadir parámetros a sus acciones.
 
+:::información 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
+
 ## En el editor de proyectos
 
 ### Cree su acción
@@ -234,7 +240,7 @@ Cuando se define más de una acción de ordenación para una tabla, los usuarios
 
 ### On Mobile App Action
 
-El método base [On Mobile App Action]`(https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)` está disponible para llamar a todos sus métodos 4D.
+The [On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html) database method is available to call all of your 4D methods.
 
 Después de crear todas sus acciones, simplemente haga clic en el botón Crear de la tabla Acciones para generar automáticamente un bloque de código *Case of* que incluya todos los nombres de sus acciones en el método *On Mobile App Action*.
 
@@ -246,18 +252,47 @@ Después de crear todas sus acciones, simplemente haga clic en el botón Crear d
 
 :::
 
-## Action input controls (for iOS apps only)
+## Action input controls
 
-Action input controls display formatted elements (values, pictures, etc.) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either static or dynamic:
-- Static choicelists (static json) are located in an 'actionInput' folder (`mybase/Resources/mobile/inputControl`) and follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md).
+### How to install a custom input from gallery
 
-- Dynamic choice lists use datasource (table field values). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. For example, if you want to add a client's address on your mobile once you're in their premises, simply select the client's information from your phone contact list and fill the address field in your action form by selecting your position from a map.
+You can easily interact with Apple native apps by using custom input controls, which follow the same logic as formatters, with iOS code. To do so, simply download some input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app, then drop them into a specific “inputControls” folder (`mybase/Resources/mobile/inputControls`). Unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties the action. For example, if you're at a new client's premises, the *currentLocationAddress* input control template enables you to automatically fill your current location in this client's address field.
+
+![Architecture](img/code.png)
+
+Bear in mind that you can also create your own input control. Simply integrate them in your mobile projects !
+
+All input controls from the gallery are open source and available on Github. If you need any help, feel free to share your opinions on the Forum (lien).
 
 ### Custom input controls
 
-To create a custom input control, download some of them from our gallery and drop them in an “inputControls” folder (`mybase/Resources/mobile/inputControls`). They will then be available and selectable in the project editor input controls, in the action section’s parameter properties.
+As you know, action input controls display formatted elements (values, pictures, etc.) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either static or dynamic:
+- *Static* choicelists (static json) that are located in an 'actionInput' folder (`mybase/Resources/mobile/inputControl`) in a manifest.json file. They are defined by several elements, as follows:
 
-![Architecture](img/code.png)
+|Type|  Description| |"name"|    text|   action input control name| |Optional "binding"|    text|   "imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)| |"choiceList"|  object| an object or collection to defined a list of key/value| |"type"|    text or collection| one text or a collection of text to defined autorise type for formatter| |Optional "format"| text|   to select interface: push(default if not defined)/segmented/popover/sheet/picker|
+
+They follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md).
+
+- *Dynamic* choice lists based on datasource. This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated.
+
+||Type|Description| |"name"|text|input control name| |"choiceList"|  object| an object that contain "dataSource"| |"type"|    text or collection| one text or a collection of text to defined autorise type for formatter| |Optional "format"| text|   to select interface: push(default if not defined)/segmented/popover/sheet/picker|
+
+For example:
+
+```4d
+"name": "NamesFormatter",
+"choiceList": {
+  "dataSource": {
+    "dataClass": "TableNameIn4D",
+    "field": "ID" 
+    "entityFormat": "%firstname% %lastname%" 
+  }
+"format": "picker",
+"type": [
+        "text" 
+    ]
+}
+```
 
 ## Acciones en modo sin conexión
 
