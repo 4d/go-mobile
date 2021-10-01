@@ -13,7 +13,6 @@
           "id": "version-19-R3/getting-started/requirements"
         }
       ],
-      "collapsible": true,
       "collapsed": true
     },
     {
@@ -61,7 +60,6 @@
           "id": "version-19-R3/project-definition/build-panel"
         }
       ],
-      "collapsible": true,
       "collapsed": true
     },
     {
@@ -85,7 +83,6 @@
           "id": "version-19-R3/special-features/deep-linking"
         }
       ],
-      "collapsible": true,
       "collapsed": true
     },
     {
@@ -105,7 +102,6 @@
           "id": "version-19-R3/debug/from-your-android-device-and-android-studio"
         }
       ],
-      "collapsible": true,
       "collapsed": true
     },
     {
@@ -125,7 +121,6 @@
           "id": "version-19-R3/deployment/deployment-in-house-distribute"
         }
       ],
-      "collapsible": true,
       "collapsed": true
     },
     {
@@ -141,7 +136,6 @@
           "id": "version-19-R3/deployment/deploy-on-app-store-archive-and-upload"
         }
       ],
-      "collapsible": true,
       "collapsed": true
     }
   ],
@@ -187,7 +181,6 @@
           "id": "version-19-R3/tutorials/creating-list-forms/list-form-layout"
         }
       ],
-      "collapsible": true,
       "collapsed": true
     },
     {
@@ -219,7 +212,6 @@
           "id": "version-19-R3/tutorials/creating-detail-forms/detail-form-template-layout"
         }
       ],
-      "collapsible": true,
       "collapsed": true
     },
     {
@@ -235,7 +227,6 @@
           "id": "version-19-R3/tutorials/gallery/update-gallery-template"
         }
       ],
-      "collapsible": true,
       "collapsed": true
     },
     {
@@ -259,7 +250,6 @@
           "id": "version-19-R3/tutorials/data-formatter/create-data-formatter"
         }
       ],
-      "collapsible": true,
       "collapsed": true
     },
     {
@@ -279,7 +269,6 @@
           "id": "version-19-R3/tutorials/filter-queries/user-information-query"
         }
       ],
-      "collapsible": true,
       "collapsed": true
     },
     {
@@ -303,7 +292,6 @@
           "id": "version-19-R3/tutorials/actions/using-action-parameters"
         }
       ],
-      "collapsible": true,
       "collapsed": true
     },
     {
@@ -335,7 +323,6 @@
           "id": "version-19-R3/tutorials/relations/relation-interactions"
         }
       ],
-      "collapsible": true,
       "collapsed": true
     },
     {
@@ -387,7 +374,6 @@
           "id": "version-19-R3/tutorials/developer-program/register-apple-developer-program-individual"
         }
       ],
-      "collapsible": true,
       "collapsed": true
     }
   ],
@@ -413,7 +399,6 @@
           "id": "version-19-R3/templates/custom-data-formatters"
         }
       ],
-      "collapsible": true,
       "collapsed": true
     }
   ]
