@@ -212,9 +212,13 @@ To optimize the color pictures displayed on your app and adapt them to your colo
 ```
 Here is the result in light mode and in dark mode: 
 
-| Light mode      | Dark mode          |
-| ------------- |:-------------:|
-| ![Data formatter](img/light-color.png) | ![Data formatter](img/dark-color.png) |
+Light mode:
+
+![Data formatter](img/light-color.png)
+
+Dark mode: 
+
+![Data formatter](img/dark-color.png)
 
 ## Open mobile project
 
