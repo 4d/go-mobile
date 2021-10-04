@@ -256,7 +256,7 @@ After creating all of your actions, just click on the Create button from the Act
 
 ### How to use a custom input from the gallery 
 
-You can easily interact with native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with iOS code. 
+You can easily interact with native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with native code. 
 
 To do so, you can create your own input controls with native code, or you can download a few input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific “inputControls” folder (```mybase/Resources/mobile/inputControls```), unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties of the action.
 
@@ -349,13 +349,13 @@ Here is an example with the *push* format:
 
 Here are the different formats available on the generated application: 
 
- - Segmented & sheet formats:
- 
- ![customInput2](img/Sans-titre.png)
- 
  - Push format:
  
 ![customInput2](img/push.png)
+
+- Segmented & picker formats:
+ 
+![customInput2](img/Sans-titre.png)
  
  - Popover format:
  
@@ -363,7 +363,7 @@ Here are the different formats available on the generated application:
  
  - Sheet format:
  
- ![customInput2](img/sheet.png)
+![customInput2](img/sheet.png)
  
 **Note:** You can access your input control using the arrow icon next to the "Input Control" field.
 
