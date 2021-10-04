@@ -449,8 +449,8 @@ For your convenience, the Edition form includes a few **special features**:
 
 ## Where to go from here?
 
-* A [tutorial]```(actions-getting-started.html)``` is available to guide you through the **action definition process**.
+* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
 
-* Another [tutorial]```(action-custom-template.html)``` will guide you through the **action TAG integration** for custom templates.
+* Another [tutorial](action-custom-template.md) will guide you through the **action TAG integration** for custom templates.
 
-* A final [tutorial]```(action-parameters.html)``` will guide you through the **action parameters definition**.
+* A final [tutorial](action-parameters.md) will guide you through the **action parameters definition**.
