@@ -9,7 +9,7 @@ title: カスタムのデータフォーマッター
 
 > **PREREQUISITES**
 > 
-> Click `[here](prerequisites.html)` to see what you'll need to get started!
+> Click [here](prerequisites.html) to see what you'll need to get started!
 
 このチュートリアルでは、様々なフォーマッターの例を作成していくことを案内していきます。
 
@@ -21,8 +21,7 @@ To begin, download the **Starter project**, which includes:
 * A **Task Management.4dbase** file (with a ready to use mobile app project)
 
 <div className="center-button">
-<a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">Starter project</a>
+<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">Starter project</a>
 </div>
 
 これでフォーマッターを作成する準備が整いました！
@@ -78,7 +77,7 @@ Let's look at the contents of the **manifest.json** file:
 
 ```json
 {
-    "name": "integerToImage",
+   "name": "integerToImage",
 
    "type": ["integer"],
 
@@ -90,7 +89,7 @@ Let's look at the contents of the **manifest.json** file:
       "size": {
          "width": 40, "height": 40
       }
-    }
+   }
 }
 ```
 1. **name**: the name of the formatter
@@ -113,7 +112,7 @@ Let's look at the contents of the **manifest.json** file:
 
 ```json
 {
-    "name": "textToString",
+   "name": "textToString",
 
    "type": ["text"],
 
@@ -144,7 +143,7 @@ Let's look at the contents of the **manifest.json** file:
 
 ```json
 {
-    "name": "textToImage",
+   "name": "textToImage",
 
    "type": ["integer"],
 
@@ -155,8 +154,8 @@ Let's look at the contents of the **manifest.json** file:
    "assets": {
   "size": {
    "width": 40, "height": 40
-        }
-    }
+      }
+   }
 }
 
 ```
@@ -238,6 +237,5 @@ Build your 4D of iOS app and you'll see that your data formatter is well applied
 Download the completed formatter template folder:
 
 <div className="center-button">
-<a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/releases/latest/download/tutorial-CustomDataFormatter.zip">Download</a>
+<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/releases/latest/download/tutorial-CustomDataFormatter.zip">Download</a>
 </div>
