@@ -10,7 +10,7 @@ Esta sección le permite:
 
 :::información 4D for Android
 
-This section is currently not available in 4D for Android.
+Esta sección no está disponible actualmente en 4D for Android.
 
 :::
 
@@ -240,7 +240,7 @@ Cuando se define más de una acción de ordenación para una tabla, los usuarios
 
 ### On Mobile App Action
 
-The [On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html) database method is available to call all of your 4D methods.
+El método base [On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html) está disponible para llamar a todos sus métodos 4D.
 
 Después de crear todas sus acciones, simplemente haga clic en el botón Crear de la tabla Acciones para generar automáticamente un bloque de código *Case of* que incluya todos los nombres de sus acciones en el método *On Mobile App Action*.
 
@@ -447,8 +447,8 @@ Para su comodidad, el formulario de Edición incluye algunas **funcionalidades e
 
 ## ¿Qué hacer ahora?
 
-* Un [tutorial]`(actions-getting-started.html)` está disponible para guiarlo a través del **proceso de definición de una acción**.
+* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
 
-* Otro [tutorial]`(action-custom-template.html)` lo guiará a través de la **integración TAG de acción** en las plantillas personalizadas.
+* Another [tutorial](action-custom-template.md) will guide you through the **action TAG integration** for custom templates.
 
-* Un [tutorial]`(action-parameters.html)` final lo guiará a lo largo de la **definición de los parámetros de una acción**.
+* A final [tutorial](action-parameters.md) will guide you through the **action parameters definition**.
