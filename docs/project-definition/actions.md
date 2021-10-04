@@ -350,15 +350,19 @@ Here is an example with the *push* format:
 Here are the different formats available on the generated application: 
 
  - Segmented & sheet formats:
+ 
  ![customInput2](img/Sans-titre.png)
  
  - Push format:
+ 
 ![customInput2](img/push.png)
  
  - Popover format:
+ 
 ![customInput2](img/popover.png)
  
  - Sheet format:
+ 
  ![customInput2](img/sheet.png)
  
 **Note:** You can access your input control using the arrow icon next to the "Input Control" field.
