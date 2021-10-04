@@ -5,7 +5,7 @@ title: Push notifications
 
 :::información 4D for Android
 
-This section is currently not available in 4D for Android.
+Esta sección no está disponible actualmente en 4D for Android.
 
 :::
 
