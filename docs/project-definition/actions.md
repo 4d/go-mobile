@@ -451,6 +451,6 @@ For your convenience, the Edition form includes a few **special features**:
 
 * A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
 
-* Another [tutorial](action-custom-template.md) will guide you through the **action TAG integration** for custom templates.
+* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
 
-* A final [tutorial](action-parameters.md) will guide you through the **action parameters definition**.
+* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
