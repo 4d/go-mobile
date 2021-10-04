@@ -39,6 +39,6 @@ The **Updating the list of devices...** button enables to refresh the list of av
 
 :::note 
 
-If you're an Android developer, you need to add an extra step to the debug process. More details [here](from-your-android-device-and-android-studio.md)
+If you're an Android developer, you need to add an extra step to the debug process. More details [here](from-your-android-device-and-android-studio.md).
 
 :::
