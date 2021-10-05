@@ -7,7 +7,7 @@ Il se peut que vous rencontriez des problèmes lors de l'utilisation de l'édite
 
 Pour accéder aux fichiers journaux, appuyez sur la touche **Alt** et sélectionnez **Project** dans le panneau GENERATION de l'éditeur de projet :
 
-![Débogage](img/debug-from-4D-for-iOS.png)
+![Débogage](img/project.png)
 
 Des éléments de menu de débogage supplémentaires apparaissent pour le [simulateur sélectionné](../project-definition/build-panel#using-the-simulator) :
 
@@ -27,7 +27,7 @@ Once your app is complete and the simulator’s result is satisfactory, you may 
 
 To do so, in the Project editor, make sure you have plugged your smartphone, then select your physical device from the list and click on the “Build and Run" button.
 
-![AndroidDevice](img/Sans-titre.png)
+![AndroidDevice](img/phone-selection.png)
 
 :::note
 
@@ -39,6 +39,6 @@ The **Updating the list of devices...** button enables to refresh the list of av
 
 :::note
 
-If you're an Android developer, you need to add an extra step to the debug process. More details [here](from-your-android-device-and-android-studio.md)
+If you're an Android developer, you need to add an extra step to the debug process. More details [here](from-your-android-device-and-android-studio.md).
 
 :::

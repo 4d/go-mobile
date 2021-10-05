@@ -9,7 +9,7 @@ title: Criar formato de dados
 
 > **PRÉ-REQUISITOS**
 > 
-> Clique em`[here](prerequisites.html)` para ver o que necessita para  começar
+> Click [here](prerequisites.html) to see what you'll need to get started!
 
 Neste tutorial, vamos guiá-lo através da criação de vários exemplos de formatador.
 
@@ -21,8 +21,7 @@ Para começar, baixe o **Starter Project**, que inclui:
 * Um arquivo de **Task Management.4dbase** (com um projeto de app móvel pronto para usar)
 
 <div className="center-button">
-<a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">Starter project</a>
+<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">Starter project</a>
 </div>
 
 Agora você já está pronto para criar seus primeiros formatadores!
@@ -78,7 +77,7 @@ Vamos olhar o conteúdo do arquivo de**manifest.json **:
 
 ```json
 {
-    "name": "integerToImage",
+   "name": "integerToImage",
 
    "type": ["integer"],
 
@@ -90,7 +89,7 @@ Vamos olhar o conteúdo do arquivo de**manifest.json **:
       "size": {
          "width": 40, "height": 40
       }
-    }
+   }
 }
 ```
 1. **nome**: o nome do formatador
@@ -113,7 +112,7 @@ Vamos olhar o conteúdo do arquivo de**manifest.json **:
 
 ```json
 {
-    "name": "textToString",
+   "name": "textToString",
 
    "type": ["text"],
 
@@ -144,7 +143,7 @@ Vamos olhar o conteúdo do arquivo de**manifest.json **:
 
 ```json
 {
-    "name": "textToImage",
+   "name": "textToImage",
 
    "type": ["integer"],
 
@@ -155,8 +154,8 @@ Vamos olhar o conteúdo do arquivo de**manifest.json **:
    "assets": {
   "size": {
    "width": 40, "height": 40
-        }
-    }
+      }
+   }
 }
 
 ```
@@ -238,6 +237,5 @@ Construa seu app 4D de iOS e você verá que o formatador de dados é bem aplica
 Baixe a pasta do modelo de formatador completo:
 
 <div className="center-button">
-<a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/releases/latest/download/tutorial-CustomDataFormatter.zip">Baixar</a>
+<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/releases/latest/download/tutorial-CustomDataFormatter.zip">Baixar</a>
 </div>
