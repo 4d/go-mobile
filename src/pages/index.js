@@ -6,6 +6,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
+import useThemeContext from '@theme/hooks/useThemeContext';
 
 const features = [
   {
@@ -14,8 +15,8 @@ const features = [
     description: (
       <>
         <Translate>
-          Build your native iOS and Android apps in pure Swift and Kotlin 
-		  using an integrated 4D component without needing any prior expertise.
+          Build your native iOS and Android apps in pure Swift and Kotlin
+          using an integrated 4D component without needing any prior expertise.
         </Translate>
       </>
     ),
@@ -25,8 +26,8 @@ const features = [
     imageUrl: "img/open.png",
     description: (
       <>
-        You can reopen your generated projects with Xcode or Android Studio 
-		and continue to work on them.
+        You can reopen your generated projects with Xcode or Android Studio
+        and continue to work on them.
 
       </>
     ),
@@ -36,8 +37,8 @@ const features = [
     imageUrl: "img/offline.png",
     description: (
       <>
-        All of your data is embedded in your app and available 
-		without needing an internet connection.
+        All of your data is embedded in your app and available
+        without needing an internet connection.
       </>
     ),
   },
@@ -45,15 +46,20 @@ const features = [
 
 function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
+  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
   return (
     <div className={clsx("col col--4", styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <Link to={useBaseUrl(
+        "docs/getting-started/introduction"
+      )} style={{ textDecoration: 'none', color: isDarkTheme ? "#fff" : "#000" }}>
+        {imgUrl && (
+          <div className="text--center">
+            <img className={styles.featureImage} src={imgUrl} alt={title} />
+          </div>
+        )}
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </Link>
     </div>
   );
 }
@@ -68,7 +74,7 @@ export default function Home() {
     >
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
-		<h1 className="hero__title">{siteConfig.title}</h1>
+          <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
@@ -86,7 +92,6 @@ export default function Home() {
         </div>
       </header>
 
-		
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
