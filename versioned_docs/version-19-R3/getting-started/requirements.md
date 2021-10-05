@@ -63,7 +63,7 @@ Version table:
 
 | 4D | Android Studio| Windows |
 |---|---|---|
-| 19R3-beta | [Android studio Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
+| 19R3-beta | [Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 | 19R2 | [4.1.2](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 
 :::note
