@@ -33,7 +33,7 @@ Version table:
 
 | 4D | Swift | iOS | Xcode | macOS |
 |---|---|---|---|---|
-| 19R3-beta    | 5.5   | 15.0 | [13.0](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.xip) | 11.3 |
+| 19R3-beta   | 5.5   | 15.0 | [13.0](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.xip) | 11.3 |
 | 19R2         | 5.5   | 15.0 | [13.0](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.xip) | 11.3 | 
 | 19  | 5.4| 14.6 | [12.5](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.5/Xcode_12.5.xip) | 11.0.1 |  
 | 18R6  | 5.3.2| 14.4 | [12.4](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.4/Xcode_12.4.xip) | 10.15.4 |
@@ -61,10 +61,9 @@ Version table:
 
 Version table:
 
-| 4D | Android | Windows |
+| 4D | Android Studio| Windows |
 |---|---|---|
-| 19R3 | [4.1.2](https://developer.android.com/studio/archive) | Windows 10 64-bit |
-|  | [Android studio Arctic fox 2020.3.1](https://android-developers.googleblog.com/2021/07/android-studio-arctic-fox-202031-stable.html) | |
+| 19R3-beta | [Android studio Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 | 19R2 | [4.1.2](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 
 :::note
