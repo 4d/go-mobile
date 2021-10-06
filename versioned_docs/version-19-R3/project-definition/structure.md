@@ -174,30 +174,29 @@ The process is actually quite simple!
 In your code, specify the attributes you want to use and the computed attribute you want to get, using the [*Class extends*](https://developer.4d.com/docs/en/Concepts/classes.html#class-extends-classname) and [exposed Function](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows: 
 
 ```4d 
- Class extends Entity
+Class extends Entity
 
 exposed Function get fullName->$fullName : Text
     $fullName:=This.FirstName+" "+This.LastName
     
 exposed Function set fullName($fullName : Text)
-$indx:=Position("/"; $fullName)
-If ($indx>0)    
-    This.FirstName:=Substring($fullName; 1; $indx-1)
-    This.LastName:=Substring($fullName; $indx+1)    
-Else    
+$splitName:=Split string($fullName; "/")
+If ($splitName.length=2)
+    This.FirstName:=$splitName[0]
+    This.LastName:=$splitName[1]
+Else 
     // ERROR    
 End if
-
 
 exposed Function get fullAddress->$fullAddress : Text
     $fullAddress:=This.StreetNumber+" "+This.Street+" - "+This.Location
     
 exposed Function set fullAddress($fullAddress : Text)
-$c:=Split string($fullAddress; "/")
-If ($c.length=3)
-    This.StreetNumber:=$c[0]
-    This.Street:=$c[1]
-    This.Location:=$c[2]
+$splitAddress:=Split string($fullAddress; "/")
+If ($splitAddress.length=3)
+    This.StreetNumber:=$splitAddress[0]
+    This.Street:=$splitAddress[1]
+    This.Location:=$splitAddress[2]
 Else 
     // ERROR    
 End if
