@@ -13,13 +13,13 @@ title: テンプレートにアクションを追加する
 
 このチュートリアルでは、どうやって簡単に**カスタムテンプレートにアクションを追加する**かを見ていきます。
 
-## ⒈ ⒈ ⒈ ⒈ Download the Starter project
+## ⒈ ⒈ ⒈ ⒈ スタータープロジェクトをダウンロードする
 
 To begin, download the **Starter project**, which includes:
 
-* two custom List form templates (TasksList and TasksCollection)
-* a custom Detail form template (TasksDetail)
-* データベース（Tasks.4dbase）
+* リストフォームのカスタムテンプレートが2つ(TasksList および TasksCollection)
+* 詳細フォームのカスタムテンプレートが1つ(TasksDetail)
+* データベース(Tasks.4dbase)
 
 <div className="center-button">
 <a class="button button--primary"
@@ -28,29 +28,29 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 
 ## ⒉ ⒉ ⒉ ⒉ 4D for iOS プロジェクトにカスタムテンプレートを追加する
 
-テンプレートをインストールします。
+以下のドロップを実行してテンプレートをインストールします。
 
-* **TasksList** and **TasksCollection** template folders in *Tasks.4dbase/Resources/Mobile/form/list* folder
+* **TasksList** および **TasksCollection** template フォルダを*Tasks.4dbase/Resources/Mobile/form/list* フォルダにドロップ
 
 ![リスト画面のテンプレート](img/Listform-templates.png)
 
-* **TasksDetail** template folders in *Tasks.4dbase/Resources/Mobile/form/detail folder*
+* **TasksDetail** template フォルダを *Tasks.4dbase/Resources/Mobile/form/detail folder* にドロップ
 
 ![詳細画面のテンプレート](img/Detailform-template.png)
 
 ## ⒊ ⒊ ⒊ リスト画面にアクションを追加する
 
-Two types of actions are available:
-* table actions
-* entity actions
+2種類のアクションが利用可能です:
+* テーブルアクション
+* エンティティアクション
 
-Let's first open the `list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` file.
+まずは最初に `list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` ファイルを開いてみましょう。
 
 ### TasksList カスタムテンプレートにアクションを追加する
 
 #### Ａ Ａ Ａ Ａ テーブルアクションタグを追加する
 
-Select the **List form Controller** and add this line in the **User Defined Runtime Attributes** (Identity inspector):
+**List form Controller** を選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
@@ -61,7 +61,7 @@ Select the **List form Controller** and add this line in the **User Defined Runt
 
 #### Ｂ Ｂ Ｂ Ｂ エンティティアクションタグを追加する
 
-Select the Animatable Table View and add this line in the **User Defined Runtime Attributes** (Identity inspector):
+Select the Animatable Table View を選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
@@ -71,7 +71,7 @@ Select the Animatable Table View and add this line in the **User Defined Runtime
 
 これでカスタムテンプレートがアクション対応になりました！
 
-You can select the TaskList custom template from the **Forms section** and add the following fields:
+You can select the TaskList カスタムテンプレートを**フォームセクション** から選択し、以下のフィールドを追加することができます:
 
 ![「フォーム」セクション（Taskslist）](img/listform-taskslist-forms-section.png)
 
@@ -85,7 +85,7 @@ To do so, open the `list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TAB
 
 作業は TasksList カスタムテンプレートの場合によく似ています。
 
-Select the **List form Controller** and add this line in the **User Defined Runtime Attributes** (Identity inspector):
+**List form Controller** を選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
