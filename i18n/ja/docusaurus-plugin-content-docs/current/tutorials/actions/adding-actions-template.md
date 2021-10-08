@@ -5,13 +5,13 @@ title: テンプレートにアクションを追加する
 
 > **OBJECTIVES**
 > 
-> Add actions to custom List and Detail forms templates.
+> アクションを追加してリストフォーム/詳細フォームのテンプレートをカスタムします。
 
 > **PREREQUISITES**
 > 
-> Click `[here](prerequisites.html)` to see what you'll need to get started!
+> 始めるために必要なものについては`[here](prerequisites.html)`をクリックして下さい!
 
-In this tutorial, we are going to see how easy it can be to **add actions to custom templates**.
+このチュートリアルでは、どうやって簡単に**カスタムテンプレートにアクションを追加する**かを見ていきます。
 
 ## ⒈ ⒈ ⒈ ⒈ Download the Starter project
 
