@@ -61,7 +61,7 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 
 #### Ｂ Ｂ Ｂ Ｂ エンティティアクションタグを追加する
 
-Select the Animatable Table View を選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
+Table View を選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
@@ -79,7 +79,7 @@ You can select the TaskList カスタムテンプレートを**フォームセ�
 
 ### TasksCollection カスタムテンプレートにアクションを追加する
 
-To do so, open the `list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` file.
+まずは`list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` ファイルを開きます。
 
 #### Ａ Ａ Ａ Ａ テーブルアクションタグを追加する
 
@@ -97,7 +97,7 @@ To do so, open the `list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TAB
 
 エンティティアクションを表示する方法はリスト形式の TableView とグリッド形式の CollectionViews では異なります。 後者はスワイプ操作に不向きです。
 
-So with collection views, the best way to display actions is to use a **long pressure** gesture on the cells you want to interact with.
+コレクションビューにおいては、扱いたいセルに対して**長押し** ジェスチャーに反応してアクションを表示させるのが良い方法です。
 
 For that, select the collectionView cell and add this line in the **User Defined Runtime Attributes** (Identity inspector):
 
