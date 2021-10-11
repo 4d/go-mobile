@@ -17,7 +17,7 @@ Before starting, please check that your configuration meets hardware and softwar
 
 
 
-## ⒈ ⒈ ⒈ ⒈ Download the Starter project
+## ⒈ ⒈ ⒈ ⒈ スタータープロジェクトをダウンロードする
 
 Download and unzip our 4D Starter project, which contains a database file and a project icon (but no mobile project yet).
 
