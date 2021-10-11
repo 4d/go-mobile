@@ -96,7 +96,7 @@ $0:=$out
 
 親エンティティを使用することにより，幾つでも担当者にタスクを追加することができるようになりました！
 
-Download the completed project:
+完成したプロジェクトをダウンロード
 
 <div className="center-button">
 <a className="button button--primary"
