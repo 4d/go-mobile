@@ -118,7 +118,7 @@ $0:=$out
 
 ```
 
-Crie e Execute seu app e pronto! Sua **ação Done ** está disponível quando deslizar uma célula para a esquerda no formulário Lista, ou quando clicar no  **botão genérico Actions** na barra de navegação do formulário detalhado.
+Build and Run you app, and there you go! Sua **ação Done ** está disponível quando deslizar uma célula para a esquerda no formulário Lista, ou quando clicar no  **botão genérico Actions** na barra de navegação do formulário detalhado.
 
 ![Done action](img/Entity-action-Done.png)
 

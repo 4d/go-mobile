@@ -132,7 +132,7 @@ $0:=$out
 
 ```
 
-Cree y ejecute su aplicación y ¡listo! Cree y ejecute su aplicación y ¡listo! Cree y ejecute su aplicación y ¡listo! Cree y ejecute su aplicación y ¡listo! Su **acción Done ** está disponible cuando desliza hacia la izquierda una celda en el formulario Lista, así como cuando hace clic en el **botón genérico Actions** en la barra de navegación del formulario detallado.
+Build and Run you app, and there you go! Cree y ejecute su aplicación y ¡listo! Cree y ejecute su aplicación y ¡listo! Cree y ejecute su aplicación y ¡listo! Su **acción Done ** está disponible cuando desliza hacia la izquierda una celda en el formulario Lista, así como cuando hace clic en el **botón genérico Actions** en la barra de navegación del formulario detallado.
 
 ![Done action](img/Entity-action-Done.png)
 
