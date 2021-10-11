@@ -204,7 +204,7 @@ End if
 
 :::note
 
-Only computed attributes with values that change over time - only depending on other attributes of the same DataClass (ex: dates) - will be updated on the mobile app.
+Only computed attributes with values that change over time - only depending on other attributes of the same DataClass - will be updated on the mobile app.
 
 :::
 
