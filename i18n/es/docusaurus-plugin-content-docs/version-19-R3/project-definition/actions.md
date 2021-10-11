@@ -256,9 +256,9 @@ Después de crear todas sus acciones, simplemente haga clic en el botón Crear d
 
 ### How to use a custom input from the gallery
 
-You can easily interact with Apple native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with iOS code.
+You can easily interact with native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with native code.
 
-To do so, you can create your own input controls with Swift code, or you can download a few input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific “inputControls” folder (`mybase/Resources/mobile/inputControls`), unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties of the action.
+To do so, you can create your own input controls with native code, or you can download a few input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific “inputControls” folder (`mybase/Resources/mobile/inputControls`), unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties of the action.
 
 For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
 
@@ -271,13 +271,13 @@ Bear in mind that all input controls from the gallery are open source and availa
 Action input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either static or dynamic:
 - **Static** choice lists (predefined choices hard coded in json) that are located in an 'inputControls' folder (`mybase/Resources/mobile/inputControls`) in a manifest.json file. They are defined by several elements, as follows:
 
-| Property               | Type               | Descripción                                                                                               |
-| ---------------------- | ------------------ | --------------------------------------------------------------------------------------------------------- |
-| **"name"**             | texto              | action input control name                                                                                 |
-| Optional **"binding"** | texto              | "imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)    |
-| **"choiceList"**       | object             | an object or collection to defined a list of key (data sent to server)/value(displayed value to the user) |
-| **"type"**             | text or collection | one text or a collection of text to defined autorise type for formatter                                   |
-| Optional **"format"**  | texto              | to select interface: push(default if not defined)/segmented/popover/sheet/picker                          |
+| Propiedad              | Type               | Descripción                                                                                             |
+| ---------------------- | ------------------ | ------------------------------------------------------------------------------------------------------- |
+| **"name"**             | texto              | action input control name                                                                               |
+| Optional **"binding"** | texto              | "imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)  |
+| **"choiceList"**       | object             | an object or collection to define a list of key(data sent to server)/value(displayed value to the user) |
+| **"type"**             | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control             |
+| Optional **"format"**  | texto              | to select interface: push(default if not defined)/segmented/popover/sheet/picker                        |
 
 Here is an example of a manifest.json file containing the contact information of a company's subsidiaries, that can be used as a static choice list:
 ```4d
@@ -300,14 +300,14 @@ Here is an example of a manifest.json file containing the contact information of
 
 - **Dynamic** choice lists based on datasource (choices depending on the database content). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The manifest.json file is composed of the following elements:
 
-| Property              | Type               | Descripción                                                                                    |
+| Propiedad             | Type               | Descripción                                                                                    |
 | --------------------- | ------------------ | ---------------------------------------------------------------------------------------------- |
 | **"name"**            | texto              | input control name                                                                             |
 | **"choiceList"**      | object             | an object that contain "dataSource" (see table below)                                          |
-| **"type"**            | text or collection | one text or a collection of text to define a type of input control                             |
+| **"type"**            | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control    |
 | Optional **"format"** | texto              | to select interface: "push"(default if not defined), "segmented", "popover", "sheet", "picker" |
 
-| Property         |                             | Type                       | Descripción                                                                                                                     |
+| Propiedad        |                             | Type                       | Descripción                                                                                                                     |
 | ---------------- | --------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | **"dataSource"** |                             | object                     | an object that contain "dataClass", "field" and optional "entityFormat"                                                         |
 |                  | **"dataClass"**             | texto                      | table name                                                                                                                      |
@@ -347,7 +347,21 @@ Here is an example with the *push* format:
 
 Here are the different formats available on the generated application:
 
+ - Push format:
+
+![customInput2](img/push.png)
+
+- Segmented & picker formats:
+
 ![customInput2](img/Sans-titre.png)
+
+ - Popover format:
+
+![customInput2](img/popover.png)
+
+ - Sheet format:
+
+![customInput2](img/sheet.png)
 
 **Note:** You can access your input control using the arrow icon next to the "Input Control" field.
 
@@ -447,8 +461,8 @@ Para su comodidad, el formulario de Edición incluye algunas **funcionalidades e
 
 ## ¿Qué hacer ahora?
 
-* Un [tutorial]`(actions-getting-started.html)` está disponible para guiarlo a través del **proceso de definición de una acción**.
+* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
 
-* Otro [tutorial]`(action-custom-template.html)` lo guiará a través de la **integración TAG de acción** en las plantillas personalizadas.
+* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
 
-* Un [tutorial]`(action-parameters.html)` final lo guiará a lo largo de la **definición de los parámetros de una acción**.
+* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.

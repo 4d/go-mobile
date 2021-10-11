@@ -32,15 +32,15 @@ iOS アプリのビルドのためにはmacOS 版4D が必要になります。
 
 複雑な部分は全て4D が管理し、完全に透過な方法でXcodeプロジェクトを生成します。生成されたプロジェクトには純粋なSwift コードと最適化されたUI/UXが格納されています。
 
-## One database, many apps
+## 1つのデータベースから、いくつものアプリを
 
-One of the strengths of 4D mobile projects is that you have the opportunity to create an unlimited number of apps from different subsets of a single database, according to your needs and goals.
+4D mobile プロジェクトの強みの一つは、単一のデータベースの異なる部分を基にして、必要とされる機能やゴールに応じていくつものアプリを作成することができるということです。
 
-## Offline mode
+## オフラインモード
 
-All of your data is embedded in your app and available without needing an internet connection.
+全てのデータはアプリに埋め込むことができ、インターネット接続がないときでもデータを利用することができます。
 
-## Open solution
+## 開かれたソリューション
 
-* Since native projects are generated, you can reopen them with Xcode (macOS) and Android Studio and continue to work on it.
-* All tables and forms are embedded into the generated app and are editable.
+* 生成されるプロジェクトはネイティブなものであるため、そのプロジェクトをXcode(macOS) やAndroid Studio で開き直して、独自にさらなる開発を進めることもできます。
+* 全てのテーブルとフォームは生成されたアプリに埋め込まれ、また再編集も可能です。

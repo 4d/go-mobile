@@ -173,18 +173,39 @@ The process is actually quite simple!
 In your code, specify the attributes you want to use and the computed attribute you want to get, using the [*Class extends*](https://developer.4d.com/docs/en/Concepts/classes.html#class-extends-classname) and [exposed Function](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows:
 
 ```4d 
- Class extends Entity
+Class extends Entity
 
-exposed Function get fullName->$result : Text
-    $result:=This.FirstName+" "+This.LastName
+exposed Function get fullName->$fullName : Text
+    $fullName:=This.FirstName+" "+This.LastName
 
-exposed Function set fullName($result : Text)
+exposed Function set fullName($fullName : Text)
+$splitName:=Split string($fullName; "/")
+If ($splitName.length=2)
+    This.FirstName:=$splitName[0]
+    This.LastName:=$splitName[1]
+Else 
+    // ERROR    
+End if
 
-exposed Function get fullAddress->$result : Text
-    $result:=This.StreetNumber+" "+This.Street+" - "+This.Location
+exposed Function get fullAddress->$fullAddress : Text
+    $fullAddress:=This.StreetNumber+" "+This.Street+" - "+This.Location
 
-exposed Function set fullAddress($result : Text)
+exposed Function set fullAddress($fullAddress : Text)
+$splitAddress:=Split string($fullAddress; "/")
+If ($splitAddress.length=3)
+    This.StreetNumber:=$splitAddress[0]
+    This.Street:=$splitAddress[1]
+    This.Location:=$splitAddress[2]
+Else 
+    // ERROR    
+End if
  ```
+
+:::nota
+
+Only computed attributes with values that change over time - only depending on other attributes of the same DataClass (ex: dates) - will be updated on the mobile app.
+
+:::
 
 ### Project editor side
 

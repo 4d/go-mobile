@@ -271,7 +271,7 @@ Bear in mind that all input controls from the gallery are open source and availa
 Action input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either static or dynamic:
 - **Static** choice lists (predefined choices hard coded in json) that are located in an 'inputControls' folder (`mybase/Resources/mobile/inputControls`) in a manifest.json file. They are defined by several elements, as follows:
 
-| Property               | Type               | Descripción                                                                                             |
+| Propiedad              | Type               | Descripción                                                                                             |
 | ---------------------- | ------------------ | ------------------------------------------------------------------------------------------------------- |
 | **"name"**             | texto              | action input control name                                                                               |
 | Optional **"binding"** | texto              | "imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)  |
@@ -300,14 +300,14 @@ Here is an example of a manifest.json file containing the contact information of
 
 - **Dynamic** choice lists based on datasource (choices depending on the database content). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The manifest.json file is composed of the following elements:
 
-| Property              | Type               | Descripción                                                                                    |
+| Propiedad             | Type               | Descripción                                                                                    |
 | --------------------- | ------------------ | ---------------------------------------------------------------------------------------------- |
 | **"name"**            | texto              | input control name                                                                             |
 | **"choiceList"**      | object             | an object that contain "dataSource" (see table below)                                          |
 | **"type"**            | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control    |
 | Optional **"format"** | texto              | to select interface: "push"(default if not defined), "segmented", "popover", "sheet", "picker" |
 
-| Property         |                             | Type                       | Descripción                                                                                                                     |
+| Propiedad        |                             | Type                       | Descripción                                                                                                                     |
 | ---------------- | --------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | **"dataSource"** |                             | object                     | an object that contain "dataClass", "field" and optional "entityFormat"                                                         |
 |                  | **"dataClass"**             | texto                      | table name                                                                                                                      |
