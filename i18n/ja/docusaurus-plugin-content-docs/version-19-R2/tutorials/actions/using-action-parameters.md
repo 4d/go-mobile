@@ -408,7 +408,7 @@ And finally you can delete an entity using the **Delete...** action.
 おつかれさまでした！ Your Tasks iOS app is now complete and you can now modify your app data direclty from your device and sychronize it with your server!
 
 
-Download the completed project:
+完成したプロジェクトをダウンロード
 
 <div className="center-button">
 <a className="button button--primary"
