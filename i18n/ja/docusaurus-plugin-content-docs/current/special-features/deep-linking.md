@@ -3,7 +3,7 @@ id: deep-linking
 title: Deep Linking
 ---
 
-:::info 4D for Android
+:::4D for Androidにおける注意
 
 This feature is currently not available in 4D for Android.
 
