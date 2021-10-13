@@ -68,7 +68,7 @@ The names are based upon the relation names in the 4D Structure editor, see the 
 
 ## Using relations
 
-:::info 4D for Android
+:::4D for Androidにおける注意
 
 Only Many-to-one relations are available in 4D for Android.
 
