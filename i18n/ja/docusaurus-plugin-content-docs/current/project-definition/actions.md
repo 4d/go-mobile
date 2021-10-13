@@ -5,160 +5,160 @@ title: アクション
 
 このセクションでは以下のような内容を取り扱います:
 
-* create actions to execute 4D code from your iOS app.
-* define and add parameters to your actions.
+* 4DのコードをiOS アプリから実行するアクションを作成する
+* アクションに渡す引数を定義して渡す
 
-:::info 4D for Android
+:::4D for Androidにおける注意
 
-This section is currently not available in 4D for Android.
+このセクションで触れている内容は4D for Android では現在ご利用いただけません。
 
 :::
 
-## Project Editor Side
+## プロジェクトエディター側での設定
 
-### Create your action
+### アクションを作成する
 
-You can create a new action by clicking on the + button at the bottom of the Actions table. A new line will appear in the Actions table.
+アクションテーブルの下部にある + ボタンをクリックすることで、新しいアクションを作成できます。 クリックするとアクションテーブル内に新しい行が追加されます。
 
-Next you'll need to define the following:
+次に、以下のものを定義する必要があります:
 
-* **Names:** The action name to use in the [On Mobile App Action](https://developer.4d.com/4d-for-ios/docs/en/actions.html#on-mobile-app-action) database method to trigger your 4D code.
-* **Icons:** The icon to choose from your icon library. You can also add your own icon by following this [tutorial]`(using-icons.html)`.
-* **Short and long Labels:** The labels for the actions to display in your app.
-* **Table:** The table on which you want to apply the action.
-* **Scope:** Where to use the action, an **entity** or a **table**.
+* **名前:** [On Mobile App Action](https://developer.4d.com/4d-for-ios/docs/ja/actions.html#on-mobile-app-action) データベースメソッド内で4Dコードをトリガーする際に使用するアクションの名前
+* **アイコン:** アイコンライブラリーからアイコンを選択して下さい。 またこちらの[tutorial]`(using-icons.html)`に従うことで、独自のアイコンを追加することもできます。
+* **短いラベルと長いラベル:** アプリ内で表示されるアクションのラベル
+* **テーブル:** アクションを適用したいテーブル
+* **スコープ:** アクションを使用する対象を決めます。**カレントエンティティ** または **テーブル**
 
 ![Action section](img/Actions-section-4D-for-iOS.png)
 
-### Add parameters to your action
+### アクションに引数を追加
 
-You can add **action parameters** and **edit** data directly from your app.
+**アクション引数** を追加することでアプリから直接データを**編集**することができます。
 
-For each parameter, you can edit the following properties:
+それぞれの引数について、以下のプロパティを設定することができます:
 
-* Name
-* Long label
-* Short label
-* Format
-* Input constraints (define minimum or maximum values)
-* Placeholder
-* Mandatory field definition
-* Default value
+* 名前
+* (長い)ラベル
+* 短いラベル
+* フォーマット
+* 入力制限(最小値または最大値を定義可能)
+* プレースホルダー
+* 必須フィールド定義
+* デフォルト値
 
 ![Action parameters](img/Actions-parameters-4D-for-iOS.png)
 
-You are free to change the order of parameters using drag and drop.
+ドラッグ&ドロップを使用して引数の順番を自由に変えることもできます。
 
-Here are the different **Formats** you can select for a parameter:
+引数に対して選択できる**フォーマット**の種類は以下の通りです:
 
 <table>
 
 <tr>
-<th colspan="2"  style={{textAlign: 'center'}}>TEXT</th>
+<th colspan="2"  style={{textAlign: 'center'}}>テキスト</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Description</th>
+<th>フォーマット</th><th>詳細</th>
 </tr><tr>
-<td>Text</td><td>Capitalize the first letter of a string</td>
+<td>テキスト</td><td>文字列の頭文字を大文字にします。</td>
 </tr><tr>
-<td>Email Address</td><td>Optimized iOS keyboard for email entry</td>
+<td>メールアドレス</td><td>メールアドレス入力用に最適化されたiOSキーボード</td>
 </tr><tr>
-<td>Phone Number</td><td>iOS keypad for entering telephone numbers.</td>
+<td>電話番号</td><td>電話番号入力用のiOSキーパッド</td>
 </tr><tr>
-<td>Account</td><td>Optimized iOS keyboard for username entry</td>
+<td>アカウント</td><td>ユーザー名入力用に最適化されたiOSキーボード</td>
 </tr><tr>
-<td>Password</td><td>Optimized to handle passwords</td>
+<td>パスワード</td><td>パスワードを管理するのに最適化されます。</td>
 </tr><tr>
-<td>URL</td><td>Optimized iOS keyboard for URL entry</td>
+<td>URL</td><td>URL入力に最適化されたiOSキーボード</td>
 </tr><tr>
-<td>Zip Code</td><td>Optimized iOS keyboard for zip code entry</td>
+<td>郵便番号</td><td>郵便番号入力に最適化されたiOSキーボード</td>
 </tr><tr>
-<td>Text area</td><td>Includes multiple lines of text in a single field</td>
+<td>テキストエリア</td><td>単一フィールド内に複数行のテキストを格納できます。</td>
 </tr><tr>
-<td>Barcode</td><td>Extract barcode associated value. Supported formats : EAN8, EAN13, Code 39, Code 93, Code 128, QR Code, UPC, PDF417</td>
+<td>バーコード</td><td>バーコードに割り当てられた値を取り出します。 サポートされてるフォーマット : EAN8、EAN13、Code 39、Code 93、Code 128、QRコード、UPC、PDF417</td>
 </tr>
 <tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>NUMBER</th>
+<th colspan="2" style={{textAlign: 'center'}}>数値</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Description</th>
+<th>フォーマット</th><th>詳細</th>
 </tr><tr>
-<td>Number</td><td>Numbers with decimals</td>
+<td>数値</td><td>小数点付き数値</td>
 </tr><tr>
-<td>Integer</td><td>Numbers without decimals</td>
+<td>整数</td><td>小数点のつかない数値</td>
 </tr><tr>
-<td>Scientific</td><td>Scientific Notation</td>
+<td>指数</td><td>指数表記</td>
 </tr><tr>
-<td>Percentage</td><td>Percent Notation</td>
+<td>パーセント</td><td>パーセント表記</td>
 </tr><tr>
-<td>Spell Out</td><td>Convert numbers into strings</td>
+<td>文字列化</td><td>数値を文字列へと変換</td>
 </tr>
 <tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>DATE</th>
+<th colspan="2" style={{textAlign: 'center'}}>日付</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Description</th>
+<th>フォーマット</th><th>詳細</th>
 </tr><tr>
-<td>Date</td><td>Nov 23, 1937</td>
+<td>日付</td><td>Nov 23, 1937</td>
 </tr><tr>
-<td>Short Date</td><td> 11/23/37</td>
+<td>短い日付</td><td> 11/23/37</td>
 </tr><tr>
-<td>Long Date</td><td>November 23, 1937</td>
+<td>長い日付</td><td>November 23, 1937</td>
 </tr><tr>
-<td>Full Date</td><td>Tuesday, November 23, 1937</td>
+<td>完全な日付</td><td>Tuesday, November 23, 1937</td>
 </tr><tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>TIME</th>
+<th colspan="2" style={{textAlign: 'center'}}>時間</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Description</th>
+<th>フォーマット</th><th>詳細</th>
 </tr><tr>
-<td>Time</td><td>3:30 PM</td>
+<td>時間</td><td>3:30 PM</td>
 </tr><tr>
-<td>Duration</td><td>2 hours 30 minutes</td>
+<td>経過時間</td><td>2 hours 30 minutes</td>
 </tr>
 <tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>BOOLEAN</th>
+<th colspan="2" style={{textAlign: 'center'}}>ブール</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Description</th>
+<th>フォーマット</th><th>詳細</th>
 </tr><tr>
-<td>Boolean</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
+<td>ブール</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
 </tr><tr>
-<td>Check mark</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
+<td>チェックマーク</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
 </tr>
 
 <tr>
 <td colspan="2"></td>
 </tr>
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>IMAGES</th>
+<th colspan="2" style={{textAlign: 'center'}}>画像</th>
 </tr>
 <tr>
-<td>Signature</td><td>Allow to sign with the finger</td>
+<td>署名</td><td>手書き文字での署名が可能に</td>
 </tr>
 
 </table>
 
-## Preset actions
+## 定義済みアクション
 
-4D mobile projects include the following (predefined) preset actions to manage your app content:
+4D mobile プロジェクトにはアプリの中身を管理するための、以下の(定義済み)アクションが含まれています:
 
-* Edit
-* Add
-* Delete
-* Share
-* Sort
+* 編集
+* 追加
+* 削除
+* 共有
+* 並べ替え
 
 ### Add action
 
@@ -262,7 +262,7 @@ To do so, you can create your own input controls with native code, or you can do
 
 For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
 
-![Architecture](img/inputWithSwift.png) ![Edit](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png)![Edit screen](img/phoneContactIcon4.png)
+![Architecture](img/inputWithSwift.png) ![編集](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png)![Edit screen](img/phoneContactIcon4.png)
 
 Bear in mind that all input controls from the gallery are open source and available on Github. So feel free to share your own input controls or your feedback on the [4D Forum](https://discuss.4d.com/).
 
@@ -271,7 +271,7 @@ Bear in mind that all input controls from the gallery are open source and availa
 Action input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either static or dynamic:
 - **Static** choice lists (predefined choices hard coded in json) that are located in an 'inputControls' folder (`mybase/Resources/mobile/inputControls`) in a manifest.json file. They are defined by several elements, as follows:
 
-| Property               | Type               | Description                                                                                             |
+| Property               | Type               | 詳細                                                                                                      |
 | ---------------------- | ------------------ | ------------------------------------------------------------------------------------------------------- |
 | **"name"**             | text               | action input control name                                                                               |
 | Optional **"binding"** | text               | "imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)  |
@@ -300,14 +300,14 @@ Here is an example of a manifest.json file containing the contact information of
 
 - **Dynamic** choice lists based on datasource (choices depending on the database content). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The manifest.json file is composed of the following elements:
 
-| Property              | Type               | Description                                                                                    |
+| Property              | Type               | 詳細                                                                                             |
 | --------------------- | ------------------ | ---------------------------------------------------------------------------------------------- |
 | **"name"**            | text               | input control name                                                                             |
 | **"choiceList"**      | object             | an object that contain "dataSource" (see table below)                                          |
 | **"type"**            | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control    |
 | Optional **"format"** | text               | to select interface: "push"(default if not defined), "segmented", "popover", "sheet", "picker" |
 
-| Property         |                             | Type                       | Description                                                                                                                     |
+| Property         |                             | Type                       | 詳細                                                                                                                              |
 | ---------------- | --------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | **"dataSource"** |                             | object                     | an object that contain "dataClass", "field" and optional "entityFormat"                                                         |
 |                  | **"dataClass"**             | text                       | table name                                                                                                                      |
