@@ -3,9 +3,9 @@ id: push-notification
 title: Push notifications
 ---
 
-:::info 4D for Android
+:::4D for Androidにおける注意
 
-This section is currently not available in 4D for Android.
+このセクションで触れている内容は4D for Android では現在ご利用いただけません。
 
 :::
 
