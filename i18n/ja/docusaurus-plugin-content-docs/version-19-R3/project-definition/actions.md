@@ -1,11 +1,11 @@
 ---
 id: actions
-title: Actions
+title: アクション
 ---
 
-This section allows you to:
+このセクションでは以下のような内容を取り扱います:
 
-* create actions to execute 4D code from your iOS app.
+* 4DのコードをiOS アプリから実行するアクションを作成する
 * define and add parameters to your actions.
 
 :::info 4D for Android
