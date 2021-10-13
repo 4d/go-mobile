@@ -13,7 +13,7 @@ In the **Sections** tab, you'll find all of the necessary steps to create your m
 * General
 * ストラクチャ
 * Data
-* Actions
+* アクション
 * Labels & Icons
 * Main Menu
 * Forms
