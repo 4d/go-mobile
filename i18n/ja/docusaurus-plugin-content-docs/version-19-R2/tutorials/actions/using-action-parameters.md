@@ -24,7 +24,7 @@ To begin, let's first download the **Starter project** based on our existing Tas
 href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/159a7b73bd3556890a205024af42440faf0b277c.zip">Download</a>
 </div>
 
-## ⒈ Add action
+## ⒈ 追加アクション
 
 Let's begin simple. Open the Tasks mobile project and go directly to the **Actions section**.
 
