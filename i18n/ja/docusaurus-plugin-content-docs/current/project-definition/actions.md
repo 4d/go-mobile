@@ -160,9 +160,9 @@ title: アクション
 * 共有
 * 並べ替え
 
-### Add action
+### 追加アクション
 
-4D mobile projects makes the **Add actions** creation process very simple.
+4D モバイルプロジェクトでは、容易かつシンプルに**追加アクション** を作成することができます。
 
 The only thing you need to do is select the **Add action for** option, accessible from the **+ button** at the bottom of the Actions table.
 
