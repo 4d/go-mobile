@@ -47,7 +47,7 @@ For this, let's create an action using a preset **Add** action:
 
 At this point, all **Add action parameters** are created automatically and ready to use.
 
-## ⒉ Edit action
+## ⒉ 編集アクション
 
 Now let's create an action that will allow you to **edit your app content**.
 
@@ -69,7 +69,7 @@ At this point, you will see:
 
 Don't worry, we'll handle the 4D code for these actions later. :-)
 
-## ⒊ Delete action
+## ⒊ 削除アクション
 
 The preset **Delete** action creation process is nearly the same as the Edit action:
 
@@ -81,7 +81,7 @@ The preset **Delete** action creation process is nearly the same as the Edit act
 
 At this point, you will see a **new action** named *"deleteTasks"* with *"Remove"* as the default label.
 
-![Delete action](img/Delete-action-final.png)
+![削除アクション](img/Delete-action-final.png)
 
 You don't need to worry about parameters or properties for this type of action.
 
