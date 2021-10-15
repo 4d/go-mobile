@@ -158,60 +158,60 @@ title: アクション
 * 追加
 * 削除
 * 共有
-* 並べ替え
+* ソート
 
 ### 追加アクション
 
 4D モバイルプロジェクトでは、容易かつシンプルに**追加アクション** を作成することができます。
 
-The only thing you need to do is select the **Add action for** option, accessible from the **+ button** at the bottom of the Actions table.
+必要なことは、アクションテーブルの下部にある**+ ボタン** をクリックすると表示される**追加アクション** オプションを選択するだけです。
 
 ![Add actions](img/Actions-Add-action-4D-for-iOS.png)
 
-Then just **select the table** you want to link to this add action.
+そしてその追加アクションにリンクしたい**テーブルを選択** するだけです。
 
-This will **automatically create** all the parameters for you in the Project Editor. In the generated app, this will allow you to edit each field value.
+これによって、必要な引数が全てプロジェクトエディター内にて**自動的に追加されます** 。 生成されたアプリ内では、このボタンによってそれぞれのフィールドの値を編集することができます。
 
-For those kind of action, you will see that all **properties** are already filled in for your convenience at the right side of the parameter's list.
-
-
-### Edit action
-
-**Edit actions** creation follows the same process as the Add actions, with the exception that you will not be able to define default values from the Actions section.
+これらの種類のアクションにおいては、アクション引数リストの右側にある**プロパティ** が全て必要な分が既に入力されていることが分かります。
 
 
+### 編集アクション
 
-### Delete action
+**編集アクション** の作成の手順は追加アクションのものと同じプロセスですが、アクションセクションからはデフォルト値を定義することができないという点だけが異なります。
 
-**Delete action** creation follows the same process as the Edit action. The only difference is that this action allows you to remove an entity.
 
-To create a Delete action, select the **Delete action for** option accessible from the **+ button** at the bottom of the Actions table.
 
-This type of action should be used with caution.
+### 削除アクション
+
+**削除アクション** の作成の手順は編集アクションのものと同じプロセスです。 唯一の違いは、このアクションを使用するとエンティティを削除することができるという点です。
+
+削除アクションを作成するには、アクションテーブルの下部にある**+ ボタン** をクリックすると表示される**削除アクション** オプションを選択します。
+
+この種類のアクションは使用に際して注意が必要です。
 
 ![Delete actions](img/Actions-Delete-action-4D-for-iOS.png)
 
-### Share action
+### 共有アクション
 
-Selecting the **Share action** will allow your mobile users to share content with other users. You just need to select the scope:
+**共有アクション** を選択すると、モバイルアプリのユーザーがコンテンツを他のユーザーと共有することができるようになります。 このアクションではスコープを選択する必要があります:
 
-- **entity**: to share content from a detail form
-- **table**: to share a list form
+- **エンティティ**: 詳細フォームのコンテンツを共有する
+- **テーブル**: リストフォームを共有する
 
-See the [Deep Linking](../special-features/deep-linking.md) page for more details.
+詳細については[ディープリンキング](../special-features/deep-linking.md)のページを参照してください。
 
-### Sort action
+### ソートアクション
 
-**Sort actions** are useful to:
+**ソートアクション**は以下のような目的のために有用です:
 
-- define a default sort order for the table list forms
-- allow your mobile users to choose a list sort order
+- テーブルのリストフォームのデフォルトのソート順を定義する
+- モバイルアプリのユーザーがリストのソート順を選択できるようにする
 
-When you create a sort action for a table, you need to select the first field on which the sort will be done:
+テーブルに対して並べ替えアクションを作成した場合、ソートが実行される最初のフィールドを選択する必要があります:
 
 ![Docusaurus](img/sort-select.png)
 
-The field is added to the Sort Criteria list. An ascending sort order is set by default, but you can change it using the **Sort order** menu.
+フィールドはソート条件リストに追加されます。 デフォルトでは昇順のソート順が適用されますが、**ソート順** メニューを使用することでそれを変更することができます。
 
 You can sort entities in more than one field. Each field you sort is referred to as a sort level. For example, the results of a two-level ascending sort of the `lastName` and `firstName` fields would produce a list such as this:
 
