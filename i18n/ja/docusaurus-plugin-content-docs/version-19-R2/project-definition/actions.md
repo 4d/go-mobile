@@ -231,24 +231,24 @@ Zymosian, Elmer
 
 #### モバイルアプリ上でのソート順メニュー
 
-あるテーブルに対して1つ以上のソートアクションを定義していた場合、モバイルアプリのユーザーは自動的に**sort** メニューを使用できるようになります。 It contains all the predefined sort actions:
+あるテーブルに対して1つ以上のソートアクションを定義していた場合、モバイルアプリのユーザーは自動的に**ソート** メニューを使用できるようになります。 ここには定義済みソートアクションが全て格納されています:
 
 ![sort](img/sort-go-mobile.gif)
 
 
-> When only one sort action is defined for a table, the **sort** menu is not displayed on the mobile app side.
+> テーブルに対してソートアクションが一つしか定義されていない場合、モバイルアプリ側では**ソート** メニューは表示されません。
 
 ### On Mobile App Action
 
 The [On Mobile App Action]`(https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)` database method is available to call all of your 4D methods.
 
-After creating all of your actions, just click on the Create button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
+全てのアクションを作成し終わったあと、アクションテーブル内の編集... ボタンをクリックすると、*On Mobile App Action* メソッド内に作成した全てのアクション名を含んだ*Case of* コードブロックが自動的に生成されます。
 
-:::note notes
+:::note 注意
 
-- You can refresh the selection after executing an action using `$out.dataSynchro:=True`.
-- You can notify the app user when action has been executed using `$out.statusText:="Message you want to display"`.
-- You can also decide to force close the Edition form using `$out.close:=True`.
+- `$out.dataSynchro:=True` というコードをアクション実行後に使用することで、セレクションを更新することができます。
+- `$out.statusText:="表示したいメッセージ"` というコードを使用することで、アクション実行時にアプリユーザーに対して通知をすることができます。
+- `$out.close:=True` というコードを使用することで、編集フォームを強制的に閉じることもできます。
 
 :::
 
@@ -270,7 +270,7 @@ They display all the tasks related to the table or to the entity that you are cu
 
 ![Action section](img/screen2.png)
 
-:::note notes
+:::note 注意
 
 - The "Share" predefined action is only executable online
 - Actions are editable while pending, but they can no longer be modified once they switch to the "Completed" mode.
