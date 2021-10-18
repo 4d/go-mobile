@@ -213,7 +213,7 @@ title: アクション
 
 フィールドはソート条件リストに追加されます。 デフォルトでは昇順のソート順が適用されますが、**ソート順** メニューを使用することでそれを変更することができます。
 
-You can sort entities in more than one field. Each field you sort is referred to as a sort level. For example, the results of a two-level ascending sort of the `lastName` and `firstName` fields would produce a list such as this:
+エンティティのソートは複数のフィールドに対して行うことが可能です。 ソートを行うそれぞれのフィールドはソートレベルと呼ばれます。 例えば、`lastName` および `firstName` フィールドに対して2レベルの昇順ソートを行なった場合、結果は以下のような並び順になります:
 
 ```4d
 Aardvark, Anthony
@@ -224,14 +224,14 @@ Zygote, Elena
 Zymosian, Elmer
 ```
 
-To add one or more sort level(s) in the Sort Criteria list, select the **+** button under the list and configure each level:
+ソート条件リストに1つ以上のソートレベルを追加するには、リスト下部の**+** ボタンを選択し、それぞれのレベルに対して設定を行います:
 
 ![sort](img/ascending.png)
 
 
-#### Sort order menu on the mobile app
+#### モバイルアプリ上でのソート順メニュー
 
-When you define more than one sort action for a table, mobile users automatically benefit from a **sort** menu. It contains all the predefined sort actions:
+あるテーブルに対して1つ以上のソートアクションを定義していた場合、モバイルアプリのユーザーは自動的に**sort** メニューを使用できるようになります。 It contains all the predefined sort actions:
 
 ![sort](img/sort-go-mobile.gif)
 
