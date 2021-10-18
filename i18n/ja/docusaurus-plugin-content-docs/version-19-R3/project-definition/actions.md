@@ -231,44 +231,44 @@ Zymosian, Elmer
 
 #### モバイルアプリ上でのソート順メニュー
 
-あるテーブルに対して1つ以上のソートアクションを定義していた場合、モバイルアプリのユーザーは自動的に**sort** メニューを使用できるようになります。 It contains all the predefined sort actions:
+あるテーブルに対して1つ以上のソートアクションを定義していた場合、モバイルアプリのユーザーは自動的に**ソート** メニューを使用できるようになります。 ここには定義済みソートアクションが全て格納されています:
 
 ![sort](img/sort-go-mobile.gif)
 
 
-> When only one sort action is defined for a table, the **sort** menu is not displayed on the mobile app side.
+> テーブルに対してソートアクションが一つしか定義されていない場合、モバイルアプリ側では**ソート** メニューは表示されません。
 
 ### On Mobile App Action
 
-The [On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html) database method is available to call all of your 4D methods.
+[On Mobile App Action](https://doc.4d.com/4Dv18/4D/18.4/On-Mobile-App-Action-database-method.301-5233128.ja.html) データベースメソッドを利用すると、全ての4D メソッドを呼び出すことが可能です。
 
-After creating all of your actions, just click on the Create button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
+全てのアクションを作成し終わったあと、アクションテーブル内の編集... ボタンをクリックすると、*On Mobile App Action* メソッド内に作成した全てのアクション名を含んだ*Case of* コードブロックが自動的に生成されます。
 
-:::note notes
+:::note 注意
 
-- You can refresh the selection after executing an action using `$out.dataSynchro:=True`.
-- You can notify the app user when action has been executed using `$out.statusText:="Message you want to display"`.
-- You can also decide to force close the Edition form using `$out.close:=True`.
+- `$out.dataSynchro:=True` というコードをアクション実行後に使用することで、セレクションを更新することができます。
+- `$out.statusText:="表示したいメッセージ"` というコードを使用することで、アクション実行時にアプリユーザーに対して通知をすることができます。
+- `$out.close:=True` というコードを使用することで、編集フォームを強制的に閉じることもできます。
 
 :::
 
-## Action input controls
+## アクション入力コントロール
 
-### How to use a custom input from the gallery
+### キャラリーからカスタム入力を使用する方法
 
-You can easily interact with native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with native code.
+カスタムの入力コントロールを使用することで、ネイティブのアプリと容易にやりとりをすることができます。これはネイティブコードを使用した[ラベル & アイコン カスタムフォーマッター](labels-and-icons.md) と同じやり方を踏襲しています。
 
-To do so, you can create your own input controls with native code, or you can download a few input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific “inputControls” folder (`mybase/Resources/mobile/inputControls`), unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties of the action.
+これをやるためには、独自の入力コントロールをネイティブコードを使用して作成するか、または私たちの[ギャラリー](https://4d-go-mobile.github.io/gallery/#/type/input-control) から必要な入力コントロールをダウンロードすることもできます。アプリでの用途に応じて選択してください。 これらを特定の“inputControls” フォルダ(`mybase/Resources/mobile/inputControls`) へとドロップし、展開したのち新規に作成したフォルダへとドラッグします。 これによってこれらの入力コントロールはアクションの引数プロパティ内にあるプロジェクトエディターの入力コントロールメニューから利用・選択が可能になります。
 
-For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
+例えば、モバイルの連絡先リストからクライアントの電話番号を取得したい場合、*phoneContact* 入力コントロールテンプレートを使用することでクライアントの電話番号フィールドを自動的に埋めることが可能になります。
 
 ![Architecture](img/inputWithSwift.png) ![編集](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png)![Edit screen](img/phoneContactIcon4.png)
 
-Bear in mind that all input controls from the gallery are open source and available on Github. So feel free to share your own input controls or your feedback on the [4D Forum](https://discuss.4d.com/).
+キャラリー内の全ての入力コントロールはオープンソースであり、Github から取得可能です。 自分の入力コントロールを共有したい、あるいは入力コントロールに対するフィードバックをしたい場合、お気軽に[4D Forum](https://discuss.4d.com/) までご投稿ください。
 
-### Input control selection
+### 入力コントロールセクション
 
-Action input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either static or dynamic:
+アクション入力コントロールは、モバイルアプリ内でフォーマットされた要素(値、ピクチャーなど) を表示します。 これらの要素はアクションフォーム内に自動的に含まれます。具体的には選択リスト内に含まれ、そこから値を1つ選択し、引数として使用することができます。 これらの選択リストの動作は、静的または動的(ダイナミック) のどちらかを選ぶことができます:
 - **Static** choice lists (predefined choices hard coded in json) that are located in an 'inputControls' folder (`mybase/Resources/mobile/inputControls`) in a manifest.json file. They are defined by several elements, as follows:
 
 | Property               | Type               | 詳細                                                                                                      |
@@ -383,7 +383,7 @@ They display all the tasks related to the table or to the entity that you are cu
 
 ![Action section](img/screen2.png)
 
-:::note notes
+:::note 注意
 
 - The "Share" predefined action is only executable online
 - Actions are editable while pending, but they can no longer be modified once they switch to the "Completed" mode.
