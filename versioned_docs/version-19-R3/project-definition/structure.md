@@ -202,9 +202,8 @@ Else
 End if
  ```
 
-:::note notes
+:::note
 
-- Only computed attributes with values that change over time - only depending on other attributes of the same DataClass - will be updated on the mobile app. Computed 
 - Computed attributes are only retrieved when an entity attribute has been modified.
 
 :::
