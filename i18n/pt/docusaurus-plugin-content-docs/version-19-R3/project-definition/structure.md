@@ -204,6 +204,7 @@ End if
 :::nota
 
 - Computed attributes are only retrieved when an entity attribute has been modified.
+- For example, if a computed attribute returns the current time, the current date will never be updated in the mobile app, unless one of the entity attributes is modified.
 
 :::
 
