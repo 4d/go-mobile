@@ -231,55 +231,55 @@ Zymosian, Elmer
 
 #### モバイルアプリ上でのソート順メニュー
 
-あるテーブルに対して1つ以上のソートアクションを定義していた場合、モバイルアプリのユーザーは自動的に**sort** メニューを使用できるようになります。 It contains all the predefined sort actions:
+あるテーブルに対して1つ以上のソートアクションを定義していた場合、モバイルアプリのユーザーは自動的に**ソート** メニューを使用できるようになります。 ここには定義済みソートアクションが全て格納されています:
 
 ![sort](img/sort-go-mobile.gif)
 
 
-> When only one sort action is defined for a table, the **sort** menu is not displayed on the mobile app side.
+> テーブルに対してソートアクションが一つしか定義されていない場合、モバイルアプリ側では**ソート** メニューは表示されません。
 
 ### On Mobile App Action
 
-The [On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html) database method is available to call all of your 4D methods.
+[On Mobile App Action](https://doc.4d.com/4Dv18/4D/18.4/On-Mobile-App-Action-database-method.301-5233128.ja.html) データベースメソッドを利用すると、全ての4D メソッドを呼び出すことが可能です。
 
-After creating all of your actions, just click on the Create button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
+全てのアクションを作成し終わったあと、アクションテーブル内の編集... ボタンをクリックすると、*On Mobile App Action* メソッド内に作成した全てのアクション名を含んだ*Case of* コードブロックが自動的に生成されます。
 
-:::note notes
+:::note 注意
 
-- You can refresh the selection after executing an action using `$out.dataSynchro:=True`.
-- You can notify the app user when action has been executed using `$out.statusText:="Message you want to display"`.
-- You can also decide to force close the Edition form using `$out.close:=True`.
+- `$out.dataSynchro:=True` というコードをアクション実行後に使用することで、セレクションを更新することができます。
+- `$out.statusText:="表示したいメッセージ"` というコードを使用することで、アクション実行時にアプリユーザーに対して通知をすることができます。
+- `$out.close:=True` というコードを使用することで、編集フォームを強制的に閉じることもできます。
 
 :::
 
-## Action input controls
+## アクション入力コントロール
 
-### How to use a custom input from the gallery
+### キャラリーからカスタム入力を使用する方法
 
-You can easily interact with native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with native code.
+カスタムの入力コントロールを使用することで、ネイティブのアプリと容易にやりとりをすることができます。これはネイティブコードを使用した[ラベル & アイコン カスタムフォーマッター](labels-and-icons.md) と同じやり方を踏襲しています。
 
-To do so, you can create your own input controls with native code, or you can download a few input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific “inputControls” folder (`mybase/Resources/mobile/inputControls`), unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties of the action.
+これをやるためには、独自の入力コントロールをネイティブコードを使用して作成するか、または私たちの[ギャラリー](https://4d-go-mobile.github.io/gallery/#/type/input-control) から必要な入力コントロールをダウンロードすることもできます。アプリでの用途に応じて選択してください。 これらを特定の“inputControls” フォルダ(`mybase/Resources/mobile/inputControls`) へとドロップし、展開したのち新規に作成したフォルダへとドラッグします。 これによってこれらの入力コントロールはアクションの引数プロパティ内にあるプロジェクトエディターの入力コントロールメニューから利用・選択が可能になります。
 
-For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
+例えば、モバイルの連絡先リストからクライアントの電話番号を取得したい場合、*phoneContact* 入力コントロールテンプレートを使用することでクライアントの電話番号フィールドを自動的に埋めることが可能になります。
 
 ![Architecture](img/inputWithSwift.png) ![編集](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png)![Edit screen](img/phoneContactIcon4.png)
 
-Bear in mind that all input controls from the gallery are open source and available on Github. So feel free to share your own input controls or your feedback on the [4D Forum](https://discuss.4d.com/).
+キャラリー内の全ての入力コントロールはオープンソースであり、Github から取得可能です。 自分の入力コントロールを共有したい、あるいは入力コントロールに対するフィードバックをしたい場合、お気軽に[4D Forum](https://discuss.4d.com/) までご投稿ください。
 
-### Input control selection
+### 入力コントロールセクション
 
-Action input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either static or dynamic:
-- **Static** choice lists (predefined choices hard coded in json) that are located in an 'inputControls' folder (`mybase/Resources/mobile/inputControls`) in a manifest.json file. They are defined by several elements, as follows:
+アクション入力コントロールは、モバイルアプリ内でフォーマットされた要素(値、ピクチャーなど) を表示します。 これらの要素はアクションフォーム内に自動的に含まれます。具体的には選択リスト内に含まれ、そこから値を1つ選択し、引数として使用することができます。 これらの選択リストの動作は、静的または動的(ダイナミック) のどちらかを選ぶことができます:
+- **静的** な選択リスト(json 内にハードコードされている定義済み選択肢)は'inputControls' フォルダ(`mybase/Resources/mobile/inputControls`)内に配置されているmanifest.json ファイル内で定義されています。 この選択リストは以下のような複数の要素から定義されています:
 
-| Property               | Type               | 詳細                                                                                                      |
-| ---------------------- | ------------------ | ------------------------------------------------------------------------------------------------------- |
-| **"name"**             | text               | action input control name                                                                               |
-| Optional **"binding"** | text               | "imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)  |
-| **"choiceList"**       | object             | an object or collection to define a list of key(data sent to server)/value(displayed value to the user) |
-| **"type"**             | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control             |
-| Optional **"format"**  | text               | to select interface: push(default if not defined)/segmented/popover/sheet/picker                        |
+| プロパティ               | Type          | 詳細                                                                             |
+| ------------------- | ------------- | ------------------------------------------------------------------------------ |
+| **"name"**          | text          | アクション入力コントロール名                                                                 |
+| オプション **"binding"** | text          | 画像をひもづけるための"imageNamed" (実際の画像はaction formatter フォルダ内の"images" サブフォルダに入れる必要あり) |
+| **"choiceList"**    | オブジェクト        | キー(サーバーに送られるデータ) /値(ユーザーに表示される値) のリストを定義するためのオブジェクトまたはコレクション                   |
+| **"type"**          | テキストまたはコレクション | 入力コントロールの型(text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                   |
+| オプション **"format"**  | text          | インターフェースを選択: push(未定義の場合のデフォルト)/segmented/popover/sheet/picker                 |
 
-Here is an example of a manifest.json file containing the contact information of a company's subsidiaries, that can be used as a static choice list:
+以下は、静的な選択リストとして使用可能な、ある会社の支社の連絡先情報を格納したmanifest.json ファイルの一例です:
 ```4d
 {
     "name": "choiceListSheet",
@@ -298,27 +298,27 @@ Here is an example of a manifest.json file containing the contact information of
 }
 ```
 
-- **Dynamic** choice lists based on datasource (choices depending on the database content). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The manifest.json file is composed of the following elements:
+- **動的(ダイナミック)** 選択リストはデータソースに基づいた選択リストです(選択肢はデータベースのコンテンツに応じて変化します)。 このメソッドを使用すると、ヘルパーモジュールを使用してフォームフィールドに値を入力することで、データを素早く取得することができます。 作成されたリストはモバイルアプリから直接利用可能になるだけではなく、常に更新していくことが可能になります。 manifest.json ファイルには以下のような要素が格納されています:
 
-| Property              | Type               | 詳細                                                                                             |
-| --------------------- | ------------------ | ---------------------------------------------------------------------------------------------- |
-| **"name"**            | text               | input control name                                                                             |
-| **"choiceList"**      | object             | an object that contain "dataSource" (see table below)                                          |
-| **"type"**            | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control    |
-| Optional **"format"** | text               | to select interface: "push"(default if not defined), "segmented", "popover", "sheet", "picker" |
+| プロパティ              | Type          | 詳細                                                                       |
+| ------------------ | ------------- | ------------------------------------------------------------------------ |
+| **"name"**         | text          | 入力コントロール名                                                                |
+| **"choiceList"**   | オブジェクト        | "dataSource" を格納するオブジェクト(以下の表参照)                                         |
+| **"type"**         | テキストまたはコレクション | 入力コントロールの型(text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション             |
+| オプション **"format"** | text          | インターフェースを選択: "push"(未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker" |
 
-| Property         |                             | Type                       | 詳細                                                                                                                              |
-| ---------------- | --------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| **"dataSource"** |                             | object                     | an object that contain "dataClass", "field" and optional "entityFormat"                                                         |
-|                  | **"dataClass"**             | text                       | table name                                                                                                                      |
-|                  | **"field"**                 | text                       | used to extract data to send to server                                                                                          |
-|                  | Optional **"sort"**         | object / collection / text | can be an object that contains **"field"**(sort criteria/fieldName), and optional **"order"** (sort order ascending by default) |
-|                  | Optional **"search"**       | boolean / array            | can be an array that contain field to use for search                                                                            |
-|                  | Optional **"entityFormat"** | text                       | for the display value (if no format we use the extracted data from field)                                                       |
+| プロパティ            |                          | Type                   | 詳細                                                                            |
+| ---------------- | ------------------------ | ---------------------- | ----------------------------------------------------------------------------- |
+| **"dataSource"** |                          | オブジェクト                 | "dataClass"、"field"、そしてオプションの"entityFormat" を格納するオブジェクト。                      |
+|                  | **"dataClass"**          | text                   | テーブル名                                                                         |
+|                  | **"field"**              | text                   | サーバーに送るデータの取得に使用                                                              |
+|                  | オプション **"sort"**         | オブジェクト / コレクション / テキスト | **"field"**(ソート条件/fieldName)、そしてオプションの**"order"** (デフォルトでは昇順ソート順) を格納するオブジェクト |
+|                  | オプション **"search"**       | ブール / 配列               | 検索に使用するフィールドを格納した配列                                                           |
+|                  | オプション **"entityFormat"** | text                   | 表示する値(フォーマットが指定されていない場合、フィールドから取得したデータを使用)                                    |
 
-**Note:** When the choice list is extensive, the optional "search" element becomes available.
+**注意:** 選択リストが長くなった場合、オプションの"search" 要素が利用可能になります。
 
-Here is an example of a dynamic choice list:
+以下が動的な選択リストの一例です:
 
 ```4d
 {
@@ -339,31 +339,31 @@ Here is an example of a dynamic choice list:
 }
 ```
 
-On the Project editor side, once you select your **Input control** format, the **dataSource** will be selectable from a filtered list based on the format you have selected. Your app will then be updated and ready-to-use!
+プロジェクトエディター側では、**入力コントロール** フォーマットを選択すると、**dataSource** は選択されたフォーマットに基づいてフィルターされたリストから選択可能になります。 これでアプリは更新されて使用する準備が整います。
 
-Here is an example with the *push* format:
+以下は*push* フォーマットの一例です:
 
 ![customInput](img/customInput1.png) ![customInput2](img/customInput2.png)
 
-Here are the different formats available on the generated application:
+以下が生成されたアプリケーション上で利用可能なフォーマットの種類です:
 
- - Push format:
+ - Push フォーマット:
 
 ![customInput2](img/push.png)
 
-- Segmented & picker formats:
+- Segmented & picker フォーマット:
 
 ![customInput2](img/Sans-titre.png)
 
- - Popover format:
+ - Popover フォーマット:
 
 ![customInput2](img/popover.png)
 
- - Sheet format:
+ - Sheet フォーマット:
 
 ![customInput2](img/sheet.png)
 
-**Note:** You can access your input control using the arrow icon next to the "Input Control" field.
+**注意:** 入力コントロールは"入力コントロール" フィールドの横にある矢印を使用してアクセスすることができます。
 
 ## Offline mode actions
 
@@ -383,7 +383,7 @@ They display all the tasks related to the table or to the entity that you are cu
 
 ![Action section](img/screen2.png)
 
-:::note notes
+:::note 注意
 
 - The "Share" predefined action is only executable online
 - Actions are editable while pending, but they can no longer be modified once they switch to the "Completed" mode.
@@ -461,8 +461,8 @@ For your convenience, the Edition form includes a few **special features**:
 
 ## Where to go from here?
 
-* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
+* **アクション定義プロセス** について説明した[チュートリアル](getting-started.md) があります。
 
-* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
+* カスタムテンプレートを作成するための**アクション TAG 統合** について説明した[チュートリアル](adding-actions-template.md) もあります。
 
-* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
+* こちらの[チュートリアル](using-action-parameters.md) では**アクション引数の定義** について説明しています。
