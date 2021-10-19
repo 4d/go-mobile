@@ -1,14 +1,14 @@
 ---
 id: build-panel
-title: Build Panel
+title: ビルドパネル
 ---
 
-You can test your app at any moment during the development, thanks to the Simulator located on the BUILD tab of the Project Editor.
+アプリの開発の途中において、シミュレータを使用していつでもテストを行うことができます。シミュレータはプロジェクトエディターのビルドタブ内に配置されています。
 
 ![BuildTab](img/Build-Tab-4D-for-iOS.png)
 
 
-Let’s take a closer look at the Build tab options:
+ビルドタブでのオプションについて説明していきます:
 
 * **Build and Run:** Launches the app in the Simulator.
 
