@@ -204,9 +204,7 @@ End if
 :::note
 
 - Computed attributes are only retrieved when an entity attribute has been modified.
-- For example, if a computed attribute returns the current time, the current date will never be updated in the mobile app, unless one of the entity attributes is modified.
-
-:::
+- For example: on a “StudentEntity” dataclass, a “currentTime” computed attribute returns **Current Time** and is used in your mobile project in a “Student" list or detail form. In the generated mobile app, “currentTime” field for a given “Student Entity" won’t be updated until one of this “Student Entity" attributes is modified. :::
 
 ### Project editor side
 
