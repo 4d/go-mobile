@@ -19,7 +19,7 @@ title: データ
 
 アプリで扱われるデータを取得するデータファイルを選択します:
 
-- **カレントデータファイル**: データはカレントの4D プロジェクトのデータファイルから取得されます。 このオプションは開発フェーズにおいて有用です。 Since it requires that the Web server is launched, a **Start Web Server** button is displayed if it is not running.
+- **カレントデータファイル**: データはカレントの4D プロジェクトのデータファイルから取得されます。 このオプションは開発段階において有用です。 このオプションを使用するためにはWebサーバーが起動している必要があるため、サーバーが起動されていない場合には**Web サーバーを開始** ボタンが表示されます。
 
 - **Production server data file**: the data is taken from a production server running the 4D project over the network. The **Production URL** must be entered from the [**Publishing** page](publishing.md) if you choose this option. If not defined, you can click on the **Set the Server URL** button to open the Publishing page. This option requires that you select explicitely the `key.mobileapp` security file (see below).
 
