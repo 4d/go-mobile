@@ -1,25 +1,25 @@
 ---
 id: data
-title: Data
+title: データ
 ---
 
-This page is used to configure the data that will be handled by your mobile app. It allows you to:
+このページはモバイルアプリが扱うデータを設定するために使用します。 このページを使用すると以下のようなことができるようになります:
 
-* select the source of data to include in your app (**Current data file** or **Production server data file**)
-* define which set of data should be preloaded and when to regenerate it,
-* filter data to include in your app depending on **filter queries** and **user information**.
+* アプリ内に格納するデータのソースを選択する(**カレントのデータファイル** あるいは **プロダクションサーバーのデータファイル**)
+* どのデータセットをリロードし、どんなときにデータを再生成するかを定義する
+* **フィルタークエリ** および **ユーザー情報** に応じてアプリ内に格納するデータをフィルタリングする
 
 ![Data section](img/Data-tab-4D-for-iOS.png)
 
-## Data source
+## データソース
 
-This panel allows you to configure the source of data handled by your app.
+このパネルを使用するとアプリで管理されるデータのソースを設定することができます。
 
-### Data file
+### データファイル
 
-Select the data file from which to get the data that will be handled by your app:
+アプリで扱われるデータを取得するデータファイルを選択します:
 
-- **Current data file**: the data is taken from the current data file of the 4D project. This option is useful in the development phase. Since it requires that the Web server is launched, a **Start Web Server** button is displayed if it is not running.
+- **カレントデータファイル**: データはカレントの4D プロジェクトのデータファイルから取得されます。 このオプションは開発フェーズにおいて有用です。 Since it requires that the Web server is launched, a **Start Web Server** button is displayed if it is not running.
 
 - **Production server data file**: the data is taken from a production server running the 4D project over the network. The **Production URL** must be entered from the [**Publishing** page](publishing.md) if you choose this option. If not defined, you can click on the **Set the Server URL** button to open the Publishing page. This option requires that you select explicitely the `key.mobileapp` security file (see below).
 
