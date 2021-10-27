@@ -52,7 +52,7 @@ It is recommended to copy the file in the `/Data/MobileApps` folder of the local
 
 :::info
 
-This key is only necessary to access data to be embedded in the app. Subsequent accesses to server data from the apps are `[authenticated at the request level](publishing.md/authentication)`.
+This key is only necessary to access data to be embedded in the app. Subsequent accesses to server data from the apps are [authenticated at the request level](publishing.md).
 
 :::
 
