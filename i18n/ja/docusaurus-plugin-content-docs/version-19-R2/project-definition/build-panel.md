@@ -1,40 +1,40 @@
 ---
 id: build-panel
-title: Build Panel
+title: ビルドパネル
 ---
 
-You can test your app at any moment during the development, thanks to the Simulator located on the BUILD tab of the Project Editor.
+アプリの開発の途中において、シミュレータを使用していつでもテストを行うことができます。シミュレータはプロジェクトエディターのビルドタブ内に配置されています。
 
 ![BuildTab](img/Build-Tab-4D-for-iOS.png)
 
 
-Let’s take a closer look at the Build tab options:
+ビルドタブでのオプションについて説明していきます:
 
-* **Build and Run:** Launches the app in the Simulator.
+* **ビルドして実行:** アプリをシミュレーター内で起動します。
 
-* **iPhone X:** The default Simulator. Clicking here will reveal a dropdown list with all available simulators.
+* **iPhone X:** デフォルトのシミュレーターです。 ここをクリックすると利用可能な全てのシミュレーターの一覧がドロップダウンに表示されます。
 
-* **Project:** Reveals a dropdown list where you can **open the project folder** or **product folder**, or **open the product with Xcode**. This dropdown list is useful for [debug operations](../debug/from-project-editor).
+* **プロジェクト:** ドロップダウンリストが表示され、**プロジェクトフォルダを開く** あるいは **プロダクフォルダを開く**、または **プロダクトをXcodeで開く**ことができます。 このドロップダウンリストは[デバッグ用途](../debug/from-project-editor)のためには非常に有用です。
 
-* **Install:** Installs the application on a connected device (see [Installing on your iOS device](../deployment/testing-on-your-device)).
+* **インストール:** アプリケーションを接続されたデバイスへとインストールします([自分のiOS デバイスへとインストールする](../deployment/testing-on-your-device)を参照してください)。
 
 
-## Using the Simulator
+## シミュレータを使用する
 
-You can use the Simulator by following these steps.
+シミュレータを使用するには以下の手順に従って下さい。
 
-1. Select your device.
+1. デバイスを選択する
 
-In the BUILD tab of  the Project Editor, select an iOS or Android device to use for running your app.
+プロジェクトエディターのビルドタブ内から、アプリを実行するのに使用するiOS またはAndroid デバイスを選択して下さい。
 
-![Device selection](img/device-selection-4D-for-ios.png)
+![デバイス選択](img/device-selection-4D-for-ios.png)
 
-2. Click on the **Build and Run** button.
+2. **ビルドして実行** ボタンをクリックする
 
 ![Build and Run](img/build-and-run-4D-for-iOS.png)
 
-3. Test your app.
+3. アプリをテストする
 
-Test navigating between the list and detail forms in your app.
+アプリ内でリストフォームと詳細フォームを切り替えながらテストしてみて下さい。
 
-![Test in Simulator](img/simulator-forms-4D-for-iOS.png) 
+![シミュレーターで動作チェック](img/simulator-forms-4D-for-iOS.png) 

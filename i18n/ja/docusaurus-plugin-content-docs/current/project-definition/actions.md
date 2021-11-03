@@ -1,219 +1,219 @@
 ---
 id: actions
-title: Actions
+title: アクション
 ---
 
-This section allows you to:
+このセクションでは以下のような内容を取り扱います:
 
-* create actions to execute 4D code from your iOS app.
-* define and add parameters to your actions.
+* 4DのコードをiOS アプリから実行するアクションを作成する
+* アクションに渡す引数を定義して渡す
 
-:::info 4D for Android
+:::4D for Androidにおける注意
 
-This section is currently not available in 4D for Android.
+このセクションで触れている内容は4D for Android では現在ご利用いただけません。
 
 :::
 
-## Project Editor Side
+## プロジェクトエディター側での設定
 
-### Create your action
+### アクションを作成する
 
-You can create a new action by clicking on the + button at the bottom of the Actions table. A new line will appear in the Actions table.
+アクションテーブルの下部にある + ボタンをクリックすることで、新しいアクションを作成できます。 クリックするとアクションテーブル内に新しい行が追加されます。
 
-Next you'll need to define the following:
+次に、以下のものを定義する必要があります:
 
-* **Names:** The action name to use in the [On Mobile App Action](https://developer.4d.com/4d-for-ios/docs/en/actions.html#on-mobile-app-action) database method to trigger your 4D code.
-* **Icons:** The icon to choose from your icon library. You can also add your own icon by following this [tutorial]`(using-icons.html)`.
-* **Short and long Labels:** The labels for the actions to display in your app.
-* **Table:** The table on which you want to apply the action.
-* **Scope:** Where to use the action, an **entity** or a **table**.
+* **名前:** [On Mobile App Action](https://developer.4d.com/4d-for-ios/docs/ja/actions.html#on-mobile-app-action) データベースメソッド内で4Dコードをトリガーする際に使用するアクションの名前
+* **アイコン:** アイコンライブラリーからアイコンを選択して下さい。 またこちらの[tutorial]`(using-icons.html)`に従うことで、独自のアイコンを追加することもできます。
+* **短いラベルと長いラベル:** アプリ内で表示されるアクションのラベル
+* **テーブル:** アクションを適用したいテーブル
+* **スコープ:** アクションを使用する対象を決めます。**カレントエンティティ** または **テーブル**
 
 ![Action section](img/Actions-section-4D-for-iOS.png)
 
-### Add parameters to your action
+### アクションに引数を追加
 
-You can add **action parameters** and **edit** data directly from your app.
+**アクション引数** を追加することでアプリから直接データを**編集**することができます。
 
-For each parameter, you can edit the following properties:
+それぞれの引数について、以下のプロパティを設定することができます:
 
-* Name
-* Long label
-* Short label
-* Format
-* Input constraints (define minimum or maximum values)
-* Placeholder
-* Mandatory field definition
-* Default value
+* 名前
+* (長い)ラベル
+* 短いラベル
+* フォーマット
+* 入力制限(最小値または最大値を定義可能)
+* プレースホルダー
+* 必須フィールド定義
+* デフォルト値
 
 ![Action parameters](img/Actions-parameters-4D-for-iOS.png)
 
-You are free to change the order of parameters using drag and drop.
+ドラッグ&ドロップを使用して引数の順番を自由に変えることもできます。
 
-Here are the different **Formats** you can select for a parameter:
+引数に対して選択できる**フォーマット**の種類は以下の通りです:
 
 <table>
 
 <tr>
-<th colspan="2"  style={{textAlign: 'center'}}>TEXT</th>
+<th colspan="2"  style={{textAlign: 'center'}}>テキスト</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Description</th>
+<th>フォーマット</th><th>詳細</th>
 </tr><tr>
-<td>Text</td><td>Capitalize the first letter of a string</td>
+<td>テキスト</td><td>文字列の頭文字を大文字にします。</td>
 </tr><tr>
-<td>Email Address</td><td>Optimized iOS keyboard for email entry</td>
+<td>メールアドレス</td><td>メールアドレス入力用に最適化されたiOSキーボード</td>
 </tr><tr>
-<td>Phone Number</td><td>iOS keypad for entering telephone numbers.</td>
+<td>電話番号</td><td>電話番号入力用のiOSキーパッド</td>
 </tr><tr>
-<td>Account</td><td>Optimized iOS keyboard for username entry</td>
+<td>アカウント</td><td>ユーザー名入力用に最適化されたiOSキーボード</td>
 </tr><tr>
-<td>Password</td><td>Optimized to handle passwords</td>
+<td>パスワード</td><td>パスワードを管理するのに最適化されます。</td>
 </tr><tr>
-<td>URL</td><td>Optimized iOS keyboard for URL entry</td>
+<td>URL</td><td>URL入力に最適化されたiOSキーボード</td>
 </tr><tr>
-<td>Zip Code</td><td>Optimized iOS keyboard for zip code entry</td>
+<td>郵便番号</td><td>郵便番号入力に最適化されたiOSキーボード</td>
 </tr><tr>
-<td>Text area</td><td>Includes multiple lines of text in a single field</td>
+<td>テキストエリア</td><td>単一フィールド内に複数行のテキストを格納できます。</td>
 </tr><tr>
-<td>Barcode</td><td>Extract barcode associated value. Supported formats : EAN8, EAN13, Code 39, Code 93, Code 128, QR Code, UPC, PDF417</td>
+<td>バーコード</td><td>バーコードに割り当てられた値を取り出します。 サポートされてるフォーマット : EAN8、EAN13、Code 39、Code 93、Code 128、QRコード、UPC、PDF417</td>
 </tr>
 <tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>NUMBER</th>
+<th colspan="2" style={{textAlign: 'center'}}>数値</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Description</th>
+<th>フォーマット</th><th>詳細</th>
 </tr><tr>
-<td>Number</td><td>Numbers with decimals</td>
+<td>数値</td><td>小数点付き数値</td>
 </tr><tr>
-<td>Integer</td><td>Numbers without decimals</td>
+<td>整数</td><td>小数点のつかない数値</td>
 </tr><tr>
-<td>Scientific</td><td>Scientific Notation</td>
+<td>指数</td><td>指数表記</td>
 </tr><tr>
-<td>Percentage</td><td>Percent Notation</td>
+<td>パーセント</td><td>パーセント表記</td>
 </tr><tr>
-<td>Spell Out</td><td>Convert numbers into strings</td>
+<td>文字列化</td><td>数値を文字列へと変換</td>
 </tr>
 <tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>DATE</th>
+<th colspan="2" style={{textAlign: 'center'}}>日付</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Description</th>
+<th>フォーマット</th><th>詳細</th>
 </tr><tr>
-<td>Date</td><td>Nov 23, 1937</td>
+<td>日付</td><td>Nov 23, 1937</td>
 </tr><tr>
-<td>Short Date</td><td> 11/23/37</td>
+<td>短い日付</td><td> 11/23/37</td>
 </tr><tr>
-<td>Long Date</td><td>November 23, 1937</td>
+<td>長い日付</td><td>November 23, 1937</td>
 </tr><tr>
-<td>Full Date</td><td>Tuesday, November 23, 1937</td>
+<td>完全な日付</td><td>Tuesday, November 23, 1937</td>
 </tr><tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>TIME</th>
+<th colspan="2" style={{textAlign: 'center'}}>時間</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Description</th>
+<th>フォーマット</th><th>詳細</th>
 </tr><tr>
-<td>Time</td><td>3:30 PM</td>
+<td>時間</td><td>3:30 PM</td>
 </tr><tr>
-<td>Duration</td><td>2 hours 30 minutes</td>
+<td>経過時間</td><td>2 hours 30 minutes</td>
 </tr>
 <tr>
 <td colspan="2"></td>
 </tr>
 
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>BOOLEAN</th>
+<th colspan="2" style={{textAlign: 'center'}}>ブール</th>
 </tr><tr style={{textAlign: 'center'}}>
-<th>Format</th><th>Description</th>
+<th>フォーマット</th><th>詳細</th>
 </tr><tr>
-<td>Boolean</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
+<td>ブール</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
 </tr><tr>
-<td>Check mark</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
+<td>チェックマーク</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
 </tr>
 
 <tr>
 <td colspan="2"></td>
 </tr>
 <tr>
-<th colspan="2" style={{textAlign: 'center'}}>IMAGES</th>
+<th colspan="2" style={{textAlign: 'center'}}>画像</th>
 </tr>
 <tr>
-<td>Signature</td><td>Allow to sign with the finger</td>
+<td>署名</td><td>手書き文字での署名が可能に</td>
 </tr>
 
 </table>
 
-## Preset actions
+## 定義済みアクション
 
-4D mobile projects include the following (predefined) preset actions to manage your app content:
+4D mobile プロジェクトにはアプリの中身を管理するための、以下の(定義済み)アクションが含まれています:
 
-* Edit
-* Add
-* Delete
-* Share
-* Sort
+* 編集
+* 追加
+* 削除
+* 共有
+* ソート
 
-### Add action
+### 追加アクション
 
-4D mobile projects makes the **Add actions** creation process very simple.
+4D モバイルプロジェクトでは、容易かつシンプルに**追加アクション** を作成することができます。
 
-The only thing you need to do is select the **Add action for** option, accessible from the **+ button** at the bottom of the Actions table.
+必要なことは、アクションテーブルの下部にある**+ ボタン** をクリックすると表示される**追加アクション** オプションを選択するだけです。
 
 ![Add actions](img/Actions-Add-action-4D-for-iOS.png)
 
-Then just **select the table** you want to link to this add action.
+そしてその追加アクションにリンクしたい**テーブルを選択** するだけです。
 
-This will **automatically create** all the parameters for you in the Project Editor. In the generated app, this will allow you to edit each field value.
+これによって、必要な引数が全てプロジェクトエディター内にて**自動的に追加されます** 。 生成されたアプリ内では、このボタンによってそれぞれのフィールドの値を編集することができます。
 
-For those kind of action, you will see that all **properties** are already filled in for your convenience at the right side of the parameter's list.
-
-
-### Edit action
-
-**Edit actions** creation follows the same process as the Add actions, with the exception that you will not be able to define default values from the Actions section.
+これらの種類のアクションにおいては、アクション引数リストの右側にある**プロパティ** が全て必要な分が既に入力されていることが分かります。
 
 
+### 編集アクション
 
-### Delete action
+**編集アクション** の作成の手順は追加アクションのものと同じプロセスですが、アクションセクションからはデフォルト値を定義することができないという点だけが異なります。
 
-**Delete action** creation follows the same process as the Edit action. The only difference is that this action allows you to remove an entity.
 
-To create a Delete action, select the **Delete action for** option accessible from the **+ button** at the bottom of the Actions table.
 
-This type of action should be used with caution.
+### 削除アクション
+
+**削除アクション** の作成の手順は編集アクションのものと同じプロセスです。 唯一の違いは、このアクションを使用するとエンティティを削除することができるという点です。
+
+削除アクションを作成するには、アクションテーブルの下部にある**+ ボタン** をクリックすると表示される**削除アクション** オプションを選択します。
+
+この種類のアクションは使用に際して注意が必要です。
 
 ![Delete actions](img/Actions-Delete-action-4D-for-iOS.png)
 
-### Share action
+### 共有アクション
 
-Selecting the **Share action** will allow your mobile users to share content with other users. You just need to select the scope:
+**共有アクション** を選択すると、モバイルアプリのユーザーがコンテンツを他のユーザーと共有することができるようになります。 このアクションではスコープを選択する必要があります:
 
-- **entity**: to share content from a detail form
-- **table**: to share a list form
+- **エンティティ**: 詳細フォームのコンテンツを共有する
+- **テーブル**: リストフォームを共有する
 
-See the [Deep Linking](../special-features/deep-linking.md) page for more details.
+詳細については[ディープリンキング](../special-features/deep-linking.md)のページを参照してください。
 
-### Sort action
+### ソートアクション
 
-**Sort actions** are useful to:
+**ソートアクション**は以下のような目的のために有用です:
 
-- define a default sort order for the table list forms
-- allow your mobile users to choose a list sort order
+- テーブルのリストフォームのデフォルトのソート順を定義する
+- モバイルアプリのユーザーがリストのソート順を選択できるようにする
 
-When you create a sort action for a table, you need to select the first field on which the sort will be done:
+テーブルに対して並べ替えアクションを作成した場合、ソートが実行される最初のフィールドを選択する必要があります:
 
 ![Docusaurus](img/sort-select.png)
 
-The field is added to the Sort Criteria list. An ascending sort order is set by default, but you can change it using the **Sort order** menu.
+フィールドはソート条件リストに追加されます。 デフォルトでは昇順のソート順が適用されますが、**ソート順** メニューを使用することでそれを変更することができます。
 
-You can sort entities in more than one field. Each field you sort is referred to as a sort level. For example, the results of a two-level ascending sort of the `lastName` and `firstName` fields would produce a list such as this:
+エンティティのソートは複数のフィールドに対して行うことが可能です。 ソートを行うそれぞれのフィールドはソートレベルと呼ばれます。 例えば、`lastName` および `firstName` フィールドに対して2レベルの昇順ソートを行なった場合、結果は以下のような並び順になります:
 
 ```4d
 Aardvark, Anthony
@@ -224,62 +224,62 @@ Zygote, Elena
 Zymosian, Elmer
 ```
 
-To add one or more sort level(s) in the Sort Criteria list, select the **+** button under the list and configure each level:
+ソート条件リストに1つ以上のソートレベルを追加するには、リスト下部の**+** ボタンを選択し、それぞれのレベルに対して設定を行います:
 
 ![sort](img/ascending.png)
 
 
-#### Sort order menu on the mobile app
+#### モバイルアプリ上でのソート順メニュー
 
-When you define more than one sort action for a table, mobile users automatically benefit from a **sort** menu. It contains all the predefined sort actions:
+あるテーブルに対して1つ以上のソートアクションを定義していた場合、モバイルアプリのユーザーは自動的に**ソート** メニューを使用できるようになります。 ここには定義済みソートアクションが全て格納されています:
 
 ![sort](img/sort-go-mobile.gif)
 
 
-> When only one sort action is defined for a table, the **sort** menu is not displayed on the mobile app side.
+> テーブルに対してソートアクションが一つしか定義されていない場合、モバイルアプリ側では**ソート** メニューは表示されません。
 
 ### On Mobile App Action
 
-The [On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html) database method is available to call all of your 4D methods.
+[On Mobile App Action](https://doc.4d.com/4Dv18/4D/18.4/On-Mobile-App-Action-database-method.301-5233128.ja.html) データベースメソッドを利用すると、全ての4D メソッドを呼び出すことが可能です。
 
-After creating all of your actions, just click on the Create button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
+全てのアクションを作成し終わったあと、アクションテーブル内の編集... ボタンをクリックすると、*On Mobile App Action* メソッド内に作成した全てのアクション名を含んだ*Case of* コードブロックが自動的に生成されます。
 
-:::note notes
+:::note 注意
 
-- You can refresh the selection after executing an action using `$out.dataSynchro:=True`.
-- You can notify the app user when action has been executed using `$out.statusText:="Message you want to display"`.
-- You can also decide to force close the Edition form using `$out.close:=True`.
+- `$out.dataSynchro:=True` というコードをアクション実行後に使用することで、セレクションを更新することができます。
+- `$out.statusText:="表示したいメッセージ"` というコードを使用することで、アクション実行時にアプリユーザーに対して通知をすることができます。
+- `$out.close:=True` というコードを使用することで、編集フォームを強制的に閉じることもできます。
 
 :::
 
-## Action input controls
+## アクション入力コントロール
 
-### How to use a custom input from the gallery
+### キャラリーからカスタム入力を使用する方法
 
-You can easily interact with native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with native code.
+カスタムの入力コントロールを使用することで、ネイティブのアプリと容易にやりとりをすることができます。これはネイティブコードを使用した[ラベル & アイコン カスタムフォーマッター](labels-and-icons.md) と同じやり方を踏襲しています。
 
-To do so, you can create your own input controls with native code, or you can download a few input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific “inputControls” folder (`mybase/Resources/mobile/inputControls`), unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties of the action.
+これをやるためには、独自の入力コントロールをネイティブコードを使用して作成するか、または私たちの[ギャラリー](https://4d-go-mobile.github.io/gallery/#/type/input-control) から必要な入力コントロールをダウンロードすることもできます。アプリでの用途に応じて選択してください。 これらを特定の“inputControls” フォルダ(`mybase/Resources/mobile/inputControls`) へとドロップし、展開したのち新規に作成したフォルダへとドラッグします。 これによってこれらの入力コントロールはアクションの引数プロパティ内にあるプロジェクトエディターの入力コントロールメニューから利用・選択が可能になります。
 
-For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
+例えば、モバイルの連絡先リストからクライアントの電話番号を取得したい場合、*phoneContact* 入力コントロールテンプレートを使用することでクライアントの電話番号フィールドを自動的に埋めることが可能になります。
 
-![Architecture](img/inputWithSwift.png) ![Edit](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png)![Edit screen](img/phoneContactIcon4.png)
+![Architecture](img/inputWithSwift.png) ![編集](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png)![Edit screen](img/phoneContactIcon4.png)
 
-Bear in mind that all input controls from the gallery are open source and available on Github. So feel free to share your own input controls or your feedback on the [4D Forum](https://discuss.4d.com/).
+キャラリー内の全ての入力コントロールはオープンソースであり、Github から取得可能です。 自分の入力コントロールを共有したい、あるいは入力コントロールに対するフィードバックをしたい場合、お気軽に[4D Forum](https://discuss.4d.com/) までご投稿ください。
 
-### Input control selection
+### 入力コントロールセクション
 
-Action input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either static or dynamic:
-- **Static** choice lists (predefined choices hard coded in json) that are located in an 'inputControls' folder (`mybase/Resources/mobile/inputControls`) in a manifest.json file. They are defined by several elements, as follows:
+アクション入力コントロールは、モバイルアプリ内でフォーマットされた要素(値、ピクチャーなど) を表示します。 これらの要素はアクションフォーム内に自動的に含まれます。具体的には選択リスト内に含まれ、そこから値を1つ選択し、引数として使用することができます。 これらの選択リストの動作は、静的または動的(ダイナミック) のどちらかを選ぶことができます:
+- **静的** な選択リスト(json 内にハードコードされている定義済み選択肢)は'inputControls' フォルダ(`mybase/Resources/mobile/inputControls`)内に配置されているmanifest.json ファイル内で定義されています。 この選択リストは以下のような複数の要素から定義されています:
 
-| Property               | Type               | Description                                                                                             |
-| ---------------------- | ------------------ | ------------------------------------------------------------------------------------------------------- |
-| **"name"**             | text               | action input control name                                                                               |
-| Optional **"binding"** | text               | "imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)  |
-| **"choiceList"**       | object             | an object or collection to define a list of key(data sent to server)/value(displayed value to the user) |
-| **"type"**             | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control             |
-| Optional **"format"**  | text               | to select interface: push(default if not defined)/segmented/popover/sheet/picker                        |
+| プロパティ               | Type          | 詳細                                                                             |
+| ------------------- | ------------- | ------------------------------------------------------------------------------ |
+| **"name"**          | text          | アクション入力コントロール名                                                                 |
+| オプション **"binding"** | text          | 画像をひもづけるための"imageNamed" (実際の画像はaction formatter フォルダ内の"images" サブフォルダに入れる必要あり) |
+| **"choiceList"**    | オブジェクト        | キー(サーバーに送られるデータ) /値(ユーザーに表示される値) のリストを定義するためのオブジェクトまたはコレクション                   |
+| **"type"**          | テキストまたはコレクション | 入力コントロールの型(text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                   |
+| オプション **"format"**  | text          | インターフェースを選択: push(未定義の場合のデフォルト)/segmented/popover/sheet/picker                 |
 
-Here is an example of a manifest.json file containing the contact information of a company's subsidiaries, that can be used as a static choice list:
+以下は、静的な選択リストとして使用可能な、ある会社の支社の連絡先情報を格納したmanifest.json ファイルの一例です:
 ```4d
 {
     "name": "choiceListSheet",
@@ -298,27 +298,27 @@ Here is an example of a manifest.json file containing the contact information of
 }
 ```
 
-- **Dynamic** choice lists based on datasource (choices depending on the database content). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The manifest.json file is composed of the following elements:
+- **動的(ダイナミック)** 選択リストはデータソースに基づいた選択リストです(選択肢はデータベースのコンテンツに応じて変化します)。 このメソッドを使用すると、ヘルパーモジュールを使用してフォームフィールドに値を入力することで、データを素早く取得することができます。 作成されたリストはモバイルアプリから直接利用可能になるだけではなく、常に更新していくことが可能になります。 manifest.json ファイルには以下のような要素が格納されています:
 
-| Property              | Type               | Description                                                                                    |
-| --------------------- | ------------------ | ---------------------------------------------------------------------------------------------- |
-| **"name"**            | text               | input control name                                                                             |
-| **"choiceList"**      | object             | an object that contain "dataSource" (see table below)                                          |
-| **"type"**            | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control    |
-| Optional **"format"** | text               | to select interface: "push"(default if not defined), "segmented", "popover", "sheet", "picker" |
+| プロパティ              | Type          | 詳細                                                                       |
+| ------------------ | ------------- | ------------------------------------------------------------------------ |
+| **"name"**         | text          | 入力コントロール名                                                                |
+| **"choiceList"**   | オブジェクト        | "dataSource" を格納するオブジェクト(以下の表参照)                                         |
+| **"type"**         | テキストまたはコレクション | 入力コントロールの型(text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション             |
+| オプション **"format"** | text          | インターフェースを選択: "push"(未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker" |
 
-| Property         |                             | Type                       | Description                                                                                                                     |
-| ---------------- | --------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| **"dataSource"** |                             | object                     | an object that contain "dataClass", "field" and optional "entityFormat"                                                         |
-|                  | **"dataClass"**             | text                       | table name                                                                                                                      |
-|                  | **"field"**                 | text                       | used to extract data to send to server                                                                                          |
-|                  | Optional **"sort"**         | object / collection / text | can be an object that contains **"field"**(sort criteria/fieldName), and optional **"order"** (sort order ascending by default) |
-|                  | Optional **"search"**       | boolean / array            | can be an array that contain field to use for search                                                                            |
-|                  | Optional **"entityFormat"** | text                       | for the display value (if no format we use the extracted data from field)                                                       |
+| プロパティ            |                          | Type                   | 詳細                                                                            |
+| ---------------- | ------------------------ | ---------------------- | ----------------------------------------------------------------------------- |
+| **"dataSource"** |                          | オブジェクト                 | "dataClass"、"field"、そしてオプションの"entityFormat" を格納するオブジェクト。                      |
+|                  | **"dataClass"**          | text                   | テーブル名                                                                         |
+|                  | **"field"**              | text                   | サーバーに送るデータの取得に使用                                                              |
+|                  | オプション **"sort"**         | オブジェクト / コレクション / テキスト | **"field"**(ソート条件/fieldName)、そしてオプションの**"order"** (デフォルトでは昇順ソート順) を格納するオブジェクト |
+|                  | オプション **"search"**       | ブール / 配列               | 検索に使用するフィールドを格納した配列                                                           |
+|                  | オプション **"entityFormat"** | text                   | 表示する値(フォーマットが指定されていない場合、フィールドから取得したデータを使用)                                    |
 
-**Note:** When the choice list is extensive, the optional "search" element becomes available.
+**注意:** 選択リストが長くなった場合、オプションの"search" 要素が利用可能になります。
 
-Here is an example of a dynamic choice list:
+以下が動的な選択リストの一例です:
 
 ```4d
 {
@@ -339,31 +339,31 @@ Here is an example of a dynamic choice list:
 }
 ```
 
-On the Project editor side, once you select your **Input control** format, the **dataSource** will be selectable from a filtered list based on the format you have selected. Your app will then be updated and ready-to-use!
+プロジェクトエディター側では、**入力コントロール** フォーマットを選択すると、**dataSource** は選択されたフォーマットに基づいてフィルターされたリストから選択可能になります。 これでアプリは更新されて使用する準備が整います。
 
-Here is an example with the *push* format:
+以下は*push* フォーマットの一例です:
 
 ![customInput](img/customInput1.png) ![customInput2](img/customInput2.png)
 
-Here are the different formats available on the generated application:
+以下が生成されたアプリケーション上で利用可能なフォーマットの種類です:
 
- - Push format:
+ - Push フォーマット:
 
 ![customInput2](img/push.png)
 
-- Segmented & picker formats:
+- Segmented & picker フォーマット:
 
 ![customInput2](img/Sans-titre.png)
 
- - Popover format:
+ - Popover フォーマット:
 
 ![customInput2](img/popover.png)
 
- - Sheet format:
+ - Sheet フォーマット:
 
 ![customInput2](img/sheet.png)
 
-**Note:** You can access your input control using the arrow icon next to the "Input Control" field.
+**注意:** 入力コントロールは"入力コントロール" フィールドの横にある矢印を使用してアクセスすることができます。
 
 ## Offline mode actions
 
@@ -383,7 +383,7 @@ They display all the tasks related to the table or to the entity that you are cu
 
 ![Action section](img/screen2.png)
 
-:::note notes
+:::note 注意
 
 - The "Share" predefined action is only executable online
 - Actions are editable while pending, but they can no longer be modified once they switch to the "Completed" mode.
@@ -461,8 +461,8 @@ For your convenience, the Edition form includes a few **special features**:
 
 ## Where to go from here?
 
-* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
+* **アクション定義プロセス** について説明した[チュートリアル](getting-started.md) があります。
 
-* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
+* カスタムテンプレートを作成するための**アクション TAG 統合** について説明した[チュートリアル](adding-actions-template.md) もあります。
 
-* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
+* こちらの[チュートリアル](using-action-parameters.md) では**アクション引数の定義** について説明しています。

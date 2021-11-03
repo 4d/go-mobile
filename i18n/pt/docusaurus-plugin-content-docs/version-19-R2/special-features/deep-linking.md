@@ -151,7 +151,11 @@ Case of
 
 ```
 
+:::nota
 
+To create a universal link, make sure you use standard ports (80 or 443).
+
+:::
 
 ## Deep Linking e notificações Push
 

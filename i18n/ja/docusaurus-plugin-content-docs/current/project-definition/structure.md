@@ -68,7 +68,7 @@ The names are based upon the relation names in the 4D Structure editor, see the 
 
 ## Using relations
 
-:::info 4D for Android
+:::4D for Androidにおける注意
 
 Only Many-to-one relations are available in 4D for Android.
 
@@ -164,7 +164,7 @@ When an important maintenance operation is performed on the database side (Recov
 
 Whether you're working on Android or iOS, you can display computed attributes in your app once it is generated, by configurating them from the project editor.
 
-Computed attributes are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
+[Computed attributes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#computed-attributes) are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
 
 The process is actually quite simple!
 
@@ -173,18 +173,39 @@ The process is actually quite simple!
 In your code, specify the attributes you want to use and the computed attribute you want to get, using the [*Class extends*](https://developer.4d.com/docs/en/Concepts/classes.html#class-extends-classname) and [exposed Function](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows:
 
 ```4d 
- Class extends Entity
+Class extends Entity
 
-exposed Function get fullName->$result : Text
-    $result:=This.FirstName+" "+This.LastName
+exposed Function get fullName->$fullName : Text
+    $fullName:=This.FirstName+" "+This.LastName
 
-exposed Function set fullName($result : Text)
+exposed Function set fullName($fullName : Text)
+$splitName:=Split string($fullName; "/")
+If ($splitName.length=2)
+    This.FirstName:=$splitName[0]
+    This.LastName:=$splitName[1]
+Else 
+    // ERROR    
+End if
 
-exposed Function get fullAddress->$result : Text
-    $result:=This.StreetNumber+" "+This.Street+" - "+This.Location
+exposed Function get fullAddress->$fullAddress : Text
+    $fullAddress:=This.StreetNumber+" "+This.Street+" - "+This.Location
 
-exposed Function set fullAddress($result : Text)
+exposed Function set fullAddress($fullAddress : Text)
+$splitAddress:=Split string($fullAddress; "/")
+If ($splitAddress.length=3)
+    This.StreetNumber:=$splitAddress[0]
+    This.Street:=$splitAddress[1]
+    This.Location:=$splitAddress[2]
+Else 
+    // ERROR    
+End if
  ```
+
+:::note
+
+Only computed attributes with values that change over time - only depending on other attributes of the same DataClass - will be updated on the mobile app.
+
+:::
 
 ### Project editor side
 

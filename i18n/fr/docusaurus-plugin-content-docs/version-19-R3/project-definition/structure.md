@@ -164,7 +164,7 @@ When an important maintenance operation is performed on the database side (Recov
 
 Whether you're working on Android or iOS, you can display computed attributes in your app once it is generated, by configurating them from the project editor.
 
-Computed attributes are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
+[Computed attributes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#computed-attributes) are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
 
 The process is actually quite simple!
 
@@ -203,9 +203,8 @@ End if
 
 :::note
 
-Only computed attributes with values that change over time - only depending on other attributes of the same DataClass (ex: dates) - will be updated on the mobile app.
-
-:::
+- Computed attributes are only retrieved when an entity attribute has been modified.
+- For example: on a “StudentEntity” dataclass, a “currentTime” computed attribute returns **Current Time** and is used in your mobile project in a “Student" list or detail form. In the generated mobile app, “currentTime” field for a given “Student Entity" won’t be updated until one of this “Student Entity" attributes is modified. :::
 
 ### Project editor side
 
