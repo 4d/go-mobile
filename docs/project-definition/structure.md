@@ -244,3 +244,21 @@ In the **Data** panel, computed attributes are displayed in the list linked to t
 In the generated mobile application, on iOS or Android, both single attributes and computed attributes are displayed.
 
 ![final app](img/final-app.png)
+
+## Object attributes
+
+From the structure section, you can select, use and display all types of attributes in your mobile projects (text, dates, time, integers, etc) including **object attributes** (JSON format). 
+
+You will then be able to use them in the project editor, as any other field. You can drop them in the list and detail forms, restrict their use in a custom template field, etc.
+
+From the Labels&Icons section, you can select two formats to display your object attributes:
+- Human readable (YAML): the default format that will display a human-readable structured data in your mobile app
+- JSON Pretty Print: that will display an indented JSON in your mobile app
+
+:::info 
+
+- Object field type shall not be used as action parameter in the Action section
+- In the generated mobile app, the object will be displayed as a JSON format.
+
+:::info
+
