@@ -251,22 +251,25 @@ From the **Structure** section, you can select, use and display all [types](http
 
 ![Structure section](img/object-attributes-structure.png)
 
-You will then be able to use thses object attributes as any other field in the other sections of the project editor (Data, labels & icons, list and detail forms, etc. except for the Actions section).
+You will then be able to use these object attributes as any other field in the other sections of the project editor (Data, labels & icons, Forms, etc. except for the Actions section).
 
-From the **Labels&Icons** section, you can select two formats to display your object attributes:
+From the **Labels&Icons** section, two formats are available to display your object attributes:
 
 - **Human-readable** (YAML): the default format that displays a human-readable structured data in the mobile app
 - **JSON Pretty Print**: the format that displays an indented JSON in the mobile app
 
 ![Labels-and-icons section](img/object-attributes-labels-and-icons.png)
 
+Here's the result on the generated app:
+
 ![Structure section](img/object-attributes-rendering.png)
 
 ### Filter query
 
-In the **Data** section, you can use filter queries to return and display only searches for values that meet the search criteria specified.
+In the **Data** section, you can use filter queries to return and display data filtered by specific criteria (Filter, Comparator, Operator).
 
-For instance, consider the following code, containing all the information concerning one of your clients:  
+For instance, consider the following code containing all the information concerning one of your clients:  
+
 
 ```4d
 {
@@ -289,7 +292,7 @@ For instance, consider the following code, containing all the information concer
 }
 ```
 
-If you need to display a list of your clients filtered by country, insert the following code in the Filter query field:
+If you want to display a list of your clients only based in France, you need to filter your query by country to get only the records containing the ```France``` value. Given the fact that you have previously published an Address object attribute in the Structure section, insert the following in the Filter query field:
 
 ```4d
 
