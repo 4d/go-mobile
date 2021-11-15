@@ -31,7 +31,7 @@ To do so, in the Project editor, make sure you have plugged your smartphone, the
 
 :::nota
 
-The **Updating the list of devices...** button enables to refresh the list of available devices.
+The **Update the list of devices...** button enables to refresh the list of available devices.
 
 :::
 
