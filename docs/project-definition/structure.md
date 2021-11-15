@@ -247,7 +247,7 @@ In the generated mobile application, on iOS or Android, both single attributes a
 
 ## Object attributes
 
-From the **Structure** section, you can select, use and display all [types](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) of attributes in your mobile projects (text, dates, time, integers, etc), including [object attributes](https://developer.4d.com/docs/en/FormEditor/stylesheets.html#object-attributes) (JSON format). They are distinguished by their **{}** icon.
+From the **Structure** section, you can select, use and display all [types](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) of attributes in your mobile projects (text, dates, time, integers, etc), including **[object attributes](https://developer.4d.com/docs/en/FormEditor/stylesheets.html#object-attributes)** (JSON format). They are distinguished by their **{}** icon.
 
 ![Structure section](img/object-attributes-structure.png)
 
@@ -299,11 +299,11 @@ If you want to display a list of your clients only based in France, you need to 
 Address.country = "France"
 
 ```
-If you want to display a specific client's information based on their email, you need to filter your query by email to get only the records containing the ```john@4d.com``` value. If your value is an element of a collection, filter your query as follows, based on an existing Contact object attribute in the Structure section:
+If you want to display a specific client's information based on their email, you need to filter your query by email to get only the records containing the ```john@4d.com``` value. To do so, enter the following:
 
 ```4d
 
-Coordinates.email[] = "john@4d.com"
+Address.email[] = "john@4d.com"
 
 ```
 
