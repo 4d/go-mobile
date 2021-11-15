@@ -246,28 +246,31 @@ In the generated mobile application, on iOS or Android, both single attributes a
 
 ## Object attributes
 
-From the **Structure** section, you can select, use and display all [types](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) of attributes in your mobile projects (text, dates, time, integers, etc), including [object attributes](https://developer.4d.com/docs/en/FormEditor/stylesheets.html#object-attributes) (JSON format). They are distinguished by their **{}** icon.
+From the **Structure** section, you can select, use and display all [types](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) of attributes in your mobile projects (text, dates, time, integers, etc), including **[object attributes](https://developer.4d.com/docs/en/FormEditor/stylesheets.html#object-attributes)** (JSON format). They are distinguished by their **{}** icon.
 
 ![Structure section](img/object-attributes-structure.png)
 
-You will then be able to use thses object attributes as any other field in the other sections of the project editor (Data, labels & icons, list and detail forms, etc. except for the Actions section).
+You will then be able to use these object attributes as any other field in the other sections of the project editor (Data, labels & icons, Forms, etc. except for the Actions section).
 
-From the **Labels&Icons** section, you can select two formats to display your object attributes:
+From the **Labels&Icons** section, two formats are available to display your object attributes:
 
 - **Human-readable** (YAML): the default format that displays a human-readable structured data in the mobile app
 - **JSON Pretty Print**: the format that displays an indented JSON in the mobile app
 
 ![Labels-and-icons section](img/object-attributes-labels-and-icons.png)
 
+Here's the result on the generated app:
+
 ![Structure section](img/object-attributes-rendering.png)
 
 ### Filter query
 
-In the **Data** section, you can use filter queries to return and display only searches for values that meet the search criteria specified.
+In the **Data** section, you can use filter queries to return and display data filtered by specific criteria (Filter, Comparator, Operator).
 
-For instance, consider the following code, containing all the information concerning one of your clients:
+For instance, consider the following code containing all the information concerning one of your clients:
 
-`code 4D`
+
+```4d
 {
     $Obj:=New object
     $Obj.name:="4D SAS"
@@ -280,23 +283,28 @@ For instance, consider the following code, containing all the information concer
         "OfficePhone":"+33 1 30 53 92 00"
         "HomePhone":"+33 1 30 53 92 00"
     }
-    $Obj.email:=[ "john@test.com" "john@apple.com" ] $Obj.website:="fr.4d.com" } `code 4D`
+    $Obj.email:=[
+        "john@test.com"
+        "john@4d.com"
+    ]
+    $Obj.website:="fr.4d.com"
+}
+```
 
-Imagine you're searching for a specific information such as the office phone number of this client. You will filter your reserach as follows in the Filter query field of the Data section:
+If you want to display a list of your clients only based in France, you need to filter your query by country to get only the records containing the `France` value. Given the fact that you have previously published an Address object attribute in the Structure section, insert the following in the Filter query field:
 
-`code 4D`
+```4d
 
-Coordinates.phoneNumber.HomePhone = "+33 1 30 53 92 00"
+Address.country = "France"
 
-`code 4D`
+```
+If you want to display a specific client's information based on their email, you need to filter your query by email to get only the records containing the `john@4d.com` value. To do so, enter the following:
 
-Now, imagine you want to filter your research based on a collection (a collection of emails for instance). Here is the code you need to insert in the filter query field:
+```4d
 
-`code 4D`
+Address.email[] = "john@4d.com"
 
-Coordonnees.email[] = "meriem@test.com"
-
-`code 4D`
+```
 
 
 
