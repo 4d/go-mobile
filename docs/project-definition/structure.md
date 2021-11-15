@@ -247,18 +247,66 @@ In the generated mobile application, on iOS or Android, both single attributes a
 
 ## Object attributes
 
-From the **structure section**, you can select, use and display all types of attributes in your mobile projects (text, dates, time, integers, etc) including object attributes (JSON format). 
+From the **Structure** section, you can select, use and display all [types](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) of attributes in your mobile projects (text, dates, time, integers, etc), including [object attributes](https://developer.4d.com/docs/en/FormEditor/stylesheets.html#object-attributes) (JSON format). They are distinguished by their **{}** icon.
 
-You will then be able to use them in the project editor, as any other field. You can drop them in the list and detail forms or restrict their use in a custom template field, etc.
+![Structure section](img/object-attributes-structure.png)
 
-From the Labels&Icons section, you can select two formats to display your object attributes:
-- Human readable (YAML): by default, the default format that displays a human-readable structured data in the mobile app
-- JSON Pretty Print: it display an indented JSON in the mobile app
+You will then be able to use thses object attributes as any other field in the other sections of the project editor (Data, labels & icons, list and detail forms, etc. except for the Actions section).
 
-:::info 
+From the **Labels&Icons** section, you can select two formats to display your object attributes:
 
-Object field type shall not be used as action parameter in the Action section
+- **Human-readable** (YAML): the default format that displays a human-readable structured data in the mobile app
+- **JSON Pretty Print**: the format that displays an indented JSON in the mobile app
+
+![Labels-and-icons section](img/object-attributes-labels-and-icons.png)
+
+![Structure section](img/object-attributes-rendering.png)
+
+### Filter query
+
+In the **Data** section, you can use filter queries to return and display only searches for values that meet the search criteria specified.
+
+For instance, consider the following code, containing all the information concerning one of your clients:  
+
+```code 4D```
+{
+	$Obj:=New object
+	$Obj.name:="4D SAS"
+	$Obj.address1:="66 rue de Sartrouville"
+	$Obj.address2:="Parc les Erables, bâtiment 4"
+	$Obj.zipCode:="78230"
+	$Obj.city:="Le Pecq"
+	$Obj.country:="France"
+	$Obj.phoneNumber:={
+		"OfficePhone":"+33 1 30 53 92 00"
+		"HomePhone":"+33 1 30 53 92 00"
+	}
+	$Obj.email:=[
+		"john@test.com"
+		"john@apple.com"
+	]
+	$Obj.website:="fr.4d.com"
+}
+```code 4D```
+
+Imagine you're searching for a specific information such as the office phone number of this client. You will filter your reserach as follows in the Filter query field of the Data section:
+
+```code 4D```
+
+Coordinates.phoneNumber.HomePhone = "+33 1 30 53 92 00" 
+
+```code 4D```
+
+Now, imagine you want to filter your research based on a collection (a collection of emails for instance). Here is the code you need to insert in the filter query field: 
+
+```code 4D```
+
+Coordonnees.email[] = "meriem@test.com"
+
+```code 4D```
 
 
-:::info
+
+
+
 
