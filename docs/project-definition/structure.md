@@ -286,7 +286,7 @@ For instance, consider the following code containing all the information concern
 	}
 	$Obj.email:=[
 		"john@test.com"
-		"john@apple.com"
+		"john@4d.com"
 	]
 	$Obj.website:="fr.4d.com"
 }
@@ -299,8 +299,13 @@ If you want to display a list of your clients only based in France, you need to 
 Address.country = "France"
 
 ```
+If you want to display a specific client's information based on their email, you need to filter your query by email to get only the records containing the ```john@4d.com``` value. If your value is an element of a collection, filter your query as follows, based on an existing Contact object attribute in the Structure section:
 
+```4d
 
+Coordinates.email[] = "john@4d.com"
+
+```
 
 
 
