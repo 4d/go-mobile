@@ -268,7 +268,7 @@ In the **Data** section, you can use filter queries to return and display only s
 
 For instance, consider the following code, containing all the information concerning one of your clients:  
 
-```code 4D```
+```4d
 {
 	$Obj:=New object
 	$Obj.name:="4D SAS"
@@ -287,23 +287,17 @@ For instance, consider the following code, containing all the information concer
 	]
 	$Obj.website:="fr.4d.com"
 }
-```code 4D```
+```
 
-Imagine you're searching for a specific information such as the office phone number of this client. You will filter your reserach as follows in the Filter query field of the Data section:
+If you need to display a list of your clients filtered by country, insert the following code in the Filter query field:
 
-```code 4D```
+```4d
 
-Coordinates.phoneNumber.HomePhone = "+33 1 30 53 92 00" 
+Address.country = "France"
 
-```code 4D```
+```
 
-Now, imagine you want to filter your research based on a collection (a collection of emails for instance). Here is the code you need to insert in the filter query field: 
 
-```code 4D```
-
-Coordonnees.email[] = "meriem@test.com"
-
-```code 4D```
 
 
 
