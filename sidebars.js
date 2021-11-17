@@ -1,12 +1,12 @@
 module.exports = {
 
   docs: [
-    {
+	{
       type: 'category',
       label: 'Getting started',
       items: [
-	            'getting-started/requirements',
-	            'getting-started/create-your-first-app'
+	            'getting-started/introduction',
+				'getting-started/requirements'
 	   ]
 	},
 	{
@@ -16,106 +16,42 @@ module.exports = {
 	            'project-definition/overview',
 				'project-definition/general', 
 				'project-definition/structure', 
-				'project-definition/structure-many-to-many-relations', 
-				'project-definition/structure-one-to-many-relations-actions',
-				'project-definition/structure-one-to-many-relations-custom-button',
-				'project-definition/structure-one-to-many-relations-title-definition',
-				'project-definition/structure-relation-interactions', 
-				'project-definition/structure-many-to-one-relations', 
 				'project-definition/data', 
-				'project-definition/data-restricted-queries-introduction', 
-				'project-definition/data-restricted-queries-define-filter-query', 
-				'project-definition/data-restricted-queries-user-information-query', 
 				'project-definition/actions', 
-				'project-definition/actions-getting-started',
-				'project-definition/actions-define-first-action', 
-				'project-definition/actions-include-action-custom-template', 
-				'project-definition/actions-parameters', 
 				'project-definition/labels-and-icons', 
-				'project-definition/labels-and-icons-data-formatter',
-				'project-definition/labels-and-icons-create-data-formatter', 
-				'project-definition/labels-and-icons-data-formatter-build-and-run-project',
-				'project-definition/labels-and-icons-icons-getting-started', 
-				'project-definition/labels-and-icons-create-icons',
-				'project-definition/labels-and-icons-include-icons',
-				'project-definition/labels-and-icons-select-icons',
-				'project-definition/labels-and-icons-mobile-project',
-				'project-definition/main-menu', 'project-definition/forms',
-				'project-definition/forms-multi-critera-search',
-				'project-definition/publishing'
+				'project-definition/main-menu', 
+				'project-definition/forms',
+				'project-definition/publishing',
+				'project-definition/build-panel'
 				
 		],     
 
 	},
 	{
       type: 'category',
-      label: 'Extra features',
+      label: 'Smart features',
       items: [
-	             'extra-features/deep-linking',
-				 'extra-features/email-authentication', 
-				 'extra-features/push-notification'
+	        'special-features/authentication', 
+			'special-features/session-management', 
+			'special-features/push-notification',
+			'special-features/deep-linking'			
 			],     
 	},
 	{
       type: 'category',
-      label: 'Testing projects',
+      label: 'Debugging',
       items: [
-	              'testing-projects/testing-on-your-device',
-	              'testing-projects/using-the-simulator'],     
-	},
-	{
-      type: 'category',
-      label: 'Customizing projects',
-      items: [
-	               'customizing-projects/listform-create-template',
-				   'customizing-projects/gallery-update-template'],     
-	},
-	{
-      type: 'category',
-      label: 'Deployment',
-      items: [
-	                'deployment/deploy-on-app-store-archive-and-upload',
-					'deployment/deployment-in-house-archive-and-export', 
-					'deployment/deployment-in-house-distribute',
-					'deployment/deploy-on-app-store-create-appstore-record', 
-					'deployment/selecting-your-developer-program', 
-					'deployment/selecting-your-developer-program-register-apple-developer-enterprise-program', 
-					'deployment/selecting-your-developer-program-register-apple-developer-program-individual', 
-					'deployment/selecting-your-developer-program-register-apple-developer-program-organization'],     
+				   	'debug/from-project-editor', 
+				   	'debug/from-your-iphone-and-xcode', 
+				   	'debug/from-your-android-device-and-android-studio', 		
+			],     
 
 	},
-    {
-      type: "category",
-      label: "Test",
-      items: ["4D/mdx-example", "4D/test-page"],
-    },
-    {
-      type: "link",
-      label: "Test",
-      href: "https://doc.4d.com",
-    },
+   
   ],
   tutorials: [
-    "tutorials/first-page",
-    {
-      type: "category",
-      label: "Creating your iOS App",
-      items: [
-        "tutorials/creating-ios-app/create-contact-app",
-        "tutorials/creating-ios-app/custom-login-form",
-      ],
-    },
-    {
-      type: "category",
-      label: "Customizing with Xcode",
-      items: [
-        "tutorials/customizing-with-xcode/what-is-xcode",
-        "tutorials/customizing-with-xcode/working-with-xcode",
-        "tutorials/customizing-with-xcode/xcode-overview",
-        "tutorials/customizing-with-xcode/4d-for-ios-project-organization",
-        "tutorials/customizing-with-xcode/customize-your-ios-app",
-      ],
-    },
+    "tutorials/create-your-first-app",
+	"tutorials/custom-login-form",
     {
       type: "category",
       label: "Creating List forms",
@@ -124,6 +60,7 @@ module.exports = {
         "tutorials/creating-list-forms/list-form-icon",
         "tutorials/creating-list-forms/list-form-manifest",
         "tutorials/creating-list-forms/list-form-svg-file",
+		"tutorials/creating-list-forms/multi-criteria-search",
         "tutorials/creating-list-forms/list-form-storyboard",
         "tutorials/creating-list-forms/list-form-layout",
       ],
@@ -150,36 +87,19 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Using icons",
-      items: [
-        "tutorials/using-icons/using-icons",
-        "tutorials/using-icons/create-icons",
-        "tutorials/using-icons/include-icons",
-        "tutorials/using-icons/select-icons",
-      ],
-    },
-    {
-      type: "category",
       label: "Data formatter",
       items: [
-        "tutorials/data-formatter/data-formatter",
-        "tutorials/data-formatter/open-mobile-project",
-        "tutorials/data-formatter/build-and-run",
         "tutorials/data-formatter/create-data-formatter",
+        "tutorials/data-formatter/create-swift-formatter",
       ],
     },
     {
       type: "category",
-      label: "Multi-criteria search",
-      items: ["tutorials/multi-criteria-search/multi-criteria-search"],
-    },
-    {
-      type: "category",
-      label: "Restricted queries",
+      label: "Filter queries",
       items: [
-        "tutorials/restricted-queries/filter-query-introduction",
-        "tutorials/restricted-queries/define-filter-query",
-        "tutorials/restricted-queries/user-information-query",
+        "tutorials/filter-queries/filter-query-introduction",
+        "tutorials/filter-queries/define-filter-query",
+        "tutorials/filter-queries/user-information-query",
       ],
     },
     {
@@ -204,15 +124,59 @@ module.exports = {
         "tutorials/relations/relation-interactions",
       ],
     },
-    {
+	  {
       type: "category",
-      label: "Features",
+      label: "Customizing with Xcode",
       items: [
-        "tutorials/features/email-authentication",
-        "tutorials/features/push-notifications",
-        "tutorials/features/deep-linking",
+        "tutorials/customizing-with-xcode/what-is-xcode",
+        "tutorials/customizing-with-xcode/working-with-xcode",
+        "tutorials/customizing-with-xcode/xcode-overview",
+        "tutorials/customizing-with-xcode/4d-for-ios-project-organization",
+        "tutorials/customizing-with-xcode/customize-your-ios-app",
       ],
     },
+	  {
+      type: "category",
+      label: "Selecting your Developer Program",
+      items: [
+       "tutorials/developer-program/selecting-your-developer-program",
+       "tutorials/developer-program/register-apple-developer-enterprise-program",
+       "tutorials/developer-program/register-apple-developer-program-organization",
+	   "tutorials/developer-program/register-apple-developer-program-individual",
+	   
+      ],
+    },
+       {
+      type: "category",
+      label: "Deploying In-House",
+      items: [
+	    "tutorials/deploying-in-house/testing-on-your-device",
+		"tutorials/deploying-in-house/deployment-in-house-archive-and-export", 
+		"tutorials/deploying-in-house/deployment-in-house-distribute",
+			],     
 
+	},
+	{
+      type: "category",
+      label: "Deploying on App Store",
+      items: [
+		"tutorials/deploying-on-app-store/deploy-on-app-store-create-appstore-record",
+		"tutorials/deploying-on-app-store/deploy-on-app-store-archive-and-upload",
+			],     
+
+	},   
+
+  ],
+  templates: [
+    {
+      type: "category",
+      label: "Templates & Formatters",
+      items: [
+        "templates/templates",
+        "templates/custom-listform-templates",
+		"templates/custom-detailform-templates",
+		"templates/custom-data-formatters",
+      ],
+    },
   ],
 };
