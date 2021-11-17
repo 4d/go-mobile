@@ -9,7 +9,7 @@ title: カスタムのデータフォーマッター
 
 > **PREREQUISITES**
 > 
-> Click [here](prerequisites.html) to see what you'll need to get started!
+> Click [here](requirements.html) to see what you'll need to get started!
 
 このチュートリアルでは、様々なフォーマッターの例を作成していくことを案内していきます。
 
