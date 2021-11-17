@@ -11,7 +11,7 @@ This page displays all of the tables and fields that are exposed as REST resourc
 Use this page to define a subset of your physical structure to replicate for mobile devices by selecting the specific tables and fields to publish.
 
 - Published tables will be automatically added as tabs of your app.
-- Published scalar fields will be available when defining your \[list and detail forms\] (https://developer.4d.com/go-mobile/docs/project-definition/forms).
+- Published scalar fields will be available when defining your [list and detail forms](https://developer.4d.com/go-mobile/docs/project-definition/forms).
 - Published relation fields (many-to-one and one-to-many) will be available when defining your [list and detail forms] and come with additional navigation features such as a Relation button.
 
 
@@ -52,7 +52,7 @@ The mobile editor automatically displays the list of fields that are eligible to
 
 ![Fields](img/fields.png)
 
-- All [4D scalar field types](https://developer.4d.com/docs/en/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html) and [Object](https://developer.4d.com/docs/en/Concepts/object.html).
+- All [4D scalar field types](https://developer.4d.com/docs/en/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html).
 - Relation attributes (Many-to-one and One-to-many) are supported and can be selected just as fields. They have specific icons:
 
 Many to one relation icon:  ![relation1](img/manyto1.png)
@@ -246,7 +246,7 @@ In the generated mobile application, on iOS or Android, both single attributes a
 
 ## Object attributes
 
-From the **Structure** section, you can select, use and display all [types](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) of attributes in your mobile projects (text, dates, time, integers, etc), including **[object attributes](https://developer.4d.com/docs/en/FormEditor/stylesheets.html#object-attributes)** (JSON format). They are distinguished by their **{}** icon.
+From the **Structure** section, you can select, use and display all [types](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) of attributes in your mobile projects (text, dates, time, integers, etc), including **object attributes** (JSON format). They are distinguished by their **{}** icon.
 
 ![Structure section](img/object-attributes-structure.png)
 
@@ -298,7 +298,7 @@ If you want to display a list of your clients only based in France, you need to 
 Address.country = "France"
 
 ```
-If you want to display a specific client's information based on their email, you need to filter your query by email to get only the records containing the `john@4d.com` value. To do so, enter the following:
+If you want to display a specific client's information based on their email, contained in a collection, you need to filter your query by email to get only the records containing the `john@4d.com` value. To do so, enter the following:
 
 ```4d
 
