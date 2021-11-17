@@ -9,7 +9,7 @@ title: Crear el formato de datos
 
 > **REQUISITOS PREVIOS**
 > 
-> Click [here](prerequisites.html) to see what you'll need to get started!
+> Click [here](requirements.html) to see what you'll need to get started!
 
 En este tutorial, lo guiaremos a través de la creación de varios ejemplos de formatos.
 
