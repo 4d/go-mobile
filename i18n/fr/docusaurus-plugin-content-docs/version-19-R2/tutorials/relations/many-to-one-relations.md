@@ -12,7 +12,7 @@ Dans ce tutoriel, nous allons utiliser les noms des liens reliant vos tables. En
 
 :::
 
-Let's get started by downloading the Starter project:
+Commençons par télécharger le Projet Starter :
 
 <div className="center-button">
 <a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-ManyToOneRelations/releases/latest/download/tutorial-ManyToOneRelations.zip">Projet Starter</a>
