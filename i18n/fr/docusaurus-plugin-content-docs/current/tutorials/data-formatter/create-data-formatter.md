@@ -9,7 +9,7 @@ title: Créer le format de données
 
 > **CONDITIONS PRÉALABLES**
 > 
-> Click [here](prerequisites.html) to see what you'll need to get started!
+> Click [here](requirements.html) to see what you'll need to get started!
 
 Dans ce tutoriel, nous vous guiderons dans la création de divers exemples de formats.
 
