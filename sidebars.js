@@ -150,9 +150,9 @@ module.exports = {
       type: "category",
       label: "Deploying In-House",
       items: [
-	    "deploying-in-house/testing-on-your-device",
-		"deploying-in-house/deployment-in-house-archive-and-export", 
-		"deploying-in-house/deployment-in-house-distribute",
+	    "tutorials/deploying-in-house/testing-on-your-device",
+		"tutorials/deploying-in-house/deployment-in-house-archive-and-export", 
+		"tutorials/deploying-in-house/deployment-in-house-distribute",
 			],     
 
 	},
@@ -160,8 +160,8 @@ module.exports = {
       type: "category",
       label: "Deploying on App Store",
       items: [
-		"deploying-on-app-store/deploy-on-app-store-create-appstore-record",
-		"deploying-on-app-store/deploy-on-app-store-archive-and-upload",
+		"tutorials/deploying-on-app-store/deploy-on-app-store-create-appstore-record",
+		"tutorials/deploying-on-app-store/deploy-on-app-store-archive-and-upload",
 			],     
 
 	},   
