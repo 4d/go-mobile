@@ -14,6 +14,20 @@ title: 作業をXcodeに引き継ぐ
 > 
 > If you customize your project on Xcode and rebuild it from the Project Editor All of your modifications will be lost!
 
+## Xcodeとは？
+
+Xcodeは，macOS上で動く統合開発環境および付随する開発者ツールで構成されており，iPad，iPod，iPhone，Mac用のアプリを作成することができます。
+
+## Download
+
+最新版のXcodeは，App Storeからダウンロードすることができます。
+
+<div className="center-button">
+<a className="button button--primary" href="macappstore://itunes.apple.com/app/id497799835?mt=12">View in Mac App Store </a>
+</div>
+
+デベロッパー登録をすれば，Apple DeveloperのサイトからXcodeのプレビュー版や以前のリリースをダウンロードすることができます。
+
 
 We'll use the [contact application](../create-your-first-app) we created.
 
