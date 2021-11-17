@@ -128,7 +128,6 @@ module.exports = {
       type: "category",
       label: "Customizing with Xcode",
       items: [
-        "tutorials/customizing-with-xcode/what-is-xcode",
         "tutorials/customizing-with-xcode/working-with-xcode",
         "tutorials/customizing-with-xcode/xcode-overview",
         "tutorials/customizing-with-xcode/4d-for-ios-project-organization",
@@ -150,9 +149,9 @@ module.exports = {
       type: "category",
       label: "Deploying In-House",
       items: [
-	    "deploying-in-house/testing-on-your-device",
-		"deploying-in-house/deployment-in-house-archive-and-export", 
-		"deploying-in-house/deployment-in-house-distribute",
+	    "tutorials/deploying-in-house/testing-on-your-device",
+		"tutorials/deploying-in-house/deployment-in-house-archive-and-export", 
+		"tutorials/deploying-in-house/deployment-in-house-distribute",
 			],     
 
 	},
@@ -160,8 +159,8 @@ module.exports = {
       type: "category",
       label: "Deploying on App Store",
       items: [
-		"deploying-on-app-store/deploy-on-app-store-create-appstore-record",
-		"deploying-on-app-store/deploy-on-app-store-archive-and-upload",
+		"tutorials/deploying-on-app-store/deploy-on-app-store-create-appstore-record",
+		"tutorials/deploying-on-app-store/deploy-on-app-store-archive-and-upload",
 			],     
 
 	},   
