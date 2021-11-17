@@ -128,7 +128,6 @@ module.exports = {
       type: "category",
       label: "Customizing with Xcode",
       items: [
-        "tutorials/customizing-with-xcode/what-is-xcode",
         "tutorials/customizing-with-xcode/working-with-xcode",
         "tutorials/customizing-with-xcode/xcode-overview",
         "tutorials/customizing-with-xcode/4d-for-ios-project-organization",
