@@ -47,26 +47,7 @@ module.exports = {
 			],     
 
 	},
-   {
-      type: 'category',
-      label: 'Deploying In-House',
-      items: [
-	               'deployment/testing-on-your-device',
-					'deployment/deployment-in-house-archive-and-export', 
-					'deployment/deployment-in-house-distribute',
-			],     
-
-	},
-	{
-      type: 'category',
-      label: 'Deploying on App Store',
-      items: [
-				   	'deployment/deploy-on-app-store-create-appstore-record', 
-					'deployment/deploy-on-app-store-archive-and-upload',
-		
-			],     
-
-	},
+   
   ],
   tutorials: [
     "tutorials/create-your-first-app",
@@ -108,10 +89,8 @@ module.exports = {
       type: "category",
       label: "Data formatter",
       items: [
-        "tutorials/data-formatter/data-formatter",
-        "tutorials/data-formatter/open-mobile-project",
-        "tutorials/data-formatter/build-and-run",
         "tutorials/data-formatter/create-data-formatter",
+        "tutorials/data-formatter/create-swift-formatter",
       ],
     },
     {
@@ -167,7 +146,25 @@ module.exports = {
 	   
       ],
     },
-   
+       {
+      type: "category",
+      label: "Deploying In-House",
+      items: [
+	    "deployment/testing-on-your-device",
+		"deployment/deployment-in-house-archive-and-export", 
+		"deployment/deployment-in-house-distribute",
+			],     
+
+	},
+	{
+      type: "category",
+      label: "Deploying on App Store",
+      items: [
+		"deployment/deploy-on-app-store-create-appstore-record",
+		"deployment/deploy-on-app-store-archive-and-upload",
+			],     
+
+	},   
 
   ],
   templates: [
