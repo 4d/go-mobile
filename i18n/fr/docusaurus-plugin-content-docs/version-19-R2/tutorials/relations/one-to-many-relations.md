@@ -5,7 +5,7 @@ title: One to Many relations
 
 Grâce à ce tutoriel, vous pourrez facilement inclure des liens 1 vers N dans vos projets mobiles.
 
-Let's get started by downloading the Starter project:
+Commençons par télécharger le Projet Starter :
 
 <div className="center-button">
 <a className="button button--primary"
