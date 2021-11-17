@@ -14,6 +14,20 @@ title: Trabajar con Xcode
 > 
 > Si personaliza su proyecto en Xcode y lo reconstruye desde el Editor de proyecto, todas sus modificaciones se perderán!
 
+## ¿Qué es Xcode?
+
+Xcode es un entorno de desarrollo integrado(IDE) y un conjunto de herramientas de desarrollo para macOS que se utilizan para crear aplicaciones para iPad, iPod, iPhone y Mac.
+
+## Descargar
+
+Para descargar la última versión de Xcode vaya a la App Store.
+
+<div className="center-button">
+<a className="button button--primary" href="macappstore://itunes.apple.com/app/id497799835?mt=12">Ver in Mac App Store </a>
+</div>
+
+Los desarrolladores registrados pueden descargar las versiones previas y las versiones anteriores de la suite a través del sitio web de desarrolladores de Apple.
+
 
 Utilizaremos la [aplicación contact](../crear-su-primera-app) que hemos creado.
 
