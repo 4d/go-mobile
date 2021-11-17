@@ -115,7 +115,7 @@ O editor móvel permite adicionar formatos personalizados (chamados "formatadore
 
 Para adicionar formatos personalizados para seus projetos móveis, pode:
 
-- Baixar e instalar formatos personalizados  [**go-mobile formatters github repository**](https://4d-for-ios.github.io/gallery/#/type/formatter/picker/0).
+- Download and install customized formats from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter).
 
 - Criar seus formatos próprios.
 
