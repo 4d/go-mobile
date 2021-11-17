@@ -115,7 +115,7 @@ The mobile editor allows you to add customized formats (called "formatters") in 
 
 To add custom formats to your mobile project, you can:
 
-- Download and install customized formats from the [**go-mobile formatters github repository**](https://4d-for-ios.github.io/gallery/#/type/formatter/picker/0).
+- Download and install customized formats from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter).
 
 - Create your own formats.
 
