@@ -3,7 +3,6 @@ id: data-formatter
 title: Format des données
 ---
 
-4D v17 R3 intègre un nouveau concept : le format des données !
 
 Vous pouvez désormais choisir des formats prédéfinis à partir de la section Libellés et icônes.
 
@@ -15,7 +14,7 @@ Vous pouvez désormais choisir des formats prédéfinis à partir de la section 
 > * **Boolean**: "No" or "Yes", "False" or "True"
 > * **Integer**: Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out
 
-Let's get started by downloading the Starter project:
+Commençons par télécharger le Projet Starter :
 
 <div className="center-button">
 <a className="button button--primary"
