@@ -3,7 +3,6 @@ id: data-formatter
 title: Formato de datos
 ---
 
-4D v17 R3 integra un nuevo concepto: el formato de datos
 
 Ahora puede elegir los formatos pre definidos de la sección Etiquetas e iconos.
 
