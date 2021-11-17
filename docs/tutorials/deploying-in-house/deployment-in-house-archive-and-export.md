@@ -18,7 +18,7 @@ title: Archive and export your Project
 
 ## STEP 1. Xcode configuration
 
-Following validation of your account by Apple, open Xcode and add your Apple Enterprise Developer account in Preferences > Accounts.
+Following validationof your account by Apple, open Xcode and add your Apple Enterprise Developer account in Preferences > Accounts.
 
 Xcode will automatically install required provisioning and certificates.
 
