@@ -14,6 +14,20 @@ title: Working with Xcode
 >
 >If you customize your project on Xcode and rebuild it from the Project Editor All of your modifications will be lost!
 
+## What is Xcode?
+
+Xcode is an IDE and a set of developer tools for macOS used to create iPad, iPod, iPhone, and Mac apps.
+
+## Download
+
+To download the lastest version of Xcode go to the App Store.
+
+<div className="center-button">
+<a className="button button--primary" href="macappstore://itunes.apple.com/app/id497799835?mt=12">View in Mac App Store </a>
+</div>
+
+Registered developers can download preview releases and prior versions of the suite through the Apple Developer website.
+
 
 We'll use the [contact application](../create-your-first-app) we created. 
 
