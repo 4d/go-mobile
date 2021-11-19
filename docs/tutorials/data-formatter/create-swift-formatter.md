@@ -8,9 +8,11 @@ title: Create Swift formatter
 > Create your first data formatters.
 
 
+### Object attribute Swift formatter
+
 In the following example, we want to display an address getting only relevant values that are available in the following object using a Swift formatter
 
-``` 
+```4d 
 $Obj:=New object 
 $Obj.name:="4D SAS" 
 $Obj.address1:="66 rue de Sartrouville" 
@@ -29,11 +31,15 @@ $Ent.save()
 
 Here is the **manifest.json file**:
 
+```4d
 {
     "name": "objectFormatter",
     "binding": "objectAddress",
     "type": "object" 
 }
+
+```
+
 To get the number, the street, and the city, let’s build a custom **Swift formatter**:
 
 ``` 
@@ -62,11 +68,11 @@ extension UILabel {
 }
 ```
 
-Putting all that together, you can drop this formatter in the formatter folder and use it in your mobile project.
+Putting all that together, you can save this formatter as a **.swift** file in the formatter folder and use it in your mobile project.
 
-![Architecture](img/architecture.png)
+![Architecture](img/architecture-.png)
 
-And see the final result:
+Check out the final result:
 
 ![Final result](img/rendu.png)
 
