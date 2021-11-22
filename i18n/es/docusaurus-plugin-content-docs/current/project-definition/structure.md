@@ -24,6 +24,12 @@ The following tables and fields are not listed in this page:
 
 :::
 
+:::nota
+
+Only computed attributes with values that change over time - only depending on other attributes of the same DataClass - will be updated on the mobile app.
+
+:::
+
 ## Selecting tables and fields to publish
 
 A table is published when at least one of its fields is published. When a table is published, it is displayed in **bold**.
@@ -53,6 +59,8 @@ The mobile editor automatically displays the list of fields that are eligible to
 ![Fields](img/fields.png)
 
 - All [4D scalar field types](https://developer.4d.com/docs/en/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html).
+- [Object fields](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
+- [Computed attributes](https://developer.4d.com/go-mobile/fr/docs/project-definition/structure#computed-attributes)
 - Relation attributes (Many-to-one and One-to-many) are supported and can be selected just as fields. They have specific icons:
 
 Many to one relation icon:  ![relation1](img/manyto1.png)
@@ -127,44 +135,11 @@ See the [**Relation interactions**](../tutorials/relations/relation-interactions
 
 :::
 
-## Incremental reload
-
-### Allow structure adjustments
-
-For the best user experience, 4D for iOS and 4D for Android implement an automatic feature for the incremental reload of data. It means that only new, modified or deleted data from the database will be updated to the app. This optimization enhances drastically loading time.
-
-To enable this optimization, 4D for iOS and 4D for Android need the following structure elements:
-
-* A `__DeletedRecords` table to store deleted records
-* and `__GlobalStamp` fields to store modification stamps for each published table in your mobile application
-
-You can let the 4D mobile editor do all the work for you and add the necessary structure elements: just select **Allow 4D to make necessary structure adjustments for an optimized mobile data update** option.
-
-:::nota
-
-These optimizations are required for both local and server databases.
-
-:::
-
-### Pull to refresh!
-
-On the mobile app side, your data is updated each time you launch your app and each time your app goes foreground, to get constant updated data.
-
-In normal use, simply swipe down from any listform to reload your data.
-
-From iPhone settings, you can now reset your app data and find information about your app.
-
-:::nota
-
-When an important maintenance operation is performed on the database side (Recover by tag / Restoration / Compacting) a Full reload is necessary on the mobile app. In this case, the admin shall notify mobile app users.
-
-:::
-
 ## Computed attributes
 
-Whether you're working on Android or iOS, you can display computed attributes in your app once it is generated, by configurating them from the project editor.
+Whether you're working on Android or iOS, you can display [computed attributes](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#computed-attributes) in your app once it is generated, by configurating them from the project editor.
 
-[Computed attributes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#computed-attributes) are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
+In 4D for iOS and 4D for Android, [computed attributes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#computed-attributes) are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
 
 The process is actually quite simple!
 
@@ -200,12 +175,6 @@ Else
     // ERROR    
 End if
  ```
-
-:::nota
-
-Only computed attributes with values that change over time - only depending on other attributes of the same DataClass - will be updated on the mobile app.
-
-:::
 
 ### Project editor side
 
@@ -246,11 +215,11 @@ In the generated mobile application, on iOS or Android, both single attributes a
 
 ## Object attributes
 
-From the **Structure** section, you can select, use and display all [types](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) of attributes in your mobile projects (text, dates, time, integers, etc), including **object attributes** (JSON format). They are distinguished by their **{}** icon.
+From the **Structure** section, you can select, use and display all [types](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) of attributes in your mobile projects (text, dates, time, integers, etc), including **[object attributes](https://developer.4d.com/docs/en/Concepts/object.html)** (JSON format). In the field list, object attributes are distinguished by their **{}** icon.
 
 ![Structure section](img/object-attributes-structure.png)
 
-You will then be able to use these object attributes as any other field in the other sections of the project editor (Data, labels & icons, Forms, etc. except for the Actions section).
+You can use an object attribute as any other field in the other sections of the project editor (Data, labels & icons, Forms, etc. except for the Actions section).
 
 From the **Labels&Icons** section, two formats are available to display your object attributes:
 
@@ -263,7 +232,7 @@ Here's the result on the generated app:
 
 ![Structure section](img/object-attributes-rendering.png)
 
-### Filter query
+### Filter queries
 
 You can use [filter queries](https://developer.4d.com/go-mobile/docs/project-definition/data#filter-queries) specific to object attributes in order to return and display filtered data. To do so, simply insert your attribute and property in the Filter query of the **[Data](https://developer.4d.com/go-mobile/docs/project-definition/data)** section.
 
@@ -292,7 +261,7 @@ For instance, consider a Clients table with an Address object-type attribute con
 ```
 
 
-### Filter by object
+#### Filter by a simple object's value
 
 If you want to display data filtered by an object, such as a list of your clients only based in France, you need to filter your query by country to get only the records containing the `France` value. Therefore, insert the following syntax in the Filter query field:
 
@@ -301,7 +270,7 @@ If you want to display data filtered by an object, such as a list of your client
 Address.country = "France"
 
 ```
-### Filter by collection
+#### Filter by collection's value
 
 If you want to display data filtered by an element of a collection, such as a specific client's email contained in a collection, you need to filter your query by email to get only the records containing the `john@4d.com` value. Therefore, insert the following syntax in the Filter query field:
 
@@ -310,6 +279,41 @@ If you want to display data filtered by an element of a collection, such as a sp
 Address.email[] = "john@4d.com"
 
 ```
+
+
+## Incremental reload
+
+### Allow structure adjustments
+
+For the best user experience, 4D for iOS and 4D for Android implement an automatic feature for the incremental reload of data. It means that only new, modified or deleted data from the database will be updated to the app. This optimization enhances drastically loading time.
+
+To enable this optimization, 4D for iOS and 4D for Android need the following structure elements:
+
+* A `__DeletedRecords` table to store deleted records
+* and `__GlobalStamp` fields to store modification stamps for each published table in your mobile application
+
+You can let the 4D mobile editor do all the work for you and add the necessary structure elements: just select **Allow 4D to make necessary structure adjustments for an optimized mobile data update** option.
+
+:::nota
+
+These optimizations are required for both local and server databases.
+
+:::
+
+### Pull to refresh
+
+On the mobile app side, your data is updated each time you launch your app and each time your app goes foreground, to get constant updated data.
+
+In normal use, simply swipe down from any listform to reload your data.
+
+From iPhone settings, you can reset your app data and find information about your app.
+
+:::nota
+
+When an important maintenance operation is performed on the database side (Recover by tag / Restoration / Compacting) a Full reload is necessary on the mobile app. In this case, the admin shall notify mobile app users.
+
+::: 
+
 
 
 
