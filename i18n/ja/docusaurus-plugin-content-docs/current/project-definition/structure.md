@@ -265,9 +265,9 @@ Here's the result on the generated app:
 
 ### Filter query
 
-In the **Data** section, you can use filter queries to return and display data filtered by specific criteria (Filter, Comparator, Operator).
+You can use [filter queries](https://developer.4d.com/go-mobile/docs/project-definition/data#filter-queries) specific to object attributes in order to return and display filtered data. To do so, simply insert your attribute and property in the Filter query of the **[Data](https://developer.4d.com/go-mobile/docs/project-definition/data)** section.
 
-For instance, consider the following code containing all the information concerning one of your clients:
+For instance, consider a Clients table with an Address object-type attribute containing several objects with the following key/values:
 
 
 ```4d
@@ -291,14 +291,19 @@ For instance, consider the following code containing all the information concern
 }
 ```
 
-If you want to display a list of your clients only based in France, you need to filter your query by country to get only the records containing the `France` value. Given the fact that you have previously published an Address object attribute in the Structure section, insert the following in the Filter query field:
+
+### Filter by object
+
+If you want to display data filtered by an object, such as a list of your clients only based in France, you need to filter your query by country to get only the records containing the `France` value. Therefore, insert the following syntax in the Filter query field:
 
 ```4d
 
 Address.country = "France"
 
 ```
-If you want to display a specific client's information based on their email, contained in a collection, you need to filter your query by email to get only the records containing the `john@4d.com` value. To do so, enter the following:
+### Filter by collection
+
+If you want to display data filtered by an element of a collection, such as a specific client's email contained in a collection, you need to filter your query by email to get only the records containing the `john@4d.com` value. Therefore, insert the following syntax in the Filter query field:
 
 ```4d
 
