@@ -233,7 +233,7 @@ Here's the result on the generated app:
 
 ![Structure section](img/object-attributes-rendering.png)
 
-### Filter query
+### Filter queries
 
 You can use [filter queries](https://developer.4d.com/go-mobile/docs/project-definition/data#filter-queries) specific to object attributes in order to return and display filtered data. To do so, simply insert your attribute and property in the Filter query of the **[Data](https://developer.4d.com/go-mobile/docs/project-definition/data)** section.
 
@@ -262,7 +262,7 @@ For instance, consider a Clients table with an Address object-type attribute con
 ```
 
 
-#### Filter by an simple object's value
+#### Filter by a simple object's value
 
 If you want to display data filtered by an object, such as a list of your clients only based in France, you need to filter your query by country to get only the records containing the ```France``` value. 
 Therefore, insert the following syntax in the Filter query field:
