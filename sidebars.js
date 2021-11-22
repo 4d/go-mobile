@@ -172,8 +172,7 @@ module.exports = {
       label: "Templates & Formatters",
       items: [
         "templates/templates",
-        
-      ],
+             ],
     },
-  ],
+			],
 };
