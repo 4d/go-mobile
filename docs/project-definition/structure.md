@@ -293,7 +293,7 @@ For instance, consider a Clients table with an Address object-type attribute con
 ```
 
 
-### Filter by object 
+#### Filter by an simple object's value
 
 If you want to display data filtered by an object, such as a list of your clients only based in France, you need to filter your query by country to get only the records containing the ```France``` value. 
 Therefore, insert the following syntax in the Filter query field:
@@ -303,7 +303,7 @@ Therefore, insert the following syntax in the Filter query field:
 Address.country = "France"
 
 ```
-### Filter by collection
+#### Filter by collection's value
 
 If you want to display data filtered by an element of a collection, such as a specific client's email contained in a collection, you need to filter your query by email to get only the records containing the ```john@4d.com``` value. 
 Therefore, insert the following syntax in the Filter query field:
