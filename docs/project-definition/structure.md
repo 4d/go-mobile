@@ -272,7 +272,7 @@ Therefore, insert the following syntax in the Filter query field:
 Address.country = "France"
 
 ```
-#### Filter by collection's value
+#### Filter by a collection's value
 
 If you want to display data filtered by an element of a collection, such as a specific client's email contained in a collection, you need to filter your query by email to get only the records containing the ```john@4d.com``` value. 
 Therefore, insert the following syntax in the Filter query field:
