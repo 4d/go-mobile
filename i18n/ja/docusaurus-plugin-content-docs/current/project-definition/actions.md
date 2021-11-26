@@ -8,12 +8,6 @@ title: アクション
 * 4DのコードをiOS アプリから実行するアクションを作成する
 * アクションに渡す引数を定義して渡す
 
-:::4D for Androidにおける注意
-
-このセクションで触れている内容は4D for Android では現在ご利用いただけません。
-
-:::
-
 ## プロジェクトエディター側での設定
 
 ### アクションを作成する
@@ -366,6 +360,12 @@ Zymosian, Elmer
 **注意:** 入力コントロールは"入力コントロール" フィールドの横にある矢印を使用してアクセスすることができます。
 
 ## Offline mode actions
+
+:::4D for Androidにおける注意
+
+このセクションで触れている内容は4D for Android では現在ご利用いただけません。
+
+:::
 
 The user of an app can draft, store and queue action requests, even if he’s working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.).  All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
 
