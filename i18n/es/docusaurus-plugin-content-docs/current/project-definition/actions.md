@@ -8,12 +8,6 @@ Esta sección le permite:
 * crear acciones para ejecutar código 4D desde su aplicación iOS.
 * definir y añadir parámetros a sus acciones.
 
-:::información 4D for Android
-
-Esta sección no está disponible actualmente en 4D for Android.
-
-:::
-
 ## En el editor de proyectos
 
 ### Cree su acción
@@ -366,6 +360,12 @@ Here are the different formats available on the generated application:
 **Note:** You can access your input control using the arrow icon next to the "Input Control" field.
 
 ## Acciones en modo sin conexión
+
+:::información 4D for Android
+
+Esta sección no está disponible actualmente en 4D for Android.
+
+:::
 
 El usuario de una aplicación puede redactar, almacenar y poner en cola solicitudes de acción, incluso si está trabajando sin conexión (añadir el número de teléfono de un cliente, subir una foto, imprimir una factura o un presupuesto, borrar una dirección, etc.).  Todas estas tareas se colocan en la lista de acciones pendientes hasta que la red sea accesible. Una vez que el usuario está en línea, todas las acciones pendientes se sincronizan sistemáticamente, se ejecutan y son visibles en la lista de acciones completadas.
 
