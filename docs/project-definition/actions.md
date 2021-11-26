@@ -8,12 +8,6 @@ This section allows you to:
 * create actions to execute 4D code from your iOS app.
 * define and add parameters to your actions.
 
-:::info 4D for Android
-
-This section is currently not available in 4D for Android.
-
-:::
-
 ## Project Editor Side
 
 ### Create your action
@@ -368,6 +362,12 @@ Here are the different formats available on the generated application:
 **Note:** You can access your input control using the arrow icon next to the "Input Control" field.
 
 ## Offline mode actions
+
+:::info 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
 
 The user of an app can draft, store and queue action requests, even if he’s working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.).  All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
 
