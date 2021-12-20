@@ -17,7 +17,7 @@ Vous pouvez créer de nouvelles actions en cliquant sur le bouton +, situé en-d
 Vous définirez ensuite les éléments suivants :
 
 * **Noms :** Définissez le nom de l'action à utiliser dans la méthode base [Sur une action app mobile](https://developer.4d.com/4d-for-ios/docs/en/actions.html#on-mobile-app-action) pour lancer votre code 4D.
-* **Icônes :** Sélectionnez une icône pour votre action à partir de la librairie d'icônes. Vous pouvez également ajouter votre propre icône à l'aide de ce [tutorial]`(using-icons.html)`.
+* **Icônes :** Sélectionnez une icône pour votre action à partir de la librairie d'icônes. You can also add your own icon.
 * **Libellés long et court :** Définissez les libellés correspondant aux actions que vous souhaitez afficher dans votre application.
 * **Table :** Sélectionnez la table à laquelle vous souhaitez appliquer une action.
 * **Portée :** Choisissez d'appliquer l'action à une **entité** ou à une **table**.
