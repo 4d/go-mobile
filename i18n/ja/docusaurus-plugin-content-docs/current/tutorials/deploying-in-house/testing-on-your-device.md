@@ -10,7 +10,7 @@ You can install and test your mobile application on a connected device.
 
 You need to subscribe to an Apple Developer Program. Depending on your objectives and preferences, you can choose to enroll in one of the following:
 
-* [Free Apple Developer Program]`(free-developer-account.html)-- to add`: For testing only
+* Free Apple Developer Program -- to add```: For testing only
 * [Apple Developer Program for organization](../tutorials/developer-program/register-apple-developer-program-organization) or [individual](../tutorials/developer-program/register-apple-developer-program-individual): For an App Store Deployment
 * [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program): To deploy your app in-house
 
@@ -34,7 +34,7 @@ You need [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurat
 
 ## ⒊ ⒉ ⒉ ⒉ Get your Team ID
 
-* If your are using a [Free Apple Developer Program]`(free-developer-account.html--to addd)` go to [step 4](#step-4-team-id-for-free-account).
+* If your are using a Free Apple Developer Program, go to [step 4](#step-4-team-id-for-free-account).
 * If your are using an [Apple Developer Program for organization](../tutorials/developer-program/register-apple-developer-program-organization), [individual](../tutorials/developer-program/register-apple-developer-program-individual) or an [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program) go to [step 5](#step-5-team-id-for-paid-subscription-account).
 
 ## ⒋ ⒋ ⒋ ⒋ Team ID for Free account
@@ -45,7 +45,7 @@ You need [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurat
 
 ![Build tab](img/Open-your-project-Xcode-4D-for-iOS.png)
 
-* Verify that the **Automatically manage signing** option is checked and select the account you added [here]`(free-developer-account.html)` from the Team dropdown list.
+* Verify that the **Automatically manage signing** option is checked and select the account you added, from the Team dropdown list.
 
 ![Account-Selection](img/account-Selection-Free-Account.png)
 
