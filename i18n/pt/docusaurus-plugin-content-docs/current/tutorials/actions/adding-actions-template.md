@@ -9,7 +9,7 @@ title: Adicionar ações em modelos
 
 > **PRÉ-REQUISITOS**
 > 
-> Clique em`[here](prerequisites.html)` para ver o que necessita para  começar
+> Click `[here](requirements.html)` to see what you'll need to get started!
 
 Neste tutorial, veremos como é fácil **agregar ações a planilhas personalizadas**.
 
