@@ -187,6 +187,12 @@ title: アクション
 
 ### 共有アクション
 
+:::4D for Androidにおける注意
+
+このセクションで触れている内容は4D for Android では現在ご利用いただけません。
+
+:::
+
 **共有アクション** を選択すると、モバイルアプリのユーザーがコンテンツを他のユーザーと共有することができるようになります。 このアクションではスコープを選択する必要があります:
 
 - **エンティティ**: 詳細フォームのコンテンツを共有する
@@ -195,6 +201,12 @@ title: アクション
 詳細については[ディープリンキング](../special-features/deep-linking.md)のページを参照してください。
 
 ### ソートアクション
+
+:::4D for Androidにおける注意
+
+このセクションで触れている内容は4D for Android では現在ご利用いただけません。
+
+:::
 
 **ソートアクション**は以下のような目的のために有用です:
 
@@ -247,6 +259,12 @@ Zymosian, Elmer
 :::
 
 ## アクション入力コントロール
+
+:::4D for Androidにおける注意
+
+このセクションで触れている内容は4D for Android では現在ご利用いただけません。
+
+:::
 
 ### キャラリーからカスタム入力を使用する方法
 
@@ -404,7 +422,7 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
   ```
 
 
-## iOS app Side
+## Smartphone app Side
 
 In your iOS app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section.
 
