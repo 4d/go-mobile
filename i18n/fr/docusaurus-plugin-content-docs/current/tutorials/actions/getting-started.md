@@ -10,7 +10,7 @@ title: Prise en main
 
 > **CONDITIONS PRÉALABLES**
 > 
-> Cliquez `[here](prerequisites.html)` pour commencer !
+> Click `[here](requirements.html)` to see what you'll need to get started!
 
 Depuis 4D v17 R5, vous pouvez [définir des actions](define-first-action.md) directement à partir de l'éditeur de projet et exécuter le code 4D à partir de votre application iOS !
 
