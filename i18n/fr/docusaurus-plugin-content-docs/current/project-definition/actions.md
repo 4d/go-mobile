@@ -187,6 +187,12 @@ Ce type d'actions doit être utilisé avec précaution.
 
 ### Partager
 
+:::info 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
+
 Sélectionner l'**action Partager** permettra à vos utilisateurs de partager du contenu avec d'autres utilisateurs. You just need to select the scope:
 
 - **entity**: to share content from a detail form
@@ -195,6 +201,12 @@ Sélectionner l'**action Partager** permettra à vos utilisateurs de partager du
 See the [Deep Linking](../special-features/deep-linking.md) page for more details.
 
 ### Sort action
+
+:::info 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
 
 **Sort actions** are useful to:
 
@@ -247,6 +259,12 @@ After creating all of your actions, just click on the Create button from the Act
 :::
 
 ## Action input controls
+
+:::info 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
 
 ### How to use a custom input from the gallery
 
@@ -404,7 +422,7 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
   ```
 
 
-## iOS app Side
+## Smartphone app Side
 
 In your iOS app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section.
 
