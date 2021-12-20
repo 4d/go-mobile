@@ -9,7 +9,7 @@ title: テンプレートにアクションを追加する
 
 > **PREREQUISITES**
 > 
-> 始めるために必要なものについては`[here](prerequisites.html)`をクリックして下さい!
+> Click `[here](requirements.html)` to see what you'll need to get started!
 
 このチュートリアルでは、どうやって簡単に**カスタムテンプレートにアクションを追加する**かを見ていきます。
 
