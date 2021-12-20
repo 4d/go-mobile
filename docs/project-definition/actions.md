@@ -17,7 +17,7 @@ You can create a new action by clicking on the + button at the bottom of the Act
 Next you'll need to define the following:
 
 * **Names:** The action name to use in the [On Mobile App Action](https://developer.4d.com/4d-for-ios/docs/en/actions.html#on-mobile-app-action) database method to trigger your 4D code.
-* **Icons:** The icon to choose from your icon library. You can also add your own icon by following this [tutorial]```(using-icons.html)```.
+* **Icons:** The icon to choose from your icon library. You can also add your own icon.
 * **Short and long Labels:** The labels for the actions to display in your app.
 * **Table:** The table on which you want to apply the action.
 * **Scope:** Where to use the action, an **entity** or a **table**.
