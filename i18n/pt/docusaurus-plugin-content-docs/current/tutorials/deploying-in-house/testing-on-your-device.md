@@ -10,7 +10,7 @@ Pode instalar e testar sua aplicação móvel em um aparelho conectado.
 
 É preciso se inscrever a um programa de Desenvolvedores Apple. Dependendo de seus objetivos e preferências, pode escolher se inscrever em um desses programas:
 
-* [Free Apple Developer Program]`(free-developer-account.html)-- to add`: unicamente para testes.
+* Free Apple Developer Program -- to add```: For testing only
 * [Apple Developer Program para as empresas](../tutorials/developer-program/register-apple-developer-program-organization) o [para os particulares](../tutorials/developer-program/register-apple-developer-program-individual): com o objetivo de lançar no App Store
 * [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program): para lançar sua aplicação internamente
 
@@ -34,7 +34,7 @@ Pode instalar e testar sua aplicação móvel em um aparelho conectado.
 
 ## PASSO 3. Obtenha uma ID de Equipe
 
-* Se estiver utilizando um [Programa gratuito para desenvolvedores de Apple]`(free-developer-account.html--to addd)` vá a [passo 4](#step-4-team-id-for-free-account).
+* If your are using a Free Apple Developer Program, go to [step 4](#step-4-team-id-for-free-account).
 * Se estiver usando um [Apple Developer Program para organizações](../tutorials/developer-program/register-apple-developer-program-organization), [individual](../tutorials/developer-program/register-apple-developer-program-individual) ou um [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program) vá para [o passo 5](#step-5-team-id-for-paid-subscription-account).
 
 ## PASSO 4. Team ID para a conta gratuita
@@ -45,7 +45,7 @@ Pode instalar e testar sua aplicação móvel em um aparelho conectado.
 
 ![Build tab](img/Open-your-project-Xcode-4D-for-iOS.png)
 
-* Verifique que a opção **Automatically manage signing** esteja marcada e selecione a conta que agregou  [here]< [here](free-developer-account.html) a partir da lista dropdown Team.
+* Verify that the **Automatically manage signing** option is checked and select the account you added, from the Team dropdown list.
 
 ![Account-Selection](img/account-Selection-Free-Account.png)
 
