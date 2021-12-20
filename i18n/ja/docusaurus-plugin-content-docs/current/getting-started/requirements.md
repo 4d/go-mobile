@@ -3,26 +3,26 @@ id: requirements
 title: 要件
 ---
 
-4D for iOS and 4D for Android require a specific minimum configuration.
+4D for iOS および 4D for Android を使用するためには以下の具体的な最低要件が必要になります。
 
 ![Welcome page](img/welcome-page.png)
 
 
-## System requirements
+## システム要件
 
 System requirements are the same as [4D's minimum system requirements](https://us.4d.com/product-download/Feature-Release).
 
 8GB of RAM is recommended.
 
 
-## Software requirements
+## ソフトウェアのシステム要件
 
 ### 4D
 
-- **Development**: 4D with a 4D Developer Pro licence
+- **開発**: 4D と 4D Developer Pro ライセンス
 
-- **Deployment**: 4D Server - The 4D Web Server must be started.
-    - HTTP and HTTPS ports must be enabled and correctly configured. HTTPS is mandatory for 4D for iOS and 4D for Android deployment.
+- **配布**: 4D Server - 4D Web Server が起動している必要があります。
+    - HTTP および HTTPS ポートが有効化されており、かつ正しく設定されている必要があります。 4D for iOS and 4D for Android 配布においては、HTTPS は必須となります。
 
 
 ### iOS
@@ -61,13 +61,14 @@ Version table:
 
 Version table:
 
-| 4D   | Android                                               | Windows           |
-| ---- | ----------------------------------------------------- | ----------------- |
-| 19R2 | [4.1.2](https://developer.android.com/studio/archive) | Windows 10 64-bit |
+| 4D        | Android Studio                                                      | Windows           |
+| --------- | ------------------------------------------------------------------- | ----------------- |
+| 19R3-beta | [Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
+| 19R2      | [4.1.2](https://developer.android.com/studio/archive)               | Windows 10 64-bit |
 
 :::note
 
-You can build Android apps both on Mac and PC.
+Android アプリはMacとWindowsどちらでもビルド可能です。
 
 :::
 

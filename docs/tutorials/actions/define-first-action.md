@@ -132,7 +132,7 @@ $0:=$out
 
 ```
 
-Build and Run you app and there you go! Your **Done action** is available when you swipe left a cell in Listform, as well as when you click on the **generic action button** in the navigation bar of the Detail form.
+Build and Run you app, and there you go! Your **Done action** is available when you swipe left a cell in Listform, as well as when you click on the **generic action button** in the navigation bar of the Detail form.
 
 ![Done action](img/Entity-action-Done.png)
 

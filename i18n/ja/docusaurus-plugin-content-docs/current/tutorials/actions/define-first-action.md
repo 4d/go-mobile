@@ -3,20 +3,20 @@ id: define-first-action
 title: はじめてのアクション
 ---
 
-In this tutorial, we are going to work on a **Tasks iOS app** and see how to deal with actions in this app.
+このチュートリアルでは、**Tasks iOS app** を使用して、このアプリ内でどのようにアクションを扱っていくかを見ていきます。
 
-Basically what we want to do in a **Task app** is changing the **status** and the **percentage of completion** of a task individually.
+この**Task app** 内でやりたいこととは、それぞれのタスクの**ステータス**と**進捗のパーセンテージ** を個別に変更したいということです。
 
-More globally, we want to **change all tasks status** to postponed or in Progress for example.
+また、**すべてのタスクのステータスを変更** し、「延期」あるいは「進行中」などへと変更することも視野に入れます。
 
-Download the **Starter project** and go right to the **Actions section**.
+**スタータープロジェクト**をダウンロードし、**アクションセクション**に移動してください。
 
 <div className="center-button">
 <a className="button button--primary"
 href="https://github.com/4d-go-mobile/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">Download</a>
 </div>
 
-You can define actions for two levels:
+アクションは2つのレベルに対して定義可能です:
 
 * エンティティに対するアクション
 * テーブルに対するアクション
@@ -26,15 +26,15 @@ You can define actions for two levels:
 
 ## エンティティに対するアクション
 
-### ⒈ ⒈ 「アクション」セクションで設定すること
+### ⒈ 1.「アクション」セクションで設定すること
 
-In this Actions section, you will be able to define all your actions **names**, **icons**, **labels**, the **table** you want the action to be available in and the **scope** you want actions to be applied on.
+このアクションセクションでは、アクションの**名前**、**アイコン**、**ラベル**、このアクションが利用できる**テーブル**、このアクションが適用される**scope**などを、全てのアクションに対して定義することが可能です。
 
-The action section is quite empty when you open it for the first time, so click on the **Plus button** at the bottom left to add your first action!
+アクションセクションは最初に開いた時は空なので、下部にある**追加ボタン**をクリックして、最初のアクションを追加してみましょう!
 
 ![アクションの追加](img/Create-action.png)
 
-Let's define first an action that will **change a task status** to "Complete" and put the **percentage of completion** to 100%.
+まずは**タスクのステータスを変更**して「完了」に設定するアクションと、**進捗のパーセンテージを変更** して100%に設定するアクションを定義してみましょう。
 
 下記のステップで実現することができます。
 
@@ -132,7 +132,7 @@ $0:=$out
 
 ```
 
-アプリをビルドして実行しましょう！ Your **Done action** is available when you swipe left a cell in Listform, as well as when you click on the **generic action button** in the navigation bar of the Detail form.
+Build and Run you app, and there you go! Your **Done action** is available when you swipe left a cell in Listform, as well as when you click on the **generic action button** in the navigation bar of the Detail form.
 
 ![完了アクション](img/Entity-action-Done.png)
 

@@ -164,7 +164,7 @@ When an important maintenance operation is performed on the database side (Recov
 
 Whether you're working on Android or iOS, you can display computed attributes in your app once it is generated, by configurating them from the project editor.
 
-Computed attributes are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
+[Computed attributes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#computed-attributes) are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
 
 The process is actually quite simple!
 
@@ -173,18 +173,39 @@ The process is actually quite simple!
 In your code, specify the attributes you want to use and the computed attribute you want to get, using the [*Class extends*](https://developer.4d.com/docs/en/Concepts/classes.html#class-extends-classname) and [exposed Function](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows:
 
 ```4d 
- Class extends Entity
+Class extends Entity
 
-exposed Function get fullName->$result : Text
-    $result:=This.FirstName+" "+This.LastName
+exposed Function get fullName->$fullName : Text
+    $fullName:=This.FirstName+" "+This.LastName
 
-exposed Function set fullName($result : Text)
+exposed Function set fullName($fullName : Text)
+$splitName:=Split string($fullName; "/")
+If ($splitName.length=2)
+    This.FirstName:=$splitName[0]
+    This.LastName:=$splitName[1]
+Else 
+    // ERROR    
+End if
 
-exposed Function get fullAddress->$result : Text
-    $result:=This.StreetNumber+" "+This.Street+" - "+This.Location
+exposed Function get fullAddress->$fullAddress : Text
+    $fullAddress:=This.StreetNumber+" "+This.Street+" - "+This.Location
 
-exposed Function set fullAddress($result : Text)
+exposed Function set fullAddress($fullAddress : Text)
+$splitAddress:=Split string($fullAddress; "/")
+If ($splitAddress.length=3)
+    This.StreetNumber:=$splitAddress[0]
+    This.Street:=$splitAddress[1]
+    This.Location:=$splitAddress[2]
+Else 
+    // ERROR    
+End if
  ```
+
+:::note
+
+Only computed attributes with values that change over time - only depending on other attributes of the same DataClass - will be updated on the mobile app.
+
+:::
 
 ### Project editor side
 
@@ -222,3 +243,63 @@ In the **Data** panel, computed attributes are displayed in the list linked to t
 In the generated mobile application, on iOS or Android, both single attributes and computed attributes are displayed.
 
 ![final app](img/final-app.png)
+
+## Object attributes
+
+From the **Structure** section, you can select, use and display all [types](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) of attributes in your mobile projects (text, dates, time, integers, etc), including [object attributes](https://developer.4d.com/docs/en/FormEditor/stylesheets.html#object-attributes) (JSON format). They are distinguished by their **{}** icon.
+
+![Structure section](img/object-attributes-structure.png)
+
+You will then be able to use thses object attributes as any other field in the other sections of the project editor (Data, labels & icons, list and detail forms, etc. except for the Actions section).
+
+From the **Labels&Icons** section, you can select two formats to display your object attributes:
+
+- **Human-readable** (YAML): the default format that displays a human-readable structured data in the mobile app
+- **JSON Pretty Print**: the format that displays an indented JSON in the mobile app
+
+![Labels-and-icons section](img/object-attributes-labels-and-icons.png)
+
+![Structure section](img/object-attributes-rendering.png)
+
+### Filter query
+
+In the **Data** section, you can use filter queries to return and display only searches for values that meet the search criteria specified.
+
+For instance, consider the following code, containing all the information concerning one of your clients:
+
+`code 4D`
+{
+    $Obj:=New object
+    $Obj.name:="4D SAS"
+    $Obj.address1:="66 rue de Sartrouville"
+    $Obj.address2:="Parc les Erables, bâtiment 4"
+    $Obj.zipCode:="78230"
+    $Obj.city:="Le Pecq"
+    $Obj.country:="France"
+    $Obj.phoneNumber:={
+        "OfficePhone":"+33 1 30 53 92 00"
+        "HomePhone":"+33 1 30 53 92 00"
+    }
+    $Obj.email:=[ "john@test.com" "john@apple.com" ] $Obj.website:="fr.4d.com" } `code 4D`
+
+Imagine you're searching for a specific information such as the office phone number of this client. You will filter your reserach as follows in the Filter query field of the Data section:
+
+`code 4D`
+
+Coordinates.phoneNumber.HomePhone = "+33 1 30 53 92 00"
+
+`code 4D`
+
+Now, imagine you want to filter your research based on a collection (a collection of emails for instance). Here is the code you need to insert in the filter query field:
+
+`code 4D`
+
+Coordonnees.email[] = "meriem@test.com"
+
+`code 4D`
+
+
+
+
+
+

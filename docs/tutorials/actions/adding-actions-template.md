@@ -9,7 +9,7 @@ title: Adding actions in templates
 
 > **PREREQUISITES**
 >
-> Click ```[here](prerequisites.html)``` to see what you'll need to get started!
+> Click ```[here](requirements.html)``` to see what you'll need to get started!
 
 In this tutorial, we are going to see how easy it can be to **add actions to custom templates**.
 

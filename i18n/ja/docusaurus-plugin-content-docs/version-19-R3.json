@@ -48,7 +48,7 @@
     "description": "The label for category Filter queries in sidebar tutorials"
   },
   "sidebar.tutorials.category.Actions": {
-    "message": "Actions",
+    "message": "アクション",
     "description": "The label for category Actions in sidebar tutorials"
   },
   "sidebar.tutorials.category.Relations": {

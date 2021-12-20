@@ -45,7 +45,7 @@ The **available values** are the following :
 
 So for this example, if you set log.level Value to 3, you will get **warning, error and sever** in your Xcode console.
 
-### Format
+### フォーマット
 
 You can display different visual indicators in the Xcode console to **highlight different log types**.
 

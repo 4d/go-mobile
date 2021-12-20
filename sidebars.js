@@ -47,26 +47,7 @@ module.exports = {
 			],     
 
 	},
-   {
-      type: 'category',
-      label: 'Deploying In-House',
-      items: [
-	               'deployment/testing-on-your-device',
-					'deployment/deployment-in-house-archive-and-export', 
-					'deployment/deployment-in-house-distribute',
-			],     
-
-	},
-	{
-      type: 'category',
-      label: 'Deploying on App Store',
-      items: [
-				   	'deployment/deploy-on-app-store-create-appstore-record', 
-					'deployment/deploy-on-app-store-archive-and-upload',
-		
-			],     
-
-	},
+   
   ],
   tutorials: [
     "tutorials/create-your-first-app",
@@ -108,10 +89,8 @@ module.exports = {
       type: "category",
       label: "Data formatter",
       items: [
-        "tutorials/data-formatter/data-formatter",
-        "tutorials/data-formatter/open-mobile-project",
-        "tutorials/data-formatter/build-and-run",
         "tutorials/data-formatter/create-data-formatter",
+        "tutorials/data-formatter/create-swift-formatter",
       ],
     },
     {
@@ -149,7 +128,6 @@ module.exports = {
       type: "category",
       label: "Customizing with Xcode",
       items: [
-        "tutorials/customizing-with-xcode/what-is-xcode",
         "tutorials/customizing-with-xcode/working-with-xcode",
         "tutorials/customizing-with-xcode/xcode-overview",
         "tutorials/customizing-with-xcode/4d-for-ios-project-organization",
@@ -167,7 +145,25 @@ module.exports = {
 	   
       ],
     },
-   
+       {
+      type: "category",
+      label: "Deploying In-House",
+      items: [
+	    "tutorials/deploying-in-house/testing-on-your-device",
+		"tutorials/deploying-in-house/deployment-in-house-archive-and-export", 
+		"tutorials/deploying-in-house/deployment-in-house-distribute",
+			],     
+
+	},
+	{
+      type: "category",
+      label: "Deploying on App Store",
+      items: [
+		"tutorials/deploying-on-app-store/deploy-on-app-store-create-appstore-record",
+		"tutorials/deploying-on-app-store/deploy-on-app-store-archive-and-upload",
+			],     
+
+	},   
 
   ],
   templates: [
@@ -176,10 +172,7 @@ module.exports = {
       label: "Templates & Formatters",
       items: [
         "templates/templates",
-        "templates/custom-listform-templates",
-		"templates/custom-detailform-templates",
-		"templates/custom-data-formatters",
-      ],
+             ],
     },
-  ],
+			],
 };

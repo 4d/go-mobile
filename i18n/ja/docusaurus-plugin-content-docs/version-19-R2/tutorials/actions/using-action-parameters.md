@@ -24,7 +24,7 @@ To begin, let's first download the **Starter project** based on our existing Tas
 href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/159a7b73bd3556890a205024af42440faf0b277c.zip">Download</a>
 </div>
 
-## ⒈ Add action
+## ⒈ 追加アクション
 
 Let's begin simple. Open the Tasks mobile project and go directly to the **Actions section**.
 
@@ -47,7 +47,7 @@ For this, let's create an action using a preset **Add** action:
 
 At this point, all **Add action parameters** are created automatically and ready to use.
 
-## ⒉ Edit action
+## ⒉ 編集アクション
 
 Now let's create an action that will allow you to **edit your app content**.
 
@@ -69,7 +69,7 @@ At this point, you will see:
 
 Don't worry, we'll handle the 4D code for these actions later. :-)
 
-## ⒊ Delete action
+## ⒊ 削除アクション
 
 The preset **Delete** action creation process is nearly the same as the Edit action:
 
@@ -81,7 +81,7 @@ The preset **Delete** action creation process is nearly the same as the Edit act
 
 At this point, you will see a **new action** named *"deleteTasks"* with *"Remove"* as the default label.
 
-![Delete action](img/Delete-action-final.png)
+![削除アクション](img/Delete-action-final.png)
 
 You don't need to worry about parameters or properties for this type of action.
 
@@ -408,7 +408,7 @@ And finally you can delete an entity using the **Delete...** action.
 おつかれさまでした！ Your Tasks iOS app is now complete and you can now modify your app data direclty from your device and sychronize it with your server!
 
 
-Download the completed project:
+完成したプロジェクトをダウンロード
 
 <div className="center-button">
 <a className="button button--primary"

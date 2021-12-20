@@ -101,11 +101,11 @@ Available built-in formats depend on the field type:
 
 | Field type         | Formats                                                                                                                |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| **Text**           | Text                                                                                                                   |
-| **Date**           | Date, Short date, Long date, Full date                                                                                 |
-| **Time**           | Time, Short time, Duration, Integer number                                                                             |
+| **テキスト**           | テキスト                                                                                                                   |
+| **日付**             | Date, Short date, Long date, Full date                                                                                 |
+| **時間**             | Time, Short time, Duration, Integer number                                                                             |
 | **Image**          | Image                                                                                                                  |
-| **Boolean**        | "No" or "Yes", "False" or "True"                                                                                       |
+| **ブール**            | "No" or "Yes", "False" or "True"                                                                                       |
 | **Integer number** | Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out |
 
 

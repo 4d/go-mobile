@@ -185,6 +185,7 @@ module.exports = {
 
       //... other Algolia params
     },
+  	hideableSidebar: true,
   },
   plugins: [
     [require.resolve('@cmfcmf/docusaurus-search-local'), {

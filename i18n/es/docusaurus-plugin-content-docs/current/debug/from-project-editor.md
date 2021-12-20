@@ -7,7 +7,7 @@ Puede suceder que encuentre problemas al utilizar el editor de proyectos 4D mobi
 
 Para acceder a los archivos de historial, presione la tecla **Alt** y seleccione **Proyecto** en el panel CREAR del editor de proyectos:
 
-![Depuración](img/debug-from-4D-for-iOS.png)
+![Depuración](img/project.png)
 
 Aparecen elementos del menú de depuración adicionales para el [simulador seleccionado en ese momento](../project-definition/build-panel#using-the-simulator):
 
@@ -27,11 +27,11 @@ Once your app is complete and the simulator’s result is satisfactory, you may 
 
 To do so, in the Project editor, make sure you have plugged your smartphone, then select your physical device from the list and click on the “Build and Run" button.
 
-![AndroidDevice](img/Sans-titre.png)
+![AndroidDevice](img/phone-selection.png)
 
 :::nota
 
-The **Updating the list of devices...** button enables to refresh the list of available devices.
+The **Update the list of devices...** button enables to refresh the list of available devices.
 
 :::
 
@@ -39,6 +39,6 @@ The **Updating the list of devices...** button enables to refresh the list of av
 
 :::nota
 
-If you're an Android developer, you need to add an extra step to the debug process. More details [here](from-your-android-device-and-android-studio.md)
+If you're an Android developer, you need to add an extra step to the debug process. More details [here](from-your-android-device-and-android-studio.md).
 
 :::

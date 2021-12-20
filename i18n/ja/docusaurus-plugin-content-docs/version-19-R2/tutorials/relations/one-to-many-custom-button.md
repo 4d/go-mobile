@@ -157,7 +157,7 @@ Each storyboard element has an Object ID. For example, if you select Field View 
 
 このチュートリアルでは，カスタムリレーションボタンを作成する方法を習得しました。 カスタムボタンの完成プロジェクトは下記のリンクからダウンロードすることができます。
 
-Download the completed project:
+完成したプロジェクトをダウンロード
 
 <div className="center-button">
 <a className="button button--primary"

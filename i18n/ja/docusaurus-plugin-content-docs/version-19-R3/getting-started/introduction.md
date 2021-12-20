@@ -5,42 +5,42 @@ title: Introduction
 
 
 
-The **4D go mobile** feature includes **4D for iOS** and **4D for Android**.
+**4D go mobile** 機能は、**4D for iOS** および **4D for Android** の両方を合わせたものです。
 
-4D for iOS and 4D for Android allow you to configure, design, build, and deploy native iOS apps and/or Android apps based on a 4D database. Once generated and deployed, mobile clients can connect to 4D Server and interact with new or existing data with no extra requirements.
+4D for iOS および 4D for Android を使用すると、4D データベースに基づいたネイティブなiOS / Andorid アプリを設定、デザイン、ビルド、配布することができます。 生成され配布されたモバイルクライアントは、4D Server へと接続することができ、何も追加することなく新規データや既存データをやりとりすることができます。
 
-4D for iOS and 4D for Android are included in a single integrated 4D component. You can create a mobile project and decide to built it for iOS, for Android, or for both.
+4D for iOS および 4D for Android はどちらも統合された単一の4D コンポーネントに格納されています。 モバイルプロジェクトを作成したあとで、iOS用、Android用、あるいは両プラットフォーム用にビルドすることができます。
 
-The [**4D Mobile App Server**](https://github.com/4d-for-ios/4D-Mobile-App-Server) component is also provided and contains useful methods to handle server-side authentication, push notifications, and much more.
+また[**4D Mobile App Server**](https://github.com/4d-for-ios/4D-Mobile-App-Server) コンポーネントも同時に提供されており、サーバー側の認証、プッシュ通知などを管理するための有用なメソッドが用意されています。
 
 :::note
 
-You need to use 4D on macOS to build iOS apps.
+iOS アプリのビルドのためにはmacOS 版4D が必要になります。
 
 :::
 
 
-## Fully integrated in 4D
+## 4Dと完全に統合
 
-With **4D for iOS** and **4D for android**, you can easily create mobile projects directly from 4D, without needing any prior expertise building native mobile apps.
+**4D for iOS** および **4D for android** を使用すれば、これまでにモバイルアプリの制作経験がなくても4D から直接モバイルプロジェクトを簡単に作成することができます。
 
-## Powered by ORDA
+## ORDAで動作
 
-Structure access and data queries benefit from ORDA technology for an object-oriented and optimized server-side code.
+ストラクチャーアクセスとデータクエリにはORDA テクノロジーの利点が生かされており、オブジェクト指向かつ最適化されたサーバー側のコードを書くことができます。
 
-## Create native apps
+## ネイティブなアプリを作成可能
 
-4D handles the complexity and generates - in a totally transparent way - an Xcode project in pure Swift with an optimized UI/UX.
+複雑な部分は全て4D が管理し、完全に透過な方法でXcodeプロジェクトを生成します。生成されたプロジェクトには純粋なSwift コードと最適化されたUI/UXが格納されています。
 
-## One database, many apps
+## 1つのデータベースから、いくつものアプリを
 
-One of the strengths of 4D mobile projects is that you have the opportunity to create an unlimited number of apps from different subsets of a single database, according to your needs and goals.
+4D mobile プロジェクトの強みの一つは、単一のデータベースの異なる部分を基にして、必要とされる機能やゴールに応じていくつものアプリを作成することができるということです。
 
-## Offline mode
+## オフラインモード
 
-All of your data is embedded in your app and available without needing an internet connection.
+全てのデータはアプリに埋め込むことができ、インターネット接続がないときでもデータを利用することができます。
 
-## Open solution
+## 開かれたソリューション
 
-* Since native projects are generated, you can reopen them with Xcode (macOS) and Android Studio and continue to work on it.
-* All tables and forms are embedded into the generated app and are editable.
+* 生成されるプロジェクトはネイティブなものであるため、そのプロジェクトをXcode(macOS) やAndroid Studio で開き直して、独自にさらなる開発を進めることもできます。
+* 全てのテーブルとフォームは生成されたアプリに埋め込まれ、また再編集も可能です。
