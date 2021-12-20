@@ -9,8 +9,8 @@ title: Choisir un Apple Developer Program
 
 Pour **distribuer une application iOS**, votre compte Apple Developer doit être valide. Apple propose deux programmes de développement :
 
-* [Apple Developer Program for organization]`(selecting-your-developer-program-register-apple-developer-program-organization.html)` or [for individual]`(selecting-your-developer-program-register-apple-developer-program-individual.html)` – $99/year
-* [Apple Enterprise Developer Program]`(selecting-your-developer-program-register-apple-developer-enterprise-program.html)` – $299/year
+* **Apple Developer Program for organization** or **for individual** – $99/year
+* **Apple Enterprise Developer Program** – $299/year
 
 Les différences majeures entre les deux programmes sont :
 
