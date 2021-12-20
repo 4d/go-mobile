@@ -17,7 +17,7 @@ Pode criar uma nova ação clicando no botão +  no fundo da tabela Actions. Uma
 Depois precisa definir o abaixo:
 
 * **Names:** o nome da ação a usar no método de banco de dados [On Mobile App Action](https://developer.4d.com/4d-for-ios/docs/en/actions.html#on-mobile-app-action) para ativar seu código 4D.
-* **Icons:** O ícone a escolher de sua biblioteca ícone. Também é possível adicioanr seu próprio ícone seguindo este [tutorial]`(using-icons.html)`.
+* **Icons:** O ícone a escolher de sua biblioteca ícone. You can also add your own icon.
 * **Short and long Labels:** As etiquetas para as ações para exibir em seu app.
 * **Table:** A tabela na qual quer aplicar a ação.
 * **Scope:** Onde usar a ação, uma **entidade** ou uma **tabela**.
