@@ -9,7 +9,7 @@ title: Añadir acciones a las plantillas
 
 > **REQUISITOS PREVIOS**
 > 
-> Haga clic `[here](prerequisites.html)` para ver lo que necesita para empezar
+> Click `[here](requirements.html)` to see what you'll need to get started!
 
 En este tutorial, veremos lo fácil que puede ser **agregar acciones a plantillas personalizadas**.
 
