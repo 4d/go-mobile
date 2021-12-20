@@ -187,6 +187,12 @@ Este tipo de ação deve ser utilizado com precaução.
 
 ### Ação Partilhar
 
+:::informação 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
+
 Selecionar **Ação Partilhar, ** permite a seus usuários móveis partilhar conteúdo com outros usuários. Só precisa selecionar o escopo:
 
 - **entidade**: para partilhar conteúdo com um formulário detalhada
@@ -195,6 +201,12 @@ Selecionar **Ação Partilhar, ** permite a seus usuários móveis partilhar con
 Ver a página [Deep Linking](../special-features/deep-linking.md) para saber mais.
 
 ### Ação Ordenar
+
+:::informação 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
 
 **Ações Ordenar** são úteis para:
 
@@ -244,6 +256,12 @@ Depois de criar todas as suas ações, simplesmente clique no botão Criar da ta
 :::
 
 ## Action input controls
+
+:::informação 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
 
 ### How to use a custom input from the gallery
 
@@ -401,7 +419,7 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
   ```
 
 
-## Aplicação iOS
+## Smartphone app Side
 
 Em sua aplicação iOS, as ações estão disponíveis de diferentes formas em seus formulários listados e detalhados, segundo os modelos que selecionar na seção Formulários.
 
