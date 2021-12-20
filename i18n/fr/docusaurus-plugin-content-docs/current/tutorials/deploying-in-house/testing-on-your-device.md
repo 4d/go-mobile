@@ -10,7 +10,7 @@ Vous pouvez installer et tester votre application mobile sur un appareil connect
 
 Vous devez vous inscrire à un Apple Developer Program. En fonction de vos objectifs et de vos préférences, vous pouvez choisir de vous inscrire dans l’un des programmes suivants :
 
-* [Free Apple Developer Program]`(free-developer-account.html)-- à ajouter`: A des fins de test uniquement
+* Free Apple Developer Program -- to add```: For testing only
 * [Apple Developer Program pour les entreprises](../tutorials/developer-program/register-apple-developer-program-organization) ou [pour les particuliers](../tutorials/developer-program/register-apple-developer-program-individual) : à des fins de déploiement sur l'App Store
 * [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program) : à des fins de déploiement interne de votre application
 
@@ -34,7 +34,7 @@ Vous aurez besoin d' [Apple configurator 2](https://itunes.apple.com/us/app/appl
 
 ## ÉTAPE 3. Obtenez votre Team ID
 
-* Si vous utilisez un [Free Apple Developer Program]`(free-developer-account.html--to addd)` passez à [l'étape 4](#step-4-team-id-for-free-account).
+* If your are using a Free Apple Developer Program, go to [step 4](#step-4-team-id-for-free-account).
 * Si vous utilisez un [Apple Developer Program pour les entreprises](../tutorials/developer-program/register-apple-developer-program-organization), [pour les particuliers](../tutorials/developer-program/register-apple-developer-program-individual) ou un [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program) passez à [l'étape 5](#step-5-team-id-for-paid-subscription-account).
 
 ## ÉTAPE 4. Team ID pour un compte gratuit
@@ -45,7 +45,7 @@ Vous aurez besoin d' [Apple configurator 2](https://itunes.apple.com/us/app/appl
 
 ![Build tab](img/Open-your-project-Xcode-4D-for-iOS.png)
 
-* Vérifiez que l'option **Automatically manage signing** est cochée, puis sélectionnez le compte que vous avez ajouté [here]`(free-developer-account.html)` à partir de la liste déroulante "Team".
+* Verify that the **Automatically manage signing** option is checked and select the account you added, from the Team dropdown list.
 
 ![Account-Selection](img/account-Selection-Free-Account.png)
 
