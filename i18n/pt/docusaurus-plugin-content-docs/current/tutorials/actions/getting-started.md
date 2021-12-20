@@ -10,7 +10,7 @@ title: Começando
 
 > **PRÉ-REQUISITOS**
 > 
-> Clique em`[here](prerequisites.html)` para ver o que necessita para  começar
+> Click `[here](requirements.html)` to see what you'll need to get started!
 
 Em 4D v17 R5, pode [definir ações](define-first-action.md) diretamente do Editor de Projeto e executar código 4D do seu app iOS gerado!
 
