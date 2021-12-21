@@ -248,7 +248,6 @@ Después de crear todas sus acciones, simplemente haga clic en el botón Crear d
 
 - Puede refrescar la selección después de ejecutar una acción utilizando `$out.dataSynchro:=True`.
 - Puede notificar al usuario de la aplicación cuando se ha ejecutado una acción utilizando `$out.statusText:="Message you want to display"`.
-- También puede decidir forzar el cierre del formulario de edición utilizando `$out.close:=True`.
 
 :::
 
