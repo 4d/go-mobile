@@ -38,7 +38,12 @@ iOS プラットフォーム用の開発のためには、最終アプリケー�
 
 </details>
 
+<details>
+<summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Which settings should I define on Android Studio to optimize the build on Windows?</summary>
 
+To make sure the build of your app is fast enough, you need to minimize the impact of your antivirus software on the build speed. To do so, follow the instructions mentioned [here](https://developer.android.com/studio/intro/studio-config#antivirus-impact).
+
+</details>
 
 
 ## ライセンス
