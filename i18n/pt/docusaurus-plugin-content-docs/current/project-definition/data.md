@@ -189,3 +189,8 @@ When the mobile app will access data from the "Customers" table, only customers 
 See the [**Define a filter query**](../tutorials/filter-queries/define-filter-query) tutorial for a complete example of filter query with user info in a mobile app.
 
 :::
+
+### Data generation & filter queries
+
+From this section, you can generate data to upload all .json files related to an app. But you can also cancel an ongoing data generation.
+
