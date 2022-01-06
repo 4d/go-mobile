@@ -70,7 +70,7 @@ This button regenerates the data to preload from the data file. It allows you to
 
 You can also choose to cancel an ongoing data generation by clicking on the **Cancel** button.
 
-During the data generation process, a modal window appears, locks the project editor, and displays a progression bar with different generation steps (http requests for <TableName> table, core data injection, etc.) and the following message: "If it takes too much time, try refiltering your data...".
+During the data generation process, a modal window appears, locks the project editor, and displays a progression bar with different generation steps (http requests for tables, core data injection, etc.) and the following message: "If it takes too much time, try refiltering your data...".
 
 :::note
 
