@@ -71,7 +71,7 @@ Version table:
 
 - You can build Android apps both on Mac and PC.
 
-- You can't run a VM-accelerated emulator inside another VM, such as a VM hosted by VirtualBox 
+- We highly recommend not to run a VM-accelerated emulator inside another virtual machine (VM), such as a VM hosted by VirtualBox. Click [here](https://developer.android.com/studio/run/emulator-acceleration) for more details.
 
 :::
 
