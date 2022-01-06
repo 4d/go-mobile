@@ -72,7 +72,7 @@ You can also choose to cancel an ongoing data generation by clicking on the **Ca
 
 During the data generation process, a modal window appears, locks the project editor, and displays a progression bar with different generation steps (http requests for tables, core data injection, etc.) and several suggestions such as: "If it takes too much time, try refiltering your data...".
 
-![Regenerate now section](img/progression-bar-regenerate.png)
+![Regenerate now section](img/regenerate-now.png)
 
 :::note
 
