@@ -72,7 +72,7 @@ During the data generation process, a modal window appears, locks the project ed
 
 ![Regenerate now section](img/regenerate-now.png)
 
-You can also choose to cancel an ongoing data generation by clicking on the **Cancel** button.
+You can also choose to cancel an ongoing data generation by clicking on the cancel button ![Cancel button](img/cancel-button.png) .
 
 :::info
 
