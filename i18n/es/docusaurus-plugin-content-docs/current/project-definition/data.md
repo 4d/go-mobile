@@ -66,19 +66,20 @@ By defaut, each time you build your app, preloaded data (if any) are regenerated
 
 ### Regenerate Now
 
-This button regenerates the data to preload from the data file. It allows you to control the data generation during the development phase, specially when the **Do not regenerate data at each build** is checked.
-
-You can also choose to cancel an ongoing data generation by clicking on the **Cancel** button.
+This button regenerates the data to preload from the data file. It allows you to control the data generation during the development phase, specially when the **Do not regenerate data at each build** option is checked.
 
 During the data generation process, a modal window appears, locks the project editor, and displays a progression bar with different generation steps (http requests for tables, core data injection, etc.) and several suggestions such as: "If it takes too much time, try refiltering your data...".
 
 ![Regenerate now section](img/regenerate-now.png)
 
-:::nota
+You can also choose to cancel an ongoing data generation by clicking on the cancel button ![Cancel button](img/cancel-button.png) .
+
+:::info
 
 This button requires a valid `key.mobileapp` file if you use the [production server data file](#data-file).
 
 :::
+
 
 
 
