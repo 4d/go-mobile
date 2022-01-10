@@ -31,13 +31,13 @@ System requirements are the same as [4D's minimum system requirements](https://u
 
 Version table:
 
-| 4D          | Swift | iOS  | Xcode                                                                                                         | iOS 13.0 |
-| ----------- | ----- | ---- | ------------------------------------------------------------------------------------------------------------- | -------- |
-| 19R3-beta   | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip)   | 12.1     |
-| 19R2        | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip)   | 12.1     |
-| 19          | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip)   | 12.1     |
-| 18R6        | 5.3.2 | 14.4 | [12.4](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.4/Xcode_12.4.xip) | 10.15.4  |
-| 18R5 & 18.3 | 5.3   | 14.2 | [12.2](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.2/Xcode_12.2.xip) | 10.15.4  |
+| 4D          | Swift | iOS  | Xcode                                                                                                             | iOS 13.0                                                                                                                                                 |
+| ----------- | ----- | ---- | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 19R3        | 5.5.2 | 15.2 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13.2.1/Xcode_13.2.1.xip) | 12.1 || 19R2         | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip) | 12.1 |
+| 19R2        | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip)       | 12.1                                                                                                                                                     |
+| 19          | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip)       | 12.1                                                                                                                                                     |
+| 18R6        | 5.3.2 | 14.4 | [12.4](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.4/Xcode_12.4.xip)     | 10.15.4                                                                                                                                                  |
+| 18R5 & 18.3 | 5.3   | 14.2 | [12.2](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.2/Xcode_12.2.xip)     | 10.15.4                                                                                                                                                  |
 
 <details><summary>Version history</summary>
 
