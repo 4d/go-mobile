@@ -66,5 +66,13 @@
   "sidebar.templates.category.Templates & Formatters": {
     "message": "Templates & Formatters",
     "description": "The label for category Templates & Formatters in sidebar templates"
+  },
+  "sidebar.tutorials.category.Deploying In-House": {
+    "message": "Deploying In-House",
+    "description": "The label for category Deploying In-House in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Deploying on App Store": {
+    "message": "Deploying on App Store",
+    "description": "The label for category Deploying on App Store in sidebar tutorials"
   }
 }
