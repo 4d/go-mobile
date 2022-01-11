@@ -33,7 +33,7 @@ Version table:
 
 | 4D | Swift | iOS | Xcode | macOS |
 |---|---|---|---|---|
-|19 R4 beta | 5.5.2  | 15.2  |  [13.2.1] (https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.2.1.xip) |  11.3 |
+|19 R4 beta | 5.5.2  | 15.2  |  [13.2.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.2.1.xip) |  11.3 |
 | 19R3  | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip) | 12.1 |
 | 19R2         | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip) | 12.1 | 
 | 19  | 5.5| 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip) | 12.1|  
