@@ -34,7 +34,7 @@ Version table:
 | 4D | Swift | iOS | Xcode | macOS |
 |---|---|---|---|---|
 |19 R4  | 5.5.2  | 15.2  |  [13.2.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.2.1.xip) |  11.3 |
-| 19 R3  | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip) | 12.1 |
+|19 R3  | 5.5.2  | 15.2  |  [13.2.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.2.1.xip) |  11.3 |
 | 19 R2         | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip) | 12.1 | 
 | 19  | 5.5| 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip) | 12.1|  
 | 18 R6  | 5.3.2| 14.4 | [12.4](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.4/Xcode_12.4.xip) | 10.15.4 |
@@ -68,7 +68,7 @@ Version table:
 | 19 R3 | [Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 | 19 R2 | [4.1.2](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 
-:::notes
+:::Notes
 
 - You can build Android apps both on Mac and PC.
 
