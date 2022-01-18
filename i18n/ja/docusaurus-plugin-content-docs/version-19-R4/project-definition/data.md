@@ -56,17 +56,17 @@ title: データ
 
 :::
 
-### Do not include images
+### 画像を含めない
 
-Embedding images from the data in your app can be time consuming, especially in the development phase. Checking this option can save a considerable amount of time when building your app.
+データから画像をアプリに埋め込むことは、特に開発段階においてはかなり時間を無駄にすることになりかねません。 このオプションをチェックすることで、アプリのビルドにかかる時間を大幅に短縮することができます。
 
-### Do not regenerate data at each build
+### ビルドごとにデータを再生成しない
 
-By defaut, each time you build your app, preloaded data (if any) are regenerated from the data file. In the development phase, you can save time by selecting this option.
+デフォルトでは、アプリをビルドするたびに、プリロードされたデータ(あれば) がデータファイルから再生成されます。 開発段階においては、このオプションをチェックすることで時間を節約することができます。
 
-### Regenerate Now
+### 今すぐ再生成する
 
-This button regenerates the data to preload from the data file. It allows you to control the data generation during the development phase, specially when the **Do not regenerate data at each build** option is checked.
+このボタンは、プリロードするデータをデータファイルから再生成します。 これを使用すると、開発段階におけるデータ生成のコントロールを可能にします。特に**ビルドごとにデータを再生成しない** オプションと組み合わせることで有用になります。
 
 During the data generation process, a modal window appears, locks the project editor, and displays a progression bar with different generation steps (http requests for tables, core data injection, etc.) and several suggestions such as: "If it takes too much time, try refiltering your data...".
 
