@@ -460,8 +460,8 @@ For your convenience, the Edition form includes a few **special features**:
 
 ## Where to go from here?
 
-* A [tutorial](../getting-started/introduction.md) is available to guide you through the **action definition process**.
+* **アクション定義プロセス** について説明した[チュートリアル](../getting-started/introduction.md) があります。
 
-* Another [tutorial](../tutorials/actions/adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
+* カスタムテンプレートを作成するための**アクション TAG 統合** について説明した[チュートリアル](../tutorials/actions/adding-actions-template.md) もあります。
 
-* A final [tutorial](../tutorials/actions/using-action-parameters.md) will guide you through the **action parameters definition**.
+* こちらの[チュートリアル](../tutorials/actions/using-action-parameters.md) では**アクション引数の定義** について説明しています。
