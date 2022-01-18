@@ -17,7 +17,7 @@ title: アクション
 次に、以下のものを定義する必要があります:
 
 * **名前:** [On Mobile App Action](https://developer.4d.com/4d-for-ios/docs/ja/actions.html#on-mobile-app-action) データベースメソッド内で4Dコードをトリガーする際に使用するアクションの名前
-* **アイコン:** アイコンライブラリーからアイコンを選択して下さい。 You can also add your own icon.
+* **アイコン:** アイコンライブラリーからアイコンを選択して下さい。 独自のアイコンを追加することもできます。
 * **短いラベルと長いラベル:** アプリ内で表示されるアクションのラベル
 * **テーブル:** アクションを適用したいテーブル
 * **スコープ:** アクションを使用する対象を決めます。**カレントエンティティ** または **テーブル**
@@ -421,7 +421,7 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
   ```
 
 
-## Smartphone app Side
+## スマートフォンアプリ側
 
 In your iOS app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section.
 
@@ -478,8 +478,8 @@ For your convenience, the Edition form includes a few **special features**:
 
 ## Where to go from here?
 
-* A [tutorial](../getting-started/introduction.md) is available to guide you through the **action definition process**.
+* **アクション定義プロセス** について説明した[チュートリアル](../getting-started/introduction.md) があります。
 
-* Another [tutorial](../tutorials/actions/adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
+* カスタムテンプレートを作成するための**アクション TAG 統合** について説明した[チュートリアル](../tutorials/actions/adding-actions-template.md) もあります。
 
-* A final [tutorial](../tutorials/actions/using-action-parameters.md) will guide you through the **action parameters definition**.
+* こちらの[チュートリアル](../tutorials/actions/using-action-parameters.md) では**アクション引数の定義** について説明しています。
