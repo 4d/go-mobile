@@ -71,7 +71,7 @@ Version table:
 
 - Android アプリはMacとWindowsどちらでもビルド可能です。
 
-- We highly recommend not to run a VM-accelerated emulator inside another virtual machine (VM), such as a VM hosted by VirtualBox. Click [here](https://developer.android.com/studio/run/emulator-acceleration) for more details.
+- VM駆動のエミュレーターを他のバーチャルマシン(VM) 内で実行することは推奨されません。これは例えばVirtualBoxにホストされたVMなどが該当します。 詳細については [こちら](https://developer.android.com/studio/run/emulator-acceleration) をクリックしてください。
 
 :::
 
