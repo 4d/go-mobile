@@ -68,7 +68,7 @@ title: データ
 
 このボタンは、プリロードするデータをデータファイルから再生成します。 これを使用すると、開発段階におけるデータ生成のコントロールを可能にします。特に**ビルドごとにデータを再生成しない** オプションと組み合わせることで有用になります。
 
-During the data generation process, a modal window appears, locks the project editor, and displays a progression bar with different generation steps (http requests for tables, core data injection, etc.) and several suggestions such as: "If it takes too much time, try refiltering your data...".
+データ生成プロセスの間、モーダルなウィンドウが表示され、プロジェクトエディターはロックされます。またそれぞれの生成ステップごと(テーブルへのhttpリクエスト、コアデータインジェクション、など) の進捗バーが表示されるとともに、「時間がかかりすぎるようなら、データの再フィルタリングを試してください」などのメッセージも表示されます。
 
 ![Regenerate now section](img/regenerate-now.png)
 
