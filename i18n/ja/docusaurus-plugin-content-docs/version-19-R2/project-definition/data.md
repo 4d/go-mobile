@@ -76,14 +76,14 @@ This button requires a valid `key.mobileapp` file if you use the [production ser
 
 
 
-## Properties
+## プロパティ
 
 ![Data section](img/Properties-Panel-4D-for-iOS.png)
 
 In this area, you can:
 
-- select tables from which to get embedded (preloaded) data
-- define **filter queries** for each table. Filter queries are automatically applied when the app access data, in order to only get a selection of records.
+- 埋め込む(プリロードする) データを取得するテーブルを選択することができます。
+- それぞれのテーブルに対して**フィルタークエリ** を定義することができます。 Filter queries are automatically applied when the app access data, in order to only get a selection of records.
 
 By default, if you do not define a filter query for a table, all of its records are embedded.
 
