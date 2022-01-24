@@ -226,7 +226,7 @@ Here's the result on the generated app:
 
 ![Structure section](img/object-attributes-rendering.png)
 
-### Filter queries
+### フィルタークエリ
 
 You can use [filter queries](https://developer.4d.com/go-mobile/docs/project-definition/data#filter-queries) specific to object attributes in order to return and display filtered data. To do so, simply insert your attribute and property in the Filter query of the **[Data](https://developer.4d.com/go-mobile/docs/project-definition/data)** section.
 
