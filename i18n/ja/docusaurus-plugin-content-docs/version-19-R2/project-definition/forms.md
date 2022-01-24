@@ -1,9 +1,9 @@
 ---
 id: forms
-title: Forms
+title: フォーム
 ---
 
-The Forms page allows you to select both list and detail forms for each published table. You can select one list form and one detail form per published table.
+Forms ページを使用するとそれぞれの公開テーブルに対して一覧フォームと詳細フォームの両方選択することができます。 公開テーブル1つにつき、1つの一覧フォームと1つの詳細フォームを選択することができます。
 
 The 4D mobile editor provides various templates with custom transition effects to build fresh and modern mobile applications. Simple, empty templates are used by default for an app's list and detail forms.
 
