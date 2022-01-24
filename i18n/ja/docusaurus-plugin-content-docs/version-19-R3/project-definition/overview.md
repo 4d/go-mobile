@@ -16,7 +16,7 @@ In the **Sections** tab, you'll find all of the necessary steps to create your m
 * アクション
 * Labels & Icons
 * Main Menu
-* Forms
+* フォーム
 * Publishing
 
 In the **Build** tab, you'll find embedded tools to build and test you mobile app:
