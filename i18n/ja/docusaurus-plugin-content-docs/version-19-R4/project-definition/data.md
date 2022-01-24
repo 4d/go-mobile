@@ -90,33 +90,33 @@ This button requires a valid `key.mobileapp` file if you use the [production ser
 In this area, you can:
 
 - 埋め込む(プリロードする) データを取得するテーブルを選択することができます。
-- それぞれのテーブルに対して**フィルタークエリ** を定義することができます。 Filter queries are automatically applied when the app access data, in order to only get a selection of records.
+- それぞれのテーブルに対して**フィルタークエリ** を定義することができます。 フィルタークエリは、アプリがデータにアクセスした際に自動的に適用されます。それによってレコードの一部のみを取得することができます。
 
 By default, if you do not define a filter query for a table, all of its records are embedded.
 
 
-### Tables
+### テーブル
 
 You can define one filter query per table. This list allows you to:
 
-- select the table for which you want to add or edit a filter query
-- see the size of embedded data if the [embed option is selected](#embed-the-data-from-this-table). This information is not available if table data access uses a filter query based upon user information since it depends on the user.
-- see if the table is associated to a filter query ![filter](img/query-static.png) or a filter query with user information ![filter-user](img/query-user.png).
+- フィルタークエリを追加または編集したいテーブルを選択することができます。
+- [埋め込みオプションが選択されていた](#embed-the-data-from-this-table) 場合、埋め込むデータのサイズを見ることができます。 この情報はユーザー情報に基づいたフィルタークエリを使用していた場合には利用できません。この場合データのサイズはユーザーによって変わるからです。
+- テーブルにフィルタークエリ![filter](img/query-static.png) またはユーザー情報を使用したフィルタークエリ![filter-user](img/query-user.png) が適用されているかをチェックできます。
 
-All the selected tables will generate .json files in the Resources>Data folder, and will be automatically converted in a single SQLite file that will be used in the app.
+全ての選択されたテーブルはResources>Data フォルダ内に.json ファイルを生成し、このファイルは自動的に単一のSQLite ファイルへと変換され、アプリ内で使用されます。
 
 
-### Embed the data from this table
+### このテーブルからデータを埋め込む
 
 ![embed](img/embed-option.png)
 
-When this option is checked (default), the editor will preload data in the mobile app when it is built or when [data are regenerated](#do-not-regenerate-data-at-each-build). This option accelerates data access from the mobile app since it only requires updates and not full downloads. It is particularly suited for stable data like cities or countries.
+このオプションがチェックされている場合(デフォルト) 、モバイルアプリがビルトされた時に、あるいは[データが再生成されたとき](#do-not-regenerate-data-at-each-build) エディターはデータをプリロードします。 This option accelerates data access from the mobile app since it only requires updates and not full downloads. It is particularly suited for stable data like cities or countries.
 
 You can uncheck the option if preloading the table data is not accurate.
 
 This option is not available if table data access uses a filter query based upon user information since it depends on the user. In this context, the button is replaced by the **Edit authentication method...** button that opens the [On Mobile App Authentication](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) method in which you can process user information.
 
-### Filter queries
+### フィルタークエリ
 
 You can define one filter query per table. When a table is selected, click in the **Filter query** area, a set of menus is then displayed above the area:
 
@@ -124,7 +124,7 @@ You can define one filter query per table. When a table is selected, click in th
 
 To define a query:
 
-1. Enter your query in the dedicated field by typing it directly in the query area or using the **Fields**, **Comparators** and **Operators** menus.
+1. クエリエリアに直接入力する、あるいは**フィールド** 、**比較演算子** および **演算子** メニューを使用してクエリを専用のフィールドに入力していきます。
 
 A query uses the following syntax:
 
@@ -133,15 +133,15 @@ field comparator value {logicalOperator field comparator value}
 ```
 
 
-2. Check your query validity by clicking on the **Validate** button, and get the following feedback displayed below the query field:
+2. クエリの有効性をチェックするためには**Validate** ボタンをクリックします。クエリフィールドの下に以下のようなフィードバックが表示されます。
 
-- If the entity number matches the filter query: "Entity number that will be embedded into the application : EntityNumber/EntityTotal".
-- If no entity matches the filter query: "No entity will be embedded into the application."
-- If the server is not reachable: "Entity number that will be embedded into the application : N/A. The server is not reachable."
-- If a table filter query has not been validated, the table appears in red in the left Table list ("validated" : false in project.4dmobileapp).
-- If the server returns an error, it is displayed permanently below the query field.
+- エンティティの数がフィルタークエリと合致する場合: "アプリケーションに埋め込まれるエンティティ数 : EntityNumber/EntityTotal"
+- フィルタークエリに合致するエンティティがない場合: "アプリケーションにはエンティティは埋め込まれません"
+- サーバーにアクセスできない場合: "アプリケーションに埋め込まれるエンティティ数 : N/A サーバーに接続することができません"
+- テーブルフィルタークエリが確定されていない場合、そのテーブルは左のテーブル一覧内において赤色で表示されます("validated" : false in project.4dmobileapp)
+- サーバーがエラーを返す場合、その旨がクエリフィールドの下にずっと表示されます。
 
-Click on the Validate button each time you modify the filter query (a query that has been edited and not validated appears in red in the query editor).
+フィルタークエリを変更するたびに、Validate ボタンをクリックしてください(編集されているのに確定されていないクエリはクエリエディターないで赤色で表示されます)。
 
 When a query filter is valid, an icon appears near the table name (![filter](img/query-static.png) for static filters and ![filter-user](img/query-user.png) for filters with user information).
 
@@ -152,7 +152,7 @@ Refer to the [?filter REST documentation](https://developer.4d.com/docs/en/REST/
 :::
 
 
-#### Example
+#### 例題
 
 If you select a table that contains a `FirstName` field and a `LastName` field, you can write in the **Filter query**:
 
@@ -163,7 +163,7 @@ FirstName = 'Lisa' & LastName = 'Hart'
 This query gets only the records that include "Lisa" as FirstName and "Hart" as LastName.
 
 
-### Filter queries with user information
+### ユーザー情報を使用したフィルタークエリ
 
 You can define [filter queries](#filter-queries) where the *value* parameter depends on user information that is returned by the [`On Mobile App Authentication` database method](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) of the 4D project.
 
