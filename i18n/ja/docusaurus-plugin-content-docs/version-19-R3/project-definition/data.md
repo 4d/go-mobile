@@ -166,19 +166,19 @@ cityName = :city
 
 Here is how it works:
 
-1. When the mobile app sends a request for data, the `On Mobile App Authentication` database method is automatically called and gets information from the app in its *$1* object parameter, in particular the `email`, but also the `device` or the `language`.
-2. The database method queries the 4D datastore to get appropriate information with regard to the business rules and can return any value as a custom property of the `userInfo` object. For example:
+1. モバイルアプリがデータリクエストを送信すると、`On Mobile App Authentication` データベースメソッドが自動的に呼び出され、アプリからの情報を*$1* オブジェクト型引数に受け取られます。具体的には`email` 情報に加え、`device` または`language` も返されます。
+2. データベースメソッドは4Dデータストアをクエリしてビジネスルールに則った適切な情報を取得し、`userInfo` オブジェクト内のカスタムプロパティに任意の値を返すことができます。 例:
 
 ```4d
 $id:=ds.Salesperson.query("email == :1";$1.email).first().id 
-    //gets the id value of the salesperson from its email
+    //email の情報元に営業部の担当者のidの値を取得
 If($id#null)
-    $Obj_response.userInfo:=New object("id";$id) //stores id in the userInfo to return 
+    $Obj_response.userInfo:=New object("id";$id) //返すuserInfo 内にidを保存
 End if  
 ...
 $0:=$Obj_response
 ```
-3. The mobile app automatically manages a `userInfo` object per user. In our example, the "id" custom property is available in the returned objet. Thus, you can write as the "Customers" table filter query:
+3. モバイルアプリは、`userInfo` オブジェクトをユーザーごとに自動的に管理します。 この例では、返されたオブジェクト内にカスタムの"id"プロパティが格納されています。 そのため、"Customers"テーブルのフィルタークエリ同様、以下のように書くことができます。
 
 ```4d
 salespersonid = :id
