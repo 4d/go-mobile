@@ -1,6 +1,6 @@
 ---
 id: filter-query-introduction
-title: Filter queries
+title: フィルタークエリ
 ---
 
 In this tutorial, we'll show how to create **filter queries** to display filtered content in the generated mobile app.
