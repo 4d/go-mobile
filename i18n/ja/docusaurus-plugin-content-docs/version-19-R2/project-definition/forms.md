@@ -11,65 +11,65 @@ Forms ページを使用するとそれぞれの公開テーブルに対して�
 
 * **リストフォーム / 詳細フォーム:** それぞれのテーブルに対して定義するリストフォーム/詳細フォームを切り替えます。
 * **公開テーブル:** [ストラクチャー](structure.md) セクションで公開に設定されている全てのテーブルを表示します。
-* **フォーム:** 利用可能なフォームの一覧 Allows switching between template selection and content definition. In the content definition area, you can display tips that provide additional information on form fields.
+* **フォーム:** 利用可能なフォームの一覧です。 テンプレートの選択とコンテンツの定義の切り替えをします。 コンテンツ定義エリアでは、フォームフィールド上で追加の情報を提供するTipsを表示させることができます。
 
 
 ![List form template selection](img/Forms-section-templates-selection-4D-for-iOS.png)
 
 
 
-## List forms
+## リストフォーム
 
-When you select a list form template for a table, the content definition screen appears. You can then drag and drop the fields from the Fields list directly onto the model displayed on the right.
+テーブルに対してリストフォームのテンプレートを選択すると、コンテンツ定義スクリーンが表示されます。 ここでは、右側に表示されているモデルへフィールド一覧からフィールドをドラッグドロップすることができます。
 
 ![List form content definition](img/Forms-section-content-definition-4D-for-iOS.png)
 
 :::note
 
-In list forms, you cannot add more fields than those included in the template.
+リストフォームにおいては、テンプレートに含まれているフィールド以上のフィールドを追加することはできません。
 
 :::
 
-Most of the list forms include optional **Search** and **Section** fields. You can also enable the **barcode scanner**.
+ほとんどのリストフォームには、任意の**検索** および **セクション** フィールドが含まれています。 また **バーコードスキャナー** を有効化することもできます。
 
 
-### Search
+### 検索
 
-A **search** field allows to filters dynamically the list contents depending on entered characters.
+**検索** フィールドを使用すると、入力した文字に応じてリストの中身を動的にフィルターすることができます。
 
-#### Multi-criteria search
+#### 検索エリアに複数のフィールドを設定する
 
-You can drop more than one field to the search field, in which case the field displays "Multi-criteria Search":
+検索フィールドには1つまたは複数のフィールドをドロップすることができます。複数のフィールドをドロップした場合、フィールドには"複数条件検索"と表示されます:
 
 ![multi-criteria](img/multi-criteria.png)
 
-In this case, the app will search for entered characters in all the fields using the "OR" operator. To remove a field from the list, click on the search field's delete button to select the field(s) to remove:
+この場合、アプリは入力された文字列を、"OR" 演算子を使用して全てのフィールド内から検索します。 フィールドをリストから削除するには、検索フィールドの削除ボタンをクリックして、削除するフィールドを選択します:
 
 ![multi-criteria remove](img/multi-criteria-search-forms-section-remove-fields.png)
 
 
-### Section
+### セクション
 
-A section field will group and order entities in the list depending on their value for this field.
+セクションフィールドを使用すると、そのフィールドに対する値に応じて、リスト内のエンティティをグループ化したり、順番を並べ替えしたりします。
 
 
 
-### Barcode Scanner
+### バーコードスキャナー
 
-To activate the Barcode search, click on the magnifying glass next to the search field and select **Enable barcode scanner** option.
+バーコード検索を有効化するためには、検索フィールドの横の虫眼鏡アイコンをクリックし、**バーコードスキャナーを有効化する** オプションを選択します。
 
 ![Barcode Search activation](img/project-editor-Qrcode-barcode-search-4D-for-iOS.gif)
 
-The Barcode search allows two features:
+バーコード検索には2つの機能があります:
 
-* Filtering the list form by scanning a barcode that contains a text value. It fills the Search Bar and opens the detail form if there is only one value left after filtering.
-* Displaying specific list and detail forms just by scanning a barcode whose values are **URL Schemes** or **Universal Links** when the [**deep linking**](../special-features/deep-linking.md) feature is enabled.
+* テキスト値を格納したバーコードをスキャンすることでリストフォームをフィルターすることができます。 フィルターしたあとに1件しか結果が残らない場合は、検索バーに値を入力され、詳細フォームを開きます。
+* バーコードをスキャンするだけで特定のリストフォームおよび詳細フォームを表示することができます。この場合、バーコードの値は**URL スキーム** か、または[**ディープリンク**](../special-features/deep-linking.md) 機能が有効化されていれば**ユニバーサルリンク** の値が使用できます。
 
 ![Barcode Search app](img/text-Qrcode-barcode-search-4D-for-iOS.gif)
 
 :::4D for Androidにおける注意
 
-This feature is currently not available in 4D for Android.
+この機能は4D for Android では現在ご利用いただけません。
 
 :::
 
