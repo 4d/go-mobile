@@ -70,7 +70,7 @@ The names are based upon the relation names in the 4D Structure editor, see the 
 
 :::4D for Androidにおける注意
 
-This feature is currently not available in 4D for Android.
+この機能は4D for Android では現在ご利用いただけません。
 
 :::
 
