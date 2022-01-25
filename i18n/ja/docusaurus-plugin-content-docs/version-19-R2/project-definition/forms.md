@@ -3,15 +3,15 @@ id: forms
 title: フォーム
 ---
 
-Forms ページを使用するとそれぞれの公開テーブルに対して一覧フォームと詳細フォームの両方選択することができます。 公開テーブル1つにつき、1つの一覧フォームと1つの詳細フォームを選択することができます。
+Forms ページを使用するとそれぞれの公開テーブルに対してリストフォームと詳細フォームの両方選択することができます。 公開テーブル1つにつき、1つのリストフォームと1つの詳細フォームを選択することができます。
 
-The 4D mobile editor provides various templates with custom transition effects to build fresh and modern mobile applications. Simple, empty templates are used by default for an app's list and detail forms.
+4D Mobile エディターには、カスタムのトランジションエフェクトがある様々なテンプレートが用意されており、これらを使用して斬新でモダンなモバイルアプリケーションをビルドすることができます。 デフォルトでは、アプリのリストフォーム/詳細フォームに対してシンプルな空のテンプレートが使用されます。
 
-Here's the breakdown of this screen, from top to bottom:
+この画面を上から順に解説していきます:
 
-* **List Forms / Detail Forms:** Allows switching between list and detail form definitions for each table.
-* **Published tables:** Displays all tables published in the [Structure](structure.md) section.
-* **Forms:** List of available forms. Allows switching between template selection and content definition. In the content definition area, you can display tips that provide additional information on form fields.
+* **リストフォーム / 詳細フォーム:** それぞれのテーブルに対して定義するリストフォーム/詳細フォームを切り替えます。
+* **公開テーブル:** [ストラクチャー](structure.md) セクションで公開に設定されている全てのテーブルを表示します。
+* **フォーム:** 利用可能なフォームの一覧 Allows switching between template selection and content definition. In the content definition area, you can display tips that provide additional information on form fields.
 
 
 ![List form template selection](img/Forms-section-templates-selection-4D-for-iOS.png)
