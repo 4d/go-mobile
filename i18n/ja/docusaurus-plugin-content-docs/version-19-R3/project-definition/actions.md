@@ -433,7 +433,7 @@ Actions will be displayed in the same order as defined in the Action section.
 
 ![Table Listform Collectionview](img/ListForm-table-action-collectionview.png)
 
-### Detail forms
+### 詳細フォーム
 
 As with Table actions in List forms, a generic Actions button is available in the navigation bar to display all your entity actions in a list.
 
