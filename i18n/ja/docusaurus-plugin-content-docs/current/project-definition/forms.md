@@ -73,11 +73,11 @@ Forms ページを使用するとそれぞれの公開テーブルに対して�
 
 :::
 
-## Detail forms
+## 詳細フォーム
 
 ![Detail form template selection](img/Forms-section-detail-form-templates-selection-4D-for-iOS.png)
 
-As with the List Form definition, select a template and configure the fields. In detail forms, you can add as many fields as you want onto your detail form.
+リストフォームの定義と同様、テンプレートを選択し、フィールドを設定して下さい。 詳細フォームでは、フォーム内に必要なだけフィールドを追加することができます。
 
 You have several ways to add your fields in Detail forms:
 
