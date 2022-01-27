@@ -79,18 +79,18 @@ Forms ページを使用するとそれぞれの公開テーブルに対して�
 
 リストフォームの定義と同様、テンプレートを選択し、フィールドを設定して下さい。 詳細フォームでは、フォーム内に必要なだけフィールドを追加することができます。
 
-You have several ways to add your fields in Detail forms:
+詳細フォームにフィールドを追加する方法は複数あります:
 
-* Drag and drop a field anywhere into the rightmost view to add it and display it just after the last field added or between any other fields that are already displayed.
+* 右側にあるビューにフィールドをドラッグドロップすることでフィールドを追加し表示することができます。最後に追加されたフィールドのすぐ下、あるいは既に表示されているフィールドの間に追加することができます。
 
-* Double-click on a field. Your field will be added at the end of the list.
+* フィールドをダブルクリックします。 そのフィールドはリストの最後に追加されます。
 
-* Right-click on an available field in the Fields table at the left and select **Add missing fields** from the contextual menu.
+* 左にあるフィールドの一覧の利用可能なフィールドを右クリックし、コンテキストメニューから**不足しているフィールドを追加** を選択します。
 
 ![Detail form content definition](img/Forms-section-detail-form-content-definition-4D-for-iOS.png)
 
 
-You can reorder your fields at any moment using drag and drop in the detail form.
+詳細フォーム内でドラッグドロップをすることで、フィールドの並び順をいつでも変更することができます。
 
 :::tip
 
