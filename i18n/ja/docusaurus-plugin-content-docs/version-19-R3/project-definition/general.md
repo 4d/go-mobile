@@ -1,24 +1,24 @@
 ---
 id: general
-title: General
+title: 一般
 ---
 
-This page allows you to define your app's main information.
+このページではアプリの主な情報を定義することができます。
 
 ![General画面](img/main-page.png)
 
-## Target OS
+## ターゲットOS
 
-Select the mobile OS for which you want to build the app. This setting will define the available mobile editor options.
+アプリをビルドしたい対象のモバイルOSを選択して下さい。 この設定はモバイルエディター内で利用可能なオプションを定義します。
 
-- On macOS, you can select **Android**, **iOS**, or **both targets**
-- On Windows, you can only select the **Android** target.
+- macOS では、**Android** 、 **iOS** 、または **両方のOS** を選択することができます。
+- Windows では、**Android** ターゲットのみを選択することができます。
 
-## Organization
+## 組織
 
-**Name:** Name of your company, or your name.
+**名前:** あなたの会社の名前か、あなたの名前を入力します。
 
-**Identifier:** Enter your organization’s bundle identifier. This will be used to identify your application. The product name you enter is concatenated to create the "Bundle ID" using reverse domain name service notation (see **ID** below). This bundle ID must be unique to your app.
+**識別子:** あなたの組織のバンドルの識別子を入力して下さい。 これはあなたのアプリケーションを識別するのに使用されます。 The product name you enter is concatenated to create the "Bundle ID" using reverse domain name service notation (see **ID** below). This bundle ID must be unique to your app.
 
 For example, if your company’s name is "MyCompany" and your app’s name is "MyApp", you could choose "com.MyCompany" as your organization’s bundle identifier and your App bundle ID would be "com.MyCompany.MyApp".
 
