@@ -14,7 +14,7 @@ Forms ページを使用するとそれぞれの公開テーブルに対して�
 * **フォーム:** 利用可能なフォームの一覧です。 テンプレートの選択とコンテンツの定義の切り替えをします。 コンテンツ定義エリアでは、フォームフィールド上で追加の情報を提供するTipsを表示させることができます。
 
 
-![List form template selection](img/Forms-section-templates-selection-4D-for-iOS.png)
+![リストフォームテンプレート選択](img/Forms-section-templates-selection-4D-for-iOS.png)
 
 
 
@@ -22,7 +22,7 @@ Forms ページを使用するとそれぞれの公開テーブルに対して�
 
 テーブルに対してリストフォームのテンプレートを選択すると、コンテンツ定義スクリーンが表示されます。 ここでは、右側に表示されているモデルへフィールド一覧からフィールドをドラッグドロップすることができます。
 
-![List form content definition](img/Forms-section-content-definition-4D-for-iOS.png)
+![リストフォームコンテンツ定義](img/Forms-section-content-definition-4D-for-iOS.png)
 
 :::note
 
@@ -41,11 +41,11 @@ Forms ページを使用するとそれぞれの公開テーブルに対して�
 
 検索フィールドには1つまたは複数のフィールドをドロップすることができます。複数のフィールドをドロップした場合、フィールドには"複数条件検索"と表示されます:
 
-![multi-criteria](img/multi-criteria.png)
+![複数条件](img/multi-criteria.png)
 
 この場合、アプリは入力された文字列を、"OR" 演算子を使用して全てのフィールド内から検索します。 フィールドをリストから削除するには、検索フィールドの削除ボタンをクリックして、削除するフィールドを選択します:
 
-![multi-criteria remove](img/multi-criteria-search-forms-section-remove-fields.png)
+![複数条件削除](img/multi-criteria-search-forms-section-remove-fields.png)
 
 
 ### セクション
@@ -58,14 +58,14 @@ Forms ページを使用するとそれぞれの公開テーブルに対して�
 
 バーコード検索を有効化するためには、検索フィールドの横の虫眼鏡アイコンをクリックし、**バーコードスキャナーを有効化する** オプションを選択します。
 
-![Barcode Search activation](img/project-editor-Qrcode-barcode-search-4D-for-iOS.gif)
+![バーコード検索有効化](img/project-editor-Qrcode-barcode-search-4D-for-iOS.gif)
 
 バーコード検索には2つの機能があります:
 
 * テキスト値を格納したバーコードをスキャンすることでリストフォームをフィルターすることができます。 フィルターしたあとに1件しか結果が残らない場合は、検索バーに値を入力され、詳細フォームを開きます。
 * バーコードをスキャンするだけで特定のリストフォームおよび詳細フォームを表示することができます。この場合、バーコードの値は**URL スキーム** か、または[**ディープリンク**](../special-features/deep-linking.md) 機能が有効化されていれば**ユニバーサルリンク** の値が使用できます。
 
-![Barcode Search app](img/text-Qrcode-barcode-search-4D-for-iOS.gif)
+![バーコード検索アプリ](img/text-Qrcode-barcode-search-4D-for-iOS.gif)
 
 :::4D for Androidにおける注意
 
@@ -75,7 +75,7 @@ Forms ページを使用するとそれぞれの公開テーブルに対して�
 
 ## 詳細フォーム
 
-![Detail form template selection](img/Forms-section-detail-form-templates-selection-4D-for-iOS.png)
+![詳細フォームテンプレート選択](img/Forms-section-detail-form-templates-selection-4D-for-iOS.png)
 
 リストフォームの定義と同様、テンプレートを選択し、フィールドを設定して下さい。 詳細フォームでは、フォーム内に必要なだけフィールドを追加することができます。
 
@@ -87,49 +87,49 @@ Forms ページを使用するとそれぞれの公開テーブルに対して�
 
 * 左にあるフィールドの一覧の利用可能なフィールドを右クリックし、コンテキストメニューから**不足しているフィールドを追加** を選択します。
 
-![Detail form content definition](img/Forms-section-detail-form-content-definition-4D-for-iOS.png)
+![詳細フォームコンテンツ定義](img/Forms-section-detail-form-content-definition-4D-for-iOS.png)
 
 
 詳細フォーム内でドラッグドロップをすることで、フィールドの並び順をいつでも変更することができます。
 
 :::tip
 
-If you want to try another template after dispatching your fields, just select it: previously selected fields are automatically moved for you to the new template in appropriate areas, according to the template and field types.
+フィールドを並べた後に他のテンプレートを試してみたい場合には、他のテンプレートを選択して下さい。それまでに配置されていたフィールドは新しく開かれたテンプレート内においてテンプレートとフィールドの型に応じて既に自動的に移動されています。
 
 :::
 
 
-## Gallery
+## ギャラリー
 
-When you select a template in the form section, a "More" icon is available for both list and detail forms.
+フォームセクションでテンプレートを選択している時、リストフォームと詳細フォームの両方において"他を探す"アイコンが表示されています。
 
 ![More template button](img/more.png)
 
 ![More template button](img/Forms-more-button.png)
 
-Just click on that icon to display a list of additional templates from the 4D mobile Gallery:
+このアイコンをクリックすることで、4D mobile ギャラリーにある追加のテンプレートの一覧を表示することができます。
 
 ![Template picker more button](img/Forms-template-gallery.png)
 
-Then, the only thing you have to do is selecting the template that suits your needs and the mobile editor will handle all the installation process. So you can directly start working on the template, as it is ready-to-use.
+あとは必要な用途に応じたテンプレートを選択するだけです。インストールの処理はモバイルエディターが全て管理してくれます。 テンプレートはすぐに使える状態で用意されているので、フォームの作成に直接取りかかることができます。
 
-A github icon is displayed at the top left of a template icon in the Forms template picker to indicate that it comes from Github:
+フォームのテンプレートピッカーのページにおいては、ダウンロードしたフォームの左上には、Githubからダウンロードしたテンプレートであることを表すためのgithubアイコンが表示されています。
 
 ![Add template from gallery](img/indicator-template-github.png)
 
 
 :::tip
 
-The Gallery is also directly available on Github.
-- [**gallery of list form templates**](https://4d-for-ios.github.io/gallery/#/type/list-detail/picker/0)
-- [**gallery of detail form templates**](https://4d-for-ios.github.io/gallery/#/type/form-detail/picker/0)
+またギャラリーをGithub上で直接見ることも可能です。
+- [**リストフォームのテンプレートのギャラリー**](https://4d-for-ios.github.io/gallery/#/type/list-detail/picker/0)
+- [**詳細フォームのテンプレートのギャラリー**](https://4d-for-ios.github.io/gallery/#/type/form-detail/picker/0)
 
 :::
 
-## Creating your own templates
+## 独自のテンプレートを作成する
 
-If you want to customize a downloaded template or create your own templates, **several tutorials** can guide you through these tasks:
+ダウンロードしたテンプレートをカスタマイズしたい、または独自のテンプレートを作成したい場合には、**以下のチュートリアル** が手助けになります:
 
-- [**Customizing a template form**](../tutorials/gallery/update-gallery-template.md)
-- [**Creating list forms**](../tutorials/creating-list-forms/list-form-template.md)
-- [**Creating details forms**](../tutorials/creating-detail-forms/detail-form-template.md)
+- [**テンプレートのフォームをカスタマイズする**](../tutorials/gallery/update-gallery-template.md)
+- [**リストフォームを作成する**](../tutorials/creating-list-forms/list-form-template.md)
+- [**詳細フォームを作成する**](../tutorials/creating-detail-forms/detail-form-template.md)
