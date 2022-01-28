@@ -18,48 +18,48 @@ title: 一般
 
 **名前:** あなたの会社の名前か、あなたの名前を入力します。
 
-**識別子:** あなたの組織のバンドルの識別子を入力して下さい。 これはあなたのアプリケーションを識別するのに使用されます。 The product name you enter is concatenated to create the "Bundle ID" using reverse domain name service notation (see **ID** below). This bundle ID must be unique to your app.
+**識別子:** あなたの組織のバンドルの識別子を入力して下さい。 これはあなたのアプリケーションを識別するのに使用されます。 入力された製品名は逆ドメインサービス表記を使用して連結され、"バンドルID"となります(以下の**ID** を参照して下さい)。 バンドルIDはアプリ固有のものでなければなりません。
 
-For example, if your company’s name is "MyCompany" and your app’s name is "MyApp", you could choose "com.MyCompany" as your organization’s bundle identifier and your App bundle ID would be "com.MyCompany.MyApp".
+例えば、あなたの会社の名前が"MyCompany"で、あなたのアプリの名前が"MyApp"だった場合、"com.MyCompany"を組織のバンドル識別子として選択することができ、その場合あなたのパル位のバンドルIDは"com.MyCompany.MyApp"となります。
 
 :::note
 
-The Bundle ID name must not contain space or special characters such as "*,%,/". They are automatically filtered and replaced with -.
+バンドルID名には、スペースや"*,%,/" などの特殊文字を含めてはいけません。 これらは自動的に除去され - で置き換えられます。
 
 :::
 
 
-## Product
+## プロダクト
 
 
-**Name:** Your app’s name. As described above, the product name is used to create the "Bundle ID". This Bundle ID must be the same as the Bundle ID you created in your Apple Development account.
+**名前:** あなたのアプリの名前です。 上記にあるように、プロダクト名が"バンドルID"を作成するのに使用されます。 バンドルIDは、Apple 開発アカウントで作成したバンドルIDを同じものでなければなりません。
 
 :::note
 
-The Bundle ID name must not contain space or special characters such as "*,%,/". They are automatically filtered and replaced with -.
+バンドルID名には、スペースや"*,%,/" などの特殊文字を含めてはいけません。 これらは自動的に除去され - で置き換えられます。
 
 :::
 
-**Version:** The version of your app. Add version numbers in ascending, sequential order starting with 1.0.
+**バージョン:** あなたのアプリのバージョンです。 バージョン番号は1.0から増やしていき、シーケンシャルな順番で追加して下さい。
 
-**ID:** (Bundle ID): This area is automatically generated as a composition of your organization identifier and product name. It is not editable.
+**ID:** (バンドルID): このエリアは、組織識別子とプロダクト名が組み合わされて自動的に生成されます。 これは直接編集することはできません。
 
-**Copyright:** Your app's copyright. The mobile editor suggests a copyright format but you can create your own.
+**Copyright:** あなたのアプリの著作権表記です。 モバイルエディターには著作権表記フォーマットが記入されていますが、独自の表記を作成することも可能です。
 
-**Icons:** Master icon that will be used in various locations in you app. You just need to designate your icon and the mobile editor generates all of the required formats for you, in accordance with standard mobile guidelines.
+**アイコン:** アプリ内の様々な場所で使用されるマスターアイコンです。 必要なのはアイコンを指定することだけです。あとはモバイルエディターが標準のモバイルガイダンスに従って必要なフォーマットを全て生成してくれます。
 
-To select an icon:
+アイコンを選択するには以下の方法があります:
 
-- Drag and drop a picture directly into the icon area, or
-- Use the image menu to select or copy your picture.
+- アイコンエリアにピクチャーを直接ドラッグドロップする
+- 画像メニューを使用してピクチャーを選択またはコピーする
 
 ![icon](img/iconselect.png)
 
-You can also double-click the area to display the picture selection dialog box.
+またエリアをダブルクリックすることでもピクチャー選択ダイアログボックスを表示することができます。
 
 :::note
 
-On Windows, you must use an "image file" (*.public.image).
+Windows では、"画像ファイル" (*.public.image) を使用する必要があります。
 
 :::
 
