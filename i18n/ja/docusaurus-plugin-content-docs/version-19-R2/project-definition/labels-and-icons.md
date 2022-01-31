@@ -1,40 +1,40 @@
 ---
 id: labels-and-icons
-title: Labels & Icons
+title: ラベル & アイコン
 ---
 
-This page allows you to define display properties for your tables, fields and relations in the mobile app.
+このページではモバイルアプリ内でのテーブル、フィールドおよびリレーションの表示プロパティを定義することができます。
 
 ![Labels & Icons section](img/Labels-&-icons-section-4D-for-iOS.png)
 
-Default properties are set. To modify a property, select an element and enter the new value in the appropriate column.
+初期状態ではデフォルトのプロパティが設定されています。 プロパティを変更するためには、変更する要素を選択し、適切なカラム内に新しい値を入力してください。
 
-You can define the same properties for tables, fields and relations. Additionally, formats can be defined for fields/relations.
+テーブル、フィールド、リレーションに対して同じプロパティを設定することができます。 また、それに加えて、フィールド/リレーションに対してフォーマットを定義することもできます。
 
-These elements will be displayed in detail and list forms, depending on the template in the generated app.
+これらの要素は生成されたアプリ内のテンプレートによって、詳細フォームおよびリストフォーム内で表示されます。
 
 
-## Icons
+## アイコン
 
-Icon to associate to the table or field/element in the mobile app each time a template requires an icon.
+テンプレートにアイコンが必要になった時にモバイルアプリでフィールド/要素に対して適用されるアイコンを設定します。
 
 :::info
 
-For relation fields, icons will be displayed at the left of the **Relation** button that allows to open a related table.
+リレーションフィールドに対しては、アイコンは**リレーション** ボタンの左に表示され、このボタンを押すとリレートされたテーブルを開くことができます。
 
 :::
 
-The 4D mobile editor provides a large library of icons to meet your needs. These include icons for business, finance, education, government, health, industry, real estate, services, etc. To select an icon, click on the **icon** button and choose an icon from the list:
+4Dモバイルエディターでは、あらゆる用途に応えるため、大量のアイコンのライブラリーを提供しています。 このライブラリーには、ビジネス、金融、教育、健康、産業、不動産、サービスなどの用途のアイコンが用意されています。 アイコンを選択するためには、**icon** ボタンをクリックし、表示されたリストからアイコンを選んでください:
 
 ![Icons select](img/icon-library.png)
 
 :::info
 
-To keep everything consistent, **default icons** are generated for blank fields if at least one icon has been defined for a field.
+統一性を持たせるため、フィールドに対して少なくとも1つのアイコンが定義されている場合、空のフィールドに対して**デフォルトアイコン** が生成されます。
 
 :::
 
-You can also leave the icon area empty if you don’t want to display icons in your application.
+アプリケーション内でアイコンを表示したくない場合には、アイコンエリアを空にしたままにして下さい。
 
 
 ### Adding custom icons
