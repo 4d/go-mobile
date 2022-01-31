@@ -63,7 +63,7 @@ Windows では、"画像ファイル" (*.public.image) を使用する必要が�
 
 :::
 
-Once the icon is selected, the mobile editor automatically creates all required icons for the app. You can access the generated icon formats by selecting **Show the icons folder** in the image menu.
+アイコンが選択されると、モバイルエディターはアプリに必要なアイコンを全て自動的に作成します。 生成されたアイコンフォーマットは、画像メニューの**アイコンフォルダを表示** を選択することでアクセスできます。
 
 ### Main color
 
