@@ -14,7 +14,7 @@ In the **Sections** tab, you'll find all of the necessary steps to create your m
 * ストラクチャ
 * データ
 * アクション
-* Labels & Icons
+* ラベル & アイコン
 * Main Menu
 * フォーム
 * Publishing
