@@ -53,7 +53,7 @@ title: 一般
 - アイコンエリアにピクチャーを直接ドラッグドロップする
 - 画像メニューを使用してピクチャーを選択またはコピーする
 
-![icon](img/iconselect.png)
+![アイコン](img/iconselect.png)
 
 またエリアをダブルクリックすることでもピクチャー選択ダイアログボックスを表示することができます。
 
@@ -65,19 +65,19 @@ Windows では、"画像ファイル" (*.public.image) を使用する必要が�
 
 アイコンが選択されると、モバイルエディターはアプリに必要なアイコンを全て自動的に作成します。 生成されたアイコンフォーマットは、画像メニューの**アイコンフォルダを表示** を選択することでアクセスできます。
 
-### Main color
+### メインカラー
 
-This menu allows you to select how to define the main color of your app. The main color is used to generate a custom color scheme for your app.
+このメニューを使用すると、あなたのアプリのメインカラーをどのように定義するかを選択することができます。 メインカラーは、あなたのアプリのカスタムカラースキームを生成するのに使用されます。
 
-![icon](img/main-color.png)
+![アイコン](img/main-color.png)
 
-- **Use the system color selector**: displays the system color picker in which you can designate the main color
-- **Use the main color of the icon**: let the mobile editor determine automatically the main color from your app's icon.
+- **システムのカラーセレクターを使用**: システムのカラーピッカーを表示し、そこからメインカラーを指定できます。
+- **アイコンのメインカラーを使用**: 選択されたアプリのアイコンからモバイルエディターに自動的にメインカラーを決定させます。
 
-At any time, you can reset the main color and get back to the icon's preset main color, by clicking on "Use the main color of the icon".
+"アイコンのメインカラーを使用"をクリックすることで、いつでもメインカラーをリセットしてアイコンのプリセットのメインカラーへと戻すことができます。
 
-## Developer
+## デベロッパー
 
-**Name:** This field is automatically prefilled with your user account name. You can enter any name.
+**名前:** このフィールドはあなたのユーザーアカウント名で自動的に記入されています。 ここの名前は自由に記入することができます。
 
-**Team:** Your Developer Account Team ID, that will be used during the deployment phase. This ID can be get from your Developer Account. 
+**部署名:** あなたのデベロッパーアカウントチームID。これは開発フェーズを通して使用されます。 このIDはデベロッパーアカウントから取得することができます。 
