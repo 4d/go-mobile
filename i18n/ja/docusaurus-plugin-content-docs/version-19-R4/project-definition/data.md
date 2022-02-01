@@ -201,7 +201,7 @@ salespersonid = :id
 
 When the mobile app will access data from the "Customers" table, only customers belonging to the logged salesperson will be displayed.
 
-:::tip tutorial
+:::Tipsチュートリアル
 
 See the [**Define a filter query**](../tutorials/filter-queries/define-filter-query) tutorial for a complete example of filter query with user info in a mobile app.
 
