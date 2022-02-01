@@ -38,7 +38,7 @@ On mouse over, a tip displays the table name originating the relation.
 
 :::
 
-## Labels & Icons section
+## ラベル & アイコンセクション
 
 The One to Many relation is now available in the **Labels and Icons** section.
 
