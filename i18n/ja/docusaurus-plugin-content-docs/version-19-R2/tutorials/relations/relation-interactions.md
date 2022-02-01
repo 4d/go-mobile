@@ -13,7 +13,7 @@ From the structure section, you will be able to publish relations from Many to O
 
 ![Publish relations from Structure section](img/structure-section.gif)
 
-## Labels & Icons section
+## ラベル & アイコンセクション
 
 From the Labels & Icons section, you will be able to customize your relation button label.
 
