@@ -1,18 +1,18 @@
 ---
 id: main-menu
-title: Main Menu
+title: メインメニュー
 ---
 
-This page allows you to select and order the tables that will be available in the navigation bar of your app.
+このページではアプリのナビゲーションバー内で表示されるテーブルとその順番を選択することができます。
 
-![Main menu section](img/Main-menu-section-4D-for-iOS.png)
+![メインメニューセクション](img/Main-menu-section-4D-for-iOS.png)
 
-By default, all tables selected in the [Structure](structure.md) page will be added to your app’s menu.
+デフォルトでは、[ストラクチャー](structure.md) ページ内で選択されている全てのテーブルがアプリのメニューに追加されます。
 
-You can use the **Add**/**Remove** buttons and drag and drop to add, delete, and reorder tables.
+**追加**/**削除** ボタン、あるいはドラッグドロップを使用して、テーブルの追加、削除、並べ替えができます。
 
-* In the **Available Table** list, you find all of the tables you published in the [Structure](structure.md)
+* **利用可能テーブル** リストには、[ストラクチャー](structure.md) 内で公開された全てのテーブルが表示されています。
 
-* The **Selected Tables** list includes all of the tables that will be accessible from the menu of your app.
+* **選択されたテーブル** リストには、アプリのメニューからアクセス可能な全てのテーブルが表示されています。
 
 
