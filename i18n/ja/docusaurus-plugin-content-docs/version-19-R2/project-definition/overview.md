@@ -15,7 +15,7 @@ In the **Sections** tab, you'll find all of the necessary steps to create your m
 * データ
 * アクション
 * ラベル & アイコン
-* Main Menu
+* メインメニュー
 * フォーム
 * Publishing
 
