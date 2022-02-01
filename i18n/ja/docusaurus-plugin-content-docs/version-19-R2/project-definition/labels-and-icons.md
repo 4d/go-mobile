@@ -37,23 +37,23 @@ title: ラベル & アイコン
 アプリケーション内でアイコンを表示したくない場合には、アイコンエリアを空にしたままにして下さい。
 
 
-### Adding custom icons
+### カスタムのアイコンを追加する
 
-You can add your own icons to the library, so that you can select them in your project. You can use any icon format (SVG or PNG is recommended to preserve transparency) and size. It's highly recommended having colored versions of your custom icons to better visualize them in the project editor.
+独自のアイコンをライブラリーに追加し、プロジェクト内で選択できるようにすることができます。 使用するアイコンフォーマットおよびサイズに制約はありません(ただしフォーマットは透明部を保持するためにSVGまたはPNGが推奨されます)。 プロジェクトエディターでの見栄えのために、カスタムのアイコンは色付きのバージョンを用意しておくことが強く推奨されます。
 
-For example, here are a set of custom icons that you can use:
+例えば、カスタムのアイコンとして使用できるものは以下のようなものがあります:
 
 <div className="center-button">
 <a
   className="button button--primary"
   href="https://github.com/4d-go-mobile/tutorial-CustomIcons/releases/latest/download/tutorial-CustomIcons.zip">
-  Download custom icons
+  カスタムアイコンをダウンロードする
 </a>
 </div>
 
-To include custom icons in your project:
+プロジェクトにカスタムのアイコンを含めるためには、以下のようにします:
 
-1. Create an `icons` folder at the following location:
+1. 以下の場所に`icons` フォルダを作成します。
 
 ```
 <my4DProjetFolder>/Resources/Mobile/medias
@@ -61,45 +61,45 @@ To include custom icons in your project:
 
 :::note
 
-You may have to create the `medias` folder.
+`medias` フォルダを作成する必要もあるかもしれません。
 
 :::
 
-2. Drag and drop your customized icons in the `icons` folder.
+2. `icons` フォルダ内にカスタマイズしたアイコンをドラッグドロップします。
 
 ![Icons select2](img/mobile-folder-custom-icons.png)
 
-Your icons can now be selected for your project, they are listed after the standard icons.
+これで追加したアイコンがプロジェクトにおいて選択できるようになりました。標準のアイコンのあとに表示されます。
 
 
 
 
-## Short and long labels
+## 短いラベル/長いラベル
 
-You can define custom labels for published tables, fields, and relations. These labels will be automatically used according to the available space in the template to optimize space and avoid overcrowding the tab bar.
+公開されているテーブル、フィールド、リレーションに対しては、カスタムのラベルの定義することができます。 これらのラベルは、テンプレート内の利用可能な場所に応じて、場所を最適化してタブバーが混雑するのを避けるために自動的に使用されます。
 
 :::info
 
-For relation fields, labels will be displayed in the **Relation** button that allows to open a related table.
+リレーションフィールドに対しては、ラベルは**リレーション** ボタンの左に表示され、このボタンを押すとリレートされたテーブルを開くことができます。
 
 :::
 
-- Short labels should have 10 characters or less
-- Long labels can have up to 25 characters
-- You can use characters that are not allowed in structure names, such as "/","@", the space character, etc.
+- 短いラベルには10文字以下のラベルをつけることができます。
+- 長いラベルには25文字までのラベルをつけることができます。
+- ここでは、ストラクチャー名では使用できない、"/" や "@"、半角スペースなどの特殊文字も使用することができます。
 
-By default, the mobile editor uses the table and field names as defined in the structure as labels in the app, and the same string is used for short and long labels.
+デフォルトでは、モバイルエディターはストラクチャー内で定義されているテーブルメイトフィールド名をアプリ内で使用し、短いラベルと長いラベルの両方において同じ文字列が使用されます。
 
 
-## Formats
+## フォーマット
 
-This property allows you to format the data to display in the app. When you click on a field row, a format menu is displayed.
+このプロパティではアプリ内でのデータ表示のフォーマットを設定することができます。 フィールドの行をクリックすると、フォーマットメニューが表示されます。
 
 ![formats](img/formats-menu.png)
 
-Available built-in formats depend on the field type:
+選択可能なビルトインフォーマットは、フィールドタイプによって決まります:
 
-| Field type         | Formats                                                                                                                |
+| フィールドの型            | フォーマット                                                                                                                 |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
 | **テキスト**           | テキスト                                                                                                                   |
 | **日付**             | Date, Short date, Long date, Full date                                                                                 |
