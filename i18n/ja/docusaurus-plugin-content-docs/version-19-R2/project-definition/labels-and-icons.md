@@ -5,7 +5,7 @@ title: ラベル & アイコン
 
 このページではモバイルアプリ内でのテーブル、フィールドおよびリレーションの表示プロパティを定義することができます。
 
-![Labels & Icons section](img/Labels-&-icons-section-4D-for-iOS.png)
+![ラベル & アイコンセクション](img/Labels-&-icons-section-4D-for-iOS.png)
 
 初期状態ではデフォルトのプロパティが設定されています。 プロパティを変更するためには、変更する要素を選択し、適切なカラム内に新しい値を入力してください。
 
@@ -26,7 +26,7 @@ title: ラベル & アイコン
 
 4Dモバイルエディターでは、あらゆる用途に応えるため、大量のアイコンのライブラリーを提供しています。 このライブラリーには、ビジネス、金融、教育、健康、産業、不動産、サービスなどの用途のアイコンが用意されています。 アイコンを選択するためには、**icon** ボタンをクリックし、表示されたリストからアイコンを選んでください:
 
-![Icons select](img/icon-library.png)
+![アイコン選択](img/icon-library.png)
 
 :::info
 
@@ -67,7 +67,7 @@ title: ラベル & アイコン
 
 2. `icons` フォルダ内にカスタマイズしたアイコンをドラッグドロップします。
 
-![Icons select2](img/mobile-folder-custom-icons.png)
+![アイコン選択2](img/mobile-folder-custom-icons.png)
 
 これで追加したアイコンがプロジェクトにおいて選択できるようになりました。標準のアイコンのあとに表示されます。
 
@@ -95,51 +95,51 @@ title: ラベル & アイコン
 
 このプロパティではアプリ内でのデータ表示のフォーマットを設定することができます。 フィールドの行をクリックすると、フォーマットメニューが表示されます。
 
-![formats](img/formats-menu.png)
+![フォーマット](img/formats-menu.png)
 
 選択可能なビルトインフォーマットは、フィールドタイプによって決まります:
 
-| フィールドの型            | フォーマット                                                                                                                 |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| **テキスト**           | テキスト                                                                                                                   |
-| **日付**             | Date, Short date, Long date, Full date                                                                                 |
-| **時間**             | Time, Short time, Duration, Integer number                                                                             |
-| **Image**          | Image                                                                                                                  |
-| **ブール**            | "No" or "Yes", "False" or "True"                                                                                       |
-| **Integer number** | Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out |
+| フィールドの型  | フォーマット                                |
+| -------- | ------------------------------------- |
+| **テキスト** | テキスト                                  |
+| **日付**   | 日付、短い日付、長い日付、完全な日付                    |
+| **時間**   | 時間、短い時間、経過時間、整数                       |
+| **画像**   | 画像                                    |
+| **ブール**  | "いいえ" または "はい"、 "False" または "True"    |
+| **整数**   | 整数、小数、実数、パーセント、助数詞、通過 $、通過 €、通過 ¥、漢数字 |
 
 
-### Adding custom formats
+### カスタムのフォーマットを追加する
 
-The mobile editor allows you to add customized formats (called "formatters") in your projects. For example, you can define custom formats for emails, invoice numbers, etc.
+モバイルエディターではカスタマイズされたフォーマット("フォーマッター") をプロジェクトに追加することができます。 例えば、Eメール用、請求書番号用などのカスタムフォーマットを定義することが可能です。
 
-To add custom formats to your mobile project, you can:
+カスタムのフォーマットをモバイルプロジェクトに追加するためには、以下の方法があります:
 
 - Download and install customized formats from the [**go-mobile formatters github repository**](https://4d-for-ios.github.io/gallery/#/type/formatter/picker/0).
 
-- Create your own formats.
+- 独自のフォーマットを作成する
 
-:::tip tutorial
+:::Tipsチュートリアル
 
-Visit [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format
+カスタムフォーマットの定義の仕方については、[**こちらのチュートリアル**](../tutorials/data-formatter/create-data-formatter) を参照して下さい。
 
 :::
 
-To install a custom formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a custom format can be selected from the Formats menu, just like a built-in formats.
+カスタムのフォーマッターをインストールするためには、フォーマッターのフォルダを4D プロジェクトフォルダの`/Resources/Mobile/formatters` フォルダにドロップするだけです。 インストールした後は、カスタムフォーマットはビルトインフォーマットと同じように、フォーマットメニューから選択することが可能です。
 
 
-## Title
+## タイトル
 
-This property is only available for Relation fields. The defined title will be displayed on top of the destination view when using a relation.
+このプロパティはリレーションフィールドにおいてのみ利用可能です。 ここで定義されたタイトルは、リレーションを使用したときに遷移先のビューのトップに表示されます。
 
-Use a pair of `%` characters to include the value of the related field in the title. For example, if you want that the title of the `Employee.employer` related field displays the name of the related `employee` field, you can write:
+リレートされたフィールドの値をタイトル内に含めたい場合には、`%` 文字を使用して指定します。 例えば、`Employee.employer` リレートフィールドのタイトルに、リレートされている`employee` フィールドの名前を表示したい場合には、以下のように書くことができます:
 
 ```
-%Name%'s employer
+%Name%の雇用主
 ```
 
-:::tip tutorial
+:::Tipsチュートリアル
 
-A [**tutorial**](../tutorials/relations/one-to-many-title-definition) is available to guide you through the Title definition process.
+タイトル定義プロセスの仕方については、それを説明した[**チュートリアル**](../tutorials/relations/one-to-many-title-definition) があります。
 
 :::
