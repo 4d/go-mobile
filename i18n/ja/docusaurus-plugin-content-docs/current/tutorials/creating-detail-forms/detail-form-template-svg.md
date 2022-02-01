@@ -20,7 +20,7 @@ This template has dynamic field numbering, meaning that this template will allow
 
 Let’s focus on the different parts of this svg file and what you'll need to edit.
 
-## Title
+## タイトル
 
 ```xml
 <title>Custom Detail form</title>
