@@ -11,7 +11,7 @@ The `template.svg` file is a basic visual representation of a template. プロ�
 
 Let’s focus on the different parts of this svg file and what you'll need to edit.
 
-## Title
+## タイトル
 
 ```xml
 <title>Custom List form</title>
