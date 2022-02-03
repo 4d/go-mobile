@@ -4,7 +4,7 @@ title: 概要
 ---
 
 
-The 4D Mobile Project editor allows you to design, test, and build your native mobile projects for iOS and Android using a graphical interface. The window has two tabs: **Sections** and **Build**.
+4D Mobile プロジェクトエディターを使用すると、グラフィカルなインターフェースを使用してiOS用/Androido用のネイティブなモバイルプロジェクトをデザイン、テスト、ビルドすることができます。 ウィンドウには2つのタブがあります: **セクション** and **ビルド** です。
 
 ![General画面](img/General-section-4D-for-iOS.png)
 
