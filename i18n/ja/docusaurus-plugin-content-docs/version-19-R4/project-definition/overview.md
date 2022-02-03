@@ -8,7 +8,7 @@ title: 概要
 
 ![General画面](img/General-section-4D-for-iOS.png)
 
-In the **Sections** tab, you'll find all of the necessary steps to create your mobile application:
+**セクション** タブの各セクションは，モバイルアプリが出来るまでの過程に対応しています。
 
 * 一般
 * ストラクチャ
@@ -19,16 +19,16 @@ In the **Sections** tab, you'll find all of the necessary steps to create your m
 * フォーム
 * Publishing
 
-In the **Build** tab, you'll find embedded tools to build and test you mobile app:
+**ビルド** タブには、モバイルアプリをビルド/テストするための埋め込みツールがあります。
 
 * Build and Run
 * シミュレーター
 * プロジェクト
 * インストール
 
-The 4D Mobile Project editor is available from the **4D** application development environment (a 4D Developer Pro license is required).
+4D Mobile プロジェクトエディターは**4D** アプリケーション開発環境から利用可能です(4D Develope Pro ライセンスが必要です)。
 
-A 4D mobile project is strongly linked to a 4D data model. To be able to create or open a 4D mobile project, you must open the associated 4D project database beforehand.
+4D モバイルプロジェクトは、4D データモデルと強くリンクしています。 4D Mobile プロジェクトを作成または開くためには、それに関連した4D プロジェクトデータベースを先に開く必要があります。
 
 
 ## Creating a mobile project
