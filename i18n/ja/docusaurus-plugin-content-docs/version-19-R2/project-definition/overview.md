@@ -4,7 +4,7 @@ title: 概要
 ---
 
 
-4D Mobile プロジェクトエディターを使用すると、グラフィカルなインターフェースを使用してiOS用/Androido用のネイティブなモバイルプロジェクトをデザイン、テスト、ビルドすることができます。 ウィンドウには2つのタブがあります: **セクション** and **ビルド** です。
+4D モバイルプロジェクトエディターを使用すると、グラフィカルなインターフェースを使用してiOS用/Android用のネイティブなモバイルプロジェクトをデザイン、テスト、ビルドすることができます。 ウィンドウには2つのタブがあります: **セクション** and **ビルド** です。
 
 ![General画面](img/General-section-4D-for-iOS.png)
 
@@ -26,21 +26,21 @@ title: 概要
 * プロジェクト
 * インストール
 
-4D Mobile プロジェクトエディターは**4D** アプリケーション開発環境から利用可能です(4D Develope Pro ライセンスが必要です)。
+4D モバイルプロジェクトエディターは**4D** アプリケーション開発環境から利用可能です(4D Developer Pro ライセンスが必要です)。
 
-4D モバイルプロジェクトは、4D データモデルと強くリンクしています。 4D Mobile プロジェクトを作成または開くためには、それに関連した4D プロジェクトデータベースを先に開く必要があります。
+4D モバイルプロジェクトは、4D データモデルと強くリンクしています。 4D モバイルプロジェクトを作成または開くためには、それに関連した4D プロジェクトデータベースを先に開く必要があります。
 
 
-## Creating a mobile project
+## モバイルプロジェクトを作成
 
-To create a new mobile project:
+新しいモバイルプロジェクトを作成するには、以下のようにします:
 
-1. Start your 4D application and open the 4D project for which you want to create a mobile project.
-2. Select **New > Mobile Project** from the **File** or the toolbar menu.
+1. 4D アプリケーションを開始し、モバイルプロジェクトを作成したい4D プロジェクトを開きます。
+2. ツールバーの**ファイル** メニューから、**新規 > モバイルプロジェクト...** を選択します。
 
 :::note
 
-You need a 4D Developer Pro license to open the 4D mobile editor.
+4D モバイルエディターを開くためには、4D Developer Pro ライセンスが必要になります。
 
 :::
 
