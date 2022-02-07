@@ -3,15 +3,15 @@ id: publishing
 title: Publishing
 ---
 
-This page gives you access to your app's publishing settings and special mobile features:
+このページでは、アプリの公開設定および特殊なモバイル機能にアクセスすることができます:
 
 
 ![Publishing section](img/publishing.png)
 
 
-## Production URL
+## プロダクションURL
 
-URL of the Web Server on which mobile apps will connect to read and write data, in production context. You can enter any valid address, i.e.:
+製品コンテキストにおいて、モバイルアプリがデータの読み書きを行うWebサーバーのURLです。 有効な任意のアドレスを入力することができます。例:
 
 ```
 https://my.wesbsite.com
