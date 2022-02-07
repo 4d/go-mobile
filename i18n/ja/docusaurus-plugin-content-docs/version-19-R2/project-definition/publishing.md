@@ -19,7 +19,7 @@ http://my.website.com:9200
 www.website.com/mobile
 ```
 
-During the development phase, you can leave this area empty and set the [Data source](data.md) to **Current data file**.
+開発フェーズにおいては、ここのエリアを空のままにし、[データソース](data.md) を**カレントデータファイル** に設定する事ができます。
 
 :::tip
 
