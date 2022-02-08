@@ -50,7 +50,7 @@ $response:=$pushNotification.send($notification;"test@4d.com")
 
 It's as simple as that!
 
-:::tip
+:::ヒント
 
 Use the [**4D Mobile App Server** component](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) to easily adapt the push notifications to your own needs. Feel free to use it and to pick the most relevant aspects for your app. And of course, all contributors are welcome to this project, through feedback, bug reports and even better: pull requests.
 
