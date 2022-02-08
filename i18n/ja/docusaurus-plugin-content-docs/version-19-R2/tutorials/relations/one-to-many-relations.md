@@ -32,7 +32,7 @@ This will now operate as any other field for the rest of the app creation proces
 
 ![Structure section Relations properties](img/Structure-section-relations-4D-for-iOS.png)
 
-:::tip
+:::ヒント
 
 On mouse over, a tip displays the table name originating the relation.
 
