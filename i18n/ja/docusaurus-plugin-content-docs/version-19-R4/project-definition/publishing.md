@@ -21,17 +21,17 @@ www.website.com/mobile
 
 開発フェーズにおいては、ここのエリアを空のままにし、[データソース](data.md) を**カレントデータファイル** に設定する事ができます。
 
-:::tip
+:::ヒント
 
-The user will be able to [change the server url](#modify-remote-url) from the mobile device.
+ユーザーはモバイルデバイスから[サーバーURL を変更する](#modify-remote-url) 事が可能です。
 
 :::
 
 
 
-## Web Server Settings
+## Webサーバー設定
 
-The **Edit...** button opens the **Web** page of the 4D settings dialog box. Use this page to define the following settings to embed in the mobile app:
+**編集...** ボタンをクリックすると4D データベース設定の**Web** ページが開きます。 Use this page to define the following settings to embed in the mobile app:
 
 - **Enable HTTP** option and **HTTP port**.
 - **Enable HTTPS** option and **HTTP port**.
