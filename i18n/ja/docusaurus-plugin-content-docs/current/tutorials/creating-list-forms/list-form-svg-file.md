@@ -200,7 +200,7 @@ For more information on these field types, refer to [**this page**](https://deve
 
 :::
 
-:::tip
+:::ヒント
 
 To make field type definition easier, 4D for iOS allows you to include field types with **positive values** and also exclude field types with **negative values**. For example, `ios:type="-3,-4"` will allow you to drag and drop every field except images and dates. To include all types, just type `ios:type="all"`.
 
