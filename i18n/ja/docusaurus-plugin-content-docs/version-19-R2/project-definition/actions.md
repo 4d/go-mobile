@@ -305,7 +305,7 @@ In your iOS app, actions are available in different ways in your List and Detail
 
 ![Table Listform Tableview](img/ListForm-table-action-tableview.png)
 
-:::tip
+:::ヒント
 
 Actions will be displayed in the same order as defined in the Action section.
 
