@@ -42,9 +42,9 @@ HTTP とHTTPS の両方が有効化されていた場合、HTTP が使用され�
 
 :::
 
-Activating the HTTPS port requires that you installed a valid [TLS certificate](https://developer.4d.com/docs/en/Admin/tls.html). You can create test certificates with 4D.
+HTTPS ポートを有効化するためには、有効な[TLS 証明書](https://developer.4d.com/docs/en/Admin/tls.html) をインストールする必要があります。 4D を使用してテスト用証明書を作成することもできます。
 
-These settings are taken into account only if the [production URL](#production-url) is defined. Otherwise, the local IP address is used.
+これらの設定は、[プロダクション URL](#production-url) が定義されている場合にのみ使用されます。 それ以外の場合には、ローカルID アドレスが使用されます。
 
 :::note
 
