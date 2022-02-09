@@ -31,14 +31,14 @@ www.website.com/mobile
 
 ## Webサーバー設定
 
-**編集...** ボタンをクリックすると4D データベース設定の**Web** ページが開きます。 Use this page to define the following settings to embed in the mobile app:
+**編集...** ボタンをクリックすると4D データベース設定の**Web** ページが開きます。 このページを使用して、モバイルアプリに埋め込む以下の設定を定義することができます:
 
-- **Enable HTTP** option and **HTTP port**.
-- **Enable HTTPS** option and **HTTP port**.
+- **HTTPを有効化** オプションおよび**HTTP ポート**
+- **HTTPSを有効化** オプションおよび**HTTP ポート**
 
 :::note
 
-If both HTTP and HTTPS are enabled, HTTP is used.
+HTTP とHTTPS の両方が有効化されていた場合、HTTP が使用されます。
 
 :::
 
