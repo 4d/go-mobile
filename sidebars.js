@@ -91,6 +91,7 @@ module.exports = {
       items: [
         "tutorials/data-formatter/create-data-formatter",
         "tutorials/data-formatter/create-swift-formatter",
+		"tutorials/data-formatter/create-kotlin-formatter",
       ],
     },
     {
