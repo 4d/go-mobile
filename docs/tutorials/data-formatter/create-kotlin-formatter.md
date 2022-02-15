@@ -72,11 +72,9 @@ extension UILabel {
 
 Putting all that together, you can save this formatter as a **.kt** file in the formatter folder and use it in your mobile project.
 
-![Architecture](img/xxx.png)
 
 Check out the final result:
 
-![Final result](img/xxx.png)
 
 ### On Android
 
