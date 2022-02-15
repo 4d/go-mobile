@@ -36,6 +36,7 @@ Here is the **manifest.json file**:
     "name": "objectFormatter",
     "binding": "objectAddress",
     "type": "object" 
+	"target" : ["ios", "android"]
 }
 
 ```
