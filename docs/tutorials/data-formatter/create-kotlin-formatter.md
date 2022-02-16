@@ -5,11 +5,11 @@ title: Create Kotlin formatter
 
 > **OBJECTIVES**
 >
-> Create your first data formatters.
+> Create your first Kotlin data formatters.
 
+A formatter can be composed of both Kotlin and Swift code.
 
 ## Object attribute Kotlin formatter
-
 
 If you want a formatter that will enable you to dial a phone number value on click, we need a **manifest.json file** containing a `name`, a `binding`, a `type` and a `target` value as follows:
 
