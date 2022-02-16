@@ -5,8 +5,9 @@ title: Create Swift formatter
 
 > **OBJETIVOS**
 > 
-> Criar seus primeiros formatos de dados.
+> Create your first Swift data formatters.
 
+A formatter can be composed of both Swift and [Kotlin](create-kotlin-formatter.md) code.
 
 ### Object attribute Swift formatter
 
@@ -70,7 +71,7 @@ extension UILabel {
 
 Putting all that together, you can save this formatter as a **.swift** file in the formatter folder and use it in your mobile project.
 
-![Architecture](img/architecture-.png)
+![Architecture](img/architecture-swift.png)
 
 Check out the final result:
 
