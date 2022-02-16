@@ -129,6 +129,6 @@ Putting all that together, you can save this formatter as a **.kt** file in the 
 
 Check out the final result:
 
-![Resultado final](img/phoneAction_dial.png) ![Resultado final](img/phoneActionForm.png)
+![Resultado final](img/rendu-android.png)
 
 Don't hesitate to give us feedbck on the 4D Forum, and check out the documentation for more details!
