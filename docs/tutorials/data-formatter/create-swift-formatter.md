@@ -7,7 +7,7 @@ title: Create Swift formatter
 >
 > Create your first Swift data formatters.
 
-A formatter can be composed of both Kotlin and Swift code.
+A formatter can be composed of both Swift and [Kotlin](create-kotlin-formatter.md) code.
 
 ### Object attribute Swift formatter
 
