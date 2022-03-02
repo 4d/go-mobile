@@ -6,7 +6,7 @@ title: Publishing
 このページでは、アプリの公開設定および特殊なモバイル機能にアクセスすることができます:
 
 
-![Publishing section](img/publishing.png)
+![公開セクション](img/publishing.png)
 
 
 ## プロダクションURL
@@ -63,31 +63,31 @@ HTTPS ポートを有効化するためには、有効な[TLS 証明書](https:/
 * リモートのURLとその状態を確認する
 * ログアウトする(認証されたユーザーとしてログインしていた場合)
 
-![Login & Settings screen](img/Login-Settings-screen-Publishing-section-4D-for-iOS.png)
+![ログイン & 設定画面](img/Login-Settings-screen-Publishing-section-4D-for-iOS.png)
 
 
 ### リモートURLを変更する
 
-You can easily update your remote url from iPhone Settings :
+リモートURLはiPhoneの設定から容易に更新することができます:
 
-* Open your iPhone Settings
-* Select the app you want the remote url to be updated
-* Switch on the "Reset server address" option
+* iPhoneの設定を開く
+* リモートURLを更新したいアプリを選択
+* "サーバーアドレスをリセット"オプションをタッチ
 
-![Reset remote url](img/Reset-remote-url.png)
+![リモートURLをリセットする](img/Reset-remote-url.png)
 
-* Then restart your app to reset the server address
-* And finally define the new remote url
+* その後アプリを再起動してサーバーアドレスをリセット
+* 最後に新しいリモートURLを新たに定義
 
-![Update remote url](img/Update-remote-url.png)
+![リモートURLを更新する](img/Update-remote-url.png)
 
 
-## Features
+## 機能
 
-This area allows you to select and configure several mobile app's special features. These features are documented in dedicated sections:
+このエリアを使用するとモバイルアプリの複数の特殊な機能を選択し設定することができます。 これらの機能はそれぞれの専用の章に詳細な説明があります:
 
-- [Authentication](../special-features/authentication.md)
-- [Push notifications](../special-features/push-notification.md)
-- [Deep linking](../special-features/deep-linking)
+- [認証](../special-features/authentication.md)
+- [プッシュ通知](../special-features/push-notification.md)
+- [ディープリンク](../special-features/deep-linking)
 
 
