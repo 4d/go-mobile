@@ -1,6 +1,6 @@
 ---
 id: authentication
-title: Authentication
+title: 認証
 ---
 
 
@@ -101,7 +101,7 @@ Once the validation is done, the user can reopen their app and click on the **Lo
 
 Here is a snapshot of the whole sequence:
 
-![Authentication](img/4D-for-iOS-email-auth.png)
+![認証](img/4D-for-iOS-email-auth.png)
 
 You can handle this sequence using a special component, or manually.
 
