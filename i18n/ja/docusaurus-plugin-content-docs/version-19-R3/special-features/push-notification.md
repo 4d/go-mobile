@@ -1,6 +1,6 @@
 ---
 id: push-notification
-title: Push notifications
+title: プッシュ通知
 ---
 
 :::4D for Androidにおける注意
@@ -29,7 +29,7 @@ In order to send push notifications, an `AuthKey_XXXYYY.p8` authentication file 
 
 2. In the [Publishing](../project-definition/publishing) page, check the **Push notifications** option and select your certificate in the mobile project.
 
-![Publishing section](img/push-notification-publishing-section.png)
+![公開セクション](img/push-notification-publishing-section.png)
 
 
 ## Basic example to manage push notifications
