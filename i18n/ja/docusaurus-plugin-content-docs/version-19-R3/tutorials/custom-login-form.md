@@ -84,7 +84,7 @@ Open the QRCode mobile project and go right to the Publishing section.
 
 From here check the Authentication feature and Create the database method clicking on the Create button.
 
-![Publishing section](img/publishing-section.png)
+![公開セクション](img/publishing-section.png)
 
 
 This is how it should look to authenticate users :
