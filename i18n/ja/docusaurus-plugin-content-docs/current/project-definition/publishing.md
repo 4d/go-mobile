@@ -48,25 +48,25 @@ HTTPS ポートを有効化するためには、有効な[TLS 証明書](https:/
 
 :::note
 
-The Simulator always works locally (127.0.0.1 or localhost).
+シミュレーターは必ずローカルに動作します(127.0.0.1 または localhost)
 
 :::
 
-## How it looks on a device
+## デバイス上での見た目
 
-### Settings screen
+### 設定画面
 
-A Settings screen is available from the tab bar. You can also find it from the More tab if necessary (*i.e.*, your app has more than four tables).
+設定画面はタブバーから利用可能です。 また必要であれば(*例* アプリ内にテーブルが4つあるなど)、その他タブ内にもあります。
 
-The Settings screen allows you to:
+設定画面を使用すると、以下のようなことが可能になります:
 
-* Consult your remote URL and its current state
-* Log out (if connected as an Authorized User)
+* リモートのURLとその状態を確認する
+* ログアウトする(認証されたユーザーとしてログインしていた場合)
 
 ![Login & Settings screen](img/Login-Settings-screen-Publishing-section-4D-for-iOS.png)
 
 
-### Modify remote url
+### リモートURLを変更する
 
 You can easily update your remote url from iPhone Settings :
 
