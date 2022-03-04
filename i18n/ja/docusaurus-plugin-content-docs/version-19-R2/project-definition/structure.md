@@ -3,12 +3,12 @@ id: structure
 title: ストラクチャ
 ---
 
-This page displays all of the tables and fields that are exposed as REST resources in the 4D database, including relation attributes (based upon many-to-one and one-to-many relations). In fact, the page displays a view similar to [ORDA's datastore](https://developer.4d.com/docs/en/ORDA/overview.html).
+このページでは、4Dデータベース内でREST リソースとして公開されている全てのテーブルとフィールドが表示されます。これには(N対1および1対Nリレーションに基づいた) リレーション属性も含まれます。 実際の表示は、[ORDA のデータストア](https://developer.4d.com/docs/ja/ORDA/overview.html) にとても近いものが表示されます。
 
 ![Structure section](img/Structure-section-4D-for-iOS.png)
 
 
-Use this page to define a subset of your physical structure to replicate for mobile devices by selecting the specific tables and fields to publish.
+このページを使用すると、公開したい特定のテーブルおよびフィールドを選択することにより、実際のストラクチャーからモバイルデバイスに複製したいサブセットを定義することができます。
 
 - Published tables will be automatically added as tabs of your app.
 - Published scalar fields will be available when defining your [list and detail forms].
