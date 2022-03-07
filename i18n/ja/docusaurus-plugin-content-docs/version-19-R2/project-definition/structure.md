@@ -10,7 +10,7 @@ title: ストラクチャ
 
 このページを使用すると、公開したい特定のテーブルおよびフィールドを選択することにより、実際のストラクチャーからモバイルデバイスに複製したいサブセットを定義することができます。
 
-- Published tables will be automatically added as tabs of your app.
+- 公開されているテーブルは自動的にアプリのタブとして追加されます。
 - Published scalar fields will be available when defining your [list and detail forms].
 - Published relation fields (many-to-one and one-to-many) will be available when defining your [list and detail forms] and come with additional navigation features such as a Relation button.
 
