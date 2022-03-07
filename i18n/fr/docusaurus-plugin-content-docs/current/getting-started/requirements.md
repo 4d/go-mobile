@@ -31,43 +31,44 @@ Les prérequis système sont identiques aux [prérequis système basiques de 4D]
 
 Tableau de versions :
 
-| 4D          | Swift | iOS  | Xcode                                                                                                             | macOS   |
-| ----------- | ----- | ---- | ----------------------------------------------------------------------------------------------------------------- | ------- |
-| 19R4-beta   | 5.5.2 | 15.2 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13.2.1/Xcode_13.2.1.xip) | 12.1    |
-| 19R3        | 5.5.2 | 15.2 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13.2.1/Xcode_13.2.1.xip) | 12.1    |
-| 19R2        | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip)       | 12.1    |
-| 19          | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip)       | 12.1    |
-| 18R6        | 5.3.2 | 14.4 | [12.4](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.4/Xcode_12.4.xip)     | 10.15.4 |
-| 18R5 & 18.3 | 5.3   | 14.2 | [12.2](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.2/Xcode_12.2.xip)     | 10.15.4 |
+| 4D           | Swift | iOS  | Xcode                                                                                                           | macOS   |
+| ------------ | ----- | ---- | --------------------------------------------------------------------------------------------------------------- | ------- |
+| 19 R4        | 5.5.2 | 15.2 | [13.2.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.2.1.xip) | 12.2    |
+| 19 R3        | 5.5.2 | 15.2 | [13.2.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.2.1.xip) | 11.3    |
+| 19 R2        | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip)     | 11.3    |
+| 19           | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip)     | 11.3    |
+| 18 R6        | 5.3.2 | 14.4 | [12.4](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.4/Xcode_12.4.xip)   | 10.15.4 |
+| 18 R5 & 18.3 | 5.3   | 14.2 | [12.2](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.2/Xcode_12.2.xip)   | 10.15.4 |
 
 <details><summary>Historique</summary>
 
-| 4D   | Swift | iOS  | Xcode  | macOS   |
-| ---- | ----- | ---- | ------ | ------- |
-| 18R4 | 5.3   | 14.0 | 12.0   | 10.15.4 |
-| 18R3 | 5.2.4 | 13.5 | 11.5   | 10.15.2 |
-| 18.2 | 5.2   | 13.4 | 11.4   | 10.15.2 |
-| 18.1 | 5.1.3 | 13.3 | 11.3.1 | 10.14.4 |
-| 18R2 | 5.1.3 | 13.3 | 11.3.1 | 10.14.4 |
-| 18   | 5.1   | 13.2 | 11.2   | 10.14.4 |
-| 17R6 | 5.0   | 12.2 | 10.2.1 | 10.14.4 |
-| 17R5 | 4.2.1 | 12.2 | 10.2   | 10.14.3 |
-| 17R4 | 4.2.1 | 12   | 10.1   | 10.13.6 |
-| 17R3 | 4.2   | 12   | 10.0   | 10.13.6 |
-| 17R2 | 4.1.2 | 11.4 | 9.4    | 10.13.2 |
-| 17R2 | 4.1   | 11.3 | 9.3.1  | 10.13.2 |
+| 4D    | Swift | iOS  | Xcode  | macOS   |
+| ----- | ----- | ---- | ------ | ------- |
+| 18 R4 | 5.3   | 14.0 | 12.0   | 10.15.4 |
+| 18 R3 | 5.2.4 | 13.5 | 11.5   | 10.15.2 |
+| 18.2  | 5.2   | 13.4 | 11.4   | 10.15.2 |
+| 18.1  | 5.1.3 | 13.3 | 11.3.1 | 10.14.4 |
+| 18 R2 | 5.1.3 | 13.3 | 11.3.1 | 10.14.4 |
+| 18    | 5.1   | 13.2 | 11.2   | 10.14.4 |
+| 17 R6 | 5.0   | 12.2 | 10.2.1 | 10.14.4 |
+| 17 R5 | 4.2.1 | 12.2 | 10.2   | 10.14.3 |
+| 17 R4 | 4.2.1 | 12   | 10.1   | 10.13.6 |
+| 17 R3 | 4.2   | 12   | 10.0   | 10.13.6 |
+| 17 R2 | 4.1.2 | 11.4 | 9.4    | 10.13.2 |
+| 17 R2 | 4.1   | 11.3 | 9.3.1  | 10.13.2 |
 </details>
 
 ### Android
 
 Tableau de versions :
 
-| 4D        | Android Studio                                                      | Windows           |
-| --------- | ------------------------------------------------------------------- | ----------------- |
-| 19R3-beta | [Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
-| 19R2      | [4.1.2](https://developer.android.com/studio/archive)               | Windows 10 64-bit |
+| 4D    | Android Studio                                                      | Windows           |
+| ----- | ------------------------------------------------------------------- | ----------------- |
+| 19 R4 | [Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
+| 19 R3 | [Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
+| 19 R2 | [4.1.2](https://developer.android.com/studio/archive)               | Windows 10 64-bit |
 
-:::notes
+:::note notes
 
 - You can build Android apps both on Mac and PC.
 
