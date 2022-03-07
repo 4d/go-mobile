@@ -137,8 +137,11 @@ Voici les différents **formats** que vous pouvez sélectionner en tant que para
 </tr>
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>IMAGES</th>
-</tr>
-<tr>
+</tr><tr style={{textAlign: 'center'}}>
+<th>Format</th><th>Description</th>
+</tr><tr>
+<td>Image</td><td>Picture of the record</td>
+</tr><tr>
 <td>Signature</td><td>Permet d'effectuer une signature avec le doigt</td>
 </tr>
 
