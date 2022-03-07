@@ -137,8 +137,11 @@ Aqui estão os diferentes **Formatos** que pode selecionar para um parâmetro:
 </tr>
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>IMAGENS</th>
-</tr>
-<tr>
+</tr><tr style={{textAlign: 'center'}}>
+<th>Formato</th><th>Descrição</th>
+</tr><tr>
+<td>Imagem</td><td>Picture of the record</td>
+</tr><tr>
 <td>Assinatura</td><td>Permitir assinatura com o dedo</td>
 </tr>
 
