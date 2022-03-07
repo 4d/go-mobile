@@ -17,31 +17,31 @@ title: ストラクチャ
 
 :::note
 
-The following tables and fields are not listed in this page:
+以下のテーブルとフィールドはこのページには表示されません。
 
-- tables and fields that do not comply with [ORDA rules](https://developer.4d.com/docs/en/ORDA/dsmapping.html#structure-mapping).
-- tables and fields whose name start with "`__`" (double underscore).
+- [ORDA ルール](https://developer.4d.com/docs/ja/ORDA/dsmapping.html#%E3%82%B9%E3%83%88%E3%83%A9%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0) に則っていないテーブルやフィールド。
+- "`__`" (ダブルアンダースコア) で始まる名前を持つテーブルやフィールド。
 
 :::
 
 :::note
 
-Only computed attributes with values that change over time - only depending on other attributes of the same DataClass - will be updated on the mobile app.
+時間によって値が変化していく計算属性(同じデータクラスの他の属性にのみ依存している計算属性) のみがモバイルアプリ側で更新されます。
 
 :::
 
-## Selecting tables and fields to publish
+## 公開するテーブルとフィールドを選択する
 
 A table is published when at least one of its fields is published. When a table is published, it is displayed in **bold**.
 
 To select a field to publish, click on a table name then click on the field in the rightmost list. You can also:
 
-- press the **spacebar** to select/unselect a field
-- use **Ctrl+click** to select all fields
-- use **Publish** and **Publish all** from the Fields list local menu.
+- **スペースバー** を押すことでフィールドを選択/選択解除することができます。
+- **Ctrl+クリック** を使用することで全てのフィールドを選択することができます。
+- フィールド一覧の**公開** および **全て公開** ローカルメニューを使用して公開することができます。
 
 
-### Filtering lists
+### リストのフィルタリング
 
 When a list has the focus, you can filter its contents using the Search area and a local menu:
 
