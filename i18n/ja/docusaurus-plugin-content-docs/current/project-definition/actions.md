@@ -137,8 +137,11 @@ title: アクション
 </tr>
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>画像</th>
-</tr>
-<tr>
+</tr><tr style={{textAlign: 'center'}}>
+<th>フォーマット</th><th>詳細</th>
+</tr><tr>
+<td>画像</td><td>Picture of the record</td>
+</tr><tr>
 <td>署名</td><td>手書き文字での署名が可能に</td>
 </tr>
 
