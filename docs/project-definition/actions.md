@@ -137,8 +137,11 @@ Here are the different **Formats** you can select for a parameter:
 </tr>
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>IMAGES</th>
-</tr>
-<tr>
+</tr><tr style={{textAlign: 'center'}}>
+<th>Format</th><th>Description</th>
+</tr><tr>
+<td>Image</td><td><Record's picture></td>
+</tr><tr>
 <td>Signature</td><td>Allow to sign with the finger</td>
 </tr>
 
