@@ -228,9 +228,9 @@ In the generated mobile application, on iOS or Android, both single attributes a
 
 ### フィルタークエリ
 
-You can use [filter queries](https://developer.4d.com/go-mobile/docs/project-definition/data#filter-queries) specific to object attributes in order to return and display filtered data. To do so, simply insert your attribute and property in the Filter query of the **[Data](https://developer.4d.com/go-mobile/docs/project-definition/data)** section.
+オブジェクト属性の[フィルタークエリ](https://developer.4d.com/go-mobile/docs/project-definition/data#filter-queries) を使用することで、フィルターされたデータを返して表示させることができます。 これをするためには、**[データ](https://developer.4d.com/go-mobile/docs/project-definition/data)** セクションのフィルタークエリに属性とプロパティを挿入します。
 
-For instance, consider a Clients table with an Address object-type attribute containing several objects with the following key/values:
+例えば、顧客用のテーブル内に、以下のようなキー/値の複数のオブジェクトを格納したオブジェクト型属性のアドレスを考えます:
 
 
 ```4d
@@ -255,7 +255,7 @@ For instance, consider a Clients table with an Address object-type attribute con
 ```
 
 
-#### Filter by a simple object's value
+#### シンプルなオブジェクト値でフィルターする
 
 If you want to display data filtered by an object, such as a list of your clients only based in France, you need to filter your query by country to get only the records containing the `France` value. Therefore, insert the following syntax in the Filter query field:
 
