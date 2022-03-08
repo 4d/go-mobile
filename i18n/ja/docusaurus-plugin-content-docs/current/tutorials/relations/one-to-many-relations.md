@@ -1,6 +1,6 @@
 ---
 id: one-to-many-relations
-title: One to Many relations
+title: 1対Nリレーション
 ---
 
 This tutorial will show you how easy it can be to include One to Many relations in your mobile project.
