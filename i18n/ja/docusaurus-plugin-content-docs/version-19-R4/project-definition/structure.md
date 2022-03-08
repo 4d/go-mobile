@@ -47,19 +47,19 @@ When a list has the focus, you can filter its contents using the Search area and
 
 ![Filter](img/filter.png)
 
-- **Search** area: enter the characters to search within table or field names
-- **Sort by table name**/**Sort by field name**: sort the list by name. By default, lists are sorted by creation date
-- **Only published tables**/**Only published fields**: show only tables or fields that have been selected (published)
+- **検索** エリア: テーブル名またはフィールド名内で検索したい文字を入力します。
+- **テーブル名でソート**/**フィールド名でソート**: 名前順でリストをソートします。 デフォルトでは、リストは作成日順にソートされています。
+- **公開テーブルのみ**/**公開フィールドのみ**: 選択されている(公開されている) テーブルまたはフィールドのみを表示します。
 
 
-## Supported field types
+## サポートされるフィールド型
 
 The mobile editor automatically displays the list of fields that are eligible to the mobile app, depending on their type:
 
 ![Fields](img/fields.png)
 
-- All [4D scalar field types](https://developer.4d.com/docs/en/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html).
-- [Object fields](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
+- 全ての[スカラー型の4D フィールド](https://developer.4d.com/docs/ja/Concepts/data-types.html) がサポートされます(ただし [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html) 型を除く)
+- [オブジェクトフィールド](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
 - [Computed attributes](https://developer.4d.com/go-mobile/fr/docs/project-definition/structure#computed-attributes)
 - Relation attributes (Many-to-one and One-to-many) are supported and can be selected just as fields. They have specific icons:
 
@@ -74,23 +74,23 @@ The names are based upon the relation names in the 4D Structure editor, see the 
 :::
 
 
-## Using relations
+## リレーションの使用
 
-### One to Many relations
+### 1対Nリレーション
 
 You can include **One to Many relations** in your projects and display a list of related fields in a new page of your app.
 
 All you have to do is:
 
-* publishing at least one field of the target (Many) table
-* publishing the relation from the source (One) table
+* ターゲットテーブル(N側のテーブル) のフィールドが少なくとも1つ公開する
+* ソーステーブル(1側のテーブル) からリレーションを公開する
 
 ![Drop relation in detail form](img/Structure-1-to-N-relations-4D-for-iOS.png)
 
 Then, when your related fields are published, they can be used like any other field. So you will be able to:
 
-* Define relations properties in the [Labels and Icons](labels-and-icons.md) page.
-* Drop the One to Many relation in a Detail form from the [Forms](forms.md) page to create a link between a detail form and a related table. A Relation button will be automatically created in detail forms to go straight to the related view.
+* [ラベル & アイコン](labels-and-icons.md) ページにおいてリレーションプロパティを定義します。
+* [フォーム](forms.md) ページから詳細フォームに1対Nリレーションをドロップし、詳細フォームとリレートされたテーブル間にリンクを作成します。 リレートビューに直接行くためのリレーションボタンが、詳細フォームに自動的に作成されます。
 
 :::tip Tutorial
 
@@ -99,7 +99,7 @@ See the [**One to Many relations tutorial**](../tutorials/relations/one-to-many-
 :::
 
 
-### Many to One relations
+### N対1リレーション
 
 **Many to one relations** can be used like any other field in the app creation process. When you select a Many to One relation in the field list, you can to select which field(s) from the related table to publish in your app:
 
@@ -118,7 +118,7 @@ See the [**Many to One relations tutorial**](../tutorials/relations/many-to-one-
 :::
 
 
-### Many to Many relations
+### N対Nリレーション
 
 Using the Structure page, you can publish Many to One and One to Many relations from your parent Many to One relations. It means that you can display Many to Many relations in your app and move directly from a List form to another List form.
 
@@ -131,9 +131,9 @@ See the [**Relation interactions**](../tutorials/relations/relation-interactions
 
 ## Computed attributes
 
-Whether you're working on Android or iOS, you can display [computed attributes](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#computed-attributes) in your app once it is generated, by configurating them from the project editor.
+Android であろうとiOS であろうと、プロジェクトエディターから設定をすれば、[計算属性](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#computed-attributes) を生成されたアプリ内で表示することができます。
 
-In 4D for iOS and 4D for Android, [computed attributes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#computed-attributes) are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
+4D for iOS および4D for Android では、[計算属性](https://developer.4d.com/docs/ja/ORDA/ordaClasses.html#computed-attributes) とは複数のフィールドを一つに複合した結果です。 You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
 
 The process is actually quite simple!
 
@@ -207,22 +207,22 @@ In the generated mobile application, on iOS or Android, both single attributes a
 
 ![final app](img/final-app.png)
 
-## Object attributes
+## オブジェクト属性
 
-From the **Structure** section, you can select, use and display all [types](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) of attributes in your mobile projects (text, dates, time, integers, etc), including **[object attributes](https://developer.4d.com/docs/en/Concepts/object.html)** (JSON format). In the field list, object attributes are distinguished by their **{}** icon.
+**ストラクチャー** セクションでは、全ての[型](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) の属性(テキスト、日付、時間、整数)をモバイルプロジェクト内で選択、使用、表示することができます。これには**[オブジェクト属性](https://developer.4d.com/docs/ja/Concepts/object.html)** (JSON フォーマット) も含まれます。 フィールドリストの中では、オブジェクト属性は**{}** アイコンで表示されます。
 
 ![Structure section](img/object-attributes-structure.png)
 
-You can use an object attribute as any other field in the other sections of the project editor (Data, labels & icons, Forms, etc. except for the Actions section).
+オブジェクト属性は、プロジェクトエディターの他のセクション(データ、ラベル& アイコン、フォーム、など。ただしアクションセクションは除く) での他のフィールドと同様に使用することができます。
 
-From the **Labels&Icons** section, two formats are available to display your object attributes:
+**ラベル&アイコン** セクションでは、オブジェクト属性を表示するのに2つのフォーマットが利用できます:
 
-- **Human-readable** (YAML): the default format that displays a human-readable structured data in the mobile app
-- **JSON Pretty Print**: the format that displays an indented JSON in the mobile app
+- **人間が読める形式** (YAML): デフォルトのフォーマットで、モバイルアプリ内では人間が読める形式(Human readable) の構造化されたデータとして表示されます。
+- **JSON 整形フォーマット**: モバイルアプリではインデント付けされたJSON 形式として表示するフォーマットです。
 
 ![Labels-and-icons section](img/object-attributes-labels-and-icons.png)
 
-Here's the result on the generated app:
+生成されたアプリ内での表示結果は以下のようになります:
 
 ![Structure section](img/object-attributes-rendering.png)
 
