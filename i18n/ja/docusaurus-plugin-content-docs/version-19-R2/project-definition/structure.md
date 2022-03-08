@@ -41,12 +41,12 @@ When a list has the focus, you can filter its contents using the Search area and
 
 ![Filter](img/filter.png)
 
-- **Search** area: enter the characters to search within table or field names
-- **Sort by table name**/**Sort by field name**: sort the list by name. By default, lists are sorted by creation date
-- **Only published tables**/**Only published fields**: show only tables or fields that have been selected (published)
+- **検索** エリア: テーブル名またはフィールド名内で検索したい文字を入力します。
+- **テーブル名でソート**/**フィールド名でソート**: 名前順でリストをソートします。 デフォルトでは、リストは作成日順にソートされています。
+- **公開テーブルのみ**/**公開フィールドのみ**: 選択されている(公開されている) テーブルまたはフィールドのみを表示します。
 
 
-## Supported field types
+## サポートされるフィールド型
 
 The mobile editor automatically displays the list of fields that are eligible to the mobile app, depending on their type:
 
@@ -66,7 +66,7 @@ The names are based upon the relation names in the 4D Structure editor, see the 
 :::
 
 
-## Using relations
+## リレーションの使用
 
 :::4D for Androidにおける注意
 
@@ -74,21 +74,21 @@ The names are based upon the relation names in the 4D Structure editor, see the 
 
 :::
 
-### One to Many relations
+### 1対Nリレーション
 
 You can include **One to Many relations** in your projects and display a list of related fields in a new page of your app.
 
 All you have to do is:
 
-* publishing at least one field of the target (Many) table
-* publishing the relation from the source (One) table
+* ターゲットテーブル(N側のテーブル) のフィールドが少なくとも1つ公開する
+* ソーステーブル(1側のテーブル) からリレーションを公開する
 
 ![Drop relation in detail form](img/Structure-1-to-N-relations-4D-for-iOS.png)
 
 Then, when your related fields are published, they can be used like any other field. So you will be able to:
 
-* Define relations properties in the [Labels and Icons](labels-and-icons.md) page.
-* Drop the One to Many relation in a Detail form from the [Forms](forms.md) page to create a link between a detail form and a related table. A Relation button will be automatically created in detail forms to go straight to the related view.
+* [ラベル & アイコン](labels-and-icons.md) ページにおいてリレーションプロパティを定義します。
+* [フォーム](forms.md) ページから詳細フォームに1対Nリレーションをドロップし、詳細フォームとリレートされたテーブル間にリンクを作成します。 リレートビューに直接行くためのリレーションボタンが、詳細フォームに自動的に作成されます。
 
 :::tip Tutorial
 
@@ -96,7 +96,7 @@ See the [**One to Many relations tutorial**](../tutorials/relations/one-to-many-
 
 :::
 
-### Many to One relations
+### N対1リレーション
 
 **Many to one relations** can be used like any other field in the app creation process. When you select a Many to One relation in the field list, you can to select which field(s) from the related table to publish in your app:
 
@@ -114,7 +114,7 @@ See the [**Many to One relations tutorial**](../tutorials/relations/many-to-one-
 
 :::
 
-### Many to Many relations
+### N対Nリレーション
 
 Using the Structure page, you can publish Many to One and One to Many relations from your parent Many to One relations. It means that you can display Many to Many relations in your app and move directly from a List form to another List form.
 
