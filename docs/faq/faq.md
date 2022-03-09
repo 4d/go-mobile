@@ -172,6 +172,13 @@ To deploy a 4D for iOS app, you'll need to enroll in the [Apple Developer Enterp
 
 </details>
 
+<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Is there a specific size limit for my apps?</summary>
+
+On iOS, the maximum build file sizes are mentioned [here](https://help.apple.com/app-store-connect/#/dev611e0a21f). 
+On Android, the size restriction is mentioned [here](https://developer.android.com/guide/app-bundle#size_restrictions)
+
+</details>
+
 
 
 
