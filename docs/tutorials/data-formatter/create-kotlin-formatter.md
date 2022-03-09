@@ -27,8 +27,7 @@ Note that the binding value "phoneAction" will be used in the Kotlin file and th
 
 :::note
 
-You can add several Android/iOS specifications to your app and specify them in your *manifest.json* file.
-For instance, to add a specific permission to your app, you can add a `capabilities` block as follows:
+You can add a specific permission to your app, using a `capabilities` block as follows:
 
  ```4d
  "capabilities" : {
@@ -65,5 +64,3 @@ Putting all that together, you can save this formatter as a **.kt** file in the 
 Check out the final result:
 
 ![Final result](img/rendu-android.png) 
-
-Don't hesitate to give us feedbck on the 4D Forum, and check out the documentation for more details!

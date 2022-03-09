@@ -36,7 +36,9 @@ Here is the **manifest.json file**:
 {
     "name": "objectFormatter",
     "binding": "objectAddress",
-    "type": "object" 
+    "type": "object",
+	"target" : ["ios", "android"]
+
 }
 
 ```
@@ -76,7 +78,3 @@ Putting all that together, you can save this formatter as a **.swift** file in t
 Check out the final result:
 
 ![Final result](img/rendu.png)
-
-Since these formatters will soon be available for Android, the default human-readable format will be displayed on the Android app when a Swift formatter is in selection for a field.
-
-Don't hesitate to give us feedbck on the 4D Forum, and check out the documentation for more details!
