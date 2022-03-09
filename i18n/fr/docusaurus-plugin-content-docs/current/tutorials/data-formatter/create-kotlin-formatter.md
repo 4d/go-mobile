@@ -63,4 +63,4 @@ Putting all that together, you can save this formatter as a **.kt** file in the 
 
 Check out the final result:
 
-![Final result](img/rendu-android.png) 
+![Final result](img/rendu-android.png)
