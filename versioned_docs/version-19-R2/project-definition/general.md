@@ -80,4 +80,4 @@ At any time, you can reset the main color and get back to the icon's preset main
 
 **Name:** This field is automatically prefilled with your user account name. You can enter any name. 
 
-**Team:** Your Developer Account Team ID, that will be used during the deployment phase. This ID can be get from your Developer Account (see XXX). 
+**Team:** Your Developer Account Team ID, that will be used during the deployment phase. This ID can be get from your Developer Account. 

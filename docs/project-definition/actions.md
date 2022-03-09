@@ -8,12 +8,6 @@ This section allows you to:
 * create actions to execute 4D code from your iOS app.
 * define and add parameters to your actions.
 
-:::info 4D for Android
-
-This section is currently not available in 4D for Android.
-
-:::
-
 ## Project Editor Side
 
 ### Create your action
@@ -23,7 +17,7 @@ You can create a new action by clicking on the + button at the bottom of the Act
 Next you'll need to define the following:
 
 * **Names:** The action name to use in the [On Mobile App Action](https://developer.4d.com/4d-for-ios/docs/en/actions.html#on-mobile-app-action) database method to trigger your 4D code.
-* **Icons:** The icon to choose from your icon library. You can also add your own icon by following this [tutorial]```(using-icons.html)```.
+* **Icons:** The icon to choose from your icon library. You can also add your own icon.
 * **Short and long Labels:** The labels for the actions to display in your app.
 * **Table:** The table on which you want to apply the action.
 * **Scope:** Where to use the action, an **entity** or a **table**.
@@ -143,8 +137,11 @@ Here are the different **Formats** you can select for a parameter:
 </tr>
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>IMAGES</th>
-</tr>
-<tr>
+</tr><tr style={{textAlign: 'center'}}>
+<th>Format</th><th>Description</th>
+</tr><tr>
+<td>Image</td><td>Picture of the record</td>
+</tr><tr>
 <td>Signature</td><td>Allow to sign with the finger</td>
 </tr>
 
@@ -193,6 +190,12 @@ This type of action should be used with caution.
 
 ### Share action
 
+:::info 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
+
 Selecting the **Share action** will allow your mobile users to share content with other users. You just need to select the scope:
 
 - **entity**: to share content from a detail form
@@ -201,6 +204,12 @@ Selecting the **Share action** will allow your mobile users to share content wit
 See the [Deep Linking](../special-features/deep-linking.md) page for more details.
 
 ### Sort action
+
+:::info 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
 
 **Sort actions** are useful to:
 
@@ -248,11 +257,16 @@ After creating all of your actions, just click on the Create button from the Act
 
 - You can refresh the selection after executing an action using ```$out.dataSynchro:=True```.
 - You can notify the app user when action has been executed using ```$out.statusText:="Message you want to display"```.
-- You can also decide to force close the Edition form using ```$out.close:=True```.
 
 :::
 
 ## Action input controls
+
+:::info 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
 
 ### How to use a custom input from the gallery 
 
@@ -369,6 +383,12 @@ Here are the different formats available on the generated application:
 
 ## Offline mode actions
 
+:::info 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
+
 The user of an app can draft, store and queue action requests, even if he’s working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.).  All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
 
 Pending tasks can be visualized and opened from:
@@ -406,7 +426,7 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
   ```
  
 
-## iOS app Side
+## Smartphone app Side
 
 In your iOS app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section. 
 
@@ -463,8 +483,8 @@ For your convenience, the Edition form includes a few **special features**:
 
 ## Where to go from here?
 
-* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
+* A [tutorial](../getting-started/introduction.md) is available to guide you through the **action definition process**.
 
-* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
+* Another [tutorial](../tutorials/actions/adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
 
-* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
+* A final [tutorial](../tutorials/actions/using-action-parameters.md) will guide you through the **action parameters definition**.
