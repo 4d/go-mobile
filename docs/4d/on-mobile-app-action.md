@@ -1,6 +1,6 @@
 ---
-id: on-mobile-app-action-database-method
-title: On Mobile App Action database method
+id: on-mobile-app-action
+title: On Mobile App Action
 ---
 
 <!-- REF #4D.OnMobileAppAction.Syntax --> $1 -> On Mobile App Action database method -> $0<!-- END REF -->
