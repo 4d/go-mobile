@@ -38,12 +38,7 @@ For the iOS platform, we need XCode to compile the final application and to run 
 
 </details>
 
-<details>
-<summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Which settings should I define on Android Studio to optimize the build on Windows?</summary>
 
-To make sure the build of your app is fast enough, you need to minimize the impact of your antivirus software on the build speed. To do so, follow the instructions mentioned [here](https://developer.android.com/studio/intro/studio-config#antivirus-impact).
-
-</details>
 
 
 ## Licença
@@ -170,7 +165,9 @@ To deploy a 4D for iOS app, you'll need to enroll in the [Apple Developer Enterp
 
 <details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Is there a specific size limit for my apps?</summary>
 
-On iOS, make sure your app total uncompressed size doesn't exceed 4GB. For more information, click [here](https://help.apple.com/app-store-connect/#/dev611e0a21f). On Android, with [Android App Bundles](https://developer.android.com/guide/app-bundle), the total size of the compressed APKs required to install your app should not exceed 150 MB. For more details about the Android size restrictions, click [here](https://developer.android.com/topic/performance/reduce-apk-size) or [here](https://developer.android.com/guide/playcore/asset-delivery).
+On iOS, make sure your app total uncompressed size doesn't exceed 4GB. For more information, click [here](https://help.apple.com/app-store-connect/#/dev611e0a21f).
+
+On Android, with [Android App Bundles](https://developer.android.com/guide/app-bundle), the total size of the compressed APKs required to install your app should not exceed 150 MB. For more details about the Android size restrictions, click [here](https://developer.android.com/topic/performance/reduce-apk-size) or [here](https://developer.android.com/guide/playcore/asset-delivery).
 
 </details>
 
