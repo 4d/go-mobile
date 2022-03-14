@@ -3,13 +3,12 @@ id: on-mobile-app-action
 title: On Mobile App Action
 ---
 
-<!-- REF #4D.OnMobileAppAction.Syntax --> $1 -> On Mobile App Action database method -> $0<!-- END REF -->
+**On Mobile App Action**( *mobileInfo* : Object ) -> *status* : Object
 
-<!-- REF #4D.OnMobileAppAction.Params -->
 |Parameter|Type||Description|
 |---|---|----|---|
-|$1|Object|->|Information passed by the mobile application|
-|$0|Object|<-|Action status & data synchro|<!-- END REF -->
+|mobileInfo|Object|->|Information passed by the mobile application|
+|status|Object|<-|Action status & data synchro|
 
 
 ## Description 
@@ -25,12 +24,12 @@ The database method receives required information from the mobile application in
  ```4d
 
  //On Mobile App Action database method
- C_OBJECT($0;$1)
+#DECLARE ($mobileInfo : Object) -> $status : Object
   // ...Code for the method
- $0:=New object //do not forget to create the object to return
+$status:=New object() //do not forget to create the object to return
  ```
  
-The following properties are received in the **$1** object parameter:
+The following properties are received in the **mobileInfo** object parameter:
 
 
 |Property name||Type|Description|
@@ -49,7 +48,7 @@ The following properties are received in the **$1** object parameter:
 |---|parent.dataClass|Text|(optional, returned if the action is related to a linked entity). Name of the parent 4D dataclass.|
 
 	
-After processing information, the database method must return an object with the following properties in $0:
+After processing information, the database method must return an object with the following properties in *status*:
 
 |Property name|Type|Description|
 |---|----|---|
@@ -69,7 +68,7 @@ After processing information, the database method must return an object with the
  
  C_OBJECT($o;$context;$request;$result)
  
- $request:=$1 //Information provided by the mobile app
+ $request:=$mobileInfo //Information provided by the mobile app
  $context:=$request.context
  
  Case of
@@ -92,6 +91,6 @@ After processing information, the database method must return an object with the
  
  End case
  
- $0:=$result  //Information returned to mobile app
+ $status:=$result  //Information returned to mobile app
  
  ```
