@@ -18,7 +18,7 @@ The main difference between the two programs is:
 
 * **Apple Developer Enterprise Program**: Provides resources ONLY for developing and distributing **proprietary, in-house apps** to employees.
 
-For **test purposes** you can use a [Free Apple Developer Program]`(free-developer-account.html)`.
+For **test purposes** you can use a Free Apple Developer Program.
 
 Here is a chart comparing the different levels of developer membership:
 
