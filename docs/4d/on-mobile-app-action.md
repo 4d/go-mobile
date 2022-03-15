@@ -13,7 +13,7 @@ title: On Mobile App Action
 
 ## Description 
 
-The `On Mobile App Action` 4d database method is in charge of managing actions requested by the mobile application for a specific session.  
+The `On Mobile App Action` 4D database method is in charge of managing actions requested by the mobile application for a specific session.  
 
 :::note
 
@@ -23,7 +23,7 @@ The mobile application must have been authenticated by the [On Mobile App Authen
 
 This database method is called by 4D when a mobile application sends an action request. 
 
-The database method receives required information from the mobile application in the $1 parameter (object), and must return the action status in the $0 parameter (object). You must declare and initialize these parameters as follows:
+The database method receives required information from the mobile application in the $mobileInfo parameter (object), and must return the action status in the $status parameter (object). You must declare and initialize these parameters as follows:
 
  ```4d
 
