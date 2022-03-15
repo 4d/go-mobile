@@ -11,8 +11,8 @@ You can install and test your mobile application on a connected device.
 You need to subscribe to an Apple Developer Program. Depending on your objectives and preferences, you can choose to enroll in one of the following:
 
 * Free Apple Developer Program -- to add```: For testing only
-* [Apple Developer Program for organization](../tutorials/developer-program/register-apple-developer-program-organization) or [individual](../tutorials/developer-program/register-apple-developer-program-individual): For an App Store Deployment
-* [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program): To deploy your app in-house
+* [Apple Developer Program for organization or individual](https://developer.apple.com/programs/enroll/): For an App Store Deployment
+* [Apple Enterprise Developer Program](https://developer.apple.com/programs/enterprise/): To deploy your app in-house
 
 
 :::note
