@@ -10,9 +10,9 @@ Puede instalar y probar su aplicación móvil en un dispositivo conectado.
 
 Tiene que suscribirse a un programa de desarrolladores de Apple. Dependiendo de sus objetivos y de sus preferencias, puede optar por inscribirse en uno de los siguientes programas:
 
-* Free Apple Developer Program -- to add```: For testing only
-* [Apple Developer Program para las empresas](../tutorials/developer-program/register-apple-developer-program-organization) o [para los particulares](../tutorials/developer-program/register-apple-developer-program-individual): con el fin de desplegar en el App Store
-* [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program): para desplegar su aplicación internamente
+* Free Apple Developer Program: For testing only
+* [Apple Developer Program for organization or individual](https://developer.apple.com/programs/enroll/): For an App Store Deployment
+* [Apple Enterprise Developer Program](https://developer.apple.com/programs/enterprise/): To deploy your app in-house
 
 
 :::nota
