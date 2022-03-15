@@ -10,9 +10,9 @@ Vous pouvez installer et tester votre application mobile sur un appareil connect
 
 Vous devez vous inscrire à un Apple Developer Program. En fonction de vos objectifs et de vos préférences, vous pouvez choisir de vous inscrire dans l’un des programmes suivants :
 
-* Free Apple Developer Program -- to add```: For testing only
-* [Apple Developer Program pour les entreprises](../tutorials/developer-program/register-apple-developer-program-organization) ou [pour les particuliers](../tutorials/developer-program/register-apple-developer-program-individual) : à des fins de déploiement sur l'App Store
-* [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program) : à des fins de déploiement interne de votre application
+* Free Apple Developer Program: For testing only
+* [Apple Developer Program for organization or individual](https://developer.apple.com/programs/enroll/): For an App Store Deployment
+* [Apple Enterprise Developer Program](https://developer.apple.com/programs/enterprise/): To deploy your app in-house
 
 
 :::note
