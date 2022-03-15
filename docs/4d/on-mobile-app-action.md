@@ -13,9 +13,13 @@ title: On Mobile App Action
 
 ## Description 
 
-The **On Mobile App Action database method** is in charge of managing actions requested by the mobile application for a specific session.  
+The `On Mobile App Action` 4d database method is in charge of managing actions requested by the mobile application for a specific session.  
 
-**Note**: The mobile application must have been authenticated by the On Mobile App Authentication database method. 
+:::note
+
+The mobile application must have been authenticated by the [On Mobile App Authentication](https://doc4d.github.io/go-mobile/docs/next/4d/on-mobile-app-authentication) database method. 
+
+:::
 
 This database method is called by 4D when a mobile application sends an action request. 
 
@@ -35,17 +39,17 @@ The following properties are received in the **mobileInfo** object parameter:
 |Property name||Type|Description|
 |---|---|----|---|
 |action||Text|Action name|
-|---|id|Text|Session identifier|
-|---|ip|Text|Session IP|
-|---|id|Text|Application id|
+||id|Text|Session identifier|
+||ip|Text|Session IP|
+||id|Text|Application id|
 |parameters||Object|Action parameters sent from the mobile application|
-|context|---|Object|Context parameters for the requested action|
-|---|dataClass|Text|4D dataclass name|
-|---|entity.primaryKey|Text, Longint|(optional, returned if the action is related to a selected entity). Primary key of the entity. |
-|---|entity.relationName|Text|(optional, returned if the action is related to a linked entity). Many-to-one relation name|
-|---|parent.primaryKey|Text, Longint |(optional, returned if the action is related to a linked entity). Primary key of the parent entity.|
-|---|parent.relationName|Text|(optional, returned if the action is related to a linked entity).One-to-many relation name|
-|---|parent.dataClass|Text|(optional, returned if the action is related to a linked entity). Name of the parent 4D dataclass.|
+|context||Object|Context parameters for the requested action|
+||dataClass|Text|4D dataclass name|
+||entity.primaryKey|Text, Longint|(optional, returned if the action is related to a selected entity). Primary key of the entity. |
+||entity.relationName|Text|(optional, returned if the action is related to a linked entity). Many-to-one relation name|
+||parent.primaryKey|Text, Longint |(optional, returned if the action is related to a linked entity). Primary key of the parent entity.|
+||parent.relationName|Text|(optional, returned if the action is related to a linked entity). One-to-many relation name|
+||parent.dataClass|Text|(optional, returned if the action is related to a linked entity). Name of the parent 4D dataclass.|
 
 	
 After processing information, the database method must return an object with the following properties in *status*:
@@ -59,16 +63,14 @@ After processing information, the database method must return an object with the
 		
 ## Example  
 
-```4d
+``c4d
   // On Mobile App Action
   // 2 actions are defined: "done" and "postponeAll"
  
- C_OBJECT($0)
- C_OBJECT($1)
+#DECLARE ($request : Object) -> $result : Object
+
+var $o;$context : Object
  
- C_OBJECT($o;$context;$request;$result)
- 
- $request:=$mobileInfo //Information provided by the mobile app
  $context:=$request.context
  
  Case of
@@ -90,7 +92,5 @@ After processing information, the database method must return an object with the
        $result:=New object("success";False)
  
  End case
- 
- $status:=$result  //Information returned to mobile app
  
  ```
