@@ -33,17 +33,17 @@ Version table:
 
 | 4D | Swift | iOS | Xcode | macOS |
 |---|---|---|---|---|
-|19 R4  | 5.5.2  | 15.2  |  [13.2.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.2.1.xip) |  12.2 |
-|19 R3  | 5.5.2  | 15.2  |  [13.2.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.2.1.xip) |  11.3 |
-| 19 R2         | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip) | 11.3 | 
-| 19  | 5.5| 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip) | 11.3|  
-| 18 R6  | 5.3.2| 14.4 | [12.4](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.4/Xcode_12.4.xip) | 10.15.4 |
-| 18 R5 & 18.3  | 5.3 | 14.2 | [12.2](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.2/Xcode_12.2.xip) | 10.15.4 |
+| 19 R4 | 5.6   | 15.4 | [13.3](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13.3/Xcode_13.3.xip) |  12.2 |
+| 19 R3 | 5.5.2 | 15.2 | [13.2.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.2.1.xip) |  11.3 |
+| 19 R2 | 5.5   | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip) | 11.3 | 
+| 19    | 5.5.  | 15.0 | [13.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13/Xcode_13.1.xip) | 11.3|  
+| 18 R6 | 5.3.2 | 14.4 | [12.4](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_12.4/Xcode_12.4.xip) | 10.15.4 |
 
 <details><summary>Version history</summary>
 
 | 4D | Swift | iOS | Xcode | macOS |
 |---|---|---|---|---|
+| 18 R5 & 18.3 | 5.3 | 14.2 | 12.2 | 10.15.4 |
 | 18 R4  | 5.3 | 14.0| 12.0|10.15.4|
 | 18 R3  | 5.2.4 | 13.5|11.5|10.15.2|
 | 18.2  | 5.2 | 13.4|11.4|10.15.2|
