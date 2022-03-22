@@ -26,9 +26,10 @@ const features = [
     imageUrl: "img/open.png",
     description: (
       <>
-        You can reopen your generated projects with Xcode or Android Studio
-        and continue to work on them.
-
+        <Translate>
+          You can reopen your generated projects with Xcode or Android Studio
+          and continue to work on them.
+        </Translate>
       </>
     ),
   },
@@ -37,8 +38,10 @@ const features = [
     imageUrl: "img/offline.png",
     description: (
       <>
-        All of your data is embedded in your app and available
-        without needing an internet connection.
+        <Translate>
+          All of your data is embedded in your app and available
+          without needing an internet connection.
+        </Translate>
       </>
     ),
   },
