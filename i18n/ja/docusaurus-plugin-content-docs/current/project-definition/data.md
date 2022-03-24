@@ -105,6 +105,9 @@ You can define one filter query per table. This list allows you to:
 
 全ての選択されたテーブルはResources>Data フォルダ内に.json ファイルを生成し、このファイルは自動的に単一のSQLite ファイルへと変換され、アプリ内で使用されます。
 
+### Size
+
+The size of each table is mentioned in this column. Note that the total size of your files should comply with size restrictions of each OS. For more information , see the [FAQ section](https://developer.4d.com/go-mobile/docs/faq/faq#misc).
 
 ### このテーブルからデータを埋め込む
 
@@ -147,7 +150,7 @@ When a query filter is valid, an icon appears near the table name (![filter](img
 
 :::info
 
-クエリシンタックスの詳細な情報については[$filter REST ドキュメンテーション](https://developer.4d.com/docs/ja/REST/filter.html) を参照してください。 The string entered in the **Filter query** area is directly passed as parameter to the `$filter=` REST command.
+Refer to the [$filter REST documentation](https://developer.4d.com/docs/en/REST/filter.html) for a detailed description of query syntaxes. The string entered in the **Filter query** area is directly passed as parameter to the `$filter=` REST command.
 
 :::
 
