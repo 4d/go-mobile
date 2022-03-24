@@ -115,20 +115,59 @@ Available built-in formats depend on the field type:
 
 The mobile editor allows you to add customized formats (called "formatters") in your projects. For example, you can define custom formats for emails, invoice numbers, etc. 
 
-To add custom formats to your mobile project, you can:
+To add custom formats to your mobile project, you can either:
 
-- Download and install customized formats from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter).
+- Download and install customized formats from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter). 
+
+To install a custom formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a custom format can be selected from the Formats menu, just like a built-in formats.
+
 
 - Create your own formats.
 
 :::tip tutorial
 
-Visit [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format
+Visit:
+- Visit [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format.
+- [**this tutorial**](../tutorials/data-formatter/create-swift-formatter) to define a Swift formatter.
+- [**this tutorial**](../tutorials/data-formatter/create-kotlin-formatter) to define a Kotlin formatter.
 
 :::
 
-To install a custom formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a custom format can be selected from the Formats menu, just like a built-in formats.
+Your format must always be associated with a **manifest.json** file containing the following elements:
 
+- **name**: a string containing the name of the formatter. Ex: phone, objectFormatter, etc.
+- **type**: the 4D format type you want to use. Ex: Text, Integer, etc.
+- **binding**: can be **localized text** for strings or **imageNamed** for images. 
+- **choiceList**: mapped values depending on the selected type (optional).
+- **target**: the OS on which your app will be used.
+
+Ex: 
+
+```json
+{
+   "name": "integerToImage",
+
+   "type": ["integer"],
+
+   "binding": "imageNamed",
+
+   "choiceList": {"0":"todo.png","1":"inprogress.png","2":"pending.png","3":"done.png"},
+
+   "target": ["ios", "android"]
+  
+}
+```
+
+:::note for Android
+
+You can add a specific permission to your app, using a `capabilities` block as follows:
+
+ ```4d
+ "capabilities" : {
+        "android" : [ "android.permission.WRITE_EXTERNAL_STORAGE" ]
+```
+
+::: 
 
 ## Title
 
