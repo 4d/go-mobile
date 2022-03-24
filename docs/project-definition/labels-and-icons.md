@@ -127,7 +127,7 @@ To install a custom formatter, you just need to drop the formatter folder into t
 :::tip tutorial
 
 Visit:
-- Visit [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format.
+- [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format.
 - [**this tutorial**](../tutorials/data-formatter/create-swift-formatter) to define a Swift formatter.
 - [**this tutorial**](../tutorials/data-formatter/create-kotlin-formatter) to define a Kotlin formatter.
 
@@ -167,7 +167,7 @@ You can add a specific permission to your app, using a `capabilities` block as f
         "android" : [ "android.permission.WRITE_EXTERNAL_STORAGE" ]
 ```
 
-::: 
+:::
 
 ## Title
 
