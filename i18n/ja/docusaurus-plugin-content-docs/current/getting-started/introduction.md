@@ -9,7 +9,7 @@ title: Introduction
 
 4D for iOS および 4D for Android を使用すると、4D データベースに基づいたネイティブなiOS / Andorid アプリを設定、デザイン、ビルド、配布することができます。 生成され配布されたモバイルクライアントは、4D Server へと接続することができ、何も追加することなく新規データや既存データをやりとりすることができます。
 
-4D for iOS および 4D for Android はどちらも統合された単一の4D コンポーネントに格納されています。 モバイルプロジェクトを作成したあとで、iOS用、Android用、あるいは両プラットフォーム用にビルドすることができます。
+4D for iOS および 4D for Android はどちらも統合された単一の4D コンポーネントに格納されています。 You can create a mobile project and decide to build it for iOS, for Android, or for both.
 
 また[**4D Mobile App Server**](https://github.com/4d-for-ios/4D-Mobile-App-Server) コンポーネントも同時に提供されており、サーバー側の認証、プッシュ通知などを管理するための有用なメソッドが用意されています。
 
