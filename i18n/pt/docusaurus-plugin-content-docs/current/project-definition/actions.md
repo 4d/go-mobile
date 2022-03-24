@@ -8,6 +8,12 @@ Esta seção permite que:
 * crie ações para executar o código 4D a partir de seu app iOS.
 * defina e adicione parâmetros para suas ações.
 
+:::informação 4D for Android
+
+This section is currently not available in 4D for Android.
+
+:::
+
 ## No Editor de Projetos
 
 ### Crie sua ação
@@ -16,13 +22,19 @@ Pode criar uma nova ação clicando no botão +  no fundo da tabela Actions. Uma
 
 Depois precisa definir o abaixo:
 
-* **Names:** o nome da ação a usar no método de banco de dados [On Mobile App Action](https://developer.4d.com/4d-for-ios/docs/en/actions.html#on-mobile-app-action) para ativar seu código 4D.
-* **Icons:** O ícone a escolher de sua biblioteca ícone. You can also add your own icon.
+* **Names:** The action name to use in the [On Mobile App Action](https://doc4d.github.io/go-mobile/docs/next/4d-language/on-mobile-app-action-database-method) database method to trigger your 4D code.
+* **Icons:** O ícone a escolher de sua biblioteca ícone. Também é possível adicioanr seu próprio ícone seguindo este [tutorial]`(using-icons.html)`.
 * **Short and long Labels:** As etiquetas para as ações para exibir em seu app.
 * **Table:** A tabela na qual quer aplicar a ação.
 * **Scope:** Onde usar a ação, uma **entidade** ou uma **tabela**.
 
 ![Action section](img/Actions-section-4D-for-iOS.png)
+
+:::nota notas
+
+You can sort the **Names** with a drag-and-drop. This operation will set the order in which they will appear in the app's menu.
+
+:::
 
 ### Adicione parâmetros para sua ação
 
@@ -137,11 +149,8 @@ Aqui estão os diferentes **Formatos** que pode selecionar para um parâmetro:
 </tr>
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>IMAGENS</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>Formato</th><th>Descrição</th>
-</tr><tr>
-<td>Imagem</td><td>Picture of the record</td>
-</tr><tr>
+</tr>
+<tr>
 <td>Assinatura</td><td>Permitir assinatura com o dedo</td>
 </tr>
 
@@ -190,12 +199,6 @@ Este tipo de ação deve ser utilizado com precaução.
 
 ### Ação Partilhar
 
-:::informação 4D for Android
-
-This section is currently not available in 4D for Android.
-
-:::
-
 Selecionar **Ação Partilhar, ** permite a seus usuários móveis partilhar conteúdo com outros usuários. Só precisa selecionar o escopo:
 
 - **entidade**: para partilhar conteúdo com um formulário detalhada
@@ -204,12 +207,6 @@ Selecionar **Ação Partilhar, ** permite a seus usuários móveis partilhar con
 Ver a página [Deep Linking](../special-features/deep-linking.md) para saber mais.
 
 ### Ação Ordenar
-
-:::informação 4D for Android
-
-This section is currently not available in 4D for Android.
-
-:::
 
 **Ações Ordenar** são úteis para:
 
@@ -246,7 +243,7 @@ Quando definir mais que uma ação de ordenação para uma tabela, usuários mó
 
 ### On Mobile App Action
 
-The [On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html) database method is available to call all of your 4D methods.
+The [On Mobile App Action](https://doc4d.github.io/go-mobile/docs/next/4d-language/on-mobile-app-action-database-method) database method is available to call all of your 4D methods.
 
 Depois de criar todas as suas ações, simplesmente clique no botão Criar da tabela Ações para gerar automaticamente um bloco de código *Case of* que inclua todos os nomes de suas ações no método *On Mobile App Action*.
 
@@ -254,16 +251,11 @@ Depois de criar todas as suas ações, simplesmente clique no botão Criar da ta
 
 - Pode renovar a seleção depois de executar uma ação usando `$out.dataSynchro:=True`.
 - Pode notificar o usuário da aplicação sobre quando uma ação tiver sido executada usando `$out.statusText:="Mensagem que quer exibir"`.
+- Pode decidir fechar à força o formulário Edition usando `$out.close:=True`.
 
 :::
 
 ## Action input controls
-
-:::informação 4D for Android
-
-This section is currently not available in 4D for Android.
-
-:::
 
 ### How to use a custom input from the gallery
 
@@ -378,12 +370,6 @@ Here are the different formats available on the generated application:
 
 ## Ações modo offline
 
-:::informação 4D for Android
-
-This section is currently not available in 4D for Android.
-
-:::
-
 O usuário de uma aplicação pode esboçar, armazenar, e colocar em fila petições de ação, mesmo se estiver trabalhando sem conexão (adicionar o número de telefone de um cliente, subir uma foto, imprimir uma fatura ou um orçamento, apagar um endereço, etc.).  Todas essas tarefas são colocadas em ações Pendentes até que a rede fique acessível. Quando o usuário estiver online, todas as ações pendentes são sincronizadas consistentemente, executadas e então visíveis nas ações Completadas.
 
 Tarefas pendentes podem ser visualizadas e abertas com:
@@ -421,7 +407,7 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
   ```
 
 
-## Smartphone app Side
+## Aplicação iOS
 
 Em sua aplicação iOS, as ações estão disponíveis de diferentes formas em seus formulários listados e detalhados, segundo os modelos que selecionar na seção Formulários.
 
@@ -478,8 +464,8 @@ Para sua comodidade, o formulário de Edição inclui algumas **funcionalidades 
 
 ## O que fazer agora?
 
-* A [tutorial](../getting-started/introduction.md) is available to guide you through the **action definition process**.
+* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
 
-* Another [tutorial](../tutorials/actions/adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
+* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
 
-* A final [tutorial](../tutorials/actions/using-action-parameters.md) will guide you through the **action parameters definition**.
+* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
