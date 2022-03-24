@@ -8,6 +8,12 @@ Esta sección le permite:
 * crear acciones para ejecutar código 4D desde su aplicación iOS.
 * definir y añadir parámetros a sus acciones.
 
+:::información 4D for Android
+
+Esta sección no está disponible actualmente en 4D for Android.
+
+:::
+
 ## En el editor de proyectos
 
 ### Cree su acción
@@ -16,13 +22,19 @@ Puede crear una nueva acción haciendo clic en el botón + en la parte inferior 
 
 A continuación, deberá definir lo siguiente:
 
-* **Nombres:** define el nombre de la acción a utilizar en el método base [On Mobile App Action](https://developer.4d.com/4d-for-ios/docs/en/actions.html#on-mobile-app-action) para lanzar su código 4D.
-* **Iconos:** seleccione un icono para su acción de su librería de iconos. You can also add your own icon.
+* **Names:** The action name to use in the [On Mobile App Action](https://doc4d.github.io/go-mobile/docs/next/4d-language/on-mobile-app-action-database-method) database method to trigger your 4D code.
+* **Iconos:** seleccione un icono para su acción de su librería de iconos. También puede agregar su propio icono siguiendo este [tutorial]`(using-icons.html)`.
 * **Etiquetas cortas y largas: **las etiquetas para las acciones que se mostrarán en su aplicación.
 * **Tabla:** seleccione la tabla en la que desea aplicar la acción.
 * **Alcance:** seleccione si desea aplicar la acción en una **entidad** o en una **tabla**.
 
 ![Action section](img/Actions-section-4D-for-iOS.png)
+
+:::nota notas
+
+You can sort the **Names** with a drag-and-drop. This operation will set the order in which they will appear in the app's menu.
+
+:::
 
 ### Añada parámetros a su acción
 
@@ -137,11 +149,8 @@ Estos son los diferentes **formatos** que puede seleccionar para un parámetro:
 </tr>
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>IMÁGENES</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>Formato</th><th>Descripción</th>
-</tr><tr>
-<td>Imagen</td><td>Picture of the record</td>
-</tr><tr>
+</tr>
+<tr>
 <td>Firma</td><td>Permitir firmar con el dedo</td>
 </tr>
 
@@ -190,12 +199,6 @@ Este tipo de acción debe utilizarse con precaución.
 
 ### Acción compartir
 
-:::información 4D for Android
-
-Esta sección no está disponible actualmente en 4D for Android.
-
-:::
-
 La selección de **Compartir acción** permitirá a sus usuarios móviles compartir contenidos con otros usuarios. Sólo tiene que seleccionar el alcance:
 
 - **entidad**: para compartir el contenido de un formulario detallado
@@ -204,12 +207,6 @@ La selección de **Compartir acción** permitirá a sus usuarios móviles compar
 Ver la página [Deep Linking](../special-features/deep-linking.md) para más detalles.
 
 ### Acción ordenar
-
-:::información 4D for Android
-
-Esta sección no está disponible actualmente en 4D for Android.
-
-:::
 
 **Acciones Ordenar** son útiles para:
 
@@ -249,7 +246,7 @@ Cuando se define más de una acción de ordenación para una tabla, los usuarios
 
 ### On Mobile App Action
 
-El método base [On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html) está disponible para llamar a todos sus métodos 4D.
+The [On Mobile App Action](https://doc4d.github.io/go-mobile/docs/next/4d-language/on-mobile-app-action-database-method) database method is available to call all of your 4D methods.
 
 Después de crear todas sus acciones, simplemente haga clic en el botón Crear de la tabla Acciones para generar automáticamente un bloque de código *Case of* que incluya todos los nombres de sus acciones en el método *On Mobile App Action*.
 
@@ -257,16 +254,11 @@ Después de crear todas sus acciones, simplemente haga clic en el botón Crear d
 
 - Puede refrescar la selección después de ejecutar una acción utilizando `$out.dataSynchro:=True`.
 - Puede notificar al usuario de la aplicación cuando se ha ejecutado una acción utilizando `$out.statusText:="Message you want to display"`.
+- También puede decidir forzar el cierre del formulario de edición utilizando `$out.close:=True`.
 
 :::
 
 ## Action input controls
-
-:::información 4D for Android
-
-Esta sección no está disponible actualmente en 4D for Android.
-
-:::
 
 ### How to use a custom input from the gallery
 
@@ -381,12 +373,6 @@ Here are the different formats available on the generated application:
 
 ## Acciones en modo sin conexión
 
-:::información 4D for Android
-
-Esta sección no está disponible actualmente en 4D for Android.
-
-:::
-
 El usuario de una aplicación puede redactar, almacenar y poner en cola solicitudes de acción, incluso si está trabajando sin conexión (añadir el número de teléfono de un cliente, subir una foto, imprimir una factura o un presupuesto, borrar una dirección, etc.).  Todas estas tareas se colocan en la lista de acciones pendientes hasta que la red sea accesible. Una vez que el usuario está en línea, todas las acciones pendientes se sincronizan sistemáticamente, se ejecutan y son visibles en la lista de acciones completadas.
 
 Las tareas pendientes pueden visualizarse y abrirse desde:
@@ -424,7 +410,7 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
   ```
 
 
-## Smartphone app Side
+## aplicación iOS
 
 En su aplicación iOS, las acciones están disponibles de diferentes formas en sus formularios listados y detallados, según las plantillas que seleccione en la sección Formularios.
 
@@ -481,8 +467,8 @@ Para su comodidad, el formulario de Edición incluye algunas **funcionalidades e
 
 ## ¿Qué hacer ahora?
 
-* A [tutorial](../getting-started/introduction.md) is available to guide you through the **action definition process**.
+* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
 
-* Another [tutorial](../tutorials/actions/adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
+* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
 
-* A final [tutorial](../tutorials/actions/using-action-parameters.md) will guide you through the **action parameters definition**.
+* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
