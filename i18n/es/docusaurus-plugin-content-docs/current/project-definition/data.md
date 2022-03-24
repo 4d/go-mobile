@@ -105,6 +105,9 @@ You can define one filter query per table. This list allows you to:
 
 All the selected tables will generate .json files in the Resources>Data folder, and will be automatically converted in a single SQLite file that will be used in the app.
 
+### Size
+
+The size of each table is mentioned in this column. Note that the total size of your files should comply with size restrictions of each OS. For more information , see the [FAQ section](https://developer.4d.com/go-mobile/docs/faq/faq#misc).
 
 ### Embed the data from this table
 
