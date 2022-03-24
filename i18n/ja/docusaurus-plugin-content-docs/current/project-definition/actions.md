@@ -8,6 +8,12 @@ title: アクション
 * 4DのコードをiOS アプリから実行するアクションを作成する
 * アクションに渡す引数を定義して渡す
 
+:::4D for Androidにおける注意
+
+このセクションで触れている内容は4D for Android では現在ご利用いただけません。
+
+:::
+
 ## プロジェクトエディター側での設定
 
 ### アクションを作成する
@@ -16,13 +22,19 @@ title: アクション
 
 次に、以下のものを定義する必要があります:
 
-* **名前:** [On Mobile App Action](https://developer.4d.com/4d-for-ios/docs/ja/actions.html#on-mobile-app-action) データベースメソッド内で4Dコードをトリガーする際に使用するアクションの名前
-* **アイコン:** アイコンライブラリーからアイコンを選択して下さい。 独自のアイコンを追加することもできます。
+* **Names:** The action name to use in the [On Mobile App Action](https://doc4d.github.io/go-mobile/docs/next/4d-language/on-mobile-app-action-database-method) database method to trigger your 4D code.
+* **アイコン:** アイコンライブラリーからアイコンを選択して下さい。 またこちらの[tutorial]`(using-icons.html)`に従うことで、独自のアイコンを追加することもできます。
 * **短いラベルと長いラベル:** アプリ内で表示されるアクションのラベル
 * **テーブル:** アクションを適用したいテーブル
 * **スコープ:** アクションを使用する対象を決めます。**カレントエンティティ** または **テーブル**
 
 ![Action section](img/Actions-section-4D-for-iOS.png)
+
+:::note 注意
+
+You can sort the **Names** with a drag-and-drop. This operation will set the order in which they will appear in the app's menu.
+
+:::
 
 ### アクションに引数を追加
 
@@ -137,11 +149,8 @@ title: アクション
 </tr>
 <tr>
 <th colspan="2" style={{textAlign: 'center'}}>画像</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>フォーマット</th><th>詳細</th>
-</tr><tr>
-<td>画像</td><td>Picture of the record</td>
-</tr><tr>
+</tr>
+<tr>
 <td>署名</td><td>手書き文字での署名が可能に</td>
 </tr>
 
@@ -190,12 +199,6 @@ title: アクション
 
 ### 共有アクション
 
-:::4D for Androidにおける注意
-
-このセクションで触れている内容は4D for Android では現在ご利用いただけません。
-
-:::
-
 **共有アクション** を選択すると、モバイルアプリのユーザーがコンテンツを他のユーザーと共有することができるようになります。 このアクションではスコープを選択する必要があります:
 
 - **エンティティ**: 詳細フォームのコンテンツを共有する
@@ -204,12 +207,6 @@ title: アクション
 詳細については[ディープリンキング](../special-features/deep-linking.md)のページを参照してください。
 
 ### ソートアクション
-
-:::4D for Androidにおける注意
-
-このセクションで触れている内容は4D for Android では現在ご利用いただけません。
-
-:::
 
 **ソートアクション**は以下のような目的のために有用です:
 
@@ -249,7 +246,7 @@ Zymosian, Elmer
 
 ### On Mobile App Action
 
-[On Mobile App Action](https://doc.4d.com/4Dv18/4D/18.4/On-Mobile-App-Action-database-method.301-5233128.ja.html) データベースメソッドを利用すると、全ての4D メソッドを呼び出すことが可能です。
+The [On Mobile App Action](https://doc4d.github.io/go-mobile/docs/next/4d-language/on-mobile-app-action-database-method) database method is available to call all of your 4D methods.
 
 全てのアクションを作成し終わったあと、アクションテーブル内の編集... ボタンをクリックすると、*On Mobile App Action* メソッド内に作成した全てのアクション名を含んだ*Case of* コードブロックが自動的に生成されます。
 
@@ -257,16 +254,11 @@ Zymosian, Elmer
 
 - `$out.dataSynchro:=True` というコードをアクション実行後に使用することで、セレクションを更新することができます。
 - `$out.statusText:="表示したいメッセージ"` というコードを使用することで、アクション実行時にアプリユーザーに対して通知をすることができます。
+- `$out.close:=True` というコードを使用することで、編集フォームを強制的に閉じることもできます。
 
 :::
 
 ## アクション入力コントロール
-
-:::4D for Androidにおける注意
-
-このセクションで触れている内容は4D for Android では現在ご利用いただけません。
-
-:::
 
 ### キャラリーからカスタム入力を使用する方法
 
@@ -381,12 +373,6 @@ Zymosian, Elmer
 
 ## Offline mode actions
 
-:::4D for Androidにおける注意
-
-このセクションで触れている内容は4D for Android では現在ご利用いただけません。
-
-:::
-
 The user of an app can draft, store and queue action requests, even if he’s working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.).  All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
 
 Pending tasks can be visualized and opened from:
@@ -424,7 +410,7 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
   ```
 
 
-## スマートフォンアプリ側
+## iOS app Side
 
 In your iOS app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section.
 
@@ -481,8 +467,8 @@ For your convenience, the Edition form includes a few **special features**:
 
 ## Where to go from here?
 
-* **アクション定義プロセス** について説明した[チュートリアル](../getting-started/introduction.md) があります。
+* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
 
-* カスタムテンプレートを作成するための**アクション TAG 統合** について説明した[チュートリアル](../tutorials/actions/adding-actions-template.md) もあります。
+* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
 
-* こちらの[チュートリアル](../tutorials/actions/using-action-parameters.md) では**アクション引数の定義** について説明しています。
+* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
