@@ -15,26 +15,15 @@ If you want a formatter that will enable you to dial a phone number value on cli
 
 ```4d
 {
-    "name": "objectFormatter",
-    "binding": "objectAddress",
-    "type": "object" 
+    "name": "phone",
+    "binding": "phoneAction",
+    "type": "text" 
     "target" : ["ios", "android"]
 }
 
 ```
 
 Note that the binding value "phoneAction" will be used in the Kotlin file and that the `BindingAdapter` will interact with a specific field in an Android XML layout.
-
-:::nota
-
-You can add a specific permission to your app, using a `capabilities` block as follows:
-
- ```4d
- "capabilities" : {
-        "android" : [ "android.permission.WRITE_EXTERNAL_STORAGE" ]
-```
-
-:::
 
 Here is the `PhoneAction.kt` file to dial a phone number value on click on Android:
 
