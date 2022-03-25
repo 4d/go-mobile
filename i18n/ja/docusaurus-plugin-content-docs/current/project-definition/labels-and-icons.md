@@ -109,34 +109,32 @@ title: ラベル & アイコン
 | **整数**   | 整数、小数、実数、パーセント、助数詞、通過 $、通過 €、通過 ¥、漢数字 |
 
 
-### カスタムのフォーマットを追加する
+## Data formatters
 
-モバイルエディターではカスタマイズされたフォーマット("フォーマッター") をプロジェクトに追加することができます。 例えば、Eメール用、請求書番号用などのカスタムフォーマットを定義することが可能です。
+The mobile editor allows you to add customized formats called "formatters" in your projects. A formatter enables to display your data through a specific menu, to map your data For example, you can define custom formats for emails, invoice numbers, etc.
 
-To add custom formats to your mobile project, you can either:
+To add custom formatters to your mobile project, you can either:
 
-- [**go-mobile フォーマッター githubレポジトリ**](https://4d-go-mobile.github.io/gallery//#/type/formatter) からカスタマイズされたフォーマットをダウンロードしてインストールする
+- Download and install customized formatters from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter).
 
 カスタムのフォーマッターをインストールするためには、フォーマッターのフォルダを4D プロジェクトフォルダの`/Resources/Mobile/formatters` フォルダにドロップするだけです。 インストールした後は、カスタムフォーマットはビルトインフォーマットと同じように、フォーマットメニューから選択することが可能です。
 
+- Create your own formatters.
 
-- 独自のフォーマットを作成する
+Note that there are 2 types of formatters:
 
-:::Tipsチュートリアル
+- **Static data formatters** without code.
+- **Dynamic data formatters** with code (identified with the ![OS logo](img/os-logo.png) in the above-mentioned formatters Github repository).
 
-Visit:
-- [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format
-- [**this tutorial**](../tutorials/data-formatter/create-swift-formatter) to define a Swift formatter.
-- [**this tutorial**](../tutorials/data-formatter/create-kotlin-formatter) to define a Kotlin formatter.
-
-:::
-
-Your format must always be associated with a **manifest.json** file containing the following elements:
+Your formatter must always be associated with a **manifest.json** file containing the following elements:
 
 - **name**: a string containing the name of the formatter. Ex: phone, objectFormatter, etc.
 - **type**: the 4D format type you want to use. Ex: Text, Integer, etc.
-- **binding**: can be **localized text** for strings or **imageNamed** for images.
-- **choiceList**: mapped values depending on the selected type (optional).
+- **binding**:
+  - For static formatters:`localizedText` for strings or `imageNamed` for images.
+  - For dynamic formatters: a string that links the code to your app
+- **choiceList**: mapped values depending on the selected type (for static formatters only).
+- **assets**: additional formating data for static formatters only, such as dark mode support, tintable, Integer to Image and Text to Image.
 - **target**: the OS on which your app will be used.
 
 Ex:
@@ -164,6 +162,15 @@ You can add a specific permission to your app, using a `capabilities` block as f
  "capabilities" : {
         "android" : [ "android.permission.WRITE_EXTERNAL_STORAGE" ]
 ```
+
+:::
+
+:::Tipsチュートリアル
+
+Visit:
+- [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format.
+- [**this tutorial**](../tutorials/data-formatter/create-swift-formatter) to define a Swift formatter.
+- [**this tutorial**](../tutorials/data-formatter/create-kotlin-formatter) to define a Kotlin formatter. >>>>>>> Stashed changes
 
 :::
 
