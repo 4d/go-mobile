@@ -18,7 +18,11 @@ The main difference between the two programs is:
 
 * **Apple Developer Enterprise Program**: Provides resources ONLY for developing and distributing **proprietary, in-house apps** to employees.
 
+<<<<<<< Updated upstream
 For **test purposes** you can use a [Free Apple Developer Program]```(free-developer-account.html)```.
+=======
+For **test purposes** you can use a **Free Apple Developer Program**.
+>>>>>>> Stashed changes
 
 Here is a chart comparing the different levels of developer membership:
 
@@ -35,6 +39,7 @@ To enroll in any **Apple Developer Program**, your Apple ID must be associated w
 If you want to join the Apple Developer Program for free, you can create a free Apple ID and use it to access a limited set of developer-oriented privileges. Therefore, follow only Steps 1 and 2, then launch Xcode > Preferences > Accounts, Add your Apple ID and sign in !
 :::
 
+<<<<<<< Updated upstream
 
 ## STEP 1. Apple ID
 
@@ -44,6 +49,11 @@ If you already have an Apple ID, go to [Step 3](#step-3-d-u-n-s-number).
 
 
 ## STEP 2. Create your Apple ID
+=======
+## STEP 1. Create your Apple ID
+
+If you already have an Apple ID, go to [Step 2](#step-2-request-a-d-u-n-s-number).
+>>>>>>> Stashed changes
 
 Go the the [Apple ID creation page](https://appleid.apple.com/).
 
@@ -57,7 +67,11 @@ Go the the [Apple ID creation page](https://appleid.apple.com/).
 
 * Once you have your Apple ID, you can continue to Step 3.
 
+<<<<<<< Updated upstream
 ## STEP 3. D-U-N-S Number
+=======
+## STEP 2. Request a D-U-N-S Number
+>>>>>>> Stashed changes
 
 :::info
 
@@ -65,6 +79,7 @@ This step is not included for the **Apple Developer Program as an individual**.
 
 :::
 
+<<<<<<< Updated upstream
 * If you don’t have a D-U-N-S Number, go to [Step 4](#step-4-request-a-d-u-n-s-number).
 * If you already have a D-U-N-S Number, go to [Step 5](#step-5-register-as-a-developer).
 
@@ -75,6 +90,9 @@ This step is not included for the **Apple Developer Program as an individual**.
 This step is not included for the **Apple Developer Program as an individual**.
 
 :::
+=======
+* If you already have a D-U-N-S Number, go to [Step 3](#step-3-register).
+>>>>>>> Stashed changes
 
 Request a D-U-N-S Number [here](https://developer.apple.com/enroll/duns-lookup/#/search)
 
@@ -86,7 +104,11 @@ Request a D-U-N-S Number [here](https://developer.apple.com/enroll/duns-lookup/#
 
 ![D-U-N-S Number](img/DUNS-Number-Apple-Mail_4D-for-iOS.png)
 
+<<<<<<< Updated upstream
 ## STEP 5. Register 
+=======
+## STEP 3. Register 
+>>>>>>> Stashed changes
 
 ### Apple Developer Entreprise and Apple Developer as an organisation
 
@@ -107,7 +129,11 @@ You can register as a developer [here](https://developer.apple.com/programs/ente
 
 ![Register Developer Program](img/Register-developer-4D-for-iOS.png)
 
+<<<<<<< Updated upstream
 ## STEP 6. Join 
+=======
+## STEP 4. Join 
+>>>>>>> Stashed changes
 
 :::info
 
@@ -127,7 +153,11 @@ This step is not included for the **Apple Developer Enterprise Program**.
 
 ![Join the Apple Developer Program](img/Join-Apple-Developer-Program-individuals-4D-for-iOS.png)
 
+<<<<<<< Updated upstream
 ## STEP 7. Enroll 
+=======
+## STEP 5. Enroll 
+>>>>>>> Stashed changes
 
 ### Apple Developer Program as an Organisation
 
@@ -176,7 +206,11 @@ This step is not included for the **Apple Developer Enterprise Program**.
 
 ![Apple Developer Enterprise Program Enrollment](img/Apple-Developer-Enterprise-Program-Enrollment-4D-for-iOS.png)
 
+<<<<<<< Updated upstream
 ## STEP 8. Apple verification
+=======
+## STEP 6. Apple verification
+>>>>>>> Stashed changes
 
 :::info
 
@@ -190,13 +224,21 @@ This step is  included only for the **Apple Developer Enterprise Program**.
 
 ![Apple verification](img/Confirmation-email-Organisations-4D-for-iOS.png)
 
+<<<<<<< Updated upstream
 ## STEP 9. Complete your purchase
+=======
+## STEP 7. Complete your purchase
+>>>>>>> Stashed changes
 
 * Once your enrollment request has been accepted, you can then proceed to payment.
 
 * When you have completed your purchase, you'll receive an email confirming your membership in the program.
  
+<<<<<<< Updated upstream
 Congratulations! You are now ready to deploy and publish your applications!
 
 
 
+=======
+Congratulations! You are now ready to deploy and publish your applications!
+>>>>>>> Stashed changes
