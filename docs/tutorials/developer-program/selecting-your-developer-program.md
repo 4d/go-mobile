@@ -92,7 +92,7 @@ You can register as a developer [here](https://developer.apple.com/programs/ente
 
 ![Register Developer Program](img/Register-developer-4D-for-iOS.png)
 
-## STEP 4. Join 
+## STEP 4. Join
 
 :::info
 
@@ -112,7 +112,8 @@ This step is not included for the **Apple Developer Enterprise Program**.
 
 ![Join the Apple Developer Program](img/Join-Apple-Developer-Program-individuals-4D-for-iOS.png)
 
-## STEP 5. Enroll 
+
+## STEP 5. Enroll
 
 ### Apple Developer Program as an Organisation
 
@@ -123,7 +124,7 @@ This step is not included for the **Apple Developer Enterprise Program**.
 ![Apple Developer Program](img/Apple-Developer-Program-Organizations-4D-for-iOS.png)
 
 * Complete the form.
-* Click **Continue**. 
+* Click **Continue**.
 
 ![Enroll as an organization](img/Apple-Developer-Program-Enrollment-Organizations-4D-for-iOS.png)
 
