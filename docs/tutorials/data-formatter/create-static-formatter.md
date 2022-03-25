@@ -1,6 +1,6 @@
 ---
-id: create-data-formatter
-title: Create data formatter
+id: create-static-data-formatter
+title: Create a static data formatter
 ---
 
 > **OBJECTIVES**
