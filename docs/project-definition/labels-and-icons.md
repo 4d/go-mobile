@@ -122,7 +122,7 @@ To add custom formatters to your mobile project, you can either:
 
 To install a custom formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a custom format can be selected from the Formats menu, just like a built-in formats.
 
-- Create your own formatters.
+- Create your own formatters
 
 Note that there are 2 types of formatters:
 
