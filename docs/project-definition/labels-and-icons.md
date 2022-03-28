@@ -127,7 +127,7 @@ To install a custom formatter, you just need to drop the formatter folder into t
 Note that there are 2 types of formatters:
 
 - **Static data formatters** without code. 
-- **Dynamic data formatters** with code (identified with the ![OS logo](img/os-logo.png) in the above-mentioned formatters Github repository).
+- **Dynamic data formatters** with code (identified with the OS logos (![OS logo](img/os-logo.png)) in the above-mentioned formatters Github repository).
 
 Your formatter must always be associated with a **manifest.json** file containing the following elements:
 
