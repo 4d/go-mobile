@@ -112,20 +112,21 @@ Available built-in formats depend on the field type:
 
 ## Data formatters
 
-The mobile editor allows you to add customized formats called "formatters" in your projects. A data formatter allows you to map a data type from your database to a specific display on the mobile side. For example, you can define format emails, invoice numbers, etc. Data formatters can also call some code to create smart interfaces. For example, you can attach a data formatter to phone numbers that opens an action menu on the mobile app when the user touches the number (e.g. to call the person or save them in contacts).
+A data formatter allows you to map a data type from your database to a specific display on the mobile side. For example, you can define emails format, invoice numbers, etc.
+Data formatters can also call some code to create smart interfaces. For example, you can attach a data formatter to phone numbers that opens an action menu on the mobile app when the user touches the number (e.g. to call the person or save them in contacts).
 
 To add data formatters to your mobile project, you can either:
 
-- Download and install customized formatters from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter).
+- Download and install formatters from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter).
 
 To install a data formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a data format can be selected from the Formats menu, just like a built-in formats.
 
-- Create your own formatters
+- Create your own data formatters
 
 Note that there are 2 types of formatters:
 
-- **Static data formatters** without code. 
 - **Dynamic data formatters** with code (identified with the OS logos (![OS logo](img/os-logo.png)) in the above-mentioned formatters Github repository).
+- **Static data formatters** without code.
 
 Your formatter must always be associated with a **manifest.json** file containing the following elements:
 
