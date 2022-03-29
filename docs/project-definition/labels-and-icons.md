@@ -114,11 +114,11 @@ Available built-in formats depend on the field type:
 
 The mobile editor allows you to add customized formats called "formatters" in your projects. A data formatter allows you to map a data type from your database to a specific display on the mobile side. For example, you can define format emails, invoice numbers, etc. Data formatters can also call some code to create smart interfaces. For example, you can attach a data formatter to phone numbers that opens an action menu on the mobile app when the user touches the number (e.g. to call the person or save them in contacts).
 
-To add custom formatters to your mobile project, you can either:
+To add data formatters to your mobile project, you can either:
 
 - Download and install customized formatters from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter).
 
-To install a custom formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a custom format can be selected from the Formats menu, just like a built-in formats.
+To install a data formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a data format can be selected from the Formats menu, just like a built-in formats.
 
 - Create your own formatters
 
@@ -169,7 +169,7 @@ You can add a specific permission to your app, using a `capabilities` block as f
 :::tip tutorial
 
 Visit:
-- [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format.
+- [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a simple data formatter.
 - [**this tutorial**](../tutorials/data-formatter/create-swift-formatter) to define a Swift formatter.
 - [**this tutorial**](../tutorials/data-formatter/create-kotlin-formatter) to define a Kotlin formatter.
 
