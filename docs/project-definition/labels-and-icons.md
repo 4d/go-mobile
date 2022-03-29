@@ -110,15 +110,13 @@ Available built-in formats depend on the field type:
 |**Boolean**|"No" or "Yes", "False" or "True"|
 |**Integer number**|Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out|
 
-
 ## Data formatters
 
-The mobile editor allows you to add customized formats called "formatters" in your projects. A formatter enables to display your data through a specific menu, to map your data
-For example, you can define custom formats for emails, invoice numbers, etc. 
+The mobile editor allows you to add customized formats called "formatters" in your projects. A data formatter allows you to map a data type from your database to a specific display on the mobile side. For example, you can define format emails, invoice numbers, etc. Data formatters can also call some code to create smart interfaces. For example, you can attach a data formatter to phone numbers that opens an action menu on the mobile app when the user touches the number (e.g. to call the person or save them in contacts).
 
 To add custom formatters to your mobile project, you can either:
 
-- Download and install customized formatters from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter). 
+- Download and install customized formatters from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter).
 
 To install a custom formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a custom format can be selected from the Formats menu, just like a built-in formats.
 
