@@ -170,9 +170,9 @@ You can add a specific permission to your app, using a `capabilities` block as f
 :::tip tutorial
 
 Visit:
-- [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a data formatter.
-- [**this tutorial**](../tutorials/data-formatter/create-swift-formatter) to define a Swift formatter.
-- [**this tutorial**](../tutorials/data-formatter/create-kotlin-formatter) to define a Kotlin formatter.
+- [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a static data formatter.
+- [**this tutorial**](../tutorials/data-formatter/create-swift-formatter) to define a Swift dynamic formatter.
+- [**this tutorial**](../tutorials/data-formatter/create-kotlin-formatter) to define a Kotlin dynamic formatter.
 
 :::
 
