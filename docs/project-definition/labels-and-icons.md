@@ -137,9 +137,9 @@ Your formatter must always be associated with a **manifest.json** file containin
   - For dynamic formatters: a string that links the code to your app
 - **choiceList**: mapped values depending on the selected type (for static formatters only).
 - **assets**: additional formating data for static formatters only, such as dark mode support, tintable, Integer to Image and Text to Image.
-- **target**: the OS on which your app will be used.
+- **target**: the platform supported by your formatter (for dynamic formatters only).
 
-Ex: 
+Example of a static formatter's manifest file: 
 
 ```json
 {
@@ -151,8 +151,6 @@ Ex:
 
    "choiceList": {"0":"todo.png","1":"inprogress.png","2":"pending.png","3":"done.png"},
 
-   "target": ["ios", "android"]
-  
 }
 ```
 
