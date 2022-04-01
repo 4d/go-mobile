@@ -110,24 +110,69 @@ Available built-in formats depend on the field type:
 |**Boolean**|"No" or "Yes", "False" or "True"|
 |**Integer number**|Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out|
 
+## Data formatters
 
-### Adding custom formats
+A data formatter allows you to map a data type from your database to a specific display on the mobile side. For example, you can define emails format, invoice numbers, etc.
+Data formatters can also call some code to create smart interfaces. For example, you can attach a data formatter to phone numbers that opens an action menu on the mobile app when the user touches the number (e.g. to call the person or save them in contacts).
 
-The mobile editor allows you to add customized formats (called "formatters") in your projects. For example, you can define custom formats for emails, invoice numbers, etc. 
+To add data formatters to your mobile project, you can either:
 
-To add custom formats to your mobile project, you can:
+- Download and install formatters from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter).
 
-- Download and install customized formats from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter).
+To install a data formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a data format can be selected from the Formats menu, just like a built-in formats.
 
-- Create your own formats.
+- Create your own data formatters
 
-:::tip tutorial
+Note that there are 2 types of formatters:
 
-Visit [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format
+- **Dynamic data formatters** with code (identified with the OS logos (![OS logo](img/os-logo.png)) in the above-mentioned formatters Github repository).
+- **Static data formatters** without code.
+
+Your formatter must always be associated with a **manifest.json** file containing the following elements:
+
+- **name**: a string containing the name of the formatter. Ex: phone, objectFormatter, etc.
+- **type**: the 4D format type you want to use. Ex: Text, Integer, etc.
+- **binding**: 
+  - For static formatters:`localizedText` for strings or `imageNamed` for images. 
+  - For dynamic formatters: a string that links the code to your app
+- **choiceList**: mapped values depending on the selected type (for static formatters only).
+- **assets**: additional formating data for static formatters only, such as dark mode support, tintable, Integer to Image and Text to Image.
+- **target**: the platform supported by your formatter (for dynamic formatters only).
+
+Example of a static formatter's manifest file: 
+
+```json
+{
+   "name": "integerToImage",
+
+   "type": ["integer"],
+
+   "binding": "imageNamed",
+
+   "choiceList": {"0":"todo.png","1":"inprogress.png","2":"pending.png","3":"done.png"},
+
+}
+```
+
+:::note for Android
+
+You can add a specific permission to your app, using a `capabilities` block as follows:
+
+ ```4d
+ "capabilities" : {
+        "android" : [ "android.permission.WRITE_EXTERNAL_STORAGE" ]
+```
 
 :::
 
-To install a custom formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a custom format can be selected from the Formats menu, just like a built-in formats.
+:::tip tutorial
+
+Visit:
+- [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a static data formatter.
+- [**this tutorial**](../tutorials/data-formatter/create-swift-formatter) to define a Swift dynamic formatter.
+- [**this tutorial**](../tutorials/data-formatter/create-kotlin-formatter) to define a Kotlin dynamic formatter.
+
+:::
 
 
 ## Title

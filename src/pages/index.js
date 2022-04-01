@@ -6,7 +6,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
-import useThemeContext from '@theme/hooks/useThemeContext';
+import { useColorMode } from '@docusaurus/theme-common'
 
 const features = [
   {
@@ -26,9 +26,10 @@ const features = [
     imageUrl: "img/open.png",
     description: (
       <>
-        You can reopen your generated projects with Xcode or Android Studio
-        and continue to work on them.
-
+        <Translate>
+          You can reopen your generated projects with Xcode or Android Studio
+          and continue to work on them.
+        </Translate>
       </>
     ),
   },
@@ -37,8 +38,10 @@ const features = [
     imageUrl: "img/offline.png",
     description: (
       <>
-        All of your data is embedded in your app and available
-        without needing an internet connection.
+        <Translate>
+          All of your data is embedded in your app and available
+          without needing an internet connection.
+        </Translate>
       </>
     ),
   },
@@ -46,7 +49,7 @@ const features = [
 
 function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
-  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
+  const { isDarkTheme } = useColorMode();
   return (
     <div className={clsx("col col--4", styles.feature)}>
       <Link to={useBaseUrl(

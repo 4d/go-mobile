@@ -49,10 +49,10 @@ module.exports = {
 	},
 	{
       type: 'category',
-      label: '4D Language',
+      label: '4D Database methods',
       items: [
-	            '4d-language/on-mobile-app-authentication-database-method',
-				'4d-language/on-mobile-app-action-database-method'
+	            '4d/on-mobile-app-authentication',
+				'4d/on-mobile-app-action'
 	   ]
 	},
    
@@ -97,7 +97,7 @@ module.exports = {
       type: "category",
       label: "Data formatter",
       items: [
-        "tutorials/data-formatter/create-data-formatter",
+        "tutorials/data-formatter/create-static-data-formatter",
         "tutorials/data-formatter/create-swift-formatter",
 		"tutorials/data-formatter/create-kotlin-formatter",
       ],
