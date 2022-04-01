@@ -148,10 +148,7 @@ module.exports = {
       label: "Selecting your Developer Program",
       items: [
        "tutorials/developer-program/selecting-your-developer-program",
-       "tutorials/developer-program/register-apple-developer-enterprise-program",
-       "tutorials/developer-program/register-apple-developer-program-organization",
-	   "tutorials/developer-program/register-apple-developer-program-individual",
-	   
+       	   
       ],
     },
        {

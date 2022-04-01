@@ -12,7 +12,7 @@ You must have a valid Apple Developer account to **distribute an iOS app**. Appl
 * **[Apple Developer Program](https://developer.apple.com/programs/)** **for organization** or **for individual** ($99/year) - Allows you to distribute app(s) **on the App Store**.
 * **[Apple Enterprise Developer Program](https://developer.apple.com/programs/enterprise/)** ($299/year) - Provides resources ONLY for developing and distributing **proprietary, in-house apps** to employees
 
-For **test purposes** you can use a **Free Apple Developer Program** (Sign in with Apple ID, see below).
+For **test purposes** you can use a **Free Apple Developer Program** (*Sign in with Apple ID*, see below).
 
 Here is a chart comparing the different levels of developer membership:
 
