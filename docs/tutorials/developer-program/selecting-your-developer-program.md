@@ -109,8 +109,8 @@ This step is not necessary for the **Apple Developer Enterprise Program**.
 
 * Click on the **Start your Enrollment** button.
 * From the Entity Type dropdown list, select:
-- **Company / Organization** (for Apple Developer Enterprise Program and Apple Developer Program as an Organisation).
-- **Individuals / Sole Proprietor / Single Person Business** (for Apple Developer Program as an individual).
+    - **Company / Organization** (for Apple Developer Enterprise Program and Apple Developer Program as an Organisation).
+    - **Individuals / Sole Proprietor / Single Person Business** (for Apple Developer Program as an individual).
 
 ![Start your Enrollment](img/Apple-Developer-Program-Individuals-4D-for-iOS.png)
 
