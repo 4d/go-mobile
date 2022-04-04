@@ -145,7 +145,7 @@ module.exports = {
     },
 	  {
       type: "category",
-      label: "Selecting your Developer Program",
+      label: "Apple Developer Program",
       items: [
        "tutorials/developer-program/selecting-your-developer-program",
        	   
