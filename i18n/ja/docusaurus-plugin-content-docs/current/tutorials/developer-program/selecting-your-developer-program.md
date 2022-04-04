@@ -9,16 +9,10 @@ title: Selecting your Apple Developer Program
 
 You must have a valid Apple Developer account to **distribute an iOS app**. Apple offers two developer programs:
 
-* **[Apple Developer Program](https://developer.apple.com/programs/)** **for organization** or **for individual** – $99/year
-* **[Apple Enterprise Developer Program](https://developer.apple.com/programs/enterprise/)** – $299/year
+* **[Apple Developer Program](https://developer.apple.com/programs/)** **for organization** or **for individual** ($99/year) - Allows you to distribute app(s) **on the App Store**.
+* **[Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/)** ($299/year) - Provides resources ONLY for developing and distributing **proprietary, in-house apps** to employees
 
-The main difference between the two programs is:
-
-* **Apple Developer Program (for organization or individual)**: Allows you to distribute app(s) **on the App Store**.
-
-* **Apple Developer Enterprise Program**: Provides resources ONLY for developing and distributing **proprietary, in-house apps** to employees.
-
-For **test purposes** you can use a Free Apple Developer Program.
+For **test purposes** you can use a **Free Apple Developer Program** (*Sign in with Apple ID*, see below).
 
 Here is a chart comparing the different levels of developer membership:
 
@@ -32,17 +26,11 @@ To enroll in any **Apple Developer Program**, your Apple ID must be associated w
 
 :::info Free Apple Developer account
 
-If you want to join the Apple Developer Program for free, you can create a free Apple ID and use it to access a limited set of developer-oriented privileges. Therefore, follow only Steps 1 and 2, then launch Xcode > Preferences > Accounts, Add your Apple ID and sign in ! :::
+If you want to join the Apple Developer Program for free, you only need to create a free Apple ID and sign in with it. Therefore, follow only Steps 1 and 2, then launch Xcode > Preferences > Accounts, Add your Apple ID and sign in! :::
 
+## ⒈ ⒉ ⒉ Apple IDを作成する
 
-## ⒈ ⒈ Apple IDが作成できました。
-
-If you don’t have an Apple ID go to [Step 2](#step-2-create-your-apple-id).
-
-If you already have an Apple ID, go to [Step 3](#step-3-d-u-n-s-number).
-
-
-## ⒉ ⒉ ⒉ Apple IDを作成する
+If you already have an Apple ID, go to [Step 2](#step-2-request-a-d-u-n-s-number).
 
 [Apple ID作成ページ](https://appleid.apple.com/)にアクセスします。
 
@@ -54,26 +42,15 @@ If you already have an Apple ID, go to [Step 3](#step-3-d-u-n-s-number).
 
 ![Register developer program](img/Register-developer-program-4D-for-iOS.png)
 
-* ⒉ Apple IDを作成する
-
-## ⒊ ⒊ ⒊ ⒊ D-U-N-S Number
+## ⒉ ⒋ ⒋ ⒋ Request a D-U-N-S Number
 
 :::info
 
-This step is not included for the **Apple Developer Program as an individual**.
+This step is not necessary for the **Apple Developer Program as an individual**.
 
 :::
 
-* If you don’t have a D-U-N-S Number, go to [Step 4](#step-4-request-a-d-u-n-s-number).
-* If you already have a D-U-N-S Number, go to [Step 5](#step-5-register-as-a-developer).
-
-## ⒋ ⒋ ⒋ ⒋ Request a D-U-N-S Number
-
-:::info
-
-This step is not included for the **Apple Developer Program as an individual**.
-
-:::
+* If you already have a D-U-N-S Number, go to [Step 3](#step-3-register).
 
 Request a D-U-N-S Number [here](https://developer.apple.com/enroll/duns-lookup/#/search)
 
@@ -85,101 +62,50 @@ Request a D-U-N-S Number [here](https://developer.apple.com/enroll/duns-lookup/#
 
 ![⒊ ⒊ ⒊ D-U-N-S Number](img/DUNS-Number-Apple-Mail_4D-for-iOS.png)
 
-## ⒌ Register
+## ⒊ Register
 
-### Apple Developer Entreprise and Apple Developer as an organisation
+For **Apple Developer Enterprise Program** and **Apple Developer as an organisation**, you can register as a developer [here](https://developer.apple.com/programs/enterprise/enroll/).
 
-You can register as a developer [here](https://developer.apple.com/programs/enterprise/enroll/).
+For **Apple Developer as an individual**, you can register as a developer [here](https://developer.apple.com/account/).
 
-* Click on the **Start your Enrollment** button.
-* Read and accept the Apple Developer Agreement.
-* Click **Submit**.
 
-![⒌ ⒌ ⒌ Register as a developer](img/Register-developer-4D-for-iOS.png)
-
-### Apple Developer as an individual
-
-* You can register as a developer [here](https://developer.apple.com/account/).
-
-* Read and accept the Apple Developer Agreement.
-* Click **Submit**.
+Then, read and accept the *Apple Developer Agreement* and **Submit**.
 
 ![確認コードの入力](img/Register-developer-4D-for-iOS.png)
 
-## ⒍ Join
+## ⒋ Join
 
 :::info
 
-This step is not included for the **Apple Developer Enterprise Program**.
+This step is not necessary for the **Apple Developer Enterprise Program**.
 
 :::
 
-### Apple Developer Program as an Organisation
+For **Apple Developer Program as an Organisation**, you can sign up for the Apple Developer Program [here](https://developer.apple.com/enroll/enterprise/).
 
-* You can sign up for the Apple Developer Program [here](https://developer.apple.com/enroll/enterprise/).
-
-![⒋ ⒋ ⒋ Join the Apple Developer Program](img/Join-Apple-Developer-Program-individuals-4D-for-iOS.png)
-
-### the Apple Developer Program as an Individual
-
-* Click on **Join the Apple Developer Program** at the bottom of the page.
+For **Apple Developer Program as an Individual**, click on **Join the Apple Developer Program** at the bottom of the page.
 
 ![⒋ ⒋ ⒋ Join the Apple Developer Program](img/Join-Apple-Developer-Program-individuals-4D-for-iOS.png)
 
-## ⒎ Enroll
 
-### Apple Developer Program as an Organisation
-
-* Click on the **Start your Enrollment** button.
-* Select **Company / Organization** from the Entity Type dropdown list.
-* Click **Continue**.
-
-![Apple Developer Program](img/Apple-Developer-Program-Organizations-4D-for-iOS.png)
-
-* Complete the form.
-* Click **Continue**.
-
-![⒎ ⒎ Enroll as an organization](img/Apple-Developer-Program-Enrollment-Organizations-4D-for-iOS.png)
-
-* Apple has an internal verification process that usually takes up to six working days. Once Apple receives the enrollment request, they verify that you have the authority to bind your organization to the Apple Developer Program's legal agreements.
-* Apple generally calls to verify that the main contact exists and has requested the Apple Developer Enterprise Program registration.
-* You'll then receive another email inviting you to complete the enrollment process.
-
-![⒎ ⒎ ⒎ Apple verification](img/Confirmation-email-Organisations-4D-for-iOS.png)
-
-### Apple Developer Program as an individual
+## ⒌ Enroll
 
 * Click on the **Start your Enrollment** button.
-* Select **Individuals / Sole Proprietor / Single Person Business** from the Entity Type dropdown list.
-* Click **Continue**.
+* From the Entity Type dropdown list, select:
+    - **Company / Organization** (for Apple Developer Enterprise Program and Apple Developer Program as an Organisation).
+    - **Individuals / Sole Proprietor / Single Person Business** (for Apple Developer Program as an individual).
 
 ![Start your Enrollment](img/Apple-Developer-Program-Individuals-4D-for-iOS.png)
 
-* Complete the form
-* Read and accept the Apple Developer Program License Agreement.
-* Click **Continue**.
+* Complete the form and Click on **Continue**.
 
-![⒌ ⒌ ⒌ Enroll as an individual](img/Apple-Developer-Program-Enrollment-4D-for-iOS.png)
+![⒎ ⒎ Enroll as an organization](img/Apple-Developer-Program-Enrollment-Organizations-4D-for-iOS.png)
 
-### Apple Developer Enterprise Program
-
-* You can sign up for the Apple Developer Enterprise Program [here](https://developer.apple.com/enroll/enterprise/).
-* Click on the **Start your Enrollment** button.
-* Select **Company / Organization** from the Entity Type dropdown list.
-* Click **Continue**.
-
-![Apple Developer Enterprise Program](img/Apple-Developer-Enterprise-Program-4D-for-iOS.png)
-
-* Complete the form.
-* Click **Continue**.
-
-![Apple Developer Enterprise Program Enrollment](img/Apple-Developer-Enterprise-Program-Enrollment-4D-for-iOS.png)
-
-## ⒏ ⒎ ⒎ ⒎ Apple verification
+## ⒍ ⒎ ⒎ ⒎ Apple verification
 
 :::info
 
-This step is  included only for the **Apple Developer Enterprise Program**.
+This step is  only necessary for the **Apple Developer Enterprise Program**.
 
 :::
 
@@ -189,13 +115,10 @@ This step is  included only for the **Apple Developer Enterprise Program**.
 
 ![⒎ ⒎ ⒎ Apple verification](img/Confirmation-email-Organisations-4D-for-iOS.png)
 
-## ⒐ ⒏ ⒏ ⒏ Complete your purchase
+## ⒎ ⒏ ⒏ ⒏ Complete your purchase
 
 * Once your enrollment request has been accepted, you can then proceed to payment.
 
 * When you have completed your purchase, you'll receive an email confirming your membership in the program.
 
 おつかれさまでした！ You are now ready to deploy and publish your applications!
-
-
-
