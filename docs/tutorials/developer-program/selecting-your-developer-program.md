@@ -10,7 +10,7 @@ title: Selecting your Apple Developer Program
 You must have a valid Apple Developer account to **distribute an iOS app**. Apple offers two developer programs:
 
 * **[Apple Developer Program](https://developer.apple.com/programs/)** **for organization** or **for individual** ($99/year) - Allows you to distribute app(s) **on the App Store**.
-* **[Apple Enterprise Developer Program](https://developer.apple.com/programs/enterprise/)** ($299/year) - Provides resources ONLY for developing and distributing **proprietary, in-house apps** to employees
+* **[Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/)** ($299/year) - Provides resources ONLY for developing and distributing **proprietary, in-house apps** to employees
 
 For **test purposes** you can use a **Free Apple Developer Program** (*Sign in with Apple ID*, see below).
 
@@ -65,22 +65,12 @@ Request a D-U-N-S Number [here](https://developer.apple.com/enroll/duns-lookup/#
 
 ## STEP 3. Register 
 
-### Apple Developer Entreprise and Apple Developer as an organisation
+For **Apple Developer Enterprise Program** and **Apple Developer as an organisation**, you can register as a developer [here](https://developer.apple.com/programs/enterprise/enroll/). 
 
-You can register as a developer [here](https://developer.apple.com/programs/enterprise/enroll/).
+For **Apple Developer as an individual**, you can register as a developer [here](https://developer.apple.com/account/).
 
-* Click on the **Start your Enrollment** button.
-* Read and accept the Apple Developer Agreement. 
-* Click **Submit**.
 
-![Register as a developer](img/Register-developer-4D-for-iOS.png)
-
-### Apple Developer as an individual
-
-* You can register as a developer [here](https://developer.apple.com/account/).
-
-* Read and accept the Apple Developer Agreement. 
-* Click **Submit**.
+Then, read and accept the *Apple Developer Agreement* and **Submit**.
 
 ![Register Developer Program](img/Register-developer-4D-for-iOS.png)
 
@@ -92,15 +82,9 @@ This step is not necessary for the **Apple Developer Enterprise Program**.
 
 :::
 
-### Apple Developer Program as an Organisation
+For **Apple Developer Program as an Organisation**, you can sign up for the Apple Developer Program [here](https://developer.apple.com/enroll/enterprise/). 
 
-* You can sign up for the Apple Developer Program [here](https://developer.apple.com/enroll/enterprise/). 
-
-![Join the Apple Developer Program](img/Join-Apple-Developer-Program-individuals-4D-for-iOS.png)
-
-### Apple Developer Program as an Individual
-
-* Click on **Join the Apple Developer Program** at the bottom of the page.
+For **Apple Developer Program as an Individual**, click on **Join the Apple Developer Program** at the bottom of the page.
 
 ![Join the Apple Developer Program](img/Join-Apple-Developer-Program-individuals-4D-for-iOS.png)
 
