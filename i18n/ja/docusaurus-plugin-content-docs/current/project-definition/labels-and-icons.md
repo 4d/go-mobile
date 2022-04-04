@@ -108,23 +108,22 @@ title: ラベル & アイコン
 | **ブール**  | "いいえ" または "はい"、 "False" または "True"    |
 | **整数**   | 整数、小数、実数、パーセント、助数詞、通過 $、通過 €、通過 ¥、漢数字 |
 
-
 ## Data formatters
 
-The mobile editor allows you to add customized formats called "formatters" in your projects. A formatter enables to display your data through a specific menu, to map your data For example, you can define custom formats for emails, invoice numbers, etc.
+A data formatter allows you to map a data type from your database to a specific display on the mobile side. For example, you can define emails format, invoice numbers, etc. Data formatters can also call some code to create smart interfaces. For example, you can attach a data formatter to phone numbers that opens an action menu on the mobile app when the user touches the number (e.g. to call the person or save them in contacts).
 
-To add custom formatters to your mobile project, you can either:
+To add data formatters to your mobile project, you can either:
 
-- Download and install customized formatters from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter).
+- Download and install formatters from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter).
 
-カスタムのフォーマッターをインストールするためには、フォーマッターのフォルダを4D プロジェクトフォルダの`/Resources/Mobile/formatters` フォルダにドロップするだけです。 インストールした後は、カスタムフォーマットはビルトインフォーマットと同じように、フォーマットメニューから選択することが可能です。
+To install a data formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a data format can be selected from the Formats menu, just like a built-in formats.
 
-- Create your own formatters.
+- Create your own data formatters
 
 Note that there are 2 types of formatters:
 
+- **Dynamic data formatters** with code (identified with the OS logos (![OS logo](img/os-logo.png)) in the above-mentioned formatters Github repository).
 - **Static data formatters** without code.
-- **Dynamic data formatters** with code (identified with the ![OS logo](img/os-logo.png) in the above-mentioned formatters Github repository).
 
 Your formatter must always be associated with a **manifest.json** file containing the following elements:
 
@@ -135,9 +134,9 @@ Your formatter must always be associated with a **manifest.json** file containin
   - For dynamic formatters: a string that links the code to your app
 - **choiceList**: mapped values depending on the selected type (for static formatters only).
 - **assets**: additional formating data for static formatters only, such as dark mode support, tintable, Integer to Image and Text to Image.
-- **target**: the OS on which your app will be used.
+- **target**: the platform supported by your formatter (for dynamic formatters only).
 
-Ex:
+Example of a static formatter's manifest file:
 
 ```json
 {
@@ -148,8 +147,6 @@ Ex:
    "binding": "imageNamed",
 
    "choiceList": {"0":"todo.png","1":"inprogress.png","2":"pending.png","3":"done.png"},
-
-   "target": ["ios", "android"]
 
 }
 ```
@@ -168,9 +165,9 @@ You can add a specific permission to your app, using a `capabilities` block as f
 :::Tipsチュートリアル
 
 Visit:
-- [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format.
-- [**this tutorial**](../tutorials/data-formatter/create-swift-formatter) to define a Swift formatter.
-- [**this tutorial**](../tutorials/data-formatter/create-kotlin-formatter) to define a Kotlin formatter. >>>>>>> Stashed changes
+- [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a static data formatter.
+- [**this tutorial**](../tutorials/data-formatter/create-swift-formatter) to define a Swift dynamic formatter.
+- [**this tutorial**](../tutorials/data-formatter/create-kotlin-formatter) to define a Kotlin dynamic formatter.
 
 :::
 
