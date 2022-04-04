@@ -58,6 +58,12 @@ Version table:
 | 17 R2 | 4.1| 11.3 | 9.3.1 | 10.13.2 |
 </details>
 
+:::note
+
+Formatters updated for 4D v19 R3/4D v19.2 and higher are not compatible with previous 4D releases.
+
+:::
+
 ### Android
 
 Version table:
