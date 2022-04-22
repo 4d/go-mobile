@@ -51,8 +51,8 @@ module.exports = {
       type: 'category',
       label: '4D Database methods',
       items: [
-	            '4d/on-mobile-app-authentication',
-				'4d/on-mobile-app-action'
+	            '4D/on-mobile-app-authentication',
+				'4D/on-mobile-app-action'
 	   ]
 	},
    
