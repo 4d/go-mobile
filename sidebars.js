@@ -47,6 +47,14 @@ module.exports = {
 			],     
 
 	},
+	{
+      type: 'category',
+      label: '4D Database methods',
+      items: [
+	            '4d/on-mobile-app-authentication',
+				'4d/on-mobile-app-action'
+	   ]
+	},
    
   ],
   tutorials: [
@@ -89,8 +97,9 @@ module.exports = {
       type: "category",
       label: "Data formatter",
       items: [
-        "tutorials/data-formatter/create-data-formatter",
+        "tutorials/data-formatter/create-static-data-formatter",
         "tutorials/data-formatter/create-swift-formatter",
+		"tutorials/data-formatter/create-kotlin-formatter",
       ],
     },
     {
@@ -139,10 +148,7 @@ module.exports = {
       label: "Selecting your Developer Program",
       items: [
        "tutorials/developer-program/selecting-your-developer-program",
-       "tutorials/developer-program/register-apple-developer-enterprise-program",
-       "tutorials/developer-program/register-apple-developer-program-organization",
-	   "tutorials/developer-program/register-apple-developer-program-individual",
-	   
+       	   
       ],
     },
        {
