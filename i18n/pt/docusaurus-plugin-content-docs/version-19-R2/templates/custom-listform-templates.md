@@ -11,7 +11,7 @@ title: Modelos Formulário lista
 > Depois arraste a pasta formulário lista dentro dela.
 
 <div>
-<iframe  src="https://4d-for-ios.github.io/gallery/#/type/form-list/picker/0" scrolling="yes" height="2700" width="100%" mark="crwd-mark">
+<iframe  src="https://4d-for-ios.github.io/gallery/#/type/form-list/picker/0" scrolling="yes" height="2700" width="100%">
 </iframe>
 </div>
 
