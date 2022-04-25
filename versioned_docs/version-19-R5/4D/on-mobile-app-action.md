@@ -11,7 +11,7 @@ title: On Mobile App Action
 |status|Object|<-|Action status & data synchro|
 
 
-## Description 
+## Description
 
 The `On Mobile App Action` 4D database method is in charge of managing actions requested by the mobile application for a specific session.  
 
