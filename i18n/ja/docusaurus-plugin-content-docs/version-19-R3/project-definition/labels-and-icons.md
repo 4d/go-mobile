@@ -1,59 +1,59 @@
 ---
 id: labels-and-icons
-title: Labels & Icons
+title: ラベル & アイコン
 ---
 
-This page allows you to define display properties for your tables, fields and relations in the mobile app.
+このページではモバイルアプリ内でのテーブル、フィールドおよびリレーションの表示プロパティを定義することができます。
 
-![Labels & Icons section](img/Labels-&-icons-section-4D-for-iOS.png)
+![ラベル & アイコンセクション](img/Labels-&-icons-section-4D-for-iOS.png)
 
-Default properties are set. To modify a property, select an element and enter the new value in the appropriate column.
+初期状態ではデフォルトのプロパティが設定されています。 プロパティを変更するためには、変更する要素を選択し、適切なカラム内に新しい値を入力してください。
 
-You can define the same properties for tables, fields and relations. Additionally, formats can be defined for fields/relations.
+テーブル、フィールド、リレーションに対して同じプロパティを設定することができます。 また、それに加えて、フィールド/リレーションに対してフォーマットを定義することもできます。
 
-These elements will be displayed in detail and list forms, depending on the template in the generated app.
+これらの要素は生成されたアプリ内のテンプレートによって、詳細フォームおよびリストフォーム内で表示されます。
 
 
-## Icons
+## アイコン
 
-Icon to associate to the table or field/element in the mobile app each time a template requires an icon.
-
-:::info
-
-For relation fields, icons will be displayed at the left of the **Relation** button that allows to open a related table.
-
-:::
-
-The 4D mobile editor provides a large library of icons to meet your needs. These include icons for business, finance, education, government, health, industry, real estate, services, etc. To select an icon, click on the **icon** button and choose an icon from the list:
-
-![Icons select](img/icon-library.png)
+テンプレートにアイコンが必要になった時にモバイルアプリでフィールド/要素に対して適用されるアイコンを設定します。
 
 :::info
 
-To keep everything consistent, **default icons** are generated for blank fields if at least one icon has been defined for a field.
+リレーションフィールドに対しては、アイコンは**リレーション** ボタンの左に表示され、このボタンを押すとリレートされたテーブルを開くことができます。
 
 :::
 
-You can also leave the icon area empty if you don’t want to display icons in your application.
+4Dモバイルエディターでは、あらゆる用途に応えるため、大量のアイコンのライブラリーを提供しています。 このライブラリーには、ビジネス、金融、教育、健康、産業、不動産、サービスなどの用途のアイコンが用意されています。 アイコンを選択するためには、**icon** ボタンをクリックし、表示されたリストからアイコンを選んでください:
+
+![アイコン選択](img/icon-library.png)
+
+:::info
+
+統一性を持たせるため、フィールドに対して少なくとも1つのアイコンが定義されている場合、空のフィールドに対して**デフォルトアイコン** が生成されます。
+
+:::
+
+アプリケーション内でアイコンを表示したくない場合には、アイコンエリアを空にしたままにして下さい。
 
 
-### Adding custom icons
+### カスタムのアイコンを追加する
 
-You can add your own icons to the library, so that you can select them in your project. You can use any icon format (SVG or PNG is recommended to preserve transparency) and size. It's highly recommended having colored versions of your custom icons to better visualize them in the project editor.
+独自のアイコンをライブラリーに追加し、プロジェクト内で選択できるようにすることができます。 使用するアイコンフォーマットおよびサイズに制約はありません(ただしフォーマットは透明部を保持するためにSVGまたはPNGが推奨されます)。 プロジェクトエディターでの見栄えのために、カスタムのアイコンは色付きのバージョンを用意しておくことが強く推奨されます。
 
-For example, here are a set of custom icons that you can use:
+例えば、カスタムのアイコンとして使用できるものは以下のようなものがあります:
 
 <div className="center-button">
 <a
   className="button button--primary"
   href="https://github.com/4d-go-mobile/tutorial-CustomIcons/releases/latest/download/tutorial-CustomIcons.zip">
-  Download custom icons
+  カスタムアイコンをダウンロードする
 </a>
 </div>
 
-To include custom icons in your project:
+プロジェクトにカスタムのアイコンを含めるためには、以下のようにします:
 
-1. Create an `icons` folder at the following location:
+1. 以下の場所に`icons` フォルダを作成します。
 
 ```
 <my4DProjetFolder>/Resources/Mobile/medias
@@ -61,85 +61,85 @@ To include custom icons in your project:
 
 :::note
 
-You may have to create the `medias` folder.
+`medias` フォルダを作成する必要もあるかもしれません。
 
 :::
 
-2. Drag and drop your customized icons in the `icons` folder.
+2. `icons` フォルダ内にカスタマイズしたアイコンをドラッグドロップします。
 
-![Icons select2](img/mobile-folder-custom-icons.png)
+![アイコン選択2](img/mobile-folder-custom-icons.png)
 
-Your icons can now be selected for your project, they are listed after the standard icons.
-
-
+これで追加したアイコンがプロジェクトにおいて選択できるようになりました。標準のアイコンのあとに表示されます。
 
 
-## Short and long labels
 
-You can define custom labels for published tables, fields, and relations. These labels will be automatically used according to the available space in the template to optimize space and avoid overcrowding the tab bar.
+
+## 短いラベル/長いラベル
+
+公開されているテーブル、フィールド、リレーションに対しては、カスタムのラベルの定義することができます。 これらのラベルは、テンプレート内の利用可能な場所に応じて、場所を最適化してタブバーが混雑するのを避けるために自動的に使用されます。
 
 :::info
 
-For relation fields, labels will be displayed in the **Relation** button that allows to open a related table.
+リレーションフィールドに対しては、ラベルは**リレーション** ボタンの左に表示され、このボタンを押すとリレートされたテーブルを開くことができます。
 
 :::
 
-- Short labels should have 10 characters or less
-- Long labels can have up to 25 characters
-- You can use characters that are not allowed in structure names, such as "/","@", the space character, etc.
+- 短いラベルには10文字以下のラベルをつけることができます。
+- 長いラベルには25文字までのラベルをつけることができます。
+- ここでは、ストラクチャー名では使用できない、"/" や "@"、半角スペースなどの特殊文字も使用することができます。
 
-By default, the mobile editor uses the table and field names as defined in the structure as labels in the app, and the same string is used for short and long labels.
-
-
-## Formats
-
-This property allows you to format the data to display in the app. When you click on a field row, a format menu is displayed.
-
-![formats](img/formats-menu.png)
-
-Available built-in formats depend on the field type:
-
-| Field type         | Formats                                                                                                                |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| **テキスト**           | テキスト                                                                                                                   |
-| **日付**             | Date, Short date, Long date, Full date                                                                                 |
-| **時間**             | Time, Short time, Duration, Integer number                                                                             |
-| **Image**          | Image                                                                                                                  |
-| **ブール**            | "No" or "Yes", "False" or "True"                                                                                       |
-| **Integer number** | Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out |
+デフォルトでは、モバイルエディターはストラクチャー内で定義されているテーブルメイトフィールド名をアプリ内で使用し、短いラベルと長いラベルの両方において同じ文字列が使用されます。
 
 
-### Adding custom formats
+## フォーマット
 
-The mobile editor allows you to add customized formats (called "formatters") in your projects. For example, you can define custom formats for emails, invoice numbers, etc.
+このプロパティではアプリ内でのデータ表示のフォーマットを設定することができます。 フィールドの行をクリックすると、フォーマットメニューが表示されます。
 
-To add custom formats to your mobile project, you can:
+![フォーマット](img/formats-menu.png)
+
+選択可能なビルトインフォーマットは、フィールドタイプによって決まります:
+
+| フィールドの型  | フォーマット                                |
+| -------- | ------------------------------------- |
+| **テキスト** | テキスト                                  |
+| **日付**   | 日付、短い日付、長い日付、完全な日付                    |
+| **時間**   | 時間、短い時間、経過時間、整数                       |
+| **画像**   | 画像                                    |
+| **ブール**  | "いいえ" または "はい"、 "False" または "True"    |
+| **整数**   | 整数、小数、実数、パーセント、助数詞、通過 $、通過 €、通過 ¥、漢数字 |
+
+
+### カスタムのフォーマットを追加する
+
+モバイルエディターではカスタマイズされたフォーマット("フォーマッター") をプロジェクトに追加することができます。 例えば、Eメール用、請求書番号用などのカスタムフォーマットを定義することが可能です。
+
+カスタムのフォーマットをモバイルプロジェクトに追加するためには、以下の方法があります:
 
 - Download and install customized formats from the [**go-mobile formatters github repository**](https://4d-for-ios.github.io/gallery/#/type/formatter/picker/0).
 
-- Create your own formats.
+- 独自のフォーマットを作成する
 
-:::tip tutorial
+:::Tipsチュートリアル
 
-Visit [**this tutorial**](../tutorials/data-formatter/create-data-formatter) to know how to define a custom format
+カスタムフォーマットの定義の仕方については、[**こちらのチュートリアル**](../tutorials/data-formatter/create-data-formatter) を参照して下さい。
 
 :::
 
-To install a custom formatter, you just need to drop the formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a custom format can be selected from the Formats menu, just like a built-in formats.
+カスタムのフォーマッターをインストールするためには、フォーマッターのフォルダを4D プロジェクトフォルダの`/Resources/Mobile/formatters` フォルダにドロップするだけです。 インストールした後は、カスタムフォーマットはビルトインフォーマットと同じように、フォーマットメニューから選択することが可能です。
 
 
-## Title
+## タイトル
 
-This property is only available for Relation fields. The defined title will be displayed on top of the destination view when using a relation.
+このプロパティはリレーションフィールドにおいてのみ利用可能です。 ここで定義されたタイトルは、リレーションを使用したときに遷移先のビューのトップに表示されます。
 
-Use a pair of `%` characters to include the value of the related field in the title. For example, if you want that the title of the `Employee.employer` related field displays the name of the related `employee` field, you can write:
+リレートされたフィールドの値をタイトル内に含めたい場合には、`%` 文字を使用して指定します。 例えば、`Employee.employer` リレートフィールドのタイトルに、リレートされている`employee` フィールドの名前を表示したい場合には、以下のように書くことができます:
 
 ```
-%Name%'s employer
+%Name%の雇用主
 ```
 
-:::tip tutorial
+:::Tipsチュートリアル
 
-A [**tutorial**](../tutorials/relations/one-to-many-title-definition) is available to guide you through the Title definition process.
+タイトル定義プロセスの仕方については、それを説明した[**チュートリアル**](../tutorials/relations/one-to-many-title-definition) があります。
 
 :::

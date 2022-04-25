@@ -68,7 +68,7 @@ If you are on Windows, only **Android** is available. If you are on macOS, you c
     - **Name:** Automatically filled from the user name on your computer.
     - **Team**: Developer team reference from your developer account. You can leave it empty to build your application on the Simulator only.
 
-![General](img/Contact-app-general-section-4D-for-iOS.png)
+![一般](img/Contact-app-general-section-4D-for-iOS.png)
 
 ## ⒋ ⒋ ⒋ ⒋ Structure page
 
@@ -98,7 +98,7 @@ Select **Labels & Icons** page. Here you can define some labels and icons that w
 ![Icons & Labels](img/Contact-app-icons-labels-section-4D-for-iOS.png)
 
 
-## ⒍ Forms
+## ⒍ フォーム
 
 We're almost done, but we still need to decide on the app's layout. There are both List and Details forms to choose from.
 

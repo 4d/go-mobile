@@ -1,6 +1,6 @@
 ---
 id: many-to-one-relations
-title: Many to One relations
+title: N対1リレーション
 ---
 
 

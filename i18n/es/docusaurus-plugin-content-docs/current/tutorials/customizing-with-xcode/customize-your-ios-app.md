@@ -3,7 +3,7 @@ id: customize-your-ios-app
 title: Personalizar su aplicación 4D for iOS
 ---
 
-Hagamos algunas modificaciones al storyboard... de simple a complejo.
+Now, let's do some storyboard modification ... from simple to complex.
 
 ![Resultado final](img/Simlator-Before-After-Xcode-4D-for-iOS.png)
 

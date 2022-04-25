@@ -4,92 +4,92 @@ title: 概要
 ---
 
 
-The 4D Mobile Project editor allows you to design, test, and build your native mobile projects for iOS and Android using a graphical interface. The window has two tabs: **Sections** and **Build**.
+4D モバイルプロジェクトエディターを使用すると、グラフィカルなインターフェースを使用してiOS用/Android用のネイティブなモバイルプロジェクトをデザイン、テスト、ビルドすることができます。 ウィンドウには2つのタブがあります: **セクション** and **ビルド** です。
 
 ![General画面](img/General-section-4D-for-iOS.png)
 
-In the **Sections** tab, you'll find all of the necessary steps to create your mobile application:
+**セクション** タブの各セクションは，モバイルアプリが出来るまでの過程に対応しています。
 
-* General
+* 一般
 * ストラクチャ
 * データ
 * アクション
-* Labels & Icons
-* Main Menu
-* Forms
+* ラベル & アイコン
+* メインメニュー
+* フォーム
 * Publishing
 
-In the **Build** tab, you'll find embedded tools to build and test you mobile app:
+**ビルド** タブには、モバイルアプリをビルド/テストするための埋め込みツールがあります。
 
 * Build and Run
 * シミュレーター
 * プロジェクト
 * インストール
 
-The 4D Mobile Project editor is available from the **4D** application development environment (a 4D Developer Pro license is required).
+4D モバイルプロジェクトエディターは**4D** アプリケーション開発環境から利用可能です(4D Developer Pro ライセンスが必要です)。
 
-A 4D mobile project is strongly linked to a 4D data model. To be able to create or open a 4D mobile project, you must open the associated 4D project database beforehand.
+4D モバイルプロジェクトは、4D データモデルと強くリンクしています。 4D モバイルプロジェクトを作成または開くためには、それに関連した4D プロジェクトデータベースを先に開く必要があります。
 
 
-## Creating a mobile project
+## モバイルプロジェクトを作成
 
-To create a new mobile project:
+新しいモバイルプロジェクトを作成するには、以下のようにします:
 
-1. Start your 4D application and open the 4D project for which you want to create a mobile project.
-2. Select **New > Mobile Project** from the **File** or the toolbar menu.
+1. 4D アプリケーションを開始し、モバイルプロジェクトを作成したい4D プロジェクトを開きます。
+2. ツールバーの**ファイル** メニューから、**新規 > モバイルプロジェクト...** を選択します。
 
 :::note
 
-You need a 4D Developer Pro license to open the 4D mobile editor.
+4D モバイルエディターを開くためには、4D Developer Pro ライセンスが必要になります。
 
 :::
 
-The welcome dialog box is displayed:
+ウェルカムダイアログボックスが表示されます:
 
 ![Project Name](img/new-project.png)
 
-3. Give your project a name and click **Continue**.
+3. プロジェクトに名前をつけて、**続ける** をクリックします
 
-The Mobile project editor is displayed and the mobile file architecture is automatically created in your 4D project.
+モバイルプロジェクトエディターが表示され、4D プロジェクト内にモバイルファイルアーキテクチャーが自動的に作成されます。
 
-## Opening a mobile project
+## モバイルプロジェクトを開く
 
-To open a mobile project:
+モバイルプロジェクトを開くには、以下のようにします:
 
-1. Start your 4D application and open the 4D project for which you want to open the mobile project.
-2. Select **Open > Mobile Project** from the **File** or the toolbar menu.
+1. 4D アプリケーションを起動し、開きたいモバイルプロジェクトの4Dプロジェクトを開きます。
+2. ツールバーの**ファイル** メニューから、**開く > モバイルプロジェクト...** を選択します。
 
-The mobile project selection dialog box is displayed. It contains the list of mobile projects already defined for the current database:
+モバイルプロジェクト選択ダイアログボックスが表示されます。 ここにはカレントのデータベースに対して既に作成されているモバイルプロジェクトの一覧が表示されます。
 
 ![Project Name](img/select-project.png)
 
-The icon on the left side indicates if the project was created for Android, iOS, or both.
+左側のアイコンはそのプロジェクトがどのプラットフォーム向け(Andorid 用、iOS用、あるいは両方向け) に作成されたかを表します。
 
-3. Double-click on the project to open, or select the project and click **Open**.
+3. プロジェクトを開くにはプロジェクトをダブルクリックするか、プロジェクトを選択した状態で**開く** をクリックします。
 
-### Open another project
+### 他のプロジェクトを開く
 
-The **Open another project...** link allows you to select any valid [`.4dmobileapp`](#mobile-project-architecture) file that is not listed in the dialog box.
+**他のプロジェクトを開く...** リンクを使用すると、ダイアログボックスに表示されているものでなくても、有効なものであればどんな[`.4dmobileapp`](#mobile-project-architecture) ファイルでも開くことができます。
 
-:::warning
+:::警告
 
-The selected mobile project must match the current data model, otherwise it will be updated and may not work as expected.
+選択されたモバイルプロジェクトは、カレントのデータモデルと合致している必要があります。そうでない場合、モバイルプロジェクトはアップデートされるため、想定とは異なる振る舞いをする可能性があります。
 
 :::
 
-## Deleting a mobile project
+## モバイルプロジェクトを削除
 
-To delete a mobile project, just remove the mobile project folder from the 4D project folder.
+モバイルプロジェクトを削除するためには。4D project フォルダから削除したいモバイルプロジェクトのフォルダを削除するだけです。
 
 
-## Mobile project architecture
+## モバイルプロジェクトアーキテクチャー
 
-Mobile projects are created inside the main 4D project folder:
+モバイルプロジェクトはメインの4D project フォルダ内に作成されます。
 
-- My4DProject (*main 4D project folder*)
+- My4DProject (*メインの 4D project フォルダ*)
     + Mobile Projects
         * MyMobileProject
             - project.4dmobileapp
-            - *other files and folders*
+            - *その他のファイルやフォルダ*
 
 

@@ -1,0 +1,70 @@
+{
+  "version.label": {
+    "message": "v19 R4",
+    "description": "The label for version 19-R4"
+  },
+  "sidebar.docs.category.Getting started": {
+    "message": "Começando",
+    "description": "The label for category Getting started in sidebar docs"
+  },
+  "sidebar.docs.category.Project definition": {
+    "message": "Project definition",
+    "description": "The label for category Project definition in sidebar docs"
+  },
+  "sidebar.docs.category.Smart features": {
+    "message": "Smart features",
+    "description": "The label for category Smart features in sidebar docs"
+  },
+  "sidebar.docs.category.Debugging": {
+    "message": "Depuração",
+    "description": "The label for category Debugging in sidebar docs"
+  },
+  "sidebar.tutorials.category.Creating List forms": {
+    "message": "Creating List forms",
+    "description": "The label for category Creating List forms in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Creating Detail forms": {
+    "message": "Creating Detail forms",
+    "description": "The label for category Creating Detail forms in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Gallery": {
+    "message": "Galería",
+    "description": "The label for category Gallery in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Data formatter": {
+    "message": "Formatador de dados",
+    "description": "The label for category Data formatter in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Filter queries": {
+    "message": "Filter queries",
+    "description": "The label for category Filter queries in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Actions": {
+    "message": "Actions",
+    "description": "The label for category Actions in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Relations": {
+    "message": "Relations",
+    "description": "The label for category Relations in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Customizing with Xcode": {
+    "message": "Customizing with Xcode",
+    "description": "The label for category Customizing with Xcode in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Selecting your Developer Program": {
+    "message": "Selecting your Developer Program",
+    "description": "The label for category Selecting your Developer Program in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Deploying In-House": {
+    "message": "Deploying In-House",
+    "description": "The label for category Deploying In-House in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Deploying on App Store": {
+    "message": "Deploying on App Store",
+    "description": "The label for category Deploying on App Store in sidebar tutorials"
+  },
+  "sidebar.templates.category.Templates & Formatters": {
+    "message": "Templates & Formatters",
+    "description": "The label for category Templates & Formatters in sidebar templates"
+  }
+}

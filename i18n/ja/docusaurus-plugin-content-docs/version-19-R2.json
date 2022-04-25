@@ -36,7 +36,7 @@
     "description": "The label for category Creating Detail forms in sidebar tutorials"
   },
   "sidebar.tutorials.category.Gallery": {
-    "message": "Gallery",
+    "message": "ギャラリー",
     "description": "The label for category Gallery in sidebar tutorials"
   },
   "sidebar.tutorials.category.Data formatter": {
@@ -44,7 +44,7 @@
     "description": "The label for category Data formatter in sidebar tutorials"
   },
   "sidebar.tutorials.category.Filter queries": {
-    "message": "Filter queries",
+    "message": "フィルタークエリ",
     "description": "The label for category Filter queries in sidebar tutorials"
   },
   "sidebar.tutorials.category.Actions": {

@@ -9,7 +9,7 @@ title: Ajouter des actions aux modèles
 
 > **CONDITIONS PRÉALABLES**
 > 
-> Cliquez `[here](prerequisites.html)` pour commencer !
+> Click `[here](requirements.html)` to see what you'll need to get started!
 
 Dans ce tutoriel, nous verrons qu'il est très simple d'**ajouter des actions aux modèles personnalisés**.
 

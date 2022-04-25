@@ -136,7 +136,7 @@
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
     "message": "Para documentación actualizada, ver {latestVersionLink} ({versionLabel}).",
-    "description": "The label used to tell the user to check the latest version"
+    "description": "The label userd to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
     "message": "última versión",

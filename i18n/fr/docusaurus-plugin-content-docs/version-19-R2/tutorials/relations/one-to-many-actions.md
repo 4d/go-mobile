@@ -8,7 +8,7 @@ We are now going to go a little bit further and **create a task for a specific e
 
 It is very easy to create an entity using **parent Entity** !
 
-Let's get started by downloading the Starter project:
+Commençons par télécharger le Projet Starter :
 
 <div className="center-button">
 <a className="button button--primary"

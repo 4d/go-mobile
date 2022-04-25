@@ -9,9 +9,27 @@ title: Criar formato de dados
 
 > **PRÉ-REQUISITOS**
 > 
-> Click [here](prerequisites.html) to see what you'll need to get started!
+> Click [here](requirements.html) to see what you'll need to get started!
 
 Neste tutorial, vamos guiá-lo através da criação de vários exemplos de formatador.
+
+
+From the **Labels & Icons** section, you can choose pre-packaged formats.
+
+> **Formatos disponíveis:**
+> 
+> * **Texto**: Texto
+> * **Data**: Data, data curta, data longa, data completa
+> * **Hora**: hora, hora curta, duração, número inteiro
+> * **Booleano**: "Não" ou "Sim", "False" ou "True"
+> * **Número inteiro**: número inteiro, número decimal, porcentagem, número ordinal, moeda  $, Moeda €, Moeda ¥, número em letras
+
+Vamos começar baixando o Projeto Starter:
+
+<div className="center-button">
+<a className="button button--primary"
+href="https://github.com/4d-go-mobile/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">Baixar</a>
+</div>
 
 ## Baixe o Starter Project
 
@@ -187,11 +205,6 @@ Este é o resultado nos modos claro e escuro:
 | ![Formatador de dados](img/light-bw.png) | ![Formatador de dados](img/dark-bw.png) |
 
 
-
-
-
-
-
 ### Imagens a cor otimizadas
 
 Para otimizar as imagens de cor que são mostradas em sua aplicação e adaptá-las a seu modo de cor, necessita ter duas imagens, uma para o modo claro e outra para o modo escuro com o sufixo `_dark`, como abaixo:
@@ -239,3 +252,5 @@ Baixe a pasta do modelo de formatador completo:
 <div className="center-button">
 <a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/releases/latest/download/tutorial-CustomDataFormatter.zip">Baixar</a>
 </div>
+
+And you're done! 

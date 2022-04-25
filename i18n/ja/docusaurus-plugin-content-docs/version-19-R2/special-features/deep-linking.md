@@ -5,7 +5,7 @@ title: Deep Linking
 
 :::4D for Androidにおける注意
 
-This feature is currently not available in 4D for Android.
+この機能は4D for Android では現在ご利用いただけません。
 
 :::
 
@@ -172,7 +172,7 @@ A great thing about Deep Linking is that it is completely compatible with [push 
 
 As you can see, this feature opens a large range of possibilities. Deep linking is a crucial feature in today’s apps, especially as users consume content faster and faster. This feature brings them directly to the desired location. So we strongly recommend that you use it in your mobile apps.
 
-:::tip
+:::ヒント
 
 Refer to the [**4D Mobile App Server** component documentation](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) for more information on how to combine push notifications and deep linking.
 
