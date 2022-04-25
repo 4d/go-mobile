@@ -73,7 +73,6 @@ Votre modèle personnalisé est prêt à afficher les actions !
 
 Vous pouvez sélectionner le modèle personnalisé TasksList depuis la **section Formulaires** et ajouter les champs suivants :
 
-![Taskslist Forms section](img/listform-taskslist-forms-section.png)
 
 Ajoutons maintenant les tags d'actions au modèle personnalisé TasksCollection
 
