@@ -62,7 +62,7 @@ Embedding images from the data in your app can be time consuming, especially in 
 
 ### Do not regenerate data at each build
 
-By defaut, each time you build your app, preloaded data (if any) are regenerated from the data file. In the development phase, you can save time by selecting this option. 
+By defaut, each time you build your app, preloaded data (if any) are regenerated from the data file in **.sqlite** format (for iOS) or **.db** format (for Android). In the development phase, you can save time by selecting this option. 
 
 #### Regenerate Now
 
@@ -80,7 +80,7 @@ This button requires a valid `key.mobileapp` file if you use the [production ser
 
 ::: 
 
-Every time you modify the structure or the target (Android or macOS), the message **Data must be regenerated** appears in red as follows: 
+Every time you modify the structure or the target (Android or iOS), the message **Data must be regenerated** appears in red as follows: 
 
 ![Data section](img/data-must-be-generated.png)
 
