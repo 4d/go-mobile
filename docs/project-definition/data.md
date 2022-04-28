@@ -80,7 +80,7 @@ This button requires a valid `key.mobileapp` file if you use the [production ser
 
 ::: 
 
-Every time you modify the structure or the target (Android or iOS), the message **Data must be regenerated** appears in red as follows: 
+Every time you modify the structure or the target (Android or iOS), the message **Data must be generated** appears in red as follows: 
 
 ![Data section](img/data-must-be-generated.png)
 
