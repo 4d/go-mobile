@@ -64,7 +64,7 @@ Embedding images from the data in your app can be time consuming, especially in 
 
 By defaut, each time you build your app, preloaded data (if any) are regenerated from the data file. In the development phase, you can save time by selecting this option. 
 
-### Regenerate Now
+#### Regenerate Now
 
 This button regenerates the data to preload from the data file. It allows you to control the data generation during the development phase, specially when the **Do not regenerate data at each build** option is checked. 
 
@@ -80,11 +80,9 @@ This button requires a valid `key.mobileapp` file if you use the [production ser
 
 ::: 
 
-Every time you modify a data, the message "Data must be regenerated" appears in red as follows: 
+Every time you modify the structure or the target (Android or macOS), the message **Data must be regenerated** appears in red as follows: 
 
 ![Data section](img/data-must-be-generated.png)
-
-
 
 
 ## Properties
@@ -113,7 +111,8 @@ All the selected tables will generate .json files in the Resources>Data folder, 
 
 The size of each table is mentioned in this column. Note that the total size of your files should comply with size restrictions of each OS. For more information , see the [FAQ section](https://developer.4d.com/go-mobile/docs/faq/faq#misc). 
 
-In case no data is available, the value N/A will be displayed as follows:
+In case no data is available or if a regeneration is needed, the value **N/A** will be displayed as follows:
+
 ![Data section](img/n-a.png)
 
 
