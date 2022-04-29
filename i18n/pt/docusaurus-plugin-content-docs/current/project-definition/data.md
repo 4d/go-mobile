@@ -9,7 +9,7 @@ This page is used to configure the data that will be handled by your mobile app.
 * define which set of data should be preloaded and when to regenerate it,
 * filter data to include in your app depending on **filter queries** and **user information**.
 
-![Data section](img/data-tab.png)
+![Data section](img/data-section.png)
 
 ## Data source
 
@@ -87,7 +87,7 @@ Every time you modify the [structure](structure.md) or the [target](general.md) 
 
 ## Properties
 
-![Data section](img/Properties-Panel-4D-for-iOS.png)
+![Data section](img/data-section.png)
 
 In this area, you can:
 
