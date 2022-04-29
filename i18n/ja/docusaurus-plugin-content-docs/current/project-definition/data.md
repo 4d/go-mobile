@@ -9,7 +9,7 @@ title: データ
 * どのデータセットをリロードし、どんなときにデータを再生成するかを定義する
 * **フィルタークエリ** および **ユーザー情報** に応じてアプリ内に格納するデータをフィルタリングする
 
-![Data section](img/data-tab.png)
+![Data section](img/data-section.png)
 
 ## データソース
 
@@ -87,7 +87,7 @@ Every time you modify the [structure](structure.md) or the [target](general.md) 
 
 ## プロパティ
 
-![Data section](img/Properties-Panel-4D-for-iOS.png)
+![Data section](img/data-section.png)
 
 In this area, you can:
 
