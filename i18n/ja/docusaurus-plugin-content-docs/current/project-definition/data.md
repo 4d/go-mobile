@@ -9,7 +9,7 @@ title: データ
 * どのデータセットをリロードし、どんなときにデータを再生成するかを定義する
 * **フィルタークエリ** および **ユーザー情報** に応じてアプリ内に格納するデータをフィルタリングする
 
-![Data section](img/Data-tab-4D-for-iOS.png)
+![Data section](img/data-section.png)
 
 ## データソース
 
@@ -62,9 +62,9 @@ title: データ
 
 ### ビルドごとにデータを再生成しない
 
-デフォルトでは、アプリをビルドするたびに、プリロードされたデータ(あれば) がデータファイルから再生成されます。 開発段階においては、このオプションをチェックすることで時間を節約することができます。
+By defaut, each time you build your app, preloaded data (if any) are regenerated from the data file in **.sqlite** format (for iOS) or **.db** format (for Android). 開発段階においては、このオプションをチェックすることで時間を節約することができます。
 
-### 今すぐ再生成する
+#### 今すぐ再生成する
 
 このボタンは、プリロードするデータをデータファイルから再生成します。 これを使用すると、開発段階におけるデータ生成のコントロールを可能にします。特に**ビルドごとにデータを再生成しない** オプションと組み合わせることで有用になります。
 
@@ -80,12 +80,14 @@ This button requires a valid `key.mobileapp` file if you use the [production ser
 
 :::
 
+Every time you modify the [structure](structure.md) or the [target](general.md) (Android or iOS), the app is no longer synchronized and needs to be regenerated. Therefore, as a reminder, the message **Data must be generated** appears in red as follows:
 
+![Data section](img/data-must-be-generated.png)
 
 
 ## プロパティ
 
-![Data section](img/Properties-Panel-4D-for-iOS.png)
+![Data section](img/data-section.png)
 
 In this area, you can:
 
@@ -105,9 +107,15 @@ You can define one filter query per table. This list allows you to:
 
 全ての選択されたテーブルはResources>Data フォルダ内に.json ファイルを生成し、このファイルは自動的に単一のSQLite ファイルへと変換され、アプリ内で使用されます。
 
-### Size
+### Data Size
 
 The size of each table is mentioned in this column. Note that the total size of your files should comply with size restrictions of each OS. For more information , see the [FAQ section](https://developer.4d.com/go-mobile/docs/faq/faq#misc).
+
+In case no data is available or if a regeneration is needed, the value **#NA** will be displayed as follows:
+
+![Data section](img/n-a.png)
+
+
 
 ### このテーブルからデータを埋め込む
 
