@@ -130,7 +130,7 @@ Pour le bouton générique intégré à la barre de navigation, sélectionnez le
 
 ![Add detailform entity action tag](img/Detail-form-action-navigationBar.png)
 
-In our tutorial, we want to build our own generic button. Pour ce faire, ouvrez le fichier Storyboard `detail/TasksDetail/Sources/Forms/Tables/___TABLE___/___TABLE___DetailsForm.storyboard`.
+Dans ce tutoriel, nous souhaitons créer notre propre bouton générique. Pour ce faire, ouvrez le fichier Storyboard `detail/TasksDetail/Sources/Forms/Tables/___TABLE___/___TABLE___DetailsForm.storyboard`.
 
 Ouvrez-le, sélectionnez le bouton situé en bas à droite et ajoutez cette ligne dans le **User Defined Runtime Attributes** (Identity inspector) :
 
