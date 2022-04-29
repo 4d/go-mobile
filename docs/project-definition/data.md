@@ -87,8 +87,6 @@ Every time you modify the [structure](structure.md) or the [target](general.md) 
 
 ## Properties
 
-![Data section](img/data-section.png)
-
 In this area, you can:
 
 - select tables from which to get embedded (preloaded) data
