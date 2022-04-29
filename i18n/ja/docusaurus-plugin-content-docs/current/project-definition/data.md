@@ -87,8 +87,6 @@ Every time you modify the [structure](structure.md) or the [target](general.md) 
 
 ## プロパティ
 
-![Data section](img/data-section.png)
-
 In this area, you can:
 
 - 埋め込む(プリロードする) データを取得するテーブルを選択することができます。
