@@ -5,7 +5,7 @@ title: ストラクチャ
 
 このページでは、4Dデータベース内でREST リソースとして公開されている全てのテーブルとフィールドが表示されます。これには(N対1および1対Nリレーションに基づいた) リレーション属性も含まれます。 実際の表示は、[ORDA のデータストア](https://developer.4d.com/docs/ja/ORDA/overview.html) にとても近いものが表示されます。
 
-![Structure section](img/Structure-section-4D-for-iOS.png)
+![ストラクチャセクション](img/Structure-section-4D-for-iOS.png)
 
 
 このページを使用すると、公開したい特定のテーブルおよびフィールドを選択することにより、実際のストラクチャーからモバイルデバイスに複製したいサブセットを定義することができます。
@@ -215,7 +215,7 @@ In the **Structure** panel:
 
 The `exposed` computed attributes are displayed in the list of attributes of a `dataclass`.
 
-![Structure section](img/Structure.png)
+![ストラクチャセクション](img/Structure.png)
 
 In the **Label & Icons** panel (Icons/short and long labels/formats):
 
