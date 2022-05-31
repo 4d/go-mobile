@@ -24,15 +24,15 @@ title: 認証
 
 このオプションが選択されている場合、モバイルアプリは開始時に[ログインフォーム] を表示します。 モバイルエディターにはデフォルトのログインフォームが用意されていますが、カスタムのログインフォームをデザインすることも可能です。
 
-The **Create...**/**Edit...** button opens the `On Mobile App Authentication` database method in the 4D method editor (see below).
+**作成...**/**編集...** ボタンをクリックすると、4D メソッドエディターで`On Mobile App Authentication` データベースメソッドを開きます(以下参照)。
 
 
 
-### On Mobile App Authentication database method
+### On Mobile App Authentication データベースメソッド
 
-Using the [*On Mobile App Authentication*](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) database method is mandatory to authorize specific emails or devices, even in Guest mode.
+特定のEメールアドレスやデバイスを認証するためには、たとえゲストモードでも[*On Mobile App Authentication*](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) データベースメソッドの使用が必須となります。
 
-A method template is provided to obtain all necessary information about the session, as well as user information (email address, app information, device, team ID, etc.). You can customize this method according to your needs.
+セッションについての必要な情報およびユーザー情報(Eメールアドレス、アプリ情報、デバイス、チームID、等) を全て取得するためのメソッドテンプレートが提供されています。 このメソッドを自分の用途に合わせてカスタマイズすることが可能です。
 
 Here is the `On Mobile App Authentication` database method template:
 
