@@ -4,25 +4,25 @@ title: 認証
 ---
 
 
-## Enabling authentication
+## 認証を有効化する
 
-A mobile application can require that the user be authenticated or not.
+モバイルアプリケーションは、ユーザーの認証を要求することができます。
 
-- When authentication is not enabled, mobile users navigate in the application in Guest mode.
-- Once authentication is enabled, mobile users are asked to login before connecting to the application.
+- 認証が有効化されていない場合、モバイルユーザーはアプリケーション内をゲストモードで使用することになります。
+- 認証が有効化されると、モバイルユーザーはアプリケーションに接続する前にログインするよう求められることになります。
 
 :::info
 
-In any cases, when a mobile user connects to the server, a [user session](session-management) is created.
+いずれの場合にしても、モバイルユーザーがサーバーへと接続した場合、[ユーザーセッション](session-management) が作成されます。
 
 :::
 
 
-To enable authentication, check the **Authentication** option in the [Publishing](../project-definition/publishing) page:
+認証を有効化するためには、[公開](../project-definition/publishing) ページ内の**認証** にチェックを入れます:
 
 ![authentication activation](img/authenticate.png)
 
-When this option is selected, the mobile app displays a [login form] at startup. A default login form is provided by the mobile editor, but you can design a custom login form.
+このオプションが選択されている場合、モバイルアプリは開始時に[ログインフォーム] を表示します。 モバイルエディターにはデフォルトのログインフォームが用意されていますが、カスタムのログインフォームをデザインすることも可能です。
 
 The **Create...**/**Edit...** button opens the `On Mobile App Authentication` database method in the 4D method editor (see below).
 
