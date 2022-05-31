@@ -22,7 +22,7 @@ Here we want to display the category for each task in the detail form of your ge
 
 Then go right to your Structure section and select the **Task table**.
 
-### Structure section
+### ストラクチャセクション
 
 * You can notice that the **TaskCategory relation** is underlined
 
