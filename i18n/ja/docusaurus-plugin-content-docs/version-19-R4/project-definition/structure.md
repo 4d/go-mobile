@@ -5,7 +5,7 @@ title: ストラクチャ
 
 このページでは、4Dデータベース内でREST リソースとして公開されている全てのテーブルとフィールドが表示されます。これには(N対1および1対Nリレーションに基づいた) リレーション属性も含まれます。 実際の表示は、[ORDA のデータストア](https://developer.4d.com/docs/ja/ORDA/overview.html) にとても近いものが表示されます。
 
-![Structure section](img/Structure-section-4D-for-iOS.png)
+![ストラクチャセクション](img/Structure-section-4D-for-iOS.png)
 
 
 このページを使用すると、公開したい特定のテーブルおよびフィールドを選択することにより、実際のストラクチャーからモバイルデバイスに複製したいサブセットを定義することができます。
@@ -179,7 +179,7 @@ In the **Structure** panel:
 
 The `exposed` computed attributes are displayed in the list of attributes of a `dataclass`.
 
-![Structure section](img/Structure.png)
+![ストラクチャセクション](img/Structure.png)
 
 In the **Label & Icons** panel (Icons/short and long labels/formats):
 
@@ -211,7 +211,7 @@ In the generated mobile application, on iOS or Android, both single attributes a
 
 **ストラクチャー** セクションでは、全ての[型](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) の属性(テキスト、日付、時間、整数)をモバイルプロジェクト内で選択、使用、表示することができます。これには**[オブジェクト属性](https://developer.4d.com/docs/ja/Concepts/object.html)** (JSON フォーマット) も含まれます。 フィールドリストの中では、オブジェクト属性は**{}** アイコンで表示されます。
 
-![Structure section](img/object-attributes-structure.png)
+![ストラクチャセクション](img/object-attributes-structure.png)
 
 オブジェクト属性は、プロジェクトエディターの他のセクション(データ、ラベル& アイコン、フォーム、など。ただしアクションセクションは除く) での他のフィールドと同様に使用することができます。
 
@@ -220,11 +220,11 @@ In the generated mobile application, on iOS or Android, both single attributes a
 - **人間が読める形式** (YAML): デフォルトのフォーマットで、モバイルアプリ内では人間が読める形式(Human readable) の構造化されたデータとして表示されます。
 - **JSON 整形フォーマット**: モバイルアプリではインデント付けされたJSON 形式として表示するフォーマットです。
 
-![Labels-and-icons section](img/object-attributes-labels-and-icons.png)
+![ラベル/アイコンセクション](img/object-attributes-labels-and-icons.png)
 
 生成されたアプリ内での表示結果は以下のようになります:
 
-![Structure section](img/object-attributes-rendering.png)
+![ストラクチャセクション](img/object-attributes-rendering.png)
 
 ### フィルタークエリ
 
@@ -257,16 +257,16 @@ In the generated mobile application, on iOS or Android, both single attributes a
 
 #### シンプルなオブジェクト値でフィルターする
 
-If you want to display data filtered by an object, such as a list of your clients only based in France, you need to filter your query by country to get only the records containing the `France` value. Therefore, insert the following syntax in the Filter query field:
+オブジェクトを使用して、例えば「フランスにいるクライアントのみを表示」のように表示されるデータをフィルターしたい場合、国名でクエリをフィルターし、`France` の値を持つレコードだけを取得するようにする必要があります。 そのためには、フィルタークエリフィールドに以下のシンタックスを挿入します:
 
 ```4d
 
 Address.country = "France"
 
 ```
-#### Filter by a collection's value
+#### コレクションの値でフィルターする
 
-If you want to display data filtered by an element of a collection, such as a specific client's email contained in a collection, you need to filter your query by email to get only the records containing the `john@4d.com` value. Therefore, insert the following syntax in the Filter query field:
+コレクションの要素、例えばクライアントのコレクションに格納された特定のEメールなどを使用してフィルターされたデータのみを表示したい場合、Eメールでクエリをフィルターし、`john@4d.com` の値をコレクション内に持つレコードだけを取得するようにする必要があります。 そのためには、フィルタークエリフィールドに以下のシンタックスを挿入します:
 
 ```4d
 
@@ -294,13 +294,13 @@ These optimizations are required for both local and server databases.
 
 :::
 
-### Pull to refresh
+### 下にプルすることで更新する
 
 On the mobile app side, your data is updated each time you launch your app and each time your app goes foreground, to get constant updated data.
 
 In normal use, simply swipe down from any listform to reload your data.
 
-From iPhone settings, you can reset your app data and find information about your app.
+iPhoneの設定から、アプリのデータをリセットし、アプリに関する情報を探すことができます。
 
 :::note
 

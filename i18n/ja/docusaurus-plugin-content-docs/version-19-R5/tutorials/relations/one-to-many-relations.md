@@ -24,7 +24,7 @@ As you can see, there is a One to Many link named **tasks** that we will use in 
 
 Now, go straight to Open menu > Mobile project... to select *Time Keeper* and go to the **Structure section**.
 
-## Structure section
+## ストラクチャセクション
 
 You can see the **tasks relation** we have seen earlier... Publish it !
 
