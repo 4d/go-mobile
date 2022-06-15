@@ -25,13 +25,12 @@ This database method is called by 4D when a mobile application sends an action r
 
 The database method receives required information from the mobile application in the $mobileInfo parameter (object), and must return the action status in the $status parameter (object). You must declare and initialize these parameters as follows:
 
- ```4d
-
+```4d
  //On Mobile App Action database method
 #DECLARE ($mobileInfo : Object) -> $status : Object
   // ...Code for the method
 $status:=New object() //do not forget to create the object to return
- ```
+```
  
 The following properties are received in the **mobileInfo** object parameter:
 
@@ -39,7 +38,7 @@ The following properties are received in the **mobileInfo** object parameter:
 |Property name||Type|Description|
 |---|---|----|---|
 |action||Text|Action name|
-||id|Text|Session identifier|
+||id|Text|UUID of the [Session](https://developer.4d.com/docs/en/API/SessionClass.html) object on the 4D server|
 ||ip|Text|Session IP|
 ||id|Text|Application id|
 |parameters||Object|Action parameters sent from the mobile application|

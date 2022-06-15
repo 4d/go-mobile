@@ -12,7 +12,7 @@ title: On Mobile App Authentication
 
 ## Description
 
-The `On Mobile App Authentication` 4D database method is in charge of managing mobile app authentication to 4D Server or 4D Developer. It is automatically called by 4D when a user agent sends a login request to 4D Server or 4D Developer for the first time.
+The `On Mobile App Authentication` 4D database method is in charge of managing mobile app authentication to 4D Server or 4D. It is automatically called by 4D when a user agent sends a login request to 4D Server or 4D for the first time.
 
 :::note
 
@@ -35,29 +35,42 @@ $status:=New object() //do not forget to create the object to return
 
 The following properties are received in the *mobileInfo* object parameter:
 
-|Property||Type|Description|
-|---|---|----|---|
-|email||Text|User email. Not mandatory, can be empty for guest access|
-|application||Object|Information about the mobile application|
-||id|Text|Mobile application id|
-||name|Text|Mobile application name|
-||version|Text|Mobile application version|
-|device||Object|Information about the mobile device (usually, a mobile phone)|
-||id|Text|Generated unique device id|
-||version|Text|System version of the device|
-||description|Text|Description of the device|
-||simulator|Boolean|True if the device is a simulator|
-|team||Object|Apple Developer Team information|
-||id|Text|Team id (allows developers to use the Xcode project Build and Run functionality)|
-|language||Object|Language settings of the user device|
-||id|Text|User device current language id, ex: en_US|
-||region|Text|User device current region, ex: US|
-||code|Text|User device current language, ex: en|
-|parameters||Object|Any additional information that could be added by the mobile app for custom use|
-|session||Object|Session information|
-||id|Text|Session UUID created for this authentication. Could be stored for future use|
-||ip|Text|Client IP address|
-	
+| Property |||| Type | Description |
+|---|---|---|---|---|---|
+|id|||| Text |UUID of the [Session](https://developer.4d.com/docs/en/API/SessionClass.html) object on the 4D server|
+|info|||| Object |Mobile information linked to the Session|
+||ip||| Text |Client IP address|
+||mobile||| Object |Information about the mobile user|
+|||language ||Object|Language settings of the user device|
+||||id|Text|User device current language id|
+||||code|Text|User device current language code|
+||||region|Text|User device current language region|
+|||email|| Text |User email. Not mandatory, can be empty for guest access|
+|||status|| Text |Session status. Accepted or pending |
+|||token|| Text |User token|
+|||parameters|| Object |(Optional) Any additional information that could be added by the mobile app native code for custom use|
+|||userInfo|| Object | (Optional) Additional information to base a filter query on (added by 4D code in `On Mobile App Authentication`)|
+|||application|| Object |Information about the mobile application|
+||||id| Text |Mobile application id|
+||||name| Text |Mobile application name|
+||||version| Text |Mobile application version|
+|||team|| Object |Apple Developer Team information|
+||||id| Text |Team id|
+|||device|| Object |Information about the mobile device|
+||||description| Text |Description of the device|
+||||version| Text |System version of the device|
+||||id| Text |Generated unique device id|
+||||simulator| Boolean |(Optional) True if the device is a simulator|
+||||os| Text |User device OS|
+
+The session `id` is used to identify the [user session](https://developer.4d.com/docs/en/API/SessionClass.html) automatically created on the 4D server. You can use this object to control the mobile session. 
+
+:::note
+
+If the server is restarted, id and privileges of sessions linked to existing mobile session are automatically retrieved in the same state as before 4D server restart. Other properties such as Storage, expirationDate and idleTimeout are reset.
+
+:::
+
 After processing information, the database method should return an object with the following properties in *status*:
 
 |Property|Type|Description|
@@ -85,12 +98,12 @@ Basically, authenticating a mobile application connection request is based upon 
 ```4d
  #DECLARE ($mobileInfo : Object) -> $status : Object  
    
- If($mobileInfo.email="@"+Char(At sign)+"4d.com")
+ If($mobileInfo.info.mobile.email="@"+Char(At sign)+"4d.com")
     $status.success:=True
  End if
 ```
 
-You can also identify the user agent using the `application.id`, `device.id`, and `team.id` from the $mobileInfo object, and decide to allow or deny access.
+You can also identify the user agent using the `application.id`, `device.id`, and `team.id` from the `$mobileInfo.info.mobile` object, and decide to allow or deny access.
 
 ### Guest access
 
