@@ -60,12 +60,11 @@ The mobile editor automatically displays the list of fields that are eligible to
 
 - All [4D scalar field types](https://developer.4d.com/docs/en/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html).
 - [Object fields](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
-- [Computed attributes](https://developer.4d.com/go-mobile/fr/docs/project-definition/structure#computed-attributes)
+- [Computed attributes](#computed-attributes)
+- [Alias attributes](#alias-attributes) returning **scalar values**
 - Relation attributes (Many-to-one and One-to-many) are supported and can be selected just as fields. They have specific icons:
-
-Many to one relation icon:  ![relation1](img/manyto1.png)
-
-One to many relation icon: ![relationN](img/1tomany.png)
+	- Many to one relation icon:  ![relation1](img/manyto1.png)
+	- One to many relation icon: ![relationN](img/1tomany.png)
 
 :::info
 
@@ -131,9 +130,8 @@ See the [**Relation interactions**](../tutorials/relations/relation-interactions
 
 ## Computed attributes
 
-Whether you're working on Android or iOS, you can display [computed attributes](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#computed-attributes) in your app once it is generated, by configurating them from the project editor.
+Whether you're working on Android or iOS, you can display [**computed attributes**](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#computed-attributes) in your app once it is generated, by configurating them from the project editor. Computed attributes are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. 
 
-In 4D for iOS and 4D for Android, [computed attributes](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#computed-attributes) are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. 
 For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
 
 The process is actually quite simple! 
@@ -169,7 +167,7 @@ If ($splitAddress.length=3)
 Else 
     // ERROR    
 End if
- ```
+```
 
 ### Project editor side
   
@@ -207,6 +205,28 @@ In the **Data** panel, computed attributes are displayed in the list linked to t
 In the generated mobile application, on iOS or Android, both single attributes and computed attributes are displayed.
 
 ![final app](img/final-app.png)
+
+
+## Alias attributes
+
+On Android or iOS, you can use **scalar** [**alias attributes**](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#alias-attributes) in your mobile app. An alias attribute is built above another attribute of the data model, named *target* attribute. The target attribute can belong to a related dataclass (available through any number of relation levels) or to the same dataclass. An alias attribute stores no data, but the path to its target attribute. 
+
+In mobile projects, only **scalar** alias attributes are supported, which means that the [kind](https://developer.4d.com/docs/en/API/DataClassAttributeClass.html#kind) of the last element of the target attribute path must be "storage". Other kinds are not supported. 
+
+Scalar alias attributes can be:
+
+- [selected and published](#selecting-tables-and-fields-to-publish) like standard fields in the structure editor,
+- used to [filter data](../project-definition/data#filter-queries),
+- linked to fields as [parameters](../project-definition/actions#add-parameters-to-your-action) for **add** and **edit** preset actions,
+- used as any other fields in the [Label & Icons section](../project-definition/labels-and-icons),
+- dropped and displayed in [forms](../project-definition/forms).
+
+:::caution
+
+Scalar alias attributes **cannot be used** as [parameters for sort actions](../project-definition/actions#sort-action).   
+
+:::
+
 
 ## Object attributes
 
