@@ -48,7 +48,7 @@ Here is an example of a 4D for iOS-generated session file:
 
 ```
 
-By default, the "status" is automatically set to "accepted" in the session is validated by the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method (`$result.success` set to `True`). If you want the ability to manually validate the first login for every user session, add `$result.verify:=True` to the object returned by the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method. It will change the "accepted" default status to "pending" in the session file.
+By default, the "status" is automatically set to "accepted" if the session is validated by the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method (`$result.success` set to `True`). If you want the ability to manually validate the first login for every user session, add `$result.verify:=True` to the object returned by the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method. It will change the "accepted" default status to "pending" in the session file. For more information, see [this example](../special-features/authentication#without-the-component).
 
 
 ## Session object

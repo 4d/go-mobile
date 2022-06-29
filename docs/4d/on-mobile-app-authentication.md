@@ -105,7 +105,9 @@ Basically, authenticating a mobile application connection request is based upon 
  End if
 ```
 
-You can also identify the user agent using the `application.id`, `device.id`, and `team.id` from the `$mobileInfo.info.mobile` object, and decide to allow or deny access.
+You can also identify the user agent using the `application.id`, `device.id`, and `team.id` from the `$mobileInfo.info.mobile` object, and decide to allow or deny access. 
+
+If you want to validate emails afterw, return `True` in `$result.verify`.
 
 ### Guest access
 
