@@ -3,12 +3,12 @@ id: on-mobile-app-authentication
 title: On Mobile App Authentication
 ---
 
-**On Mobile App Authentication**( *mobileInfo* : Object ) -> *status* : Object 
+**On Mobile App Authentication**( *mobileInfo* : Object ) -> *result* : Object 
 
 |Parameter|Type||Description|
 |---|---|----|---|
 |mobileInfo|Object|->|Information passed by the mobile application|
-|status|Object|<-|Authentication status|
+|result|Object|<-|Authentication status|
 
 ## Description
 
@@ -21,15 +21,15 @@ A user agent is defined by an application ID, a device ID, and a team ID. These 
 
 The `On Mobile App Authentication` database method is always called for a first connection, even if the mobile application was built in Guest mode.
 
-The method receives all necessary information from the mobile application in the *mobileInfo* parameter (object), and must return an authentication status in the *status* parameter (object). You must declare and initialize these parameters as follows:
+The method receives all necessary information from the mobile application in the *mobileInfo* parameter (object), and must return an authentication status in the *result* parameter (object). You must declare and initialize these parameters as follows:
 
 ```4d
 
   //On Mobile App Authentication database method
-#DECLARE ($mobileInfo : Object) -> $status : Object
+#DECLARE ($mobileInfo : Object) -> $result : Object
 
   // ...Code for the method
-$status:=New object() //do not forget to create the object to return
+$result:=New object() //do not forget to create the object to return
 
 ```
 
@@ -71,18 +71,20 @@ If the server is restarted, the id and privileges of existing mobile sessions ar
 
 :::
 
-After processing information, the database method should return an object with the following properties in *status*:
+After processing information, the database method should return a *result* object with the following properties:
 
 |Property|Type|Description|
 |---|---|----|
 |userInfo|Object|User values to filter queries.|
 |success|Boolean|True if authentication is successful, False otherwise. If success=False, the connection is denied.|
 |statusText|Text|(Optional) Message to display on the mobile application. If success=true, welcome message; if success=false, can be used to provide user with an explanation.|
+|verify|Boolean|(Optional) True if you want to validate the first login of the [user session](../special-features/session-management.md), False otherwise. Default is False|
+
 
 The connection is automatically rejected if:
 
-- no value is set to *status* result or *status* is not defined,
-- an invalid value is set to *status*,
+- no value is set to *result* or *result* is not defined,
+- an invalid value is set to *result*,
 - the `On Mobile App Authentication` database method is not defined in the application.
 
 :::info
@@ -96,10 +98,10 @@ The connection is automatically accepted if it comes from "localhost" since it i
 Basically, authenticating a mobile application connection request is based upon the provided email. For example, if you want to grant access only to connections from emails at 4d.com domain, you can write in the `On Mobile App Authentication` database method:
 
 ```4d
- #DECLARE ($mobileInfo : Object) -> $status : Object  
+ #DECLARE ($mobileInfo : Object) -> $result : Object  
    
  If($mobileInfo.info.mobile.email="@"+Char(At sign)+"4d.com")
-    $status.success:=True
+    $result.success:=True
  End if
 ```
 
@@ -109,9 +111,9 @@ You can also identify the user agent using the `application.id`, `device.id`, an
 
 If the mobile application has been built with the "Requires an email to connect" option **unchecked**, it is a "guest mode" application. Then, the `$mobileInfo.email` string will be provided empty. In this case, you can:
 
-- allow access to guests by returning `True` in `$status.success`,
+- allow access to guests by returning `True` in `$result.success`. If you want to validate access afterwards, return `True` in `$result.verify`.
 - identify and evaluate guest access using the user agent information, the decide to allow or deny access.
-- deny access to guests by returning `False` in `$status.success`. This can be done for example if the server is in maintenance mode. In this case, an error will be displayed on the mobile app if the user clicks on the **Reload** button.
+- deny access to guests by returning `False` in `$result.success`. This can be done for example if the server is in maintenance mode. In this case, an error will be displayed on the mobile app if the user clicks on the **Reload** button.
 
 ## Example  
 
@@ -120,7 +122,7 @@ Here is a template example for a `On Mobile App Authentication` database method:
 ```4d
  
   //On Mobile App Authentication database method
- #DECLARE ($mobileInfo : Object) -> $status : Object
+ #DECLARE ($mobileInfo : Object) -> $result : Object
 
  
  var $Boo_simulator : Boolean
@@ -133,35 +135,35 @@ Here is a template example for a `On Mobile App Authentication` database method:
  
  If(Length($Txt_email)=0) //no email was provided
   // Guest mode - allow or deny connection
-    $status.success:=True
-  // $status.success:=False if you want to deny guest access
+    $result.success:=True
+  // $result.success:=False if you want to deny guest access
  
   // Optional welcome message to display on mobile App.
-    $status.statusText:="Welcome to my application"
+    $result.statusText:="Welcome to my application"
  
  Else
   // Authenticated mode -  Allow or not the connection
     If(Is compiled mode) // Deployment version
  
   //Allow, for example, emails from the 4D.com domain
-       $status.success:=($mobileInfo.info.mobile.email=("@"+Char(At sign)+"4d.com"))
+       $result.success:=($mobileInfo.info.mobile.email=("@"+Char(At sign)+"4d.com"))
  
     Else //Development version
  
   //Allow all adress for testing purposes
-       $status.success:=True
+       $result.success:=True
  
     End if
  
-    If($status.success)
+    If($result.success)
 
  
   //Optional welcome message to display on mobile App.
-       $status.statusText:="Authentication successful"
+       $result.statusText:="Authentication successful"
  
     Else
  
-       $status.statusText:=$mobileInfo.info.mobile.email+" is not an authorized email address."
+       $result.statusText:=$mobileInfo.info.mobile.email+" is not an authorized email address."
  
     End if
  End if

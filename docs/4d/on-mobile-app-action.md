@@ -3,12 +3,12 @@ id: on-mobile-app-action
 title: On Mobile App Action
 ---
 
-**On Mobile App Action**( *mobileInfo* : Object ) -> *status* : Object
+**On Mobile App Action**( *mobileInfo* : Object ) -> *result* : Object
 
 |Parameter|Type||Description|
 |---|---|----|---|
 |mobileInfo|Object|->|Information passed by the mobile application|
-|status|Object|<-|Action status & data synchro|
+|result|Object|<-|Action status & data synchro|
 
 
 ## Description
@@ -23,16 +23,16 @@ The mobile application must have been authenticated by the [On Mobile App Authen
 
 This database method is called by 4D when a mobile application sends an action request. 
 
-The database method receives required information from the mobile application in the $mobileInfo parameter (object), and must return the action status in the $status parameter (object). You must declare and initialize these parameters as follows:
+The database method receives required information from the mobile application in the *mobileInfo* parameter (object), and must return the action status in the *result* parameter (object). You must declare and initialize these parameters as follows:
 
 ```4d
  //On Mobile App Action database method
-#DECLARE ($mobileInfo : Object) -> $status : Object
+#DECLARE ($mobileInfo : Object) -> $result : Object
   // ...Code for the method
-$status:=New object() //do not forget to create the object to return
+$result:=New object() //do not forget to create the object to return
 ```
  
-The following properties are received in the **mobileInfo** object parameter:
+The following properties are received in the *mobileInfo* object parameter:
 
 
 |Property name||Type|Description|
@@ -51,7 +51,7 @@ The following properties are received in the **mobileInfo** object parameter:
 ||parent.dataClass|Text|(optional, returned if the action is related to a linked entity). Name of the parent 4D dataclass.|
 
 	
-After processing information, the database method must return an object with the following properties in *status*:
+After processing information, the database method must return an object with the following properties in *result*:
 
 |Property name|Type|Description|
 |---|----|---|
