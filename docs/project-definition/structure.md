@@ -213,6 +213,12 @@ On Android or iOS, you can use **scalar** [**alias attributes**](https://develop
 
 In mobile projects, only **scalar** alias attributes are supported, which means that the [kind](https://developer.4d.com/docs/en/API/DataClassAttributeClass.html#kind) of the last element of the target attribute path must be "storage". Other kinds are not supported. 
 
+:::note
+
+Aliases must have the **exposed** property to be available to the editor.
+
+:::
+
 Scalar alias attributes can be:
 
 - [selected and published](#selecting-tables-and-fields-to-publish) like standard fields in the structure editor,
