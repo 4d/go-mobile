@@ -61,7 +61,7 @@ The mobile editor automatically displays the list of fields that are eligible to
 - All [4D scalar field types](https://developer.4d.com/docs/en/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html).
 - [Object fields](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
 - [Computed attributes](#computed-attributes)
-- [Alias attributes](#alias-attributes) returning **scalar values**
+- [Alias attributes](#alias-attributes) returning **scalar values** (displayed in *italics*).
 - Relation attributes (Many-to-one and One-to-many) are supported and can be selected just as fields. They have specific icons:
 	- Many to one relation icon:  ![relation1](img/manyto1.png)
 	- One to many relation icon: ![relationN](img/1tomany.png)
@@ -211,13 +211,10 @@ In the generated mobile application, on iOS or Android, both single attributes a
 
 On Android or iOS, you can use **scalar** [**alias attributes**](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#alias-attributes) in your mobile app. An alias attribute is built above another attribute of the data model, named *target* attribute. The target attribute can belong to a related dataclass (available through any number of relation levels) or to the same dataclass. An alias attribute stores no data, but the path to its target attribute. 
 
+Alias attibutes must be **exposed** to be available to the editor. They are displayed in *italics*. 
+
 In mobile projects, only **scalar** alias attributes are supported, which means that the [kind](https://developer.4d.com/docs/en/API/DataClassAttributeClass.html#kind) of the last element of the target attribute path must be "storage". Other kinds are not supported. 
 
-:::note
-
-Aliases must have the **exposed** property to be available to the editor.
-
-:::
 
 Scalar alias attributes can be:
 
