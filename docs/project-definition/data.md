@@ -9,7 +9,7 @@ This page is used to configure the data that will be handled by your mobile app.
 * define which set of data should be preloaded and when to regenerate it,
 * filter data to include in your app depending on **filter queries** and **user information**. 
 
-![Data section](img/Data-tab-4D-for-iOS.png)
+![Data section](img/data-section.png)
 
 ## Data source
 
@@ -62,9 +62,9 @@ Embedding images from the data in your app can be time consuming, especially in 
 
 ### Do not regenerate data at each build
 
-By defaut, each time you build your app, preloaded data (if any) are regenerated from the data file. In the development phase, you can save time by selecting this option. 
+By defaut, each time you build your app, preloaded data (if any) are regenerated from the data file in **.sqlite** format (for iOS) or **.db** format (for Android). In the development phase, you can save time by selecting this option. 
 
-### Regenerate Now
+#### Regenerate Now
 
 This button regenerates the data to preload from the data file. It allows you to control the data generation during the development phase, specially when the **Do not regenerate data at each build** option is checked. 
 
@@ -80,19 +80,19 @@ This button requires a valid `key.mobileapp` file if you use the [production ser
 
 ::: 
 
+Every time you modify the [structure](structure.md) or the [target](general.md) (Android or iOS), the app is no longer synchronized and needs to be regenerated. Therefore, as a reminder, the message **Data must be generated** appears in red as follows: 
 
+![Data section](img/data-must-be-generated.png)
 
 
 ## Properties
-
-![Data section](img/Properties-Panel-4D-for-iOS.png)
 
 In this area, you can:
 
 - select tables from which to get embedded (preloaded) data
 - define **filter queries** for each table. Filter queries are automatically applied when the app access data, in order to only get a selection of records.   
 
-By default, if you do not define a filter query for a table, all of its records are embedded. 
+By default, if you do not define a filter query for a table, all of its records are embedded.
 
 
 ### Tables
@@ -105,9 +105,15 @@ You can define one filter query per table. This list allows you to:
 
 All the selected tables will generate .json files in the Resources>Data folder, and will be automatically converted in a single SQLite file that will be used in the app. 
 
-### Size
+### Data Size
 
 The size of each table is mentioned in this column. Note that the total size of your files should comply with size restrictions of each OS. For more information , see the [FAQ section](https://developer.4d.com/go-mobile/docs/faq/faq#misc). 
+
+In case no data is available or if a regeneration is needed, the value **#NA** will be displayed as follows:
+
+![Data section](img/n-a.png)
+
+
 
 ### Embed the data from this table 
 

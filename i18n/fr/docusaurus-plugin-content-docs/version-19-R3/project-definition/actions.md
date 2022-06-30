@@ -248,7 +248,6 @@ After creating all of your actions, just click on the Create button from the Act
 
 - You can refresh the selection after executing an action using `$out.dataSynchro:=True`.
 - You can notify the app user when action has been executed using `$out.statusText:="Message you want to display"`.
-- You can also decide to force close the Edition form using `$out.close:=True`.
 
 :::
 
@@ -461,8 +460,8 @@ For your convenience, the Edition form includes a few **special features**:
 
 ## Que faire ensuite ?
 
-* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
+* A [tutorial](../getting-started/introduction.md) is available to guide you through the **action definition process**.
 
-* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
+* Another [tutorial](../tutorials/actions/adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
 
-* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
+* A final [tutorial](../tutorials/actions/using-action-parameters.md) will guide you through the **action parameters definition**.

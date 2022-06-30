@@ -56,17 +56,17 @@ title: データ
 
 :::
 
-### Do not include images
+### 画像を含めない
 
-Embedding images from the data in your app can be time consuming, especially in the development phase. Checking this option can save a considerable amount of time when building your app.
+データから画像をアプリに埋め込むことは、特に開発段階においてはかなり時間を無駄にすることになりかねません。 このオプションをチェックすることで、アプリのビルドにかかる時間を大幅に短縮することができます。
 
-### Do not regenerate data at each build
+### ビルドごとにデータを再生成しない
 
-By defaut, each time you build your app, preloaded data (if any) are regenerated from the data file. In the development phase, you can save time by selecting this option.
+デフォルトでは、アプリをビルドするたびに、プリロードされたデータ(あれば) がデータファイルから再生成されます。 開発段階においては、このオプションをチェックすることで時間を節約することができます。
 
-### Regenerate Now
+### 今すぐ再生成する
 
-This button regenerates the data to preload from the data file. It allows you to control the data generation during the development phase, specially when the **Do not regenerate data at each build** is checked.
+このボタンは、プリロードするデータをデータファイルから再生成します。 It allows you to control the data generation during the development phase, specially when the **Do not regenerate data at each build** is checked.
 
 :::note
 
@@ -76,28 +76,28 @@ This button requires a valid `key.mobileapp` file if you use the [production ser
 
 
 
-## Properties
+## プロパティ
 
 ![Data section](img/Properties-Panel-4D-for-iOS.png)
 
 In this area, you can:
 
-- select tables from which to get embedded (preloaded) data
-- define **filter queries** for each table. Filter queries are automatically applied when the app access data, in order to only get a selection of records.
+- 埋め込む(プリロードする) データを取得するテーブルを選択することができます。
+- それぞれのテーブルに対して**フィルタークエリ** を定義することができます。 フィルタークエリは、アプリがデータにアクセスした際に自動的に適用されます。それによってレコードの一部のみを取得することができます。
 
 By default, if you do not define a filter query for a table, all of its records are embedded.
 
 
-### Tables
+### テーブル
 
 You can define one filter query per table. This list allows you to:
 
-- select the table for which you want to add or edit a filter query
-- see the size of embedded data if the [embed option is selected](#embed-the-data-from-this-table). This information is not available if table data access uses a filter query based upon user information since it depends on the user.
-- see if the table is associated to a filter query ![filter](img/query-static.png) or a filter query with user information ![filter-user](img/query-user.png).
+- フィルタークエリを追加または編集したいテーブルを選択することができます。
+- [埋め込みオプションが選択されていた](#embed-the-data-from-this-table) 場合、埋め込むデータのサイズを見ることができます。 この情報はユーザー情報に基づいたフィルタークエリを使用していた場合には利用できません。この場合データのサイズはユーザーによって変わるからです。
+- テーブルにフィルタークエリ![filter](img/query-static.png) またはユーザー情報を使用したフィルタークエリ![filter-user](img/query-user.png) が適用されているかをチェックできます。
 
 
-### Embed the data from this table
+### このテーブルからデータを埋め込む
 
 ![embed](img/embed-option.png)
 
@@ -108,7 +108,7 @@ You can uncheck the option if preloading the table data is not accurate.
 This option is not available if table data access uses a filter query based upon user information since it depends on the user. In this context, the button is replaced by the **Edit authentication method...** button that opens the [On Mobile App Authentication](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) method in which you can process user information.
 
 
-### Filter queries
+### フィルタークエリ
 
 You can define one filter query per table. When a table is selected, click in the **Filter query** area, a set of menus is then displayed above the area:
 
@@ -116,7 +116,7 @@ You can define one filter query per table. When a table is selected, click in th
 
 To define a query:
 
-1. Enter your query in the dedicated field by typing it directly in the query area or using the **Fields**, **Comparators** and **Operators** menus.
+1. クエリエリアに直接入力する、あるいは**フィールド** 、**比較演算子** および **演算子** メニューを使用してクエリを専用のフィールドに入力していきます。
 
 A query uses the following syntax:
 
@@ -137,7 +137,7 @@ Refer to the [?filter REST documentation](https://developer.4d.com/docs/en/REST/
 :::
 
 
-#### Example
+#### 例題
 
 If you select a table that contains a `FirstName` field and a `LastName` field, you can write in the **Filter query**:
 
@@ -148,7 +148,7 @@ FirstName = 'Lisa' & LastName = 'Hart'
 This query gets only the records that include "Lisa" as FirstName and "Hart" as LastName.
 
 
-### Filter queries with user information
+### ユーザー情報を使用したフィルタークエリ
 
 You can define [filter queries](#filter-queries) where the *value* parameter depends on user information that is returned by the [`On Mobile App Authentication` database method](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) of the 4D project.
 
@@ -166,19 +166,19 @@ cityName = :city
 
 Here is how it works:
 
-1. When the mobile app sends a request for data, the `On Mobile App Authentication` database method is automatically called and gets information from the app in its *$1* object parameter, in particular the `email`, but also the `device` or the `language`.
-2. The database method queries the 4D datastore to get appropriate information with regard to the business rules and can return any value as a custom property of the `userInfo` object. For example:
+1. モバイルアプリがデータリクエストを送信すると、`On Mobile App Authentication` データベースメソッドが自動的に呼び出され、アプリからの情報を*$1* オブジェクト型引数に受け取られます。具体的には`email` 情報に加え、`device` または`language` も返されます。
+2. データベースメソッドは4Dデータストアをクエリしてビジネスルールに則った適切な情報を取得し、`userInfo` オブジェクト内のカスタムプロパティに任意の値を返すことができます。 例:
 
 ```4d
 $id:=ds.Salesperson.query("email == :1";$1.email).first().id 
-    //gets the id value of the salesperson from its email
+    //email の情報元に営業部の担当者のidの値を取得
 If($id#null)
-    $Obj_response.userInfo:=New object("id";$id) //stores id in the userInfo to return 
+    $Obj_response.userInfo:=New object("id";$id) //返すuserInfo 内にidを保存
 End if  
 ...
 $0:=$Obj_response
 ```
-3. The mobile app automatically manages a `userInfo` object per user. In our example, the "id" custom property is available in the returned objet. Thus, you can write as the "Customers" table filter query:
+3. モバイルアプリは、`userInfo` オブジェクトをユーザーごとに自動的に管理します。 この例では、返されたオブジェクト内にカスタムの"id"プロパティが格納されています。 そのため、"Customers"テーブルのフィルタークエリ同様、以下のように書くことができます。
 
 ```4d
 salespersonid = :id
@@ -186,7 +186,7 @@ salespersonid = :id
 
 When the mobile app will access data from the "Customers" table, only customers belonging to the logged salesperson will be displayed.
 
-:::tip tutorial
+:::Tipsチュートリアル
 
 See the [**Define a filter query**](../tutorials/filter-queries/define-filter-query) tutorial for a complete example of filter query with user info in a mobile app.
 

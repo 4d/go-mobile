@@ -10,7 +10,7 @@ On your device, you need to [enable **USB Debugging**](https://developer.android
 
 ![dev-options](img/dev-options-debug_2x.png)
 
-:::tip
+:::ヒント
 
 If you can’t find the Developer Options item in your settings, simply click 7 times on the build number.
 

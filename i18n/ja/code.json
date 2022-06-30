@@ -136,7 +136,7 @@
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
     "message": "最新のドキュメントは{latestVersionLink} ({versionLabel}) を見てください。",
-    "description": "The label used to tell the user to check the latest version"
+    "description": "The label userd to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
     "message": "最新バージョン",
@@ -183,7 +183,7 @@
     "description": "The placeholder for search page input"
   },
   "theme.SearchPage.inputLabel": {
-    "message": "Search",
+    "message": "検索",
     "description": "The ARIA label for search page input"
   },
   "theme.SearchPage.algoliaLabel": {
@@ -199,7 +199,7 @@
     "description": "The paragraph for fetching new search results"
   },
   "theme.SearchBar.label": {
-    "message": "Search",
+    "message": "検索",
     "description": "The ARIA label and placeholder for search button"
   },
   "cmfcmf/d-s-l.searchBar.placeholderWithVersion": {

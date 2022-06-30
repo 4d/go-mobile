@@ -12,7 +12,7 @@ Now it's time to create your iOS list form interface with Xcode.
 セル内に表示されるフィールドのレイアウトをデザインしましょう。
 
 * アイコン
-* Title
+* タイトル
 * サブタイトル
 
 ## ストーリーボードをXcodeで開く

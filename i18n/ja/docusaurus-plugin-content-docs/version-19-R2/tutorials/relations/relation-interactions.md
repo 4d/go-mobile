@@ -7,13 +7,13 @@ title: Relation interactions
 
 # プロジェクトエディター
 
-## Structure section
+## ストラクチャセクション
 
 From the structure section, you will be able to publish relations from Many to One relation very easily. This will allow to display for example Many to Many relation into your iOS app.
 
 ![Publish relations from Structure section](img/structure-section.gif)
 
-## Labels & Icons section
+## ラベル & アイコンセクション
 
 From the Labels & Icons section, you will be able to customize your relation button label.
 

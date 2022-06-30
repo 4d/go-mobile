@@ -248,7 +248,6 @@ Zymosian, Elmer
 
 - `$out.dataSynchro:=True` というコードをアクション実行後に使用することで、セレクションを更新することができます。
 - `$out.statusText:="表示したいメッセージ"` というコードを使用することで、アクション実行時にアプリユーザーに対して通知をすることができます。
-- `$out.close:=True` というコードを使用することで、編集フォームを強制的に閉じることもできます。
 
 :::
 
@@ -418,7 +417,7 @@ In your iOS app, actions are available in different ways in your List and Detail
 
 ![Table Listform Tableview](img/ListForm-table-action-tableview.png)
 
-:::tip
+:::ヒント
 
 Actions will be displayed in the same order as defined in the Action section.
 
@@ -434,7 +433,7 @@ Actions will be displayed in the same order as defined in the Action section.
 
 ![Table Listform Collectionview](img/ListForm-table-action-collectionview.png)
 
-### Detail forms
+### 詳細フォーム
 
 As with Table actions in List forms, a generic Actions button is available in the navigation bar to display all your entity actions in a list.
 
@@ -461,8 +460,8 @@ For your convenience, the Edition form includes a few **special features**:
 
 ## Where to go from here?
 
-* **アクション定義プロセス** について説明した[チュートリアル](getting-started.md) があります。
+* **アクション定義プロセス** について説明した[チュートリアル](../getting-started/introduction.md) があります。
 
-* カスタムテンプレートを作成するための**アクション TAG 統合** について説明した[チュートリアル](adding-actions-template.md) もあります。
+* カスタムテンプレートを作成するための**アクション TAG 統合** について説明した[チュートリアル](../tutorials/actions/adding-actions-template.md) もあります。
 
-* こちらの[チュートリアル](using-action-parameters.md) では**アクション引数の定義** について説明しています。
+* こちらの[チュートリアル](../tutorials/actions/using-action-parameters.md) では**アクション引数の定義** について説明しています。

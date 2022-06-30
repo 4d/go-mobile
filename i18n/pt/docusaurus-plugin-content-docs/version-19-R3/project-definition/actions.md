@@ -245,7 +245,6 @@ Depois de criar todas as suas ações, simplesmente clique no botão Criar da ta
 
 - Pode renovar a seleção depois de executar uma ação usando `$out.dataSynchro:=True`.
 - Pode notificar o usuário da aplicação sobre quando uma ação tiver sido executada usando `$out.statusText:="Mensagem que quer exibir"`.
-- Pode decidir fechar à força o formulário Edition usando `$out.close:=True`.
 
 :::
 
@@ -458,8 +457,8 @@ Para sua comodidade, o formulário de Edição inclui algumas **funcionalidades 
 
 ## O que fazer agora?
 
-* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
+* A [tutorial](../getting-started/introduction.md) is available to guide you through the **action definition process**.
 
-* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
+* Another [tutorial](../tutorials/actions/adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
 
-* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
+* A final [tutorial](../tutorials/actions/using-action-parameters.md) will guide you through the **action parameters definition**.

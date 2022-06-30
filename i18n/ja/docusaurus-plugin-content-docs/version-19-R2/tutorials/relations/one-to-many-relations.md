@@ -1,6 +1,6 @@
 ---
 id: one-to-many-relations
-title: One to Many relations
+title: 1対Nリレーション
 ---
 
 This tutorial will show you how easy it can be to include One to Many relations in your mobile project.
@@ -24,7 +24,7 @@ As you can see, there is a One to Many link named **tasks** that we will use in 
 
 Now, go straight to Open menu > Mobile project... to select *Time Keeper* and go to the **Structure section**.
 
-## Structure section
+## ストラクチャセクション
 
 You can see the **tasks relation** we have seen earlier... Publish it !
 
@@ -32,13 +32,13 @@ This will now operate as any other field for the rest of the app creation proces
 
 ![Structure section Relations properties](img/Structure-section-relations-4D-for-iOS.png)
 
-:::tip
+:::ヒント
 
 On mouse over, a tip displays the table name originating the relation.
 
 :::
 
-## Labels & Icons section
+## ラベル & アイコンセクション
 
 The One to Many relation is now available in the **Labels and Icons** section.
 

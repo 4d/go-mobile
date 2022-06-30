@@ -9,7 +9,7 @@ This page is used to configure the data that will be handled by your mobile app.
 * define which set of data should be preloaded and when to regenerate it,
 * filter data to include in your app depending on **filter queries** and **user information**.
 
-![Data section](img/Data-tab-4D-for-iOS.png)
+![Data section](img/data-section.png)
 
 ## Data source
 
@@ -62,23 +62,30 @@ Embedding images from the data in your app can be time consuming, especially in 
 
 ### Do not regenerate data at each build
 
-By defaut, each time you build your app, preloaded data (if any) are regenerated from the data file. In the development phase, you can save time by selecting this option.
+By defaut, each time you build your app, preloaded data (if any) are regenerated from the data file in **.sqlite** format (for iOS) or **.db** format (for Android). In the development phase, you can save time by selecting this option.
 
-### Regenerate Now
+#### Regenerate Now
 
-This button regenerates the data to preload from the data file. It allows you to control the data generation during the development phase, specially when the **Do not regenerate data at each build** is checked.
+This button regenerates the data to preload from the data file. It allows you to control the data generation during the development phase, specially when the **Do not regenerate data at each build** option is checked.
 
-:::note
+During the data generation process, a modal window appears, locks the project editor, and displays a progression bar with different generation steps (http requests for tables, core data injection, etc.) and several suggestions such as: "If it takes too much time, try refiltering your data...".
+
+![Regenerate now section](img/regenerate-now.png)
+
+You can also choose to cancel an ongoing data generation by clicking on the cancel button ![Cancel button](img/cancel-button.png) .
+
+:::info
 
 This button requires a valid `key.mobileapp` file if you use the [production server data file](#data-file).
 
 :::
 
+Every time you modify the [structure](structure.md) or the [target](general.md) (Android or iOS), the app is no longer synchronized and needs to be regenerated. Therefore, as a reminder, the message **Data must be generated** appears in red as follows:
+
+![Data section](img/data-must-be-generated.png)
 
 
 ## Propriétés
-
-![Data section](img/Properties-Panel-4D-for-iOS.png)
 
 In this area, you can:
 
@@ -96,17 +103,27 @@ You can define one filter query per table. This list allows you to:
 - see the size of embedded data if the [embed option is selected](#embed-the-data-from-this-table). This information is not available if table data access uses a filter query based upon user information since it depends on the user.
 - see if the table is associated to a filter query ![filter](img/query-static.png) or a filter query with user information ![filter-user](img/query-user.png).
 
+All the selected tables will generate .json files in the Resources>Data folder, and will be automatically converted in a single SQLite file that will be used in the app.
+
+### Data Size
+
+The size of each table is mentioned in this column. Note that the total size of your files should comply with size restrictions of each OS. For more information , see the [FAQ section](https://developer.4d.com/go-mobile/docs/faq/faq#misc).
+
+In case no data is available or if a regeneration is needed, the value **#NA** will be displayed as follows:
+
+![Data section](img/n-a.png)
+
+
 
 ### Embed the data from this table
 
 ![embed](img/embed-option.png)
 
-When this option is checked (default), the editor will preload data of the selected in the mobile app when it is built or when [data are regenerated](#do-not-regenerate-data-at-each-build). This option accelerates data access from the mobile app since it only requires updates and not full downloads. It is particularly suited for stable data like cities or countries.
+When this option is checked (default), the editor will preload data in the mobile app when it is built or when [data are regenerated](#do-not-regenerate-data-at-each-build). This option accelerates data access from the mobile app since it only requires updates and not full downloads. It is particularly suited for stable data like cities or countries.
 
 You can uncheck the option if preloading the table data is not accurate.
 
 This option is not available if table data access uses a filter query based upon user information since it depends on the user. In this context, the button is replaced by the **Edit authentication method...** button that opens the [On Mobile App Authentication](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) method in which you can process user information.
-
 
 ### Filter queries
 
@@ -125,14 +142,21 @@ field comparator value {logicalOperator field comparator value}
 ```
 
 
-2. Validate your query by clicking on the **Validate** button. This must be done each time you modify it (a query that has been edited and not validated appears in red in the query editor).
+2. Check your query validity by clicking on the **Validate** button, and get the following feedback displayed below the query field:
+
+- If the entity number matches the filter query: "Entity number that will be embedded into the application : EntityNumber/EntityTotal".
+- If no entity matches the filter query: "No entity will be embedded into the application."
+- If the server is not reachable: "Entity number that will be embedded into the application : N/A. The server is not reachable."
+- If a table filter query has not been validated, the table appears in red in the left Table list ("validated" : false in project.4dmobileapp).
+- If the server returns an error, it is displayed permanently below the query field.
+
+Click on the Validate button each time you modify the filter query (a query that has been edited and not validated appears in red in the query editor).
 
 When a query filter is valid, an icon appears near the table name (![filter](img/query-static.png) for static filters and ![filter-user](img/query-user.png) for filters with user information).
 
-
 :::info
 
-Refer to the [?filter REST documentation](https://developer.4d.com/docs/en/REST/filter.html) for a detailed description of query syntaxes. The string entered in the **Filter query** area is directly passed as parameter to the `$filter=` REST command.
+Refer to the [$filter REST documentation](https://developer.4d.com/docs/en/REST/filter.html) for a detailed description of query syntaxes. The string entered in the **Filter query** area is directly passed as parameter to the `$filter=` REST command.
 
 :::
 
@@ -191,3 +215,12 @@ When the mobile app will access data from the "Customers" table, only customers 
 See the [**Define a filter query**](../tutorials/filter-queries/define-filter-query) tutorial for a complete example of filter query with user info in a mobile app.
 
 :::
+
+
+
+
+
+
+
+
+

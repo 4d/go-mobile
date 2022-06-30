@@ -3,15 +3,15 @@ id: publishing
 title: Publishing
 ---
 
-This page gives you access to your app's publishing settings and special mobile features:
+このページでは、アプリの公開設定および特殊なモバイル機能にアクセスすることができます:
 
 
-![Publishing section](img/publishing.png)
+![公開セクション](img/publishing.png)
 
 
-## Production URL
+## プロダクションURL
 
-URL of the Web Server on which mobile apps will connect to read and write data, in production context. You can enter any valid address, i.e.:
+製品コンテキストにおいて、モバイルアプリがデータの読み書きを行うWebサーバーのURLです。 有効な任意のアドレスを入力することができます。例:
 
 ```
 https://my.wesbsite.com
@@ -19,75 +19,75 @@ http://my.website.com:9200
 www.website.com/mobile
 ```
 
-During the development phase, you can leave this area empty and set the [Data source](data.md) to **Current data file**.
+開発フェーズにおいては、ここのエリアを空のままにし、[データソース](data.md) を**カレントデータファイル** に設定する事ができます。
 
-:::tip
+:::ヒント
 
-The user will be able to [change the server url](#modify-remote-url) from the mobile device.
+ユーザーはモバイルデバイスから[サーバーURL を変更する](#modify-remote-url) 事が可能です。
 
 :::
 
 
 
-## Web Server Settings
+## Webサーバー設定
 
-The **Edit...** button opens the **Web** page of the 4D settings dialog box. Use this page to define the following settings to embed in the mobile app:
+**編集...** ボタンをクリックすると4D データベース設定の**Web** ページが開きます。 このページを使用して、モバイルアプリに埋め込む以下の設定を定義することができます:
 
-- **Enable HTTP** option and **HTTP port**.
-- **Enable HTTPS** option and **HTTP port**.
+- **HTTPを有効化** オプションおよび**HTTP ポート**
+- **HTTPSを有効化** オプションおよび**HTTP ポート**
 
 :::note
 
-If both HTTP and HTTPS are enabled, HTTP is used.
+HTTP とHTTPS の両方が有効化されていた場合、HTTP が使用されます。
 
 :::
 
-Activating the HTTPS port requires that you installed a valid [TLS certificate](https://developer.4d.com/docs/en/Admin/tls.html). You can create test certificates with 4D.
+HTTPS ポートを有効化するためには、有効な[TLS 証明書](https://developer.4d.com/docs/en/Admin/tls.html) をインストールする必要があります。 4D を使用してテスト用証明書を作成することもできます。
 
-These settings are taken into account only if the [production URL](#production-url) is defined. Otherwise, the local IP address is used.
+これらの設定は、[プロダクション URL](#production-url) が定義されている場合にのみ使用されます。 それ以外の場合には、ローカルID アドレスが使用されます。
 
 :::note
 
-The Simulator always works locally (127.0.0.1 or localhost).
+シミュレーターは必ずローカルに動作します(127.0.0.1 または localhost)
 
 :::
 
-## How it looks on a device
+## デバイス上での見た目
 
-### Settings screen
+### 設定画面
 
-A Settings screen is available from the tab bar. You can also find it from the More tab if necessary (*i.e.*, your app has more than four tables).
+設定画面はタブバーから利用可能です。 また必要であれば(*例* アプリ内にテーブルが4つあるなど)、その他タブ内にもあります。
 
-The Settings screen allows you to:
+設定画面を使用すると、以下のようなことが可能になります:
 
-* Consult your remote URL and its current state
-* Log out (if connected as an Authorized User)
+* リモートのURLとその状態を確認する
+* ログアウトする(認証されたユーザーとしてログインしていた場合)
 
-![Login & Settings screen](img/Login-Settings-screen-Publishing-section-4D-for-iOS.png)
-
-
-### Modify remote url
-
-You can easily update your remote url from iPhone Settings :
-
-* Open your iPhone Settings
-* Select the app you want the remote url to be updated
-* Switch on the "Reset server address" option
-
-![Reset remote url](img/Reset-remote-url.png)
-
-* Then restart your app to reset the server address
-* And finally define the new remote url
-
-![Update remote url](img/Update-remote-url.png)
+![ログイン & 設定画面](img/Login-Settings-screen-Publishing-section-4D-for-iOS.png)
 
 
-## Features
+### リモートURLを変更する
 
-This area allows you to select and configure several mobile app's special features. These features are documented in dedicated sections:
+リモートURLはiPhoneの設定から容易に更新することができます:
 
-- [Authentication](../special-features/authentication.md)
-- [Push notifications](../special-features/push-notification.md)
-- [Deep linking](../special-features/deep-linking)
+* iPhoneの設定を開く
+* リモートURLを更新したいアプリを選択
+* "サーバーアドレスをリセット"オプションをタッチ
+
+![リモートURLをリセットする](img/Reset-remote-url.png)
+
+* その後アプリを再起動してサーバーアドレスをリセット
+* 最後に新しいリモートURLを新たに定義
+
+![リモートURLを更新する](img/Update-remote-url.png)
+
+
+## 機能
+
+このエリアを使用するとモバイルアプリの複数の特殊な機能を選択し設定することができます。 これらの機能はそれぞれの専用の章に詳細な説明があります:
+
+- [認証](../special-features/authentication.md)
+- [プッシュ通知](../special-features/push-notification.md)
+- [ディープリンク](../special-features/deep-linking)
 
 

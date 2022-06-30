@@ -1,83 +1,83 @@
 ---
 id: general
-title: General
+title: 一般
 ---
 
-This page allows you to define your app's main information.
+このページではアプリの主な情報を定義することができます。
 
 ![General画面](img/main-page.png)
 
-## Target OS
+## ターゲットOS
 
-Select the mobile OS for which you want to build the app. This setting will define the available mobile editor options.
+アプリをビルドしたい対象のモバイルOSを選択して下さい。 この設定はモバイルエディター内で利用可能なオプションを定義します。
 
-- On macOS, you can select **Android**, **iOS**, or **both targets**
-- On Windows, you can only select the **Android** target.
+- macOS では、**Android** 、 **iOS** 、または **両方のOS** を選択することができます。
+- Windows では、**Android** ターゲットのみを選択することができます。
 
-## Organization
+## 組織
 
-**Name:** Name of your company, or your name.
+**名前:** あなたの会社の名前か、あなたの名前を入力します。
 
-**Identifier:** Enter your organization’s bundle identifier. This will be used to identify your application. The product name you enter is concatenated to create the "Bundle ID" using reverse domain name service notation (see **ID** below). This bundle ID must be unique to your app.
+**識別子:** あなたの組織のバンドルの識別子を入力して下さい。 これはあなたのアプリケーションを識別するのに使用されます。 入力された製品名は逆ドメインサービス表記を使用して連結され、"バンドルID"となります(以下の**ID** を参照して下さい)。 バンドルIDはアプリ固有のものでなければなりません。
 
-For example, if your company’s name is "MyCompany" and your app’s name is "MyApp", you could choose "com.MyCompany" as your organization’s bundle identifier and your App bundle ID would be "com.MyCompany.MyApp".
+例えば、あなたの会社の名前が"MyCompany"で、あなたのアプリの名前が"MyApp"だった場合、"com.MyCompany"を組織のバンドル識別子として選択することができ、その場合あなたのパル位のバンドルIDは"com.MyCompany.MyApp"となります。
 
 :::note
 
-The Bundle ID name must not contain space or special characters such as "*,%,/". They are automatically filtered and replaced with -.
+バンドルID名には、スペースや"*,%,/" などの特殊文字を含めてはいけません。 これらは自動的に除去され - で置き換えられます。
 
 :::
 
 
-## Product
+## プロダクト
 
 
-**Name:** Your app’s name. As described above, the product name is used to create the "Bundle ID". This Bundle ID must be the same as the Bundle ID you created in your Apple Development account.
-
-:::note
-
-The Bundle ID name must not contain space or special characters such as "*,%,/". They are automatically filtered and replaced with -.
-
-:::
-
-**Version:** The version of your app. Add version numbers in ascending, sequential order starting with 1.0.
-
-**ID:** (Bundle ID): This area is automatically generated as a composition of your organization identifier and product name. It is not editable.
-
-**Copyright:** Your app's copyright. The mobile editor suggests a copyright format but you can create your own.
-
-**Icons:** Master icon that will be used in various locations in you app. You just need to designate your icon and the mobile editor generates all of the required formats for you, in accordance with standard mobile guidelines.
-
-To select an icon:
-
-- Drag and drop a picture directly into the icon area, or
-- Use the image menu to select or copy your picture.
-
-![icon](img/iconselect.png)
-
-You can also double-click the area to display the picture selection dialog box.
+**名前:** あなたのアプリの名前です。 上記にあるように、プロダクト名が"バンドルID"を作成するのに使用されます。 バンドルIDは、Apple 開発アカウントで作成したバンドルIDを同じものでなければなりません。
 
 :::note
 
-On Windows, you must use an "image file" (*.public.image).
+バンドルID名には、スペースや"*,%,/" などの特殊文字を含めてはいけません。 これらは自動的に除去され - で置き換えられます。
 
 :::
 
-Once the icon is selected, the mobile editor automatically creates all required icons for the app. You can access the generated icon formats by selecting **Show the icons folder** in the image menu.
+**バージョン:** あなたのアプリのバージョンです。 バージョン番号は1.0から増やしていき、シーケンシャルな順番で追加して下さい。
 
-### Main color
+**ID:** (バンドルID): このエリアは、組織識別子とプロダクト名が組み合わされて自動的に生成されます。 これは直接編集することはできません。
 
-This menu allows you to select how to define the main color of your app. The main color is used to generate a custom color scheme for your app.
+**Copyright:** あなたのアプリの著作権表記です。 モバイルエディターには著作権表記フォーマットが記入されていますが、独自の表記を作成することも可能です。
 
-![icon](img/main-color.png)
+**アイコン:** アプリ内の様々な場所で使用されるマスターアイコンです。 必要なのはアイコンを指定することだけです。あとはモバイルエディターが標準のモバイルガイダンスに従って必要なフォーマットを全て生成してくれます。
 
-- **Use the system color selector**: displays the system color picker in which you can designate the main color
-- **Use the main color of the icon**: let the mobile editor determine automatically the main color from your app's icon.
+アイコンを選択するには以下の方法があります:
 
-At any time, you can reset the main color and get back to the icon's preset main color, by clicking on "Use the main color of the icon".
+- アイコンエリアにピクチャーを直接ドラッグドロップする
+- 画像メニューを使用してピクチャーを選択またはコピーする
 
-## Developer
+![アイコン](img/iconselect.png)
 
-**Name:** This field is automatically prefilled with your user account name. You can enter any name.
+またエリアをダブルクリックすることでもピクチャー選択ダイアログボックスを表示することができます。
 
-**Team:** Your Developer Account Team ID, that will be used during the deployment phase. This ID can be get from your Developer Account (see XXX). 
+:::note
+
+Windows では、"画像ファイル" (*.public.image) を使用する必要があります。
+
+:::
+
+アイコンが選択されると、モバイルエディターはアプリに必要なアイコンを全て自動的に作成します。 生成されたアイコンフォーマットは、画像メニューの**アイコンフォルダを表示** を選択することでアクセスできます。
+
+### メインカラー
+
+このメニューを使用すると、あなたのアプリのメインカラーをどのように定義するかを選択することができます。 メインカラーは、あなたのアプリのカスタムカラースキームを生成するのに使用されます。
+
+![アイコン](img/main-color.png)
+
+- **システムのカラーセレクターを使用**: システムのカラーピッカーを表示し、そこからメインカラーを指定できます。
+- **アイコンのメインカラーを使用**: 選択されたアプリのアイコンからモバイルエディターに自動的にメインカラーを決定させます。
+
+"アイコンのメインカラーを使用"をクリックすることで、いつでもメインカラーをリセットしてアイコンのプリセットのメインカラーへと戻すことができます。
+
+## デベロッパー
+
+**名前:** このフィールドはあなたのユーザーアカウント名で自動的に記入されています。 ここの名前は自由に記入することができます。
+
+**部署名:** あなたのデベロッパーアカウントチームID。これは開発フェーズを通して使用されます。 このIDはデベロッパーアカウントから取得することができます。 

@@ -12,7 +12,7 @@ In this section you will see how to create your Android list form interface with
 セル内に表示されるフィールドのレイアウトをデザインしましょう。
 
 * アイコン
-* Title
+* タイトル
 * サブタイトル
 
 ## Open the layout file with Android Studio
