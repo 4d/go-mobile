@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgo_mobile=self.webpackChunkgo_mobile||[]).push([[9982],{1873:o=>{o.exports=JSON.parse('{"label":"docusaurus","permalink":"/go-mobile/pt/blog/tags/docusaurus","allTagsPath":"/go-mobile/pt/blog/tags","count":3}')}}]);
