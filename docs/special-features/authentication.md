@@ -22,7 +22,7 @@ To enable authentication, check the **Authentication** option in the [Publishing
 
 ![authentication activation](img/authenticate.png)
 
-When this option is selected, the mobile app displays a login form at startup. A default login form is provided by the mobile editor, but you can design a [custom login form]](../tutorials/custom-login-form).
+When this option is selected, the mobile app displays a login form at startup. A default login form is provided by the mobile editor, but you can design a [custom login form](../tutorials/custom-login-form).
 
 The **Create...**/**Edit...** button opens the `On Mobile App Authentication` database method in the 4D method editor (see below). 
 
@@ -150,7 +150,7 @@ var $mail;$status : Object
   // Create an email with an activation URL
 $mail:=New object
 $mail.from:="myapplication@gmail.com"
-$mail.to:=$request.info.mobile.email  // email entered by the user on their smartphone
+$mail.to:=$request.email  // email entered by the user on their smartphone
 $mail.subject:="Login confirmation"
 $mail.htmlBody:="<a href=\"https://myserverapplication/activation/"+$request.session.id \
 +"\">Click Here to confirm your email.</a>\"<br>"

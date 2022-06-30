@@ -50,6 +50,11 @@ The following properties are received in the *mobileInfo* object parameter:
 ||parent.relationName|Text|(optional, returned if the action is related to a linked entity). One-to-many relation name|
 ||parent.dataClass|Text|(optional, returned if the action is related to a linked entity). Name of the parent 4D dataclass.|
 
+:::note
+
+You can access the [Session object](https://developer.4d.com/docs/en/API/SessionClass.html) automatically created on the 4D server from this database method. You can use this object to control the mobile session. 
+
+:::
 	
 After processing information, the database method must return an object with the following properties in *result*:
 
@@ -57,7 +62,7 @@ After processing information, the database method must return an object with the
 |---|----|---|
 |success|Boolean|True if action has been successfully processed, False otherwise.|
 |statusText|Text|(Optional) Message to display on the mobile application. If success=true, display message; if success=false, can be used to provide user with an explanation.|
-|errors|Collection of objects|(Optional) Each object contains a pair of 'parameter'/'message' keys to display in the mobile application for rejected entries (see Go mobile documentation).|
+|errors|Collection of objects|(Optional) Each object contains a [pair of 'parameter'/'message' keys](../project-definition/actions#update-pending-tasks-that-failed) to display in the mobile application for rejected entries.|
 |dataSynchro|Boolean|True if the entity or table selection needs to be refreshed, false otherwise. If True, the mobile application will automatically trigger a data synchronization|
 		
 ## Example  

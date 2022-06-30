@@ -35,39 +35,33 @@ $result:=New object() //do not forget to create the object to return
 
 The following properties are received in the *mobileInfo* object parameter:
 
-| Property |||| Type | Description |
-|---|---|---|---|---|---|
-|id|||| Text |UUID of the [Session](https://developer.4d.com/docs/en/API/SessionClass.html) object on the 4D server|
-|info|||| Object |Mobile information linked to the session|
-||ip||| Text |Client IP address|
-||mobile||| Object |Information about the mobile user|
-|||language ||Object|Language settings of the user device|
-||||id|Text|User device current language id|
-||||code|Text|User device current language code|
-||||region|Text|User device current language region|
-|||email|| Text |User email. Not mandatory, can be empty for guest access|
-|||status|| Text |Session status. Accepted or pending |
-|||token|| Text |User token|
-|||parameters|| Object |(Optional) Any additional information that could be added by the mobile app native code for custom use|
-|||userInfo|| Object | (Optional) Additional information to base a filter query on (added by 4D code in `On Mobile App Authentication`)|
-|||application|| Object |Information about the mobile application|
-||||id| Text |Mobile application id|
-||||name| Text |Mobile application name|
-||||version| Text |Mobile application version|
-|||team|| Object |Apple Developer Team information|
-||||id| Text |Team id|
-|||device|| Object |Information about the mobile device|
-||||description| Text |Description of the device|
-||||version| Text |System version of the device|
-||||id| Text |Generated unique device id|
-||||simulator| Boolean |(Optional) True if the device is a simulator|
-||||os| Text |User device OS|
+|Property||Type|Description|
+|---|---|----|---|
+|email||Text|User email. Not mandatory, can be empty for guest access|
+|application||Object|Information about the mobile application|
+||id|Text|Mobile application id|
+||name|Text|Mobile application name|
+||version|Text|Mobile application version|
+|device||Object|Information about the mobile device (usually, a mobile phone)|
+||id|Text|Generated unique device id|
+||version|Text|System version of the device|
+||description|Text|Description of the device|
+||simulator|Boolean|True if the device is a simulator|
+|team||Object|Apple Developer Team information|
+||id|Text|Team id (allows developers to use the Xcode project Build and Run functionality)|
+|language||Object|Language settings of the user device|
+||id|Text|User device current language id, ex: en_US|
+||region|Text|User device current region, ex: US|
+||code|Text|User device current language, ex: en|
+|parameters||Object|Any additional information that could be added by the mobile app for custom use|
+|session||Object|Session information|
+||id|Text|Session UUID created for this authentication. |
+||ip|Text|Client IP address|
 
-The session `id` is used to identify the [user session](https://developer.4d.com/docs/en/API/SessionClass.html) automatically created on the 4D server. You can use this object to control the mobile session. 
 
 :::note
 
-If the server is restarted, the id and privileges of existing mobile sessions are automatically restored. Other session properties such as `Storage`, `expirationDate` and `idleTimeout` are reset.
+You can access the [Session object](https://developer.4d.com/docs/en/API/SessionClass.html) automatically created on the 4D server from this database method. You can use this object to control the mobile session. If the server is restarted, the id and privileges of existing mobile sessions are automatically restored. Other session properties such as `Storage`, `expirationDate` and `idleTimeout` are reset.
 
 :::
 
@@ -100,14 +94,14 @@ Basically, authenticating a mobile application connection request is based upon 
 ```4d
  #DECLARE ($mobileInfo : Object) -> $result : Object  
    
- If($mobileInfo.info.mobile.email="@"+Char(At sign)+"4d.com")
+ If($mobileInfo.email="@"+Char(At sign)+"4d.com")
     $result.success:=True
  End if
 ```
 
-You can also identify the user agent using the `application.id`, `device.id`, and `team.id` from the `$mobileInfo.info.mobile` object, and decide to allow or deny access. 
+You can also identify the user agent using the `application.id`, `device.id`, and `team.id` from the `$mobileInfo` object, and decide to allow or deny access. 
 
-If you want to validate emails afterw, return `True` in `$result.verify`.
+If you want to validate emails afterwards, return `True` in `$result.verify`.
 
 ### Guest access
 
@@ -124,7 +118,7 @@ Here is a template example for a `On Mobile App Authentication` database method:
 ```4d
  
   //On Mobile App Authentication database method
- #DECLARE ($mobileInfo : Object) -> $result : Object
+ #DECLARE ($mobileInfo : Object) -> $status : Object
 
  
  var $Boo_simulator : Boolean
@@ -133,81 +127,81 @@ Here is a template example for a `On Mobile App Authentication` database method:
  var $Txt_teamID : Text
  
   //Get user email
- $Txt_email:=String($mobileInfo.info.mobile.email)
+ $Txt_email:=String($mobileInfo.email)
  
  If(Length($Txt_email)=0) //no email was provided
   // Guest mode - allow or deny connection
-    $result.success:=True
-  // $result.success:=False if you want to deny guest access
+    $status.success:=True
+  // $status.success:=False if you want to deny guest access
  
   // Optional welcome message to display on mobile App.
-    $result.statusText:="Welcome to my application"
+    $status.statusText:="Welcome to my application"
  
  Else
   // Authenticated mode -  Allow or not the connection
     If(Is compiled mode) // Deployment version
  
   //Allow, for example, emails from the 4D.com domain
-       $result.success:=($mobileInfo.info.mobile.email=("@"+Char(At sign)+"4d.com"))
+       $status.success:=($mobileInfo.email=("@"+Char(At sign)+"4d.com"))
  
     Else //Development version
  
   //Allow all adress for testing purposes
-       $result.success:=True
+       $status.success:=True
  
     End if
  
-    If($result.success)
+    If($status.success)
 
  
   //Optional welcome message to display on mobile App.
-       $result.statusText:="Authentication successful"
+       $status.statusText:="Authentication successful"
  
     Else
  
-       $result.statusText:=$mobileInfo.info.mobile.email+" is not an authorized email address."
+       $status.statusText:=$mobileInfo.email+" is not an authorized email address."
  
     End if
  End if
  
   // Get App information if identification is needed (optional)
- If($mobileInfo.info.mobile.application#Null)
-    $Txt_appID:=$mobileInfo.info.mobile.application.id // App Id
-    $Txt_appName:=$mobileInfo.info.mobile.application.name //App Name
-    $Txt_appVersion:=$mobileInfo.info.mobile.application.version // App Version
+ If($mobileInfo.application#Null)
+    $Txt_appID:=$mobileInfo.application.id // App Id
+    $Txt_appName:=$mobileInfo.application.name //App Name
+    $Txt_appVersion:=$mobileInfo.application.version // App Version
  End if
  
   //Get Device information if identification is needed (optional)
- If($mobileInfo.info.mobile.device#Null)
-    $Txt_device:=$mobileInfo.info.mobile.device.description //Device Description
-    $Txt_deviceID:=$mobileInfo.info.mobile.device.id //Device Id
-    $Txt_osVersion:=$mobileInfo.info.mobile.device.version //System Version
-    $Boo_simulator:=$mobileInfo.info.mobile.device.simulator //True if device is a Simulator
+ If($mobileInfo.device#Null)
+    $Txt_device:=$mobileInfo.device.description //Device Description
+    $Txt_deviceID:=$mobileInfo.device.id //Device Id
+    $Txt_osVersion:=$mobileInfo.device.version //System Version
+    $Boo_simulator:=$mobileInfo.device.simulator //True if device is a Simulator
  End if
  
   //Get the Team information if needed (optional)
- If($mobileInfo.info.mobile.team#Null)
-    $Txt_teamID:=$mobileInfo.info.mobile.team.id //Team Id
+ If($mobileInfo.team#Null)
+    $Txt_teamID:=$mobileInfo.team.id //Team Id
  End if
  
   //Get the User Language information (optional)
- If($mobileInfo.info.mobile.language#Null)
-    $Txt_languageCode:=$mobileInfo.info.mobile.language.Code
-    $Txt_languageId:=$mobileInfo.info.mobile.language.id
-    $Txt_languageRegion:=$mobileInfo.info.mobile.language.region
+ If($mobileInfo.language#Null)
+    $Txt_languageCode:=$mobileInfo.language.Code
+    $Txt_languageId:=$mobileInfo.language.id
+    $Txt_languageRegion:=$mobileInfo.language.region
  End if
  
   //Get the session information
- If($mobileInfo.id#Null)
+ If($mobileInfo.session#Null)
   //Could be stored for future use.
-    $Txt_sessionId:=$mobileInfo.id //UUID created for this authentication
-    $Txt_IP:=$mobileInfo.info.ip //IP address
+    $Txt_sessionId:=$mobileInfo.session.id //UUID created for this authentication
+    $Txt_IP:=$mobileInfo.session.ip //IP address
  End if
  
   //Get the App parameters
- If($mobileInfo.info.mobile.parameters#Null)
+ If($mobileInfo.parameters#Null)
   //Any additional information that could be added by mobile app for custom use (object)
  End if
 
- 
+
 ```
