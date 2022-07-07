@@ -40,7 +40,6 @@ The following properties are received in the *mobileInfo* object parameter:
 |action||Text|Action name|
 ||id|Text|UUID of the [Session](https://developer.4d.com/docs/en/API/SessionClass.html) object on the 4D server|
 ||ip|Text|Session IP|
-||id|Text|Application id|
 |parameters||Object|Action parameters sent from the mobile application|
 |context||Object|Context parameters for the requested action|
 ||dataClass|Text|4D dataclass name|
