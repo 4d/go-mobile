@@ -64,7 +64,7 @@ On the mobile project, the [Session object](https://developer.4d.com/docs/en/API
 With user sessions, you can access and display user data through [4D tags](https://developer.4d.com/docs/en/Tags/tags.html) in [webareas](https://github.com/mesopelagique/form-detail-WebArea). For example, in a page.shtml form, you can write:
 
 ```html
-<html><body><h1>You currently use <!--#4DTEXT Session.info.mobile.application.name--> </h1></body></html>
+<html><body><h1>You use the following address: <!--#4DTEXT Session.info.mobile.email--> </h1></body></html>
 ```
 
 

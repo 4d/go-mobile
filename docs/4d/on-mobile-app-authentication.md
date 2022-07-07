@@ -55,7 +55,7 @@ The following properties are received in the *mobileInfo* object parameter:
 ||code|Text|User device current language, ex: en|
 |parameters||Object|Any additional information that could be added by the mobile app for custom use|
 |session||Object|Session information|
-||id|Text|Session UUID created for this authentication. |
+||id|Text|UUID of the [Session](https://developer.4d.com/docs/en/API/SessionClass.html) object on the 4D server |
 ||ip|Text|Client IP address|
 
 
