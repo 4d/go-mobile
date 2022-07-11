@@ -219,7 +219,11 @@ module.exports = {
 				banner: 'none',
 				},
 				'19-R5':{
-				label: 'v19 R5 BETA',
+				label: 'v19 R5',
+				banner: 'none',
+				},
+				'19-R6':{
+				label: 'v19 R6 BETA',
 				banner: 'none',
 				},
 			},
