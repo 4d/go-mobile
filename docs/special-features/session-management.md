@@ -4,11 +4,12 @@ title: Session management
 ---
 
 
+4D for iOS and 4D for Android allow you to manage user sessions, so that you can get information about the connected users and improve their experience on your mobile application. 
 
 
 ## Session file
 
-When a user opens the app for the first time, a session file is created and stored next to the current data file in the MobileApps folder. 
+When a user opens the app for the first time, a session file is automatically created and stored next to the current data file in the MobileApps folder. 
 
 The session files are organized and grouped by app folder. The Team ID and app bundle ID are concatenated to create the app folder names.
 
@@ -47,7 +48,26 @@ Here is an example of a 4D for iOS-generated session file:
 
 ```
 
-If you want the ability to manually validate the first login for every user session, you must change the "accepted" default status to "pending" by adding `$response.verify:=True` to the [*On Mobile App Authentication*](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) database method.
+By default, the "status" is automatically set to "accepted" if the session is validated by the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method (`$result.success` set to `True`). If you want the ability to manually validate the first login for every user session, add `$result.verify:=True` to the object returned by the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method. It will change the "accepted" default status to "pending" in the session file. For more information, see [this example](../special-features/authentication#without-the-component).
+
+
+## Session object
+
+Mobile sessions can take advantage of the powerful [4D user sessions](https://developer.4d.com/docs/en/WebServer/sessions.html), when they are enabled on the server. In this case, information stored in the [mobile session file](#session-file) is used to fill the [Session object](https://developer.4d.com/docs/en/API/SessionClass.html) on the server, so that you could share a cart for the same user between their web and mobile sessions, for example.
+
+On the mobile project, the [Session object](https://developer.4d.com/docs/en/API/SessionClass.html) is automatically available from:
+
+- the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method
+- the [On Mobile App Action](../4d/on-mobile-app-action) database method
+- [webareas](https://github.com/mesopelagique/form-detail-WebArea) in your forms. 
+
+With user sessions, you can access and display user data through [4D tags](https://developer.4d.com/docs/en/Tags/tags.html) in [webareas](https://github.com/mesopelagique/form-detail-WebArea). For example, in a page.shtml form, you can write:
+
+```html
+<html><body><h1>You use the following address: <!--#4DTEXT Session.info.mobile.email--> </h1></body></html>
+```
+
+
 
 
 ## Mobile Session Management Component
