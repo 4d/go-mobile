@@ -238,15 +238,15 @@ Quando definir mais que uma ação de ordenação para uma tabela, usuários mó
 
 ### On Mobile App Action
 
-The [On Mobile App Action](https://doc4d.github.io/go-mobile/docs/next/4d-language/on-mobile-app-action-database-method) database method is available to call all of your 4D methods.
+The [`On Mobile App Action`](../4d/on-mobile-app-action) database method is available to call all of your 4D methods.
 
-Depois de criar todas as suas ações, simplesmente clique no botão Criar da tabela Ações para gerar automaticamente um bloco de código *Case of* que inclua todos os nomes de suas ações no método *On Mobile App Action*.
+After creating all of your actions, just click on the **Create** button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
 
 :::nota notas
 
-- Pode renovar a seleção depois de executar uma ação usando `$out.dataSynchro:=True`.
-- Pode notificar o usuário da aplicação sobre quando uma ação tiver sido executada usando `$out.statusText:="Mensagem que quer exibir"`.
-- Pode decidir fechar à força o formulário Edition usando `$out.close:=True`.
+- You can refresh the selection after executing an action using `$result.dataSynchro:=True`.
+- You can notify the app user when action has been executed using `$result.statusText:="Message you want to display"`.
+- You can also decide to force close the Edition form using `$result.close:=True`.
 
 :::
 
