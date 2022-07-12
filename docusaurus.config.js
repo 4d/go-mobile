@@ -206,18 +206,6 @@ module.exports = {
           editUrl:
 			"https://github.com/4d/go-mobile/edit/main",
 		  versions: {
-				'19-R2':{
-				label: 'v19 R2',
-				banner: 'none',
-				},
-				'19-R3':{
-				label: 'v19 R3',
-				banner: 'none',
-				},
-				'19-R4':{
-				label: 'v19 R4',
-				banner: 'none',
-				},
 				'19-R5':{
 				label: 'v19 R5',
 				banner: 'none',
