@@ -8,11 +8,6 @@ title: アクション
 * 4DのコードをiOS アプリから実行するアクションを作成する
 * アクションに渡す引数を定義して渡す
 
-:::4D for Androidにおける注意
-
-このセクションで触れている内容は4D for Android では現在ご利用いただけません。
-
-:::
 
 ## プロジェクトエディター側での設定
 
@@ -246,15 +241,15 @@ Zymosian, Elmer
 
 ### On Mobile App Action
 
-The [On Mobile App Action](https://doc4d.github.io/go-mobile/docs/next/4d-language/on-mobile-app-action-database-method) database method is available to call all of your 4D methods.
+The [`On Mobile App Action`](../4d/on-mobile-app-action) database method is available to call all of your 4D methods.
 
-全てのアクションを作成し終わったあと、アクションテーブル内の編集... ボタンをクリックすると、*On Mobile App Action* メソッド内に作成した全てのアクション名を含んだ*Case of* コードブロックが自動的に生成されます。
+After creating all of your actions, just click on the **Create** button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
 
 :::note 注意
 
-- `$out.dataSynchro:=True` というコードをアクション実行後に使用することで、セレクションを更新することができます。
-- `$out.statusText:="表示したいメッセージ"` というコードを使用することで、アクション実行時にアプリユーザーに対して通知をすることができます。
-- `$out.close:=True` というコードを使用することで、編集フォームを強制的に閉じることもできます。
+- You can refresh the selection after executing an action using `$result.dataSynchro:=True`.
+- You can notify the app user when action has been executed using `$result.statusText:="Message you want to display"`.
+- You can also decide to force close the Edition form using `$result.close:=True`.
 
 :::
 

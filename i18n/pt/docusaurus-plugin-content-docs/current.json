@@ -74,5 +74,13 @@
   "sidebar.tutorials.category.Deploying on App Store": {
     "message": "Deploying on App Store",
     "description": "The label for category Deploying on App Store in sidebar tutorials"
+  },
+  "sidebar.docs.category.4D Database methods": {
+    "message": "4D Database methods",
+    "description": "The label for category 4D Database methods in sidebar docs"
+  },
+  "sidebar.tutorials.category.Apple Developer Program": {
+    "message": "Programa Apple Developer",
+    "description": "The label for category Apple Developer Program in sidebar tutorials"
   }
 }

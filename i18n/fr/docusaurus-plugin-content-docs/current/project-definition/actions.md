@@ -8,11 +8,6 @@ Cette section vous permet :
 * de créer des actions permettant d'exécuter du code 4D à partir de votre application iOS.
 * de définir et d'ajouter des paramètres à vos actions.
 
-:::info 4D for Android
-
-This section is currently not available in 4D for Android.
-
-:::
 
 ## Éditeur de projet
 
@@ -246,15 +241,15 @@ When you define more than one sort action for a table, mobile users automaticall
 
 ### On Mobile App Action
 
-The [On Mobile App Action](https://doc4d.github.io/go-mobile/docs/next/4d-language/on-mobile-app-action-database-method) database method is available to call all of your 4D methods.
+The [`On Mobile App Action`](../4d/on-mobile-app-action) database method is available to call all of your 4D methods.
 
-After creating all of your actions, just click on the Create button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
+After creating all of your actions, just click on the **Create** button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
 
 :::note notes
 
-- You can refresh the selection after executing an action using `$out.dataSynchro:=True`.
-- You can notify the app user when action has been executed using `$out.statusText:="Message you want to display"`.
-- You can also decide to force close the Edition form using `$out.close:=True`.
+- You can refresh the selection after executing an action using `$result.dataSynchro:=True`.
+- You can notify the app user when action has been executed using `$result.statusText:="Message you want to display"`.
+- You can also decide to force close the Edition form using `$result.close:=True`.
 
 :::
 
