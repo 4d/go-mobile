@@ -22,7 +22,7 @@ To enable authentication, check the **Authentication** option in the [Publishing
 
 ![authentication activation](img/authenticate.png)
 
-When this option is selected, the mobile app displays a [login form] at startup. A default login form is provided by the mobile editor, but you can design a custom login form.
+When this option is selected, the mobile app displays a login form at startup. A default login form is provided by the mobile editor, but you can design a [custom login form](../tutorials/custom-login-form).
 
 The **Create...**/**Edit...** button opens the `On Mobile App Authentication` database method in the 4D method editor (see below).
 
@@ -30,31 +30,30 @@ The **Create...**/**Edit...** button opens the `On Mobile App Authentication` da
 
 ### On Mobile App Authentication database method
 
-Using the [*On Mobile App Authentication*](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) database method is mandatory to authorize specific emails or devices, even in Guest mode.
+Using the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method is mandatory to authorize specific emails or devices, even in Guest mode.
 
 A method template is provided to obtain all necessary information about the session, as well as user information (email address, app information, device, team ID, etc.). You can customize this method according to your needs.
 
 Here is the `On Mobile App Authentication` database method template:
 
 ```4d
-// On Mobile App Authentication database method
-// Default template
+#DECLARE($request : Object)->$response : Object
 
-var $0 : Object
-var $1 : Object
+/*
+        $request = Informations provided by mobile application
+        $response = Informations returned to mobile application
+*/
 
-var $request; $response : Object
+$response:=New object
 
-$request:=$1  // Information provided by mobile application
-$response:=New object  // Information returned to mobile application
-
-// Check user email If ($request.email=Null)
+// Check user email
+If ($request.email=Null)
     // No email means Guest mode - Allow connection
-    $response.success:=True Else 
+    $response.success:=True
+Else 
     // Authenticated mode - Allow or not the connection according to email or other device property
-    $response.success:=True //access allowed
-    // to deny access :
-    // $response.success:=False End if 
+    $response.success:=True
+End if 
 
 // Optional message to display on mobile App.
 If ($response.success)
@@ -62,7 +61,6 @@ If ($response.success)
     $response.statusText:="Sorry, you are not authorized to use this application."
 End if 
 
-$0:=$response
 ```
 
 
@@ -85,7 +83,7 @@ Select **Authentication** in the Publishing page to use a login form into your a
 
 #### 2. Enter email address
 
-An email is required when the app is launched. When a user enters their email and clicks on the **Login** button, the `On Mobile App Authentication` is called and the user's session status should be updated to a "pending" status. A validation email is then sent to the user.
+An email is required when the app is launched. When a user enters their email and clicks on the **Login** button, the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method is called and the user's session status should be updated to a "pending" status. A validation email is then sent to the user.
 
 #### 3. Check mailbox and 4. Click on the link
 
@@ -138,10 +136,10 @@ You can implement your own email authentication without using the 4D Mobile App 
 
 
 ```4d
-// On Mobile App Authentication database method C_OBJECT($0;$1;$response;$request;$email;$status)
+// On Mobile App Authentication database method
 
-  // parameters settings come from the mobile app
-$request:=$1
+#DECLARE($request : Object)->$response : Object
+var $mail;$status : Object
 
   // Create an email with an activation URL
 $mail:=New object
@@ -162,7 +160,8 @@ $response:=New object
   // Declare that the current session is being verified
 $response.verify:=True
 
-  // Check if the email was successsfully sent If ($status.success)
+  // Check if the email was successsfully sent
+If ($status.success)
       //create a share object to contain our sessions, accessible from all processes
     If (Storage.pendingSessions=Null)
         Use (Storage)
@@ -176,12 +175,12 @@ $response.verify:=True
     End use 
 
     $response.success:=True
-    $response.statusText:="Please check your mail box" Else 
+    $response.statusText:="Please check your mail box"
+Else 
       // Display an error message on the smatphone
     $response.statusText:="The mail is not sent please try again later"
-    $response.success:=False End if 
-
-$0:=$response
+    $response.success:=False
+End if 
 
 ```
 

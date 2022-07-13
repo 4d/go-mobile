@@ -22,7 +22,7 @@ title: 認証
 
 ![authentication activation](img/authenticate.png)
 
-このオプションが選択されている場合、モバイルアプリは開始時に[ログインフォーム] を表示します。 モバイルエディターにはデフォルトのログインフォームが用意されていますが、カスタムのログインフォームをデザインすることも可能です。
+When this option is selected, the mobile app displays a login form at startup. A default login form is provided by the mobile editor, but you can design a [custom login form](../tutorials/custom-login-form).
 
 **作成...**/**編集...** ボタンをクリックすると、4D メソッドエディターで`On Mobile App Authentication` データベースメソッドを開きます(以下参照)。
 
@@ -30,23 +30,21 @@ title: 認証
 
 ### On Mobile App Authentication データベースメソッド
 
-特定のEメールアドレスやデバイスを認証するためには、たとえゲストモードでも[*On Mobile App Authentication*](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) データベースメソッドの使用が必須となります。
+Using the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method is mandatory to authorize specific emails or devices, even in Guest mode.
 
 セッションについての必要な情報およびユーザー情報(Eメールアドレス、アプリ情報、デバイス、チームID、等) を全て取得するためのメソッドテンプレートが提供されています。 このメソッドを自分の用途に合わせてカスタマイズすることが可能です。
 
 Here is the `On Mobile App Authentication` database method template:
 
 ```4d
-// On Mobile App Authentication database method
-// Default template
+#DECLARE($request : Object)->$response : Object
 
-var $0 : Object
-var $1 : Object
+/*
+        $request = Informations provided by mobile application
+        $response = Informations returned to mobile application
+*/
 
-var $request; $response : Object
-
-$request:=$1  // Information provided by mobile application
-$response:=New object  // Information returned to mobile application
+$response:=New object
 
 // Check user email
 If ($request.email=Null)
@@ -54,9 +52,7 @@ If ($request.email=Null)
     $response.success:=True
 Else 
     // Authenticated mode - Allow or not the connection according to email or other device property
-    $response.success:=True //access allowed
-    // to deny access :
-    // $response.success:=False 
+    $response.success:=True
 End if 
 
 // Optional message to display on mobile App.
@@ -66,7 +62,6 @@ Else
     $response.statusText:="Sorry, you are not authorized to use this application."
 End if 
 
-$0:=$response
 ```
 
 
@@ -89,7 +84,7 @@ Select **Authentication** in the Publishing page to use a login form into your a
 
 #### 2. Enter email address
 
-An email is required when the app is launched. When a user enters their email and clicks on the **Login** button, the `On Mobile App Authentication` is called and the user's session status should be updated to a "pending" status. A validation email is then sent to the user.
+An email is required when the app is launched. When a user enters their email and clicks on the **Login** button, the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method is called and the user's session status should be updated to a "pending" status. A validation email is then sent to the user.
 
 #### 3. Check mailbox and 4. Click on the link
 
@@ -149,11 +144,8 @@ You can implement your own email authentication without using the 4D Mobile App 
 ```4d
 // On Mobile App Authentication database method
 
-
-C_OBJECT($0;$1;$response;$request;$email;$status)
-
-  // parameters settings come from the mobile app
-$request:=$1
+#DECLARE($request : Object)->$response : Object
+var $mail;$status : Object
 
   // Create an email with an activation URL
 $mail:=New object
@@ -195,8 +187,6 @@ Else
     $response.statusText:="The mail is not sent please try again later"
     $response.success:=False
 End if 
-
-$0:=$response
 
 ```
 
