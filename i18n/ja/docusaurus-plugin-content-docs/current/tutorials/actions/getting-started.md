@@ -1,6 +1,6 @@
 ---
 id: getting-started
-title: はじめてのアクション
+title: はじめに
 ---
 
 > **OBJECTIVES**
