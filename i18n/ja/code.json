@@ -103,7 +103,7 @@
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "Next",
+    "message": "次へ",
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
@@ -250,7 +250,7 @@
     "message": "生成されたプロジェクトは、Xcode や Android Studio で開いて編集することができます。"
   },
   "All of your data is embedded in your app and available without needing an internet connection.": {
-    "message": "全てのデータはアプリに埋め込むことができ、インターネット接続がないときでもデータを利用することができます。"
+    "message": "すべてのデータはアプリに埋め込まれ、インターネット接続がないときでも利用できます。"
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
@@ -277,19 +277,19 @@
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Switch between dark and light mode (currently {mode})",
+    "message": "ダークモードとライトモードを切り替える (現在は {mode})",
     "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "dark mode",
+    "message": "ダークモード",
     "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "light mode",
+    "message": "ライトモード",
     "description": "The name for the light color mode"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Home page",
+    "message": "ホームページ",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
@@ -301,7 +301,7 @@
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.versionBadge.label": {
-    "message": "Version: {versionLabel}"
+    "message": "バージョン: {versionLabel}"
   },
   "theme.CodeBlock.wordWrapToggle": {
     "message": "Toggle word wrap",
