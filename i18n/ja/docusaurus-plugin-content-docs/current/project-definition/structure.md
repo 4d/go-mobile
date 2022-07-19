@@ -32,43 +32,43 @@ title: ストラクチャー
 
 ## 公開するテーブルとフィールドを選択する
 
-A table is published when at least one of its fields is published. When a table is published, it is displayed in **bold**.
+テーブルに属するフィールドが 1つ以上公開されると、そのテーブルも公開されます。 公開されたテーブルは **太字** で表示されます。
 
-To select a field to publish, click on a table name then click on the field in the rightmost list. You can also:
+公開するフィールドを選択するには、テーブル名をクリックし、右のリストでフィールドをクリックします。 または:
 
-- **スペースバー** を押すことでフィールドを選択/選択解除することができます。
-- **Ctrl+クリック** を使用することで全てのフィールドを選択することができます。
-- フィールド一覧の**公開** および **全て公開** ローカルメニューを使用して公開することができます。
+- **スペースバー** を押すと、フィールドを選択/選択解除できます。
+- **Ctrl+クリック** でフィールドを全選択できます。
+- フィールドリストの **公開** および **全て公開** ローカルメニューを使用できます。
 
 
 ### リストのフィルタリング
 
-When a list has the focus, you can filter its contents using the Search area and a local menu:
+リストにフォーカスがある場合、検索エリアとローカルメニューを使用して、内容を絞り込むことができます。
 
 ![Filter](img/filter.png)
 
-- **検索** エリア: テーブル名またはフィールド名内で検索したい文字を入力します。
+- **検索** エリア: テーブル名またはフィールド名を検索する文字列を入力します。
 - **テーブル名でソート**/**フィールド名でソート**: 名前順でリストをソートします。 デフォルトでは、リストは作成日順にソートされています。
-- **公開テーブルのみ**/**公開フィールドのみ**: 選択されている(公開されている) テーブルまたはフィールドのみを表示します。
+- **公開テーブルのみ**/**公開フィールドのみ**: 選択されている (公開された) テーブルまたはフィールドのみを表示します。
 
 
 ## サポートされるフィールド型
 
-The mobile editor automatically displays the list of fields that are eligible to the mobile app, depending on their type:
+モバイルエディターは、モバイルアプリに使用できるフィールドの一覧を、その種類に応じて自動的に表示します:
 
 ![Fields](img/fields.png)
 
 - 全ての[スカラー型の4D フィールド](https://developer.4d.com/docs/ja/Concepts/data-types.html) がサポートされます(ただし [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html) 型を除く)
 - [オブジェクトフィールド](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
-- [Computed attributes](#computed-attributes)
-- [Alias attributes](#alias-attributes) returning **scalar values** (displayed in *italics*).
-- Relation attributes (Many-to-one and One-to-many) are supported and can be selected just as fields. They have specific icons:
-    - Many to one relation icon:  ![relation1](img/manyto1.png)
-    - One to many relation icon: ![relationN](img/1tomany.png)
+- [計算属性](#computed-attributes)
+- **スカラー値** を返す [エイリアス属性](#エイリアス属性) (*イタリック* で表示されます)。
+- リレーション属性 (N対1 および 1対N) はサポートされており、フィールドと同様に選択することができます。 リレーション属性は専用のアイコンを持ちます:
+    - Ｎ対１リレーションアイコン:  ![relation1](img/manyto1.png)
+    - １対Ｎリレーションアイコン: ![relationN](img/1tomany.png)
 
 :::info
 
-The names are based upon the relation names in the 4D Structure editor, see the [ORDA Structure mapping page](https://developer.4d.com/docs/en/ORDA/dsmapping.html#structure-mapping).
+リレーション属性の名前は 4Dストラクチャーエディターにおけるリレーション名に基づいています。[ORDA ストラクチャーマッピング](http://developer.4d.com/docs/ja/ORDA/dsmapping.html#%E3%82%B9%E3%83%88%E3%83%A9%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0) のページを参照ください。
 
 :::
 
@@ -77,68 +77,68 @@ The names are based upon the relation names in the 4D Structure editor, see the 
 
 ### 1対Nリレーション
 
-You can include **One to Many relations** in your projects and display a list of related fields in a new page of your app.
+**1対Nリレーション** をプロジェクトに含めると、アプリの新しいページにリレートフィールドのリストを表示できます。
 
-All you have to do is:
+そのためには:
 
-* ターゲットテーブル(N側のテーブル) のフィールドが少なくとも1つ公開する
-* ソーステーブル(1側のテーブル) からリレーションを公開する
+* ターゲットテーブル (N側のテーブル) のフィールドを 1つ以上公開します
+* ソーステーブル (1側のテーブル) のリレーション属性を公開します
 
 ![Drop relation in detail form](img/Structure-1-to-N-relations-4D-for-iOS.png)
 
-Then, when your related fields are published, they can be used like any other field. So you will be able to:
+公開されたリレートフィールドは、他のフィールドと同様に使用できます。 つまり、次のことが可能です:
 
-* [ラベル & アイコン](labels-and-icons.md) ページにおいてリレーションプロパティを定義します。
-* [フォーム](forms.md) ページから詳細フォームに1対Nリレーションをドロップし、詳細フォームとリレートされたテーブル間にリンクを作成します。 リレートビューに直接行くためのリレーションボタンが、詳細フォームに自動的に作成されます。
+* [ラベル＆アイコン](labels-and-icons.md) ページにおいてリレーションプロパティを定義できます。
+* [フォーム](forms.md) ページで、詳細フォームに 1対Nリレーションをドロップし、詳細フォームとリレートテーブル間にリンクを作成できます。 すると、リレートビューに直接行くためのリレーションボタンが、詳細フォームに自動的に作成されます。
 
 :::tip Tutorial
 
-See the [**One to Many relations tutorial**](../tutorials/relations/one-to-many-relations) for a detailed example of One to Many relation integration in a mobile project.
+モバイルプロジェクトに 1対Nリレーションを統合する詳細な例については、[**1対Nリレーションのチュートリアル**](../tutorials/relations/one-to-many-relations) を参照ください。
 
 :::
 
 
 ### N対1リレーション
 
-**Many to one relations** can be used like any other field in the app creation process. When you select a Many to One relation in the field list, you can to select which field(s) from the related table to publish in your app:
+**N対1リレーション** は、アプリ作成プロセスにおいて他のフィールドと同様に使用することができます。 フィールドリストで N対1リレーションを選択すると、アプリで公開するフィールドをリレートテーブルから選択できます:
 
 ![Publish related tables](img/manyto1-tip.png)
 
-You just need to click on the relation name, then select the field(s):
+リレーション名をクリックし、フィールドを選択するだけです:
 
 ![Publish related tables](img/manyto1-select.png)
 
-By default, all eligible fields of the related table are published.
+デフォルトで、リレートテーブルのすべての利用可能フィールドが公開されます。
 
 :::tip Tutorial
 
-See the [**Many to One relations tutorial**](../tutorials/relations/many-to-one-relations) for a detailed example of Many to One relation integration in a mobile project.
+モバイルプロジェクトに N対1リレーションを統合する詳細な例については、[**N対1リレーションのチュートリアル**](../tutorials/relations/many-to-one-relations) を参照ください。
 
 :::
 
 
 ### N対Nリレーション
 
-Using the Structure page, you can publish Many to One and One to Many relations from your parent Many to One relations. It means that you can display Many to Many relations in your app and move directly from a List form to another List form.
+ストラクチャーページを使用して、親の N対1リレーションを介して、子の N対1リレーションおよび 1対Nリレーションを公開することができます。 つまり、アプリ内で N対Nリレーションを表示したり、リストフォームから別のリストフォームに直接移動したりすることができます。
 
 
 :::tip Tutorial
 
-See the [**Relation interactions**](../tutorials/relations/relation-interactions) for a detailed example of Many to One relation integration in a mobile project.
+モバイルプロジェクトに N対Nリレーションを統合する詳細な例については、[**リレーション操作**](../tutorials/relations/relation-interactions) を参照ください。
 
 :::
 
-## Computed attributes
+## 計算属性
 
-Whether you're working on Android or iOS, you can display [**computed attributes**](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#computed-attributes) in your app once it is generated, by configurating them from the project editor. Computed attributes are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section.
+Android でも iOS でも、プロジェクトエディターから設定をすれば、生成されたアプリ内で [**計算属性**](http://developer.4d.com/docs/ja/ORDA/ordaClasses.html#%E8%A8%88%E7%AE%97%E5%B1%9E%E6%80%A7-1) を表示できます。 計算属性とは、複数のフィールドを一つに複合した結果です。 この計算属性は、モバイルアプリ作成時に他のフィールドと同様に使用できます。つまり、ストラクチャーセクションで確認し、公開できるということです。
 
-For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
+たとえば、住所における通りの番号と通りの名称、あるいは氏名における名字と名前のように 2つに分かれた属性を使う代わりに、これらを 1つの属性に纏めて "fullAddress" や "fullName" などと名づけることができます。
 
-The process is actually quite simple!
+やり方は、とても簡単です。
 
-### 4D Side
+### 4D側の準備
 
-In your code, specify the attributes you want to use and the computed attribute you want to get, using the [*Class extends*](https://developer.4d.com/docs/en/Concepts/classes.html#class-extends-classname) and [exposed Function](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows:
+[*Class extends*](https://developer.4d.com/docs/ja/Concepts/classes.html#class-extends-classname) および [exposed Function](https://developer.4d.com/docs/ja/ORDA/ordaClasses.html#%E5%85%AC%E9%96%8Bvs%E9%9D%9E%E5%85%AC%E9%96%8B%E9%96%A2%E6%95%B0) のシンタックスを使って、使用する属性と取得する計算属性を以下のようにコード内で指定します:
 
 ```4d 
 Class extends Entity
@@ -169,22 +169,22 @@ Else
 End if
 ```
 
-### Project editor side
+### プロジェクトエディター側の設定
 
-In the project editor, once the code is written, your computed attributes become available, ready to be published and used as any other field in the creation process:
+4D側でコードが書かれると、プロジェクトエディターでは計算属性が利用可能になり、他のフィールドと同様に公開して使用できるようになります:
 
 
-In the **Structure** panel:
+**ストラクチャー** セクションにおいて:
 
-The `exposed` computed attributes are displayed in the list of attributes of a `dataclass`.
+`exposed` の付いた計算属性は、データクラスの属性リストに表示されます。
 
 ![ストラクチャセクション](img/Structure.png)
 
-In the **Label & Icons** panel (Icons/short and long labels/formats):
+**ラベル & アイコン** セクションにおいて (アイコン / 短いラベル / 長いラベル / フォーマット):
 
 ![Labels&icons section](img/labels-and-icons.png)
 
-In the **Forms** panel:
+**フォーム** セクションにおいて:
 
 The computed attributes present in the data model are, like the fields, available in the list of fields of the Forms panel (list and detail). They behave in the same way as the storage attributes of the datastore.
 
@@ -207,7 +207,7 @@ In the generated mobile application, on iOS or Android, both single attributes a
 ![final app](img/final-app.png)
 
 
-## Alias attributes
+## エイリアス属性
 
 On Android or iOS, you can use **scalar** [**alias attributes**](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#alias-attributes) in your mobile app. An alias attribute is built above another attribute of the data model, named *target* attribute. The target attribute can belong to a related dataclass (available through any number of relation levels) or to the same dataclass. An alias attribute stores no data, but the path to its target attribute.
 
