@@ -1,6 +1,6 @@
 ---
 id: publishing
-title: Publishing
+title: 公開
 ---
 
 このページでは、アプリの公開設定および特殊なモバイル機能にアクセスすることができます:

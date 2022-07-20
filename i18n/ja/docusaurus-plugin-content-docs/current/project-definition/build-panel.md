@@ -31,7 +31,7 @@ title: ビルドパネル
 
 2. **ビルドして実行** ボタンをクリックする
 
-![Build and Run](img/build-and-run-4D-for-iOS.png)
+![ビルドして実行](img/build-and-run-4D-for-iOS.png)
 
 3. アプリをテストする
 

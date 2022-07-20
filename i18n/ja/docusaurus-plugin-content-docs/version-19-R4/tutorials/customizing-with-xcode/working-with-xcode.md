@@ -53,7 +53,7 @@ From the Project Editor BUILD tab:
 * シミュレーターで起動するiOSデバイスのモデルを選びます。
 * Click the **Build and Run** button.
 
-![Build and Run](img/build-and-run.png)
+![ビルドして実行](img/build-and-run.png)
 
 ## ⒊ ⒊ ⒊ ⒊ プロジェクトをXcodeで開く
 

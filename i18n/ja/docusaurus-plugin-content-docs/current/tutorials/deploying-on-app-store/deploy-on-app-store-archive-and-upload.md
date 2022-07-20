@@ -32,7 +32,7 @@ title: Archive and upload your Project
 
 (HTTPS is mandatory for deployment).
 
-![Publishing](img/Publishing.png)
+![公開](img/Publishing.png)
 
 * On the BUILD tab:
 

@@ -4,11 +4,11 @@
     "description": "The label for version 19-R6"
   },
   "sidebar.docs.category.Getting started": {
-    "message": "はじめてのアクション",
+    "message": "はじめに",
     "description": "The label for category Getting started in sidebar docs"
   },
   "sidebar.docs.category.Project definition": {
-    "message": "Project definition",
+    "message": "プロジェクト定義",
     "description": "The label for category Project definition in sidebar docs"
   },
   "sidebar.docs.category.Smart features": {

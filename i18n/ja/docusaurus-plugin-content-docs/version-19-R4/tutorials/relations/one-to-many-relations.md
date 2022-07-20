@@ -58,7 +58,7 @@ So, in the Labels & Icons section you will define:
 
 ![Related field in Forms section](img/1-to-n-relations-forms-section.png)
 
-## Build and Run
+## ビルドして実行
 
 1. Employeeのリスト画面で適当な従業員をクリックします。
 2. This will open the employee's detail form, where you should see a new **Relation button** !

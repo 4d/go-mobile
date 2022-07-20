@@ -76,7 +76,7 @@ This is where you define the subset of data to expose to mobile devices. Select 
 
 For our example, select **ID**, **First Name**, **Last Name**, **Job**, **Company**, **Phone**, **Notes**, and **Photo**.
 
-![ストラクチャ](img/Contact-app-structure-section-4D-for-iOS.png)
+![ストラクチャー](img/Contact-app-structure-section-4D-for-iOS.png)
 
 > We highly recommend publishing your primary key in order to identify each record of the database.
 
@@ -132,7 +132,7 @@ Now the fun part! It's time to build your app and test it on the Simulator to se
 * Click  **Build and Run**.
 * Wait a few seconds and... voila! Your mobile app is alive!
 
-![Build and Run](img/Build-the-app-simulator.png)
+![ビルドして実行](img/Build-the-app-simulator.png)
 
 ## Where to go from here?
 

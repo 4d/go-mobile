@@ -46,7 +46,7 @@ Then go right to your Structure section and select the **Task table**.
 
 ![Related field in Forms section](img/related-field-forms.png)
 
-* Build and Run
+* ビルドして実行
 
 You should see your related field in your app detail form !
 
