@@ -39,7 +39,7 @@ title: ストラクチャー
 
 リストにフォーカスがある場合、検索エリアとローカルメニューを使用して、内容を絞り込むことができます。
 
-![Filter](img/filter.png)
+![フィルター](img/filter.png)
 
 - **検索** エリア: テーブル名またはフィールド名を検索する文字列を入力します。
 - **テーブル名でソート**/**フィールド名でソート**: 名前順でリストをソートします。 デフォルトでは、リストは作成日順にソートされています。
@@ -50,14 +50,14 @@ title: ストラクチャー
 
 モバイルエディターは、モバイルアプリに使用できるフィールドの一覧を、その種類に応じて自動的に表示します:
 
-![Fields](img/fields.png)
+![フィールド](img/fields.png)
 
 - すべての [スカラー型の 4Dフィールド](https://developer.4d.com/docs/ja/Concepts/data-types.html) がサポートされます (ただし [BLOB](https://developer.4d.com/docs/ja/Concepts/blob.html) 型および [オブジェクト](https://developer.4d.com/docs/ja/Concepts/object.html) 型を除く)
 - リレーション属性 (N対1 および 1対N) はサポートされており、フィールドと同様に選択することができます。 リレーション属性は専用のアイコンを持ちます:
 
-Ｎ対１リレーションアイコン:  ![relation1](img/manyto1.png)
+Ｎ対１リレーションアイコン:  ![リレーション1](img/manyto1.png)
 
-１対Ｎリレーションアイコン: ![relationN](img/1tomany.png)
+１対Ｎリレーションアイコン: ![リレーションN](img/1tomany.png)
 
 :::info
 
@@ -83,7 +83,7 @@ title: ストラクチャー
 * ターゲットテーブル (N側のテーブル) のフィールドを 1つ以上公開します
 * ソーステーブル (1側のテーブル) のリレーション属性を公開します
 
-![Drop relation in detail form](img/Structure-1-to-N-relations-4D-for-iOS.png)
+![詳細フォームにリレーションをドロップ](img/Structure-1-to-N-relations-4D-for-iOS.png)
 
 公開されたリレートフィールドは、他のフィールドと同様に使用できます。 つまり、次のことが可能です:
 
@@ -101,11 +101,11 @@ title: ストラクチャー
 
 **N対1リレーション** は、アプリ作成プロセスにおいて他のフィールドと同様に使用することができます。 フィールドリストで N対1リレーションを選択すると、アプリで公開するフィールドをリレートテーブルから選択できます:
 
-![Publish related tables](img/manyto1-tip.png)
+![リレートテーブルの公開](img/manyto1-tip.png)
 
 リレーション名をクリックし、フィールドを選択するだけです:
 
-![Publish related tables](img/manyto1-select.png)
+![リレートテーブルの公開](img/manyto1-select.png)
 
 デフォルトで、リレートテーブルのすべての利用可能フィールドが公開されます。
 
@@ -127,36 +127,36 @@ title: ストラクチャー
 
 :::
 
-## Incremental reload
+## インクリメンタルリロード (増分更新)
 
-### Allow structure adjustments
+### ストラクチャー編集を許可する
 
-For the best user experience, 4D for iOS and 4D for Android implement an automatic feature for the incremental reload of data. It means that only new, modified or deleted data from the database will be updated to the app. This optimization enhances drastically loading time.
+最高のユーザーエクスペリエンスのため、4D for iOS と 4D for Androidは、データの増分更新用の自動機能を実装しています。 つまり、新規・変更・削除されたデータベースのデータのみがアプリにて更新されます。 この最適化は、読み込み時間を大幅に短縮します。
 
-To enable this optimization, 4D for iOS and 4D for Android need the following structure elements:
+この最適化を可能にするため、4D for iOS と 4D for Android は以下の構造的な要素を必要とします:
 
-* A `__DeletedRecords` table to store deleted records
-* and `__GlobalStamp` fields to store modification stamps for each published table in your mobile application
+* 削除されたレコードを保存するための `__DeletedRecords` テーブル
+* モバイルアプリケーションの各公開テーブルの変更スタンプを保存する `__GlobalStamp` フィールド
 
-You can let the 4D mobile editor do all the work for you and add the necessary structure elements: just select **Allow 4D to make necessary structure adjustments for an optimized mobile data update** option.
+これらの必要な要素の追加は、4Dモバイルエディターに任せることができます。これには、**4Dが最適化されたモバイルデータ更新のために必要なストラクチャー編集を行うことを許可する** オプションを選択します。
 
 :::note
 
-These optimizations are required for both local and server databases.
+これらの最適化は、ローカルおよびサーバーデータベースの両方で必要です。
 
 :::
 
-### Pull to refresh!
+### Pull-to-refresh
 
-On the mobile app side, your data is updated each time you launch your app and each time your app goes foreground, to get constant updated data.
+モバイルアプリ側では、アプリを起動する度、またアプリが前面に来る度にデータが更新され、常に最新のデータを取得することができます。
 
-In normal use, simply swipe down from any listform to reload your data.
+通常の使用では、任意のリストフォームを下にスワイプするだけでデータを更新できます。
 
-From iPhone settings, you can now reset your app data and find information about your app.
+iPhone の設定から、アプリのデータをリセットしたり、アプリに関する情報を探したりすることができます。
 
 :::note
 
-When an important maintenance operation is performed on the database side (Recover by tag / Restoration / Compacting) a Full reload is necessary on the mobile app. In this case, the admin shall notify mobile app users.
+データベース側で重要なメンテナンス作業 (レコードヘッダーによる修復 / 復元 / 圧縮) をおこなった場合には、モバイルアプリ側でフルリロードが必要です。 この場合は、モバイルアプリの利用者に管理者が通知するものとします。
 
 :::
 
@@ -219,26 +219,26 @@ End if
 
 **ラベル & アイコン** セクションにおいて (アイコン / 短いラベル / 長いラベル / フォーマット):
 
-![Labels&icons section](img/labels-and-icons.png)
+![ラベル & アイコンセクション](img/labels-and-icons.png)
 
 **フォーム** セクションにおいて:
 
-The computed attributes present in the data model are, like the fields, available in the list of fields of the Forms panel (list and detail). They behave in the same way as the storage attributes of the datastore.
+データモデルの計算属性は、通常のフィールドと同様に、フォームセクション (リストフォームと詳細フォーム) のフィールドリストで利用可能です。 これらはデータストアのストレージ属性と同じように動作します。
 
 ![Forms section](img/Forms.png)
 
-In the **Data** panel, computed attributes are displayed in the list linked to the "Fields" button of the query filter box.
+**データ** セクションでは、フィルタークエリボックスの "フィールド" ボタンにリンクされているリストに計算属性が表示されます。
 
 :::note 4D for iOS
 
-- Computed attributes can be used with Sort actions.
-- A computed attribute without a setter (readOnly) is not available for an Add or Edit action.
-- When Add or Edit presets actions are created (if the setter is available and if 4D allows it), computed attributes parameters shall be available when linked to a field.
+- 計算属性は、ソートアクションで使用することができます。
+- セッターのない計算属性 (読み取り専用) は、追加または編集アクションで使用できません。
+- プリセットの追加または編集アクションが作成された場合 (セッターが利用可能で、4D がそれを許可している場合)、フィールドにリンクされている計算属性のパラメーターは利用可能です。
 
 :::note 4D for iOS
 
-### Mobile app side
+### モバイルアプリ側
 
-In the generated mobile application, on iOS or Android, both single attributes and computed attributes are displayed.
+生成されたモバイルアプリケーション (iOS または Android) では、単一属性と計算属性の両方が表示されます。
 
-![final app](img/final-app.png)
+![最終アプリ](img/final-app.png)
