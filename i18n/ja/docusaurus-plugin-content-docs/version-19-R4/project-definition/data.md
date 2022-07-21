@@ -108,7 +108,7 @@ title: データ
 
 ### このテーブルのデータをアプリに埋め込む
 
-![embed](img/embed-option.png)
+![埋め込む](img/embed-option.png)
 
 このオプションがチェックされている場合 (デフォルト) 、モバイルアプリのビルト時、あるいは [データ再生成時](#ビルドするごとにデータを再生成しない) に、エディターは同アプリにデータをプリロードします。 このオプションにより、モバイルアプリはフルダウンロードの必要なく、更新のみで足りるようになるため、データアクセスが高速化されます。 特に、都市や国などの変化のないデータに適しています。
 
@@ -120,7 +120,7 @@ title: データ
 
 各テーブルに対して 1つのフィルタークエリを定義することができます。 テーブルを選択した状態で、**フィルタークエリ** エリアをクリックすると、その上にいくつかのメニューが表示されます:
 
-![filter-buttons](img/query-buttons.png)
+![フィルターボタン](img/query-buttons.png)
 
 クエリを定義するには:
 
@@ -177,33 +177,33 @@ Name = :name
 employee.level > :level
 cityName = :city
 ```
-... where `:` preceeds variables that will be automatically filled by the mobile app depending on values returned by the `On Mobile App Authentication` database method in the `userInfo` object. The variables must exist as custom property names in the `userInfo` object.
+このようなクエリでは、変数の前に `:` を配置することで、`On Mobile App Authentication` データベースメソッドが `userInfo` オブジェクト内に返した値が、モバイルアプリによって自動代入される特別な変数であることを示します。 これらの変数は、`userInfo` オブジェクト内にカスタムプロパティ名として存在する必要があります。
 
-Here is how it works:
+この仕組みは次の通りです:
 
-1. モバイルアプリがデータリクエストを送信すると、`On Mobile App Authentication` データベースメソッドが自動的に呼び出され、アプリからの情報を*$1* オブジェクト型引数に受け取られます。具体的には`email` 情報に加え、`device` または`language` も返されます。
-2. データベースメソッドは4Dデータストアをクエリしてビジネスルールに則った適切な情報を取得し、`userInfo` オブジェクト内のカスタムプロパティに任意の値を返すことができます。 例:
+1. モバイルアプリがデータリクエストを送信すると、`On Mobile App Authentication` データベースメソッドが自動的に呼び出され、アプリの情報を *$1* オブジェクト型引数として受け取ります。具体的には `email` のほか、`device` や `language` が返されます。
+2. データベースメソッドは 4Dデータストアをクエリしてビジネスルールに則った適切な情報を取得し、`userInfo` オブジェクト内のカスタムプロパティに任意の値を返すことができます。 例:
 
 ```4d
 $id:=ds.Salesperson.query("email == :1";$1.email).first().id 
-    //email の情報元に営業部の担当者のidの値を取得
+    // email の情報をもとに営業担当者の id の値を取得します
 If($id#null)
-    $Obj_response.userInfo:=New object("id";$id) //返すuserInfo 内にidを保存
+    $Obj_response.userInfo:=New object("id";$id) // 戻り値の userInfo 内に id を保存します
 End if  
 ...
 $0:=$Obj_response
 ```
-3. モバイルアプリは、`userInfo` オブジェクトをユーザーごとに自動的に管理します。 この例では、返されたオブジェクト内にカスタムの"id"プロパティが格納されています。 そのため、"Customers"テーブルのフィルタークエリ同様、以下のように書くことができます。
+3. モバイルアプリは、`userInfo` オブジェクトをユーザーごとに自動的に管理します。 この例では、返されたオブジェクト内にカスタムの "id" プロパティが格納されています。 そのため、"Customers" テーブルのフィルタークエリとして以下のように書くことができます:
 
 ```4d
 salespersonid = :id
 ```
 
-When the mobile app will access data from the "Customers" table, only customers belonging to the logged salesperson will be displayed.
+"Customers" テーブルのデータにモバイルアプリがアクセスすると、ログイン中の営業担当者が受け持つ顧客のみが表示されます。
 
 :::Tipsチュートリアル
 
-See the [**Define a filter query**](../tutorials/filter-queries/define-filter-query) tutorial for a complete example of filter query with user info in a mobile app.
+モバイルアプリにおける、ユーザー情報を使ったフィルタークエリの例題については、[**フィルタークエリの定義**](../tutorials/filter-queries/define-filter-query) チュートリアルを参照ください。
 
 :::
 
