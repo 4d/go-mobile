@@ -241,7 +241,7 @@ Zymosian, Elmer
 
 ### On Mobile App Action
 
-[`On Mobile App Action`](../4d/on-mobile-app-action) データベースメソッドは、4Dメソッドを呼び出すのに利用します。
+[`On Mobile App Action`](../4d/on-mobile-app-action.md) データベースメソッドは、4Dメソッドを呼び出すのに利用します。
 
 すべてのアクションを作成したあと、アクションテーブル右下の **作成...** ボタンをクリックすると、作成した全アクション名を含んだ *Case of* コードブロックが *On Mobile App Action* メソッド内に自動生成されます。
 
