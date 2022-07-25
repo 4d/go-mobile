@@ -5,52 +5,52 @@ title: アクション
 
 このセクションでは以下のような内容を取り扱います:
 
-* 4DのコードをiOS アプリから実行するアクションを作成する
-* アクションに渡す引数を定義して渡す
+* iOSアプリから 4Dコードを実行するアクションの作成
+* アクションに渡す引数の定義と追加
 
 
-## プロジェクトエディター側での設定
+## プロジェクトエディター側の設定
 
 ### アクションを作成する
 
-アクションテーブルの下部にある + ボタンをクリックすることで、新しいアクションを作成できます。 クリックするとアクションテーブル内に新しい行が追加されます。
+新しいアクションを作成するには、アクションテーブルの下部にある + ボタンをクリックします。 すると、アクションテーブルに新しい行が追加されます。
 
 次に、以下のものを定義する必要があります:
 
-* **Names:** The action name to use in the [On Mobile App Action](https://doc4d.github.io/go-mobile/docs/next/4d-language/on-mobile-app-action-database-method) database method to trigger your 4D code.
-* **アイコン:** アイコンライブラリーからアイコンを選択して下さい。 またこちらの[tutorial]`(using-icons.html)`に従うことで、独自のアイコンを追加することもできます。
-* **短いラベルと長いラベル:** アプリ内で表示されるアクションのラベル
-* **テーブル:** アクションを適用したいテーブル
-* **スコープ:** アクションを使用する対象を決めます。**カレントエンティティ** または **テーブル**
+* **名前:** [On Mobile App Action](#on-mobile-app-action) データベースメソッド内で 4Dコードをトリガーするのに使用するアクションの名前
+* **アイコン:** アイコンライブラリーから選択するアイコン。 またこちらの [チュートリアル]`(using-icons.html)` を参考に、独自のアイコンを追加することもできます。
+* **短いラベルとラベル:** アプリに表示するアクションのラベル
+* **テーブル:** アクションを適用するテーブル
+* **スコープ:** アクションの定期用対象: **カレントエンティティ** または **テーブル**
 
 ![Action section](img/Actions-section-4D-for-iOS.png)
 
-:::note 注意
+:::note notes
 
-You can sort the **Names** with a drag-and-drop. This operation will set the order in which they will appear in the app's menu.
+**名前** をドラッグ＆ドロップして並べ替えることができます。 これにより、アプリのメニューに表示される順番が指定されます。
 
 :::
 
 ### アクションに引数を追加
 
-**アクション引数** を追加することでアプリから直接データを**編集**することができます。
+**アクション引数** を追加することで、アプリからデータを直接 **編集** することができます。
 
 それぞれの引数について、以下のプロパティを設定することができます:
 
 * 名前
-* (長い)ラベル
+* (長い) ラベル
 * 短いラベル
 * フォーマット
-* 入力制限(最小値または最大値を定義可能)
+* 入力制限 (最小値または最大値の定義)
 * プレースホルダー
 * 必須フィールド定義
 * デフォルト値
 
 ![Action parameters](img/Actions-parameters-4D-for-iOS.png)
 
-ドラッグ&ドロップを使用して引数の順番を自由に変えることもできます。
+引数の順番はドラッグ＆ドロップで自由に変えられます。
 
-引数に対して選択できる**フォーマット**の種類は以下の通りです:
+引数に対して選択できる **フォーマット** の種類は以下の通りです:
 
 <table>
 
@@ -61,21 +61,21 @@ You can sort the **Names** with a drag-and-drop. This operation will set the ord
 </tr><tr>
 <td>テキスト</td><td>文字列の頭文字を大文字にします。</td>
 </tr><tr>
-<td>メールアドレス</td><td>メールアドレス入力用に最適化されたiOSキーボード</td>
+<td>メールアドレス</td><td>メールアドレス入力用に最適化された iOSキーボード</td>
 </tr><tr>
-<td>電話番号</td><td>電話番号入力用のiOSキーパッド</td>
+<td>電話番号</td><td>電話番号入力用の iOSキーパッド</td>
 </tr><tr>
-<td>アカウント</td><td>ユーザー名入力用に最適化されたiOSキーボード</td>
+<td>アカウント</td><td>ユーザー名入力用に最適化された iOSキーボード</td>
 </tr><tr>
-<td>パスワード</td><td>パスワードを管理するのに最適化されます。</td>
+<td>パスワード</td><td>パスワードの管理に最適化されています。</td>
 </tr><tr>
-<td>URL</td><td>URL入力に最適化されたiOSキーボード</td>
+<td>URL</td><td>URL入力に最適化された iOSキーボード</td>
 </tr><tr>
-<td>郵便番号</td><td>郵便番号入力に最適化されたiOSキーボード</td>
+<td>郵便番号</td><td>郵便番号入力に最適化された iOSキーボード</td>
 </tr><tr>
 <td>テキストエリア</td><td>単一フィールド内に複数行のテキストを格納できます。</td>
 </tr><tr>
-<td>バーコード</td><td>バーコードに割り当てられた値を取り出します。 サポートされてるフォーマット : EAN8、EAN13、Code 39、Code 93、Code 128、QRコード、UPC、PDF417</td>
+<td>バーコード</td><td>バーコードに割り当てられた値を取り出します。 サポートされてるフォーマット: EAN8、EAN13、Code 39、Code 93、Code 128、QRコード、UPC、PDF417</td>
 </tr>
 <tr>
 <td colspan="2"></td>
@@ -94,7 +94,7 @@ You can sort the **Names** with a drag-and-drop. This operation will set the ord
 </tr><tr>
 <td>パーセント</td><td>パーセント表記</td>
 </tr><tr>
-<td>文字列化</td><td>数値を文字列へと変換</td>
+<td>読み方</td><td>数値を文字列へと変換</td>
 </tr>
 <tr>
 <td colspan="2"></td>
@@ -151,9 +151,9 @@ You can sort the **Names** with a drag-and-drop. This operation will set the ord
 
 </table>
 
-## 定義済みアクション
+## プリセットアクション
 
-4D mobile プロジェクトにはアプリの中身を管理するための、以下の(定義済み)アクションが含まれています:
+4Dモバイルプロジェクトには、アプリのコンテンツを管理するための、以下のプリセット (定義済み) アクションが含まれています:
 
 * 編集
 * 追加
@@ -163,58 +163,58 @@ You can sort the **Names** with a drag-and-drop. This operation will set the ord
 
 ### 追加アクション
 
-4D モバイルプロジェクトでは、容易かつシンプルに**追加アクション** を作成することができます。
+4Dモバイルプロジェクトで **追加アクション** を作成するのは簡単です。
 
-必要なことは、アクションテーブルの下部にある**+ ボタン** をクリックすると表示される**追加アクション** オプションを選択するだけです。
+まず、アクションテーブルの下にある **+ ボタン** をクリックすると表示される **追加アクション** オプションを選択します。
 
 ![Add actions](img/Actions-Add-action-4D-for-iOS.png)
 
-そしてその追加アクションにリンクしたい**テーブルを選択** するだけです。
+次に、その追加アクションをリンクする **テーブルを選択** するだけです。
 
-これによって、必要な引数が全てプロジェクトエディター内にて**自動的に追加されます** 。 生成されたアプリ内では、このボタンによってそれぞれのフィールドの値を編集することができます。
+これによって、プロジェクトエディター内に必要な引数がすべて **自動的に作成** されます。 生成されたアプリ内では、各フィールド値の編集ができるようになります。
 
-これらの種類のアクションにおいては、アクション引数リストの右側にある**プロパティ** が全て必要な分が既に入力されていることが分かります。
+この種のアクションの場合、引数リストの右側にある **プロパティ** は自動で設定済みです。
 
 
 ### 編集アクション
 
-**編集アクション** の作成の手順は追加アクションのものと同じプロセスですが、アクションセクションからはデフォルト値を定義することができないという点だけが異なります。
+**編集アクション** の作成手順は追加アクションと同じですが、引数のデフォルト値が定義できない点が異なります。
 
 
 
 ### 削除アクション
 
-**削除アクション** の作成の手順は編集アクションのものと同じプロセスです。 唯一の違いは、このアクションを使用するとエンティティを削除することができるという点です。
+**削除アクション** の作成手順は編集アクションと同じです。 唯一の違いは、このアクションを使用するとエンティティを削除できるという点です。
 
-削除アクションを作成するには、アクションテーブルの下部にある**+ ボタン** をクリックすると表示される**削除アクション** オプションを選択します。
+削除アクションを作成するには、アクションテーブルの下にある **+ ボタン** をクリックすると表示される **削除アクション** オプションを選択します。
 
-この種類のアクションは使用に際して注意が必要です。
+この種のアクションは使用の際に注意が必要です。
 
 ![Delete actions](img/Actions-Delete-action-4D-for-iOS.png)
 
 ### 共有アクション
 
-**共有アクション** を選択すると、モバイルアプリのユーザーがコンテンツを他のユーザーと共有することができるようになります。 このアクションではスコープを選択する必要があります:
+**共有アクション** を選択すると、モバイルアプリのユーザーが他のユーザーとコンテンツを共有できるようになります。 これには、スコープを選択する必要があります:
 
 - **エンティティ**: 詳細フォームのコンテンツを共有する
 - **テーブル**: リストフォームを共有する
 
-詳細については[ディープリンキング](../special-features/deep-linking.md)のページを参照してください。
+詳細については [ディープリンク](../special-features/deep-linking.md) を参照ください。
 
 ### ソートアクション
 
-**ソートアクション**は以下のような目的のために有用です:
+**ソートアクション** は以下のような目的に使います:
 
 - テーブルのリストフォームのデフォルトのソート順を定義する
 - モバイルアプリのユーザーがリストのソート順を選択できるようにする
 
-テーブルに対して並べ替えアクションを作成した場合、ソートが実行される最初のフィールドを選択する必要があります:
+テーブルに対してソートアクションを作成した場合、並べ替え基準となる最初のフィールドを選択する必要があります:
 
 ![Docusaurus](img/sort-select.png)
 
-フィールドはソート条件リストに追加されます。 デフォルトでは昇順のソート順が適用されますが、**ソート順** メニューを使用することでそれを変更することができます。
+このフィールドはソート条件リストに追加されます。 デフォルトでは昇順ソートが適用されますが、これは **ソート順** メニューで変更できます。
 
-エンティティのソートは複数のフィールドに対して行うことが可能です。 ソートを行うそれぞれのフィールドはソートレベルと呼ばれます。 例えば、`lastName` および `firstName` フィールドに対して2レベルの昇順ソートを行なった場合、結果は以下のような並び順になります:
+エンティティの並べ替えは、複数フィールドを基準におこなえます。 ソートの基準となる各フィールドはソートレベルと呼ばれます。 たとえば、`lastName` および `firstName` フィールドに対して 2レベルの昇順ソートをおこなった場合、結果は以下のようになります:
 
 ```4d
 Aardvark, Anthony
@@ -225,37 +225,37 @@ Zygote, Elena
 Zymosian, Elmer
 ```
 
-ソート条件リストに1つ以上のソートレベルを追加するには、リスト下部の**+** ボタンを選択し、それぞれのレベルに対して設定を行います:
+ソート条件リストにソートレベルを追加するには、リスト下部の **+** ボタンをクリックし、各レベルを設定します:
 
 ![sort](img/ascending.png)
 
 
 #### モバイルアプリ上でのソート順メニュー
 
-あるテーブルに対して1つ以上のソートアクションを定義していた場合、モバイルアプリのユーザーは自動的に**ソート** メニューを使用できるようになります。 ここには定義済みソートアクションが全て格納されています:
+テーブルに対して 2つ以上のソートアクションを定義していた場合、モバイルアプリのユーザーは **ソート** メニューを自動的に使用できるようになります。 ここには定義済みのソートアクションがすべて格納されています:
 
 ![sort](img/sort-go-mobile.gif)
 
 
-> テーブルに対してソートアクションが一つしか定義されていない場合、モバイルアプリ側では**ソート** メニューは表示されません。
+> テーブルに対するソートアクションが 1つしか定義されていない場合、モバイルアプリ側では **ソート** メニューは表示されません。
 
 ### On Mobile App Action
 
-The [`On Mobile App Action`](../4d/on-mobile-app-action) database method is available to call all of your 4D methods.
+[`On Mobile App Action`](../4d/on-mobile-app-action.md) データベースメソッドは、4Dメソッドを呼び出すのに利用します。
 
-After creating all of your actions, just click on the **Create** button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
+すべてのアクションを作成したあと、アクションテーブル右下の **作成...** ボタンをクリックすると、作成した全アクション名を含んだ *Case of* コードブロックが *On Mobile App Action* メソッド内に自動生成されます。
 
-:::note 注意
+:::note notes
 
-- You can refresh the selection after executing an action using `$result.dataSynchro:=True`.
-- You can notify the app user when action has been executed using `$result.statusText:="Message you want to display"`.
-- You can also decide to force close the Edition form using `$result.close:=True`.
+- `$result.dataSynchro:=True` というコードをアクション実行後に使用することで、セレクションを更新することができます。
+- `$result.statusText:="表示したいメッセージ"` というコードを使用することで、アクション実行時にアプリユーザーに対して通知をすることができます。
+- `$result.close:=True` というコードを使用することで、編集フォームを強制的に閉じることもできます。
 
 :::
 
 ## アクション入力コントロール
 
-### キャラリーからカスタム入力を使用する方法
+### ギャラリーのカスタム入力を使用する方法
 
 カスタムの入力コントロールを使用することで、ネイティブのアプリと容易にやりとりをすることができます。これはネイティブコードを使用した[ラベル & アイコン カスタムフォーマッター](labels-and-icons.md) と同じやり方を踏襲しています。
 
@@ -366,7 +366,7 @@ After creating all of your actions, just click on the **Create** button from the
 
 **注意:** 入力コントロールは"入力コントロール" フィールドの横にある矢印を使用してアクセスすることができます。
 
-## Offline mode actions
+## オフラインモードアクション
 
 The user of an app can draft, store and queue action requests, even if he’s working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.).  All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
 
@@ -384,7 +384,7 @@ They display all the tasks related to the table or to the entity that you are cu
 
 ![Action section](img/screen2.png)
 
-:::note 注意
+:::note notes
 
 - The "Share" predefined action is only executable online
 - Actions are editable while pending, but they can no longer be modified once they switch to the "Completed" mode.
