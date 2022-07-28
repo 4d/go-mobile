@@ -49,7 +49,7 @@ A sharing button is directly accessible at the bottom of the template Gallery pi
 
 All the sharing process is detailed on the contribution page for you to help you in the sharing process and where good proctices are described.
 
-## Where to go from here?
+## これからどうする？
 
 You could try following the [contribution guide](https://github.com/4d-go-mobile/gallery/blob/master/.github/CONTRIBUTING.md#how-do-you-add-a-package) to share your templates in github and make them appear in the project editor.
 
