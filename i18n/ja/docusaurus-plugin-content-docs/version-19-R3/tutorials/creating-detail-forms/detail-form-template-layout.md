@@ -333,7 +333,7 @@ In our detail form template we used `app:imageUrl="__IMAGE_1__"`
 Here we suppose the ImageView is the first view in the svg, and its view ID is `__SPECIFIC_ID_1__`. If it would be the third view, it would be `__IMAGE_3__` and its view ID would be `__SPECIFIC_ID_3__`.
 
 
-## Where to go from here?
+## これからどうする？
 
 In this tutorial, we've covered the basics for creating detail form templates. You can now create simple templates on your own using the Starter Project resources. Download the completed template folder:
 
