@@ -260,7 +260,7 @@ Field View 2を選択し，下記のように設定します。
 
 ![カスタムテンプレート（完成）](img/custom-template-final-result.png)
 
-## Where to go from here?
+## これからどうする？
 
 In this tutorial, we've covered the basics for creating detail form templates. You can now create simple templates on your own using the Starter project resources.
 
