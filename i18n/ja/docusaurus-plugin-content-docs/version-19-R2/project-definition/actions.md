@@ -45,7 +45,7 @@ title: アクション
 * 必須フィールド定義
 * デフォルト値
 
-![Action parameters](img/Actions-parameters-4D-for-iOS.png)
+![アクション引数](img/Actions-parameters-4D-for-iOS.png)
 
 引数の順番はドラッグ＆ドロップで自由に変えられます。
 
@@ -166,7 +166,7 @@ title: アクション
 
 まず、アクションテーブルの下にある **+ ボタン** をクリックすると表示される **追加アクション** オプションを選択します。
 
-![Add actions](img/Actions-Add-action-4D-for-iOS.png)
+![追加アクション](img/Actions-Add-action-4D-for-iOS.png)
 
 次に、その追加アクションをリンクする **テーブルを選択** するだけです。
 
@@ -189,7 +189,7 @@ title: アクション
 
 この種のアクションは使用の際に注意が必要です。
 
-![Delete actions](img/Actions-Delete-action-4D-for-iOS.png)
+![削除アクション](img/Actions-Delete-action-4D-for-iOS.png)
 
 ### 共有アクション
 
@@ -226,14 +226,14 @@ Zymosian, Elmer
 
 ソート条件リストにソートレベルを追加するには、リスト下部の **+** ボタンをクリックし、各レベルを設定します:
 
-![sort](img/ascending.png)
+![ソート](img/ascending.png)
 
 
 #### モバイルアプリ上でのソート順メニュー
 
 テーブルに対して 2つ以上のソートアクションを定義していた場合、モバイルアプリのユーザーは **ソート** メニューを自動的に使用できるようになります。 ここには定義済みのソートアクションがすべて格納されています:
 
-![sort](img/sort-go-mobile.gif)
+![ソート](img/sort-go-mobile.gif)
 
 
 > テーブルに対するソートアクションが 1つしか定義されていない場合、モバイルアプリ側では **ソート** メニューは表示されません。
@@ -254,102 +254,103 @@ Zymosian, Elmer
 
 ## オフラインモードアクション
 
-The user of an app can draft, store and queue action requests, even if he’s working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.).  All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
+アプリのユーザーはオフライン中でも、アクションリクエストを作成・保存・キューすることが可能です (たとえば、顧客電話番号の追加、写真のアップロード、請求書や見積書の印刷、アドレスの削除など)。  これらのタスクはすべて、ネットワークにアクセスできるようになるまで、保留中アクションのリストに置かれます。 ユーザーがオンラインになると、保留中のアクションはすべて同期され、実行された後、完了したアクションのリストに表示されます。
 
-Pending tasks can be visualized and opened from:
+保留中のタスクは以下にて確認し、開くことができます:
 
-•   *The Settings screen*
+•   *設定画面*
 
-It displays a summary and a history of all pending and completed tasks.
+保留中のタスクや完了したタスクの概要と履歴が表示されます。
 
 ![Action section](img/screen1.png)
 
-•   *The List & Detail forms*
+•   *リスト & 詳細フォーム*
 
-They display all the tasks related to the table or to the entity that you are currently viewing.
+現在閲覧しているテーブルやエンティティに関連するすべてのタスクが表示されます。
 
 ![Action section](img/screen2.png)
 
 :::note notes
 
-- The "Share" predefined action is only executable online
-- Actions are editable while pending, but they can no longer be modified once they switch to the "Completed" mode.
+- プリセットの "共有" アクションは、オンラインでのみ実行可能です。
+- アクションは保留中の間は編集可能ですが、"完了" モードに切り替わると、修正できなくなります。
 
 :::
 
-### Update pending tasks that failed
+### 失敗した保留タスクの更新
 
-Due to your server business logic, some tasks could be rejected. For mobile users, it is then possible to edit and to retry sending the relevant pending tasks. To do so, you can display a status text describing, in the "Complete" actions history, the reason of the failure. For example, you can reject an action sent by a mobile user to the server and inform him that the operation has failed. In that case, you can set the `success` value to `False` and provide a message in `statusText`, as follows:
+サーバーのビジネスロジックにより、一部のタスクが拒否されることがあります。 それらの保留タスクを編集後、モバイルユーザーは送信を再試行できます。 そのために、"完了" アクションの履歴にて、失敗の理由を説明するステータステキストを確認できます。 たとえば、モバイルユーザーがサーバーに送信したアクションを拒否し、操作に失敗したことを通知することができます。 その場合、以下のように `success` の値を `False` に設定し、 `statusText` にメッセージを設定することができます:
 
  ```4d
- $response:=New object("success"; False; "statusText"; "Operation failed"))
+ $response:=New object("success"; False; "statusText"; "操作に失敗しました"))
  ```
- You can even add some errors by action parameters for the `alphaField` parameter, for example:
+ アクション引数ごとのエラーを追加することもできます。たとえば、`alphaField` 引数について:
 
   ```4d
-$response.errors:=New collection(New object("parameter"; "alphaField"; "message"; "Alpha field must contains a valide value")
+$response.errors:=New collection(New object("parameter"; "alphaField"; "message"; "Alpha フィールドの値が無効です")
   ```
 
 
-## iOS app Side
+## iOSアプリ側
 
-In your iOS app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section.
+iOSアプリでは、フォームセクションで選択したテンプレートに応じて、リストおよび詳細フォームで様々にアクションを利用できます。
 
-### Table List forms
+### テーブルリストフォーム
 
-* **Entity action:** Swipe left on a cell to display the available actions in a List form. A "More" button is displayed if you've defined more than three actions per entity.
+* **エンティティアクション:** セルを左にスワイプすると、利用可能なアクションがリスト形式で表示されます。 3つより多い数のアクションがエンティティに定義されている場合、"..." ボタンが表示されます。
 
-![Entity Lisform Tableview](img/ListForm-entity-action-tableview.png)
+![エンティティリストフォームテーブルビュー](img/ListForm-entity-action-tableview.png)
 
-* **Table actions:** A generic actions button is available in the navigation bar to display a list of available table actions.
+* **テーブルアクション:** 利用可能なテーブルアクションのリストを表示するために、ナビゲーションバーに汎用的なアクションボタンが用意されています。
 
-![Table Listform Tableview](img/ListForm-table-action-tableview.png)
+![テーブルリストフォームテーブルビュー](img/ListForm-table-action-tableview.png)
 
 :::ヒント
 
-Actions will be displayed in the same order as defined in the Action section.
+アクションは、アクションセクションで定義された順序で表示されます。
 
 :::
 
-### Collection List forms
+### コレクションリストフォーム
 
-* **Entity action:** Depending on the template, actions are displayed by clicking on a generic button or by maintaing the pressure on a cell.
+* **エンティティアクション:** テンプレートによって、汎用ボタンをクリックするか、セル上で長押しすることでアクションが表示されます。
 
-![Entity Listform Collectionview](img/ListForm-entity-action-collectionview.png)
+![エンティティリストフォームコレクションビュー](img/ListForm-entity-action-collectionview.png)
 
-* **Table actions:** Like the Table List forms, a generic Actions button is available in the navigation bar to display a list of availble table actions.
+* **テーブルアクション:** テーブルリストフォームと同様に、利用可能なテーブルアクションのリストを表示するため、ナビゲーションバーに汎用的なアクションボタンが用意されています。
 
-![Table Listform Collectionview](img/ListForm-table-action-collectionview.png)
+![テーブルリストフォームコレクションビュー](img/ListForm-table-action-collectionview.png)
 
 ### 詳細フォーム
 
-As with Table actions in List forms, a generic Actions button is available in the navigation bar to display all your entity actions in a list.
+リストフォームのテーブルアクションと同様に、ナビゲーションバーに汎用的なアクションボタンがあり、すべてのエンティティアクションをリスト表示することができます。
 
-![Entity Detailform](img/Detailform-final.png)
+![エンティティ詳細フォーム](img/Detailform-final.png)
 
-### Edition forms
+### 編集フォーム
 
-If you have created an Edit or an Add action, as soon as you select it from the action list, an **Edition form** will appear.
+編集または追加アクションを作成した場合、アクションリストからそれらを選択すると、**編集フォーム** が表示されます。
 
 ![Send task comment](img/Action-parameters-sendComment.png)
 
-From here, you can:
+ここでは:
 
-* edit all of your fields by selecting them, and
-* validate or cancel your modifications using the **Done** or **Cancel** buttons (available in the navigation bar).
+* すべてのフィールドを選択して編集できます。
+* **Done** または **Cancel** ボタン (ナビゲーションバーで利用可能) を使用して、変更内容を確定またはキャンセルします。
 
-For your convenience, the Edition form includes a few **special features**:
+利便性のため、編集フォームにはいくつかの **特別な機能** が含まれています:
 
-* The keyboard type depends on the selected parameter type in the Action section.
-* You can go to the next or previous field using the arrow on top of the keyboard.
-* The iOS keyboard can be closed by touching anywhere outside of a field.
-* Indication is given to the user when a value is not valid.
-* The view focuses on empty mandatory fields when the user clicks the Done button.
+* キーボードのタイプは、アクションセクションで選択されたパラメーターに依存します。
+* キーボード上部の矢印で、次のフィールドや前のフィールドに移動することができます。
+* iOSキーボードは、フィールドの外をタッチすることで、閉じることができます。
+* 値が有効でない場合、ユーザーに表示されます。
+* ユーザーが Done ボタンをクリックしたときに空の必須フィールドがあれば、それに焦点が当たります。
 
-## Where to go from here?
+## これからどうする？
 
-* A [tutorial]`(actions-getting-started.html)` is available to guide you through the **action definition process**.
-
-* Another [tutorial]`(action-custom-template.html)` will guide you through the **action TAG integration** for custom templates.
-
-* A final [tutorial]`(action-parameters.html)` will guide you through the **action parameters definition**.
+* **アクション定義の仕方** について説明した
+チュートリアル</code> があります。</p></li> 
+  
+  * カスタムテンプレートを作成するための **アクションタグの統合** について説明した チュートリアル</code> もあります。</p></li> 
+  
+  * こちらの チュートリアル</code> では **アクション引数の定義** について説明しています。</p></li> </ul>
