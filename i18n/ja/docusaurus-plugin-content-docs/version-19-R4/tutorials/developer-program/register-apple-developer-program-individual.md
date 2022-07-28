@@ -46,13 +46,13 @@ Go the the [Apple ID creation page](https://appleid.apple.com/)
 
 * Click on the **Start your Enrollment** button.
 * Select **Individuals / Sole Proprietor / Single Person Business** from the Entity Type dropdown list.
-* Click **Continue**.
+* **続ける** をクリックします。
 
 ![Start your Enrollment](img/Apple-Developer-Program-Individuals-4D-for-iOS.png)
 
 * Complete the form
 * Read and accept the Apple Developer Program License Agreement.
-* Click **Continue**.
+* **続ける** をクリックします。
 
 ![⒌ ⒌ ⒌ Enroll as an individual](img/Apple-Developer-Program-Enrollment-4D-for-iOS.png)
 
