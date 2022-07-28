@@ -13,7 +13,7 @@ title: カスタムのデータフォーマッター
 
 このチュートリアルでは、様々なフォーマッターの例を作成していくことを案内していきます。
 
-## ⒈ ⒈ ⒈ スタータープロジェクトをダウンロードする
+## スタータープロジェクトをダウンロード
 
 To begin, download the **Starter project**, which includes:
 
@@ -22,7 +22,7 @@ To begin, download the **Starter project**, which includes:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">スタータープロジェクト</a>
 </div>
 
 これでフォーマッターを作成する準備が整いました！
