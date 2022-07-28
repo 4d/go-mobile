@@ -1,23 +1,23 @@
 ---
 id: structure
-title: ストラクチャ
+title: ストラクチャー
 ---
 
-このページでは、4Dデータベース内でREST リソースとして公開されている全てのテーブルとフィールドが表示されます。これには(N対1および1対Nリレーションに基づいた) リレーション属性も含まれます。 実際の表示は、[ORDA のデータストア](https://developer.4d.com/docs/ja/ORDA/overview.html) にとても近いものが表示されます。
+4Dデータベース内で RESTリソースとして公開されているすべてのテーブルとフィールドがこのページに表示されます。これには (N対1 および 1対N リレーションに基づいた) リレーション属性も含まれます。 実際の表示は、[ORDA のデータストア](https://developer.4d.com/docs/ja/ORDA/overview.html) にとても近いものが表示されます。
 
 ![ストラクチャセクション](img/Structure-section-4D-for-iOS.png)
 
 
-このページを使用すると、公開したい特定のテーブルおよびフィールドを選択することにより、実際のストラクチャーからモバイルデバイスに複製したいサブセットを定義することができます。
+このページでは、公開するテーブルおよびフィールドを選択することにより、モバイルデバイス用に複製するストラクチャーのサブセットを定義することができます。
 
-- 公開されているテーブルは自動的にアプリのタブとして追加されます。
-- 公開されているスカラー値のフィールドは[リストフォームおよび詳細フォーム](https://developer.4d.com/go-mobile/docs/project-definition/forms/) を定義する際に利用できます。
-- 公開されているリレーションフィールド(N対1および1対Nリレーション)も、[リストフォームおよび詳細フォーム](https://developer.4d.com/go-mobile/docs/project-definition/forms/) を定義する際に利用でき、リレーションボタンといった追加のナビゲーション機能もついてきます。
+- 公開テーブルはアプリのタブとして自動的に追加されます。
+- 公開されたスカラーフィールドは[リストフォームおよび詳細フォーム](https://developer.4d.com/go-mobile/docs/project-definition/forms/) を定義する際に利用できます。
+- 公開されたリレーションフィールド (N対1 および 1対N リレーション) も、[リストフォームおよび詳細フォーム](https://developer.4d.com/go-mobile/docs/project-definition/forms/) を定義する際に利用でき、リレーションボタンといった追加のナビゲーション機能もついてきます。
 
 
 :::note
 
-以下のテーブルとフィールドはこのページには表示されません。
+以下のテーブルとフィールドはこのページには表示されません:
 
 - [ORDA ルール](https://developer.4d.com/docs/ja/ORDA/dsmapping.html#%E3%82%B9%E3%83%88%E3%83%A9%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0) に則っていないテーブルやフィールド。
 - "`__`" (ダブルアンダースコア) で始まる名前を持つテーブルやフィールド。
@@ -32,43 +32,43 @@ title: ストラクチャ
 
 ## 公開するテーブルとフィールドを選択する
 
-A table is published when at least one of its fields is published. When a table is published, it is displayed in **bold**.
+テーブルに属するフィールドが 1つ以上公開されると、そのテーブルも公開されます。 公開されたテーブルは **太字** で表示されます。
 
-To select a field to publish, click on a table name then click on the field in the rightmost list. You can also:
+公開するフィールドを選択するには、テーブル名をクリックし、右のリストでフィールドをクリックします。 または:
 
-- **スペースバー** を押すことでフィールドを選択/選択解除することができます。
-- **Ctrl+クリック** を使用することで全てのフィールドを選択することができます。
-- フィールド一覧の**公開** および **全て公開** ローカルメニューを使用して公開することができます。
+- **スペースバー** を押すと、フィールドを選択/選択解除できます。
+- **Ctrl+クリック** でフィールドを全選択できます。
+- フィールドリストの **公開** および **全て公開** ローカルメニューを使用できます。
 
 
 ### リストのフィルタリング
 
-When a list has the focus, you can filter its contents using the Search area and a local menu:
+リストにフォーカスがある場合、検索エリアとローカルメニューを使用して、内容を絞り込むことができます。
 
-![Filter](img/filter.png)
+![フィルター](img/filter.png)
 
-- **検索** エリア: テーブル名またはフィールド名内で検索したい文字を入力します。
+- **検索** エリア: テーブル名またはフィールド名を検索する文字列を入力します。
 - **テーブル名でソート**/**フィールド名でソート**: 名前順でリストをソートします。 デフォルトでは、リストは作成日順にソートされています。
-- **公開テーブルのみ**/**公開フィールドのみ**: 選択されている(公開されている) テーブルまたはフィールドのみを表示します。
+- **公開テーブルのみ**/**公開フィールドのみ**: 選択されている (公開された) テーブルまたはフィールドのみを表示します。
 
 
 ## サポートされるフィールド型
 
-The mobile editor automatically displays the list of fields that are eligible to the mobile app, depending on their type:
+モバイルエディターは、モバイルアプリに使用できるフィールドの一覧を、その種類に応じて自動的に表示します:
 
-![Fields](img/fields.png)
+![フィールド](img/fields.png)
 
 - 全ての[スカラー型の4D フィールド](https://developer.4d.com/docs/ja/Concepts/data-types.html) がサポートされます(ただし [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html) 型を除く)
 - [オブジェクトフィールド](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
-- [Computed attributes](#computed-attributes)
-- [Alias attributes](#alias-attributes) returning **scalar values** (displayed in *italics*).
-- Relation attributes (Many-to-one and One-to-many) are supported and can be selected just as fields. They have specific icons:
-    - Many to one relation icon:  ![relation1](img/manyto1.png)
-    - One to many relation icon: ![relationN](img/1tomany.png)
+- [計算属性](#computed-attributes)
+- **スカラー値** を返す [エイリアス属性](#エイリアス属性) (*イタリック* で表示されます)。
+- リレーション属性 (N対1 および 1対N) はサポートされており、フィールドと同様に選択することができます。 リレーション属性は専用のアイコンを持ちます:
+    - Ｎ対１リレーションアイコン:  ![リレーション1](img/manyto1.png)
+    - １対Ｎリレーションアイコン: ![リレーションN](img/1tomany.png)
 
 :::info
 
-The names are based upon the relation names in the 4D Structure editor, see the [ORDA Structure mapping page](https://developer.4d.com/docs/en/ORDA/dsmapping.html#structure-mapping).
+リレーション属性の名前は 4Dストラクチャーエディターにおけるリレーション名に基づいています。[ORDA ストラクチャーマッピング](http://developer.4d.com/docs/ja/ORDA/dsmapping.html#%E3%82%B9%E3%83%88%E3%83%A9%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0) のページを参照ください。
 
 :::
 
@@ -77,68 +77,68 @@ The names are based upon the relation names in the 4D Structure editor, see the 
 
 ### 1対Nリレーション
 
-You can include **One to Many relations** in your projects and display a list of related fields in a new page of your app.
+**1対Nリレーション** をプロジェクトに含めると、アプリの新しいページにリレートフィールドのリストを表示できます。
 
-All you have to do is:
+そのためには:
 
-* ターゲットテーブル(N側のテーブル) のフィールドが少なくとも1つ公開する
-* ソーステーブル(1側のテーブル) からリレーションを公開する
+* ターゲットテーブル (N側のテーブル) のフィールドを 1つ以上公開します
+* ソーステーブル (1側のテーブル) のリレーション属性を公開します
 
-![Drop relation in detail form](img/Structure-1-to-N-relations-4D-for-iOS.png)
+![詳細フォームにリレーションをドロップ](img/Structure-1-to-N-relations-4D-for-iOS.png)
 
-Then, when your related fields are published, they can be used like any other field. So you will be able to:
+公開されたリレートフィールドは、他のフィールドと同様に使用できます。 つまり、次のことが可能です:
 
-* [ラベル & アイコン](labels-and-icons.md) ページにおいてリレーションプロパティを定義します。
-* [フォーム](forms.md) ページから詳細フォームに1対Nリレーションをドロップし、詳細フォームとリレートされたテーブル間にリンクを作成します。 リレートビューに直接行くためのリレーションボタンが、詳細フォームに自動的に作成されます。
+* [ラベル＆アイコン](labels-and-icons.md) ページにおいてリレーションプロパティを定義できます。
+* [フォーム](forms.md) ページで、詳細フォームに 1対Nリレーションをドロップし、詳細フォームとリレートテーブル間にリンクを作成できます。 すると、リレートビューに直接行くためのリレーションボタンが、詳細フォームに自動的に作成されます。
 
 :::tip Tutorial
 
-See the [**One to Many relations tutorial**](../tutorials/relations/one-to-many-relations) for a detailed example of One to Many relation integration in a mobile project.
+モバイルプロジェクトに 1対Nリレーションを統合する詳細な例については、[**1対Nリレーションのチュートリアル**](../tutorials/relations/one-to-many-relations) を参照ください。
 
 :::
 
 
 ### N対1リレーション
 
-**Many to one relations** can be used like any other field in the app creation process. When you select a Many to One relation in the field list, you can to select which field(s) from the related table to publish in your app:
+**N対1リレーション** は、アプリ作成プロセスにおいて他のフィールドと同様に使用することができます。 フィールドリストで N対1リレーションを選択すると、アプリで公開するフィールドをリレートテーブルから選択できます:
 
-![Publish related tables](img/manyto1-tip.png)
+![リレートテーブルの公開](img/manyto1-tip.png)
 
-You just need to click on the relation name, then select the field(s):
+リレーション名をクリックし、フィールドを選択するだけです:
 
-![Publish related tables](img/manyto1-select.png)
+![リレートテーブルの公開](img/manyto1-select.png)
 
-By default, all eligible fields of the related table are published.
+デフォルトで、リレートテーブルのすべての利用可能フィールドが公開されます。
 
 :::tip Tutorial
 
-See the [**Many to One relations tutorial**](../tutorials/relations/many-to-one-relations) for a detailed example of Many to One relation integration in a mobile project.
+モバイルプロジェクトに N対1リレーションを統合する詳細な例については、[**N対1リレーションのチュートリアル**](../tutorials/relations/many-to-one-relations) を参照ください。
 
 :::
 
 
 ### N対Nリレーション
 
-Using the Structure page, you can publish Many to One and One to Many relations from your parent Many to One relations. It means that you can display Many to Many relations in your app and move directly from a List form to another List form.
+ストラクチャーページを使用して、親の N対1リレーションを介して、子の N対1リレーションおよび 1対Nリレーションを公開することができます。 つまり、アプリ内で N対Nリレーションを表示したり、リストフォームから別のリストフォームに直接移動したりすることができます。
 
 
 :::tip Tutorial
 
-See the [**Relation interactions**](../tutorials/relations/relation-interactions) for a detailed example of Many to One relation integration in a mobile project.
+モバイルプロジェクトに N対Nリレーションを統合する詳細な例については、[**リレーション操作**](../tutorials/relations/relation-interactions) を参照ください。
 
 :::
 
-## Computed attributes
+## 計算属性
 
-Whether you're working on Android or iOS, you can display [**computed attributes**](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#computed-attributes) in your app once it is generated, by configurating them from the project editor. Computed attributes are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section.
+Android でも iOS でも、プロジェクトエディターから設定をすれば、生成されたアプリ内で [**計算属性**](http://developer.4d.com/docs/ja/ORDA/ordaClasses.html#%E8%A8%88%E7%AE%97%E5%B1%9E%E6%80%A7-1) を表示できます。 計算属性とは、複数のフィールドを一つに複合した結果です。 この計算属性は、モバイルアプリ作成時に他のフィールドと同様に使用できます。つまり、ストラクチャーセクションで確認し、公開できるということです。
 
-For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
+たとえば、住所における通りの番号と通りの名称、あるいは氏名における名字と名前のように 2つに分かれた属性を使う代わりに、これらを 1つの属性に纏めて "fullAddress" や "fullName" などと名づけることができます。
 
-The process is actually quite simple!
+やり方は、とても簡単です。
 
-### 4D Side
+### 4D側の準備
 
-In your code, specify the attributes you want to use and the computed attribute you want to get, using the [*Class extends*](https://developer.4d.com/docs/en/Concepts/classes.html#class-extends-classname) and [exposed Function](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows:
+[*Class extends*](https://developer.4d.com/docs/ja/Concepts/classes.html#class-extends-classname) および [exposed Function](https://developer.4d.com/docs/ja/ORDA/ordaClasses.html#%E5%85%AC%E9%96%8Bvs%E9%9D%9E%E5%85%AC%E9%96%8B%E9%96%A2%E6%95%B0) のシンタックスを使って、使用する属性と取得する計算属性を以下のようにコード内で指定します:
 
 ```4d 
 Class extends Entity
@@ -169,64 +169,64 @@ Else
 End if
 ```
 
-### Project editor side
+### プロジェクトエディター側の設定
 
-In the project editor, once the code is written, your computed attributes become available, ready to be published and used as any other field in the creation process:
+4D側でコードが書かれると、プロジェクトエディターでは計算属性が利用可能になり、他のフィールドと同様に公開して使用できるようになります:
 
 
-In the **Structure** panel:
+**ストラクチャー** セクションにおいて:
 
-The `exposed` computed attributes are displayed in the list of attributes of a `dataclass`.
+`exposed` の付いた計算属性は、データクラスの属性リストに表示されます。
 
 ![ストラクチャセクション](img/Structure.png)
 
-In the **Label & Icons** panel (Icons/short and long labels/formats):
+**ラベル & アイコン** セクションにおいて (アイコン / 短いラベル / 長いラベル / フォーマット):
 
-![Labels&icons section](img/labels-and-icons.png)
+![ラベル & アイコンセクション](img/labels-and-icons.png)
 
-In the **Forms** panel:
+**フォーム** セクションにおいて:
 
-The computed attributes present in the data model are, like the fields, available in the list of fields of the Forms panel (list and detail). They behave in the same way as the storage attributes of the datastore.
+データモデルの計算属性は、通常のフィールドと同様に、フォームセクション (リストフォームと詳細フォーム) のフィールドリストで利用可能です。 これらはデータストアのストレージ属性と同じように動作します。
 
 ![Forms section](img/Forms.png)
 
-In the **Data** panel, computed attributes are displayed in the list linked to the "Fields" button of the query filter box.
+**データ** セクションでは、フィルタークエリボックスの "フィールド" ボタンにリンクされているリストに計算属性が表示されます。
 
 :::note 4D for iOS
 
-- Computed attributes can be used with Sort actions.
-- A computed attribute without a setter (readOnly) is not available for an Add or Edit action.
-- When Add or Edit presets actions are created (if the setter is available and if 4D allows it), computed attributes parameters shall be available when linked to a field.
+- 計算属性は、ソートアクションで使用することができます。
+- セッターのない計算属性 (読み取り専用) は、追加または編集アクションで使用できません。
+- プリセットの追加または編集アクションが作成された場合 (セッターが利用可能で、4D がそれを許可している場合)、フィールドにリンクされている計算属性のパラメーターは利用可能です。
 
 :::note 4D for iOS
 
-### Mobile app side
+### モバイルアプリ側
 
-In the generated mobile application, on iOS or Android, both single attributes and computed attributes are displayed.
+生成されたモバイルアプリケーション (iOS または Android) では、単一属性と計算属性の両方が表示されます。
 
-![final app](img/final-app.png)
-
-
-## Alias attributes
-
-On Android or iOS, you can use **scalar** [**alias attributes**](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#alias-attributes) in your mobile app. An alias attribute is built above another attribute of the data model, named *target* attribute. The target attribute can belong to a related dataclass (available through any number of relation levels) or to the same dataclass. An alias attribute stores no data, but the path to its target attribute.
-
-Alias attibutes must be **exposed** to be available to the editor. They are displayed in *italics*.
-
-In mobile projects, only **scalar** alias attributes are supported, which means that the [kind](https://developer.4d.com/docs/en/API/DataClassAttributeClass.html#kind) of the last element of the target attribute path must be "storage". Other kinds are not supported.
+![最終アプリ](img/final-app.png)
 
 
-Scalar alias attributes can be:
+## エイリアス属性
 
-- [selected and published](#selecting-tables-and-fields-to-publish) like standard fields in the structure editor,
-- used to [filter data](../project-definition/data#filter-queries),
-- linked to fields as [parameters](../project-definition/actions#add-parameters-to-your-action) for **add** and **edit** preset actions,
-- used as any other fields in the [Label & Icons section](../project-definition/labels-and-icons),
-- dropped and displayed in [forms](../project-definition/forms).
+Android でも iOS でも、**スカラー** な [**エイリアス属性**](http://developer.4d.com/docs/ja/ORDA/ordaClasses.html#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9%E5%B1%9E%E6%80%A7-1) をモバイルアプリで使用することができます。 エイリアス属性は、*ターゲット* 属性と呼ばれる、データモデルの別の属性を元に定義されます。 ターゲット属性には、リレートデータクラス (リレートレベルは無制限) または同じデータクラスのものを使用できます。 エイリアス属性はデータではなく、ターゲット属性へのパスを格納します。
+
+エディターで利用するには、エイリアス属性は **公開** されている必要があります。 これらは *イタリック* で表示されます。
+
+モバイルプロジェクトでは、 **スカラー** のエイリアス属性のみがサポートされています。つまり、ターゲット属性へのパスの最終要素の [kind](https://developer.4d.com/docs/en/API/DataClassAttributeClass.html#kind) は "storage" である必要があります。 それ以外には対応していません。
+
+
+スカラーのエイリアス属性は:
+
+- ストラクチャーエディターの標準フィールドのように [選択および公開](#公開するテーブルとフィールドを選択する) できます。
+- [データをフィルター](../project-definition/data#フィルタークエリ) するのに使用できます。
+- プリセットの **追加** および **編集** アクションの [引数](../project-definition/actions#アクションに引数を追加) としてフィールドにリンクできます。
+- [ラベル & アイコンセクション](../project-definition/labels-and-icons) にて、他のフィールドと同様に使用できます。
+- [フォーム](../project-definition/forms) にドロップして表示できます
 
 :::caution
 
-Scalar alias attributes **cannot be used** as [parameters for sort actions](../project-definition/actions#sort-action).
+スカラーのエイリアス属性は、[ソートアクションの引数](../project-definition/actions#ソートアクション) として **使用できません**。
 
 :::
 
@@ -299,36 +299,36 @@ Address.email[] = "john@4d.com"
 ```
 
 
-## Incremental reload
+## インクリメンタルリロード (増分更新)
 
-### Allow structure adjustments
+### ストラクチャー編集を許可する
 
-For the best user experience, 4D for iOS and 4D for Android implement an automatic feature for the incremental reload of data. It means that only new, modified or deleted data from the database will be updated to the app. This optimization enhances drastically loading time.
+最高のユーザーエクスペリエンスのため、4D for iOS と 4D for Androidは、データの増分更新用の自動機能を実装しています。 つまり、新規・変更・削除されたデータベースのデータのみがアプリにて更新されます。 この最適化は、読み込み時間を大幅に短縮します。
 
-To enable this optimization, 4D for iOS and 4D for Android need the following structure elements:
+この最適化を可能にするため、4D for iOS と 4D for Android は以下の構造的な要素を必要とします:
 
-* A `__DeletedRecords` table to store deleted records
-* and `__GlobalStamp` fields to store modification stamps for each published table in your mobile application
+* 削除されたレコードを保存するための `__DeletedRecords` テーブル
+* モバイルアプリケーションの各公開テーブルの変更スタンプを保存する `__GlobalStamp` フィールド
 
-You can let the 4D mobile editor do all the work for you and add the necessary structure elements: just select **Allow 4D to make necessary structure adjustments for an optimized mobile data update** option.
+これらの必要な要素の追加は、4Dモバイルエディターに任せることができます。これには、**4Dが最適化されたモバイルデータ更新のために必要なストラクチャー編集を行うことを許可する** オプションを選択します。
 
 :::note
 
-These optimizations are required for both local and server databases.
+これらの最適化は、ローカルおよびサーバーデータベースの両方で必要です。
 
 :::
 
 ### 下にプルすることで更新する
 
-On the mobile app side, your data is updated each time you launch your app and each time your app goes foreground, to get constant updated data.
+モバイルアプリ側では、アプリを起動する度、またアプリが前面に来る度にデータが更新され、常に最新のデータを取得することができます。
 
-In normal use, simply swipe down from any listform to reload your data.
+通常の使用では、任意のリストフォームを下にスワイプするだけでデータを更新できます。
 
 iPhoneの設定から、アプリのデータをリセットし、アプリに関する情報を探すことができます。
 
 :::note
 
-When an important maintenance operation is performed on the database side (Recover by tag / Restoration / Compacting) a Full reload is necessary on the mobile app. In this case, the admin shall notify mobile app users.
+データベース側で重要なメンテナンス作業 (レコードヘッダーによる修復 / 復元 / 圧縮) をおこなった場合には、モバイルアプリ側でフルリロードが必要です。 この場合は、モバイルアプリの利用者に管理者が通知するものとします。
 
 ::: 
 

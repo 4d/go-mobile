@@ -45,7 +45,7 @@ Request a D-U-N-S Number [here](https://developer.apple.com/enroll/duns-lookup/#
 ![⒋ ⒋ ⒋ Request a D-U-N-S Number](img/DUNS-Number-Organization-4D-for-iOS.png)
 
 * Complete the form.
-* Click **Continue**.
+* **続ける** をクリックします。
 * Check your email for the D-U-N-S Number.
 
 ![⒊ ⒊ ⒊ D-U-N-S Number](img/DUNS-Number-Apple-Mail_4D-for-iOS.png)
@@ -70,12 +70,12 @@ You can register as a developer [here](https://developer.apple.com/programs/ente
 
 * Click on the **Start your Enrollment** button.
 * Select **Company / Organization** from the Entity Type dropdown list.
-* Click **Continue**.
+* **続ける** をクリックします。
 
 ![Apple Developer Program](img/Apple-Developer-Program-Organizations-4D-for-iOS.png)
 
 * Complete the form.
-* Click **Continue**.
+* **続ける** をクリックします。
 
 ![⒎ ⒎ Enroll as an organization](img/Apple-Developer-Program-Enrollment-Organizations-4D-for-iOS.png)
 

@@ -403,7 +403,7 @@ And finally you can delete an entity using the **Delete...** action.
 
 ![Delete task](img/Action-parameters-deleteAction.png)
 
-## ⒏ Where to go from here?
+## ⒏ これからどうする？
 
 おつかれさまでした！ Your Tasks iOS app is now complete and you can now modify your app data direclty from your device and sychronize it with your server!
 

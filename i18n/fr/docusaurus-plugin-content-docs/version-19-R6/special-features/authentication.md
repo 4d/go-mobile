@@ -1,6 +1,6 @@
 ---
 id: authentication
-title: Authentification
+title: Authentication
 ---
 
 

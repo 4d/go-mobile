@@ -36,7 +36,7 @@ First download our Starter project, which contains a database file and ready to 
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomLoginForm/archive/main.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomLoginForm/archive/main.zip">スタータープロジェクト</a>
 </div>
 
 :::info
@@ -278,7 +278,7 @@ Here is the final result :
 
 ![Sign in with QR Code](img/sign-in-with-qr-code.gif)
 
-## ⒎ Where to go from here?
+## ⒎ これからどうする？
 
 The step 2 covers how to include easily any custom login form in your mobile app. So you should now be able just followin this step, to create your own custom login form and use it on your own.
 

@@ -31,7 +31,7 @@ Let's get started by downloading the Starter project:
 href="https://github.com/4d-go-mobile/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">Download</a>
 </div>
 
-## ⒈ ⒈ ⒈ スタータープロジェクトをダウンロードする
+## スタータープロジェクトをダウンロード
 
 To begin, download the **Starter project**, which includes:
 
@@ -39,7 +39,7 @@ To begin, download the **Starter project**, which includes:
 * A **Task Management.4dbase** file (with a ready to use mobile app project)
 
 <div className="center-button">
-<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">Starter project</a>
+<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">スタータープロジェクト</a>
 </div>
 
 これでフォーマッターを作成する準備が整いました！

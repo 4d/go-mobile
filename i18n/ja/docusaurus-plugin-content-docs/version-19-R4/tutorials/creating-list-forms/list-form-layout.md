@@ -373,7 +373,7 @@ In our list form template we used `android:text="__TEXT_2__"` for the title.
 Here we suppose the title is the second view in the svg, and its view ID is `__SPECIFIC_ID_2__`.
 
 
-## Where to go from here?
+## これからどうする？
 
 In this tutorial, we've covered the basics for creating Android list form templates. You are now able to create simple templates on your own using the Starter Project ressources. But wait - there’s more! In the next tutorial, you’ll learn how to build Android detail form templates!
 
