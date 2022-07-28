@@ -46,7 +46,7 @@ title: アクション
 * 必須フィールド定義
 * デフォルト値
 
-![Action parameters](img/Actions-parameters-4D-for-iOS.png)
+![アクション引数](img/Actions-parameters-4D-for-iOS.png)
 
 引数の順番はドラッグ＆ドロップで自由に変えられます。
 
@@ -167,7 +167,7 @@ title: アクション
 
 まず、アクションテーブルの下にある **+ ボタン** をクリックすると表示される **追加アクション** オプションを選択します。
 
-![Add actions](img/Actions-Add-action-4D-for-iOS.png)
+![追加アクション](img/Actions-Add-action-4D-for-iOS.png)
 
 次に、その追加アクションをリンクする **テーブルを選択** するだけです。
 
@@ -190,7 +190,7 @@ title: アクション
 
 この種のアクションは使用の際に注意が必要です。
 
-![Delete actions](img/Actions-Delete-action-4D-for-iOS.png)
+![削除アクション](img/Actions-Delete-action-4D-for-iOS.png)
 
 ### 共有アクション
 
@@ -227,14 +227,14 @@ Zymosian, Elmer
 
 ソート条件リストにソートレベルを追加するには、リスト下部の **+** ボタンをクリックし、各レベルを設定します:
 
-![sort](img/ascending.png)
+![ソート](img/ascending.png)
 
 
 #### モバイルアプリ上でのソート順メニュー
 
 テーブルに対して 2つ以上のソートアクションを定義していた場合、モバイルアプリのユーザーは **ソート** メニューを自動的に使用できるようになります。 ここには定義済みのソートアクションがすべて格納されています:
 
-![sort](img/sort-go-mobile.gif)
+![ソート](img/sort-go-mobile.gif)
 
 
 > テーブルに対するソートアクションが 1つしか定義されていない場合、モバイルアプリ側では **ソート** メニューは表示されません。
@@ -257,30 +257,30 @@ Zymosian, Elmer
 
 ### ギャラリーのカスタム入力を使用する方法
 
-カスタムの入力コントロールを使用することで、ネイティブのアプリと容易にやりとりをすることができます。これはネイティブコードを使用した[ラベル & アイコン カスタムフォーマッター](labels-and-icons.md) と同じやり方を踏襲しています。
+カスタムの入力コントロールを使用することで、ネイティブのアプリと容易にやりとりをすることができます。これはネイティブコードを使用した [ラベル & アイコン カスタムフォーマッター](labels-and-icons.md) と同じやり方を踏襲しています。
 
-これをやるためには、独自の入力コントロールをネイティブコードを使用して作成するか、または私たちの[ギャラリー](https://4d-go-mobile.github.io/gallery/#/type/input-control) から必要な入力コントロールをダウンロードすることもできます。アプリでの用途に応じて選択してください。 これらを特定の“inputControls” フォルダ(`mybase/Resources/mobile/inputControls`) へとドロップし、展開したのち新規に作成したフォルダへとドラッグします。 これによってこれらの入力コントロールはアクションの引数プロパティ内にあるプロジェクトエディターの入力コントロールメニューから利用・選択が可能になります。
+これには、アプリでの用途や必要に応じて、ネイティブコードを使用した入力コントロールを独自に作成するほか、GitHub にて公開されている [ギャラリー](https://4d-go-mobile.github.io/gallery/#/type/input-control) から入力コントロールをダウンロードすることもできます。 解凍したフォルダーは必要に応じて名前を変更し、入力コントロール専用の "inputControls" フォルダー (`mybase/Resources/mobile/inputControls`) に入れます。 するとプロジェクトエディターにて、アクションの引数プロパティ内にある入力コントロールメニューから追加の入力コントロールが利用・選択可能になります。
 
-例えば、モバイルの連絡先リストからクライアントの電話番号を取得したい場合、*phoneContact* 入力コントロールテンプレートを使用することでクライアントの電話番号フィールドを自動的に埋めることが可能になります。
+たとえば、モバイルの連絡先リストから電話番号を取得するには、*phoneContact* 入力コントロールテンプレートを使用することで、電話番号フィールドを自動的に埋めることが可能になります。
 
-![Architecture](img/inputWithSwift.png) ![編集](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png)![Edit screen](img/phoneContactIcon4.png)
+![アーキテクチャー](img/inputWithSwift.png) ![編集](img/phoneContactIcon2.png)![編集画面](img/phoneContactIcon.png)![編集画面](img/phoneContactIcon4.png)
 
-キャラリー内の全ての入力コントロールはオープンソースであり、Github から取得可能です。 自分の入力コントロールを共有したい、あるいは入力コントロールに対するフィードバックをしたい場合、お気軽に[4D Forum](https://discuss.4d.com/) までご投稿ください。
+ギャラリー内の入力コントロールはすべてオープンソースであり、Github から取得可能です。 自分の入力コントロールを共有したい、あるいは入力コントロールに対するフィードバックをしたい場合、お気軽に [4D Forum](https://discuss.4d.com/) までご投稿ください。
 
 ### 入力コントロールセクション
 
-アクション入力コントロールは、モバイルアプリ内でフォーマットされた要素(値、ピクチャーなど) を表示します。 これらの要素はアクションフォーム内に自動的に含まれます。具体的には選択リスト内に含まれ、そこから値を1つ選択し、引数として使用することができます。 これらの選択リストの動作は、静的または動的(ダイナミック) のどちらかを選ぶことができます:
-- **静的** な選択リスト(json 内にハードコードされている定義済み選択肢)は'inputControls' フォルダ(`mybase/Resources/mobile/inputControls`)内に配置されているmanifest.json ファイル内で定義されています。 この選択リストは以下のような複数の要素から定義されています:
+アクション入力コントロールは、モバイルアプリ内でフォーマットされた要素 (値、ピクチャーなど) を表示します。 これらの要素は、アクションフォーム内に自動的に含まれます。具体的には選択リストとして表示され、そこから値を選択し、引数として使用することができます。 これらの選択リストの動作は、静的または動的 (ダイナミック) のどちらかを選ぶことができます:
+- **静的** な選択リスト (json でハードコードされた定義済み選択肢) は 'inputControls' フォルダー (`mybase/Resources/mobile/inputControls`) 内の manifest.json ファイルに定義します。 この選択リストは以下のような複数の要素から定義されています:
 
-| プロパティ               | Type          | 詳細                                                                             |
-| ------------------- | ------------- | ------------------------------------------------------------------------------ |
-| **"name"**          | text          | アクション入力コントロール名                                                                 |
-| オプション **"binding"** | text          | 画像をひもづけるための"imageNamed" (実際の画像はaction formatter フォルダ内の"images" サブフォルダに入れる必要あり) |
-| **"choiceList"**    | オブジェクト        | キー(サーバーに送られるデータ) /値(ユーザーに表示される値) のリストを定義するためのオブジェクトまたはコレクション                   |
-| **"type"**          | テキストまたはコレクション | 入力コントロールの型(text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                   |
-| オプション **"format"**  | text          | インターフェースを選択: push(未定義の場合のデフォルト)/segmented/popover/sheet/picker                 |
+| プロパティ              | Type                | 詳細                                                                           |
+| ------------------ | ------------------- | ---------------------------------------------------------------------------- |
+| **"name"**         | text                | アクション入力コントロール名                                                               |
+| **"binding"** (任意) | text                | 画像を紐付けるための "imageNamed" (実際の画像はアクションフォーマッターフォルダー内の "images" サブフォルダーに入れる必要あり) |
+| **"choiceList"**   | object              | キー (サーバーに送られるデータ) / 値 (ユーザーに表示される値) のリストを定義するためのオブジェクトまたはコレクション              |
+| **"type"**         | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                |
+| **"format"** (任意)  | text                | インターフェースの選択: push (未定義の場合のデフォルト) / segmented / popover / sheet / picker      |
 
-以下は、静的な選択リストとして使用可能な、ある会社の支社の連絡先情報を格納したmanifest.json ファイルの一例です:
+以下は、静的な選択リストとして使用可能な、ある会社の支社の連絡先情報を格納した manifest.json ファイルの一例です:
 ```4d
 {
     "name": "choiceListSheet",
@@ -299,27 +299,27 @@ Zymosian, Elmer
 }
 ```
 
-- **動的(ダイナミック)** 選択リストはデータソースに基づいた選択リストです(選択肢はデータベースのコンテンツに応じて変化します)。 このメソッドを使用すると、ヘルパーモジュールを使用してフォームフィールドに値を入力することで、データを素早く取得することができます。 作成されたリストはモバイルアプリから直接利用可能になるだけではなく、常に更新していくことが可能になります。 manifest.json ファイルには以下のような要素が格納されています:
+- **動的 (ダイナミック)** な選択リストは、データソースに基づいた選択リストです (データベースのコンテンツに応じて選択肢が変化します)。 この方式では、ヘルパーモジュールを使用してフォームフィールドに値を入力することで、データを素早く取得することができます。 モバイルアプリから直接利用可能であるだけでなく、選択リストは常に更新されます。 manifest.json ファイルには、以下のような要素が格納されています:
 
-| プロパティ              | Type          | 詳細                                                                       |
-| ------------------ | ------------- | ------------------------------------------------------------------------ |
-| **"name"**         | text          | 入力コントロール名                                                                |
-| **"choiceList"**   | オブジェクト        | "dataSource" を格納するオブジェクト(以下の表参照)                                         |
-| **"type"**         | テキストまたはコレクション | 入力コントロールの型(text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション             |
-| オプション **"format"** | text          | インターフェースを選択: "push"(未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker" |
+| プロパティ             | Type                | 詳細                                                                        |
+| ----------------- | ------------------- | ------------------------------------------------------------------------- |
+| **"name"**        | text                | 入力コントロール名                                                                 |
+| **"choiceList"**  | object              | "dataSource" を格納するオブジェクト (以下の表参照)                                         |
+| **"type"**        | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション             |
+| **"format"** (任意) | text                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker" |
 
-| プロパティ            |                          | Type                   | 詳細                                                                            |
-| ---------------- | ------------------------ | ---------------------- | ----------------------------------------------------------------------------- |
-| **"dataSource"** |                          | オブジェクト                 | "dataClass"、"field"、そしてオプションの"entityFormat" を格納するオブジェクト。                      |
-|                  | **"dataClass"**          | text                   | テーブル名                                                                         |
-|                  | **"field"**              | text                   | サーバーに送るデータの取得に使用                                                              |
-|                  | オプション **"sort"**         | オブジェクト / コレクション / テキスト | **"field"**(ソート条件/fieldName)、そしてオプションの**"order"** (デフォルトでは昇順ソート順) を格納するオブジェクト |
-|                  | オプション **"search"**       | ブール / 配列               | 検索に使用するフィールドを格納した配列                                                           |
-|                  | オプション **"entityFormat"** | text                   | 表示する値(フォーマットが指定されていない場合、フィールドから取得したデータを使用)                                    |
+| プロパティ            |                         | Type                       | 詳細                                                                         |
+| ---------------- | ----------------------- | -------------------------- | -------------------------------------------------------------------------- |
+| **"dataSource"** |                         | object                     | "dataClass"、"field"、そして任意の "entityFormat" を格納するオブジェクト。                     |
+|                  | **"dataClass"**         | text                       | テーブル名                                                                      |
+|                  | **"field"**             | text                       | サーバーに送るデータの抽出に使用                                                           |
+|                  | **"sort"** (任意)         | object / collection / text | **"field"** (ソート基準 / フィールド名) と、任意の **"order"** (ソート順、デフォルトは昇順) を格納するオブジェクト |
+|                  | **"search"** (任意)       | boolean / array            | 検索に使用するフィールドを格納した配列                                                        |
+|                  | **"entityFormat"** (任意) | text                       | 値の表示用フォーマット (指定されていない場合、フィールドから取得したデータを使用)                                 |
 
-**注意:** 選択リストが長くなった場合、オプションの"search" 要素が利用可能になります。
+**注意:** 選択リストが長くなった場合に、任意の "search" 要素が利用可能になります。
 
-以下が動的な選択リストの一例です:
+動的な選択リストの一例です:
 
 ```4d
 {
@@ -340,130 +340,130 @@ Zymosian, Elmer
 }
 ```
 
-プロジェクトエディター側では、**入力コントロール** フォーマットを選択すると、**dataSource** は選択されたフォーマットに基づいてフィルターされたリストから選択可能になります。 これでアプリは更新されて使用する準備が整います。
+プロジェクトエディター側では、**入力コントロール** フォーマットを選択すると、そのフォーマットに基づいて絞り込まれたリストから **dataSource** が選択できます。 これでアプリは更新され、使用できます。
 
-以下は*push* フォーマットの一例です:
+以下は *push* フォーマットの一例です:
 
-![customInput](img/customInput1.png) ![customInput2](img/customInput2.png)
+![カスタム入力](img/customInput1.png) ![カスタム入力2](img/customInput2.png)
 
-以下が生成されたアプリケーション上で利用可能なフォーマットの種類です:
+以下が生成されたアプリ上で利用可能なフォーマットの種類です:
 
  - Push フォーマット:
 
-![customInput2](img/push.png)
+![カスタム入力2](img/push.png)
 
 - Segmented & picker フォーマット:
 
-![customInput2](img/Sans-titre.png)
+![カスタム入力2](img/Sans-titre.png)
 
  - Popover フォーマット:
 
-![customInput2](img/popover.png)
+![カスタム入力2](img/popover.png)
 
  - Sheet フォーマット:
 
-![customInput2](img/sheet.png)
+![カスタム入力2](img/sheet.png)
 
-**注意:** 入力コントロールは"入力コントロール" フィールドの横にある矢印を使用してアクセスすることができます。
+**注意:** 入力コントロールにアクセスするには、"入力コントロール" フィールドの横にある矢印を使用します。
 
 ## オフラインモードアクション
 
-The user of an app can draft, store and queue action requests, even if he’s working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.).  All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
+アプリのユーザーはオフライン中でも、アクションリクエストを作成・保存・キューすることが可能です (たとえば、顧客電話番号の追加、写真のアップロード、請求書や見積書の印刷、アドレスの削除など)。  これらのタスクはすべて、ネットワークにアクセスできるようになるまで、保留中アクションのリストに置かれます。 ユーザーがオンラインになると、保留中のアクションはすべて同期され、実行された後、完了したアクションのリストに表示されます。
 
-Pending tasks can be visualized and opened from:
+保留中のタスクは以下にて確認し、開くことができます:
 
-•   *The Settings screen*
+•   *設定画面*
 
-It displays a summary and a history of all pending and completed tasks.
+保留中のタスクや完了したタスクの概要と履歴が表示されます。
 
 ![Action section](img/screen1.png)
 
-•   *The List & Detail forms*
+•   *リスト & 詳細フォーム*
 
-They display all the tasks related to the table or to the entity that you are currently viewing.
+現在閲覧しているテーブルやエンティティに関連するすべてのタスクが表示されます。
 
 ![Action section](img/screen2.png)
 
 :::note notes
 
-- The "Share" predefined action is only executable online
-- Actions are editable while pending, but they can no longer be modified once they switch to the "Completed" mode.
+- プリセットの "共有" アクションは、オンラインでのみ実行可能です。
+- アクションは保留中の間は編集可能ですが、"完了" モードに切り替わると、修正できなくなります。
 
 :::
 
-### Update pending tasks that failed
+### 失敗した保留タスクの更新
 
-Due to your server business logic, some tasks could be rejected. For mobile users, it is then possible to edit and to retry sending the relevant pending tasks. To do so, you can display a status text describing, in the "Complete" actions history, the reason of the failure. For example, you can reject an action sent by a mobile user to the server and inform him that the operation has failed. In that case, you can set the `success` value to `False` and provide a message in `statusText`, as follows:
+サーバーのビジネスロジックにより、一部のタスクが拒否されることがあります。 それらの保留タスクを編集後、モバイルユーザーは送信を再試行できます。 そのために、"完了" アクションの履歴にて、失敗の理由を説明するステータステキストを確認できます。 たとえば、モバイルユーザーがサーバーに送信したアクションを拒否し、操作に失敗したことを通知することができます。 その場合、以下のように `success` の値を `False` に設定し、 `statusText` にメッセージを設定することができます:
 
  ```4d
- $response:=New object("success"; False; "statusText"; "Operation failed"))
+ $response:=New object("success"; False; "statusText"; "操作に失敗しました"))
  ```
- You can even add some errors by action parameters for the `alphaField` parameter, for example:
+ アクション引数ごとのエラーを追加することもできます。たとえば、`alphaField` 引数について:
 
   ```4d
-$response.errors:=New collection(New object("parameter"; "alphaField"; "message"; "Alpha field must contains a valide value")
+$response.errors:=New collection(New object("parameter"; "alphaField"; "message"; "Alpha フィールドの値が無効です")
   ```
 
 
-## iOS app Side
+## iOSアプリ側
 
-In your iOS app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section.
+iOSアプリでは、フォームセクションで選択したテンプレートに応じて、リストおよび詳細フォームで様々にアクションを利用できます。
 
-### Table List forms
+### テーブルリストフォーム
 
-* **Entity action:** Swipe left on a cell to display the available actions in a List form. A "More" button is displayed if you've defined more than three actions per entity.
+* **エンティティアクション:** セルを左にスワイプすると、利用可能なアクションがリスト形式で表示されます。 3つより多い数のアクションがエンティティに定義されている場合、"..." ボタンが表示されます。
 
-![Entity Lisform Tableview](img/ListForm-entity-action-tableview.png)
+![エンティティリストフォームテーブルビュー](img/ListForm-entity-action-tableview.png)
 
-* **Table actions:** A generic actions button is available in the navigation bar to display a list of available table actions.
+* **テーブルアクション:** 利用可能なテーブルアクションのリストを表示するために、ナビゲーションバーに汎用的なアクションボタンが用意されています。
 
-![Table Listform Tableview](img/ListForm-table-action-tableview.png)
+![テーブルリストフォームテーブルビュー](img/ListForm-table-action-tableview.png)
 
 :::ヒント
 
-Actions will be displayed in the same order as defined in the Action section.
+アクションは、アクションセクションで定義された順序で表示されます。
 
 :::
 
-### Collection List forms
+### コレクションリストフォーム
 
-* **Entity action:** Depending on the template, actions are displayed by clicking on a generic button or by maintaing the pressure on a cell.
+* **エンティティアクション:** テンプレートによって、汎用ボタンをクリックするか、セル上で長押しすることでアクションが表示されます。
 
-![Entity Listform Collectionview](img/ListForm-entity-action-collectionview.png)
+![エンティティリストフォームコレクションビュー](img/ListForm-entity-action-collectionview.png)
 
-* **Table actions:** Like the Table List forms, a generic Actions button is available in the navigation bar to display a list of availble table actions.
+* **テーブルアクション:** テーブルリストフォームと同様に、利用可能なテーブルアクションのリストを表示するため、ナビゲーションバーに汎用的なアクションボタンが用意されています。
 
-![Table Listform Collectionview](img/ListForm-table-action-collectionview.png)
+![テーブルリストフォームコレクションビュー](img/ListForm-table-action-collectionview.png)
 
 ### 詳細フォーム
 
-As with Table actions in List forms, a generic Actions button is available in the navigation bar to display all your entity actions in a list.
+リストフォームのテーブルアクションと同様に、ナビゲーションバーに汎用的なアクションボタンがあり、すべてのエンティティアクションをリスト表示することができます。
 
-![Entity Detailform](img/Detailform-final.png)
+![エンティティ詳細フォーム](img/Detailform-final.png)
 
-### Edition forms
+### 編集フォーム
 
-If you have created an Edit or an Add action, as soon as you select it from the action list, an **Edition form** will appear.
+編集または追加アクションを作成した場合、アクションリストからそれらを選択すると、**編集フォーム** が表示されます。
 
 ![Send task comment](img/Action-parameters-sendComment.png)
 
-From here, you can:
+ここでは:
 
-* edit all of your fields by selecting them, and
-* validate or cancel your modifications using the **Done** or **Cancel** buttons (available in the navigation bar).
+* すべてのフィールドを選択して編集できます。
+* **Done** または **Cancel** ボタン (ナビゲーションバーで利用可能) を使用して、変更内容を確定またはキャンセルします。
 
-For your convenience, the Edition form includes a few **special features**:
+利便性のため、編集フォームにはいくつかの **特別な機能** が含まれています:
 
-* The keyboard type depends on the selected parameter type in the Action section.
-* You can go to the next or previous field using the arrow on top of the keyboard.
-* The iOS keyboard can be closed by touching anywhere outside of a field.
-* Indication is given to the user when a value is not valid.
-* The view focuses on empty mandatory fields when the user clicks the Done button.
+* キーボードのタイプは、アクションセクションで選択されたパラメーターに依存します。
+* キーボード上部の矢印で、次のフィールドや前のフィールドに移動することができます。
+* iOSキーボードは、フィールドの外をタッチすることで、閉じることができます。
+* 値が有効でない場合、ユーザーに表示されます。
+* ユーザーが Done ボタンをクリックしたときに空の必須フィールドがあれば、それに焦点が当たります。
 
-## Where to go from here?
+## これからどうする？
 
-* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
+* **アクション定義の仕方** について説明した [チュートリアル](../tutorials/actions/getting-started.md) があります。
 
-* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
+* カスタムテンプレートを作成するための **アクションタグの統合** について説明した [チュートリアル](../tutorials/actions/adding-actions-template.md) もあります。
 
-* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
+* こちらの [チュートリアル](../tutorials/actions/using-action-parameters.md) では **アクション引数の定義** について説明しています。
