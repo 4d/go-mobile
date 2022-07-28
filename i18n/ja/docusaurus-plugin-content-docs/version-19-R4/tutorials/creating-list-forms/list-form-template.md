@@ -7,7 +7,7 @@ In this tutorial, we'll cover nearly all aspects of creating a list form templat
 
 ![リストフォームテンプレート（完成）](img/custom-template-final-result.png)
 
-## ⒈ ⒈ ⒈ スタータープロジェクトをダウンロードする
+## スタータープロジェクトをダウンロード
 
 Before we begin, be sure to download and unzip the **Starter project** which includes:
 
@@ -16,7 +16,7 @@ Before we begin, be sure to download and unzip the **Starter project** which inc
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">スタータープロジェクト</a>
 </div>
 
 ## プロジェクトにリストフォームのテンプレートを追加する
