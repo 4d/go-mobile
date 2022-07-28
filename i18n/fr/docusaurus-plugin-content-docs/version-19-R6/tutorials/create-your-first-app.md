@@ -98,7 +98,7 @@ Select **Labels & Icons** page. Here you can define some labels and icons that w
 ![Icons & Labels](img/Contact-app-icons-labels-section-4D-for-iOS.png)
 
 
-## ÉTAPE 6. Formulaires
+## ÉTAPE 6. Forms
 
 Nous avons presque terminé, mais il faut d’abord configurer la mise en page de l’application. En choisissant des Formulaires Liste et des Formulaires détaillés.
 
