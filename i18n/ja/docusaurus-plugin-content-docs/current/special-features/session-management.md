@@ -1,19 +1,19 @@
 ---
 id: session-management
-title: Session management
+title: セッション管理
 ---
 
 
-4D for iOS and 4D for Android allow you to manage user sessions, so that you can get information about the connected users and improve their experience on your mobile application.
+4D for iOS と 4D for Android ではユーザーセッションを管理することができます。モバイルアプリの体験向上のため、セッションから接続ユーザーに関する情報を取得できます。
 
 
-## Session file
+## セッションファイル
 
-When a user opens the app for the first time, a session file is automatically created and stored next to the current data file in the MobileApps folder.
+ユーザーが初めてアプリを開くと、セッションファイルが自動的に作成され、MobileAppsフォルダーのカレントデータファイルの隣に保存されます。
 
-The session files are organized and grouped by app folder. The Team ID and app bundle ID are concatenated to create the app folder names.
+セッションファイルは、アプリのフォルダーごとに整理され、グループ化されています。 チームID とアプリバンドルID を連結してアプリフォルダー名を作成します。
 
-Here is an example of a 4D for iOS-generated session file:
+4D for iOS で生成されたセッションファイルの例です:
 
 ```json
 {
@@ -48,12 +48,12 @@ Here is an example of a 4D for iOS-generated session file:
 
 ```
 
-By default, the "status" is automatically set to "accepted" if the session is validated by the [On Mobile App Authentication](../4d/on-mobile-app-authentication.md) database method (`$result.success` set to `True`). If you want the ability to manually validate the first login for every user session, add `$result.verify:=True` to the object returned by the [On Mobile App Authentication](../4d/on-mobile-app-authentication.md) database method. It will change the "accepted" default status to "pending" in the session file. For more information, see [this example](../special-features/authentication#without-the-component).
+デフォルトでは、[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) データベースメソッドによってセッションが認証された場合、"ststus" は自動的に "accepted" に設定されます (`$result.success` は `True`)。 全ユーザーセッションの最初のログインを手動で認証する必要がある場合は、[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) データベースメソッドによって返されるオブジェクトに `$result.verify:=True` を追加します。 これにより、セッションファイルのデフォルトステータス "accepted" が "pending" に変更されます。 詳細については [この例](../special-features/authentication#コンポーネントを使用しない場合) を参照ください。
 
 
-## Session object
+## Session オブジェクト
 
-Mobile sessions can take advantage of the powerful [4D user sessions](https://developer.4d.com/docs/en/WebServer/sessions.html), when they are enabled on the server. In this case, information stored in the [mobile session file](#session-file) is used to fill the [Session object](https://developer.4d.com/docs/en/API/SessionClass.html) on the server, so that you could share a cart for the same user between their web and mobile sessions, for example.
+モバイルセッションは、(サーバー上で有効化されていれば) 強力な [4Dユーザーセッション](https://developer.4d.com/docs/en/WebServer/sessions.html) を活用することができます。 In this case, information stored in the [mobile session file](#session-file) is used to fill the [Session object](https://developer.4d.com/docs/en/API/SessionClass.html) on the server, so that you could share a cart for the same user between their web and mobile sessions, for example.
 
 On the mobile project, the [Session object](https://developer.4d.com/docs/en/API/SessionClass.html) is automatically available from:
 
