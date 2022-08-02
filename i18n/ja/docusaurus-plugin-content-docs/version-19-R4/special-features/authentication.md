@@ -6,25 +6,25 @@ title: 認証
 
 ## 認証を有効化する
 
-モバイルアプリケーションは、ユーザーの認証を要求することができます。
+モバイルアプリは、ユーザー認証を要求できます。
 
-- 認証が有効化されていない場合、モバイルユーザーはアプリケーション内をゲストモードで使用することになります。
-- 認証が有効化されると、モバイルユーザーはアプリケーションに接続する前にログインするよう求められることになります。
+- 認証が有効化されていない場合、モバイルユーザーはゲストモードでアプリを使用します。
+- 認証が有効化されていると、モバイルユーザーはアプリ接続前にログインを求められます。
 
 :::info
 
-いずれの場合にしても、モバイルユーザーがサーバーへと接続した場合、[ユーザーセッション](session-management) が作成されます。
+いずれの場合も、モバイルユーザーがサーバーに接続すると、[ユーザーセッション](session-management.md) が作成されます。
 
 :::
 
 
-認証を有効化するためには、[公開](../project-definition/publishing) ページ内の**認証** にチェックを入れます:
+認証を有効化するには、[公開](../project-definition/publishing.md) ページの **認証** オプションをチェックします:
 
 ![authentication activation](img/authenticate.png)
 
 このオプションが選択されている場合、モバイルアプリは開始時に[ログインフォーム] を表示します。 モバイルエディターにはデフォルトのログインフォームが用意されていますが、カスタムのログインフォームをデザインすることも可能です。
 
-**作成...**/**編集...** ボタンをクリックすると、4D メソッドエディターで`On Mobile App Authentication` データベースメソッドを開きます(以下参照)。
+**作成...** / **編集...** ボタンをクリックすると、4Dメソッドエディターで `On Mobile App Authentication` データベースメソッドを開きます (以下参照)。
 
 
 
@@ -32,9 +32,9 @@ title: 認証
 
 特定のEメールアドレスやデバイスを認証するためには、たとえゲストモードでも[*On Mobile App Authentication*](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) データベースメソッドの使用が必須となります。
 
-セッションについての必要な情報およびユーザー情報(Eメールアドレス、アプリ情報、デバイス、チームID、等) を全て取得するためのメソッドテンプレートが提供されています。 このメソッドを自分の用途に合わせてカスタマイズすることが可能です。
+必要なセッション情報およびユーザー情報 (メールアドレス、アプリ情報、デバイス、チームID、等) をすべて取得するのに使えるメソッドのテンプレートが提供されています。 自分の用途に合わせてこのメソッドをカスタマイズできます。
 
-Here is the `On Mobile App Authentication` database method template:
+`On Mobile App Authentication` データベースメソッドのテンプレート:
 
 ```4d
 // On Mobile App Authentication database method
@@ -61,52 +61,52 @@ End if
 
 // Optional message to display on mobile App.
 If ($response.success)
-    $response.statusText:="You are successfully authenticated"
+    $response.statusText:="認証に成功しました"
 Else 
-    $response.statusText:="Sorry, you are not authorized to use this application."
+    $response.statusText:="このアプリを使用する権限がありません"
 End if 
 
 $0:=$response
 ```
 
 
-## Email authentication
+## メール認証
 
-The most common and comfortable way to authenticate mobile users is to rely on email authentication.
+モバイルユーザーを認証する最も一般的な方法は、メール認証を使用することです。
 
-It provides a way to verify that an email comes from whom it claims to be from, and will allow to block harmful or fraudulent uses of email.
+メールアドレスの所有者を確認し、不正なメールの使用を回避することができます。
 
 ### 概要
 
-In short, the principle is the following:
+この方法は、次のように機能します:
 
-#### 1. Enable authentication
+#### 1. 認証を有効化する
 
-Select **Authentication** in the Publishing page to use a login form into your app. You can use the default login page or install a custom login page.
+ログインフォームをアプリで使用するため、公開ページの **認証** オプションを選択します。 デフォルトのログインページを使用するか、カスタムのログインページをインストールできます。
 
 ![authentication activation](img/authenticate.png)
 
 
-#### 2. Enter email address
+#### 2. メールアドレスを入力する
 
-An email is required when the app is launched. When a user enters their email and clicks on the **Login** button, the `On Mobile App Authentication` is called and the user's session status should be updated to a "pending" status. A validation email is then sent to the user.
+アプリ開始時にメールを要求されます。 When a user enters their email and clicks on the **Login** button, the `On Mobile App Authentication` is called and the user's session status should be updated to a "pending" status. その後、ユーザーに認証メールが送信されます。
 
-#### 3. Check mailbox and 4. Click on the link
+#### 3. メールボックスを確認して、4. リンクをクリックする
 
-When the validation email is available, the user only needs to click on the validation link. This will call the [`On Web Connection`](https://doc.4d.com/4Dv19/4D/19/On-Web-Connection-database-method.301-5392847.en.html) database method and update the [user's session](session-management.md) status from "pending" to "accepted".
+ユーザーは、受信した認証メールの認証リンクをクリックします。 これにより、[`On Web Connection`](https://doc.4d.com/4Dv19/4D/19/On-Web-Connection-database-method.301-5392847.ja.html) データベースメソッドが呼び出され、[ユーザーセッション](session-management.md) のステータスが "pending" から "accepted" に更新されます。
 
-#### 5. and 6. Back to the app
+#### 5. および 6. アプリに戻る
 
-Once the validation is done, the user can reopen their app and click on the **Login** button. The `On Mobile App Authentication` method is called again but this time, the user's session status is "accepted", so the access is granted.
+認証完了後、ユーザーはアプリに戻って **Login** ボタンをクリックします。 `On Mobile App Authentication` メソッドが再度呼び出されますが、今回はユーザーのセッション状態が "accepted" なため、アクセスが許可されます。
 
-Here is a snapshot of the whole sequence:
+一連の流れを図に表しました:
 
 ![認証](img/4D-for-iOS-email-auth.png)
 
-You can handle this sequence using a special component, or manually.
+この手順には、特別なコンポーネントを使用するか、手動で処理することができます。
 
 
-### Using the 4D Mobile App Server Component
+### 4D Mobile App Server コンポーネントの使用
 
 The [4D Mobile App Server](https://github.com/4d-for-ios/4D-Mobile-App-Server/tree/master) component is a toolbox component developed to help you manage several common mobile features. It provides methods for authenticate email logins.
 
