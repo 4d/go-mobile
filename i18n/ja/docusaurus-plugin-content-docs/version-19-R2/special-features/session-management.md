@@ -1,18 +1,18 @@
 ---
 id: session-management
-title: Session management
+title: セッション管理
 ---
 
 
 
 
-## Session file
+## セッションファイル
 
-When a user opens the app for the first time, a session file is created and stored next to the current data file in the MobileApps folder.
+ユーザーが初めてアプリを開くと、セッションファイルが自動的に作成され、MobileAppsフォルダーのカレントデータファイルの隣に保存されます。
 
-The session files are organized and grouped by app folder. The Team ID and app bundle ID are concatenated to create the app folder names.
+セッションファイルは、アプリのフォルダーごとに整理され、グループ化されています。 チームID とアプリバンドルID を連結してアプリフォルダー名を作成します。
 
-Here is an example of a 4D for iOS-generated session file:
+4D for iOS で生成されたセッションファイルの例です:
 
 ```json
 {
@@ -47,7 +47,7 @@ Here is an example of a 4D for iOS-generated session file:
 
 ```
 
-If you want the ability to manually validate the first login for every user session, you must change the "accepted" default status to "pending" by adding `$response.verify:=True` to the [*On Mobile App Authentication*](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) database method.
+全ユーザーセッションの最初のログインを手動で認証する必要がある場合は、[*On Mobile App Authentication*](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) データベースメソッドによって返されるオブジェクトに `$result.verify:=True` を追加します。
 
 
 ## Mobile Session Management Component
