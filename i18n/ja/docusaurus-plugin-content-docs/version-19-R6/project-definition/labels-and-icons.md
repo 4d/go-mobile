@@ -162,7 +162,7 @@ title: ラベル & アイコン
 
 :::
 
-:::Tipsチュートリアル
+:::tip tutorial
 
 参照:
 - 静的データフォーマッターの定義方法については、[**こちらのチュートリアル**](../tutorials/data-formatter/create-static-data-formatter) を参照ください。
@@ -182,7 +182,7 @@ title: ラベル & アイコン
 %Name%の雇用主
 ```
 
-:::Tipsチュートリアル
+:::tip tutorial
 
 タイトルの定義方法については、それを説明した [**チュートリアル**](../tutorials/relations/one-to-many-title-definition) を参照ください。
 
