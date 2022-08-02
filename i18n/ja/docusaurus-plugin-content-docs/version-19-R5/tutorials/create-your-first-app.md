@@ -119,7 +119,7 @@ Windows では、**Android** のみ利用可能です。 macOS では、**Androi
 ![詳細フォームのテンプレート](img/DetailformTemplate-form-section-4D-for-iOS.png)
 
 
-* 詳細フォームテンプレートの適切な場所にフィールドをドラッグ＆ドロップします: Photo は "ピクチャー"、First Name は "フィールド1"、Last Name は "フィールド2"。
+* 詳細フォームテンプレートの適切な場所にフィールドをドラッグ＆ドロップします: Photo は "ピクチャー"、First Name は "フィールド1"、Last Name は "フィールド2"。その下の空白部に追加したいフィールドをドロップすれば、表示項目を増やすことができます。
 
 ![詳細フォームの中身](img/DetailformContent-form-section-4D-for-iOS.png)
 
