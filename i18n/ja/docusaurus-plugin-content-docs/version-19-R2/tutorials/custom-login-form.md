@@ -115,9 +115,9 @@ End if
 
 // Optional message to display on mobile App.
 If ($response.success)
-    $response.statusText:="You are successfully authenticated"
+    $response.statusText:="認証に成功しました"
 Else 
-    $response.statusText:="Sorry, you are not authorized to use this application."
+    $response.statusText:="このアプリを使用する権限がありません"
 End if 
 
 $0:=$response
