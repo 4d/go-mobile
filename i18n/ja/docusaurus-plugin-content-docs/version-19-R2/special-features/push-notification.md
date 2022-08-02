@@ -48,7 +48,7 @@ $response:=$pushNotification.send($notification;"test@4d.com")
 
 ```
 
-It's as simple as that!
+このように、とても簡単です。
 
 :::tip
 
