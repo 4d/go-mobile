@@ -50,33 +50,33 @@ title: セッション管理
 全ユーザーセッションの最初のログインを手動で認証する必要がある場合は、[*On Mobile App Authentication*](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) データベースメソッドによって返されるオブジェクトに `$result.verify:=True` を追加します。
 
 
-## Mobile Session Management Component
+## Mobile Session Management コンポーネント
 
-Sessions can be managed by the **Mobile Session Management** component:
+セッションは、**Mobile Session Management** (モバイルセッション管理) コンポーネントで管理することもできます:
 
 <div>
 <a className="button button--primary"
-href="https://github.com/4d/Mobile-Session-Management/releases/latest">Mobile Session Management component</a>
+href="https://github.com/4d/Mobile-Session-Management/releases/latest">Mobile Session Management コンポーネント</a>
 </div>
 
-1. Download and unzip the zip file
-2. Go to Build / Components file and get the MOBILE SESSION MANAGEMENT.4dbase
-3. Create a **Components** folder next to the 4D project with the app's data.
-4. Place the **MOBILE SESSION MANAGEMENT** component in the newly created **Components** folder.
-5. Restart 4D.
-6. Click on the **Execute** button from the toolbar
-7. In the 4D Methods Explorer, select the **MOBILE SESSION MANAGEMENT** method and click on the **Execute** button.
-8. The Apps window will appear displaying all of your apps:
+1. zipファイルをダウンロードし、解凍します。
+2. Build / Components フォルダー内の MOBILE SESSION MANAGEMENT.4dbase を取得します。
+3. アプリのデータ元である 4Dプロジェクトフォルダーに、**Components** フォルダーを作成します (Project や Data フォルダーと同階層)。
+4. **MOBILE SESSION MANAGEMENT** コンポーネントを、新しく作成した **Components** フォルダーに移動します。
+5. 4D を再起動します。
+6. ツールバーの **実行** ボタンをクリックします。
+7. メソッド実行ダイアログで、**MOBILE SESSION MANAGEMENT** メソッドを選択し、**実行** ボタンをクリックします。
+8. アプリウィンドウが開き、アプリとセッションが表示されます:
 
-![Session](img/session-management.png)
+![セッション](img/session-management.png)
 
-* Right click on a session to reveal the session file in the Finder or delete it.
-* You can change and define the session status for each device: accepted or pending
+* セッションを右クリックすると、Finder でセッションファイルを表示したり、削除したりすることができます。
+* 各デバイスのセッションステータスを変更・定義することができます: accepted または pending
 
-![Session selected](img/session-management-selected.png)
+![選択したセッション](img/session-management-selected.png)
 
 
-* The **Push** button will update the session in memory.
-* The **Refresh** button updates the session list. 
+* **Push** ボタンを押すと、メモリ内のセッションが更新されます。
+* **Refresh** ボタンはセッションリストを更新します。 
 
 
