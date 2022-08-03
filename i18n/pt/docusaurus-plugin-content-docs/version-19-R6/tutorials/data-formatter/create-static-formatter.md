@@ -1,35 +1,14 @@
 ---
 id: create-static-data-formatter
-title: Create a static data formatter
+title: Create a static formatter
 ---
 
 > **OBJETIVOS**
 > 
-> Criar seus primeiros formatos de dados.
-
-> **PRÉ-REQUISITOS**
-> 
-> Click [here](requirements.html) to see what you'll need to get started!
+> Create your first formatters.
 
 Neste tutorial, vamos guiá-lo através da criação de vários exemplos de formatador.
 
-
-From the **Labels & Icons** section, you can choose pre-packaged formats.
-
-> **Formatos disponíveis:**
-> 
-> * **Texto**: Texto
-> * **Data**: Data, data curta, data longa, data completa
-> * **Hora**: hora, hora curta, duração, número inteiro
-> * **Booleano**: "Não" ou "Sim", "False" ou "True"
-> * **Número inteiro**: número inteiro, número decimal, porcentagem, número ordinal, moeda  $, Moeda €, Moeda ¥, número em letras
-
-Vamos começar baixando o Projeto Starter:
-
-<div className="center-button">
-<a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">Baixar</a>
-</div>
 
 ## Baixe o Starter Project
 
@@ -180,7 +159,7 @@ Vamos olhar o conteúdo do arquivo de**manifest.json **:
 
 ## Compatibilidade modo Escuro
 
-Se seu dispositivo estiver no modo claro ou escuro, não importa se trabalhar em Android ou iOS, pode facilmente usar os formatadores de dados personalizados contendo imagens. As imagens se adaptarão dependendo do modo de cor do telefone.
+Whether your device is in dark or light mode, whether you're working on iOS or Android, you can easily use the custom formatters containing images. As imagens se adaptarão dependendo do modo de cor do telefone.
 
 ### Cor tintado
 
@@ -230,7 +209,7 @@ Este é o resultado nos modos claro e escuro:
 
 ## Abrir projeto móvel
 
-Abra Task Management.4dbase com 4D e vá para File > abra > Mobile Project... para abrir **Tasks**
+Open the Task Management.4dbase with 4D and go to File > Open > Mobile Project... to open the **Tasks**
 
 Agora, vá para a seção **Labels & Icons** no editor de projetos. Todos os formatadores estão disponíveis para os tipos de campo diferentes que você definir previamente nos arquivos manifest.json de diferentes  formatadores:
 
@@ -243,7 +222,7 @@ Agora, vá para a seção **Labels & Icons** no editor de projetos. Todos os for
 
 ## Construa seu app 4D for iOS
 
-Construa seu app 4D de iOS e você verá que o formatador de dados é bem aplicado dependendo do limite de crédito.
+Build your 4D of iOS app and you'll see that your formatter is well applied depending on the credit limit.
 
 ![Text formatter](img/formatters-final-result.png)
 
