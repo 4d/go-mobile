@@ -5,7 +5,7 @@ title: Create Swift formatter
 
 > **OBJECTIFS**
 > 
-> Create your first Swift data formatters.
+> Create your first Swift formatters.
 
 A formatter can be composed of both Swift and [Kotlin](create-kotlin-formatter.md) code.
 
