@@ -10,7 +10,7 @@ title: アクション
 
 :::info 4D for Android
 
-このセクションで触れている内容は4D for Android では現在ご利用いただけません。
+このセクションで触れている内容は、4D for Android では現在ご利用いただけません。
 
 :::
 
