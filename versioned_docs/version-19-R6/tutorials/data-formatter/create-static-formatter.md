@@ -1,5 +1,5 @@
 ---
-id: create-static-formatter
+id: create-static-data-formatter
 title: Create a static formatter
 ---
 

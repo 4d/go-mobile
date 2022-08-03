@@ -175,7 +175,7 @@ Example of a static formatter's manifest file:
 
 Several tutorial pages detail how to create formatters:
 
-- [**Creating a static formatter**](../tutorials/data-formatter/create-static-formatter)
+- [**Creating a static formatter**](../tutorials/data-formatter/create-static-data-formatter)
 - [**Creating a Swift dynamic formatter**](../tutorials/data-formatter/create-swift-formatter)
 - [**Creating a Kotlin dynamic formatter**](../tutorials/data-formatter/create-kotlin-formatter)
 
