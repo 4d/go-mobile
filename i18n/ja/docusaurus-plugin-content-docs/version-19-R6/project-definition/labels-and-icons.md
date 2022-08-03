@@ -93,11 +93,20 @@ title: ラベル & アイコン
 
 ## フォーマット
 
-このプロパティで、アプリにおけるデータ表示のフォーマットが設定できます。 フィールドのフォーマット列をクリックするとメニューが表示されます。
+This property allows you to select a **formatter** for your field.
+
+Basically, a formatter allows you to map a data type from your database to a specific display on the mobile side. たとえば、メール用、請求書番号用などを定義することが可能です。
+
+However, formatters can call some code to create smart interfaces. たとえば、電話番号にデータフォーマッターを指定して、モバイルアプリ上でユーザーがその番号をタッチするとアクションメニューが開くようにできます (相手に電話をかけたり、連絡先に保存したりするためなど)。
+
+
+### Selecting a formatter
+
+When you click on a field row in the Formats column, the formatter menu is displayed. By default, the 4D mobile editor provides several built-in formatters:
 
 ![フォーマット](img/formats-menu.png)
 
-選択可能なビルトインフォーマットは、フィールドタイプによります:
+Available built-in formatters depend on the field type:
 
 | フィールドの型  | フォーマット                                |
 | -------- | ------------------------------------- |
@@ -108,29 +117,40 @@ title: ラベル & アイコン
 | **ブール**  | "いいえ" または "はい"、 "False" または "True"    |
 | **整数**   | 整数、小数、実数、パーセント、助数詞、通貨 $、通貨 €、通貨 ¥、漢数字 |
 
-## データフォーマッター
+For an example of use of built-in formatters, see [this tutorial](../tutorials/data-formatter/use-formatter.md).
 
-データフォーマッターを使って、データベースのデータ型に対応するモバイル側の表示を指定することができます。 たとえば、メール用、請求書番号用などを定義することが可能です。 データフォーマッターは、スマートなインターフェースを作成するコードを呼び出すこともできます。 たとえば、電話番号にデータフォーマッターを指定して、モバイルアプリ上でユーザーがその番号をタッチするとアクションメニューが開くようにできます (相手に電話をかけたり、連絡先に保存したりするためなど)。
+If you have downloaded or created additional formatters (see below), they are also listed in this menu so you can select them.
 
-データフォーマッターをモバイルプロジェクトに追加するには:
+### Adding custom formatters
 
-- [**go-mobile フォーマッター github リポジトリ**](https://4d-go-mobile.github.io/gallery/#/type/formatter) からフォーマッターをダウンロードしてインストールする
+You can add custom formatters to your mobile project to highly customize its interface. You can either [download](#downloading-formatters) existing formatters from the [go-mobile formatters repository](https://4d-go-mobile.github.io/gallery//#/type/formatter), or [create](#creating-formatters) your own formatters.
 
-データフォーマッターをインストールするには、フォーマッターのフォルダーを 4Dプロジェクトフォルダーの`/Resources/Mobile/formatters` フォルダーにドロップします。 インストールした後は、データフォーマットはビルトインフォーマットと同じように、フォーマットメニューから選択することが可能です。
+You need then to [install them in your project](#installing-custom-formatters).
 
-- 独自のデータフォーマッターを作成する
 
-フォーマッターには 2種類あります:
+:::note
 
-- コード付きの **動的データフォーマッター** (上記フォーマッター Github リポジトリでは OSロゴ (![OS logo](img/os-logo.png)) で識別されます)。
-- コードのない **静的データフォーマッター**。
+There are two types of additional formatters:
 
-フォーマッターは常に、次の要素を含む **manifest.json** ファイルと関連付けられている必要があります:
+- **Dynamic formatters** with code (identified with the OS logos (![OS logo](img/os-logo.png)) in the  go-mobile formatters Github repository).
+- **Static formatters** without code.
+
+:::
+
+
+#### Downloading formatters
+
+You can download formatters from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter). You can click on the **Download more formats** link in the 4D mobile editor to access this repository.
+
+
+#### Creating formatters
+
+A custom formatter is always associated with a **manifest.json** file containing the following elements:
 
 - **name**: フォーマッターの名前 (文字列)。 例：phone, objectFormatter, など。
 - **type**: 使用したい 4Dフォーマット型。 例: Text, Integer, など。
 - **binding**:
-  - 静的フォーマッターの場合: 文字列の場合は `localizedText` 、画像の場合は `imageNamed`。
+  - For static formatters: `localizedText` for strings or `imageNamed` for images.
   - 動的フォーマッターの場合: コードをアプリにリンクさせる文字列
 - **choiceList**: 選択された型に対応する値 (静的フォーマッタのみ)。
 - **assets**: ダークモードサポート、tintable (彩色可能)、整数から画像へ、テキストから画像へ、など、静的フォーマッターのみに使える追加のフォーマットデータ。
@@ -151,25 +171,30 @@ title: ラベル & アイコン
 }
 ```
 
+Several tutorial pages detail how to create formatters:
+
+- [**Creating a static formatter**](../tutorials/data-formatter/create-static-data-formatter)
+- [**Creating a Swift dynamic formatter**](../tutorials/data-formatter/create-swift-formatter)
+- [**Creating a Kotlin dynamic formatter**](../tutorials/data-formatter/create-kotlin-formatter)
+
 :::note for Android
 
 特定のパーミッションをアプリに追加するには、以下のように `capabilities` ブロックを使用します:
 
- ```4d
+```4d
  "capabilities" : {
         "android" : [ "android.permission.WRITE_EXTERNAL_STORAGE" ]
 ```
 
 :::
 
-:::tip tutorial
 
-参照:
-- 静的データフォーマッターの定義方法については、[**こちらのチュートリアル**](../tutorials/data-formatter/create-static-data-formatter) を参照ください。
-- Swift の動的フォーマッターの定義方法については、[**こちらのチュートリアル**](../tutorials/data-formatter/create-swift-formatter) を参照ください。
-- Kotlin の動的フォーマッターの定義方法については、[**こちらのチュートリアル**](../tutorials/data-formatter/create-kotlin-formatter) を参照ください。
 
-:::
+#### Installing custom formatters
+
+To install a custom formatter, you just need to drop the custom formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a formatter can be selected from the **Formats** menu, just like a built-in format.
+
+
 
 
 ## タイトル
