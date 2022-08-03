@@ -7,29 +7,8 @@ title: Create a static data formatter
 >
 > Create your first data formatters.
 
-> **PREREQUISITES**
->
-> Click [here](requirements.html) to see what you'll need to get started!
-
 In this tutorial, we'll guide you through the creation of various formatter examples.
 
-
-From the **Labels & Icons** section, you can choose pre-packaged formats.
-
-> **Available formats:**
->
-> * **Text**: Text
-> *  **Date**: Date, Short date, Long date, Full date
-> *  **Time**: Time, Short time, Duration, Integer number
-> *  **Boolean**: "No" or "Yes", "False" or "True"
-> *  **Integer**: Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out
-
-Let's get started by downloading the Starter project:
-
-<div className="center-button">
-<a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">Download</a>
-</div>
 
 ## Download the Starter project
 
