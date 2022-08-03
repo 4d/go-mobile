@@ -1,14 +1,14 @@
 ---
 id: use-data-formatter
-title: Use data formatters
+title: Use formatters
 ---
 
 > **OBJECTIVES**
 >
-> Use built-in data formatters.
+> Use built-in formatters.
 
 
-In this tutorial, we'll show you how to apply built-in [data formatters](../../project-definition/labels-and-icons.md#data-formatters) to your fields.
+In this tutorial, we'll show you how to apply built-in [formatters](../../project-definition/labels-and-icons.md#formatters) to your fields.
 
 ## Download the Starter project
 
@@ -21,17 +21,11 @@ href="https://github.com/4d-go-mobile/tutorial-DataFormatter/releases/latest/dow
 
 ## Open mobile project
 
-Go to **Labels & Icons** in Sections, you'll see that a Formatters column is available in the Field Properties:
+Go to **Labels & Icons** in Sections, you'll see that a Formats column is available in the Field Properties area:
 
 ![Data formatter labels icons](img/data-formatter-labels-icons.png)
 
-From here, you can select specific formats depending on your needs. You can choose between multiple built-in formats:
-
-- **Text**: Text
-- **Date**: Date, Short date, Long date, Full date
-- **Time**: Time, Short time, Duration, Integer number
-- **Boolean**: "No" or "Yes", "False" or "True"
-- **Integer**: Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out
+From here, you can select specific formats depending on your needs. You can choose between [multiple built-in formats](../../project-definition/labels-and-icons.md#selecting-a-formatter). 
 
 Let's define the Available Credit field as a Currency:
 

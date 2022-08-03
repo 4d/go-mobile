@@ -98,7 +98,7 @@ module.exports = {
       label: "Data formatter",
       items: [
         "tutorials/data-formatter/use-data-formatter",
-		"tutorials/data-formatter/create-static-data-formatter",
+		"tutorials/data-formatter/create-static-formatter",
         "tutorials/data-formatter/create-swift-formatter",
 		"tutorials/data-formatter/create-kotlin-formatter",
       ],
