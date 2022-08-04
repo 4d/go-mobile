@@ -1,6 +1,6 @@
 ---
 id: testing-on-your-device
-title: iOSデバイスにインストールする
+title: iOSデバイスへのインストール
 ---
 
 You can install and test your mobile application on a connected device.

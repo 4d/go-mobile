@@ -119,7 +119,7 @@ title: ラベル & アイコン
 
 - 独自のフォーマットを作成する
 
-:::Tipsチュートリアル
+:::tip tutorial
 
 カスタムフォーマットの定義方法については、[**こちらのチュートリアル**](../tutorials/data-formatter/create-data-formatter) を参照ください。
 
@@ -138,7 +138,7 @@ title: ラベル & アイコン
 %Name%の雇用主
 ```
 
-:::Tipsチュートリアル
+:::tip tutorial
 
 タイトルの定義方法については、それを説明した [**チュートリアル**](../tutorials/relations/one-to-many-title-definition) を参照ください。
 

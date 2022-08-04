@@ -68,9 +68,9 @@ title: ストラクチャー
 
 ## リレーションの使用
 
-:::4D for Androidにおける注意
+:::info 4D for Android
 
-この機能は4D for Android では現在ご利用いただけません。
+この機能は 4D for Android では現在ご利用いただけません。
 
 :::
 

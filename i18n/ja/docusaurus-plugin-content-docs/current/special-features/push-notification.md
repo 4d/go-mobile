@@ -3,31 +3,31 @@ id: push-notification
 title: プッシュ通知
 ---
 
-:::4D for Androidにおける注意
+:::info 4D for Android
 
-このセクションで触れている内容は4D for Android では現在ご利用いただけません。
+このセクションで触れている内容は、4D for Android では現在ご利用いただけません。
 
 :::
 
-## What is a push notification?
+## プッシュ通知とは
 
-On a mobile phone, a push notification is an alert message, received via an application, that you can open, delete, allow or block. It can be very useful for example to notify your app users that a new version is available.
+モバイルデバイスにおいて、アプリ経由で受信するアラートメッセージをプッシュ通知といいます。 この通知は表示・削除・許可・ブロックすることができます。 たとえば、アプリの新しいバージョンが利用可能になったことをユーザーに通知するのに便利です。
 
-But what about the architecture to implement, in order to integrate this functionality into a mobile application? And what is the process of a push notification, from creation to display on the user's mobile?
+この機能をモバイルアプリに統合するためには、どのようなアーキテクチャーが必要でしょうか。 また、プッシュ通知の作成からモバイルデバイス上の表示まで、どのような流れでおこなわれるのでしょうか。
 
-## Technical architecture
+## 技術的アーキテクチャー
 
-Here are the different elements needed to create, send and receive a mobile push notification:
+ここでは、モバイルプッシュ通知の作成・送信・受信に必要な各要素について説明します。
 
 ![Push notification process](img/4D-for-ios-push-notification.png)
 
 ## システム要件
 
-In order to send push notifications, an `AuthKey_XXXYYY.p8` authentication file from Apple is required.
+プッシュ通知を送信するには、Apple社から提供される `AuthKey_XXXYYY.p8` 認証ファイルが必要です。
 
-1. Generate and download a .p8 key file as described in [this documentation](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Generate_p8.md).
+1. [このドキュメント](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Generate_p8.md) で説明されているように、.p8 キーファイルを生成してダウンロードします。
 
-2. In the [Publishing](../project-definition/publishing) page, check the **Push notifications** option and select your certificate in the mobile project.
+2. モバイルプロジェクトの [公開](../project-definition/publishing.md) ページで、 **プッシュ通知** オプションにチェックを入れ、証明書を選択します。
 
 ![公開セクション](img/push-notification-publishing-section.png)
 
@@ -48,9 +48,9 @@ $response:=$pushNotification.send($notification;"test@4d.com")
 
 ```
 
-It's as simple as that!
+このように、とても簡単です。
 
-:::ヒント
+:::tip
 
 Use the [**4D Mobile App Server** component](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) to easily adapt the push notifications to your own needs. Feel free to use it and to pick the most relevant aspects for your app. And of course, all contributors are welcome to this project, through feedback, bug reports and even better: pull requests.
 

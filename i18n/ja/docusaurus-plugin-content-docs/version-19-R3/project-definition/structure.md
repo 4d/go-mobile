@@ -68,7 +68,7 @@ title: ストラクチャー
 
 ## リレーションの使用
 
-:::4D for Androidにおける注意
+:::info 4D for Android
 
 4D for Android では、N対1リレーションのみ利用可能です。
 

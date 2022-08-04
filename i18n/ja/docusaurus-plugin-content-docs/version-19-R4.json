@@ -12,7 +12,7 @@
     "description": "The label for category Project definition in sidebar docs"
   },
   "sidebar.docs.category.Smart features": {
-    "message": "Smart features",
+    "message": "スマート機能",
     "description": "The label for category Smart features in sidebar docs"
   },
   "sidebar.docs.category.Debugging": {
@@ -20,11 +20,11 @@
     "description": "The label for category Debugging in sidebar docs"
   },
   "sidebar.tutorials.category.Creating List forms": {
-    "message": "Creating List forms",
+    "message": "リストフォームの作成",
     "description": "The label for category Creating List forms in sidebar tutorials"
   },
   "sidebar.tutorials.category.Creating Detail forms": {
-    "message": "Creating Detail forms",
+    "message": "詳細フォームの作成",
     "description": "The label for category Creating Detail forms in sidebar tutorials"
   },
   "sidebar.tutorials.category.Gallery": {
@@ -44,11 +44,11 @@
     "description": "The label for category Actions in sidebar tutorials"
   },
   "sidebar.tutorials.category.Relations": {
-    "message": "Relations",
+    "message": "リレーション",
     "description": "The label for category Relations in sidebar tutorials"
   },
   "sidebar.tutorials.category.Customizing with Xcode": {
-    "message": "Customizing with Xcode",
+    "message": "Xcode でのカスタマイズ",
     "description": "The label for category Customizing with Xcode in sidebar tutorials"
   },
   "sidebar.tutorials.category.Selecting your Developer Program": {
@@ -56,15 +56,15 @@
     "description": "The label for category Selecting your Developer Program in sidebar tutorials"
   },
   "sidebar.tutorials.category.Deploying In-House": {
-    "message": "Deploying In-House",
+    "message": "インハウス運用",
     "description": "The label for category Deploying In-House in sidebar tutorials"
   },
   "sidebar.tutorials.category.Deploying on App Store": {
-    "message": "Deploying on App Store",
+    "message": "App Store公開",
     "description": "The label for category Deploying on App Store in sidebar tutorials"
   },
   "sidebar.templates.category.Templates & Formatters": {
-    "message": "Templates & Formatters",
+    "message": "テンプレート＆フォーマッター",
     "description": "The label for category Templates & Formatters in sidebar templates"
   }
 }

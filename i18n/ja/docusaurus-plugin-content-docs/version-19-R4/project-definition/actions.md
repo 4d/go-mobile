@@ -187,9 +187,9 @@ title: アクション
 
 ### 共有アクション
 
-:::4D for Androidにおける注意
+:::info 4D for Android
 
-このセクションで触れている内容は4D for Android では現在ご利用いただけません。
+このセクションで触れている内容は、4D for Android では現在ご利用いただけません。
 
 :::
 
@@ -202,9 +202,9 @@ title: アクション
 
 ### ソートアクション
 
-:::4D for Androidにおける注意
+:::info 4D for Android
 
-このセクションで触れている内容は4D for Android では現在ご利用いただけません。
+このセクションで触れている内容は、4D for Android では現在ご利用いただけません。
 
 :::
 
@@ -259,9 +259,9 @@ Zymosian, Elmer
 
 ## アクション入力コントロール
 
-:::4D for Androidにおける注意
+:::info 4D for Android
 
-このセクションで触れている内容は4D for Android では現在ご利用いただけません。
+このセクションで触れている内容は、4D for Android では現在ご利用いただけません。
 
 :::
 
@@ -378,9 +378,9 @@ Zymosian, Elmer
 
 ## オフラインモードアクション
 
-:::4D for Androidにおける注意
+:::info 4D for Android
 
-このセクションで触れている内容は4D for Android では現在ご利用いただけません。
+このセクションで触れている内容は、4D for Android では現在ご利用いただけません。
 
 :::
 
@@ -435,7 +435,7 @@ iOSアプリでは、フォームセクションで選択したテンプレー�
 
 ![テーブルリストフォームテーブルビュー](img/ListForm-table-action-tableview.png)
 
-:::ヒント
+:::tip
 
 アクションは、アクションセクションで定義された順序で表示されます。
 

@@ -186,7 +186,7 @@ salespersonid = :id
 
 "Customers" テーブルのデータにモバイルアプリがアクセスすると、ログイン中の営業担当者が受け持つ顧客のみが表示されます。
 
-:::Tipsチュートリアル
+:::tip tutorial
 
 モバイルアプリにおける、ユーザー情報を使ったフィルタークエリの例題については、[**フィルタークエリの定義**](../tutorials/filter-queries/define-filter-query) チュートリアルを参照ください。
 
