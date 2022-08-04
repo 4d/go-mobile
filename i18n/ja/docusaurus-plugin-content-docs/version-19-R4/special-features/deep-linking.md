@@ -1,6 +1,6 @@
 ---
 id: deep-linking
-title: Deep Linking
+title: ディープリンク
 ---
 
 :::info 4D for Android
@@ -9,35 +9,35 @@ title: Deep Linking
 
 :::
 
-Thanks to the **deep linking** feature, you can share the content that you're currently viewing with all of your collegues. Here's an illustration demonstrating deep linking:
+**ディープリンク** 機能を使って、現在閲覧しているコンテンツを同僚と共有することができます。 ディープリンクの例をアニメーションで表しました:
 
 ![Deep linking animation](img/4d-for-ios-deeplinking.gif)
 
-There are two ways to implement deep linking in iOS: **URL scheme** and **Universal Links**. While URL schemes are a well-known method for deep linking, Universal links are the new way that Apple has implemented to easily connect your webpage and your app under the same link.
+iOS でディープリンクを実装するには 2つの手法があります: **URLスキーム** と **ユニバーサルリンク**。 ディープリンクの方法として URLスキームがよく知られていますが、ユニバーサルリンクは、Webページとアプリを同じリンクで簡単につなげるための Apple が導入した新しい方法です。
 
 
-## Comparison of deep linking modes
+## ディープリンク手法の比較
 
-### URL Scheme
+### URLスキーム
 
-Here is a comparison between the two options which are available in the project editor:
+プロジェクトエディターで利用可能な 2つのディープリンク手法を比較してみましょう:
 
-| PROS                      | CONS                                |
-| ------------------------- | ----------------------------------- |
-| Easy to implement         | Always requires permission          |
-| No extra backend required | Doesn't work if app isn't installed |
-|                           | Doesn't work in Android             |
+| 長所          | 短所                     |
+| ----------- | ---------------------- |
+| 実装が簡単       | 許可が常に必要                |
+| 追加のバックエンド不要 | アプリがインストールされていないと動作しない |
+|             | Android で動作しない         |
 
-### Universal links
+### ユニバーサルリンク
 
-| PROS                                | CONS                           |
-| ----------------------------------- | ------------------------------ |
-| Doesn't require permission          | Static backend with SSL needed |
-| Doesn't open the browser            | More complex to implement      |
-| Compatible with Android             |                                |
-| Fallback URL if app isn't installed |                                |
+| 長所                            | 短所               |
+| ----------------------------- | ---------------- |
+| 許可を必要としない                     | SSL の静的バックエンドが必要 |
+| ブラウザーを開かない                    | 実装が複雑            |
+| Android に対応                   |                  |
+| アプリがインストールされていない場合のフォールバックURL |                  |
 
-## Custom URL Scheme
+## カスタムの URLスキーム
 
 At the simplest level, URL schemes allow users to open an app from other apps. But the true power of URL schemes is in the ability to perform specific actions as your app opens.
 
