@@ -93,20 +93,20 @@ title: ラベル & アイコン
 
 ## フォーマット
 
-This property allows you to select a **formatter** for your field.
+このプロパティで、アプリにおけるデータ表示の **フォーマッター** を選択できます。
 
-Basically, a formatter allows you to map a data type from your database to a specific display on the mobile side. たとえば、メール用、請求書番号用などを定義することが可能です。
+データフォーマッターを使って、データベースのデータ型に対応するモバイル側の表示を指定することができます。 たとえば、メール用、請求書番号用などを定義することが可能です。
 
-However, formatters can call some code to create smart interfaces. たとえば、電話番号にデータフォーマッターを指定して、モバイルアプリ上でユーザーがその番号をタッチするとアクションメニューが開くようにできます (相手に電話をかけたり、連絡先に保存したりするためなど)。
+また、フォーマッターはスマートなインターフェースを作成するコードを呼び出すこともできます。 たとえば、電話番号にデータフォーマッターを指定して、モバイルアプリ上でユーザーがその番号をタッチするとアクションメニューが開くようにできます (相手に電話をかけたり、連絡先に保存したりするためなど)。
 
 
-### Selecting a formatter
+### フォーマッターを選択する
 
-When you click on a field row in the Formats column, the formatter menu is displayed. By default, the 4D mobile editor provides several built-in formatters:
+フィールドのフォーマット列をクリックするとフォーマッターメニューが表示されます。 4Dモバイルエディターはデフォルトで、いくつかのビルトインフォーマッターを提供します:
 
 ![フォーマット](img/formats-menu.png)
 
-Available built-in formatters depend on the field type:
+選択可能なビルトインフォーマッターは、フィールドタイプによります:
 
 | フィールドの型  | フォーマット                                |
 | -------- | ------------------------------------- |
@@ -117,40 +117,40 @@ Available built-in formatters depend on the field type:
 | **ブール**  | "いいえ" または "はい"、 "False" または "True"    |
 | **整数**   | 整数、小数、実数、パーセント、助数詞、通貨 $、通貨 €、通貨 ¥、漢数字 |
 
-For an example of use of built-in formatters, see [this tutorial](../tutorials/data-formatter/use-formatter.md).
+ビルトインフォーマッターの使用例については、[このチュートリアル](../tutorials/data-formatter/use-formatter.md) を参照ください。
 
-If you have downloaded or created additional formatters (see below), they are also listed in this menu so you can select them.
+追加のフォーマッター (後述参照) をダウンロードまたは作成した場合にも、このメニューに表示されます。
 
-### Adding custom formatters
+### カスタムフォーマッターを追加する
 
-You can add custom formatters to your mobile project to highly customize its interface. You can either [download](#downloading-formatters) existing formatters from the [go-mobile formatters repository](https://4d-go-mobile.github.io/gallery//#/type/formatter), or [create](#creating-formatters) your own formatters.
+モバイルプロジェクトにカスタムフォーマッターを追加して、インターフェースを高度にカスタマイズすることができます。 既存のフォーマッターを [go-mobile フォーマッターリポジトリ](https://4d-go-mobile.github.io/gallery//#/type/formatter) から [ダウンロード](#フォーマッターをダウンロードする) するか、独自のフォーマッターを [作成](#フォーマッターを作成する) することができます。
 
-You need then to [install them in your project](#installing-custom-formatters).
+その後、それらは [プロジェクトにインストール](#カスタムフォーマッターをインストールする) する必要があります。
 
 
 :::note
 
-There are two types of additional formatters:
+追加フォーマッターには 2タイプあります:
 
-- **Dynamic formatters** with code (identified with the OS logos (![OS logo](img/os-logo.png)) in the  go-mobile formatters Github repository).
-- **Static formatters** without code.
+- コード付きの **動的フォーマッター** (go-mobile フォーマッター Github リポジトリでは OSロゴ (![OS logo](img/os-logo.png)) で識別されます)。
+- コードのない **静的フォーマッター**。
 
 :::
 
 
-#### Downloading formatters
+#### フォーマッターをダウンロードする
 
-You can download formatters from the [**go-mobile formatters github repository**](https://4d-go-mobile.github.io/gallery//#/type/formatter). You can click on the **Download more formats** link in the 4D mobile editor to access this repository.
+[**go-mobile フォーマッター github リポジトリ**](https://4d-go-mobile.github.io/gallery/#/type/formatter) からフォーマッターをダウンロードできます。 4Dモバイルエディターで **フォーマットをもっとダウンロードする** リンクをクリックすると、このレポジトリにアクセスできます。
 
 
-#### Creating formatters
+#### フォーマッターを作成する
 
-A custom formatter is always associated with a **manifest.json** file containing the following elements:
+カスタムフォーマッターは常に、次の要素を含む **manifest.json** ファイルと関連付けられています:
 
 - **name**: フォーマッターの名前 (文字列)。 例：phone, objectFormatter, など。
 - **type**: 使用したい 4Dフォーマット型。 例: Text, Integer, など。
 - **binding**:
-  - For static formatters: `localizedText` for strings or `imageNamed` for images.
+  - 静的フォーマッターの場合: 文字列の場合は `localizedText` 、画像の場合は `imageNamed`。
   - 動的フォーマッターの場合: コードをアプリにリンクさせる文字列
 - **choiceList**: 選択された型に対応する値 (静的フォーマッタのみ)。
 - **assets**: ダークモードサポート、tintable (彩色可能)、整数から画像へ、テキストから画像へ、など、静的フォーマッターのみに使える追加のフォーマットデータ。
@@ -171,11 +171,11 @@ A custom formatter is always associated with a **manifest.json** file containing
 }
 ```
 
-Several tutorial pages detail how to create formatters:
+フォーマッターの作成については、チュートリアルで詳しく説明しています:
 
-- [**Creating a static formatter**](../tutorials/data-formatter/create-static-data-formatter)
-- [**Creating a Swift dynamic formatter**](../tutorials/data-formatter/create-swift-formatter)
-- [**Creating a Kotlin dynamic formatter**](../tutorials/data-formatter/create-kotlin-formatter)
+- [**静的フォーマッターを作成する**](../tutorials/data-formatter/create-static-data-formatter)
+- [**Swift の動的フォーマッターを作成する**](../tutorials/data-formatter/create-swift-formatter)
+- [**Kotlin の動的フォーマッターを作成する**](../tutorials/data-formatter/create-kotlin-formatter)
 
 :::note for Android
 
@@ -190,9 +190,9 @@ Several tutorial pages detail how to create formatters:
 
 
 
-#### Installing custom formatters
+#### カスタムフォーマッターをインストールする
 
-To install a custom formatter, you just need to drop the custom formatter folder into the `/Resources/Mobile/formatters` of the 4D project folder. Once installed, a formatter can be selected from the **Formats** menu, just like a built-in format.
+カスタムのフォーマッターをインストールするには、カスタムフォーマッターのフォルダーを 4Dプロジェクトフォルダーの`/Resources/Mobile/formatters` フォルダーにドロップします。 インストールされたフォーマッターはビルトインフォーマットと同じように、**フォーマット** メニューから選択することが可能です。
 
 
 
