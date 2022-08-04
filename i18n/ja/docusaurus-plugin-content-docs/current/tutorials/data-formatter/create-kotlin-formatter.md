@@ -1,6 +1,6 @@
 ---
 id: create-kotlin-formatter
-title: Create Kotlin formatter
+title: Kotlin フォーマッターを作成する
 ---
 
 > **OBJECTIVES**
