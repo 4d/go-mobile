@@ -108,8 +108,6 @@ module.exports = {
       label: "Filter queries",
       items: [
         "tutorials/filter-queries/filter-query-introduction",
-        "tutorials/filter-queries/define-filter-query",
-        "tutorials/filter-queries/user-information-query",
       ],
     },
     {
