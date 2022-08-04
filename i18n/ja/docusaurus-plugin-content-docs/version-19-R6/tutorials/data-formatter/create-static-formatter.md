@@ -1,6 +1,6 @@
 ---
 id: create-static-data-formatter
-title: Create a static formatter
+title: 静的フォーマッターを作成する
 ---
 
 > **OBJECTIVES**
