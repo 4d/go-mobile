@@ -1,37 +1,37 @@
 ---
 id: from-your-android-device-and-android-studio
-title: From your Android device
+title: Android デバイスから
 ---
 
 
-To make sure your development machine and your phone are linked, only one action is needed on the smartphone and another one in the [project editor](from-project-editor.md).
+開発用のマシンとスマートフォンの連携を確認するには、スマートフォンと [プロジェクトエディター](from-project-editor.md) にてそれぞれ 1つずつアクションが必要です。
 
-On your device, you need to [enable **USB Debugging**](https://developer.android.com/studio/debug/dev-options#enable) in the Developer Options settings.
+デバイスでは、開発者向けオプションの設定で [**USBデバッグ**](https://developer.android.com/studio/debug/dev-options#enable) を有効にする必要があります。
 
 ![dev-options](img/dev-options-debug_2x.png)
 
 :::tip
 
-If you can’t find the Developer Options item in your settings, simply click 7 times on the build number.
+設定内に開発者向けオプションの項目が見つからない場合は、ビルド番号を 7回クリックする方法もあります。
 
 :::
 
-If you can’t find it or if you don’t understand it, simply read [this Android user guide](https://developer.android.com/studio/debug/dev-options), which explains how to do it depending on the Android versions.
+もし、見つからない場合や、わからない場合は、[この Android ユーザーガイド](https://developer.android.com/studio/debug/dev-options) の Android のバージョン別の説明を参照ください。
 
 :::note notes
 
-- To connect and debug with a Google device using Windows, you need to install the [Google USB driver](https://developer.android.com/studio/run/win-usb).
+- Windows で、Google デバイスと接続してデバッグするには、[Google USB ドライバ](https://developer.android.com/studio/run/win-usb) をインストールする必要があります。
 
-- If you're developing on macOS , then you shouldn't need a USB driver.
+- macOS で開発しているのであれば、USBドライバは必要ないはずです。
 
-- For the other devices, download and manually install a [OEM USB driver](https://developer.android.com/studio/run/oem-usb) corresponding to your device.
+- その他のデバイスの場合は、デバイスに対応する [OEM USB ドライバ](https://developer.android.com/studio/run/oem-usb) をダウンロードし、手動でインストールしてください。
 
 :::
 
 
-### Android Studio configuration
+### Android Studio の設定
 
-For Android developers, you also need to configure your Android Studio from the SDK Tools tab. So make sure you have checked and installed the following elements:
+また、Android のデベロッパーは、SDK Tools タブから Android Studio の設定をおこなう必要があります。 So make sure you have checked and installed the following elements:
 
 - **Android SDK Build Tools 31**
 - **Android SDK Command-line Tools (latest)**. By selecting this checkbox, you will be able to visualize all your virtual devices directly from the 4D mobile Project Editor.
