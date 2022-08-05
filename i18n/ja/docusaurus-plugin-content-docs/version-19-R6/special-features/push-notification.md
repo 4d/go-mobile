@@ -19,7 +19,7 @@ title: プッシュ通知
 
 ここでは、モバイルプッシュ通知の作成・送信・受信に必要な各要素について説明します。
 
-![Push notification process](img/4D-for-ios-push-notification.png)
+![プッシュ通知の流れ](img/4D-for-ios-push-notification.png)
 
 ## システム要件
 
@@ -27,23 +27,23 @@ title: プッシュ通知
 
 1. [このドキュメント](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Generate_p8.md) で説明されているように、.p8 キーファイルを生成してダウンロードします。
 
-2. モバイルプロジェクトの [公開](../project-definition/publishing.md) ページで、 **プッシュ通知** オプションにチェックを入れ、証明書を選択します。
+2. モバイルプロジェクトの [公開](../project-definition/publishing.md) ページで、**プッシュ通知** オプションにチェックを入れ、証明書を選択します。
 
 ![公開セクション](img/push-notification-publishing-section.png)
 
 
-## Basic example to manage push notifications
+## プッシュ通知の基本的な例
 
-The [4D Mobile App Server](https://github.com/4d-for-ios/4D-Mobile-App-Server/tree/master) component provides methods to push notifications to one or multiple recipients. For detailed information, please refer to the [PushNotification component documentation](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md).
+[4D Mobile App Server](https://github.com/4d-for-ios/4D-Mobile-App-Server/tree/master) コンポーネントは、1人以上の受信者にプッシュ通知するためのメソッドを提供しています。 詳細については、[プッシュ通知コンポーネントのドキュメント](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) を参照ください。
 
-Here is a simple example of push notification sent to `test@4d.com`:
+以下は、`test@4d.com` にプッシュ通知を送信する簡単な例です:
 
 ```4d
 
 $pushNotification:=MobileAppServer.PushNotification.new() 
 $notification:=New object 
-$notification.title:="This is title" 
-$notification.body:="Here is the content of this notification" 
+$notification.title:="ここがタイトルです" 
+$notification.body:="ここが通知の内容です" 
 $response:=$pushNotification.send($notification;"test@4d.com")
 
 ```
@@ -52,29 +52,29 @@ $response:=$pushNotification.send($notification;"test@4d.com")
 
 :::tip
 
-Use the [**4D Mobile App Server** component](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) to easily adapt the push notifications to your own needs. Feel free to use it and to pick the most relevant aspects for your app. And of course, all contributors are welcome to this project, through feedback, bug reports and even better: pull requests.
+[**4D Mobile App Server** コンポーネント](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) を使用すると、プッシュ通知を簡単にニーズに合わせることができます。 アプリに最適な部分を選んで、自由にお使いください。 もちろん、フィードバックやバグレポート、さらにはプルリクエストを通じて、このプロジェクトへの貢献を歓迎します。
 
 :::
 
-## Push notification with data synchronization
+## プッシュ通知とデータの同期
 
-With a push notification, you can also launch a synchronization to update your data.
+プッシュ通知で、データを更新するための同期を開始することもできます。
 
-For example, if your application has a delivery tracking option, the delivery information will be updated in the database thanks to a notification sent to the customer. This notification, containing a request to synchronize the data, will enable the customer to get the modified data on their smartphone.
+たとえば、アプリに荷物追跡オプションがある場合、顧客に送られた通知により、データベースの配達状況が更新されます。 この通知にはデータの同期リクエストが含まれており、顧客はスマートフォンで最新のデータを取得できます。
 
-To do so using the `4D Mobile App Server` component, you need to specify whether or not you want to force data synchronization in your push notification. Therefore, simply provide the `dataSynchro` boolean value in the `userInfo` object.
+`4D Mobile App Server` コンポーネントを使用してこれをおこなうには、プッシュ通知でデータの同期を強制するかどうかを指定する必要があります。 これには、`userInfo` オブジェクトの `dataSynchro` ブール値を指定します。
 
-### Data synchronization with a notification opening a record
+### レコードを開く通知とデータの同期
 
-By default, a notification opening a record automatically triggers a data synchronization.
+デフォルトで、レコードを開く通知はデータの同期を自動的に開始します。
 
-For example, in a Contact app, if a contact’s specific information (*i.e.* a contact’s record, such as the address or the phone number) has been modified, the user receives a notification that automatically opens the relevant record and synchronizes the data contained in the record. When the user opens the notification, the contact’s information is fully updated.
+たとえば、連絡先アプリにおいて、連絡先の情報 (住所や電話番号などの連絡先のレコード) が変更された場合、ユーザーは受け取った通知から自動的に当該レコードを開き、そのデータを同期できます。 ユーザーが通知を開くと、連絡先の情報が完全に更新されます。
 
-Here's an example of the default behaviour, a `dataSynchro` request with the `open()` method:
+以下は、デフォルトの動作の例です。`dataSynchro` リクエストと `open()` を組み合わせて使います:
 
 :::note
 
-For `open()` method exclusively, this is the default behaviour. As a result, if you don't specify the `dataSynchro` boolean value, it is `true` by default.
+`open()` メソッドにおいては、これがデフォルトの動作です。 そのため、指定していない場合の `dataSynchro` のデフォルト値は `true` です。
 
 :::
 
@@ -83,23 +83,23 @@ For `open()` method exclusively, this is the default behaviour. As a result, if 
 $pushNotification:=MobileAppServer.PushNotification.new()
 
 $notification:=New object
-$notification.title:="This is title" 
-$notification.body:="Here is the content of this notification" 
+$notification.title:="ここがタイトルです" 
+$notification.body:="ここが通知の内容です" 
 
 $entity:=ds.Employees.get("456456")
 $response:=$pushNotification.open($entity; $notification; $recipients)
 
 ```
 
-However, you can also choose not to force a data synchronization, by preventing `dataSynchro`:
+`dataSynchro` を指定することで、データの同期を強制しないことも可能です:
 
 ```4d
 
 $pushNotification:=MobileAppServer.PushNotification.new()
 
 $notification:=New object
-$notification.title:="This is title" 
-$notification.body:="Here is the content of this notification" 
+$notification.title:="ここがタイトルです" 
+$notification.body:="ここが通知の内容です" 
 $notification.userInfo:=New object("dataSynchro"; False)
 
 $entity:=ds.Employees.get("456456")
@@ -107,33 +107,33 @@ $response:=$pushNotification.open($entity; $notification; $recipients)
 
 ```
 
-### Data synchronization with a simple notification
+### シンプル通知とデータの同期
 
-You can also request a synchronization for a simple notification without opening a specific record. For example, some new entries have been added. You can then inform your user and update the data with no manipulation on their part.
+特定のレコードを開かずに、簡単な通知のための同期を要求することができます。 たとえば、新しいエントリーがいくつか追加されたとします。 そのことを通知し、ユーザー操作なしにデータを更新することができます。
 
-Here is a code example that you can also use with other methods, as long as you fill the `userInfo` object with `dataSynchro` value.
+これには、以下のコード例のように、`userInfo` オブジェクトの `dataSynchro` の値を指定します (他の通知方法でも同様に使えます)。
 
 ```4d
 
 $pushNotification:=MobileAppServer.PushNotification.new()
 
 $notification:=New object
-$notification.title:="This is title" 
-$notification.body:="Here is the content of this notification" 
+$notification.title:="ここがタイトルです" 
+$notification.body:="ここが通知の内容です" 
 $notification.userInfo:=New object("dataSynchro"; True)
 
 $response:=$pushNotification.send($notification; $recipients)
 
 ```
-![Data synchronization animation](img/pushandSynchro.gif)
+![データ同期のアニメーション](img/pushandSynchro.gif)
 
-## Windows Configuration
+## Windows の設定
 
-Windows users need to download the [last CURL version](https://curl.se/download.html) to work on the variables of the environment of their machine. Or they can insert curl.exe in the Resources folder of their production database.
+Windows ユーザーは、マシンの環境変数を扱うため、[最新の CURL バージョン](https://curl.se/download.html) をダウンロードする必要があります。 または、運用データベースの Resources フォルダーに curl.exe を挿入することもできます。
 
-## MobileApps folder
+## MobileApps フォルダー
 
-Whether you're working on Windows or on macOS, you need to copy the following files from your development project to your production project:
+Windows でも macOS でも、開発プロジェクトから運用プロジェクトに以下のファイルをコピーする必要があります:
 
 - `4DBASE/MobileApps/ID.BundleID/AuthKey_XXXX.P8`
 - `4DBASE/MobileApps/ID.BundleID/manifest.json`

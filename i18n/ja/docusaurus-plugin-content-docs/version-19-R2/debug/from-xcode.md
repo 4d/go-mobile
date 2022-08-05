@@ -1,6 +1,6 @@
 ---
 id: from-xcode
-title: From Xcode
+title: Xcode から
 ---
 
 If you have issues during the build process, you can open your generated project with Xcode selecting the **Open the product with Xcode** option from the **Project** Menu.
