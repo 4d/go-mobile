@@ -1,11 +1,11 @@
 ---
 id: create-kotlin-formatter
-title: Create Kotlin formatter
+title: Kotlin フォーマッターを作成する
 ---
 
 > **OBJECTIVES**
 > 
-> Create your first Kotlin data formatters.
+> Create your first Kotlin formatters.
 
 A formatter can be composed of both Kotlin and [Swift](create-swift-formatter.md) code.
 
@@ -48,7 +48,7 @@ fun phoneAction(view: TextView, phoneAction: String?) {
 ```
 Putting all that together, you can save this formatter as a **.kt** file in the formatter folder and use it in your mobile project.
 
-![Architecture](img/phoneAction_dir.png)
+![アーキテクチャー](img/phoneAction_dir.png)
 
 Check out the final result:
 

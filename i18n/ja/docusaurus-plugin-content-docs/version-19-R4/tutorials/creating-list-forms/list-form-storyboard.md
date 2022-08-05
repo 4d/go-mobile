@@ -188,7 +188,7 @@ Image Viewを選択し，User Defined Runtime Attributesにユーザー定義属
 
 ![カスタムテンプレート（完成）](img/custom-template-final-result.png)
 
-## Where to go from here?
+## これからどうする？
 
 In this tutorial, we've covered the basics for creating list form templates with iOS. You are now able to create simple templates on your own using the Starter project ressources. You can also see how to build [detail form templates](../creating-detail-forms/detail-form-template.md).
 

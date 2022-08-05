@@ -57,7 +57,7 @@ Request a D-U-N-S Number [here](https://developer.apple.com/enroll/duns-lookup/#
 ![⒋ ⒋ ⒋ Request a D-U-N-S Number](img/DUNS-Number-Organization-4D-for-iOS.png)
 
 * Complete the form.
-* Click **Continue**.
+* **続ける** をクリックします。
 * Check your email for the D-U-N-S Number.
 
 ![⒊ ⒊ ⒊ D-U-N-S Number](img/DUNS-Number-Apple-Mail_4D-for-iOS.png)

@@ -1,21 +1,21 @@
 ---
 id: from-project-editor
-title: From the Project editor
+title: プロジェクトエディターから
 ---
 
-It may happen that you encounter issues using the 4D mobile project editor or your iOS or Android app. Reading log files can provide useful information in these cases.
+4Dモバイルプロジェクトエディターや、iOS / Androidアプリを使用していて、問題が発生することがあります。 このような場合、ログファイルから有用な情報が得られることがあります。
 
-To access log files, press the **Alt** key and select **Project** from the BUILD panel of the project editor:
+ログファイルにアクセスするには、プロジェクトエディターのビルドタブで、**Alt** キーを押しながら **プロジェクト** をクリックします:
 
-![Debugging](img/debug-from-4D-for-iOS.png)
+![デバッグ](img/debug-from-4D-for-iOS.png)
 
-Additional debug menu items appear for the [currently selected simulator](../project-definition/build-panel#using-the-simulator):
+すると、[現在選択されているシミュレーター](../project-definition/build-panel#シミュレーターを使用する) について、追加のデバッグメニューが表示されます:
 
 
-* **Open Simulator logs**: where you can find the `CrashReporter MobileInstallation` folder
+* **カレントシミュレーターログフォルダを表示**: `CrashReporter` と`MobileInstallation` フォルダーが置かれています。
 
-* **Open Simulator Diagnostic Reports**
+* **"Diagnostic Reports" フォルダを開く**
 
-* **Open Current Simulator Folder**
+* **カレントシミュレーターフォルダを表示**
 
-* **Open Application Simulator Folder**: opens a submenu for each application
+* **アプリのシミュレーターフォルダを表示**: 各アプリのサブメニューが表示されます。

@@ -4,15 +4,15 @@
     "description": "The title in the navbar"
   },
   "item.label.Docs": {
-    "message": "Docs",
+    "message": "ドキュメント",
     "description": "Navbar item with label Docs"
   },
   "item.label.Tutorials": {
-    "message": "Tutorials",
+    "message": "チュートリアル",
     "description": "Navbar item with label Tutorials"
   },
   "item.label.Templates & Formatters": {
-    "message": "Templates & Formatters",
+    "message": "テンプレート＆フォーマッター",
     "description": "Navbar item with label Templates & Formatters"
   },
   "item.label.FAQ": {

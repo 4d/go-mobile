@@ -17,7 +17,7 @@ Let's get started by downloading the Starter project that includes:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-OneToManyCustomButton/archive/c507e764e97e006c6c785dfc468f71f5bd708845.zip">Starter project</a>
+href="https://github.com/4d-go-mobile/tutorial-OneToManyCustomButton/archive/c507e764e97e006c6c785dfc468f71f5bd708845.zip">スタータープロジェクト</a>
 </div>
 
 ## ボタンを追加する
@@ -153,7 +153,7 @@ Each storyboard element has an Object ID. For example, if you select Field View 
 
 おつかれさまでした！ 表示したいリレーションが複数あったとしても，このボタンを複製して使用することができるようになりました。
 
-## Where to go from here?
+## これからどうする？
 
 このチュートリアルでは，カスタムリレーションボタンを作成する方法を習得しました。 カスタムボタンの完成プロジェクトは下記のリンクからダウンロードすることができます。
 

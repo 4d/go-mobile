@@ -1,6 +1,6 @@
 ---
 id: from-iphone
-title: From your iPhone
+title: iPhone から
 ---
 
 From your app if you have a crash, you can display, edit and send feedback.

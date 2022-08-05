@@ -1,144 +1,144 @@
 ---
 id: create-your-first-app
-title: Create your first mobile app with 4D
+title: 4D で最初のモバイルアプリを作成しましょう！
 ---
 
 
-Welcome to the 4D mobile application builder. This tutorial will let you dive right into mobile development for iOS and Android with 4D.
+4Dモバイルアプリケーションビルダーへようこそ。 このチュートリアルでは、4D を使った iOS および Android向けのモバイル開発をすぐに始められます。
 
-:::note Reminder
+:::note
 
-Before starting, please check that your configuration meets hardware and software [requirements](../getting-started/requirements.md) for 4D mobile project development.
+始める前に、4Dモバイルプロジェクト開発のためのハードウェアとソフトウェアの [要件](../getting-started/requirements.md) を満たしていることを確認してください。
 
 :::
 
 
-**Scenario:** You are a commercial business manager and you want to consult your contact information on the go. We are going to create a mobile directory app for iOS and/or Android to search for contact names from a list and then view the details of each contact. アプリ名は "Contact" です。
+**シナリオ:** あなたは商業的なビジネスマネージャーで、連絡先情報を外出先でも確認したいと考えています。 これを実現するため、iOS や Android向けに連絡先アプリを作成しましょう。リスト画面で顧客名を検索して選択し、その詳細を確認できるようなイメージです。 アプリ名は "Contact" です。
 
 
 
-## ⒈ ⒈ ⒈ ⒈ スタータープロジェクトをダウンロードする
+## ⒈ スタータープロジェクトをダウンロード
 
-Download and unzip our 4D Starter project, which contains a database file and a project icon (but no mobile project yet).
+スタータープロジェクトをダウンロードし、解凍します。これにはデータベースファイルおよびプロジェクトのアイコンが含まれていますが、モバイルプロジェクトはまだ作成されていません。
 
 <div className="center-button">
-<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-ContactApp/archive/acbb699c3c9d9edd3a8bbb715e87c17140b7e15f.zip">Starter project</a>
+<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-ContactApp/archive/acbb699c3c9d9edd3a8bbb715e87c17140b7e15f.zip">スタータープロジェクト</a>
 </div>
 
-## ⒉ ⒉ ⒉ ⒉ Create the mobile project
+## ⒉ モバイルプロジェクトの作成
 
-Launch your 4D application and select "Contact.4DProject". It contains a very simple database structure using a single table.
+4Dアプリケーションを起動し、ダウンロードしたスタータープロジェクトを開きます。 ストラクチャーを表示して、テーブルを 1つだけ含んだ非常にシンプルなものであることを確認してください。
 
-Go to **New > Mobile project**. In the Welcome screen, give your mobile project a name.
+上部のメニューから **新規 ＞ モバイルプロジェクト** を選択します。 ようこそ画面が開いたら、モバイルプロジェクトに名前をつけましょう。
 
 
-![Project Name](img/new-project.png)
+![プロジェクト名](img/new-project.png)
 
-Click **Continue**.
+**続ける** をクリックします。
 
-Additional components are required to develop an Android project. Click **OK** to download them:
+Androidプロジェクトの開発には、追加のコンポーネントが必要です。 **OK** をクリックすると、ダウンロードします:
 
 ![Android](img/install-android.png)
 
 
 
 
-## ⒊ ⒊ ⒊ ⒊ General page
+## ⒊ 一般ページ
 
-Here, you configure your app's primary information:
+この画面では、アプリの基本的な情報を入力します。
 
 ![Android](img/main-page.png)
 
-* **Target:** Mobile platform(s) to build
+* **ターゲットOS:** ビルドするモバイルプラットフォーム
 
 :::note
 
-If you are on Windows, only **Android** is available. If you are on macOS, you can select both **Android** and **iOS** targets.
+Windows では、**Android** のみ利用可能です。 macOS では、**Android** と **iOS** の両方を選択できます。
 
 :::
 
 
-* **Organization:** Name of your company and identifier of the application.
-* **Product:**
-    * **Name:** Name of the application. Let’s call this one "Contact".
-    * **ID:** (Bundle ID) this area is automatically generated as a composition of your organization identifier and product name.
-    * **Version** and **Copyright:** Leave the version as 1.0 and define your app's copyright.
-    * **Icons:** Select a target OS and drag and drop icons for your app into the area.
-* **Developer:**
-    - **Name:** Automatically filled from the user name on your computer.
-    - **Team**: Developer team reference from your developer account. You can leave it empty to build your application on the Simulator only.
+* **組織:** 開発者 (あなた) の会社名とアプリの識別子を英数字で入力します。
+* **プロダクト:**
+    * **名前:** アプリの名前です。 ここでは "Contact" と名付けましょう。
+    * **ID** (バンドルID): 組織の識別子とプロダクト名を組み合わせる形で自動生成されます。
+    * **バージョン** と **Copyright:** ここでは 1.0 にしておいてください。コピーライト情報は、編集しても構いません。
+    * **アイコン:** スタータープロジェクトに収録されている画像ファイル (ContactIcon.png) をエリアにドラッグ＆ドロップします。
+* **デベロッパー:**
+    - **名前:** コンピューターのユーザー名から自動入力されます。
+    - **部署名:** Developer アカウントの Team ID です。 シミュレーター向けにビルドするだけであれば、空欄のままで構いません。
 
 ![一般](img/Contact-app-general-section-4D-for-iOS.png)
 
-## ⒋ ⒋ ⒋ ⒋ Structure page
+## ⒋ ストラクチャーページ
 
-This is where you define the subset of data to expose to mobile devices. Select the table(s) in the left area and the field(s) in the right area.
+ここでは、モバイルデバイスに対して公開するデータのサブセット (具体的にはテーブルやフィールド) を定義します。 左のエリアでテーブルを、右のエリアでフィールドを選択します。
 
-For our example, select **ID**, **First Name**, **Last Name**, **Job**, **Company**, **Phone**, **Notes**, and **Photo**.
+今回は、**ID**, **First Name**, **Last Name**, **Job**, **Company**, **Phone**, **Notes**, **Photo** を選択します。
 
-![ストラクチャ](img/Contact-app-structure-section-4D-for-iOS.png)
+![ストラクチャー](img/Contact-app-structure-section-4D-for-iOS.png)
 
-> We highly recommend publishing your primary key in order to identify each record of the database.
+> データベースの各レコードを識別するため、プライマリーキー (ここでは IDフィールド) は除外しないようにしてください。
 
 
-## ⒌ ⒌ ⒌ ⒌ Labels & Icons page
+## ⒌ ラベル & アイコンページ
 
 :::note
 
-[**Data**](project-definition/data.md) and [**Actions**](project-definition/actions.md) pages allow to configure your app's data and to trigger code on the server. To keep this example simple, we will use default behaviors.
+[**データ**](project-definition/data.md) と [**アクション**](project-definition/actions.md) ページでは、アプリのデータを設定したり、サーバー上のコードをトリガーしたりできます。 今回は、シンプルにするために、デフォルトの動作を使用します。
 
 :::
 
-Select **Labels & Icons** page. Here you can define some labels and icons that will be used throughout the app for the tables, fields, and relations.
+**ラベル & アイコン** ページを選択します。 ここでは、テーブル、フィールド、リレーションについて、アプリ内で使用されるラベルやアイコンを定義することができます。
 
-* Short labels and long labels are automatically used by the app depending on the available space.
-* To define a table icon, click on the **Icons** column for the table. The icon library appears and you can select an icon to illustrate the table or field. You can also opt to leave the icon column empty, a default icon will be generated.
-* Select at least one icon for your fields: the editor will generate default icons for all remaining fields. You can also simply leave all fields empty to not display any field icons.
+* 短いラベルと長いラベルは、利用可能なスペースに応じてアプリが自動的に使用します。
+* テーブルアイコンを定義するには、テーブルの **アイコン** カラムをクリックします。 アイコンライブラリーが表示され、テーブルやフィールドを説明するアイコンを選択することができます。 また、アイコンを指定しない場合、デフォルトのアイコンが生成されます。
+* フィールドのアイコンを少なくとも 1つを選択しましょう。残りのフィールドについては、エディターがデフォルトのアイコンを生成します。 また、すべてのフィールドを空にすることで、フィールドアイコンを表示させないこともできます。
 
-![Icons & Labels](img/Contact-app-icons-labels-section-4D-for-iOS.png)
+![ラベル＆アイコン](img/Contact-app-icons-labels-section-4D-for-iOS.png)
 
 
 ## ⒍ フォーム
 
-We're almost done, but we still need to decide on the app's layout. There are both List and Details forms to choose from.
+あともう少しです！　アプリの外観を決めるために、デザインを選びましょう。 リストフォームと詳細フォーム、それぞれのサンプルが用意されています。
 
-* Select a List form template to display your table as a list. For our Contact app, let’s use the **Profile** template.
+* レコードをリスト形式で表示するために、listビューのテンプレートを選択します。 ここでは、**Profile** テンプレートを使用しましょう。
 
-![List form template](img/ListformTemplate-form-section-4D-for-iOS.png)
+![リストフォームのテンプレート](img/ListformTemplate-form-section-4D-for-iOS.png)
 
-At this point, the bottom of the configuration window has changed from template selection to content definition.
+テンプレートを選択すると、設定画面の下半分がテンプレートのリストからデザイン画面に切り替わります。
 
-* Drag and drop the fields you want displayed onto the template, <i>i.e.</i>, Last Name into the search and Title fields. The Search and Section fields are optional, leave the Section field empty for the moment.
+* 表示させたいフィールドをテンプレートにドラッグ＆ドロップします。Last Name を "検索に使用するフィールド" と "タイトル" にドロップしましょう。 "検索に使用するフィールド" および "セクションとして使用するフィールド" の使用は任意です。ここでは、セクションフィールドを未定義のままにします。
 
-![List form content](img/ListformContent-form-section-4D-for-iOS.png)
+![リストフォームの中身](img/ListformContent-form-section-4D-for-iOS.png)
 
-And finally, we'll define the Detail form.
+あとは詳細フォームを決めるだけです。
 
-* Select a template that is best suited for your app. For our Contact app, let’s use the **Visual Contact** template.
+* アプリのコンセプトにふさわしいデザインを選ぶようにしてください。 ここでは、**Visual Contact** テンプレートを使用しましょう。
 
-![Detail form template](img/DetailformTemplate-form-section-4D-for-iOS.png)
+![詳細フォームのテンプレート](img/DetailformTemplate-form-section-4D-for-iOS.png)
 
 
-* Drag and drop the content onto the appropriate places on the detail form template, <i>i.e.</i>, First Name, Last Name, and Photo.
+* 詳細フォームテンプレートの適切な場所にフィールドをドラッグ＆ドロップします: Photo は "ピクチャー"、First Name は "フィールド1"、Last Name は "フィールド2"。その下の空白部に追加したいフィールドをドロップすれば、表示項目を増やすことができます。
 
-![Detail form content](img/DetailformContent-form-section-4D-for-iOS.png)
+![詳細フォームの中身](img/DetailformContent-form-section-4D-for-iOS.png)
 
-## ⒎ ⒎ ⒎ ⒎ Build the app
+## ⒎ アプリのビルド
 
-Now the fun part! It's time to build your app and test it on the Simulator to see the final result!
+おつかれさまでした！ デザインしたアプリをビルドして、シミュレーターで動かしてみましょう！
 
-* Click the **Build** tab.
-* Select a device to use as a Simulator by clicking on the device button.
-* Click  **Build and Run**.
-* Wait a few seconds and... voila! Your mobile app is alive!
+* 画面を **ビルド** タブに切り替えます。
+* 機種ボタンをクリックして、シミュレーターで起動するデバイスのモデルを選びます。
+* **ビルドして実行** をクリックします。
+* そのまま待っていると… モバイルアプリの完成です！
 
-![Build and Run](img/Build-the-app-simulator.png)
+![ビルドして実行](img/Build-the-app-simulator.png)
 
-## Where to go from here?
+## これからどうする？
 
-We've covered basic app creation in this tutorial, and you should now be able to create simple apps on your own. Of course, many other options and features are available. Right now, you can click on **Final Project** below to download the final Contact app.
+このチュートリアルでは、アプリの基本的な作り方を紹介しました。ほんとうに手軽に作れる、という手応えが得られたのではないでしょうか。 もちろん、他にもさまざまなオプションや機能を用意しています。 下の **完成プロジェクト** をクリックすると、完成した Contact アプリをダウンロードできます。
 
 <div>
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-ContactApp/releases/latest/download/tutorial-ContactApp.zip">FINAL PROJECT</a>
+href="https://github.com/4d-go-mobile/tutorial-ContactApp/releases/latest/download/tutorial-ContactApp.zip">完成プロジェクト</a>
 </div>

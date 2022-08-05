@@ -8,11 +8,7 @@ title: Prise en main
 > Utiliser des actions dans l'application iOS générée.
 
 
-> **CONDITIONS PRÉALABLES**
-> 
-> Cliquez `[here](requirements.html)` pour commencer !
-
-Depuis 4D v17 R5, vous pouvez [définir des actions](define-first-action.md) directement à partir de l'éditeur de projet et exécuter le code 4D à partir de votre application iOS !
+You can [define actions](define-first-action.md) directly from the Project Editor and execute 4D code from your generated mobile app!
 
 Dans cette section, lorsque vous générez votre application à partir de l’éditeur de projet à l'aide des actions, vous pouvez décider d'utiliser :
 

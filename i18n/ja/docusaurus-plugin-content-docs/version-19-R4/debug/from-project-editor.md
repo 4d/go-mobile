@@ -1,44 +1,44 @@
 ---
 id: from-project-editor
-title: From the Project editor
+title: プロジェクトエディターから
 ---
 
-It may happen that you encounter issues using the 4D mobile project editor or your iOS or Android app. Reading log files can provide useful information in these cases.
+4Dモバイルプロジェクトエディターや、iOS / Androidアプリを使用していて、問題が発生することがあります。 このような場合、ログファイルから有用な情報が得られることがあります。
 
-To access log files, press the **Alt** key and select **Project** from the BUILD panel of the project editor:
+ログファイルにアクセスするには、プロジェクトエディターのビルドタブで、**Alt** キーを押しながら **プロジェクト** をクリックします:
 
-![Debugging](img/project.png)
+![デバッグ](img/project.png)
 
-Additional debug menu items appear for the [currently selected simulator](../project-definition/build-panel#using-the-simulator):
-
-
-* **Open Simulator logs**: where you can find the `CrashReporter MobileInstallation` folder
-
-* **Open Simulator Diagnostic Reports**
-
-* **Open Current Simulator Folder**
-
-* **Open Application Simulator Folder**: opens a submenu for each application
+すると、[現在選択されているシミュレーター](../project-definition/build-panel#シミュレーターを使用する) について、追加のデバッグメニューが表示されます:
 
 
-## How to debug your app
+* **カレントシミュレーターログフォルダを表示**: `CrashReporter` と`MobileInstallation` フォルダーが置かれています。
 
-Once your app is complete and the simulator’s result is satisfactory, you may want to test it on your smartphone, whether you're working on 4D for iOS or 4D for Android..
+* **"Diagnostic Reports" フォルダを開く**
 
-To do so, in the Project editor, make sure you have plugged your smartphone, then select your physical device from the list and click on the “Build and Run" button.
+* **カレントシミュレーターフォルダを表示**
 
-![AndroidDevice](img/phone-selection.png)
+* **アプリのシミュレーターフォルダを表示**: 各アプリのサブメニューが表示されます。
+
+
+## アプリをデバッグする
+
+アプリが完成し、シミュレーターの結果が満足なものであれば、4D for iOS / 4D for Android を問わず、スマートフォンでのテストに移れます。
+
+そのためには、まずスマートフォンを接続し、プロジェクトエディターで物理デバイスをリストから選択して、"ビルドして実行" ボタンをクリックします。
+
+![Androidデバイス](img/phone-selection.png)
 
 :::note
 
-The **Update the list of devices...** button enables to refresh the list of available devices.
+**デバイスの一覧の更新** ボタンを押すと、利用可能なデバイスの一覧を更新できます。
 
 :::
 
-4D shall then build the application and install it on the connected device.
+4D はアプリケーションをビルドし、接続されたデバイスにインストールします。
 
 :::note
 
-If you're an Android developer, you need to add an extra step to the debug process. More details [here](from-your-android-device-and-android-studio.md).
+Android の場合は、デバッグに 1手順追加する必要があります。 詳細は [こちら](from-your-android-device-and-android-studio.md) を参照ください。
 
 :::

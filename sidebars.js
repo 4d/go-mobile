@@ -97,7 +97,8 @@ module.exports = {
       type: "category",
       label: "Data formatter",
       items: [
-        "tutorials/data-formatter/create-static-data-formatter",
+        "tutorials/data-formatter/use-data-formatter",
+		"tutorials/data-formatter/create-static-data-formatter",
         "tutorials/data-formatter/create-swift-formatter",
 		"tutorials/data-formatter/create-kotlin-formatter",
       ],
@@ -107,8 +108,6 @@ module.exports = {
       label: "Filter queries",
       items: [
         "tutorials/filter-queries/filter-query-introduction",
-        "tutorials/filter-queries/define-filter-query",
-        "tutorials/filter-queries/user-information-query",
       ],
     },
     {

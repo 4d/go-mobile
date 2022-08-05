@@ -1,6 +1,6 @@
 ---
 id: create-swift-formatter
-title: Create Swift formatter
+title: Swift フォーマッターを作成する
 ---
 
 > **OBJECTIVES**
@@ -73,7 +73,7 @@ extension UILabel {
 
 Putting all that together, you can save this formatter as a **.swift** file in the formatter folder and use it in your mobile project.
 
-![Architecture](img/architecture-swift.png)
+![アーキテクチャー](img/architecture-swift.png)
 
 Check out the final result:
 

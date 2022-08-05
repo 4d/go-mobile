@@ -6,25 +6,25 @@ title: 認証
 
 ## 認証を有効化する
 
-モバイルアプリケーションは、ユーザーの認証を要求することができます。
+モバイルアプリは、ユーザー認証を要求できます。
 
-- 認証が有効化されていない場合、モバイルユーザーはアプリケーション内をゲストモードで使用することになります。
-- 認証が有効化されると、モバイルユーザーはアプリケーションに接続する前にログインするよう求められることになります。
+- 認証が有効化されていない場合、モバイルユーザーはゲストモードでアプリを使用します。
+- 認証が有効化されていると、モバイルユーザーはアプリ接続前にログインを求められます。
 
 :::info
 
-いずれの場合にしても、モバイルユーザーがサーバーへと接続した場合、[ユーザーセッション](session-management) が作成されます。
+いずれの場合も、モバイルユーザーがサーバーに接続すると、[ユーザーセッション](session-management.md) が作成されます。
 
 :::
 
 
-認証を有効化するためには、[公開](../project-definition/publishing) ページ内の**認証** にチェックを入れます:
+認証を有効化するには、[公開](../project-definition/publishing.md) ページの **認証** オプションをチェックします:
 
-![authentication activation](img/authenticate.png)
+![認証](img/authenticate.png)
 
 このオプションが選択されている場合、モバイルアプリは開始時に[ログインフォーム] を表示します。 モバイルエディターにはデフォルトのログインフォームが用意されていますが、カスタムのログインフォームをデザインすることも可能です。
 
-**作成...**/**編集...** ボタンをクリックすると、4D メソッドエディターで`On Mobile App Authentication` データベースメソッドを開きます(以下参照)。
+**作成...** / **編集...** ボタンをクリックすると、4Dメソッドエディターで `On Mobile App Authentication` データベースメソッドを開きます (以下参照)。
 
 
 
@@ -32,151 +32,150 @@ title: 認証
 
 特定のEメールアドレスやデバイスを認証するためには、たとえゲストモードでも[*On Mobile App Authentication*](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) データベースメソッドの使用が必須となります。
 
-セッションについての必要な情報およびユーザー情報(Eメールアドレス、アプリ情報、デバイス、チームID、等) を全て取得するためのメソッドテンプレートが提供されています。 このメソッドを自分の用途に合わせてカスタマイズすることが可能です。
+必要なセッション情報およびユーザー情報 (メールアドレス、アプリ情報、デバイス、チームID、等) をすべて取得するのに使えるメソッドのテンプレートが提供されています。 自分の用途に合わせてこのメソッドをカスタマイズできます。
 
-Here is the `On Mobile App Authentication` database method template:
+`On Mobile App Authentication` データベースメソッドのテンプレート:
 
 ```4d
-// On Mobile App Authentication database method
-// Default template
+// モOn Mobile App Authentication データベースメソッド
+// デフォルトテンプレート
 
 var $0 : Object
 var $1 : Object
 
 var $request; $response : Object
 
-$request:=$1  // Information provided by mobile application
-$response:=New object  // Information returned to mobile application
+$request:=$1 // モバイルアプリから提供される情報
+$response:=New object // モバイルアプリに返される情報
 
-// Check user email
+// ユーザーのメールをチェックします
 If ($request.email=Null)
-    // No email means Guest mode - Allow connection
+    // メールなしの場合はゲストモードで接続を許可します
     $response.success:=True
 Else 
-    // Authenticated mode - Allow or not the connection according to email or other device property
-    $response.success:=True //access allowed
-    // to deny access :
+    // 認証モードでは、メールやデバイスに応じて接続を許可/拒否します
+    $response.success:=True // アクセスを許可
+    //アクセスを拒否 :
     // $response.success:=False 
 End if 
 
-// Optional message to display on mobile App.
+// モバイルアプリに表示する任意のメッセージ
 If ($response.success)
-    $response.statusText:="You are successfully authenticated"
+    $response.statusText:="認証に成功しました"
 Else 
-    $response.statusText:="Sorry, you are not authorized to use this application."
+    $response.statusText:="このアプリを使用する権限がありません"
 End if 
 
 $0:=$response
 ```
 
 
-## Email authentication
+## メール認証
 
-The most common and comfortable way to authenticate mobile users is to rely on email authentication.
+モバイルユーザーを認証する最も一般的な方法は、メール認証を使用することです。
 
-It provides a way to verify that an email comes from whom it claims to be from, and will allow to block harmful or fraudulent uses of email.
+メールアドレスの所有者を確認し、不正なメールの使用を回避することができます。
 
 ### 概要
 
-In short, the principle is the following:
+この方法は、次のように機能します:
 
-#### 1. Enable authentication
+#### 1. 認証を有効化する
 
-Select **Authentication** in the Publishing page to use a login form into your app. You can use the default login page or install a custom login page.
+ログインフォームをアプリで使用するため、公開ページの **認証** オプションを選択します。 デフォルトのログインページを使用するか、カスタムのログインページをインストールできます。
 
-![authentication activation](img/authenticate.png)
+![認証](img/authenticate.png)
 
 
-#### 2. Enter email address
+#### 2. メールアドレスを入力する
 
-An email is required when the app is launched. When a user enters their email and clicks on the **Login** button, the `On Mobile App Authentication` is called and the user's session status should be updated to a "pending" status. A validation email is then sent to the user.
+アプリ開始時にメールを要求されます。 ユーザーがメールアドレスを入力して **Login** ボタンをクリックすると、`On Mobile App Authentication` データベースメソッドが呼び出され、ユーザーのセッションステータスが "pending" (保留) に更新されます。 その後、ユーザーに認証メールが送信されます。
 
-#### 3. Check mailbox and 4. Click on the link
+#### 3. メールボックスを確認して、4. リンクをクリックする
 
-When the validation email is available, the user only needs to click on the validation link. This will call the [`On Web Connection`](https://doc.4d.com/4Dv19/4D/19/On-Web-Connection-database-method.301-5392847.en.html) database method and update the [user's session](session-management.md) status from "pending" to "accepted".
+ユーザーは、受信した認証メールの認証リンクをクリックします。 これにより、[`On Web Connection`](https://doc.4d.com/4Dv19/4D/19/On-Web-Connection-database-method.301-5392847.ja.html) データベースメソッドが呼び出され、[ユーザーセッション](session-management.md) のステータスが "pending" から "accepted" に更新されます。
 
-#### 5. and 6. Back to the app
+#### 5. および 6. アプリに戻る
 
-Once the validation is done, the user can reopen their app and click on the **Login** button. The `On Mobile App Authentication` method is called again but this time, the user's session status is "accepted", so the access is granted.
+認証完了後、ユーザーはアプリに戻って **Login** ボタンをクリックします。 `On Mobile App Authentication` メソッドが再度呼び出されますが、今回はユーザーのセッション状態が "accepted" なため、アクセスが許可されます。
 
-Here is a snapshot of the whole sequence:
+一連の流れを図に表しました:
 
 ![認証](img/4D-for-iOS-email-auth.png)
 
-You can handle this sequence using a special component, or manually.
+この手順には、特別なコンポーネントを使用するか、手動で処理することができます。
 
 
-### Using the 4D Mobile App Server Component
+### 4D Mobile App Server コンポーネントの使用
 
-The [4D Mobile App Server](https://github.com/4d-for-ios/4D-Mobile-App-Server/tree/master) component is a toolbox component developed to help you manage several common mobile features. It provides methods for authenticate email logins.
+[4D Mobile App Server](https://github.com/4d-for-ios/4D-Mobile-App-Server/tree/master) コンポーネントは、いくつかの一般的なモバイル機能を管理するために開発されたツールボックス・コンポーネントです。 このコンポーネントは、メール認証ログイン用のメソッドを提供します。
 
 
-1. Call the `Mobile App Email Checker` method from the `On Mobile App Authentication` database method with the information provided by the mobile application:
+1. `On Mobile App Authentication` データベースメソッド内で、モバイルアプリから渡された情報とともに `Mobile App Email Checker` メソッドを呼び出します:
 
 ```4d
-// On Mobile App Authentication database method
-
+// On Mobile App Authentication データベースメソドオ
 C_OBJECT($0)
 C_OBJECT($1)
 $0:= Mobile App Email Checker($1)
 ```
 
-2. Call the `Mobile App Active Session` method from the `On Web Connection` database method with the `Session` ID parameter retrieved from the URL:
+2. `On Web Connection` データベースメソッド内で、URL より取得した `Session` IDパラメーターを指定して、`Mobile App Active Session` メソッドを呼び出します:
 
 ```4d
-// On Web Connection database method
+// On Web Connection データベースメソッド
 
 C_TEXT($1)
 Case of 
 : (Mobile App Active Session($1).success)
-    //add log if you want
+    // 必要に応じてログを追加します
 End case 
 
 ```
 
-It's as simple as that!
+このように、とても簡単です。
 
-You will find more information in the [Email Checker method documentation](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Methods/Mobile%20App%20Email%20Checker.md).
+詳細については、[Email Checker メソッドのドキュメント](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Methods/Mobile%20App%20Email%20Checker.md) を参照ください。
 
 
-### Without the Component
+### コンポーネントを使用しない場合
 
-You can implement your own email authentication without using the 4D Mobile App Server component. Here a basic example:
+4D Mobile App Server コンポーネントを使用せずに、独自のメール認証を実装することができます。 基本的な例:
 
-1. In the `On Mobile App Authentication` database method, write the following code:
+1. `On Mobile App Authentication` データベースメソッドに以下のコードを書きます:
 
 
 ```4d
-// On Mobile App Authentication database method
+// On Mobile App Authentication データベースメソッド
 
 
 C_OBJECT($0;$1;$response;$request;$email;$status)
 
-  // parameters settings come from the mobile app
+  // モバイルアプリから来るパラメーター設定
 $request:=$1
 
-  // Create an email with an activation URL
+  // 認証用の URL を持つメールを作成します
 $mail:=New object
 $mail.from:="myapplication@gmail.com"
-$mail.to:=$request.email  // email entered by the user on their smartphone
-$mail.subject:="Login confirmation"
+$mail.to:=$request.email // ユーザーが入力したメールアドレス
+$mail.subject:="ログイン確認"
 $mail.htmlBody:="<a href=\"https://myserverapplication/activation/"+$request.session.id \
-+"\">Click Here to confirm your email.</a>\"<br>"
++"\">メールアドレスを確認するため、ここをクリックしてください。</a>\"<br>"
 
-  // Send mail
-$smtp:=New object("host";"smtp.gmail.com";"user";"myapplication@gmail.com";"password";"xxx")
+  // メールを送信します
+$smtp:=New object("host"; "smtp.gmail.com"; "user"; "myapplication@gmail.com"; "password"; "xxx")
 $transporter:=SMTP New transporter($smtp)
 $status:=$transporter.send($mail)
 
-  // Configure response for the mobile app
+  // モバイルアプリのレスポンスオブジェクトを設定します
 $response:=New object
 
-  // Declare that the current session is being verified
+  // カレントセッションが検証中であることを宣言します
 $response.verify:=True
 
-  // Check if the email was successsfully sent
+  // メール送信に成功したか確認します
 If ($status.success)
-      //create a share object to contain our sessions, accessible from all processes
+      // 全プロセスからアクセス可能な共有オブジェクトを作成し、セッションを格納します
     If (Storage.pendingSessions=Null)
         Use (Storage)
             Storage.pendingSessions:=New shared object
@@ -184,15 +183,15 @@ If ($status.success)
     End if 
 
     Use (Storage.pendingSessions)
-          //Add a session to our session lists
-        Storage.pendingSessions[$request.session.id]:=$request.team.id+"."+$request.application.id
+          // セッションリストにこのセッションを追加します
+        Storage.pendingSessions[$request.session.id]:=$request.team.id+". "+$request.application.id
     End use 
 
     $response.success:=True
-    $response.statusText:="Please check your mail box"
+    $response.statusText:="メールボックスを確認してください。"
 Else 
-      // Display an error message on the smatphone
-    $response.statusText:="The mail is not sent please try again later"
+      // スマートフォンにエラーメッセージを表示します
+    $response.statusText:="メールを送信できませんでした。時間をおいて再送信してください。"
     $response.success:=False
 End if 
 
@@ -200,10 +199,10 @@ $0:=$response
 
 ```
 
-2. In the `On Web Connection` database method, write some code to activate the session after the user clicked on the link in the confirmation email.
+2. `On Web Connection` データベースメソッドには、ユーザーが確認メールのリンクをクリックした後に、該当セッションを有効にするためのコードを記述します。
 
 ```4d
-// On Web Connection database method
+// On Web Connection データベースメソッド
 
 C_TEXT($1;$2;$3;$4;$5;$6)
 
@@ -215,40 +214,41 @@ If ($1="/activation/@")
 End if 
 
 
-  //get session from ID received from URL
-If (Storage.pendingSessions#Null)
+  // URL から受け取った ID でセッションを取得します
+If (Storage.PendingSessions#Null)pendingSessions#Null)
     $session:=Storage.pendingSessions[$token]
 End if 
 
 If ($session#"")
-      //get session folder
+      // セッションフォルダーを取得します
     $sessionFile:=Folder(fk mobileApps folder).folder($session).file($token)
     $sessionObject:=JSON Parse($sessionFile.getText())
-      //update status value
+      // ステータス値を更新します
     $sessionObject.status:="accepted"
-    $sessionFile.setText(JSON Stringify($sessionObject))
-    Use (Storage.pendingSessions)
-          //delete pending session
+    $sessionFile.setText(JSON Stringify($sessionObject) )
+
+        Use (Storage.pendingSessions)
+          // 保留セッションを削除します
         OB REMOVE(Storage.pendingSessions;$token)
     End use 
 
     /*
-        The MOBILE APP REFRESH SESSIONS command checks all mobile
-        application session files located in the MobileApps folder of the server, 
-        and updates existing session contents in memory for any edited files.
+        MOBILE APP REFRESH SESSIONS コマンドは、サーバーの MobileApps フォルダーに
+        あるモバイルアプリのセッションファイルをすべてチェックし、 
+        編集済みのファイルについてはメモリ内のセッションコンテンツを更新します。
     */
 
     MOBILE APP REFRESH SESSIONS
 
-    WEB SEND TEXT("You are successfully authenticated")
+    WEB SEND TEXT("認証に成功しました")
 Else 
-    WEB SEND TEXT("Invalid session")
+    WEB SEND TEXT("無効なセッションです")
 End if 
 ```
 
-### Remote url definition
+### リモートURLの定義
 
-By default, a remote server URL is defined in your Android app. In case the URL is not correct, the server will not be accessible. Therefore, to modify or update this URL, just make a long pressure on the icon in the login screen, or from the settings tab. Once you press the icon, a message is displayed with the remote url address and the server access status. You will then be able to edit the URL, authenticate successfully and access the server.
+デフォルトでは、リモートサーバーの URL は Android アプリに定義されています。 URL が正しくない場合、サーバーにアクセスできなくなります。 この URL を修正・更新したい場合には、ログイン画面のアイコンを長押しするか、設定タブからおこないます。 アイコンを長押しすると、リモートURL のアドレスとサーバーのアクセス状況のメッセージが表示されます。 URL を編集して、認証に成功すると、サーバーにアクセスできるようになります。
 
-On iOS, you can edit the remote server URL from the iOS device Settings screen. You just need to check the "Reset server address" option to enter the correct server address.
+iOS の場合、iOSデバイスの設定画面からリモートサーバーの URL を編集することができます。 これには、"サーバーアドレスをリセット" にチェックを入れて、正しいサーバーアドレスを入力します。
 

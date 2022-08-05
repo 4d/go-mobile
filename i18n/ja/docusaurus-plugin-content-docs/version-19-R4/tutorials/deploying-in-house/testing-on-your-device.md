@@ -1,6 +1,6 @@
 ---
 id: testing-on-your-device
-title: iOSデバイスにインストールする
+title: iOSデバイスへのインストール
 ---
 
 You can install and test your mobile application on a connected device.
@@ -59,7 +59,7 @@ You need [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurat
 
 * あとは，Xcodeの実行ボタン（図を参照）をクリックするだけです！
 
-![Build and Run](img/Build-Run-Free-Account.png)
+![ビルドして実行](img/Build-Run-Free-Account.png)
 
 ## ⒌ ⒌ ⒌ ⒌ Team ID for paid subscription account
 

@@ -3,74 +3,74 @@ id: data
 title: データ
 ---
 
-このページはモバイルアプリが扱うデータを設定するために使用します。 このページを使用すると以下のようなことができるようになります:
+このページはモバイルアプリが扱うデータを設定するために使用します。 ここでは、以下のようなことができます:
 
-* アプリ内に格納するデータのソースを選択する(**カレントのデータファイル** あるいは **プロダクションサーバーのデータファイル**)
-* どのデータセットをリロードし、どんなときにデータを再生成するかを定義する
-* **フィルタークエリ** および **ユーザー情報** に応じてアプリ内に格納するデータをフィルタリングする
+* アプリに含めるデータのソースを選択する (**カレントデータファイル** あるいは **プロダクションサーバーデータファイル**)
+* どのデータセットをプリロードし、どんなときにデータを再生成するかを定義する
+* **フィルタークエリ** および **ユーザー情報** に応じてアプリに格納するデータをフィルタリングする
 
-![Data section](img/Data-tab-4D-for-iOS.png)
+![データセクション](img/Data-tab-4D-for-iOS.png)
 
 ## データソース
 
-このパネルを使用するとアプリで管理されるデータのソースを設定することができます。
+このパネルで、アプリが管理するデータのソースを設定します。
 
 ### データファイル
 
-アプリで扱われるデータを取得するデータファイルを選択します:
+アプリで扱うデータの取得元となるデータファイルを選択します:
 
-- **カレントデータファイル**: データはカレントの4D プロジェクトのデータファイルから取得されます。 このオプションは開発段階において有用です。 このオプションを使用するためにはWebサーバーが起動している必要があるため、サーバーが起動されていない場合には**Web サーバーを開始** ボタンが表示されます。
+- **カレントデータファイル**: 4Dプロジェクトのカレントのデータファイルから取得されます。 このオプションは開発段階において有用です。 このオプションを使用するには Webサーバーが実行中である必要があるため、起動されていない場合には**Webサーバーを開始** ボタンが表示されます。
 
-- **プロダクションサーバーデータファイル**: データは4Dプロジェクトを実行しているプロダクションサーバーからネットワーク越しに取得されます。 このオプションを選択した場合には、[**公開** ページ](publishing.md)において**プロダクションURL** を入力する必要があります。 定義されていない場合、**サーバーURLを設定** ボタンをクリックして公開ページを開くことができます。 このオプションでは`key.mobileapp` セキュリティファイルを明示的に選択する必要があります(以下参照)。
+- **プロダクションサーバーデータファイル**: 4Dプロジェクトを実行しているプロダクションサーバーからネットワーク越しに取得されます。 このオプションを選択した場合には、[**公開** ページ](publishing.md) において**プロダクションURL** を入力する必要があります。 未定義の場合、**サーバーURLを設定** ボタンをクリックして公開ページを開くことができます。 このオプションでは `key.mobileapp` セキュリティファイルを明示的に選択する必要があります (以下参照)。
 
 ### `key.mobileapp` ファイルを選択する
 
-埋め込むデータへのアクセスを確保するため、データファイルが選択されると4D mobile エディターによって**MobileApps** フォルダ内に`key.mobileapp` ファイルが自動的に生成されます。 データダンプをするためには、このキーが正常にインストールされていなければなりません。 このキーは以下のような場合に必要になります:
+埋め込むデータへのアクセスを確保するため、データファイルが選択されると 4Dモバイルエディターによって **MobileApps** フォルダー内に `key.mobileapp` ファイルが自動的に生成されます。 データダンプをするためには、このキーが正常にインストールされていなければなりません。 このキーは以下のような場合に必要になります:
 
-- アプリが[ビルド](build-panel)されている
-- [**今すぐ再生成する**](#regenerate-now) ボタンをクリックする
-
-:::info
-
-**MobileApps** フォルダは4D プロジェクトの[データフォルダ](https://developer.4d.com/docs/en/Project/architecture.html#data-folder)内に自動的に作成されます。
-
-:::
-
-**カレントデータファイル** を使用する場合、`key.mobileapp` ファイルはローカルプロジェクトのデータフォルダ内で自動的に選択されます。
-
-**プロダクションサーバーデータファイル** を使用する場合、サーバーからコピーしたリモートの`key.mobileapp` ファイルを選択する必要があります:
-
-1. プロダクションサーバーマシン上で、サーバーアプリケーションプロジェクトの`/Data/MobileApps` フォルダから`key.mobileapp` ファイルをコピーします。
-
-2. モバイルプロジェクトエディター内で、**キーの位置を指定...** ボタンをクリックします:
-
-![Data section](img/locateKey.png)
-
-3. サーバーからコピーしてきた`key.mobileapp` ファイルを選択します。
-
-ファイルは、ローカルプロジェクトの`/Data/MobileApps` フォルダ内にコピーすることが推奨されます。
+- アプリを [ビルド](build-panel.md) する際
+- [**生成する...**](#生成する) ボタンをクリックしたとき
 
 :::info
 
-このキーはアプリ内に埋め込むデータにアクセスする際にのみ必要になります。 以降のアプリからサーバーデータへのアクセスに関しては、`[リクエストレベルで認証されます](publishing.md/authentication)`。
+**MobileApps** フォルダーは、4Dプロジェクトの [データフォルダー](https://developer.4d.com/docs/ja/Project/architecture.html#data) 内に自動的に作成されます。
 
 :::
 
-### 画像を含めない
+**カレントデータファイル** を使用する場合、`key.mobileapp` ファイルはローカルプロジェクトのデータフォルダー内で自動的に選択されます。
 
-データから画像をアプリに埋め込むことは、特に開発段階においてはかなり時間を無駄にすることになりかねません。 このオプションをチェックすることで、アプリのビルドにかかる時間を大幅に短縮することができます。
+**プロダクションサーバーデータファイル** を使用する場合、サーバーからコピーしたリモートの `key.mobileapp` ファイルを選択する必要があります:
 
-### ビルドごとにデータを再生成しない
+1. プロダクションサーバーマシン上で、サーバーアプリケーションプロジェクトの `/Data/MobileApps` フォルダーから `key.mobileapp` ファイルをコピーします。
+
+2. モバイルプロジェクトエディター内で、**キーを探す...** ボタンをクリックします:
+
+![データセクション](img/locateKey.png)
+
+3. サーバーからコピーしてきた `key.mobileapp` ファイルを選択します。
+
+ファイルは、ローカルプロジェクトの `/Data/MobileApps` フォルダー内にコピーすることが推奨されます。
+
+:::info
+
+このキーは、アプリに埋め込むデータにアクセスする際にのみ必要になります。 アプリからサーバーデータへの以降のアクセスに関しては、`[リクエストレベルで認証されます](publishing.md/authentication)`。
+
+:::
+
+### 画像は含めない
+
+画像データをアプリに埋め込むことは、特に開発段階においてはかなり時間を無駄にすることになりかねません。 このオプションをチェックすることで、アプリのビルドにかかる時間を大幅に短縮することができます。
+
+### ビルドするごとにデータを再生成しない
 
 デフォルトでは、アプリをビルドするたびに、プリロードされたデータ(あれば) がデータファイルから再生成されます。 開発段階においては、このオプションをチェックすることで時間を節約することができます。
 
-### 今すぐ再生成する
+### 生成する
 
-このボタンは、プリロードするデータをデータファイルから再生成します。 It allows you to control the data generation during the development phase, specially when the **Do not regenerate data at each build** is checked.
+このボタンは、プリロードするデータをデータファイルから再生成します。 これにより、開発段階におけるデータ生成のコントロールを可能にします。特に **ビルドするごとにデータを再生成しない** と組み合わせることで有用になります。
 
 :::note
 
-This button requires a valid `key.mobileapp` file if you use the [production server data file](#data-file).
+[プロダクションサーバーデータファイル](#データファイル)を使用する場合、このボタンは有効な `key.mobileapp` ファイルを必要とします。
 
 :::
 
@@ -78,116 +78,116 @@ This button requires a valid `key.mobileapp` file if you use the [production ser
 
 ## プロパティ
 
-![Data section](img/Properties-Panel-4D-for-iOS.png)
+![データセクション](img/Properties-Panel-4D-for-iOS.png)
 
-In this area, you can:
+このエリアでは:
 
-- 埋め込む(プリロードする) データを取得するテーブルを選択することができます。
-- それぞれのテーブルに対して**フィルタークエリ** を定義することができます。 フィルタークエリは、アプリがデータにアクセスした際に自動的に適用されます。それによってレコードの一部のみを取得することができます。
+- 埋め込む (プリロードする) データを取得するテーブルを選択できます。
+- それぞれのテーブルに対して **フィルタークエリ** を定義することができます。 フィルタークエリは、アプリがデータにアクセスする際に自動的に適用されます。それによってレコードの一部のみを取得することができます。
 
-By default, if you do not define a filter query for a table, all of its records are embedded.
+テーブルに対してフィルタクエリーを定義しない場合のデフォルトでは、そのテーブルの全レコードが埋め込まれます。
 
 
 ### テーブル
 
-You can define one filter query per table. This list allows you to:
+各テーブルに対して 1つのフィルタークエリを定義することができます。 このリストでは:
 
-- フィルタークエリを追加または編集したいテーブルを選択することができます。
-- [埋め込みオプションが選択されていた](#embed-the-data-from-this-table) 場合、埋め込むデータのサイズを見ることができます。 この情報はユーザー情報に基づいたフィルタークエリを使用していた場合には利用できません。この場合データのサイズはユーザーによって変わるからです。
-- テーブルにフィルタークエリ![filter](img/query-static.png) またはユーザー情報を使用したフィルタークエリ![filter-user](img/query-user.png) が適用されているかをチェックできます。
+- フィルタークエリを追加・編集する対象テーブルを選択できます。
+- [埋め込みオプションが選択されていた](#このテーブルのデータをアプリに埋め込む) 場合、埋め込まれるデータのサイズを見ることができます。 ユーザー情報に基づいたフィルタークエリを使用する場合には、ユーザーによってデータサイズが異なるため、この情報は利用できません。
+- テーブルにフィルタークエリ ![filter](img/query-static.png) またはユーザー情報を使用したフィルタークエリ ![filter-user](img/query-user.png) が適用されているかをチェックできます。
 
 
-### このテーブルからデータを埋め込む
+### このテーブルのデータをアプリに埋め込む
 
-![embed](img/embed-option.png)
+![埋め込む](img/embed-option.png)
 
-When this option is checked (default), the editor will preload data of the selected in the mobile app when it is built or when [data are regenerated](#do-not-regenerate-data-at-each-build). This option accelerates data access from the mobile app since it only requires updates and not full downloads. It is particularly suited for stable data like cities or countries.
+このオプションがチェックされている場合 (デフォルト) 、モバイルアプリのビルト時、あるいは [データ再生成時](#ビルドするごとにデータを再生成しない) に、エディターは同アプリにデータをプリロードします。 このオプションにより、モバイルアプリはフルダウンロードの必要なく、更新のみで足りるようになるため、データアクセスが高速化されます。 特に、都市や国などの変化のないデータに適しています。
 
-You can uncheck the option if preloading the table data is not accurate.
+テーブルデータのプリロードが適切でない場合は、このオプションをオフにすることができます。
 
-This option is not available if table data access uses a filter query based upon user information since it depends on the user. In this context, the button is replaced by the **Edit authentication method...** button that opens the [On Mobile App Authentication](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) method in which you can process user information.
+ユーザー情報に基づいたフィルタークエリを使用する場合には、ユーザーによって使用データが異なるため、このオプションは利用できません。 その場合には、ユーザー情報を処理する [On Mobile App Authentication](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.ja.html) メソッドを表示するための **認証メソッドを編集...** ボタンに置き換えられます。
 
 
 ### フィルタークエリ
 
-You can define one filter query per table. When a table is selected, click in the **Filter query** area, a set of menus is then displayed above the area:
+各テーブルに対して 1つのフィルタークエリを定義することができます。 テーブルを選択した状態で、**フィルタークエリ** エリアをクリックすると、その上にいくつかのメニューが表示されます:
 
-![filter-buttons](img/query-buttons.png)
+![フィルターボタン](img/query-buttons.png)
 
-To define a query:
+クエリを定義するには:
 
-1. クエリエリアに直接入力する、あるいは**フィールド** 、**比較演算子** および **演算子** メニューを使用してクエリを専用のフィールドに入力していきます。
+1. クエリエリアに直接タイプして、あるいは **フィールド**・**比較演算子**・**演算子** メニューを使用して、この専用フィールドにクエリを入力していきます。
 
-A query uses the following syntax:
+クエリのシンタックスは次の通りです:
 
 ```
 field comparator value {logicalOperator field comparator value}   
 ```
 
 
-2. Validate your query by clicking on the **Validate** button. This must be done each time you modify it (a query that has been edited and not validated appears in red in the query editor).
+2. **検証** ボタンをクリックして、クエリを検証します。 これは、クエリを変更する度におこなう必要があります (編集後に検証されていないクエリは、クエリエディターに赤色で表示されます)。
 
-When a query filter is valid, an icon appears near the table name (![filter](img/query-static.png) for static filters and ![filter-user](img/query-user.png) for filters with user information).
+フィルタークエリが有効な場合、テーブル名の右にアイコンが表示されます (静的フィルターの場合は ![filter](img/query-static.png) 、ユーザー情報付きフィルターの場合は ![filter-user](img/query-user.png))。
 
 
 :::info
 
-Refer to the [?filter REST documentation](https://developer.4d.com/docs/en/REST/filter.html) for a detailed description of query syntaxes. The string entered in the **Filter query** area is directly passed as parameter to the `$filter=` REST command.
+クエリシンタックスの詳細な情報については [$filter の RESTドキュメンテーション](https://developer.4d.com/docs/ja/REST/filter.html) を参照ください。 **フィルタークエリ** として入力された文字列は、そのまま `$filter=` RESTコマンドに引数として渡されます。
 
 :::
 
 
 #### 例題
 
-If you select a table that contains a `FirstName` field and a `LastName` field, you can write in the **Filter query**:
+`FirstName` フィールドと `LastName` フィールドを含むテーブルを選択した場合、**フィルタークエリ** には次のように記述できます:
 
 ```4d
 FirstName = 'Lisa' & LastName = 'Hart'
 ```
 
-This query gets only the records that include "Lisa" as FirstName and "Hart" as LastName.
+このクエリは、FirstName に "Lisa"、LastName に "Hart" を含むレコードのみを取得します。
 
 
 ### ユーザー情報を使用したフィルタークエリ
 
-You can define [filter queries](#filter-queries) where the *value* parameter depends on user information that is returned by the [`On Mobile App Authentication` database method](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.en.html) of the 4D project.
+4Dプロジェクトの [`On Mobile App Authentication` データベースメソッド](https://doc.4d.com/4Dv19/4D/19/On-Mobile-App-Authentication-database-method.301-5392844.ja.html) から返されるユーザー情報に依存する *value* 引数を使った [フィルタークエリ](#フィルタークエリ) を定義することができます。
 
-To specify that the query depends on user information, just add **`:`** and a custom key value in the query.
+ユーザー情報に依存するクエリを指定するには、クエリに **`:`** とカスタムキー値を追加します。
 
 
-For example, you can define filter queries such as:
+たとえば、次のようなフィルタークエリを定義できます:
 
 ```
 Name = :name
 employee.level > :level
 cityName = :city
 ```
-... where `:` preceeds variables that will be automatically filled by the mobile app depending on values returned by the `On Mobile App Authentication` database method in the `userInfo` object. The variables must exist as custom property names in the `userInfo` object.
+このようなクエリでは、変数の前に `:` を配置することで、`On Mobile App Authentication` データベースメソッドが `userInfo` オブジェクト内に返した値が、モバイルアプリによって自動代入される特別な変数であることを示します。 これらの変数は、`userInfo` オブジェクト内にカスタムプロパティ名として存在する必要があります。
 
-Here is how it works:
+この仕組みは次の通りです:
 
-1. モバイルアプリがデータリクエストを送信すると、`On Mobile App Authentication` データベースメソッドが自動的に呼び出され、アプリからの情報を*$1* オブジェクト型引数に受け取られます。具体的には`email` 情報に加え、`device` または`language` も返されます。
-2. データベースメソッドは4Dデータストアをクエリしてビジネスルールに則った適切な情報を取得し、`userInfo` オブジェクト内のカスタムプロパティに任意の値を返すことができます。 例:
+1. モバイルアプリがデータリクエストを送信すると、`On Mobile App Authentication` データベースメソッドが自動的に呼び出され、アプリの情報を *$1* オブジェクト型引数として受け取ります。具体的には `email` のほか、`device` や `language` が返されます。
+2. データベースメソッドは 4Dデータストアをクエリしてビジネスルールに則った適切な情報を取得し、`userInfo` オブジェクト内のカスタムプロパティに任意の値を返すことができます。 例:
 
 ```4d
 $id:=ds.Salesperson.query("email == :1";$1.email).first().id 
-    //email の情報元に営業部の担当者のidの値を取得
+    // email の情報をもとに営業担当者の id の値を取得します
 If($id#null)
-    $Obj_response.userInfo:=New object("id";$id) //返すuserInfo 内にidを保存
+    $Obj_response.userInfo:=New object("id";$id) // 戻り値の userInfo 内に id を保存します
 End if  
 ...
 $0:=$Obj_response
 ```
-3. モバイルアプリは、`userInfo` オブジェクトをユーザーごとに自動的に管理します。 この例では、返されたオブジェクト内にカスタムの"id"プロパティが格納されています。 そのため、"Customers"テーブルのフィルタークエリ同様、以下のように書くことができます。
+3. モバイルアプリは、`userInfo` オブジェクトをユーザーごとに自動的に管理します。 この例では、返されたオブジェクト内にカスタムの "id" プロパティが格納されています。 そのため、"Customers" テーブルのフィルタークエリとして以下のように書くことができます:
 
 ```4d
 salespersonid = :id
 ```
 
-When the mobile app will access data from the "Customers" table, only customers belonging to the logged salesperson will be displayed.
+"Customers" テーブルのデータにモバイルアプリがアクセスすると、ログイン中の営業担当者が受け持つ顧客のみが表示されます。
 
-:::Tipsチュートリアル
+:::tip tutorial
 
-See the [**Define a filter query**](../tutorials/filter-queries/define-filter-query) tutorial for a complete example of filter query with user info in a mobile app.
+モバイルアプリにおける、ユーザー情報を使ったフィルタークエリの例題については、[**フィルタークエリの定義**](../tutorials/filter-queries/define-filter-query) チュートリアルを参照ください。
 
 :::

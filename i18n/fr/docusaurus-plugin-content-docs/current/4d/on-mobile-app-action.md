@@ -17,7 +17,7 @@ The `On Mobile App Action` 4D database method is in charge of managing actions r
 
 :::note
 
-The mobile application must have been authenticated by the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method.
+The mobile application must have been authenticated by the [On Mobile App Authentication](on-mobile-app-authentication.md) database method.
 
 :::
 
