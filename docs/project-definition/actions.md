@@ -17,8 +17,8 @@ You can create a new action by clicking on the + button at the bottom of the Act
 
 Next you'll need to define the following:
 
-* **Names:** The action name to use in the [On Mobile App Action](https://doc4d.github.io/go-mobile/docs/next/4d-language/on-mobile-app-action-database-method) database method to trigger your 4D code.
-* **Icons:** The icon to choose from your icon library. You can also add your own icon by following this [tutorial]```(using-icons.html)```.
+* **Names:** The action name to use in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method to trigger your 4D code.
+* **Icons:** The icon to choose from your icon library. You can also [add your own icon](labels-and-icons.md#adding-custom-icons).
 * **Short and long Labels:** The labels for the actions to display in your app.
 * **Table:** The table on which you want to apply the action.
 * **Scope:** Where to use the action, an **entity** or a **table**.
@@ -241,7 +241,7 @@ When you define more than one sort action for a table, mobile users automaticall
 
 ### On Mobile App Action
 
-The [`On Mobile App Action`](../4d/on-mobile-app-action) database method is available to call all of your 4D methods. 
+The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is available to call all of your 4D methods. 
 
 After creating all of your actions, just click on the **Create** button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
 
@@ -464,8 +464,4 @@ For your convenience, the Edition form includes a few **special features**:
 
 ## Where to go from here?
 
-* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
-
-* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
-
-* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
+See [this tutorial](../tutorials/actions/getting-started.md) that will guide you through the **action definition process**.

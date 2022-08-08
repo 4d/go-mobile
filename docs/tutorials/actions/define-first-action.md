@@ -49,7 +49,7 @@ To define this action:
 
 ### STEP 2. Create and edit the Action Database Method
 
-Now that your action is defined in the Project Editor, you have to create the **[On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)** database Method.
+Now that your action is defined in the Project Editor, you have to create the [On Mobile App Action](../../4d/on-mobile-app-action.md) database method.
 
 Do to so, click on **Create button** at the bottom right of the action table and enter the following code in the **On Mobile App Action** database method:
 
