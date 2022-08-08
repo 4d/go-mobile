@@ -5,10 +5,10 @@ title: On Mobile App Authentication
 
 **On Mobile App Authentication**( *mobileInfo* : Object ) -> *status* : Object
 
-| Parameter  | Type   |    | 詳細                                           |
-| ---------- | ------ | -- | -------------------------------------------- |
-| mobileInfo | Object | -> | Information passed by the mobile application |
-| status     | Object | <- | Authentication status                        |
+| 引数         | Type   |    | 詳細                    |
+| ---------- | ------ | -- | --------------------- |
+| mobileInfo | Object | -> | モバイルアプリから渡された情報       |
+| status     | Object | <- | Authentication status |
 
 ## 詳細
 
