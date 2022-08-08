@@ -17,8 +17,8 @@ title: アクション
 
 次に、以下のものを定義する必要があります:
 
-* **名前:** [On Mobile App Action](#on-mobile-app-action) データベースメソッド内で 4Dコードをトリガーするのに使用するアクションの名前
-* **アイコン:** アイコンライブラリーから選択するアイコン。 またこちらの [チュートリアル]`(using-icons.html)` を参考に、独自のアイコンを追加することもできます。
+* **Names:** The action name to use in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method to trigger your 4D code.
+* **アイコン:** アイコンライブラリーから選択するアイコン。 You can also [add your own icon](labels-and-icons.md#adding-custom-icons).
 * **短いラベルとラベル:** アプリに表示するアクションのラベル
 * **テーブル:** アクションを適用するテーブル
 * **スコープ:** アクションの定期用対象: **カレントエンティティ** または **テーブル**
@@ -241,7 +241,7 @@ Zymosian, Elmer
 
 ### On Mobile App Action
 
-[`On Mobile App Action`](../4d/on-mobile-app-action.md) データベースメソッドは、4Dメソッドを呼び出すのに利用します。
+The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is available to call all of your 4D methods.
 
 すべてのアクションを作成したあと、アクションテーブル右下の **作成...** ボタンをクリックすると、作成した全アクション名を含んだ *Case of* コードブロックが *On Mobile App Action* メソッド内に自動生成されます。
 
@@ -462,8 +462,4 @@ iOSアプリでは、フォームセクションで選択したテンプレー�
 
 ## これからどうする？
 
-* **アクション定義の仕方** について説明した [チュートリアル](../tutorials/actions/getting-started.md) があります。
-
-* カスタムテンプレートを作成するための **アクションタグの統合** について説明した [チュートリアル](../tutorials/actions/adding-actions-template.md) もあります。
-
-* こちらの [チュートリアル](../tutorials/actions/using-action-parameters.md) では **アクション引数の定義** について説明しています。
+See [this tutorial](../tutorials/actions/getting-started.md) that will guide you through the **action definition process**.
