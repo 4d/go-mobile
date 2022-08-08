@@ -8,7 +8,7 @@ title: Android デバイスから
 
 デバイスでは、開発者向けオプションの設定で [**USBデバッグ**](https://developer.android.com/studio/debug/dev-options#enable) を有効にする必要があります。
 
-![dev-options](img/dev-options-debug_2x.png)
+![開発オプション](img/dev-options-debug_2x.png)
 
 :::tip
 
@@ -31,13 +31,13 @@ title: Android デバイスから
 
 ### Android Studio の設定
 
-また、Android のデベロッパーは、SDK Tools タブから Android Studio の設定をおこなう必要があります。 So make sure you have checked and installed the following elements:
+また、Android のデベロッパーは、Android Studio の設定をおこなう必要があります。これには、Android Studio ＞ Preferences... で設定ダイアログを開き、Appearance ＆ Behavior ＞ System Settings ＞ Android SDK の項目で SDK Tools タブを選択します。 利用可能な SDK デベロッパーツールの一覧より、次のツールにチェックを入れます:
 
 - **Android SDK Build Tools 31**
-- **Android SDK Command-line Tools (latest)**. By selecting this checkbox, you will be able to visualize all your virtual devices directly from the 4D mobile Project Editor.
+- **Android SDK Command-line Tools (latest)**。 このチェックボックスを選択すると、4Dモバイルプロジェクトエディターから直接、すべての仮想デバイスを視覚化することができます。
 - **Android Emulator**
 - **Android SDK Platform Tools**
-- **Google USB driver** (only on Windows)
+- **Google USB driver** (Windowsのみ)
 - **Intel x86 Emulator Accelerator (HAXM installer)**
 
-![Android-Studio-Settings](img/AndroidCaptureSetting.png)
+![Android Studio の設定](img/AndroidCaptureSetting.png)
