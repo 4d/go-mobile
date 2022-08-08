@@ -5,10 +5,10 @@ title: On Mobile App Action
 
 **On Mobile App Action**( *mobileInfo* : Object ) -> *result* : Object
 
-| Parameter  | Type   |    | 詳細                                           |
-| ---------- | ------ | -- | -------------------------------------------- |
-| mobileInfo | Object | -> | Information passed by the mobile application |
-| result     | Object | <- | Action status & data synchro                 |
+| 引数         | Type   |    | 詳細                           |
+| ---------- | ------ | -- | ---------------------------- |
+| mobileInfo | Object | -> | モバイルアプリから渡された情報              |
+| result     | Object | <- | Action status & data synchro |
 
 
 ## 詳細
