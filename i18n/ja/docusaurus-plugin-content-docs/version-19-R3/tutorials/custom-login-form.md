@@ -1,20 +1,20 @@
 ---
 id: custom-login-form
-title: Custom Login Form
+title: カスタムログインフォーム
 ---
 
 
-This tutorial will show you how to:
+このチュートリアルでは、次のことを紹介します:
 
-- Create and use a custom [login form](https://4d-for-ios.github.io/gallery/#/type/form-login).
-- Allow authenticated users to login by scanning a QRCode.
+- カスタム [ログインフォーム](https://4d-for-ios.github.io/gallery/#/type/form-login) の作成と使用
+- QRコードのスキャンによる認証ユーザーのログイン
 > **PREREQUISITES**
 > 
-> A website with authenticated users
+> 認証されたユーザーをもつ Webサイト
 > 
-> 4D 18R6 minimum
+> 4D v18R6 以上
 > 
-> Real iOS mobile device (simulator do not simulate camera)
+> iOSモバイルデバイスの実機 (シミュレーターはカメラをシミュレートしないため)
 
 
 *Scenario: You already have a website with authenticated users and you want then to login into their app just by scanning a QRCode*
