@@ -8,7 +8,7 @@ module.exports = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "doc4d", // Usually your GitHub org/user name.
-  projectName: "go-mobile", // Usually your repo name.
+  projectName: "test", // Usually your repo name.
   noIndex: false,
   themeConfig: {
     prism: {
