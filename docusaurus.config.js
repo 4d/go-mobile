@@ -3,7 +3,7 @@ module.exports = {
   title: "Go Mobile with 4D",
   tagline: "Easily create native iOS and Android apps from 4D projects",
   url: "https://doc4d.github.io",
-  baseUrl: "/go-mobile/",
+  baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
@@ -23,11 +23,11 @@ module.exports = {
       },
       items: [
         {
-           type: "doc",
-           position: "left",
-           docId: "getting-started/introduction",
+          type: "doc",
+          position: "left",
+          docId: "getting-started/introduction",
           label: "Docs",
-         },
+        },
         // { type: "doc", position: "left", docId: "first-page", label: "Docs" },
         //{
         //  to: "docs/getting-started/create-your-first-app",
@@ -35,32 +35,32 @@ module.exports = {
         //  position: "left",
         //},
         {
-           type: "doc",
-           position: "left",
-           docId: "tutorials/create-your-first-app",
+          type: "doc",
+          position: "left",
+          docId: "tutorials/create-your-first-app",
           label: "Tutorials",
-         },
-		 //{
-         // to: "tutorials/first-page",
-         // label: "Tutorials",
-         // position: "left",
-        //},
-		 {
-           type: "doc",
-           position: "left",
-           docId: "templates/templates",
-          label: "Templates & Formatters",
-         },
-		 {
-           type: "doc",
-           position: "left",
-           docId: "faq/faq",
-          label: "FAQ",
-         },
+        },
         //{
-         // to: "docs/faq/faq",
-         // label: "FAQ",
-         // position: "left",
+        // to: "tutorials/first-page",
+        // label: "Tutorials",
+        // position: "left",
+        //},
+        {
+          type: "doc",
+          position: "left",
+          docId: "templates/templates",
+          label: "Templates & Formatters",
+        },
+        {
+          type: "doc",
+          position: "left",
+          docId: "faq/faq",
+          label: "FAQ",
+        },
+        //{
+        // to: "docs/faq/faq",
+        // label: "FAQ",
+        // position: "left",
         //},
         //{
         //  href: "https://blog.4d.com/4d-for-ios/",
@@ -72,17 +72,17 @@ module.exports = {
           type: "localeDropdown",
           position: "left",
         },
-		{
+        {
           type: "docsVersionDropdown",
           position: "right",
-		  dropdownItemsAfter: [
-		  {
-			  href: 'https://developer.4d.com/4d-for-ios', 
-			  label: 'Archive (4D for iOS)'
-			  },
-		  ],
+          dropdownItemsAfter: [
+            {
+              href: 'https://developer.4d.com/4d-for-ios',
+              label: 'Archive (4D for iOS)'
+            },
+          ],
         },
-		
+
       ],
     },
     footer: {
@@ -124,7 +124,7 @@ module.exports = {
               label: "4D Documentation",
               to: "https://developer.4d.com/docs/",
             },
-			{
+            {
               label: "4D Doc Center (Legacy)",
               to: "https://doc.4d.com/",
             },
@@ -170,7 +170,7 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} 4D SAS - All rights reserved`,
     },
-	algolia: {
+    algolia: {
       apiKey: 'YOUR_API_KEY',
       indexName: 'YOUR_INDEX_NAME',
 
@@ -204,18 +204,18 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-			"https://github.com/4d/go-mobile/edit/main",
-		  versions: {
-				'19-R5':{
-				label: 'v19 R5',
-				banner: 'none',
-				},
-				'19-R6':{
-				label: 'v19 R6 BETA',
-				banner: 'none',
-				},
-			},
-		includeCurrentVersion: true, // false for prod only
+            "https://github.com/4d/go-mobile/edit/main",
+          versions: {
+            '19-R5': {
+              label: 'v19 R5',
+              banner: 'none',
+            },
+            '19-R6': {
+              label: 'v19 R6 BETA',
+              banner: 'none',
+            },
+          },
+          includeCurrentVersion: true, // false for prod only
         },
         blog: {
           showReadingTime: true,
@@ -236,18 +236,18 @@ module.exports = {
       en: {
         label: "English",
       },
-	fr: {
-		label: "Français",
-		},
-	es: {
-		label: "Español",
-		},
-	ja: {
-		label: "日本語",
-		},
-	pt: {
-		label: "Português",
-		},
+      fr: {
+        label: "Français",
+      },
+      es: {
+        label: "Español",
+      },
+      ja: {
+        label: "日本語",
+      },
+      pt: {
+        label: "Português",
+      },
     },
   },
 };
