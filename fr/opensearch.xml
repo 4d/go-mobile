@@ -4,8 +4,8 @@
   <ShortName>Go Mobile with 4D</ShortName>
   <Description>Search Go Mobile with 4D</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://doc4d.github.io/fr/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://doc4d.github.io/fr/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://doc4d.github.io/fr/opensearch.xml" />
-  <moz:SearchForm>https://doc4d.github.io/fr/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://doc4d.github.io/go-mobile/fr/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://doc4d.github.io/go-mobile/fr/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://doc4d.github.io/go-mobile/fr/opensearch.xml" />
+  <moz:SearchForm>https://doc4d.github.io/go-mobile/fr/</moz:SearchForm>
 </OpenSearchDescription>
