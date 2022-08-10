@@ -204,7 +204,7 @@ WEB SEND HTTP REDIRECT("/generatedQRCode.shtml")
 
 ```html
   <form class="box" ACTION="/4DACTION/Authentication" METHOD=post>
-  <h1>1. ログイン</h1>
+  <h1>1. Login</h1>
   <input type="text" id="login" placeholder="Username" name=VLOGIN >
   <input type="password" id="login" placeholder="Password" name=VPASS>
   <input type="submit" name="" value="Login">
@@ -216,9 +216,9 @@ WEB SEND HTTP REDIRECT("/generatedQRCode.shtml")
 ここでは 4DACTION を使用して、*GenerateQRCODE プロジェクトメソッド* を呼び出しています:
 
 ```html
-<h1>2. QRコードの生成</h1>
+<h1>2. GENERATE YOUR QRCODE</h1>
     <div>
-        <p><a href="/4DACTION/GenerateQRCODE">こちら</a> をクリックして、認証のための QRコードを作成してください。</p>
+        <p>Create your QRCode to authenticate clicking <a href="/4DACTION/GenerateQRCODE">Here</a></p>
     </div>
 ```
 
@@ -227,7 +227,7 @@ WEB SEND HTTP REDIRECT("/generatedQRCode.shtml")
 この最後のページでは、[4Dタグ](https://developer.4d.com/docs/ja/Tags/tags.html) を使って、*data* の値を取得しています:
 
 ```html
-<h1>3. モバイルデバイスで QRコードをスキャン</h1>
+<h1>3. SCAN THE QRCODE FROM YOUR PHONE</h1>
   <div id="canvas"></div>
 
   <script type="text/javascript">
@@ -264,17 +264,17 @@ Webサイトのホームページの Username 欄に **david@4D.com**、Password
 
 ![QRコードを生成する](img/create-qr-code.png)
 
-You will be redirected to the final QR Code page.
+最後の QRコードのページにリダイレクトされます。
 
 ![生成された QRコード](img/generated-qr-code.png)
 
-### Build your app on a real device
+### 実機でアプリをビルドする
 
-Install your mobile app from the project editor on a real device.
+プロジェクトエディターから、モバイルアプリを実機にインストールします。
 
-Then the custom login form will appear to allow you scanning the generated QRCode and login into your mobile app.
+すると、カスタムログインフォームが表示されます。ここで、さきほど生成した QRコードをスキャンすることで、モバイルアプリにログインできます。
 
-Here is the final result :
+このような結果になります:
 
 ![QRコードでサインイン](img/sign-in-with-qr-code.gif)
 
