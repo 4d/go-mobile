@@ -3,7 +3,7 @@ module.exports = {
   title: "Go Mobile with 4D",
   tagline: "Easily create native iOS and Android apps from 4D projects",
   url: "https://doc4d.github.io",
-  baseUrl: "/",
+  baseUrl: "/go-mobile/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
