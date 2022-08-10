@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgo_mobile=self.webpackChunkgo_mobile||[]).push([[8992],{63034:o=>{o.exports=JSON.parse('{"permalink":"/go-mobile/ja/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

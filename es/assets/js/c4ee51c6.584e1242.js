@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgo_mobile=self.webpackChunkgo_mobile||[]).push([[9306],{23149:e=>{e.exports=JSON.parse('{"permalink":"/go-mobile/es/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgo_mobile=self.webpackChunkgo_mobile||[]).push([[3194],{96825:l=>{l.exports=JSON.parse('{"label":"hello","permalink":"/go-mobile/pt/blog/tags/hello","allTagsPath":"/go-mobile/pt/blog/tags","count":2}')}}]);
