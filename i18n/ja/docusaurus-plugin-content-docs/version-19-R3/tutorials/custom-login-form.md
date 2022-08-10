@@ -253,7 +253,7 @@ WEB SEND HTTP REDIRECT("/generatedQRCode.shtml")
 
 ### Webサイトのトップページにログインする
 
-Webサイトのホームページの Username 欄に **david@4D.com**、Password フィールドに **TEST** と入力し、Login をクリックします (これは User テーブルに存在するレコードです)。
+実行メニューから "Web サーバーテスト" を選択して Webサイトのホームページを開き、Username 欄に **david@4D.com**、Password フィールドに **TEST** と入力し、Login をクリックします (これは User テーブルに存在するレコードです)。
 
 ![Login フォーム](img/login-form.png)
 
@@ -280,6 +280,6 @@ Webサイトのホームページの Username 欄に **david@4D.com**、Password
 
 ## ⒎ これからどうする？
 
-The step 2 covers how to include easily any custom login form in your mobile app. So you should now be able just followin this step, to create your own custom login form and use it on your own.
+ステップ2 では、モバイルアプリに任意のログインフォームを簡単に追加する方法を説明しています。 同様に、作成した独自のログインフォームをモバイルアプリに追加して、使用することができます。
 
-Reading next steps you are now able to include the Sign In With QRCode login and allow your authenticated users to scan a QRCode to login into their app.
+また、その後の手順では、Sign In With QRCode ログインの実装方法を説明しています。これを使うと、認証済みユーザーが QRコードをスキャンしてモバイルアプリにログインできるようになります。
