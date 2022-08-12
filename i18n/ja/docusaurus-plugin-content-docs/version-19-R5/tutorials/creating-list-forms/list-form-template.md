@@ -3,16 +3,16 @@ id: list-form-template
 title: リストフォームのテンプレート
 ---
 
-In this tutorial, we'll cover nearly all aspects of creating a list form template, including the use of a **searchBar**, a table displaying an **image**, a **title**, and a **subtitle** for each cell.
+このチュートリアルでは、リストフォーム用のカスタムテンプレートを作成するために必要なスキルを身につけることができます。これには、フォームへの **検索窓** の追加、**画像** フィールドの表示、各セルへの **タイトル** および **サブタイトル** の表示が含まれます。
 
 ![リストフォームテンプレート（完成）](img/custom-template-final-result.png)
 
 ## スタータープロジェクトをダウンロード
 
-Before we begin, be sure to download and unzip the **Starter project** which includes:
+**スタータープロジェクト** をダウンロードしてください。これには、下記のものが収録されています:
 
-* A **List form** folder
-* A demo 4D project ("Contact") with a ready-to-use mobile app project.
+* **Custom List form** フォルダー
+* すぐに使えるモバイルアプリの付いたデモ4Dプロジェクト ("Contact")。
 
 <div className="center-button">
 <a className="button button--primary"
