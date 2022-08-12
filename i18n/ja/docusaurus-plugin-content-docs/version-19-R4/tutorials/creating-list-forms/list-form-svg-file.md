@@ -3,13 +3,13 @@ id: list-form-svg-file
 title: Template.svg
 ---
 
-The `template.svg` file is a basic visual representation of a template. プロジェクターエディターでリストフォームのテンプレートにフィールドが追加できるように，ドラッグ＆ドロップ用のエリアを定義しておきます。
+`template.svg` は、テンプレートのレイアウトを視覚的に表現するためのファイルです。 プロジェクトエディターでリストフォームのテンプレートにフィールドが追加できるように、ドラッグ＆ドロップ用のエリアを定義しておきます。
 
 図は完成したファイルのイメージです。
 
 ![テンプレートSVGファイル](img/template-svg-file.png)
 
-Let’s focus on the different parts of this svg file and what you'll need to edit.
+この svgファイルの各部分の役割とカスタマイズできる箇所を見ていきましょう。
 
 ## タイトル
 
@@ -17,7 +17,7 @@ Let’s focus on the different parts of this svg file and what you'll need to ed
 <title>Custom List form</title>
 ```
 
-Title of the template.
+テンプレートの名称をここに指定します。
 
 ## ios:values
 
@@ -25,21 +25,21 @@ Title of the template.
 <text id="cookery" ios:values="search,section,f1,f2,f3"/>
 ```
 
-Includes IDs which define your form areas:
+リストフォームに配置されたフィールドを特定するための情報が記述されています:
 
-* **search**: Refers to the search field area. このエリアにドラッグ＆ドロップしたフィールドは，リストに表示されるレコードの検索に使用されます（任意）。
-* **section**: Refers to the section field area. このエリアにドラッグ＆ドロップしたフィールドは，リストに表示されるレコードの並び替えに使用されます（任意）。
-* **f1, f2 and f3**: Refers to the fields to display in each cell of your list form. セルに表示されるフィールドは，ドラッグ＆ドロップで追加することができます。
+* **search**: 検索フィールドのことです。 このエリアにドラッグ＆ドロップしたフィールドは、リストに表示されるレコードの検索に使用されます (任意)。
+* **section**: セクションフィールドのことです。 このエリアにドラッグ＆ドロップしたフィールドは、リスト表示されるレコードの並び替えに使用されます (任意)。
+* **f1, f2, f3**: リストフォームの各行 (セル) に表示されるフィールドです。 セルに表示されるフィールドは、ドラッグ＆ドロップで追加することができます。
 
-## Area position, height, and width
+## エリアの位置・サイズ
 
-You can define the position, height and width for:
+下記のエリアについて、位置とサイズを指定できます:
 
 * 検索フィールド
 * セクションフィールド
-* 各行（セル）に表示されるフィールド
+* 各行 (セル) に表示されるフィールド
 
-### 検索フィールド
+### 検索フィールド:
 
 ```svg
 //1
@@ -62,17 +62,17 @@ You can define the position, height and width for:
 </g>
 ```
 
-1. エリア全体の垂直位置です。（g要素のtransform属性）
-2. エリア背景の位置とサイズです。
-3. 検索エリアに表示されるルーペアイコンです。
-4. 入力エリアの位置とサイズです。（textArea要素）
-5. Define the droppable field position, height and width, as well as accepted [**field types**](#iostypes)
-6. 内容をクリアするためのキャンセルボタンです。
+1. エリア全体の垂直位置 (g 要素)
+2. エリアの背景位置とサイズ (rect 要素)
+3. 検索フィールドに表示されるルーペアイコン (path 要素)
+4. 入力エリアの位置とサイズ (textArea 要素)
+5. フィールドをドロップできるエリアの位置とサイズ、およびドロップ可能な [**フィールドタイプ**](#iostypes) (rect 要素)
+6. 内容をクリアするためのキャンセルボタン (use 要素)
 
-The searchable field is optional.
+検索フィールドを使用することは必須ではありません。
 
 
-### セクションフィールド
+### セクションフィールド:
 
 ```svg
 //1
@@ -88,14 +88,14 @@ The searchable field is optional.
 <use id="section.cancel" x="224" y="111" xlink:href="#cancel" visibility="hidden"/>
 ```
 
-1. エリア背景の位置とサイズです。
-2. 入力エリアの位置とサイズです。（textArea要素）
-3. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
-4. 内容をクリアするためのキャンセルボタンです。
+1. エリアの背景位置とサイズ (rect 要素)
+2. 入力エリアの位置とサイズ (textArea 要素)
+3. フィールドをドロップできるエリアの位置とサイズ、およびドロップ可能な [**フィールドタイプ**](#iostypes) (rect 要素)
+4. 内容をクリアするためのキャンセルボタン (use 要素)
 
-The section field is optional.
+セクションフィールドを使用することは必須ではありません。
 
-### ピクチャフィールド
+### ピクチャーフィールド:
 
 ```svg
 //1
@@ -118,14 +118,14 @@ The section field is optional.
 </g>
 ```
 
-1. エリア全体の垂直位置です。（g要素のtransform属性）
-2. エリア背景の位置とサイズです。
-3. ピクチャエリアに表示されるアイコン画像です。
-4. 入力エリアの位置とサイズです。（textArea要素）
-5. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
-6. 内容をクリアするためのキャンセルボタンです。
+1. エリア全体の垂直位置 (g 要素)
+2. エリアの背景位置とサイズ (rect 要素)
+3. ピクチャーエリアに表示されるアイコン画像 (path 要素)
+4. 入力エリアの位置とサイズ (textArea 要素)
+5. フィールドをドロップできるエリアの位置とサイズ、およびドロップ可能な [**フィールドタイプ**](#iostypes) (rect 要素)
+6. 内容をクリアするためのキャンセルボタン (use 要素)
 
-### タイトルフィールド
+### タイトルフィールド:
 
 ```svg
 //1
@@ -145,11 +145,11 @@ The section field is optional.
 </g>
 ```
 
-1. エリア全体の垂直位置です。（g要素のtransform属性）
-2. エリア背景の位置とサイズです。
-3. 入力エリアの位置とサイズです。（textArea要素）
-4. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
-5. 内容をクリアするためのキャンセルボタンです。
+1. エリア全体の垂直位置 (g 要素)
+2. エリアの背景位置とサイズ (rect 要素)
+3. 入力エリアの位置とサイズ (textArea 要素)
+4. フィールドをドロップできるエリアの位置とサイズ、およびドロップ可能な [**フィールドタイプ**](#iostypes) (rect 要素)
+5. 内容をクリアするためのキャンセルボタン (use 要素)
 
 ### サブタイトルフィールド
 
@@ -171,32 +171,32 @@ The section field is optional.
 </g>
 ```
 
-1. エリア全体の垂直位置です。（g要素のtransform属性）
-2. エリア背景の位置とサイズです。
-3. 入力エリアの位置とサイズです。（textArea要素）
-4. Define the droppable field position, height and width as well as accepted [**field types**](#iostypes)
-5. 内容をクリアするためのキャンセルボタンです。
+1. エリア全体の垂直位置 (g 要素)
+2. エリアの背景位置とサイズ (rect 要素)
+3. 入力エリアの位置とサイズ (textArea 要素)
+4. フィールドをドロップできるエリアの位置とサイズ、およびドロップ可能な [**フィールドタイプ**](#iostypes) (rect 要素)
+5. 内容をクリアするためのキャンセルボタン (use 要素)
 
 
 ## ios:types
 
-The following field types are supported:
+以下のフィールドタイプがサポートされています:
 
-| Code | Type           |
-| ---- | -------------- |
-| 0    | alpha          |
-| 1    | real           |
-| 2    | text           |
-| 3    | picture        |
-| 4    | date           |
-| 8    | integer        |
-| 9    | longint        |
-| 11   | time           |
-| 25   | integer 64 bit |
+| コード | タイプ     |
+| --- | ------- |
+| 0   | 文字      |
+| 1   | 実数      |
+| 2   | テキスト    |
+| 3   | ピクチャー   |
+| 4   | 日付      |
+| 8   | 整数      |
+| 9   | 倍長整数    |
+| 11  | 時間      |
+| 25  | 整数64bit |
 
 :::note
 
-For more information on these field types, refer to [**this page**](https://developer.4d.com/docs/en/Concepts/data-types.html).
+これらのフィールドタイプの詳細については、[**このページ**](https://developer.4d.com/docs/ja/Concepts/data-types.html) を参照ください。
 
 :::
 
