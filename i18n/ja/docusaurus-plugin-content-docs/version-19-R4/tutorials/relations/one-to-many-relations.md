@@ -52,7 +52,7 @@ So, in the Labels & Icons section you will define:
 
 ![Labels & Icons section Relations properties](img/Relations-properties-Labels-icons-section-4D-for-iOS.png)
 
-## Forms section
+## フォームセクション
 
 * Go to the Forms section and drop the *tasks* relation on the Employee Task Detail form.
 
