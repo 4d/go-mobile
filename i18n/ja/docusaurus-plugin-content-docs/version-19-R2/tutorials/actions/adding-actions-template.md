@@ -15,7 +15,7 @@ title: テンプレートにアクションを追加する
 
 ## ⒈ スタータープロジェクトをダウンロード
 
-To begin, download the **Starter project**, which includes:
+**スタータープロジェクト** をダウンロードします。これには、以下のものが収録されています:
 
 * リストフォームのカスタムテンプレートが2つ(TasksList および TasksCollection)
 * 詳細フォームのカスタムテンプレートが1つ(TasksDetail)
