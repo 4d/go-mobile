@@ -33,7 +33,7 @@ href="https://github.com/4d-go-mobile/tutorial-DataFormatter/releases/latest/dow
 
 ## スタータープロジェクトをダウンロード
 
-To begin, download the **Starter project**, which includes:
+**スタータープロジェクト** をダウンロードします。これには、以下のものが収録されています:
 
 * **integerToImage_Images** and **textToImage_Images** folders that contain images (to use later for formatters that include images)
 * A **Task Management.4dbase** file (with a ready to use mobile app project)
