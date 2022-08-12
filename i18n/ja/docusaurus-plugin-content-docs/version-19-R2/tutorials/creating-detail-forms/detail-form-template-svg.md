@@ -4,13 +4,13 @@ title: Template.svg
 sidebar_label: Template.svg
 ---
 
-The `template.svg` file is a basic template representation. プロジェクターエディターでリストフォームのテンプレートにフィールドが追加できるように，ドラッグ＆ドロップ用のエリアを定義しておきます。
+`template.svg` は、テンプレートのレイアウトを視覚的に表現するためのファイルです。 プロジェクトエディターで詳細フォームのテンプレートにフィールドが追加できるように、ドラッグ＆ドロップ用のエリアを定義しておきます。
 
 図は完成したファイルのイメージです。
 
 ![テンプレートSVGファイル](img/detailform-template-svg-file.png)
 
-This template has dynamic field numbering, meaning that this template will allow you to add an **image** and you can put **as many fields** as you need. 「フォーム」セクションの詳細画面エディターでは，最後にドラッグ＆ドロップしたフィールドの下に空白のフィールドが現れるようになっているので，フィールドをさらに追加することができます。
+フィールド数は可変になっています。これはつまり、1つの **ピクチャー** と **無限のフィールド** が追加できるということです。 フォームセクションの詳細画面エディターでは、最後にドラッグ＆ドロップしたフィールドの下に空白のフィールドが現れるようになっているので、フィールドをさらに追加することができます:
 
 ![テンプレートSVGファイル](img/detailform-dynamic-field-number.png)
 
@@ -18,7 +18,7 @@ This template has dynamic field numbering, meaning that this template will allow
 ![Template svg file](assets/en/custom-detailform/detailform-dynamic-field-number.png)
 ```
 
-Let’s focus on the different parts of this svg file and what you'll need to edit.
+この svgファイルの各部分の役割とカスタマイズできる箇所を見ていきましょう。
 
 ## タイトル
 
@@ -26,12 +26,12 @@ Let’s focus on the different parts of this svg file and what you'll need to ed
 <title>Custom Detail form</title>
 ```
 
-Add the title for your template here.
+テンプレートの名称をここに指定します。
 
-## Area position, height and width and type
-You can define position, height, and width for all of your fields. This process is the same as [the one you use for custom list forms](../creating-list-forms/list-form-svg-file.md#area-position-height-width-and-type).
+## エリアの位置・サイズ・タイプ
+すべてのフィールドの位置とサイズが指定できます。 この手順は、[カスタムリストフォーム](../creating-list-forms/list-form-svg-file.md#エリアの位置-サイズ) と同じです。
 
-### Field properties
+### フィールドプロパティ
 
 ```xml
 //1
@@ -51,13 +51,13 @@ You can define position, height, and width for all of your fields. This process 
 </g>
 ```
 
-1. エリア全体の垂直位置です。（g要素のtransform属性）
-2. エリア背景の位置とサイズです。
-3. 入力エリアの位置とサイズです。（textArea要素）
-4. Define the droppable field position, height, and width, as well as accepted [**field types**](../creating-list-forms/list-form-svg-file.md#iostypes) (all types are accepted in this example)
-5. 内容をクリアするためのキャンセルボタンです。
+1. エリア全体の垂直位置 (g 要素)
+2. エリアの背景位置とサイズ (rect 要素)
+3. 入力エリアの位置とサイズ (textArea 要素)
+4. フィールドをドロップできるエリアの位置とサイズ、およびドロップ可能な [**フィールドタイプ**](../creating-list-forms/list-form-svg-file.md#iostypes) (rect 要素)。この例ではすべてのタイプがドロップ可能です)
+5. 内容をクリアするためのキャンセルボタン (use 要素)
 
-### ピクチャフィールド
+### ピクチャーフィールド
 
 ```xml
 //1
@@ -80,12 +80,12 @@ You can define position, height, and width for all of your fields. This process 
 </g>
 ```
 
-1. エリア全体の垂直位置です。（g要素のtransform属性）
-2. エリア背景の位置とサイズです。
-3. ピクチャエリアに表示されるアイコン画像です。
-4. 入力エリアの位置とサイズです。（textArea要素）
-5. Define the droppable field position, height, and width, as well as accepted [**field types**](../creating-list-forms/list-form-svg-file.md#iostypes)
-6. 内容をクリアするためのキャンセルボタンです。
+1. エリア全体の垂直位置 (g 要素)
+2. エリアの背景位置とサイズ (rect 要素)
+3. ピクチャーエリアに表示されるアイコン画像 (path 要素)
+4. 入力エリアの位置とサイズ (textArea 要素)
+5. フィールドをドロップできるエリアの位置とサイズ、およびドロップ可能な [**フィールドタイプ**](../creating-list-forms/list-form-svg-file.md#iostypes) (rect 要素)
+6. 内容をクリアするためのキャンセルボタン (use 要素)
 
 Now that you have an **icon**, a **basic template description** in the manifest.json file, and your **svg file**, let's move on to the fun part with Xcode!
 
