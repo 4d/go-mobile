@@ -1,21 +1,21 @@
 ---
 id: detail-form-template-layout
-title: Android Layout
+title: Android レイアウト
 ---
 
-In this section you will see how to create your detail form interface with Android Studio.
+ここでは、Android Studio を使用してカスタム詳細フォームのインターフェースを作成する方法を説明します。
 
 完成イメージ
 
 ![カスタム詳細画面のストーリーボード](img/xml-custom-detailform.png)
 
 
-For this template, we're going to add a:
+テンプレートに表示する次のフィールドのレイアウトをデザインします:
 
 * プロフィールのヘッダー画像
 * 繰り返されるフィールド
 
-## Open the layout file with Android Studio
+## レイアウトファイルを Android Studio で開く
 
 The best way to edit or create a template is to :
 
@@ -39,7 +39,7 @@ The best way to edit or create a template is to :
 
 * Click on the top right **Split** option to visualize the template preview as well as the xml code.
 
-It's quite empty, so let's add some content!
+ほとんど白紙の状態です。早速、中身を追加しましょう！
 
 
 ## What is available in this starter project
@@ -133,7 +133,7 @@ The part that is going to be duplicated:
 ```
 
 
-## Add an Image View
+## Image View を追加する
 
 In order to have a nice Image view display we are going to use a CardView container again. We want to add a nice corner radius to the ImageView to have a better design.
 
@@ -339,7 +339,7 @@ In this tutorial, we've covered the basics for creating detail form templates. Y
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">ダウンロード</a>
 </div>
 
 
