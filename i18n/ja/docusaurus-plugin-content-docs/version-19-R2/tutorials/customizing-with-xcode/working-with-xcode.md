@@ -23,7 +23,7 @@ Download the Starter project:
 <a
   className="button button--primary"
   href="#">
-  Download
+  ダウンロード
 </a>
 </div>
 
