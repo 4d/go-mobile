@@ -1,21 +1,21 @@
 ---
 id: list-form-layout
-title: Android Layout
+title: Android レイアウト
 ---
 
-In this section you will see how to create your Android list form interface with Android Studio.
+ここでは、Android Studio を使用してカスタムリストフォームのインターフェースを作成する方法を説明します。
 
 完成イメージ
 
 ![カスタムリスト画面のストーリーボード](img/xml-custom-listform.png)
 
-セル内に表示されるフィールドのレイアウトをデザインしましょう。
+テンプレートに表示する次のフィールドのレイアウトをデザインします:
 
 * アイコン
 * タイトル
 * サブタイトル
 
-## Open the layout file with Android Studio
+## レイアウトファイルを Android Studio で開く
 
 The best way to edit or create a template is to :
 
@@ -39,7 +39,7 @@ The best way to edit or create a template is to :
 
 * Click on the top right **Split** option to visualize the template preview as well as the xml code.
 
-It's quite empty, so let's add some content!
+ほとんど白紙の状態です。早速、中身を追加しましょう！
 
 
 ## Add a CardView container
@@ -125,7 +125,7 @@ And here is the preview result you are supposed to get :
 ![Add CardView container](img/add-cardView-container.png)
 
 
-## Add an ImageView
+## Image View を追加する
 
 In order to have a nice Image view display we are going to use agin a CardView container again as we want to add a nice corner radius to the ImageView to have a better design.
 
@@ -339,7 +339,7 @@ Here is the full layout code at this stage:
 
 ```
 
-## Label customization
+## ラベルのカスタマイズ
 
 From here you can customize your label's :
 
@@ -377,11 +377,11 @@ Here we suppose the title is the second view in the svg, and its view ID is `__S
 
 In this tutorial, we've covered the basics for creating Android list form templates. You are now able to create simple templates on your own using the Starter Project ressources. But wait - there’s more! In the next tutorial, you’ll learn how to build Android detail form templates!
 
-Download the completed template list folder:
+完成したリストフォームのテンプレート入りプロジェクト:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomListForm/releases/latest/download/tutorial-CustomListForm.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomListForm/releases/latest/download/tutorial-CustomListForm.zip">ダウンロード</a>
 </div>
 
 
