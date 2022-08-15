@@ -32,14 +32,14 @@ title: 複数条件検索
 
 ## プロジェクトエディター
 
-Next, you can go to the project editor and drop several fields into the list form search area.
+プロジェクトエディターを開き、リストフォームの検索エリアに複数のフィールドをドロップして追加します。
 
-![Multi-criteria search in the project editor](img/multi-criteria-search-forms-section.png)
+![プロジェクトエディター内の複数条件検索](img/multi-criteria-search-forms-section.png)
 
-Click on the search field's delete button to modifiy the associated field list.
+設定した検索フィールドを変更するには、検索エリアの削除ボタンをクリックします。
 
-A menu will appear to allow you to **remove specific fields** or **remove all fields**, depending on which criteria you want to base your search(es) on.
+必要に応じて **特定のフィールド** または **すべてのフィールド** を検索エリアから取り除くことができます。
 
-![Modify Multi-criteria search fields](img/multi-criteria-search-forms-section-remove-fields.png)
+![複数条件検索フィールドを編集する](img/multi-criteria-search-forms-section-remove-fields.png)
 
-おつかれさまでした！ You can now base your search(es) on multiple fields in your mobile app!
+おつかれさまでした！ 複数フィールドで検索するモバイルアプリが作成できるようになりました！
