@@ -18,7 +18,7 @@ title: 作業をXcodeに引き継ぐ
 
 Xcodeは，macOS上で動く統合開発環境および付随する開発者ツールで構成されており，iPad，iPod，iPhone，Mac用のアプリを作成することができます。
 
-## Download
+## ダウンロード
 
 最新版のXcodeは，App Storeからダウンロードすることができます。
 
@@ -37,7 +37,7 @@ Download the Starter project:
 <a
   className="button button--primary"
   href="#">
-  Download
+  ダウンロード
 </a>
 </div>
 
