@@ -202,6 +202,6 @@ title: Template.svg
 
 :::tip
 
-To make field type definition easier, 4D for iOS allows you to include field types with **positive values** and also exclude field types with **negative values**. For example, `ios:type="-3,-4"` will allow you to drag and drop every field except images and dates. To include all types, just type `ios:type="all"`.
+フィールドタイプは、カンマ区切りの整数で指定します。ドロップできるフィールドタイプは **正の値** で指定し、できないフィールドは **負の値** で指定します。 たとえば、`ios:type="-3,-4"` の場合、ピクチャーと日付以外のフィールドがドロップ可能、という意味になります。 すべてのタイプをサポートする場合は、`ios:type="all"` と指定します。
 
 :::
