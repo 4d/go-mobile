@@ -1,52 +1,52 @@
 ---
 id: detail-form-template-storyboard
-title: iOS Storyboard
+title: iOS ストーリーボード
 ---
 
-Now it's time to create your iOS detail form interface with Xcode.
+iOSアプリのカスタム詳細フォームのインターフェースを Xcode で作成しましょう！
 
 完成イメージ
 
 ![カスタム詳細画面のストーリーボード](img/storyboard-custom-detailform.png)
 
-For this template, we're going to add a:
+テンプレートに表示する次のフィールドのレイアウトをデザインします:
 
 * プロフィールのヘッダー画像
 * 繰り返されるフィールド
 
-## ストーリーボードをXcodeで開く
+## ストーリーボードを Xcode で開く
 
-storyboardファイル（拡張子は非表示かもしれません）をXcodeで開きます。
+.storyboardファイル (拡張子は非表示かもしれません) を Xcode で開きます。
 
 ![ストーリーボード（空の状態）](img/empty-storyboard-custom-detailform-template.png)
 
-It's quite empty, so let's add some content!
+ほとんど白紙の状態です。早速、中身を追加しましょう！
 
-## Scroll Viewを追加する
+## Scroll View を追加する
 
-For our detail form to be scrollable, the first step is to drag and drop a "Scroll View" from the **Object library**.
+詳細フォームをスクロールできるようにするため、はじめに **オブジェクトライブラリ** から Scroll View をドラッグ＆ドロップします。
 
 ![Scroll Viewをストーリーボードに追加](img/add-scrollview-storyboard.png)
 
 
-From the **Size inspector panel** (on the right side of the Interface Builder window), set the Scroll View Width value to 359 and the Height value to 667. X 座標を 8 に，Y 座標を 0 に設定しましょう。
+**Size inspector** (ウィンドウ右側パネルの三角定規アイコンをクリック) で Scroll View の Width (幅) を 359 に、Height (高さ) を 667 に設定します。 X座標を 8、Y座標を 0 に設定します。
 
 ![Scroll Viewの位置とサイズ](img/scrollview-position-height-width.png)
 
 
-Next, add four constraints by clicking on the **Add New Constraints button** (Trailing: 8, Leading: 8, Top: 0, and Bottom: 0) as shown below:
+**Add New Constraints** ボタンをクリックします。左右上下 (Leading・Trailing・Top・Bottom) の余白をそれぞれ 8・8・0・0 に設定し、余白がすべて有効なのを確認して (赤い実線)、確定します:
 
 ![Scroll Viewの制約](img/scrollview-constraints.png)
 
-## Vertical Stack Viewを追加する
+## Vertical Stack View を追加する
 
-Drag and drop a Vertical Stack View from the **Object library** in Scroll View. Then, from the **Size inspector panel** (on the right side of the Interface Builder window) set the Width value to 359 and the Height value to 202. X 座標を 0 に，Y 座標を 8 に設定しましょう。
+**オブジェクトライブラリ** から Vertical Stack View をドラッグし、Scroll View の上にドロップします。 **Size inspector** (ウィンドウ右側パネルの三角定規アイコンをクリック) で、Width (幅) を 359 に、Height (高さ) を 202 に設定します。 X座標を 0、Y座標を 8 に設定します。
 
 ![Stack Viewをストーリーボードに追加](img/add-vertical-stackview-storyboard.png)
 
-Stack Viewの幅と高さは，内包しているオブジェクトによって決まるため，サイズの制約はもう少し後に設定します。
+Stack View の幅と高さは、内包しているオブジェクトによって決まるため、サイズの制約はもう少し後に設定します。
 
-## Stack Viewに他のViewを追加する
+## Stack View に他の View を追加する
 
 Drag and drop a view from the **Object library** to the Stack View you've just added to your storyboard. Let's name it **Field View 1**.
 
@@ -107,7 +107,7 @@ In the **Size inspector panel** change the Intrinsic Size from **Default** to **
 
 ### Title ラベル
 
-In the **Object library**, drag and drop a  **Label** into Field View 2 and set the Width value to 343 and the Height value to 22. Then set the X value to 8 and the Y value to 8.
+In the **Object library**, drag and drop a  **Label** into Field View 2 and set the Width value to 343 and the Height value to 22. また、X座標と Y座標の両方を 8 に設定します。
 
 ![ラベル追加](img/add-label1-storyboard.png)
 
@@ -134,15 +134,15 @@ Select the Content and Title labels and add four constraints by clicking on the 
 ## セルにフィールドが表示されるようにセットアップする
 
 ### Image View
-Select your Image View and go to **Identity inspector** > User Defined Runtime Attributes. Click the **+ button** to add a row.
+Image View を選択し、**Identity inspector** (ウィンドウ右側パネルの身分証明書アイコンをクリック) の User Defined Runtime Attributes にアクセスします。 行を追加するために **＋** ボタンをクリックします。
 
 ![User defined runtime attributes](img/user-defined-runtime-attributes.png)
 
-* **Key Path**: Start with bindTo to activate binding on the component. Enter `bindTo.record.___FIELD_1___`
+* **Key Path**: bindTo から始まるコードでコンポーネントの結合を有効にします: `bindTo.record.___FIELD_1___` と入力します。
 
-* **Type**: Always `String`
+* **Type**: 常に `String`
 
-* **Value**: The attribute name. Enter `___FIELD_1_BINDING_TYPE___`
+* **Value**: 属性名です。 `___FIELD_1_BINDING_TYPE___` と入力します。
 
 ![Identity inspector](img/identity-inspector-storyboard.png)
 
@@ -268,5 +268,5 @@ Download the completed template folder:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-for-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">Download</a>
+href="https://github.com/4d-for-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">ダウンロード</a>
 </div>
