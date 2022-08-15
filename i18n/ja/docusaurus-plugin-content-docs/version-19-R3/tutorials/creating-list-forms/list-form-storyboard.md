@@ -1,47 +1,47 @@
 ---
 id: list-form-storyboard
-title: iOS Storyboard
+title: iOS ストーリーボード
 ---
 
-Now it's time to create your iOS list form interface with Xcode.
+iOSアプリのカスタムリストフォームのインターフェースを Xcode で作成しましょう！
 
 完成イメージ
 
 ![カスタムリスト画面のストーリーボード](img/storyboard-custom-listform.png)
 
-セル内に表示されるフィールドのレイアウトをデザインしましょう。
+テンプレートに表示する次のフィールドのレイアウトをデザインします:
 
 * アイコン
 * タイトル
 * サブタイトル
 
-## ストーリーボードをXcodeで開く
+## ストーリーボードを Xcode で開く
 
-storyboardファイル（拡張子は非表示かもしれません）をXcodeで開きます。
+.storyboardファイル (拡張子は非表示かもしれません) を Xcode で開きます。
 
 ![ストーリーボード（空の状態）](img/empty-storyboard-custom-template.png)
 
-It's quite empty, so let's add some content!
+ほとんど白紙の状態です。早速、中身を追加しましょう！
 
-## Add an Image View
+## Image View を追加する
 
-Let's begin by **adding a View**. Search for "View" in the **Object library** and drag it into the cell container.
+エディターを右にスクロールして第2画面 (シーン) に移動し、**オブジェクトライブラリ** から **Image View** を探してセルにドラッグ＆ドロップします。 オブジェクトライブラリは、View メニューから Show Library を選択して表示できるほか、command+shift+L で直接表示することもできます。
 
 ![Add Image View storyboard](img/add-imageview-storyboard.png)
 
-From the **Size inspector panel** (on the right side of the Interface Builder window), set the Image View Width value to 110 and the Height value to 110. また，X座標を8に，Y座標を3に設定します。
+**Size inspector** (ウィンドウ右側パネルの三角定規アイコンをクリック) で Image View の Width (幅) と Height (高さ) の両方を 110 に設定します。 また、X座標を 8、Y座標を 3 に設定します。
 
 ![Image View position height and width](img/imageview-position-height-width.png)
 
-Next, add a constraint (Leading: 8) by clicking on the **Add New Constraints button** (at the bottom of the Interface Builder window). WidthおよびHeightのチェックボックスをクリックし，幅と高さに固定値の制約を追加します。
+**Add New Constraints** (ウィンドウ右下にある T に囲まれた四角のアイコン) ボタンをクリックします。左側の余白 (Leading Space) が 8 と表示されているので、右隣の赤い点線をクリックして (実線に変化します) 余白を有効にします。 次に、Width と Height のチェックボックスをクリックして、幅と高さに固定値の制約を追加し、下の "Add 3 Constraints" ボタンをクリックして確定します。
 
 ![Image View前の余白](img/imageview-leading-space-width-height.png)
 
-Finally, click on the **Align button** (at the bottom of the Interface Builder window) and check the "Vertically in Container" checkbox.
+**Align** (ウィンドウ下部の四角が左揃えになっているアイコン) ボタンをクリックして、Vertically in Container (縦中央揃え) のチェックボックスを有効にして、これも確定します。
 
 ![Image View垂直揃え](img/imageview-align-vertically.png)
 
-Your Image View is now well positioned.
+これで、Image View のレイアウトが決まりました。
 
 ![Image View（完成）](img/imageview-final.png)
 
@@ -49,87 +49,87 @@ Your Image View is now well positioned.
 
 ## タイトルおよびサブタイトルのラベル
 
-Select your Image View and go to **Identity inspector** > User Defined Runtime Attributes. Click the **+ button** to add a row.
+まず **View** を追加しましょう。 **オブジェクトライブラリ** で View (View Controllerではありません) を探し、セルにドラッグ＆ドロップします。
 
 ![Viewをストーリーボードに追加](img/add-view-storyboard.png)
 
-From the **Size inspector panel** (on the right side of the Interface Builder window), set the View Width value to 277 and the Height value to 94. また，X座標を126に，Y座標を10に設定します。
+**Size inspector** (ウィンドウ右側パネルの三角定規アイコンをクリック) で View の Width (幅) を 277 に、Height (高さ) を 94 に設定します。 また、X座標を 126、Y座標を 10 に設定します。
 
 ![Viewの位置とサイズ](img/view-position-height-width.png)
 
-For the Image View, add four constraints by clicking on the **Add New Constraints button** (Trailing: 11, Leading: 8, Top: 11, and Bottom: 10.67) for the view to be well positioned, as shown:
+**Add New Constraints** (ウィンドウ右下にある T に囲まれた四角のアイコン) ボタンをクリックして余白を設定します。左右上下 (Leading・Trailing・Top・Bottom) の余白をそれぞれ 8・11・11・10.67 に設定し、余白がすべて有効なのを確認して (赤い実線)、確定します。
 
 ![Viewの制約](img/view-constraints-storyboard.png)
 
-Viewの上にObject LibraryからLabelをドラッグ＆ドロップします。
+今度は、**オブジェクトライブラリ** で Label を探し、View の上にドラッグ＆ドロップします。
 
 ![ラベルをストーリーボードに追加](img/add-label-storyboard.png)
 
-From the **Size inspector panel**, set the Label View Width value to 269 and the Height value to 32. Then set the X value to 8 and the Y value to 8.
+**Size inspector** で Label の Width (幅) を 269 に、Height (高さ) を 32 に設定します。 また、X座標と Y座標の両方を 8 に設定します。
 
-**Duplicate the label** and in the **Size inspector panel**, set the X value to 8 and the Y value to 48.
+ラベルを **複製** (command+D) し、**Size inspector** で X座標を 8、Y座標を 48 に設定します。
 
 ![ラベルのコピー](img/duplicated-label-storyboard.png)
 
-Select both labels add four constraints by clicking on the **Add New Constraints button** (Trailing: 0, Leading: 8, Top: 8, and Bottom: Multiple) as shown:
+**Add New Constraints** ボタンをクリックします。左右上下 (Leading・Trailing・Top・Bottom) の余白をそれぞれ 8・0・8・Multiple に設定し、余白がすべて有効なのを確認します (赤い実線)。Height のチェックボックスもクリックして、高さ固定の制約を追加したら、確定します:
 
 ![ラベル位置の制約](img/labels-contraints-storyboard.png)
 
-With a label selected, double-click on the **Height constraint** to edit it.
+一方のラベルだけを選択し、制約を編集するためにウィンドウ右側パネルに表示されている **Height equals: 32** をダブルクリックします。
 
 ![ラベル高さの制約](img/label-height-constraint-edition.png)
 
-Change the relation from Equal to **Greater Than or Equal** so it can have a variable height (to handle multiline labels).
+Relation を Equal から **Greater Than or Equal** に変更します。垂直方向に拡張可能にすることで、複数行のラベルにも対応することが狙いです。
 
 ![ラベル高さの制約をカスタマイズ](img/change-relation-label-height-constraint.png)
 
 他方のラベルに対しても同じことをします。
 
-## Label customization
+## ラベルのカスタマイズ
 
-ラベルのフォントカラーは， Attribute inspector（ウィンドウ右側パネルのルーラーアイコンをクリック）でカスタマイズすることができます。 Let's make the second label **Dark Grey Color** :
+ラベルのフォントカラーは、Attribute inspector (ウィンドウ右側パネルの横スライダーのアイコンをクリック) でカスタマイズできます。 低い位置のラベルのフォントカラーを **Dark Gray Color** に設定しましょう。
 
 ![ラベルカラーのカスタマイズ](img/label-color-dark-grey.png)
 
-表示される色見本の中からBackground Colorを選択すれば，アプリの支配的なカラーに設定することができます。
+表示される色見本の中から BackgroundColor を選択すれば、アプリの支配的なカラーに設定することができます。
 
 ![ラベル背景カラーのカスタマイズ](img/label-color-background-color.png)
 
-同じ要領で，フォントもカスタマイズすることができます。 Select both labels and select Font > Custom > **Helvetica Neue**:
+同じ要領でフォントもカスタマイズすることができます。 両方のラベルを選択し、Font を クリックして Custom を選択します。そうすれば、**Helvetica Neue** のようなフォント名が設定できるようになります。フォントサイズも指定しましょう。
 
 ![ラベルフォントのカスタマイズ](img/label-font-custom.png)
 
-To complete the customizations, select both labels and **enter 0 for Lines** in the inspector window. これでラベルに表示できる行数が無制限となります。
+仕上げに、両方のラベルが選択された状態で Attribute inspector で **Lines** を 1 から 0 に変更します。 これでラベルに表示できる行数が無制限となります。
 
 ![ラベル行数](img/label-lines-number.png)
 
 :::note
 
-The provided storyboard is optimized to have a **variable cell height** depending on the contents of each cell.
+このストーリーボードは、セルの内容に応じて **高さが可変** になるよう、Animatable Table View の Row Height と Estimate が Automatic に設定されています。
 
 :::
 
-![Row height tableview cell](img/row-height-tableview-cell.png)
+![セルの高さ](img/row-height-tableview-cell.png)
 
 ## セルにフィールドが表示されるようにセットアップする
 
 ### Image View
 
-Select your Image View and go to **Identity inspector** > User Defined Runtime Attributes. Click the **+ button** to add a row.
+Image View を選択し、**Identity inspector** (ウィンドウ右側パネルの身分証明書アイコンをクリック) の User Defined Runtime Attributes にアクセスします。 行を追加するために **＋** ボタンをクリックします。
 
 ![User defined runtime attributes](img/user-defined-runtime-attributes.png)
 
-* **Key Path**: Begin with bindTo to activate binding on the component. Enter `bindTo.record.___FIELD_1___`
+* **Key Path**: bindTo から始まるコードでコンポーネントの結合を有効にします: `bindTo.record.___FIELD_1___` と入力します。
 
-* **Type**: Always `String`
+* **Type**: 常に `String`
 
-* **Value**: The attribute name. Enter `___FIELD_1_BINDING_TYPE___`
+* **Value**: 属性名です。 `___FIELD_1_BINDING_TYPE___` と入力します。
 
 ![Identity inspector](img/identity-inspector-storyboard.png)
 
 ### ラベル
 
-Select the first label and add a row in the Defined Runtime Attributes:
+高い位置のラベルを選択し、さきほどと同様に User Defined Runtime Attributes に行を追加します:
 
 * **Key Path**: `bindTo.record.___FIELD_2___`
 
@@ -137,9 +137,9 @@ Select the first label and add a row in the Defined Runtime Attributes:
 
 * **Value**: `___FIELD_2_BINDING_TYPE___`
 
-![Field 2 Binding](img/field-2-binding.png)
+![Field 2のバインディング](img/field-2-binding.png)
 
-Select the second label and add a row in the Defined Runtime Attributes:
+低い位置のラベルを選択し、こちらにも User Defined Runtime Attributes に下記の 1行を追加します:
 
 * **Key Path**: `bindTo.record.___FIELD_3___`
 
@@ -147,24 +147,24 @@ Select the second label and add a row in the Defined Runtime Attributes:
 
 * **Value**: `___FIELD_3_BINDING_TYPE___`
 
-![Field 3 Binding](img/field-3-binding.png)
+![Field 3のバインディング](img/field-3-binding.png)
 
-You can change the **storyboard display labels** to have better visibility:
+直感的に理解できるように **ストーリーボードに表示されるラベル** を変更することができます:
 
-* Double-click the first label to edit it and enter `___FIELD_2_LABEL___`
-* Double-click the second label to edit it and enter `___FIELD_3_LABEL___`
+* 高い位置のラベルを選択し、`___FIELD_2_LABEL___` と入力します。
+* 低い位置のラベルを選択し、`___FIELD_3_LABEL___` と入力します。
 
-![Storyboard label display names](img/storyboard-label-display-name.png)
+![ラベル表示名](img/storyboard-label-display-name.png)
 
-Go to your project editor, select your list form template from the Forms section, then select Build and Run.
+モバイルプロジェクトエディターを開き、フォームセクションでリストフォームのカスタムテンプレートを選択した上で、"ビルドして実行" を選択します。
 
-Here is the simulator result :
+シミュレーターでうまく動けば、成功です:
 
 ![Simulator result](img/simulator-result.png)
 
 ## アプリをカスタマイズする
 
-The last step is adding a corner radius to the Image View to have a better design.
+Image View の角の丸みをカスタマイズして、デザインに個性を持たせましょう。
 
 Image Viewを選択し，User Defined Runtime Attributesにユーザー定義属性を入力します。
 
@@ -182,7 +182,7 @@ Image Viewを選択し，User Defined Runtime Attributesにユーザー定義属
 
 * **Value**: Check the box
 
-![ImageView corner Radius](img/imageview-corner-radius.png)
+![Image View角の丸み](img/imageview-corner-radius.png)
 
 これでカスタムテンプレートがプロジェクトエディターで使用できるようになりました！
 
@@ -190,13 +190,13 @@ Image Viewを選択し，User Defined Runtime Attributesにユーザー定義属
 
 ## これからどうする？
 
-In this tutorial, we've covered the basics for creating list form templates with iOS. You are now able to create simple templates on your own using the Starter project ressources. You can also see how to build [detail form templates](../creating-detail-forms/detail-form-template.md).
+このチュートリアルでは、iOS のリストフォーム用カスタムテンプレートを作成する方法を紹介しました。 スタータープロジェクトを参考に、シンプルなカスタムテンプレートが簡単に自作できる、という手応えが得られたのではないでしょうか。 もちろん、リストフォームだけでなく、[詳細フォームのテンプレート](../creating-detail-forms/detail-form-template.md) も独自に作成することができます。
 
-Download the completed template list folder:
+完成したリストフォームのテンプレート入りプロジェクト:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomListForm/archive/53ac1d5f506aa4ca2a8d78760ef799044c5c8bdc.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomListForm/archive/53ac1d5f506aa4ca2a8d78760ef799044c5c8bdc.zip">ダウンロード</a>
 </div>
 
 
