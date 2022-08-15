@@ -28,7 +28,7 @@ Let's get started by downloading the Starter project:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">ダウンロード</a>
 </div>
 
 ## スタータープロジェクトをダウンロード
@@ -250,7 +250,7 @@ Build your 4D of iOS app and you'll see that your data formatter is well applied
 Download the completed formatter template folder:
 
 <div className="center-button">
-<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/releases/latest/download/tutorial-CustomDataFormatter.zip">Download</a>
+<a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/releases/latest/download/tutorial-CustomDataFormatter.zip">ダウンロード</a>
 </div>
 
 And you're done! 
