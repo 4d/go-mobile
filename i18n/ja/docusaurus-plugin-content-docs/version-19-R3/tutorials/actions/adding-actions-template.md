@@ -23,7 +23,7 @@ title: テンプレートにアクションを追加する
 
 <div className="center-button">
 <a class="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1dc5aecfbea62a9999d571cb1a956f1ef6983111.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1dc5aecfbea62a9999d571cb1a956f1ef6983111.zip">ダウンロード</a>
 </div>
 
 ## ⒉ 4D for iOS プロジェクトにカスタムテンプレートを追加
@@ -158,7 +158,7 @@ TasksDetail カスタムテンプレートを**フォームセクション** か
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/releases/latest/download/tutorial-AddingActionToTemplates.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/releases/latest/download/tutorial-AddingActionToTemplates.zip">ダウンロード</a>
 </div>
 
 
