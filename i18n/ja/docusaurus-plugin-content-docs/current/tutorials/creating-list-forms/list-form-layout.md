@@ -17,38 +17,38 @@ title: Android レイアウト
 
 ## レイアウトファイルを Android Studio で開く
 
-The best way to edit or create a template is to :
+テンプレートの編集・作成にあたって最適な方法は次のとおりです:
 
-* Open Android Studio and create a new empty mobile project clicking on File > New > New Project...
+* Android Studio を開き、File > New > New Project... をクリックして、空のモバイルプロジェクトを新規に作成します。
 
-* Select the Empty Activity template
+* Empty Activity テンプレートを選択します。
 
 ![Android Studio project creation](img/template-selection.png)
 
-* Configure your project and click **Finish**
+* プロジェクトの設定をおこない、**Finish** をクリックします。
 
 ![Configure Android project](img/configure-android-project.png)
 
-* Copy the layout.xml file in app > res > layout dropping it directly on the project layout folder
+* app > res > layout にある layout.xml ファイルを、Android Studio の新規プロジェクトの layout フォルダーに、altキーを押しながら直接ドロップすることでコピーします。
 
 ![Copy layout.xml file](img/copy-layout.png)
 
-* You should have that at that point :
+* 下図のようになっていることを確認してください:
 
 ![Android project](img/android-project.png)
 
-* Click on the top right **Split** option to visualize the template preview as well as the xml code.
+* 右上の **Split** オプションをクリックすると、テンプレートのプレビューと同時に xml コードも表示されます。
 
 ほとんど白紙の状態です。早速、中身を追加しましょう！
 
 
-## Add a CardView container
+## CardView コンテナーを追加する
 
-To have a better rendering of your cells we are going to add a [CardView](https://developer.android.com/guide/topics/ui/layout/cardview).
+セルのレンダリングをより良くするため、[CardView](https://developer.android.com/guide/topics/ui/layout/cardview) を追加します。
 
-Adding a CardView container will allow you to display your list form cells as nice cards and gives you the ability to add shadow, elevation, corner radius, background color...
+CardView コンテナーを追加すると、リストフォームのセルをカードとして見た目よく表示することができ、影・高さ・角の丸み・背景色などを追加することができます。
 
-So let's add it to your layout file. Don't forget to close the container adding `</androidx.cardview.widget.CardView>` just before `</layout>`.
+では、さっそくレイアウトファイルに追加してみましょう。 `</layout>` の直前に `</androidx.cardview.widget.CardView>` を追加してコンテナーを閉じることを忘れないでください。
 
 ```xml
    <androidx.cardview.widget.CardView
@@ -72,13 +72,13 @@ So let's add it to your layout file. Don't forget to close the container adding 
 
 ```
 
-It is crucial to **give ids to your layout elements** to refer to it later and positioning them among themselves.
+**レイアウト要素に id を付与する** ことは、後で参照するため、また、要素間の位置決めのために非常に重要です。
 
-Define the **width** and **height** of your container, the **margins** and as we want the content to take all the parent space (minus the margins) we just have to **add constraints**.
+コンテナーの **width** と **height** 、**margins** を定義し、コンテンツが親スペースをすべて (マージンを残して) 占めるようにしたいので、**constraints** も追加します。
 
 
 
-Here is the full layout code at this stage :
+現時点でのレイアウトのコードの全容は以下の通りです:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -120,7 +120,7 @@ Here is the full layout code at this stage :
 
 ```
 
-And here is the preview result you are supposed to get :
+プレビューはこのような結果になっているはずです:
 
 ![Add CardView container](img/add-cardView-container.png)
 
@@ -160,7 +160,7 @@ The `tools:background="@tools:sample/avatars"` line simply there to display an I
 ![Add ImageView](img/add-imageview.png)
 
 
-## Add a title
+## タイトルを追加する
 
 Here we want to add a title at the right of the CardView that contains an ImageView.
 
@@ -198,7 +198,7 @@ app:layout_constraintTop_toTopOf="@id/__SPECIFIC_ID_2__"
 ![Add Title](img/add-title.png)
 
 
-## Add a subtitle
+## サブタイトルを追加する
 
 
 We want to add a subtitle to this cell. For that you just have to add quite the same block as the title one:
@@ -358,7 +358,7 @@ For example, a basic TextView should be in `@Body1@` scale.
 android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
 ```
 
-## セルにフィールドが表示されるようにセットアップする
+## セルとフィールドを関連付ける
 
 ### Image View
 
