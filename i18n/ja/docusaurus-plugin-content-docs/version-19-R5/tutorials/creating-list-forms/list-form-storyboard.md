@@ -27,11 +27,11 @@ iOSアプリのカスタムリストフォームのインターフェースを X
 
 エディターを右にスクロールして第2画面 (シーン) に移動し、**オブジェクトライブラリ** から **Image View** を探してセルにドラッグ＆ドロップします。 オブジェクトライブラリは、View メニューから Show Library を選択して表示できるほか、command+shift+L で直接表示することもできます。
 
-![Add Image View storyboard](img/add-imageview-storyboard.png)
+![Image Viewをストーリーボードに追加](img/add-imageview-storyboard.png)
 
 **Size inspector** (ウィンドウ右側パネルの三角定規アイコンをクリック) で Image View の Width (幅) と Height (高さ) の両方を 110 に設定します。 また、X座標を 8、Y座標を 3 に設定します。
 
-![Image View position height and width](img/imageview-position-height-width.png)
+![Image Viewの位置とサイズ](img/imageview-position-height-width.png)
 
 **Add New Constraints** (ウィンドウ右下にある T に囲まれた四角のアイコン) ボタンをクリックします。左側の余白 (Leading Space) が 8 と表示されているので、右隣の赤い点線をクリックして (実線に変化します) 余白を有効にします。 次に、Width と Height のチェックボックスをクリックして、幅と高さに固定値の制約を追加し、下の "Add 3 Constraints" ボタンをクリックして確定します。
 
@@ -111,17 +111,17 @@ Relation を Equal から **Greater Than or Equal** に変更します。垂直�
 
 ![セルの高さ](img/row-height-tableview-cell.png)
 
-## セルにフィールドが表示されるようにセットアップする
+## セルとフィールドを関連付ける
 
 ### Image View
 
 Image View を選択し、**Identity inspector** (ウィンドウ右側パネルの身分証明書アイコンをクリック) の User Defined Runtime Attributes にアクセスします。 行を追加するために **＋** ボタンをクリックします。
 
-![User defined runtime attributes](img/user-defined-runtime-attributes.png)
+![ユーザー定義のランタイム属性](img/user-defined-runtime-attributes.png)
 
 * **Key Path**: bindTo から始まるコードでコンポーネントの結合を有効にします: `bindTo.record.___FIELD_1___` と入力します。
 
-* **Type**: 常に `String`
+* **Type**: `String`
 
 * **Value**: 属性名です。 `___FIELD_1_BINDING_TYPE___` と入力します。
 
@@ -166,7 +166,7 @@ Image View を選択し、**Identity inspector** (ウィンドウ右側パネル
 
 Image View の角の丸みをカスタマイズして、デザインに個性を持たせましょう。
 
-Image Viewを選択し，User Defined Runtime Attributesにユーザー定義属性を入力します。
+Image View を選択し、User Defined Runtime Attributes に次の 2行を追加します:
 
 * **Key Path**: `cornerRadius`
 
@@ -174,7 +174,7 @@ Image Viewを選択し，User Defined Runtime Attributesにユーザー定義属
 
 * **Value**: `12`
 
-その他
+および
 
 * **Key Path**: `layer.masksToBounds`
 
@@ -184,7 +184,7 @@ Image Viewを選択し，User Defined Runtime Attributesにユーザー定義属
 
 ![Image View角の丸み](img/imageview-corner-radius.png)
 
-これでカスタムテンプレートがプロジェクトエディターで使用できるようになりました！
+これで、完成したカスタムテンプレートがプロジェクトエディターで使用できるようになりました！
 
 ![カスタムテンプレート（完成）](img/custom-template-final-result.png)
 
