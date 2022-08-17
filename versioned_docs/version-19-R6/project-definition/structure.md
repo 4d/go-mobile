@@ -134,7 +134,7 @@ Whether you're working on Android or iOS, you can display [**computed attributes
 
 :::info
 
-In mobile projects, only **scalar** computed attributes are supported (i.e. computed attributes where the [`get` function](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#function-get-attributename) returns a scalar value (text, boolean, date, time, number).
+In mobile projects, only **scalar** computed attributes are supported (i.e. computed attributes where the [`get` function](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#function-get-attributename) returns a scalar value (text, boolean, date, time, number)).
 
 :::
 
