@@ -48,11 +48,11 @@ Stack View の幅と高さは、内包しているオブジェクトによって
 
 ## Stack View に他の View を追加する
 
-Drag and drop a view from the **Object library** to the Stack View you've just added to your storyboard. Let's name it **Field View 1**.
+**オブジェクトライブラリ** から View をドラッグし、ストーリーボードに追加したばかりの Stack View の上にドロップします。 左側のツリー表示にて、View の名前を **Field View 1** に変更します。名前は、Identity inspector の Document セクションの Label 欄でも変更できます。
 
 ![Field View 1を追加](img/add-view1-storyboard.png)
 
-Then drag and drop another view from the **Object library** directly into the Document Outline at the same level as Field View 1 (to include it in the Stack View) and name it **Field View 2**.
+**オブジェクトライブラリ** からもう一つ View をドラッグし、今度は画面の左側にツリー表示されているドキュメントのアウトラインに直接ドロップしましょう。Stack View の内部に収まるよう、Field View 1 と同じレベルに挿入してください。その後、ビューの名前を **Field View 2** に変更します。
 
 ![Field View 2の追加](img/add-view2-storyboard.png)
 
