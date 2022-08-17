@@ -17,34 +17,34 @@ title: Android レイアウト
 
 ## レイアウトファイルを Android Studio で開く
 
-The best way to edit or create a template is to :
+テンプレートの編集・作成にあたって最適な方法は次のとおりです:
 
-* Open Android Studio and create a new empty mobile project clicking on File > New > New Project...
+* Android Studio を開き、File > New > New Project... をクリックして、空のモバイルプロジェクトを新規に作成します。
 
-* Select the Empty Activity template
+* Empty Activity テンプレートを選択します。
 
 ![Android Studio project creation](img/template-selection.png)
 
-* Configure your project and click **Finish**
+* プロジェクトの設定をおこない、**Finish** をクリックします。
 
 ![Configure Android project](img/configure-android-project.png)
 
-* Copy the layout.xml file in app > res > layout dropping it directly on the project layout folder
+* app > res > layout にある layout.xml ファイルを、Android Studio の新規プロジェクトの layout フォルダーに、altキーを押しながら直接ドロップすることでコピーします。
 
 ![Copy layout.xml file](img/copy-layout.png)
 
-* You should have that at that point :
+* 下図のようになっていることを確認してください:
 
 ![Android project](img/android-project.png)
 
-* Click on the top right **Split** option to visualize the template preview as well as the xml code.
+* 右上の **Split** オプションをクリックすると、テンプレートのプレビューと同時に xml コードも表示されます。
 
 ほとんど白紙の状態です。早速、中身を追加しましょう！
 
 
-## What is available in this starter project
+## スタータープロジェクトで提供されているもの
 
-For the view to be scrollable, a scrollview is already included in the layout:
+ビューをスクロール可能にするため、レイアウトには ScrollView がすでに含まれています:
 
 ```xml
     <androidx.core.widget.NestedScrollView
@@ -54,7 +54,7 @@ For the view to be scrollable, a scrollview is already included in the layout:
 
 ```
 
-The part that is going to be duplicated:
+複製される部分:
 
 ```xml
  <androidx.cardview.widget.CardView
@@ -171,7 +171,7 @@ The `app:imageUrl="__IMAGE_1__"` line will allow to bind image value that is sit
 
 The `tools:background="@tools:sample/avatars"` line simply there to display an ImageView placeholder.
 
-Here is the full layout code at this stage :
+現時点でのレイアウトのコードの全容は以下の通りです:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -335,7 +335,7 @@ Here we suppose the ImageView is the first view in the svg, and its view ID is `
 
 ## これからどうする？
 
-In this tutorial, we've covered the basics for creating detail form templates. You can now create simple templates on your own using the Starter Project resources. Download the completed template folder:
+このチュートリアルでは、詳細フォームのカスタムテンプレートを作成する方法を紹介しました。 スタータープロジェクトを参考に、シンプルなカスタムテンプレートが簡単に自作できる、という手応えが得られたのではないでしょうか。 完成したテンプレート入りプロジェクト:
 
 <div className="center-button">
 <a className="button button--primary"
