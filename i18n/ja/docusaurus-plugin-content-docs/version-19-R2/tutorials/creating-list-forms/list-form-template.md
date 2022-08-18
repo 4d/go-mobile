@@ -16,7 +16,7 @@ title: リストフォームのテンプレート
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">スタータープロジェクト</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomListFormStarter/archive/refs/heads/master.zip">スタータープロジェクト</a>
 </div>
 
 ## プロジェクトにリストフォームのテンプレートを追加する
