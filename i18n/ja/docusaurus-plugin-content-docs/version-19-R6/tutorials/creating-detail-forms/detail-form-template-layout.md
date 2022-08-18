@@ -23,19 +23,19 @@ title: Android レイアウト
 
 * Empty Activity テンプレートを選択します。
 
-![Android Studio project creation](img/template-selection.png)
+![Android Studioでのプロジェクト作成](img/template-selection.png)
 
 * プロジェクトの設定をおこない、**Finish** をクリックします。
 
-![Configure Android project](img/configure-android-project.png)
+![Androidプロジェクトの設定](img/configure-android-project.png)
 
 * app > res > layout にある layout.xml ファイルを、Android Studio の新規プロジェクトの layout フォルダーに、altキーを押しながら直接ドロップすることでコピーします。
 
-![Copy layout.xml file](img/copy-layout.png)
+![layout.xmlファイルのコピー](img/copy-layout.png)
 
 * 下図のようになっていることを確認してください:
 
-![Android project](img/android-project.png)
+![Androidプロジェクト](img/android-project.png)
 
 * 右上の **Split** オプションをクリックすると、テンプレートのプレビューと同時に xml コードも表示されます。
 
@@ -164,12 +164,12 @@ ImageView を見栄えよく表示するため、CardView コンテナを再度�
 
 ```
 
-As you can see the ImageView is embedded into the CardView. That allows to add corner radius to it.
+上のとおり、ImageView は CardView に埋め込まれています。 これにより、角の丸みを追加することができます。
 
-The `app:imageUrl="__IMAGE_1__"` line will allow to bind image value that is situated in position 1 in the svg file that you previously defined.
+`app:imageUrl="__IMAGE_1__"` の行は、先に定義した svgファイルの 1番目の位置にあるピクチャー値をバインドするためのものです。
 
 
-The `tools:background="@tools:sample/avatars"` line simply there to display an ImageView placeholder.
+`tools:background="@tools:sample/avatars"` の行は、単に ImageView のプレースホルダーを表示します。
 
 現時点でのレイアウトのコードの全容は以下の通りです:
 
@@ -324,13 +324,13 @@ The `tools:background="@tools:sample/avatars"` line simply there to display an I
 
 ```
 
-## How to get data into your detail form
+## セルとフィールドを関連付ける
 
 ### Image View
 
-In our detail form template we used `app:imageUrl="__IMAGE_1__"`
+詳細フォームのテンプレートでは、`app:imageUrl="__IMAGE_1__"` を使用しました。
 
-Here we suppose the ImageView is the first view in the svg, and its view ID is `__SPECIFIC_ID_1__`. If it would be the third view, it would be `__IMAGE_3__` and its view ID would be `__SPECIFIC_ID_3__`.
+ここでは、ImageView が svg の最初のビューであり、そのビューID が `__SPECIFIC_ID_1__` であると仮定しています。 3番目のビューであれば、`__IMAGE_3__` 、対応するビューID は `__SPECIFIC_ID_3__` となります。
 
 
 ## これからどうする？
