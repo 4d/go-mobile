@@ -3,7 +3,7 @@ id: use-data-formatter
 title: Use formatters
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > Use built-in formatters.
 
