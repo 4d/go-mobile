@@ -135,7 +135,7 @@ title: Android レイアウト
 
 ## Image View を追加する
 
-In order to have a nice Image view display we are going to use a CardView container again. We want to add a nice corner radius to the ImageView to have a better design.
+ImageView を見栄えよく表示するため、CardView コンテナを再度使用します。 We want to add a nice corner radius to the ImageView to have a better design.
 
 ```xml
     <androidx.cardview.widget.CardView
