@@ -111,7 +111,7 @@ Stack View にビューを 2つ追加し、制約も設定できました。次�
 
 ![ラベル追加](img/add-label1-storyboard.png)
 
-ラベルをダブルクリックし、`___FIELD_LABEL___` に名称変更します。 **Attribute inspector** でフォントを< strong x-id="1">Helvetica Neue Light 18.0</strong> に、カラーを **BackgroundColor** に設定します。
+ラベルをダブルクリックし、`___FIELD_LABEL___` に名称変更します。 **Attribute inspector** でフォントを**Helvetica Neue Light 18.0** に、カラーを **BackgroundColor** に設定します。
 
 ![タイトルのラベルフォントと文字カラー](img/title-label-font-and-color.png)
 
