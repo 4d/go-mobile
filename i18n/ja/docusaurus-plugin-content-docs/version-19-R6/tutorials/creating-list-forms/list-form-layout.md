@@ -23,19 +23,19 @@ title: Android レイアウト
 
 * Empty Activity テンプレートを選択します。
 
-![Android Studio project creation](img/template-selection.png)
+![Android Studioでのプロジェクト作成](img/template-selection.png)
 
 * プロジェクトの設定をおこない、**Finish** をクリックします。
 
-![Configure Android project](img/configure-android-project.png)
+![Androidプロジェクトの設定](img/configure-android-project.png)
 
 * app > res > layout にある layout.xml ファイルを、Android Studio の新規プロジェクトの layout フォルダーに、altキーを押しながら直接ドロップすることでコピーします。
 
-![Copy layout.xml file](img/copy-layout.png)
+![layout.xmlファイルのコピー](img/copy-layout.png)
 
 * 下図のようになっていることを確認してください:
 
-![Android project](img/android-project.png)
+![Androidプロジェクト](img/android-project.png)
 
 * 右上の **Split** オプションをクリックすると、テンプレートのプレビューと同時に xml コードも表示されます。
 
@@ -122,7 +122,7 @@ CardView コンテナーを追加すると、リストフォームのセルを�
 
 プレビューはこのような結果になっているはずです:
 
-![Add CardView container](img/add-cardView-container.png)
+![CardViewコンテナーの追加](img/add-cardView-container.png)
 
 
 ## Image View を追加する
@@ -149,22 +149,22 @@ ImageView に角の丸みをつけて見栄えのするデザインで表示す�
             </androidx.cardview.widget.CardView>
 ```
 
-As you can see the ImageView is embedded into the CardView. That allows to add corner radius to it.
+上のとおり、ImageView は CardView に埋め込まれています。 これにより、角の丸みを追加することができます。
 
-The `app:imageUrl="__IMAGE_1__"` line will allow to bind image value that is situated in position 1 in the svg file that you previously defined.
-
-
-The `tools:background="@tools:sample/avatars"` line simply there to display an ImageView placeholder.
+`app:imageUrl="__IMAGE_1__"` の行は、先に定義した svgファイルの 1番目の位置にあるピクチャー値をバインドするためのものです。
 
 
-![Add ImageView](img/add-imageview.png)
+`tools:background="@tools:sample/avatars"` の行は、単に ImageView のプレースホルダーを表示します。
+
+
+![ImageViewの追加](img/add-imageview.png)
 
 
 ## タイトルを追加する
 
-Here we want to add a title at the right of the CardView that contains an ImageView.
+ImageView を格納している CardView の右側にタイトルを追加しましょう。
 
-To do so we are going to add a TextView :
+これには、TextView を追加します:
 
 ```xml
  <TextView
@@ -187,21 +187,21 @@ To do so we are going to add a TextView :
 
 ```
 
-The `app: text="__TEXT_2__"` line will allow to bind text value that is situated in position 2 in the svg file that you previously defined.
+`app:text="__TEXT_2__"` の行は、先に定義した svgファイルの 2番目の位置にあるテキスト値をバインドするためのものです。
 
-We want to ImageView and the TextView to be top aligned. To do so, we are going to use the TextView id. You just have to add this line to the CardView that include the profile picture :
+次に、ImageView と TextView の位置を上辺で揃えましょう。 これには、TextView の id を使用します。 具体的には、プロフィール画像を格納する CardView に、以下の行を追加します:
 
 ```xml
 app:layout_constraintTop_toTopOf="@id/__SPECIFIC_ID_2__"
 ```
 
-![Add Title](img/add-title.png)
+![タイトル追加](img/add-title.png)
 
 
 ## サブタイトルを追加する
 
 
-We want to add a subtitle to this cell. For that you just have to add quite the same block as the title one:
+このセルにサブタイトルを追加します。 これには、タイトルの追加に使ったのと同じブロックを追加します:
 
 
 ```xml
@@ -227,21 +227,21 @@ We want to add a subtitle to this cell. For that you just have to add quite the 
 
 
 
-The `app: text="__TEXT_3__"` line will allow to bind text value that is situated in position 2 in the svg file that you previously defined.
+`app:text="__TEXT_3__"` の行は、先に定義した svgファイルの 3番目の位置にあるテキスト値をバインドするためのものです。
 
-We want to the subtitle to be at the bottom of the title. To do so, we are going to use the title TextView id. You just have to add this line to title TextView :
+サブタイトルはタイトルの下にくるように表示させましょう。 これには、タイトルの TextView の id を使用します。 具体的には、タイトルの TextView に、以下の行を追加します:
 
 ```xml
 app:layout_constraintBottom_toTopOf="@+id/__SPECIFIC_ID_3__"
 ```
 
 
-Your first list form template:
+リストフォームのテンプレートができました:
 
-![Final list form template](img/final-list-form-template.png)
+![完成したストフォームのテンプレート](img/final-list-form-template.png)
 
 
-Here is the full layout code at this stage:
+現時点でのレイアウトのコードの全容は以下の通りです:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -341,18 +341,18 @@ Here is the full layout code at this stage:
 
 ## ラベルのカスタマイズ
 
-From here you can customize your label's :
+ラベルのカスタマイズをしてみましょう:
 
-* color => android:textColor
+* カラー => android:textColor
 
-* weight => android:textStyle with **normal**, **bold** or **italic** possible values
+* スタイル => android:textStyle で、とり得る値は **normal**, **bold** または **italic**
 
-* appearance of your font => android:textAppearance
+* フォントの見た目 => android:textAppearance
 
-Try to keep consistency in your layout text sizes with appearance. The best way to achieve that is to follow the [Material Design type](https://material.io/design/typography/the-type-system.html#type-scale).
+レイアウトの文字サイズと見た目の整合性を保つようにしましょう。 [Material Design の type システム](https://material.io/design/typography/the-type-system.html#type-scale) を参考にするのがベストです。
 
 
-For example, a basic TextView should be in `@Body1@` scale.
+たとえば、基本的な TextView は `@Body1@` の大きさであるべきです。
 
 ```xml
 android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
@@ -362,20 +362,20 @@ android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
 
 ### Image View
 
-In our list form template we used `app:imageUrl="__IMAGE_1__"`
+リストフォームのテンプレートでは、`app:imageUrl="__IMAGE_1__"` を使用しました。
 
-Here we suppose the ImageView is the first view in the svg, and its view ID is `__SPECIFIC_ID_1__`. If it would be the third view, it would be `__IMAGE_3__` and its view ID would be `__SPECIFIC_ID_3__`.
+ここでは、ImageView が svg の最初のビューであり、そのビューID が `__SPECIFIC_ID_1__` であると仮定しています。 3番目のビューであれば、`__IMAGE_3__` 、対応するビューID は `__SPECIFIC_ID_3__` となります。
 
 ### ラベル
 
-In our list form template we used `android:text="__TEXT_2__"` for the title.
+このリストフォームのテンプレートでは、`android:text="__TEXT_2__"` をタイトルに使用しました。
 
-Here we suppose the title is the second view in the svg, and its view ID is `__SPECIFIC_ID_2__`.
+ここでは、タイトルが svg の二つ目のビューであり、そのビューID が `__SPECIFIC_ID_2__` であると仮定しています。
 
 
 ## これからどうする？
 
-In this tutorial, we've covered the basics for creating Android list form templates. You are now able to create simple templates on your own using the Starter Project ressources. But wait - there’s more! In the next tutorial, you’ll learn how to build Android detail form templates!
+このチュートリアルでは、Android のリストフォームのカスタムテンプレートを作成する方法を紹介しました。 スタータープロジェクトを参考に、シンプルなカスタムテンプレートが簡単に自作できる、という手応えが得られたのではないでしょうか。 しかし、これだけではありません！ 次のチュートリアルでは、Android の詳細フォームのカスタムテンプレートを作成する方法を取り上げます。
 
 完成したリストフォームのテンプレート入りプロジェクト:
 
