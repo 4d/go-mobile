@@ -121,7 +121,7 @@ Title ラベルを複製し、幅を 339、高さを 44 に変更します。 X�
 
 ![ラベル追加](img/add-label2-storyboard.png)
 
-ラベルをダブルクリックし、`<___FIELD_LABEL___>` に名称変更します。 **Attribute inspector** でフォントを< strong x-id="1">Helvetica Neue Light 20.0</strong> に、カラーを **Black Color** に設定します:
+ラベルをダブルクリックし、`<___FIELD_LABEL___>` に名称変更します。 **Attribute inspector** でフォントを**Helvetica Neue Light 20.0** に、カラーを **Black Color** に設定します:
 
 ![内容のラベルフォントと文字カラー](img/content-label-font-and-color.png)
 
