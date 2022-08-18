@@ -127,7 +127,7 @@ CardView コンテナーを追加すると、リストフォームのセルを�
 
 ## Image View を追加する
 
-In order to have a nice Image view display we are going to use agin a CardView container again as we want to add a nice corner radius to the ImageView to have a better design.
+ImageView に角の丸みをつけて見栄えのするデザインで表示するため、CardView コンテナを再度使用します。
 
 ```xml
             <androidx.cardview.widget.CardView
