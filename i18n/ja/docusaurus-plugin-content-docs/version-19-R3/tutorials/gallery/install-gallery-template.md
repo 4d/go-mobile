@@ -1,13 +1,13 @@
 ---
 id: install-gallery-template
-title: Install a template
+title: テンプレートのインストール
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
-> Dowload a template from the gallery and improve it
+> ギャラリーからテンプレートをダウンロードし、改良します。
 
-## Install a template from the Gallery
+## ギャラリーからテンプレートをインストールする
 
 Go to the form section and select on one of your table to choose a List Form.
 
