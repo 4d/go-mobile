@@ -3,7 +3,7 @@ id: create-static-data-formatter
 title: 静的フォーマッターを作成する
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > Create your first formatters.
 
