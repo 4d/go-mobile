@@ -17,7 +17,7 @@ title: 詳細フォームのテンプレート
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomDetailFormStarter/archive/67c9c2f4672083e999a4a592a069d7ca45b3351e.zip">スタータープロジェクト</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomDetailFormStarter/archive/refs/heads/main.zip">スタータープロジェクト</a>
 </div>
 
 ## プロジェクトに詳細フォームのテンプレートを追加する
