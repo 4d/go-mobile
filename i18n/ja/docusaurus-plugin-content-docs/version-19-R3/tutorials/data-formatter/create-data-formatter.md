@@ -3,7 +3,7 @@ id: create-data-formatter
 title: カスタムのデータフォーマッター
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > Create your first data formatters.
 
