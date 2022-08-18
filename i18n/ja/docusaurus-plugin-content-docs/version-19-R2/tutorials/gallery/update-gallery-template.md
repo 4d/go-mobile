@@ -3,7 +3,7 @@ id: update-gallery-template
 title: Update a template
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > Open and update a template from the gallery and improve it
 
