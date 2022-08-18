@@ -3,7 +3,7 @@ id: using-action-parameters
 title: アクションパラメーターを使用する
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > Define action parameters to edit the content of your app.
 
