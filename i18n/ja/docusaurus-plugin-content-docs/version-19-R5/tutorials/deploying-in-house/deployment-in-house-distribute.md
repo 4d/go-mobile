@@ -3,7 +3,7 @@ id: deployment-in-house-distribute
 title: Distribute your app in-House
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > Upload your app to a secured server.
 
