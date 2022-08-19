@@ -103,19 +103,19 @@ title: フォーム
 
 フォームセクションのテンプレート選択画面では、リストフォームと詳細フォームの両方において "..." アイコンが表示されています。
 
-![More template button](img/more.png)
+![その他のテンプレートボタン](img/more.png)
 
-![More template button](img/Forms-more-button.png)
+![その他のテンプレートボタン](img/Forms-more-button.png)
 
 これをクリックすると、4Dモバイルギャラリーにある追加テンプレートの一覧を表示します:
 
-![Template picker more button](img/Forms-template-gallery.png)
+![テンプレートピッカーその他ボタン](img/Forms-template-gallery.png)
 
 あとは用途に応じたテンプレートを選択するだけです。インストールの処理はモバイルエディターがすべて管理します。 テンプレートはすぐに使える状態で用意されているため、フォームの作成に直接取りかかることができます。
 
 追加テンプレートの選択画面において、すでにダウンロードしたフォームの左上には GitHubアイコンが表示され、GitHub から取得したものであることを示します。
 
-![Add template from gallery](img/indicator-template-github.png)
+![ギャラリーからテンプレートを追加](img/indicator-template-github.png)
 
 
 :::tip
