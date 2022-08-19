@@ -5,26 +5,26 @@ title: カスタムのデータフォーマッター
 
 > **目標**
 > 
-> Create your first data formatters.
+> 最初のデータフォーマッターを作成します。
 
 > **PREREQUISITES**
 > 
-> Click [here](requirements.html) to see what you'll need to get started!
+> はじめに [ここ](requirements.html) をクリックして、条件が揃っていることを確かめましょう！
 
 このチュートリアルでは、様々なフォーマッターの例を作成していくことを案内していきます。
 
 
-From the **Labels & Icons** section, you can choose pre-packaged formats.
+**ラベル & アイコン** セクションで、ビルトインのフォーマットが選択できます。
 
-> **Available formats:**
+> **利用可能なフォーマット:**
 > 
-> * **Text**: Text
-> * **Date**: Date, Short date, Long date, Full date
-> * **Time**: Time, Short time, Duration, Integer number
-> * **Boolean**: "No" or "Yes", "False" or "True"
-> * **Integer**: Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out
+> * **Text**: テキスト
+> * **Date**: 日付・短い日付・長い日付・完全な日付
+> * **Time**: 時間・短い時間・経過時間・整数
+> * **Boolean**: "いいえ" または "はい"・"False" または "True"
+> * **Integer**: 整数・小数・実数・パーセント・助数詞・通貨 $・通貨 €・通貨 ¥・漢数字
 
-Let's get started by downloading the Starter project:
+スタータープロジェクトをダウンロードしてください:
 
 <div className="center-button">
 <a className="button button--primary"
@@ -35,8 +35,8 @@ href="https://github.com/4d-go-mobile/tutorial-DataFormatter/releases/latest/dow
 
 **スタータープロジェクト** をダウンロードします。これには、以下のものが収録されています:
 
-* **integerToImage_Images** and **textToImage_Images** folders that contain images (to use later for formatters that include images)
-* A **Task Management.4dbase** file (with a ready to use mobile app project)
+* **integerToImage/Images** および **textToImage/Images** フォルダーと、そこに格納されているピクチャー (あとで画像を使うフォーマッターに使用します)
+* **Task Management.4dbase** ファイル (およびすぐに使用できるモバイルアプリプロジェクト)
 
 <div className="center-button">
 <a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/archive/66d7eea49bc3353f73dbf784ee06283b3a332d0b.zip">スタータープロジェクト</a>
@@ -44,9 +44,9 @@ href="https://github.com/4d-go-mobile/tutorial-DataFormatter/releases/latest/dow
 
 これでフォーマッターを作成する準備が整いました！
 
-## formatters フォルダを作成
+## formatters フォルダーを作成する
 
-First, create a *Task Management.4dbase/Resources/Mobile/formatters* folder.
+まず、*Task Management.4dbase/Resources/Mobile/formatters* フォルダーを作成します。
 
 ![Formatter フォルダー](img/formatter-folder.png)
 
@@ -54,12 +54,12 @@ First, create a *Task Management.4dbase/Resources/Mobile/formatters* folder.
 
 ### 整数から文字列へ
 
-* Create an **integerToString** folder in the formatters folder you've just created.
-* Then create a **manifest.json** file in the **integerToString** folder.
+* 作成した formatters フォルダー内に **integerToString** フォルダーを作成します。
+* 次に、**integerToString** フォルダー内に **manifest.json** ファイルを作成します。
 
 ![Formatter フォルダー](img/formatter-folder-integertostring.png)
 
-Let's look at the contents of the **manifest.json** file:
+**manifest.json** ファイルの中身は次のとおりです:
 
 ```json
 {
@@ -73,24 +73,24 @@ Let's look at the contents of the **manifest.json** file:
 }
 ```
 
-1. **name**: the name of the formatter
-2. **type**: the 4D format type you want to use
-3. **binding**: can be **localized text** for strings or **imageNamed** for images
-4. **choiceList**: mapped values
+1. **name**: フォーマッターの名前
+2. **type**: 使用する 4Dフォーマット型
+3. **binding**: 文字列なら **localized text**、あるいは画像なら **imageNamed**
+4. **choiceList**: マップされた値
 
 ### 整数から画像へ
 
-* Create an **integerToImage** folder in the **formatters** folder you've created.
+* 作成した **formatters** フォルダー内に **integerToImage** フォルダーを作成します。
 
-* Create a **manifest.json** file in the **integerToImage** folder.
+* **integerToImage** フォルダー内に **manifest.json** ファイルを作成します。
 
 ![Formatter フォルダー](img/formatter-folder-integertoimage.png)
 
-* Then create an **Images** folder in the **integerToImage** folder. You can add the images from the **integerToImage_Images** in the StarterProject.zip to this new folder.
+* 次に、**integerToImage** フォルダー内に **Images** フォルダーを作成します。 スタータープロジェクト内の **integerToImage/Images** にある画像をここに追加します。
 
 ![フォーマッターで使用する画像](img/formatter-images-integertoimage.png)
 
-Let's look at the contents of the **manifest.json** file:
+**manifest.json** ファイルの中身は次のとおりです:
 
 
 ```json
@@ -110,23 +110,23 @@ Let's look at the contents of the **manifest.json** file:
    }
 }
 ```
-1. **name**: the name of the formatter
-2. **type** : the 4D format type you want to use
-3. **binding**: can be **localized text** for strings or **imageNamed** for images
-4. **choiceList**: mapped values
-5. **assets**: adjust the display size (width and height)
+1. **name**: フォーマッターの名前
+2. **type**: 使用する 4Dフォーマット型
+3. **binding**: 文字列なら **localized text**、あるいは画像なら **imageNamed**
+4. **choiceList**: マップされた値
+5. **assets**: 表示サイズの調整 (幅と高さ)
 
 ## テキストフォーマッター
 
 ### テキストから文字列へ
 
-* Create a **textToString** folder in the formatters folder you've just created.
+* 作成した formatters フォルダー内に **textToString** フォルダーを作成します。
 
-* Create a **manifest.json** file in the **textToString** folder.
+* 次に、**textToString** フォルダー内に **manifest.json** ファイルを作成します。
 
 ![Formatter フォルダー](img/formatter-folder-texttostring.png)
 
-Let's look at the contents of the **manifest.json** file:
+**manifest.json** ファイルの中身は次のとおりです:
 
 ```json
 {
@@ -140,24 +140,24 @@ Let's look at the contents of the **manifest.json** file:
 }
 ```
 
-1. **name**: the name of the formatter
-2. **type**: the 4D format type you want to use
-3. **binding**: can be **localized text** for strings or **imageNamed** for images
-4. **choiceList**: mapped values
+1. **name**: フォーマッターの名前
+2. **type**: 使用する 4Dフォーマット型
+3. **binding**: 文字列なら **localized text**、あるいは画像なら **imageNamed**
+4. **choiceList**: マップされた値
 
 ### テキストから画像へ
 
-* Create a **textToImage** folder in the formatters folder you've just created.
+* 作成した formatters フォルダー内に **textToImage** フォルダーを作成します。
 
-* Create a **manifest.json** file in the **textToImage** folder.
+* **textToImage** フォルダー内に **manifest.json** ファイルを作成します。
 
 ![Formatter フォルダー](img/formatter-folder-textToImage.png)
 
-* Then create an **Images** folder in the **textToImage** folder. You can add the images from the **textToImage_Images** in the StarterProject.zip to this new folder.
+* 次に、**textToImage** フォルダー内に **Images** フォルダーを作成します。 スタータープロジェクト内の **textToImage/Images** にある画像をここに追加します。
 
 ![フォーマッターで使用する画像](img/formatter-images-textToImage.png)
 
-Let's look at the contents of the **manifest.json** file:
+**manifest.json** ファイルの中身は次のとおりです:
 
 ```json
 {
@@ -178,13 +178,13 @@ Let's look at the contents of the **manifest.json** file:
 
 ```
 
-## Dark mode support
+## ダークモード対応
 
-Whether your device is in dark or light mode, whether you're working on iOS or Android, you can easily use the custom data formatters containing images. The pictures will be adapted depending on the phone's color mode.
+デバイスがダークモードかライトモードか、あるいは iOS か Android かに関わらず、画像を使うカスタムデータフォーマッターは簡単に使用できます。 ピクチャーは、デバイスのカラーモードに適応されます。
 
-### Tintable color
+### Tintable (彩色可能) カラー
 
-To optimize the color contrast of your black and white images on your app depending on the color mode (light or dark), you can set the images as follows, with the `"tintable": true` code line:
+アプリのカラーモード (ライト・ダーク) に応じて白黒画像のコントラストを最適化するには、 `"tintable": true` という行を追加します:
 
 ```json
 {
@@ -253,4 +253,4 @@ Download the completed formatter template folder:
 <a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/releases/latest/download/tutorial-CustomDataFormatter.zip">ダウンロード</a>
 </div>
 
-And you're done! 
+以上です！ 
