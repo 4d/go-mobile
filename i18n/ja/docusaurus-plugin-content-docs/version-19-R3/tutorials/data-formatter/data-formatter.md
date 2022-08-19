@@ -6,15 +6,15 @@ title: データフォーマッター
 
 「ラベル＆アイコン」セクションでは，データ型に応じた既定のフォーマッターが選択できるようになっています。
 
-> **Available formats:**
+> **利用可能なフォーマット:**
 > 
-> * **Text**: Text
-> * **Date**: Date, Short date, Long date, Full date
-> * **Time**: Time, Short time, Duration, Integer number
-> * **Boolean**: "No" or "Yes", "False" or "True"
-> * **Integer**: Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out
+> * **Text**: テキスト
+> * **Date**: 日付・短い日付・長い日付・完全な日付
+> * **Time**: 時間・短い時間・経過時間・整数
+> * **Boolean**: "いいえ" または "はい"・"False" または "True"
+> * **Integer**: 整数・小数・実数・パーセント・助数詞・通貨 $・通貨 €・通貨 ¥・漢数字
 
-Let's get started by downloading the Starter project:
+スタータープロジェクトをダウンロードしてください:
 
 <div className="center-button">
 <a className="button button--primary"
