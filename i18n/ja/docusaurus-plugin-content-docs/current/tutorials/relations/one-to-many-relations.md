@@ -5,7 +5,7 @@ title: 1対Nリレーション
 
 This tutorial will show you how easy it can be to include One to Many relations in your mobile project.
 
-Let's get started by downloading the Starter project:
+スタータープロジェクトをダウンロードしてください:
 
 <div className="center-button">
 <a className="button button--primary"
