@@ -9,49 +9,49 @@ title: テンプレートの編集
 
 ## テンプレートを開く
 
-To modify a template that have downloaded from the Gallery :
+ギャラリーからダウンロードしたテンプレートを修正するには:
 
-* The first thing you'll need to do is going to your *YourDatabase.4dbase/Resources/Mobile/form/list* folder.
+* まず、*YourDatabase.4dbase/Resources/Mobile/form/list* フォルダーに移動します。
 
-![Template resources folder](img/template-resources-folder.png)
+![テンプレートの Resources フォルダー](img/template-resources-folder.png)
 
-* From here, you can see the template you have just downloaded previously is availble.
-* Unzip and opent it
-* Then double click on the package.swift file.
+* ここで、先ほどダウンロードしたテンプレートが利用可能であることが確認できます。
+* zipファイルを解凍して開きます。
+* 次に、package.swift ファイルをダブルクリックします。
 
-![Open package.swift](img/open-package-swift.png)
+![package.swiftを開く](img/open-package-swift.png)
 
-* This will automatically open in Xcode with all sources to allow you modifying your template.
+* すると、すべてのソースとともにテンプレートが Xcode で開かれ、テンプレートを修正することができます。
 
-![Open with Xcode](img/open-with-xcode.png)
+![Xcodeで開く](img/open-with-xcode.png)
 
-## Update your template
+## テンプレートの編集
 
-From here you will be able to add swift code and optimize your stroybord template.
+パッケージが読み込まれたら、左のツリー表示を展開して、.storyboard ファイルを選択します。さっそく、ストーリーボードを編集してみましょう。
 
-So easy to use !
+操作は難しくありません！
 
-Let's for example update the FIELD_1_LABEL color and font using the Attributes inspector.
+たとえば、Attributes inspector を使って、FIELD_1_LABEL のフォントとカラーを変更しましょう。
 
-![Update with Xcode](img/update-template.png)
+![Xcodeで編集する](img/update-template.png)
 
-Then after you've done your template improvements, you can use your template selecting it from the Forms template picker in the project editor.
+テンプレートの改良が完了したら、プロジェクトエディターのフォームテンプレートピッカーからテンプレートを選択して使用することができます。
 
-![Select updated template](img/selelect-update-template.png)
+![編集されたテンプレートを選択](img/selelect-update-template.png)
 
-## Share your template
+## テンプレートをシェアしましょう
 
-When your template is ready and you added significat improvements, you probably want to share it.
+テンプレートに大幅な改良を加えて完成させた場合、おそらくそれをシェアしたくなることでしょう。
 
-A sharing button is directly accessible at the bottom of the template Gallery picker!
+テンプレートギャラリーの最後に、シェアするためのボタンがあります。
 
-![Share your template](img/share-template.png)
+![テンプレートをシェアしましょう](img/share-template.png)
 
-All the sharing process is detailed on the contribution page for you to help you in the sharing process and where good proctices are described.
+シェアするための条件と手順は Github の投稿ページで説明されています。
 
 ## これからどうする？
 
-You could try following the [contribution guide](https://github.com/4d-go-mobile/gallery/blob/master/.github/CONTRIBUTING.md#how-do-you-add-a-package) to share your templates in github and make them appear in the project editor.
+[投稿ガイド](https://github.com/4d-go-mobile/gallery/blob/master/.github/CONTRIBUTING.md#how-do-you-add-a-package) に従って Github でテンプレートをシェアすれば、プロジェクトエディターに表示されるようにすることができます。
 
 
 
