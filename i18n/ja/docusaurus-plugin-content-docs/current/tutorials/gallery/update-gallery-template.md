@@ -1,13 +1,13 @@
 ---
 id: update-gallery-template
-title: Update a template
+title: テンプレートの編集
 ---
 
 > **目標**
 > 
-> Open and update a template from the gallery and improve it
+> ダウンロードしたテンプレートを開いて、改善します。
 
-## Open a template
+## テンプレートを開く
 
 To modify a template that have downloaded from the Gallery :
 
