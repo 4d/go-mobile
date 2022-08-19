@@ -8,7 +8,7 @@ We are now going to go a little bit further and **create a task for a specific e
 
 **親エンティティ**さえきちんと特定できていれば，子エンティティを作成するのは少しも難しいことはではありません！
 
-Let's get started by downloading the Starter project:
+スタータープロジェクトをダウンロードしてください:
 
 <div className="center-button">
 <a className="button button--primary"
