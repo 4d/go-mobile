@@ -9,31 +9,31 @@ title: テンプレートのインストール
 
 ## ギャラリーからテンプレートをインストールする
 
-Go to the form section and select on one of your table to choose a List Form.
+フォームセクションに移動し、テーブルを 1つ選択して、リストフォーム選択画面を表示させます。
 
-As you can see, a “More” icon is available at the bottom.
+下図のように、テンプレート一覧の最後に "…" アイコンが表示されています。
 
-![More template button](img/Forms-more-button.png)
+![その他のテンプレートボタン](img/Forms-more-button.png)
 
-Just click on that icon to display the entire list.
+そのアイコンをクリックすると、テンプレートの完全な一覧が表示されます。
 
-Then, the only thing you have to do is selecting the template that suits your needs and 4D for iOS will handle all the installation process to help you work faster and more efficiently.
+あとは用途に応じたテンプレートを選択するだけです。インストールの処理はモバイルエディターがすべて管理します。
 
-![Template picker more button](img/Forms-template-gallery.png)
+![テンプレートピッカーその他ボタン](img/Forms-template-gallery.png)
 
-Select the Client List template.
+Client List テンプレートを選択します。
 
-As you can see the template is included automatically in your project and you can directly start working on it without waiting.
+すると、テンプレートは自動的にプロジェクトに追加され、すぐに作業を開始することができます。
 
-![Add template from gallery](img/use-template.png)
+![ギャラリーからテンプレートを追加](img/use-template.png)
 
-A github icon is displayed at the top left of your template icon in the Forms template picker to indicate that it comes from Github.
+追加テンプレートの選択画面において、すでにダウンロードしたフォームの左上には GitHubアイコンが表示され、GitHub から取得したものであることを示します。
 
-![Add template from gallery](img/indicator-template-github.png)
+![ギャラリーからテンプレートを追加](img/indicator-template-github.png)
 
-As you can see, it is very simple to include new templates in your project and you can directly start working on it without waiting.
+このように、新しいテンプレートをプロジェクトに追加するのは非常に簡単です。
 
-So now that you have download your template, you may want to make some improvement for the template to fit perfectly your needs.
+さて、テンプレートをダウンロードしたところで、自分のニーズに合うよう、テンプレートを改良したいと思うかもしれません。
 
 
 
