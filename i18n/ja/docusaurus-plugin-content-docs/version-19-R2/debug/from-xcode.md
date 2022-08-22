@@ -3,56 +3,56 @@ id: from-xcode
 title: Xcode から
 ---
 
-If you have issues during the build process, you can open your generated project with Xcode selecting the **Open the product with Xcode** option from the **Project** Menu.
+ビルド中に問題が発生した場合は、**プロジェクト** メニューから **プロジェクトをXcodeで開く** を選択すると、生成されたプロジェクトを Xcode で開くことができます。
 
-![Open the project with Xcode](img/open-project-Xcode.png)
+![Xcodeでプロジェクトを開く](img/open-project-Xcode.png)
 
-From here you can **launch your application** in the Simulator clicking on the **Build button** and get all the logs at the bottom of the Xcode work space.
+ここで **ビルドボタン** をクリックして、シミュレーターで **アプリを起動** できます。その際のログはすべて、Xcodeワークスペースの下部から取得できます。
 
-![Xcode logs](img/Xcode-logs.png)
+![Xcodeのログ](img/Xcode-logs.png)
 
 ## Logger
 
-A logger is an object that will allow you to log and trace.
+Logger とは、ログやトレースをおこなうためのオブジェクトです。
 
-For that we use the [XCGLogger](https://github.com/DaveWoodCom/XCGLogger) framework.
+これには、[XCGLogger](https://github.com/DaveWoodCom/XCGLogger) フレームワークを使用しています。
 
-You will find the logger settings definition in your Xcode project/Settings/Settings.plist.
+Logger 設定の定義は、Xcodeプロジェクトの /Settings/Settings.plist にあります。
 
-![Xcode logs](img/settings-plist-xcode.png)
+![Xcodeのログ](img/settings-plist-xcode.png)
 
 
 ## Levels
 
-You can filter and display different log level into your console adding log.level in you Settings.plist file.
+Settings.plist ファイルに log.level を追加すると、ログレベルをフィルターしてコンソールに表示することができます。
 
-To do so, add a row Right clicking inside the Settings.plist file and enter:
-* log.level as Key
-* Number as Type
-* 3 as Value (for example)
+これには、Settings.plist ファイル内を右クリックして行を追加し、以下を入力します:
+* Key 列に log.level
+* Type 列に Number
+* Value 列に (たとえば) 3
 
-The **available values** are the following :
+**利用可能な値** は以下の通りです:
 
-* 0 for verbose
-* 1 for debug
-* 2 for info (default value)
-* 3 warning
-* 4 error
-* 5 severe
+* 0: verbose
+* 1: debug
+* 2: info (デフォルト値)
+* 3: warning
+* 4: error
+* 5: severe
 
-![Log level](img/log-level.png)
+![ログレベル](img/log-level.png)
 
-So for this example, if you set log.level Value to 3, you will get **warning, error and sever** in your Xcode console.
+たとえば、log.level の Value を 3 に設定すると、**warning、error、severe** が Xcodeコンソールに表示されます。
 
 ## フォーマット
 
-You can display different visual indicators in the Xcode console to **highlight different log types**.
+**異なるログタイプを強調** するために、異なるビジュアルインジケーターを Xcode コンソールに表示することができます。
 
-To do so, you just have to open your Xcode project/Settings/Settings.plist
+これには、Xcodeプロジェクトの /Settings/Settings.plist を開きます。
 
-![Log Format](img/log-format.png)
+![ログフォーマット](img/log-format.png)
 
-### Emoticones
+### emoticon
 
  * prefixes[.verbose] = "🗯"
  * prefixes[.debug] = "🔹"
@@ -61,7 +61,7 @@ To do so, you just have to open your Xcode project/Settings/Settings.plist
  * prefixes[.error] = "‼️"
  * prefixes[.severe] = "💣"
 
-### Circles
+### circles
 
 * prefixes[.verbose] = "🔘"
 * prefixes[.debug] = "🔵"

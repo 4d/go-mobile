@@ -3,7 +3,7 @@ id: register-apple-developer-program-organization
 title: Apple Developer Program as an Organization
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > Register for the Apple Developer Program as an organization to publish your app to the **App Store**.
 

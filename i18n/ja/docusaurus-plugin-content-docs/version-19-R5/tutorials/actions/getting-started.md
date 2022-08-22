@@ -3,7 +3,7 @@ id: getting-started
 title: はじめに
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > Use actions in the generated iOS app.
 

@@ -3,7 +3,7 @@ id: create-kotlin-formatter
 title: Kotlin フォーマッターを作成する
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > Create your first Kotlin formatters.
 

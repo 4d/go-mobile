@@ -3,7 +3,7 @@ id: deployment-in-house-archive-and-export
 title: Archive and export your Project
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > * Archive and export your 4D for iOS project
 > * Generate .ipa and manifest files

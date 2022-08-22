@@ -3,7 +3,7 @@ id: xcode-overview
 title: Xcode ガイド
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > Ensure a basic understanding of working with Xcode.
 

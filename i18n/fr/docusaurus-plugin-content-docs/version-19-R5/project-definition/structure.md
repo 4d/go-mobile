@@ -60,7 +60,7 @@ The mobile editor automatically displays the list of fields that are eligible to
 
 - All [4D scalar field types](https://developer.4d.com/docs/en/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html).
 - [Object fields](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
-- [Computed attributes](https://developer.4d.com/go-mobile/fr/docs/project-definition/structure#computed-attributes)
+- [Computed attributes](https://developer.4d.com/go-mobile/en/docs/project-definition/structure#computed-attributes-1) (scalar attributes only)
 - Relation attributes (Many-to-one and One-to-many) are supported and can be selected just as fields. They have specific icons:
 
 Many to one relation icon:  ![relation1](img/manyto1.png)

@@ -73,7 +73,7 @@ At this point, all the profile picture constraints should be blue.
 
 > **TIPS**
 > 
-> * To create a constraint between two views, press Ctrl and drag one of the views to the other. マウスボタンを離すと同時に，ここで設定できる制約の選択肢が表示されます。
+> * To create a constraint between two views, press Ctrl and drag one of the views to the other. マウスボタンを離すと同時に、このコンテキストで設定可能な制約の選択肢が表示されます。
 > 
 > * You can delete constraints by either selecting them from the Size inspector or from the Interface Builder.
 

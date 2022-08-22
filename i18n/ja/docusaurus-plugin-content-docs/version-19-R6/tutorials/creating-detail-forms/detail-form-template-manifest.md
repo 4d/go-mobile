@@ -3,7 +3,7 @@ id: detail-form-template-manifest
 title: manifest.json
 ---
 
-The manifest file includes information about your detail form template,  such as the storyboard **type** ("listform" or "detailform"), **name**, and **number of static fields**.
+manifest ファイルには、ストーリーボードの **タイプ (type)** (リストフォーム "listform" あるいは詳細フォーム "detailform")・**名称 (name)**・**静的フィールド数 (fields)** といった情報が記述されています。
 
 
 ```json
@@ -28,14 +28,14 @@ The manifest file includes information about your detail form template,  such as
 
 ```
 
-For example, the above manifest file includes the following information:
+上記の manifest ファイルを解読すると、下記のことがわかります:
 
 
 
-* **type:**storyboard type. In this example, "detailform"
-* **name:**template name. In the this example, "Custom Detail form" below
-* **renderer:** version number
-* **hOffset:** vertical offset of the first field that is going to be duplicated. In this example, 91 pixels from the top.
-* **fields**: number of static fields. In this example, 1 static field and 0 for infinite duplicated fields (a header image, and duplicated fields)
-* **Icon properties:** Icon width and height (16 px)
+* **type:** ストーリーボードのタイプ。 この例では、"detailform"
+* **name:** テンプレート名。 この例では、"Custom Detail form"
+* **renderer:** バージョン番号
+* **hOffset:** 複製される最初のフィールドの垂直オフセット。 この例では、上から 91ピクセル。
+* **fields**: 静的フィールドの数。 この例では、静的フィールド (ヘッダー画像) が 1 と、無限の複製フィールドが 0
+* **アイコンのプロパティ:** アイコンの幅と高さ (16px)
 

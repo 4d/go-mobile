@@ -5,81 +5,81 @@ title: On Mobile App Authentication
 
 **On Mobile App Authentication**( *mobileInfo* : Object ) -> *status* : Object
 
-| Parameter  | Type   |    | 詳細                                           |
-| ---------- | ------ | -- | -------------------------------------------- |
-| mobileInfo | Object | -> | Information passed by the mobile application |
-| status     | Object | <- | Authentication status                        |
+| 引数         | タイプ    |    | 詳細              |
+| ---------- | ------ | -- | --------------- |
+| mobileInfo | Object | -> | モバイルアプリから渡された情報 |
+| status     | Object | <- | 認証ステータス         |
 
 ## 詳細
 
-The `On Mobile App Authentication` 4D database method is in charge of managing mobile app authentication to 4D Server or 4D Developer. It is automatically called by 4D when a user agent sends a login request to 4D Server or 4D Developer for the first time.
+`On Mobile App Authentication` データベースメソッド は、4D Server あるいは 4D Developer へのモバイルアプリの認証を管理するためのものです。 これは、ユーザーエージェントが 4D Server あるいは 4D Developer に対してログインリクエストを最初に送ったときに、4D によって自動的に呼び出されます。
 
 :::note
 
-A user agent is defined by an application ID, a device ID, and a team ID. These ids are passed to the `On Mobile App Authentication` database method (see below). :::
+ユーザーエージェントとはアプリケーションID、デバイスID、そしてチームID によって定義されます。 ID は `On Mobile App Authentication` データベースメソッド に渡されます (後述参照)。 :::
 
-The `On Mobile App Authentication` database method is always called for a first connection, even if the mobile application was built in Guest mode.
+`On Mobile App Authentication` データベースメソッドは、初回の接続の際には必ず呼び出されます。モバイルアプリがゲストモードでビルドされていた場合でも呼び出されます。
 
-The method receives all necessary information from the mobile application in the *mobileInfo* parameter (object), and must return an authentication status in the *status* parameter (object). You must declare and initialize these parameters as follows:
+メソッドは必要な情報をすべて、モバイルアプリから *mobileInfo* 引数 (オブジェクト型) に受け取り、認証ステータスを *status* 引数 (オブジェクト型) に返さなければなりません。 これらの引数は、以下のように宣言・初期化しなければなりません:
 
 ```4d
 
-  //On Mobile App Authentication database method
+  //On Mobile App Authentication データベースメソッド
 #DECLARE ($mobileInfo : Object) -> $status : Object
 
-  // ...Code for the method
-$status:=New object() //do not forget to create the object to return
+  // ...メソッドのコード
+$status:=New object() // 戻り値となるオブジェクトの作成を忘れないこと
 
 ```
 
-The following properties are received in the *mobileInfo* object parameter:
+*mobileInfo* オブジェクト引数が受け取るプロパティは以下の通りです:
 
-| プロパティ       |             | Type   | 詳細                                                                               |
-| ----------- | ----------- | ------ | -------------------------------------------------------------------------------- |
-| email       |             | テキスト   | User email. Not mandatory, can be empty for guest access                         |
-| application |             | Object | Information about the mobile application                                         |
-|             | id          | テキスト   | Mobile application id                                                            |
-|             | name        | テキスト   | Mobile application name                                                          |
-|             | version     | テキスト   | Mobile application version                                                       |
-| device      |             | Object | Information about the mobile device (usually, a mobile phone)                    |
-|             | id          | テキスト   | Generated unique device id                                                       |
-|             | version     | テキスト   | System version of the device                                                     |
-|             | description | テキスト   | Description of the device                                                        |
-|             | simulator   | ブール    | True if the device is a simulator                                                |
-| team        |             | Object | Apple Developer Team information                                                 |
-|             | id          | テキスト   | Team id (allows developers to use the Xcode project Build and Run functionality) |
-| language    |             | Object | Language settings of the user device                                             |
-|             | id          | テキスト   | User device current language id, ex: en_US                                       |
-|             | region      | テキスト   | User device current region, ex: US                                               |
-|             | code        | テキスト   | User device current language, ex: en                                             |
-| parameters  |             | Object | Any additional information that could be added by the mobile app for custom use  |
-| session     |             | Object | Session information                                                              |
-|             | id          | テキスト   | Session UUID created for this authentication. Could be stored for future use     |
-|             | ip          | テキスト   | Client IP address                                                                |
+| プロパティ       |             | タイプ    | 詳細                                                           |
+| ----------- | ----------- | ------ | ------------------------------------------------------------ |
+| email       |             | テキスト   | ユーザーのメールアドレス。 必須ではなく、ゲストアクセスでは空でも構いません                       |
+| application |             | Object | モバイルアプリに関する情報                                                |
+|             | id          | テキスト   | モバイルアプリの ID                                                  |
+|             | name        | テキスト   | モバイルアプリの名前                                                   |
+|             | version     | テキスト   | モバイルアプリのバージョン                                                |
+| device      |             | Object | モバイルデバイスについての情報 (通常は携帯電話)                                    |
+|             | id          | テキスト   | 生成されたデバイス固有の ID                                              |
+|             | version     | テキスト   | デバイスのシステムバージョン                                               |
+|             | description | テキスト   | デバイスについての詳細                                                  |
+|             | simulator   | ブール    | デバイスがシミュレーターの場合に true                                        |
+| team        |             | Object | Apple Developer Team の情報                                     |
+|             | id          | テキスト   | チームID (これによってデベロッパーは Xcode プロジェクトの "ビルドと実行" 機能を使用できるようになります) |
+| language    |             | Object | ユーザーデバイスの言語設定                                                |
+|             | id          | テキスト   | ユーザーデバイスのカレント言語の ID (例: en_US)                               |
+|             | region      | テキスト   | ユーザーデバイスのカレントのリージョン設定 (例: US)                                |
+|             | code        | テキスト   | ユーザーデバイスのカレント言語 (例: en)                                      |
+| parameters  |             | Object | カスタム使用のため、モバイルアプリで追加可能なその他の情報                                |
+| session     |             | Object | セッション情報                                                      |
+|             | id          | テキスト   | この認証用に作成されたセッションUUID。 将来の使用のために保存することもできます。                  |
+|             | ip          | テキスト   | クライアントの IPアドレス                                               |
 
-After processing information, the database method should return an object with the following properties in *status*:
+データベースメソッドは情報を処理した後、以下のプロパティを持つオブジェクトを *status* に返す必要があります:
 
-| プロパティ      | Type   | 詳細                                                                                                                                                            |
-| ---------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| userInfo   | Object | User values to filter queries.                                                                                                                                |
-| success    | ブール    | True if authentication is successful, False otherwise. If success=False, the connection is denied.                                                            |
-| statusText | テキスト   | (Optional) Message to display on the mobile application. If success=true, welcome message; if success=false, can be used to provide user with an explanation. |
+| プロパティ      | タイプ    | 詳細                                                                                                |
+| ---------- | ------ | ------------------------------------------------------------------------------------------------- |
+| userInfo   | Object | フィルタークエリに使用できるユーザー値。                                                                              |
+| success    | ブール    | 認証に成功した場合には true、それ以外は false。 success=false の場合、接続は拒否されます。                                        |
+| statusText | テキスト   | (任意) モバイルアプリに表示するメッセージ。 success=true であればようこそメッセージを表示し、success=false であればメッセージを使ってユーザーに説明を提供できます。 |
 
-The connection is automatically rejected if:
+以下の場合には、接続が自動的に拒否されます:
 
-- no value is set to *status* result or *status* is not defined,
-- an invalid value is set to *status*,
-- the `On Mobile App Authentication` database method is not defined in the application.
+- *status* に値が設定されていない、あるいは *status* が定義されていない
+- *status* に無効な値が設定されている
+- `On Mobile App Authentication` データベースメソッドがアプリケーション内にて定義されていない
 
 :::info
 
-The connection is automatically accepted if it comes from "localhost" since it is considered a developer testing connection.
+接続が "localhost" から来る場合には、デベロッパーが接続テストをしているとみなされるため、接続は自動的に受け入れられます。
 
 :::
 
-## Authenticating a mobile request
+## モバイルリクエストを認証する
 
-Basically, authenticating a mobile application connection request is based upon the provided email. For example, if you want to grant access only to connections from emails at 4d.com domain, you can write in the `On Mobile App Authentication` database method:
+モバイルアプリの接続リクエストの認証というのは、基本的には提供されたメールアドレスに基づいています。 たとえば、4d.com ドメインのメールアドレスからの接続のみ認証をしたい場合には、`On Mobile App Authentication` データベースメソッドに以下のように書くことができます:
 
 ```4d
  #DECLARE ($mobileInfo : Object) -> $status : Object  
@@ -89,23 +89,23 @@ Basically, authenticating a mobile application connection request is based upon 
  End if
 ```
 
-You can also identify the user agent using the `application.id`, `device.id`, and `team.id` from the $mobileInfo object, and decide to allow or deny access.
+$mobileInfo オブジェクトの `application.id`、`device.id`、あるいは `team.id` といった情報を用いてユーザーエージェントを識別し、アクセスを許可 / 拒否するかを決定することもできます。
 
-### Guest access
+### ゲストアクセス
 
-If the mobile application has been built with the "Requires an email to connect" option **unchecked**, it is a "guest mode" application. Then, the `$mobileInfo.email` string will be provided empty. In this case, you can:
+接続にメールを必要とする "認証" オプションを **有効化せずに** モバイルアプリがビルドされていた場合、そのアプリは "ゲストモード" アプリとなります。 この場合、`$mobileInfo.email` の文字列は空で提供されます。 この場合、以下のいずれかを選択できます:
 
-- allow access to guests by returning `True` in `$status.success`,
-- identify and evaluate guest access using the user agent information, the decide to allow or deny access.
-- deny access to guests by returning `False` in `$status.success`. This can be done for example if the server is in maintenance mode. In this case, an error will be displayed on the mobile app if the user clicks on the **Reload** button.
+- `$status.success` に `true` を返してゲストのアクセスを許可する
+- ユーザーエージェント情報を使用してゲストアクセスを識別/評価し、アクセスを許可 / 拒否するかを決定する
+- `$status.success` に `false` を返してゲストのアクセスを拒否する。 これは、たとえばサーバーがメンテナンスモードの場合に使用することができます。 この場合、ユーザーが **再読み込み** ボタンをクリックすると、モバイルアプリにエラーが表示されます。
 
 ## 例題
 
-Here is a template example for a `On Mobile App Authentication` database method:
+以下は `On Mobile App Authentication` データベースメソッドのテンプレート例です:
 
 ```4d
 
-  //On Mobile App Authentication database method
+  //On Mobile App Authentication データベースメソッド
  #DECLARE ($mobileInfo : Object) -> $status : Object
 
 
@@ -114,27 +114,27 @@ Here is a template example for a `On Mobile App Authentication` database method:
  var $Txt_IP;$Txt_languageCode;$Txt_languageId;$Txt_languageRegion;$Txt_osVersion;$Txt_sessionId : Text
  var $Txt_teamID : Text
 
-  //Get user email
+  // ユーザーのメールアドレスを取得します
  $Txt_email:=String($mobileInfo.email)
 
- If(Length($Txt_email)=0) //no email was provided
-  // Guest mode - allow or deny connection
+ If(Length($Txt_email)=0) // メールアドレスが提供されなかった場合
+  // ゲストモード - 接続を認証または拒否します
     $status.success:=True
-  // $status.success:=False if you want to deny guest access
+  // ゲストアクセスを拒否するには: $status.success:=False
 
-  // Optional welcome message to display on mobile App.
-    $status.statusText:="Welcome to my application"
+  //  モバイルアプリに表示されるようこそメッセージ (任意)
+    $status.statusText:="アプリへようこそ"
 
  Else
-  // Authenticated mode -  Allow or not the connection
-    If(Is compiled mode) // Deployment version
+  // 認証モード -  接続を認証または拒否します
+    If(Is compiled mode) // 運用版の場合
 
-  //Allow, for example, emails from the 4D.com domain
+  // たとえば、4d.com ドメインからのメールであれば認証します
        $status.success:=($mobileInfo.email=("@"+Char(At sign)+"4d.com"))
 
-    Else //Development version
+    Else // 開発版の場合
 
-  //Allow all adress for testing purposes
+  // テスト目的のため、すべてのアドレスを許可します
        $status.success:=True
 
     End if
@@ -142,53 +142,53 @@ Here is a template example for a `On Mobile App Authentication` database method:
     If($status.success)
 
 
-  //Optional welcome message to display on mobile App.
-       $status.statusText:="Authentication successful"
+  // モバイルアプリに表示されるようこそメッセージ(任意)
+       $status.statusText:="認証に成功しました"
 
     Else
 
-       $status.statusText:=$mobileInfo.email+" is not an authorized email address."
+       $status.statusText:=$mobileInfo.email+" は許可されたメールアドレスではありません。"
 
     End if
  End if
 
-  // Get App information if identification is needed (optional)
+  // 識別が必要であればアプリ情報を取得します (任意)
  If($mobileInfo.application#Null)
-    $Txt_appID:=$mobileInfo.application.id // App Id
-    $Txt_appName:=$mobileInfo.application.name //App Name
-    $Txt_appVersion:=$mobileInfo.application.version // App Version
+    $Txt_appID:=$mobileInfo.application.id // アプリID
+    $Txt_appName:=$mobileInfo.application.name // アプリ名
+    $Txt_appVersion:=$mobileInfo.application.version // アプリバージョン
  End if
 
-  //Get Device information if identification is needed (optional)
+  // 識別が必要であればデバイス情報を取得します (任意)
  If($mobileInfo.device#Null)
-    $Txt_device:=$mobileInfo.device.description //Device Description
-    $Txt_deviceID:=$mobileInfo.device.id //Device Id
-    $Txt_osVersion:=$mobileInfo.device.version //System Version
-    $Boo_simulator:=$mobileInfo.device.simulator //True if device is a Simulator
+    $Txt_device:=$mobileInfo.device.description // デバイス詳細
+    $Txt_deviceID:=$mobileInfo.device.id // デバイスID
+    $Txt_osVersion:=$mobileInfo.device.version // システムバージョン
+    $Boo_simulator:=$mobileInfo.device.simulator // デバイスがシミュレーターであれば true
  End if
 
-  //Get the Team information if needed (optional)
+  //  必要であればチーム情報を取得します (任意)
  If($mobileInfo.team#Null)
-    $Txt_teamID:=$mobileInfo.team.id //Team Id
+    $Txt_teamID:=$mobileInfo.team.id //チームID
  End if
 
-  //Get the User Language information (optional)
+  // 必要であればユーザー言語情報を取得します (任意)
  If($mobileInfo.language#Null)
     $Txt_languageCode:=$mobileInfo.language.Code
     $Txt_languageId:=$mobileInfo.language.id
     $Txt_languageRegion:=$mobileInfo.language.region
  End if
 
-  //Get the session information
+  // セッション情報を取得します
  If($mobileInfo.session#Null)
-  //Could be stored for future use.
-    $Txt_sessionId:=$mobileInfo.session.id //UUID created for this authentication
-    $Txt_IP:=$mobileInfo.session.ip //IP address
+  // 将来の使用のために保存も可能です
+    $Txt_sessionId:=$mobileInfo.session.id // この認証のために作成された UUID
+    $Txt_IP:=$mobileInfo.session.ip // IPアドレス
  End if
 
-  //Get the App parameters
+  // アプリの引数を取得します
  If($mobileInfo.parameters#Null)
-  //Any additional information that could be added by mobile app for custom use (object)
+  // モバイルアプリから追加されるその他の追加情報 (オブジェクト型)
  End if
 
 

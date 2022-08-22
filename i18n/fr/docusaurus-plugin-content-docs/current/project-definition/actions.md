@@ -17,8 +17,8 @@ Vous pouvez créer de nouvelles actions en cliquant sur le bouton +, situé en-d
 
 Vous définirez ensuite les éléments suivants :
 
-* **Names:** The action name to use in the [On Mobile App Action](https://doc4d.github.io/go-mobile/docs/next/4d-language/on-mobile-app-action-database-method) database method to trigger your 4D code.
-* **Icônes :** Sélectionnez une icône pour votre action à partir de la librairie d'icônes. Vous pouvez également ajouter votre propre icône à l'aide de ce [tutorial]`(using-icons.html)`.
+* **Names:** The action name to use in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method to trigger your 4D code.
+* **Icônes :** Sélectionnez une icône pour votre action à partir de la librairie d'icônes. You can also [add your own icon](labels-and-icons.md#adding-custom-icons).
 * **Libellés long et court :** Définissez les libellés correspondant aux actions que vous souhaitez afficher dans votre application.
 * **Table :** Sélectionnez la table à laquelle vous souhaitez appliquer une action.
 * **Portée :** Choisissez d'appliquer l'action à une **entité** ou à une **table**.
@@ -241,7 +241,7 @@ When you define more than one sort action for a table, mobile users automaticall
 
 ### On Mobile App Action
 
-The [`On Mobile App Action`](../4d/on-mobile-app-action) database method is available to call all of your 4D methods.
+The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is available to call all of your 4D methods.
 
 After creating all of your actions, just click on the **Create** button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
 
@@ -462,8 +462,4 @@ For your convenience, the Edition form includes a few **special features**:
 
 ## Que faire ensuite ?
 
-* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
-
-* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
-
-* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
+See [this tutorial](../tutorials/actions/getting-started.md) that will guide you through the **action definition process**.

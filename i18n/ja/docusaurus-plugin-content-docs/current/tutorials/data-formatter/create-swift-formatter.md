@@ -3,7 +3,7 @@ id: create-swift-formatter
 title: Swift フォーマッターを作成する
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > Create your first Swift formatters.
 

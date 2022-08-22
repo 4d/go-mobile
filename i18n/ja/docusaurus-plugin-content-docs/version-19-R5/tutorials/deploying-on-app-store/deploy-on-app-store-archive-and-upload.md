@@ -3,7 +3,7 @@ id: deploy-on-app-store-archive-and-upload
 title: Archive and upload your Project
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > Archive and upload your project to App Store Connect.
 

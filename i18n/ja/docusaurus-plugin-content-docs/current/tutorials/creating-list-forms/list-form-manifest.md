@@ -3,7 +3,7 @@ id: list-form-manifest
 title: manifest.json
 ---
 
-The manifest file includes information about your list form template, such as the storyboard **type** (list form or detail form), **name** and **number of fields per cell**.
+manifest ファイルには、ストーリーボードの **タイプ (type)** (リストフォーム "listform" あるいは詳細フォーム "detailform")・**名称 (name)**・**セル毎のフィールド数 (fields)** といった情報が記述されています。
 
 ```json
 {
@@ -19,9 +19,9 @@ The manifest file includes information about your list form template, such as th
 
 ```
 
-For example, the above manifest file includes the following information:
+上記の manifest ファイルを解読すると、下記のことがわかります:
 
-1. **Template type**: listform
-2. **Template Name**: Custom List form
-3. **Field number**: Three fields in each cell (profile image, title, and subtitle)
-4. **Tag**: "___LISTFORMTYPE___": "Table" table display
+1. **type:** ストーリーボードのタイプ。この例では、"listform"
+2. **name:** テンプレート名。この例では、"Custom List form"
+3. **fields**: 各セルのフィールド数。この例では、3つのフィールド (プロフィール画像・タイトル・サブタイトル) が表示されます。
+4. **tags**: "___LISTFORMTYPE___": リストフォームのタイプ。この例では "Table" (テーブル表示)

@@ -3,46 +3,46 @@ id: list-form-template
 title: リストフォームのテンプレート
 ---
 
-In this tutorial, we'll cover nearly all aspects of creating a list form template, including the use of a **searchBar**, a table displaying an **image**, a **title**, and a **subtitle** for each cell.
+このチュートリアルでは、リストフォーム用のカスタムテンプレートを作成するために必要なスキルを身につけることができます。これには、フォームへの **検索窓** の追加、**画像** フィールドの表示、各セルへの **タイトル** および **サブタイトル** の表示が含まれます。
 
 ![リストフォームテンプレート（完成）](img/custom-template-final-result.png)
 
 ## スタータープロジェクトをダウンロード
 
-Before we begin, be sure to download and unzip the **Starter project** which includes:
+**スタータープロジェクト** をダウンロードします。これには、以下のものが収録されています:
 
-* A **List form** folder
-* A demo 4D project ("Contact") with a ready-to-use mobile app project.
+* **Custom List form** フォルダー
+* すぐに使えるモバイルアプリの付いたデモ4Dプロジェクト ("Contact")。
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomListFormStarter/archive/4702619ed628a98f7cba5aacc08b6302d4bb8f86.zip">スタータープロジェクト</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomListFormStarter/archive/refs/heads/master.zip">スタータープロジェクト</a>
 </div>
 
 ## プロジェクトにリストフォームのテンプレートを追加する
 
-The first thing you'll need to do is to create a `list` folder in *Contact.4dbase/Resources/Mobile/form/* location and drag and drop your **list form** folder into it.
+まず、*Contact.4dbase/Resources/Mobile/form/* に `list` フォルダーを作成し、**Custom List form** フォルダーをその中にドラッグ＆ドロップします。
 
-![Mobile folder list form template](img/mobile-folder-custom-template.png)
+![Mobileフォルダーリストフォームテンプレート](img/mobile-folder-custom-template.png)
 
-Now, launch your 4D application and open the "Contact" 4D project.
+4Dアプリケーションを起動し、ダウンロードした "Contact" 4Dプロジェクトを開きます。
 
-Then, select the "Contact Demo App" mobile project: **File > Open > Mobile Project > Contact Demo App**.
+次に、モバイルプロジェクトを開きます。これには **ファイル > 開く > モバイルプロジェクト... > Contact Demo app** と選択していきます。
 
-In the **Forms section** of the mobile project editor, you can see that your list form template has been successfully added to the list of available list form templates:
+モバイルプロジェクトエディターの **フォーム** セクションで、リストフォームテンプレート選択画面に追加した "Custom List form" テンプレートが表示されていれば成功です:
 
-![Forms section](img/custom-listform-template.png)
+![フォームセクション](img/custom-listform-template.png)
 
-Now let's focus on the contents of the **Custom List form** folder.
+それでは、**Custom List form** フォルダーの中身を見ていきましょう。
 
-## テンプレートの構造
+## リストフォームテンプレートフォルダーの中身
 
-In this folder, you will find:
+フォルダーには、次のものが格納されています:
 
-* **a layoutIconx2.png** icon in 160x160px: displayed in the project editor when you select your template
-* **a manifest.json file**: includes a basic description of the template
-* **a template.svg file**: the visual representation of your template displayed when you define your list form content.
-* an **ios folder** that includes the storyboard (graphical interface) and **Swift** file (code for the form) in `Source/Forms/Tables/___TABLE___` folder
-* an **android folder** that includes the layout.xml file (graphical interface) in `app/src/main/res/layout` folder.
+* **layoutIconx2.png**: 160x160pxサイズのアイコンファイルです。プロジェクトエディターのテンプレート選択画面に表示されます。
+* **manifest.json**: テンプレートの基本的な説明が記述されています。
+* **template.svg**: リストフォームのレイアウトを決定する画面に表示されるテンプレートのプレビューです。
+* ストーリーボード (グラフィカルインターフェース) と **Swift** ファイル (フォームのコード) を `Source/Forms/Tables/___TABLE___` フォルダー内に格納する **ios フォルダー**
+* layout.xml ファイル (グラフィカルインターフェース) を `app/src/main/res/layout` フォルダー内に格納する **android フォルダー**
 
-These files and folders are detailed in the next sections. 
+これらのファイルやフォルダーについては、次のセクションで説明していきます。 

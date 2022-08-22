@@ -3,7 +3,7 @@ id: working-with-xcode
 title: 作業をXcodeに引き継ぐ
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > * Open a 4D for iOS project from the Project Editor.
 > * Customize the generated 4D for iOS app.
@@ -23,7 +23,7 @@ Download the Starter project:
 <a
   className="button button--primary"
   href="#">
-  Download
+  ダウンロード
 </a>
 </div>
 

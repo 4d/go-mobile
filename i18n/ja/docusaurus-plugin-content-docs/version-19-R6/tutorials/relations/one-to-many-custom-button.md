@@ -76,7 +76,7 @@ Xcodeで「.xib」ファイルを開きます。
 
 * **Value**: `12`
 
-その他
+および
 
 * **Key Path**: `layer.masksToBounds`
 
@@ -86,7 +86,7 @@ Xcodeで「.xib」ファイルを開きます。
 
 ![Custom relation color and font](img/Custom-relation-button-Xcode-round-corners.png)
 
-これでカスタムテンプレートがプロジェクトエディターで使用できるようになりました！
+これで、完成したカスタムテンプレートがプロジェクトエディターで使用できるようになりました！
 
 下図のように表示が変化していれば成功です。
 
@@ -129,11 +129,11 @@ Keep in mind that if you **add constraints** into your button, you will also hav
 
 ### タグを追加する
 
-Each storyboard element has an Object ID. For example, if you select Field View 2 and go to the **Identity inspector**, you'll see its Object ID:
+ストーリーボードの各要素は、オブジェクトID を持ちます。 試しに Field View 2 を選択し、**Identity inspector** を確認してください。オブジェクトID が表示されているはずです:
 
 ![オブジェクトID ストーリーボード](img/Custom-button-object-id-storyboard.png)
 
-ひとつずつ変更するのは，なかなか面倒ですし，途中でミスをしてしまうかもしれません。 アイデンティティーインスペクターで操作するのは大変なので，ここはコードエディターでストーリーボードファイルを開き，効率的に作業を進めることにしましょう！
+1つずつ変更するのは少々面倒ですし、途中でミスをしてしまうかもしれません。 アイデンティティーインスペクターで操作するのは大変なので，ここはコードエディターでストーリーボードファイルを開き，効率的に作業を進めることにしましょう！
 
 #### 高さの制約にタグを追加する
 
@@ -161,5 +161,5 @@ Each storyboard element has an Object ID. For example, if you select Field View 
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-OneToManyCustomButton/releases/latest/download/tutorial-OneToManyCustomButton.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-OneToManyCustomButton/releases/latest/download/tutorial-OneToManyCustomButton.zip">ダウンロード</a>
 </div>

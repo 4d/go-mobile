@@ -13,7 +13,7 @@ title: はじめてのアクション
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-Actions/archive/cf16581214a8a6e4e4067bcff43ac1265ec43ff7.zip">ダウンロード</a>
 </div>
 
 アクションは2つのレベルに対して定義可能です:
@@ -49,7 +49,7 @@ href="https://github.com/4d-go-mobile/tutorial-Actions/archive/cf16581214a8a6e4e
 
 ### ⒉ ⒉ ⒉ ⒉ データベースメソッドの作成と編集
 
-Now that your action is defined in the Project Editor, you have to create the **[On Mobile App Action](https://livedoc.4d.com/4D-Language-Reference-17-R5/Database-Methods/On-Mobile-App-Action-database-method.301-4286697.en.html)** database Method.
+Now that your action is defined in the Project Editor, you have to create the [On Mobile App Action](../../4d/on-mobile-app-action.md) database method.
 
 Do to so, click on **Create button** at the bottom right of the action table and enter the following code in the **On Mobile App Action** database method:
 
@@ -247,5 +247,5 @@ Download the completed project that includes various actions:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-Actions/releases/latest/download/tutorial-Actions.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-Actions/releases/latest/download/tutorial-Actions.zip">ダウンロード</a>
 </div>

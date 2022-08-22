@@ -60,7 +60,7 @@ title: ストラクチャー
 
 - 全ての[スカラー型の4D フィールド](https://developer.4d.com/docs/ja/Concepts/data-types.html) がサポートされます(ただし [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html) 型を除く)
 - [オブジェクトフィールド](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
-- [計算属性](https://developer.4d.com/go-mobile/fr/docs/project-definition/structure#computed-attributes)
+- [Computed attributes](https://developer.4d.com/go-mobile/en/docs/project-definition/structure#computed-attributes-1) (scalar attributes only)
 - リレーション属性 (N対1 および 1対N) はサポートされており、フィールドと同様に選択することができます。 リレーション属性は専用のアイコンを持ちます:
 
 Ｎ対１リレーションアイコン:  ![リレーション1](img/manyto1.png)
@@ -189,7 +189,7 @@ End if
 
 データモデルの計算属性は、通常のフィールドと同様に、フォームセクション (リストフォームと詳細フォーム) のフィールドリストで利用可能です。 これらはデータストアのストレージ属性と同じように動作します。
 
-![Forms section](img/Forms.png)
+![フォームセクション](img/Forms.png)
 
 **データ** セクションでは、フィルタークエリボックスの "フィールド" ボタンにリンクされているリストに計算属性が表示されます。
 

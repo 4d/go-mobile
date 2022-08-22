@@ -1,50 +1,50 @@
 ---
 id: detail-form-template-layout
-title: Android Layout
+title: Android レイアウト
 ---
 
-In this section you will see how to create your detail form interface with Android Studio.
+ここでは、Android Studio を使用してカスタム詳細フォームのインターフェースを作成する方法を説明します。
 
 完成イメージ
 
 ![カスタム詳細画面のストーリーボード](img/xml-custom-detailform.png)
 
 
-For this template, we're going to add a:
+テンプレートに表示する次のフィールドのレイアウトをデザインします:
 
 * プロフィールのヘッダー画像
 * 繰り返されるフィールド
 
-## Open the layout file with Android Studio
+## レイアウトファイルを Android Studio で開く
 
-The best way to edit or create a template is to :
+テンプレートの編集・作成にあたって最適な方法は次のとおりです:
 
-* Open Android Studio and create a new empty mobile project clicking on File > New > New Project...
+* Android Studio を開き、File > New > New Project... をクリックして、空のモバイルプロジェクトを新規に作成します。
 
-* Select the Empty Activity template
+* Empty Activity テンプレートを選択します。
 
-![Android Studio project creation](img/template-selection.png)
+![Android Studioでのプロジェクト作成](img/template-selection.png)
 
-* Configure your project and click **Finish**
+* プロジェクトの設定をおこない、**Finish** をクリックします。
 
-![Configure Android project](img/configure-android-project.png)
+![Androidプロジェクトの設定](img/configure-android-project.png)
 
-* Copy the layout.xml file in app > res > layout dropping it directly on the project layout folder
+* app > res > layout にある layout.xml ファイルを、Android Studio の新規プロジェクトの layout フォルダーに、altキーを押しながら直接ドロップすることでコピーします。
 
-![Copy layout.xml file](img/copy-layout.png)
+![layout.xmlファイルのコピー](img/copy-layout.png)
 
-* You should have that at that point :
+* 下図のようになっていることを確認してください:
 
-![Android project](img/android-project.png)
+![Androidプロジェクト](img/android-project.png)
 
-* Click on the top right **Split** option to visualize the template preview as well as the xml code.
+* 右上の **Split** オプションをクリックすると、テンプレートのプレビューと同時に xml コードも表示されます。
 
-It's quite empty, so let's add some content!
+ほとんど白紙の状態です。早速、中身を追加しましょう！
 
 
-## What is available in this starter project
+## スタータープロジェクトで提供されているもの
 
-For the view to be scrollable, a scrollview is already included in the layout:
+ビューをスクロール可能にするため、レイアウトには ScrollView がすでに含まれています:
 
 ```xml
     <androidx.core.widget.NestedScrollView
@@ -54,7 +54,7 @@ For the view to be scrollable, a scrollview is already included in the layout:
 
 ```
 
-The part that is going to be duplicated:
+複製される部分:
 
 ```xml
  <androidx.cardview.widget.CardView
@@ -133,9 +133,9 @@ The part that is going to be duplicated:
 ```
 
 
-## Add an Image View
+## Image View を追加する
 
-In order to have a nice Image view display we are going to use a CardView container again. We want to add a nice corner radius to the ImageView to have a better design.
+ImageView を見栄えよく表示するため、CardView コンテナを再度使用します。 ImageView の角の丸みをカスタマイズして、デザインに個性を持たせましょう。
 
 ```xml
     <androidx.cardview.widget.CardView
@@ -164,14 +164,14 @@ In order to have a nice Image view display we are going to use a CardView contai
 
 ```
 
-As you can see the ImageView is embedded into the CardView. That allows to add corner radius to it.
+上のとおり、ImageView は CardView に埋め込まれています。 これにより、角の丸みを追加することができます。
 
-The `app:imageUrl="__IMAGE_1__"` line will allow to bind image value that is situated in position 1 in the svg file that you previously defined.
+`app:imageUrl="__IMAGE_1__"` の行は、先に定義した svgファイルの 1番目の位置にあるピクチャー値をバインドするためのものです。
 
 
-The `tools:background="@tools:sample/avatars"` line simply there to display an ImageView placeholder.
+`tools:background="@tools:sample/avatars"` の行は、単に ImageView のプレースホルダーを表示します。
 
-Here is the full layout code at this stage :
+現時点でのレイアウトのコードの全容は以下の通りです:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -324,22 +324,22 @@ Here is the full layout code at this stage :
 
 ```
 
-## How to get data into your detail form
+## セルとフィールドを関連付ける
 
 ### Image View
 
-In our detail form template we used `app:imageUrl="__IMAGE_1__"`
+詳細フォームのテンプレートでは、`app:imageUrl="__IMAGE_1__"` を使用しました。
 
-Here we suppose the ImageView is the first view in the svg, and its view ID is `__SPECIFIC_ID_1__`. If it would be the third view, it would be `__IMAGE_3__` and its view ID would be `__SPECIFIC_ID_3__`.
+ここでは、ImageView が svg の最初のビューであり、そのビューID が `__SPECIFIC_ID_1__` であると仮定しています。 3番目のビューであれば、`__IMAGE_3__` 、対応するビューID は `__SPECIFIC_ID_3__` となります。
 
 
 ## これからどうする？
 
-In this tutorial, we've covered the basics for creating detail form templates. You can now create simple templates on your own using the Starter Project resources. Download the completed template folder:
+このチュートリアルでは、詳細フォームのカスタムテンプレートを作成する方法を紹介しました。 スタータープロジェクトを参考に、シンプルなカスタムテンプレートが簡単に自作できる、という手応えが得られたのではないでしょうか。 完成したテンプレート入りプロジェクト:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomDetailForm/releases/latest/download/tutorial-CustomDetailForm.zip">ダウンロード</a>
 </div>
 
 
