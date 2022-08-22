@@ -80,4 +80,4 @@ Windows では、"画像ファイル" (*.public.image) を使用する必要が�
 
 **名前:** このフィールドは、ユーザーアカウント名で自動的に記入されています。 ここには任意の名前を記入できます。
 
-**部署名:** Developer アカウントの Team ID。これは開発フェーズを通して使用されます。 This ID can be get from your Developer Account (see (https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&path=%2Faccount%2F&rv=1).
+**部署名:** Developer アカウントの Team ID。これは開発フェーズを通して使用されます。 この ID は、Developer アカウントから取得できます ([こちら](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&path=%2Faccount%2F&rv=1) を参照ください)。

@@ -13,9 +13,9 @@ title: モバイルプロジェクトを開く
 
 他のフィールドに対しても、同じように処理してみましょう:
 
-* Set Current Balance as a **Currency $**
-* Set Percent Used as a **Percentage**
-* Set Credit Limit as a **No or Yes**
-* Set Credit Date as a **Short Date**
+* Current Balance を **通貨 $** に設定します
+* Percent Used を **パーセント** に設定します
+* Credit Limit を **"いいえ" または "はい"** に設定します
+* Credit Date を **短い日付** に設定します
 
 ![フィールドフォーマッターを選択](img/select-field-formatters.png)

@@ -8,7 +8,7 @@ We are now going to go a little bit further and **create a task for a specific e
 
 **親エンティティ**さえきちんと特定できていれば，子エンティティを作成するのは少しも難しいことはではありません！
 
-Let's get started by downloading the Starter project:
+スタータープロジェクトをダウンロードしてください:
 
 <div className="center-button">
 <a className="button button--primary"
@@ -100,5 +100,5 @@ $0:=$out
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-RelationsActions/releases/latest/download/tutorial-RelationsActions.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-RelationsActions/releases/latest/download/tutorial-RelationsActions.zip">ダウンロード</a>
 </div>

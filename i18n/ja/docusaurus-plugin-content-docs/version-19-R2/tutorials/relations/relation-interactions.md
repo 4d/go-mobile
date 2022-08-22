@@ -25,7 +25,7 @@ For that just add %length% into your relation short or long label for a One to M
 
 ![length parameter](img/icons-labels-length-parameter-relation.png)
 
-## Forms section
+## フォームセクション
 
 ### Add any relation anywhere you want
 

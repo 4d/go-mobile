@@ -3,7 +3,7 @@ id: deploy-on-app-store-create-appstore-record
 title: Create App Store record
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > * Create an App ID on your Developer Account
 > * Create your app in App Store Connect

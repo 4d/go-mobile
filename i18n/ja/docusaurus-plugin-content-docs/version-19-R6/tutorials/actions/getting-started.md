@@ -3,16 +3,12 @@ id: getting-started
 title: はじめに
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > Use actions in the generated iOS app.
 
 
-> **PREREQUISITES**
-> 
-> Click `[here](requirements.html)` to see what you'll need to get started!
-
-In 4D v17 R5, you can [define actions](define-first-action.md) directly from the Project Editor and execute 4D code from your generated iOS app!
+You can [define actions](define-first-action.md) directly from the Project Editor and execute 4D code from your generated mobile app!
 
 プロジェクトエディターでどちらのテンプレートを選択しても，アクションに対応したアプリをビルドすることができます。
 

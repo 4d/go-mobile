@@ -3,21 +3,21 @@ id: from-iphone
 title: iPhone から
 ---
 
-From your app if you have a crash, you can display, edit and send feedback.
+クラッシュした場合、アプリから表示・編集・フィードバックの送信が可能です。
 
-For that:
-* Go to your iPhone Settings
-* find your app scrolling down
-* Switch on the feedback
+これには:
+* iPhone の設定を開きます。
+* スクロールダウンしてアプリを探します。
+* フィードバックの設定を有効化します。
 
-![Activate feedback and logs](img/activate-feedback-logs.png)
+![フィードバックとログの有効化](img/activate-feedback-logs.png)
 
-From here, the only thing you have to do is opening again your app. An action sheet will appear to allow you :
-* Sends messages
-* Suggest an improvement
-* Show current log
-* Report a problem
+アプリを再起動します。 すると、アクションシートが表示され、次のことがおこなえます:
+* メッセージの送信
+* 改善の提案
+* カレントログの表示
+* 問題の報告
 
-![Display and send logs](img/display-send-logs.png)
+![ログの表示と送信](img/display-send-logs.png)
 
 

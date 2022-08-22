@@ -1,31 +1,31 @@
 ---
 id: use-data-formatter
-title: Use formatters
+title: データフォーマッターを使用する
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
-> Use built-in formatters.
+> ビルトインのデータフォーマッターを使用します。
 
 
-In this tutorial, we'll show you how to apply built-in [formatters](../../project-definition/labels-and-icons.md#formatters) to your fields.
+このチュートリアルでは、ビルトインの [フォーマッター](../../project-definition/labels-and-icons.md#フォーマット) をフィールドに適用する方法について説明します。
 
 ## スタータープロジェクトをダウンロード
 
-Let's get started by downloading the Starter project:
+スタータープロジェクトをダウンロードしてください:
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-DataFormatter/releases/latest/download/tutorial-DataFormatter.zip">ダウンロード</a>
 </div>
 
 ## モバイルプロジェクトを開く
 
-Go to **Labels & Icons** in Sections, you'll see that a Formats column is available in the Field Properties area:
+**ラベル & アイコン** セクションでは、フィールドプロパティエリアにおいて、フォーマッターカラムが提供されています:
 
 ![データフォーマッターラベルアイコン](img/data-formatter-labels-icons.png)
 
-From here, you can select specific formats depending on your needs. You can choose between [multiple built-in formats](../../project-definition/labels-and-icons.md#selecting-a-formatter).
+ここから、必要に応じて適切なフォーマットを選択することができます。 [複数のビルトインフォーマット](../../project-definition/labels-and-icons.md#フォーマッターを選択する) から選択することができます。
 
 Available Credit フィールドを、通貨として定義してみましょう:
 
@@ -33,17 +33,17 @@ Available Credit フィールドを、通貨として定義してみましょう
 
 他のフィールドに対しても、同じように処理してみましょう:
 
-* Set Current Balance as a **Currency $**
-* Set Percent Used as a **Percentage**
-* Set Credit Limit as a **No or Yes**
-* Set Credit Date as a **Short Date**
+* Current Balance を **通貨 $** に設定します
+* Percent Used を **パーセント** に設定します
+* Credit Limit を **"いいえ" または "はい"** に設定します
+* Credit Date を **短い日付** に設定します
 
 ![フィールドフォーマッターを選択](img/select-field-formatters.png)
 
 ## プロジェクトをビルドして実行
 
-こちらが、選択したNumbers詳細フォームとTasksリストフォームの、iOSアプリ内での最終的な結果です。
+こちらが、Numbersテーブルについて選択されたリストフォームと詳細フォームの iOSアプリでの最終的な結果です。
 
 ![でータフォーマッターの結果/iPhone](img/result-data-formatter-iphone.png)
 
-以上です！ Your fields are well formatted according to its defined type in **Labels & Icons**.
+以上です！ **ラベル& アイコン** で定義されたとおりに、フィールドがフォーマットされているのが確認できます。

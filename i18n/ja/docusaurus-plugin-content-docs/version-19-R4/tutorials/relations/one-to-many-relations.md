@@ -5,7 +5,7 @@ title: 1対Nリレーション
 
 This tutorial will show you how easy it can be to include One to Many relations in your mobile project.
 
-Let's get started by downloading the Starter project:
+スタータープロジェクトをダウンロードしてください:
 
 <div className="center-button">
 <a className="button button--primary"
@@ -52,7 +52,7 @@ So, in the Labels & Icons section you will define:
 
 ![Labels & Icons section Relations properties](img/Relations-properties-Labels-icons-section-4D-for-iOS.png)
 
-## Forms section
+## フォームセクション
 
 * Go to the Forms section and drop the *tasks* relation on the Employee Task Detail form.
 
@@ -72,5 +72,5 @@ Well done! You've successfully included One to Many relations in your mobile pro
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-OneToManyRelations/releases/latest/download/tutorial-OneToManyRelations.zip">Download</a>
+href="https://github.com/4d-go-mobile/tutorial-OneToManyRelations/releases/latest/download/tutorial-OneToManyRelations.zip">ダウンロード</a>
 </div>

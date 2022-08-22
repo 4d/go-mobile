@@ -58,7 +58,7 @@ title: 要件
 | 17 R2 | 4.1   | 11.3 | 9.3.1  | 10.13.2 |
 </details>
 
-:::Compatibility note
+:::note Compatibility note
 
 4D v19 R3/4D v19.2以降用にアップデートされたフォーマッターは、以前の 4Dリリースと互換性がありません。
 

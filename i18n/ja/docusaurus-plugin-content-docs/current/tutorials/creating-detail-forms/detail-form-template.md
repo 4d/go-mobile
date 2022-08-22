@@ -1,47 +1,47 @@
 ---
 id: detail-form-template
-title: Detail form templates
+title: 詳細フォームのテンプレート
 ---
 
 
-In this tutorial, we'll guide you through the creation of a detail form template. It will display an **image header**, as well as **title and content fields** that will be duplicated in the generated iOS and Android Apps.
+このチュートリアルでは、詳細フォームのテンプレートを作成する方法を説明します。 この詳細フォームは、**画像ヘッダー** と **タイトルおよびコンテンツフィールド** をアプリに表示します。
 
 ![カスタムテンプレート（完成）](img/custom-template-final-result.png)
 
 ## スタータープロジェクトをダウンロード
 
-To begin, download the **Starter project**, which includes:
+**スタータープロジェクト** をダウンロードします。これには、以下のものが収録されています:
 
-* A **Custom Detail form** folder (custom Detail form template folder)
-* A demo 4D project ("Contact") with a ready to use mobile app project.
+* **Custom Detail form** フォルダー (カスタム詳細フォームのテンプレートフォルダー)
+* すぐに使えるモバイルアプリの付いたデモ4Dプロジェクト ("Contact")。
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-CustomDetailFormStarter/archive/67c9c2f4672083e999a4a592a069d7ca45b3351e.zip">スタータープロジェクト</a>
+href="https://github.com/4d-go-mobile/tutorial-CustomDetailFormStarter/archive/refs/heads/main.zip">スタータープロジェクト</a>
 </div>
 
-## Add a detail form template to your mobile project
+## プロジェクトに詳細フォームのテンプレートを追加する
 
-First, create a *Contact.4dbase/Resources/Mobile/form/detail* folder and drag and drop the **Custom Detail form** folder in it.
+まず、*Contact.4dbase/Resources/Mobile/form/detail* フォルダーを作成し、**Custom Detail form** フォルダーをその中にドラッグ＆ドロップします。
 
-![Mobile folder custom template](img/mobile-folder-custom-template.png)
+![Mobileフォルダーカスタムテンプレート](img/mobile-folder-custom-template.png)
 
-Now, launch your 4D application and open the "Contact" 4D project. Then, select the "Contact Demo App" mobile project: **File > Open > Mobile Project > Contact Demo App**.
+4Dアプリケーションを起動し、ダウンロードした "Contact" 4Dプロジェクトを開きます。 次に、モバイルプロジェクトを開きます。これには **ファイル > 開く > モバイルプロジェクト... > Contact Demo app** と選択していきます。
 
-In the **Forms section** in the project editor, you can see that the Custom Detail form template has been successfully added to the Detail form template list:
+モバイルプロジェクトエディターの **フォーム** セクションで、詳細フォームテンプレート選択画面に追加した "Custom Detail form" テンプレートが表示されていれば成功です:
 
-![Forms section](img/custom-detailform-template.png)
+![フォームセクション](img/custom-detailform-template.png)
 
-Now let's focus on the **Custom Detail form** folder content.
+それでは、**Custom Detail form** フォルダーの中身を見ていきましょう。
 
-## Detail form template folder content
+## 詳細フォームテンプレートフォルダーの中身
 
-In this folder, you will find:
+フォルダーには、次のものが格納されています:
 
-* **a layoutIconx2.png** icon in 160x160px: displayed in the project editor when you select your custom template among others
-* **a manifest.json** file: includes a basic description of the template
-* **a template.svg** file: the representation of your template that will be display when you define your detailForm content and where you will drag and drop your fields
-* an **ios folder** that includes the storyboard (graphical interface) and **Swift** file (code for the form) in `Source > Forms > Tables 'TABLE'` folder
-* an **android folder** that includes the layout.xml file (graphical interface) in `app > src > main > res > layout` folder.
+* **layoutIconx2.png**: 160x160pxサイズのアイコンファイルです。プロジェクトエディターのテンプレート選択画面に表示されます。
+* **manifest.json**: テンプレートの基本的な説明が記述されています。
+* **template.svg**: フィールドをドラッグ＆ドロップして詳細フォームのレイアウトを決定する画面に表示されるテンプレートのプレビューです。
+* ストーリーボード (グラフィカルインターフェース) と **Swift** ファイル (フォームのコード) を `Source/Forms/Tables/___TABLE___` フォルダー内に格納する **ios フォルダー**
+* layout.xml ファイル (グラフィカルインターフェース) を `app/src/main/res/layout` フォルダー内に格納する **android フォルダー**
 
-These files and folders are detailed in the next sections.
+これらのファイルやフォルダーについては、次のセクションで説明していきます。

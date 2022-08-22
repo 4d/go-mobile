@@ -3,7 +3,7 @@ id: selecting-your-developer-program
 title: Selecting your Apple Developer Program
 ---
 
-> **OBJECTIVES**
+> **目標**
 > 
 > Choose the appropriate Apple Developer Program.
 

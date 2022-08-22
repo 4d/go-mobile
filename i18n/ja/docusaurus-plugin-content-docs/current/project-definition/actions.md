@@ -17,8 +17,8 @@ title: アクション
 
 次に、以下のものを定義する必要があります:
 
-* **名前:** [On Mobile App Action](#on-mobile-app-action) データベースメソッド内で 4Dコードをトリガーするのに使用するアクションの名前
-* **アイコン:** アイコンライブラリーから選択するアイコン。 またこちらの [チュートリアル]`(using-icons.html)` を参考に、独自のアイコンを追加することもできます。
+* **Names:** The action name to use in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method to trigger your 4D code.
+* **アイコン:** アイコンライブラリーから選択するアイコン。 You can also [add your own icon](labels-and-icons.md#adding-custom-icons).
 * **短いラベルとラベル:** アプリに表示するアクションのラベル
 * **テーブル:** アクションを適用するテーブル
 * **スコープ:** アクションの定期用対象: **カレントエンティティ** または **テーブル**
@@ -241,7 +241,7 @@ Zymosian, Elmer
 
 ### On Mobile App Action
 
-[`On Mobile App Action`](../4d/on-mobile-app-action.md) データベースメソッドは、4Dメソッドを呼び出すのに利用します。
+The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is available to call all of your 4D methods.
 
 すべてのアクションを作成したあと、アクションテーブル右下の **作成...** ボタンをクリックすると、作成した全アクション名を含んだ *Case of* コードブロックが *On Mobile App Action* メソッド内に自動生成されます。
 
@@ -272,13 +272,13 @@ Zymosian, Elmer
 アクション入力コントロールは、モバイルアプリ内でフォーマットされた要素 (値、ピクチャーなど) を表示します。 これらの要素は、アクションフォーム内に自動的に含まれます。具体的には選択リストとして表示され、そこから値を選択し、引数として使用することができます。 これらの選択リストの動作は、静的または動的 (ダイナミック) のどちらかを選ぶことができます:
 - **静的** な選択リスト (json でハードコードされた定義済み選択肢) は 'inputControls' フォルダー (`mybase/Resources/mobile/inputControls`) 内の manifest.json ファイルに定義します。 この選択リストは以下のような複数の要素から定義されています:
 
-| プロパティ              | Type                | 詳細                                                                           |
+| プロパティ              | タイプ                 | 詳細                                                                           |
 | ------------------ | ------------------- | ---------------------------------------------------------------------------- |
-| **"name"**         | text                | アクション入力コントロール名                                                               |
-| **"binding"** (任意) | text                | 画像を紐付けるための "imageNamed" (実際の画像はアクションフォーマッターフォルダー内の "images" サブフォルダーに入れる必要あり) |
+| **"name"**         | テキスト                | アクション入力コントロール名                                                               |
+| **"binding"** (任意) | テキスト                | 画像を紐付けるための "imageNamed" (実際の画像はアクションフォーマッターフォルダー内の "images" サブフォルダーに入れる必要あり) |
 | **"choiceList"**   | object              | キー (サーバーに送られるデータ) / 値 (ユーザーに表示される値) のリストを定義するためのオブジェクトまたはコレクション              |
 | **"type"**         | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                |
-| **"format"** (任意)  | text                | インターフェースの選択: push (未定義の場合のデフォルト) / segmented / popover / sheet / picker      |
+| **"format"** (任意)  | テキスト                | インターフェースの選択: push (未定義の場合のデフォルト) / segmented / popover / sheet / picker      |
 
 以下は、静的な選択リストとして使用可能な、ある会社の支社の連絡先情報を格納した manifest.json ファイルの一例です:
 ```4d
@@ -301,21 +301,21 @@ Zymosian, Elmer
 
 - **動的 (ダイナミック)** な選択リストは、データソースに基づいた選択リストです (データベースのコンテンツに応じて選択肢が変化します)。 この方式では、ヘルパーモジュールを使用してフォームフィールドに値を入力することで、データを素早く取得することができます。 モバイルアプリから直接利用可能であるだけでなく、選択リストは常に更新されます。 manifest.json ファイルには、以下のような要素が格納されています:
 
-| プロパティ             | Type                | 詳細                                                                        |
+| プロパティ             | タイプ                 | 詳細                                                                        |
 | ----------------- | ------------------- | ------------------------------------------------------------------------- |
-| **"name"**        | text                | 入力コントロール名                                                                 |
+| **"name"**        | テキスト                | 入力コントロール名                                                                 |
 | **"choiceList"**  | object              | "dataSource" を格納するオブジェクト (以下の表参照)                                         |
 | **"type"**        | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション             |
-| **"format"** (任意) | text                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker" |
+| **"format"** (任意) | テキスト                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker" |
 
-| プロパティ            |                         | Type                       | 詳細                                                                         |
+| プロパティ            |                         | タイプ                        | 詳細                                                                         |
 | ---------------- | ----------------------- | -------------------------- | -------------------------------------------------------------------------- |
 | **"dataSource"** |                         | object                     | "dataClass"、"field"、そして任意の "entityFormat" を格納するオブジェクト。                     |
-|                  | **"dataClass"**         | text                       | テーブル名                                                                      |
-|                  | **"field"**             | text                       | サーバーに送るデータの抽出に使用                                                           |
+|                  | **"dataClass"**         | テキスト                       | テーブル名                                                                      |
+|                  | **"field"**             | テキスト                       | サーバーに送るデータの抽出に使用                                                           |
 |                  | **"sort"** (任意)         | object / collection / text | **"field"** (ソート基準 / フィールド名) と、任意の **"order"** (ソート順、デフォルトは昇順) を格納するオブジェクト |
 |                  | **"search"** (任意)       | boolean / array            | 検索に使用するフィールドを格納した配列                                                        |
-|                  | **"entityFormat"** (任意) | text                       | 値の表示用フォーマット (指定されていない場合、フィールドから取得したデータを使用)                                 |
+|                  | **"entityFormat"** (任意) | テキスト                       | 値の表示用フォーマット (指定されていない場合、フィールドから取得したデータを使用)                                 |
 
 **注意:** 選択リストが長くなった場合に、任意の "search" 要素が利用可能になります。
 
@@ -462,8 +462,4 @@ iOSアプリでは、フォームセクションで選択したテンプレー�
 
 ## これからどうする？
 
-* **アクション定義の仕方** について説明した [チュートリアル](../tutorials/actions/getting-started.md) があります。
-
-* カスタムテンプレートを作成するための **アクションタグの統合** について説明した [チュートリアル](../tutorials/actions/adding-actions-template.md) もあります。
-
-* こちらの [チュートリアル](../tutorials/actions/using-action-parameters.md) では **アクション引数の定義** について説明しています。
+See [this tutorial](../tutorials/actions/getting-started.md) that will guide you through the **action definition process**.

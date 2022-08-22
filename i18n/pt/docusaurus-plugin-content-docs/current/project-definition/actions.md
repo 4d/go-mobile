@@ -17,8 +17,8 @@ Pode criar uma nova ação clicando no botão +  no fundo da tabela Actions. Uma
 
 Depois precisa definir o abaixo:
 
-* **Names:** The action name to use in the [On Mobile App Action](https://doc4d.github.io/go-mobile/docs/next/4d-language/on-mobile-app-action-database-method) database method to trigger your 4D code.
-* **Icons:** O ícone a escolher de sua biblioteca ícone. Também é possível adicioanr seu próprio ícone seguindo este [tutorial]`(using-icons.html)`.
+* **Names:** The action name to use in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method to trigger your 4D code.
+* **Icons:** O ícone a escolher de sua biblioteca ícone. You can also [add your own icon](labels-and-icons.md#adding-custom-icons).
 * **Short and long Labels:** As etiquetas para as ações para exibir em seu app.
 * **Table:** A tabela na qual quer aplicar a ação.
 * **Scope:** Onde usar a ação, uma **entidade** ou uma **tabela**.
@@ -238,7 +238,7 @@ Quando definir mais que uma ação de ordenação para uma tabela, usuários mó
 
 ### On Mobile App Action
 
-The [`On Mobile App Action`](../4d/on-mobile-app-action) database method is available to call all of your 4D methods.
+The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is available to call all of your 4D methods.
 
 After creating all of your actions, just click on the **Create** button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
 
@@ -459,8 +459,4 @@ Para sua comodidade, o formulário de Edição inclui algumas **funcionalidades 
 
 ## O que fazer agora?
 
-* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
-
-* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
-
-* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
+See [this tutorial](../tutorials/actions/getting-started.md) that will guide you through the **action definition process**.

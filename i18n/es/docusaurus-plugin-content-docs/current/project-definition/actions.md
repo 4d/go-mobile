@@ -17,8 +17,8 @@ Puede crear una nueva acción haciendo clic en el botón + en la parte inferior 
 
 A continuación, deberá definir lo siguiente:
 
-* **Names:** The action name to use in the [On Mobile App Action](https://doc4d.github.io/go-mobile/docs/next/4d-language/on-mobile-app-action-database-method) database method to trigger your 4D code.
-* **Iconos:** seleccione un icono para su acción de su librería de iconos. También puede agregar su propio icono siguiendo este [tutorial]`(using-icons.html)`.
+* **Names:** The action name to use in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method to trigger your 4D code.
+* **Iconos:** seleccione un icono para su acción de su librería de iconos. You can also [add your own icon](labels-and-icons.md#adding-custom-icons).
 * **Etiquetas cortas y largas: **las etiquetas para las acciones que se mostrarán en su aplicación.
 * **Tabla:** seleccione la tabla en la que desea aplicar la acción.
 * **Alcance:** seleccione si desea aplicar la acción en una **entidad** o en una **tabla**.
@@ -241,7 +241,7 @@ Cuando se define más de una acción de ordenación para una tabla, los usuarios
 
 ### On Mobile App Action
 
-The [`On Mobile App Action`](../4d/on-mobile-app-action) database method is available to call all of your 4D methods.
+The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is available to call all of your 4D methods.
 
 After creating all of your actions, just click on the **Create** button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
 
@@ -462,8 +462,4 @@ Para su comodidad, el formulario de Edición incluye algunas **funcionalidades e
 
 ## ¿Qué hacer ahora?
 
-* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
-
-* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
-
-* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
+See [this tutorial](../tutorials/actions/getting-started.md) that will guide you through the **action definition process**.
