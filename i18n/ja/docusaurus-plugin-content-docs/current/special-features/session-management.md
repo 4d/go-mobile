@@ -48,7 +48,7 @@ title: セッション管理
 
 ```
 
-デフォルトでは、[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) データベースメソッドによってセッションが認証された場合、"ststus" は自動的に "accepted" に設定されます (`$result.success` は `True`)。 全ユーザーセッションの最初のログインを手動で認証する必要がある場合は、[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) データベースメソッドによって返されるオブジェクトに `$result.verify:=True` を追加します。 これにより、セッションファイルのデフォルトステータス "accepted" が "pending" に変更されます。 For more information, see [this example](authentication.md#without-the-component).
+デフォルトでは、[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) データベースメソッドによってセッションが認証された場合、"ststus" は自動的に "accepted" に設定されます (`$result.success` は `True`)。 全ユーザーセッションの最初のログインを手動で認証する必要がある場合は、[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) データベースメソッドによって返されるオブジェクトに `$result.verify:=True` を追加します。 これにより、セッションファイルのデフォルトステータス "accepted" が "pending" に変更されます。 詳しくは、[こちらの例](authentication.md#コンポーネントを使用しない場合) を参照ください。
 
 
 ## Session オブジェクト
