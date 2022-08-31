@@ -3,48 +3,48 @@ id: filter-query-introduction
 title: フィルタークエリ
 ---
 
-In this tutorial, we'll show how to create [**filter queries**](../../project-definition/data.md#filter-queries) to display filtered content in the generated mobile app.
+このチュートリアルでは、[**フィルタークエリ**](../../project-definition/data.md#フィルタークエリ) を作成し、モバイルアプリに特定の情報だけが表示されるようにします。
 
-Imagine you're an account manager and you want to consult your *In Progress* contracts simply by connecting to your app with your email address.
+目標は、営業担当者がアプリにログインすれば、担当顧客のうち商談ステータスが *進行中* の案件だけが表示されるようにすることです。
 
-First, from the Data section we're going define a **basic filter query** to only display *In Progress* contracts. Then we're going to apply a **user information-based filter** which will depend on the account manager's email.
+はじめに、*進行中 (In Progress)* の商談だけが表示されるよう、データセクションで **基本的なフィルタークエリ** を設定します。 その後、営業担当者のメールアドレスも条件に含まれるよう、**ユーザー情報に基づくフィルタークエリ** を設定します。
 
 ## スタータープロジェクトをダウンロード
 
-Before we begin, be sure to download the **Starter project** which includes a **4DforiOSQueries.4dbase** file (a demo database with a ready-to-use mobile app project)
+はじめに、**スタータープロジェクト** をダウンロードします。**4DforiOSQueries.4dbase** サンプルデータベースには、すぐに使えるモバイルアプリプロジェクトが含まれています。
 
 <div className="center-button">
 <a className="button button--primary"
 href="https://github.com/4d-go-mobile/tutorial-RestrictedQueries/releases/latest/download/tutorial-RestrictedQueries.zip">スタータープロジェクト</a>
 </div>
 
-The database includes:
+データベースに含まれているもの:
 
-* a **CRM table** with all the data we want to display in the generated iOS app
-* an **AccountManager table** with basic information about the account managers (email and name).
+* **CRM** テーブル: iOSアプリに表示させたいデータが登録されています。
+* **AccountManager** テーブル: 営業担当者たちの基本情報 (氏名やメールアドレス) が登録されています。
 
 ![CRM（顧客管理）データベース](img/CRMDatabase.png)
 
 
-You're now ready to define your first filter query.
+早速、最初のフィルタークエリを設定してみましょう！
 
-Open the mobile project by clicking on **Open** > **Mobile Project...** and select **CRM app** > **project.4dmobileapp**.
+ファイルメニューから **開く** ＞ **モバイルプロジェクト...** を選択し、**CRM app** プロジェクトを開きます。
 
 
-## Define a Filter Query
+## フィルタークエリの定義
 
-For the moment, if you build the Starter project app and enter "michelle.simpson@mail.com" as the login email (one of the account managers), you'll see **all manager contracts and statuses** (*Closed* and *In Progress*).
+はじめに、スタータープロジェクトをそのままビルドして実行してみましょう。ログイン画面には営業担当者のメールアドレス "michelle.simpson@mail.com" を入力します。**営業担当者全員の商談がステータスに関係なく** (*済 (Closed)* と *進行中 (In Progress)* の両方が) 表示されることに注目してください。
 
 ![クエリフィルターが設定されていないアプリ](img/ios-app-without-queries.png)
 
 As we discussed above, we want the account managers to access their *In Progress* contracts by logging into their mobile app with their email. 下記の要領で実現することができます。
 
-* Go to the **Data section**
-* Right-click in the **Filter query** field to make the **Field, Comparators and Operators buttons** appear.
-* Click on the **Fields** button and select **Status**.
-* Click on the **Comparators** button and select **Equal to**.
-* Because you want to display *open* contracts, enter **In progress**
-* Remember to validate your query by clicking on the **Validate** button, otherwise you won't be able to build your app.
+* **データ** セクションに移動します。
+* **フィルタークエリ** 欄をクリックすると、**フィールド・比較演算子・演算子ボタン** が表示されます。
+* **フィールド** ボタンをクリックし、**Status** フィールドを選択します。
+* **比較演算子** ボタンをクリックし、**等しい** を選択します。
+* *進行中* の商談を表示したいので、**&apos;In progress&apos;**と入力します。
+* **検証** ボタンをクリックし、フィルターを確定します。これを忘れてしまうと、アプリがビルドできません。
 
 下図のようになっていることを確認してください。
 
@@ -81,7 +81,7 @@ Status = 'In Progress' & manager.Email = :email
 
 The query will filter data depending on the **In Progress** status AND the **Account manager's email address** (accessible from the AccountManager table thanks to the *Many-to-One* relation on the manager's name).
 
-> **NOTE**
+> **注記**
 > 
 > * A **user icon** is displayed on the right of each table when a user information filter is applied to it.
 > * As soon as a query is based on user information and validated, you need to edit the [`On Mobile app authentication method`](../../4d/on-mobile-app-authentication.md). To do so, right-click on the **Edit authentication method** button to open the database method edition window.
@@ -98,6 +98,6 @@ $response.userInfo:=New object("email";$request.email)
 
 Now if you build your app and enter "michelle.simpson@mail.com" as login email, you'll find all of Michelle Simpson's *"In progress"* contracts.
 
-![Final result](img/restricted-queries-final-result.png)
+![最終結果](img/restricted-queries-final-result.png)
 
 
