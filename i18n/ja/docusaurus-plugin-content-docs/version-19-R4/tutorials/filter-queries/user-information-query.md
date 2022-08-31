@@ -19,7 +19,7 @@ Status = 'In Progress' & manager.Email = :email
 
 The query will filter data depending on the **In Progress** status AND the **Account manager's email address** (accessible from the AccountManager table thanks to the *Many-to-One* relation on the manager's name).
 
-> **NOTE**
+> **注記**
 > 
 > * A **user icon** is displayed on the right of each table when a user information filter is applied to it.
 > * As soon as a query is based on user information and validated, you need to edit the **Mobile app authentication method**. To do so, right-click on the **Edit authentication method** button to open the database method edition window.
@@ -36,7 +36,7 @@ $response.userInfo:=New object("email";$request.email)
 
 Now if you build your app and enter "michelle.simpson@mail.com" as login email, you'll find all of Michelle Simpson's *"In progress"* contracts.
 
-![Final result](img/restricted-queries-final-result.png)
+![最終結果](img/restricted-queries-final-result.png)
 
 
 
