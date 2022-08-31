@@ -17,13 +17,13 @@ title: アクション
 
 次に、以下のものを定義する必要があります:
 
-* **Names:** The action name to use in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method to trigger your 4D code.
-* **アイコン:** アイコンライブラリーから選択するアイコン。 You can also [add your own icon](labels-and-icons.md#adding-custom-icons).
+* **名前:** [On Mobile App Action](../4d/on-mobile-app-action.md) データベースメソッド内で 4Dコードをトリガーするのに使用するアクションの名前
+* **アイコン:** アイコンライブラリーから選択するアイコン。 また [独自のアイコンを追加](labels-and-icons.md#カスタムのアイコンを追加する) することもできます。
 * **短いラベルとラベル:** アプリに表示するアクションのラベル
 * **テーブル:** アクションを適用するテーブル
 * **スコープ:** アクションの定期用対象: **カレントエンティティ** または **テーブル**
 
-![Action section](img/Actions-section-4D-for-iOS.png)
+![アクションセクション](img/Actions-section-4D-for-iOS.png)
 
 :::note notes
 
@@ -241,7 +241,7 @@ Zymosian, Elmer
 
 ### On Mobile App Action
 
-The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is available to call all of your 4D methods.
+[`On Mobile App Action`](../4d/on-mobile-app-action.md) データベースメソッドは、4Dメソッドを呼び出すのに利用します。
 
 すべてのアクションを作成したあと、アクションテーブル右下の **作成...** ボタンをクリックすると、作成した全アクション名を含んだ *Case of* コードブロックが *On Mobile App Action* メソッド内に自動生成されます。
 
@@ -274,11 +274,11 @@ The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is a
 
 | プロパティ              | タイプ                 | 詳細                                                                           |
 | ------------------ | ------------------- | ---------------------------------------------------------------------------- |
-| **"name"**         | テキスト                | アクション入力コントロール名                                                               |
-| **"binding"** (任意) | テキスト                | 画像を紐付けるための "imageNamed" (実際の画像はアクションフォーマッターフォルダー内の "images" サブフォルダーに入れる必要あり) |
+| **"name"**         | text                | アクション入力コントロール名                                                               |
+| **"binding"** (任意) | text                | 画像を紐付けるための "imageNamed" (実際の画像はアクションフォーマッターフォルダー内の "images" サブフォルダーに入れる必要あり) |
 | **"choiceList"**   | object              | キー (サーバーに送られるデータ) / 値 (ユーザーに表示される値) のリストを定義するためのオブジェクトまたはコレクション              |
 | **"type"**         | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                |
-| **"format"** (任意)  | テキスト                | インターフェースの選択: push (未定義の場合のデフォルト) / segmented / popover / sheet / picker      |
+| **"format"** (任意)  | text                | インターフェースの選択: push (未定義の場合のデフォルト) / segmented / popover / sheet / picker      |
 
 以下は、静的な選択リストとして使用可能な、ある会社の支社の連絡先情報を格納した manifest.json ファイルの一例です:
 ```4d
@@ -303,19 +303,19 @@ The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is a
 
 | プロパティ             | タイプ                 | 詳細                                                                        |
 | ----------------- | ------------------- | ------------------------------------------------------------------------- |
-| **"name"**        | テキスト                | 入力コントロール名                                                                 |
+| **"name"**        | text                | 入力コントロール名                                                                 |
 | **"choiceList"**  | object              | "dataSource" を格納するオブジェクト (以下の表参照)                                         |
 | **"type"**        | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション             |
-| **"format"** (任意) | テキスト                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker" |
+| **"format"** (任意) | text                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker" |
 
 | プロパティ            |                         | タイプ                        | 詳細                                                                         |
 | ---------------- | ----------------------- | -------------------------- | -------------------------------------------------------------------------- |
 | **"dataSource"** |                         | object                     | "dataClass"、"field"、そして任意の "entityFormat" を格納するオブジェクト。                     |
-|                  | **"dataClass"**         | テキスト                       | テーブル名                                                                      |
-|                  | **"field"**             | テキスト                       | サーバーに送るデータの抽出に使用                                                           |
+|                  | **"dataClass"**         | text                       | テーブル名                                                                      |
+|                  | **"field"**             | text                       | サーバーに送るデータの抽出に使用                                                           |
 |                  | **"sort"** (任意)         | object / collection / text | **"field"** (ソート基準 / フィールド名) と、任意の **"order"** (ソート順、デフォルトは昇順) を格納するオブジェクト |
 |                  | **"search"** (任意)       | boolean / array            | 検索に使用するフィールドを格納した配列                                                        |
-|                  | **"entityFormat"** (任意) | テキスト                       | 値の表示用フォーマット (指定されていない場合、フィールドから取得したデータを使用)                                 |
+|                  | **"entityFormat"** (任意) | text                       | 値の表示用フォーマット (指定されていない場合、フィールドから取得したデータを使用)                                 |
 
 **注意:** 選択リストが長くなった場合に、任意の "search" 要素が利用可能になります。
 
@@ -376,13 +376,13 @@ The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is a
 
 保留中のタスクや完了したタスクの概要と履歴が表示されます。
 
-![Action section](img/screen1.png)
+![アクションセクション](img/screen1.png)
 
 •   *リスト & 詳細フォーム*
 
 現在閲覧しているテーブルやエンティティに関連するすべてのタスクが表示されます。
 
-![Action section](img/screen2.png)
+![アクションセクション](img/screen2.png)
 
 :::note notes
 
@@ -445,7 +445,7 @@ iOSアプリでは、フォームセクションで選択したテンプレー�
 
 編集または追加アクションを作成した場合、アクションリストからそれらを選択すると、**編集フォーム** が表示されます。
 
-![Send task comment](img/Action-parameters-sendComment.png)
+![タスクコメント送信](img/Action-parameters-sendComment.png)
 
 ここでは:
 
@@ -462,4 +462,4 @@ iOSアプリでは、フォームセクションで選択したテンプレー�
 
 ## これからどうする？
 
-See [this tutorial](../tutorials/actions/getting-started.md) that will guide you through the **action definition process**.
+こちらの [チュートリアル](../tutorials/actions/getting-started.md) では**アクション定義の手順** について説明しています。
