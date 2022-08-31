@@ -159,7 +159,7 @@ title: 静的フォーマッターを作成する
 
 ## ダークモード対応
 
-Whether your device is in dark or light mode, whether you're working on iOS or Android, you can easily use the custom formatters containing images. ピクチャーは、デバイスのカラーモードに適応されます。
+デバイスがダークモードかライトモードか、あるいは iOS か Android かに関わらず、画像を使うカスタムフォーマッターは簡単に使用できます。 ピクチャーは、デバイスのカラーモードに適応されます。
 
 ### Tintable (彩色可能) カラー
 
@@ -177,14 +177,14 @@ Whether your device is in dark or light mode, whether you're working on iOS or A
      }
 }
 ```
-Here is the result in light and dark modes:
+以下は、ライトモードとダークモードでの結果です:
 
-| Light mode                      |           Dark mode            |
+| ライトモード                          |             ダークモード             |
 | ------------------------------- |:------------------------------:|
 | ![データフォーマッター](img/light-bw.png) | ![データフォーマッター](img/dark-bw.png) |
 
 
-### Optimized color pictures
+### カラー画像の最適化
 
 To optimize the color pictures displayed on your app and adapt them to your color mode, you need to have two pictures: one for the light mode, and one for the dark mode suffixed with `_dark`, as follows:
 
@@ -203,7 +203,7 @@ To optimize the color pictures displayed on your app and adapt them to your colo
 ```
 Here is the result in light mode and in dark mode:
 
-| Light mode                         |             Dark mode             |
+| ライトモード                             |              ダークモード               |
 | ---------------------------------- |:---------------------------------:|
 | ![データフォーマッター](img/light-color.png) | ![データフォーマッター](img/dark-color.png) |
 
