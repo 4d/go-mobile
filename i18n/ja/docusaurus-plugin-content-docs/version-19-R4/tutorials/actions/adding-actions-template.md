@@ -7,7 +7,7 @@ title: テンプレートにアクションを追加する
 > 
 > アクションを追加してリストフォーム/詳細フォームのテンプレートをカスタムします。
 
-> **PREREQUISITES**
+> **用意するもの**
 > 
 > Click `[here](requirements.html)` to see what you'll need to get started!
 
