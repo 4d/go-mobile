@@ -23,7 +23,7 @@ title: アクション
 * **テーブル:** アクションを適用するテーブル
 * **スコープ:** アクションの定期用対象: **カレントエンティティ** または **テーブル**
 
-![Action section](img/Actions-section-4D-for-iOS.png)
+![アクションセクション](img/Actions-section-4D-for-iOS.png)
 
 :::note notes
 
@@ -376,13 +376,13 @@ Zymosian, Elmer
 
 保留中のタスクや完了したタスクの概要と履歴が表示されます。
 
-![Action section](img/screen1.png)
+![アクションセクション](img/screen1.png)
 
 •   *リスト & 詳細フォーム*
 
 現在閲覧しているテーブルやエンティティに関連するすべてのタスクが表示されます。
 
-![Action section](img/screen2.png)
+![アクションセクション](img/screen2.png)
 
 :::note notes
 
@@ -445,7 +445,7 @@ iOSアプリでは、フォームセクションで選択したテンプレー�
 
 編集または追加アクションを作成した場合、アクションリストからそれらを選択すると、**編集フォーム** が表示されます。
 
-![Send task comment](img/Action-parameters-sendComment.png)
+![タスクコメント送信](img/Action-parameters-sendComment.png)
 
 ここでは:
 
