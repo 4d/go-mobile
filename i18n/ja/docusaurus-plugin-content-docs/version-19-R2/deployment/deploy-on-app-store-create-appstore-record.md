@@ -8,7 +8,7 @@ title: Create App Store record
 > * Create an App ID on your Developer Account
 > * Create your app in App Store Connect
 
-> **PREREQUISITES**
+> **用意するもの**
 > 
 > * [Apple Developer Program for organization](../tutorials/developer-program/register-apple-developer-program-organization) or
 > * [Apple Developer Program as an individual](../tutorials/developer-program/register-apple-developer-program-individual)
@@ -20,7 +20,7 @@ title: Create App Store record
 
 *An App ID is a two-part string used to identify one or more apps from a single development team. The string consists of a Team ID and a Bundle ID, with a period (.) separating the two parts (ex: TeamID.BundleID).*
 
-> **NOTE**
+> **注記**
 > 
 > * If you have chosen an Apple Developer Account as an individual, your account is available immediately and you can create your App ID.
 > * If you have chosen an Apple Developer Account as an organization, you must wait for Apple validation to create your App ID.
@@ -65,7 +65,7 @@ Add the following information:
 
 ![Change BundleID](img/Change-BundleID-Xcode-Project.png)
 
-> **NOTE**
+> **注記**
 > 
 > If your Bundle ID is not available, it may already be used by another app in the App Store. You'll need to change yours in your Xcode project.
 
