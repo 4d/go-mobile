@@ -5,13 +5,13 @@ title: Kotlin フォーマッターを作成する
 
 > **目標**
 > 
-> Create your first Kotlin formatters.
+> 最初の Kotlin フォーマッターを作成します。
 
-A formatter can be composed of both Kotlin and [Swift](create-swift-formatter.md) code.
+フォーマッターは、Kotlin と [Swift](create-swift-formatter.md) 両方のコードで構成することができます。
 
-## Object attribute Kotlin formatter
+## オブジェクト属性用 Kotlin フォーマッター
 
-If you want a formatter that will enable you to dial a phone number value on click, we need a **manifest.json file** containing a `name`, a `binding`, a `type` and a `target` value as follows:
+クリック時に電話番号をダイヤルできるようにするフォーマッターを作成するには、次のように `name`、`binding`、`type`、および `target` の値を含む **manifest.json file** が必要です:
 
 ```4d
 {
@@ -23,9 +23,9 @@ If you want a formatter that will enable you to dial a phone number value on cli
 
 ```
 
-Note that the binding value "phoneAction" will be used in the Kotlin file and that the `BindingAdapter` will interact with a specific field in an Android XML layout.
+binding の値 "phoneAction" は Kotlinファイルで使用され、`BindingAdapter` が Android XML レイアウトの特定のフィールドと対話します。
 
-Here is the `PhoneAction.kt` file to dial a phone number value on click on Android:
+Android で電話番号をクリックするとダイヤルするための `PhoneAction.kt` ファイルは以下のとおりです:
 
 ```4d
 package ___PACKAGE___
@@ -46,10 +46,10 @@ fun phoneAction(view: TextView, phoneAction: String?) {
     }
 }
 ```
-Putting all that together, you can save this formatter as a **.kt** file in the formatter folder and use it in your mobile project.
+これらをまとめて、このフォーマッターを **.kt** ファイルとしてフォーマッターフォルダーに保存すれば、モバイルプロジェクトで使用することができます。
 
 ![アーキテクチャー](img/phoneAction_dir.png)
 
-Check out the final result:
+このような結果になります:
 
-![Final result](img/rendu-android.png)
+![最終結果](img/rendu-android.png)
