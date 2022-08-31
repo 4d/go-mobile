@@ -59,8 +59,8 @@ title: ストラクチャー
 ![フィールド](img/fields.png)
 
 - 全ての[スカラー型の4D フィールド](https://developer.4d.com/docs/ja/Concepts/data-types.html) がサポートされます(ただし [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html) 型を除く)
-- [オブジェクトフィールド](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
-- [計算属性](#computed-attributes)
+- [オブジェクトフィールド](#オブジェクト属性)
+- [計算属性](#計算属性)
 - **スカラー値** を返す [エイリアス属性](#エイリアス属性) (*イタリック* で表示されます)。
 - リレーション属性 (N対1 および 1対N) はサポートされており、フィールドと同様に選択することができます。 リレーション属性は専用のアイコンを持ちます:
     - Ｎ対１リレーションアイコン:  ![リレーション1](img/manyto1.png)
@@ -130,11 +130,11 @@ title: ストラクチャー
 
 ## 計算属性
 
-Whether you're working on Android or iOS, you can display [**computed attributes**](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#computed-attributes-1) in your app once it is generated, by configurating them from the project editor. 計算属性とは、複数のフィールドを一つに複合した結果です。 この計算属性は、モバイルアプリ作成時に他のフィールドと同様に使用できます。つまり、ストラクチャーセクションで確認し、公開できるということです。
+Android でも iOS でも、プロジェクトエディターから設定をすれば、生成されたアプリ内で [**計算属性**](http://developer.4d.com/docs/ja/ORDA/ordaClasses.html#計算属性-1) を表示できます。 計算属性とは、複数のフィールドを一つに複合した結果です。 この計算属性は、モバイルアプリ作成時に他のフィールドと同様に使用できます。つまり、ストラクチャーセクションで確認し、公開できるということです。
 
 :::info
 
-In mobile projects, only **scalar** computed attributes are supported (i.e. computed attributes where the [`get` function](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#function-get-attributename) returns a scalar value (text, boolean, date, time, number)).
+モバイルプロジェクトでは、**スカラー** の計算属性のみがサポートされています。つまり、[`get` 関数](https://developer.4d.com/docs/ja/ORDA/ordaClasses.html#function-get-attributename) を使用するとスカラー値 (テキスト、ブール、日付、時間、数値) が返される計算属性である必要があります。
 
 :::
 
