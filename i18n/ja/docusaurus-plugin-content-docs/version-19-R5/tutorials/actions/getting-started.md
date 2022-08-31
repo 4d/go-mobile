@@ -8,7 +8,7 @@ title: はじめに
 > Use actions in the generated iOS app.
 
 
-> **PREREQUISITES**
+> **用意するもの**
 > 
 > Click `[here](requirements.html)` to see what you'll need to get started!
 
