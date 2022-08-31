@@ -59,8 +59,8 @@ title: ストラクチャー
 ![フィールド](img/fields.png)
 
 - 全ての[スカラー型の4D フィールド](https://developer.4d.com/docs/ja/Concepts/data-types.html) がサポートされます(ただし [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html) 型を除く)
-- [オブジェクトフィールド](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
-- [Computed attributes](https://developer.4d.com/go-mobile/en/docs/project-definition/structure#computed-attributes-1) (scalar attributes only)
+- [オブジェクトフィールド](#オブジェクト属性)
+- [計算属性](#計算属性-1) (スカラー属性のみ)
 - リレーション属性 (N対1 および 1対N) はサポートされており、フィールドと同様に選択することができます。 リレーション属性は専用のアイコンを持ちます:
 
 Ｎ対１リレーションアイコン:  ![リレーション1](img/manyto1.png)
