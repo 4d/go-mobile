@@ -10,7 +10,7 @@ title: 作業をXcodeに引き継ぐ
 
 4D for iOSは，ネイティブiOSアプリを開発するためのコードを出力するので，Xcodeで開いてカスタマイズすることができます。 具体的なプロセスは以下に示されています。
 
-> **NOTE**
+> **注記**
 > 
 > If you customize your project on Xcode and rebuild it from the Project Editor All of your modifications will be lost!
 
