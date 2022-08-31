@@ -181,9 +181,9 @@ href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/archive/66d7e
      }
 }
 ```
-Here is the result in light and dark modes:
+以下は、ライトモードとダークモードでの結果です:
 
-| Light mode                      |           Dark mode            |
+| ライトモード                          |             ダークモード             |
 | ------------------------------- |:------------------------------:|
 | ![データフォーマッター](img/light-bw.png) | ![データフォーマッター](img/dark-bw.png) |
 
@@ -193,7 +193,7 @@ Here is the result in light and dark modes:
 
 
 
-### Optimized color pictures
+### カラー画像の最適化
 
 To optimize the color pictures displayed on your app and adapt them to your color mode, you need to have two pictures: one for the light mode, and one for the dark mode suffixed with `_dark`, as follows:
 
@@ -212,7 +212,7 @@ To optimize the color pictures displayed on your app and adapt them to your colo
 ```
 Here is the result in light mode and in dark mode:
 
-| Light mode                         |             Dark mode             |
+| ライトモード                             |              ダークモード               |
 | ---------------------------------- |:---------------------------------:|
 | ![データフォーマッター](img/light-color.png) | ![データフォーマッター](img/dark-color.png) |
 
