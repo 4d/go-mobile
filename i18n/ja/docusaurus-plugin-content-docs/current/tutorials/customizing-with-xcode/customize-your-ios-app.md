@@ -5,7 +5,7 @@ title: Customize your 4D for iOS App
 
 Now, let's do some storyboard modification ... from simple to complex.
 
-![Final result](img/Simlator-Before-After-Xcode-4D-for-iOS.png)
+![最終結果](img/Simlator-Before-After-Xcode-4D-for-iOS.png)
 
 ## ⒈ ⒈ ⒈ ⒈ Simple label modification
 
