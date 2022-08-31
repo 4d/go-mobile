@@ -28,7 +28,7 @@ href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/159a7b73
 
 Let's begin simple. Open the Tasks mobile project and go directly to the **Actions section**.
 
-![Action section](img/Actions-section.png)
+![アクションセクション](img/Actions-section.png)
 
 It's quite empty for the moment... Here is what we want: **create a new task from the iOS app**.
 
@@ -397,7 +397,7 @@ Holding and maintaining pressure on your new task cell in the List Form, will sh
 
 Send a comment using the **Send comment** action.
 
-![Send task comment](img/Action-parameters-sendComment.png)
+![タスクコメント送信](img/Action-parameters-sendComment.png)
 
 And finally you can delete an entity using the **Delete...** action.
 
