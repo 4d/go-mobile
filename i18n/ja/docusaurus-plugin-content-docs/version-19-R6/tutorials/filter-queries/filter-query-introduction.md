@@ -37,7 +37,7 @@ href="https://github.com/4d-go-mobile/tutorial-RestrictedQueries/releases/latest
 
 ![クエリフィルターが設定されていないアプリ](img/ios-app-without-queries.png)
 
-As we discussed above, we want the account managers to access their *In Progress* contracts by logging into their mobile app with their email. 下記の要領で実現することができます。
+前述のように、モバイルアプリにメールアドレスでログインすれば、自分が担当している商談でステータスが *進行中* のものだけを表示するよう、データをフィルターしたいと考えています。 下記の要領で実現することができます。
 
 * **データ** セクションに移動します。
 * **フィルタークエリ** 欄をクリックすると、**フィールド・比較演算子・演算子ボタン** が表示されます。
@@ -50,7 +50,7 @@ As we discussed above, we want the account managers to access their *In Progress
 
 ![CRM（顧客管理）データベース](img/filterquery.png)
 
-> **NOTES**
+> **注記**
 > 
 > * A **filter** icon is displayed at the right of each table when a basic filter is applied to it.
 > * For these kinds of filter queries, you can choose to embed data into the app or to load the data after login by checking the **Embed data into the built application** checkbox.
