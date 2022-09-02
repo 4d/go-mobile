@@ -52,26 +52,26 @@ href="https://github.com/4d-go-mobile/tutorial-RestrictedQueries/releases/latest
 
 > **注記**
 > 
-> * A **filter** icon is displayed at the right of each table when a basic filter is applied to it.
-> * For these kinds of filter queries, you can choose to embed data into the app or to load the data after login by checking the **Embed data into the built application** checkbox.
-> * Size will be calculated at the first build for you to visualize the **size of your data**.
+> * フィルタークエリが設定されているテーブルの横には **フィルター (漏斗)** アイコンが表示されます。
+> * 今回のような単純なフィルターの場合、**このテーブルのデータをアプリケーションに埋め込み** チェックボックスによって、データをアプリに埋め込むか、それともログイン後にロードさせるかを選ぶことができます。
+> * ビルドを実行すると、計算された **データサイズ** が画面上で確認できるようになります。
 
-If you build your app and enter "michelle.simpson@mail.com" as the login email, you'll see that all contracts *In Progress* are displayed in the Simulator!
+アプリをビルドして実行しましょう。メールアドレス "michelle.simpson@mail.com" を入力してログインすると、今度は *進行中* の商談のみがシミュレーターに表示されます。
 
 ![単純なクエリフィルターが設定されているアプリ](img/restrited-queries-basic-query.png)
 
-残念！ What we want now is for each account manager to visualize only their own *In Progress* contracts, so let's complete our query.
+惜しいですね！ ここで実現したかったのは、ログインしたユーザーが担当している *進行中* の商談を表示することでした。これには、フィルタークエリにもう少し条件を加える必要があります。
 
 
 ## ユーザー情報に基づくクエリ
 
-Now let's filter our app content [depending on a user information](../../project-definition/data.md#filter-queries-with-user-information), in this case, the account manager's login email address.
+それでは、[ユーザー情報](../../project-definition/data.md#ユーザー情報を使用したフィルタークエリ) (営業担当者のメールアドレス) に応じて、アプリのコンテンツをさらにフィルターしましょう。
 
-* Go to the **Data section**.
-* Right-click in the **Filter query** field to make **Field, Comparators and Operators buttons** appear.
-* Click on the **Operators** button and select **AND**.
-* Now define the user information you want to get from the database method, **:email**.
-* Remember to validate the query by clicking on the **Validate** button. これを忘れてしまうと，アプリがビルドできません。
+* **データ** セクションに移動します。
+* **フィルタークエリ** 欄をクリックすると、**フィールド・比較演算子・演算子ボタン** が表示されます。
+* **演算子** ボタンをクリックし、**AND** を選択します。
+* データベースメソッドの中で参照したいユーザー情報を入力します。ここでは、**:email** です。
+* **検証** ボタンをクリックして、クエリを検証します。 これを忘れてしまうと，アプリがビルドできません。
 
 ![ユーザー情報に基づくクエリ](img/user-information-query.png)
 
@@ -79,24 +79,24 @@ Now let's filter our app content [depending on a user information](../../project
 Status = 'In Progress' & manager.Email = :email 
 ```
 
-The query will filter data depending on the **In Progress** status AND the **Account manager's email address** (accessible from the AccountManager table thanks to the *Many-to-One* relation on the manager's name).
+このフィルタークエリを通過できるのは、ステータスが **&apos;In Progress&apos;** であり、かつ、**営業担当者のメールアドレス** (*Ｎ対１リレーション* により、AccountManagerテーブルから取得) が合致するデータだけです。
 
 > **注記**
 > 
-> * A **user icon** is displayed on the right of each table when a user information filter is applied to it.
-> * As soon as a query is based on user information and validated, you need to edit the [`On Mobile app authentication method`](../../4d/on-mobile-app-authentication.md). To do so, right-click on the **Edit authentication method** button to open the database method edition window.
+> * ユーザー情報に基づくクエリが設定されているテーブルの横には **ユーザーアイコン** が表示されます。
+> * ユーザー情報に基づくフィルタークエリを入力して確定したのであれば、[`On Mobile app Authentication`](../../4d/on-mobile-app-authentication.md) データベースメソッドを編集しなければなりません。 **認証メソッドを編集…** ボタンをクリックすると、データベースメソッドの編集ウィンドウが開きます。
 
-データベースメソッドに下記のコードを追加します。
+データベースメソッドに以下のコードを追加します。
 
 ```4d
 $response.userInfo:=New object("email";$request.email)
 ```
 
-表示できるデータを判定するための条件として，営業担当者のログインメールアドレスが参照できるようになります。
+これで、表示できるデータを判定するための条件として、営業担当者のログインメールアドレスが参照できるようになります。
 
 ![ユーザー情報に基づくクエリ](img/database-method-user-information-query.png)
 
-Now if you build your app and enter "michelle.simpson@mail.com" as login email, you'll find all of Michelle Simpson's *"In progress"* contracts.
+アプリをビルドし、メールアドレスに "michelle.simpson@mail.com"  と入力してログインしてみてください。Michelle Simpsonさんの *"In progress (進行中)"* の商談だけが表示されます。
 
 ![最終結果](img/restricted-queries-final-result.png)
 
