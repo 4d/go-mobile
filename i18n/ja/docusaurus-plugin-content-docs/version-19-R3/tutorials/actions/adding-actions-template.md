@@ -9,17 +9,17 @@ title: テンプレートにアクションを追加する
 
 > **用意するもの**
 > 
-> 始めるために必要なものについては`[here](prerequisites.html)`をクリックして下さい!
+> 始めるために必要なものについては `[here](prerequisites.html)` をクリックしてください。
 
-このチュートリアルでは、どうやって簡単に**カスタムテンプレートにアクションを追加する**かを見ていきます。
+このチュートリアルでは、どうやって簡単に **カスタムテンプレートにアクションを追加する** かを見ていきます。
 
 ## ⒈ スタータープロジェクトをダウンロード
 
 **スタータープロジェクト** をダウンロードします。これには、以下のものが収録されています:
 
-* リストフォームのカスタムテンプレートが2つ(TasksList および TasksCollection)
-* 詳細フォームのカスタムテンプレートが1つ(TasksDetail)
-* データベース(Tasks.4dbase)
+* リストフォームのカスタムテンプレートが 2つ (TasksList および TasksCollection)
+* 詳細フォームのカスタムテンプレートが 1つ (TasksDetail)
+* データベース (Tasks.4dbase)
 
 <div className="center-button">
 <a class="button button--primary"
@@ -28,13 +28,13 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 
 ## ⒉ 4D for iOS プロジェクトにカスタムテンプレートを追加
 
-以下のドロップを実行してテンプレートをインストールします。
+以下の操作でテンプレートをインストールします:
 
-* **TasksList** および **TasksCollection** template フォルダを*Tasks.4dbase/Resources/Mobile/form/list* フォルダにドロップ
+* **TasksList** および **TasksCollection** テンプレートフォルダーを *Tasks.4dbase/Resources/Mobile/form/list* フォルダーにドロップ
 
 ![リスト画面のテンプレート](img/Listform-templates.png)
 
-* **TasksDetail** template フォルダを *Tasks.4dbase/Resources/Mobile/form/detail folder* にドロップ
+* **TasksDetail** テンプレートフォルダーを *Tasks.4dbase/Resources/Mobile/form/detail* フォルダーにドロップ
 
 ![詳細画面のテンプレート](img/Detailform-template.png)
 
@@ -44,13 +44,13 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 * テーブルアクション
 * エンティティアクション
 
-まずは最初に `list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` ファイルを開いてみましょう。
+まず最初に、`list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` ファイルを開いてみましょう。
 
 ### TasksList カスタムテンプレートにアクションを追加する
 
 #### Ａ テーブルアクションタグを追加
 
-**List form Controller** を選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
+下図のように **List form** を選択し、Identity inspector を開いて **User Defined Runtime Attributes** に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
@@ -61,7 +61,7 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 
 #### Ｂ エンティティアクションタグを追加
 
-Table View を選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
+List From のツリーを展開して Animatable Table View を選択し、Identity Inspector で **User Defined Runtime Attributes** に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
@@ -85,7 +85,7 @@ TaskList カスタムテンプレートを**フォームセクション** から
 
 作業は TasksList カスタムテンプレートの場合によく似ています。
 
-**List form Controller** を選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
+下図のように **List form** を選択し、Identity inspector を開いて **User Defined Runtime Attributes** に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
