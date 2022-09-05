@@ -18,13 +18,13 @@ In this tutorial, we are going to build a colorful **Task app** using 4D for iOS
 
 But first, let's have a look at the structure of our database:
 
-![Select link from structure section](img/Database-1-to-N-relations-4D-for-iOS.png)
+![ストラクチャーセクションでリンクを選択する](img/Database-1-to-N-relations-4D-for-iOS.png)
 
 As you can see, there is a One to Many link named **tasks** that we will use in our iOS app to display the employees'(**One**) tasks(**to Many**).
 
 Now, go straight to Open menu > Mobile project... to select *Time Keeper* and go to the **Structure section**.
 
-## ストラクチャセクション
+## ストラクチャーセクション
 
 You can see the **tasks relation** we have seen earlier... Publish it !
 
@@ -56,7 +56,7 @@ So, in the Labels & Icons section you will define:
 
 * Go to the Forms section and drop the *tasks* relation on the Employee Task Detail form.
 
-![Related field in Forms section](img/1-to-n-relations-forms-section.png)
+![フォームセクションに表示されたリレートフィールド](img/1-to-n-relations-forms-section.png)
 
 ## ビルドして実行
 
@@ -64,7 +64,7 @@ So, in the Labels & Icons section you will define:
 2. This will open the employee's detail form, where you should see a new **Relation button** !
 3. Relationボタンをクリックすると，選択されている従業員のタスクが表示されます。
 
-![Related field in Forms section](img/One-to-n-relations-task-ios-app.png)
+![フォームセクションに表示されたリレートフィールド](img/One-to-n-relations-task-ios-app.png)
 
 Well done! You've successfully included One to Many relations in your mobile project.
 
