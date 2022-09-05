@@ -44,13 +44,13 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 * テーブルアクション
 * エンティティアクション
 
-まずは最初に `list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` ファイルを開いてみましょう。
+まず最初に、`list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` ファイルを開いてみましょう。
 
 ### TasksList カスタムテンプレートにアクションを追加する
 
 #### Ａ テーブルアクションタグを追加
 
-**List form Controller** を選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
+下図のように **List form** を選択し、Identity inspector を開いて **User Defined Runtime Attributes** に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
@@ -61,7 +61,7 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 
 #### Ｂ エンティティアクションタグを追加
 
-Table View を選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
+List From のツリーを展開して Animatable Table View を選択し、Identity Inspector で **User Defined Runtime Attributes** に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
@@ -85,7 +85,7 @@ TaskList カスタムテンプレートを**フォームセクション** から
 
 作業は TasksList カスタムテンプレートの場合によく似ています。
 
-**List form Controller** を選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
+下図のように **List form** を選択し、Identity inspector を開いて **User Defined Runtime Attributes** に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
