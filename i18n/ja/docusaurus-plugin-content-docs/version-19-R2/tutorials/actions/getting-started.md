@@ -12,7 +12,7 @@ title: はじめに
 > 
 > 始めるために必要なものについては `[here](prerequisites.html)` をクリックしてください。
 
-In 4D v17 R5, you can [define actions](define-first-action.md) directly from the Project Editor and execute 4D code from your generated iOS app!
+4D v17 R5以降、プロジェクトエディターで [アクション](define-first-action.md) を設定することにより、作成した iOSアプリから 4Dメソッドを呼び出すことができるようになりました！
 
 プロジェクトエディターで次のテンプレートのいずれを選択しても、アクションに対応したアプリをビルドすることができます:
 
