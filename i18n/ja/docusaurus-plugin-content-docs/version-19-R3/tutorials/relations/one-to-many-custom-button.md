@@ -1,16 +1,16 @@
 ---
 id: one-to-many-custom-button
-title: １対Ｎカスタムボタン
+title: 1対Nカスタムボタン
 ---
 
-As we have seen with all previous tutorials, the 4D mobile editor give you the freedom to create lots of custom things.
+これまでに見てきたように、4D モバイルエディターでは、いろいろなものがカスタマイズできるようになっています。
 
-テンプレートやフォーマッターだけでなく，リレーションボタンもカスタマイズできます。
+テンプレートやフォーマッターだけでなく、リレーションボタンもカスタマイズできます。
 
-しかも，その手順はとても簡単！ カスタムテンプレートにカスタムボタンをドラッグ＆ドロップするだけです。
+しかも、その手順はとても簡単です！ カスタムテンプレートにカスタムボタンをドラッグ＆ドロップするだけです。
 
 
-Let's get started by downloading the Starter project that includes:
+以下が用意されているスタータープロジェクトをダウンロードしてください:
 
 * データベースとモバイルプロジェクト
 * 標準のリレーションボタン
@@ -22,9 +22,9 @@ href="https://github.com/4d-go-mobile/tutorial-OneToManyCustomButton/archive/c50
 
 ## ボタンを追加する
 
-まず，ボタン「button.xib」を4D for iOSで使用できるように，カスタムテンプレートに追加しましょう。
+まず、ボタン relationButton.xib を 4D for iOS で使用できるように、カスタムテンプレートに追加しましょう。
 
-To use the button, you just need to drop it in the `YourDatabase.4dbase/Resources/Mobile/form/detail/BlackVisual Contact` folder.
+ボタンを追加するには、`TimeKeeper.4dbase/Resources/Mobile/form/detail/BlackVisual Contact` フォルダーにこのファイルをドロップすれば OK です。
 
 ![カスタムボタンのパス](img/Relation-custom-button-path.png)
 
@@ -32,19 +32,19 @@ To use the button, you just need to drop it in the `YourDatabase.4dbase/Resource
 
 ## ボタンの設定
 
-Xcodeで「.xib」ファイルを開きます。
+Xcode で .xib ファイルを開きます。
 
-このように表示されるはずです。
+このように表示されるはずです:
 
 ![カスタムリレーションボタン](img/Relations-custom-button-relationButton-4D-for-iOS.png)
 
-属性インスペクターでさまざまな項目の値を変更することができます。
+Attribute Inspector でさまざまな項目の値を変更することができます:
 
 * カラーとフォント
 * ボタンのスタイル
 * ボタンのサイズ
 
-ボタンのカラーとラベルフォントを変えてみましょう！
+さっそく、ボタンのカラーとラベルフォントを変えてみましょう！
 
 ### カラーとフォントのカスタマイズ
 
