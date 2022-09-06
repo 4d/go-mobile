@@ -3,7 +3,7 @@ id: one-to-many-relations
 title: 1対Nリレーション
 ---
 
-This tutorial will show you how easy it can be to include One to Many relations in your mobile project.
+このチュートリアルでは、モバイルプロジェクトで 1対Nリレーションを使用する方法を見ていきます。
 
 スタータープロジェクトをダウンロードしてください:
 
@@ -12,61 +12,61 @@ This tutorial will show you how easy it can be to include One to Many relations 
 href="https://github.com/4d-go-mobile/tutorial-OneToManyRelations/archive/c006015afeb0e134d872152f53b8cd5e4dcb59bb.zip">スタータープロジェクト</a>
 </div>
 
-In this tutorial, we are going to build a colorful **Task app** using 4D for iOS.
+このチュートリアルでは、カラフルな **Time Keeper アプリ** を 4D for iOS で作成します。
 
-![Task App Final result](img/4D-for-iOS-dark-mode-card-relation-ios-13.gif)
+![アプリ完成画面](img/4D-for-iOS-dark-mode-card-relation-ios-13.gif)
 
-But first, let's have a look at the structure of our database:
+はじめに、データベースのストラクチャーを確認しましょう:
 
 ![ストラクチャーセクションでリンクを選択する](img/Database-1-to-N-relations-4D-for-iOS.png)
 
-As you can see, there is a One to Many link named **tasks** that we will use in our iOS app to display the employees'(**One**) tasks(**to Many**).
+従業員 (**1** テーブル) からプロジェクト (**N** テーブル) に対し、**tasks** という名前のリレーションが張られていることに注目してください。
 
-Now, go straight to Open menu > Mobile project... to select *Time Keeper* and go to the **Structure section**.
+ファイルメニューの開く ＞ モバイルプロジェクト... を選択し、*Time Keeper* プロジェクトを開いて **ストラクチャー** セクションに移動します。
 
 ## ストラクチャーセクション
 
-You can see the **tasks relation** we have seen earlier... Publish it !
+Employees テーブルのフィールドリストに **tasks** リレーションが表示されているはずです。 これにチェックを入れて、公開しましょう！
 
-This will now operate as any other field for the rest of the app creation process.
+以後、このリレートフィールドは、通常のフィールドと同じように扱えるようになります。
 
-![Structure section Relations properties](img/Structure-section-relations-4D-for-iOS.png)
+![ストラクチャーセクションのリレーションプロパティ](img/Structure-section-relations-4D-for-iOS.png)
 
 :::tip
 
-On mouse over, a tip displays the table name originating the relation.
+リレーション名にマウスポインターを重ねると、ヘルプTips にテーブル名が表示されます。
 
 :::
 
 ## ラベル & アイコンセクション
 
-The One to Many relation is now available in the **Labels and Icons** section.
+**ラベル＆アイコン** セクションに 1対Nリレーションが表示されました。
 
-It is important to know that including a One to Many relation will create a button into the genrated iOS app.
+1対Nリレーションを使用すると、作成される iOSアプリの画面にボタンが追加されることに留意してください。
 
-So, in the Labels & Icons section you will define:
+ラベル＆アイコンセクションでは以下のものを設定します:
 
 * ボタンタイトル
 * ボタンアイコン
-* a title that will be displayed in the destination view (to indicate where you come from for example).
+* 遷移先の画面に表示されるタイトル (たとえば、移動元を示すために使用します)。
 
-![Labels & Icons section Relations properties](img/Relations-properties-Labels-icons-section-4D-for-iOS.png)
+![ラベル＆アイコンセクションのリレーションプロパティ](img/Relations-properties-Labels-icons-section-4D-for-iOS.png)
 
 ## フォームセクション
 
-* Go to the Forms section and drop the *tasks* relation on the Employee Task Detail form.
+* フォームセクションに移動して、Employee テーブルの詳細フォームに *tasks* リレーションをドラッグ＆ドロップします。
 
 ![フォームセクションに表示されたリレートフィールド](img/1-to-n-relations-forms-section.png)
 
 ## ビルドして実行
 
-1. Employeeのリスト画面で適当な従業員をクリックします。
-2. This will open the employee's detail form, where you should see a new **Relation button** !
-3. Relationボタンをクリックすると，選択されている従業員のタスクが表示されます。
+1. Employee のリスト画面で適当な従業員をクリックします。
+2. 従業員の情報が詳細画面に表示され、**1対Nリレーション** のボタンも表示されているはずです。
+3. このボタンをクリックすると、選択されている従業員のタスクが表示されます。
 
 ![フォームセクションに表示されたリレートフィールド](img/One-to-n-relations-task-ios-app.png)
 
-Well done! You've successfully included One to Many relations in your mobile project.
+以上です！ モバイルプロジェクトに 1対Nリレーションを組み込むことに成功しました。
 
 完成したプロジェクトをダウンロード
 
