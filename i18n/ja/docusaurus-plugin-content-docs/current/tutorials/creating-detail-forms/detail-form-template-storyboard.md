@@ -256,7 +256,7 @@ Field View 2 を選択し、下記のように設定します:
 
 ![iPhone画面](img/fieldview2-corner-radius.png)
 
-これで、完成したカスタムテンプレートがプロジェクトエディターで使用できるようになりました！
+カスタマイズしたプロジェクトを実際にビルドしてみましょう！
 
 ![カスタムテンプレート（完成）](img/custom-template-final-result.png)
 
