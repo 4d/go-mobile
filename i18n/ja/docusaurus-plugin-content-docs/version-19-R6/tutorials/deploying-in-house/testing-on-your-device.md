@@ -3,36 +3,36 @@ id: testing-on-your-device
 title: iOSデバイスへのインストール
 ---
 
-You can install and test your mobile application on a connected device.
+接続されたデバイスにモバイルアプリをインストールし、テストすることができます。
 
 
 ## 要件
 
-You need to subscribe to an Apple Developer Program. Depending on your objectives and preferences, you can choose to enroll in one of the following:
+Apple Developer Program に加入している必要があります。 目的や好みに応じて、以下のいずれかに入会することができます:
 
-* Free Apple Developer Program: For testing only
-* [Apple Developer Program for organization or individual](https://developer.apple.com/programs/enroll/): For an App Store Deployment
-* [Apple Enterprise Developer Program](https://developer.apple.com/programs/enterprise/): To deploy your app in-house
+* 無料の Apple Developer Program: テストだけできれば良い場合
+* [組織または個人向けの Apple Developer Program](https://developer.apple.com/programs/enroll/): App Store 経由で配布したい場合
+* [Apple Enterprise Developer Program](https://developer.apple.com/programs/enterprise/): App Store を経由せずに In-House で運用したい場合
 
 
 :::note
 
-You need [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) installed on your Mac to automate app installation (optional).
+アプリのインストールを自動化するためには [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) が macOS にインストールされている必要があります (必須ではありません)
 
 :::
 
 
-## ⒈ ⒈ ⒈ ⒈ Account creation
+## ⒈ アカウントを作成する
 
-* **Apple ID**: Create your Apple ID. まだアカウントを持っていない場合，[ここ](https://appleid.apple.com/account#!&page=create)をクリックしてください。
+* **Apple ID**: Apple ID を作成します。 まだアカウントを持っていない場合、[ここ](https://appleid.apple.com/account#!&page=create) をクリックしてください。
 
-* **Developer Account**: Choose an Apple Developer Program (for organizations or individuals) for App Store deployment or the Apple Developer Enterprise Program (for in-house deployment).
+* **デベロッパーアカウント**: App Store 経由の配布が目的であれば、Apple Developer Program (組織または個人向け)、In-House 運用が目的であれば、Apple Developer Enterprise Program に加入します。
 
-## ⒉ ⒈ ⒈ ⒈ Xcode configuration
+## ⒉ Xcode の設定
 
 * **Developer Account**: In Xcode > Preferences > Accounts, add your Apple ID. ![デベロッパーアカウント](img/Developer-Account-4D-for-iOS.png)
 
-## ⒊ ⒉ ⒉ ⒉ Get your Team ID
+## ⒊ Team ID を取得する
 
 * If your are using a Free Apple Developer Program, go to [step 4](#step-4-team-id-for-free-account).
 * If your are using an [Apple Developer Program for organization](../tutorials/developer-program/register-apple-developer-program-organization), [individual](../tutorials/developer-program/register-apple-developer-program-individual) or an [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program) go to [step 5](#step-5-team-id-for-paid-subscription-account).
