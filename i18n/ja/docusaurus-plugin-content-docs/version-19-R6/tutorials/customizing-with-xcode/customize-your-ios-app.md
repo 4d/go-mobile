@@ -92,45 +92,45 @@ Align ボタン (ウィンドウ下の四角が左揃えされているアイコ
 制約も修正しましょう:
 
 * 左と下の余白の制約を削除します。
-* Add a leading space constraint by clicking on the **Add New Constraints** button to position the First Name label to the right of the Profile picture.
-* Press Ctrl and drag the First Name label to the Profile picture. Select the top constraint in the menu to top align both elements.
+* Controlキーを押しながら First Name ラベルをプロフィール画像へとドラッグします。メニューから Horizontal Spacing を選択して、間隔の制約を追加します。
+* Controlキーを押しながら First Name ラベルをプロフィール画像へとドラッグします。 メニューから Top を選択し、両方の要素が上揃えになるよう、制約を追加します。
 
 ![ファーストネームラベルの上部の制約](img/First-Name-Label-top-constraint-Xcode-4D-for-iOS.png)
 
-#### Finally, we'll work on the Last Name label.
+#### 最後に、Last Name ラベルを修正します。
 
-Change the position and width:
+位置と幅を変更します:
 
-* Select the Last Name label from the Interface Builder.
-* Change the width from 386 to 267 pixels.
-* Change the X value from 8 to 127 pixels and the Y value from 144.33 to 118.33 pixels.
+* Interface Builder で Last Name ラベルを選択します。
+* Size inspector で Width を 386 ピクセルから 267 ピクセルに変更します。
+* X 座標を 8 から 127 に、Y 座標を 144.33 から 118.33 に変更します。
 
 ![ラストネームラベルの位置](img/Last-Name-Label-position-Xcode-4D-for-iOS.png)
 
 制約も修正しましょう:
 
-* Delete the leading space constraints from the Size inspector.
-* Add a leading space and top space constraints by clicking on the Add New Constraints button.
+* 左の余白の制約を削除します。
+* Add New Constraints ボタンをクリックして上 (Top) の余白の制約を設定します。また、Controlキーを押しながら First Name ラベルをプロフィール画像へとドラッグします。メニューから Horizontal Spacing を選択して、間隔の制約を追加します。
 
 ![ラストネームラベルの制約](img/Last-Name-Label-constraint-Xcode-4D-for-iOS.png)
 
-Both of your name labels are now repostioned.
+2つのラベルの位置が調整できました。
 
-Let's see the results in the Simulator !
+シミュレータで結果を確認しましょう !
 
 ![シミュレーターの結果](img/Simulator-Xcode-4D-for-iOS.png)
 
-Hmmmm. That's not exactly the result we wanted ...
+おや。 望んだとおりの結果ではありません...。
 
-* Select the First Name and Last Name labels and change the alignment from center to left in the Attributes inspector.
+* First Name と Last Name のラベルを選択し、Attributes inspector で Alignment を中央から左に変更します。
 
 ![ラベルの整列](img/Labels-Alignment-Xcode-4D-for-iOS.png)
 
-* Next, select the Profile picture and double click on the leading space constraint.
-* Change the Constant value from 40.67 to 80 pixels.
+* 次に、プロフィール画像を選択して、左の予約の制約をダブルクリックします。
+* 値 を 40.67 ピクセルから 80 ピクセルに変更します。
 
 ![制約の調整](img/Constraints-adjustments-Xcode-4D-for-iOS.png)
 
-Much better! Now all constraints are working and the labels aren't breaking other constraints.
+良さそうですね！ これで、すべての制約が機能し、整合性も取れました。
 
-As you can see, customizing your app is very simple!
+このように、アプリのカスタマイズはとても簡単です！
