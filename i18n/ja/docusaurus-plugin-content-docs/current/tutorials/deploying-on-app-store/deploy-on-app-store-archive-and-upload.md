@@ -1,14 +1,14 @@
 ---
 id: deploy-on-app-store-archive-and-upload
-title: Archive and upload your Project
+title: プロジェクトのアーカイブとアップロード
 ---
 
 > **目標**
 > 
-> Archive and upload your project to App Store Connect.
+> プロジェクトをアーカイブし、App Store Connect にアップロードします。
 
 ## ⒈ Xcode の設定
-* If you have chosen an Apple Developer Account as an individual, your account is immediately available.
+* 個人向けの Apple Developer アカウントを選択した場合、アカウントはすぐに利用できます。
 * If your have chosen an Apple Developer Account as an organization, you must wait for Apple validation.
 * When your account is accessible, add it to Xcode in Preferences > Accounts.
 * Xcode will automatically install the necessary provisioning and certificates.
