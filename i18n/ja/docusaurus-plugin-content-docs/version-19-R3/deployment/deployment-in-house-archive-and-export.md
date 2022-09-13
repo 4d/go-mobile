@@ -16,23 +16,23 @@ title: Archive and export your Project
 > * 512 x 512 px icon
 
 
-## ⒈ ⒈ ⒈ ⒈ Xcode configuration
+## ⒈ Xcode の設定
 
 Following validation of your account by Apple, open Xcode and add your Apple Enterprise Developer account in Preferences > Accounts.
 
 Xcode will automatically install required provisioning and certificates.
 
-## ⒉ ⒉ ⒉ ⒉ Get your Team ID
+## ⒉ Team ID を取得する
 
-* Log into your Apple Developer Account. You can find your Team ID in Membership.
+* Apple Developer アカウントにログインします。 Team ID は Membership にて確認できます。
 
-![⒉ ⒉ ⒉ Get your Team ID](img/Team-ID-4D-for-iOS.png)
+![Team ID を取得する](img/Team-ID-4D-for-iOS.png)
 
-## ⒊ ⒊ ⒊ ⒊ 4D for iOS configuration
+## ⒊ 4D for iOS の設定
 
-* Launch 4D for iOS
+* 4D for iOS を起動します。
 
-* On the SECTIONS tab:
+* セクションタブにて:
 
     * General: Enter your Team ID.
 
@@ -40,22 +40,22 @@ Xcode will automatically install required provisioning and certificates.
 
     * Publishing: Enter your production URL (HTTPS is mandatory for deployment).
 
-* On the BUILD tab:
+* ビルドタブにて:
     * Build and Run: Build your project.
 
-## ⒋ ⒋ ⒋ ⒋ Open your project with Xcode
+## ⒋ プロジェクトを Xcode で開く
 
 * From the 4D for iOS Project Editor's BUILD tab, click on **Project > Open the project with Xcode**
 
 ![pen your project with Xcode ](img/Open-your-project-Xcode-4D-for-iOS.png)
 
-## ⒌ ⒌ ⒌ ⒌ Archive your project from Xcode
+## ⒌ Xcode でプロジェクトをアーカイブする
 
 * From Xcode, go to the simulator Menu and select **Generic iOS Device**
 
 ![Generic iOS Device](img/Deployment-Generic-iOS-Device.png)
 
-* Then from the menu, click on Product and select **Archive**
+* 次に、上部メニューから Product をクリックし、**Archive** を選択します。
 
 ![Archive your Project](img/Archive-your-Project.png)
 
