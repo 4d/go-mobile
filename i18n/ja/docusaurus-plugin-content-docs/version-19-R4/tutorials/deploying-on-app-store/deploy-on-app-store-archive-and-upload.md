@@ -1,25 +1,25 @@
 ---
 id: deploy-on-app-store-archive-and-upload
-title: Archive and upload your Project
+title: プロジェクトのアーカイブとアップロード
 ---
 
 > **目標**
 > 
-> Archive and upload your project to App Store Connect.
+> プロジェクトをアーカイブし、App Store Connect にアップロードします。
 
-## ⒈ ⒈ ⒈ ⒈ Xcode configuration
-* If you have chosen an Apple Developer Account as an individual, your account is immediately available.
+## ⒈ Xcode の設定
+* 個人向けの Apple Developer アカウントを選択した場合、アカウントはすぐに利用できます。
 * If your have chosen an Apple Developer Account as an organization, you must wait for Apple validation.
 * When your account is accessible, add it to Xcode in Preferences > Accounts.
 * Xcode will automatically install the necessary provisioning and certificates.
 
-## ⒉ ⒉ ⒉ ⒉ Get your Team ID
+## ⒉ Team ID を取得する
 
 * Log into your Apple Developer Account. You can find your Team ID in Membership.
 
-![⒉ ⒉ ⒉ Get your Team ID](img/Team-ID-4D-for-iOS.png)
+![Team ID を取得する](img/Team-ID-4D-for-iOS.png)
 
-## ⒊ ⒊ ⒊ ⒊ 4D for iOS configuration
+## ⒊ 4D for iOS の設定
 
 * Launch 4D for iOS
 * On the SECTIONS tab:
@@ -40,11 +40,11 @@ title: Archive and upload your Project
 
 ![BuildTab](img/BuildTab.png)
 
-## ⒋ ⒋ ⒋ ⒋ Open your project with Xcode
+## ⒋ プロジェクトを Xcode で開く
 
 * From the 4D for iOS Project Editor's BUILD tab, click on Project > Open the project with Xcode
 
-![⒋ ⒋ ⒋ Open your project with Xcode](img/Open-your-project-Xcode-4D-for-iOS.png)
+![プロジェクトを Xcode で開く](img/Open-your-project-Xcode-4D-for-iOS.png)
 
 ## ⒌ ⒌ ⒌ ⒌ Archive your project from Xcode
 
