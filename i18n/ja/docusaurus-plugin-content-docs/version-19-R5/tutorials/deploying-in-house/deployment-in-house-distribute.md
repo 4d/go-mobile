@@ -1,32 +1,32 @@
 ---
 id: deployment-in-house-distribute
-title: Distribute your app in-House
+title: アプリを In-House で配布する
 ---
 
 > **目標**
 > 
-> Upload your app to a secured server.
+> アプリをセキュアなサーバーにアップロードする。
 
 
-## ⒈ ⒈ ⒈ ⒈ Upload your app
+## ⒈ アプリをアップロードする
 
-Upload your app files to a secured server:
+アプリのファイルをセキュアなサーバーにアップロードします:
 
-* assets (display-image and full-size-image)
-* `manifest.plist` file
-* `.ipa` file
+* アセット (display-image および full-size-image)
+* `manifest.plist` ファイル
+* `.ipa` ファイル
 
-You can use any cloud storage service to distribute your app as soon as it is secured (Dropbox, Google Drive, etc.).
+アプリの配布は、任意のセキュアなクラウドストレージサービス (Dropbox、Google Drive など) を使用しておこなうことができます。
 
 :::note
 
-Your asset and ipa URLs must match the URLs defined in your `manifest.plist` file.
+アセットと ipa の URL は、`manifest.plist` ファイルで定義されている URL と一致する必要があります。
 
 :::
 
-## ⒉ ⒉ ⒉ ⒉ Create the installation link
+## ⒉ インストール用のリンクを作成する
 
-Create an **ITMS Serices link** (iTUnes Music Store) with the full web address of your manifest file as a parameter:
+manifest ファイルの完全な Webアドレスをパラメーターとして、**ITMS Serices link** (iTunes Music Store) を作成します:
 
 ```html
 itms-services://?action=download-manifest&url=https://mywebserver.com/manifest.plist
