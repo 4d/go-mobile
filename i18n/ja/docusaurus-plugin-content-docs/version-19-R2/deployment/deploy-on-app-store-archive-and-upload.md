@@ -50,7 +50,7 @@ title: プロジェクトのアーカイブとアップロード
 
 * Xcode でツールバーのシミュレーター選択メニューを開き、**Generic iOS Device** を選択します。
 
-![Generic iOS Device](img/Deployment-Generic-iOS-Device.png)
+![汎用的iOSデバイス](img/Deployment-Generic-iOS-Device.png)
 
 * 次に、上部メニューから Product をクリックし、**Archive** を選択します。
 
