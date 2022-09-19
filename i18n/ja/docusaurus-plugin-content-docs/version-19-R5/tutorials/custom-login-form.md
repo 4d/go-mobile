@@ -8,7 +8,7 @@ title: カスタムログインフォーム
 
 - カスタム [ログインフォーム](https://4d-for-ios.github.io/gallery/#/type/form-login) の作成と使用
 - QRコードのスキャンによる認証済みユーザーのログイン
-> **PREREQUISITES**
+> **用意するもの**
 > 
 > 認証済みユーザーをもつ Webサイト
 > 

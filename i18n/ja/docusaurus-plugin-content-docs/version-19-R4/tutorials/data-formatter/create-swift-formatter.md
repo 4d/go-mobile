@@ -8,9 +8,9 @@ title: Swift フォーマッターを作成する
 > 最初のデータフォーマッターを作成します。
 
 
-### Object attribute Swift formatter
+### オブジェクト属性用 Swift フォーマッター
 
-In the following example, we want to display an address getting only relevant values that are available in the following object using a Swift formatter
+次の例では Swift フォーマッターを使い、以下のオブジェクトの値から必要なものだけを取得してアドレスを表示します。
 
 ```4d 
 $Obj:=New object 
@@ -29,7 +29,7 @@ $Ent.save()
 
 ```
 
-Here is the **manifest.json file**:
+**manifest.json ファイル** は以下のとおりです:
 
 ```4d
 {
@@ -40,7 +40,7 @@ Here is the **manifest.json file**:
 
 ```
 
-To get the number, the street, and the city, let’s build a custom **Swift formatter**:
+名称、通り、郵便番号、都市を取得するため、カスタムの **Swift フォーマッター** を作ってみましょう:
 
 ```4d 
 import UIKit
@@ -68,14 +68,14 @@ extension UILabel {
 }
 ```
 
-Putting all that together, you can save this formatter as a **.swift** file in the formatter folder and use it in your mobile project.
+これらをまとめて、このフォーマッターを **.swift** ファイルとしてフォーマッターフォルダーに保存すれば、モバイルプロジェクトで使用することができます。
 
 ![アーキテクチャー](img/architecture-.png)
 
-Check out the final result:
+このような結果になります:
 
-![Final result](img/rendu.png)
+![最終結果](img/rendu.png)
 
-Since these formatters will soon be available for Android, the default human-readable format will be displayed on the Android app when a Swift formatter is in selection for a field.
+これらのフォーマッターはまもなく Android でも利用できるようになる予定です。それまでは、Swift フォーマッターがフィールドに対して選択されている場合、人間に読めるデフォルトのフォーマットが Android アプリに表示されます。
 
-Don't hesitate to give us feedbck on the 4D Forum, and check out the documentation for more details!
+4Dフォーラムでご意見をお聞かせください。また、詳細についてはドキュメントをご覧ください。

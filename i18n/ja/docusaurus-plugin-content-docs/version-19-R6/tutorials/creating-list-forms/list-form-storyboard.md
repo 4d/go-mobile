@@ -160,7 +160,7 @@ Image View を選択し、**Identity inspector** (ウィンドウ右側パネル
 
 シミュレーターでうまく動けば、成功です:
 
-![Simulator result](img/simulator-result.png)
+![シミュレーターの結果](img/simulator-result.png)
 
 ## アプリをカスタマイズする
 
@@ -184,7 +184,7 @@ Image View を選択し、User Defined Runtime Attributes に次の 2行を追�
 
 ![Image View角の丸み](img/imageview-corner-radius.png)
 
-これで、完成したカスタムテンプレートがプロジェクトエディターで使用できるようになりました！
+カスタマイズしたプロジェクトを実際にビルドしてみましょう！
 
 ![カスタムテンプレート（完成）](img/custom-template-final-result.png)
 

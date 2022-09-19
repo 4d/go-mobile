@@ -7,19 +7,19 @@ title: テンプレートにアクションを追加する
 > 
 > アクションを追加してリストフォーム/詳細フォームのテンプレートをカスタムします。
 
-> **PREREQUISITES**
+> **用意するもの**
 > 
-> 始めるために必要なものについては`[here](prerequisites.html)`をクリックして下さい!
+> 始めるために必要なものについては `[here](prerequisites.html)` をクリックしてください。
 
-このチュートリアルでは、どうやって簡単に**カスタムテンプレートにアクションを追加する**かを見ていきます。
+このチュートリアルでは、どうやって簡単に **カスタムテンプレートにアクションを追加する** かを見ていきます。
 
 ## ⒈ スタータープロジェクトをダウンロード
 
 **スタータープロジェクト** をダウンロードします。これには、以下のものが収録されています:
 
-* リストフォームのカスタムテンプレートが2つ(TasksList および TasksCollection)
-* 詳細フォームのカスタムテンプレートが1つ(TasksDetail)
-* データベース(Tasks.4dbase)
+* リストフォームのカスタムテンプレートが 2つ (TasksList および TasksCollection)
+* 詳細フォームのカスタムテンプレートが 1つ (TasksDetail)
+* データベース (Tasks.4dbase)
 
 <div className="center-button">
 <a class="button button--primary"
@@ -28,13 +28,13 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 
 ## ⒉ 4D for iOS プロジェクトにカスタムテンプレートを追加
 
-以下のドロップを実行してテンプレートをインストールします。
+以下の操作でテンプレートをインストールします:
 
-* **TasksList** および **TasksCollection** template フォルダを*Tasks.4dbase/Resources/Mobile/form/list* フォルダにドロップ
+* **TasksList** および **TasksCollection** テンプレートフォルダーを *Tasks.4dbase/Resources/Mobile/form/list* フォルダーにドロップ
 
 ![リスト画面のテンプレート](img/Listform-templates.png)
 
-* **TasksDetail** template フォルダを *Tasks.4dbase/Resources/Mobile/form/detail folder* にドロップ
+* **TasksDetail** テンプレートフォルダーを *Tasks.4dbase/Resources/Mobile/form/detail* フォルダーにドロップ
 
 ![詳細画面のテンプレート](img/Detailform-template.png)
 
@@ -44,13 +44,13 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 * テーブルアクション
 * エンティティアクション
 
-まずは最初に `list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` ファイルを開いてみましょう。
+まず最初に、`list/TasksList/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` ファイルを開いてみましょう。
 
 ### TasksList カスタムテンプレートにアクションを追加する
 
 #### Ａ テーブルアクションタグを追加
 
-**List form Controller** を選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
+下図のように当該ビューの **Controller** を選択し、Identity inspector を開いて **User Defined Runtime Attributes** に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
@@ -61,7 +61,7 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 
 #### Ｂ エンティティアクションタグを追加
 
-Table View を選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
+ツリーを展開して Animatable Table View を選択し、Identity Inspector で **User Defined Runtime Attributes** に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
@@ -71,21 +71,21 @@ Table View を選択し、**User Defined Runtime Attributes** (Identity inspecto
 
 これでカスタムテンプレートがアクション対応になりました！
 
-TaskList カスタムテンプレートを**フォームセクション** から選択し、以下のフィールドを追加することができます:
+**フォーム** セクションで TaskList カスタムテンプレートを選択し、以下のフィールドを追加します:
 
 ![「フォーム」セクション（Taskslist）](img/listform-taskslist-forms-section.png)
 
-続けて TasksCollection カスタムテンプレートにもアクションを追加しましょう。
+続けて、TasksCollection カスタムテンプレートにもアクションを追加しましょう。
 
 ### TasksCollection カスタムテンプレートにアクションを追加する
 
-まずは`list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` ファイルを開きます。
+まず、`list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` ファイルを開きます。
 
 #### Ａ テーブルアクションタグを追加
 
-作業は TasksList カスタムテンプレートの場合によく似ています。
+作業は TasksList カスタムテンプレートの場合とよく似ています。
 
-**List form Controller** を選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
+下図のように当該ビューの **Controller** を選択し、Identity inspector を開いて **User Defined Runtime Attributes** に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
@@ -95,11 +95,11 @@ TaskList カスタムテンプレートを**フォームセクション** から
 
 #### Ｂ エンティティアクションタグを追加
 
-エンティティアクションを表示する方法はリスト形式の TableView とグリッド形式の CollectionViews では異なります。 後者はスワイプ操作に不向きです。
+エンティティアクションを表示する方法は、リスト形式の TableView とグリッド形式の CollectionView で異なります。 後者はスワイプ操作に不向きです。
 
-コレクションビューにおいては、扱いたいセルに対して**長押し** ジェスチャーに反応してアクションを表示させるのが良い方法です。
+CollectionView においては操作したいセルに対し、**長押し** ジェスチャーに反応してアクションを表示させるのが良い方法です。
 
-そのためには、collectionView のセルを選択して、以下の記述を**User Defined Runtime Attributes** (Identity inspector) に追加します。
+そのためには、CollectionView のセルを選択して、Identity inspector で **User Defined Runtime Attributes** に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
@@ -107,22 +107,22 @@ TaskList カスタムテンプレートを**フォームセクション** から
 
 ![リスト画面にエンティティアクションタグを追加](img/Add-collection-entity-tag-taskslist.png)
 
-アクションのレンダリングを最適化するため、以下の記述を**User Defined Runtime Attributes** (Identity inspector) に追加することで、拡大エフェクトと触覚フィードバックを追加することができます:
+タッチしたときに触覚フィードバックと拡大エフェクトが発生するように設定するため、**User Defined Runtime Attributes** に以下の記述も追加します：
 
 * Key Path: `touch.zoomScale`
 * Type: `Number`
-* Value: `0.96` (ズーム倍率は好みに応じて調整することができます)
+* Value: `0.96` (ズーム倍率は好みに応じて調整できます)
 
-TasksCollection カスタムテンプレートを**フォームセクション** から選択し、以下のフィールドを追加することができます:
+**フォーム** セクションで TasksCollection カスタムテンプレートを選択し、以下のフィールドを追加します:
 
 ![「フォーム」セクション（TasksCollection）](img/listform-taskscollection-forms-section.png)
 
 
 ## ⒋ 詳細フォームにアクションを追加
 
-詳細フォームではナビゲーションバーの**汎用ボタン** を使用するか、または **オリジナルのカスタムアクションボタンを容易に作成する**こともできます。 どちらの場合にも、タグを追加する必要があります。
+詳細フォームでは、ナビゲーションバーの "**...**" 汎用ボタンを使用することもできますが、**オリジナルのカスタムアクションボタン** を作成することも簡単です。 どちらの場合にも、タグを追加する必要があります。
 
-ナビゲーションバーに埋め込まれている汎用ボタンの場合、コントローラーを選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
+ナビゲーションバーの汎用ボタンの場合には、詳細フォームの .storyboard ファイルを開いて当該ビューの Controller を選択し、Identity inspector で **User Defined Runtime Attributes** に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
@@ -130,9 +130,9 @@ TasksCollection カスタムテンプレートを**フォームセクション**
 
 ![詳細画面にエンティティアクションタグを追加](img/Detail-form-action-navigationBar.png)
 
-このチュートリアルでは、独自の汎用ボタンを作成したいとします。 そのためにはまずは`detail/TasksDetail/Sources/Forms/Tables/___TABLE___/___TABLE___DetailsForm.storyboard` ファイルを開きます。
+このチュートリアルでは、カスタムの汎用ボタンを作成しましょう。 まず、`detail/TasksDetail/Sources/Forms/Tables/___TABLE___/___TABLE___DetailsForm.storyboard` ファイルを開きます。
 
-開いたら右下のボタンを選択し、**User Defined Runtime Attributes** (Identity inspector) に以下の記述を追加します:
+開いたら右下のボタン (More Button) を選択し、Identity inspector で **User Defined Runtime Attributes** に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`
@@ -140,17 +140,17 @@ TasksCollection カスタムテンプレートを**フォームセクション**
 
 ![詳細画面にカスタムアクションボタンを追加](img/Detail-form-action-custom-action-Button.png)
 
-見て分かるように、Storyboard ファイル内にはいくつかのボタンの画像が不足しています。 これらのファイルについては**Resources folder** テンプレート内にあります。 これらのファイルは、ビルドを実行すれば、プロジェクトにコピーされます。
+見てのとおり、Storyboard ファイルにはいくつかのボタンの画像が不足しています。 これらのファイルは、フォームテンプレートの **Resources** フォルダー内にあります。 ビルドを実行すれば、これらの画像ファイルはプロジェクトにコピーされます。
 
-例えば、**moreButton.imageset** の場合には、以下のようにします:
+たとえば、**moreButton.imageset** は右下のボタンの関連ファイルです:
 
 ![テンプレートの関連ファイル](img/Template-Ressources.png)
 
-TasksDetail カスタムテンプレートを**フォームセクション** から選択し、以下のフィールドを追加することができます:
+**フォーム** で TasksDetail カスタムテンプレートを選択し、以下のフィールドを追加します:
 
 ![「フォーム」セクション（TasksDetail）](img/detailform-forms-section.png)
 
-完成したiOSアプリは、リスト画面と詳細画面が両方ともアクション対応になりました！
+完成した iOSアプリのリストフォームと詳細フォームが両方ともアクション対応になりました！
 
 ![テンプレートの関連ファイル](img/ListForm-entity-action-tableview.png)
 

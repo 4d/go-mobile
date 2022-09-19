@@ -1,25 +1,25 @@
 ---
 id: selecting-your-developer-program
-title: Selecting your Apple Developer Program
+title: Apple Developer Program の選択
 ---
 
 > **目標**
 > 
-> Choose the appropriate Apple Developer Program.
+> 適切な Apple Developer Program を選択します。
 
-You must have a valid Apple Developer account to **distribute an iOS app**. Apple offers two developer programs:
+**iOSアプリを配布** するには、有効な Apple Developer アカウントが必要です。 Apple は 2つのデベロッパープログラムを提供しています:
 
-* [Apple Developer Program for organization]`(selecting-your-developer-program-register-apple-developer-program-organization.html)` or [for individual]`(selecting-your-developer-program-register-apple-developer-program-individual.html)` – $99/year
-* [Apple Enterprise Developer Program]`(selecting-your-developer-program-register-apple-developer-enterprise-program.html)` – $299/year
+* [組織向け Apple Developer Program]`(selecting-your-developer-program-register-apple-developer-program-organization.html)` または [個人向け]`(selecting-your-developer-program-register-apple-developer-program-individual.html)` – $99/年
+* [Apple Enterprise Developer Program]`(selecting-your-developer-program-register-apple-developer-enterprise-program.html)` – $299/年
 
-The main difference between the two programs is:
+2つのプログラムの大きな違いは次のとおりです:
 
-* **Apple Developer Program (for organization or individual)**: Allows you to distribute app(s) **on the App Store**.
+* **Apple Developer Program** (組織向け または 個人向け): **App Store** でアプリを配布することができます。
 
-* **Apple Developer Enterprise Program**: Provides resources ONLY for developing and distributing **proprietary, in-house apps** to employees.
+* **Apple Developer Enterprise Program**: **自社の In-House アプリ** を開発し、従業員に配布するためのリソースのみが提供されます。
 
-For **test purposes** you can use a [Free Apple Developer Program]`(free-developer-account.html)`.
+**テスト用** には [無料の Apple Developer Program]`(free-developer-account.html)` が使用できます。
 
-Here is a chart comparing the different levels of developer membership:
+デベロッパーメンバーシップのレベル別比較表は以下のとおりです:
 
-![Developer membership levels](img/FreeTestingAppleDeveloperAccount.png)
+![デベロッパーメンバーシップレベル](img/FreeTestingAppleDeveloperAccount.png)

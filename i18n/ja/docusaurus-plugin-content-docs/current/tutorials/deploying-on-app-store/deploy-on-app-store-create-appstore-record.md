@@ -1,75 +1,75 @@
 ---
 id: deploy-on-app-store-create-appstore-record
-title: Create App Store record
+title: App Storeレコードの作成
 ---
 
 > **目標**
 > 
-> * Create an App ID on your Developer Account
-> * Create your app in App Store Connect
+> * デベロッパーアカウントで App ID を作成する
+> * App Store Connect でアプリを作成する
 
-> **PREREQUISITES**
+> **用意するもの**
 > 
-> * [Apple Developer Program for organization](../tutorials/developer-program/register-apple-developer-program-organization) or
-> * [Apple Developer Program as an individual](../tutorials/developer-program/register-apple-developer-program-individual)
+> * [組織向けのApple Developer Program](../tutorials/developer-program/register-apple-developer-program-organization) または
+> * [個人向けの Apple Developer Program](../tutorials/developer-program/register-apple-developer-program-individual)
 
 
-## ⒈ ⒈ ⒈ ⒈ Create an App ID
+## ⒈ App ID を作成する
 
-#### What is an App ID ?
+#### App ID とは？
 
-*An App ID is a two-part string used to identify one or more apps from a single development team. The string consists of a Team ID and a Bundle ID, with a period (.) separating the two parts (ex: TeamID.BundleID).*
+*App ID は、1つの開発チームによる 1つ以上のアプリの識別に使用される 2つの部分からなる文字列です。 文字列は Team ID とバンドルID で構成され、ピリオド (.) で区切られます (例: TeamID.BundleID)。*
 
-> **NOTE**
+> **注記**
 > 
-> * If you have chosen an Apple Developer Account as an individual, your account is available immediately and you can create your App ID.
-> * If you have chosen an Apple Developer Account as an organization, you must wait for Apple validation to create your App ID.
+> * 個人向けの Apple Developer アカウントを選択した場合は、すぐにアカウントを利用でき、App ID を作成することができます。
+> * 組織向けの Apple Developer アカウントを選択した場合には、Apple の承認を得てから、App ID を作成することができます。
 
-To create your App ID, go to your developer account and select [Certificates, IDs & Profile](https://developer.apple.com/account/ios/identifier/bundle)
+App ID を作成するには、デベロッパーアカウントにアクセスし、[Certificates, IDs & Profile](https://developer.apple.com/account/ios/identifier/bundle) を選択します。
 
-* Click the + sign next to *Register iOS App IDs* to add a new App ID.
+* *Register iOS App IDs* の横にある + 記号をクリックし、新しい App ID を追加します。
 
-* Define your app's Name and Bundle ID.
+* アプリの名前とバンドルID を定義します。
 
 ![App ID](img/Developer-account-App-ID.png)
 
-* Define the App Services to include in your app
+* アプリに含める App Services を定義します。
 
 ![App Services](img/App-Services-to-include.png)
 
-* Confirm your App ID by clicking **Register**.
+* **Register** をクリックし、App ID を登録します。
 
 ![Confirm App ID](img/Confirm-App-ID.png)
 
-## ⒉ ⒉ ⒉ ⒉ Sign in to App Store Connect
+## ⒉ App Store Connect にサインインする
 
-* Sign in to your [App Store Connect Account](https://appstoreconnect.apple.com)
-* Click on **My Apps**.
+* [App Store Connect アカウント](https://appstoreconnect.apple.com) にサインインします。
+* **マイ App** をクリックします。
 
 ![App Store Connect](img/App-Store-Connect-home-page.png)
 
-## ⒊ ⒊ ⒊ ⒊ Create a new iOS App
+## ⒊ 新規の iOSアプリを作成する
 
-Click the **+** sign in the top left corner to create a new iOS App.
+左上の **+** をクリックして、新規の iOSアプリを作成します。
 
-![⒊ ⒊ ⒊ Create a new iOS App](img/Create-new-iOS-App.png)
+![新規の iOSアプリを作成する](img/Create-new-iOS-App.png)
 
-Add the following information:
+以下の情報を追加します:
 
-* **Platforms**: Select iOS.
-* **Name**: The name of your app.
-* **Primary language**: The main language for your app.
-* **Bundle ID**: Select your App Bundle ID from the dropdown list.
-* **SKU**: A unique ID for your app (this stays private and is not seen by users)
-* **Limit User Access (optional)**: Allows you to limit access to your app to users with App Manager, Developer, Marketer, or Sales roles.
+* **プラットフォーム**: iOSを選択します。
+* **名前**: アプリ名を入力します。
+* **プライマリ言語**: アプリで使われる主要言語です。
+* **バンドルID**: ドロップダウンリストからアプリのバンドルID を選択します。
+* **SKU**: アプリのユニークな ID (これは非公開で、ユーザーには見えません)
+* **ユーザーアクセス** (任意): アプリへのアクセスを App Manager、Developer、Marketer、Sales のロールを持つユーザーに制限することができます。
 
 ![Change BundleID](img/Change-BundleID-Xcode-Project.png)
 
-> **NOTE**
+> **注記**
 > 
-> If your Bundle ID is not available, it may already be used by another app in the App Store. You'll need to change yours in your Xcode project.
+> バンドルID が利用できない場合、App Store の他のアプリですでに使用されている可能性があります。 その場合、Xcode プロジェクトで自分のバンドルID を変更する必要があります。
 
-## ⒋ ⒋ ⒋ ⒋ App information
+## ⒋ App情報
 
 From App Store Connect > App Information:
 
@@ -77,7 +77,7 @@ From App Store Connect > App Information:
 * Enter a subtitle for your app. This will appear below your app's name throughout the App Store in iOS 11.
 * Select a primary and secondary (optional) category for your app to appear in.
 
-![⒋ ⒋ ⒋ App information](img/App-Store-Connect-app-information.png)
+![App情報](img/App-Store-Connect-app-information.png)
 
 ## ⒌ ⒌ ⒌ ⒌ Pricing and Availability
 

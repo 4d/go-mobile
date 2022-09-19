@@ -1,35 +1,35 @@
 ---
 id: define-filter-query
-title: Define a Filter Query
+title: フィルタークエリの定義
 ---
 
-For the moment, if you build the Starter project app and enter "michelle.simpson@mail.com" as the login email (one of the account managers), you'll see **all manager contracts and statuses** (*Closed* and *In Progress*).
+はじめに、スタータープロジェクトをそのままビルドして実行してみましょう。ログイン画面には営業担当者のメールアドレス "michelle.simpson@mail.com" を入力します。**営業担当者全員の商談がステータスに関係なく** (*済 (Closed)* と *進行中 (In Progress)* の両方が) 表示されることに注目してください。
 
 ![クエリフィルターが設定されていないアプリ](img/ios-app-without-queries.png)
 
-As we discussed earlier, we want the account managers to access their *In Progress* contracts by logging into their mobile app with their email. 下記の要領で実現することができます。
+前述のように、モバイルアプリにメールアドレスでログインすれば、自分が担当している商談でステータスが *進行中* のものだけを表示するよう、データをフィルターしたいと考えています。 下記の要領で実現することができます。
 
-* Go to the **Data section**
-* Right-click in the **Filter query** field to make the **Field, Comparators and Operators buttons** appear.
-* Click on the **Fields** button and select **Status**.
-* Click on the **Comparators** button and select **Equal to**.
-* Because you want to display *open* contracts, enter **In progress**
-* Remember to validate your query by clicking on the **Validate** button, otherwise you won't be able to build your app.
+* **データ** セクションに移動します。
+* **フィルタークエリ** 欄をクリックすると、**フィールド・比較演算子・演算子ボタン** が表示されます。
+* **フィールド** ボタンをクリックし、**Status** フィールドを選択します。
+* **比較演算子** ボタンをクリックし、**等しい** を選択します。
+* *進行中* の商談を表示したいので、**&apos;In progress&apos;**と入力します。
+* **検証** ボタンをクリックし、フィルターを確定します。これを忘れてしまうと、アプリがビルドできません。
 
 下図のようになっていることを確認してください。
 
 ![CRM（顧客管理）データベース](img/filterquery.png)
 
-> **NOTE**
+> **注記**
 > 
-> * A **filter** icon is displayed at the right of each table when a basic filter is applied to it.
-> * For these kinds of filter queries, you can choose to embed data into the app or to load the data after login by checking the **Embed data into the built application** checkbox.
-> * Size will be calculated at the first build for you to visualize the **size of your data**.
+> * フィルタークエリが設定されているテーブルの横には **フィルター (漏斗)** アイコンが表示されます。
+> * 今回のような単純なフィルターの場合、**このテーブルのデータをアプリケーションに埋め込み** チェックボックスによって、データをアプリに埋め込むか、それともログイン後にロードさせるかを選ぶことができます。
+> * ビルドを実行すると、計算された **データサイズ** が画面上で確認できるようになります。
 
-If you build your app and enter "michelle.simpson@mail.com" as the login email, you'll see that all contracts *In Progress* are displayed in the Simulator!
+アプリをビルドして実行しましょう。メールアドレス "michelle.simpson@mail.com" を入力してログインすると、今度は *進行中* の商談のみがシミュレーターに表示されます。
 
 ![単純なクエリフィルターが設定されているアプリ](img/restrited-queries-basic-query.png)
 
-残念！ What we want now is for each account manager to visualize only their own *In Progress* contracts, so let's complete our query!
+惜しいですね！ ここで実現したかったのは、ログインしたユーザーが担当している *進行中* の商談を表示することでした。これには、フィルタークエリにもう少し条件を加える必要があります。
 
 

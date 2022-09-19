@@ -1,96 +1,96 @@
 ---
 id: register-apple-developer-program-organization
-title: Apple Developer Program as an Organization
+title: 組織向けの Apple Developer Program
 ---
 
 > **目標**
 > 
-> Register for the Apple Developer Program as an organization to publish your app to the **App Store**.
+> Apple Developer Program に組織として登録し、**App Store** でアプリを公開する。
 
-> **NOTE**
+> **注記**
 > 
-> To enroll in the Apple Developer Program as an organization, your Apple ID must be associated with an email address using your organization’s domain name.
+> Apple Developer Program に組織として登録するには、組織のドメイン名を使用したメールアドレスと Apple ID が関連付けられている必要があります。
 
 
-## ⒈ ⒈ Apple IDが作成できました。
+## ⒈ Apple ID
 
-If you don’t have an Apple ID go to [Step 2](#step-2-create-your-apple-id).
+まだ Apple ID を持っていないのであれば、[2.](#-apple-id-を作成する) に進んでください。
 
-If you already have an Apple ID, go to [Step 3](#step-3-d-u-n-s-number).
+すでにApple IDを持っているのであれば、[3.](#-d-u-n-s-番号) に進んでください。
 
 
-## ⒉ ⒉ ⒉ Apple IDを作成する
+## ⒉ Apple ID を作成する
 
-[Apple ID作成ページ](https://appleid.apple.com/)にアクセスします。
+[Apple ID 作成ページ](https://appleid.apple.com/)にアクセスします。
 
-![⒉ ⒉ Apple IDを作成する](img/Apple-ID-Creation-Page-4D-for-iOS.png)
+![Apple ID を作成する](img/Apple-ID-Creation-Page-4D-for-iOS.png)
 
-* 必要な情報をフォームに入力し，セキュリティの質問に答えます。
-* Appleから確認メールが送られます。
-* メールに記載されている確認コードを入力して，アカウントの作成を完了します。
+* 必要な情報をフォームに入力し、セキュリティの質問に答えます。
+* Apple から確認メールが送られます。
+* メールに記載されている確認コードを入力して、アカウントの作成を完了します。
 
-![Register developer program](img/Register-developer-program-4D-for-iOS.png)
+![デベロッパープログラム登録](img/Register-developer-program-4D-for-iOS.png)
 
-* ⒉ Apple IDを作成する
+* Apple ID が作成できました。3. に進みましょう。
 
-## ⒊ ⒊ ⒊ ⒊ D-U-N-S Number
+## ⒊ D-U-N-S 番号
 
-* If you don’t have a D-U-N-S Number, go to [Step 4](#step-4-request-a-d-u-n-s-number).
-* If you already have a D-U-N-S Number, go to [Step 5](#step-5-register-as-a-developer).
+* まだ D-U-N-S 番号を持っていないのであれば、[4.](#-d-u-n-s-番号の取得) に進んでください。
+* すでに D-U-N-S 番号を持っているのであれば、[5.](#-デベロッパーとして登録する) に進んでください。
 
-## ⒋ ⒋ ⒋ ⒋ Request a D-U-N-S Number
+## ⒋ D-U-N-S 番号の取得
 
-Request a D-U-N-S Number [here](https://developer.apple.com/enroll/duns-lookup/#/search)
+D-U-N-S番号の申請は [こちら](https://developer.apple.com/enroll/duns-lookup/#/search)。
 
-![⒋ ⒋ ⒋ Request a D-U-N-S Number](img/DUNS-Number-Organization-4D-for-iOS.png)
+![D-U-N-S 番号の取得](img/DUNS-Number-Organization-4D-for-iOS.png)
 
-* Complete the form.
+* フォームに記入します。
 * **続ける** をクリックします。
-* Check your email for the D-U-N-S Number.
+* D-U-N-S 番号はメールでご確認ください。
 
-![⒊ ⒊ ⒊ D-U-N-S Number](img/DUNS-Number-Apple-Mail_4D-for-iOS.png)
+![D-U-N-S 番号](img/DUNS-Number-Apple-Mail_4D-for-iOS.png)
 
-## ⒌ ⒌ ⒌ ⒌ Register as a developer
+## ⒌ デベロッパーとして登録する
 
-You can register as a developer [here](https://developer.apple.com/programs/enterprise/enroll/).
+デベロッパー登録は [こちら](https://developer.apple.com/programs/enterprise/enroll/)。
 
-* Click on the **Start your Enrollment** button.
-* Read and accept the Apple Developer Agreement.
-* Click **Submit**.
+* **Start your Enrollment** ボタンをクリックします。
+* Apple Developer Agreement を読み、同意します。
+* **Submit** をクリックします。
 
-![⒌ ⒌ ⒌ Register as a developer](img/Register-developer-4D-for-iOS.png)
+![デベロッパーとして登録する](img/Register-developer-4D-for-iOS.png)
 
-## ⒍ ⒋ ⒋ ⒋ Join the Apple Developer Program
+## ⒍ Apple Developer Program に参加する
 
-* You can sign up for the Apple Developer Program [here](https://developer.apple.com/enroll/enterprise/).
+* Apple Developer Program への登録は [こちら](https://developer.apple.com/enroll/enterprise/)。
 
-![⒋ ⒋ ⒋ Join the Apple Developer Program](img/Join-Apple-Developer-Program-individuals-4D-for-iOS.png)
+![Apple Developer Program に参加する](img/Join-Apple-Developer-Program-individuals-4D-for-iOS.png)
 
-## ⒎ ⒎ ⒎ Enroll as an organization
+## ⒎ 組織として登録する
 
-* Click on the **Start your Enrollment** button.
-* Select **Company / Organization** from the Entity Type dropdown list.
+* **Start your Enrollment** ボタンをクリックします。
+* Entity Type ドロップダウンリストから、**Company / Organization** を選択します。
 * **続ける** をクリックします。
 
 ![Apple Developer Program](img/Apple-Developer-Program-Organizations-4D-for-iOS.png)
 
-* Complete the form.
+* フォームに記入します。
 * **続ける** をクリックします。
 
-![⒎ ⒎ Enroll as an organization](img/Apple-Developer-Program-Enrollment-Organizations-4D-for-iOS.png)
+![組織として登録する](img/Apple-Developer-Program-Enrollment-Organizations-4D-for-iOS.png)
 
-* Apple has an internal verification process that usually takes up to six working days. Once Apple receives the enrollment request, they verify that you have the authority to bind your organization to the Apple Developer Program's legal agreements.
-* Apple generally calls to verify that the main contact exists and has requested the Apple Developer Enterprise Program registration.
-* You'll then receive another email inviting you to complete the enrollment process.
+* Apple は内部の承認プロセスを採用しており、通常は最大 6営業日かかります。 入会リクエストを受け取ると Apple は、お客様が Apple Developer Program の法的な契約によって組織を拘束する権限を有していることを確認します。
+* Apple は通常、メインコンタクトが実在し、Apple Developer Enterprise Program の登録を要求していることを確認するために電話をかけます。
+* その後、入会手続きを完了するための案内メールが届きます。
 
-![⒎ ⒎ ⒎ Apple verification](img/Confirmation-email-Organisations-4D-for-iOS.png)
+![Apple による承認](img/Confirmation-email-Organisations-4D-for-iOS.png)
 
-## ⒏ ⒏ ⒏ ⒏ Complete your purchase
+## ⒏ 購入手続きを完了する
 
-* Once your enrollment request has been accepted, you can then proceed to payment.
+* 入会申し込みが受理されると、支払いに進むことができます。
 
-![⒏ ⒏ ⒏ Complete your purchase](img/Complete-Purchase-Apple-Developer-Program-4D-for-iOS.png)
+![購入手続きを完了する](img/Complete-Purchase-Apple-Developer-Program-4D-for-iOS.png)
 
-* When you have completed your purchase, you'll receive an email confirming your membership in the program.
+* 購入が完了すると、デベロッパープログラムへの加入を確認するメールが届きます。
 
-おつかれさまでした！ You are now ready to publish applications to the App Store!
+おつかれさまでした！ App Store にアプリを公開する準備が整いました！

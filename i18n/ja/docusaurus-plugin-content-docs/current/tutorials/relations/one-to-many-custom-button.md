@@ -1,16 +1,16 @@
 ---
 id: one-to-many-custom-button
-title: １対Ｎカスタムボタン
+title: 1対Nカスタムボタン
 ---
 
-As we have seen with all previous tutorials, the 4D mobile editor give you the freedom to create lots of custom things.
+これまでに見てきたように、4D モバイルエディターでは、いろいろなものがカスタマイズできるようになっています。
 
-テンプレートやフォーマッターだけでなく，リレーションボタンもカスタマイズできます。
+テンプレートやフォーマッターだけでなく、リレーションボタンもカスタマイズできます。
 
-しかも，その手順はとても簡単！ カスタムテンプレートにカスタムボタンをドラッグ＆ドロップするだけです。
+しかも、その手順はとても簡単です！ カスタムテンプレートにカスタムボタンをドラッグ＆ドロップするだけです。
 
 
-Let's get started by downloading the Starter project that includes:
+以下が用意されているスタータープロジェクトをダウンロードしてください:
 
 * データベースとモバイルプロジェクト
 * 標準のリレーションボタン
@@ -22,9 +22,9 @@ href="https://github.com/4d-go-mobile/tutorial-OneToManyCustomButton/archive/c50
 
 ## ボタンを追加する
 
-まず，ボタン「button.xib」を4D for iOSで使用できるように，カスタムテンプレートに追加しましょう。
+まず、ボタン relationButton.xib を 4D for iOS で使用できるように、カスタムテンプレートに追加しましょう。
 
-To use the button, you just need to drop it in the `YourDatabase.4dbase/Resources/Mobile/form/detail/BlackVisual Contact` folder.
+ボタンを追加するには、`TimeKeeper.4dbase/Resources/Mobile/form/detail/BlackVisual Contact` フォルダーにこのファイルをドロップすれば OK です。
 
 ![カスタムボタンのパス](img/Relation-custom-button-path.png)
 
@@ -32,43 +32,43 @@ To use the button, you just need to drop it in the `YourDatabase.4dbase/Resource
 
 ## ボタンの設定
 
-Xcodeで「.xib」ファイルを開きます。
+Xcode で .xib ファイルを開きます。
 
-このように表示されるはずです。
+このように表示されるはずです:
 
 ![カスタムリレーションボタン](img/Relations-custom-button-relationButton-4D-for-iOS.png)
 
-属性インスペクターでさまざまな項目の値を変更することができます。
+Attribute inspector でさまざまな項目の値を変更することができます:
 
 * カラーとフォント
 * ボタンのスタイル
 * ボタンのサイズ
 
-ボタンのカラーとラベルフォントを変えてみましょう！
+さっそく、ボタンのカラーとラベルフォントを変えてみましょう！
 
 ### カラーとフォントのカスタマイズ
 
-ボタンを選択し，属性インスペクターに新しいカラーとフォント名を入力します。
+ボタンを選択し、Attribute inspector でカラーとフォントを変更します。
 
-背景には，ライトモードとダークモードのそれぞれで最良のコントラストになるように「Label Color 」を選択しましょう。
+Background には、ライトおよびダークモードの両方で最良のコントラストになるように Label Color を選択します。
 
-フォントカラーは「System Background Color（システム背景色）」，フォント名は「Helvetica Neue Medium」に設定します。
+Text Color は System Background Color (システム背景色)、フォント名は Helvetica Neue Medium 17 に設定します。
 
-ボタンのアイコンに「System Background Color Tint（色合い）」を適用することも忘れないようにしましょう。
+Tint にも System Background Color を適用しましょう。
 
 ![カスタムリレーションボタン](img/Relations-custom-button-relationButton-4D-for-iOS-font-and-Color.png)
 
-シミュレーターでダークモードとライトモードそれぞれの結果を確かめます。
+シミュレーターで、ダークモードとライトモードそれぞれの結果を確かめます:
 
-![Custom relation color and font](img/Custom-relation-button-Light-and-Dark-mode-font-and-color.png)
+![カスタムリレーションのカラーとフォント](img/Custom-relation-button-Light-and-Dark-mode-font-and-color.png)
 
 ### ボタンの角の丸み
 
-今度はrelationButtonの角に丸みをつけてみましょう！
+今度は、リレーションボタンの角に丸みをつけてみましょう！
 
-アイデンティティーインスペクターを開きます。
+Identity inspector を開きます。
 
-ボタンを選択して「User Defined Runtime Attributes」に下記の２行を記述します。
+ボタンを選択し、User Defined Runtime Attributes に次の 2行を追加します:
 
 * **Key Path**: `cornerRadius`
 
@@ -84,47 +84,47 @@ Xcodeで「.xib」ファイルを開きます。
 
 * **Value**: Check the box
 
-![Custom relation color and font](img/Custom-relation-button-Xcode-round-corners.png)
+![カスタムリレーションのカラーとフォント](img/Custom-relation-button-Xcode-round-corners.png)
 
-これで、完成したカスタムテンプレートがプロジェクトエディターで使用できるようになりました！
+カスタマイズしたプロジェクトを実際にビルドしてみましょう！
 
-下図のように表示が変化していれば成功です。
+下図のように表示が変化していれば成功です:
 
-![Custom relation color and font](img/Custom-relation-button-round-corners.png)
+![カスタムリレーションのカラーとフォント](img/Custom-relation-button-round-corners.png)
 
 ### サイズと制約
 
-Keep in mind that if you **add constraints** into your button, you will also have to modifiy the xib xml file to **add some TAGS** as for custom Detail form templates. タグを追加することにより，同一の詳細ビュー内で複数のリレーションを表示するためにこのボタンを使い回したとしても，ボタンが正しく機能するようになります。
+カスタム詳細フォームのテンプレートと同じように、ボタンに **制約を追加** するのであれば、xib の XMLファイルに **タグを追加** する必要もあることに留意してください。 タグを追加することにより、同じ詳細フォーム内でリレーションボタンを複数表示する場合にも、ボタンが正しく複製されるようになります。
 
-そのことを踏まえ，ボタンに制約を設定してみましょう！
+そのことを踏まえ、ボタンに制約を設定してみましょう！
 
 #### 制約を追加する
 
-このチュートリアルでは，画面上でおおきく表示されるように，ボタンの高さに制約を追加する場合を考えます。
+このチュートリアルでは、画面上でもっと大きく表示されるよう、ボタンの高さを設定します。
 
-⒈ ⒈ ⒈ ⒈ ビューを選択し，高さを123から40に変更します。
+⒈ ビューを選択し、Size inspector で高さを 123 から 40 に変更します。
 
 ![ボタンビューの高さ](img/Button-view-height.png)
 
-⒉ ⒉ ⒉ ⒉ Double click on the **Top Space Constraint** and change it from 8 to 0
+⒉ **Top Space Constraint** をダブルクリックし、値を 8 から 0 に変更します。
 
 ![上部余白の制約](img/Top-Space-constraint.png)
 
-⒊ ⒊ ⒊ ⒊ Do the same thing with **Bottom Space Constraint** and change it from 8 to 0
+⒊ 同じことを **Bottom Space Constraint** でおこない、8 から 0 に変更します。
 
-下図のようになっていれば成功です。
+下図のようになっていれば成功です:
 
 ![カスタムボタンの制約](img/Custom-button-constraints.png)
 
-⒋ ⒋ ⒋ ⒋ 高さの制約「40」を追加します。
+⒋ Add Constraints ボタンをクリックし、高さの制約 40 にチェックを入れて追加します。
 
 ![ボタンの高さ制約](img/Button-height-constraint.png)
 
-下図のようになっていれば成功です。
+下図のようになっていれば成功です:
 
 ![コンテナ内で水平](img/Custom-relation-button-constraints.png)
 
-プロジェクトエディターに対し，このビュー内の全要素が一緒に複製されるべきであることを示すため，それぞれの要素と制約にタグを追加します。
+プロジェクトエディターに対し、このビュー内の全要素が一緒に複製されるべきであることを示すため、各要素および制約にタグを追加します。
 
 
 ### タグを追加する
@@ -133,29 +133,29 @@ Keep in mind that if you **add constraints** into your button, you will also hav
 
 ![オブジェクトID ストーリーボード](img/Custom-button-object-id-storyboard.png)
 
-1つずつ変更するのは少々面倒ですし、途中でミスをしてしまうかもしれません。 アイデンティティーインスペクターで操作するのは大変なので，ここはコードエディターでストーリーボードファイルを開き，効率的に作業を進めることにしましょう！
+1つずつ変更するのは少々面倒ですし、途中でミスをしてしまうかもしれません。 Identity inspector で操作するのは大変なので、ここは使い慣れたコードエディターでストーリーボードファイルを開いて作業を進めることにしましょう！
 
 #### 高さの制約にタグを追加する
 
-⒈ ⒈ ⒈ ⒈ ストーリーボード内で要素のオブジェクトIDを選択してコピーします。
+⒈ ストーリーボード内で制約のオブジェクトID を選択してコピーします。
 
 ![水平制約オブジェクトのID](img/Horizontal-constraint-object-ID.png)
 
-⒉ ⒉ ⒉ ⒉ Search for this ID in the xml file and put **TAG-RL-007** instead (a Tag that is not already used).
+⒉ XMLファイル内でこの ID を検索し、**TAG-RL-007** (未使用のタグ) で置換します。
 
-⒊ ⒊ ⒊ ⒊ XMLファイルを保存します。
+⒊ XMLファイルを保存します。
 
 ![水平制約のXMLファイル](img/Horizontal-constraint-xml-file.png)
 
-⒋ ⒋ ⒋ ⒋ ストーリーボードのウィンドウにフォーカスを移動し，制約が正しく更新されていることを確認します。
+⒋ ストーリーボードのウィンドウにフォーカスを移動し、制約が正しく更新されていることを確認します。
 
 ![水平制約オブジェクトのID更新](img/Horizontal-object-id-updated.png)
 
-おつかれさまでした！ 表示したいリレーションが複数あったとしても，このボタンを複製して使用することができるようになりました。
+おつかれさまでした！ 表示するリレーションが複数あったとしても、このボタンを複製して使用できるようになりました。
 
 ## これからどうする？
 
-このチュートリアルでは，カスタムリレーションボタンを作成する方法を習得しました。 カスタムボタンの完成プロジェクトは下記のリンクからダウンロードすることができます。
+このチュートリアルでは、カスタムリレーションボタンを作成する方法を紹介しました。 カスタムリレーションボタンの完成プロジェクトは下記のリンクからダウンロードできます。
 
 完成したプロジェクトをダウンロード
 

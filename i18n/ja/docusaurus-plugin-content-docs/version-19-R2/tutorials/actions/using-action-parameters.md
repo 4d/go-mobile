@@ -5,19 +5,19 @@ title: アクションパラメーターを使用する
 
 > **目標**
 > 
-> Define action parameters to edit the content of your app.
+> アクションパラメーターを使用し、アプリ上でデータが更新できるようにします。
 
 
-In the tutorial on defining actions, we discovered how to execute 4D code from an iOS app by defining actions from the actions section.
+ひとつ前のチュートリアルでは、アクションセクションでアクションを定義することにより、iOSアプリ側から 4Dメソッドを呼び出す方法を紹介しました。
 
-In this tutorial, we're going to go further and create:
+このチュートリアルでは、次のようなアクションを作成する方法を見ていきます:
 
-* 新規タスクを**追加**する
-* 既存タスクを**編集**する
-* 既存タスクを**削除**する
-* 特定のタスクに関連したメッセージを**メールで送信**する
+* 新規タスクを **追加** する
+* 既存タスクを **編集** する
+* 既存タスクを **削除** する
+* 特定のタスクに関連したメッセージを **メールで送信** する
 
-To begin, let's first download the **Starter project** based on our existing Tasks iOS app:
+ここまでのチュートリアルで作成したアプリをベースにした **スタータープロジェクト** をダウンロードしてください:
 
 <div className="center-button">
 <a className="button button--primary"
@@ -26,90 +26,90 @@ href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/159a7b73
 
 ## ⒈ 追加アクション
 
-Let's begin simple. Open the Tasks mobile project and go directly to the **Actions section**.
+ひとつのアクションを追加するところから始めましょう。 モバイルアプリのプロジェクトを開き、**アクション** セクションに移動します。
 
-![Action section](img/Actions-section.png)
+![アクションセクション](img/Actions-section.png)
 
-It's quite empty for the moment... Here is what we want: **create a new task from the iOS app**.
+この時点では、すべての項目が空です。 iOS アプリで **新規タスクを追加する** アクションを作成することに取り掛かりましょう。
 
-For this, let's create an action using a preset **Add** action:
+プリセットの **追加** アクションを使用して、新規アクションを作成します:
 
-* アクションリストの下側にある**＋ボタン**の三角部分をクリックします。
-* **レコード追加**オプションを選択します。
-* **Task**テーブルを選択します。
+* アクションリストの下にある **＋ボタン** の三角部分をクリックします。
+* **追加** オプションを選択します。
+* **Tasks** テーブルを選択します。
 
-![Add action creation](img/Add-action-creation.png)
+![追加アクションの作成](img/Add-action-creation.png)
 
-* *"addTasks"* という名称で*"Add..."* というデフォルトのラベルタイトルが設定された**新規アクション**が表示されます。
-* 追加アクションに必要な**パラメーター**および**プロパティ**が**アクション引数**エリアに表示されます。
+* *"addTasks"* という名称で *"追加..."* というデフォルトのラベルタイトルが設定された **新規アクション** が表示されます。
+* 追加アクションに必要な **パラメーター** および **プロパティ** が **アクション引数** エリアに表示されます。
 
-![Add action parameters](img/Add-action-parameters.png)
+![追加アクションのパラメーター](img/Add-action-parameters.png)
 
-At this point, all **Add action parameters** are created automatically and ready to use.
+追加アクションに必要な **パラメーター** はすべて揃っているので、これで設定は完了です。
 
 ## ⒉ 編集アクション
 
-Now let's create an action that will allow you to **edit your app content**.
+今度は、iOS アプリで **既存タスクを編集する** アクションを作成してみましょう。
 
-For this, we'll create an action using a preset **Edit** action:
+プリセットの **編集** アクションを使用して、新規アクションを作成します。
 
-* アクションリストの下側にある**＋ボタン**の三角部分をクリックします。
-* **レコード編集**オプションを選択します。
-* Taskテーブルを選択します。
+* アクションリストの下にある **＋ボタン** の三角部分をクリックします。
+* **編集** オプションを選択します。
+* **Tasks** テーブルを選択します。
 
-![Edit action creation](img/Edit-action-creation.png)
+![編集アクションの作成](img/Edit-action-creation.png)
 
-At this point, you will see:
+この時点で、下記のようになっているはずです:
 
-* *"editTasks"* という名称で*"Edit..."* というデフォルトのラベルタイトルが設定された**新規アクション**が表示されています。
-* 編集アクションに必要な**パラメーター**および**プロパティ**が**アクション引数**エリアに表示されています。
+* *"editTasks"* という名称で *"編集..."* というデフォルトのラベルタイトルが設定された **新規アクション** が表示されています。
+* 編集アクションに必要な **パラメーター** および **プロパティ** が **アクション引数** エリアに表示されています。
 
 
-![Edit action parameters](img/Edit-action-parameters.png)
+![編集アクションのパラメーター](img/Edit-action-parameters.png)
 
-Don't worry, we'll handle the 4D code for these actions later. :-)
+ご心配なく、アクションを実行するために必要なメソッドは後ほど作成します。 :-)
 
 ## ⒊ 削除アクション
 
-The preset **Delete** action creation process is nearly the same as the Edit action:
+プリセットの **削除** アクションは、編集アクションとほとんど一緒です:
 
-* アクションリストの下側にある**＋ボタン**の三角部分をクリックします。
-* **レコード削除**オプションを選択します。
-* Taskテーブルを選択します。
+* アクションリストの下にある **＋ボタン** の三角部分をクリックします。
+* **削除** オプションを選択します。
+* **Tasks** テーブルを選択します。
 
-![Delete action creation](img/Delete-action-creation.png)
+![削除アクションの作成](img/Delete-action-creation.png)
 
-At this point, you will see a **new action** named *"deleteTasks"* with *"Remove"* as the default label.
+*"deleteTasks"* という名称で *"削除"* というデフォルトのラベルタイトルが設定された **新規アクション** が表示されます。
 
 ![削除アクション](img/Delete-action-final.png)
 
-You don't need to worry about parameters or properties for this type of action.
+削除アクションは、パラメーターやプロパティを必要としません。
 
-## ⒋ ⒋ ⒋ ⒋ コメント送信アクション
+## ⒋ コメント送信アクション
 
-Now we want to **send a comment** to a **specific email** depending on a specific task. To do so, click on the + button and create a new action named **sendComment**.
+選択したタスクに対して入力されたコメントを **特定のアドレス** に **メール送信する** アクションを作成しましょう。 ＋ボタンをクリックし、**sendComment** という名称の新規アクションを作成します。
 
-![Delete action creation](img/Send-comment-action-creation.png)
+![削除アクションの作成](img/Send-comment-action-creation.png)
 
-Now let's create three parameters:
+作成したアクションに対し、3個のパラメーター (引数) を定義します:
 
-* ＋ボタンの三角部分をクリックし，アクションパラメーターのリストから**Title**を選択します。 送信するメールにタスク名を含めるためです。
-* ＋ボタンをクリックし，**Comment**パラメーターを作成します。 フォーマットは「テキスト」です。
-* 同じ要領で**email**パラメーターを追加し，フォーマットは「メールアドレス」に設定します。
+* 引数エリアの下にある ＋ボタンの三角部分をクリックし、アクションパラメーターのリストから**Title** を選択します。 送信するメールにタスク名を含めるためです。
+* ＋ボタンをクリックし、**Comment** パラメーターを作成します。 フォーマット (入力コントロール) は "テキスト ＞ テキストエリア" です。
+* 同じ要領で **Email** パラメーターを追加し、フォーマットは "テキスト ＞ メールアドレス" に設定します。
 
-Your Actions section should look like this:
+アクションの定義が下図のようになっているのを確認してください:
 
-![Send comment action creation](img/Send-comment-action-definition.png)
+![コメント送信アクションの作成](img/Send-comment-action-definition.png)
 
 ## ⒌ On Mobile App Action メソッド
 
-Click on the Create button to create the *On Mobile App Action* database method.
+アクション一覧の右下の "作成..." ボタンをクリックして *On Mobile App Action* データベースメソッドを開き、必要な処理を追加します。
 
-All of your actions will automatically be included in this database method.
+プロジェクトエディターで定義したアクションの名称は、データベースメソッドに自動挿入されています。
 
-The only thing you need to do is add a reference to your method(s) for the scenario(s) your want to handle.
+アクションに応じた処理を追加して、これを完成させましょう。
 
-Here's the final *On Mobile App Action* database method:
+*On Mobile App Action* データベースメソッドの内容は、以下のようになります:
 
 ```4d
 C_OBJECT($0;$response)
@@ -117,7 +117,7 @@ C_OBJECT($1;$request)
 
 C_OBJECT($o;$context;$request;$result;$parameters)
 
-$request:=$1  // Informations provided by mobile application
+$request:=$1  // モバイルアプリから送られた情報
 
 $context:=$request.context
 $parameters:=$request.parameters
@@ -126,9 +126,9 @@ Case of
 
     : ($request.action="addTasks")
 
-          // Insert here the code for the action "Add…
+          // "追加…
 
-        "
+        " アクション用のコードをここに挿入します
 
         $o:=New object(\
         "dataClass";$context.dataClass;\
@@ -138,9 +138,9 @@ Case of
 
     : ($request.action="editTasks")
 
-          // Insert here the code for the action "Edit…
+          // "編集…
 
-        "
+        " アクション用のコードをここに挿入します
 
         $o:=New object(\
         "dataClass";$context.dataClass;\
@@ -152,7 +152,7 @@ Case of
 
     : ($request.action="deleteTasks")
 
-          // Insert here the code for the action "Remove"
+          // "削除" アクション用のコードをここに挿入します
 
         $o:=New object(\
         "dataClass";$context.dataClass;\
@@ -162,7 +162,7 @@ Case of
 
     : ($request.action="sendComment")
 
-          // Insert here the code for the action "Send Comment"
+          // "コメント送信" アクション用のコードをここに挿入します
 
         $o:=New object(\
         "dataClass";$context.dataClass;\
@@ -174,7 +174,7 @@ Case of
 
     Else 
 
-          // Unknown action
+          // 未知のアクション
 
 End case 
 
@@ -199,7 +199,7 @@ $out:=New object("success";False)
 
 If ($in.dataClass#Null)
 
-    $entity:=ds.Tasks.new()  //新規エンティティの参照を作成
+    $entity:=ds.Tasks.new()  // 新規エンティティの参照を作成します
 
     For each ($key;$in.parameters)
 
@@ -207,11 +207,11 @@ If ($in.dataClass#Null)
 
     End for each 
 
-    $entity.save()  //エンティティを保存
+    $entity.save()  // エンティティを保存します
 
 
-    $out.success:=True  // アクションが成功したことをアプリに通知
-    $out.dataSynchro:=True  // エンティティセレクションのリロードを要求
+    $out.success:=True  // アクションが成功したことをアプリに通知します
+    $out.dataSynchro:=True  // エンティティセレクションのリロードを要求します
     $out.statusText:="Task added"
 
 Else 
@@ -253,19 +253,19 @@ If ($selection.length=1)
 
     If ($status.success)
 
-        $out.success:=True  // アクションが成功したことをアプリに通知
-        $out.dataSynchro:=True  // エンティティのリロードを要求
+        $out.success:=True  // アクションが成功したことをアプリに通知します
+        $out.dataSynchro:=True  // エンティティのリロードを要求します
         $out.statusText:="Task edited"
 
     Else 
 
-        $out:=$status  // ステータスをアプリに通知
+        $out:=$status  // ステータスをアプリに通知します
 
     End if 
 
 Else 
 
-    $out.success:=False  // アクションが失敗したことをアプリに通知
+    $out.success:=False  // アクションが失敗したことをアプリに通知します
 
 End if 
 
@@ -295,19 +295,19 @@ If ($selection.length=1)
 
     If ($entity.length=0)
 
-        $out.success:=True  // アクションが成功したことをアプリに通知
-        $out.dataSynchro:=True  // エンティティのリロードを要求
+        $out.success:=True  // アクションが成功したことをアプリに通知します
+        $out.dataSynchro:=True  // エンティティのリロードを要求します
         $out.statusText:="Task deleted"
 
     Else 
 
-        $out:=$status  // ステータスをアプリに通知
+        $out:=$status  // ステータスをアプリに通知します
 
     End if 
 
 Else 
 
-    $out.success:=False  // アクションが失敗したことをアプリに通知
+    $out.success:=False  // アクションが失敗したことをアプリに通知します
 
 End if 
 
@@ -316,7 +316,7 @@ $0:=$out
 
 ```
 
-### sendEmail
+### sendMail
 
 
 ```4d
@@ -358,18 +358,18 @@ If ($selection.length=1)
 
     $status:=$transporter.send($email)
     If ($status.success)
-        $out.success:=True  // アクションが成功したことをアプリに通知
+        $out.success:=True  // アクションが成功したことをアプリに通知します
         $out.statusText:="Mail sent"
 
     Else 
-        $out.success:=False  // アクションが失敗したことをアプリに通知
+        $out.success:=False  // アクションが失敗したことをアプリに通知します
         $out.statusText:="Mail not sent"
 
     End if 
 
 Else 
 
-    $out.success:=False  // アクションが失敗したことをアプリに通知
+    $out.success:=False  // アクションが失敗したことをアプリに通知します
 
 End if 
 
@@ -378,41 +378,41 @@ $0:=$out
 
 ```
 
-Don't forget to add your own values for the **sendEmail** action.
+**sendMail** メソッドで実行されるコードは、ご利用のメールサーバーに合わせて値を変更してください。
 
 
 
-## ⒎ ⒎ ⒎ ⒎ アプリをビルドする
+## ⒎ アプリをビルドする
 
 
-It's time to build your app!
+あとは、アプリをビルドするだけです！
 
-Now, if you click on the Action button in the navigation bar, you'll be able to **create a new task**.
+ナビゲーションバーのアクションボタンをクリックすると、**新規タスクを作成する** ことができます。
 
-![Create new task](img/Action-parameters-addAction.png)
+![新規タスクの作成](img/Action-parameters-addAction.png)
 
-Holding and maintaining pressure on your new task cell in the List Form, will show that an **Edit...** action is available in the action list.
+リスト画面上で、作成したばかりのタスクのセルを長押しすると、アクションリストが表示され、**編集...** アクションを選択することができます。
 
-![Edit task](img/Action-parameters-editAction.png)
+![タスクの編集](img/Action-parameters-editAction.png)
 
-Send a comment using the **Send comment** action.
+**コメント送信** アクションでメッセージを送信することもできます。
 
-![Send task comment](img/Action-parameters-sendComment.png)
+![タスクコメント送信](img/Action-parameters-sendComment.png)
 
-And finally you can delete an entity using the **Delete...** action.
+**削除** アクションでエンティティを削除することができます。
 
-![Delete task](img/Action-parameters-deleteAction.png)
+![タスクの削除](img/Action-parameters-deleteAction.png)
 
 ## ⒏ これからどうする？
 
-おつかれさまでした！ Your Tasks iOS app is now complete and you can now modify your app data direclty from your device and sychronize it with your server!
+おつかれさまでした！ これでこの iOSアプリが完成しました！　デバイス上で直接データを変更することができ、更新した内容はサーバーとシンクロさせることができます！
 
 
 完成したプロジェクトをダウンロード
 
 <div className="center-button">
 <a className="button button--primary"
-href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/0.0.1.zip">Download completed project</a>
+href="https://github.com/4d-go-mobile/tutorial-ActionParameters/archive/0.0.1.zip">完成したプロジェクトをダウンロード</a>
 </div>
 
 

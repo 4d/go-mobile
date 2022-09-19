@@ -181,9 +181,9 @@ href="https://github.com/4d-go-mobile/tutorial-CustomDataFormatter/archive/66d7e
      }
 }
 ```
-Here is the result in light and dark modes:
+以下は、ライトモードとダークモードでの結果です:
 
-| Light mode                      |           Dark mode            |
+| ライトモード                          |             ダークモード             |
 | ------------------------------- |:------------------------------:|
 | ![データフォーマッター](img/light-bw.png) | ![データフォーマッター](img/dark-bw.png) |
 
@@ -193,9 +193,9 @@ Here is the result in light and dark modes:
 
 
 
-### Optimized color pictures
+### カラー画像の最適化
 
-To optimize the color pictures displayed on your app and adapt them to your color mode, you need to have two pictures: one for the light mode, and one for the dark mode suffixed with `_dark`, as follows:
+アプリに表示されるカラー画像を最適化してカラーモードに適応させるには、以下のように画像が 2枚ずつ必要です: ライトモード用と、`_dark` という接尾辞を持つダークモード用。
 
 ![データフォーマッター](img/Architecture.jpg)
 
@@ -210,32 +210,32 @@ To optimize the color pictures displayed on your app and adapt them to your colo
    }
 }
 ```
-Here is the result in light mode and in dark mode:
+ライトモードとダークモードでの結果は以下の通りです:
 
-| Light mode                         |             Dark mode             |
+| ライトモード                             |              ダークモード               |
 | ---------------------------------- |:---------------------------------:|
 | ![データフォーマッター](img/light-color.png) | ![データフォーマッター](img/dark-color.png) |
 
 ## モバイルプロジェクトを開く
 
-Open the Task Management.4dbase with 4D and go to File > open > Mobile Project... to open the **Tasks**
+Task Management.4dbase を 4D で開き、ファイルメニューの **開く ＞ モバイルプロジェクト…** を選択し、**Tasks** プロジェクトを開きます。
 
-Next, go to the **Labels & Icons section** in the project editor. All of your formatters are available for the different field types you  previously defined in the different formatter manifest.json files:
+次に、プロジェクトエディターの **ラベル & アイコン** セクションを開きます。 manifest.json ファイルに記述したとおりに、各フィールドタイプに応じたフォーマッターが利用できるようになっています:
 
-* Select the **integerToString** formatter for the **Job field**
-* Select the **textToString** formatter for the **Country field**
-* Select the **integerToImage** formatter for the **Task Status**
-* Select the **textToImage** formatter for the **Manager**
+* **Job field** に対して **integerToString** フォーマッターを選択します。
+* **Country field** に対して **textToString** フォーマッターを選択します。
+* **Task Status** に対して **integerToImage** フォーマッターを選択します。
+* **Manager** に対して **textToImage** フォーマッターを選択します。
 
-![Text formatter](img/formatters-icons-&-labels.png)
+![テキストフォーマッター](img/formatters-icons-&-labels.png)
 
-## Build your 4D for iOS app
+## 4D for iOS アプリをビルドする
 
-Build your 4D of iOS app and you'll see that your data formatter is well applied depending on the credit limit.
+4D for iOS アプリをビルドすると、データフォーマッターが適切に適用されているのが確認できます。
 
-![Text formatter](img/formatters-final-result.png)
+![テキストフォーマッター](img/formatters-final-result.png)
 
-Download the completed formatter template folder:
+完成したフォーマッターテンプレート入りプロジェクト:
 
 <div className="center-button">
 <a className="button button--primary"

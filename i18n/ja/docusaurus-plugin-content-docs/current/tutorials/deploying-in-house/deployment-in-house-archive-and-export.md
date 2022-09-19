@@ -1,100 +1,100 @@
 ---
 id: deployment-in-house-archive-and-export
-title: Archive and export your Project
+title: プロジェクトのアーカイブとエクスポート
 ---
 
 > **目標**
 > 
-> * Archive and export your 4D for iOS project
-> * Generate .ipa and manifest files
+> * 4D for iOS プロジェクトをアーカイブし、エクスポートする
+> * .ipaファイルおよびマニフェストファイルを生成する
 
-> **PREREQUISITES**
+> **用意するもの**
 > 
 > * [Apple Enterprise Developer Program](../tutorials/developer-program/register-apple-developer-enterprise-program)
-> * A secured web server
-> * 57 x 57 px icon
-> * 512 x 512 px icon
+> * セキュアな Webサーバー
+> * 57 x 57 px のアイコン
+> * 512 x 512 px のアイコン
 
 
-## ⒈ ⒈ ⒈ ⒈ Xcode configuration
+## ⒈ Xcode の設定
 
-Following validation of your account by Apple, open Xcode and add your Apple Enterprise Developer account in Preferences > Accounts.
+Appleによるアカウントの承認後、Xcode を開き、Preferences > Accounts でApple Enterprise Developer アカウントを追加します。
 
-Xcode will automatically install required provisioning and certificates.
+Xcode は、必要な Provisioning Profile と証明書を自動的にインストールします。
 
-## ⒉ ⒉ ⒉ ⒉ Get your Team ID
+## ⒉ Team ID を取得する
 
-* Log into your Apple Developer Account. You can find your Team ID in Membership.
+* Apple Developer アカウントにログインします。 Team ID は Membership にて確認できます。
 
-![⒉ ⒉ ⒉ Get your Team ID](img/Team-ID-4D-for-iOS.png)
+![Team ID を取得する](img/Team-ID-4D-for-iOS.png)
 
-## ⒊ ⒊ ⒊ ⒊ 4D for iOS configuration
+## ⒊ 4D for iOS の設定
 
-* Launch 4D for iOS
+* 4D for iOS を起動します。
 
-* On the SECTIONS tab:
+* セクションタブにて:
 
-    * General: Enter your Team ID.
+    * 一般: Team ID を入力します。
 
     ![Enterprise-Team-ID](img/Enterprise-Team-ID.png)
 
-    * Publishing: Enter your production URL (HTTPS is mandatory for deployment).
+    * 公開: プロダクションURL を入力します (運用環境では HTTPS が必須です)。
 
-* On the BUILD tab:
-    * Build and Run: Build your project.
+* ビルドタブにて:
+    * ビルドして実行: プロジェクトをビルドします。
 
-## ⒋ ⒋ ⒋ ⒋ Open your project with Xcode
+## ⒋ プロジェクトを Xcode で開く
 
-* From the 4D for iOS Project Editor's BUILD tab, click on **Project > Open the project with Xcode**
+* 4D for iOS プロジェクトエディターのビルドタブで、**プロジェクト > プロジェクトをXcodeで開く...** をクリックします。
 
-![pen your project with Xcode ](img/Open-your-project-Xcode-4D-for-iOS.png)
+![プロジェクトをXcodeで開く ](img/Open-your-project-Xcode-4D-for-iOS.png)
 
-## ⒌ ⒌ ⒌ ⒌ Archive your project from Xcode
+## ⒌ Xcode でプロジェクトをアーカイブする
 
-* From Xcode, go to the simulator Menu and select **Generic iOS Device**
+* Xcode でツールバーのシミュレーター選択メニューを開き、**Generic iOS Device** を選択します。
 
-![Generic iOS Device](img/Deployment-Generic-iOS-Device.png)
+![汎用的iOSデバイス](img/Deployment-Generic-iOS-Device.png)
 
-* Then from the menu, click on Product and select **Archive**
+* 次に、上部メニューから Product をクリックし、**Archive** を選択します。
 
-![Archive your Project](img/Archive-your-Project.png)
+![プロジェクトのアーカイブ](img/Archive-your-Project.png)
 
-## ⒍ ⒍ ⒍ ⒍ Export your project
+## ⒍ プロジェクトをエクスポートする
 
-* At the end of the archive process, the Organizer window appears with the archive you just created
+* アーカイブ処理の最後に、作成したアーカイブを表示する Organizer ウィンドウが表示されます。
 
-* Click **Export**.
+* **Export** をクリックします。
 
-![⒍ ⒍ ⒍ Export your project](img/Organizer-window-archive.png)
+![プロジェクトをエクスポートする](img/Organizer-window-archive.png)
 
-## ⒎ ⒎ ⒎ ⒎ Select your distribution method
+## ⒎ 配布方法を選択する
 
-* Select **Enterprise** and click **Next**.
+* **Enterprise** を選択し、**Next** をクリックします。
 
-![Distribution Method](img/Distribution-Method-selection.png)
+![配布方法](img/Distribution-Method-selection.png)
 
-## ⒏ ⒏ ⒏ ⒏ Select your Enterprise distribution options
+## ⒏ Enterprise distribution options を選択する
 
-* You can leave all option boxes checked.
+* オプションはすべてチェックしたままでかまいません。
 
-![Enterprise distribution options](img/Enterprise-distribution-options.png)
+![企業向け配布オプション](img/Enterprise-distribution-options.png)
 
-* You can choose to let Xcode generate a manifest.plist file for you or generate it manually.
+* manifest.plist ファイルは、Xcode に生成させるか、手動で生成するかを選択することができます。
 
-* Click **Next**.
+* **Next** をクリックします。
 
-#### What is a manifest?
+#### manifest とは？
 
-The manifest is an XML-based property list and should contain:
+manifest は、XMLベースのプロパティリストであり、以下を含む必要があります:
 
-* **URL** : URL pointing to the .ipa file.
-* **display-image**: URL pointing to a 57 x 57 px (72 x 72 px for iPad) PNG icon used during download and installation.
-* **full-size-image**: URL pointing to a 512 x 512 px PNG image representing the iTunes app.
-* **bundle-identifier**: Your app identifier string. You can get it from your app's .plist file.
-* **bundle-version**: Your app's current bundle version string. You can get it from your app's .plist file.
-* **title**: Your app's name.
+* **URL**: .ipa ファイルを指す URL。
+* **display-image**: ダウンロードおよびインストール時に使用される 57 x 57 px (iPad では 72 x 72 px) の PNG アイコンを指す URL。
+* **full-size-image**: iTunes アプリを表す 512 x 512 px の PNG画像を指す URL。
+* **bundle-identifier**: アプリの識別子 (文字列)。 アプリの .plistファイルから取得することができます。
+* **bundle-version**: アプリの現在のバンドルバージョン (文字列)。 アプリの .plistファイルから取得することができます。
+* **title**: アプリ名。
 
-Here is an example of a manifest.plist file :
+以下は、manifest.plist ファイルの一例です:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -143,27 +143,27 @@ Here is an example of a manifest.plist file :
 ```
 
 
-## ⒐ ⒐ ⒐ ⒐ Distribution manifest information
+## ⒐ Distribution manifest information
 
-* We recommand letting Xcode do the job of entering your app URL as well as the icons URLs. You will, of course, have the option to change those URLs later.
+* アプリURL とアイコンURL の入力は、Xcode に任せることをお勧めします。 これらの URL は後で変更することも可能です。
 
-![⒐ ⒐ ⒐ Distribution manifest information](img/Distribution-manifest-information.png)
+![Distribution manifest information](img/Distribution-manifest-information.png)
 
-* Click **Next**.
+* **Next** をクリックします。
 
 
-## STEP 11. Review your app.ipa content
+## 10. アプリケーションの再署名
 
-* Let Xcode manage the **Automatically manage signing** option.
+* **Automatically manage signing** オプションを選択して、Xcode に処理してもらいましょう。
 
-![Review your app.ipa content](img/Re-sign-your-application.png)
+![アプリケーションの再署名](img/Re-sign-your-application.png)
 
-* Click **Next**.
+* **Next** をクリックします。
 
-## STEP 11. Review your app.ipa content
+## 11. app.ipa の内容を確認する
 
-* Here you can verify that your application identifier is correct as well as your Team ID.
+* アプリの識別子と Team ID が正しいかどうかを確認できます。
 
-![Review your app.ipa content](img/Review-ipa-content.png)
+![app.ipa の内容を確認する](img/Review-ipa-content.png)
 
-* Click on **Export** and select where to save your app folder on your computer.
+* **Export** をクリックし、アプリフォルダーの保存場所を選択します。

@@ -3,29 +3,29 @@ id: filter-query-introduction
 title: フィルタークエリ
 ---
 
-In this tutorial, we'll show how to create **filter queries** to display filtered content in the generated mobile app.
+このチュートリアルでは、**フィルタークエリ** を作成し、モバイルアプリに特定の情報だけが表示されるようにします。
 
-Imagine you're an account manager and you want to consult your *In Progress* contracts simply by connecting to your app with your email address.
+目標は、営業担当者がアプリにログインすれば、担当顧客のうち商談ステータスが *進行中* の案件だけが表示されるようにすることです。
 
-First, from the Data section we're going define a **basic filter query** to only display *In Progress* contracts. Then we're going to apply a **user information-based filter** which will depend on the account manager's email.
+はじめに、*進行中 (In Progress)* の商談だけが表示されるよう、データセクションで **基本的なフィルタークエリ** を設定します。 その後、営業担当者のメールアドレスも条件に含まれるよう、**ユーザー情報に基づくフィルタークエリ** を設定します。
 
 ## スタータープロジェクトをダウンロード
 
-Before we begin, be sure to download the **Starter project** which includes a **4DforiOSQueries.4dbase** file (a demo database with a ready-to-use mobile app project)
+はじめに、**スタータープロジェクト** をダウンロードします。**4DforiOSQueries.4dbase** サンプルデータベースには、すぐに使えるモバイルアプリプロジェクトが含まれています。
 
 <div className="center-button">
 <a className="button button--primary"
 href="https://github.com/4d-go-mobile/tutorial-RestrictedQueries/releases/latest/download/tutorial-RestrictedQueries.zip">スタータープロジェクト</a>
 </div>
 
-The database includes a:
+データベースに含まれているもの:
 
-* **CRM table** with all the data we want to display in the generated iOS app
-* **AccountManager table** with basic information about the account managers (email and name).
+* **CRM** テーブル: iOSアプリに表示させたいデータが登録されています。
+* **AccountManager** テーブル: 営業担当者たちの基本情報 (氏名やメールアドレス) が登録されています。
 
 ![CRM（顧客管理）データベース](img/CRMDatabase.png)
 
 
-You're now ready to define your first restricted query.
+早速、最初のフィルタークエリを設定してみましょう！
 
-Open the mobile project by clicking on Open > Mobile Project... and select CRM app > **project.4dmobileapp**.
+ファイルメニューから 開く ＞ モバイルプロジェクト... を選択し、CRM app プロジェクトを開きます。
