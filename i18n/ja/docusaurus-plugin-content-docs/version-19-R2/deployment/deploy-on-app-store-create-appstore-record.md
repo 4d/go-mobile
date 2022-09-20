@@ -71,35 +71,35 @@ App ID を作成するには、デベロッパーアカウントにアクセス�
 
 ## ⒋ App情報
 
-From App Store Connect > App Information:
+App Store Connect で App情報 を開きます。
 
-* Define your app's Privacy Policy URL (optional).
-* Enter a subtitle for your app. This will appear below your app's name throughout the App Store in iOS 11.
-* Select a primary and secondary (optional) category for your app to appear in.
+* アプリのプライバシーポリシーURL を定義します (任意)。
+* アプリのサブタイトルを入力します。 このサブタイトルは、iOS 11では、App Store全体でアプリケーション名の下に表示されます。
+* アプリを表示するプライマリカテゴリおよびセカンダリカテゴリ (任意) を選択します。
 
 ![App情報](img/App-Store-Connect-app-information.png)
 
-## ⒌ ⒌ ⒌ ⒌ Pricing and Availability
+## ⒌ 価格および配信状況
 
-This is where you define the price for your app.
-
-> **TIPS**
-> 
-> You can define limited-time discounts by specifying start and end dates.
-
-## ⒍ ⒍ ⒍ Prepare for Submission
-
-Add all of the assets for your app to appear in the App Store in **Version Information**:
+ここで、アプリの価格を設定します。
 
 > **TIPS**
 > 
-> You can generate all of your screenshots in Simulator (File > New Screen Shot).
+> 開始日と終了日を指定して、期間限定の割引を設定することができます。
 
-![⒍ ⒍ Prepare for Submission](img/Prepare-for-submission-screenshot-description.png)
+## ⒍ 提出準備中
 
-* Add your app screenshots. Screenshots for the iPhone 5.5" Super Retina Display and iPad 12.9" Retina Display are mandatory. For more details, see [Screenshot specifications](https://help.apple.com/app-store-connect/#/devd274dd925).
+**バージョン情報** に、App Store で表示するアプリのアセットをすべて追加します。
 
-* Scroll down and define the **Keywords** and complete the **Description** (this is what users will see in the App Store).
+> **TIPS**
+> 
+> スクリーンショットはすべてシミュレーターで生成できます (File > New Screen Shot)。
+
+![提出準備中](img/Prepare-for-submission-screenshot-description.png)
+
+* アプリのスクリーンショットを追加します。 iPhone 5.5" Super Retina Display、iPad 12.9" Retina Display用のスクリーンショットは必須です。 詳しくは、[スクリーンショットの仕様](https://help.apple.com/app-store-connect/#/devd274dd925) を参照ください。
+
+* 下にスクロールして、**キーワード** を設定し、**概要** を記入します (これは、ユーザーが App Store で見るものです)。
 * You can share updates about your app, including new promotions or in-app purchases, upcoming features or content, limited- time sales, or other events within your app in also add a **Promotional Text** that will appear above your description on the App Store (for customers with devices running iOS 11 or later).
 * Enter a **Support URL** that includes support information for your app. This URL will be visible on the App Store.
 * **Marketing URL** is optional. This can direct users to a marketing website for your app.
