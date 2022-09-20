@@ -77,6 +77,7 @@ Version table:
 | 4D | Android Studio| Windows |
 |---|---|---|
 | 19 R6 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
+| 19 R6 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
 | 19 R5 | [Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 
 
