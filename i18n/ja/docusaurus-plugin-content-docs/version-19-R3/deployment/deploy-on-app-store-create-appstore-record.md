@@ -31,15 +31,15 @@ App ID を作成するには、デベロッパーアカウントにアクセス�
 
 * アプリの名前とバンドルID を定義します。
 
-![App ID](img/Developer-account-App-ID.png)
+![アプリID](img/Developer-account-App-ID.png)
 
 * アプリに含める App Services を定義します。
 
-![App Services](img/App-Services-to-include.png)
+![アプリサービス](img/App-Services-to-include.png)
 
 * **Register** をクリックし、App ID を登録します。
 
-![Confirm App ID](img/Confirm-App-ID.png)
+![アプリIDの確認](img/Confirm-App-ID.png)
 
 ## ⒉ App Store Connect にサインインする
 
@@ -63,7 +63,7 @@ App ID を作成するには、デベロッパーアカウントにアクセス�
 * **SKU**: アプリのユニークな ID (これは非公開で、ユーザーには見えません)
 * **ユーザーアクセス** (任意): アプリへのアクセスを App Manager、Developer、Marketer、Sales のロールを持つユーザーに制限することができます。
 
-![Change BundleID](img/Change-BundleID-Xcode-Project.png)
+![BundleIDを変更する](img/Change-BundleID-Xcode-Project.png)
 
 > **注記**
 > 
@@ -100,24 +100,24 @@ App Store Connect で App情報 を開きます。
 * アプリのスクリーンショットを追加します。 iPhone 5.5" Super Retina Display、iPad 12.9" Retina Display用のスクリーンショットは必須です。 詳しくは、[スクリーンショットの仕様](https://help.apple.com/app-store-connect/#/devd274dd925) を参照ください。
 
 * 下にスクロールして、**キーワード** を設定し、**概要** を記入します (これは、ユーザーが App Store で見るものです)。
-* You can share updates about your app, including new promotions or in-app purchases, upcoming features or content, limited- time sales, or other events within your app in also add a **Promotional Text** that will appear above your description on the App Store (for customers with devices running iOS 11 or later).
-* Enter a **Support URL** that includes support information for your app. This URL will be visible on the App Store.
-* **Marketing URL** is optional. This can direct users to a marketing website for your app.
+* 新しいプロモーションやアプリ内課金、今後の機能やコンテンツ、期間限定セールなど、アプリに関する最新情報を共有するには、**プロモーション用テキスト** を追加すると、App Store で概要の上に表示されます (iOS 11以降を搭載したデバイスのユーザー向け)。
+* アプリのサポート情報を提供する **サポートURL** を入力します。 この URL は、App Store で表示されます。
+* **マーケティングURL** は任意です。 これにより、ユーザーをアプリのマーケティングサイトへ誘導することができます。
 
-In the **iOS App section**:
+**iOS App セクション** にて:
 
-![iOS App section](img/Prepare-for-submission-build-icon.png)
+![iOSアプリセクション](img/Prepare-for-submission-build-icon.png)
 
-Locate your build versions in **Build**.
+**ビルド** で、アプリのビルドバージョンを検索します。
 
-* In **General App Information** area, enter the Copyright, Version, and Trade Representative Contact Information for your app.
-* Your app icon is included in the generated 4D for iOS project.
-* Rating is a required property used by the App Store's parental controls. Click Edit and select the appropriate age category for your app.
+* **App 一般情報** エリアに、アプリの Copyright、バージョン、および代表者の連絡先情報を入力します。
+* アプリのアイコンは、生成された 4D for iOS のプロジェクトに含まれます。
+* 年齢制限指定は、App Store のペアレンタルコントロールで使用される必須のプロパティです。 編集をクリックし、アプリの適切な年齢カテゴリを選択します。
 
-The **App Review Information** and **Version Release** sections include information required by the App Store. The information provided here will not be seen by users.
+**App Review に関する情報** および **バージョンのリリース** の項目には、App Store が必須とする情報が含まれます。 ここで提供される情報は、ユーザーの目に触れることはありません。
 
-![App Review Information](img/Prepare-for-submission-review-information.png)
+![App Review に関する情報](img/Prepare-for-submission-review-information.png)
 
-* **App Review Information**: Confidential contact and security information.
-* **Version Release**: Specifies an automatic or manual publication.
-* Finally, click **Save**.
+* **App Review に関する情報**: 秘密の連絡先やセキュリティ情報。
+* **バージョンのリリース**: 自動または手動での公開を指定します。
+* 最後に **保存** をクリックします。
