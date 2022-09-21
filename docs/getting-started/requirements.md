@@ -15,17 +15,17 @@ System requirements are the same as [4D's minimum system requirements](https://u
 8GB of RAM is recommended.
 
 
-## Software requirements
 
-### 4D
+## 4D
 
 - **Development**: 4D with a 4D Developer Pro licence
 
-- **Deployment**: 4D Server - The 4D Web Server must be started.
+- **Deployment**: 4D Server 
+	- The 4D Web Server must be started.
 	- HTTP and HTTPS ports must be enabled and correctly configured. HTTPS is mandatory for 4D for iOS and 4D for Android deployment.
 
 
-### iOS
+## iOS
 
 [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) installed on your Mac (optional). 
 
@@ -70,7 +70,14 @@ Formatters updated for 4D v19 R3/4D v19.2 and higher are not compatible with pre
 
 :::
 
-### Android
+### Apple Device Developer Mode
+
+As of iOS 16 and Xcode 14, you must enable the **Developer Mode** on your device to be able to develop and debug. 
+
+You need essentially to toggle the "Developer Mode" switch in the "Settings" application of your device. More information is provided in the [Apple documentation](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
+
+
+## Android
 
 Version table:
 
