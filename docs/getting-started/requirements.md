@@ -64,7 +64,7 @@ Version table:
 | 17 R2 | 4.1| 11.3 | 9.3.1 | 10.13.2 |
 </details>
 
-:::Compatibility note
+:::note Compatibility
 
 Formatters updated for 4D v19 R3/4D v19.2 and higher are not compatible with previous 4D releases.
 
@@ -84,7 +84,7 @@ Version table:
 <details><summary>Version history</summary>
 
 | 4D | Android Studio| Windows |
-|---|---|---|---|
+|---|---|---|
 | 19 R4 | Arctic fox 2020.3.1 | Windows 10 64-bit|
 | 19 R3 | Arctic fox 2020.3.1 | Windows 10 64-bit |
 | 19 R2 | 4.1.2 | Windows 10 64-bit |
