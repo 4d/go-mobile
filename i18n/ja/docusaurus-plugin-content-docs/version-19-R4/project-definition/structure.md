@@ -5,7 +5,7 @@ title: ストラクチャー
 
 4Dデータベース内で RESTリソースとして公開されているすべてのテーブルとフィールドがこのページに表示されます。これには (N対1 および 1対N リレーションに基づいた) リレーション属性も含まれます。 実際の表示は、[ORDA のデータストア](https://developer.4d.com/docs/ja/ORDA/overview.html) にとても近いものが表示されます。
 
-![ストラクチャセクション](img/Structure-section-4D-for-iOS.png)
+![ストラクチャーセクション](img/Structure-section-4D-for-iOS.png)
 
 
 このページでは、公開するテーブルおよびフィールドを選択することにより、モバイルデバイス用に複製するストラクチャーのサブセットを定義することができます。
@@ -179,7 +179,7 @@ End if
 
 `exposed` の付いた計算属性は、データクラスの属性リストに表示されます。
 
-![ストラクチャセクション](img/Structure.png)
+![ストラクチャーセクション](img/Structure.png)
 
 **ラベル & アイコン** セクションにおいて (アイコン / 短いラベル / 長いラベル / フォーマット):
 
@@ -211,7 +211,7 @@ End if
 
 **ストラクチャー** セクションでは、全ての[型](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) の属性(テキスト、日付、時間、整数)をモバイルプロジェクト内で選択、使用、表示することができます。これには**[オブジェクト属性](https://developer.4d.com/docs/ja/Concepts/object.html)** (JSON フォーマット) も含まれます。 フィールドリストの中では、オブジェクト属性は**{}** アイコンで表示されます。
 
-![ストラクチャセクション](img/object-attributes-structure.png)
+![ストラクチャーセクション](img/object-attributes-structure.png)
 
 オブジェクト属性は、プロジェクトエディターの他のセクション(データ、ラベル& アイコン、フォーム、など。ただしアクションセクションは除く) での他のフィールドと同様に使用することができます。
 
@@ -224,7 +224,7 @@ End if
 
 生成されたアプリ内での表示結果は以下のようになります:
 
-![ストラクチャセクション](img/object-attributes-rendering.png)
+![ストラクチャーセクション](img/object-attributes-rendering.png)
 
 ### フィルタークエリ
 
