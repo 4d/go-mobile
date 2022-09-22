@@ -55,13 +55,13 @@ The following properties are received in the *mobileInfo* object parameter:
 ||code|Text|User device current language, ex: en|
 |parameters||Object|Any additional information that could be added by the mobile app for custom use|
 |session||Object|Session information|
-||id|Text|UUID of the [Session](https://developer.4d.com/docs/en/API/SessionClass.html) object on the 4D server |
+||id|Text|UUID of the [Session](https://developer.4d.com/docs/API/SessionClass.html) object on the 4D server |
 ||ip|Text|Client IP address|
 
 
 :::note
 
-You can access the [Session object](https://developer.4d.com/docs/en/API/SessionClass.html) automatically created on the 4D server from this database method. You can use this object to control the mobile session. If the server is restarted, the id and privileges of existing mobile sessions are automatically restored. Other session properties such as `Storage`, `expirationDate` and `idleTimeout` are reset.
+You can access the [Session object](https://developer.4d.com/docs/API/SessionClass.html) automatically created on the 4D server from this database method. You can use this object to control the mobile session. If the server is restarted, the id and privileges of existing mobile sessions are automatically restored. Other session properties such as `Storage`, `expirationDate` and `idleTimeout` are reset.
 
 :::
 

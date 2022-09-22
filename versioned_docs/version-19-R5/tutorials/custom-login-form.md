@@ -225,7 +225,7 @@ Here, we use call the *GenerateQRCODE Project Method* using a 4DACTION:
 
 ### generatedQRCode.shtml
 
-In this last page, we use [4D tags](https://developer.4d.com/docs/en/Tags/tags.html) to get the *data* value:
+In this last page, we use [4D tags](https://developer.4d.com/docs/Tags/tags.html) to get the *data* value:
 
 ```html
 <h1>3. SCAN THE QRCODE FROM YOUR PHONE</h1>

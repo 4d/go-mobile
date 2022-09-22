@@ -3,7 +3,7 @@ id: structure
 title: Structure
 ---
 
-This page displays all of the tables and fields that are exposed as REST resources in the 4D database, including relation attributes (based upon many-to-one and one-to-many relations). In fact, the page displays a view similar to [ORDA's datastore](https://developer.4d.com/docs/en/ORDA/overview.html).  
+This page displays all of the tables and fields that are exposed as REST resources in the 4D database, including relation attributes (based upon many-to-one and one-to-many relations). In fact, the page displays a view similar to [ORDA's datastore](https://developer.4d.com/docs/ORDA/overview.html).  
 
 ![Structure section](img/Structure-section-4D-for-iOS.png)
 
@@ -19,7 +19,7 @@ Use this page to define a subset of your physical structure to replicate for mob
 
 The following tables and fields are not listed in this page:
 
-- tables and fields that do not comply with [ORDA rules](https://developer.4d.com/docs/en/ORDA/dsmapping.html#structure-mapping).
+- tables and fields that do not comply with [ORDA rules](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
 - tables and fields whose name start with "`__`" (double underscore).
 
 :::
@@ -58,7 +58,7 @@ The mobile editor automatically displays the list of fields that are eligible to
 
 ![Fields](img/fields.png)
 
-- All [4D scalar field types](https://developer.4d.com/docs/en/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html).
+- All [4D scalar field types](https://developer.4d.com/docs/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/Concepts/blob.html).
 - [Object fields](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
 - [Computed attributes](#computed-attributes)
 - [Alias attributes](#alias-attributes) returning **scalar values** (displayed in *italics*).
@@ -68,7 +68,7 @@ The mobile editor automatically displays the list of fields that are eligible to
 
 :::info
 
-The names are based upon the relation names in the 4D Structure editor, see the [ORDA Structure mapping page](https://developer.4d.com/docs/en/ORDA/dsmapping.html#structure-mapping).
+The names are based upon the relation names in the 4D Structure editor, see the [ORDA Structure mapping page](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
 
 :::
 
@@ -130,11 +130,11 @@ See the [**Relation interactions**](../tutorials/relations/relation-interactions
 
 ## Computed attributes
 
-Whether you're working on Android or iOS, you can display [**computed attributes**](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#computed-attributes-1) in your app once it is generated, by configurating them from the project editor. Computed attributes are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. 
+Whether you're working on Android or iOS, you can display [**computed attributes**](https://developer.4d.com/docs/ORDA/ordaClasses.html#computed-attributes-1) in your app once it is generated, by configurating them from the project editor. Computed attributes are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section. 
 
 :::info
 
-In mobile projects, only **scalar** computed attributes are supported (i.e. computed attributes where the [`get` function](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#function-get-attributename) returns a scalar value (text, boolean, date, time, number)).
+In mobile projects, only **scalar** computed attributes are supported (i.e. computed attributes where the [`get` function](https://developer.4d.com/docs/ORDA/ordaClasses.html#function-get-attributename) returns a scalar value (text, boolean, date, time, number)).
 
 :::
 
@@ -146,7 +146,7 @@ The process is actually quite simple!
 
 ### 4D Side
 
-In your code, specify the attributes you want to use and the computed attribute you want to get, using the [*Class extends*](https://developer.4d.com/docs/en/Concepts/classes.html#class-extends-classname) and [exposed Function](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows: 
+In your code, specify the attributes you want to use and the computed attribute you want to get, using the [*Class extends*](https://developer.4d.com/docs/Concepts/classes.html#class-extends-classname) and [exposed Function](https://developer.4d.com/docs/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows: 
 
 ```4d 
 Class extends Entity
@@ -217,11 +217,11 @@ In the generated mobile application, on iOS or Android, both single attributes a
 
 ## Alias attributes
 
-On Android or iOS, you can use **scalar** [**alias attributes**](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#alias-attributes) in your mobile app. An alias attribute is built above another attribute of the data model, named *target* attribute. The target attribute can belong to a related dataclass (available through any number of relation levels) or to the same dataclass. An alias attribute stores no data, but the path to its target attribute. 
+On Android or iOS, you can use **scalar** [**alias attributes**](https://developer.4d.com/docs/ORDA/ordaClasses.html#alias-attributes) in your mobile app. An alias attribute is built above another attribute of the data model, named *target* attribute. The target attribute can belong to a related dataclass (available through any number of relation levels) or to the same dataclass. An alias attribute stores no data, but the path to its target attribute. 
 
 Alias attibutes must be **exposed** to be available to the editor. They are displayed in *italics*. 
 
-In mobile projects, only **scalar** alias attributes are supported, which means that the [kind](https://developer.4d.com/docs/en/API/DataClassAttributeClass.html#kind) of the last element of the target attribute path must be "storage". Other kinds are not supported. 
+In mobile projects, only **scalar** alias attributes are supported, which means that the [kind](https://developer.4d.com/docs/API/DataClassAttributeClass.html#kind) of the last element of the target attribute path must be "storage". Other kinds are not supported. 
 
 
 Scalar alias attributes can be:
@@ -241,7 +241,7 @@ Scalar alias attributes **cannot be used** as [parameters for sort actions](../p
 
 ## Object attributes
 
-From the **Structure** section, you can select, use and display all [types](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) of attributes in your mobile projects (text, dates, time, integers, etc), including **[object attributes](https://developer.4d.com/docs/en/Concepts/object.html)** (JSON format). In the field list, object attributes are distinguished by their **{}** icon.
+From the **Structure** section, you can select, use and display all [types](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) of attributes in your mobile projects (text, dates, time, integers, etc), including **[object attributes](https://developer.4d.com/docs/Concepts/object.html)** (JSON format). In the field list, object attributes are distinguished by their **{}** icon.
 
 ![Structure section](img/object-attributes-structure.png)
 

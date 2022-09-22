@@ -38,7 +38,7 @@ The following properties are received in the *mobileInfo* object parameter:
 |Property name||Type|Description|
 |---|---|----|---|
 |action||Text|Action name|
-||id|Text|UUID of the [Session](https://developer.4d.com/docs/en/API/SessionClass.html) object on the 4D server|
+||id|Text|UUID of the [Session](https://developer.4d.com/docs/API/SessionClass.html) object on the 4D server|
 ||ip|Text|Session IP|
 |parameters||Object|Action parameters sent from the mobile application|
 |context||Object|Context parameters for the requested action|
@@ -51,7 +51,7 @@ The following properties are received in the *mobileInfo* object parameter:
 
 :::note
 
-You can access the [Session object](https://developer.4d.com/docs/en/API/SessionClass.html) automatically created on the 4D server from this database method. You can use this object to control the mobile session. 
+You can access the [Session object](https://developer.4d.com/docs/API/SessionClass.html) automatically created on the 4D server from this database method. You can use this object to control the mobile session. 
 
 :::
 	
