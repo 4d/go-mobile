@@ -15,17 +15,17 @@ Les prérequis système sont identiques aux [prérequis système basiques de 4D]
 8 Go de RAM sont recommandés.
 
 
-## Configuration logicielle
 
-### 4D
+## 4D
 
 - **Développement**: 4D avec une licence 4D Developer Pro
 
-- **Déploiement**: 4D Server - le Serveur web 4D doit être lancé.
+- **Deployment**: 4D Server
+    - The 4D Web Server must be started.
     - Les ports HTTP et HTTPS doivent être activés et configurés correctement. HTTPS est nécessaire pour le déploiement de 4D for iOS et 4D for Android.
 
 
-### iOS
+## iOS
 
 [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) installé sur votre Mac (facultatif).
 
@@ -70,7 +70,14 @@ Formatters updated for 4D v19 R3/4D v19.2 and higher are not compatible with pre
 
 :::
 
-### Android
+### Apple Device Developer Mode
+
+As of iOS 16 and Xcode 14, you must enable the **Developer Mode** on your device to be able to develop and debug.
+
+You need essentially to toggle the "Developer Mode" switch in the "Settings" application of your device. More information is provided in the [Apple documentation](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
+
+
+## Android
 
 Tableau de versions :
 
