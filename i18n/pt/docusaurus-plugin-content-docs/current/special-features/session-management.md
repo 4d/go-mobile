@@ -53,15 +53,15 @@ By default, the "status" is automatically set to "accepted" if the session is va
 
 ## Session object
 
-Mobile sessions can take advantage of the powerful [4D user sessions](https://developer.4d.com/docs/en/WebServer/sessions.html), when they are enabled on the server. In this case, information stored in the [mobile session file](#session-file) is used to fill the [Session object](https://developer.4d.com/docs/en/API/SessionClass.html) on the server, so that you could share a cart for the same user between their web and mobile sessions, for example.
+Mobile sessions can take advantage of the powerful [4D user sessions](https://developer.4d.com/docs/WebServer/sessions.html), when they are enabled on the server. In this case, information stored in the [mobile session file](#session-file) is used to fill the [Session object](https://developer.4d.com/docs/API/SessionClass.html) on the server, so that you could share a cart for the same user between their web and mobile sessions, for example.
 
-On the mobile project, the [Session object](https://developer.4d.com/docs/en/API/SessionClass.html) is automatically available from:
+On the mobile project, the [Session object](https://developer.4d.com/docs/API/SessionClass.html) is automatically available from:
 
 - the [On Mobile App Authentication](../4d/on-mobile-app-authentication.md) database method
 - the [On Mobile App Action](../4d/on-mobile-app-action.md) database method
 - [webareas](https://github.com/mesopelagique/form-detail-WebArea) in your forms.
 
-With user sessions, you can access and display user data through [4D tags](https://developer.4d.com/docs/en/Tags/tags.html) in [webareas](https://github.com/mesopelagique/form-detail-WebArea). For example, in a page.shtml form, you can write:
+With user sessions, you can access and display user data through [4D tags](https://developer.4d.com/docs/Tags/tags.html) in [webareas](https://github.com/mesopelagique/form-detail-WebArea). For example, in a page.shtml form, you can write:
 
 ```html
 <html><body><h1>You use the following address: <!--#4DTEXT Session.info.mobile.email--> </h1></body></html>
