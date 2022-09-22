@@ -32,7 +32,7 @@ To secure access to the data to embed, a `key.mobileapp` file is automatically g
 
 :::info
 
-The **MobileApps** folder is automatically created in the 4D project's [data folder](https://developer.4d.com/docs/en/Project/architecture.html#data-folder).
+The **MobileApps** folder is automatically created in the 4D project's [data folder](https://developer.4d.com/docs/Project/architecture.html#data-folder).
 
 :::
 
@@ -156,7 +156,7 @@ When a query filter is valid, an icon appears near the table name (![filter](img
 
 :::info
 
-Refer to the [$filter REST documentation](https://developer.4d.com/docs/en/REST/filter.html) for a detailed description of query syntaxes. The string entered in the **Filter query** area is directly passed as parameter to the `$filter=` REST command.
+Refer to the [$filter REST documentation](https://developer.4d.com/docs/REST/filter.html) for a detailed description of query syntaxes. The string entered in the **Filter query** area is directly passed as parameter to the `$filter=` REST command.
 
 :::
 
