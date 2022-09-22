@@ -42,7 +42,7 @@ If both HTTP and HTTPS are enabled, HTTP is used.
 
 :::
 
-Activating the HTTPS port requires that you installed a valid [TLS certificate](https://developer.4d.com/docs/en/Admin/tls.html). You can create test certificates with 4D.
+Activating the HTTPS port requires that you installed a valid [TLS certificate](https://developer.4d.com/docs/Admin/tls.html). You can create test certificates with 4D.
 
 These settings are taken into account only if the [production URL](#production-url) is defined. Otherwise, the local IP address is used.
 
