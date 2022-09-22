@@ -42,7 +42,7 @@ HTTP と HTTPS の両方が有効化されていた場合、HTTP が使用され
 
 :::
 
-HTTPSポートを有効化するには、有効な [TLS 証明書](https://developer.4d.com/docs/ja/Admin/tls.html) をインストールする必要があります。 4D でテスト用証明書を作成することもできます。
+Activating the HTTPS port requires that you installed a valid [TLS certificate](https://developer.4d.com/docs/Admin/tls.html). 4D でテスト用証明書を作成することもできます。
 
 これらの設定は、[プロダクションURL](#プロダクションURL) が定義されている場合にのみ使用されます。 それ以外の場合には、ローカルIDアドレスが使用されます。
 
