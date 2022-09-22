@@ -15,17 +15,17 @@ title: 要件
 メモリは 8GB以上推奨です。
 
 
-## ソフトウェア要件
 
-### 4D
+## 4D
 
 - **開発**: 4D と 4D Developer Pro ライセンス
 
-- **配布**: 4D Server - 4D Webサーバーが起動している必要があります。
+- **Deployment**: 4D Server
+    - The 4D Web Server must be started.
     - HTTP および HTTPS ポートが有効化されており、かつ正しく設定されている必要があります。 4D for iOS および 4D for Android の配布においては、HTTPS は必須となります。
 
 
-### iOS
+## iOS
 
 [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) が Mac にインストールされていること (必須ではありません)。
 
@@ -70,7 +70,14 @@ title: 要件
 
 :::
 
-### Android
+### Apple Device Developer Mode
+
+As of iOS 16 and Xcode 14, you must enable the **Developer Mode** on your device to be able to develop and debug.
+
+You need essentially to toggle the "Developer Mode" switch in the "Settings" application of your device. More information is provided in the [Apple documentation](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
+
+
+## Android
 
 バージョン早見表:
 
