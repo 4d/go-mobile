@@ -53,15 +53,15 @@ title: セッション管理
 
 ## Session オブジェクト
 
-モバイルセッションは、(サーバー上で有効化されていれば) 強力な [4Dユーザーセッション](https://developer.4d.com/docs/ja/WebServer/sessions.html) を活用することができます。 この場合、[モバイルセッションファイル](#セッションファイル) に格納された情報をサーバー上の [Session オブジェクト](https://developer.4d.com/docs/ja/API/SessionClass.html) に格納することができます。これにより、たとえば同一ユーザーのショッピングカートを Webセッションとモバイルセッションで共有することができます。
+Mobile sessions can take advantage of the powerful [4D user sessions](https://developer.4d.com/docs/WebServer/sessions.html), when they are enabled on the server. In this case, information stored in the [mobile session file](#session-file) is used to fill the [Session object](https://developer.4d.com/docs/API/SessionClass.html) on the server, so that you could share a cart for the same user between their web and mobile sessions, for example.
 
-モバイルプロジェクトにおいては、[Session オブジェクト](https://developer.4d.com/docs/ja/API/SessionClass.html) は自動的に次のコンテキストから利用可能です:
+On the mobile project, the [Session object](https://developer.4d.com/docs/API/SessionClass.html) is automatically available from:
 
 - [On Mobile App Authentication](../4d/on-mobile-app-authentication.md) データベースメソッド
 - [On Mobile App Action](../4d/on-mobile-app-action.md) データベースメソッド
 - フォームの [Webエリア](https://github.com/mesopelagique/form-detail-WebArea)
 
-ユーザーセッションを使用すると、[Webエリア](https://github.com/mesopelagique/form-detail-WebArea) の [4Dタグ](https://developer.4d.com/docs/en/Tags/tags.html) を介してユーザーデータを取得・表示することができます。 たとえば、page.shtml フォームに次のようにかけます:
+With user sessions, you can access and display user data through [4D tags](https://developer.4d.com/docs/Tags/tags.html) in [webareas](https://github.com/mesopelagique/form-detail-WebArea). たとえば、page.shtml フォームに次のようにかけます:
 
 ```html
 <html><body><h1>使用しているメールアドレス: <!--#4DTEXT Session.info.mobile.email--> </h1></body></html>
