@@ -34,33 +34,33 @@ $result:=New object() // 戻り値となるオブジェクトの作成を忘れ�
 
 *mobileInfo* オブジェクト引数が受け取るプロパティは以下の通りです:
 
-| プロパティ       |             | タイプ    | 詳細                                                                                      |
-| ----------- | ----------- | ------ | --------------------------------------------------------------------------------------- |
-| email       |             | テキスト   | ユーザーのメールアドレス。 必須ではなく、ゲストアクセスでは空でも構いません                                                  |
-| application |             | Object | モバイルアプリに関する情報                                                                           |
-|             | id          | テキスト   | モバイルアプリの ID                                                                             |
-|             | name        | テキスト   | モバイルアプリの名前                                                                              |
-|             | version     | テキスト   | モバイルアプリのバージョン                                                                           |
-| device      |             | Object | モバイルデバイスについての情報 (通常は携帯電話)                                                               |
-|             | id          | テキスト   | 生成されたデバイス固有の ID                                                                         |
-|             | version     | テキスト   | デバイスのシステムバージョン                                                                          |
-|             | description | テキスト   | デバイスについての詳細                                                                             |
-|             | simulator   | ブール    | デバイスがシミュレーターの場合に true                                                                   |
-| team        |             | Object | Apple Developer Team の情報                                                                |
-|             | id          | テキスト   | チームID (これによってデベロッパーは Xcode プロジェクトの "ビルドと実行" 機能を使用できるようになります)                            |
-| language    |             | Object | ユーザーデバイスの言語設定                                                                           |
-|             | id          | テキスト   | ユーザーデバイスのカレント言語の ID (例: en_US)                                                          |
-|             | region      | テキスト   | ユーザーデバイスのカレントのリージョン設定 (例: US)                                                           |
-|             | code        | テキスト   | ユーザーデバイスのカレント言語 (例: en)                                                                 |
-| parameters  |             | Object | カスタム使用のため、モバイルアプリで追加可能なその他の情報                                                           |
-| session     |             | Object | セッション情報                                                                                 |
-|             | id          | テキスト   | 4Dサーバー上の [Session](https://developer.4d.com/docs/en/API/SessionClass.html) オブジェクトの UUID |
-|             | ip          | テキスト   | クライアントの IPアドレス                                                                          |
+| プロパティ       |             | タイプ    | 詳細                                                                                                 |
+| ----------- | ----------- | ------ | -------------------------------------------------------------------------------------------------- |
+| email       |             | テキスト   | ユーザーのメールアドレス。 必須ではなく、ゲストアクセスでは空でも構いません                                                             |
+| application |             | Object | モバイルアプリに関する情報                                                                                      |
+|             | id          | テキスト   | モバイルアプリの ID                                                                                        |
+|             | name        | テキスト   | モバイルアプリの名前                                                                                         |
+|             | version     | テキスト   | モバイルアプリのバージョン                                                                                      |
+| device      |             | Object | モバイルデバイスについての情報 (通常は携帯電話)                                                                          |
+|             | id          | テキスト   | 生成されたデバイス固有の ID                                                                                    |
+|             | version     | テキスト   | デバイスのシステムバージョン                                                                                     |
+|             | description | テキスト   | デバイスについての詳細                                                                                        |
+|             | simulator   | ブール    | デバイスがシミュレーターの場合に true                                                                              |
+| team        |             | Object | Apple Developer Team の情報                                                                           |
+|             | id          | テキスト   | チームID (これによってデベロッパーは Xcode プロジェクトの "ビルドと実行" 機能を使用できるようになります)                                       |
+| language    |             | Object | ユーザーデバイスの言語設定                                                                                      |
+|             | id          | テキスト   | ユーザーデバイスのカレント言語の ID (例: en_US)                                                                     |
+|             | region      | テキスト   | ユーザーデバイスのカレントのリージョン設定 (例: US)                                                                      |
+|             | code        | テキスト   | ユーザーデバイスのカレント言語 (例: en)                                                                            |
+| parameters  |             | Object | カスタム使用のため、モバイルアプリで追加可能なその他の情報                                                                      |
+| session     |             | Object | セッション情報                                                                                            |
+|             | id          | テキスト   | UUID of the [Session](https://developer.4d.com/docs/API/SessionClass.html) object on the 4D server |
+|             | ip          | テキスト   | クライアントの IPアドレス                                                                                     |
 
 
 :::note
 
-このデータベースメソッドから、4Dサーバー上に自動で作成される [Session オブジェクト](https://developer.4d.com/docs/en/API/SessionClass.html) にアクセスすることができます。 このオブジェクトを使用して、モバイルセッションを制御することができます。 サーバーを再起動した場合、既存のモバイルセッションの ID と権限は自動的に復元されます。 `Storage`、`expirationDate` および `idleTimeout` など、他のセッションプロパティはリセットされます。
+You can access the [Session object](https://developer.4d.com/docs/API/SessionClass.html) automatically created on the 4D server from this database method. このオブジェクトを使用して、モバイルセッションを制御することができます。 サーバーを再起動した場合、既存のモバイルセッションの ID と権限は自動的に復元されます。 `Storage`、`expirationDate` および `idleTimeout` など、他のセッションプロパティはリセットされます。
 
 :::
 
