@@ -71,6 +71,13 @@ Apple Developer Program に加入している必要があります。 目的や�
 
 ## ⒍ インストール
 
+:::info
+
+This step requires that you have enabled the [Apple Device Developer Mode](../getting-started/requirements.md#apple-device-developer-mode).
+
+:::
+
+
 ### Apple Configurator 2 で自動的にインストールする
 
 * アプリが出来がったら、プロジェクトエディターの画面をビルドタブに切り替えます。

@@ -73,6 +73,12 @@ Settings.plist ファイルに log.level を追加すると、ログレベルを
 
 ## iPhone からデバッグする
 
+:::info
+
+This feature requires that you have enabled the [Apple Device Developer Mode](../getting-started/requirements.md#apple-device-developer-mode).
+
+:::
+
 クラッシュした場合、アプリから表示・編集・フィードバックの送信が可能です。
 
 これには:

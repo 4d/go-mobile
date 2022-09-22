@@ -71,6 +71,13 @@ Pode instalar e testar sua aplicação móvel em um aparelho conectado.
 
 ## PASSO 6. Instalação
 
+:::info
+
+This step requires that you have enabled the [Apple Device Developer Mode](../getting-started/requirements.md#apple-device-developer-mode).
+
+:::
+
+
 ### Instale automaticamente com Apple Configurator 2
 
 * Quando seu app estiver pronto, abra a aba BUILD.
