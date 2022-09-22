@@ -71,6 +71,13 @@ Vous aurez besoin d' [Apple configurator 2](https://itunes.apple.com/us/app/appl
 
 ## ÉTAPE 6. Installation
 
+
+:::info
+
+This step requires that you have enabled the [Apple Device Developer Mode](../getting-started/requirements.md#apple-device-developer-mode).
+
+:::
+
 ### Installation automatique avec Apple Configurator 2
 
 * Lorsque votre application est prête, cliquez sur l’onglet GÉNÉRATION.
