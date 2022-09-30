@@ -25,7 +25,7 @@ Next you'll need to define the following:
 
 ![Action section](img/Actions-section-4D-for-iOS.png)
 
-:::note notes
+:::note note
 
 You can sort the **Names** with a drag-and-drop. This operation will set the order in which they will appear in the app's menu.
 
@@ -160,6 +160,7 @@ Here are the different **Formats** you can select for a parameter:
 * Delete 
 * Share
 * Sort
+* Open URL
 
 ### Add action
 
@@ -238,6 +239,38 @@ When you define more than one sort action for a table, mobile users automaticall
 
 
 > When only one sort action is defined for a table, the **sort** menu is not displayed on the mobile app side.
+
+### Open URL action
+
+The **Open URL action** allows your mobile users to open an url from their mobile app, for example to display a web page served by 4D Server in a Web area.
+
+This action is available for any table and any scope (Table or Current entity).
+
+When you select this action, you have to define the URL that will be opened:
+
+![](img/open-url.png)
+
+You can only define a relative URL on the current 4D web server (starting with `/`). 
+
+#### Web Server Side
+
+A userscript is injected by the mobile app in the 4D Web area to provide some javascript code to interact with it. It is available through the `$4d.mobile` object, which provides the following properties and functions:
+
+|Property|||Type|Description|
+|---|---|---|---|---|
+|$4d.mobile|.action|.name|string|name of the action|
+|||.label|string|label of the action|
+|||.shortlabel|string|short label of the action|
+||.dismiss()||Function| closes the native web view|
+||.status(message)||Function|shows a message in native app for the user <br/>message: string<br/>message: Map`<string, any>` with "message" (or "statusText") and "success" (or "level") key|
+||.logger|.log(level, message : string)|Function|shows a message in native app for the developer|
+|||.info(message : string)|Function|shows a message in native app for the developer|
+|||.info(message : string)|Function|shows a message in native app for the developer|
+|||.warning(message : string)|Function|shows a message in native app for the developer|
+|||.error(message : string)|Function|shows a message in native app for the developer|
+|||.debug(message : string)|Function|shows a message in native app for the developer|
+|||.verbose(message : string)|Function|shows a message in native app for the developer|
+
 
 ### On Mobile App Action
 
