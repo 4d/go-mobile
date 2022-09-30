@@ -35,23 +35,23 @@ $result:=New object() // 戻り値となるオブジェクトの作成を忘れ�
 *mobileInfo* オブジェクト引数が受け取るプロパティは以下の通りです:
 
 
-| プロパティ名     |                     | タイプ           | 詳細                                                                                      |
-| ---------- | ------------------- | ------------- | --------------------------------------------------------------------------------------- |
-| action     |                     | テキスト          | アクション名                                                                                  |
-|            | id                  | テキスト          | 4Dサーバー上の [Session](https://developer.4d.com/docs/en/API/SessionClass.html) オブジェクトの UUID |
-|            | ip                  | テキスト          | セッションIP                                                                                 |
-| parameters |                     | Object        | モバイルアプリから送信されたアクション引数                                                                   |
-| context    |                     | Object        | リクエストされたアクションのコンテキスト引数                                                                  |
-|            | dataClass           | テキスト          | 4D のデータクラス名                                                                             |
-|            | entity.primaryKey   | Text, Longint | (任意; 選択されたエンティティに関連するアクションの場合に渡されます) エンティティのプライマリーキー。                                   |
-|            | entity.relationName | テキスト          | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) N対1リレーション名                                        |
-|            | parent.primaryKey   | Text, Longint | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) 親エンティティのプライマリーキー。                                 |
-|            | parent.relationName | テキスト          | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) 1対Nリレーション名                                        |
-|            | parent.dataClass    | テキスト          | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) 親エンティティのデータクラス                                    |
+| プロパティ名     |                     | タイプ           | 詳細                                                                                                 |
+| ---------- | ------------------- | ------------- | -------------------------------------------------------------------------------------------------- |
+| action     |                     | テキスト          | アクション名                                                                                             |
+|            | id                  | テキスト          | UUID of the [Session](https://developer.4d.com/docs/API/SessionClass.html) object on the 4D server |
+|            | ip                  | テキスト          | セッションIP                                                                                            |
+| parameters |                     | Object        | モバイルアプリから送信されたアクション引数                                                                              |
+| context    |                     | Object        | リクエストされたアクションのコンテキスト引数                                                                             |
+|            | dataClass           | テキスト          | 4D のデータクラス名                                                                                        |
+|            | entity.primaryKey   | Text, Longint | (任意; 選択されたエンティティに関連するアクションの場合に渡されます) エンティティのプライマリーキー。                                              |
+|            | entity.relationName | テキスト          | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) N対1リレーション名                                                   |
+|            | parent.primaryKey   | Text, Longint | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) 親エンティティのプライマリーキー。                                            |
+|            | parent.relationName | テキスト          | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) 1対Nリレーション名                                                   |
+|            | parent.dataClass    | テキスト          | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) 親エンティティのデータクラス                                               |
 
 :::note
 
-このデータベースメソッドから、4Dサーバー上に自動で作成される [Session オブジェクト](https://developer.4d.com/docs/en/API/SessionClass.html) にアクセスすることができます。 このオブジェクトを使用して、モバイルセッションを制御することができます。
+You can access the [Session object](https://developer.4d.com/docs/API/SessionClass.html) automatically created on the 4D server from this database method. このオブジェクトを使用して、モバイルセッションを制御することができます。
 
 :::
 

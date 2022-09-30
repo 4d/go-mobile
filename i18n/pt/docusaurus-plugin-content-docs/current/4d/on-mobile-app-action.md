@@ -35,23 +35,23 @@ $result:=New object() //do not forget to create the object to return
 The following properties are received in the *mobileInfo* object parameter:
 
 
-| Property name |                     | Type          | Descrição                                                                                             |
-| ------------- | ------------------- | ------------- | ----------------------------------------------------------------------------------------------------- |
-| action        |                     | Texto         | Action name                                                                                           |
-|               | id                  | Texto         | UUID of the [Session](https://developer.4d.com/docs/en/API/SessionClass.html) object on the 4D server |
-|               | ip                  | Texto         | Session IP                                                                                            |
-| parameters    |                     | Object        | Action parameters sent from the mobile application                                                    |
-| context       |                     | Object        | Context parameters for the requested action                                                           |
-|               | dataClass           | Texto         | 4D dataclass name                                                                                     |
-|               | entity.primaryKey   | Text, Longint | (optional, returned if the action is related to a selected entity). Primary key of the entity.        |
-|               | entity.relationName | Texto         | (optional, returned if the action is related to a linked entity). Many-to-one relation name           |
-|               | parent.primaryKey   | Text, Longint | (optional, returned if the action is related to a linked entity). Primary key of the parent entity.   |
-|               | parent.relationName | Texto         | (optional, returned if the action is related to a linked entity). One-to-many relation name           |
-|               | parent.dataClass    | Texto         | (optional, returned if the action is related to a linked entity). Name of the parent 4D dataclass.    |
+| Property name |                     | Type          | Descrição                                                                                           |
+| ------------- | ------------------- | ------------- | --------------------------------------------------------------------------------------------------- |
+| action        |                     | Texto         | Action name                                                                                         |
+|               | id                  | Texto         | UUID of the [Session](https://developer.4d.com/docs/API/SessionClass.html) object on the 4D server  |
+|               | ip                  | Texto         | Session IP                                                                                          |
+| parameters    |                     | Object        | Action parameters sent from the mobile application                                                  |
+| context       |                     | Object        | Context parameters for the requested action                                                         |
+|               | dataClass           | Texto         | 4D dataclass name                                                                                   |
+|               | entity.primaryKey   | Text, Longint | (optional, returned if the action is related to a selected entity). Primary key of the entity.      |
+|               | entity.relationName | Texto         | (optional, returned if the action is related to a linked entity). Many-to-one relation name         |
+|               | parent.primaryKey   | Text, Longint | (optional, returned if the action is related to a linked entity). Primary key of the parent entity. |
+|               | parent.relationName | Texto         | (optional, returned if the action is related to a linked entity). One-to-many relation name         |
+|               | parent.dataClass    | Texto         | (optional, returned if the action is related to a linked entity). Name of the parent 4D dataclass.  |
 
 :::nota
 
-You can access the [Session object](https://developer.4d.com/docs/en/API/SessionClass.html) automatically created on the 4D server from this database method. You can use this object to control the mobile session.
+You can access the [Session object](https://developer.4d.com/docs/API/SessionClass.html) automatically created on the 4D server from this database method. You can use this object to control the mobile session.
 
 :::
 

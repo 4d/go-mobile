@@ -34,33 +34,33 @@ $result:=New object() //do not forget to create the object to return
 
 The following properties are received in the *mobileInfo* object parameter:
 
-| Propiedad   |             | Type     | Descripción                                                                                           |
-| ----------- | ----------- | -------- | ----------------------------------------------------------------------------------------------------- |
-| email       |             | Texto    | User email. Not mandatory, can be empty for guest access                                              |
-| application |             | Object   | Information about the mobile application                                                              |
-|             | id          | Texto    | Mobile application id                                                                                 |
-|             | name        | Texto    | Mobile application name                                                                               |
-|             | version     | Texto    | Mobile application version                                                                            |
-| device      |             | Object   | Information about the mobile device (usually, a mobile phone)                                         |
-|             | id          | Texto    | Generated unique device id                                                                            |
-|             | version     | Texto    | System version of the device                                                                          |
-|             | description | Texto    | Description of the device                                                                             |
-|             | simulator   | Booleano | True if the device is a simulator                                                                     |
-| team        |             | Object   | Apple Developer Team information                                                                      |
-|             | id          | Texto    | Team id (allows developers to use the Xcode project Build and Run functionality)                      |
-| language    |             | Object   | Language settings of the user device                                                                  |
-|             | id          | Texto    | User device current language id, ex: en_US                                                            |
-|             | region      | Texto    | User device current region, ex: US                                                                    |
-|             | code        | Texto    | User device current language, ex: en                                                                  |
-| parameters  |             | Object   | Any additional information that could be added by the mobile app for custom use                       |
-| session     |             | Object   | Session information                                                                                   |
-|             | id          | Texto    | UUID of the [Session](https://developer.4d.com/docs/en/API/SessionClass.html) object on the 4D server |
-|             | ip          | Texto    | Client IP address                                                                                     |
+| Propiedad   |             | Type     | Descripción                                                                                        |
+| ----------- | ----------- | -------- | -------------------------------------------------------------------------------------------------- |
+| email       |             | Texto    | User email. Not mandatory, can be empty for guest access                                           |
+| application |             | Object   | Information about the mobile application                                                           |
+|             | id          | Texto    | Mobile application id                                                                              |
+|             | name        | Texto    | Mobile application name                                                                            |
+|             | version     | Texto    | Mobile application version                                                                         |
+| device      |             | Object   | Information about the mobile device (usually, a mobile phone)                                      |
+|             | id          | Texto    | Generated unique device id                                                                         |
+|             | version     | Texto    | System version of the device                                                                       |
+|             | description | Texto    | Description of the device                                                                          |
+|             | simulator   | Booleano | True if the device is a simulator                                                                  |
+| team        |             | Object   | Apple Developer Team information                                                                   |
+|             | id          | Texto    | Team id (allows developers to use the Xcode project Build and Run functionality)                   |
+| language    |             | Object   | Language settings of the user device                                                               |
+|             | id          | Texto    | User device current language id, ex: en_US                                                         |
+|             | region      | Texto    | User device current region, ex: US                                                                 |
+|             | code        | Texto    | User device current language, ex: en                                                               |
+| parameters  |             | Object   | Any additional information that could be added by the mobile app for custom use                    |
+| session     |             | Object   | Session information                                                                                |
+|             | id          | Texto    | UUID of the [Session](https://developer.4d.com/docs/API/SessionClass.html) object on the 4D server |
+|             | ip          | Texto    | Client IP address                                                                                  |
 
 
 :::nota
 
-You can access the [Session object](https://developer.4d.com/docs/en/API/SessionClass.html) automatically created on the 4D server from this database method. You can use this object to control the mobile session. If the server is restarted, the id and privileges of existing mobile sessions are automatically restored. Other session properties such as `Storage`, `expirationDate` and `idleTimeout` are reset.
+You can access the [Session object](https://developer.4d.com/docs/API/SessionClass.html) automatically created on the 4D server from this database method. You can use this object to control the mobile session. If the server is restarted, the id and privileges of existing mobile sessions are automatically restored. Other session properties such as `Storage`, `expirationDate` and `idleTimeout` are reset.
 
 :::
 

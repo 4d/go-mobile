@@ -196,7 +196,7 @@ Se soportan los siguientes tipos de campos:
 
 :::nota
 
-Para más información sobre estos tipos de campo, consulte [**esta página**](https://developer.4d.com/docs/en/Concepts/data-types.html).
+For more information on these field types, refer to [**this page**](https://developer.4d.com/docs/Concepts/data-types.html).
 
 :::
 

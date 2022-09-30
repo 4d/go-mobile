@@ -196,7 +196,7 @@ Os tipos de campo abaixo são compatíveis:
 
 :::nota
 
-Para saber mais sobre estes tipos de campo, consulte [**esta página**](https://developer.4d.com/docs/en/Concepts/data-types.html).
+For more information on these field types, refer to [**this page**](https://developer.4d.com/docs/Concepts/data-types.html).
 
 :::
 

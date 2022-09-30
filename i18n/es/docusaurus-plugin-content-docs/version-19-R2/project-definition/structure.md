@@ -3,7 +3,7 @@ id: structure
 title: Estructura
 ---
 
-This page displays all of the tables and fields that are exposed as REST resources in the 4D database, including relation attributes (based upon many-to-one and one-to-many relations). In fact, the page displays a view similar to [ORDA's datastore](https://developer.4d.com/docs/en/ORDA/overview.html).
+This page displays all of the tables and fields that are exposed as REST resources in the 4D database, including relation attributes (based upon many-to-one and one-to-many relations). In fact, the page displays a view similar to [ORDA's datastore](https://developer.4d.com/docs/ORDA/overview.html).
 
 ![Structure section](img/Structure-section-4D-for-iOS.png)
 
@@ -19,7 +19,7 @@ Use this page to define a subset of your physical structure to replicate for mob
 
 The following tables and fields are not listed in this page:
 
-- tables and fields that do not comply with [ORDA rules](https://developer.4d.com/docs/en/ORDA/dsmapping.html#structure-mapping).
+- tables and fields that do not comply with [ORDA rules](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
 - tables and fields whose name start with "`__`" (double underscore).
 
 :::
@@ -52,7 +52,7 @@ The mobile editor automatically displays the list of fields that are eligible to
 
 ![Fields](img/fields.png)
 
-- All [4D scalar field types](https://developer.4d.com/docs/en/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html) and [Object](https://developer.4d.com/docs/en/Concepts/object.html).
+- All [4D scalar field types](https://developer.4d.com/docs/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/Concepts/blob.html) and [Object](https://developer.4d.com/docs/Concepts/object.html).
 - Relation attributes (Many-to-one and One-to-many) are supported and can be selected just as fields. They have specific icons:
 
 Many to one relation icon:  ![relation1](img/manyto1.png)
@@ -61,7 +61,7 @@ One to many relation icon: ![relationN](img/1tomany.png)
 
 :::info
 
-The names are based upon the relation names in the 4D Structure editor, see the [ORDA Structure mapping page](https://developer.4d.com/docs/en/ORDA/dsmapping.html#structure-mapping).
+The names are based upon the relation names in the 4D Structure editor, see the [ORDA Structure mapping page](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
 
 :::
 
