@@ -3,10 +3,13 @@ id: actions
 title: Actions
 ---
 
-This section allows you to:
+The 4D Mobile Project editor allows you to create actions to include in your mobile app. 
 
-* create actions to execute 4D code from your iOS app.
-* define and add parameters to your actions.
+You can use [preset actions](#preset-actions) or custom actions and [define their parameters](#add-parameters-to-your-actions). 
+
+On the 4D side, you can execute 4D code in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method.
+
+Actions are automatically available in the [mobile interface](mobile-app-side).
 
 
 ## Project Editor Side
@@ -242,19 +245,20 @@ When you define more than one sort action for a table, mobile users automaticall
 
 ### Open URL action
 
-The **Open URL action** allows your mobile users to open an url from their mobile app, for example to display a web page served by 4D Server in a Web area.
-
-This action is available for any table and any scope (Table or Current entity).
+The **Open URL action** allows your mobile users to open an url from their mobile app. This action will display a web page served by 4D Server in a web area from within the mobile app.
 
 When you select this action, you have to define the URL that will be opened:
 
 ![](img/open-url.png)
 
-You can only define a relative URL on the current 4D web server (starting with `/`). 
+You can only define a URL starting with `/`, i.e. relative to the current 4D web folder. 
+
+This action can be set for any table and any scope (Table or Current entity). Like other actions, the Open URL action will be automatically available in the [mobile app interface](#mobile-app-side).
+
 
 #### Web Server Side
 
-A userscript is injected by the mobile app in the 4D Web area to provide some javascript code to interact with it. It is available through the `$4d.mobile` object, which provides the following properties and functions:
+A userscript is injected by the mobile app in the web area to provide some javascript code to interact with it. It is available in the page served by the web server through the `$4d.mobile` object, which provides the following properties and functions:
 
 |Property|||Type|Description|
 |---|---|---|---|---|
@@ -270,6 +274,11 @@ A userscript is injected by the mobile app in the 4D Web area to provide some ja
 |||.error(message : string)|Function|shows a message in native app for the developer|
 |||.debug(message : string)|Function|shows a message in native app for the developer|
 |||.verbose(message : string)|Function|shows a message in native app for the developer|
+
+
+#### 4D Server Side 
+
+On the 4D Server side, you can get the context of the app (entity and/or dataclass) in the `On Web authentication` or `On Web connection` database methods, where you need to call the Mobile App Server.
 
 
 ### On Mobile App Action
@@ -403,7 +412,7 @@ Here are the different formats available on the generated application:
 
 ## Offline mode actions
 
-The user of an app can draft, store and queue action requests, even if he’s working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.).  All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
+The user of an app can draft, store and queue action requests, even if they are working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.). All these tasks are placed in the Pending actions list until the network is accessible. Once the user is online, all pending actions are consistently synchronized, executed and then visible in the Completed actions list.
 
 Pending tasks can be visualized and opened from:
 
@@ -430,19 +439,20 @@ They display all the tasks related to the table or to the entity that you are cu
 
 Due to your server business logic, some tasks could be rejected. For mobile users, it is then possible to edit and to retry sending the relevant pending tasks. To do so, you can display a status text describing, in the "Complete" actions history, the reason of the failure. For example, you can reject an action sent by a mobile user to the server and inform him that the operation has failed. In that case, you can set the `success` value to `False` and provide a message in `statusText`, as follows:
 
- ```4d
+```4d
  $response:=New object("success"; False; "statusText"; "Operation failed"))
- ```
+```
+
  You can even add some errors by action parameters for the `alphaField` parameter, for example:
  
-  ```4d
+```4d
 $response.errors:=New collection(New object("parameter"; "alphaField"; "message"; "Alpha field must contains a valide value")
-  ```
+```
  
 
-## iOS app Side
+## Mobile app Side
 
-In your iOS app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section. 
+In your mobile app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section. 
 
 ### Table List forms
 
