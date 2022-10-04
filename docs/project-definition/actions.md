@@ -5,7 +5,7 @@ title: Actions
 
 The 4D Mobile Project editor allows you to create actions to include in your mobile app. 
 
-You can use [preset actions](#preset-actions) or custom actions and [define their parameters](#add-parameters-to-your-actions). 
+You can use [preset actions](#preset-actions) or [custom actions](../tutorials/actions/define-first-action.md) and [define their parameters](#add-parameters-to-your-actions). 
 
 On the 4D side, you can execute 4D code in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method.
 
@@ -253,7 +253,11 @@ When you select this action, you have to define the URL that will be opened:
 
 You can only define a URL starting with `/`, i.e. relative to the current 4D web folder. 
 
-This action can be set for any table and any scope (Table or Current entity). Like other actions, the Open URL action will be automatically available in the [mobile app interface](#mobile-app-side).
+This action can be set for any table and any scope (Table or Current entity). Like other actions, the Open URL action will be automatically available in the [mobile app interface](#mobile-app-side) (short or long label).
+
+![](img/OpenURL-mobile-app.gif)
+
+To close the web page and get back to the mobile app interface, use the `$4d.mobile.dismiss()` function from within the page (see below). 
 
 
 #### Web Server Side
@@ -276,9 +280,13 @@ A userscript is injected by the mobile app in the web area to provide some javas
 |||.verbose(message : string)|Function|shows a message in native app for the developer|
 
 
-#### 4D Server Side 
+:::tip
 
-On the 4D Server side, you can get the context of the app (entity and/or dataclass) in the `On Web authentication` or `On Web connection` database methods, where you need to call the Mobile App Server.
+On the 4D Server side, you can get the context of the app (current entity and/or dataclass) in the`On Web connection` database method: in this method, call the [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) component and use its [WebHandler class](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md).
+
+:::
+
+
 
 
 ### On Mobile App Action
