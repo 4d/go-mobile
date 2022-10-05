@@ -9,7 +9,7 @@ You can use [preset actions](#preset-actions) or [custom actions](../tutorials/a
 
 On the 4D side, you can execute 4D code in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method.
 
-Actions are automatically available in the [mobile interface](mobile-app-side).
+Actions are automatically available in the [mobile interface](#mobile-app-side).
 
 
 ## Project Editor Side
@@ -158,8 +158,8 @@ Here are the different **Formats** you can select for a parameter:
 
 4D mobile projects include the following (predefined) preset actions to manage your app content:
 
-* Edit 
 * Add 
+* Edit 
 * Delete 
 * Share
 * Sort
@@ -247,22 +247,39 @@ When you define more than one sort action for a table, mobile users automaticall
 
 The **Open URL action** allows your mobile users to open an url from their mobile app. This action will display a web page served by 4D Server in a web area from within the mobile app.
 
-When you select this action, you have to define the URL that will be opened:
+When you select this action, you have to define the path that will be opened:
 
 ![](img/open-url.png)
 
-You can only define a URL starting with `/`, i.e. relative to the current 4D web folder. 
+You can only define a path starting with `/`, i.e. relative to the [current 4D web folder](https://developer.4d.com/docs/WebServer/webServerConfig.html#root-folder). 
 
-This action can be set for any table and any scope (Table or Current entity). Like other actions, the Open URL action will be automatically available in the [mobile app interface](#mobile-app-side) (short or long label).
+This action can be set for any table and any scope (Table or Current entity). Like other actions, the Open URL action will be automatically available in the [mobile app interface](#mobile-app-side) (short or long label). 
 
-![](img/OpenURL-mobile-app.gif)
+:::note
 
 To close the web page and get back to the mobile app interface, use the `$4d.mobile.dismiss()` function from within the page (see below). 
 
+:::
 
 #### Web Server Side
 
-A userscript is injected by the mobile app in the web area to provide some javascript code to interact with it. It is available in the page served by the web server through the `$4d.mobile` object, which provides the following properties and functions:
+The request sent to the server contains the context of the app (current entity and/or dataclass) in the `X-QMobile-Context` header. The content of this header is formatted in JSON and encoded in base64. 
+
+:::tip
+
+You can get the context information already decoded as object using the [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) component and its [WebHandler class](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md).
+
+:::
+
+Context information can be processed in the web page to return through standard 4D web server features:
+
+- [.shtml template pages](https://developer.4d.com/docs/WebServer/templates.html) 
+- [On Web Connection database method](https://developer.4d.com/docs/WebServer/httpRequests.html#on-web-connection).
+
+
+#### Web Area Side
+
+For your page to interact with the mobile app, some javascript code is automatically provided in the `$4d.mobile` object. This object contains the following properties and functions:
 
 |Property|||Type|Description|
 |---|---|---|---|---|
@@ -270,7 +287,7 @@ A userscript is injected by the mobile app in the web area to provide some javas
 |||.label|string|label of the action|
 |||.shortlabel|string|short label of the action|
 ||.dismiss()||Function| closes the native web view|
-||.status(message)||Function|shows a message in native app for the user <br/>message: string<br/>message: Map`<string, any>` with "message" (or "statusText") and "success" (or "level") key|
+||.status(message)||Function|shows a message in native app for the user <br/>message: string<br/>message: object with "message" (or "statusText") and "success" (or "level") keys|
 ||.logger|.log(level, message : string)|Function|shows a message in native app for the developer|
 |||.info(message : string)|Function|shows a message in native app for the developer|
 |||.info(message : string)|Function|shows a message in native app for the developer|
@@ -279,12 +296,6 @@ A userscript is injected by the mobile app in the web area to provide some javas
 |||.debug(message : string)|Function|shows a message in native app for the developer|
 |||.verbose(message : string)|Function|shows a message in native app for the developer|
 
-
-:::tip
-
-On the 4D Server side, you can get the context of the app (current entity and/or dataclass) in the`On Web connection` database method: in this method, call the [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) component and use its [WebHandler class](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md).
-
-:::
 
 
 
