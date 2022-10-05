@@ -297,6 +297,11 @@ For your page to interact with the mobile app, some javascript code is automatic
 |||.verbose(message : string)|Function|shows a message in native app for the developer|
 
 
+:::info See also
+
+Blog post: [4D for Mobile : Display Web Pages in your Mobile Apps](https://blog.4d.com/4d-for-mobile-di…your-mobile-apps/)
+
+:::
 
 
 
