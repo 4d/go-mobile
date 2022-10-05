@@ -249,7 +249,7 @@ The **Open URL action** allows your mobile users to open an url from their mobil
 
 When you select this action, you have to define the path that will be opened:
 
-![](img/open-url.png)
+![](img/open-url-action.png)
 
 You can only define a path starting with `/`, i.e. relative to the [current 4D web folder](https://developer.4d.com/docs/WebServer/webServerConfig.html#root-folder). 
 
@@ -396,6 +396,7 @@ Here is an example of a dynamic choice list:
         "text"
     ],
     "format":"push",
+
     "choiceList": {
         "dataSource": {
             "dataClass": "Contact",
