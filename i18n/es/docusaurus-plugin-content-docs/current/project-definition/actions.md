@@ -3,10 +3,13 @@ id: actions
 title: Actions
 ---
 
-Esta sección le permite:
+The 4D Mobile Project editor allows you to create actions to include in your mobile app.
 
-* crear acciones para ejecutar código 4D desde su aplicación iOS.
-* definir y añadir parámetros a sus acciones.
+You can use [preset actions](#preset-actions) or [custom actions](../tutorials/actions/define-first-action.md) and [define their parameters](#add-parameters-to-your-actions).
+
+On the 4D side, you can execute 4D code in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method.
+
+Actions are automatically available in the [mobile interface](#mobile-app-side).
 
 
 ## En el editor de proyectos
@@ -25,7 +28,7 @@ A continuación, deberá definir lo siguiente:
 
 ![Action section](img/Actions-section-4D-for-iOS.png)
 
-:::nota notas
+:::note note
 
 You can sort the **Names** with a drag-and-drop. This operation will set the order in which they will appear in the app's menu.
 
@@ -155,11 +158,12 @@ Estos son los diferentes **formatos** que puede seleccionar para un parámetro:
 
 Los proyectos 4D mobile incluyen las siguientes acciones predefinidas para gestionar el contenido de su aplicación:
 
-* Acción de edición
 * Acción de añadir
+* Acción de edición
 * Acción de eliminar
 * Compartir
 * Ordenar
+* Open URL
 
 ### Añadir acción
 
@@ -238,6 +242,68 @@ Cuando se define más de una acción de ordenación para una tabla, los usuarios
 
 
 > Cuando sólo se define una acción de ordenación para una tabla, el menú **ordenación** no se muestra en la parte de la aplicación móvil.
+
+### Open URL action
+
+The **Open URL action** allows your mobile users to open an url from their mobile app. This action will display a web page served by 4D Server in a web area from within the mobile app.
+
+When you select this action, you have to define the path that will be opened:
+
+![open url](img/open-url-action.png) ![open url](img/open-url-action.png)
+
+You can only define a path starting with `/`, i.e. relative to the [current 4D web folder](https://developer.4d.com/docs/WebServer/webServerConfig.html#root-folder).
+
+This action can be set for any table and any scope (Table or Current entity). Like other actions, the Open URL action will be automatically available in the [mobile app interface](#mobile-app-side) (short or long label).
+
+:::nota
+
+To close the web page and get back to the mobile app interface, use the `$4d.mobile.dismiss()` function from within the page (see below).
+
+:::
+
+#### Web Server Side
+
+The request sent to the server contains the context of the app (current entity and/or dataclass) in the `X-QMobile-Context` header. The content of this header is formatted in JSON and encoded in base64.
+
+:::consejo
+
+You can get the context information already decoded as object using the [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) component and its [WebHandler class](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md).
+
+:::
+
+Context information can be processed in the web page to return through standard 4D web server features:
+
+- [.shtml template pages](https://developer.4d.com/docs/WebServer/templates.html)
+- [On Web Connection database method](https://developer.4d.com/docs/WebServer/httpRequests.html#on-web-connection).
+
+
+#### Web Area Side
+
+For your page to interact with the mobile app, some javascript code is automatically provided in the `$4d.mobile` object. This object contains the following properties and functions:
+
+| Propiedad  |                  |                               | Type     | Descripción                                                                                                                                                      |
+| ---------- | ---------------- | ----------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $4d.mobile | .action          | .name                         | string   | name of the action                                                                                                                                               |
+|            |                  | .label                        | string   | label of the action                                                                                                                                              |
+|            |                  | .shortlabel                   | string   | short label of the action                                                                                                                                        |
+|            | .dismiss()       |                               | Function | closes the native web view                                                                                                                                       |
+|            | .status(message) |                               | Function | shows a message in native app for the user <br/>message: string<br/>message: object with "message" (or "statusText") and "success" (or "level") keys |
+|            | .logger          | .log(level, message : string) | Function | shows a message in native app for the developer                                                                                                                  |
+|            |                  | .info(message : string)       | Function | shows a message in native app for the developer                                                                                                                  |
+|            |                  | .info(message : string)       | Function | shows a message in native app for the developer                                                                                                                  |
+|            |                  | .warning(message : string)    | Function | shows a message in native app for the developer                                                                                                                  |
+|            |                  | .error(message : string)      | Function | shows a message in native app for the developer                                                                                                                  |
+|            |                  | .debug(message : string)      | Function | shows a message in native app for the developer                                                                                                                  |
+|            |                  | .verbose(message : string)    | Function | shows a message in native app for the developer                                                                                                                  |
+
+
+:::info See also
+
+Blog post: [4D for Mobile : Display Web Pages in your Mobile Apps](https://blog.4d.com/4d-for-mobile-di…your-mobile-apps/)
+
+:::
+
+
 
 ### On Mobile App Action
 
@@ -328,6 +394,7 @@ Here is an example of a dynamic choice list:
         "text"
     ],
     "format":"push",
+
     "choiceList": {
         "dataSource": {
             "dataClass": "Contact",
@@ -368,7 +435,7 @@ Here are the different formats available on the generated application:
 
 ## Acciones en modo sin conexión
 
-El usuario de una aplicación puede redactar, almacenar y poner en cola solicitudes de acción, incluso si está trabajando sin conexión (añadir el número de teléfono de un cliente, subir una foto, imprimir una factura o un presupuesto, borrar una dirección, etc.).  Todas estas tareas se colocan en la lista de acciones pendientes hasta que la red sea accesible. Una vez que el usuario está en línea, todas las acciones pendientes se sincronizan sistemáticamente, se ejecutan y son visibles en la lista de acciones completadas.
+The user of an app can draft, store and queue action requests, even if they are working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.). Todas estas tareas se colocan en la lista de acciones pendientes hasta que la red sea accesible. Una vez que el usuario está en línea, todas las acciones pendientes se sincronizan sistemáticamente, se ejecutan y son visibles en la lista de acciones completadas.
 
 Las tareas pendientes pueden visualizarse y abrirse desde:
 
@@ -395,19 +462,20 @@ Muestran todas las tareas relacionadas con la tabla o con la entidad que se est�
 
 Debido a la lógica de negocio de su servidor, algunas tareas podrían ser rechazadas. Para los usuarios de móviles, es posible entonces editar y reintentar el envío de las tareas pendientes correspondientes. Para ello, puede mostrar un texto de estado que describa, en el historial de acciones "Completas", el motivo del fallo. Por ejemplo, puede rechazar una acción enviada por un usuario móvil al servidor e informarle que la operación ha fallado. En ese caso, puede definir el valor de `success` como `False` y poner un mensaje en `statusText`, como se indica a continuación:
 
- ```4d
+```4d
  $response:=New object("success"; False; "statusText"; "Operación fallida"))
- ```
+```
+
  Incluso puede añadir algunos errores por parámetros de acción para el parámetro `alphaField`, por ejemplo:
 
-  ```4d
+```4d
 $response.errors:=New collection(New object("parameter"; "alphaField"; "message"; "El campo Alfa debe contener un valor válido")
-  ```
+```
 
 
-## aplicación iOS
+## Mobile app Side
 
-En su aplicación iOS, las acciones están disponibles de diferentes formas en sus formularios listados y detallados, según las plantillas que seleccione en la sección Formularios.
+In your mobile app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section.
 
 ### Formularios Lista en tabla
 
