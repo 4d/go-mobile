@@ -44,6 +44,6 @@ Available Credit フィールドを、通貨として定義してみましょう
 
 こちらが、Numbersテーブルについて選択されたリストフォームと詳細フォームの iOSアプリでの最終的な結果です。
 
-![でータフォーマッターの結果/iPhone](img/result-data-formatter-iphone.png)
+![iPhoneでのデータフォーマッターの結果](img/result-data-formatter-iphone.png)
 
 以上です！ **ラベル& アイコン** で定義されたとおりに、フィールドがフォーマットされているのが確認できます。
