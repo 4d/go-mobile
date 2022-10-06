@@ -111,7 +111,7 @@ Stack View にビューを 2つ追加し、制約も設定できました。次�
 
 ![ラベル追加](img/add-label1-storyboard.png)
 
-ラベルをダブルクリックし、`___FIELD_LABEL___` に名称変更します。 **Attribute inspector** でフォントを**Helvetica Neue Light 18.0** に、カラーを **BackgroundColor** に設定します。
+ラベルをダブルクリックし、`___FIELD_LABEL___` に名称変更します。 **Attribute inspector** でフォントを **Helvetica Neue Light 18.0** に、カラーを **BackgroundColor** に設定します。
 
 ![タイトルのラベルフォントと文字カラー](img/title-label-font-and-color.png)
 
@@ -121,7 +121,7 @@ Title ラベルを複製し、幅を 339、高さを 44 に変更します。 X�
 
 ![ラベル追加](img/add-label2-storyboard.png)
 
-ラベルをダブルクリックし、`<___FIELD_LABEL___>` に名称変更します。 **Attribute inspector** でフォントを**Helvetica Neue Light 20.0** に、カラーを **Black Color** に設定します:
+ラベルをダブルクリックし、`<___FIELD_LABEL___>` に名称変更します。 **Attribute inspector** でフォントを **Helvetica Neue Light 20.0** に、カラーを **Black Color** に設定します:
 
 ![内容のラベルフォントと文字カラー](img/content-label-font-and-color.png)
 
@@ -256,7 +256,7 @@ Field View 2 を選択し、下記のように設定します:
 
 ![iPhone画面](img/fieldview2-corner-radius.png)
 
-これで、完成したカスタムテンプレートがプロジェクトエディターで使用できるようになりました！
+カスタマイズしたプロジェクトを実際にビルドしてみましょう！
 
 ![カスタムテンプレート（完成）](img/custom-template-final-result.png)
 
