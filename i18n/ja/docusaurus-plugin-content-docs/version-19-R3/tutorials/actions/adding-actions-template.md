@@ -61,7 +61,7 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 
 #### Ｂ エンティティアクションタグを追加
 
-ツリーを展開して Animatable Table View を選択し、Identity Inspector で **User Defined Runtime Attributes** に以下の記述を追加します:
+ツリーを展開して Animatable Table View を選択し、Identity inspector で **User Defined Runtime Attributes** に以下の記述を追加します:
 
 * Key Path: `actions`
 * Type: `String`

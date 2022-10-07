@@ -11,7 +11,7 @@ A funcionalidade **4D go mobile** inclui **4D for iOS** e **4D for Android**.
 
 4D for iOS and 4D for Android  estão incluídos em um único componente integrado 4D. You can create a mobile project and decide to build it for iOS, for Android, or for both.
 
-O componente [**4D Mobile App Server**](https://github.com/4d-for-ios/4D-Mobile-App-Server) é oferecido e contém métodos úteis para manejar autenticação no lado do servidor, notificações push e muito mais.
+The [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) component is also provided and contains useful methods to handle server-side authentication, push notifications, and much more.
 
 :::nota
 
