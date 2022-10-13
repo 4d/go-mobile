@@ -32,7 +32,7 @@ title: データ
 
 :::info
 
-**MobileApps** フォルダーは、4Dプロジェクトの [データフォルダー](https://developer.4d.com/docs/ja/Project/architecture.html#data) 内に自動的に作成されます。
+The **MobileApps** folder is automatically created in the 4D project's [data folder](https://developer.4d.com/docs/Project/architecture.html#data-folder).
 
 :::
 
@@ -132,7 +132,7 @@ field comparator value {logicalOperator field comparator value}
 
 :::info
 
-クエリシンタックスの詳細な情報については [$filter の RESTドキュメンテーション](https://developer.4d.com/docs/ja/REST/filter.html) を参照ください。 **フィルタークエリ** として入力された文字列は、そのまま `$filter=` RESTコマンドに引数として渡されます。
+Refer to the [?filter REST documentation](https://developer.4d.com/docs/REST/filter.html) for a detailed description of query syntaxes. **フィルタークエリ** として入力された文字列は、そのまま `$filter=` RESTコマンドに引数として渡されます。
 
 :::
 

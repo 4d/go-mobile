@@ -1,136 +1,136 @@
 ---
 id: customize-your-ios-app
-title: Customize your 4D for iOS App
+title: 4D for iOS アプリのカスタマイズ
 ---
 
-Now, let's do some storyboard modification ... from simple to complex.
+簡単なものから複雑なものまで、ストーリーボードにさまざまな変更を加えてみましょう。
 
-![Final result](img/Simlator-Before-After-Xcode-4D-for-iOS.png)
+![最終結果](img/Simlator-Before-After-Xcode-4D-for-iOS.png)
 
-## ⒈ ⒈ ⒈ ⒈ Simple label modification
+## ⒈ 簡単なラベル変更
 
-We'll start by modifying a label's font and color:
+まず、ラベルのフォントとカラーを変更するところから始めます:
 
-* Open the *ContactDetailsForm.storyboard* file from the Navigation tab.
-* Click on the First Name label (you can also select it from the interface builder or the left pane).
-* Select the Attributes inspector pane from the Utility area.
+* Navigation tab から *ContactDetailsForm.storyboard* ファイルを開きます。
+* First Name ラベルをクリックします (インターフェースビルダーまたは左ペインからも選択可能です)。
+* ユーティリティーエリアで Attribute inspector ペインを選択します。
 
-![Attributes inspector](img/Attributes-inspector-Xcode-4D-for-iOS.png)
+![属性インスペクター](img/Attributes-inspector-Xcode-4D-for-iOS.png)
 
-* Change the font from Helvetica Neue Bold to Futura Bold.
+* フォントを Helvetica Neue Bold から Futura Bold に変更します。
 
-![Attributes inspector font](img/Attributes-inspector-font-Xcode-4D-for-iOS.png)
+![属性インスペクターのフォント](img/Attributes-inspector-font-Xcode-4D-for-iOS.png)
 
-* You can also change the color of the font from the same pane.
+* また、フォントカラーも同じペインで変更できます。
 
-![Attributes inspector color](img/Attributes-inspector-color-Xcode-4D-for-iOS.png)
+![属性インスペクターのカラー](img/Attributes-inspector-color-Xcode-4D-for-iOS.png)
 
-## ⒉ ⒉ ⒉ ⒉ Change profile picture position
+## ⒉ プロフィール画像の位置を変更する
 
-All 4D for iOS templates use constraints for the app's elements to be well displayed on all devices.
+4D for iOS テンプレートは、すべてのデバイスでアプリ要素がうまく表示されるように制約を使用しています。
 
-In the *ContactDetailsForm.storyboard* file, the picture, First Name, and Last Name labels are all currently center aligned.
+*ContactDetailsForm.storyboard* ファイルでは、画像・ファーストネーム・ラストネームのラベルがすべて中央揃えになっています。
 
-Let's change it to appear like this:
+これが下のように表示されるよう、変更してみましょう:
 
-![Simulator result](img/Simlator-Final-Xcode-4D-for-iOS.png)
+![シミュレーターの結果](img/Simlator-Final-Xcode-4D-for-iOS.png)
 
-First, vertically align the picture and drag the First Name and Last Name labels to the right of the picture.
+まず、画像を縦に配置し、ファーストネームとラストネームのラベルを画像の右側にドラッグします。
 
-Next, select the image and go to the Size attributes pane from the Utility area. Change the X value from 161.67 to 40.67 and the Y value from 28 to 79.
+次に画像を選択し、ユーティリティーエリアから Size inspector ペインを開きます。 X 座標を 161.67 から 40.67 に、Y 座標を 28 から 79 に変更します。
 
-![Profil picture position](img/Profil-picture-position-Xcode-4D-for-iOS.png)
+![プロフィール画像の位置](img/Profil-picture-position-Xcode-4D-for-iOS.png)
 
-As you can see, the position has changed but Xcode is displaying yellow lines...why? These yellow lines represent constraints which are no longer valid.
+ご覧のように位置は変わりましたが、Xcode には黄色い線が表示されています...なぜでしょう？ この黄色い線は、もはや有効でない制約を表しています。
 
-## ⒊ ⒊ ⒊ ⒊ Update profile picture constraints
+## ⒊ プロフィール画像の制約を修正する
 
-To vertically align the picture in the center in the Superview (the view which contains it), we need to delete the existing constraints and add new ones.
+スーパービュー (画像を含む親ビューのこと) 内で画像を縦中央に配置するには、既存の制約を削除し、新しい制約を追加する必要があります。
 
-The image currently has the following constraints:
+この画像には現在、以下の制約があります:
 
-* Width Equals: A width of 78 pixels.
-* Height Equals: A height of 78 pixels.
-* Align Center X: Centers the image on a previously defined horizontal axis.
-* Top Space: An amount of space from the top of the image to the top of the view.
-* Bottom space to `<First Name>`: The previously defined space between the First Name label and the image.
+* Width Equals: 78 (横幅 78 ピクセル)
+* Height Equals: 78 (高さ 78 ピクセル)
+* Align Center X to: Superview (親ビューに対して横中央揃え)
+* Top Space to: Superview (親ビューに対する上部スペース)
+* Bottom space to: `<First Name>` (画像下辺から First Name ラベルまでの間隔)
 
-![Profil picture constraints](img/Profil-picture-constraints-Xcode-4D-for-iOS.png)
+![プロフィール画像の制約](img/Profil-picture-constraints-Xcode-4D-for-iOS.png)
 
-Delete all of the constraints except Width and Height (you'll modify these later from the Size inspector in the Constraints section). The picture outline should be now in red because the constraints are missing.
+Width と Height 以外のすべての制約を削除します (Width と Height は後で Size inspector の Constraints セクションで修正します)。 制約がなくなったため、画像の外枠が赤色に表示されているはずです。
 
-Click on the Align button (at the bottom of the Interface Builder window) and check the **Vertically in Container** checkbox.
+Align ボタン (ウィンドウ下の四角が左揃えされているアイコン) をクリックして、**Vertically in Container** (縦中央揃え) のチェックボックスを有効にします。
 
-![Profil picture Align](img/Profil-picture-Align-Xcode-4D-for-iOS.png)
+![プロフィール画像の整列](img/Profil-picture-Align-Xcode-4D-for-iOS.png)
 
-Next, click on the **Add New Constraints** button and add a leading space constraint (the left constraint).
+次に、**Add New Constraints** ボタン (T に囲まれた四角のアイコン) をクリックし、左側の余白 (Leading Space) の赤い点線をクリックして (実線に変化します) 制約を追加します。
 
-![Profil picture new constraints](img/Profil-picture-new-constraints-4D-for-iOS.png)
+![プロフィール画像の新しい制約](img/Profil-picture-new-constraints-4D-for-iOS.png)
 
-At this point, all the profile picture constraints should be blue.
+この時点で、プロフィール画像の制約がすべて青色で表示されているはずです。
 
-おつかれさまでした！ Your profile picture is now well positioned with the correct constraints.
+おつかれさまでした！ プロフィール画像に位置制約が追加され、正しく配置されました。
 
 > **TIPS**
 > 
-> * To create a constraint between two views, press Ctrl and drag one of the views to the other. マウスボタンを離すと同時に、このコンテキストで設定可能な制約の選択肢が表示されます。
+> * 2つのビューの間に制約を作成するには、Ctrlキーを押しながら片方のビューをもう片方のビューにドラッグします。 マウスボタンを離すと同時に、このコンテキストで設定可能な制約の選択肢が表示されます。
 > 
-> * You can delete constraints by either selecting them from the Size inspector or from the Interface Builder.
+> * 制約を削除するには、Interface Builder または Navigation エリア から制約を選択し、Deleteキーで削除します。
 
-## ⒋ ⒋ ⒋ ⒋ Update label positions and constraints
+## ⒋ ラベルの位置と制約を修正する
 
-#### Now, let's work on the First Name label.
+#### 今度は、First Name ラベルを修正しましょう。
 
-We'll begin by changing the position and width:
+まずは、位置と幅を変更します:
 
-* Select the First Name label from the Interface Builder.
-* Next, change the Width from 386 to 267 pixels.
-* Change the X value from 8 to 127 pixels and the Y value from 28 to 79 pixels.
+* Interface Builder で First Name ラベルを選択します。
+* 次に、Size inspector で Width を 386 ピクセルから 267 ピクセルに変更します。
+* X 座標を 8 から 127 に、Y 座標を 28 から 79 に変更します。
 
-![First Name Label position](img/First-Name-Label-position-Xcode-4D-for-iOS.png)
+![ファーストネームラベルの位置](img/First-Name-Label-position-Xcode-4D-for-iOS.png)
 
-Modify the remaining constraints:
+制約も修正しましょう:
 
-* Delete the leading and the bottom space constraints from the Size inspector.
-* Add a leading space constraint by clicking on the **Add New Constraints** button to position the First Name label to the right of the Profile picture.
-* Press Ctrl and drag the First Name label to the Profile picture. Select the top constraint in the menu to top align both elements.
+* 左と下の余白の制約を削除します。
+* Controlキーを押しながら First Name ラベルをプロフィール画像へとドラッグします。メニューから Horizontal Spacing を選択して、間隔の制約を追加します。
+* Controlキーを押しながら First Name ラベルをプロフィール画像へとドラッグします。 メニューから Top を選択し、両方の要素が上揃えになるよう、制約を追加します。
 
-![First Name Label top constraint](img/First-Name-Label-top-constraint-Xcode-4D-for-iOS.png)
+![ファーストネームラベルの上部の制約](img/First-Name-Label-top-constraint-Xcode-4D-for-iOS.png)
 
-#### Finally, we'll work on the Last Name label.
+#### 最後に、Last Name ラベルを修正します。
 
-Change the position and width:
+位置と幅を変更します:
 
-* Select the Last Name label from the Interface Builder.
-* Change the width from 386 to 267 pixels.
-* Change the X value from 8 to 127 pixels and the Y value from 144.33 to 118.33 pixels.
+* Interface Builder で Last Name ラベルを選択します。
+* Size inspector で Width を 386 ピクセルから 267 ピクセルに変更します。
+* X 座標を 8 から 127 に、Y 座標を 144.33 から 118.33 に変更します。
 
-![Last Name Label position](img/Last-Name-Label-position-Xcode-4D-for-iOS.png)
+![ラストネームラベルの位置](img/Last-Name-Label-position-Xcode-4D-for-iOS.png)
 
-Modify the remaining constraints:
+制約も修正しましょう:
 
-* Delete the leading space constraints from the Size inspector.
-* Add a leading space and top space constraints by clicking on the Add New Constraints button.
+* 左の余白の制約を削除します。
+* Add New Constraints ボタンをクリックして上 (Top) の余白の制約を設定します。また、Controlキーを押しながら First Name ラベルをプロフィール画像へとドラッグします。メニューから Horizontal Spacing を選択して、間隔の制約を追加します。
 
-![Last Name Label constraint](img/Last-Name-Label-constraint-Xcode-4D-for-iOS.png)
+![ラストネームラベルの制約](img/Last-Name-Label-constraint-Xcode-4D-for-iOS.png)
 
-Both of your name labels are now repostioned.
+2つのラベルの位置が調整できました。
 
-Let's see the results in the Simulator !
+シミュレータで結果を確認しましょう !
 
-![Simulator result](img/Simulator-Xcode-4D-for-iOS.png)
+![シミュレーターの結果](img/Simulator-Xcode-4D-for-iOS.png)
 
-Hmmmm. That's not exactly the result we wanted ...
+おや。 望んだとおりの結果ではありません...。
 
-* Select the First Name and Last Name labels and change the alignment from center to left in the Attributes inspector.
+* First Name と Last Name のラベルを選択し、Attributes inspector で Alignment を中央から左に変更します。
 
-![Labels Alignment](img/Labels-Alignment-Xcode-4D-for-iOS.png)
+![ラベルの整列](img/Labels-Alignment-Xcode-4D-for-iOS.png)
 
-* Next, select the Profile picture and double click on the leading space constraint.
-* Change the Constant value from 40.67 to 80 pixels.
+* 次に、プロフィール画像を選択して、左の予約の制約をダブルクリックします。
+* 値 を 40.67 ピクセルから 80 ピクセルに変更します。
 
-![Constraints adjustments](img/Constraints-adjustments-Xcode-4D-for-iOS.png)
+![制約の調整](img/Constraints-adjustments-Xcode-4D-for-iOS.png)
 
-Much better! Now all constraints are working and the labels aren't breaking other constraints.
+良さそうですね！ これで、すべての制約が機能し、整合性も取れました。
 
-As you can see, customizing your app is very simple!
+このように、アプリのカスタマイズはとても簡単です！

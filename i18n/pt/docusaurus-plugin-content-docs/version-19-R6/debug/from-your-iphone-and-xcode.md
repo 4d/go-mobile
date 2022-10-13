@@ -73,6 +73,12 @@ Para fazer isso, precisa abrir  Xcode project/Settings/Settings.plist
 
 ## Debug from your iPhone
 
+:::info
+
+This feature requires that you have enabled the [Apple Device Developer Mode](../getting-started/requirements.md#apple-device-developer-mode).
+
+:::
+
 From your app, if you have a crash, you can display, edit and send feedback.
 
 Para isso:

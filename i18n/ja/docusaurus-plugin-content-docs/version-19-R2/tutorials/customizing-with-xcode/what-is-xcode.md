@@ -5,17 +5,17 @@ title: Xcode
 
 ## Xcodeとは？
 
-Xcodeは，macOS上で動く統合開発環境および付随する開発者ツールで構成されており，iPad，iPod，iPhone，Mac用のアプリを作成することができます。
+Xcode は、macOS上で動く統合開発環境および付随する開発者ツールで構成されており、iPad・iPod・iPhone・macOS用のアプリを作成することができます。
 
 ## ダウンロード
 
-最新版のXcodeは，App Storeからダウンロードすることができます。
+最新版の Xcode は App Store からダウンロードできます。
 
 <div className="center-button">
-<a className="button button--primary" href="macappstore://itunes.apple.com/app/id497799835?mt=12">View in Mac App Store </a>
+<a className="button button--primary" href="macappstore://itunes.apple.com/app/id497799835?mt=12">App Store を開く </a>
 </div>
 
-デベロッパー登録をすれば，Apple DeveloperのサイトからXcodeのプレビュー版や以前のリリースをダウンロードすることができます。
+デベロッパー登録をすれば、Apple Developer のサイトから Xcode のプレビュー版や過去のバージョンをダウンロードすることもできます。
 
 🔗 https://developer.apple.com/download/more/ 🔗 https://developer.apple.com/xcode/
 
@@ -48,8 +48,8 @@ Xcodeは，macOS上で動く統合開発環境および付随する開発者ツ�
 
 ### 互換性
 
-特定のXcodeバージョンでコンパイルされたフレームワークを別バージョンで使用することはできません。
+特定の Xcode バージョンでコンパイルされたフレームワークを別バージョンで使用することはできません。
 
-Swiftの現行バージョン（５）で，ABI Stability が実現しましたが，Module Stability は達成されていません。 コンパイル済みのライブラリを配付するためには，両方の Stability が必要です。
+Swift の現行バージョン (5)で、ABI Stability が実現しましたが、Module Stability は達成されていません。 コンパイル済みのライブラリを配付するには、両方の Stability が必要です。
 
-詳細はSwiftの公式ブログをご覧ください。 https://swift.org/blog/abi-stability-and-more/
+詳細は Swift の公式ブログをご覧ください。 https://swift.org/blog/abi-stability-and-more/

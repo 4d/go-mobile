@@ -1,68 +1,68 @@
 ---
 id: deploy-on-app-store-archive-and-upload
-title: Archive and upload your Project
+title: プロジェクトのアーカイブとアップロード
 ---
 
 > **目標**
 > 
-> Archive and upload your project to App Store Connect.
+> プロジェクトをアーカイブし、App Store Connect にアップロードします。
 
-## ⒈ ⒈ ⒈ ⒈ Xcode configuration
-* If you have chosen an Apple Developer Account as an individual, your account is immediately available.
-* If your have chosen an Apple Developer Account as an organization, you must wait for Apple validation.
-* When your account is accessible, add it to Xcode in Preferences > Accounts.
-* Xcode will automatically install the necessary provisioning and certificates.
+## ⒈ Xcode の設定
+* 個人向けの Apple Developer アカウントを選択した場合、アカウントはすぐに利用できます。
+* 組織向けの Apple Developer アカウントを選択した場合、Apple の承認を待つ必要があります。
+* アカウントにアクセスできるようになったら、Xcode で Preferences > Accounts に追加します。
+* Xcode は、必要な Provisioning Profile と証明書を自動的にインストールします。
 
-## ⒉ ⒉ ⒉ ⒉ Get your Team ID
+## ⒉ Team ID を取得する
 
-* Log into your Apple Developer Account. You can find your Team ID in Membership.
+* Apple Developer アカウントにログインします。 Team ID は Membership にて確認できます。
 
-![⒉ ⒉ ⒉ Get your Team ID](img/Team-ID-4D-for-iOS.png)
+![Team ID を取得する](img/Team-ID-4D-for-iOS.png)
 
-## ⒊ ⒊ ⒊ ⒊ 4D for iOS configuration
+## ⒊ 4D for iOS の設定
 
-* Launch 4D for iOS
-* On the SECTIONS tab:
+* 4D for iOS を起動します。
+* セクションタブにて:
 
-**General: Enter your Team ID**
+**一般: Team ID を入力します**
 
 ![Team ID](img/Team-ID.png)
 
-**Publishing: Enter your production URL**
+**公開: プロダクションURL を入力します**
 
-(HTTPS is mandatory for deployment).
+(運用環境では HTTPS が必須です)
 
 ![公開](img/Publishing.png)
 
-* On the BUILD tab:
+* ビルドタブにて:
 
-**Build and Run: Build your Project**
+**ビルドして実行: プロジェクトをビルドします**
 
 ![BuildTab](img/BuildTab.png)
 
-## ⒋ ⒋ ⒋ ⒋ Open your project with Xcode
+## ⒋ プロジェクトを Xcode で開く
 
-* From the 4D for iOS Project Editor's BUILD tab, click on Project > Open the project with Xcode
+* 4D for iOS プロジェクトエディターのビルドタブで、プロジェクト > プロジェクトをXcodeで開く... をクリックします。
 
-![⒋ ⒋ ⒋ Open your project with Xcode](img/Open-your-project-Xcode-4D-for-iOS.png)
+![プロジェクトを Xcode で開く](img/Open-your-project-Xcode-4D-for-iOS.png)
 
-## ⒌ ⒌ ⒌ ⒌ Archive your project from Xcode
+## ⒌ Xcode でプロジェクトをアーカイブする
 
-* From Xcode go to the simulator Menu and select **Generic iOS Device**.
+* Xcode でツールバーのシミュレーター選択メニューを開き、**Generic iOS Device** を選択します。
 
-![Generic iOS Device](img/Deployment-Generic-iOS-Device.png)
+![汎用的iOSデバイス](img/Deployment-Generic-iOS-Device.png)
 
-* Then from the menu, click on Product and select **Archive**
+* 次に、上部メニューから Product をクリックし、**Archive** を選択します。
 
-![⒌ ⒌ ⒌ Archive your project from Xcode](img/Archive-your-Project.png)
+![Xcode でプロジェクトをアーカイブする](img/Archive-your-Project.png)
 
-## ⒍ ⒍ ⒍ ⒍ Validate your project
+## ⒍ プロジェクトを検証する
 
-* At the end of the archive process, the Organizer window appears with the archive you have just created.
+* アーカイブ処理の最後に、作成したアーカイブを表示する Organizer ウィンドウが表示されます。
 
 * Click on the **Validate** button to start the validation process.
 
-![⒍ ⒍ ⒍ Validate your project](img/Organizer-Project-Validation.png)
+![プロジェクトを検証する](img/Organizer-Project-Validation.png)
 
 * The first step is selecting the App Store distribution options.
 

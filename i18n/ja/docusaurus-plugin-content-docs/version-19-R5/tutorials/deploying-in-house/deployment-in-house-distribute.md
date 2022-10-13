@@ -1,64 +1,64 @@
 ---
 id: deployment-in-house-distribute
-title: Distribute your app in-House
+title: アプリを In-House で配布する
 ---
 
 > **目標**
 > 
-> Upload your app to a secured server.
+> アプリをセキュアなサーバーにアップロードする。
 
 
-## ⒈ ⒈ ⒈ ⒈ Upload your app
+## ⒈ アプリをアップロードする
 
-Upload your app files to a secured server:
+アプリのファイルをセキュアなサーバーにアップロードします:
 
-* assets (display-image and full-size-image)
-* `manifest.plist` file
-* `.ipa` file
+* アセット (display-image および full-size-image)
+* `manifest.plist` ファイル
+* `.ipa` ファイル
 
-You can use any cloud storage service to distribute your app as soon as it is secured (Dropbox, Google Drive, etc.).
+アプリの配布は、任意のセキュアなクラウドストレージサービス (Dropbox、Google Drive など) を使用しておこなうことができます。
 
 :::note
 
-Your asset and ipa URLs must match the URLs defined in your `manifest.plist` file.
+アセットと ipa の URL は、`manifest.plist` ファイルで定義されている URL と一致する必要があります。
 
 :::
 
-## ⒉ ⒉ ⒉ ⒉ Create the installation link
+## ⒉ インストール用のリンクを作成する
 
-Create an **ITMS Serices link** (iTUnes Music Store) with the full web address of your manifest file as a parameter:
+manifest ファイルの完全な Webアドレスをパラメーターとして、**ITMS Serices link** (iTunes Music Store) を作成します:
 
 ```html
 itms-services://?action=download-manifest&url=https://mywebserver.com/manifest.plist
 
 ```
 
-This link can be used when sending emails, embedded in an html page, or even within a QR code.
+このリンクは、メールで送信するほか、htmlページへの埋め込み、QRコード内でも使用可能です。
 
-Here is a simple example:
+簡単な一例です:
 
-![Contact demo app install](img/Contact-demo-app-install.png)
+![Contactデモアプリのインストール](img/Contact-demo-app-install.png)
 
-*The QR Code used for this documentation is not active.*
+*ここで使用している QRコードは有効ではありません。*
 
-## ⒊ ⒊ ⒊ ⒊ Install your enterprise app on iOS
+## ⒊ iOS にアンタープライズApp をインストールする
 
-* Install the app by clicking on the link or scanning a QR Code
+* リンクをクリックするか、QRコードをスキャンして、アプリをインストールします。
 
-![Scan and install](img/Scan-and-install.png)
+![スキャンとインストール](img/Scan-and-install.png)
 
-* When you first open an enterprise app that you've manually installed, a notification will be displayed stating that the developer of the app isn't trusted on your device.
+* 手動でインストールしたエンタープライズApp を初めて開くと、そのアプリの開発者が当該デバイスでは信頼されていないことを示す通知が表示されます。
 
-* Ignore this message and click **Cancel**.
+* このメッセージを無視して、**キャンセル** をクリックします。
 
-* In Settings > General > Profiles or Profiles & Device Management, in the "Enterprise App" heading, the profile for the developer is listed.
+* 設定 > 一般 > プロファイル または プロファイル & デバイス管理で、"エンタープライズAPP" の見出しで、開発者のプロファイルが表示されます。
 
-![Untrust developer](img/Untrust-developer.png)
+![信頼できない開発者](img/Untrust-developer.png)
 
-* Tap the name of the developer profile to establish trust for this developer.
+* 開発者プロファイルの名前をタップして、この開発者を信頼するよう設定します。
 
-![Trust-confirmation](img/Trust-confirmation.png)
+![信頼の確立](img/Trust-confirmation.png)
 
-* You can then go to your app and open it.
+* その後、アプリを開くことができます。
 
-Congratulations... you can now distribute your app in-house.
+おめでとうございます... これで、アプリを In-House で配布することができます。

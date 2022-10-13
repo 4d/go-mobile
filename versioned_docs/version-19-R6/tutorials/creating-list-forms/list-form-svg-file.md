@@ -196,7 +196,7 @@ The following field types are supported:
 
 :::note
 
-For more information on these field types, refer to [**this page**](https://developer.4d.com/docs/en/Concepts/data-types.html). 
+For more information on these field types, refer to [**this page**](https://developer.4d.com/docs/Concepts/data-types.html). 
 
 :::
 

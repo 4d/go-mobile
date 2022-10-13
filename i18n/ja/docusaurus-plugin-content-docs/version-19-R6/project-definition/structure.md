@@ -3,9 +3,9 @@ id: structure
 title: ストラクチャー
 ---
 
-4Dデータベース内で RESTリソースとして公開されているすべてのテーブルとフィールドがこのページに表示されます。これには (N対1 および 1対N リレーションに基づいた) リレーション属性も含まれます。 実際の表示は、[ORDA のデータストア](https://developer.4d.com/docs/ja/ORDA/overview.html) にとても近いものが表示されます。
+4Dデータベース内で RESTリソースとして公開されているすべてのテーブルとフィールドがこのページに表示されます。これには (N対1 および 1対N リレーションに基づいた) リレーション属性も含まれます。 In fact, the page displays a view similar to [ORDA's datastore](https://developer.4d.com/docs/ORDA/overview.html).
 
-![ストラクチャセクション](img/Structure-section-4D-for-iOS.png)
+![ストラクチャーセクション](img/Structure-section-4D-for-iOS.png)
 
 
 このページでは、公開するテーブルおよびフィールドを選択することにより、モバイルデバイス用に複製するストラクチャーのサブセットを定義することができます。
@@ -19,7 +19,7 @@ title: ストラクチャー
 
 以下のテーブルとフィールドはこのページには表示されません:
 
-- [ORDA ルール](https://developer.4d.com/docs/ja/ORDA/dsmapping.html#%E3%82%B9%E3%83%88%E3%83%A9%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0) に則っていないテーブルやフィールド。
+- tables and fields that do not comply with [ORDA rules](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
 - "`__`" (ダブルアンダースコア) で始まる名前を持つテーブルやフィールド。
 
 :::
@@ -58,9 +58,9 @@ title: ストラクチャー
 
 ![フィールド](img/fields.png)
 
-- 全ての[スカラー型の4D フィールド](https://developer.4d.com/docs/ja/Concepts/data-types.html) がサポートされます(ただし [BLOB](https://developer.4d.com/docs/en/Concepts/blob.html) 型を除く)
-- [オブジェクトフィールド](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
-- [計算属性](#computed-attributes)
+- All [4D scalar field types](https://developer.4d.com/docs/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/Concepts/blob.html).
+- [オブジェクトフィールド](#オブジェクト属性)
+- [計算属性](#計算属性)
 - **スカラー値** を返す [エイリアス属性](#エイリアス属性) (*イタリック* で表示されます)。
 - リレーション属性 (N対1 および 1対N) はサポートされており、フィールドと同様に選択することができます。 リレーション属性は専用のアイコンを持ちます:
     - Ｎ対１リレーションアイコン:  ![リレーション1](img/manyto1.png)
@@ -68,7 +68,7 @@ title: ストラクチャー
 
 :::info
 
-リレーション属性の名前は 4Dストラクチャーエディターにおけるリレーション名に基づいています。[ORDA ストラクチャーマッピング](http://developer.4d.com/docs/ja/ORDA/dsmapping.html#%E3%82%B9%E3%83%88%E3%83%A9%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0) のページを参照ください。
+The names are based upon the relation names in the 4D Structure editor, see the [ORDA Structure mapping page](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
 
 :::
 
@@ -130,11 +130,11 @@ title: ストラクチャー
 
 ## 計算属性
 
-Whether you're working on Android or iOS, you can display [**computed attributes**](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#computed-attributes-1) in your app once it is generated, by configurating them from the project editor. 計算属性とは、複数のフィールドを一つに複合した結果です。 この計算属性は、モバイルアプリ作成時に他のフィールドと同様に使用できます。つまり、ストラクチャーセクションで確認し、公開できるということです。
+Whether you're working on Android or iOS, you can display [**computed attributes**](https://developer.4d.com/docs/ORDA/ordaClasses.html#computed-attributes-1) in your app once it is generated, by configurating them from the project editor. 計算属性とは、複数のフィールドを一つに複合した結果です。 この計算属性は、モバイルアプリ作成時に他のフィールドと同様に使用できます。つまり、ストラクチャーセクションで確認し、公開できるということです。
 
 :::info
 
-In mobile projects, only **scalar** computed attributes are supported (i.e. computed attributes where the [`get` function](https://developer.4d.com/docs/en/ORDA/ordaClasses.html#function-get-attributename) returns a scalar value (text, boolean, date, time, number)).
+In mobile projects, only **scalar** computed attributes are supported (i.e. computed attributes where the [`get` function](https://developer.4d.com/docs/ORDA/ordaClasses.html#function-get-attributename) returns a scalar value (text, boolean, date, time, number)).
 
 :::
 
@@ -145,7 +145,7 @@ In mobile projects, only **scalar** computed attributes are supported (i.e. comp
 
 ### 4D側の準備
 
-[*Class extends*](https://developer.4d.com/docs/ja/Concepts/classes.html#class-extends-classname) および [exposed Function](https://developer.4d.com/docs/ja/ORDA/ordaClasses.html#%E5%85%AC%E9%96%8Bvs%E9%9D%9E%E5%85%AC%E9%96%8B%E9%96%A2%E6%95%B0) のシンタックスを使って、使用する属性と取得する計算属性を以下のようにコード内で指定します:
+In your code, specify the attributes you want to use and the computed attribute you want to get, using the [*Class extends*](https://developer.4d.com/docs/Concepts/classes.html#class-extends-classname) and [exposed Function](https://developer.4d.com/docs/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows:
 
 ```4d 
 Class extends Entity
@@ -185,7 +185,7 @@ End if
 
 `exposed` の付いた計算属性は、データクラスの属性リストに表示されます。
 
-![ストラクチャセクション](img/Structure.png)
+![ストラクチャーセクション](img/Structure.png)
 
 **ラベル & アイコン** セクションにおいて (アイコン / 短いラベル / 長いラベル / フォーマット):
 
@@ -216,11 +216,11 @@ End if
 
 ## エイリアス属性
 
-Android でも iOS でも、**スカラー** な [**エイリアス属性**](http://developer.4d.com/docs/ja/ORDA/ordaClasses.html#%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9%E5%B1%9E%E6%80%A7-1) をモバイルアプリで使用することができます。 エイリアス属性は、*ターゲット* 属性と呼ばれる、データモデルの別の属性を元に定義されます。 ターゲット属性には、リレートデータクラス (リレートレベルは無制限) または同じデータクラスのものを使用できます。 エイリアス属性はデータではなく、ターゲット属性へのパスを格納します。
+On Android or iOS, you can use **scalar** [**alias attributes**](https://developer.4d.com/docs/ORDA/ordaClasses.html#alias-attributes) in your mobile app. エイリアス属性は、*ターゲット* 属性と呼ばれる、データモデルの別の属性を元に定義されます。 ターゲット属性には、リレートデータクラス (リレートレベルは無制限) または同じデータクラスのものを使用できます。 エイリアス属性はデータではなく、ターゲット属性へのパスを格納します。
 
 エディターで利用するには、エイリアス属性は **公開** されている必要があります。 これらは *イタリック* で表示されます。
 
-モバイルプロジェクトでは、 **スカラー** のエイリアス属性のみがサポートされています。つまり、ターゲット属性へのパスの最終要素の [kind](https://developer.4d.com/docs/en/API/DataClassAttributeClass.html#kind) は "storage" である必要があります。 それ以外には対応していません。
+In mobile projects, only **scalar** alias attributes are supported, which means that the [kind](https://developer.4d.com/docs/API/DataClassAttributeClass.html#kind) of the last element of the target attribute path must be "storage". それ以外には対応していません。
 
 
 スカラーのエイリアス属性は:
@@ -240,9 +240,9 @@ Android でも iOS でも、**スカラー** な [**エイリアス属性**](htt
 
 ## オブジェクト属性
 
-**ストラクチャー** セクションでは、全ての[型](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) の属性(テキスト、日付、時間、整数)をモバイルプロジェクト内で選択、使用、表示することができます。これには**[オブジェクト属性](https://developer.4d.com/docs/ja/Concepts/object.html)** (JSON フォーマット) も含まれます。 フィールドリストの中では、オブジェクト属性は**{}** アイコンで表示されます。
+From the **Structure** section, you can select, use and display all [types](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) of attributes in your mobile projects (text, dates, time, integers, etc), including **[object attributes](https://developer.4d.com/docs/Concepts/object.html)** (JSON format). フィールドリストの中では、オブジェクト属性は**{}** アイコンで表示されます。
 
-![ストラクチャセクション](img/object-attributes-structure.png)
+![ストラクチャーセクション](img/object-attributes-structure.png)
 
 オブジェクト属性は、プロジェクトエディターの他のセクション(データ、ラベル& アイコン、フォーム、など。ただしアクションセクションは除く) での他のフィールドと同様に使用することができます。
 
@@ -255,7 +255,7 @@ Android でも iOS でも、**スカラー** な [**エイリアス属性**](htt
 
 生成されたアプリ内での表示結果は以下のようになります:
 
-![ストラクチャセクション](img/object-attributes-rendering.png)
+![ストラクチャーセクション](img/object-attributes-rendering.png)
 
 ### フィルタークエリ
 

@@ -3,64 +3,64 @@ id: relation-interactions
 title: リレーション操作
 ---
 
-4D mobile projects allow to add very nice interaction into your apps. For instance you will be able to publish One to Many and Many to One relation from [many to one relation](many-to-one-relations.md).
+4Dモバイルプロジェクトでは、アプリに便利な操作性を追加することができます。 たとえば、1対N および N対1 リレーションを [N対1リレーション](many-to-one-relations.md) から公開できます。
 
 # プロジェクトエディター
 
-## ストラクチャセクション
+## ストラクチャーセクション
 
-From the structure section, you will be able to publish relations from Many to One relation very easily. This will allow to display for example Many to Many relation into your iOS app.
+ストラクチャーセクションでは、N対1リレーションを簡単に公開できます。 これにより、たとえば N対Nリレーションを iOSアプリに表示することができます。
 
-![Publish relations from Structure section](img/structure-section.gif)
+![ストラクチャーセクションでリレーションを公開](img/structure-section.gif)
 
 ## ラベル & アイコンセクション
 
-From the Labels & Icons section, you will be able to customize your relation button label.
+ラベル＆アイコンセクションでは、リレーションボタンのラベルをカスタマイズできます。
 
-### Getting the number of records
+### レコード数を取得する
 
-A new great feature is available to display record numbers that will be displayed clicking on a One to Many relation.
+1対Nリレーションをクリックすると表示されるレコードの数を表示するための便利な機能もあります。
 
-For that just add %length% into your relation short or long label for a One to Many relation.
+これには、1対Nリレーションのラベルに、%length% を追加するだけです。
 
-![length parameter](img/icons-labels-length-parameter-relation.png)
+![lengthパラメーター](img/icons-labels-length-parameter-relation.png)
 
 ## フォームセクション
 
-### Add any relation anywhere you want
+### 任意の場所にリレーションを追加する
 
-Any kind of relation can be dropped in List and Detail form to add interactions and create more dynamic app as ever before !
+リストフォームや詳細フォームに任意のリレーションを追加し、これまで以上にダイナミックなアプリを作成することができます。
 
-![Drop relations list and detail forms](img/drop-relation-list-detail-form.gif)
+![リストと詳細フォームにリレーションをドロップ](img/drop-relation-list-detail-form.gif)
 
-### Make your field clickable
+### フィールドをクリックできるようにする
 
-In the form section, you will be able to make your fields clickable droping relation on a field in List forms and Detail forms.
+フォームセクションでは、リストフォームと詳細フォームのフィールドにリレーションを設定することで、フィールドをクリック可能にできます。
 
-![Clickable fields](img/clickable-fields-relation.gif)
+![クリック可能なフィールド](img/clickable-fields-relation.gif)
 
 
-# Generated app
+# 生成されるアプリ
 
-Those improvements will allow you to add interactions into your app :
+これらの改善により、アプリに操作性が追加されます:
 
-* Move from a list form to another list form instead of opening a detail form to access to another list form.
+* 詳細フォームを間に挟むことなく、リストフォームから他のリストフォームにアクセスできます。
 
-In this example we access to the orders list from the Orders list clicking on a One to Many relation from the Customers List form.
+この例では、Customers リストフォームで 1対Nリレーションをクリックし、Orders リストにアクセスしています。
 
-![Many to many relation](img/many-to-many-relations.gif)
+![N対Nリレーション](img/many-to-many-relations.gif)
 
-* Diplay relation in List Forms to access to related detail forms.
+* リストフォームにリレーションを表示し、関連する詳細フォームにアクセスできます。
 
-In this example we access to the Customer detail form the Orders List and Orders Detail form.
+この例では、Orders リストおよび、Orders 詳細フォームから Customer 詳細フォームアクセスできます。
 
-![Many to One relation](img/many-to-one-relations.gif)
+![N対1リレーション](img/many-to-one-relations.gif)
 
-* Make your field clickable adding a N to One relation and display records number thanks to %length%.
+* 1対Nリレーションを追加してフィールドをクリックできるようにし、%length% を使ってレコード数を表示できます。
 
-In this example the number of product for each One to Many relation in the Category List form is displayed.
+この例では、Category リストフォームの 1対Nリレーションごとに商品の数が表示されます。
 
-![length for one to many](img/length-for-one-to-many.png)
+![1対Nのレコード数](img/length-for-one-to-many.png)
 
 
 

@@ -4,11 +4,11 @@ title: N対1リレーション
 ---
 
 
-This tutorial will show you how easy it can be to include Many to one relations in your mobile projects.
+このチュートリアルでは、4D for iOSアプリで N対1リレーションを使用する方法を見ていきます。
 
 :::note
 
-In this tutorial, we will use the relation names between your tables. Giving descriptive relation names can make your project structure definition easier.
+このチュートリアルでは、テーブル同士をリンクするリレーションの名前を使用します。 ストラクチャー定義を容易にするため、リレーションには意味のある名前を設定することが推奨されます。
 
 :::
 
@@ -18,37 +18,37 @@ In this tutorial, we will use the relation names between your tables. Giving des
 <a className="button button--primary" href="https://github.com/4d-go-mobile/tutorial-ManyToOneRelations/releases/latest/download/tutorial-ManyToOneRelations.zip">スタータープロジェクト</a>
 </div>
 
-Here we want to display the category for each task in the detail form of your generated app. To do so, open the **StarteriOSProject** from **Open > Mobile Project...**
+生成されたアプリの詳細フォームに、各タスクのカテゴリを表示したいと思います。 ファイルメニューから **開く ＞ モバイルプロジェクト...** を選択し、**NtoOneRelations** プロジェクトを開きます。
 
-Then go right to your Structure section and select the **Task table**.
+ストラクチャーセクションに移動し、**Tasks** テーブルを選択します。
 
-### ストラクチャセクション
+### ストラクチャーセクション
 
-* You can notice that the **TaskCategory relation** is underlined
+* フィールドリストの **TaskCategory** リレーションに下線が表示されていることに注目してください。
 
-* リレーション名をクリックすると，リンク先のフィールドが表示されます。
+* リレーション名をクリックすると、リンク先のフィールドが表示されます。
 
-* Select the **Name field**
+* **Name** フィールドを選択します。
 
-![Select link from structure section](img/select-link-from-structure.png)
+![ストラクチャーセクションでリンクを選択する](img/select-link-from-structure.png)
 
-* 以降の画面では，リレートの１フィールドを他のフィールドと同じように扱うことができます。
+* 以降の画面では、このリレートフィールドを他のフィールドと同じように扱うことができます。
 
-* You can also filter your app content using related fields from the Data section. To do so enter `TaskCategory.Name != 'Personal'` in the Filter query field to exclude personal tasks.
+* このリレートフィールドは、データセクションのフィルタークエリでも使用することができます。 具体的には、`TaskCategory.Name != 'Personal'` をフィルタークエリフィールドに入力して、個人的なタスクを除外しましょう。
 
- ![「ラベル＆アイコン」セクションに表示された１フィールド](img/Related-field-from-Data-section.png)
+ ![データセクションに表示されたリレートフィールド](img/Related-field-from-Data-section.png)
 
-* You can then select an **icon** as well as **formatters** and define **short and long labels** from the Labels and Icons section
+* ラベル＆アイコンセクションでは、**アイコン**・**短いラベル**・**長いラベル**・**フォーマット** を設定することができます。
 
-![Related field from Labels and Icons section](img/related-field-from-labels-icons.png)
+![ラベル＆アイコンセクションに表示されたリレートフィールド](img/related-field-from-labels-icons.png)
 
-* 「フォーム」セクションでは，詳細フォームに１フィールドをドラッグ＆ドロップします。
+* フォームセクションでは、このリレートフィールドを詳細フォームにドラッグ＆ドロップしましょう。
 
-![Related field in Forms section](img/related-field-forms.png)
+![フォームセクションに表示されたリレートフィールド](img/related-field-forms.png)
 
 * ビルドして実行
 
-You should see your related field in your app detail form !
+アプリの詳細画面にリレート先の 1フィールドが表示されました！
 
-![Related field in Forms section](img/final-result-n-to-one-relations.png)
+![フォームセクションに表示されたリレートフィールド](img/final-result-n-to-one-relations.png)
 

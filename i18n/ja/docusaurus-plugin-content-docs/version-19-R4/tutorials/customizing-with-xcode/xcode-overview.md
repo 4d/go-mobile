@@ -1,107 +1,107 @@
 ---
 id: xcode-overview
-title: Xcode ガイド
+title: Xcode の概要
 ---
 
 > **目標**
 > 
-> Ensure a basic understanding of working with Xcode.
+> Xcode の基本的な操作を習得します。
 
-Xcode displays various areas that we're going to review:
+Xcode の各部の名称と役割に慣れ親しみましょう:
 
 ![Xcode](img/Discover-Xcode-4D-for-iOS.png)
 
 ## ツールバー
 
-* **Run** and **Stop** buttons are located on the left side of the toolbar. Pressing the **Run** button will build, run, and launch your application in the selected iOS Simulator.
+* ツールバーの左側には、**実行** および **停止** ボタンがあります。 **実行** ボタンは、アプリをビルドして、指定した iOS シミュレーターで起動するために使用します。
 
 ![ビルドして実行](img/Toolbar-Build-and-Run-Xcode-4D-for-iOS.png)
 
-* The dropdown menu next to the **Stop** button indicates which build target you want to run and which Simulator is being used.
+* **停止** ボタンの隣にあるドロップダウンメニューは、ビルドと実行のターゲットプラットフォームおよびシミュレーターの選択に使用します。
 
-![Toolbar Target](img/Toolbar-Target-simulator-Xcode-4D-for-iOS.png)
+![ツールバーターゲット](img/Toolbar-Target-simulator-Xcode-4D-for-iOS.png)
 
-* ツールバーの右側には，表示形式を切り替えるためのボタンがあります。
+* ツールバーの右側には、表示形式を切り替えるためのボタンがあります。
 
-![Toolbar View buttons](img/Toolbar-View-buttons-Xcode-4D-for-iOS.png)
+![ツールバービューボタン](img/Toolbar-View-buttons-Xcode-4D-for-iOS.png)
 
 ## エディターエリア
 
 ![エディターエリア](img/Editor-Xcode-4D-for-iOS.png)
 
-This is where the coding happens when a Swift file is selected. When a Storyboard file is selected, the view changes and the Interface Builder appears.
+選択した Swift ファイルをコーディングするエリアです。 Storyboard ファイルが選択された場合には、インターフェースビルダーに表示が切り替わります。
 
 ## インターフェースビルダー
 
 ![インターフェースビルダー](img/Interface-Builder-Xcode-4D-for-iOS.png)
 
-This is a graphical interface which allows you to build a Storyboard or XIB file. All of your scenes are accessible on the left side.
+Storyboard または XIB ファイルを開いて編集するためのグラフィカル・ユーザー・インタフェースです。 ファイル内の各シーンは左のリストで切り替えます。
 
 ## ユーティリティーエリア
 
-The Utility area of Xcode has two panes: the Inspector pane and the Library pane.
+Xcode のユーティリティエリアは、インスペクターおよびライブラリという 2つのペイン (枠) で構成されています。
 
 ![ユーティリティーエリア](img/Utility-Xcode-4D-for-iOS.png)
 
 ### インスペクターペイン
 
-Within the Properties section, there are six different Inspector Tabs, as shown in the following illustration:
+プロパティセクションには、6つのインスペクタータブがあります:
 
 ![インスペクターペイン](img/Xcode-Inspector-pane.png)
 
-From left-to-right, these tabs are:
+各タブの役割は、左から右に向かって下記のとおりです:
 
-* **File inspector**: For viewing and managing file metadata, such as a filename, type, and path.
+* **File inspector**: ファイル名・タイプ・パスなど、ファイルのメタデータを管理するために使用します。
 
-* **Quick Help**: For viewing details about what has been selected in an editor.
+* **Quick Help**: エディターで選択されているものに関する情報が表示されます。
 
-* **Identity inspector**: For viewing object metadata such as an object’s class, runtime attributes, label.
+* **Identity inspector**: オブジェクトのクラス・ランタイム属性・ラベルなど、オブジェクトのメタデータが表示されます。
 
-* **Attributes inspector**: For configuring the attributes specific to the selected interface object. たとえば，テキストフィールドには，文字の整列・フォントカラー・ボーダータイプ・入力の可否といった属性があります。
+* **Attributes inspector**: 選択されているインターフェースオブジェクト固有の属性を設定するのに使用します。 たとえばテキストフィールドには、文字の整列・フォントカラー・ボーダータイプ・入力の可否といった属性があります。
 
-* **Size inspector**: For specifying characteristics such as the size and position of an interface object.
+* **Size inspector**: インターフェースオブジェクトのサイズや位置を設定するために使用します。
 
-* **Connections inspector**: View the outlets and actions for an interface object, make new connections, and delete existing connections.
+* **Connections inspector**: インターフェースオブジェクトのアウトレットやアクションを表示し、コネクションを作成または削除するために使用します。
 
 ### ライブラリペイン
 
-Within the Properties section, there are four different Library Tabs, as shown in the following illustration:
+プロパティセクションには、4つのライブラリタブがあります:
 
-From left-to-right, these tabs are:
+各タブの役割は、左から右に向かって下記のとおりです:
 
 ![ライブラリペイン](img/Xcode-Library-pane.png)
 
-* **File templates**: These templates are for the common types of files listed as choices in the New File menu.
+* **File Templates**: ファイルメニュー ＞ New で作成できる代表的なファイルタイプのテンプレートです。
 
-* **Code snippets**: These are short pieces of source code for use in your application. 直接，ソースコードにドラッグ＆ドロップすることができます。
+* **Code snippets**: アプリ内で使用できるソースコードの例題です。 これらはソースコードに直接ドラッグ＆ドロップできます。
 
-* **Objects**: This library contains the kinds of interface objects you’d use to make up your user interface. 直接，インターフェースビルダーに表示されているストーリーボードにドラッグ＆ドロップすることができます。
+* **Objects**: このライブラリには、ユーザーインターフェースの部品となるようなインターフェースオブジェクトが収録されています。 これらはインターフェースビルダーに表示されているストーリーボードに直接ドラッグ＆ドロップできます。
 
-* **Media files**: This library contains all your graphics, icons, and sound files. 直接，インターフェースビルダーに表示されているストーリーボードにドラッグ＆ドロップすることができます。
+* **Media files**: このライブラリには、画像・アイコン・音声ファイルが収録されています。 これらはインターフェースビルダーに表示されているストーリーボードに直接ドラッグ＆ドロップできます。
 
 ## デバッグエリア
 
-This area displays the output and the state of various variables when running your app.
+アプリ実行中のさまざまな変数の出力値や状態はこのエリアに表示されます。
 
 ## ナビゲーションエリア
 
-Several tabs are included here, the most important of which are:
+いくつかのタブが存在しますが、特に重要なのは以下のタブです:
 
-* **Navigation tab**: Lists and provides access to all files necessary for your application to work properly.
+* **Navigation tab**: アプリケーションが正しく動作するために必要なファイルがリストアップされており、アクセスできるようになっています。
 
-![Navigation tab](img/Project-Navigation-Editor-Xcode-4D-for-iOS.png)
+![ナビゲーションタブ](img/Project-Navigation-Editor-Xcode-4D-for-iOS.png)
 
-* **Search navigator tab**: Allows searching all files in the project.
+* **Search navigator tab**: プロジェクト内のファイルを検索するために使用します。
 
-![Search navigator tab](img/Search-Navigator-Xcode-4D-for-iOS.png)
+![サーチナビゲータータブ](img/Search-Navigator-Xcode-4D-for-iOS.png)
 
-* **Issue navigator tab**: Displays all errors in an iOS project.
+* **Issue navigator tab**: iOSプロジェクト内で発生したエラーはここに出力されます。
 
-    - 赤のメッセージは，無視できない問題であり，アプリをビルドするためには，解消する必要があることを示しています。
-    - 黄のメッセージは，警告であり，不具合を引き起こす可能性があるものの，アプリのビルドを阻止するものではない問題を示しています。
+    - 赤のメッセージは無視できない問題であり、アプリをビルドするためには解消する必要があることを示しています。
+    - 黄のメッセージは警告であり、不具合を引き起こす可能性があるものの、アプリのビルドを阻止する問題ではないことを示しています。
 
-You can click on errors and warnings to visualize them in the project.
+問題や警告をクリックすると、プロジェクト内の発生箇所にジャンプします。
 
-![Issue Navigator](img/Issue-Navigator-Xcode-4D-for-iOS.png)
+![イシューナビゲータータブ](img/Issue-Navigator-Xcode-4D-for-iOS.png)
 
-Next, we're going to focus on the files included in your 4D for iOS app from the Project navigation tab.
+次は Project navigation tab に切り替えて、4D for iOS アプリを構成するファイル群に注目しましょう。

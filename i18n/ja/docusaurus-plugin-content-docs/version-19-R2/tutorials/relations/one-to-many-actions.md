@@ -1,12 +1,12 @@
 ---
 id: one-to-many-actions
-title: １対Ｎとアクション
+title: 1対N - アクション
 ---
 
 
-We are now going to go a little bit further and **create a task for a specific employee**.
+今度は、**特定の担当者 (1側のレコード) のためにタスク (N側のレコード) を新規作成する** 場合を考えましょう。
 
-**親エンティティ**さえきちんと特定できていれば，子エンティティを作成するのは少しも難しいことはではありません！
+**親エンティティ** さえ特定できていれば、子エンティティを作成するのは少しも難しいことはではありません！
 
 スタータープロジェクトをダウンロードしてください:
 
@@ -17,16 +17,16 @@ href="https://github.com/4d-go-mobile/tutorial-RelationsActions/archive/6c649733
 
 ## addProject アクションを作成する
 
-* プロジェクトエディターを開いて「アクション」セクションに移動します。
+* プロジェクトエディターを開いてアクションセクションに移動します。
 
-* Add a `addProject` Action
+* `addProject` アクションを追加します。
 
 ![addProject メソッドの作成](img/create-addProject-Method-4D-for-iOS-relation-parent-ID.png)
 
 
 ## On Mobile App Action データベースメソッド
 
-あとは下記のように**On Mobile App Action**データベースメソッド内で**addProject** アクションの動作を定義するだけです。
+あとは **On Mobile App Action**データベースメソッド内で下記のように **addProject** アクションの動作を定義するだけです:
 
 ```4d
 : ($request.action="addProjects")
@@ -45,7 +45,7 @@ $result:=addProject ($o)
 ## addProject プロジェクトメソッド
 
 
-**addProject**メソッドには，下記のコードを入力します。
+**addProject**メソッドには以下のコードを入力します:
 
 ```4d
 C_OBJECT($0)
@@ -58,7 +58,7 @@ $out:=New object("success";False)
 
 If ($in.dataClass#Null)
 
-    $entity:=ds[$in.dataClass].new()  //エンティティを作成
+    $entity:=ds[$in.dataClass].new()  // エンティティを作成します
 
     For each ($key;$in.parameters)
 
@@ -66,19 +66,19 @@ If ($in.dataClass#Null)
 
     End for each 
 
-    $primaryKey:=$in.parent.primaryKey   //親エンティティのプライマリーキー
+    $primaryKey:=$in.parent.primaryKey   // 親エンティティのプライマリーキーを取得します
 
     $parent:=ds[$in.parent.dataClass].get($primaryKey)
 
-  $inverseRelationName:=$in.entity.relationName   //親エンティティのリレーション名
+  $inverseRelationName:=$in.entity.relationName   // 親エンティティのリレーション名を取得します
 
     $entity[$inverseRelationName]:=$parent
 
-    $status:=$entity.save()  //エンティティを保存
+    $status:=$entity.save()  // エンティティを保存します
 
-    $out.success:=True  //モバイルアプリにアクションの成功を通知
+    $out.success:=True  // モバイルアプリにアクションの成功を通知します
 
-    $out.dataSynchro:=True  //モバイルアプリにセレクションのリフレッシュを要求
+    $out.dataSynchro:=True  // モバイルアプリにセレクションのリフレッシュするよう通知します
 
     $out.statusText:="Task added"
 
@@ -94,7 +94,7 @@ $0:=$out
 
 ```
 
-親エンティティを使用することにより，幾つでも担当者にタスクを追加することができるようになりました！
+親エンティティを使用することで、担当者にタスクを追加できるようになりました！
 
 完成したプロジェクトをダウンロード
 
