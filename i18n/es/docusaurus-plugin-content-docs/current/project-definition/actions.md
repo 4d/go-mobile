@@ -3,13 +3,13 @@ id: actions
 title: Actions
 ---
 
-The 4D Mobile Project editor allows you to create actions to include in your mobile app.
+El editor 4D Mobile Project le permite crear acciones para incluir en su aplicación móvil.
 
-You can use [preset actions](#preset-actions) or [custom actions](../tutorials/actions/define-first-action.md) and [define their parameters](#add-parameters-to-your-actions).
+Puede utilizar [acciones preestablecidas](#preset-actions) o [acciones personalizadas](../tutorials/actions/define-first-action.md) y [definir sus parámetros](#add-parameters-to-your-actions).
 
-On the 4D side, you can execute 4D code in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method.
+En el lado 4D, puede ejecutar el código 4D en el método base [On Mobile App Action](../4d/on-mobile-app-action.md).
 
-Actions are automatically available in the [mobile interface](#mobile-app-side).
+Las acciones están disponibles automáticamente en la [ interfaz móvil](#mobile-app-side).
 
 
 ## En el editor de proyectos
@@ -20,15 +20,15 @@ Puede crear una nueva acción haciendo clic en el botón + en la parte inferior 
 
 A continuación, deberá definir lo siguiente:
 
-* **Names:** The action name to use in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method to trigger your 4D code.
-* **Iconos:** seleccione un icono para su acción de su librería de iconos. You can also [add your own icon](labels-and-icons.md#adding-custom-icons).
+* **Nombres:** define el nombre de la acción a utilizar en el método base [On Mobile App Action](../4d/on-mobile-app-action.md) para lanzar su código 4D.
+* **Iconos:** seleccione un icono para su acción de su librería de iconos. También puede [añadir su propio icono](labels-and-icons.md#adding-custom-icons).
 * **Etiquetas cortas y largas: **las etiquetas para las acciones que se mostrarán en su aplicación.
 * **Tabla:** seleccione la tabla en la que desea aplicar la acción.
 * **Alcance:** seleccione si desea aplicar la acción en una **entidad** o en una **tabla**.
 
 ![Action section](img/Actions-section-4D-for-iOS.png)
 
-:::note note
+:::nota nota
 
 You can sort the **Names** with a drag-and-drop. This operation will set the order in which they will appear in the app's menu.
 
@@ -163,7 +163,7 @@ Los proyectos 4D mobile incluyen las siguientes acciones predefinidas para gesti
 * Acción de eliminar
 * Compartir
 * Ordenar
-* Open URL
+* Abrir URL
 
 ### Añadir acción
 
@@ -243,38 +243,38 @@ Cuando se define más de una acción de ordenación para una tabla, los usuarios
 
 > Cuando sólo se define una acción de ordenación para una tabla, el menú **ordenación** no se muestra en la parte de la aplicación móvil.
 
-### Open URL action
+### Acción Open URL
 
-The **Open URL action** allows your mobile users to open an url from their mobile app. This action will display a web page served by 4D Server in a web area from within the mobile app.
+La acción **Open URL** permite a sus usuarios móviles abrir una url desde su aplicación móvil. Esta acción mostrará una página web servida por 4D Server en un área web desde la aplicación móvil.
 
-When you select this action, you have to define the path that will be opened:
+Al seleccionar esta acción, hay que definir la ruta que se abrirá:
 
 ![open url](img/open-url-action.png)
 
-You can only define a path starting with `/`, i.e. relative to the [current 4D web folder](https://developer.4d.com/docs/WebServer/webServerConfig.html#root-folder).
+Sólo se puede definir una ruta que empiece por `/`, es decir, relativa a la [carpeta actual de 4D web](https://developer.4d.com/docs/WebServer/webServerConfig.html#root-folder).
 
-This action can be set for any table and any scope (Table or Current entity). Like other actions, the Open URL action will be automatically available in the [mobile app interface](#mobile-app-side) (short or long label).
+Esta acción puede definirse para toda tabla y todo alcance (Tabla o Entidad actual). Al igual que otras acciones, la acción Open URL estará disponible automáticamente en la [interfaz de la aplicación móvil](#mobile-app-side) (etiqueta corta o larga).
 
 :::nota
 
-To close the web page and get back to the mobile app interface, use the `$4d.mobile.dismiss()` function from within the page (see below).
+Para cerrar la página web y volver a la interfaz de la aplicación móvil, utilice la función `$4d.mobile.dismiss()` desde la página (ver más abajo).
 
 :::
 
-#### Web Server Side
+#### Lado del servidor web
 
-The request sent to the server contains the context of the app (current entity and/or dataclass) in the `X-QMobile-Context` header. The content of this header is formatted in JSON and encoded in base64.
+La solicitud enviada al servidor contiene el contexto de la aplicación (entidad actual y/o clase de datos) en el encabezado `X-QMobile-Context`. El contenido de este encabezado está formateado en JSON y codificado en base64.
 
 :::consejo
 
-You can get the context information already decoded as object using the [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) component and its [WebHandler class](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md).
+Puede obtener la información de contexto ya decodificada como objeto utilizando el componente [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) y su clase [WebHandler](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md).
 
 :::
 
-Context information can be processed in the web page to return through standard 4D web server features:
+La información de contexto puede ser procesada en la página web para volver a través de las funcionalidades estándar del servidor web 4D:
 
-- [.shtml template pages](https://developer.4d.com/docs/WebServer/templates.html)
-- [On Web Connection database method](https://developer.4d.com/docs/WebServer/httpRequests.html#on-web-connection).
+- [páginas de plantillas .shtml](https://developer.4d.com/docs/WebServer/templates.html)
+- método base [On Web Connection](https://developer.4d.com/docs/WebServer/httpRequests.html#on-web-connection).
 
 
 #### Web Area Side
@@ -297,7 +297,7 @@ For your page to interact with the mobile app, some javascript code is automatic
 |            |                  | .verbose(message : string)    | Function | shows a message in native app for the developer                                                                                                                  |
 
 
-:::info See also
+:::info Ver también
 
 Blog post: [4D for Mobile : Display Web Pages in your Mobile Apps](https://blog.4d.com/4d-for-mobile-di…your-mobile-apps/)
 
@@ -415,7 +415,7 @@ Here is an example with the *push* format:
 
 Here are the different formats available on the generated application:
 
- - Push format:
+ - Formato Push:
 
 ![customInput2](img/push.png)
 
@@ -435,7 +435,7 @@ Here are the different formats available on the generated application:
 
 ## Acciones en modo sin conexión
 
-The user of an app can draft, store and queue action requests, even if they are working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.). Todas estas tareas se colocan en la lista de acciones pendientes hasta que la red sea accesible. Una vez que el usuario está en línea, todas las acciones pendientes se sincronizan sistemáticamente, se ejecutan y son visibles en la lista de acciones completadas.
+El usuario de una aplicación puede redactar, almacenar y poner en cola solicitudes de acción, incluso si está trabajando sin conexión (añadir el número de teléfono de un cliente, subir una foto, imprimir una factura o un presupuesto, borrar una dirección, etc.). Todas estas tareas se colocan en la lista de acciones pendientes hasta que la red sea accesible. Una vez que el usuario está en línea, todas las acciones pendientes se sincronizan sistemáticamente, se ejecutan y son visibles en la lista de acciones completadas.
 
 Las tareas pendientes pueden visualizarse y abrirse desde:
 
@@ -473,9 +473,9 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
 ```
 
 
-## Mobile app Side
+## Lado de la aplicación móvil
 
-In your mobile app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section.
+En su aplicación móvil, las acciones están disponibles de diferentes formas en sus formularios listados y detallados, según las plantillas que seleccione en la sección Formularios.
 
 ### Formularios Lista en tabla
 
@@ -530,4 +530,4 @@ Para su comodidad, el formulario de Edición incluye algunas **funcionalidades e
 
 ## ¿Qué hacer ahora?
 
-See [this tutorial](../tutorials/actions/getting-started.md) that will guide you through the **action definition process**.
+Ver [este tutorial](../tutorials/actions/getting-started.md) que lo guiará a través del **proceso de definición de acciones**.
