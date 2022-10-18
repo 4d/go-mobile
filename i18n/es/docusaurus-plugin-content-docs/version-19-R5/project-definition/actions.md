@@ -347,7 +347,7 @@ Here is an example with the *push* format:
 
 Here are the different formats available on the generated application:
 
- - Push format:
+ - Formato Push:
 
 ![customInput2](img/push.png)
 
