@@ -21,7 +21,7 @@ Actions are automatically available in the [mobile interface](#mobile-app-side).
 次に、以下のものを定義する必要があります:
 
 * **Names:** The action name to use in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method to trigger your 4D code.
-* **アイコン:** アイコンライブラリーから選択するアイコン。 You can also [add your own icon](labels-and-icons.md#adding-custom-icons).
+* **アイコン:** アイコンライブラリーから選択するアイコン。 You can also [add your own icon](./labels-and-icons.md#adding-custom-icons).
 * **短いラベルとラベル:** アプリに表示するアクションのラベル
 * **テーブル:** アクションを適用するテーブル
 * **スコープ:** アクションの定期用対象: **カレントエンティティ** または **テーブル**
@@ -43,116 +43,20 @@ Actions are automatically available in the [mobile interface](#mobile-app-side).
 * 名前
 * (長い) ラベル
 * 短いラベル
-* フォーマット
-* 入力制限 (最小値または最大値の定義)
-* プレースホルダー
-* 必須フィールド定義
+* [Input control](#input-controls)
+* Mandatory option
 * デフォルト値
+
+Depending on the selected input control, you can define the following additional properties:
+
+* Input constraints (minimum or maximum values)
+* プレースホルダー
+* [Data Source](#dynamic-choice-lists)
 
 ![アクション引数](img/Actions-parameters-4D-for-iOS.png)
 
 引数の順番はドラッグ＆ドロップで自由に変えられます。
 
-引数に対して選択できる **フォーマット** の種類は以下の通りです:
-
-<table>
-
-<tr>
-<th colspan="2"  style={{textAlign: 'center'}}>テキスト</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>フォーマット</th><th>詳細</th>
-</tr><tr>
-<td>テキスト</td><td>文字列の頭文字を大文字にします。</td>
-</tr><tr>
-<td>メールアドレス</td><td>メールアドレス入力用に最適化された iOSキーボード</td>
-</tr><tr>
-<td>電話番号</td><td>電話番号入力用の iOSキーパッド</td>
-</tr><tr>
-<td>アカウント</td><td>ユーザー名入力用に最適化された iOSキーボード</td>
-</tr><tr>
-<td>パスワード</td><td>パスワードの管理に最適化されています。</td>
-</tr><tr>
-<td>URL</td><td>URL入力に最適化された iOSキーボード</td>
-</tr><tr>
-<td>郵便番号</td><td>郵便番号入力に最適化された iOSキーボード</td>
-</tr><tr>
-<td>テキストエリア</td><td>単一フィールド内に複数行のテキストを格納できます。</td>
-</tr><tr>
-<td>バーコード</td><td>バーコードに割り当てられた値を取り出します。 サポートされてるフォーマット: EAN8、EAN13、Code 39、Code 93、Code 128、QRコード、UPC、PDF417</td>
-</tr>
-<tr>
-<td colspan="2"></td>
-</tr>
-
-<tr>
-<th colspan="2" style={{textAlign: 'center'}}>数値</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>フォーマット</th><th>詳細</th>
-</tr><tr>
-<td>数値</td><td>小数点付き数値</td>
-</tr><tr>
-<td>整数</td><td>小数点のつかない数値</td>
-</tr><tr>
-<td>指数</td><td>指数表記</td>
-</tr><tr>
-<td>パーセント</td><td>パーセント表記</td>
-</tr><tr>
-<td>読み方</td><td>数値を文字列へと変換</td>
-</tr>
-<tr>
-<td colspan="2"></td>
-</tr>
-
-<tr>
-<th colspan="2" style={{textAlign: 'center'}}>日付</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>フォーマット</th><th>詳細</th>
-</tr><tr>
-<td>日付</td><td>Nov 23, 1937</td>
-</tr><tr>
-<td>短い日付</td><td> 11/23/37</td>
-</tr><tr>
-<td>長い日付</td><td>November 23, 1937</td>
-</tr><tr>
-<td>完全な日付</td><td>Tuesday, November 23, 1937</td>
-</tr><tr>
-<td colspan="2"></td>
-</tr>
-
-<tr>
-<th colspan="2" style={{textAlign: 'center'}}>時間</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>フォーマット</th><th>詳細</th>
-</tr><tr>
-<td>時間</td><td>3:30 PM</td>
-</tr><tr>
-<td>経過時間</td><td>2 hours 30 minutes</td>
-</tr>
-<tr>
-<td colspan="2"></td>
-</tr>
-
-<tr>
-<th colspan="2" style={{textAlign: 'center'}}>ブール</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>フォーマット</th><th>詳細</th>
-</tr><tr>
-<td>ブール</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
-</tr><tr>
-<td>チェックマーク</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
-</tr>
-
-<tr>
-<td colspan="2"></td>
-</tr>
-<tr>
-<th colspan="2" style={{textAlign: 'center'}}>画像</th>
-</tr>
-<tr>
-<td>署名</td><td>手書き文字での署名が可能に</td>
-</tr>
-
-</table>
 
 ## プリセットアクション
 
@@ -313,30 +217,84 @@ After creating all of your actions, just click on the **Create** button from the
 
 :::note notes
 
-- `$result.dataSynchro:=True` というコードをアクション実行後に使用することで、セレクションを更新することができます。
-- `$result.statusText:="表示したいメッセージ"` というコードを使用することで、アクション実行時にアプリユーザーに対して通知をすることができます。
-- `$result.close:=True` というコードを使用することで、編集フォームを強制的に閉じることもできます。
+- You can refresh the selection after executing an action using `$result.dataSynchro:=True`.
+- You can notify the app user when action has been executed using `$result.statusText:="Message you want to display"`.
+- You can also decide to force close the Edition form using `$result.close:=True`.
 
 :::
 
-## アクション入力コントロール
 
-### ギャラリーのカスタム入力を使用する方法
+## Input Controls
 
-カスタムの入力コントロールを使用することで、ネイティブのアプリと容易にやりとりをすることができます。これはネイティブコードを使用した [ラベル & アイコン カスタムフォーマッター](labels-and-icons.md) と同じやり方を踏襲しています。
+Input controls define how information will be entered by the user in the mobile app, and also how it will be rendered. Several types of input controls can be used:
 
-これには、アプリでの用途や必要に応じて、ネイティブコードを使用した入力コントロールを独自に作成するほか、GitHub にて公開されている [ギャラリー](https://4d-go-mobile.github.io/gallery/#/type/input-control) から入力コントロールをダウンロードすることもできます。 解凍したフォルダーは必要に応じて名前を変更し、入力コントロール専用の "inputControls" フォルダー (`mybase/Resources/mobile/inputControls`) に入れます。 するとプロジェクトエディターにて、アクションの引数プロパティ内にある入力コントロールメニューから追加の入力コントロールが利用・選択可能になります。
+- **basic** - standard input controls for the data types.
+- **selection** - used to display a list of values to select (static or dynamic).
+- **action** - contain Swift ot Kotlin code and can do any relevant action.
 
-たとえば、モバイルの連絡先リストから電話番号を取得するには、*phoneContact* 入力コントロールテンプレートを使用することで、電話番号フィールドを自動的に埋めることが可能になります。
+Basic and selection input controls are provided by default. Action input controls have to be installed in the "inputControls" folder (see below). You can add custom input controls depending on your needs, either by creating your own controls or by downloading them from the [Input control Github gallery](https://4d-go-mobile.github.io/gallery//#/type/input-control). You only have to copy input control files in the "inputControls" folder.
 
-![アーキテクチャー](img/inputWithSwift.png) ![編集](img/phoneContactIcon2.png)![編集画面](img/phoneContactIcon.png)![編集画面](img/phoneContactIcon4.png)
+### Basic input controls
 
-ギャラリー内の入力コントロールはすべてオープンソースであり、Github から取得可能です。 自分の入力コントロールを共有したい、あるいは入力コントロールに対するフィードバックをしたい場合、お気軽に [4D Forum](https://discuss.4d.com/) までご投稿ください。
+Here are the **basic input controls** you can select for a parameter, depending on the data type.
 
-### 入力コントロールセクション
+| Data type | Input controls | 詳細                                                                                                                             |
+| --------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| テキスト      | Default        | 文字列の頭文字を大文字にします。                                                                                                               |
+|           | Mail Address   | Optimized keyboard for email entry                                                                                             |
+|           | 電話番号           | Keypad for entering telephone numbers                                                                                          |
+|           | アカウント          | Optimized keyboard for username entry                                                                                          |
+|           | パスワード          | パスワードの管理に最適化されています。                                                                                                            |
+|           | URL            | Optimized keyboard for URL entry                                                                                               |
+|           | 郵便番号           | Optimized keyboard for zip code entry                                                                                          |
+|           | テキストエリア        | 単一フィールド内に複数行のテキストを格納できます。                                                                                                      |
+|           | バーコード          | バーコードに割り当てられた値を取り出します。 サポートされてるフォーマット: EAN8、EAN13、Code 39、Code 93、Code 128、QRコード、UPC、PDF417                                    |
+| 数値        | Default        | 小数点付き数値                                                                                                                        |
+|           | 整数             | 小数点のつかない数値                                                                                                                     |
+|           | 指数             | 指数表記                                                                                                                           |
+|           | パーセント          | パーセント表記                                                                                                                        |
+|           | 読み方            | 数値を文字列へと変換                                                                                                                     |
+| 日付        | Default        | Nov 23, 1937                                                                                                                   |
+|           | 短い日付           | 11/23/37                                                                                                                       |
+|           | 長い日付           | November 23, 1937                                                                                                              |
+|           | 完全な日付          | Tuesday, November 23, 1937                                                                                                     |
+| 時間        | Default        | 3:30 PM                                                                                                                        |
+|           | 経過時間           | 2 hours 30 minutes                                                                                                             |
+| ブール       | Default        | 数値を文字列へと変換                                                                                                                     |
+| 時間        | Default        | 3:30 PM                                                                                                                        |
+|           | 経過時間           | 2 hours 30 minutes                                                                                                             |
+| 時間        | Default        | <img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true" /> |
+|           | チェックマーク        | <img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true" />  |
+| 画像        | Default        |                                                                                                                                |
+|           | 署名             | 手書き文字での署名が可能に                                                                                                                  |
 
-アクション入力コントロールは、モバイルアプリ内でフォーマットされた要素 (値、ピクチャーなど) を表示します。 これらの要素は、アクションフォーム内に自動的に含まれます。具体的には選択リストとして表示され、そこから値を選択し、引数として使用することができます。 これらの選択リストの動作は、静的または動的 (ダイナミック) のどちらかを選ぶことができます:
-- **静的** な選択リスト (json でハードコードされた定義済み選択肢) は 'inputControls' フォルダー (`mybase/Resources/mobile/inputControls`) 内の manifest.json ファイルに定義します。 この選択リストは以下のような複数の要素から定義されています:
+
+### Selection input controls
+
+Selection input controls display formatted elements (values, pictures) in your mobile apps. これらの要素は、アクションフォーム内に自動的に含まれます。具体的には選択リストとして表示され、そこから値を選択し、引数として使用することができます。 These choice lists can be either **static** or **dynamic**.
+
+以下が生成されたアプリ上で利用可能なフォーマットの種類です:
+
+- **Push**:
+
+![カスタム入力2](img/push.png)
+
+- **Segmented & picker**:
+
+![カスタム入力2](img/Sans-titre.png)
+
+- **Popover**:
+
+![カスタム入力2](img/popover.png)
+
+- **Sheet**:
+
+![カスタム入力2](img/sheet.png)
+
+
+#### Static choice lists
+
+**Static** choice lists (predefined choices hard coded in json) are located in an "inputControls" folder (`mybase/Resources/mobile/inputControls`) in a `manifest.json` file. この選択リストは以下のような複数の要素から定義されています:
 
 | プロパティ              | タイプ                 | 詳細                                                                           |
 | ------------------ | ------------------- | ---------------------------------------------------------------------------- |
@@ -347,7 +305,8 @@ After creating all of your actions, just click on the **Create** button from the
 | **"format"** (任意)  | テキスト                | インターフェースの選択: push (未定義の場合のデフォルト) / segmented / popover / sheet / picker      |
 
 以下は、静的な選択リストとして使用可能な、ある会社の支社の連絡先情報を格納した manifest.json ファイルの一例です:
-```4d
+
+```json
 {
     "name": "choiceListSheet",
     "type": [
@@ -365,7 +324,9 @@ After creating all of your actions, just click on the **Create** button from the
 }
 ```
 
-- **動的 (ダイナミック)** な選択リストは、データソースに基づいた選択リストです (データベースのコンテンツに応じて選択肢が変化します)。 この方式では、ヘルパーモジュールを使用してフォームフィールドに値を入力することで、データを素早く取得することができます。 モバイルアプリから直接利用可能であるだけでなく、選択リストは常に更新されます。 manifest.json ファイルには、以下のような要素が格納されています:
+#### Dynamic choice lists
+
+**Dynamic** choice lists are based on datasource (choices depending on the database content). この方式では、ヘルパーモジュールを使用してフォームフィールドに値を入力することで、データを素早く取得することができます。 モバイルアプリから直接利用可能であるだけでなく、選択リストは常に更新されます。 manifest.json ファイルには、以下のような要素が格納されています:
 
 | プロパティ             | タイプ                 | 詳細                                                                        |
 | ----------------- | ------------------- | ------------------------------------------------------------------------- |
@@ -387,7 +348,7 @@ After creating all of your actions, just click on the **Create** button from the
 
 動的な選択リストの一例です:
 
-```4d
+```json
 {
     "name": "datasourcePush"
     "type": [
@@ -407,31 +368,32 @@ After creating all of your actions, just click on the **Create** button from the
 }
 ```
 
-プロジェクトエディター側では、**入力コントロール** フォーマットを選択すると、そのフォーマットに基づいて絞り込まれたリストから **dataSource** が選択できます。 これでアプリは更新され、使用できます。
+On the Project editor side, once you select your **Input control** format, the **Data Source** will be selectable from a filtered list based on the format you have selected. これでアプリは更新され、使用できます。
 
 以下は *push* フォーマットの一例です:
 
 ![カスタム入力](img/customInput1.png) ![カスタム入力2](img/customInput2.png)
 
-以下が生成されたアプリ上で利用可能なフォーマットの種類です:
 
- - Push フォーマット:
 
-![カスタム入力2](img/push.png)
+### アクション入力コントロール
 
-- Segmented & picker フォーマット:
+カスタムの入力コントロールを使用することで、ネイティブのアプリと容易にやりとりをすることができます。これはネイティブコードを使用した [ラベル & アイコン カスタムフォーマッター](labels-and-icons.md) と同じやり方を踏襲しています。
 
-![カスタム入力2](img/Sans-titre.png)
+To do so, you can create your own input controls with native code, or you can download a few input controls from our [Github gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific "inputControls" folder (`mybase/Resources/mobile/inputControls`). するとプロジェクトエディターにて、アクションの引数プロパティ内にある入力コントロールメニューから追加の入力コントロールが利用・選択可能になります。
 
- - Popover フォーマット:
+たとえば、モバイルの連絡先リストから電話番号を取得するには、*phoneContact* 入力コントロールテンプレートを使用することで、電話番号フィールドを自動的に埋めることが可能になります。
 
-![カスタム入力2](img/popover.png)
+![アーキテクチャー](img/inputWithSwift.png) ![編集](img/phoneContactIcon2.png)![編集画面](img/phoneContactIcon.png)![編集画面](img/phoneContactIcon4.png)
 
- - Sheet フォーマット:
+ギャラリー内の入力コントロールはすべてオープンソースであり、Github から取得可能です。 自分の入力コントロールを共有したい、あるいは入力コントロールに対するフィードバックをしたい場合、お気軽に [4D Forum](https://discuss.4d.com/) までご投稿ください。
 
-![カスタム入力2](img/sheet.png)
+:::info
 
-**注意:** 入力コントロールにアクセスするには、"入力コントロール" フィールドの横にある矢印を使用します。
+An example of Kotlin input control definition is provided in [this tutorial](../tutorials/actions/create-kotlin-input.md).
+
+:::
+
 
 ## オフラインモードアクション
 
@@ -524,10 +486,12 @@ In your mobile app, actions are available in different ways in your List and Det
 
 * キーボードのタイプは、アクションセクションで選択されたパラメーターに依存します。
 * キーボード上部の矢印で、次のフィールドや前のフィールドに移動することができます。
-* iOSキーボードは、フィールドの外をタッチすることで、閉じることができます。
+* The keyboard can be closed by touching anywhere outside of a field.
 * 値が有効でない場合、ユーザーに表示されます。
 * ユーザーが Done ボタンをクリックしたときに空の必須フィールドがあれば、それに焦点が当たります。
 
 ## これからどうする？
 
 See [this tutorial](../tutorials/actions/getting-started.md) that will guide you through the **action definition process**.
+
+See [this tutorial](../tutorials/actions/create-kotlin-input.md) for an example of custom **Kotlin input control definition**.
