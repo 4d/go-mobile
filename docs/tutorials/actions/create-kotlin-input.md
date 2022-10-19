@@ -129,9 +129,11 @@ The `autocomplete` variable sets if the Kotlin input control requires a click to
 If your Kotlin input control has an icon, override the method `getIconName()` as follows :
 
 ```kotlin
+
 override fun getIconName(): String {
     return "call.xml" 
 }
+
 ```
 
 ### Resource files
@@ -140,7 +142,7 @@ You are free to add any resource file to your Kotlin input control. Everything y
 
 For example, your Kotlin `.kt` input control can make use of a resource in *res/drawable/your_resource.xml* , therefore your will need to have a your *resource.xml* file in *YourInputControl/android/res/drawable/your_resource.xml*.
 
-::: info
+:::info
 
 [More about Android resources](https://developer.android.com/guide/topics/resources/providing-resources). 
 
