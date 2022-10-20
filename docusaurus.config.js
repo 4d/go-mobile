@@ -13,6 +13,7 @@ module.exports = {
   themeConfig: {
     prism: {
       theme: require("./src/theme/highlight/themes/palenight"),
+	  additionalLanguages: ['kotlin'],
     },
     navbar: {
       hideOnScroll: true,
