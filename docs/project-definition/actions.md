@@ -231,7 +231,7 @@ After creating all of your actions, just click on the **Create** button from the
 
 
 
-## Built-in Input Controls
+## Built-in input controls
 
 Input controls define how information will be entered by the user in the mobile app, and also how it will be rendered. The Project editor provides basic input controls for regular data types. These controls are built-in and can be directly selected in the "Input Control" menu. 
 
