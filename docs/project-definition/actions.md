@@ -43,7 +43,7 @@ For each parameter, you can edit the following properties:
 * Name
 * Long label
 * Short label
-* [Input control](#input-controls)
+* [Input control](#built-in-input-controls)
 * Mandatory option
 * Default value
 
@@ -52,6 +52,12 @@ Depending on the selected input control, you can define the following additional
 * Input constraints (minimum or maximum values)
 * Placeholder
 * [Data Source](#dynamic-choice-lists)
+
+:::info
+
+By default, the Input Control menu displays **selectionControls**. This is a filter for selection controls, depending on their "format" property. To select a format, you must have [created](#selection-input-controls) at least one selection input control with this format. 
+
+::: 
 
 ![Action parameters](img/Actions-parameters-4D-for-iOS.png)
 
@@ -224,19 +230,14 @@ After creating all of your actions, just click on the **Create** button from the
 :::
 
 
-## Input Controls
 
-Input controls define how information will be entered by the user in the mobile app, and also how it will be rendered. Several types of input controls can be used:
+## Built-in Input Controls
 
-- **basic** - standard input controls for the data types. 
-- **selection** - used to display a list of values to select (static or dynamic). 
-- **action** - contain Swift ot Kotlin code and can do any relevant action. 
+Input controls define how information will be entered by the user in the mobile app, and also how it will be rendered. The Project editor provides basic input controls for regular data types. These controls are built-in and can be directly selected in the "Input Control" menu. 
 
-Basic and selection input controls are provided by default. Action input controls have to be installed in the "inputControls" folder (see below). You can add custom input controls depending on your needs, either by creating your own controls or by downloading them from the [Input control Github gallery](https://4d-go-mobile.github.io/gallery//#/type/input-control). You only have to copy input control files in the "inputControls" folder. 
+You can also define [custom input controls](#custom-input-controls) (see below).
 
-### Basic input controls  
-
-Here are the **basic input controls** you can select for a parameter, depending on the data type.
+Available built-in input controls depend on the data type:
 
 |Data type|Input controls|Description|
 |---|---|---|
@@ -269,32 +270,39 @@ Here are the **basic input controls** you can select for a parameter, depending 
 ||Signature|Allow to sign with the finger|
 
 
+## Custom input controls
+
+You can add custom input controls to your mobile project to highly customize interactions with the user. There are two categories of custom input controls:
+
+- [**selection**](#selection-input-controls) - used to display a list of values to select (static or dynamic).
+- [**action**](#action-input-controls) - contains Swift ot Kotlin code and can do any relevant action. 
+
+You can create custom input controls for both categories. Note that you can also download **action** input controls from the [Input control Github gallery](https://4d-go-mobile.github.io/gallery//#/type/input-control).
+
+### Defining custom input controls
+
+A custom input control is associated to a `Manifest.json` file and (optionally) Swift or Kotlin source code. The custom input control files must be stored into a subfolder at the following location:
+
+`myProject/Resources/Mobile/inputControls/`
+
+The `Manifest.json` file must contain the following attributes:
+
+- **name** (text): the input control name
+- **inject** (boolean): "inject" to indicate that when generating the app with this formatter, some source code in Sources must be injected in the final project 
+- **type** (text or collection of text): defines the type ("text", "integer", "boolean") of input control
+- **capabilities** (object) (optional): capabilities elements to add some information, some optional according to the needs (map, photo, location, etc.)
+- **target** (text or collection): the platform supported by your input control ("ios", "android")
+
+
 ### Selection input controls
 
-Selection input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either **static** or **dynamic**.
+Selection input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. 
 
-Here are the different formats available on the generated application: 
-
-- **Push**:
- 
-![customInput2](img/push.png)
-
-- **Segmented & picker**:
- 
-![customInput2](img/Sans-titre.png)
- 
-- **Popover**:
- 
-![customInput2](img/popover.png)
- 
-- **Sheet**:
- 
-![customInput2](img/sheet.png)
-
+These choice lists can be either **static** or **dynamic**.
 
 #### Static choice lists
 
-**Static** choice lists (predefined choices hard coded in json) are located in an "inputControls" folder (`mybase/Resources/mobile/inputControls`) in a `manifest.json` file. They are defined by several elements, as follows: 
+**Static** choice lists (predefined choices hard coded in json) must be located in a [`manifest.json` file in the "inputControls" folder](#defining-custom-input-controls). They are defined by several elements, as follows: 
 
 |Property |Type|Description|
 |---|---|---|
@@ -302,7 +310,7 @@ Here are the different formats available on the generated application:
 |Optional **"binding"**|	text|	"imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)|
 |**"choiceList"**|	object|	an object or collection to define a list of key(data sent to server)/value(displayed value to the user)|
 |**"type"**|text or collection|	one text or a collection of text to define a type (text, integer, boolean) of input control|
-|Optional **"format"**|	text|to select interface: push(default if not defined)/segmented/popover/sheet/picker|
+|Optional **"format"**|	text|to select interface: "push" (default if not defined), "segmented", "popover", "sheet", "picker"|
 
 Here is an example of a manifest.json file containing the contact information of a company's subsidiaries, that can be used as a static choice list:
 
@@ -326,14 +334,14 @@ Here is an example of a manifest.json file containing the contact information of
 
 #### Dynamic choice lists
 
-**Dynamic** choice lists are based on datasource (choices depending on the database content). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The manifest.json file is composed of the following elements:
+**Dynamic** choice lists are based on datasource (choices depending on the database content). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The [`manifest.json` file](#defining-custom-input-controls) is composed of the following elements:
 
 |Property|Type|Description|
 |---|---|---|
 |**"name"**|text|input control name|
 |**"choiceList"**|	object|	an object that contain "dataSource" (see table below)|
 |**"type"**|text or collection|	one text or a collection of text to define a type (text, integer, boolean) of input control|
-|Optional **"format"**|text|to select interface: "push"(default if not defined), "segmented", "popover", "sheet", "picker"|
+|Optional **"format"**|text|to select interface: "push" (default if not defined), "segmented", "popover", "sheet", "picker"|
 
 |Property||Type|Description|
 |---|---|---|---|
@@ -368,11 +376,12 @@ Here is an example of a dynamic choice list:
 }
 ```
 
+
 On the Project editor side, once you select your **Input control** format, the **Data Source** will be selectable from a filtered list based on the format you have selected. Your app will then be updated and ready-to-use!
 
-Here is an example with the *push* format: 
+The various formats are illustrated in this animation:
 
-![customInput](img/customInput1.png) ![customInput2](img/customInput2.png)
+![customInput](img/Input-controls-iOS-app-side.gif)
 
  
 
@@ -380,7 +389,7 @@ Here is an example with the *push* format:
 
 You can easily interact with native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with native code. 
 
-To do so, you can create your own input controls with native code, or you can download a few input controls from our [Github gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific "inputControls" folder (`mybase/Resources/mobile/inputControls`). They will then be available and selectable from the project editor input controls menu, in the parameter properties of the action.
+To do so, you can create your own input controls with native code, or you can download input controls from our [Github gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into the "inputControls" folder (`mybase/Resources/mobile/inputControls`). They will then be available and selectable from the project editor input controls menu, in the parameter properties of the action.
 
 For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
 
