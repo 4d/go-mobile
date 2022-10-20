@@ -43,7 +43,7 @@ Para cada parámetro, puede editar las siguientes propiedades:
 * Nombre
 * Etiqueta larga
 * Etiqueta corta
-* [Input control](#input-controls)
+* [Input control](#built-in-input-controls)
 * Mandatory option
 * Valor por defecto
 
@@ -52,6 +52,12 @@ Depending on the selected input control, you can define the following additional
 * Input constraints (minimum or maximum values)
 * Placeholder
 * [Data Source](#dynamic-choice-lists)
+
+:::info
+
+By default, the Input Control menu displays **selectionControls**. This is a filter for selection controls, depending on their "format" property. To select a format, you must have [created](#selection-input-controls) at least one selection input control with this format.
+
+:::
 
 ![Action parameters](img/Actions-parameters-4D-for-iOS.png)
 
@@ -149,33 +155,33 @@ Cuando se define más de una acción de ordenación para una tabla, los usuarios
 
 ### Acción Open URL
 
-La acción **Open URL** permite a sus usuarios móviles abrir una url desde su aplicación móvil. Esta acción mostrará una página web servida por 4D Server en un área web desde la aplicación móvil.
+The **Open URL action** allows your mobile users to open an url from their mobile app. This action will display a web page served by 4D Server in a web area from within the mobile app.
 
-Al seleccionar esta acción, hay que definir la ruta que se abrirá:
+When you select this action, you have to define the path that will be opened:
 
 ![open url](img/open-url-action.png)
 
-Sólo se puede definir una ruta que empiece por `/`, es decir, relativa a la [carpeta actual de 4D web](https://developer.4d.com/docs/WebServer/webServerConfig.html#root-folder).
+You can only define a path starting with `/`, i.e. relative to the [current 4D web folder](https://developer.4d.com/docs/WebServer/webServerConfig.html#root-folder).
 
-Esta acción puede definirse para toda tabla y todo alcance (Tabla o Entidad actual). Al igual que otras acciones, la acción Open URL estará disponible automáticamente en la [interfaz de la aplicación móvil](#mobile-app-side) (etiqueta corta o larga).
+This action can be set for any table and any scope (Table or Current entity). Like other actions, the Open URL action will be automatically available in the [mobile app interface](#mobile-app-side) (short or long label).
 
 :::nota
 
-Para cerrar la página web y volver a la interfaz de la aplicación móvil, utilice la función `$4d.mobile.dismiss()` desde la página (ver más abajo).
+To close the web page and get back to the mobile app interface, use the `$4d.mobile.dismiss()` function from within the page (see below).
 
 :::
 
 #### Lado del servidor web
 
-La solicitud enviada al servidor contiene el contexto de la aplicación (entidad actual y/o clase de datos) en el encabezado `X-QMobile-Context`. El contenido de este encabezado está formateado en JSON y codificado en base64.
+The request sent to the server contains the context of the app (current entity and/or dataclass) in the `X-QMobile-Context` header. The content of this header is formatted in JSON and encoded in base64.
 
 :::consejo
 
-Puede obtener la información de contexto ya decodificada como objeto utilizando el componente [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) y su clase [WebHandler](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md).
+You can get the context information already decoded as object using the [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) component and its [WebHandler class](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md).
 
 :::
 
-La información de contexto puede ser procesada en la página web para volver a través de las funcionalidades estándar del servidor web 4D:
+Context information can be processed in the web page to return through standard 4D web server features:
 
 - [.shtml template pages](https://developer.4d.com/docs/WebServer/templates.html)
 - [On Web Connection database method](https://developer.4d.com/docs/WebServer/httpRequests.html#on-web-connection).
@@ -201,7 +207,7 @@ For your page to interact with the mobile app, some javascript code is automatic
 |            |                  | .verbose(message : string)    | Function | shows a message in native app for the developer                                                                                                                  |
 
 
-:::info Ver también
+:::info See also
 
 Blog post: [4D for Mobile : Display Web Pages in your Mobile Apps](https://blog.4d.com/4d-for-mobile-di…your-mobile-apps/)
 
@@ -224,19 +230,14 @@ After creating all of your actions, just click on the **Create** button from the
 :::
 
 
-## Input Controls
 
-Input controls define how information will be entered by the user in the mobile app, and also how it will be rendered. Several types of input controls can be used:
+## Built-in input controls
 
-- **basic** - standard input controls for the data types.
-- **selection** - used to display a list of values to select (static or dynamic).
-- **action** - contain Swift ot Kotlin code and can do any relevant action.
+Input controls define how information will be entered by the user in the mobile app, and also how it will be rendered. The Project editor provides basic input controls for regular data types. These controls are built-in and can be directly selected in the "Input Control" menu.
 
-Basic and selection input controls are provided by default. Action input controls have to be installed in the "inputControls" folder (see below). You can add custom input controls depending on your needs, either by creating your own controls or by downloading them from the [Input control Github gallery](https://4d-go-mobile.github.io/gallery//#/type/input-control). You only have to copy input control files in the "inputControls" folder.
+You can also define [custom input controls](#custom-input-controls) (see below).
 
-### Basic input controls
-
-Here are the **basic input controls** you can select for a parameter, depending on the data type.
+Available built-in input controls depend on the data type:
 
 | Data type | Input controls        | Descripción                                                                                                                       |
 | --------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -269,32 +270,39 @@ Here are the **basic input controls** you can select for a parameter, depending 
 |           | Firma                 | Permitir firmar con el dedo                                                                                                       |
 
 
+## Custom input controls
+
+You can add custom input controls to your mobile project to highly customize interactions with the user. There are two categories of custom input controls:
+
+- [**selection**](#selection-input-controls) - used to display a list of values to select (static or dynamic).
+- [**action**](#action-input-controls) - contains Swift ot Kotlin code and can do any relevant action.
+
+You can create custom input controls for both categories. Note that you can also download **action** input controls from the [Input control Github gallery](https://4d-go-mobile.github.io/gallery//#/type/input-control).
+
+### Defining custom input controls
+
+A custom input control is associated to a `Manifest.json` file and (optionally) Swift or Kotlin source code. The custom input control files must be stored into a subfolder at the following location:
+
+`myProject/Resources/Mobile/inputControls/`
+
+The `Manifest.json` file must contain the following attributes:
+
+- **name** (text): the input control name
+- **inject** (boolean): "inject" to indicate that when generating the app with this formatter, some source code in Sources must be injected in the final project
+- **type** (text or collection of text): defines the type ("text", "integer", "boolean") of input control
+- **capabilities** (object) (optional): capabilities elements to add some information, some optional according to the needs (map, photo, location, etc.)
+- **target** (text or collection): the platform supported by your input control ("ios", "android")
+
+
 ### Selection input controls
 
-Selection input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either **static** or **dynamic**.
+Selection input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter.
 
-Here are the different formats available on the generated application:
-
-- **Push**:
-
-![customInput2](img/push.png)
-
-- **Segmented & picker**:
-
-![customInput2](img/Sans-titre.png)
-
-- **Popover**:
-
-![customInput2](img/popover.png)
-
-- **Sheet**:
-
-![customInput2](img/sheet.png)
-
+These choice lists can be either **static** or **dynamic**.
 
 #### Static choice lists
 
-**Static** choice lists (predefined choices hard coded in json) are located in an "inputControls" folder (`mybase/Resources/mobile/inputControls`) in a `manifest.json` file. They are defined by several elements, as follows:
+**Static** choice lists (predefined choices hard coded in json) must be located in a [`manifest.json` file in the "inputControls" folder](#defining-custom-input-controls). They are defined by several elements, as follows:
 
 | Propiedad              | Type               | Descripción                                                                                             |
 | ---------------------- | ------------------ | ------------------------------------------------------------------------------------------------------- |
@@ -302,7 +310,7 @@ Here are the different formats available on the generated application:
 | Optional **"binding"** | texto              | "imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)  |
 | **"choiceList"**       | object             | an object or collection to define a list of key(data sent to server)/value(displayed value to the user) |
 | **"type"**             | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control             |
-| Optional **"format"**  | texto              | to select interface: push(default if not defined)/segmented/popover/sheet/picker                        |
+| Optional **"format"**  | texto              | to select interface: "push" (default if not defined), "segmented", "popover", "sheet", "picker"         |
 
 Here is an example of a manifest.json file containing the contact information of a company's subsidiaries, that can be used as a static choice list:
 
@@ -326,14 +334,14 @@ Here is an example of a manifest.json file containing the contact information of
 
 #### Dynamic choice lists
 
-**Dynamic** choice lists are based on datasource (choices depending on the database content). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The manifest.json file is composed of the following elements:
+**Dynamic** choice lists are based on datasource (choices depending on the database content). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The [`manifest.json` file](#defining-custom-input-controls) is composed of the following elements:
 
-| Propiedad             | Type               | Descripción                                                                                    |
-| --------------------- | ------------------ | ---------------------------------------------------------------------------------------------- |
-| **"name"**            | texto              | input control name                                                                             |
-| **"choiceList"**      | object             | an object that contain "dataSource" (see table below)                                          |
-| **"type"**            | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control    |
-| Optional **"format"** | texto              | to select interface: "push"(default if not defined), "segmented", "popover", "sheet", "picker" |
+| Propiedad             | Type               | Descripción                                                                                     |
+| --------------------- | ------------------ | ----------------------------------------------------------------------------------------------- |
+| **"name"**            | texto              | input control name                                                                              |
+| **"choiceList"**      | object             | an object that contain "dataSource" (see table below)                                           |
+| **"type"**            | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control     |
+| Optional **"format"** | texto              | to select interface: "push" (default if not defined), "segmented", "popover", "sheet", "picker" |
 
 | Propiedad        |                             | Type                       | Descripción                                                                                                                     |
 | ---------------- | --------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -368,11 +376,12 @@ Here is an example of a dynamic choice list:
 }
 ```
 
+
 On the Project editor side, once you select your **Input control** format, the **Data Source** will be selectable from a filtered list based on the format you have selected. Your app will then be updated and ready-to-use!
 
-Here is an example with the *push* format:
+The various formats are illustrated in this animation:
 
-![customInput](img/customInput1.png) ![customInput2](img/customInput2.png)
+![customInput](img/Input-controls-iOS-app-side.gif)
 
 
 
@@ -380,7 +389,7 @@ Here is an example with the *push* format:
 
 You can easily interact with native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with native code.
 
-To do so, you can create your own input controls with native code, or you can download a few input controls from our [Github gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific "inputControls" folder (`mybase/Resources/mobile/inputControls`). They will then be available and selectable from the project editor input controls menu, in the parameter properties of the action.
+To do so, you can create your own input controls with native code, or you can download input controls from our [Github gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into the "inputControls" folder (`mybase/Resources/mobile/inputControls`). They will then be available and selectable from the project editor input controls menu, in the parameter properties of the action.
 
 For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
 
@@ -435,7 +444,7 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
 ```
 
 
-## Lado de la aplicación móvil
+## Mobile app Side
 
 In your mobile app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section.
 
