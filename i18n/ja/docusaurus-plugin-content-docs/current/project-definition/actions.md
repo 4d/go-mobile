@@ -43,7 +43,7 @@ Actions are automatically available in the [mobile interface](#mobile-app-side).
 * 名前
 * (長い) ラベル
 * 短いラベル
-* [Input control](#input-controls)
+* [Input control](#built-in-input-controls)
 * Mandatory option
 * デフォルト値
 
@@ -52,6 +52,12 @@ Depending on the selected input control, you can define the following additional
 * Input constraints (minimum or maximum values)
 * プレースホルダー
 * [Data Source](#dynamic-choice-lists)
+
+:::info
+
+By default, the Input Control menu displays **selectionControls**. This is a filter for selection controls, depending on their "format" property. To select a format, you must have [created](#selection-input-controls) at least one selection input control with this format.
+
+:::
 
 ![アクション引数](img/Actions-parameters-4D-for-iOS.png)
 
@@ -224,19 +230,14 @@ After creating all of your actions, just click on the **Create** button from the
 :::
 
 
-## Input Controls
 
-Input controls define how information will be entered by the user in the mobile app, and also how it will be rendered. Several types of input controls can be used:
+## Built-in input controls
 
-- **basic** - standard input controls for the data types.
-- **selection** - used to display a list of values to select (static or dynamic).
-- **action** - contain Swift ot Kotlin code and can do any relevant action.
+Input controls define how information will be entered by the user in the mobile app, and also how it will be rendered. The Project editor provides basic input controls for regular data types. These controls are built-in and can be directly selected in the "Input Control" menu.
 
-Basic and selection input controls are provided by default. Action input controls have to be installed in the "inputControls" folder (see below). You can add custom input controls depending on your needs, either by creating your own controls or by downloading them from the [Input control Github gallery](https://4d-go-mobile.github.io/gallery//#/type/input-control). You only have to copy input control files in the "inputControls" folder.
+You can also define [custom input controls](#custom-input-controls) (see below).
 
-### Basic input controls
-
-Here are the **basic input controls** you can select for a parameter, depending on the data type.
+Available built-in input controls depend on the data type:
 
 | Data type | Input controls | 詳細                                                                                                                             |
 | --------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -269,40 +270,47 @@ Here are the **basic input controls** you can select for a parameter, depending 
 |           | 署名             | 手書き文字での署名が可能に                                                                                                                  |
 
 
+## Custom input controls
+
+You can add custom input controls to your mobile project to highly customize interactions with the user. There are two categories of custom input controls:
+
+- [**selection**](#selection-input-controls) - used to display a list of values to select (static or dynamic).
+- [**action**](#action-input-controls) - contains Swift ot Kotlin code and can do any relevant action.
+
+You can create custom input controls for both categories. Note that you can also download **action** input controls from the [Input control Github gallery](https://4d-go-mobile.github.io/gallery//#/type/input-control).
+
+### Defining custom input controls
+
+A custom input control is associated to a `Manifest.json` file and (optionally) Swift or Kotlin source code. The custom input control files must be stored into a subfolder at the following location:
+
+`myProject/Resources/Mobile/inputControls/`
+
+The `Manifest.json` file must contain the following attributes:
+
+- **name** (text): the input control name
+- **inject** (boolean): "inject" to indicate that when generating the app with this formatter, some source code in Sources must be injected in the final project
+- **type** (text or collection of text): defines the type ("text", "integer", "boolean") of input control
+- **capabilities** (object) (optional): capabilities elements to add some information, some optional according to the needs (map, photo, location, etc.)
+- **target** (text or collection): the platform supported by your input control ("ios", "android")
+
+
 ### Selection input controls
 
-Selection input controls display formatted elements (values, pictures) in your mobile apps. これらの要素は、アクションフォーム内に自動的に含まれます。具体的には選択リストとして表示され、そこから値を選択し、引数として使用することができます。 These choice lists can be either **static** or **dynamic**.
+Selection input controls display formatted elements (values, pictures) in your mobile apps. これらの要素は、アクションフォーム内に自動的に含まれます。具体的には選択リストとして表示され、そこから値を選択し、引数として使用することができます。
 
-以下が生成されたアプリ上で利用可能なフォーマットの種類です:
-
-- **Push**:
-
-![カスタム入力2](img/push.png)
-
-- **Segmented & picker**:
-
-![カスタム入力2](img/Sans-titre.png)
-
-- **Popover**:
-
-![カスタム入力2](img/popover.png)
-
-- **Sheet**:
-
-![カスタム入力2](img/sheet.png)
-
+These choice lists can be either **static** or **dynamic**.
 
 #### Static choice lists
 
-**Static** choice lists (predefined choices hard coded in json) are located in an "inputControls" folder (`mybase/Resources/mobile/inputControls`) in a `manifest.json` file. この選択リストは以下のような複数の要素から定義されています:
+**Static** choice lists (predefined choices hard coded in json) must be located in a [`manifest.json` file in the "inputControls" folder](#defining-custom-input-controls). この選択リストは以下のような複数の要素から定義されています:
 
-| プロパティ              | タイプ                 | 詳細                                                                           |
-| ------------------ | ------------------- | ---------------------------------------------------------------------------- |
-| **"name"**         | text                | アクション入力コントロール名                                                               |
-| **"binding"** (任意) | テキスト                | 画像を紐付けるための "imageNamed" (実際の画像はアクションフォーマッターフォルダー内の "images" サブフォルダーに入れる必要あり) |
-| **"choiceList"**   | object              | キー (サーバーに送られるデータ) / 値 (ユーザーに表示される値) のリストを定義するためのオブジェクトまたはコレクション              |
-| **"type"**         | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                |
-| **"format"** (任意)  | テキスト                | インターフェースの選択: push (未定義の場合のデフォルト) / segmented / popover / sheet / picker      |
+| プロパティ              | タイプ                 | 詳細                                                                                              |
+| ------------------ | ------------------- | ----------------------------------------------------------------------------------------------- |
+| **"name"**         | text                | アクション入力コントロール名                                                                                  |
+| **"binding"** (任意) | テキスト                | 画像を紐付けるための "imageNamed" (実際の画像はアクションフォーマッターフォルダー内の "images" サブフォルダーに入れる必要あり)                    |
+| **"choiceList"**   | object              | キー (サーバーに送られるデータ) / 値 (ユーザーに表示される値) のリストを定義するためのオブジェクトまたはコレクション                                 |
+| **"type"**         | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                                   |
+| **"format"** (任意)  | テキスト                | to select interface: "push" (default if not defined), "segmented", "popover", "sheet", "picker" |
 
 以下は、静的な選択リストとして使用可能な、ある会社の支社の連絡先情報を格納した manifest.json ファイルの一例です:
 
@@ -326,14 +334,14 @@ Selection input controls display formatted elements (values, pictures) in your m
 
 #### Dynamic choice lists
 
-**Dynamic** choice lists are based on datasource (choices depending on the database content). この方式では、ヘルパーモジュールを使用してフォームフィールドに値を入力することで、データを素早く取得することができます。 モバイルアプリから直接利用可能であるだけでなく、選択リストは常に更新されます。 manifest.json ファイルには、以下のような要素が格納されています:
+**Dynamic** choice lists are based on datasource (choices depending on the database content). この方式では、ヘルパーモジュールを使用してフォームフィールドに値を入力することで、データを素早く取得することができます。 モバイルアプリから直接利用可能であるだけでなく、選択リストは常に更新されます。 The [`manifest.json` file](#defining-custom-input-controls) is composed of the following elements:
 
-| プロパティ             | タイプ                 | 詳細                                                                        |
-| ----------------- | ------------------- | ------------------------------------------------------------------------- |
-| **"name"**        | テキスト                | 入力コントロール名                                                                 |
-| **"choiceList"**  | object              | "dataSource" を格納するオブジェクト (以下の表参照)                                         |
-| **"type"**        | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション             |
-| **"format"** (任意) | テキスト                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker" |
+| プロパティ             | タイプ                 | 詳細                                                                                              |
+| ----------------- | ------------------- | ----------------------------------------------------------------------------------------------- |
+| **"name"**        | テキスト                | 入力コントロール名                                                                                       |
+| **"choiceList"**  | object              | "dataSource" を格納するオブジェクト (以下の表参照)                                                               |
+| **"type"**        | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                                   |
+| **"format"** (任意) | テキスト                | to select interface: "push" (default if not defined), "segmented", "popover", "sheet", "picker" |
 
 | プロパティ            |                         | タイプ                        | 詳細                                                                         |
 | ---------------- | ----------------------- | -------------------------- | -------------------------------------------------------------------------- |
@@ -368,11 +376,12 @@ Selection input controls display formatted elements (values, pictures) in your m
 }
 ```
 
+
 On the Project editor side, once you select your **Input control** format, the **Data Source** will be selectable from a filtered list based on the format you have selected. これでアプリは更新され、使用できます。
 
-以下は *push* フォーマットの一例です:
+The various formats are illustrated in this animation:
 
-![カスタム入力](img/customInput1.png) ![カスタム入力2](img/customInput2.png)
+![カスタム入力](img/Input-controls-iOS-app-side.gif)
 
 
 
@@ -380,7 +389,7 @@ On the Project editor side, once you select your **Input control** format, the *
 
 カスタムの入力コントロールを使用することで、ネイティブのアプリと容易にやりとりをすることができます。これはネイティブコードを使用した [ラベル & アイコン カスタムフォーマッター](labels-and-icons.md) と同じやり方を踏襲しています。
 
-To do so, you can create your own input controls with native code, or you can download a few input controls from our [Github gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific "inputControls" folder (`mybase/Resources/mobile/inputControls`). するとプロジェクトエディターにて、アクションの引数プロパティ内にある入力コントロールメニューから追加の入力コントロールが利用・選択可能になります。
+To do so, you can create your own input controls with native code, or you can download input controls from our [Github gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into the "inputControls" folder (`mybase/Resources/mobile/inputControls`). するとプロジェクトエディターにて、アクションの引数プロパティ内にある入力コントロールメニューから追加の入力コントロールが利用・選択可能になります。
 
 たとえば、モバイルの連絡先リストから電話番号を取得するには、*phoneContact* 入力コントロールテンプレートを使用することで、電話番号フィールドを自動的に埋めることが可能になります。
 
