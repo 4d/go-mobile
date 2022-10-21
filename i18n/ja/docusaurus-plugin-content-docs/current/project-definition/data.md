@@ -32,7 +32,7 @@ title: データ
 
 :::info
 
-The **MobileApps** folder is automatically created in the 4D project's [data folder](https://developer.4d.com/docs/Project/architecture.html#data-folder).
+**MobileApps** フォルダーは、4Dプロジェクトの [データフォルダー](https://developer.4d.com/docs/ja/Project/architecture/#data) 内に自動的に作成されます。
 
 :::
 
@@ -107,7 +107,7 @@ The **MobileApps** folder is automatically created in the 4D project's [data fol
 
 ### データサイズ
 
-各テーブルのサイズがこの欄に表示されます。 なお、ファイルの総容量は、各OS のサイズ制限に準拠する必要があります。 詳細については [FAQ](https://developer.4d.com/go-mobile/docs/faq/faq#misc) を参照ください。
+各テーブルのサイズがこの欄に表示されます。 なお、ファイルの総容量は、各OS のサイズ制限に準拠する必要があります。 詳細については [FAQ](../faq/faq.md#misc) を参照ください。
 
 データがない場合や再生成が必要な場合は、**#NA** と表示されます:
 
@@ -156,7 +156,7 @@ field comparator value {logicalOperator field comparator value}
 
 :::info
 
-Refer to the [$filter REST documentation](https://developer.4d.com/docs/REST/filter.html) for a detailed description of query syntaxes. **フィルタークエリ** として入力された文字列は、そのまま `$filter=` RESTコマンドに引数として渡されます。
+クエリシンタックスの詳細な情報については [$filter の RESTドキュメンテーション](https://developer.4d.com/docs/ja/REST/filter/) を参照ください。 **フィルタークエリ** として入力された文字列は、そのまま `$filter=` RESTコマンドに引数として渡されます。
 
 :::
 
