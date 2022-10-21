@@ -382,7 +382,6 @@ On the Project editor side, once you select your **Input control** format, the *
 The various formats are illustrated in this animation:
 
 ![customInput](img/Input-controls-iOS-app-side.gif)
-![customInput](img/Input-controls-iOS-app-side.gif)
 
  
 
