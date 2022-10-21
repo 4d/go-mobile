@@ -15,7 +15,7 @@ In this tutorial, we want to create a Kotlin [input control](../../project-defin
 
 First, we have to create a `manifest.json` file to register the input control in the app. The file contents:
 
-```json title="/input-control-phoneContact/manifest.json"
+```json title="Resources/Mobile/inputControls/input-control-phoneContact/manifest.json"
 {
     "name": "phoneContact",
     "type" : "text",
@@ -30,7 +30,7 @@ First, we have to create a `manifest.json` file to register the input control in
 
 The `PhoneContact.kt` file contains the logic to fetch the number of a contact on click. The file contents:
 
-```kotlin title="/input-control-phoneContact/android/inputControlPhoneContact.kt"
+```kotlin title="Resources/Mobile/inputControls/input-control-phoneContact/android/inputControlPhoneContact.kt"
 package ___PACKAGE___
 
 import android.net.Uri
@@ -152,7 +152,7 @@ You may need to add specific permissions to your app.
 
 Add the following `capabilities` block in your `manifest.json` file:
 
-```json title="/input-control-phoneContact/manifest.json"
+```json
 {
     ...
     "capabilities" : {
@@ -210,4 +210,16 @@ The available contracts can be found here: [`https://developer.android.com/refer
 
 We support the following types:
 
-`ActivityResultContracts.StartActivityForResult` of type `ActivityResultContract<Intent, ActivityResult>` `ActivityResultContracts.StartIntentSenderForResult` of type `ActivityResultContract<IntentSenderRequest, ActivityResult>` `ActivityResultContracts.RequestMultiplePermissions` of type `ActivityResultContract<Array<String>, Map<String, Boolean>>` `ActivityResultContracts.RequestPermission` of type `ActivityResultContract<String, Boolean>` `ActivityResultContracts.TakePicturePreview` of type `ActivityResultContract<Void?, Bitmap?>` `ActivityResultContracts.TakePicture` of type `ActivityResultContract<Uri, Boolean>` `ActivityResultContracts.CaptureVideo` of type `ActivityResultContract<Uri, Boolean>` `ActivityResultContracts.PickContact` of type `ActivityResultContract<Void?, Uri?>` `ActivityResultContracts.GetContent` of type `ActivityResultContract<String, Uri?>` `ActivityResultContracts.GetMultipleContents` of type `ActivityResultContract<String, List<Uri>>` `ActivityResultContracts.OpenDocument` of type `ActivityResultContract<Array<String>, Uri?>` `ActivityResultContracts.OpenMultipleDocuments` of type `ActivityResultContract<Array<String>, List<Uri>>` `ActivityResultContracts.OpenDocumentTree` of type `ActivityResultContract<Uri?, Uri?>`
+- `ActivityResultContracts.StartActivityForResult` of type `ActivityResultContract<Intent, ActivityResult>`
+- `ActivityResultContracts.StartIntentSenderForResult` of type `ActivityResultContract<IntentSenderRequest, ActivityResult>`
+- `ActivityResultContracts.RequestMultiplePermissions` of type `ActivityResultContract<Array<String>, Map<String, Boolean>>`
+- `ActivityResultContracts.RequestPermission` of type `ActivityResultContract<String, Boolean>`
+- `ActivityResultContracts.TakePicturePreview` of type `ActivityResultContract<Void?, Bitmap?>`
+- `ActivityResultContracts.TakePicture` of type `ActivityResultContract<Uri, Boolean>`
+- `ActivityResultContracts.CaptureVideo` of type `ActivityResultContract<Uri, Boolean>`
+- `ActivityResultContracts.PickContact` of type `ActivityResultContract<Void?, Uri?>`
+- `ActivityResultContracts.GetContent` of type `ActivityResultContract<String, Uri?>`
+- `ActivityResultContracts.GetMultipleContents` of type `ActivityResultContract<String, List<Uri>>`
+- `ActivityResultContracts.OpenDocument` of type `ActivityResultContract<Array<String>, Uri?>`
+- `ActivityResultContracts.OpenMultipleDocuments` of type `ActivityResultContract<Array<String>, List<Uri>>`
+- `ActivityResultContracts.OpenDocumentTree` of type `ActivityResultContract<Uri?, Uri?>`
