@@ -224,7 +224,7 @@ WEB SEND HTTP REDIRECT("/generatedQRCode.shtml")
 
 ### generatedQRCode.shtml
 
-In this last page, we use [4D tags](https://developer.4d.com/docs/Tags/tags.html) to get the *data* value:
+この最後のページでは、[4Dタグ](https://developer.4d.com/docs/ja/Tags/tags/) を使って、*data* の値を取得しています:
 
 ```html
 <h1>3. SCAN THE QRCODE FROM YOUR PHONE</h1>

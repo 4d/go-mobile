@@ -75,7 +75,7 @@ Settings.plist ファイルに log.level を追加すると、ログレベルを
 
 :::info
 
-This feature requires that you have enabled the [Apple Device Developer Mode](../getting-started/requirements.md#apple-device-developer-mode).
+この機能を使用するには、[Apple デバイスのデベロッパモード](../getting-started/requirements.md#apple-デバイスのデベロッパモード) を有効にしておく必要があります。
 
 :::
 

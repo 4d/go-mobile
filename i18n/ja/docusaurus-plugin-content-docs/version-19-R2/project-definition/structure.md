@@ -3,7 +3,7 @@ id: structure
 title: ストラクチャー
 ---
 
-4Dデータベース内で RESTリソースとして公開されているすべてのテーブルとフィールドがこのページに表示されます。これには (N対1 および 1対N リレーションに基づいた) リレーション属性も含まれます。 In fact, the page displays a view similar to [ORDA's datastore](https://developer.4d.com/docs/ORDA/overview.html).
+4Dデータベース内で RESTリソースとして公開されているすべてのテーブルとフィールドがこのページに表示されます。これには (N対1 および 1対N リレーションに基づいた) リレーション属性も含まれます。 実際の表示は、[ORDA のデータストア](https://developer.4d.com/docs/ja/ORDA/overview/) にとても近いものが表示されます。
 
 ![ストラクチャーセクション](img/Structure-section-4D-for-iOS.png)
 
@@ -19,7 +19,7 @@ title: ストラクチャー
 
 以下のテーブルとフィールドはこのページには表示されません:
 
-- tables and fields that do not comply with [ORDA rules](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
+- [ORDA ルール](https://developer.4d.com/docs/ja/ORDA/dsmapping/#%E3%82%B9%E3%83%88%E3%83%A9%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0) に則っていないテーブルやフィールド。
 - "`__`" (ダブルアンダースコア) で始まる名前を持つテーブルやフィールド。
 
 :::
@@ -52,7 +52,7 @@ title: ストラクチャー
 
 ![フィールド](img/fields.png)
 
-- All [4D scalar field types](https://developer.4d.com/docs/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/Concepts/blob.html) and [Object](https://developer.4d.com/docs/Concepts/object.html).
+- すべての [スカラー型の 4Dフィールド](https://developer.4d.com/docs/ja/Concepts/data-types/) がサポートされます (ただし [BLOB](https://developer.4d.com/docs/ja/Concepts/blob/) 型および [オブジェクト](https://developer.4d.com/docs/ja/Concepts/object/) 型を除く)
 - リレーション属性 (N対1 および 1対N) はサポートされており、フィールドと同様に選択することができます。 リレーション属性は専用のアイコンを持ちます:
 
 Ｎ対１リレーションアイコン:  ![リレーション1](img/manyto1.png)
@@ -61,7 +61,7 @@ title: ストラクチャー
 
 :::info
 
-The names are based upon the relation names in the 4D Structure editor, see the [ORDA Structure mapping page](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
+リレーション属性の名前は 4Dストラクチャーエディターにおけるリレーション名に基づいています。[ORDA ストラクチャーマッピング](http://developer.4d.com/docs/ja/ORDA/dsmapping/#%E3%82%B9%E3%83%88%E3%83%A9%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0) のページを参照ください。
 
 :::
 

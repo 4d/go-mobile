@@ -196,7 +196,7 @@ title: Template.svg
 
 :::note
 
-For more information on these field types, refer to [**this page**](https://developer.4d.com/docs/Concepts/data-types.html).
+これらのフィールドタイプの詳細については、[**このページ**](https://developer.4d.com/docs/ja/Concepts/data-types/) を参照ください。
 
 :::
 

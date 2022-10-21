@@ -3,7 +3,7 @@ id: structure
 title: ストラクチャー
 ---
 
-4Dデータベース内で RESTリソースとして公開されているすべてのテーブルとフィールドがこのページに表示されます。これには (N対1 および 1対N リレーションに基づいた) リレーション属性も含まれます。 In fact, the page displays a view similar to [ORDA's datastore](https://developer.4d.com/docs/ORDA/overview.html).
+4Dデータベース内で RESTリソースとして公開されているすべてのテーブルとフィールドがこのページに表示されます。これには (N対1 および 1対N リレーションに基づいた) リレーション属性も含まれます。 実際の表示は、[ORDA のデータストア](https://developer.4d.com/docs/ja/ORDA/overview/) にとても近いものが表示されます。
 
 ![ストラクチャーセクション](img/Structure-section-4D-for-iOS.png)
 
@@ -11,15 +11,15 @@ title: ストラクチャー
 このページでは、公開するテーブルおよびフィールドを選択することにより、モバイルデバイス用に複製するストラクチャーのサブセットを定義することができます。
 
 - 公開テーブルはアプリのタブとして自動的に追加されます。
-- 公開されたスカラーフィールドは[リストフォームおよび詳細フォーム](https://developer.4d.com/go-mobile/docs/project-definition/forms/) を定義する際に利用できます。
-- 公開されたリレーションフィールド (N対1 および 1対N リレーション) も、[リストフォームおよび詳細フォーム](https://developer.4d.com/go-mobile/docs/project-definition/forms/) を定義する際に利用でき、リレーションボタンといった追加のナビゲーション機能もついてきます。
+- 公開されたスカラーフィールドは[リストフォームおよび詳細フォーム](forms.md) を定義する際に利用できます。
+- 公開されたリレーションフィールド (N対1 および 1対N リレーション) も、[リストフォームおよび詳細フォーム](forms.md) を定義する際に利用でき、リレーションボタンといった追加のナビゲーション機能もついてきます。
 
 
 :::note
 
 以下のテーブルとフィールドはこのページには表示されません:
 
-- tables and fields that do not comply with [ORDA rules](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
+- [ORDA ルール](https://developer.4d.com/docs/ja/ORDA/dsmapping/#%E3%82%B9%E3%83%88%E3%83%A9%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0) に則っていないテーブルやフィールド。
 - "`__`" (ダブルアンダースコア) で始まる名前を持つテーブルやフィールド。
 
 :::
@@ -58,7 +58,7 @@ title: ストラクチャー
 
 ![フィールド](img/fields.png)
 
-- All [4D scalar field types](https://developer.4d.com/docs/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/Concepts/blob.html).
+- すべての[スカラー型の4D フィールド](https://developer.4d.com/docs/ja/Concepts/data-types/) がサポートされます(ただし [BLOB](https://developer.4d.com/docs/ja/Concepts/blob/) 型を除く)
 - [オブジェクトフィールド](#オブジェクト属性)
 - [計算属性](#計算属性-1) (スカラー属性のみ)
 - リレーション属性 (N対1 および 1対N) はサポートされており、フィールドと同様に選択することができます。 リレーション属性は専用のアイコンを持ちます:
@@ -69,7 +69,7 @@ title: ストラクチャー
 
 :::info
 
-The names are based upon the relation names in the 4D Structure editor, see the [ORDA Structure mapping page](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
+リレーション属性の名前は 4Dストラクチャーエディターにおけるリレーション名に基づいています。[ORDA ストラクチャーマッピング](http://developer.4d.com/docs/ja/ORDA/dsmapping/#%E3%82%B9%E3%83%88%E3%83%A9%E3%82%AF%E3%83%81%E3%83%A3%E3%83%BC%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0) のページを参照ください。
 
 :::
 
@@ -133,13 +133,13 @@ The names are based upon the relation names in the 4D Structure editor, see the 
 
 Android でも iOS でも、プロジェクトエディターから設定をすれば、生成されたアプリ内で [計算属性](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#computed-attributes) を表示することができます。
 
-In 4D for iOS and 4D for Android, [computed attributes](https://developer.4d.com/docs/ORDA/ordaClasses.html#computed-attributes) are the result of several fields combined into one field. この計算属性は、モバイルアプリ作成時に他のフィールドと同様に使用できます。つまり、ストラクチャーセクションで確認し、公開できるということです。 たとえば、住所における通りの番号と通りの名称、あるいは氏名における名字と名前のように 2つに分かれた属性を使う代わりに、これらを 1つの属性に纏めて "fullAddress" や "fullName" などと名づけることができます。
+4D for iOS および 4D for Android では、[計算属性](https://developer.4d.com/docs/ja/ORDA/ordaClasses/#computed-attributes) とは複数のフィールドを一つに複合した結果です。 この計算属性は、モバイルアプリ作成時に他のフィールドと同様に使用できます。つまり、ストラクチャーセクションで確認し、公開できるということです。 たとえば、住所における通りの番号と通りの名称、あるいは氏名における名字と名前のように 2つに分かれた属性を使う代わりに、これらを 1つの属性に纏めて "fullAddress" や "fullName" などと名づけることができます。
 
 やり方は、とても簡単です。
 
 ### 4D側の準備
 
-In your code, specify the attributes you want to use and the computed attribute you want to get, using the [*Class extends*](https://developer.4d.com/docs/Concepts/classes.html#class-extends-classname) and [exposed Function](https://developer.4d.com/docs/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows:
+[*Class extends*](https://developer.4d.com/docs/ja/Concepts/classes/#class-extends-classname) および [exposed Function](https://developer.4d.com/docs/ja/ORDA/ordaClasses/#%E5%85%AC%E9%96%8Bvs%E9%9D%9E%E5%85%AC%E9%96%8B%E9%96%A2%E6%95%B0) のシンタックスを使って、使用する属性と取得する計算属性を以下のようにコード内で指定します:
 
 ```4d 
 Class extends Entity
@@ -209,7 +209,7 @@ End if
 
 ## オブジェクト属性
 
-From the **Structure** section, you can select, use and display all [types](https://developer.4d.com/go-mobile/docs/project-definition/structure/#supported-field-types) of attributes in your mobile projects (text, dates, time, integers, etc), including **[object attributes](https://developer.4d.com/docs/Concepts/object.html)** (JSON format). フィールドリストの中では、オブジェクト属性は**{}** アイコンで表示されます。
+**ストラクチャー** セクションでは、全ての[型](https://developer.4d.com/go-mobile/ja/docs/project-definition/structure/#supported-field-types) の属性(テキスト、日付、時間、整数)をモバイルプロジェクト内で選択、使用、表示することができます。これには**[オブジェクト属性](https://developer.4d.com/docs/ja/Concepts/object/)** (JSON フォーマット) も含まれます。 フィールドリストの中では、オブジェクト属性は**{}** アイコンで表示されます。
 
 ![ストラクチャーセクション](img/object-attributes-structure.png)
 
@@ -228,7 +228,7 @@ From the **Structure** section, you can select, use and display all [types](http
 
 ### フィルタークエリ
 
-オブジェクト属性の[フィルタークエリ](https://developer.4d.com/go-mobile/docs/project-definition/data#filter-queries) を使用することで、フィルターされたデータを返して表示させることができます。 これをするためには、**[データ](https://developer.4d.com/go-mobile/docs/project-definition/data)** セクションのフィルタークエリに属性とプロパティを挿入します。
+オブジェクト属性の[フィルタークエリ](data.md#filter-queries) を使用することで、フィルターされたデータを返して表示させることができます。 これをするためには、**[データ](data.md)** セクションのフィルタークエリに属性とプロパティを挿入します。
 
 例えば、顧客用のテーブル内に、以下のようなキー/値の複数のオブジェクトを格納したオブジェクト型属性のアドレスを考えます:
 

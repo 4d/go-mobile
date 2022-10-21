@@ -4,12 +4,12 @@ title: Gestión de sesión
 ---
 
 
-4D for iOS and 4D for Android allow you to manage user sessions, so that you can get information about the connected users and improve their experience on your mobile application.
+4D for iOS y 4D for Android le permiten gestionar las sesiones de los usuarios, para que pueda obtener información sobre los usuarios conectados y mejorar su experiencia en su aplicación móvil.
 
 
 ## Archivo de sesión
 
-When a user opens the app for the first time, a session file is automatically created and stored next to the current data file in the MobileApps folder.
+Cuando un usuario abre la aplicación por primera vez, se crea un archivo de sesión automáticamente y se almacena junto al archivo de datos actual en la carpeta MobileApps.
 
 Los archivos de sesión están organizados y agrupados por carpeta de aplicación. Los TeamID y Bundle ID de la aplicación se concatenan para crear los nombres de las carpetas de la aplicación.
 
@@ -48,23 +48,23 @@ Este es un ejemplo de un archivo de sesión generado para 4D for iOS:
 
 ```
 
-By default, the "status" is automatically set to "accepted" if the session is validated by the [On Mobile App Authentication](../4d/on-mobile-app-authentication.md) database method (`$result.success` set to `True`). If you want the ability to manually validate the first login for every user session, add `$result.verify:=True` to the object returned by the [On Mobile App Authentication](../4d/on-mobile-app-authentication.md) database method. It will change the "accepted" default status to "pending" in the session file. For more information, see [this example](authentication.md#without-the-component).
+Por defecto, el "estado" se establece automáticamente en "aceptado" si la sesión es validada por el método base[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) (`$result.success` definido en `True`). Si desea la posibilidad de validar manualmente el primer inicio de sesión para cada sesión usuario, añada `$result.verify:=True` al objeto devuelto por el método base [On Mobile App Authentication](../4d/on-mobile-app-authentication.md). Cambiará el estado por defecto "accepted" a "pending" en el archivo de la sesión. Para más información, ver [este ejemplo](authentication.md#without-the-component).
 
 
-## Session object
+## Objeto Session
 
-Mobile sessions can take advantage of the powerful [4D user sessions](https://developer.4d.com/docs/WebServer/sessions.html), when they are enabled on the server. In this case, information stored in the [mobile session file](#session-file) is used to fill the [Session object](https://developer.4d.com/docs/API/SessionClass.html) on the server, so that you could share a cart for the same user between their web and mobile sessions, for example.
+Las sesiones móviles pueden aprovechar las poderosas [sesiones de usuario 4D](https://developer.4d.com/docs/WebServer/sessions.html), cuando están activadas en el servidor. En este caso, la información almacenada en el [archivo de sesión móvil](#session-file) se utiliza para llenar el [objeto Session](https://developer.4d.com/docs/API/SessionClass.html) en el servidor, de modo que se podría compartir un carrito para el mismo usuario entre sus sesiones web y móvil, por ejemplo.
 
-On the mobile project, the [Session object](https://developer.4d.com/docs/API/SessionClass.html) is automatically available from:
+En el proyecto móvil, el [objeto Session](https://developer.4d.com/docs/API/SessionClass.html) está disponible automáticamente desde:
 
-- the [On Mobile App Authentication](../4d/on-mobile-app-authentication.md) database method
-- the [On Mobile App Action](../4d/on-mobile-app-action.md) database method
-- [webareas](https://github.com/mesopelagique/form-detail-WebArea) in your forms.
+- el método base [On Mobile App Authentication](../4d/on-mobile-app-authentication.md)
+- el método base [On Mobile App Action](../4d/on-mobile-app-action.md)
+- [webareas](https://github.com/mesopelagique/form-detail-WebArea) en sus formularios.
 
-With user sessions, you can access and display user data through [4D tags](https://developer.4d.com/docs/Tags/tags.html) in [webareas](https://github.com/mesopelagique/form-detail-WebArea). For example, in a page.shtml form, you can write:
+Con las sesiones de usuario, se puede acceder y mostrar los datos del usuario a través de [etiquetas 4D](https://developer.4d.com/docs/Tags/tags.html) en [webareas](https://github.com/mesopelagique/form-detail-WebArea). Por ejemplo, en un formulario page.shtml, puede escribir:
 
 ```html
-<html><body><h1>You use the following address: <!--#4DTEXT Session.info.mobile.email--> </h1></body></html>
+<html><body><h1>Utilice la siguiente dirección: <!--#4DTEXT Sesión.info.móvil.email--> </h1></body></html>
 ```
 
 

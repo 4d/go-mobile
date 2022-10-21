@@ -1,15 +1,15 @@
 ---
 id: session-management
-title: Session management
+title: Gestão da sessão
 ---
 
 
-4D for iOS and 4D for Android allow you to manage user sessions, so that you can get information about the connected users and improve their experience on your mobile application.
+4D para iOS e 4D para Android permitem-lhe gerir sessões de utilizadores, para que possa obter informações sobre os utilizadores ligados e melhorar a sua experiência na sua aplicação móvel.
 
 
-## Session file
+## Arquivo de sessão
 
-When a user opens the app for the first time, a session file is automatically created and stored next to the current data file in the MobileApps folder.
+Quando um utilizador abre a aplicação pela primeira vez, um arquivo de sessão é automaticamente criado e armazenado ao lado do arquivo de dados atual na pasta MobileApps.
 
 The session files are organized and grouped by app folder. The Team ID and app bundle ID are concatenated to create the app folder names.
 
@@ -48,23 +48,23 @@ Here is an example of a 4D for iOS-generated session file:
 
 ```
 
-By default, the "status" is automatically set to "accepted" if the session is validated by the [On Mobile App Authentication](../4d/on-mobile-app-authentication.md) database method (`$result.success` set to `True`). If you want the ability to manually validate the first login for every user session, add `$result.verify:=True` to the object returned by the [On Mobile App Authentication](../4d/on-mobile-app-authentication.md) database method. It will change the "accepted" default status to "pending" in the session file. For more information, see [this example](authentication.md#without-the-component).
+Como padrão, o "estado" se estabelece automaticamente como "aceito" se a sessão for validada pelo método base[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) (`$result.success` definido como`True`). Se quiser a habilidade para validar manualmente o primeiro login de cada sessão de usuário, adicione `$result.verify:=True` ao objeto retornado pelo método de banco de dados [On Mobile App Authentication](../4d/on-mobile-app-authentication.md). Alterará o estado padrão "aceito" para "pendente" no arquivo da sessão. Para mais informações, ver [este exemplo](authentication.md#without-the-component).
 
 
-## Session object
+## Objecto sessão
 
-Mobile sessions can take advantage of the powerful [4D user sessions](https://developer.4d.com/docs/WebServer/sessions.html), when they are enabled on the server. In this case, information stored in the [mobile session file](#session-file) is used to fill the [Session object](https://developer.4d.com/docs/API/SessionClass.html) on the server, so that you could share a cart for the same user between their web and mobile sessions, for example.
+As sessões móveis podem aproveitar as poderosas sessões de usuário [4D](https://developer.4d.com/docs/WebServer/sessions.html), quando são ativadas no servidor. Neste caso, a informação armazenada no arquivo de sessão móvel [](#session-file) é utilizada para preencher o objecto de sessão [](https://developer.4d.com/docs/API/SessionClass.html) no servidor, para que possa partilhar um carrinho de compras para o mesmo usuário entre as suas sessões web e móveis, por exemplo.
 
-On the mobile project, the [Session object](https://developer.4d.com/docs/API/SessionClass.html) is automatically available from:
+No projecto móvel, o objecto de sessão [](https://developer.4d.com/docs/API/SessionClass.html) está automaticamente disponível a partir de:
 
-- the [On Mobile App Authentication](../4d/on-mobile-app-authentication.md) database method
-- the [On Mobile App Action](../4d/on-mobile-app-action.md) database method
-- [webareas](https://github.com/mesopelagique/form-detail-WebArea) in your forms.
+- o método base [On Mobile App Authentication](../4d/on-mobile-app-authentication.md)
+- o método banco de dados [On Mobile App Action](../4d/on-mobile-app-action.md)
+- [webareas](https://github.com/mesopelagique/form-detail-WebArea) nos seus formulários.
 
-With user sessions, you can access and display user data through [4D tags](https://developer.4d.com/docs/Tags/tags.html) in [webareas](https://github.com/mesopelagique/form-detail-WebArea). For example, in a page.shtml form, you can write:
+Com sessões de usuário, pode acessar e exibir dados de usuários através de [4D tags](https://developer.4d.com/docs/Tags/tags.html) em [webareas](https://github.com/mesopelagique/form-detail-WebArea). Por exemplo, numa forma page.shtml, pode escrever:
 
 ```html
-<html><body><h1>You use the following address: <!--#4DTEXT Session.info.mobile.email--> </h1></body></html>
+<html><body><h1>Utiliza o seguinte endereço: <!--#4DTEXT Session.info.mobile.email--> </h1></body></html>
 ```
 
 
@@ -76,17 +76,17 @@ Sessions can be managed by the **Mobile Session Management** component:
 
 <div>
 <a className="button button--primary"
-href="https://github.com/4d/Mobile-Session-Management/releases/latest">Mobile Session Management component</a>
+href="https://github.com/4d/Mobile-Session-Management/releases/latest">Componente Mobile Session Management</a>
 </div>
 
-1. Download and unzip the zip file
-2. Go to Build / Components file and get the MOBILE SESSION MANAGEMENT.4dbase
-3. Create a **Components** folder next to the 4D project with the app's data.
-4. Place the **MOBILE SESSION MANAGEMENT** component in the newly created **Components** folder.
-5. Restart 4D.
-6. Click on the **Execute** button from the toolbar
-7. In the 4D Methods Explorer, select the **MOBILE SESSION MANAGEMENT** method and click on the **Execute** button.
-8. The Apps window will appear displaying all of your apps:
+1. Descarregue e descomprima o arquivo zip
+2. Vá para o arquivo Gerar/Componentes e obtenha o arquivo MOBILE SESSION MANAGEMENT.4dbase
+3. Crie uma pasta **Componentes** junto ao banco de dados 4D com os dados da aplicação.
+4. Coloque o componente **MOBILE SESSION MANAGEMENT** na pasta **Componentes** recém criada.
+5. Reinicie 4D.
+6. Clique no botão **Executar** a partir da barra de ferramentas
+7. No explorador de métodos 4D, selecione o método **MOBILE SESSION MANAGEMENT** e clique no botão **Executar**.
+8. A janela de aplicações aparecerá mostrando todas suas aplicações:
 
 ![Session](img/session-management.png)
 

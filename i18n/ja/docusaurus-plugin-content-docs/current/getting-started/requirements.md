@@ -20,8 +20,8 @@ title: 要件
 
 - **開発**: 4D と 4D Developer Pro ライセンス
 
-- **Deployment**: 4D Server
-    - The 4D Web Server must be started.
+- **運用**: 4D Server
+    - 4D Web Server が起動されている必要があります。
     - HTTP および HTTPS ポートが有効化されており、かつ正しく設定されている必要があります。 4D for iOS および 4D for Android の配布においては、HTTPS は必須となります。
 
 
@@ -70,11 +70,11 @@ title: 要件
 
 :::
 
-### Apple Device Developer Mode
+### Apple デバイスのデベロッパモード
 
-As of iOS 16 and Xcode 14, you must enable the **Developer Mode** on your device to be able to develop and debug.
+iOS 16 および Xcode 14 では、デバイスで開発およびデバッグができるようにするには、**Developer Mode** (デベロッパモード) を有効にする必要があります。
 
-You need essentially to toggle the "Developer Mode" switch in the "Settings" application of your device. More information is provided in the [Apple documentation](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
+つまり、デバイスの "設定" アプリケーションで "デベロッパモード" スイッチを切り替える必要があります。 詳しくは、[Appleのドキュメント](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device) を参照ください。
 
 
 ## Android
