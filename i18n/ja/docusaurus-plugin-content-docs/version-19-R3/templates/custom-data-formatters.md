@@ -3,11 +3,11 @@ id: custom-data-formatters
 title: データフォーマッター
 ---
 
-> **BEFORE STARTING**
+> **はじめに**
 > 
-> To use a custom formatter, the first thing you'll need to do is create a `YourDatabase.4dbase/Resources/Mobile/formatters` folder.
+> カスタムフォーマッターをインストールするには、あらかじめ `YourDatabase.4dbase/Resources/formatters` フォルダーを作成しておきます。
 > 
-> Then drop the formatter folder into it.
+> フォーマッターは，このフォルダーにドロップします。
 
 
 <div markdown="1">
