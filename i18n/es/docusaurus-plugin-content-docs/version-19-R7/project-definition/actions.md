@@ -3,13 +3,13 @@ id: actions
 title: Actions
 ---
 
-The 4D Mobile Project editor allows you to create actions to include in your mobile app.
+El editor 4D Mobile Project le permite crear acciones para incluir en su aplicación móvil.
 
-You can use [preset actions](#preset-actions) or [custom actions](../tutorials/actions/define-first-action.md) and [define their parameters](#add-parameters-to-your-actions).
+Puede utilizar [acciones preestablecidas](#preset-actions) o [acciones personalizadas](../tutorials/actions/define-first-action.md) y [definir sus parámetros](#add-parameters-to-your-actions).
 
-On the 4D side, you can execute 4D code in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method.
+En el lado 4D, puede ejecutar el código 4D en el método base [On Mobile App Action](../4d/on-mobile-app-action.md).
 
-Actions are automatically available in the [mobile interface](#mobile-app-side).
+Las acciones están disponibles automáticamente en la [ interfaz móvil](#mobile-app-side).
 
 
 ## En el editor de proyectos
@@ -20,7 +20,7 @@ Puede crear una nueva acción haciendo clic en el botón + en la parte inferior 
 
 A continuación, deberá definir lo siguiente:
 
-* **Names:** The action name to use in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method to trigger your 4D code.
+* **Nombres:** define el nombre de la acción a utilizar en el método base [On Mobile App Action](../4d/on-mobile-app-action.md) para lanzar su código 4D.
 * **Iconos:** seleccione un icono para su acción de su librería de iconos. You can also [add your own icon](labels-and-icons.md#adding-custom-icons).
 * **Etiquetas cortas y largas: **las etiquetas para las acciones que se mostrarán en su aplicación.
 * **Tabla:** seleccione la tabla en la que desea aplicar la acción.
@@ -28,7 +28,7 @@ A continuación, deberá definir lo siguiente:
 
 ![Action section](img/Actions-section-4D-for-iOS.png)
 
-:::note note
+:::nota nota
 
 You can sort the **Names** with a drag-and-drop. This operation will set the order in which they will appear in the app's menu.
 
@@ -243,7 +243,7 @@ Cuando se define más de una acción de ordenación para una tabla, los usuarios
 
 > Cuando sólo se define una acción de ordenación para una tabla, el menú **ordenación** no se muestra en la parte de la aplicación móvil.
 
-### Open URL action
+### Acción Open URL
 
 The **Open URL action** allows your mobile users to open an url from their mobile app. This action will display a web page served by 4D Server in a web area from within the mobile app.
 
@@ -261,7 +261,7 @@ To close the web page and get back to the mobile app interface, use the `$4d.mob
 
 :::
 
-#### Web Server Side
+#### Lado del servidor web
 
 The request sent to the server contains the context of the app (current entity and/or dataclass) in the `X-QMobile-Context` header. The content of this header is formatted in JSON and encoded in base64.
 
@@ -415,7 +415,7 @@ Here is an example with the *push* format:
 
 Here are the different formats available on the generated application:
 
- - Push format:
+ - Formato Push:
 
 ![customInput2](img/push.png)
 
