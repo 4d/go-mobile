@@ -38,7 +38,7 @@ title: プロジェクトのアーカイブとアップロード
 
 **ビルドして実行: プロジェクトをビルドします**
 
-![BuildTab](img/BuildTab.png)
+![ビルドタブ](img/BuildTab.png)
 
 ## ⒋ プロジェクトを Xcode で開く
 
@@ -60,60 +60,60 @@ title: プロジェクトのアーカイブとアップロード
 
 * アーカイブ処理の最後に、作成したアーカイブを表示する Organizer ウィンドウが表示されます。
 
-* Click on the **Validate** button to start the validation process.
+* **Validate** ボタンをクリックし、検証を開始します。
 
 ![プロジェクトを検証する](img/Organizer-Project-Validation.png)
 
-* The first step is selecting the App Store distribution options.
+* App Store での配布オプションを選択します。
 
-![App Store distribution options](img/App-Store-Distribution-options.png)
+![App Store 配布オプション](img/App-Store-Distribution-options.png)
 
-* Then you need to re-sign your app. Let Xcode manage this by  checking the **Automatically manage signing** option.
+* 次に、アプリを再署名する必要があります。 **Automatically manage signing** オプションを選択して、Xcode に処理してもらいましょう。
 
-![Re-sign your app](img/Re-sign-your-App.png)
+![アプリの再署名](img/Re-sign-your-App.png)
 
-* Review your app's content.
+* アプリの内容を確認します。
 
-![App review](img/Review-App.png)
+![App審査](img/Review-App.png)
 
-* If your project passes the validation process, you should see this message:
+* 検証に成功すると、以下のメッセージが表示されます:
 
-![Validation](img/Archive-validation-complete.png)
+![検証](img/Archive-validation-complete.png)
 
-If an error occurs a message will be displayed. These errors must be resolved before attempting the validation process again.
+エラーが発生すると、そのメッセージが表示されます。 再検証の前に、これらのエラーを解決しなくてはなりません。
 
-* Click **Done**. This will return you to the Organizer window.
+* **Done** をクリックします。 すると、Organizer ウィンドウに戻ります。
 
-## ⒎ ⒎ ⒎ ⒎ Upload to App Store
+## ⒎ App Store にアップロードする
 
-Once the validation process has been completed, you're ready to add your app to the App Store.
+検証が完了したら、いよいよ App Store にアプリを追加することができます。
 
-* Click the **Upload to App Store** button.
+* **Upload to App Store** ボタンをクリックします。
 
-![⒎ ⒎ ⒎ Upload to App Store](img/Upload-to-AppStore.png)
+![App Store にアップロードする](img/Upload-to-AppStore.png)
 
-* When your project has been successfully uploaded, you'll see this window:
+* アップロードに成功すると、次のウィンドウが表示されます:
 
-![Upload successful](img/upload-Successful.png)
+![アップロード成功](img/upload-Successful.png)
 
-## ⒏ ⒏ ⒏ ⒏ Select the build for the App Store
+## ⒏ App Store 用のビルドを選択する
 
-* From App Store Connect > App Store > iOS App, select your app and click the **+** button that appears in the Build section
+* App Store Connect で App Store > iOS App からアプリを選択し、ビルドセクションに表示される **+** ボタンをクリックします。
 
-![Add build](img/Add-build-app-store-connect.png)
+![ビルド追加](img/Add-build-app-store-connect.png)
 
-* Select the build you want to submit and click **Done**.
+* 提出するビルドを選択し、**終了** をクリックします。
 
-![Build selection](img/Select-build-app-store-connect.png)
+![ビルド選択](img/Select-build-app-store-connect.png)
 
-* Finally, click on the **Submit for Review** button.
+* 最後に **審査へ提出** ボタンをクリックします。
 
-## ⒐ ⒐ Submit for Review
+## ⒐ 審査へ提出する
 
-* The final step to submitting your app for review is answering a few quick questions about your app.
+* 審査へ提出するための最終ステップとして、アプリに関するいくつかの質問に回答します。
 
-![⒐ Submit for Review](img/Export-Compliance-Content-Rights-Advertising-Identifer.png)
+![審査へ提出する](img/Export-Compliance-Content-Rights-Advertising-Identifer.png)
 
-* When you've finished with the questions, click **Submit**.
+* 回答したら、**送信** をクリックします。
 
-* The average App Store review time is around two days!
+* App Store 審査の平均的な所要時間は 2日ほどです！
