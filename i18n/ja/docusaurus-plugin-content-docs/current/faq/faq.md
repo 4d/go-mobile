@@ -7,11 +7,11 @@ title: FAQ
 
 
 
-<details><summary style= {{ fontWeight: "bold", marginBottom: "20px" }}>4D for iOS と 4D for Android を使用するためには特殊なスキルが必要になりますか?</summary>
+<details><summary style= {{ fontWeight: "bold", marginBottom: "20px" }}>4D for iOS と 4D for Android を使用するには特殊なスキルが必要ですか?</summary>
 
-いいえ。 4D for iOS と 4D for Android を使用すれば、ネイティブなiOS/Androidアプリを作成したことがなくても4D から直接モバイルプロジェクトを簡単に作成できます。
+いいえ。 ネイティブな iOS/Android アプリを作成したことがなくても、4D for iOS と 4D for Android を使用すれば、4D から直接モバイルプロジェクトを簡単に作成できます。
 
-モバイルプロジェクトエディターはモバイルアプリ開発の経験が全くなくても開発できるようにデザインされています。
+モバイルプロジェクトエディターは、モバイルアプリ開発の経験がなくても開発できるようにデザインされています。
 
 </details>
 
@@ -26,15 +26,15 @@ title: FAQ
 
 <details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>macOS からはどちらのモバイルプラットフォーム用の開発ができますか?</summary>
 
-macOS からはiOS および Android 両方のモバイルプラットフォーム用の開発が可能です。
+macOS からは、iOS および Android 両方のモバイルプラットフォーム用の開発が可能です。
 
 </details>
 
 <details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Windows からはどちらのモバイルプラットフォーム用の開発ができますか?</summary>
 
-Windows からはAndroid プラットフォーム用の開発のみが可能です。
+Windows では、Android プラットフォーム用の開発のみが可能です。
 
-iOS プラットフォーム用の開発のためには、最終アプリケーションのコンパイルとシミュレーターの実行のためにXCode が必要となるからです。
+iOS プラットフォーム用の開発のためには、最終アプリケーションのコンパイルとシミュレーターの実行のために XCode が必要となるからです。
 
 </details>
 
@@ -163,11 +163,11 @@ Rバージョンが利用できる 4D のパートナープログラムに未加
 
 </details>
 
-<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Is there a specific size limit for my apps?</summary>
+<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>アプリのサイズに制限はありますか?</summary>
 
-On iOS, make sure your app total uncompressed size doesn't exceed 4GB. For more information, click [here](https://help.apple.com/app-store-connect/#/dev611e0a21f).
+iOS の場合、アプリの非圧縮サイズが合計 4GBを超えないようにしてください。 詳細については [こちら](https://help.apple.com/app-store-connect/#/dev611e0a21f) を参照ください。
 
-On Android, with [Android App Bundles](https://developer.android.com/guide/app-bundle), the total size of the compressed APKs required to install your app should not exceed 150 MB. For more details about the Android size restrictions, click [here](https://developer.android.com/topic/performance/reduce-apk-size) or [here](https://developer.android.com/guide/playcore/asset-delivery).
+Android で [Android App Bundles](https://developer.android.com/guide/app-bundle) を使用する場合、アプリのインストールに必要な圧縮APK の合計サイズが 150MBを超えないようにしてください。 Android のサイズ制限についての詳細は、[こちら](https://developer.android.com/topic/performance/reduce-apk-size) または [こちら](https://developer.android.com/guide/playcore/asset-delivery) を参照ください。
 
 </details>
 

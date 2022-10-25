@@ -381,7 +381,7 @@ Webページがモバイルアプリと対話するため、いくつかの java
 
 さまざまなフォーマットを以下のアニメーションで紹介します:
 
-![カスタム入力](img/Input-controls-iOS-app-side.gif) ![カスタム入力](img/Input-controls-iOS-app-side.gif)
+![カスタム入力](img/Input-controls-iOS-app-side.gif)
 
 
 
