@@ -10,6 +10,11 @@ title: Create Kotlin input control
 
 In this tutorial, we want to create a Kotlin [input control](../../project-definition/actions/md#input-controls) that can get a phone number from a contact.
 
+:::info
+
+You can download a [ready-to-use version of this input control](https://github.com/4d-go-mobile/input-control-phoneContact) from the [Input Control gallery on github](https://4d-go-mobile.github.io/gallery//#/type/input-control).
+
+:::
 
 ## Manifest file
 
