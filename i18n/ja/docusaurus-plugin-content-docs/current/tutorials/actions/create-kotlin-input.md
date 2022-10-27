@@ -10,6 +10,11 @@ title: Kotlin入力コントロールを作成する
 
 このチュートリアルでは、連絡先から電話番号を取得するための Kotlin の [入力コントロール](../../project-definition/actions.md#アクション入力コントロール) を作成します。
 
+:::info
+
+You can download a [ready-to-use version of this input control](https://github.com/4d-go-mobile/input-control-phoneContact) from the [Input Control gallery on github](https://4d-go-mobile.github.io/gallery//#/type/input-control).
+
+:::
 
 ## Manifest ファイル
 
