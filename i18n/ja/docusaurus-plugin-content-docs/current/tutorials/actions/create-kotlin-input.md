@@ -1,19 +1,24 @@
 ---
 id: create-kotlin-input
-title: Create Kotlin input control
+title: Kotlin入力コントロールを作成する
 ---
 
 > **目標**
 > 
-> Create a Kotlin input control.
+> Kotlin の入力コントロールを作成します。
 
 
-In this tutorial, we want to create a Kotlin [input control](../../project-definition/actions/md#input-controls) that can get a phone number from a contact.
+このチュートリアルでは、連絡先から電話番号を取得するための Kotlin の [入力コントロール](../../project-definition/actions.md#アクション入力コントロール) を作成します。
 
+:::info
 
-## Manifest file
+You can download a [ready-to-use version of this input control](https://github.com/4d-go-mobile/input-control-phoneContact) from the [Input Control gallery on github](https://4d-go-mobile.github.io/gallery//#/type/input-control).
 
-First, we have to create a `manifest.json` file to register the input control in the app. The file contents:
+:::
+
+## Manifest ファイル
+
+まずは、入力コントロールをアプリに登録するための `manifest.json` ファイルを作成します。 ファイルの中身:
 
 ```json title="Resources/Mobile/inputControls/input-control-phoneContact/manifest.json"
 {
@@ -28,7 +33,7 @@ First, we have to create a `manifest.json` file to register the input control in
 
 ## PhoneContact.kt
 
-The `PhoneContact.kt` file contains the logic to fetch the number of a contact on click. The file contents:
+`PhoneContact.kt` ファイルには、クリック時に連絡先から電話番号を取得するためのロジックが含まれています。 ファイルの中身:
 
 ```kotlin title="Resources/Mobile/inputControls/input-control-phoneContact/android/inputControlPhoneContact.kt"
 package ___PACKAGE___
@@ -108,23 +113,23 @@ class PhoneContact(private val view: View) : BaseKotlinInputControl {
 }
 ```
 
-Note the following points:
+次の点を確認しましょう:
 
-- The `PhoneContact.kt` file must be located in the `inputControl` folder at the following path: *input-control-phoneContact/android/inputControlPhoneContact.kt*
-- Our Kotlin input control must inherit from `BaseKotlinInputControl` interface.
-- On the first line, keep this `___PACKAGE___` line. It will be used and replaced at project generation.
-- The Kotlin input control main class is identified by the annotation `@KotlinInputControl` Once your app is generated, you will find your Kotlin input control in *Your App / app / src / main / java / com / your_company / your_app / inputcontrol / YourCustomInputControl.kt*
-
-
-
-### Auto fill
-
-The `autocomplete` variable sets if the Kotlin input control requires a click to call its `process()` method or if it should process as soon as created.
+- `PhoneContact.kt` ファイルは、次のパスにある `inputControl` フォルダー内になくてはなりません: *input-control-phoneContact/android/inputControlPhoneContact.kt*
+- Kotlin 入力コントロールは、`BaseKotlinInputControl` インターフェースから継承しなければなりません。
+- 先頭行では、`___PACKAGE___` 行を保持します。 この行は、プロジェクト生成時に使用され、置換されます。
+- Kotlin入力コントロールのメインクラスは `@KotlinInputControl` のアノテーションにより識別されます。 アプリ生成後は、Kotlin入力コントロールは次の場所にあります: *Your App / app / src / main / java / com / your_company / your_app / inputcontrol / YourCustomInputControl.kt*
 
 
-### Icon
 
-If your Kotlin input control has an icon, override the method `getIconName()` as follows :
+### 自動補完
+
+`autocomplete` 変数によって、Kotlin入力コントロールの `process()` の実行にクリックを要求するか、即座に実行するかを指定します。
+
+
+### アイコン
+
+Kotlin入力コントロール用のアイコンがある場合、`getIconName()` メソッドを次のようにオーバーライドします:
 
 ```kotlin
 
@@ -134,23 +139,23 @@ override fun getIconName(): String {
 
 ```
 
-### Resource files
+### リソースファイル
 
-You are free to add any resource file to your Kotlin input control. Everything you put in a *res* folder under android folder will be copied to the generated app.
+Kotlin入力コントロールに任意のリソースファイルを追加できます。 android フォルダー下の *res* フォルダーに格納されているものはすべて生成されるアプリにコピーされます。
 
-For example, your Kotlin `.kt` input control can make use of a resource in *res/drawable/your_resource.xml* , therefore your will need to have a your *resource.xml* file in *YourInputControl/android/res/drawable/your_resource.xml*.
+たとえば、Kotlin の `.kt` 入力コントロールは、*res/drawable/your_resource.xml* 内のリソースを使用できます。そのため、*your_resource.xml* ファイルは、*YourInputControl/android/res/drawable/your_resource.xml* になくてはなりません。
 
 :::info
 
-[More about Android resources](https://developer.android.com/guide/topics/resources/providing-resources).
+[Android リソースについての詳細はこちら](https://developer.android.com/guide/topics/resources/providing-resources)。
 
 :::
 
-### Permissions
+### 権限
 
-You may need to add specific permissions to your app.
+アプリに対して特定の権限を追加する必要があるかもしれません。
 
-Add the following `capabilities` block in your `manifest.json` file:
+これには、`manifest.json` ファイルに次の `capabilities` ブロックを追加します:
 
 ```json
 {
@@ -161,7 +166,7 @@ Add the following `capabilities` block in your `manifest.json` file:
 }
 ```
 
-There are registered permissions which you can simply define with the following:
+登録された権限は次のように定義できます:
 
 ```json
 {
@@ -173,9 +178,9 @@ There are registered permissions which you can simply define with the following:
 }
 ```
 
-`contacts` setups `android.permission.READ_CONTACTS` permission. `location` setups `android.permission.ACCESS_COARSE_LOCATION` and `android.permission.ACCESS_FINE_LOCATION` permissions.
+`contacts` は `android.permission.READ_CONTACTS` の権限を設定します。 `location` は `android.permission.ACCESS_COARSE_LOCATION` および `android.permission.ACCESS_FINE_LOCATION` の権限を設定します。
 
-In order to ask user permission in your custom Kotlin input control, check out this code sample where we want the `READ_CONTACTS` permission:
+カスタムの Kotlin入力コントロールについてユーザーに権限を要求するには、`READ_CONTACTS` 権限をリクエストする次のコードサンプルを参照ください:
 
 ```kotlin
 (context as PermissionChecker?)?.askPermission(
@@ -188,12 +193,12 @@ In order to ask user permission in your custom Kotlin input control, check out t
 }
 ```
 
-We offer access to `PermissionChecker` that will delegate to the `Activity` the permission request. The `rationale` string will be displayed in case of the user denies the permission request.
+権限リクエストを `Activity` に任せるため、`PermissionChecker` へのアクセスを提供しています。 `rationale` の文字列は、ユーザーが権限リクエストを拒否したときに表示されます。
 
 
 ### ActivityResultController
 
-We offer access to `ActivityResultController` that will delegate any `ActivityResultContracts` to `MainActivity`. For example, to get a contact from your phone contacts, use `ActivityResultContracts.PickContact()`.
+あらゆる `ActivityResultContracts` を `MainActivity` に委譲する `ActivityResultController` を提供しています。 たとえば、電話の連絡先から 1件取得するには、`ActivityResultContracts.PickContact()` を使用します。
 
 ```kotlin
 (view.context as ActivityResultController?)?.launch(
@@ -203,23 +208,23 @@ We offer access to `ActivityResultController` that will delegate any `ActivityRe
 )
 ```
 
-`ActivityResultContacts.PickContact()` is of `ActivityResultContract<Void?, Uri?>` type. It means it takes no input, and returns the chosen contact `Uri`. `ActivityResultContracts.TakePicture()` is of `ActivityResultContract<Uri, Boolean>` type. It means it takes an `Uri` to store the image and returns if success or not.
+`ActivityResultContacts.PickContact()` のタイプは `ActivityResultContract<Void?, Uri?>` です。 これは、入力を受け付けず、選択された連絡先の `Uri` を返すという意味です。 `ActivityResultContracts.TakePicture()` のタイプは `ActivityResultContract<Uri, Boolean>` です。 これは、画像を保存するための `Uri` を受け取り、成功したかどうかを返すという意味です。
 
-The available contracts can be found here: [`https://developer.android.com/reference/androidx/activity/result/contract/ActivityResultContracts`](https://developer.android.com/reference/androidx/activity/result/contract/ActivityResultContracts).
+利用可能な Contract についてはこちらを参照ください: [`https://developer.android.com/reference/androidx/activity/result/contract/ActivityResultContracts`](https://developer.android.com/reference/androidx/activity/result/contract/ActivityResultContracts)。
 
 
-We support the following types:
+次のタイプをサポートしています:
 
-- `ActivityResultContracts.StartActivityForResult` of type `ActivityResultContract<Intent, ActivityResult>`
-- `ActivityResultContracts.StartIntentSenderForResult` of type `ActivityResultContract<IntentSenderRequest, ActivityResult>`
-- `ActivityResultContracts.RequestMultiplePermissions` of type `ActivityResultContract<Array<String>, Map<String, Boolean>>`
-- `ActivityResultContracts.RequestPermission` of type `ActivityResultContract<String, Boolean>`
-- `ActivityResultContracts.TakePicturePreview` of type `ActivityResultContract<Void?, Bitmap?>`
-- `ActivityResultContracts.TakePicture` of type `ActivityResultContract<Uri, Boolean>`
-- `ActivityResultContracts.CaptureVideo` of type `ActivityResultContract<Uri, Boolean>`
-- `ActivityResultContracts.PickContact` of type `ActivityResultContract<Void?, Uri?>`
-- `ActivityResultContracts.GetContent` of type `ActivityResultContract<String, Uri?>`
-- `ActivityResultContracts.GetMultipleContents` of type `ActivityResultContract<String, List<Uri>>`
-- `ActivityResultContracts.OpenDocument` of type `ActivityResultContract<Array<String>, Uri?>`
-- `ActivityResultContracts.OpenMultipleDocuments` of type `ActivityResultContract<Array<String>, List<Uri>>`
-- `ActivityResultContracts.OpenDocumentTree` of type `ActivityResultContract<Uri?, Uri?>`
+- `ActivityResultContracts.StartActivityForResult` (`ActivityResultContract<Intent, ActivityResult>` タイプ)
+- `ActivityResultContracts.StartIntentSenderForResult` (`ActivityResultContract<IntentSenderRequest, ActivityResult>` タイプ)
+- `ActivityResultContracts.RequestMultiplePermissions` (`ActivityResultContract<Array<String>, Map<String, Boolean>>` タイプ)
+- `ActivityResultContracts.RequestPermission` (`ActivityResultContract<String, Boolean>` タイプ)
+- `ActivityResultContracts.TakePicturePreview` (`ActivityResultContract<Void?, Bitmap?>` タイプ)
+- `ActivityResultContracts.TakePicture` (`ActivityResultContract<Uri, Boolean>` タイプ)
+- `ActivityResultContracts.CaptureVideo` (`ActivityResultContract<Uri, Boolean>` タイプ)
+- `ActivityResultContracts.PickContact` (`ActivityResultContract<Void?, Uri?>` タイプ)
+- `ActivityResultContracts.GetContent` (`ActivityResultContract<String, Uri?>` タイプ)
+- `ActivityResultContracts.GetMultipleContents` (`ActivityResultContract<String, List<Uri>>` タイプ)
+- `ActivityResultContracts.OpenDocument` (`ActivityResultContract<Array<String>, Uri?>` タイプ)
+- `ActivityResultContracts.OpenMultipleDocuments` (`ActivityResultContract<Array<String>, List<Uri>>` タイプ)
+- `ActivityResultContracts.OpenDocumentTree` (`ActivityResultContract<Uri?, Uri?>` タイプ)
