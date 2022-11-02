@@ -12,7 +12,7 @@ title: Kotlin入力コントロールを作成する
 
 :::info
 
-You can download a [ready-to-use version of this input control](https://github.com/4d-go-mobile/input-control-phoneContact) from the [Input Control gallery on github](https://4d-go-mobile.github.io/gallery//#/type/input-control).
+[この入力コントロールのすぐに使えるバージョン](https://github.com/4d-go-mobile/input-control-phoneContact) は、[入力コントロール Github ギャラリー](https://4d-go-mobile.github.io/gallery//#/type/input-control) からダウンロードすることができます。
 
 :::
 
