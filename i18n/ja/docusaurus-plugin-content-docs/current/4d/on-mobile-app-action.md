@@ -35,23 +35,23 @@ $result:=New object() // 戻り値となるオブジェクトの作成を忘れ�
 *mobileInfo* オブジェクト引数が受け取るプロパティは以下の通りです:
 
 
-| プロパティ名     |                     | タイプ           | 詳細                                                                                                 |
-| ---------- | ------------------- | ------------- | -------------------------------------------------------------------------------------------------- |
-| action     |                     | テキスト          | アクション名                                                                                             |
-|            | id                  | テキスト          | UUID of the [Session](https://developer.4d.com/docs/API/SessionClass.html) object on the 4D server |
-|            | ip                  | テキスト          | セッションIP                                                                                            |
-| parameters |                     | Object        | モバイルアプリから送信されたアクション引数                                                                              |
-| context    |                     | Object        | リクエストされたアクションのコンテキスト引数                                                                             |
-|            | dataClass           | テキスト          | 4D のデータクラス名                                                                                        |
-|            | entity.primaryKey   | Text, Longint | (任意; 選択されたエンティティに関連するアクションの場合に渡されます) エンティティのプライマリーキー。                                              |
-|            | entity.relationName | テキスト          | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) N対1リレーション名                                                   |
-|            | parent.primaryKey   | Text, Longint | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) 親エンティティのプライマリーキー。                                            |
-|            | parent.relationName | テキスト          | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) 1対Nリレーション名                                                   |
-|            | parent.dataClass    | テキスト          | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) 親エンティティのデータクラス                                               |
+| プロパティ名     |                     | タイプ           | 詳細                                                                               |
+| ---------- | ------------------- | ------------- | -------------------------------------------------------------------------------- |
+| action     |                     | Text          | アクション名                                                                           |
+|            | id                  | Text          | 4Dサーバー上の [Session](https://developer.4d.com/docs/API/SessionClass/) オブジェクトの UUID |
+|            | ip                  | Text          | セッションIP                                                                          |
+| parameters |                     | Object        | モバイルアプリから送信されたアクション引数                                                            |
+| context    |                     | Object        | リクエストされたアクションのコンテキスト引数                                                           |
+|            | dataClass           | Text          | 4D のデータクラス名                                                                      |
+|            | entity.primaryKey   | Text, Longint | (任意; 選択されたエンティティに関連するアクションの場合に渡されます) エンティティのプライマリーキー。                            |
+|            | entity.relationName | Text          | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) N対1リレーション名                                 |
+|            | parent.primaryKey   | Text, Longint | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) 親エンティティのプライマリーキー。                          |
+|            | parent.relationName | Text          | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) 1対Nリレーション名                                 |
+|            | parent.dataClass    | Text          | (任意; リンクされたエンティティに関連するアクションの場合に渡されます) 親エンティティのデータクラス                             |
 
 :::note
 
-You can access the [Session object](https://developer.4d.com/docs/API/SessionClass.html) automatically created on the 4D server from this database method. このオブジェクトを使用して、モバイルセッションを制御することができます。
+このデータベースメソッドから、4Dサーバー上に自動で作成される [Session オブジェクト](https://developer.4d.com/docs/ja/API/SessionClass/) にアクセスすることができます。 このオブジェクトを使用して、モバイルセッションを制御することができます。
 
 :::
 
@@ -59,10 +59,10 @@ You can access the [Session object](https://developer.4d.com/docs/API/SessionCla
 
 | プロパティ名      | タイプ                 | 詳細                                                                                                                                  |
 | ----------- | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| success     | ブール                 | アクションが正常に処理されていれば true、それ以外は false。                                                                                                 |
-| statusText  | テキスト                | (任意) モバイルアプリに表示するメッセージ。 success=true であれば成功した旨のメッセージを表示し、success=false であればメッセージを使ってユーザーに説明を提供できます。                                 |
+| success     | Boolean             | アクションが正常に処理されていれば true、それ以外は false。                                                                                                 |
+| statusText  | Text                | (任意) モバイルアプリに表示するメッセージ。 success=true であれば成功した旨のメッセージを表示し、success=false であればメッセージを使ってユーザーに説明を提供できます。                                 |
 | errors      | Object の Collection | (任意) 各オブジェクトには、拒否されたエントリーについてモバイルアプリに表示するための ['parameter'/'message' キーのペア](../project-definition/actions.md#失敗した保留タスクの更新) が含まれています。 |
-| dataSynchro | ブール                 | エンティティまたはテーブルのセレクションを更新する場合には true、それ以外は false。 true の場合、モバイルアプリはデータ同期を自動的に開始します。                                                   |
+| dataSynchro | Boolean             | エンティティまたはテーブルのセレクションを更新する場合には true、それ以外は false。 true の場合、モバイルアプリはデータ同期を自動的に開始します。                                                   |
 
 ## 例題
 

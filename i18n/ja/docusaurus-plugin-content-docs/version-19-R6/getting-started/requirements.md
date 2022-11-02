@@ -64,11 +64,11 @@ title: 要件
 
 :::
 
-### Apple Device Developer Mode
+### Apple デバイスのデベロッパモード
 
-As of iOS 16 and Xcode 14, you must enable the **Developer Mode** on your device to be able to develop and debug.
+iOS 16 および Xcode 14 では、デバイスで開発およびデバッグができるようにするには、**Developer Mode** (デベロッパモード) を有効にする必要があります。
 
-You need essentially to toggle the "Developer Mode" switch in the "Settings" application of your device. More information is provided in the [Apple documentation](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
+つまり、デバイスの "設定" アプリケーションで "デベロッパモード" スイッチを切り替える必要があります。 詳しくは、[Appleのドキュメント](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device) を参照ください。
 
 
 ## Android

@@ -118,6 +118,7 @@ module.exports = {
         "tutorials/actions/define-first-action",
         "tutorials/actions/adding-actions-template",
         "tutorials/actions/using-action-parameters",
+        "tutorials/actions/create-kotlin-input",
       ],
     },
     {

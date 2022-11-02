@@ -3,11 +3,11 @@ id: custom-detailform-templates
 title: 詳細画面のテンプレート
 ---
 
-> **BEFORE STARTING**
+> **はじめに**
 > 
-> To use a custom detail form template, the first thing you'll need to do is create a `YourDatabase.4dbase/Resources/Mobile/form/detail` folder.
+> カスタム詳細画面テンプレートを使用するには、あらかじめ `YourDatabase.4dbase/Resources/Mobile/form/detail` フォルダーを作成しておきます。
 > 
-> Then drop the detail form folder into it.
+> カスタム詳細画面テンプレートは、このフォルダーにドロップします。
 
 
 <div markdown="1">

@@ -1,6 +1,6 @@
 ---
 id: one-to-many-relations
-title: Liens 1 vers N
+title: One to Many relations
 ---
 
 Grâce à ce tutoriel, vous pourrez facilement inclure des liens 1 vers N dans vos projets mobiles.

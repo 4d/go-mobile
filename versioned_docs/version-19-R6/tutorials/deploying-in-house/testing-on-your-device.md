@@ -76,7 +76,7 @@ You need [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurat
 
 :::info
 
-This step requires that you have enabled the [Apple Device Developer Mode](../getting-started/requirements.md#apple-device-developer-mode).
+This step requires that you have enabled the [Apple Device Developer Mode](../../getting-started/requirements.md#apple-device-developer-mode).
 
 :::
 

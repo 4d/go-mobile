@@ -3,13 +3,13 @@ id: actions
 title: アクション
 ---
 
-The 4D Mobile Project editor allows you to create actions to include in your mobile app.
+4D モバイルプロジェクトエディターでは、モバイルアプリに含めるアクションを作成することができます。
 
-You can use [preset actions](#preset-actions) or [custom actions](../tutorials/actions/define-first-action.md) and [define their parameters](#add-parameters-to-your-actions).
+[プリセットアクション](#プリセットアクション) または [カスタムアクション](../tutorials/actions/define-first-action.md) を使用できるほか、[それら引数を定義](#アクションに引数を追加する) することができます。
 
-On the 4D side, you can execute 4D code in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method.
+4D側では、[On Mobile App Action](../4d/on-mobile-app-action.md) データベースメソッド内で 4Dコードを実行することができます。
 
-Actions are automatically available in the [mobile interface](#mobile-app-side).
+[モバイルインターフェース](#モバイルアプリ側) において、アクションは自動的に利用可能です。
 
 
 ## プロジェクトエディター側の設定
@@ -20,8 +20,8 @@ Actions are automatically available in the [mobile interface](#mobile-app-side).
 
 次に、以下のものを定義する必要があります:
 
-* **Names:** The action name to use in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method to trigger your 4D code.
-* **アイコン:** アイコンライブラリーから選択するアイコン。 You can also [add your own icon](labels-and-icons.md#adding-custom-icons).
+* **名前:** [On Mobile App Action](../4d/on-mobile-app-action.md) データベースメソッド内で 4Dコードをトリガーするのに使用するアクションの名前。
+* **アイコン:** アイコンライブラリーから選択するアイコン。 また、[独自のアイコンを追加](labels-and-icons.md#カスタムのアイコンを追加する) することもできます。
 * **短いラベルとラベル:** アプリに表示するアクションのラベル
 * **テーブル:** アクションを適用するテーブル
 * **スコープ:** アクションの定期用対象: **カレントエンティティ** または **テーブル**
@@ -34,7 +34,7 @@ Actions are automatically available in the [mobile interface](#mobile-app-side).
 
 :::
 
-### アクションに引数を追加
+### アクションに引数を追加する
 
 **アクション引数** を追加することで、アプリからデータを直接 **編集** することができます。
 
@@ -43,116 +43,26 @@ Actions are automatically available in the [mobile interface](#mobile-app-side).
 * 名前
 * (長い) ラベル
 * 短いラベル
-* フォーマット
-* 入力制限 (最小値または最大値の定義)
-* プレースホルダー
-* 必須フィールド定義
+* [入力コントロール](#ビルトイン入力コントロール)
+* 必須オプション
 * デフォルト値
+
+入力コントロールの選択に応じて、以下の追加プロパティを定義することができます:
+
+* 入力制限 (最小値または最大値)
+* プレースホルダー
+* [データソース](#動的選択リスト)
+
+:::info
+
+デフォルトで、入力コントロールメニューは **選択コントロール** を表示します。 "フォーマット" プロパティにより、選択コントロールはフィルターされます。 フォーマットを選択するには、そのフォーマットで少なくとも 1つの [選択入力コントロール](#選択入力コントロール) を作成している必要があります。
+
+:::
 
 ![アクション引数](img/Actions-parameters-4D-for-iOS.png)
 
 引数の順番はドラッグ＆ドロップで自由に変えられます。
 
-引数に対して選択できる **フォーマット** の種類は以下の通りです:
-
-<table>
-
-<tr>
-<th colspan="2"  style={{textAlign: 'center'}}>テキスト</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>フォーマット</th><th>詳細</th>
-</tr><tr>
-<td>テキスト</td><td>文字列の頭文字を大文字にします。</td>
-</tr><tr>
-<td>メールアドレス</td><td>メールアドレス入力用に最適化された iOSキーボード</td>
-</tr><tr>
-<td>電話番号</td><td>電話番号入力用の iOSキーパッド</td>
-</tr><tr>
-<td>アカウント</td><td>ユーザー名入力用に最適化された iOSキーボード</td>
-</tr><tr>
-<td>パスワード</td><td>パスワードの管理に最適化されています。</td>
-</tr><tr>
-<td>URL</td><td>URL入力に最適化された iOSキーボード</td>
-</tr><tr>
-<td>郵便番号</td><td>郵便番号入力に最適化された iOSキーボード</td>
-</tr><tr>
-<td>テキストエリア</td><td>単一フィールド内に複数行のテキストを格納できます。</td>
-</tr><tr>
-<td>バーコード</td><td>バーコードに割り当てられた値を取り出します。 サポートされてるフォーマット: EAN8、EAN13、Code 39、Code 93、Code 128、QRコード、UPC、PDF417</td>
-</tr>
-<tr>
-<td colspan="2"></td>
-</tr>
-
-<tr>
-<th colspan="2" style={{textAlign: 'center'}}>数値</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>フォーマット</th><th>詳細</th>
-</tr><tr>
-<td>数値</td><td>小数点付き数値</td>
-</tr><tr>
-<td>整数</td><td>小数点のつかない数値</td>
-</tr><tr>
-<td>指数</td><td>指数表記</td>
-</tr><tr>
-<td>パーセント</td><td>パーセント表記</td>
-</tr><tr>
-<td>読み方</td><td>数値を文字列へと変換</td>
-</tr>
-<tr>
-<td colspan="2"></td>
-</tr>
-
-<tr>
-<th colspan="2" style={{textAlign: 'center'}}>日付</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>フォーマット</th><th>詳細</th>
-</tr><tr>
-<td>日付</td><td>Nov 23, 1937</td>
-</tr><tr>
-<td>短い日付</td><td> 11/23/37</td>
-</tr><tr>
-<td>長い日付</td><td>November 23, 1937</td>
-</tr><tr>
-<td>完全な日付</td><td>Tuesday, November 23, 1937</td>
-</tr><tr>
-<td colspan="2"></td>
-</tr>
-
-<tr>
-<th colspan="2" style={{textAlign: 'center'}}>時間</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>フォーマット</th><th>詳細</th>
-</tr><tr>
-<td>時間</td><td>3:30 PM</td>
-</tr><tr>
-<td>経過時間</td><td>2 hours 30 minutes</td>
-</tr>
-<tr>
-<td colspan="2"></td>
-</tr>
-
-<tr>
-<th colspan="2" style={{textAlign: 'center'}}>ブール</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>フォーマット</th><th>詳細</th>
-</tr><tr>
-<td>ブール</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
-</tr><tr>
-<td>チェックマーク</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
-</tr>
-
-<tr>
-<td colspan="2"></td>
-</tr>
-<tr>
-<th colspan="2" style={{textAlign: 'center'}}>画像</th>
-</tr>
-<tr>
-<td>署名</td><td>手書き文字での署名が可能に</td>
-</tr>
-
-</table>
 
 ## プリセットアクション
 
@@ -163,7 +73,7 @@ Actions are automatically available in the [mobile interface](#mobile-app-side).
 * 削除
 * 共有
 * ソート
-* Open URL
+* URLを開く
 
 ### 追加アクション
 
@@ -243,63 +153,63 @@ Zymosian, Elmer
 
 > テーブルに対するソートアクションが 1つしか定義されていない場合、モバイルアプリ側では **ソート** メニューは表示されません。
 
-### Open URL action
+### URLを開くアクション
 
-The **Open URL action** allows your mobile users to open an url from their mobile app. This action will display a web page served by 4D Server in a web area from within the mobile app.
+**URLを開くアクション** は、モバイルユーザーがモバイルアプリから URL を開けるようにします。 このアクションは、4D Server が提供する Webページをモバイルアプリ内で Webエリアに表示します。
 
-When you select this action, you have to define the path that will be opened:
+このアクションを選択した場合、開くパスを定義する必要があります:
 
-![open url](img/open-url-action.png)
+![urlを開く](img/open-url-action.png)
 
-You can only define a path starting with `/`, i.e. relative to the [current 4D web folder](https://developer.4d.com/docs/WebServer/webServerConfig.html#root-folder).
+`/` で始まるパス、つまり [カレントの 4D Webフォルダー](https://developer.4d.com/docs/ja/WebServer/webServerConfig/#ルートフォルダー) を基準とした相対パスしか定義できません。
 
-This action can be set for any table and any scope (Table or Current entity). Like other actions, the Open URL action will be automatically available in the [mobile app interface](#mobile-app-side) (short or long label).
+このアクションは、任意のテーブルと任意のスコープ (テーブルまたはカレントエンティティ) に対して設定できます。 他のアクションと同様に、URLを開くアクションは、[モバイルアプリのインターフェース](#モバイルアプリ側) において自動的に利用可能です (短いラベルまたは長いラベル)。
 
 :::note
 
-To close the web page and get back to the mobile app interface, use the `$4d.mobile.dismiss()` function from within the page (see below).
+Webページを閉じてモバイルアプリのインターフェイスに戻るには、ページ内で `$4d.mobile.dismiss()` 関数を使用します (後述参照)。
 
 :::
 
-#### Web Server Side
+#### Webサーバー側
 
-The request sent to the server contains the context of the app (current entity and/or dataclass) in the `X-QMobile-Context` header. The content of this header is formatted in JSON and encoded in base64.
+サーバーに送信されるリクエストには、アプリのコンテキスト (カレントエンティティおよび/またはデータクラス) が `X-QMobile-Context` ヘッダーに含まれています。 このヘッダーの内容は JSON 形式で、base64 でエンコードされています。
 
 :::tip
 
-You can get the context information already decoded as object using the [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) component and its [WebHandler class](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md).
+[**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) コンポーネントとその [WebHandler クラス](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md)を使用すると、オブジェクトとしてデコード済みのコンテキスト情報を取得することができます。
 
 :::
 
-Context information can be processed in the web page to return through standard 4D web server features:
+コンテキスト情報を Webページ内で処理して返すには、4D Webサーバーの標準的な機能が使用できます:
 
-- [.shtml template pages](https://developer.4d.com/docs/WebServer/templates.html)
-- [On Web Connection database method](https://developer.4d.com/docs/WebServer/httpRequests.html#on-web-connection).
+- [.shtml テンプレートページ](https://developer.4d.com/docs/ja/WebServer/templates/)
+- [On Web Connection データベースメソッド](https://developer.4d.com/docs/ja/WebServer/httpRequests/#on-web-connection)。
 
 
-#### Web Area Side
+#### Webエリア側
 
-For your page to interact with the mobile app, some javascript code is automatically provided in the `$4d.mobile` object. This object contains the following properties and functions:
+Webページがモバイルアプリと対話するため、いくつかの javascriptコードが自動的に `$4d.mobile` オブジェクトにて提供されます。 このオブジェクトは、以下のプロパティと関数を持ちます:
 
-| プロパティ      |                  |                               | タイプ      | 詳細                                                                                                                                                               |
-| ---------- | ---------------- | ----------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| $4d.mobile | .action          | .name                         | string   | name of the action                                                                                                                                               |
-|            |                  | .label                        | string   | label of the action                                                                                                                                              |
-|            |                  | .shortlabel                   | string   | short label of the action                                                                                                                                        |
-|            | .dismiss()       |                               | Function | closes the native web view                                                                                                                                       |
-|            | .status(message) |                               | Function | shows a message in native app for the user <br/>message: string<br/>message: object with "message" (or "statusText") and "success" (or "level") keys |
-|            | .logger          | .log(level, message : string) | Function | shows a message in native app for the developer                                                                                                                  |
-|            |                  | .info(message : string)       | Function | shows a message in native app for the developer                                                                                                                  |
-|            |                  | .info(message : string)       | Function | shows a message in native app for the developer                                                                                                                  |
-|            |                  | .warning(message : string)    | Function | shows a message in native app for the developer                                                                                                                  |
-|            |                  | .error(message : string)      | Function | shows a message in native app for the developer                                                                                                                  |
-|            |                  | .debug(message : string)      | Function | shows a message in native app for the developer                                                                                                                  |
-|            |                  | .verbose(message : string)    | Function | shows a message in native app for the developer                                                                                                                  |
+| プロパティ      |                  |                               | タイプ      | 詳細                                                                                                                                          |
+| ---------- | ---------------- | ----------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| $4d.mobile | .action          | .name                         | string   | アクション名                                                                                                                                      |
+|            |                  | .label                        | string   | アクションのラベル                                                                                                                                   |
+|            |                  | .shortlabel                   | string   | アクションの短いラベル                                                                                                                                 |
+|            | .dismiss()       |                               | Function | ネイティブ Webビューを閉じます                                                                                                                           |
+|            | .status(message) |                               | Function | ネイティブアプリでユーザーにメッセージを表示します<br/> message: string<br/> message: "message" (または "statusText") と "success" (または "level") キーを持つオブジェクト |
+|            | .logger          | .log(level, message : string) | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
+|            |                  | .info(message : string)       | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
+|            |                  | .info(message : string)       | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
+|            |                  | .warning(message : string)    | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
+|            |                  | .error(message : string)      | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
+|            |                  | .debug(message : string)      | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
+|            |                  | .verbose(message : string)    | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
 
 
 :::info See also
 
-Blog post: [4D for Mobile : Display Web Pages in your Mobile Apps](https://blog.4d.com/4d-for-mobile-di…your-mobile-apps/)
+ブログ記事 [4D for Mobile : モバイルアプリに Webページを表示する](https://blog.4d.com/4d-for-mobile-display-web-pages-in-your-mobile-apps/)
 
 :::
 
@@ -307,9 +217,9 @@ Blog post: [4D for Mobile : Display Web Pages in your Mobile Apps](https://blog.
 
 ### On Mobile App Action
 
-The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is available to call all of your 4D methods.
+[`On Mobile App Action`](../4d/on-mobile-app-action.md) データベースメソッドは、4Dメソッドを呼び出すのに利用します。
 
-After creating all of your actions, just click on the **Create** button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
+すべてのアクションを作成したあと、アクションテーブル右下の **作成...** ボタンをクリックすると、作成した全アクション名を含んだ *Case of* コードブロックが *On Mobile App Action* メソッド内に自動生成されます。
 
 :::note notes
 
@@ -319,35 +229,92 @@ After creating all of your actions, just click on the **Create** button from the
 
 :::
 
-## アクション入力コントロール
 
-### ギャラリーのカスタム入力を使用する方法
 
-カスタムの入力コントロールを使用することで、ネイティブのアプリと容易にやりとりをすることができます。これはネイティブコードを使用した [ラベル & アイコン カスタムフォーマッター](labels-and-icons.md) と同じやり方を踏襲しています。
+## ビルトイン入力コントロール
 
-これには、アプリでの用途や必要に応じて、ネイティブコードを使用した入力コントロールを独自に作成するほか、GitHub にて公開されている [ギャラリー](https://4d-go-mobile.github.io/gallery/#/type/input-control) から入力コントロールをダウンロードすることもできます。 解凍したフォルダーは必要に応じて名前を変更し、入力コントロール専用の "inputControls" フォルダー (`mybase/Resources/mobile/inputControls`) に入れます。 するとプロジェクトエディターにて、アクションの引数プロパティ内にある入力コントロールメニューから追加の入力コントロールが利用・選択可能になります。
+入力コントロールは、モバイルアプリでユーザーが情報を入力する方法と、その情報をレンダリングする方法を定義します。 プロジェクトエディターには、通常のデータ型用の基本的な入力コントロールが用意されています。 これらビルトインのコントロールは、"入力コントロール" メニューから選択することができます。
 
-たとえば、モバイルの連絡先リストから電話番号を取得するには、*phoneContact* 入力コントロールテンプレートを使用することで、電話番号フィールドを自動的に埋めることが可能になります。
+また、[カスタムの入力コントロール](#カスタム入力コントロール) を定義することができます (後述参照)。
 
-![アーキテクチャー](img/inputWithSwift.png) ![編集](img/phoneContactIcon2.png)![編集画面](img/phoneContactIcon.png)![編集画面](img/phoneContactIcon4.png)
+選択可能なビルトイン入力コントロールは、データタイプによります:
 
-ギャラリー内の入力コントロールはすべてオープンソースであり、Github から取得可能です。 自分の入力コントロールを共有したい、あるいは入力コントロールに対するフィードバックをしたい場合、お気軽に [4D Forum](https://discuss.4d.com/) までご投稿ください。
+| データタイプ | 入力コントロール | 詳細                                                                                                                             |
+| ------ | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| テキスト   | デフォルト    | 文字列の頭文字を大文字にします。                                                                                                               |
+|        | メールアドレス  | メールアドレス入力用に最適化されたキーボード                                                                                                         |
+|        | 電話番号     | 電話番号入力用のキーパッド                                                                                                                  |
+|        | アカウント    | ユーザー名入力用に最適化されたキーボード                                                                                                           |
+|        | パスワード    | パスワードの管理に最適化されています。                                                                                                            |
+|        | URL      | URL入力に最適化されたキーボード                                                                                                              |
+|        | 郵便番号     | 郵便番号入力に最適化されたキーボード                                                                                                             |
+|        | テキストエリア  | 単一フィールド内に複数行のテキストを格納できます。                                                                                                      |
+|        | バーコード    | バーコードに割り当てられた値を取り出します。 サポートされてるフォーマット: EAN8、EAN13、Code 39、Code 93、Code 128、QRコード、UPC、PDF417                                    |
+| 数値     | デフォルト    | 小数点付き数値                                                                                                                        |
+|        | 整数       | 小数点のつかない数値                                                                                                                     |
+|        | 指数       | 指数表記                                                                                                                           |
+|        | パーセント    | パーセント表記                                                                                                                        |
+|        | 読み方      | 数値を文字列へと変換                                                                                                                     |
+| 日付     | デフォルト    | Nov 23, 1937                                                                                                                   |
+|        | 短い日付     | 11/23/37                                                                                                                       |
+|        | 長い日付     | November 23, 1937                                                                                                              |
+|        | 完全な日付    | Tuesday, November 23, 1937                                                                                                     |
+| 時間     | デフォルト    | 3:30 PM                                                                                                                        |
+|        | 経過時間     | 2 hours 30 minutes                                                                                                             |
+| ブール    | デフォルト    | 数値を文字列へと変換                                                                                                                     |
+| 時間     | デフォルト    | 3:30 PM                                                                                                                        |
+|        | 経過時間     | 2 hours 30 minutes                                                                                                             |
+| 時間     | デフォルト    | <img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true" /> |
+|        | チェックマーク  | <img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true" />  |
+| 画像     | デフォルト    |                                                                                                                                |
+|        | 署名       | 手書き文字での署名が可能に                                                                                                                  |
 
-### 入力コントロールセクション
 
-アクション入力コントロールは、モバイルアプリ内でフォーマットされた要素 (値、ピクチャーなど) を表示します。 これらの要素は、アクションフォーム内に自動的に含まれます。具体的には選択リストとして表示され、そこから値を選択し、引数として使用することができます。 これらの選択リストの動作は、静的または動的 (ダイナミック) のどちらかを選ぶことができます:
-- **静的** な選択リスト (json でハードコードされた定義済み選択肢) は 'inputControls' フォルダー (`mybase/Resources/mobile/inputControls`) 内の manifest.json ファイルに定義します。 この選択リストは以下のような複数の要素から定義されています:
+## カスタム入力コントロール
+
+モバイルプロジェクトにカスタム入力コントロールを追加して、ユーザーとのインタラクションを高度にカスタマイズすることができます。 カスタムの入力コントロールには、2つのカテゴリーがあります:
+
+- [**選択**](#選択入力コントロール) - 選択する値のリストを表示します (静的または動的)。
+- [**アクション**](#アクション入力コントロール) - Swift や Kotlin のコードを含み、あらゆる関連アクションをおこなうことができます。
+
+カスタム入力コントロールは両方のカテゴリーで作成することができます。 なお、**アクション** 入力コントロールは、[入力コントロール Github ギャラリー](https://4d-go-mobile.github.io/gallery//#/type/input-control) からもダウンロードすることができます。
+
+### カスタム入力コントロールの定義
+
+カスタム入力コントロールは、`Manifest.json` ファイルと、(任意で) Swift または Kotlin のソースコードと紐付けられます。 カスタム入力コントロールファイルは、以下の場所のサブフォルダーに格納する必要があります:
+
+`myProject/Resources/Mobile/inputControls/`
+
+`Manifest.json` ファイルには、以下の属性が含まれていなくてはなりません:
+
+- **name** (text): 入力コントロール名
+- **inject** (boolean): このフォーマッターを使ったアプリを生成する際に、Sources にあるいくつかのソースコードを最終プロジェクトに注入する必要がある場合には "inject" を指定します。
+- **type** (text または text の collection): 入力コントロールのタイプ ("text", "integer", "boolean") を定義します。
+- **capabilities** (object) (任意): ニーズに応じて任意の情報を追加するための capabilities要素 (地図、写真、場所など)。
+- **target** (text または collection): 入力コントロールがサポートするプラットフォーム ("ios"、"android")
+
+
+### 選択入力コントロール
+
+選択入力コントロールは、モバイルアプリ内でフォーマットされた要素 (値、ピクチャーなど) を表示します。 これらの要素は、アクションフォーム内に自動的に含まれます。具体的には選択リストとして表示され、そこから値を選択し、引数として使用することができます。
+
+これらの選択リストは、**静的** または **動的** のいずれかです。
+
+#### 静的選択リスト
+
+**静的** な選択リスト (json でハードコードされた定義済み選択肢) は ['inputControls' フォルダー内の `manifest.json`](#カスタム入力コントロールの定義) ファイルに定義します。 この選択リストは以下のような複数の要素から定義されています:
 
 | プロパティ              | タイプ                 | 詳細                                                                           |
 | ------------------ | ------------------- | ---------------------------------------------------------------------------- |
 | **"name"**         | text                | アクション入力コントロール名                                                               |
-| **"binding"** (任意) | テキスト                | 画像を紐付けるための "imageNamed" (実際の画像はアクションフォーマッターフォルダー内の "images" サブフォルダーに入れる必要あり) |
+| **"binding"** (任意) | text                | 画像を紐付けるための "imageNamed" (実際の画像はアクションフォーマッターフォルダー内の "images" サブフォルダーに入れる必要あり) |
 | **"choiceList"**   | object              | キー (サーバーに送られるデータ) / 値 (ユーザーに表示される値) のリストを定義するためのオブジェクトまたはコレクション              |
 | **"type"**         | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                |
-| **"format"** (任意)  | テキスト                | インターフェースの選択: push (未定義の場合のデフォルト) / segmented / popover / sheet / picker      |
+| **"format"** (任意)  | text                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker"    |
 
 以下は、静的な選択リストとして使用可能な、ある会社の支社の連絡先情報を格納した manifest.json ファイルの一例です:
-```4d
+
+```json
 {
     "name": "choiceListSheet",
     "type": [
@@ -365,29 +332,31 @@ After creating all of your actions, just click on the **Create** button from the
 }
 ```
 
-- **動的 (ダイナミック)** な選択リストは、データソースに基づいた選択リストです (データベースのコンテンツに応じて選択肢が変化します)。 この方式では、ヘルパーモジュールを使用してフォームフィールドに値を入力することで、データを素早く取得することができます。 モバイルアプリから直接利用可能であるだけでなく、選択リストは常に更新されます。 manifest.json ファイルには、以下のような要素が格納されています:
+#### 動的選択リスト
+
+**動的 (ダイナミック)** な選択リストは、データソースに基づいた選択リストです (データベースのコンテンツに応じて選択肢が変化します)。 この方式では、ヘルパーモジュールを使用してフォームフィールドに値を入力することで、データを素早く取得することができます。 モバイルアプリから直接利用可能であるだけでなく、選択リストは常に更新されます。 [`manifest.json` ファイル](#カスタム入力コントロールの定義) には、以下のような要素が格納されています:
 
 | プロパティ             | タイプ                 | 詳細                                                                        |
 | ----------------- | ------------------- | ------------------------------------------------------------------------- |
-| **"name"**        | テキスト                | 入力コントロール名                                                                 |
+| **"name"**        | text                | 入力コントロール名                                                                 |
 | **"choiceList"**  | object              | "dataSource" を格納するオブジェクト (以下の表参照)                                         |
 | **"type"**        | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション             |
-| **"format"** (任意) | テキスト                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker" |
+| **"format"** (任意) | text                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker" |
 
 | プロパティ            |                         | タイプ                        | 詳細                                                                         |
 | ---------------- | ----------------------- | -------------------------- | -------------------------------------------------------------------------- |
 | **"dataSource"** |                         | object                     | "dataClass"、"field"、そして任意の "entityFormat" を格納するオブジェクト。                     |
-|                  | **"dataClass"**         | テキスト                       | テーブル名                                                                      |
-|                  | **"field"**             | テキスト                       | サーバーに送るデータの抽出に使用                                                           |
+|                  | **"dataClass"**         | text                       | テーブル名                                                                      |
+|                  | **"field"**             | text                       | サーバーに送るデータの抽出に使用                                                           |
 |                  | **"sort"** (任意)         | object / collection / text | **"field"** (ソート基準 / フィールド名) と、任意の **"order"** (ソート順、デフォルトは昇順) を格納するオブジェクト |
 |                  | **"search"** (任意)       | boolean / array            | 検索に使用するフィールドを格納した配列                                                        |
-|                  | **"entityFormat"** (任意) | テキスト                       | 値の表示用フォーマット (指定されていない場合、フィールドから取得したデータを使用)                                 |
+|                  | **"entityFormat"** (任意) | text                       | 値の表示用フォーマット (指定されていない場合、フィールドから取得したデータを使用)                                 |
 
 **注意:** 選択リストが長くなった場合に、任意の "search" 要素が利用可能になります。
 
 動的な選択リストの一例です:
 
-```4d
+```json
 {
     "name": "datasourcePush"
     "type": [
@@ -407,35 +376,37 @@ After creating all of your actions, just click on the **Create** button from the
 }
 ```
 
-プロジェクトエディター側では、**入力コントロール** フォーマットを選択すると、そのフォーマットに基づいて絞り込まれたリストから **dataSource** が選択できます。 これでアプリは更新され、使用できます。
 
-以下は *push* フォーマットの一例です:
+プロジェクトエディター側では、**入力コントロール** フォーマットを選択すると、そのフォーマットに基づいて絞り込まれたリストから **データソース** が選択できます。 これでアプリは更新され、使用できます。
 
-![カスタム入力](img/customInput1.png) ![カスタム入力2](img/customInput2.png)
+さまざまなフォーマットを以下のアニメーションで紹介します:
 
-以下が生成されたアプリ上で利用可能なフォーマットの種類です:
+![カスタム入力](img/Input-controls-iOS-app-side.gif)
 
- - Push フォーマット:
 
-![カスタム入力2](img/push.png)
 
-- Segmented & picker フォーマット:
+### アクション入力コントロール
 
-![カスタム入力2](img/Sans-titre.png)
+カスタムの入力コントロールを使用することで、ネイティブのアプリと容易にやりとりをすることができます。これはネイティブコードを使用した [ラベル & アイコン カスタムフォーマッター](labels-and-icons.md) と同じやり方を踏襲しています。
 
- - Popover フォーマット:
+これには、アプリでの用途や必要に応じて、ネイティブコードを使用した入力コントロールを独自に作成するほか、GitHub にて公開されている [Github ギャラリー](https://4d-go-mobile.github.io/gallery/#/type/input-control) から入力コントロールをダウンロードすることもできます。 これらは "inputControls" フォルダー (`mybase/Resources/mobile/inputControls`) にドロップして入れます。 するとプロジェクトエディターにて、アクションの引数プロパティ内にある入力コントロールメニューから追加の入力コントロールが利用・選択可能になります。
 
-![カスタム入力2](img/popover.png)
+たとえば、モバイルの連絡先リストから電話番号を取得するには、*phoneContact* 入力コントロールテンプレートを使用することで、電話番号フィールドを自動的に埋めることが可能になります。
 
- - Sheet フォーマット:
+![アーキテクチャー](img/inputWithSwift.png) ![編集](img/phoneContactIcon2.png)![編集画面](img/phoneContactIcon.png)![編集画面](img/phoneContactIcon4.png)
 
-![カスタム入力2](img/sheet.png)
+ギャラリー内の入力コントロールはすべてオープンソースであり、Github から取得可能です。 自分の入力コントロールを共有したい、あるいは入力コントロールに対するフィードバックをしたい場合、お気軽に [4D Forum](https://discuss.4d.com/) までご投稿ください。
 
-**注意:** 入力コントロールにアクセスするには、"入力コントロール" フィールドの横にある矢印を使用します。
+:::info
+
+Kotlin の入力コントロール定義の例は、[このチュートリアル](../tutorials/actions/create-kotlin-input.md) で紹介されています。
+
+:::
+
 
 ## オフラインモードアクション
 
-The user of an app can draft, store and queue action requests, even if they are working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.). これらのタスクはすべて、ネットワークにアクセスできるようになるまで、保留中アクションのリストに置かれます。 ユーザーがオンラインになると、保留中のアクションはすべて同期され、実行された後、完了したアクションのリストに表示されます。
+アプリのユーザーはオフライン中でも、アクションリクエストを作成・保存・キューすることが可能です (たとえば、顧客電話番号の追加、写真のアップロード、請求書や見積書の印刷、アドレスの削除など)。 これらのタスクはすべて、ネットワークにアクセスできるようになるまで、保留中アクションのリストに置かれます。 ユーザーがオンラインになると、保留中のアクションはすべて同期され、実行された後、完了したアクションのリストに表示されます。
 
 保留中のタスクは以下にて確認し、開くことができます:
 
@@ -473,9 +444,9 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
 ```
 
 
-## Mobile app Side
+## モバイルアプリ側
 
-In your mobile app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section.
+モバイルアプリでは、フォームセクションで選択したテンプレートに応じて、リストおよび詳細フォームで様々にアクションを利用できます。
 
 ### テーブルリストフォーム
 
@@ -524,10 +495,12 @@ In your mobile app, actions are available in different ways in your List and Det
 
 * キーボードのタイプは、アクションセクションで選択されたパラメーターに依存します。
 * キーボード上部の矢印で、次のフィールドや前のフィールドに移動することができます。
-* iOSキーボードは、フィールドの外をタッチすることで、閉じることができます。
+* キーボードは、フィールドの外をタッチすることで、閉じることができます。
 * 値が有効でない場合、ユーザーに表示されます。
 * ユーザーが Done ボタンをクリックしたときに空の必須フィールドがあれば、それに焦点が当たります。
 
 ## これからどうする？
 
-See [this tutorial](../tutorials/actions/getting-started.md) that will guide you through the **action definition process**.
+こちらの [チュートリアル](../tutorials/actions/getting-started.md) では **アクション定義の手順** について説明しています。
+
+カスタムの **Kotlin 入力コントロール定義の例** については [このチュートリアル](../tutorials/actions/create-kotlin-input.md) を参照ください。

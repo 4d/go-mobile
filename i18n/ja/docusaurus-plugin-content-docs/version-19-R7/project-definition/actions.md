@@ -3,13 +3,13 @@ id: actions
 title: アクション
 ---
 
-The 4D Mobile Project editor allows you to create actions to include in your mobile app.
+4D モバイルプロジェクトエディターでは、モバイルアプリに含めるアクションを作成することができます。
 
-You can use [preset actions](#preset-actions) or [custom actions](../tutorials/actions/define-first-action.md) and [define their parameters](#add-parameters-to-your-actions).
+[プリセットアクション](#プリセットアクション) または [カスタムアクション](../tutorials/actions/define-first-action.md) を使用できるほか、[それら引数を定義](#アクションに引数を追加する) することができます。
 
-On the 4D side, you can execute 4D code in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method.
+4D側では、[On Mobile App Action](../4d/on-mobile-app-action.md) データベースメソッド内で 4Dコードを実行することができます。
 
-Actions are automatically available in the [mobile interface](#mobile-app-side).
+[モバイルインターフェース](#モバイルアプリ側) において、アクションは自動的に利用可能です。
 
 
 ## プロジェクトエディター側の設定
@@ -20,8 +20,8 @@ Actions are automatically available in the [mobile interface](#mobile-app-side).
 
 次に、以下のものを定義する必要があります:
 
-* **Names:** The action name to use in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method to trigger your 4D code.
-* **アイコン:** アイコンライブラリーから選択するアイコン。 You can also [add your own icon](labels-and-icons.md#adding-custom-icons).
+* **名前:** [On Mobile App Action](../4d/on-mobile-app-action.md) データベースメソッド内で 4Dコードをトリガーするのに使用するアクションの名前。
+* **アイコン:** アイコンライブラリーから選択するアイコン。 また [独自のアイコンを追加](labels-and-icons.md#カスタムのアイコンを追加する) することもできます。
 * **短いラベルとラベル:** アプリに表示するアクションのラベル
 * **テーブル:** アクションを適用するテーブル
 * **スコープ:** アクションの定期用対象: **カレントエンティティ** または **テーブル**
@@ -34,7 +34,7 @@ Actions are automatically available in the [mobile interface](#mobile-app-side).
 
 :::
 
-### アクションに引数を追加
+### アクションに引数を追加する
 
 **アクション引数** を追加することで、アプリからデータを直接 **編集** することができます。
 
@@ -163,7 +163,7 @@ Actions are automatically available in the [mobile interface](#mobile-app-side).
 * 削除
 * 共有
 * ソート
-* Open URL
+* URLを開く
 
 ### 追加アクション
 
@@ -243,63 +243,63 @@ Zymosian, Elmer
 
 > テーブルに対するソートアクションが 1つしか定義されていない場合、モバイルアプリ側では **ソート** メニューは表示されません。
 
-### Open URL action
+### URLを開くアクション
 
-The **Open URL action** allows your mobile users to open an url from their mobile app. This action will display a web page served by 4D Server in a web area from within the mobile app.
+**URLを開くアクション** は、モバイルユーザーがモバイルアプリから URL を開けるようにします。 このアクションは、4D Server が提供する Webページをモバイルアプリ内で Webエリアに表示します。
 
-When you select this action, you have to define the path that will be opened:
+このアクションを選択した場合、開くパスを定義する必要があります:
 
-![open url](img/open-url-action.png)
+![urlを開く](img/open-url-action.png)
 
-You can only define a path starting with `/`, i.e. relative to the [current 4D web folder](https://developer.4d.com/docs/WebServer/webServerConfig.html#root-folder).
+`/` で始まるパス、つまり [カレントの 4D Webフォルダー](https://developer.4d.com/docs/ja/WebServer/webServerConfig/#ルートフォルダー) を基準とした相対パスしか定義できません。
 
-This action can be set for any table and any scope (Table or Current entity). Like other actions, the Open URL action will be automatically available in the [mobile app interface](#mobile-app-side) (short or long label).
+このアクションは、任意のテーブルと任意のスコープ (テーブルまたはカレントエンティティ) に対して設定できます。 他のアクションと同様に、URLを開くアクションは、[モバイルアプリのインターフェース](#モバイルアプリ側) において自動的に利用可能です (短いラベルまたは長いラベル)。
 
 :::note
 
-To close the web page and get back to the mobile app interface, use the `$4d.mobile.dismiss()` function from within the page (see below).
+Webページを閉じてモバイルアプリのインターフェイスに戻るには、ページ内で `$4d.mobile.dismiss()` 関数を使用します (後述参照)。
 
 :::
 
-#### Web Server Side
+#### Webサーバー側
 
-The request sent to the server contains the context of the app (current entity and/or dataclass) in the `X-QMobile-Context` header. The content of this header is formatted in JSON and encoded in base64.
+サーバーに送信されるリクエストには、アプリのコンテキスト (カレントエンティティおよび/またはデータクラス) が `X-QMobile-Context` ヘッダーに含まれています。 このヘッダーの内容は JSON 形式で、base64 でエンコードされています。
 
 :::tip
 
-You can get the context information already decoded as object using the [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) component and its [WebHandler class](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md).
+[**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) コンポーネントとその [WebHandler クラス](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md)を使用すると、オブジェクトとしてデコード済みのコンテキスト情報を取得することができます。
 
 :::
 
-Context information can be processed in the web page to return through standard 4D web server features:
+コンテキスト情報を Webページ内で処理して返すには、4D Webサーバーの標準的な機能が使用できます:
 
-- [.shtml template pages](https://developer.4d.com/docs/WebServer/templates.html)
-- [On Web Connection database method](https://developer.4d.com/docs/WebServer/httpRequests.html#on-web-connection).
+- [.shtml テンプレートページ](https://developer.4d.com/docs/ja/WebServer/templates/)
+- [On Web Connection データベースメソッド](https://developer.4d.com/docs/ja/WebServer/httpRequests/#on-web-connection)。
 
 
-#### Web Area Side
+#### Webエリア側
 
-For your page to interact with the mobile app, some javascript code is automatically provided in the `$4d.mobile` object. This object contains the following properties and functions:
+Webページがモバイルアプリと対話するため、いくつかの javascriptコードが自動的に `$4d.mobile` オブジェクトにて提供されます。 このオブジェクトは、以下のプロパティと関数を持ちます:
 
-| プロパティ      |                  |                               | タイプ      | 詳細                                                                                                                                                               |
-| ---------- | ---------------- | ----------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| $4d.mobile | .action          | .name                         | string   | name of the action                                                                                                                                               |
-|            |                  | .label                        | string   | label of the action                                                                                                                                              |
-|            |                  | .shortlabel                   | string   | short label of the action                                                                                                                                        |
-|            | .dismiss()       |                               | Function | closes the native web view                                                                                                                                       |
-|            | .status(message) |                               | Function | shows a message in native app for the user <br/>message: string<br/>message: object with "message" (or "statusText") and "success" (or "level") keys |
-|            | .logger          | .log(level, message : string) | Function | shows a message in native app for the developer                                                                                                                  |
-|            |                  | .info(message : string)       | Function | shows a message in native app for the developer                                                                                                                  |
-|            |                  | .info(message : string)       | Function | shows a message in native app for the developer                                                                                                                  |
-|            |                  | .warning(message : string)    | Function | shows a message in native app for the developer                                                                                                                  |
-|            |                  | .error(message : string)      | Function | shows a message in native app for the developer                                                                                                                  |
-|            |                  | .debug(message : string)      | Function | shows a message in native app for the developer                                                                                                                  |
-|            |                  | .verbose(message : string)    | Function | shows a message in native app for the developer                                                                                                                  |
+| プロパティ      |                  |                               | タイプ      | 詳細                                                                                                                                          |
+| ---------- | ---------------- | ----------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| $4d.mobile | .action          | .name                         | string   | アクション名                                                                                                                                      |
+|            |                  | .label                        | string   | アクションのラベル                                                                                                                                   |
+|            |                  | .shortlabel                   | string   | アクションの短いラベル                                                                                                                                 |
+|            | .dismiss()       |                               | Function | ネイティブ Webビューを閉じます                                                                                                                           |
+|            | .status(message) |                               | Function | ネイティブアプリでユーザーにメッセージを表示します<br/> message: string<br/> message: "message" (または "statusText") と "success" (または "level") キーを持つオブジェクト |
+|            | .logger          | .log(level, message : string) | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
+|            |                  | .info(message : string)       | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
+|            |                  | .info(message : string)       | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
+|            |                  | .warning(message : string)    | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
+|            |                  | .error(message : string)      | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
+|            |                  | .debug(message : string)      | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
+|            |                  | .verbose(message : string)    | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
 
 
 :::info See also
 
-Blog post: [4D for Mobile : Display Web Pages in your Mobile Apps](https://blog.4d.com/4d-for-mobile-di…your-mobile-apps/)
+ブログ記事 [4D for Mobile : モバイルアプリに Webページを表示する](https://blog.4d.com/4d-for-mobile-display-web-pages-in-your-mobile-apps/)
 
 :::
 
@@ -307,9 +307,9 @@ Blog post: [4D for Mobile : Display Web Pages in your Mobile Apps](https://blog.
 
 ### On Mobile App Action
 
-The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is available to call all of your 4D methods.
+[`On Mobile App Action`](../4d/on-mobile-app-action.md) データベースメソッドは、4Dメソッドを呼び出すのに利用します。
 
-After creating all of your actions, just click on the **Create** button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
+すべてのアクションを作成したあと、アクションテーブル右下の **作成...** ボタンをクリックすると、作成した全アクション名を含んだ *Case of* コードブロックが *On Mobile App Action* メソッド内に自動生成されます。
 
 :::note notes
 
@@ -341,10 +341,10 @@ After creating all of your actions, just click on the **Create** button from the
 | プロパティ              | タイプ                 | 詳細                                                                           |
 | ------------------ | ------------------- | ---------------------------------------------------------------------------- |
 | **"name"**         | text                | アクション入力コントロール名                                                               |
-| **"binding"** (任意) | テキスト                | 画像を紐付けるための "imageNamed" (実際の画像はアクションフォーマッターフォルダー内の "images" サブフォルダーに入れる必要あり) |
+| **"binding"** (任意) | text                | 画像を紐付けるための "imageNamed" (実際の画像はアクションフォーマッターフォルダー内の "images" サブフォルダーに入れる必要あり) |
 | **"choiceList"**   | object              | キー (サーバーに送られるデータ) / 値 (ユーザーに表示される値) のリストを定義するためのオブジェクトまたはコレクション              |
 | **"type"**         | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                |
-| **"format"** (任意)  | テキスト                | インターフェースの選択: push (未定義の場合のデフォルト) / segmented / popover / sheet / picker      |
+| **"format"** (任意)  | text                | インターフェースの選択: push (未定義の場合のデフォルト) / segmented / popover / sheet / picker      |
 
 以下は、静的な選択リストとして使用可能な、ある会社の支社の連絡先情報を格納した manifest.json ファイルの一例です:
 ```4d
@@ -369,19 +369,19 @@ After creating all of your actions, just click on the **Create** button from the
 
 | プロパティ             | タイプ                 | 詳細                                                                        |
 | ----------------- | ------------------- | ------------------------------------------------------------------------- |
-| **"name"**        | テキスト                | 入力コントロール名                                                                 |
+| **"name"**        | text                | 入力コントロール名                                                                 |
 | **"choiceList"**  | object              | "dataSource" を格納するオブジェクト (以下の表参照)                                         |
 | **"type"**        | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション             |
-| **"format"** (任意) | テキスト                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker" |
+| **"format"** (任意) | text                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker" |
 
 | プロパティ            |                         | タイプ                        | 詳細                                                                         |
 | ---------------- | ----------------------- | -------------------------- | -------------------------------------------------------------------------- |
 | **"dataSource"** |                         | object                     | "dataClass"、"field"、そして任意の "entityFormat" を格納するオブジェクト。                     |
-|                  | **"dataClass"**         | テキスト                       | テーブル名                                                                      |
-|                  | **"field"**             | テキスト                       | サーバーに送るデータの抽出に使用                                                           |
+|                  | **"dataClass"**         | text                       | テーブル名                                                                      |
+|                  | **"field"**             | text                       | サーバーに送るデータの抽出に使用                                                           |
 |                  | **"sort"** (任意)         | object / collection / text | **"field"** (ソート基準 / フィールド名) と、任意の **"order"** (ソート順、デフォルトは昇順) を格納するオブジェクト |
 |                  | **"search"** (任意)       | boolean / array            | 検索に使用するフィールドを格納した配列                                                        |
-|                  | **"entityFormat"** (任意) | テキスト                       | 値の表示用フォーマット (指定されていない場合、フィールドから取得したデータを使用)                                 |
+|                  | **"entityFormat"** (任意) | text                       | 値の表示用フォーマット (指定されていない場合、フィールドから取得したデータを使用)                                 |
 
 **注意:** 選択リストが長くなった場合に、任意の "search" 要素が利用可能になります。
 
@@ -435,7 +435,7 @@ After creating all of your actions, just click on the **Create** button from the
 
 ## オフラインモードアクション
 
-The user of an app can draft, store and queue action requests, even if they are working offline (adding a customer's phone number, uploading a picture, printing an invoice or a quote, deleting an address, etc.). これらのタスクはすべて、ネットワークにアクセスできるようになるまで、保留中アクションのリストに置かれます。 ユーザーがオンラインになると、保留中のアクションはすべて同期され、実行された後、完了したアクションのリストに表示されます。
+アプリのユーザーはオフライン中でも、アクションリクエストを作成・保存・キューすることが可能です (たとえば、顧客電話番号の追加、写真のアップロード、請求書や見積書の印刷、アドレスの削除など)。 これらのタスクはすべて、ネットワークにアクセスできるようになるまで、保留中アクションのリストに置かれます。 ユーザーがオンラインになると、保留中のアクションはすべて同期され、実行された後、完了したアクションのリストに表示されます。
 
 保留中のタスクは以下にて確認し、開くことができます:
 
@@ -473,9 +473,9 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
 ```
 
 
-## Mobile app Side
+## モバイルアプリ側
 
-In your mobile app, actions are available in different ways in your List and Detail forms, depending on the templates you select in the Forms section.
+モバイルアプリでは、フォームセクションで選択したテンプレートに応じて、リストおよび詳細フォームで様々にアクションを利用できます。
 
 ### テーブルリストフォーム
 
@@ -530,4 +530,4 @@ In your mobile app, actions are available in different ways in your List and Det
 
 ## これからどうする？
 
-See [this tutorial](../tutorials/actions/getting-started.md) that will guide you through the **action definition process**.
+こちらの [チュートリアル](../tutorials/actions/getting-started.md) では **アクション定義の手順** について説明しています。

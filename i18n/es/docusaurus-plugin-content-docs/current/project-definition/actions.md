@@ -3,13 +3,13 @@ id: actions
 title: Actions
 ---
 
-The 4D Mobile Project editor allows you to create actions to include in your mobile app.
+El editor 4D Mobile Project le permite crear acciones para incluir en su aplicación móvil.
 
-You can use [preset actions](#preset-actions) or [custom actions](../tutorials/actions/define-first-action.md) and [define their parameters](#add-parameters-to-your-actions).
+Puede utilizar [acciones preestablecidas](#preset-actions) o [acciones personalizadas](../tutorials/actions/define-first-action.md) y [definir sus parámetros](#add-parameters-to-your-actions).
 
-On the 4D side, you can execute 4D code in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method.
+En el lado 4D, puede ejecutar el código 4D en el método base [On Mobile App Action](../4d/on-mobile-app-action.md).
 
-Actions are automatically available in the [mobile interface](#mobile-app-side).
+Las acciones están disponibles automáticamente en la [ interfaz móvil](#mobile-app-side).
 
 
 ## En el editor de proyectos
@@ -20,15 +20,15 @@ Puede crear una nueva acción haciendo clic en el botón + en la parte inferior 
 
 A continuación, deberá definir lo siguiente:
 
-* **Names:** The action name to use in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method to trigger your 4D code.
-* **Iconos:** seleccione un icono para su acción de su librería de iconos. You can also [add your own icon](labels-and-icons.md#adding-custom-icons).
+* **Nombres:** define el nombre de la acción a utilizar en el método base [On Mobile App Action](../4d/on-mobile-app-action.md) para lanzar su código 4D.
+* **Iconos:** seleccione un icono para su acción de su librería de iconos. You can also [add your own icon](./labels-and-icons.md#adding-custom-icons).
 * **Etiquetas cortas y largas: **las etiquetas para las acciones que se mostrarán en su aplicación.
 * **Tabla:** seleccione la tabla en la que desea aplicar la acción.
 * **Alcance:** seleccione si desea aplicar la acción en una **entidad** o en una **tabla**.
 
 ![Action section](img/Actions-section-4D-for-iOS.png)
 
-:::note note
+:::nota nota
 
 You can sort the **Names** with a drag-and-drop. This operation will set the order in which they will appear in the app's menu.
 
@@ -43,116 +43,26 @@ Para cada parámetro, puede editar las siguientes propiedades:
 * Nombre
 * Etiqueta larga
 * Etiqueta corta
-* Formato
-* Restricciones de entrada (definir valores mínimos o máximos)
-* Placeholder
-* Definición de un campo obligatorio
+* [Input control](#built-in-input-controls)
+* Mandatory option
 * Valor por defecto
+
+Depending on the selected input control, you can define the following additional properties:
+
+* Input constraints (minimum or maximum values)
+* Placeholder
+* [Data Source](#dynamic-choice-lists)
+
+:::info
+
+By default, the Input Control menu displays **selectionControls**. This is a filter for selection controls, depending on their "format" property. To select a format, you must have [created](#selection-input-controls) at least one selection input control with this format.
+
+:::
 
 ![Action parameters](img/Actions-parameters-4D-for-iOS.png)
 
 Puede cambiar el orden de los parámetros con solo arrastrar y soltar.
 
-Estos son los diferentes **formatos** que puede seleccionar para un parámetro:
-
-<table>
-
-<tr>
-<th colspan="2"  style={{textAlign: 'center'}}>TEXTO</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>Formato</th><th>Descripción</th>
-</tr><tr>
-<td>Texto</td><td>Poner en mayúscula la primera letra de una cadena</td>
-</tr><tr>
-<td>Correo electrónico</td><td>Teclado iOS optimizado para la entrada de correo electrónico</td>
-</tr><tr>
-<td>Número de teléfono</td><td>Teclado iOS para ingresar números de teléfono.</td>
-</tr><tr>
-<td>Cuenta</td><td>Teclado iOS optimizado para la entrada de correo electrónico</td>
-</tr><tr>
-<td>Contraseña</td><td>Optimizado para manejar contraseñas</td>
-</tr><tr>
-<td>URL</td><td>Teclado iOS optimizado para la entrada del URL</td>
-</tr><tr>
-<td>Código postal</td><td>Teclado iOS optimizado para la entrada del código postal</td>
-</tr><tr>
-<td>Área de texto</td><td>Incluye varias líneas de texto en un solo campo</td>
-</tr><tr>
-<td>Código de barras</td><td>Extraer el valor asociado al código de barras. Formatos soportados: EAN8, EAN13, Code 39, Code 93, Code 128, QR Code, UPC, PDF417</td>
-</tr>
-<tr>
-<td colspan="2"></td>
-</tr>
-
-<tr>
-<th colspan="2" style={{textAlign: 'center'}}>NÚMERO</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>Formato</th><th>Descripción</th>
-</tr><tr>
-<td>Número</td><td>Números con decimales</td>
-</tr><tr>
-<td>Entero</td><td>Números sin decimales</td>
-</tr><tr>
-<td>Científica</td><td>Notación científica</td>
-</tr><tr>
-<td>Porcentaje</td><td>Notación en porcentaje</td>
-</tr><tr>
-<td>Nombre en letras</td><td>Convierte los números en cadenas</td>
-</tr>
-<tr>
-<td colspan="2"></td>
-</tr>
-
-<tr>
-<th colspan="2" style={{textAlign: 'center'}}>FECHA</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>Formato</th><th>Descripción</th>
-</tr><tr>
-<td>Fecha</td><td>Nov 23, 1937</td>
-</tr><tr>
-<td>Fecha corta</td><td> 11/23/37</td>
-</tr><tr>
-<td>Fecha larga</td><td>Noviembre 23, 1937</td>
-</tr><tr>
-<td>Fecha completa</td><td>Martes, 23 de noviembre 1937</td>
-</tr><tr>
-<td colspan="2"></td>
-</tr>
-
-<tr>
-<th colspan="2" style={{textAlign: 'center'}}>HORA</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>Formato</th><th>Descripción</th>
-</tr><tr>
-<td>Hora</td><td>3:30 PM</td>
-</tr><tr>
-<td>Duración</td><td>2 horas 30 minutos</td>
-</tr>
-<tr>
-<td colspan="2"></td>
-</tr>
-
-<tr>
-<th colspan="2" style={{textAlign: 'center'}}>BOOLEANO</th>
-</tr><tr style={{textAlign: 'center'}}>
-<th>Formato</th><th>Descripción</th>
-</tr><tr>
-<td>Booleano</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
-</tr><tr>
-<td>Marca de verificación</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
-</tr>
-
-<tr>
-<td colspan="2"></td>
-</tr>
-<tr>
-<th colspan="2" style={{textAlign: 'center'}}>IMÁGENES</th>
-</tr>
-<tr>
-<td>Firma</td><td>Permitir firmar con el dedo</td>
-</tr>
-
-</table>
 
 ## Acciones predefinidas
 
@@ -243,7 +153,7 @@ Cuando se define más de una acción de ordenación para una tabla, los usuarios
 
 > Cuando sólo se define una acción de ordenación para una tabla, el menú **ordenación** no se muestra en la parte de la aplicación móvil.
 
-### Open URL action
+### Acción Open URL
 
 The **Open URL action** allows your mobile users to open an url from their mobile app. This action will display a web page served by 4D Server in a web area from within the mobile app.
 
@@ -261,7 +171,7 @@ To close the web page and get back to the mobile app interface, use the `$4d.mob
 
 :::
 
-#### Web Server Side
+#### Lado del servidor web
 
 The request sent to the server contains the context of the app (current entity and/or dataclass) in the `X-QMobile-Context` header. The content of this header is formatted in JSON and encoded in base64.
 
@@ -319,24 +229,80 @@ After creating all of your actions, just click on the **Create** button from the
 
 :::
 
-## Action input controls
 
-### How to use a custom input from the gallery
 
-You can easily interact with native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with native code.
+## Built-in input controls
 
-To do so, you can create your own input controls with native code, or you can download a few input controls from our [gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into a specific “inputControls” folder (`mybase/Resources/mobile/inputControls`), unzip them and drag them into this newly created folder. They will then be available and selectable from the project editor input controls menu, in the parameter properties of the action.
+Input controls define how information will be entered by the user in the mobile app, and also how it will be rendered. The Project editor provides basic input controls for regular data types. These controls are built-in and can be directly selected in the "Input Control" menu.
 
-For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
+You can also define [custom input controls](#custom-input-controls) (see below).
 
-![Architecture](img/inputWithSwift.png) ![Acción de edición](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png)![Edit screen](img/phoneContactIcon4.png)
+Available built-in input controls depend on the data type:
 
-Bear in mind that all input controls from the gallery are open source and available on Github. So feel free to share your own input controls or your feedback on the [4D Forum](https://discuss.4d.com/).
+| Data type | Input controls        | Descripción                                                                                                                       |
+| --------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Texto     | Default               | Poner en mayúscula la primera letra de una cadena                                                                                 |
+|           | Mail Address          | Optimized keyboard for email entry                                                                                                |
+|           | Número de teléfono    | Keypad for entering telephone numbers                                                                                             |
+|           | Cuenta                | Optimized keyboard for username entry                                                                                             |
+|           | Contraseña            | Optimizado para manejar contraseñas                                                                                               |
+|           | URL                   | Optimized keyboard for URL entry                                                                                                  |
+|           | Código postal         | Optimized keyboard for zip code entry                                                                                             |
+|           | Área de texto         | Incluye varias líneas de texto en un solo campo                                                                                   |
+|           | Código de barras      | Extraer el valor asociado al código de barras. Formatos soportados: EAN8, EAN13, Code 39, Code 93, Code 128, QR Code, UPC, PDF417 |
+| Número    | Default               | Números con decimales                                                                                                             |
+|           | Entero                | Números sin decimales                                                                                                             |
+|           | Científica            | Notación científica                                                                                                               |
+|           | Porcentaje            | Notación en porcentaje                                                                                                            |
+|           | Nombre en letras      | Convierte los números en cadenas                                                                                                  |
+| Fecha     | Default               | Nov 23, 1937                                                                                                                      |
+|           | Fecha corta           | 11/23/37                                                                                                                          |
+|           | Fecha larga           | Noviembre 23, 1937                                                                                                                |
+|           | Fecha completa        | Martes, 23 de noviembre 1937                                                                                                      |
+| Hora      | Default               | 3:30 PM                                                                                                                           |
+|           | Duración              | 2 horas 30 minutos                                                                                                                |
+| Booleano  | Default               | Convierte los números en cadenas                                                                                                  |
+| Hora      | Default               | 3:30 PM                                                                                                                           |
+|           | Duración              | 2 horas 30 minutos                                                                                                                |
+| Hora      | Default               | <img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true" />    |
+|           | Marca de verificación | <img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true" />     |
+| Imagen    | Default               |                                                                                                                                   |
+|           | Firma                 | Permitir firmar con el dedo                                                                                                       |
 
-### Input control selection
 
-Action input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. These choice lists can be either static or dynamic:
-- **Static** choice lists (predefined choices hard coded in json) that are located in an 'inputControls' folder (`mybase/Resources/mobile/inputControls`) in a manifest.json file. They are defined by several elements, as follows:
+## Custom input controls
+
+You can add custom input controls to your mobile project to highly customize interactions with the user. There are two categories of custom input controls:
+
+- [**selection**](#selection-input-controls) - used to display a list of values to select (static or dynamic).
+- [**action**](#action-input-controls) - contains Swift ot Kotlin code and can do any relevant action.
+
+You can create custom input controls for both categories. Note that you can also download **action** input controls from the [Input control Github gallery](https://4d-go-mobile.github.io/gallery//#/type/input-control).
+
+### Defining custom input controls
+
+A custom input control is associated to a `Manifest.json` file and (optionally) Swift or Kotlin source code. The custom input control files must be stored into a subfolder at the following location:
+
+`myProject/Resources/Mobile/inputControls/`
+
+The `Manifest.json` file must contain the following attributes:
+
+- **name** (text): the input control name
+- **inject** (boolean): "inject" to indicate that when generating the app with this formatter, some source code in Sources must be injected in the final project
+- **type** (text or collection of text): defines the type ("text", "integer", "boolean") of input control
+- **capabilities** (object) (optional): capabilities elements to add some information, some optional according to the needs (map, photo, location, etc.)
+- **target** (text or collection): the platform supported by your input control ("ios", "android")
+
+
+### Selection input controls
+
+Selection input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter.
+
+These choice lists can be either **static** or **dynamic**.
+
+#### Static choice lists
+
+**Static** choice lists (predefined choices hard coded in json) must be located in a [`manifest.json` file in the "inputControls" folder](#defining-custom-input-controls). They are defined by several elements, as follows:
 
 | Propiedad              | Type               | Descripción                                                                                             |
 | ---------------------- | ------------------ | ------------------------------------------------------------------------------------------------------- |
@@ -344,10 +310,11 @@ Action input controls display formatted elements (values, pictures) in your mobi
 | Optional **"binding"** | texto              | "imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)  |
 | **"choiceList"**       | object             | an object or collection to define a list of key(data sent to server)/value(displayed value to the user) |
 | **"type"**             | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control             |
-| Optional **"format"**  | texto              | to select interface: push(default if not defined)/segmented/popover/sheet/picker                        |
+| Optional **"format"**  | texto              | to select interface: "push" (default if not defined), "segmented", "popover", "sheet", "picker"         |
 
 Here is an example of a manifest.json file containing the contact information of a company's subsidiaries, that can be used as a static choice list:
-```4d
+
+```json
 {
     "name": "choiceListSheet",
     "type": [
@@ -365,14 +332,16 @@ Here is an example of a manifest.json file containing the contact information of
 }
 ```
 
-- **Dynamic** choice lists based on datasource (choices depending on the database content). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The manifest.json file is composed of the following elements:
+#### Dynamic choice lists
 
-| Propiedad             | Type               | Descripción                                                                                    |
-| --------------------- | ------------------ | ---------------------------------------------------------------------------------------------- |
-| **"name"**            | texto              | input control name                                                                             |
-| **"choiceList"**      | object             | an object that contain "dataSource" (see table below)                                          |
-| **"type"**            | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control    |
-| Optional **"format"** | texto              | to select interface: "push"(default if not defined), "segmented", "popover", "sheet", "picker" |
+**Dynamic** choice lists are based on datasource (choices depending on the database content). This method enables you to get data very fast by filling a form field using helper modules. Not only will your lists be directly accessible from your mobile app, they will also be constantly updated. The [`manifest.json` file](#defining-custom-input-controls) is composed of the following elements:
+
+| Propiedad             | Type               | Descripción                                                                                     |
+| --------------------- | ------------------ | ----------------------------------------------------------------------------------------------- |
+| **"name"**            | texto              | input control name                                                                              |
+| **"choiceList"**      | object             | an object that contain "dataSource" (see table below)                                           |
+| **"type"**            | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control     |
+| Optional **"format"** | texto              | to select interface: "push" (default if not defined), "segmented", "popover", "sheet", "picker" |
 
 | Propiedad        |                             | Type                       | Descripción                                                                                                                     |
 | ---------------- | --------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -387,7 +356,7 @@ Here is an example of a manifest.json file containing the contact information of
 
 Here is an example of a dynamic choice list:
 
-```4d
+```json
 {
     "name": "datasourcePush"
     "type": [
@@ -407,31 +376,33 @@ Here is an example of a dynamic choice list:
 }
 ```
 
-On the Project editor side, once you select your **Input control** format, the **dataSource** will be selectable from a filtered list based on the format you have selected. Your app will then be updated and ready-to-use!
 
-Here is an example with the *push* format:
+On the Project editor side, once you select your **Input control** format, the **Data Source** will be selectable from a filtered list based on the format you have selected. Your app will then be updated and ready-to-use!
 
-![customInput](img/customInput1.png) ![customInput2](img/customInput2.png)
+The various formats are illustrated in this animation:
 
-Here are the different formats available on the generated application:
+![customInput](img/Input-controls-iOS-app-side.gif)
 
- - Push format:
 
-![customInput2](img/push.png)
 
-- Segmented & picker formats:
+### Action input controls
 
-![customInput2](img/Sans-titre.png)
+You can easily interact with native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with native code.
 
- - Popover format:
+To do so, you can create your own input controls with native code, or you can download input controls from our [Github gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into the "inputControls" folder (`mybase/Resources/mobile/inputControls`). They will then be available and selectable from the project editor input controls menu, in the parameter properties of the action.
 
-![customInput2](img/popover.png)
+For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
 
- - Sheet format:
+![Architecture](img/inputWithSwift.png) ![Acción de edición](img/phoneContactIcon2.png)![Edit screen](img/phoneContactIcon.png)![Edit screen](img/phoneContactIcon4.png)
 
-![customInput2](img/sheet.png)
+Bear in mind that all input controls from the gallery are open source and available on Github. So feel free to share your own input controls or your feedback on the [4D Forum](https://discuss.4d.com/).
 
-**Note:** You can access your input control using the arrow icon next to the "Input Control" field.
+:::info
+
+An example of Kotlin input control definition is provided in [this tutorial](../tutorials/actions/create-kotlin-input.md).
+
+:::
+
 
 ## Acciones en modo sin conexión
 
@@ -524,10 +495,12 @@ Para su comodidad, el formulario de Edición incluye algunas **funcionalidades e
 
 * El tipo de teclado depende del tipo de parámetro seleccionado en la sección Actions.
 * Puede ir al campo siguiente o anterior utilizando la flecha en la parte superior del teclado.
-* El teclado iOS se puede cerrar tocando cualquier parte fuera de un campo.
+* The keyboard can be closed by touching anywhere outside of a field.
 * Se le indica al usuario cuando un valor no es válido.
 * La vista se centra en los campos obligatorios vacíos cuando el usuario hace clic en el botón Done.
 
 ## ¿Qué hacer ahora?
 
 See [this tutorial](../tutorials/actions/getting-started.md) that will guide you through the **action definition process**.
+
+See [this tutorial](../tutorials/actions/create-kotlin-input.md) for an example of custom **Kotlin input control definition**.

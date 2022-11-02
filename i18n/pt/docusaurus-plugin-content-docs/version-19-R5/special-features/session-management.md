@@ -1,12 +1,12 @@
 ---
 id: session-management
-title: Session management
+title: Gestão da sessão
 ---
 
 
 
 
-## Session file
+## Arquivo de sessão
 
 When a user opens the app for the first time, a session file is created and stored next to the current data file in the MobileApps folder.
 
@@ -56,17 +56,17 @@ Sessions can be managed by the **Mobile Session Management** component:
 
 <div>
 <a className="button button--primary"
-href="https://github.com/4d/Mobile-Session-Management/releases/latest">Mobile Session Management component</a>
+href="https://github.com/4d/Mobile-Session-Management/releases/latest">Componente Mobile Session Management</a>
 </div>
 
-1. Download and unzip the zip file
-2. Go to Build / Components file and get the MOBILE SESSION MANAGEMENT.4dbase
-3. Create a **Components** folder next to the 4D project with the app's data.
-4. Place the **MOBILE SESSION MANAGEMENT** component in the newly created **Components** folder.
-5. Restart 4D.
-6. Click on the **Execute** button from the toolbar
-7. In the 4D Methods Explorer, select the **MOBILE SESSION MANAGEMENT** method and click on the **Execute** button.
-8. The Apps window will appear displaying all of your apps:
+1. Descarregue e descomprima o arquivo zip
+2. Vá para o arquivo Gerar/Componentes e obtenha o arquivo MOBILE SESSION MANAGEMENT.4dbase
+3. Crie uma pasta **Componentes** junto ao banco de dados 4D com os dados da aplicação.
+4. Coloque o componente **MOBILE SESSION MANAGEMENT** na pasta **Componentes** recém criada.
+5. Reinicie 4D.
+6. Clique no botão **Executar** a partir da barra de ferramentas
+7. No explorador de métodos 4D, selecione o método **MOBILE SESSION MANAGEMENT** e clique no botão **Executar**.
+8. A janela de aplicações aparecerá mostrando todas suas aplicações:
 
 ![Session](img/session-management.png)
 
