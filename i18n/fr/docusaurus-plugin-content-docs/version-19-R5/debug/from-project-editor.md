@@ -23,9 +23,9 @@ Des éléments de menu de débogage supplémentaires apparaissent pour le [simul
 
 ## Comment déboguer votre application
 
-Once your app is complete and the simulator’s result is satisfactory, you may want to test it on your smartphone, whether you're working on 4D for iOS or 4D for Android..
+Une fois que votre application est terminée et que le résultat du simulateur est satisfaisant, vous pouvez la tester sur votre smartphone, que vous travailliez sur 4D for iOS ou 4D for Android.
 
-To do so, in the Project editor, make sure you have plugged your smartphone, then select your physical device from the list and click on the “Build and Run" button.
+Pour ce faire, dans l'éditeur de projet, assurez-vous d'avoir branché votre smartphone, puis sélectionnez votre appareil physique dans la liste et cliquez sur le bouton "Compiler et exécuter".
 
 ![AndroidDevice](img/phone-selection.png)
 
