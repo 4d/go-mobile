@@ -21,7 +21,7 @@ Des éléments de menu de débogage supplémentaires apparaissent pour le [simul
 * **Ouvrir le dossier du simulateur d'application** : ouvre un sous-menu pour chaque application
 
 
-## How to debug your app
+## Comment déboguer votre application
 
 Once your app is complete and the simulator’s result is satisfactory, you may want to test it on your smartphone, whether you're working on 4D for iOS or 4D for Android..
 
