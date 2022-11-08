@@ -331,7 +331,7 @@ Here is an example of a dynamic choice list:
             "field": "LastName",
             "entityFormat": "%FirstName% %LastName% - %Job%",
             "search": "LastName",
-            "order": "descending" 
+            "sort": {"field": "LastName", "order":"descending"}  
         }
     }
 }
@@ -459,8 +459,8 @@ Para sua comodidade, o formulário de Edição inclui algumas **funcionalidades 
 
 ## O que fazer agora?
 
-* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
+* A [tutorial](../tutorials/actions/getting-started.md) is available to guide you through the **action definition process**.
 
-* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
+* Another [tutorial](../tutorials/actions/adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
 
-* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
+* A final [tutorial](../tutorials/actions/using-action-parameters.md) will guide you through the **action parameters definition**.
