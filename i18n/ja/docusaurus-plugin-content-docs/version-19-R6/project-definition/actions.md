@@ -334,7 +334,7 @@ Zymosian, Elmer
             "field": "LastName",
             "entityFormat": "%FirstName% %LastName% - %Job%",
             "search": "LastName",
-            "order": "descending" 
+            "sort": {"field": "LastName", "order":"descending"}  
         }
     }
 }
@@ -462,8 +462,8 @@ iOSアプリでは、フォームセクションで選択したテンプレー�
 
 ## これからどうする？
 
-* **アクション定義の仕方** について説明した [チュートリアル](../tutorials/actions/getting-started.md) があります。
+* A [tutorial](../tutorials/actions/getting-started.md) is available to guide you through the **action definition process**.
 
 * カスタムテンプレートを作成するための **アクションタグの統合** について説明した [チュートリアル](../tutorials/actions/adding-actions-template.md) もあります。
 
-* こちらの [チュートリアル](../tutorials/actions/using-action-parameters.md) では **アクション引数の定義** について説明しています。
+* こちらの[チュートリアル](../tutorials/actions/using-action-parameters.md) では**アクション引数の定義** について説明しています。
