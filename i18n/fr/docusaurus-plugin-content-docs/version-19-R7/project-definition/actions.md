@@ -389,7 +389,7 @@ Here is an example of a dynamic choice list:
 
 ```4d
 {
-    "name": "datasourcePush"
+    "name": "datasourcePush",
     "type": [
         "text"
     ],
