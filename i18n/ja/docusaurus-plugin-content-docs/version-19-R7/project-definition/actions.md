@@ -389,7 +389,7 @@ Webページがモバイルアプリと対話するため、いくつかの java
 
 ```4d
 {
-    "name": "datasourcePush"
+    "name": "datasourcePush",
     "type": [
         "text"
     ],
