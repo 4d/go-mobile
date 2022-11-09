@@ -20,8 +20,8 @@ Les prérequis système sont identiques aux [prérequis système basiques de 4D]
 
 - **Développement**: 4D avec une licence 4D Developer Pro
 
-- **Deployment**: 4D Server
-    - The 4D Web Server must be started.
+- **Déploiement **: 4D Server
+    - Le 4D Web Server doit être lancé.
     - Les ports HTTP et HTTPS doivent être activés et configurés correctement. HTTPS est nécessaire pour le déploiement de 4D for iOS et 4D for Android.
 
 
@@ -63,17 +63,17 @@ Tableau de versions :
 | 17 R2        | 4.1   | 11.3 | 9.3.1  | 10.13.2 |
 </details>
 
-:::note Compatibility
+:::note Compatibilité
 
-Formatters updated for 4D v19 R3/4D v19.2 and higher are not compatible with previous 4D releases.
+Les formateurs mis à jour pour 4D v19 R3/4D v19.2 et plus ne sont pas compatibles avec les versions précédentes de 4D.
 
 :::
 
 ### Apple Device Developer Mode
 
-As of iOS 16 and Xcode 14, you must enable the **Developer Mode** on your device to be able to develop and debug.
+Depuis iOS 16 et Xcode 14, vous devez activer le **Developer Mode** sur votre appareil pour pouvoir développer et déboguer.
 
-You need essentially to toggle the "Developer Mode" switch in the "Settings" application of your device. More information is provided in the [Apple documentation](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
+Vous devez essentiellement basculer le "Developer Mode" interrupteur dans l'application "Settings" de votre appareil. Plus d'informations sont fournies dans la [documentation Apple](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
 
 ## Android
@@ -101,7 +101,7 @@ Tableau de versions :
 
 - You can build Android apps both on Mac and PC.
 
-- We highly recommend not to run a VM-accelerated emulator inside another virtual machine (VM), such as a VM hosted by VirtualBox. Click [here](https://developer.android.com/studio/run/emulator-acceleration) for more details.
+- Nous recommandons vivement de ne pas exécuter un émulateur accéléré par VM à l'intérieur d'une autre machine virtuelle (VM), telle que la VM hébergée par VirtualBox. Cliquez [ici](https://developer.android.com/studio/run/emulator-acceleration) pour plus de détails.
 
 :::
 
