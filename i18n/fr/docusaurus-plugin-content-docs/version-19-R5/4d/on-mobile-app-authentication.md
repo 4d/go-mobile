@@ -5,10 +5,10 @@ title: On Mobile App Authentication
 
 **On Mobile App Authentication**( *mobileInfo* : Object ) -> *status* : Object
 
-| Parameter  | Type   |    | Description                                  |
-| ---------- | ------ | -- | -------------------------------------------- |
-| mobileInfo | Object | -> | Information passed by the mobile application |
-| status     | Object | <- | Authentication status                        |
+| Paramètres | Type   |    | Description                                 |
+| ---------- | ------ | -- | ------------------------------------------- |
+| mobileInfo | Object | -> | Information passée par l'application mobile |
+| status     | Object | <- | Authentication status                       |
 
 ## Description
 
@@ -36,34 +36,34 @@ The following properties are received in the *mobileInfo* object parameter:
 
 | Property    |             | Type    | Description                                                                      |
 | ----------- | ----------- | ------- | -------------------------------------------------------------------------------- |
-| email       |             | Texte   | User email. Not mandatory, can be empty for guest access                         |
+| email       |             | Text    | User email. Not mandatory, can be empty for guest access                         |
 | application |             | Object  | Information about the mobile application                                         |
-|             | id          | Texte   | Mobile application id                                                            |
-|             | name        | Texte   | Mobile application name                                                          |
-|             | version     | Texte   | Mobile application version                                                       |
+|             | id          | Text    | Mobile application id                                                            |
+|             | name        | Text    | Mobile application name                                                          |
+|             | version     | Text    | Mobile application version                                                       |
 | device      |             | Object  | Information about the mobile device (usually, a mobile phone)                    |
-|             | id          | Texte   | Generated unique device id                                                       |
-|             | version     | Texte   | System version of the device                                                     |
-|             | description | Texte   | Description of the device                                                        |
-|             | simulator   | Booléen | True if the device is a simulator                                                |
+|             | id          | Text    | Generated unique device id                                                       |
+|             | version     | Text    | System version of the device                                                     |
+|             | description | Text    | Description of the device                                                        |
+|             | simulator   | Boolean | True if the device is a simulator                                                |
 | team        |             | Object  | Apple Developer Team information                                                 |
-|             | id          | Texte   | Team id (allows developers to use the Xcode project Build and Run functionality) |
+|             | id          | Text    | Team id (allows developers to use the Xcode project Build and Run functionality) |
 | language    |             | Object  | Language settings of the user device                                             |
-|             | id          | Texte   | User device current language id, ex: en_US                                       |
-|             | region      | Texte   | User device current region, ex: US                                               |
-|             | code        | Texte   | User device current language, ex: en                                             |
+|             | id          | Text    | User device current language id, ex: en_US                                       |
+|             | region      | Text    | User device current region, ex: US                                               |
+|             | code        | Text    | User device current language, ex: en                                             |
 | parameters  |             | Object  | Any additional information that could be added by the mobile app for custom use  |
 | session     |             | Object  | Session information                                                              |
-|             | id          | Texte   | Session UUID created for this authentication. Could be stored for future use     |
-|             | ip          | Texte   | Client IP address                                                                |
+|             | id          | Text    | Session UUID created for this authentication. Could be stored for future use     |
+|             | ip          | Text    | Client IP address                                                                |
 
 After processing information, the database method should return an object with the following properties in *status*:
 
 | Property   | Type    | Description                                                                                                                                                   |
 | ---------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | userInfo   | Object  | User values to filter queries.                                                                                                                                |
-| success    | Booléen | True if authentication is successful, False otherwise. If success=False, the connection is denied.                                                            |
-| statusText | Texte   | (Optional) Message to display on the mobile application. If success=true, welcome message; if success=false, can be used to provide user with an explanation. |
+| success    | Boolean | True if authentication is successful, False otherwise. If success=False, the connection is denied.                                                            |
+| statusText | Text    | (Optional) Message to display on the mobile application. If success=true, welcome message; if success=false, can be used to provide user with an explanation. |
 
 The connection is automatically rejected if:
 
