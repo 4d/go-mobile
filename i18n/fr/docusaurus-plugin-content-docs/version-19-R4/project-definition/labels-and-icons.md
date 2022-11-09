@@ -101,11 +101,11 @@ Available built-in formats depend on the field type:
 
 | Field type         | Formats                                                                                                                |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| **Texte**          | Texte                                                                                                                  |
+| **Text**           | Text                                                                                                                   |
 | **Date**           | Date, Short date, Long date, Full date                                                                                 |
 | **Heure**          | Time, Short time, Duration, Integer number                                                                             |
 | **Image**          | Image                                                                                                                  |
-| **Booléen**        | "No" or "Yes", "False" or "True"                                                                                       |
+| **Boolean**        | "No" or "Yes", "False" or "True"                                                                                       |
 | **Integer number** | Integer number, Decimal number, Real number, Percentage, Ordinal number, Currency $, Currency €, Currency ¥, Spell Out |
 
 

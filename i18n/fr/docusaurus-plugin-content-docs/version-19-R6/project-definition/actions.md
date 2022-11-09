@@ -59,7 +59,7 @@ Voici les différents **formats** que vous pouvez sélectionner en tant que para
 </tr><tr style={{textAlign: 'center'}}>
 <th>Format</th><th>Description</th>
 </tr><tr>
-<td>Texte</td><td>Première lettre de la chaîne en majuscule</td>
+<td>Text</td><td>Première lettre de la chaîne en majuscule</td>
 </tr><tr>
 <td>Adresse mail</td><td>Clavier iOS optimisé pour la saisie de l'e-mail</td>
 </tr><tr>
@@ -134,7 +134,7 @@ Voici les différents **formats** que vous pouvez sélectionner en tant que para
 </tr><tr style={{textAlign: 'center'}}>
 <th>Format</th><th>Description</th>
 </tr><tr>
-<td>Booléen</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
+<td>Boolean</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
 </tr><tr>
 <td>Coche</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
 </tr>
@@ -323,7 +323,7 @@ Here is an example of a dynamic choice list:
 
 ```4d
 {
-    "name": "datasourcePush"
+    "name": "datasourcePush",
     "type": [
         "text"
     ],
@@ -334,7 +334,7 @@ Here is an example of a dynamic choice list:
             "field": "LastName",
             "entityFormat": "%FirstName% %LastName% - %Job%",
             "search": "LastName",
-            "order": "descending" 
+            "sort": {"field": "LastName", "order":"descending"}  
         }
     }
 }
@@ -462,8 +462,8 @@ For your convenience, the Edition form includes a few **special features**:
 
 ## Que faire ensuite ?
 
-* A [tutorial](getting-started.md) is available to guide you through the **action definition process**.
+* A [tutorial](../tutorials/actions/getting-started.md) is available to guide you through the **action definition process**.
 
-* Another [tutorial](adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
+* Another [tutorial](../tutorials/actions/adding-actions-template.md) will guide you through the **action TAG integration** for custom templates.
 
-* A final [tutorial](using-action-parameters.md) will guide you through the **action parameters definition**.
+* A final [tutorial](../tutorials/actions/using-action-parameters.md) will guide you through the **action parameters definition**.

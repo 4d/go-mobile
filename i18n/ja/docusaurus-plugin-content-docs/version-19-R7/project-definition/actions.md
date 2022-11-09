@@ -389,7 +389,7 @@ Webページがモバイルアプリと対話するため、いくつかの java
 
 ```4d
 {
-    "name": "datasourcePush"
+    "name": "datasourcePush",
     "type": [
         "text"
     ],
@@ -401,7 +401,7 @@ Webページがモバイルアプリと対話するため、いくつかの java
             "field": "LastName",
             "entityFormat": "%FirstName% %LastName% - %Job%",
             "search": "LastName",
-            "order": "descending" 
+            "sort": {"field": "LastName", "order":"descending"}  
         }
     }
 }
