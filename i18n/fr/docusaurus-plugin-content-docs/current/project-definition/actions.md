@@ -241,7 +241,7 @@ Available built-in input controls depend on the data type:
 
 | Data type | Input controls      | Description                                                                                                                        |
 | --------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Texte     | Default             | Première lettre de la chaîne en majuscule                                                                                          |
+| Text      | Default             | Première lettre de la chaîne en majuscule                                                                                          |
 |           | Mail Address        | Optimized keyboard for email entry                                                                                                 |
 |           | Numéro de téléphone | Keypad for entering telephone numbers                                                                                              |
 |           | Compte              | Optimized keyboard for username entry                                                                                              |
@@ -261,7 +261,7 @@ Available built-in input controls depend on the data type:
 |           | Date complète       | Tuesday, November 23, 1937                                                                                                         |
 | Heure     | Default             | 3:30 PM                                                                                                                            |
 |           | Durée               | 2 hours 30 minutes                                                                                                                 |
-| Booléen   | Default             | Convertit les nombres en chaînes                                                                                                   |
+| Boolean   | Default             | Convertit les nombres en chaînes                                                                                                   |
 | Heure     | Default             | 3:30 PM                                                                                                                            |
 |           | Durée               | 2 hours 30 minutes                                                                                                                 |
 | Heure     | Default             | <img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true" />     |
