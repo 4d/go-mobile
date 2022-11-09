@@ -281,11 +281,11 @@ Webページがモバイルアプリと対話するため、いくつかの java
 
 ### カスタム入力コントロールの定義
 
-A custom input control is associated to a `**manifest.json**` file and (optionally) Swift or Kotlin source code. カスタム入力コントロールファイルは、以下の場所のサブフォルダーに格納する必要があります:
+カスタム入力コントロールは、`manifest.json` ファイルと、(任意で) Swift または Kotlin のソースコードと紐付けられます。 カスタム入力コントロールファイルは、以下の場所のサブフォルダーに格納する必要があります:
 
 `myProject/Resources/Mobile/inputControls/`
 
-The `manifest.json` file contains different attributes such as **name** and **type**, depending on the input control type (see below).
+`manifest.json` ファイルには、入力コントロールの種類によって、**name** や **type** などの属性が含まれます (後述参照)。
 
 
 ### 選択入力コントロール
@@ -298,15 +298,15 @@ The `manifest.json` file contains different attributes such as **name** and **ty
 
 **静的** な選択リスト (json でハードコードされた定義済み選択肢) は ['inputControls' フォルダー内の `manifest.json`](#カスタム入力コントロールの定義) ファイルに定義します。 この選択リストは以下のような複数の要素から定義されています:
 
-| プロパティ                 |            | タイプ                 | 詳細                                                                                                                                                    |
-| --------------------- | ---------- | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **"name"**            |            | テキスト                | アクション入力コントロール名                                                                                                                                        |
-| **"binding"** (任意)    |            | テキスト                | 画像を紐付けるための "imageNamed" (実際の画像はアクションフォーマッターフォルダー内の "images" サブフォルダーに入れる必要あり)                                                                          |
-| **"choiceList"**      |            | object              | キー (サーバーに送られるデータ) / 値 (ユーザーに表示される値) のリストを定義するためのオブジェクトまたはコレクション                                                                                       |
-| **"type"**            |            | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                                                                                         |
-| **"format"** (任意)     |            | テキスト                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker"                                                                             |
-| Optional **"assets"** |            | object              | to adjust the display size (width and height)                                                                                                         |
-|                       | **"size"** | object or integer   | if integer, pass a single value to create a square image; if object, pass the following attributes: <li>"width" (integer)</li><li>"height" (integer)</li> |
+| プロパティ              |            | タイプ                 | 詳細                                                                                                |
+| ------------------ | ---------- | ------------------- | ------------------------------------------------------------------------------------------------- |
+| **"name"**         |            | text                | アクション入力コントロール名                                                                                    |
+| **"binding"** (任意) |            | text                | 画像を紐付けるための "imageNamed" (実際の画像はアクションフォーマッターフォルダー内の "images" サブフォルダーに入れる必要あり)                      |
+| **"choiceList"**   |            | object              | キー (サーバーに送られるデータ) / 値 (ユーザーに表示される値) のリストを定義するためのオブジェクトまたはコレクション                                   |
+| **"type"**         |            | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                                     |
+| **"format"** (任意)  |            | text                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker"                         |
+| **"assets"** (任意)  |            | object              | 表示サイズの調整 (幅と高さ)                                                                                   |
+|                    | **"size"** | object または integer  | integer: 値を一つのみ渡して正方形を作成します。object: 以下の属性を渡します: <li>"width" (integer): 幅</li><li>"height" (integer): 高さ</li> |
 
 
 以下は、静的な選択リストとして使用可能な、ある会社の支社の連絡先情報を格納した manifest.json ファイルの一例です:
@@ -336,18 +336,18 @@ The `manifest.json` file contains different attributes such as **name** and **ty
 | プロパティ             | タイプ                 | 詳細                                                                        |
 | ----------------- | ------------------- | ------------------------------------------------------------------------- |
 | **"name"**        | text                | 入力コントロール名                                                                 |
-| **"choiceList"**  | object              | an object that contains "dataSource" (see table below)                    |
+| **"choiceList"**  | object              | "dataSource" を格納するオブジェクト (以下の表参照)                                         |
 | **"type"**        | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション             |
 | **"format"** (任意) | text                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker" |
 
-| プロパティ            |                         | タイプ                        | 詳細                                                                                                                                                                               |
-| ---------------- | ----------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **"dataSource"** |                         | object                     | an object that contains "dataClass", "field" and optional "entityFormat"                                                                                                         |
-|                  | **"dataClass"**         | text                       | テーブル名                                                                                                                                                                            |
-|                  | **"field"**             | text                       | サーバーに送るデータの抽出に使用                                                                                                                                                                 |
-|                  | **"sort"** (任意)         | object / collection / text | (sort order ascending by default) can be an object that contains **"field"**(sort criteria/fieldName), and optional **"order"**; or a collection of field names; or a field name |
-|                  | **"search"** (任意)       | boolean / array            | can be an array that contains field to use for search                                                                                                                            |
-|                  | **"entityFormat"** (任意) | text                       | 値の表示用フォーマット (指定されていない場合、フィールドから取得したデータを使用)                                                                                                                                       |
+| プロパティ            |                         | タイプ                        | 詳細                                                                                                                 |
+| ---------------- | ----------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **"dataSource"** |                         | object                     | "dataClass"、"field"、そして任意の "entityFormat" を格納するオブジェクト。                                                             |
+|                  | **"dataClass"**         | text                       | テーブル名                                                                                                              |
+|                  | **"field"**             | text                       | サーバーに送るデータの抽出に使用                                                                                                   |
+|                  | **"sort"** (任意)         | object / collection / text | **"field"** (ソート基準 / フィールド名) と、任意の **"order"** (ソート順) を格納するオブジェクト。または、フィールド名のコレクション。または、フィールド名。(デフォルトでは昇順でソートされます) |
+|                  | **"search"** (任意)       | boolean / array            | 検索に使用するフィールドを格納した配列                                                                                                |
+|                  | **"entityFormat"** (任意) | text                       | 値の表示用フォーマット (指定されていない場合、フィールドから取得したデータを使用)                                                                         |
 
 **注意:** 選択リストが長くなった場合に、任意の "search" 要素が利用可能になります。
 
@@ -355,7 +355,7 @@ The `manifest.json` file contains different attributes such as **name** and **ty
 
 ```json
 {
-    "name": "datasourcePush"
+    "name": "datasourcePush",
     "type": [
         "text"
     ],
@@ -388,15 +388,15 @@ The `manifest.json` file contains different attributes such as **name** and **ty
 
 これには、アプリでの用途や必要に応じて、ネイティブコードを使用した入力コントロールを独自に作成するほか、GitHub にて公開されている [Github ギャラリー](https://4d-go-mobile.github.io/gallery/#/type/input-control) から入力コントロールをダウンロードすることもできます。 これらは "inputControls" フォルダー (`mybase/Resources/mobile/inputControls`) にドロップして入れます。 するとプロジェクトエディターにて、アクションの引数プロパティ内にある入力コントロールメニューから追加の入力コントロールが利用・選択可能になります。
 
-The [`manifest.json` file](#defining-custom-input-controls) is composed of the following attributes:
+[`manifest.json` ファイル](#カスタム入力コントロールの定義) には、以下のような属性が格納されています:
 
-| プロパティ                       | タイプ                 | 詳細                                                                                                                                       |
-| --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| **"name"**                  | テキスト                | 入力コントロール名                                                                                                                                |
-| Optional **"inject"**       | boolean             | "inject" to indicate that when generating the app with this formatter, some source code in Sources must be injected in the final project |
-| **"type"**                  | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                                                                            |
-| Optional **"capabilities"** | object              | capabilities elements to add some information, some optional according to the needs (map, photo, location, etc.)                         |
-| **"target"**                | text または collection | he platform supported by your input control ("ios", "android")                                                                           |
+| プロパティ                   | タイプ                 | 詳細                                                                                     |
+| ----------------------- | ------------------- | -------------------------------------------------------------------------------------- |
+| **"name"**              | text                | 入力コントロール名                                                                              |
+| **"inject"** (任意)       | boolean             | このフォーマッターを使ったアプリを生成する際に、Sources にあるいくつかのソースコードを最終プロジェクトに注入する必要がある場合には "inject" を指定します。 |
+| **"type"**              | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                          |
+| **"capabilities"** (任意) | object              | ニーズに応じて任意の情報を追加するための capabilities要素 (地図、写真、場所など)。                                      |
+| **"target"**            | text または collection | 入力コントロールがサポートするプラットフォーム ("ios"、"android")                                              |
 
 たとえば、モバイルの連絡先リストから電話番号を取得するには、*phoneContact* 入力コントロールテンプレートを使用することで、電話番号フィールドを自動的に埋めることが可能になります。
 
@@ -406,7 +406,7 @@ The [`manifest.json` file](#defining-custom-input-controls) is composed of the f
 
 :::info
 
-An example of Kotlin input control definition is provided in [this tutorial](../tutorials/actions/create-kotlin-input.md).
+Kotlin の入力コントロール定義の例は、[このチュートリアル](../tutorials/actions/create-kotlin-input.md) で紹介されています。
 
 :::
 
@@ -502,7 +502,7 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
 
 * キーボードのタイプは、アクションセクションで選択されたパラメーターに依存します。
 * キーボード上部の矢印で、次のフィールドや前のフィールドに移動することができます。
-* The keyboard can be closed by touching anywhere outside of a field.
+* キーボードは、フィールドの外をタッチすることで、閉じることができます。
 * 値が有効でない場合、ユーザーに表示されます。
 * ユーザーが Done ボタンをクリックしたときに空の必須フィールドがあれば、それに焦点が当たります。
 
@@ -510,4 +510,4 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
 
 こちらの [チュートリアル](../tutorials/actions/getting-started.md) では **アクション定義の手順** について説明しています。
 
-See [this tutorial](../tutorials/actions/create-kotlin-input.md) for an example of custom **Kotlin input control definition**.
+カスタムの **Kotlin 入力コントロール定義の例** については [このチュートリアル](../tutorials/actions/create-kotlin-input.md) を参照ください。
