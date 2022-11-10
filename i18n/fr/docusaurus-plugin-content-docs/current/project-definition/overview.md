@@ -4,11 +4,11 @@ title: Overview
 ---
 
 
-The 4D Mobile Project editor allows you to design, test, and build your native mobile projects for iOS and Android using a graphical interface. The window has two tabs: **Sections** and **Build**.
+L'éditeur 4D Mobile Project vous permet de concevoir, tester et générer vos projets mobiles natifs pour iOS et Android à l'aide d'une interface graphique. La fenêtre a deux onglets : **Sections** et **Build**.
 
 ![General section](img/General-section-4D-for-iOS.png)
 
-In the **Sections** tab, you'll find all of the necessary steps to create your mobile application:
+Dans l'onglet **Sections**, vous trouverez toutes les étapes nécessaires à la création de votre application mobile :
 
 * Général
 * Structure
@@ -19,16 +19,16 @@ In the **Sections** tab, you'll find all of the necessary steps to create your m
 * Forms
 * Publishing
 
-In the **Build** tab, you'll find embedded tools to build and test you mobile app:
+Dans l’onglet **Build**, vous trouverez des outils intégrés pour générer et tester votre application mobile :
 
 * Build and Run
 * Simulator selection
 * Project and product browser
 * Install
 
-The 4D Mobile Project editor is available from the **4D** application development environment (a 4D Developer Pro license is required).
+L'éditeur de projet 4D Mobile est disponible depuis l'environnement de développement de l'application **4D** (une licence 4D Developer Pro est exigée).
 
-A 4D mobile project is strongly linked to a 4D data model. To be able to create or open a 4D mobile project, you must open the associated 4D project database beforehand.
+Un projet mobile 4D est fortement lié à un modèle de données 4D. To be able to create or open a 4D mobile project, you must open the associated 4D project database beforehand.
 
 
 ## Creating a mobile project
