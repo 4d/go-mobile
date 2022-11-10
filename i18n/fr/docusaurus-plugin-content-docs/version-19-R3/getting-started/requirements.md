@@ -74,7 +74,7 @@ Tableau de versions :
 
 :::note
 
-You can build Android apps both on Mac and PC.
+Vous pouvez créer des applications Android sur Mac et sur PC.
 
 :::
 
