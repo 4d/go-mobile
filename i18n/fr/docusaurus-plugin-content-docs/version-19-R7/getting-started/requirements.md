@@ -100,7 +100,7 @@ Tableau de versions :
 
 :::note notes
 
-- You can build Android apps both on Mac and PC.
+- Vous pouvez créer des applications Android sur Mac et sur PC.
 
 - Nous recommandons vivement de ne pas exécuter un émulateur accéléré par VM à l'intérieur d'une autre machine virtuelle (VM), telle que la VM hébergée par VirtualBox. Cliquez [ici](https://developer.android.com/studio/run/emulator-acceleration) pour plus de détails.
 
