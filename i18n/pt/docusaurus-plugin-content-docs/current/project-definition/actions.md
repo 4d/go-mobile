@@ -278,11 +278,11 @@ You can create custom input controls for both categories. Note that you can also
 
 ### Defining custom input controls
 
-A custom input control is associated to a `**manifest.json**` file and (optionally) Swift or Kotlin source code. The custom input control files must be stored into a subfolder at the following location:
+A custom input control is associated to a `manifest.json` file and (optionally) Swift or Kotlin source code. The custom input control files must be stored into a subfolder at the following location:
 
 `myProject/Resources/Mobile/inputControls/`
 
-The `manifest.json` file contains different attributes such as **name** and **type**, depending on the input control type (see below).
+The `manifest.json` file contains several attributes such as **name**, **type**, **format**, etc. depending on the input control category (selection or action).
 
 
 ### Selection input controls
@@ -299,7 +299,7 @@ These choice lists can be either **static** or **dynamic**.
 | ---------------------- | ---------- | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **"name"**             |            | texto              | action input control name                                                                                                                             |
 | Optional **"binding"** |            | texto              | "imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)                                                |
-| **"choiceList"**       |            | object             | an object or collection to define a list of key(data sent to server)/value(displayed value to the user)                                               |
+| **"choiceList"**       |            | object             | an object or collection to define a list of key(data sent to server)/value (displayed value to the user)                                              |
 | **"type"**             |            | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control                                                           |
 | Optional **"format"**  |            | texto              | to select interface: "push" (default if not defined), "segmented", "popover", "sheet", "picker"                                                       |
 | Optional **"assets"**  |            | object             | to adjust the display size (width and height)                                                                                                         |
@@ -333,7 +333,7 @@ Here is an example of a manifest.json file containing the contact information of
 | Property              | Type               | Descrição                                                                                       |
 | --------------------- | ------------------ | ----------------------------------------------------------------------------------------------- |
 | **"name"**            | texto              | input control name                                                                              |
-| **"choiceList"**      | object             | an object that contains "dataSource" (see table below)                                          |
+| **"choiceList"**      | object             | an object that contains **"dataSource"** (see table below)                                      |
 | **"type"**            | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control     |
 | Optional **"format"** | texto              | to select interface: "push" (default if not defined), "segmented", "popover", "sheet", "picker" |
 
@@ -391,9 +391,9 @@ The [`manifest.json` file](#defining-custom-input-controls) is composed of the f
 | --------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | **"name"**                  | texto              | input control name                                                                                                                       |
 | Optional **"inject"**       | boolean            | "inject" to indicate that when generating the app with this formatter, some source code in Sources must be injected in the final project |
-| **"type"**                  | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control                                              |
+| **"type"**                  | text or collection | a text or a collection of text to define the type (text, integer, boolean) of input control                                              |
 | Optional **"capabilities"** | object             | capabilities elements to add some information, some optional according to the needs (map, photo, location, etc.)                         |
-| **"target"**                | text or collection | he platform supported by your input control ("ios", "android")                                                                           |
+| **"target"**                | text or collection | platform supported by your input control ("ios", "android")                                                                              |
 
 For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
 
