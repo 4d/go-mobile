@@ -5,10 +5,10 @@ title: On Mobile App Authentication
 
 **On Mobile App Authentication**( *mobileInfo* : Object ) -> *result* : Object
 
-| Parameter  | Type   |    | Description                                  |
-| ---------- | ------ | -- | -------------------------------------------- |
-| mobileInfo | Object | -> | Information passed by the mobile application |
-| result     | Object | <- | Authentication status                        |
+| Paramètres | Type   |    | Description                                 |
+| ---------- | ------ | -- | ------------------------------------------- |
+| mobileInfo | Object | -> | Information passée par l'application mobile |
+| result     | Object | <- | Authentication status                       |
 
 ## Description
 
@@ -35,28 +35,28 @@ $result:=New object() //do not forget to create the object to return
 
 The following properties are received in the *mobileInfo* object parameter:
 
-| Property    |             | Type    | Description                                                                                        |
-| ----------- | ----------- | ------- | -------------------------------------------------------------------------------------------------- |
-| email       |             | Texte   | User email. Not mandatory, can be empty for guest access                                           |
-| application |             | Object  | Information about the mobile application                                                           |
-|             | id          | Texte   | Mobile application id                                                                              |
-|             | name        | Texte   | Mobile application name                                                                            |
-|             | version     | Texte   | Mobile application version                                                                         |
-| device      |             | Object  | Information about the mobile device (usually, a mobile phone)                                      |
-|             | id          | Texte   | Generated unique device id                                                                         |
-|             | version     | Texte   | System version of the device                                                                       |
-|             | description | Texte   | Description of the device                                                                          |
-|             | simulator   | Booléen | True if the device is a simulator                                                                  |
-| team        |             | Object  | Apple Developer Team information                                                                   |
-|             | id          | Texte   | Team id (allows developers to use the Xcode project Build and Run functionality)                   |
-| language    |             | Object  | Language settings of the user device                                                               |
-|             | id          | Texte   | User device current language id, ex: en_US                                                         |
-|             | region      | Texte   | User device current region, ex: US                                                                 |
-|             | code        | Texte   | User device current language, ex: en                                                               |
-| parameters  |             | Object  | Any additional information that could be added by the mobile app for custom use                    |
-| session     |             | Object  | Session information                                                                                |
-|             | id          | Texte   | UUID of the [Session](https://developer.4d.com/docs/API/SessionClass.html) object on the 4D server |
-|             | ip          | Texte   | Client IP address                                                                                  |
+| Property    |             | Type    | Description                                                                                      |
+| ----------- | ----------- | ------- | ------------------------------------------------------------------------------------------------ |
+| email       |             | Text    | User email. Not mandatory, can be empty for guest access                                         |
+| application |             | Object  | Information about the mobile application                                                         |
+|             | id          | Text    | Mobile application id                                                                            |
+|             | name        | Text    | Mobile application name                                                                          |
+|             | version     | Text    | Mobile application version                                                                       |
+| device      |             | Object  | Information about the mobile device (usually, a mobile phone)                                    |
+|             | id          | Text    | Generated unique device id                                                                       |
+|             | version     | Text    | System version of the device                                                                     |
+|             | description | Text    | Description of the device                                                                        |
+|             | simulator   | Boolean | True if the device is a simulator                                                                |
+| team        |             | Object  | Apple Developer Team information                                                                 |
+|             | id          | Text    | Team id (allows developers to use the Xcode project Build and Run functionality)                 |
+| language    |             | Object  | Language settings of the user device                                                             |
+|             | id          | Text    | User device current language id, ex: en_US                                                       |
+|             | region      | Text    | User device current region, ex: US                                                               |
+|             | code        | Text    | User device current language, ex: en                                                             |
+| parameters  |             | Object  | Any additional information that could be added by the mobile app for custom use                  |
+| session     |             | Object  | Session information                                                                              |
+|             | id          | Text    | UUID de l'objet [Session](https://developer.4d.com/docs/API/SessionClass.html) sur le serveur 4D |
+|             | ip          | Text    | Client IP address                                                                                |
 
 
 :::note
@@ -70,9 +70,9 @@ After processing information, the database method should return a *result* objec
 | Property   | Type    | Description                                                                                                                                                   |
 | ---------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | userInfo   | Object  | User values to filter queries.                                                                                                                                |
-| success    | Booléen | True if authentication is successful, False otherwise. If success=False, the connection is denied.                                                            |
-| statusText | Texte   | (Optional) Message to display on the mobile application. If success=true, welcome message; if success=false, can be used to provide user with an explanation. |
-| verify     | Booléen | (Optional) True if you want to validate the first login of the [user session](../special-features/session-management.md), False otherwise. Default is False   |
+| success    | Boolean | True if authentication is successful, False otherwise. If success=False, the connection is denied.                                                            |
+| statusText | Text    | (Optional) Message to display on the mobile application. If success=true, welcome message; if success=false, can be used to provide user with an explanation. |
+| verify     | Boolean | (Optional) True if you want to validate the first login of the [user session](../special-features/session-management.md), False otherwise. Default is False   |
 
 
 The connection is automatically rejected if:

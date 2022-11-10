@@ -241,7 +241,7 @@ Available built-in input controls depend on the data type:
 
 | Data type | Input controls      | Description                                                                                                                        |
 | --------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Texte     | Default             | Première lettre de la chaîne en majuscule                                                                                          |
+| Text      | Default             | Première lettre de la chaîne en majuscule                                                                                          |
 |           | Mail Address        | Optimized keyboard for email entry                                                                                                 |
 |           | Numéro de téléphone | Keypad for entering telephone numbers                                                                                              |
 |           | Compte              | Optimized keyboard for username entry                                                                                              |
@@ -261,7 +261,7 @@ Available built-in input controls depend on the data type:
 |           | Date complète       | Tuesday, November 23, 1937                                                                                                         |
 | Heure     | Default             | 3:30 PM                                                                                                                            |
 |           | Durée               | 2 hours 30 minutes                                                                                                                 |
-| Booléen   | Default             | Convertit les nombres en chaînes                                                                                                   |
+| Boolean   | Default             | Convertit les nombres en chaînes                                                                                                   |
 | Heure     | Default             | 3:30 PM                                                                                                                            |
 |           | Durée               | 2 hours 30 minutes                                                                                                                 |
 | Heure     | Default             | <img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true" />     |
@@ -281,17 +281,11 @@ You can create custom input controls for both categories. Note that you can also
 
 ### Defining custom input controls
 
-A custom input control is associated to a `Manifest.json` file and (optionally) Swift or Kotlin source code. The custom input control files must be stored into a subfolder at the following location:
+A custom input control is associated to a `**manifest.json**` file and (optionally) Swift or Kotlin source code. The custom input control files must be stored into a subfolder at the following location:
 
 `myProject/Resources/Mobile/inputControls/`
 
-The `Manifest.json` file must contain the following attributes:
-
-- **name** (text): the input control name
-- **inject** (boolean): "inject" to indicate that when generating the app with this formatter, some source code in Sources must be injected in the final project
-- **type** (text or collection of text): defines the type ("text", "integer", "boolean") of input control
-- **capabilities** (object) (optional): capabilities elements to add some information, some optional according to the needs (map, photo, location, etc.)
-- **target** (text or collection): the platform supported by your input control ("ios", "android")
+The `manifest.json` file contains different attributes such as **name** and **type**, depending on the input control type (see below).
 
 
 ### Selection input controls
@@ -304,13 +298,16 @@ These choice lists can be either **static** or **dynamic**.
 
 **Static** choice lists (predefined choices hard coded in json) must be located in a [`manifest.json` file in the "inputControls" folder](#defining-custom-input-controls). They are defined by several elements, as follows:
 
-| Property               | Type               | Description                                                                                             |
-| ---------------------- | ------------------ | ------------------------------------------------------------------------------------------------------- |
-| **"name"**             | text               | action input control name                                                                               |
-| Optional **"binding"** | text               | "imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)  |
-| **"choiceList"**       | object             | an object or collection to define a list of key(data sent to server)/value(displayed value to the user) |
-| **"type"**             | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control             |
-| Optional **"format"**  | text               | to select interface: "push" (default if not defined), "segmented", "popover", "sheet", "picker"         |
+| Property               |            | Type               | Description                                                                                                                                           |
+| ---------------------- | ---------- | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **"name"**             |            | text               | action input control name                                                                                                                             |
+| Optional **"binding"** |            | text               | "imageNamed" to bind on images (Images must be in a subfolder "images" in the action formatter folder)                                                |
+| **"choiceList"**       |            | object             | an object or collection to define a list of key(data sent to server)/value(displayed value to the user)                                               |
+| **"type"**             |            | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control                                                           |
+| Optional **"format"**  |            | text               | to select interface: "push" (default if not defined), "segmented", "popover", "sheet", "picker"                                                       |
+| Optional **"assets"**  |            | object             | to adjust the display size (width and height)                                                                                                         |
+|                        | **"size"** | object or integer  | if integer, pass a single value to create a square image; if object, pass the following attributes: <li>"width" (integer)</li><li>"height" (integer)</li> |
+
 
 Here is an example of a manifest.json file containing the contact information of a company's subsidiaries, that can be used as a static choice list:
 
@@ -339,18 +336,18 @@ Here is an example of a manifest.json file containing the contact information of
 | Property              | Type               | Description                                                                                     |
 | --------------------- | ------------------ | ----------------------------------------------------------------------------------------------- |
 | **"name"**            | text               | input control name                                                                              |
-| **"choiceList"**      | object             | an object that contain "dataSource" (see table below)                                           |
+| **"choiceList"**      | object             | an object that contains "dataSource" (see table below)                                          |
 | **"type"**            | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control     |
 | Optional **"format"** | text               | to select interface: "push" (default if not defined), "segmented", "popover", "sheet", "picker" |
 
-| Property         |                             | Type                       | Description                                                                                                                     |
-| ---------------- | --------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| **"dataSource"** |                             | object                     | an object that contain "dataClass", "field" and optional "entityFormat"                                                         |
-|                  | **"dataClass"**             | text                       | table name                                                                                                                      |
-|                  | **"field"**                 | text                       | used to extract data to send to server                                                                                          |
-|                  | Optional **"sort"**         | object / collection / text | can be an object that contains **"field"**(sort criteria/fieldName), and optional **"order"** (sort order ascending by default) |
-|                  | Optional **"search"**       | boolean / array            | can be an array that contain field to use for search                                                                            |
-|                  | Optional **"entityFormat"** | text                       | for the display value (if no format we use the extracted data from field)                                                       |
+| Property         |                             | Type                       | Description                                                                                                                                                                      |
+| ---------------- | --------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **"dataSource"** |                             | object                     | an object that contains "dataClass", "field" and optional "entityFormat"                                                                                                         |
+|                  | **"dataClass"**             | text                       | table name                                                                                                                                                                       |
+|                  | **"field"**                 | text                       | used to extract data to send to server                                                                                                                                           |
+|                  | Optional **"sort"**         | object / collection / text | (sort order ascending by default) can be an object that contains **"field"**(sort criteria/fieldName), and optional **"order"**; or a collection of field names; or a field name |
+|                  | Optional **"search"**       | boolean / array            | can be an array that contains field to use for search                                                                                                                            |
+|                  | Optional **"entityFormat"** | text                       | for the display value (if no format we use the extracted data from field)                                                                                                        |
 
 **Note:** When the choice list is extensive, the optional "search" element becomes available.
 
@@ -358,7 +355,7 @@ Here is an example of a dynamic choice list:
 
 ```json
 {
-    "name": "datasourcePush"
+    "name": "datasourcePush",
     "type": [
         "text"
     ],
@@ -370,7 +367,7 @@ Here is an example of a dynamic choice list:
             "field": "LastName",
             "entityFormat": "%FirstName% %LastName% - %Job%",
             "search": "LastName",
-            "order": "descending" 
+            "sort": {"field": "LastName", "order":"descending"} 
         }
     }
 }
@@ -390,6 +387,16 @@ The various formats are illustrated in this animation:
 You can easily interact with native apps by using custom input controls, which follow the same logic as [Labels & Icons custom formatters](labels-and-icons.md) with native code.
 
 To do so, you can create your own input controls with native code, or you can download input controls from our [Github gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into the "inputControls" folder (`mybase/Resources/mobile/inputControls`). They will then be available and selectable from the project editor input controls menu, in the parameter properties of the action.
+
+The [`manifest.json` file](#defining-custom-input-controls) is composed of the following attributes:
+
+| Property                    | Type               | Description                                                                                                                              |
+| --------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **"name"**                  | text               | input control name                                                                                                                       |
+| Optional **"inject"**       | boolean            | "inject" to indicate that when generating the app with this formatter, some source code in Sources must be injected in the final project |
+| **"type"**                  | text or collection | one text or a collection of text to define a type (text, integer, boolean) of input control                                              |
+| Optional **"capabilities"** | object             | capabilities elements to add some information, some optional according to the needs (map, photo, location, etc.)                         |
+| **"target"**                | text or collection | he platform supported by your input control ("ios", "android")                                                                           |
 
 For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
 

@@ -62,7 +62,7 @@ Voici les différents **formats** que vous pouvez sélectionner en tant que para
 </tr><tr style={{textAlign: 'center'}}>
 <th>Format</th><th>Description</th>
 </tr><tr>
-<td>Texte</td><td>Première lettre de la chaîne en majuscule</td>
+<td>Text</td><td>Première lettre de la chaîne en majuscule</td>
 </tr><tr>
 <td>Adresse mail</td><td>Clavier iOS optimisé pour la saisie de l'e-mail</td>
 </tr><tr>
@@ -137,7 +137,7 @@ Voici les différents **formats** que vous pouvez sélectionner en tant que para
 </tr><tr style={{textAlign: 'center'}}>
 <th>Format</th><th>Description</th>
 </tr><tr>
-<td>Booléen</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
+<td>Boolean</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/switch.png?raw=true"/></td>
 </tr><tr>
 <td>Coche</td><td><img src="https://github.com/4d/4d-for-ios/blob/develop/docs/assets/en/project-editor/check.png?raw=true"/></td>
 </tr>
@@ -389,7 +389,7 @@ Here is an example of a dynamic choice list:
 
 ```4d
 {
-    "name": "datasourcePush"
+    "name": "datasourcePush",
     "type": [
         "text"
     ],
@@ -401,7 +401,7 @@ Here is an example of a dynamic choice list:
             "field": "LastName",
             "entityFormat": "%FirstName% %LastName% - %Job%",
             "search": "LastName",
-            "order": "descending" 
+            "sort": {"field": "LastName", "order":"descending"}  
         }
     }
 }

@@ -355,7 +355,7 @@ Here is an example of a dynamic choice list:
 
 ```json
 {
-    "name": "datasourcePush"
+    "name": "datasourcePush",
     "type": [
         "text"
     ],
