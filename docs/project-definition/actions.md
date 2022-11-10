@@ -394,9 +394,9 @@ The [`manifest.json` file](#defining-custom-input-controls) is composed of the f
 |---|---|---|
 |**"name"**|text|input control name|
 |Optional **"inject"**|	boolean|"inject" to indicate that when generating the app with this formatter, some source code in Sources must be injected in the final project |
-|**"type"**|text or collection|	one text or a collection of text to define a type (text, integer, boolean) of input control|
+|**"type"**|text or collection|	a text or a collection of text to define the type (text, integer, boolean) of input control|
 |Optional **"capabilities"** |object|	capabilities elements to add some information, some optional according to the needs (map, photo, location, etc.)|
-|**"target"** |text or collection|	he platform supported by your input control ("ios", "android")|
+|**"target"** |text or collection|platform supported by your input control ("ios", "android")|
 
 For example, if you want to get a client's phone number from your mobile contact list, the *phoneContact* input control template enables you to automatically fill your client's phone number field.
 
