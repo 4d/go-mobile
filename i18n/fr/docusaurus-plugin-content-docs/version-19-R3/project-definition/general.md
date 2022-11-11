@@ -3,44 +3,44 @@ id: general
 title: Général
 ---
 
-This page allows you to define your app's main information.
+Cette page vous permet de définir les informations principales de votre application.
 
 ![General section](img/main-page.png)
 
-## Target OS
+## OS cible
 
-Select the mobile OS for which you want to build the app. This setting will define the available mobile editor options.
+Sélectionnez l'OS (système d'exploitation) mobile pour lequel vous souhaitez créer l'application. Ce paramètre définira les options de l'éditeur mobile disponibles.
 
-- On macOS, you can select **Android**, **iOS**, or **both targets**
-- On Windows, you can only select the **Android** target.
+- Sur macOS, vous pouvez sélectionner **Android**, **iOS**, ou **les deux cibles**
+- Sous Windows, vous pouvez sélectionner uniquement la cible **Android**.
 
-## Organization
+## Organisation
 
-**Name:** Name of your company, or your name.
+**Nom :** Nom de votre entreprise, ou votre nom.
 
-**Identifier:** Enter your organization’s bundle identifier. This will be used to identify your application. The product name you enter is concatenated to create the "Bundle ID" using reverse domain name service notation (see **ID** below). This bundle ID must be unique to your app.
+**Identifiant :** Saisissez l'identifiant bundle de votre entreprise. Cela servira à identifier votre application. Le nom du produit que vous saisissez est concaténé pour créer le "Bundle ID" en utilisant la notation inverse du service des noms de domaine (voir **ID** ci-dessous). Ce bundle ID doit être unique à votre application.
 
-For example, if your company’s name is "MyCompany" and your app’s name is "MyApp", you could choose "com.MyCompany" as your organization’s bundle identifier and your App bundle ID would be "com.MyCompany.MyApp".
+Par exemple, si le nom de votre entreprise est " MonEntreprise" et que le nom de votre application est "MonApp", vous pouvez choisir "com.MonEntreprise" comme identifiant bundle de votre entreprise et le bundle ID de votre application sera "com.MonEntreprise.MonApp".
 
 :::note
 
-The Bundle ID name must not contain space or special characters such as "*,%,/". They are automatically filtered and replaced with -.
+Le nom Bundle ID ne doit pas contenir d'espace ni de caractères spéciaux tels que "*,%,/". They are automatically filtered and replaced with -.
 
 :::
 
 
-## Product
+## Produit
 
 
-**Name:** Your app’s name. As described above, the product name is used to create the "Bundle ID". This Bundle ID must be the same as the Bundle ID you created in your Apple Development account.
+**Nom :** Le nom de votre application. Comme indiqué ci-dessus, le nom du produit est utilisé pour créer le "Bundle ID". Ce Bundle ID doit être identique au Bundle ID que vous avez créé dans votre compte Apple Development.
 
 :::note
 
-The Bundle ID name must not contain space or special characters such as "*,%,/". They are automatically filtered and replaced with -.
+Le nom Bundle ID ne doit pas contenir d'espace ni de caractères spéciaux tels que "*,%,/". They are automatically filtered and replaced with -.
 
 :::
 
-**Version:** The version of your app. Add version numbers in ascending, sequential order starting with 1.0.
+**Version :** La version de votre application. Add version numbers in ascending, sequential order starting with 1.0.
 
 **ID:** (Bundle ID): This area is automatically generated as a composition of your organization identifier and product name. It is not editable.
 
@@ -65,7 +65,7 @@ On Windows, you must use an "image file" (*.public.image).
 
 Once the icon is selected, the mobile editor automatically creates all required icons for the app. You can access the generated icon formats by selecting **Show the icons folder** in the image menu.
 
-### Main color
+### Couleur principale
 
 This menu allows you to select how to define the main color of your app. The main color is used to generate a custom color scheme for your app.
 
@@ -76,7 +76,7 @@ This menu allows you to select how to define the main color of your app. The mai
 
 At any time, you can reset the main color and get back to the icon's preset main color, by clicking on "Use the main color of the icon".
 
-## Developer
+## Développeur
 
 **Name:** This field is automatically prefilled with your user account name. You can enter any name.
 
