@@ -24,7 +24,7 @@ Par exemple, si le nom de votre entreprise est " MonEntreprise" et que le nom de
 
 :::note
 
-Le nom Bundle ID ne doit pas contenir d'espace ni de caractères spéciaux tels que "*,%,/". They are automatically filtered and replaced with -.
+Le nom Bundle ID ne doit pas contenir d'espace ni de caractères spéciaux tels que "*,%,/". Ils sont filtrés automatiquement et remplacés par -.
 
 :::
 
@@ -36,34 +36,34 @@ Le nom Bundle ID ne doit pas contenir d'espace ni de caractères spéciaux tels 
 
 :::note
 
-Le nom Bundle ID ne doit pas contenir d'espace ni de caractères spéciaux tels que "*,%,/". They are automatically filtered and replaced with -.
+Le nom Bundle ID ne doit pas contenir d'espace ni de caractères spéciaux tels que "*,%,/". Ils sont filtrés automatiquement et remplacés par -.
 
 :::
 
-**Version :** La version de votre application. Add version numbers in ascending, sequential order starting with 1.0.
+**Version :** La version de votre application. Ajoutez les numéros de version par ordre séquentiel et ascendant en commençant par 1.0.
 
-**ID:** (Bundle ID): This area is automatically generated as a composition of your organization identifier and product name. It is not editable.
+**ID :** (Bundle ID) : Cette zone est automatiquement générée en tant que composition de l'identifiant de votre entreprise et du nom du produit. Elle n'est pas modifiable.
 
-**Copyright:** Your app's copyright. The mobile editor suggests a copyright format but you can create your own.
+**Copyright :** Les droits d’auteur de votre application. L'éditeur mobile vous propose un format de droit d’auteur, mais vous avez également la possibilité de créer votre propre format.
 
-**Icons:** Master icon that will be used in various locations in you app. You just need to designate your icon and the mobile editor generates all of the required formats for you, in accordance with standard mobile guidelines.
+**Icônes :** Icône principale qui sera utilisée à divers endroits dans votre application. You just need to designate your icon and the mobile editor generates all of the required formats for you, in accordance with standard mobile guidelines.
 
-To select an icon:
+Pour sélectionner une icône :
 
-- Drag and drop a picture directly into the icon area, or
-- Use the image menu to select or copy your picture.
+- Glissez et déposez une image directement dans la zone d'icône, ou
+- Utilisez le menu image pour sélectionner ou copier votre image.
 
 ![icon](img/iconselect.png)
 
-You can also double-click the area to display the picture selection dialog box.
+Vous pouvez également double-cliquer sur la zone pour afficher la boîte de dialogue de sélection d'image.
 
 :::note
 
-On Windows, you must use an "image file" (*.public.image).
+Sous Windows, il faut utiliser un "fichier image" (*.public.image).
 
 :::
 
-Once the icon is selected, the mobile editor automatically creates all required icons for the app. You can access the generated icon formats by selecting **Show the icons folder** in the image menu.
+Une fois l'icône est sélectionnée, l'éditeur mobile crée automatiquement toutes les icônes nécessaires pour l'application. Vous pouvez accéder aux formats d'icônes générés en sélectionnant **Montrer le dossier des icônes** dans le menu image.
 
 ### Couleur principale
 
@@ -78,6 +78,6 @@ At any time, you can reset the main color and get back to the icon's preset main
 
 ## Développeur
 
-**Name:** This field is automatically prefilled with your user account name. You can enter any name.
+**Nom :** Ce champ est prérempli automatiquement avec le nom de votre compte utilisateur. Vous pouvez saisir un nom quelconque.
 
-**Team:** Your Developer Account Team ID, that will be used during the deployment phase. This ID can be get from your Developer Account (see (https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&path=%2Faccount%2F&rv=1).
+**Team :** Votre ID d'équipe de compte développeur, qui sera utilisée pendant la phase de déploiement. This ID can be get from your Developer Account (see (https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&path=%2Faccount%2F&rv=1).
