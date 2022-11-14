@@ -67,7 +67,7 @@ Une fois l'icône est sélectionnée, l'éditeur mobile crée automatiquement to
 
 ### Couleur principale
 
-This menu allows you to select how to define the main color of your app. The main color is used to generate a custom color scheme for your app.
+Ce menu vous permet de choisir comment définir la couleur principale de votre application. The main color is used to generate a custom color scheme for your app.
 
 ![icon](img/main-color.png)
 
