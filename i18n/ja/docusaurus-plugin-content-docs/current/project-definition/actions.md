@@ -281,11 +281,11 @@ Webページがモバイルアプリと対話するため、いくつかの java
 
 ### カスタム入力コントロールの定義
 
-A custom input control is associated to a `manifest.json` file and (optionally) Swift or Kotlin source code. カスタム入力コントロールファイルは、以下の場所のサブフォルダーに格納する必要があります:
+カスタム入力コントロールは、`manifest.json` ファイルと、(任意で) Swift または Kotlin のソースコードと紐付けられます。 カスタム入力コントロールファイルは、以下の場所のサブフォルダーに格納する必要があります:
 
 `myProject/Resources/Mobile/inputControls/`
 
-The `manifest.json` file contains several attributes such as **name**, **type**, **format**, etc. depending on the input control category (selection or action).
+`manifest.json` ファイルには、入力コントロールのカテゴリ (選択またはアクション) によって、**name** や **type**、**format** などいくつかの属性が含まれます (後述参照)。
 
 
 ### 選択入力コントロール
@@ -298,15 +298,15 @@ The `manifest.json` file contains several attributes such as **name**, **type**,
 
 **静的** な選択リスト (json でハードコードされた定義済み選択肢) は ['inputControls' フォルダー内の `manifest.json`](#カスタム入力コントロールの定義) ファイルに定義します。 この選択リストは以下のような複数の要素から定義されています:
 
-| プロパティ              |            | タイプ                 | 詳細                                                                                                       |
-| ------------------ | ---------- | ------------------- | -------------------------------------------------------------------------------------------------------- |
-| **"name"**         |            | text                | アクション入力コントロール名                                                                                           |
-| **"binding"** (任意) |            | text                | 画像を紐付けるための "imageNamed" (実際の画像はアクションフォーマッターフォルダー内の "images" サブフォルダーに入れる必要あり)                             |
-| **"choiceList"**   |            | object              | an object or collection to define a list of key(data sent to server)/value (displayed value to the user) |
-| **"type"**         |            | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                                            |
-| **"format"** (任意)  |            | text                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker"                                |
-| **"assets"** (任意)  |            | object              | 表示サイズの調整 (幅と高さ)                                                                                          |
-|                    | **"size"** | object または integer  | integer: 値を一つのみ渡して正方形を作成します。object: 以下の属性を渡します: <li>"width" (integer): 幅</li><li>"height" (integer): 高さ</li>        |
+| プロパティ              |            | タイプ                 | 詳細                                                                                                |
+| ------------------ | ---------- | ------------------- | ------------------------------------------------------------------------------------------------- |
+| **"name"**         |            | text                | アクション入力コントロール名                                                                                    |
+| **"binding"** (任意) |            | text                | 画像を紐付けるための "imageNamed" (実際の画像はアクションフォーマッターフォルダー内の "images" サブフォルダーに入れる必要あり)                      |
+| **"choiceList"**   |            | object              | キー (サーバーに送られるデータ) / 値 (ユーザーに表示される値) のリストを定義するためのオブジェクトまたはコレクション                                   |
+| **"type"**         |            | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                                     |
+| **"format"** (任意)  |            | text                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker"                         |
+| **"assets"** (任意)  |            | object              | 表示サイズの調整 (幅と高さ)                                                                                   |
+|                    | **"size"** | object または integer  | integer: 値を一つのみ渡して正方形を作成します。object: 以下の属性を渡します: <li>"width" (integer): 幅</li><li>"height" (integer): 高さ</li> |
 
 
 以下は、静的な選択リストとして使用可能な、ある会社の支社の連絡先情報を格納した manifest.json ファイルの一例です:
@@ -336,7 +336,7 @@ The `manifest.json` file contains several attributes such as **name**, **type**,
 | プロパティ             | タイプ                 | 詳細                                                                        |
 | ----------------- | ------------------- | ------------------------------------------------------------------------- |
 | **"name"**        | text                | 入力コントロール名                                                                 |
-| **"choiceList"**  | object              | an object that contains **"dataSource"** (see table below)                |
+| **"choiceList"**  | object              | **"dataSource"** を格納するオブジェクト (以下の表参照)                                     |
 | **"type"**        | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション             |
 | **"format"** (任意) | text                | インターフェースの選択: "push" (未定義の場合のデフォルト)、"segmented"、"popover"、"sheet"、"picker" |
 
@@ -390,13 +390,13 @@ The `manifest.json` file contains several attributes such as **name**, **type**,
 
 [`manifest.json` ファイル](#カスタム入力コントロールの定義) には、以下のような属性が格納されています:
 
-| プロパティ                   | タイプ                 | 詳細                                                                                          |
-| ----------------------- | ------------------- | ------------------------------------------------------------------------------------------- |
-| **"name"**              | text                | 入力コントロール名                                                                                   |
-| **"inject"** (任意)       | boolean             | このフォーマッターを使ったアプリを生成する際に、Sources にあるいくつかのソースコードを最終プロジェクトに注入する必要がある場合には "inject" を指定します。      |
-| **"type"**              | text または collection | a text or a collection of text to define the type (text, integer, boolean) of input control |
-| **"capabilities"** (任意) | object              | ニーズに応じて任意の情報を追加するための capabilities要素 (地図、写真、場所など)。                                           |
-| **"target"**            | text または collection | platform supported by your input control ("ios", "android")                                 |
+| プロパティ                   | タイプ                 | 詳細                                                                                     |
+| ----------------------- | ------------------- | -------------------------------------------------------------------------------------- |
+| **"name"**              | text                | 入力コントロール名                                                                              |
+| **"inject"** (任意)       | boolean             | このフォーマッターを使ったアプリを生成する際に、Sources にあるいくつかのソースコードを最終プロジェクトに注入する必要がある場合には "inject" を指定します。 |
+| **"type"**              | text または collection | 入力コントロールの型 (text、integer、boolean) を定義するためのテキスト、またはテキストのコレクション                          |
+| **"capabilities"** (任意) | object              | ニーズに応じて任意の情報を追加するための capabilities要素 (地図、写真、場所など)。                                      |
+| **"target"**            | text または collection | 入力コントロールがサポートするプラットフォーム ("ios"、"android")                                              |
 
 たとえば、モバイルの連絡先リストから電話番号を取得するには、*phoneContact* 入力コントロールテンプレートを使用することで、電話番号フィールドを自動的に埋めることが可能になります。
 
