@@ -46,7 +46,7 @@ Le nom Bundle ID ne doit pas contenir d'espace ni de caractères spéciaux tels 
 
 **Copyright :** Les droits d’auteur de votre application. L'éditeur mobile vous propose un format de droit d’auteur, mais vous avez également la possibilité de créer votre propre format.
 
-**Icônes :** Icône principale qui sera utilisée à divers endroits dans votre application. You just need to designate your icon and the mobile editor generates all of the required formats for you, in accordance with standard mobile guidelines.
+**Icônes :** Icône principale qui sera utilisée à divers endroits dans votre application. Il vous suffit de désigner votre icône et l'éditeur mobile vous génère tous les formats nécessaires, conformément aux directives mobiles standard.
 
 Pour sélectionner une icône :
 
@@ -67,14 +67,14 @@ Une fois l'icône est sélectionnée, l'éditeur mobile crée automatiquement to
 
 ### Couleur principale
 
-Ce menu vous permet de choisir comment définir la couleur principale de votre application. The main color is used to generate a custom color scheme for your app.
+Ce menu vous permet de choisir comment définir la couleur principale de votre application. La couleur principale est utilisée pour générer un schéma de couleurs personnalisé pour votre application.
 
 ![icon](img/main-color.png)
 
-- **Use the system color selector**: displays the system color picker in which you can designate the main color
-- **Use the main color of the icon**: let the mobile editor determine automatically the main color from your app's icon.
+- **Utiliser le sélecteur de couleurs du système**: affiche le sélecteur de couleurs du système dans lequel vous pouvez désigner la couleur principale
+- **Utiliser la couleur dominante de l'icône**: laissez l'éditeur mobile déterminer automatiquement la couleur principale de l'icône de votre application.
 
-At any time, you can reset the main color and get back to the icon's preset main color, by clicking on "Use the main color of the icon".
+À tout moment, vous pouvez réinitialiser la couleur principale et revenir à la couleur principale prédéfinie de l'icône, en cliquant sur "Utiliser la couleur dominante de l'icône".
 
 ## Développeur
 
