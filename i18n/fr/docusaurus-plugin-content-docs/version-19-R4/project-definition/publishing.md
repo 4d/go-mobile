@@ -3,13 +3,13 @@ id: publishing
 title: Publishing
 ---
 
-This page gives you access to your app's publishing settings and special mobile features:
+Cette page vous donne accès aux paramètres de publication de votre application et aux fonctionnalités mobiles spéciales :
 
 
 ![Publishing section](img/publishing.png)
 
 
-## Production URL
+## URL de production
 
 URL of the Web Server on which mobile apps will connect to read and write data, in production context. You can enter any valid address, i.e.:
 
@@ -29,7 +29,7 @@ The user will be able to [change the server url](#modify-remote-url) from the mo
 
 
 
-## Web Server Settings
+## Paramètres du serveur Web
 
 The **Edit...** button opens the **Web** page of the 4D settings dialog box. Use this page to define the following settings to embed in the mobile app:
 
@@ -82,12 +82,12 @@ You can easily update your remote url from iPhone Settings :
 ![Update remote url](img/Update-remote-url.png)
 
 
-## Features
+## Fonctionnalités
 
 This area allows you to select and configure several mobile app's special features. These features are documented in dedicated sections:
 
-- [Authentication](../special-features/authentication.md)
-- [Push notifications](../special-features/push-notification.md)
-- [Deep linking](../special-features/deep-linking)
+- [Authentification](../special-features/authentication.md)
+- [Notifications Push](../special-features/push-notification.md)
+- [Lien profond](../special-features/deep-linking)
 
 
