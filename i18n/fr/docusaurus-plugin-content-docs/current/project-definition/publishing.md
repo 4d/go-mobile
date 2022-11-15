@@ -31,60 +31,60 @@ L'utilisateur pourra [modifier l'url du serveur ](#modify-remote-url) à partir 
 
 ## Paramètres du serveur Web
 
-The **Edit...** button opens the **Web** page of the 4D settings dialog box. Use this page to define the following settings to embed in the mobile app:
+Le bouton **Éditer...** ouvre la page **Web** de la boîte de dialogue des paramètres 4D. Utilisez cette page pour définir les paramètres suivants à intégrer dans l'application mobile :
 
-- **Enable HTTP** option and **HTTP port**.
-- **Enable HTTPS** option and **HTTP port**.
-
-:::note
-
-If both HTTP and HTTPS are enabled, HTTP is used.
-
-:::
-
-Activating the HTTPS port requires that you installed a valid [TLS certificate](https://developer.4d.com/docs/Admin/tls.html). You can create test certificates with 4D.
-
-These settings are taken into account only if the [production URL](#production-url) is defined. Otherwise, the local IP address is used.
+- L'option **Activer HTTP** et **port HTTP**.
+- L'option **Activez HTTPS** et **port HTTP**.
 
 :::note
 
-The Simulator always works locally (127.0.0.1 or localhost).
+Si HTTP et HTTPS sont tous les deux activés, HTTP est utilisé.
 
 :::
 
-## How it looks on a device
+L'activation du port HTTPS nécessite que vous ayez installé un [certificat TLS](https://developer.4d.com/docs/Admin/tls.html) valide. Vous pouvez créer des certificats d'essai avec 4D.
 
-### Settings screen
+Ces paramètres ne sont pris en compte que si l'[URL de production](#production-url) est définie. Sinon, l'adresse IP locale est utilisée.
 
-A Settings screen is available from the tab bar. You can also find it from the More tab if necessary (*i.e.*, your app has more than four tables).
+:::note
 
-The Settings screen allows you to:
+Le simulateur fonctionne toujours localement (127.0.0.1 ou localhost).
 
-* Consult your remote URL and its current state
-* Log out (if connected as an Authorized User)
+:::
+
+## Aperçu sur l'appareil
+
+### Écran de paramètres
+
+Un écran de paramètres est disponible dans la barre d’onglets. Vous pouvez également le trouver sous l’onglet "More" si nécessaire (*à savoir*, votre application contient plus de quatre tables).
+
+L'écran Paramètres vous permet de :
+
+* Consultez votre URL distante ainsi que son état actuel
+* De vous déconnecter (si vous étiez connecté en tant qu'utilisateur autorisé)
 
 ![Login & Settings screen](img/Login-Settings-screen-Publishing-section-4D-for-iOS.png)
 
 
-### Modify remote url
+### Modifier l'url distant
 
-You can easily update your remote url from iPhone Settings :
+Vous pouvez facilement mettre à jour votre URL distante à partir des Paramètres de l'iPhone :
 
-* Open your iPhone Settings
-* Select the app you want the remote url to be updated
-* Switch on the "Reset server address" option
+* Accédez aux paramètres de votre iPhone
+* Sélectionnez l'application pour laquelle vous souhaitez que l'URL distante soit mise à jour
+* Activez l'option "Réinitialiser l'adresse du serveur"
 
 ![Reset remote url](img/Reset-remote-url.png)
 
-* Then restart your app to reset the server address
-* And finally define the new remote url
+* Puis redémarrez votre application pour réinitialiser l'adresse du serveur
+* Enfin, définissez la nouvelle URL distante
 
 ![Update remote url](img/Update-remote-url.png)
 
 
 ## Fonctionnalités
 
-This area allows you to select and configure several mobile app's special features. These features are documented in dedicated sections:
+Cette zone vous permet de sélectionner et de configurer plusieurs fonctionnalités spéciales de l'application mobile. Ces fonctionnalités sont documentées dans des sections dédiées :
 
 - [Authentification](../special-features/authentication.md)
 - [Notifications Push](../special-features/push-notification.md)
