@@ -11,7 +11,7 @@ Cette page vous donne accès aux paramètres de publication de votre application
 
 ## URL de production
 
-URL of the Web Server on which mobile apps will connect to read and write data, in production context. You can enter any valid address, i.e.:
+URL du serveur Web sur lequel les applications mobiles se connecteront pour lire et écrire des données, dans un contexte de production. Vous pouvez saisir n'importe quelle adresse valide, par exemple :
 
 ```
 https://my.wesbsite.com
@@ -19,11 +19,11 @@ http://my.website.com:9200
 www.website.com/mobile
 ```
 
-During the development phase, you can leave this area empty and set the [Data source](data.md) to **Current data file**.
+Pendant la phase de développement, vous pouvez laisser cette zone vide et définir la [Source de données](data.md) comme **Fichier de données courant**.
 
 :::tip
 
-The user will be able to [change the server url](#modify-remote-url) from the mobile device.
+L'utilisateur pourra [modifier l'url du serveur ](#modify-remote-url) à partir de l'appareil mobile.
 
 :::
 
