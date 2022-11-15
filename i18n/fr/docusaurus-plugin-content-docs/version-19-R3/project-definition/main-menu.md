@@ -3,16 +3,16 @@ id: main-menu
 title: Menu
 ---
 
-This page allows you to select and order the tables that will be available in the navigation bar of your app.
+Cette page vous permet de sélectionner et de commander les tables qui seront disponibles dans la barre de navigation de votre application.
 
 ![Main menu section](img/Main-menu-section-4D-for-iOS.png)
 
-By default, all tables selected in the [Structure](structure.md) page will be added to your app’s menu.
+Par défaut, toutes les tables sélectionnées dans la page [Structure](structure.md) seront ajoutées au menu de votre application.
 
-You can use the **Add**/**Remove** buttons and drag and drop to add, delete, and reorder tables.
+Vous pouvez utiliser les boutons **Ajouter**/**Supprimer** et glisser-déposer pour ajouter, supprimer et réorganiser les tables.
 
-* In the **Available Table** list, you find all of the tables you published in the [Structure](structure.md)
+* Dans la liste des **Tables disponibles** figurent toutes les tables que vous avez publiées dans la [Structure ](structure.md)
 
-* The **Selected Tables** list includes all of the tables that will be accessible from the menu of your app.
+* La liste des **Tables sélectionnées** comprend toutes les tables qui seront accessibles dans le menu de votre application.
 
 

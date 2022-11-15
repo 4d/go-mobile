@@ -3,73 +3,73 @@ id: structure
 title: Structure
 ---
 
-This page displays all of the tables and fields that are exposed as REST resources in the 4D database, including relation attributes (based upon many-to-one and one-to-many relations). In fact, the page displays a view similar to [ORDA's datastore](https://developer.4d.com/docs/ORDA/overview.html).
+Cette page affiche toutes les tables et tous les champs qui sont exposés en tant que ressources REST dans la base de données 4D, y compris les attributs de relation (basés sur les relations plusieurs à un et un à plusieurs). En fait, la page affiche une vue similaire à celle du [datastore ORDA](https://developer.4d.com/docs/ORDA/overview.html).
 
 ![Structure section](img/Structure-section-4D-for-iOS.png)
 
 
-Use this page to define a subset of your physical structure to replicate for mobile devices by selecting the specific tables and fields to publish.
+Utilisez cette page pour définir un sous-ensemble de votre structure physique à répliquer pour les appareils mobiles en sélectionnant les tables et les champs spécifiques à publier.
 
-- Published tables will be automatically added as tabs of your app.
-- Published scalar fields will be available when defining your [list and detail forms](https://developer.4d.com/go-mobile/docs/project-definition/forms/).
-- Published relation fields (many-to-one and one-to-many) will be available when defining your [list and detail forms](https://developer.4d.com/go-mobile/docs/project-definition/forms/) and come with additional navigation features such as a Relation button.
+- Les tables publiées seront automatiquement ajoutées comme onglets de votre application.
+- Les champs scalaires publiés seront disponibles lors de la définition de vos [formulaires liste et formulaires détaillés](https://developer.4d.com/go-mobile/docs/project-definition/forms/).
+- Les champs de liens publiés (N vers 1 et 1 vers N) seront disponibles lors de la définition de vos [formulaires liste et formulaires détaillés](https://developer.4d.com/go-mobile/docs/project-definition/forms/) et sont dotés de fonctionnalités de navigation supplémentaires comme un bouton Relation.
 
 
 :::note
 
-The following tables and fields are not listed in this page:
+Les tables et champs suivants ne sont pas listés dans cette page :
 
-- tables and fields that do not comply with [ORDA rules](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
-- tables and fields whose name start with "`__`" (double underscore).
+- Les tables et champs qui ne sont pas conformes aux règles d'[ORDA](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
+- Les tables et champs dont le nom commence par "`__`" (double tiret bas).
 
 :::
 
 :::note
 
-Only computed attributes with values that change over time - only depending on other attributes of the same DataClass - will be updated on the mobile app.
+Seuls les attributs calculés dont les valeurs évoluent dans le temps - dépendant uniquement d'autres attributs de la même DataClass - seront mis à jour sur l'application mobile.
 
 :::
 
-## Selecting tables and fields to publish
+## Sélection des tables et des champs à publier
 
-A table is published when at least one of its fields is published. When a table is published, it is displayed in **bold**.
+Une table est publiée lorsqu'au moins un de ses champs est publié. Lorsqu'une table est publiée, elle est affichée en **gras**.
 
-To select a field to publish, click on a table name then click on the field in the rightmost list. You can also:
+Pour sélectionner un champ à publier, cliquez sur un nom de table puis cliquez sur le champ dans la liste à droite. Vous pouvez également :
 
-- press the **spacebar** to select/unselect a field
-- use **Ctrl+click** to select all fields
-- use **Publish** and **Publish all** from the Fields list local menu.
+- Appuyez sur la **barre d'espace** pour sélectionner/désélectionner un champ
+- Utilisez **Ctrl+clic** pour sélectionner tous les champs
+- Utilisez **Publier** et **Tout publier** dans le menu local de la liste des champs.
 
 
-### Filtering lists
+### Filtrage des listes
 
-When a list has the focus, you can filter its contents using the Search area and a local menu:
+Lorsqu'une liste a le focus, vous pouvez filtrer son contenu en utilisant la zone de recherche et un menu local :
 
 ![Filter](img/filter.png)
 
-- **Search** area: enter the characters to search within table or field names
-- **Sort by table name**/**Sort by field name**: sort the list by name. By default, lists are sorted by creation date
-- **Only published tables**/**Only published fields**: show only tables or fields that have been selected (published)
+- Zone de **Recherche** : entrez les caractères à rechercher dans les noms de tables ou de champs
+- **Trier par nom de table**/**Trier par nom de champ**: trier la liste par nom. Par défaut, les listes sont triées par date de création
+- **Seulement les tables publiées**/**Seulement les champs publiés**: afficher uniquement les tables ou les champs qui ont été sélectionnés (publiés)
 
 
-## Supported field types
+## Types de champs pris en charge
 
-The mobile editor automatically displays the list of fields that are eligible to the mobile app, depending on their type:
+L'éditeur mobile affiche automatiquement la liste des champs qui sont éligibles à l'application mobile, en fonction de leur type :
 
 ![Fields](img/fields.png)
 
-- All [4D scalar field types](https://developer.4d.com/docs/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/Concepts/blob.html).
-- [Object fields](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
-- [Computed attributes](https://developer.4d.com/go-mobile/fr/docs/project-definition/structure#computed-attributes)
-- Relation attributes (Many-to-one and One-to-many) are supported and can be selected just as fields. They have specific icons:
+- Tous les [types de champs scalaires 4D](https://developer.4d.com/docs/Concepts/data-types.html) sauf [BLOB](https://developer.4d.com/docs/Concepts/blob.html).
+- [Les champs objet](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
+- [Champs calculés](https://developer.4d.com/go-mobile/fr/docs/project-definition/structure#computed-attributes)
+- Les attributs de relation (N vers 1 et 1 vers N) sont pris en charge et peuvent être sélectionnés comme des champs. Ils ont des icônes spécifiques :
 
-Many to one relation icon:  ![relation1](img/manyto1.png)
+Icône du lien N vers 1 :  ![relation1](img/manyto1.png)
 
-One to many relation icon: ![relationN](img/1tomany.png)
+Icône du lien 1 vers N : ![relationN](img/1tomany.png)
 
 :::info
 
-The names are based upon the relation names in the 4D Structure editor, see the [ORDA Structure mapping page](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
+Les noms sont basés sur les noms des liens dans l'éditeur de structure 4D, voir la page [Correspondance de la structure ORDA](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
 
 :::
 
@@ -129,7 +129,7 @@ See the [**Relation interactions**](../tutorials/relations/relation-interactions
 
 :::
 
-## Computed attributes
+## Champs calculés
 
 Whether you're working on Android or iOS, you can display [computed attributes](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#computed-attributes) in your app once it is generated, by configurating them from the project editor.
 
