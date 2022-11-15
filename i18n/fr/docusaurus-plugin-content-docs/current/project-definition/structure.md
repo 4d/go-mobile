@@ -68,14 +68,14 @@ L'éditeur mobile affiche automatiquement la liste des champs qui sont éligible
 
 :::info
 
-Les noms sont basés sur les noms des liens dans l'éditeur de structure 4D, voir la page [Correspondance de la structure ORDA](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
+Les noms sont basés sur les noms des liens dans l'éditeur de structure 4D, voir la page [Correspondance de la structure ORDA](https://developer.4d.com/docs/fr/ORDA/dsmapping.html#structure-mapping).
 
 :::
 
 
-## Using relations
+## Utilisation des relations
 
-### One to Many relations
+### Les relations 1 vers N
 
 You can include **One to Many relations** in your projects and display a list of related fields in a new page of your app.
 
