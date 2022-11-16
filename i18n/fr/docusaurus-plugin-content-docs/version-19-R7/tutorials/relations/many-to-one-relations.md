@@ -1,6 +1,6 @@
 ---
 id: many-to-one-relations
-title: Many to One relations
+title: Les relations N vers 1
 ---
 
 
