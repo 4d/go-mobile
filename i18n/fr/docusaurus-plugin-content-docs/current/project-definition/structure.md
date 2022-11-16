@@ -77,7 +77,7 @@ Les noms sont basés sur les noms des liens dans l'éditeur de structure 4D, voi
 
 ### Les relations 1 vers N
 
-Vous pouvez inclure **des relations 1 vers N** dans vos projets et afficher une liste de champs associés dans une nouvelle page de votre application.
+Vous pouvez inclure **des relations 1 vers N** dans vos projets et afficher une liste de champs liés dans une nouvelle page de votre application.
 
 Il vous suffit de :
 
@@ -86,19 +86,19 @@ Il vous suffit de :
 
 ![Drop relation in detail form](img/Structure-1-to-N-relations-4D-for-iOS.png)
 
-Then, when your related fields are published, they can be used like any other field. So you will be able to:
+Puis, lorsque vos champs liés sont publiés, ils peuvent être utilisés de la même manière que les autres champs. Vous pourrez ainsi :
 
-* Define relations properties in the [Labels and Icons](labels-and-icons.md) page.
-* Drop the One to Many relation in a Detail form from the [Forms](forms.md) page to create a link between a detail form and a related table. A Relation button will be automatically created in detail forms to go straight to the related view.
+* Définir les propriétés des relations dans la page [Libellés et icônes](labels-and-icons.md).
+* Déposer la relation 1 vers N dans un formulaire détaillé depuis la page [Formulaires](forms.md) pour créer un lien entre un formulaire détaillé et une table liée. Un bouton Relation sera automatiquement créé dans les formulaires détaillés pour accéder directement à la vue liée.
 
 :::tip Tutorial
 
-See the [**One to Many relations tutorial**](../tutorials/relations/one-to-many-relations) for a detailed example of One to Many relation integration in a mobile project.
+Voir le [**tutoriel des relations 1 vers N**](../tutorials/relations/one-to-many-relations) pour un exemple détaillé d'intégration d'une relation 1 vers N dans un projet mobile.
 
 :::
 
 
-### Many to One relations
+### Les relations N vers 1
 
 **Many to one relations** can be used like any other field in the app creation process. When you select a Many to One relation in the field list, you can to select which field(s) from the related table to publish in your app:
 
@@ -117,7 +117,7 @@ See the [**Many to One relations tutorial**](../tutorials/relations/many-to-one-
 :::
 
 
-### Many to Many relations
+### Les relations N vers N
 
 Using the Structure page, you can publish Many to One and One to Many relations from your parent Many to One relations. It means that you can display Many to Many relations in your app and move directly from a List form to another List form.
 
