@@ -76,12 +76,12 @@ This feature is currently not available in 4D for Android.
 
 ### Les relations 1 vers N
 
-You can include **One to Many relations** in your projects and display a list of related fields in a new page of your app.
+Vous pouvez inclure **des relations 1 vers N** dans vos projets et afficher une liste de champs associés dans une nouvelle page de votre application.
 
-All you have to do is:
+Il vous suffit de :
 
-* publishing at least one field of the target (Many) table
-* publishing the relation from the source (One) table
+* publier au moins un champ de la table cible (N)
+* publier la relation à partir de la table source (1)
 
 ![Drop relation in detail form](img/Structure-1-to-N-relations-4D-for-iOS.png)
 
