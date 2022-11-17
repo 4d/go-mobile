@@ -16,7 +16,7 @@ Let’s take a closer look at the Build tab options:
 
 * **Project:** Reveals a dropdown list where you can **open the project folder** or **product folder**, or **open the product with Xcode**. This dropdown list is useful for [debug operations](../debug/from-project-editor). 
 
-* **Install:** Installs the application on a connected device (see [Installing on your iOS device](../deployment/testing-on-your-device)).
+* **Install:** Installs the application on a connected device (see [Installing on your iOS device](../tutorials/deploying-in-house/testing-on-your-device)).
 
 
 ## Using the Simulator
