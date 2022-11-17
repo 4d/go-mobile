@@ -16,7 +16,7 @@ Voici la description des options de l'onglet Génération :
 
 * **Projet :** Affiche une liste déroulante vous permettant d'**ouvrir le dossier du projet** ou le **dossier produit**, ou **d'ouvrir le produit avec Xcode**. Cette liste déroulante est utile pour [les opérations de débogage](../debug/from-project-editor).
 
-* **Installer :** Installe l'application sur un appareil connecté (voir [Installation sur votre appareil iOS](../deployment/testing-on-your-device)).
+* **Install:** Installs the application on a connected device (see [Installing on your iOS device](../tutorials/deploying-in-house/testing-on-your-device)).
 
 
 ## Utilisation du simulateur
