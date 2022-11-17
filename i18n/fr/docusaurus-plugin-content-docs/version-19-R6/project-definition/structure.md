@@ -214,9 +214,9 @@ In the generated mobile application, on iOS or Android, both single attributes a
 ![final app](img/final-app.png)
 
 
-## Alias attributes
+## Attributs de type alias
 
-On Android or iOS, you can use **scalar** [**alias attributes**](https://developer.4d.com/docs/ORDA/ordaClasses.html#alias-attributes) in your mobile app. An alias attribute is built above another attribute of the data model, named *target* attribute. The target attribute can belong to a related dataclass (available through any number of relation levels) or to the same dataclass. An alias attribute stores no data, but the path to its target attribute.
+Sur Android ou iOS, vous pouvez utiliser [**les attributs de type alias**](https://developer.4d.com/docs/fr/ORDA/ordaClasses.html#alias-attributes)** scalaires** dans votre application mobile. An alias attribute is built above another attribute of the data model, named *target* attribute. The target attribute can belong to a related dataclass (available through any number of relation levels) or to the same dataclass. An alias attribute stores no data, but the path to its target attribute.
 
 Alias attibutes must be **exposed** to be available to the editor. They are displayed in *italics*.
 
