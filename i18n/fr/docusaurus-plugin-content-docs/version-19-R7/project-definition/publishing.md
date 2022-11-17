@@ -1,6 +1,6 @@
 ---
 id: publishing
-title: Publishing
+title: Publication
 ---
 
 Cette page vous donne accès aux paramètres de publication de votre application et aux fonctionnalités mobiles spéciales :
@@ -34,7 +34,7 @@ L'utilisateur pourra [modifier l'url du serveur ](#modify-remote-url) à partir 
 Le bouton **Éditer...** ouvre la page **Web** de la boîte de dialogue des paramètres 4D. Utilisez cette page pour définir les paramètres suivants à intégrer dans l'application mobile :
 
 - L'option **Activer HTTP** et **port HTTP**.
-- L'option **Activez HTTPS** et **port HTTP**.
+- **Enable HTTPS** option and **HTTPS port**.
 
 :::note
 
