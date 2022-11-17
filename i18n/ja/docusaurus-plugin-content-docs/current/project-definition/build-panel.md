@@ -16,7 +16,7 @@ title: ビルドパネル
 
 * **プロジェクト:** ドロップダウンリストが表示され、**プロジェクトフォルダを表示** あるいは **プロダクトフォルダを表示**、または **プロジェクトを Xcode / Android Studio で開く** ことができます。 このドロップダウンリストは [デバッグ用途](../debug/from-project-editor) に非常に有用です。
 
-* **インストール:** 接続されているデバイスにアプリをインストールします ([iOSデバイスへのインストール](../tutorials/deploying-in-house/testing-on-your-device.md) を参照ください)。
+* **Install:** Installs the application on a connected device (see [Installing on your iOS device](../tutorials/deploying-in-house/testing-on-your-device)).
 
 
 ## シミュレーターを使用する
