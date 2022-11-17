@@ -34,7 +34,7 @@ www.website.com/mobile
 **編集...** ボタンをクリックすると 4Dストラクチャー設定の **Web** ページが開きます。 このページでは、モバイルアプリに埋め込む以下の設定を定義します:
 
 - **HTTPを有効化** オプションおよび **HTTPポート**
-- **HTTPSを有効化** オプションおよび **HTTPSポート**
+- **Enable HTTPS** option and **HTTPS port**.
 
 :::note
 
