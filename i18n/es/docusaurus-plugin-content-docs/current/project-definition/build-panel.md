@@ -16,7 +16,7 @@ Veamos más de cerca las opciones de la pestaña Generación:
 
 * **Projet:** muestra una lista desplegable donde puede **abrir la carpeta del proyecto** o la **carpeta del producto**, o **abrir el producto con Xcode**. Esta lista desplegable es útil para [operaciones de depuración](../debug/from-project-editor).
 
-* **Instalar:** instala la aplicación en un dispositivo conectado (ver [Instalación en su dispositivo iOS](../deployment/testing-on-your-device)).
+* **Install:** Installs the application on a connected device (see [Installing on your iOS device](../tutorials/deploying-in-house/testing-on-your-device)).
 
 
 ## Utilización del simulador
