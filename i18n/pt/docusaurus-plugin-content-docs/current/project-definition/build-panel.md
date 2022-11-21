@@ -16,7 +16,7 @@ Vamos olhar mais de perto as opções da aba  Build
 
 * **Projet:** mostra uma lista suspensa onde pode **abrir a pasta do projeto** ou a **pasta de produto**, ou **abrir o produto com Xcode**. Essa lista dropdown é útil para [operações de debug](../debug/from-project-editor).
 
-* **Install:** Instalar a aplicação em um aparelho conectado (ver [Instalar em aparelho iOS ](../deployment/testing-on-your-device)).
+* **Install:** Installs the application on a connected device (see [Installing on your iOS device](../tutorials/deploying-in-house/testing-on-your-device)).
 
 
 ## Usando o Simulador

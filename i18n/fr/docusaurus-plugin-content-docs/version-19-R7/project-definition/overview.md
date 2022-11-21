@@ -4,7 +4,7 @@ title: Overview
 ---
 
 
-L'éditeur 4D Mobile Project vous permet de concevoir, tester et générer vos projets mobiles natifs pour iOS et Android à l'aide d'une interface graphique. La fenêtre a deux onglets : **Sections** et **Build**.
+L'éditeur 4D Mobile Project vous permet de concevoir, tester et générer vos projets mobiles natifs pour iOS et Android à l'aide d'une interface graphique. La fenêtre a deux onglets : **Sections** et **Génération**.
 
 ![General section](img/General-section-4D-for-iOS.png)
 
@@ -16,10 +16,10 @@ Dans l'onglet **Sections**, vous trouverez toutes les étapes nécessaires à la
 * Actions
 * Libellés et icônes
 * Menu
-* Forms
-* Publishing
+* Formulaires
+* Publication
 
-Dans l’onglet **Build**, vous trouverez des outils intégrés pour générer et tester votre application mobile :
+Dans l’onglet **Génération**, vous trouverez des outils intégrés pour générer et tester votre application mobile :
 
 * Build and Run
 * Simulator selection
