@@ -18,7 +18,7 @@ title: FAQ
 
 
 <details>
-<summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Are there any prerequisites for 4D for iOS and 4D for Android?</summary>
+<summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>4D for iOS および 4D for Android を使用するために事前に必要な要件はありますか?</summary>
 
 [こちら](../getting-started/requirements.md) のシステム要件一覧を参照してください。
 
@@ -47,21 +47,21 @@ iOS プラットフォーム用の開発のためには、最終アプリケー�
 <details>
 <summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>テスト用/体験用ライセンスはありますか?</summary>
 
-If you already have a 4D Developer Pro or 4D Server license, 4D for Mobile is included.
+4D Developer Pro または 4D Server ライセンスがあれば、4D for Mobile がお使いいただけます。
 
 </details>
 
 
-<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>What 4D license do I need to develop with 4D for Mobile?</summary>
+<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>4D for Mobile でアプリを開発するために必要なライセンスはどれですか?</summary>
 
-You need a 4D Developer Pro license to develop 4D for iOS or 4D for Android apps.
+4D for iOS および 4D for Android アプリを開発するには、4D Developer Pro ライセンスが必要です。
 
 </details>
 
 
-<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>What 4D license do I need to deploy apps created with 4D for Mobile?</summary>
+<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>4D for Mobile で作成したアプリの運用に必要なライセンスはどれですか?</summary>
 
-You need a 4D Server (macOS or Windows) license to deploy 4D for iOS and 4D for Android apps.
+4D for iOS および 4D for Android アプリと同期するサーバーアプリは 4D Server (macOS または Windows) のライセンスで運用することができます。
 
 その他に必要なライセンスはありません。 Your mobile apps will share the same licenses as those for 4D remote (client).
 
