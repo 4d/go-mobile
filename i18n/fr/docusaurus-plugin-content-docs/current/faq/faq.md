@@ -18,7 +18,7 @@ L'éditeur de projet mobile a été conçu de façon à être utilisé sans aucu
 
 
 <details>
-<summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Y a-t-il des conditions préalables à l'utilisation de 4D for iOS ?</summary>
+<summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Are there any prerequisites for 4D for iOS and 4D for Android?</summary>
 
 See the requirements list [here](../getting-started/requirements.md).
 
@@ -43,38 +43,29 @@ For the iOS platform, we need XCode to compile the final application and to run 
 
 ## Licence
 
-<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Ai-je besoin d'un Serveur Web 4D pour exécuter 4D for iOS ?</summary>
-
-Non – 4D for iOS est inclus dans 4D Server v17 R2 et dans les versions plus récentes.
-
-</details>
-
-
 
 <details>
 <summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Existe-t-il une licence de test ou d’évaluation ?</summary>
 
-Si vous avez déjà une licence 4D Developer Pro ou 4D Server de 4D v17 R2 ou de versions plus récentes, 4D for iOS y est inclus.
-
-Si vous n’êtes pas un partenaire 4D ou si vous ne participez pas au programme de maintenance de 4D, vous devez attendre la sortie de 4D v18.
+If you already have a 4D Developer Pro or 4D Server license, 4D for Mobile is included.
 
 </details>
 
 
-<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Quelle licence 4D dois-je utiliser avec 4D for iOS ?</summary>
+<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>What 4D license do I need to develop with 4D for Mobile?</summary>
 
-Pour développer des applications 4D for iOS, vous avez besoin d’une licence 4D Developer Pro v17 R2 (macOS) ou une version plus récente.
+You need a 4D Developer Pro license to develop 4D for iOS or 4D for Android apps.
 
 </details>
 
 
-<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Quelle licence 4D dois-je utiliser pour déployer des applications créées avec 4D for iOS ?</summary>
+<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>What 4D license do I need to deploy apps created with 4D for Mobile?</summary>
 
-Vous avez besoin d’une licence 4D Server (macOS ou Windows) v17 R2 ou d'une licence plus récente pour déployer des applications 4D for iOS.
+You need a 4D Server (macOS or Windows) license to deploy 4D for iOS and 4D for Android apps.
 
-Aucune autre licence n'est nécessaire. Vos applications 4D for iOS partageront les mêmes licences que celles de 4D Remote (client).
+Aucune autre licence n'est nécessaire. Your mobile apps will share the same licenses as those for 4D remote (client).
 
-Les clients peuvent se connecter sur des PC Mac, Windows ou sur des mobiles iPhone, tant que l'ensemble des utilisateurs simultanés sont couverts par la licence 4D Server.
+Clients can connect from Macs, Windows PCs, or mobile apps, as long as the total amount of concurrent users are covered by the 4D Server license.
 
 </details>
 
@@ -88,7 +79,7 @@ Vous pouvez utiliser jusqu'à quatre appareils mobiles.
 
 ## Questions diverses
 
-<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Puis-je modifier et mettre à jour les données de mon application iOS ?</summary>
+<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Can I modify and update data from my mobile app?</summary>
 
 Oui, bien entendu.
 
@@ -96,21 +87,21 @@ Oui, bien entendu.
 
 <details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Où sont stockées mes données ?</summary>
 
-Vos données sont stockées localement sur vos appareils iOS. Cela vous permettra d'accéder à vos données en mode hors ligne.
+Your data is stored locally on your mobile device. Cela vous permettra d'accéder à vos données en mode hors ligne.
 
 </details>
 
 
-<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Puis-je utiliser des tables reliées dans 4D for iOS ?</summary>
+<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Can I use related tables in 4D for Mobile?</summary>
 
-Conscients de votre utilisation fréquente des tables liées, nous travaillons actuellement sur leur accessibilité, prévue pour une version ultérieure de 4D for iOS.
+Yes, you can use relations when defining your mobile project.
 
 </details>
 
 
-<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Puis-je utiliser des champs calculés dans 4D for iOS ?</summary>
+<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Can I use calculated fields in 4D for Mobile?</summary>
 
-Vous avez la possibilité de créer des champs pré-calculés dans 4D et de les publier depuis la[section Structure]`(project-definition-structure.html)` dans l'éditeur de projet de 4D for iOS.
+You can create computed attributes in 4D and publish them from the [Structure page](../project-definition/structure.md) of the mobile project editor.
 
 </details>
 
@@ -119,31 +110,33 @@ Vous avez la possibilité de créer des champs pré-calculés dans 4D et de les 
 
 Les images ne sont pas obligatoires, mais nous vous recommandons d'en utiliser pour garantir la meilleure expérience utilisateur.
 
-4D for iOS offre un large éventail de modèles de [list form]`(list-form-templates.html)` et de [detail form]`(detail-form-templates.html)`. Avec ou sans images, avec des graphiques, etc.
+4D for Mobile offers a variety of list form and detail form templates, with or without images, with charts, etc.
 
 </details>
 
-<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Dois-je créer une icône pour mon application iOS ?</summary>
+<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Do I need to create an icon for my mobile app?</summary>
 
-Il est fortement recommandé d'avoir une icône pour votre application 4D for iOS. Si vous n'en avez pas, l'icône par défaut (le logo 4D) sera affichée.
+It's highly recommended to have an icon for your mobile app. Si vous n'en avez pas, l'icône par défaut (le logo 4D) sera affichée.
 
-Si vous possédez déjà une icône pour votre application 4D, vous pouvez la glisser-déposer directement dans la zone consacrée à l'icône dans la section [General]`(general.html)` de l'éditeur de projet.
+If you already have an icon for your 4D Desktop application, you can drag and drop it directly into the icon area on the [General page](../project-definition/general.md) of the project editor.
 
 </details>
 
 
 <details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Comment puis-je tester mon application ?</summary>
 
-4D for iOS vous permet de tester vos applications dans le [Simulator]`(simulator.html)`. Pour tester votre application sur votre appareil iOS, il vous faut un **compte Apple Developer payant** (install-device.html) (iPhone et iPad).
+4D for Mobile allows you to test your apps using [simulators](../project-definition/build-panel.md).
 
-**Note :** Pour installer votre application avec un **compte Apple Developer gratuit**, vous pouvez ouvrir votre projet iOS généré et installer votre application via Xcode.
+To test your app on your device you need to have a **paying developer account**.
+
+**Note:** To intall your iOS app with a **free Apple developer account**, you can open your generated iOS project and install your app using Xcode.
 
 </details>
 
 
-<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Dois-je créer des modèles iOS spécifiques pour créer mes applications sur un iPhone ou un iPad ?</summary>
+<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Do I need to create special templates to build my apps on an phone or a tablet?</summary>
 
-Tous les modèles disponibles dans 4D for iOS sont optimisés pour iPhone. Ils fonctionnent également parfaitement sur les iPad.
+All of templates available in 4D for Mobile are optimized for the phones. They also work well on tablets.
 
 </details>
 
@@ -151,15 +144,18 @@ Tous les modèles disponibles dans 4D for iOS sont optimisés pour iPhone. Ils f
 
 <details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Ai-je besoin d'un compte Apple Developer ?</summary>
 
-Pour tester votre application, vous aurez besoin de créer au moins un [free Apple Developer account]`(free-developer-account.html)`.
+To test your app, you'll need to create at least a [**free Apple Developer account**](../tutorials/developer-program/selecting-your-developer-program.md).
 
-Pour déployer une application 4D for iOS, vous devez adhérer au [Apple Developer Enterprise Program]`(register-apple-developer-enterprise-program.html)` (pour un déploiement interne) ou au [Apple Developer Program]`(register-apple-developer-program-organization.html)` (pour un déploiement sur l'App Store).
+To deploy a 4D for iOS app, you'll need to enroll in the **Apple Developer Enterprise Program** (for an in-house deployment) or in the **Apple Developer Program** (for an App Store deployment).
 
 </details>
 
-<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Puis-je personnaliser mon application 4D for iOS ?</summary>
+<details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>Can I customize my 4D for Mobile app?</summary>
 
-4D for iOS génère un véritable projet Xcode que vous pouvez [ouvrir et modifier]`(open-xcode.html)` à votre guise.
+4D for iOS generates a real Xcode project that you can [open and modify](../tutorials/customizing-with-xcode/working-with-xcode.md) according to your needs.
+
+4D for Android generates a real Kotlin project that you can open and modify according to your needs.
+
 
 </details>
 
