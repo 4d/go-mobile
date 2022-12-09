@@ -100,7 +100,7 @@ Voir le [**tutoriel des relations 1 vers N**](../tutorials/relations/one-to-many
 
 ### Les relations N vers 1
 
-**Many to one relations** can be used like any other field in the app creation process. When you select a Many to One relation in the field list, you can to select which field(s) from the related table to publish in your app:
+**Les relations N vers 1** peuvent être utilisées comme n'importe quel autre champ dans le processus de création d'une application. When you select a Many to One relation in the field list, you can to select which field(s) from the related table to publish in your app:
 
 ![Publish related tables](img/manyto1-tip.png)
 
