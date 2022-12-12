@@ -119,7 +119,7 @@ Voir le [**tutoriel des relations N vers 1**](../tutorials/relations/many-to-one
 
 ### Les relations N vers N
 
-Using the Structure page, you can publish Many to One and One to Many relations from your parent Many to One relations. It means that you can display Many to Many relations in your app and move directly from a List form to another List form.
+À l'aide de la page Structure, vous pouvez publier des relations N vers 1 et N vers 1 à partir de vos relations N vers 1 parentes. It means that you can display Many to Many relations in your app and move directly from a List form to another List form.
 
 
 :::tip Tutorial
