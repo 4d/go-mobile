@@ -119,12 +119,12 @@ Voir le [**tutoriel des relations N vers 1**](../tutorials/relations/many-to-one
 
 ### Les relations N vers N
 
-À l'aide de la page Structure, vous pouvez publier des relations N vers 1 et N vers 1 à partir de vos relations N vers 1 parentes. It means that you can display Many to Many relations in your app and move directly from a List form to another List form.
+À l'aide de la page Structure, vous pouvez publier des relations N vers 1 et N vers 1 à partir de vos relations N vers 1 parentes. Cela signifie que vous pouvez afficher des relations N vers N dans votre application et passer directement d'un formulaire liste à un autre formulaire liste.
 
 
 :::tip Tutorial
 
-See the [**Relation interactions**](../tutorials/relations/relation-interactions) for a detailed example of Many to One relation integration in a mobile project.
+Voir les [**Interactions des relations**](../tutorials/relations/relation-interactions) pour un exemple détaillé d'intégration d'une relation N vers 1 dans un projet mobile.
 
 :::
 
