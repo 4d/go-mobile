@@ -100,31 +100,31 @@ Voir le [**tutoriel des relations 1 vers N**](../tutorials/relations/one-to-many
 
 ### Les relations N vers 1
 
-**Many to one relations** can be used like any other field in the app creation process. When you select a Many to One relation in the field list, you can to select which field(s) from the related table to publish in your app:
+**Les relations N vers 1** peuvent être utilisées comme n'importe quel autre champ dans le processus de création d'une application. Lorsque vous sélectionnez une relation N vers 1 dans la liste des champs, vous pouvez sélectionner le(s) champ(s) de la table correspondante à publier dans votre application :
 
 ![Publish related tables](img/manyto1-tip.png)
 
-You just need to click on the relation name, then select the field(s):
+Il vous suffit de cliquer sur le nom de la relation, puis de sélectionner le(s) champ(s) :
 
 ![Publish related tables](img/manyto1-select.png)
 
-By default, all eligible fields of the related table are published.
+Par défaut, tous les champs éligibles de la table correspondante sont publiés.
 
 :::tip Tutorial
 
-See the [**Many to One relations tutorial**](../tutorials/relations/many-to-one-relations) for a detailed example of Many to One relation integration in a mobile project.
+Voir le [**tutoriel des relations N vers 1**](../tutorials/relations/many-to-one-relations) pour un exemple détaillé d'intégration d'une relation N vers 1 dans un projet mobile.
 
 :::
 
 
 ### Les relations N vers N
 
-Using the Structure page, you can publish Many to One and One to Many relations from your parent Many to One relations. It means that you can display Many to Many relations in your app and move directly from a List form to another List form.
+À l'aide de la page Structure, vous pouvez publier des relations N vers 1 et N vers 1 à partir de vos relations N vers 1 parentes. Cela signifie que vous pouvez afficher des relations N vers N dans votre application et passer directement d'un formulaire liste à un autre formulaire liste.
 
 
 :::tip Tutorial
 
-See the [**Relation interactions**](../tutorials/relations/relation-interactions) for a detailed example of Many to One relation integration in a mobile project.
+Voir les [**Interactions des relations**](../tutorials/relations/relation-interactions) pour un exemple détaillé d'intégration d'une relation N vers 1 dans un projet mobile.
 
 :::
 
