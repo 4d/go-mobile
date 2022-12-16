@@ -1,67 +1,31 @@
 ---
-id: authentication
-title: Authentication
+id: email
+title: Email authentication example
 ---
 
-
-## Enabling authentication
-
-A mobile application can require that the user be authenticated or not. 
-
-- When authentication is not enabled, mobile users navigate in the application in Guest mode. 
-- Once authentication is enabled, mobile users are asked to login before connecting to the application.  
-
-:::info
-
-In any cases, when a mobile user connects to the server, a [user session](session-management) is created.
-
-:::
-
-
-To enable authentication, check the **Authentication** option in the [Publishing](../project-definition/publishing) page:  
-
-![authentication activation](img/authenticate.png)
-
-When this option is selected, the mobile app displays a login form at startup. A default login form is provided by the mobile editor, but you can design a [custom login form](../tutorials/custom-login-form).
-
-The **Create...**/**Edit...** button opens the `On Mobile App Authentication` database method in the 4D method editor (see below). 
-
-
-
-### On Mobile App Authentication database method
-
-Using the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method is mandatory to authorize specific emails or devices, even in Guest mode.
-
-A method template is provided to obtain all necessary information about the session, as well as user information (email address, app information, device, team ID, etc.). You can customize this method according to your needs.
-
-Here is the `On Mobile App Authentication` database method template:
-
-
-
-## Email authentication
 
 The most common and comfortable way to authenticate mobile users is to rely on email authentication.
 
 It provides a way to verify that an email comes from whom it claims to be from, and will allow to block harmful or fraudulent uses of email.
 
-### Overview
+## Scenario
 
 In short, the principle is the following:
 
 #### 1. Enable authentication 
 
-Select **Authentication** in the Publishing page to use a login form into your app. You can use the default login page or install a custom login page. 
+Select **Authentication** in the Publishing page to use a login form into your app. You can select the **Default** login page or install a custom login page. 
 
-![authentication activation](img/authenticate.png)
+![authentication activation](img/authentication.png)
 
 
 #### 2. Enter email address
 
-An email is required when the app is launched. When a user enters their email and clicks on the **Login** button, the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method is called and the user's session status should be updated to a "pending" status. A validation email is then sent to the user.
+An email is required when the app is launched. When a user enters their email and clicks on the **Login** button, the [On Mobile App Authentication](../../4d/on-mobile-app-authentication) database method is called and the user's session status should be updated to a "pending" status. A validation email is then sent to the user.
 
 #### 3. Check mailbox and 4. Click on the link
 
-When the validation email is available, the user only needs to click on the validation link. This will call the [`On Web Connection`](https://doc.4d.com/4Dv19/4D/19/On-Web-Connection-database-method.301-5392847.en.html) database method and update the [user's session](session-management.md) status from "pending" to "accepted".
+When the validation email is available, the user only needs to click on the validation link. This will call the [`On Web Connection`](https://doc.4d.com/4Dv19/4D/19/On-Web-Connection-database-method.301-5392847.en.html) database method and update the [user's session](../../special-features/session-management.md) status from "pending" to "accepted".
 
 #### 5. and 6. Back to the app
 
@@ -74,7 +38,7 @@ Here is a snapshot of the whole sequence:
 You can handle this sequence using a special component, or manually. 
 
 
-### Using the 4D Mobile App Server Component
+## Using the 4D Mobile App Server Component
 
 The [4D Mobile App Server](https://github.com/4d-for-ios/4D-Mobile-App-Server/tree/master) component is a toolbox component developed to help you manage several common mobile features. It provides methods for authenticate email logins. 
 
@@ -84,9 +48,8 @@ The [4D Mobile App Server](https://github.com/4d-for-ios/4D-Mobile-App-Server/tr
 ```4d
 // On Mobile App Authentication database method
 
-C_OBJECT($0)
-C_OBJECT($1)
-$0:= Mobile App Email Checker($1)
+#DECLARE ($mobileInfo : Object) -> $result : Object
+$result:= Mobile App Email Checker($mobileInfo)
 ```
 
 2. Call the `Mobile App Active Session` method from the `On Web Connection` database method with the `Session` ID parameter retrieved from the URL:
@@ -94,9 +57,9 @@ $0:= Mobile App Email Checker($1)
 ```4d
 // On Web Connection database method
 
-C_TEXT($1)
+#DECLARE ($info : Text) 
 Case of 
-: (Mobile App Active Session($1).success)
+: (Mobile App Active Session($info).success)
     //add log if you want
 End case 
 
@@ -107,7 +70,7 @@ It's as simple as that!
 You will find more information in the [Email Checker method documentation](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Methods/Mobile%20App%20Email%20Checker.md).
 
 
-### Without the Component
+## Without the Component
 
 You can implement your own email authentication without using the 4D Mobile App Server component. Here a basic example:
 
@@ -210,7 +173,7 @@ Else
 End if 
 ```
 
-### Remote url definition
+## Remote url definition
 
 By default, a remote server URL is defined in your Android app. In case the URL is not correct, the server will not be accessible. Therefore, to modify or update this URL, just make a long pressure on the icon in the login screen, or from the settings tab.
 Once you press the icon, a message is displayed with the remote url address and the server access status. You will then be able to edit the URL, authenticate successfully and access the server.
