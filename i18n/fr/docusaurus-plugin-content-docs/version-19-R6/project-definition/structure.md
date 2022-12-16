@@ -130,7 +130,7 @@ Voir les [**Interactions des relations**](../tutorials/relations/relation-intera
 
 ## Champs calculés
 
-Whether you're working on Android or iOS, you can display [**computed attributes**](https://developer.4d.com/docs/ORDA/ordaClasses.html#computed-attributes-1) in your app once it is generated, by configurating them from the project editor. Computed attributes are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section.
+Que vous travailliez sur Android ou iOS, vous pouvez afficher les [**champs calculés**](https://developer.4d.com/docs/fr/ORDA/ordaClasses.html#computed-attributes-1) dans votre application une fois qu'elle est générée, en les configurant depuis l'éditeur de projet. Les champs calculés sont le résultat de plusieurs champs combinés en un seul champ. Vous pourrez alors utiliser ce champ calculé comme n'importe quel autre champ dans le processus de création de votre application mobile, c'est-à-dire que vous allez pouvoir le visualiser et le publier à partir de la section Structure.
 
 :::info
 
