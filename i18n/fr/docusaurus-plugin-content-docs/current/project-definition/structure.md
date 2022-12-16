@@ -134,17 +134,17 @@ Que vous travailliez sur Android ou iOS, vous pouvez afficher les [**champs calc
 
 :::info
 
-In mobile projects, only **scalar** computed attributes are supported (i.e. computed attributes where the [`get` function](https://developer.4d.com/docs/ORDA/ordaClasses.html#function-get-attributename) returns a scalar value (text, boolean, date, time, number)).
+Dans les projets mobiles, seuls les champs calculés **scalaires** sont pris en charge (c'est-à-dire les champs calculés pour lesquels [`get` function](https://developer.4d.com/docs/ORDA/ordaClasses.html#function-get-attributename) renvoie une valeur scalaire (texte, booléen, date, heure, nombre)).
 
 :::
 
 
 
-For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
+Par exemple, au lieu d'avoir deux champs séparés comme le numéro de rue et le nom de la rue, ou le prénom et le nom de famille, vous pouvez les rassembler dans un seul champ que vous pouvez nommer "fullAddress" et "fullName".
 
-The process is actually quite simple!
+Le processus est en fait assez simple !
 
-### 4D Side
+### Côté 4D
 
 In your code, specify the attributes you want to use and the computed attribute you want to get, using the [*Class extends*](https://developer.4d.com/docs/Concepts/classes.html#class-extends-classname) and [exposed Function](https://developer.4d.com/docs/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows:
 
