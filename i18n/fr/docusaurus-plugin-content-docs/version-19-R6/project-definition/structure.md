@@ -145,7 +145,7 @@ Le processus est en fait assez simple !
 
 ### Côté 4D
 
-In your code, specify the attributes you want to use and the computed attribute you want to get, using the [*Class extends*](https://developer.4d.com/docs/Concepts/classes.html#class-extends-classname) and [exposed Function](https://developer.4d.com/docs/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows:
+Dans votre code, spécifiez les attributs que vous voulez utiliser et le champ calculé que vous voulez obtenir, en utilisant la syntaxe [*Class extends*](https://developer.4d.com/docs/Concepts/classes.html#class-extends-classname) et [exposed Function](https://developer.4d.com/docs/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) , comme suit :
 
 ```4d 
 Class extends Entity
