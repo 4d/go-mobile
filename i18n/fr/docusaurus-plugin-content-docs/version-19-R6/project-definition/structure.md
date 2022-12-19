@@ -176,7 +176,7 @@ Else
 End if
 ```
 
-### Project editor side
+### Côté éditeur de projet
 
 In the project editor, once the code is written, your computed attributes become available, ready to be published and used as any other field in the creation process:
 
