@@ -178,10 +178,10 @@ End if
 
 ### Côté éditeur de projet
 
-In the project editor, once the code is written, your computed attributes become available, ready to be published and used as any other field in the creation process:
+Dans l'éditeur de projet, une fois que le code est écrit, vos champs calculés deviennent disponibles, prêts à être publiés et utilisés comme tout autre champ dans le processus de création :
 
 
-In the **Structure** panel:
+Dans le panneau **Structure** :
 
 The `exposed` computed attributes are displayed in the list of attributes of a `dataclass`.
 
