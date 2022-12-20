@@ -187,29 +187,29 @@ Les champs calculés `exposés` sont affichés dans la liste des attributs d'une
 
 ![Structure section](img/Structure.png)
 
-In the **Label & Icons** panel (Icons/short and long labels/formats):
+Dans le panneau **Libellé et Icônes** (icônes/libellés courts et longs) :
 
 ![Labels&icons section](img/labels-and-icons.png)
 
-In the **Forms** panel:
+Dans le panneau **Formulaires** :
 
-The computed attributes present in the data model are, like the fields, available in the list of fields of the Forms panel (list and detail). They behave in the same way as the storage attributes of the datastore.
+Les champs calculés présents dans le modèle de données sont, comme les autres champs, disponibles dans la liste des champs du panneau Formulaires (liste et détaillés). Ils se comportent de la même manière que les attributs de stockage du datastore.
 
 ![Forms section](img/Forms.png)
 
-In the **Data** panel, computed attributes are displayed in the list linked to the "Fields" button of the query filter box.
+Dans le panneau **Données**, les champs calculés sont affichés dans la liste liée au bouton "Champs" de la zone Filtre de recherche.
 
 :::note 4D for iOS
 
-- Computed attributes can be used with Sort actions.
-- A computed attribute without a setter (readOnly) is not available for an Add or Edit action.
-- When Add or Edit presets actions are created (if the setter is available and if 4D allows it), computed attributes parameters shall be available when linked to a field.
+- Les champs calculés peuvent être utilisés avec des actions de tri.
+- Un champ calculé sans un paramètre (readOnly) n'est pas disponible pour une action d'ajout ou de modification.
+- Lorsque des actions d'ajout ou de modification de préréglages sont créées (si le paramètre est disponible et si 4D le permet), les paramètres des champs calculés doivent être disponibles lorsqu'ils sont liés à un champ.
 
 :::note 4D for iOS
 
-### Mobile app side
+### Côté application mobile
 
-In the generated mobile application, on iOS or Android, both single attributes and computed attributes are displayed.
+Dans l'application mobile générée, sur iOS ou Android, les attributs simples et les champs calculés sont affichés.
 
 ![final app](img/final-app.png)
 
