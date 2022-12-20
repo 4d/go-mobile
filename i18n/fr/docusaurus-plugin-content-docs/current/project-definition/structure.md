@@ -184,7 +184,7 @@ Dans l'éditeur de projet, une fois que le code est écrit, vos champs calculés
 
 Dans le panneau **Structure** :
 
-The `exposed` computed attributes are displayed in the list of attributes of a `dataclass`.
+Les champs calculés `exposés` sont affichés dans la liste des attributs d'une `dataclass`.
 
 ![Structure section](img/Structure.png)
 
