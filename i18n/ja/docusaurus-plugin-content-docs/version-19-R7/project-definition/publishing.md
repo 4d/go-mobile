@@ -86,8 +86,8 @@ HTTPSポートを有効化するには、有効な [TLS 証明書](https://devel
 
 このエリアでは、モバイルアプリの特殊な機能を選択し設定することができます。 これらの機能は、それぞれ専用の章に詳細な説明があります:
 
-- [認証](../special-features/authentication.md)
-- [プッシュ通知](../special-features/push-notification.md)
+- [Authentication](../special-features/authentication.md)
+- [Push notifications](../special-features/push-notification.md)
 - [ディープリンク](../special-features/deep-linking)
 
 
