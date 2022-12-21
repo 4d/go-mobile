@@ -86,8 +86,8 @@ Vous pouvez facilement mettre à jour votre URL distante à partir des Paramètr
 
 Cette zone vous permet de sélectionner et de configurer plusieurs fonctionnalités spéciales de l'application mobile. Ces fonctionnalités sont documentées dans des sections dédiées :
 
-- [Authentification](../special-features/authentication.md)
-- [Notifications Push](../special-features/push-notification.md)
+- [Authentication](../special-features/authentication.md)
+- [Push notifications](../special-features/push-notification.md)
 - [Lien profond](../special-features/deep-linking)
 
 
