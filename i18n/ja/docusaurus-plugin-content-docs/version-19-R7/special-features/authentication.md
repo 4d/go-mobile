@@ -1,6 +1,6 @@
 ---
 id: authentication
-title: 認証
+title: Authentication
 ---
 
 
@@ -96,7 +96,7 @@ End if
 
 一連の流れを図に表しました:
 
-![認証](img/4D-for-iOS-email-auth.png)
+![Authentication](img/4D-for-iOS-email-auth.png)
 
 この手順には、特別なコンポーネントを使用するか、手動で処理することができます。
 
