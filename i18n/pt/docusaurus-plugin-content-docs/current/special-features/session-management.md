@@ -48,7 +48,7 @@ Here is an example of a 4D for iOS-generated session file:
 
 ```
 
-Como padrão, o "estado" se estabelece automaticamente como "aceito" se a sessão for validada pelo método base[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) (`$result.success` definido como`True`). Se quiser a habilidade para validar manualmente o primeiro login de cada sessão de usuário, adicione `$result.verify:=True` ao objeto retornado pelo método de banco de dados [On Mobile App Authentication](../4d/on-mobile-app-authentication.md). Alterará o estado padrão "aceito" para "pendente" no arquivo da sessão. Para mais informações, ver [este exemplo](authentication.md#without-the-component).
+Como padrão, o "estado" se estabelece automaticamente como "aceito" se a sessão for validada pelo método base[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) (`$result.success` definido como`True`). Se quiser a habilidade para validar manualmente o primeiro login de cada sessão de usuário, adicione `$result.verify:=True` ao objeto retornado pelo método de banco de dados [On Mobile App Authentication](../4d/on-mobile-app-authentication.md). Alterará o estado padrão "aceito" para "pendente" no arquivo da sessão. For more information, see [this example](../tutorials/login-forms/email.md#without-the-component).
 
 
 ## Objecto sessão
