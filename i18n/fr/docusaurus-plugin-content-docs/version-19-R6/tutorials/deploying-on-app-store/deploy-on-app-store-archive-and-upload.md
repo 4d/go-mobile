@@ -32,7 +32,7 @@ title: Archiver et télécharger un projet
 
 (HTTPS est obligatoire pour le déploiement).
 
-![Publishing](img/Publishing.png)
+![Publication](img/Publishing.png)
 
 * Dans l’onglet GÉNÉRATION :
 

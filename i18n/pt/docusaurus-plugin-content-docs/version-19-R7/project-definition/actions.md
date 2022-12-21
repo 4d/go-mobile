@@ -386,7 +386,7 @@ Here is an example of a dynamic choice list:
 
 ```4d
 {
-    "name": "datasourcePush"
+    "name": "datasourcePush",
     "type": [
         "text"
     ],
@@ -398,7 +398,7 @@ Here is an example of a dynamic choice list:
             "field": "LastName",
             "entityFormat": "%FirstName% %LastName% - %Job%",
             "search": "LastName",
-            "order": "descending" 
+            "sort": {"field": "LastName", "order":"descending"}  
         }
     }
 }

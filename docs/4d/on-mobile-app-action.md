@@ -7,7 +7,7 @@ title: On Mobile App Action
 
 |Parameter|Type||Description|
 |---|---|----|---|
-|mobileInfo|Object|->|Information passed by the mobile application|
+|mobileInfo|Object|<-|Information passed by the mobile application|
 |result|Object|<-|Action status & data synchro|
 
 

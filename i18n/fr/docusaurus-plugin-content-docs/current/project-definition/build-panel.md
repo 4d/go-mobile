@@ -14,18 +14,18 @@ Voici la description des options de l'onglet Génération :
 
 * **iPhone X :** Le simulateur par défaut. En cliquant ici, vous afficherez une liste déroulante des simulateurs disponibles.
 
-* **Projet :** Affiche une liste déroulante vous permettant d'**ouvrir le dossier du projet** ou le **dossier produit**, ou **d'ouvrir le produit avec Xcode**. This dropdown list is useful for [debug operations](../debug/from-project-editor).
+* **Projet :** Affiche une liste déroulante vous permettant d'**ouvrir le dossier du projet** ou le **dossier produit**, ou **d'ouvrir le produit avec Xcode**. Cette liste déroulante est utile pour [les opérations de débogage](../debug/from-project-editor).
 
-* **Install:** Installs the application on a connected device (see [Installing on your iOS device](../deployment/testing-on-your-device)).
+* **Install:** Installs the application on a connected device (see [Installing on your iOS device](../tutorials/deploying-in-house/testing-on-your-device)).
 
 
 ## Utilisation du simulateur
 
-You can use the Simulator by following these steps.
+Vous pouvez utiliser le simulateur en suivant ces étapes.
 
 1. Sélectionnez votre appareil.
 
-In the BUILD tab of  the Project Editor, select an iOS or Android device to use for running your app.
+Dans l'onglet GÉNÉRATION de l'éditeur de projet, sélectionnez un appareil iOS ou Android à utiliser pour exécuter votre application.
 
 ![Device selection](img/device-selection-4D-for-ios.png)
 

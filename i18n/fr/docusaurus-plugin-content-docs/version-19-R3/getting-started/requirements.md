@@ -59,7 +59,7 @@ Tableau de versions :
 
 :::Compatibility note
 
-Formatters updated for 4D v19 R3/4D v19.2 and higher are not compatible with previous 4D releases.
+Les formateurs mis à jour pour 4D v19 R3/4D v19.2 et plus ne sont pas compatibles avec les versions précédentes de 4D.
 
 :::
 
@@ -74,7 +74,7 @@ Tableau de versions :
 
 :::note
 
-You can build Android apps both on Mac and PC.
+Vous pouvez créer des applications Android sur Mac et sur PC.
 
 :::
 
