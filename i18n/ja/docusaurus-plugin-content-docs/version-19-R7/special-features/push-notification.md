@@ -1,6 +1,6 @@
 ---
 id: push-notification
-title: プッシュ通知
+title: Push notifications
 ---
 
 :::info 4D for Android
