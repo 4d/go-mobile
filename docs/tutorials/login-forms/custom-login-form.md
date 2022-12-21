@@ -6,25 +6,19 @@ title: Custom Login Form
 
 This tutorial will show you how to:
 
-- Create and use a custom [login form](https://4d-for-ios.github.io/gallery/#/type/form-login). 
+- Create and use a [custom login form](../../project-definition/publishing.md#login-form). 
 - Allow authenticated users to login by scanning a QRCode.
 
->**PREREQUISITES**
->
->A website with authenticated users
->
->4D 18R6 minimum
->
->Real iOS mobile device (simulator do not simulate camera)
+:::info
 
-
-*Scenario: You already have a website with authenticated users and you want then to login into their app just by scanning a QRCode*
-
-:::note
-
-Selecting a custom login form from the Project editor is not implemented yet but let's see how to do that manually
+To complete this tutorial, you need a real mobile device (simulators do not simulate camera).
 
 :::
+
+*Scenario: You already have a website with authenticated users and you want them to login into their app just by scanning a QRCode with their device*
+
+You can [**download this custom login form from the 4D go mobile gallery**](https://4d-go-mobile.github.io/gallery//#/type/form-login). 
+
 
 ## STEP 1. Getting started
 
@@ -54,41 +48,13 @@ Download the Sign in With [QRCode login form](https://github.com/mesopelagique/f
 
 ![login folder](img/login-folder.png)
 
-Then open the *YourDatabase.4dbase/Mobile Projects/ContactQRCodeLogin/project.4dmobileapp* file
+In the [Publishing page](../../project-definition/publishing.md#authentication-option) of the project editor, click **Authentication** and select the **SignInWithQRCode** form. 
 
-![project.4dmobileapp](img/4dmobileapp-file.png)
-
-With your project closed, and add the following line : *"login": "/SignInWithQRCode",*
-
-```
-{
-	"info": {
-		"version": 5,
-		"target": "iOS",
-		"ideVersion": "1870",
-		"ideBuildVersion": "261295",
-		"componentBuild": ""
-	},
-	"login": "/SignInWithQRCode",
-	...
-
-```
-
-This will allow to initialize the custom template and use it during the build process.
-
-You are done for the custom template intégration! So quite an easy process :)
-
+![authentication activation](img/authentication-custom.png)
 
 ## STEP 3. On Mobile app Authentication database method
 
-Open the QRCode mobile project and go right to the Publishing section. 
-
-From here check the Authentication feature and Create the database method clicking on the Create button.
-
-![Publishing section](img/publishing-section.png)
-
-
-This is how it should look to authenticate users :
+In the Publishing page, click on the **Create...** button to create and open the `On Mobile app Authentication` database method for your project. This is how it should look to authenticated users :
 
 ```4d
 var $0 : Object
@@ -96,8 +62,8 @@ var $1 : Object
 
 var $request; $response : Object
 
-$request:=$1  // Informations provided by mobile application
-$response:=New object  // Informations returned to mobile application
+$request:=$1  // Information provided by mobile application
+$response:=New object  // Information returned to mobile application
 
 $entity:=ds.User.query("login = :1"; $request.email)
 If ($entity.length>0)
@@ -172,7 +138,7 @@ End if
 
 ### GenerateQRCODE method
 
-Here we generated a vqrCodeData that is a json that include the user email and the encrtypted password that are the data that are going to be emebeded in the QRCode.
+Here we generate a *vqrCodeData* process variable which is a json including the user email and the encrypted password. These data  are going to be embedded in the QRCode.
 
 ```4d
 // Use storage variable
@@ -250,7 +216,7 @@ In this last page, we use [4D tags](https://developer.4d.com/docs/Tags/tags.html
   
 ```
 
-## STEP 6. Get the entire senario
+## STEP 6. Get the entire scenario
 
 ### Login into your website home page
 
@@ -279,8 +245,3 @@ Here is the final result :
 
 ![Sign in with QR Code](img/sign-in-with-qr-code.gif)
 
-## STEP 7. Where to go from here?
-
-The step 2 covers how to include easily any custom login form in your mobile app. So you should now be able just followin this step, to create your own custom login form and use it on your own.  
-
-Reading next steps you are now able to include the Sign In With QRCode login and allow your authenticated users to scan a QRCode to login into their app.

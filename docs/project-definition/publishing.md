@@ -82,12 +82,100 @@ You can easily update your remote url from iPhone Settings :
 ![Update remote url](img/Update-remote-url.png)
 
 
-## Features
 
-This area allows you to select and configure several mobile app's special features. These features are documented in dedicated sections:
 
-- [Authentication](../special-features/authentication.md)
-- [Push notifications](../special-features/push-notification.md)
-- [Deep linking](../special-features/deep-linking)
+## Authentication
+
+A mobile application can require that the user be authenticated or not. 
+
+- When authentication is not enabled, mobile users navigate in the application in Guest mode. 
+- Once authentication is enabled, mobile users are asked to **login** before connecting to the application.  
+
+:::info
+
+In any cases, when a mobile user connects to the server, a [user session](session-management) is created.
+
+:::
+
+### Authentication option
+
+To enable authentication, check the **Authentication** option:  
+
+![authentication activation](img/authentication.png)
+
+When this option is selected, a Login form will be displayed to the user at startup. A Default login form is automatically selected in the Login Form menu (see below). 
+
+
+### Authentication method
+
+
+The **Create...**/**Edit...** button opens the [`On Mobile App Authentication`](../4d/on-mobile-app-authentication.md) database method in the 4D method editor. A default template code is provided, allowing all users to log as guests:
+
+```4d
+#DECLARE($request : Object)->$response : Object
+
+/*
+		$request = Informations provided by mobile application
+		$response = Informations returned to mobile application
+*/
+
+$response:=New object
+
+// Check user email
+If ($request.email=Null)
+	// No email means Guest mode - Allow connection
+	$response.success:=True
+Else 
+	// Authenticated mode - Allow or not the connection according to email or other device property
+	$response.success:=True
+End if 
+
+// Optional message to display on mobile App.
+If ($response.success)
+	$response.statusText:="You are successfully authenticated"
+Else 
+	$response.statusText:="Sorry, you are not authorized to use this application."
+End if 
+
+```
+
+This method handles all incoming requests from the mobile apps and accepts or denies the connection. See the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method page for a full description of the method. 
+
+The most common and comfortable way to authenticate mobile users is to rely on email authentication. For a detailed example of email-based double authentication, please refer to [this tutorial](../tutorials/login-forms/email.md). 
+
+### Login Form
+
+The Login Form menu proposes all login forms available in the project, so that you can select the form to use.  **Default** is a basic login form provided by the mobile editor. Its uses the user email as identifier.  
+
+You can also create or download [custom login forms](../tutorials/login-forms/custom-login-form). Once installed, custom login forms are listed in the Login Form pop up.
+You can either create or download custom login forms. Custom login forms can be downloaded from the [**Login form Github gallery**](https://4d-go-mobile.github.io/gallery//#/type/form-login).
+
+A custom login form is associated to a `manifest.json` file and (optionally) Swift or Kotlin source code. The custom login form files must be stored into a subfolder at the following location:
+
+```
+myProject/Resources/Mobile/Form/Login/
+```
+
+The `manifest.json` file contains the following attributes:
+
+|Property|Type|Description|
+|---|---|---|
+|"**name**"|text|login form name |
+|"**type**"|text|set to "login" |
+|Optional "**capabilities**"|object|to add information or options according to needs |
+|"**target**"|text or collection|platform(s) supported by your login form |
+
+
+
+
+
+## Push notifications
+
+This feature is documented in the [Push notifications](../special-features/push-notification.md) section.
+
+
+## Deep Linking
+
+This feature is documented in the [Deep linking](../special-features/deep-linking) section. 
 
 
