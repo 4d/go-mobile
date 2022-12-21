@@ -129,12 +129,14 @@ End if
 ```4d
 // On Web Connection database method
 
-C_TEXT($1;$2;$3;$4;$5;$6)
+#DECLARE($url : Text; $header : Text; \
+  $BrowserIP : Text; $ServerIP : Text; \
+  $user : Text; $password : Text) 
 
-C_TEXT($token;$session)
-C_OBJECT($sessionFile;$sessionObject)
+var $token ; $session : Text
+var $sessionFile ; $sessionObject : Object
 
-If ($1="/activation/@")
+If ($url="/activation/@")
 	$token:=Substring($1;13)
 End if 
 
