@@ -17,6 +17,8 @@ To complete this tutorial, you need a real mobile device (simulators do not simu
 
 *Scenario: You already have a website with authenticated users and you want them to login into their app just by scanning a QRCode with their device*
 
+You can [**download this custom login form from the 4D go mobile gallery**](https://4d-go-mobile.github.io/gallery//#/type/form-login). 
+
 
 ## STEP 1. Getting started
 
@@ -48,6 +50,7 @@ Download the Sign in With [QRCode login form](https://github.com/mesopelagique/f
 
 In the [Publishing page](../../project-definition/publishing.md#authentication-option) of the project editor, click **Authentication** and select the **SignInWithQRCode** form. 
 
+![authentication activation](img/authentication.png)
 
 ## STEP 3. On Mobile app Authentication database method
 
