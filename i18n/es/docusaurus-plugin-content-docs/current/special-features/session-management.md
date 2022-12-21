@@ -48,7 +48,7 @@ Este es un ejemplo de un archivo de sesión generado para 4D for iOS:
 
 ```
 
-Por defecto, el "estado" se establece automáticamente en "aceptado" si la sesión es validada por el método base[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) (`$result.success` definido en `True`). Si desea la posibilidad de validar manualmente el primer inicio de sesión para cada sesión usuario, añada `$result.verify:=True` al objeto devuelto por el método base [On Mobile App Authentication](../4d/on-mobile-app-authentication.md). Cambiará el estado por defecto "accepted" a "pending" en el archivo de la sesión. Para más información, ver [este ejemplo](authentication.md#without-the-component).
+Por defecto, el "estado" se establece automáticamente en "aceptado" si la sesión es validada por el método base[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) (`$result.success` definido en `True`). Si desea la posibilidad de validar manualmente el primer inicio de sesión para cada sesión usuario, añada `$result.verify:=True` al objeto devuelto por el método base [On Mobile App Authentication](../4d/on-mobile-app-authentication.md). Cambiará el estado por defecto "accepted" a "pending" en el archivo de la sesión. For more information, see [this example](../tutorials/login-forms/email.md#without-the-component).
 
 
 ## Objeto Session
