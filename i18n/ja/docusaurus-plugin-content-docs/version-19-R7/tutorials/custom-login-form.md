@@ -27,12 +27,12 @@ title: カスタムログインフォーム
 
 ## ⒈ はじめに
 
-このチュートリアルでは、次のことをおこないます:
+In this tutorial, we're going to:
 
 * カスタムログインフォームを追加する
 * QRコードをスキャンするだけで、アプリユーザーがログインできる機能を実装する
 
-まず、スタータープロジェクトをダウンロードします。このプロジェクトには、データベースファイルのほかに、すぐに使える Webページが WebFolderフォルダーに格納されています:
+First download our Starter project, which contains a database file and ready to use webpages in the Webfolder folder:
 
 <div className="center-button">
 <a className="button button--primary"
@@ -41,17 +41,17 @@ href="https://github.com/4d-go-mobile/tutorial-CustomLoginForm/archive/main.zip"
 
 :::info
 
-このプロジェクトには、各認証済みユーザーについてログインID とパスワードを格納した Users テーブルがあらかじめ含まれています。
+This project already includes a Users table with a Login and a Password for each authenticated user.
 
 :::
 
 ## ⒉ カスタムログインフォームを追加する
 
-カスタムログインフォームを追加するには、まず *YourDatabase.4dbase/Resources/Mobile/form/login* フォルダーを作成します。
+To use a custom login form, the first thing you'll need to do is creating a *YourDatabase.4dbase/Resources/Mobile/form/login* folder.
 
-[QRコードログインフォーム](https://github.com/mesopelagique/form-login-SignInWithQRCode/archive/master.zip) をダウンロードし、先ほど作成した login フォルダーにドロップします。
+Download the Sign in With [QRCode login form](https://github.com/mesopelagique/form-login-SignInWithQRCode/archive/master.zip) and simply drop it in the login folder you've just created.
 
-![login フォルダー](img/login-folder.png)
+![login folder](img/login-folder.png)
 
 次に、*YourDatabase.4dbase/Mobile Projects/ContactQRCodeLogin/project.4dmobileapp* ファイルを開きます。
 
@@ -128,28 +128,28 @@ $0:=$response
 
 ### Authentication メソッド
 
-ここでは、フォームから変数を取得し、それらの値が Userテーブルに存在するかどうかを確認します:
+Here we get the variable from the form and check if those values exist in the User table :
 
 ```4d
-// フォームの変数をすべて取得します
+//Retrieve all the variables of the form
 C_TEXT($1)
 ARRAY TEXT($arrNames; 0)
 ARRAY TEXT($arrVals; 0)
 
-// 認証 Webページの変数のうち、ログインID およびパスワードを取得します
+// Get the login and pswd variable from the authentication web page
 WEB GET VARIABLES($arrNames; $arrVals)
 $VLOGIN:=Find in array($arrNames; "VLOGIN")
 $VPASS:=Find in array($arrNames; "VPASS")
 
-// コードからアクセスできるよう、共有変数を作成します
+// Shared variable creation to access to it in the code
 Use (Storage)
     Storage.session:=New shared object("login"; ""; "password"; "")
 End use 
 
-// ユーザーを認証してよいか確認するため、ログイン情報が存在するか検索します
+// Search if the login / pswd exist and if the user can be authentified
 $entity:=ds.User.query("login = :1 and password = :2"; $arrVals{$VLOGIN}; $arrVals{$VPASS})
 
-// 見つかった場合は、ログイン情報を共有変数に代入します
+// If the login / pswd exist the login / pswd are initialised in the share variable
 If ($entity.length>0)
     Use (Storage.session)
         Storage.session.login:=$arrVals{$VLOGIN}
@@ -157,11 +157,11 @@ If ($entity.length>0)
         Storage.session.success:=True
     End use 
 
-    // Webページにリダイレクトします
+    // Redirection to the web page
     WEB SEND HTTP REDIRECT("/createQRCode.html")
 
 Else 
-    // ホームページに戻ります
+    // Back to the home page
     Use (Storage.session)
         Storage.session.success:=False
     End use 
@@ -174,33 +174,33 @@ End if
 ここで、vqrCodeData を生成します。これは、ユーザーのメールアドレスと暗号化されたパスワードを含む json で、QRコードに埋め込まれることになるデータです。
 
 ```4d
-// Storage 変数を使います
+// Use storage variable
 $currentUserEmail:=Storage.session.login
 $token:=Storage.session.password
 $options:=New object("algorithm"; "bcrypt"; "cost"; 4)
 $hash:=Generate password hash($token; $options)
 
-// vqrCodeData 変数を生成します (メールアドレスと暗号化されたパスワードの json 値)
+// Process variable creation (json value with mail and encrypted pswd)
 vqrCodeData:=JSON Stringify(New object("email"; $currentUserEmail; "token"; $hash))
 
-// QRコード Webページにリダイレクトします
+// Redirection to the QRcode webpage
 WEB SEND HTTP REDIRECT("/generatedQRCode.shtml")
 ```
 
 
 ## ⒌ Webサイト
 
-このチュートリアルでは、WebFolder フォルダーに 3つの htmlページが用意されています:
+For this tutorial, three html pages are already available into the WebFolder folder:
 
 * 認証ページ (index.html)
 * QRコード生成ページ (createQRCode.html)
 * ユーザーがモバイルデバイスでスキャンする最終ページ (generatedQRCode.shtml)
 
-これら 3つのページを見ていきましょう:
+Let's have a focus on those three pages :
 
 ### index.html
 
-ここでは 4DACTION を使って、ステップ4 で確認した *Authentication プロジェクトメソッド* で使用するログインとパスワードを POST します:
+Here, we just use a 4DACTION to post login and password to be used in the *Authentication Project Method* that we are going to see in step 4:
 
 ```html
   <form class="box" ACTION="/4DACTION/Authentication" METHOD=post>
@@ -213,7 +213,7 @@ WEB SEND HTTP REDIRECT("/generatedQRCode.shtml")
 
 ### createQRCode.html
 
-ここでは 4DACTION を使用して、*GenerateQRCODE プロジェクトメソッド* を呼び出しています:
+Here, we use call the *GenerateQRCODE Project Method* using a 4DACTION:
 
 ```html
 <h1>2. GENERATE YOUR QRCODE</h1>
@@ -224,7 +224,7 @@ WEB SEND HTTP REDIRECT("/generatedQRCode.shtml")
 
 ### generatedQRCode.shtml
 
-この最後のページでは、[4Dタグ](https://developer.4d.com/docs/ja/Tags/tags/) を使って、*data* の値を取得しています:
+In this last page, we use [4D tags](https://developer.4d.com/docs/Tags/tags.html) to get the *data* value:
 
 ```html
 <h1>3. SCAN THE QRCODE FROM YOUR PHONE</h1>
@@ -253,30 +253,30 @@ WEB SEND HTTP REDIRECT("/generatedQRCode.shtml")
 
 ### Webサイトのトップページにログインする
 
-実行メニューから "Web サーバーテスト" を選択して Webサイトのホームページを開き、Username 欄に **david@4D.com**、Password フィールドに **TEST** と入力し、Login をクリックします (これは User テーブルに存在するレコードです)。
+Enter **david@4D.com** in the Login field and **TEST** in the Password field in your website home page and click Login (Which is an existing record in the User table).
 
-![Login フォーム](img/login-form.png)
+![Login form](img/login-form.png)
 
 
 ### QRコードを生成する
 
-**HERE** ボタンをクリックし、QRコードを生成します。
+Click on the **HERE** button to generate the QR Code.
 
-![QRコードを生成する](img/create-qr-code.png)
+![Create QR Code](img/create-qr-code.png)
 
-最後の QRコードのページにリダイレクトされます。
+You will be redirected to the final QR Code page.
 
-![生成された QRコード](img/generated-qr-code.png)
+![Generated QR Code](img/generated-qr-code.png)
 
 ### 実機でアプリをビルドする
 
-プロジェクトエディターから、モバイルアプリを実機にインストールします。
+Install your mobile app from the project editor on a real device.
 
-すると、カスタムログインフォームが表示されます。ここで、さきほど生成した QRコードをスキャンすることで、モバイルアプリにログインできます。
+Then the custom login form will appear to allow you scanning the generated QRCode and login into your mobile app.
 
-このような結果になります:
+Here is the final result :
 
-![QRコードでサインイン](img/sign-in-with-qr-code.gif)
+![Sign in with QR Code](img/sign-in-with-qr-code.gif)
 
 ## ⒎ これからどうする？
 
