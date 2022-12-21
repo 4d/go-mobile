@@ -109,7 +109,7 @@ When this option is selected, a Login form will be displayed to the user at star
 ### Authentication method
 
 
-The **Create...**/**Edit...** button opens the [`On Mobile App Authentication`] database method in the 4D method editor. A default template code is provided, allowing all users to log as guests:
+The **Create...**/**Edit...** button opens the [`On Mobile App Authentication`](../4d/on-mobile-app-authentication.md) database method in the 4D method editor. A default template code is provided, allowing all users to log as guests:
 
 ```4d
 #DECLARE($request : Object)->$response : Object
@@ -141,7 +141,7 @@ End if
 
 This method handles all incoming requests from the mobile apps and accepts or denies the connection. See the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method page for a full description of the method. 
 
-For a detailed example of email-based double authentication, please refer to [this tutorial](../tutorials/login-forms/email.md). 
+The most common and comfortable way to authenticate mobile users is to rely on email authentication. For a detailed example of email-based double authentication, please refer to [this tutorial](../tutorials/login-forms/email.md). 
 
 ### Login Form
 

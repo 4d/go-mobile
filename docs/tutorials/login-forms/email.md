@@ -4,9 +4,7 @@ title: Email authentication example
 ---
 
 
-The most common and comfortable way to authenticate mobile users is to rely on email authentication.
-
-It provides a way to verify that an email comes from whom it claims to be from, and will allow to block harmful or fraudulent uses of email.
+This authentication example provides a way to verify that an email comes from whom it claims to be from, and will allow to block harmful or fraudulent uses of email.
 
 ## Scenario
 
