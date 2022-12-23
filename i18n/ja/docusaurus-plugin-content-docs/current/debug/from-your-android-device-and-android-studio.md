@@ -18,7 +18,7 @@ title: Android デバイスから
 
 もし、見つからない場合や、わからない場合は、[この Android ユーザーガイド](https://developer.android.com/studio/debug/dev-options) の Android のバージョン別の説明を参照ください。
 
-:::note notes
+:::note 注記
 
 - Windows で、Google デバイスと接続してデバッグするには、[Google USB ドライバ](https://developer.android.com/studio/run/win-usb) をインストールする必要があります。
 
