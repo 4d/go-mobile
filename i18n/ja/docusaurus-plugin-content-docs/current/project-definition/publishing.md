@@ -84,12 +84,12 @@ HTTPSポートを有効化するには、有効な [TLS 証明書](https://devel
 
 
 
-## Authentication
+## 認証
 
 モバイルアプリは、ユーザー認証を要求できます。
 
 - 認証が有効化されていない場合、モバイルユーザーはゲストモードでアプリを使用します。
-- Once authentication is enabled, mobile users are asked to **login** before connecting to the application.
+- 認証が有効化されていると、モバイルユーザーはアプリ接続前に **ログイン** を求められます。
 
 :::info
 
@@ -97,19 +97,19 @@ HTTPSポートを有効化するには、有効な [TLS 証明書](https://devel
 
 :::
 
-### Authentication option
+### 認証オプション
 
-To enable authentication, check the **Authentication** option:
+認証を有効化するには、**認証** オプションをチェックします:
 
 ![認証](img/authentication.png)
 
-When this option is selected, a Login form will be displayed to the user at startup. A Default login form is automatically selected in the Login Form menu (see below).
+このオプションが選択されている場合、アプリ起動時にログインフォームがユーザーに提示されます。 A Default login form is automatically selected in the Login Form menu (see below).
 
 
 ### Authentication メソッド
 
 
-The **Create...**/**Edit...** button opens the [`On Mobile App Authentication`](../4d/on-mobile-app-authentication.md) database method in the 4D method editor. A default template code is provided, allowing all users to log as guests:
+**作成...** / **編集...** ボタンをクリックすると、4Dメソッドエディターで [`On Mobile App Authentication`](../4d/on-mobile-app-authentication) データベースメソッドを開きます (以下参照)。 全ユーザーのゲストログインを許可するデフォルトのテンプレートコードが用意されています。
 
 ```4d
 #DECLARE($request : Object)->$response : Object
@@ -139,9 +139,9 @@ End if
 
 ```
 
-This method handles all incoming requests from the mobile apps and accepts or denies the connection. See the [On Mobile App Authentication](../4d/on-mobile-app-authentication) database method page for a full description of the method.
+このメソッドは、モバイルアプリから送信されるリクエストをすべて処理し、接続の可否を決定します。 このメソッドの詳細については、[Mobile App Authentication](../4d/on-mobile-app-authentication) データベースメソッドのページを参照ください。
 
-モバイルユーザーを認証する最も一般的な方法は、メール認証を使用することです。 For a detailed example of email-based double authentication, please refer to [this tutorial](../tutorials/login-forms/email.md).
+モバイルユーザーを認証する最も一般的な方法は、メール認証を使用することです。 電子メールを使った二重認証の詳細な例については、[このチュートリアル](../tutorials/login-forms/email) を参照してください。
 
 ### Login Form
 
