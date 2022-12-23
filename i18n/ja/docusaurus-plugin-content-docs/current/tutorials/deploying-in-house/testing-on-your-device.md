@@ -74,7 +74,7 @@ Apple Developer Program に加入している必要があります。 目的や�
 
 :::info
 
-この手順には、[Apple デバイスのデベロッパモード](../getting-started/requirements.md#apple-デバイスのデベロッパモード) を有効にしておく必要があります。
+この手順には、[Apple デバイスのデベロッパモード](../getting-started/requirements#apple-デバイスのデベロッパモード) を有効にしておく必要があります。
 
 :::
 
