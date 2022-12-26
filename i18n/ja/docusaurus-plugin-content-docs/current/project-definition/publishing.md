@@ -103,7 +103,7 @@ HTTPSポートを有効化するには、有効な [TLS 証明書](https://devel
 
 ![認証](img/authentication.png)
 
-このオプションが選択されている場合、アプリ起動時にログインフォームがユーザーに提示されます。 A Default login form is automatically selected in the Login Form menu (see below).
+このオプションが選択されている場合、アプリ起動時にログインフォームがユーザーに提示されます。 ログインフォームのメニューでは、デフォルトのログインフォームが自動で選択されています (下記参照)。
 
 
 ### Authentication メソッド
@@ -143,38 +143,38 @@ End if
 
 モバイルユーザーを認証する最も一般的な方法は、メール認証を使用することです。 電子メールを使った二重認証の詳細な例については、[このチュートリアル](../tutorials/login-forms/email) を参照してください。
 
-### Login Form
+### ログインフォーム
 
-The Login Form menu proposes all login forms available in the project, so that you can select the form to use.  **Default** is a basic login form provided by the mobile editor. Its uses the user email as identifier.
+ログインフォームのメニューは、プロジェクトで利用可能なログインフォームがすべて提案されます。実際に使用するフォームをその中から選択します。  **デフォルト** は、モバイルエディターが提供するベーシックなログインフォームです。 これは、ユーザーのメールアドレスを識別子として使用します。
 
-You can also create or download [custom login forms](../tutorials/login-forms/custom-login-form). Once installed, custom login forms are listed in the Login Form pop up. You can either create or download custom login forms. Custom login forms can be downloaded from the [**Login form Github gallery**](https://4d-go-mobile.github.io/gallery//#/type/form-login).
+また、[カスタムログインフォーム](../tutorials/login-forms/custom-login-form) を使用することもできます。 インストールが完了したカスタムログインフォームは、ログインフォームのポップアップメニューに表示されます。 カスタムログインフォームは、作成またはダウンロードすることができます。 カスタムログインフォームをダウンロードする場合は、[**Login form Github gallery**](https://4d-go-mobile.github.io/gallery//#/type/form-login) が利用できます。
 
-A custom login form is associated to a `manifest.json` file and (optionally) Swift or Kotlin source code. The custom login form files must be stored into a subfolder at the following location:
+カスタムログインフォームは、`manifest.json` ファイルと、(任意で) Swift または Kotlin のソースコードと紐付けられます。 カスタムログインフォームのファイルは、以下の場所のサブフォルダーに格納する必要があります:
 
 ```
 myProject/Resources/Mobile/Form/Login/
 ```
 
-The `manifest.json` file contains the following attributes:
+`manifest.json` ファイルには、以下の属性が含まれています:
 
-| プロパティ                       | タイプ                 | 詳細                                               |
-| --------------------------- | ------------------- | ------------------------------------------------ |
-| "**name**"                  | テキスト                | login form name                                  |
-| "**type**"                  | テキスト                | set to "login"                                   |
-| Optional "**capabilities**" | object              | to add information or options according to needs |
-| "**target**"                | text または collection | platform(s) supported by your login form         |
-
-
+| プロパティ                   | タイプ                 | 詳細                      |
+| ----------------------- | ------------------- | ----------------------- |
+| "**name**"              | text                | ログインフォーム名               |
+| "**type**"              | text                | "login" に設定             |
+| "**capabilities**" (任意) | object              | 必要に応じて情報やオプションを追加します    |
+| "**target**"            | text または collection | ログインフォームがサポートするプラットフォーム |
 
 
 
-## Push notifications
 
-This feature is documented in the [Push notifications](../special-features/push-notification.md) section.
+
+## プッシュ通知
+
+この機能は、[プッシュ通知](../special-features/push-notification) の章で説明されています。
 
 
 ## ディープリンク
 
-This feature is documented in the [Deep linking](../special-features/deep-linking) section. 
+この機能は、[ディープリンク](../special-features/deep-linking) の章で説明されています。 
 
 
