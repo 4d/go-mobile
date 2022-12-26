@@ -12,7 +12,7 @@ title: メール認証の例題
 
 #### 1. 認証を有効化する
 
-ログインフォームをアプリで使用するため、公開ページの **認証** オプションを選択します。 You can select the **Default** login page or install a custom login page.
+ログインフォームをアプリで使用するため、公開ページの **認証** オプションを選択します。 **デフォルト** のログインページを選択するか、カスタムログインページをインストールすることができます。
 
 ![認証](img/authentication.png)
 
@@ -23,7 +23,7 @@ title: メール認証の例題
 
 #### 3. メールボックスを確認して、4. リンクをクリックする
 
-ユーザーは、受信した認証メールの認証リンクをクリックします。 This will call the [`On Web Connection`](https://doc.4d.com/4Dv19/4D/19/On-Web-Connection-database-method.301-5392847.en.html) database method and update the [user's session](../../special-features/session-management.md) status from "pending" to "accepted".
+ユーザーは、受信した認証メールの認証リンクをクリックします。 これにより、[`On Web Connection`](https://doc.4d.com/4Dv19/4D/19/On-Web-Connection-database-method.301-5392847.ja.html) データベースメソッドが呼び出され、[ユーザーセッション](../../special-features/session-management) のステータスが "pending" から "accepted" に更新されます。
 
 #### 5. および 6. アプリに戻る
 
@@ -44,7 +44,7 @@ title: メール認証の例題
 1. `On Mobile App Authentication` データベースメソッド内で、モバイルアプリから渡された情報とともに `Mobile App Email Checker` メソッドを呼び出します:
 
 ```4d
-// On Mobile App Authentication database method
+// On Mobile App Authentication データベースメソッド
 
 #DECLARE ($mobileInfo : Object) -> $result : Object
 $result:= Mobile App Email Checker($mobileInfo)
@@ -53,12 +53,12 @@ $result:= Mobile App Email Checker($mobileInfo)
 2. `On Web Connection` データベースメソッド内で、URL より取得した `Session` IDパラメーターを指定して、`Mobile App Active Session` メソッドを呼び出します:
 
 ```4d
-// On Web Connection database method
+// On Web Connection データベースメソッド
 
 #DECLARE ($info : Text) 
 Case of 
 : (Mobile App Active Session($info).success)
-    //add log if you want
+    // 必要に応じてログを追加します
 End case 
 
 ```
@@ -127,7 +127,7 @@ End if
 2. `On Web Connection` データベースメソッドには、ユーザーが確認メールのリンクをクリックした後に、該当セッションを有効にするためのコードを記述します。
 
 ```4d
-// On Web Connection database method
+// On Web Connection データベースメソッド
 
 #DECLARE($url : Text; $header : Text; \
   $BrowserIP : Text; $ServerIP : Text; \
@@ -141,34 +141,35 @@ If ($url="/activation/@")
 End if 
 
 
-  //get session from ID received from URL
-If (Storage.pendingSessions#Null)
+  // URL から受け取った ID でセッションを取得します
+If (Storage.PendingSessions#Null)pendingSessions#Null)
     $session:=Storage.pendingSessions[$token]
 End if 
 
 If ($session#"")
-      //get session folder
+      // セッションフォルダーを取得します
     $sessionFile:=Folder(fk mobileApps folder).folder($session).file($token)
     $sessionObject:=JSON Parse($sessionFile.getText())
-      //update status value
+      // ステータス値を更新します
     $sessionObject.status:="accepted"
-    $sessionFile.setText(JSON Stringify($sessionObject))
-    Use (Storage.pendingSessions)
-          //delete pending session
+    $sessionFile.setText(JSON Stringify($sessionObject) )
+
+        Use (Storage.pendingSessions)
+          // 保留セッションを削除します
         OB REMOVE(Storage.pendingSessions;$token)
     End use 
 
     /*
-        The MOBILE APP REFRESH SESSIONS command checks all mobile
-        application session files located in the MobileApps folder of the server, 
-        and updates existing session contents in memory for any edited files.
+        MOBILE APP REFRESH SESSIONS コマンドは、サーバーの MobileApps フォルダーに
+        あるモバイルアプリのセッションファイルをすべてチェックし、 
+        編集済みのファイルについてはメモリ内のセッションコンテンツを更新します。
     */
 
     MOBILE APP REFRESH SESSIONS
 
-    WEB SEND TEXT("You are successfully authenticated")
+    WEB SEND TEXT("認証に成功しました")
 Else 
-    WEB SEND TEXT("Invalid session")
+    WEB SEND TEXT("無効なセッションです")
 
 End if 
 ```
