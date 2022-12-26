@@ -1,12 +1,12 @@
 ---
 id: email
-title: Email authentication example
+title: メール認証の例題
 ---
 
 
-This authentication example provides a way to verify that an email comes from whom it claims to be from, and will allow to block harmful or fraudulent uses of email.
+このメール認証の例題では、メールアドレスの所有者を確認し、不正なメールの使用を回避することができます。
 
-## Scenario
+## シナリオ
 
 この方法は、次のように機能します:
 
@@ -19,7 +19,7 @@ This authentication example provides a way to verify that an email comes from wh
 
 #### 2. メールアドレスを入力する
 
-アプリ開始時にメールを要求されます。 When a user enters their email and clicks on the **Login** button, the [On Mobile App Authentication](../../4d/on-mobile-app-authentication) database method is called and the user's session status should be updated to a "pending" status. その後、ユーザーに認証メールが送信されます。
+アプリ開始時にメールを要求されます。 ユーザーがメールアドレスを入力して **Login** ボタンをクリックすると、[On Mobile App Authentication](../../4d/on-mobile-app-authentication) データベースメソッドが呼び出され、ユーザーのセッションステータスが "pending" (保留) に更新されます。 その後、ユーザーに認証メールが送信されます。
 
 #### 3. メールボックスを確認して、4. リンクをクリックする
 
