@@ -20,7 +20,7 @@ title: FAQ
 <details>
 <summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>4D for iOS および 4D for Android を使用するために事前に必要な要件はありますか?</summary>
 
-[こちら](../getting-started/requirements.md) のシステム要件一覧を参照してください。
+[こちら](../getting-started/requirements) のシステム要件一覧を参照してください。
 
 </details>
 
@@ -101,7 +101,7 @@ iOS プラットフォーム用の開発のためには、最終アプリケー�
 
 <details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>4D for Mobile で計算フィールドを使用することができますか?</summary>
 
-数式を公開することはできませんが、計算属性を作成しておき、それらをモバイルプロジェクトエディターの [ストラクチャーページ](../project-definition/structure.md) で公開することができます。
+数式を公開することはできませんが、計算属性を作成しておき、それらをモバイルプロジェクトエディターの [ストラクチャーページ](../project-definition/structure) で公開することができます。
 
 </details>
 
@@ -118,7 +118,7 @@ iOS プラットフォーム用の開発のためには、最終アプリケー�
 
 モバイルアプリ用のアイコンを用意することは、強く推奨されています。 アイコンがない場合、デフォルトの (4D ロゴの) アイコンが表示されます。
 
-デスクトップ版アプリのアイコンがある場合，プロジェクトエディターの [一般ページ](../project-definition/general.md) アイコンエリアにドラッグ＆ドロップするだけで，モバイル版アプリのアイコンが自動的に作成されます。
+デスクトップ版アプリのアイコンがある場合，プロジェクトエディターの [一般ページ](../project-definition/general) アイコンエリアにドラッグ＆ドロップするだけで，モバイル版アプリのアイコンが自動的に作成されます。
 
 </details>
 
