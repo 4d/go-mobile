@@ -39,6 +39,6 @@ title: プロジェクトエディターから
 
 :::note
 
-Android の場合は、デバッグに 1手順追加する必要があります。 詳細は [こちら](from-your-android-device-and-android-studio.md) を参照ください。
+Android の場合は、デバッグに 1手順追加する必要があります。 詳細は [こちら](from-your-android-device-and-android-studio) を参照ください。
 
 :::
