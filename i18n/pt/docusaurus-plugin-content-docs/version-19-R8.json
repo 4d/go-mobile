@@ -1,10 +1,10 @@
 {
   "version.label": {
-    "message": "Next",
-    "description": "The label for version current"
+    "message": "v19 R8 BETA",
+    "description": "The label for version 19-R8"
   },
   "sidebar.docs.category.Getting started": {
-    "message": "Comencemos",
+    "message": "Começando",
     "description": "The label for category Getting started in sidebar docs"
   },
   "sidebar.docs.category.Project definition": {
@@ -16,16 +16,12 @@
     "description": "The label for category Smart features in sidebar docs"
   },
   "sidebar.docs.category.Debugging": {
-    "message": "Depuración",
+    "message": "Depuração",
     "description": "The label for category Debugging in sidebar docs"
   },
-  "sidebar.docs.category.Deploying In-House": {
-    "message": "Deploying In-House",
-    "description": "The label for category Deploying In-House in sidebar docs"
-  },
-  "sidebar.docs.category.Deploying on App Store": {
-    "message": "Deploying on App Store",
-    "description": "The label for category Deploying on App Store in sidebar docs"
+  "sidebar.docs.category.4D Database methods": {
+    "message": "4D Database methods",
+    "description": "The label for category 4D Database methods in sidebar docs"
   },
   "sidebar.tutorials.category.Creating List forms": {
     "message": "Creating List forms",
@@ -35,12 +31,16 @@
     "message": "Creating Detail forms",
     "description": "The label for category Creating Detail forms in sidebar tutorials"
   },
+  "sidebar.tutorials.category.Creating Login forms": {
+    "message": "Creating Login forms",
+    "description": "The label for category Creating Login forms in sidebar tutorials"
+  },
   "sidebar.tutorials.category.Gallery": {
     "message": "Galería",
     "description": "The label for category Gallery in sidebar tutorials"
   },
   "sidebar.tutorials.category.Data formatter": {
-    "message": "Formato de datos",
+    "message": "Formatador de dados",
     "description": "The label for category Data formatter in sidebar tutorials"
   },
   "sidebar.tutorials.category.Filter queries": {
@@ -59,13 +59,9 @@
     "message": "Customizing with Xcode",
     "description": "The label for category Customizing with Xcode in sidebar tutorials"
   },
-  "sidebar.tutorials.category.Selecting your Developer Program": {
-    "message": "Selecting your Developer Program",
-    "description": "The label for category Selecting your Developer Program in sidebar tutorials"
-  },
-  "sidebar.templates.category.Templates & Formatters": {
-    "message": "Templates & Formatters",
-    "description": "The label for category Templates & Formatters in sidebar templates"
+  "sidebar.tutorials.category.Apple Developer Program": {
+    "message": "Programa Apple Developer",
+    "description": "The label for category Apple Developer Program in sidebar tutorials"
   },
   "sidebar.tutorials.category.Deploying In-House": {
     "message": "Deploying In-House",
@@ -75,16 +71,8 @@
     "message": "Deploying on App Store",
     "description": "The label for category Deploying on App Store in sidebar tutorials"
   },
-  "sidebar.docs.category.4D Database methods": {
-    "message": "4D Database methods",
-    "description": "The label for category 4D Database methods in sidebar docs"
-  },
-  "sidebar.tutorials.category.Apple Developer Program": {
-    "message": "Apple Developer Program",
-    "description": "The label for category Apple Developer Program in sidebar tutorials"
-  },
-  "sidebar.tutorials.category.Creating Login forms": {
-    "message": "Creating Login forms",
-    "description": "The label for category Creating Login forms in sidebar tutorials"
+  "sidebar.templates.category.Templates & Formatters": {
+    "message": "Templates & Formatters",
+    "description": "The label for category Templates & Formatters in sidebar templates"
   }
 }

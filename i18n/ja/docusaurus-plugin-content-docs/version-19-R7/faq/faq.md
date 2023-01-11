@@ -20,7 +20,7 @@ title: FAQ
 <details>
 <summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>4D for iOS を使用するために事前に必要な要件はありますか?</summary>
 
-[こちら](../getting-started/requirements.md) のシステム要件一覧を参照してください。
+[こちら](../getting-started/requirements) のシステム要件一覧を参照してください。
 
 </details>
 
@@ -134,7 +134,7 @@ Rバージョンが利用できる 4D のパートナープログラムに未加
 
 <details><summary style= {{ fontWeight: "bold" , marginBottom: "20px" }}>作成したアプリはどのようにテストするのですか?</summary>
 
-4D for iOS で作成したアプリは、[シミュレーター]`(simulator.html)` で手早くテストすることができます。 実機の iOS デバイス (iPhone または iPad) でテストするには、**有料の Apple developer アカウント** が必要です。(install-device.html)
+4D for Mobile で作成したアプリは、[シミュレーター](../project-definition/build-panel.md) で手早くテストすることができます。 実機の iOS デバイス (iPhone または iPad) でテストするには、**有料の Apple developer アカウント** が必要です。
 
 **注記**: 出力した iOS プロジェクトを Xcode で開けば、**無料の Apple Developer アカウント** でもアプリをインストールすることができます。
 
