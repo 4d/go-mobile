@@ -84,7 +84,7 @@
     "description": "The label for category Apple Developer Program in sidebar tutorials"
   },
   "sidebar.tutorials.category.Creating Login forms": {
-    "message": "Creating Login forms",
+    "message": "ログインフォームの作成",
     "description": "The label for category Creating Login forms in sidebar tutorials"
   }
 }
