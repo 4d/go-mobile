@@ -32,7 +32,7 @@
     "description": "The label for category Creating Detail forms in sidebar tutorials"
   },
   "sidebar.tutorials.category.Creating Login forms": {
-    "message": "Creating Login forms",
+    "message": "ログインフォームの作成",
     "description": "The label for category Creating Login forms in sidebar tutorials"
   },
   "sidebar.tutorials.category.Gallery": {
