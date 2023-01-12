@@ -3,103 +3,103 @@ id: structure
 title: Structure
 ---
 
-This page displays all of the tables and fields that are exposed as REST resources in the 4D database, including relation attributes (based upon many-to-one and one-to-many relations). In fact, the page displays a view similar to [ORDA's datastore](https://developer.4d.com/docs/ORDA/overview.html).
+Cette page affiche toutes les tables et tous les champs qui sont exposés en tant que ressources REST dans la base de données 4D, y compris les attributs de relation (basés sur les relations plusieurs à un et un à plusieurs). En fait, la page affiche une vue similaire à celle du [datastore ORDA](https://developer.4d.com/docs/ORDA/overview.html).
 
 ![Structure section](img/Structure-section-4D-for-iOS.png)
 
 
-Use this page to define a subset of your physical structure to replicate for mobile devices by selecting the specific tables and fields to publish.
+Utilisez cette page pour définir un sous-ensemble de votre structure physique à répliquer pour les appareils mobiles en sélectionnant les tables et les champs spécifiques à publier.
 
-- Published tables will be automatically added as tabs of your app.
-- Published scalar fields will be available when defining your [list and detail forms](https://developer.4d.com/go-mobile/docs/project-definition/forms/).
-- Published relation fields (many-to-one and one-to-many) will be available when defining your [list and detail forms](https://developer.4d.com/go-mobile/docs/project-definition/forms/) and come with additional navigation features such as a Relation button.
+- Les tables publiées seront automatiquement ajoutées comme onglets de votre application.
+- Les champs scalaires publiés seront disponibles lors de la définition de vos [formulaires liste et formulaires détaillés](https://developer.4d.com/go-mobile/docs/project-definition/forms/).
+- Les champs de liens publiés (N vers 1 et 1 vers N) seront disponibles lors de la définition de vos [formulaires liste et formulaires détaillés](https://developer.4d.com/go-mobile/docs/project-definition/forms/) et sont dotés de fonctionnalités de navigation supplémentaires comme un bouton Relation.
 
 
 :::note
 
-The following tables and fields are not listed in this page:
+Les tables et champs suivants ne sont pas listés dans cette page :
 
-- tables and fields that do not comply with [ORDA rules](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
-- tables and fields whose name start with "`__`" (double underscore).
+- Les tables et champs qui ne sont pas conformes aux règles d'[ORDA](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
+- Les tables et champs dont le nom commence par "`__`" (double tiret bas).
 
 :::
 
 :::note
 
-Only computed attributes with values that change over time - only depending on other attributes of the same DataClass - will be updated on the mobile app.
+Seuls les attributs calculés dont les valeurs évoluent dans le temps - dépendant uniquement d'autres attributs de la même DataClass - seront mis à jour sur l'application mobile.
 
 :::
 
-## Selecting tables and fields to publish
+## Sélection des tables et des champs à publier
 
-A table is published when at least one of its fields is published. When a table is published, it is displayed in **bold**.
+Une table est publiée lorsqu'au moins un de ses champs est publié. Lorsqu'une table est publiée, elle est affichée en **gras**.
 
-To select a field to publish, click on a table name then click on the field in the rightmost list. You can also:
+Pour sélectionner un champ à publier, cliquez sur un nom de table puis cliquez sur le champ dans la liste à droite. Vous pouvez également :
 
-- press the **spacebar** to select/unselect a field
-- use **Ctrl+click** to select all fields
-- use **Publish** and **Publish all** from the Fields list local menu.
+- Appuyez sur la **barre d'espace** pour sélectionner/désélectionner un champ
+- Utilisez **Ctrl+clic** pour sélectionner tous les champs
+- Utilisez **Publier** et **Tout publier** dans le menu local de la liste des champs.
 
 
-### Filtering lists
+### Filtrage des listes
 
-When a list has the focus, you can filter its contents using the Search area and a local menu:
+Lorsqu'une liste a le focus, vous pouvez filtrer son contenu en utilisant la zone de recherche et un menu local :
 
 ![Filter](img/filter.png)
 
-- **Search** area: enter the characters to search within table or field names
-- **Sort by table name**/**Sort by field name**: sort the list by name. By default, lists are sorted by creation date
-- **Only published tables**/**Only published fields**: show only tables or fields that have been selected (published)
+- Zone de **Recherche** : entrez les caractères à rechercher dans les noms de tables ou de champs
+- **Trier par nom de table**/**Trier par nom de champ**: trier la liste par nom. Par défaut, les listes sont triées par date de création
+- **Seulement les tables publiées**/**Seulement les champs publiés**: afficher uniquement les tables ou les champs qui ont été sélectionnés (publiés)
 
 
-## Supported field types
+## Types de champs pris en charge
 
-The mobile editor automatically displays the list of fields that are eligible to the mobile app, depending on their type:
+L'éditeur mobile affiche automatiquement la liste des champs qui sont éligibles à l'application mobile, en fonction de leur type :
 
 ![Fields](img/fields.png)
 
-- All [4D scalar field types](https://developer.4d.com/docs/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/Concepts/blob.html).
-- [Object fields](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
+- Tous les [types de champs scalaires 4D](https://developer.4d.com/docs/Concepts/data-types.html) sauf [BLOB](https://developer.4d.com/docs/Concepts/blob.html).
+- [Les champs objet](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
 - [Computed attributes](https://developer.4d.com/go-mobile/en/docs/project-definition/structure#computed-attributes-1) (scalar attributes only)
-- Relation attributes (Many-to-one and One-to-many) are supported and can be selected just as fields. They have specific icons:
+- Les attributs de relation (N vers 1 et 1 vers N) sont pris en charge et peuvent être sélectionnés comme des champs. Ils ont des icônes spécifiques :
 
-Many to one relation icon:  ![relation1](img/manyto1.png)
+Icône du lien N vers 1 :  ![relation1](img/manyto1.png)
 
-One to many relation icon: ![relationN](img/1tomany.png)
+Icône du lien 1 vers N : ![relationN](img/1tomany.png)
 
 :::info
 
-The names are based upon the relation names in the 4D Structure editor, see the [ORDA Structure mapping page](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
+Les noms sont basés sur les noms des liens dans l'éditeur de structure 4D, voir la page [Correspondance de la structure ORDA](https://developer.4d.com/docs/fr/ORDA/dsmapping.html#structure-mapping).
 
 :::
 
 
-## Using relations
+## Utilisation des relations
 
-### One to Many relations
+### Les relations 1 vers N
 
-You can include **One to Many relations** in your projects and display a list of related fields in a new page of your app.
+Vous pouvez inclure **des relations 1 vers N** dans vos projets et afficher une liste de champs liés dans une nouvelle page de votre application.
 
-All you have to do is:
+Il vous suffit de :
 
-* publishing at least one field of the target (Many) table
-* publishing the relation from the source (One) table
+* publier au moins un champ de la table cible (N)
+* publier la relation à partir de la table source (1)
 
 ![Drop relation in detail form](img/Structure-1-to-N-relations-4D-for-iOS.png)
 
-Then, when your related fields are published, they can be used like any other field. So you will be able to:
+Puis, lorsque vos champs liés sont publiés, ils peuvent être utilisés de la même manière que les autres champs. Vous pourrez ainsi :
 
-* Define relations properties in the [Labels and Icons](labels-and-icons.md) page.
-* Drop the One to Many relation in a Detail form from the [Forms](forms.md) page to create a link between a detail form and a related table. A Relation button will be automatically created in detail forms to go straight to the related view.
+* Définir les propriétés des relations dans la page [Libellés et icônes](labels-and-icons.md).
+* Déposer la relation 1 vers N dans un formulaire détaillé depuis la page [Formulaires](forms.md) pour créer un lien entre un formulaire détaillé et une table liée. Un bouton Relation sera automatiquement créé dans les formulaires détaillés pour accéder directement à la vue liée.
 
 :::tip Tutorial
 
-See the [**One to Many relations tutorial**](../tutorials/relations/one-to-many-relations) for a detailed example of One to Many relation integration in a mobile project.
+Voir le [**tutoriel des relations 1 vers N**](../tutorials/relations/one-to-many-relations) pour un exemple détaillé d'intégration d'une relation 1 vers N dans un projet mobile.
 
 :::
 
 
-### Many to One relations
+### Les relations N vers 1
 
 **Many to one relations** can be used like any other field in the app creation process. When you select a Many to One relation in the field list, you can to select which field(s) from the related table to publish in your app:
 
@@ -118,7 +118,7 @@ See the [**Many to One relations tutorial**](../tutorials/relations/many-to-one-
 :::
 
 
-### Many to Many relations
+### Les relations N vers N
 
 Using the Structure page, you can publish Many to One and One to Many relations from your parent Many to One relations. It means that you can display Many to Many relations in your app and move directly from a List form to another List form.
 
@@ -129,7 +129,7 @@ See the [**Relation interactions**](../tutorials/relations/relation-interactions
 
 :::
 
-## Computed attributes
+## Champs calculés
 
 Whether you're working on Android or iOS, you can display [computed attributes](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#computed-attributes) in your app once it is generated, by configurating them from the project editor.
 

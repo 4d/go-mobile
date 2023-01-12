@@ -323,7 +323,7 @@ Zymosian, Elmer
 
 ```4d
 {
-    "name": "datasourcePush"
+    "name": "datasourcePush",
     "type": [
         "text"
     ],
@@ -334,7 +334,7 @@ Zymosian, Elmer
             "field": "LastName",
             "entityFormat": "%FirstName% %LastName% - %Job%",
             "search": "LastName",
-            "order": "descending" 
+            "sort": {"field": "LastName", "order":"descending"}  
         }
     }
 }
@@ -462,8 +462,8 @@ iOSアプリでは、フォームセクションで選択したテンプレー�
 
 ## これからどうする？
 
-* **アクション定義の仕方** について説明した [チュートリアル](../tutorials/actions/getting-started.md) があります。
+* こちらの [チュートリアル](../tutorials/actions/getting-started.md) では **アクション定義の手順** について説明しています。
 
 * カスタムテンプレートを作成するための **アクションタグの統合** について説明した [チュートリアル](../tutorials/actions/adding-actions-template.md) もあります。
 
-* こちらの [チュートリアル](../tutorials/actions/using-action-parameters.md) では **アクション引数の定義** について説明しています。
+* こちらの[チュートリアル](../tutorials/actions/using-action-parameters.md) では**アクション引数の定義** について説明しています。

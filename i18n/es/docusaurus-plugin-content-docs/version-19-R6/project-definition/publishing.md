@@ -34,7 +34,7 @@ The user will be able to [change the server url](#modify-remote-url) from the mo
 The **Edit...** button opens the **Web** page of the 4D settings dialog box. Use this page to define the following settings to embed in the mobile app:
 
 - **Enable HTTP** option and **HTTP port**.
-- **Enable HTTPS** option and **HTTP port**.
+- **Enable HTTPS** option and **HTTPS port**.
 
 :::nota
 

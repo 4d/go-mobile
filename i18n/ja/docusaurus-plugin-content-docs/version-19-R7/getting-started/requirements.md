@@ -64,7 +64,7 @@ title: 要件
 | 17 R2        | 4.1   | 11.3 | 9.3.1  | 10.13.2 |
 </details>
 
-:::note Compatibility
+:::note 互換性
 
 4D v19 R3/4D v19.2以降用にアップデートされたフォーマッターは、以前の 4Dリリースと互換性がありません。
 
@@ -98,7 +98,7 @@ iOS 16 および Xcode 14 では、デバイスで開発およびデバッグが
 </details>
 
 
-:::note notes
+:::note 注記
 
 - Android アプリは Mac と Windows のどちらでもビルド可能です。
 

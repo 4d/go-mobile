@@ -1,6 +1,6 @@
 ---
 id: forms
-title: Forms
+title: Formulaires
 ---
 
 The Forms page allows you to select both list and detail forms for each published table. You can select one list form and one detail form per published table.

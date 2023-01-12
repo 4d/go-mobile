@@ -1,6 +1,6 @@
 {
   "version.label": {
-    "message": "次へ",
+    "message": "次",
     "description": "The label for version current"
   },
   "sidebar.docs.category.Getting started": {
@@ -82,5 +82,9 @@
   "sidebar.tutorials.category.Apple Developer Program": {
     "message": "Apple Developer Program",
     "description": "The label for category Apple Developer Program in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Creating Login forms": {
+    "message": "ログインフォームの作成",
+    "description": "The label for category Creating Login forms in sidebar tutorials"
   }
 }

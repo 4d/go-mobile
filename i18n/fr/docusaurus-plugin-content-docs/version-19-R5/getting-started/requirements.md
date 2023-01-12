@@ -60,7 +60,7 @@ Tableau de versions :
 
 :::note Compatibility note
 
-Formatters updated for 4D v19 R3/4D v19.2 and higher are not compatible with previous 4D releases.
+Les formateurs mis à jour pour 4D v19 R3/4D v19.2 et plus ne sont pas compatibles avec les versions précédentes de 4D.
 
 :::
 
@@ -76,9 +76,9 @@ Tableau de versions :
 
 :::note notes
 
-- You can build Android apps both on Mac and PC.
+- Vous pouvez créer des applications Android sur Mac et sur PC.
 
-- We highly recommend not to run a VM-accelerated emulator inside another virtual machine (VM), such as a VM hosted by VirtualBox. Click [here](https://developer.android.com/studio/run/emulator-acceleration) for more details.
+- Nous recommandons vivement de ne pas exécuter un émulateur accéléré par VM à l'intérieur d'une autre machine virtuelle (VM), telle que la VM hébergée par VirtualBox. Cliquez [ici](https://developer.android.com/studio/run/emulator-acceleration) pour plus de détails.
 
 :::
 

@@ -1,17 +1,17 @@
 ---
 id: publishing
-title: Publishing
+title: Publication
 ---
 
-This page gives you access to your app's publishing settings and special mobile features:
+Cette page vous donne accès aux paramètres de publication de votre application et aux fonctionnalités mobiles spéciales :
 
 
 ![Publishing section](img/publishing.png)
 
 
-## Production URL
+## URL de production
 
-URL of the Web Server on which mobile apps will connect to read and write data, in production context. You can enter any valid address, i.e.:
+URL du serveur Web sur lequel les applications mobiles se connecteront pour lire et écrire des données, dans un contexte de production. Vous pouvez saisir n'importe quelle adresse valide, par exemple :
 
 ```
 https://my.wesbsite.com
@@ -19,75 +19,75 @@ http://my.website.com:9200
 www.website.com/mobile
 ```
 
-During the development phase, you can leave this area empty and set the [Data source](data.md) to **Current data file**.
+Pendant la phase de développement, vous pouvez laisser cette zone vide et définir la [Source de données](data.md) comme **Fichier de données courant**.
 
 :::tip
 
-The user will be able to [change the server url](#modify-remote-url) from the mobile device.
+L'utilisateur pourra [modifier l'url du serveur ](#modify-remote-url) à partir de l'appareil mobile.
 
 :::
 
 
 
-## Web Server Settings
+## Paramètres du serveur Web
 
-The **Edit...** button opens the **Web** page of the 4D settings dialog box. Use this page to define the following settings to embed in the mobile app:
+Le bouton **Éditer...** ouvre la page **Web** de la boîte de dialogue des paramètres 4D. Utilisez cette page pour définir les paramètres suivants à intégrer dans l'application mobile :
 
-- **Enable HTTP** option and **HTTP port**.
-- **Enable HTTPS** option and **HTTP port**.
+- L'option **Activer HTTP** et **port HTTP**.
+- **Enable HTTPS** option and **HTTPS port**.
 
 :::note
 
-If both HTTP and HTTPS are enabled, HTTP is used.
+Si HTTP et HTTPS sont tous les deux activés, HTTP est utilisé.
 
 :::
 
-Activating the HTTPS port requires that you installed a valid [TLS certificate](https://developer.4d.com/docs/Admin/tls.html). You can create test certificates with 4D.
+L'activation du port HTTPS nécessite que vous ayez installé un [certificat TLS](https://developer.4d.com/docs/Admin/tls.html) valide. Vous pouvez créer des certificats d'essai avec 4D.
 
-These settings are taken into account only if the [production URL](#production-url) is defined. Otherwise, the local IP address is used.
+Ces paramètres ne sont pris en compte que si l'[URL de production](#production-url) est définie. Sinon, l'adresse IP locale est utilisée.
 
 :::note
 
-The Simulator always works locally (127.0.0.1 or localhost).
+Le simulateur fonctionne toujours localement (127.0.0.1 ou localhost).
 
 :::
 
-## How it looks on a device
+## Aperçu sur l'appareil
 
-### Settings screen
+### Écran de paramètres
 
-A Settings screen is available from the tab bar. You can also find it from the More tab if necessary (*i.e.*, your app has more than four tables).
+Un écran de paramètres est disponible dans la barre d’onglets. Vous pouvez également le trouver sous l’onglet "More" si nécessaire (*à savoir*, votre application contient plus de quatre tables).
 
-The Settings screen allows you to:
+L'écran Paramètres vous permet de :
 
-* Consult your remote URL and its current state
-* Log out (if connected as an Authorized User)
+* Consultez votre URL distante ainsi que son état actuel
+* De vous déconnecter (si vous étiez connecté en tant qu'utilisateur autorisé)
 
 ![Login & Settings screen](img/Login-Settings-screen-Publishing-section-4D-for-iOS.png)
 
 
-### Modify remote url
+### Modifier l'url distant
 
-You can easily update your remote url from iPhone Settings :
+Vous pouvez facilement mettre à jour votre URL distante à partir des Paramètres de l'iPhone :
 
-* Open your iPhone Settings
-* Select the app you want the remote url to be updated
-* Switch on the "Reset server address" option
+* Accédez aux paramètres de votre iPhone
+* Sélectionnez l'application pour laquelle vous souhaitez que l'URL distante soit mise à jour
+* Activez l'option "Réinitialiser l'adresse du serveur"
 
 ![Reset remote url](img/Reset-remote-url.png)
 
-* Then restart your app to reset the server address
-* And finally define the new remote url
+* Puis redémarrez votre application pour réinitialiser l'adresse du serveur
+* Enfin, définissez la nouvelle URL distante
 
 ![Update remote url](img/Update-remote-url.png)
 
 
-## Features
+## Fonctionnalités
 
-This area allows you to select and configure several mobile app's special features. These features are documented in dedicated sections:
+Cette zone vous permet de sélectionner et de configurer plusieurs fonctionnalités spéciales de l'application mobile. Ces fonctionnalités sont documentées dans des sections dédiées :
 
 - [Authentication](../special-features/authentication.md)
 - [Push notifications](../special-features/push-notification.md)
-- [Deep linking](../special-features/deep-linking)
+- [Lien profond](../special-features/deep-linking)
 
 

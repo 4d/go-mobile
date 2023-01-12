@@ -3,149 +3,149 @@ id: structure
 title: Structure
 ---
 
-This page displays all of the tables and fields that are exposed as REST resources in the 4D database, including relation attributes (based upon many-to-one and one-to-many relations). In fact, the page displays a view similar to [ORDA's datastore](https://developer.4d.com/docs/ORDA/overview.html).
+Cette page affiche toutes les tables et tous les champs qui sont exposés en tant que ressources REST dans la base de données 4D, y compris les attributs de relation (basés sur les relations plusieurs à un et un à plusieurs). En fait, la page affiche une vue similaire à celle du [datastore ORDA](https://developer.4d.com/docs/ORDA/overview.html).
 
 ![Structure section](img/Structure-section-4D-for-iOS.png)
 
 
-Use this page to define a subset of your physical structure to replicate for mobile devices by selecting the specific tables and fields to publish.
+Utilisez cette page pour définir un sous-ensemble de votre structure physique à répliquer pour les appareils mobiles en sélectionnant les tables et les champs spécifiques à publier.
 
-- Published tables will be automatically added as tabs of your app.
-- Published scalar fields will be available when defining your [list and detail forms](https://developer.4d.com/go-mobile/docs/project-definition/forms/).
-- Published relation fields (many-to-one and one-to-many) will be available when defining your [list and detail forms](https://developer.4d.com/go-mobile/docs/project-definition/forms/) and come with additional navigation features such as a Relation button.
+- Les tables publiées seront automatiquement ajoutées comme onglets de votre application.
+- Les champs scalaires publiés seront disponibles lors de la définition de vos [formulaires liste et formulaires détaillés](https://developer.4d.com/go-mobile/docs/project-definition/forms/).
+- Les champs de liens publiés (N vers 1 et 1 vers N) seront disponibles lors de la définition de vos [formulaires liste et formulaires détaillés](https://developer.4d.com/go-mobile/docs/project-definition/forms/) et sont dotés de fonctionnalités de navigation supplémentaires comme un bouton Relation.
 
 
 :::note
 
-The following tables and fields are not listed in this page:
+Les tables et champs suivants ne sont pas listés dans cette page :
 
-- tables and fields that do not comply with [ORDA rules](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
-- tables and fields whose name start with "`__`" (double underscore).
+- Les tables et champs qui ne sont pas conformes aux règles d'[ORDA](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
+- Les tables et champs dont le nom commence par "`__`" (double tiret bas).
 
 :::
 
 :::note
 
-Only computed attributes with values that change over time - only depending on other attributes of the same DataClass - will be updated on the mobile app.
+Seuls les attributs calculés dont les valeurs évoluent dans le temps - dépendant uniquement d'autres attributs de la même DataClass - seront mis à jour sur l'application mobile.
 
 :::
 
-## Selecting tables and fields to publish
+## Sélection des tables et des champs à publier
 
-A table is published when at least one of its fields is published. When a table is published, it is displayed in **bold**.
+Une table est publiée lorsqu'au moins un de ses champs est publié. Lorsqu'une table est publiée, elle est affichée en **gras**.
 
-To select a field to publish, click on a table name then click on the field in the rightmost list. You can also:
+Pour sélectionner un champ à publier, cliquez sur un nom de table puis cliquez sur le champ dans la liste à droite. Vous pouvez également :
 
-- press the **spacebar** to select/unselect a field
-- use **Ctrl+click** to select all fields
-- use **Publish** and **Publish all** from the Fields list local menu.
+- Appuyez sur la **barre d'espace** pour sélectionner/désélectionner un champ
+- Utilisez **Ctrl+clic** pour sélectionner tous les champs
+- Utilisez **Publier** et **Tout publier** dans le menu local de la liste des champs.
 
 
-### Filtering lists
+### Filtrage des listes
 
-When a list has the focus, you can filter its contents using the Search area and a local menu:
+Lorsqu'une liste a le focus, vous pouvez filtrer son contenu en utilisant la zone de recherche et un menu local :
 
 ![Filter](img/filter.png)
 
-- **Search** area: enter the characters to search within table or field names
-- **Sort by table name**/**Sort by field name**: sort the list by name. By default, lists are sorted by creation date
-- **Only published tables**/**Only published fields**: show only tables or fields that have been selected (published)
+- Zone de **Recherche** : entrez les caractères à rechercher dans les noms de tables ou de champs
+- **Trier par nom de table**/**Trier par nom de champ**: trier la liste par nom. Par défaut, les listes sont triées par date de création
+- **Seulement les tables publiées**/**Seulement les champs publiés**: afficher uniquement les tables ou les champs qui ont été sélectionnés (publiés)
 
 
-## Supported field types
+## Types de champs pris en charge
 
-The mobile editor automatically displays the list of fields that are eligible to the mobile app, depending on their type:
+L'éditeur mobile affiche automatiquement la liste des champs qui sont éligibles à l'application mobile, en fonction de leur type :
 
 ![Fields](img/fields.png)
 
-- All [4D scalar field types](https://developer.4d.com/docs/Concepts/data-types.html) except [BLOB](https://developer.4d.com/docs/Concepts/blob.html).
-- [Object fields](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
-- [Computed attributes](#computed-attributes)
-- [Alias attributes](#alias-attributes) returning **scalar values** (displayed in *italics*).
-- Relation attributes (Many-to-one and One-to-many) are supported and can be selected just as fields. They have specific icons:
-    - Many to one relation icon:  ![relation1](img/manyto1.png)
-    - One to many relation icon: ![relationN](img/1tomany.png)
+- Tous les [types de champs scalaires 4D](https://developer.4d.com/docs/Concepts/data-types.html) sauf [BLOB](https://developer.4d.com/docs/Concepts/blob.html).
+- [Les champs objet](https://doc4d.github.io/go-mobile/docs/next/project-definition/structure/#object-attributes)
+- [Champs calculés](#computed-attributes)
+- [Les attributs d'alias](#alias-attributes) renvoyant **des valeurs scalaires** (affichées en *italique*).
+- Les attributs de relation (N vers 1 et 1 vers N) sont pris en charge et peuvent être sélectionnés comme des champs. Ils ont des icônes spécifiques :
+    - Icône du lien N vers 1 :  ![relation1](img/manyto1.png)
+    - Icône du lien 1 vers N : ![relationN](img/1tomany.png)
 
 :::info
 
-The names are based upon the relation names in the 4D Structure editor, see the [ORDA Structure mapping page](https://developer.4d.com/docs/ORDA/dsmapping.html#structure-mapping).
+Les noms sont basés sur les noms des liens dans l'éditeur de structure 4D, voir la page [Correspondance de la structure ORDA](https://developer.4d.com/docs/fr/ORDA/dsmapping.html#structure-mapping).
 
 :::
 
 
-## Using relations
+## Utilisation des relations
 
-### One to Many relations
+### Les relations 1 vers N
 
-You can include **One to Many relations** in your projects and display a list of related fields in a new page of your app.
+Vous pouvez inclure **des relations 1 vers N** dans vos projets et afficher une liste de champs liés dans une nouvelle page de votre application.
 
-All you have to do is:
+Il vous suffit de :
 
-* publishing at least one field of the target (Many) table
-* publishing the relation from the source (One) table
+* publier au moins un champ de la table cible (N)
+* publier la relation à partir de la table source (1)
 
 ![Drop relation in detail form](img/Structure-1-to-N-relations-4D-for-iOS.png)
 
-Then, when your related fields are published, they can be used like any other field. So you will be able to:
+Puis, lorsque vos champs liés sont publiés, ils peuvent être utilisés de la même manière que les autres champs. Vous pourrez ainsi :
 
-* Define relations properties in the [Labels and Icons](labels-and-icons.md) page.
-* Drop the One to Many relation in a Detail form from the [Forms](forms.md) page to create a link between a detail form and a related table. A Relation button will be automatically created in detail forms to go straight to the related view.
+* Définir les propriétés des relations dans la page [Libellés et icônes](labels-and-icons.md).
+* Déposer la relation 1 vers N dans un formulaire détaillé depuis la page [Formulaires](forms.md) pour créer un lien entre un formulaire détaillé et une table liée. Un bouton Relation sera automatiquement créé dans les formulaires détaillés pour accéder directement à la vue liée.
 
 :::tip Tutorial
 
-See the [**One to Many relations tutorial**](../tutorials/relations/one-to-many-relations) for a detailed example of One to Many relation integration in a mobile project.
+Voir le [**tutoriel des relations 1 vers N**](../tutorials/relations/one-to-many-relations) pour un exemple détaillé d'intégration d'une relation 1 vers N dans un projet mobile.
 
 :::
 
 
-### Many to One relations
+### Les relations N vers 1
 
-**Many to one relations** can be used like any other field in the app creation process. When you select a Many to One relation in the field list, you can to select which field(s) from the related table to publish in your app:
+**Les relations N vers 1** peuvent être utilisées comme n'importe quel autre champ dans le processus de création d'une application. Lorsque vous sélectionnez une relation N vers 1 dans la liste des champs, vous pouvez sélectionner le(s) champ(s) de la table correspondante à publier dans votre application :
 
 ![Publish related tables](img/manyto1-tip.png)
 
-You just need to click on the relation name, then select the field(s):
+Il vous suffit de cliquer sur le nom de la relation, puis de sélectionner le(s) champ(s) :
 
 ![Publish related tables](img/manyto1-select.png)
 
-By default, all eligible fields of the related table are published.
+Par défaut, tous les champs éligibles de la table correspondante sont publiés.
 
 :::tip Tutorial
 
-See the [**Many to One relations tutorial**](../tutorials/relations/many-to-one-relations) for a detailed example of Many to One relation integration in a mobile project.
+Voir le [**tutoriel des relations N vers 1**](../tutorials/relations/many-to-one-relations) pour un exemple détaillé d'intégration d'une relation N vers 1 dans un projet mobile.
 
 :::
 
 
-### Many to Many relations
+### Les relations N vers N
 
-Using the Structure page, you can publish Many to One and One to Many relations from your parent Many to One relations. It means that you can display Many to Many relations in your app and move directly from a List form to another List form.
+À l'aide de la page Structure, vous pouvez publier des relations N vers 1 et N vers 1 à partir de vos relations N vers 1 parentes. Cela signifie que vous pouvez afficher des relations N vers N dans votre application et passer directement d'un formulaire liste à un autre formulaire liste.
 
 
 :::tip Tutorial
 
-See the [**Relation interactions**](../tutorials/relations/relation-interactions) for a detailed example of Many to One relation integration in a mobile project.
+Voir les [**Interactions des relations**](../tutorials/relations/relation-interactions) pour un exemple détaillé d'intégration d'une relation N vers 1 dans un projet mobile.
 
 :::
 
-## Computed attributes
+## Champs calculés
 
-Whether you're working on Android or iOS, you can display [**computed attributes**](https://developer.4d.com/docs/ORDA/ordaClasses.html#computed-attributes-1) in your app once it is generated, by configurating them from the project editor. Computed attributes are the result of several fields combined into one field. You will then be able to use this computed attribute as any other field in your mobile app creation process, which means that you will visualize and publish it from the Structure section.
+Que vous travailliez sur Android ou iOS, vous pouvez afficher les [**champs calculés**](https://developer.4d.com/docs/fr/ORDA/ordaClasses.html#computed-attributes-1) dans votre application une fois qu'elle est générée, en les configurant depuis l'éditeur de projet. Les champs calculés sont le résultat de plusieurs champs combinés en un seul champ. Vous pourrez alors utiliser ce champ calculé comme n'importe quel autre champ dans le processus de création de votre application mobile, c'est-à-dire que vous allez pouvoir le visualiser et le publier à partir de la section Structure.
 
 :::info
 
-In mobile projects, only **scalar** computed attributes are supported (i.e. computed attributes where the [`get` function](https://developer.4d.com/docs/ORDA/ordaClasses.html#function-get-attributename) returns a scalar value (text, boolean, date, time, number)).
+Dans les projets mobiles, seuls les champs calculés **scalaires** sont pris en charge (c'est-à-dire les champs calculés pour lesquels [`get` function](https://developer.4d.com/docs/ORDA/ordaClasses.html#function-get-attributename) renvoie une valeur scalaire (texte, booléen, date, heure, nombre)).
 
 :::
 
 
-For instance, instead of having two splitted attributes such as the street number and the street name, or the first name and the last name, you can gather both of them in a single attribute that you can name "fullAddress" and "fullName".
+Par exemple, au lieu d'avoir deux champs séparés comme le numéro de rue et le nom de la rue, ou le prénom et le nom de famille, vous pouvez les rassembler dans un seul champ que vous pouvez nommer "fullAddress" et "fullName".
 
-The process is actually quite simple!
+Le processus est en fait assez simple !
 
-### 4D Side
+### Côté 4D
 
-In your code, specify the attributes you want to use and the computed attribute you want to get, using the [*Class extends*](https://developer.4d.com/docs/Concepts/classes.html#class-extends-classname) and [exposed Function](https://developer.4d.com/docs/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) syntax, as follows:
+Dans votre code, spécifiez les attributs que vous voulez utiliser et le champ calculé que vous voulez obtenir, en utilisant la syntaxe [*Class extends*](https://developer.4d.com/docs/Concepts/classes.html#class-extends-classname) et [exposed Function](https://developer.4d.com/docs/ORDA/ordaClasses.html#exposed-vs-non-exposed-functions) , comme suit :
 
 ```4d 
 Class extends Entity
@@ -176,47 +176,47 @@ Else
 End if
 ```
 
-### Project editor side
+### Côté éditeur de projet
 
-In the project editor, once the code is written, your computed attributes become available, ready to be published and used as any other field in the creation process:
+Dans l'éditeur de projet, une fois que le code est écrit, vos champs calculés deviennent disponibles, prêts à être publiés et utilisés comme tout autre champ dans le processus de création :
 
 
-In the **Structure** panel:
+Dans le panneau **Structure** :
 
-The `exposed` computed attributes are displayed in the list of attributes of a `dataclass`.
+Les champs calculés `exposés` sont affichés dans la liste des attributs d'une `dataclass`.
 
 ![Structure section](img/Structure.png)
 
-In the **Label & Icons** panel (Icons/short and long labels/formats):
+Dans le panneau **Libellé et Icônes** (icônes/libellés courts et longs) :
 
 ![Labels&icons section](img/labels-and-icons.png)
 
-In the **Forms** panel:
+Dans le panneau **Formulaires** :
 
-The computed attributes present in the data model are, like the fields, available in the list of fields of the Forms panel (list and detail). They behave in the same way as the storage attributes of the datastore.
+Les champs calculés présents dans le modèle de données sont, comme les autres champs, disponibles dans la liste des champs du panneau Formulaires (liste et détaillés). Ils se comportent de la même manière que les attributs de stockage du datastore.
 
 ![Forms section](img/Forms.png)
 
-In the **Data** panel, computed attributes are displayed in the list linked to the "Fields" button of the query filter box.
+Dans le panneau **Données**, les champs calculés sont affichés dans la liste liée au bouton "Champs" de la zone Filtre de recherche.
 
 :::note 4D for iOS
 
-- Computed attributes can be used with Sort actions.
-- A computed attribute without a setter (readOnly) is not available for an Add or Edit action.
-- When Add or Edit presets actions are created (if the setter is available and if 4D allows it), computed attributes parameters shall be available when linked to a field.
+- Les champs calculés peuvent être utilisés avec des actions de tri.
+- Un champ calculé sans un paramètre (readOnly) n'est pas disponible pour une action d'ajout ou de modification.
+- Lorsque des actions d'ajout ou de modification de préréglages sont créées (si le paramètre est disponible et si 4D le permet), les paramètres des champs calculés doivent être disponibles lorsqu'ils sont liés à un champ.
 
 :::note 4D for iOS
 
-### Mobile app side
+### Côté application mobile
 
-In the generated mobile application, on iOS or Android, both single attributes and computed attributes are displayed.
+Dans l'application mobile générée, sur iOS ou Android, les attributs simples et les champs calculés sont affichés.
 
 ![final app](img/final-app.png)
 
 
-## Alias attributes
+## Attributs de type alias
 
-On Android or iOS, you can use **scalar** [**alias attributes**](https://developer.4d.com/docs/ORDA/ordaClasses.html#alias-attributes) in your mobile app. An alias attribute is built above another attribute of the data model, named *target* attribute. The target attribute can belong to a related dataclass (available through any number of relation levels) or to the same dataclass. An alias attribute stores no data, but the path to its target attribute.
+Sur Android ou iOS, vous pouvez utiliser [**les attributs de type alias**](https://developer.4d.com/docs/fr/ORDA/ordaClasses.html#alias-attributes)** scalaires** dans votre application mobile. An alias attribute is built above another attribute of the data model, named *target* attribute. The target attribute can belong to a related dataclass (available through any number of relation levels) or to the same dataclass. An alias attribute stores no data, but the path to its target attribute.
 
 Alias attibutes must be **exposed** to be available to the editor. They are displayed in *italics*.
 

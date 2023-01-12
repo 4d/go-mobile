@@ -31,7 +31,6 @@ module.exports = {
       type: 'category',
       label: 'Smart features',
       items: [
-	        'special-features/authentication', 
 			'special-features/session-management', 
 			'special-features/push-notification',
 			'special-features/deep-linking'			
@@ -59,7 +58,6 @@ module.exports = {
   ],
   tutorials: [
     "tutorials/create-your-first-app",
-	"tutorials/custom-login-form",
     {
       type: "category",
       label: "Creating List forms",
@@ -83,6 +81,14 @@ module.exports = {
         "tutorials/creating-detail-forms/detail-form-template-svg",
         "tutorials/creating-detail-forms/detail-form-template-storyboard",
 		"tutorials/creating-detail-forms/detail-form-template-layout",
+      ],
+    },
+	{
+      type: "category",
+      label: "Creating Login forms",
+      items: [
+        "tutorials/login-forms/email",
+		"tutorials/login-forms/custom-login-form",
       ],
     },
     {
