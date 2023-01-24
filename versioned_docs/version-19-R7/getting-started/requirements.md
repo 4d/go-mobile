@@ -29,16 +29,16 @@ System requirements are the same as [4D's minimum system requirements](https://u
 
 [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) installed on your Mac (optional). 
 
-Version table:
+Installing **Xcode** is required. Version table:
 
 | 4D | Swift | iOS | Xcode | macOS |
 |---|---|---|---|---|
-| 19 R7 | 5.7   | 16.0 |[14.0](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14/Xcode_14.xip) |  12.5|
+| 19 R8 | 5.7.2 | 16.0 |[14.2](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14.2/Xcode_14.2.xip) |  12.5|
+| 19 R7 | 5.7.1 | 16.0 |[14.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14.1/Xcode_14.1.xip) |  12.5|
 | 19 R6 | 5.7   | 16.0 |[14.0](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14/Xcode_14.xip) |  12.5|
 | 19 R5 | 5.6.1 | 15.5 |[13.4](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13.4/Xcode_13.4.xip)| 12.2|
-| 19.x   | 5.5 | 15.0 | 13.1 | 11.3|
-| 18.x  | 5.2 | 13.4|11.4|10.15.2|
-
+| 19.x  | 5.5   | 15.0 | 13.1 | 11.3|
+| 18.x  | 5.2   | 13.4 | 11.4 |10.15.2|
 
 <details><summary>Version history</summary>
 
@@ -79,19 +79,20 @@ You need essentially to toggle the "Developer Mode" switch in the "Settings" app
 
 ## Android
 
-Version table:
+Installing **Android Studio** (which includes **Android SDK**) is required. Version table:
 
 | 4D | Android Studio| Windows |
 |---|---|---|
+| 19 R8 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
 | 19 R7 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
 | 19 R6 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
-| 19 R5 | [Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 
 
 <details><summary>Version history</summary>
 
 | 4D | Android Studio| Windows |
 |---|---|---|
+| 19 R5 | [Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 | 19 R4 | Arctic fox 2020.3.1 | Windows 10 64-bit|
 | 19 R3 | Arctic fox 2020.3.1 | Windows 10 64-bit |
 | 19 R2 | 4.1.2 | Windows 10 64-bit |
@@ -106,9 +107,20 @@ Version table:
 
 :::
 
-4D for Android requires the Android SDK, including Android Studio. If not installed, it will be automatically downloaded at the launch of the 4D mobile editor on Windows:
+### Android Studio configuration
 
-![sdk](img/install-android.png)
+You need to configure your Android Studio to build and debug your projects. Open the Android Studio **Preferences**, select the **Android SDK/SDK Tools** tab and make sure you have checked and installed the following elements:
+
+- **Android SDK Build Tools 31**
+- **Android SDK Command-line Tools (latest)**. By selecting this checkbox, you will be able to visualize all your virtual devices directly from the 4D mobile Project Editor.
+- **Android Emulator**
+- **Android SDK Platform Tools**
+- **Google USB driver** (only on Windows, required to debug from an Android device)
+- **Intel x86 Emulator Accelerator (HAXM installer)**
+
+![Android-Studio-Settings](img/AndroidCaptureSetting.png)
+
+
 
 
 
