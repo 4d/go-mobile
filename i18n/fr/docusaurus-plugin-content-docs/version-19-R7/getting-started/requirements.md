@@ -29,16 +29,15 @@ Les prérequis système sont identiques aux [prérequis système basiques de 4D]
 
 [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) installé sur votre Mac (facultatif).
 
-Tableau de versions :
+Installing **Xcode** is required. Version table:
 
 | 4D    | Swift | iOS  | Xcode                                                                                                         | macOS   |
 | ----- | ----- | ---- | ------------------------------------------------------------------------------------------------------------- | ------- |
-| 19 R7 | 5.7   | 16.0 | [14.0](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14/Xcode_14.xip)     | 12.5    |
+| 19 R7 | 5.7.1 | 16.0 | [14.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14.1/Xcode_14.1.xip) | 12.5    |
 | 19 R6 | 5.7   | 16.0 | [14.0](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14/Xcode_14.xip)     | 12.5    |
 | 19 R5 | 5.6.1 | 15.5 | [13.4](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13.4/Xcode_13.4.xip) | 12.2    |
 | 19.x  | 5.5   | 15.0 | 13.1                                                                                                          | 11.3    |
 | 18.x  | 5.2   | 13.4 | 11.4                                                                                                          | 10.15.2 |
-
 
 <details><summary>Historique</summary>
 
@@ -79,7 +78,7 @@ Vous devez essentiellement basculer le "Developer Mode" interrupteur dans l'appl
 
 ## Android
 
-Tableau de versions :
+Installing **Android Studio** (which includes **Android SDK**) is required. Version table:
 
 | 4D    | Android Studio                                                      | Windows           |
 | ----- | ------------------------------------------------------------------- | ----------------- |
@@ -106,9 +105,20 @@ Tableau de versions :
 
 :::
 
-4D for Android nécessite le SDK Android, y compris Android Studio. S'il n'est pas installé, il sera automatiquement téléchargé au lancement de l'éditeur mobile 4D sur Windows :
+### Android Studio configuration
 
-![sdk](img/install-android.png)
+You need to configure your Android Studio to build and debug your projects. Open the Android Studio **Preferences**, select the **Android SDK/SDK Tools** tab and make sure you have checked and installed the following elements:
+
+- **Android SDK Build Tools 31**
+- **Android SDK Command-line Tools (latest)**. By selecting this checkbox, you will be able to visualize all your virtual devices directly from the 4D mobile Project Editor.
+- **Android Emulator**
+- **Android SDK Platform Tools**
+- **Google USB driver** (only on Windows, required to debug from an Android device)
+- **Intel x86 Emulator Accelerator (HAXM installer)**
+
+![Android-Studio-Settings](img/AndroidCaptureSetting.png)
+
+
 
 
 

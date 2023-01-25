@@ -7,7 +7,7 @@ title: On Mobile App Action
 
 | 引数         | タイプ    |    | 詳細                 |
 | ---------- | ------ | -- | ------------------ |
-| mobileInfo | Object | -> | モバイルアプリから渡された情報    |
+| mobileInfo | Object | <- | モバイルアプリから渡された情報    |
 | result     | Object | <- | アクションステータス & データ同期 |
 
 

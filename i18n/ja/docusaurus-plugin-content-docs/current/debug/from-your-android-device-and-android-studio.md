@@ -28,16 +28,3 @@ title: Android デバイスから
 
 :::
 
-
-### Android Studio の設定
-
-また、Android のデベロッパーは、Android Studio の設定をおこなう必要があります。これには、Android Studio ＞ Preferences... で設定ダイアログを開き、Appearance ＆ Behavior ＞ System Settings ＞ Android SDK の項目で SDK Tools タブを選択します。 利用可能な SDK デベロッパーツールの一覧より、次のツールにチェックを入れます:
-
-- **Android SDK Build Tools 31**
-- **Android SDK Command-line Tools (latest)**。 このチェックボックスを選択すると、4Dモバイルプロジェクトエディターから直接、すべての仮想デバイスを視覚化することができます。
-- **Android Emulator**
-- **Android SDK Platform Tools**
-- **Google USB driver** (Windowsのみ)
-- **Intel x86 Emulator Accelerator (HAXM installer)**
-
-![Android Studio の設定](img/AndroidCaptureSetting.png)

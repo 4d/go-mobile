@@ -7,7 +7,7 @@ title: On Mobile App Action
 
 | Paramètres | Type   |    | Description                                      |
 | ---------- | ------ | -- | ------------------------------------------------ |
-| mobileInfo | Object | -> | Information passée par l'application mobile      |
+| mobileInfo | Object | <- | Information passée par l'application mobile      |
 | result     | Object | <- | Statut de l'action & synchronisation des données |
 
 
