@@ -29,7 +29,7 @@ Les prérequis système sont identiques aux [prérequis système basiques de 4D]
 
 [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) installé sur votre Mac (facultatif).
 
-Tableau de versions :
+Installing **Xcode** is required. Version table:
 
 | 4D    | Swift | iOS  | Xcode                                                                                                         | macOS   |
 | ----- | ----- | ---- | ------------------------------------------------------------------------------------------------------------- | ------- |
@@ -79,22 +79,23 @@ Vous devez essentiellement basculer le "Developer Mode" interrupteur dans l'appl
 
 ## Android
 
-Tableau de versions :
+Installing **Android Studio** (which includes **Android SDK**) is required. Version table:
 
-| 4D    | Android Studio                                                      | Windows           |
-| ----- | ------------------------------------------------------------------- | ----------------- |
-| 19 R7 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive)    | Windows 10 64-bit |
-| 19 R6 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive)    | Windows 10 64-bit |
-| 19 R5 | [Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
+| 4D    | Android Studio                                                   | Windows           |
+| ----- | ---------------------------------------------------------------- | ----------------- |
+| 19 R8 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
+| 19 R7 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
+| 19 R6 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 
 
 <details><summary>Historique</summary>
 
-| 4D    | Android Studio      | Windows           |
-| ----- | ------------------- | ----------------- |
-| 19 R4 | Arctic fox 2020.3.1 | Windows 10 64-bit |
-| 19 R3 | Arctic fox 2020.3.1 | Windows 10 64-bit |
-| 19 R2 | 4.1.2               | Windows 10 64-bit |
+| 4D    | Android Studio                                                      | Windows           |
+| ----- | ------------------------------------------------------------------- | ----------------- |
+| 19 R5 | [Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
+| 19 R4 | Arctic fox 2020.3.1                                                 | Windows 10 64-bit |
+| 19 R3 | Arctic fox 2020.3.1                                                 | Windows 10 64-bit |
+| 19 R2 | 4.1.2                                                               | Windows 10 64-bit |
 </details>
 
 
@@ -106,9 +107,20 @@ Tableau de versions :
 
 :::
 
-4D for Android nécessite le SDK Android, y compris Android Studio. S'il n'est pas installé, il sera automatiquement téléchargé au lancement de l'éditeur mobile 4D sur Windows :
+### Android Studio configuration
 
-![sdk](img/install-android.png)
+You need to configure your Android Studio to build and debug your projects. Open the Android Studio **Preferences**, select the **Android SDK/SDK Tools** tab and make sure you have checked and installed the following elements:
+
+- **Android SDK Build Tools 31**
+- **Android SDK Command-line Tools (latest)**. By selecting this checkbox, you will be able to visualize all your virtual devices directly from the 4D mobile Project Editor.
+- **Android Emulator**
+- **Android SDK Platform Tools**
+- **Google USB driver** (only on Windows, required to debug from an Android device)
+- **Intel x86 Emulator Accelerator (HAXM installer)**
+
+![Android-Studio-Settings](img/AndroidCaptureSetting.png)
+
+
 
 
 
