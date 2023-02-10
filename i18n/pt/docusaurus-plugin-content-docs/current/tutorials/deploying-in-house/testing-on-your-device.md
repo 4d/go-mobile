@@ -74,7 +74,7 @@ Pode instalar e testar sua aplicação móvel em um aparelho conectado.
 
 :::info
 
-This step requires that you have enabled the [Apple Device Developer Mode](../getting-started/requirements.md#apple-device-developer-mode).
+This step requires that you have enabled the [Apple Device Developer Mode](../../getting-started/requirements.md#apple-device-developer-mode).
 
 :::
 

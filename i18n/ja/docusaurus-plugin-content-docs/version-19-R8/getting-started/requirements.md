@@ -29,7 +29,7 @@ title: 要件
 
 [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) が Mac にインストールされていること (必須ではありません)。
 
-バージョン早見表:
+Installing **Xcode** is required. Version table:
 
 | 4D    | Swift | iOS  | Xcode                                                                                                         | macOS   |
 | ----- | ----- | ---- | ------------------------------------------------------------------------------------------------------------- | ------- |
@@ -79,22 +79,23 @@ iOS 16 および Xcode 14 では、デバイスで開発およびデバッグが
 
 ## Android
 
-バージョン早見表:
+Installing **Android Studio** (which includes **Android SDK**) is required. Version table:
 
-| 4D    | Android Studio                                                      | Windows           |
-| ----- | ------------------------------------------------------------------- | ----------------- |
-| 19 R7 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive)    | Windows 10 64-bit |
-| 19 R6 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive)    | Windows 10 64-bit |
-| 19 R5 | [Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
+| 4D    | Android Studio                                                   | Windows           |
+| ----- | ---------------------------------------------------------------- | ----------------- |
+| 19 R8 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
+| 19 R7 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
+| 19 R6 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 
 
 <details><summary>バージョン履歴</summary>
 
-| 4D    | Android Studio      | Windows           |
-| ----- | ------------------- | ----------------- |
-| 19 R4 | Arctic fox 2020.3.1 | Windows 10 64-bit |
-| 19 R3 | Arctic fox 2020.3.1 | Windows 10 64-bit |
-| 19 R2 | 4.1.2               | Windows 10 64-bit |
+| 4D    | Android Studio                                                      | Windows           |
+| ----- | ------------------------------------------------------------------- | ----------------- |
+| 19 R5 | [Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
+| 19 R4 | Arctic fox 2020.3.1                                                 | Windows 10 64-bit |
+| 19 R3 | Arctic fox 2020.3.1                                                 | Windows 10 64-bit |
+| 19 R2 | 4.1.2                                                               | Windows 10 64-bit |
 </details>
 
 
@@ -106,9 +107,20 @@ iOS 16 および Xcode 14 では、デバイスで開発およびデバッグが
 
 :::
 
-4D for Android は、Android Studio を含む Android SDK を必要とします。 Windows にインストールされていない場合は、4D mobile エディターの起動時に自動的にダウンロードされます。
+### Android Studio の設定
 
-![sdk](img/install-android.png)
+You need to configure your Android Studio to build and debug your projects. Open the Android Studio **Preferences**, select the **Android SDK/SDK Tools** tab and make sure you have checked and installed the following elements:
+
+- **Android SDK Build Tools 31**
+- **Android SDK Command-line Tools (latest)**。 このチェックボックスを選択すると、4Dモバイルプロジェクトエディターから直接、すべての仮想デバイスを視覚化することができます。
+- **Android Emulator**
+- **Android SDK Platform Tools**
+- **Google USB driver** (only on Windows, required to debug from an Android device)
+- **Intel x86 Emulator Accelerator (HAXM installer)**
+
+![Android Studio の設定](img/AndroidCaptureSetting.png)
+
+
 
 
 
