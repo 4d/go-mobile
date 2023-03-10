@@ -3,30 +3,23 @@ id: deep-linking
 title: Deep Linking
 ---
 
-:::info 4D for Android
-
-This feature is currently not available in 4D for Android.
-
-:::
-
-Thanks to the **deep linking** feature, you can share the content that you're currently viewing with all of your collegues. Here's an illustration demonstrating deep linking:
+Thanks to the **deep linking** feature, you can share the content that you're currently viewing with all of your colleagues. Here's an illustration demonstrating deep linking:
 
 ![Deep linking animation](img/4d-for-ios-deeplinking.gif)
 
-There are two ways to implement deep linking in iOS: **URL scheme** and **Universal Links**. While URL schemes are a well-known method for deep linking, Universal links are the new way that Apple has implemented to easily connect your webpage and your app under the same link.
+There are two ways to implement deep linking in mobile apps: **URL scheme** and **Universal Links**. While URL schemes are a well-known method for deep linking, Universal links are the new way that Apple has implemented to easily connect your webpage and your app under the same link.
 
 
 ## Comparison of deep linking modes
 
-### URL Scheme
-
 Here is a comparison between the two options which are available in the project editor:
+
+### URL Scheme
 
 | PROS  | CONS | 
 |---------------|----------------| 
 |Easy to implement|Always requires permission|
 |No extra backend required|Doesn't work if app isn't installed|
-|      			|Doesn't work in Android|
 
 ### Universal links
 
@@ -34,7 +27,6 @@ Here is a comparison between the two options which are available in the project 
 |---------------|----------------| 
 |Doesn't require permission|Static backend with SSL needed|
 |Doesn't open the browser|More complex to implement|
-|Compatible with Android|   |
 |Fallback URL if app isn't installed|   |
 
 ## Custom URL Scheme
@@ -98,9 +90,9 @@ Universal links provide several key benefits that aren't available with custom U
 
 * **Unique**: Unlike custom URL schemes, universal links can’t be claimed by other apps because they use standard HTTP or HTTPS links to your website.
 
-* **Secure**: When users install your app, iOS verifies that your website allows your app to open URLs on its behalf. Only you can create and upload the file granting this permission to your web server, so the association of your website with your app is secure.
+* **Secure**: When users install your app, iOS or Android verifies that your website allows your app to open URLs on its behalf. Only you can create and upload the file granting this permission to your web server, so the association of your website with your app is secure.
 
-* **Flexible**: Universal links work even when your app is not installed. In this case, tapping a link to your website opens the content in Safari.
+* **Flexible**: Universal links work even when your app is not installed. In this case, tapping a link to your website opens the content in a browser.
 
 * **Simple**: A single URL works for both your website and your app.
 
@@ -174,7 +166,7 @@ As you can see, this feature opens a large range of possibilities. Deep linking 
 
 :::tip
 
-Refer to the [**4D Mobile App Server** component documentation](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) for more information on how to combine push notifications and deep linking.
+Refer to the [**4D Mobile App Server** component documentation](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/PushNotification.md) for more information on how to combine push notifications and deep linking.
 
 :::
 
