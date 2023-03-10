@@ -3,49 +3,41 @@ id: deep-linking
 title: ディープリンク
 ---
 
-:::info 4D for Android
+Thanks to the **deep linking** feature, you can share the content that you're currently viewing with all of your colleagues. Here's an illustration demonstrating deep linking:
 
-この機能は 4D for Android では現在ご利用いただけません。
+![Deep linking animation](img/4d-for-ios-deeplinking.gif)
 
-:::
-
-**ディープリンク** 機能を使って、現在閲覧しているコンテンツを同僚と共有することができます。 ディープリンクの例をアニメーションで表しました:
-
-![ディープリンクアニメーション](img/4d-for-ios-deeplinking.gif)
-
-iOS でディープリンクを実装するには 2つの手法があります: **URLスキーム** と **ユニバーサルリンク**。 ディープリンクの方法として URLスキームがよく知られていますが、ユニバーサルリンクは、Webページとアプリを同じリンクで簡単につなげるための Apple が導入した新しい方法です。
+There are two ways to implement deep linking in mobile apps: **URL scheme** and **Universal Links**. While URL schemes are a well-known method for deep linking, Universal links are the new way that Apple has implemented to easily connect your webpage and your app under the same link.
 
 
 ## ディープリンク手法の比較
 
-### URLスキーム
+Here is a comparison between the two options which are available in the project editor:
 
-プロジェクトエディターで利用可能な 2つのディープリンク手法を比較してみましょう:
+### URLスキーム
 
 | 長所          | 短所                     |
 | ----------- | ---------------------- |
 | 実装が簡単       | 許可が常に必要                |
 | 追加のバックエンド不要 | アプリがインストールされていないと動作しない |
-|             | Android で動作しない         |
 
 ### ユニバーサルリンク
 
-| 長所                            | 短所               |
-| ----------------------------- | ---------------- |
-| 許可を必要としない                     | SSL の静的バックエンドが必要 |
-| ブラウザーを開かない                    | 実装が複雑            |
-| Android に対応                   |                  |
-| アプリがインストールされていない場合のフォールバックURL |                  |
+| 長所                                  | 短所               |
+| ----------------------------------- | ---------------- |
+| 許可を必要としない                           | SSL の静的バックエンドが必要 |
+| ブラウザーを開かない                          | 実装が複雑            |
+| Fallback URL if app isn't installed |                  |
 
 ## カスタムの URLスキーム
 
-最も単純なレベルでは、URLスキームは、ユーザーがアプリを他のアプリから開くことを可能にします。 しかし、URLスキームの真の威力は、アプリを開いたときに特定のアクションを実行できることにあります。
+At the simplest level, URL schemes allow users to open an app from other apps. But the true power of URL schemes is in the ability to perform specific actions as your app opens.
 
 
 
 ### プロジェクトエディターとカスタムURLスキーム
 
-モバイルアプリに URLスキームを組み込むのはとても簡単です。 例を見てみましょう:
+It's very simple to include an URL scheme to your mobile app. Let's see an example:
 
 1. [**アクション** ページ](../project-definition/actions.md) で **共有** プリセットアクションを選択し、スコープを選択します:
     *   カレントエンティティ: 詳細フォームのコンテンツを共有します
@@ -53,7 +45,7 @@ iOS でディープリンクを実装するには 2つの手法があります: 
 2. プロジェクトエディターの **公開** セクションにある **ディープリンク** 機能にチェックを入れます。
 3. URLスキームの情報には、[**一般** ページ](../project-definition/general.md) で事前に定義したアプリ名が自動入力されます。 ただし、これを編集することもできます:
 
-![ディープリンクとプロジェクトエディター](img/deep-linking-project-editor-publishing-section.png)
+![Deep linking Project editor](img/deep-linking-project-editor-publishing-section.png)
 
 4. **On Mobile App Action** データベースメソッドに、たとえば次のように書きます:
 
@@ -94,13 +86,13 @@ End case
 
 ## ユニバーサルリンク
 
-ユニバーサルリンクには、カスタムURLスキームでは提供できない重要な利点がいくつかあります。 具体的には:
+Universal links provide several key benefits that aren't available with custom URL schemes. Specifically, universal links are:
 
 * **ユニーク**: カスタムURLスキームとは異なり、ユニバーサルリンクは自身の Webサイトへの標準的な HTTP または HTTPSリンクを使用するため、他のアプリと競合することはありません。
 
-* **セキュア**: ユーザーがアプリをインストールする際、そのアプリが URL を開くことを Webサイトが許可しているかどうかを iOS は確認します。 この権限を付与するファイルを作成し、Webサーバーにアップロードできるのはあなただけです。つまり、Webサイトとアプリの関連付けはセキュアです。
+* **Secure**: When users install your app, iOS or Android verifies that your website allows your app to open URLs on its behalf. この権限を付与するファイルを作成し、Webサーバーにアップロードできるのはあなただけです。つまり、Webサイトとアプリの関連付けはセキュアです。
 
-* **フレキシブル**: アプリがインストールされていない状態でも、ユニバーサルリンクは機能します。 この場合、Webサイトへのリンクをタップすると、そのコンテンツが Safari で開かれます。
+* **フレキシブル**: アプリがインストールされていない状態でも、ユニバーサルリンクは機能します。 In this case, tapping a link to your website opens the content in a browser.
 
 * **シンプル**: 同一の URL が、Webサイトとアプリの両方で動作します。
 
@@ -108,7 +100,7 @@ End case
 
 ### プロジェクトエディターとユニバーサルリンク
 
-アプリでユニバーサルリンクを使うには、URLスキームとよく似た手順でおこないます:
+To include Universal links into your app, the process is quite similiar to the URL Schemes process:
 
 1. [**アクション** ページ](../project-definition/actions.md) で **共有** プリセットアクションを選択し、スコープを選択します:
     *   カレントエンティティ: 詳細フォームのコンテンツを共有します
@@ -174,7 +166,7 @@ End case
 
 :::tip
 
-プッシュ通知とディープリンクを組み合わせる方法については、[**4D Mobile App Server** コンポーネントのドキュメント](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) を参照ください。
+Refer to the [**4D Mobile App Server** component documentation](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/PushNotification.md) for more information on how to combine push notifications and deep linking.
 
 :::
 
