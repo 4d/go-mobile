@@ -115,7 +115,7 @@ iOS 16 および Xcode 14 では、デバイスで開発およびデバッグが
 - **Android SDK Command-line Tools (latest)**。 このチェックボックスを選択すると、4Dモバイルプロジェクトエディターから直接、すべての仮想デバイスを視覚化することができます。
 - **Android Emulator**
 - **Android SDK Platform Tools**
-- **Google USB driver** (only on Windows, required to debug from an Android device)
+- **Google USB driver** (Windowsのみ、Android デバイスからデバッグするのに必要)
 - **Intel x86 Emulator Accelerator (HAXM installer)**
 
 ![Android Studio の設定](img/AndroidCaptureSetting.png)
