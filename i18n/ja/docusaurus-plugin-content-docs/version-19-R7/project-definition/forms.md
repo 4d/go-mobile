@@ -75,11 +75,11 @@ title: フォーム
 
 ## 詳細フォーム
 
-![Detail form template selection](img/Forms-section-detail-form-templates-selection-4D-for-iOS.png)
+![詳細フォームテンプレート選択](img/Forms-section-detail-form-templates-selection-4D-for-iOS.png)
 
-As with the List Form definition, select a template and configure the fields. In detail forms, you can add as many fields as you want onto your detail form.
+リストフォームの定義と同様に、テンプレート選択後にフィールドを設定します。 詳細フォームには、フィールドを必要なだけ追加することができます。
 
-You have several ways to add your fields in Detail forms:
+詳細フォームにフィールドを追加する方法は複数あります:
 
 * 右側のエリアにフィールドをドラッグ＆ドロップすることで、最後に追加されたフィールドのすぐ下、あるいは既に表示されているフィールドの間に追加項目として表示できます。
 
@@ -87,40 +87,40 @@ You have several ways to add your fields in Detail forms:
 
 * 左の一覧で利用可能なフィールドを右クリックし、コンテキストメニューから **不足しているフィールドを追加** を選択します。
 
-![Detail form content definition](img/Forms-section-detail-form-content-definition-4D-for-iOS.png)
+![詳細フォームコンテンツ定義](img/Forms-section-detail-form-content-definition-4D-for-iOS.png)
 
 
-You can reorder your fields at any moment using drag and drop in the detail form.
+詳細フォームのフィールドの並び順は、ドラッグ＆ドロップでいつでも変更できます。
 
 :::tip
 
-If you want to try another template after dispatching your fields, just select it: previously selected fields are automatically moved for you to the new template in appropriate areas, according to the template and field types.
+フィールドを並べた後に他のテンプレートを試してみたい場合には、そのまま他のテンプレートを選択します。表示されていたフィールドは、新しく開かれたテンプレート内においてテンプレートとフィールドの型に応じて自動的に配置されます。
 
 :::
 
 
 ## ギャラリー
 
-When you select a template in the form section, a "More" icon is available for both list and detail forms.
+フォームセクションのテンプレート選択画面では、リストフォームと詳細フォームの両方において "..." アイコンが表示されています。
 
 ![その他のテンプレートボタン](img/more.png)
 
 ![その他のテンプレートボタン](img/Forms-more-button.png)
 
-Just click on that icon to display a list of additional templates from the 4D mobile Gallery:
+これをクリックすると、4Dモバイルギャラリーにある追加テンプレートの一覧を表示します:
 
 ![テンプレートピッカーその他ボタン](img/Forms-template-gallery.png)
 
-Then, the only thing you have to do is selecting the template that suits your needs and the mobile editor will handle all the installation process. So you can directly start working on the template, as it is ready-to-use.
+あとは用途に応じたテンプレートを選択するだけです。インストールの処理はモバイルエディターがすべて管理します。 テンプレートはすぐに使える状態で用意されているため、フォームの作成に直接取りかかることができます。
 
-A github icon is displayed at the top left of a template icon in the Forms template picker to indicate that it comes from Github:
+追加テンプレートの選択画面において、すでにダウンロードしたフォームの左上には GitHubアイコンが表示され、GitHub から取得したものであることを示します。
 
 ![ギャラリーからテンプレートを追加](img/indicator-template-github.png)
 
 
 :::tip
 
-The Gallery is also directly available on Github.
+ギャラリーを GitHub上で直接確認することも可能です。
 - [**リストフォームのテンプレートのギャラリー**](https://4d-for-ios.github.io/gallery/#/type/list-detail/picker/0)
 - [**詳細フォームのテンプレートのギャラリー**](https://4d-for-ios.github.io/gallery/#/type/form-detail/picker/0)
 
@@ -128,7 +128,7 @@ The Gallery is also directly available on Github.
 
 ## 独自のテンプレートを作成する
 
-If you want to customize a downloaded template or create your own templates, **several tutorials** can guide you through these tasks:
+ダウンロードしたテンプレートをカスタマイズしたい、または独自のテンプレートを作成したい場合には、**以下のチュートリアル** でやり方を紹介しています:
 
 - [**テンプレートのフォームをカスタマイズする**](../tutorials/gallery/update-gallery-template.md)
 - [**リストフォームを作成する**](../tutorials/creating-list-forms/list-form-template.md)
