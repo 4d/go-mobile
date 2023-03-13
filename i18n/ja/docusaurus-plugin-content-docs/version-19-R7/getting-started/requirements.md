@@ -29,7 +29,7 @@ title: 要件
 
 [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) が Mac にインストールされていること (必須ではありません)。
 
-Installing **Xcode** is required. Version table:
+**Xcode** のインストールは必須です。 バージョン早見表:
 
 | 4D    | Swift | iOS  | Xcode                                                                                                         | macOS   |
 | ----- | ----- | ---- | ------------------------------------------------------------------------------------------------------------- | ------- |
@@ -78,7 +78,7 @@ iOS 16 および Xcode 14 では、デバイスで開発およびデバッグが
 
 ## Android
 
-Installing **Android Studio** (which includes **Android SDK**) is required. Version table:
+**Android Studio** (**Android SDK** 含む) のインストールは必須です。 バージョン早見表:
 
 | 4D    | Android Studio                                                      | Windows           |
 | ----- | ------------------------------------------------------------------- | ----------------- |
@@ -107,7 +107,7 @@ Installing **Android Studio** (which includes **Android SDK**) is required. Vers
 
 ### Android Studio の設定
 
-You need to configure your Android Studio to build and debug your projects. Open the Android Studio **Preferences**, select the **Android SDK/SDK Tools** tab and make sure you have checked and installed the following elements:
+プロジェクトをビルドおよびデバッグするには、Android Studio を設定する必要があります。 Android Studio の **Preferences** を開き、**Android SDK/SDK Tools** タブを選択して、以下の要素をチェック＆インストールしていることを確認してください:
 
 - **Android SDK Build Tools 31**
 - **Android SDK Command-line Tools (latest)**。 このチェックボックスを選択すると、4Dモバイルプロジェクトエディターから直接、すべての仮想デバイスを視覚化することができます。
