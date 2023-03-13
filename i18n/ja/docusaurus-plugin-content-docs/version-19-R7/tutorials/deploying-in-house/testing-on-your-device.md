@@ -74,7 +74,7 @@ Apple Developer Program に加入している必要があります。 目的や�
 
 :::info
 
-This step requires that you have enabled the [Apple Device Developer Mode](../../getting-started/requirements.md#apple-device-developer-mode).
+この手順では、[Apple Device Developer Mode](../../getting-started/requirements.md#apple-device-developer-mode) が有効にされている必要があります。
 
 :::
 
