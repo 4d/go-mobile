@@ -16,33 +16,31 @@ Here are the different elements needed to create, send and receive a mobile push
 
 ![Push notification process](img/4D-for-ios-push-notification.png)
 
-## Requisitos
+## Configuration
 
-In order to send push notifications, you need to generate and reference an authentication key for your project.
+In order to send push notifications, you need to generate and reference authentication and configuration files for your project.
 
-### For iOS
+1. Generate and download your authentication files:
 
-An `AuthKey_XXXYYY.p8` authentication file from Apple is required.
+- **iOS**: Generate and download a `AuthKey_XXXYYY.p8` authentication key file as described in [this documentation](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Generate_p8.md).
+- **Android**: Configure your Firebase project to get your `google-services.json` file and your `server key` as described in [this documentation](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Conf_firebase.md).
 
-1. Gerar e baixar um arquivo chave .p8 está descrito [nesta documentação](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Generate_p8.md).
+2. In the [Publishing](../project-definition/publishing) page, check the **Push notifications** option and select appropriate files(s) for the mobile project:
 
-2. Na página [Publishing](../project-definition/publishing) marque a opção **Push notifications** e selecione seu certificado no projeto móvel.
+- **iOS**: select the `.p8` file
+- **Android**: select the `google-services.json` file
 
 ![Publishing section](img/push-notification-publishing-section.png)
 
-### For Android
 
-You need to get the server key from your Firebase project and configure Cloud Message API.
-
-1. Configure your Firebase project to get your server key as described in [this documentation](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Conf_firebase.md).
-
-2. In the push notification method, reference the server key using the following statement:
+3. **Android only**: In the push notification method, reference the `server key` using the following statement:
 
 ```4d
 
 $pushNotification.auth.serverKey:="your_server_key"
 
 ```
+
 
 
 ## Exemplo básico para gerenciar suas notificações push
@@ -160,7 +158,7 @@ Windows users need to download the [last CURL version](https://curl.se/download.
 
 Whether you're working on Windows or on macOS, you need to copy the following files from your development project to your production project:
 
-- `4DBASE/MobileApps/ID. BundleID/AuthKey_XXXX.`
-- `4DBASE/MobileApps/ID. BundleID/manifest.json`
+- `4DBASE/MobileApps/ID.BundleID/AuthKey_XXXX.P8`
+- `4DBASE/MobileApps/ID.BundleID/manifest.json`
 
 
