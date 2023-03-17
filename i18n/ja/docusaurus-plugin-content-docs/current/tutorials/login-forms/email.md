@@ -63,7 +63,7 @@ End case
 
 ```
 
-このように、とても簡単です。
+It's as simple as that!
 
 詳細については、[Email Checker メソッドのドキュメント](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Methods/Mobile%20App%20Email%20Checker.md) を参照ください。
 
