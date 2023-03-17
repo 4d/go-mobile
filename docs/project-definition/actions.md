@@ -5,12 +5,11 @@ title: Actions
 
 The 4D Mobile Project editor allows you to create actions to include in your mobile app. 
 
-You can use [preset actions](#preset-actions) or [custom actions](../tutorials/actions/define-first-action.md) and [define their parameters](#add-parameters-to-your-actions). 
+You can use [preset actions](#preset-actions) or [custom actions](../tutorials/actions/define-first-action.md) and [define their parameters](#add-parameters-to-your-action). 
 
 On the 4D side, you can execute 4D code in the [On Mobile App Action](../4d/on-mobile-app-action.md) database method.
 
 Actions are automatically available in the [mobile interface](#mobile-app-side).
-
 
 ## Project Editor Side
 
@@ -24,7 +23,7 @@ Next you'll need to define the following:
 * **Icons:** The icon to choose from your icon library. You can also [add your own icon](./labels-and-icons.md#adding-custom-icons).
 * **Short and long Labels:** The labels for the actions to display in your app.
 * **Table:** The table on which you want to apply the action.
-* **Scope:** Where to use the action, an **entity** or a **table**.
+* **Scope:** Where to use the action, an **entity** , a **table** or **global**.
 
 ![Action section](img/Actions-section-4D-for-iOS.png)
 
@@ -55,7 +54,7 @@ Depending on the selected input control, you can define the following additional
 
 :::info
 
-By default, the Input Control menu displays **selectionControls**. This is a filter for selection controls, depending on their "format" property. To select a format, you must have [created](#selection-input-controls) at least one selection input control with this format. 
+By default, the Input Control menu displays **selectionControls**. This is a filter for selection controls, depending on their "format" property. To select a format, you must have [created](#selection-input-controls) at least one selection input control with this format.
 
 ::: 
 
@@ -63,14 +62,13 @@ By default, the Input Control menu displays **selectionControls**. This is a fil
 
 You are free to change the order of parameters using drag and drop.
 
-
 ## Preset actions
 
 4D mobile projects include the following (predefined) preset actions to manage your app content:
 
-* Add 
-* Edit 
-* Delete 
+* Add
+* Edit
+* Delete
 * Share
 * Sort
 * Open URL
@@ -89,12 +87,9 @@ This will **automatically create** all the parameters for you in the Project Edi
 
 For those kind of action, you will see that all **properties** are already filled in for your convenience at the right side of the parameter's list.
 
-
 ### Edit action
 
 **Edit actions** creation follows the same process as the Add actions, with the exception that you will not be able to define default values from the Actions section.
-
-
 
 ### Delete action
 
@@ -119,7 +114,7 @@ See the [Deep Linking](../special-features/deep-linking.md) page for more detail
 
 **Sort actions** are useful to:
 
-- define a default sort order for the table list forms 
+- define a default sort order for the table list forms
 - allow your mobile users to choose a list sort order
 
 When you create a sort action for a table, you need to select the first field on which the sort will be done:
@@ -143,13 +138,11 @@ To add one or more sort level(s) in the Sort Criteria list, select the **+** but
 
 ![sort](img/ascending.png)
 
-
 #### Sort order menu on the mobile app
 
 When you define more than one sort action for a table, mobile users automatically benefit from a **sort** menu. It contains all the predefined sort actions:
 
 ![sort](img/sort-go-mobile.gif)
-
 
 > When only one sort action is defined for a table, the **sort** menu is not displayed on the mobile app side.
 
@@ -161,19 +154,21 @@ When you select this action, you have to define the path that will be opened:
 
 ![open url](img/open-url-action.png)
 
-You can only define a path starting with `/`, i.e. relative to the [current 4D web folder](https://developer.4d.com/docs/WebServer/webServerConfig.html#root-folder). 
+You can only define a path starting with `/`, i.e. relative to the [current 4D web folder](https://developer.4d.com/docs/WebServer/webServerConfig.html#root-folder).
 
-This action can be set for any table and any scope (Table or Current entity). Like other actions, the Open URL action will be automatically available in the [mobile app interface](#mobile-app-side) (short or long label). 
+Like other actions, the Open URL action will be automatically available in the [mobile app interface](#mobile-app-side) (short or long label) if choose to the Table or the Current entity scope.
+
+You could also choose to display the web page in main menu by choosing Global scope. Then you will be able to select it in "Main Menu" tab.
 
 :::note
 
-To close the web page and get back to the mobile app interface, use the `$4d.mobile.dismiss()` function from within the page (see below). 
+To close the web page and get back to the mobile app interface, use the `$4d.mobile.dismiss()` function from within the page (see below).
 
 :::
 
 #### Web Server Side
 
-The request sent to the server contains the context of the app (current entity and/or dataclass) in the `X-QMobile-Context` header. The content of this header is formatted in JSON and encoded in base64. 
+The request sent to the server contains the context of the app (current entity and/or dataclass) in the `X-QMobile-Context` header. The content of this header is formatted in JSON and encoded in base64.
 
 :::tip
 
@@ -213,8 +208,6 @@ Blog post: [4D for Mobile : Display Web Pages in your Mobile Apps](https://blog.
 
 :::
 
-
-
 ### On Mobile App Action
 
 The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is available to call all of your 4D methods. 
@@ -228,8 +221,6 @@ After creating all of your actions, just click on the **Create** button from the
 - You can also decide to force close the Edition form using `$result.close:=True`.
 
 :::
-
-
 
 ## Built-in input controls
 
@@ -269,7 +260,6 @@ Available built-in input controls depend on the data type:
 |Image|Default||
 ||Signature|Allow to sign with the finger|
 
-
 ## Custom input controls
 
 You can add custom input controls to your mobile project to highly customize interactions with the user. There are two categories of custom input controls:
@@ -287,10 +277,9 @@ A custom input control is associated to a `manifest.json` file and (optionally) 
 
 The `manifest.json` file contains several attributes such as **name**, **type**, **format**, etc. depending on the input control category (selection or action).
 
-
 ### Selection input controls
 
-Selection input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter. 
+Selection input controls display formatted elements (values, pictures) in your mobile apps. These elements are automatically included in your action form, more specifically in a choice list, in order to select one of the values and to use it as a parameter.
 
 These choice lists can be either **static** or **dynamic**.
 
@@ -307,7 +296,6 @@ These choice lists can be either **static** or **dynamic**.
 |Optional **"format"**||	text|to select interface: "push" (default if not defined), "segmented", "popover", "sheet", "picker"|
 |Optional **"assets"**||object|	to adjust the display size (width and height)|
 ||**"size"**|object or integer|if integer, pass a single value to create a square image; if object, pass the following attributes: <li>"width" (integer)</li><li>"height" (integer)</li>|
-
 
 Here is an example of a manifest.json file containing the contact information of a company's subsidiaries, that can be used as a static choice list:
 
@@ -350,7 +338,7 @@ Here is an example of a manifest.json file containing the contact information of
 ||Optional **"entityFormat"**|text|	for the display value (if no format we use the extracted data from field)|
 
 **Note:** When the choice list is extensive, the optional "search" element becomes available.  
- 
+
 Here is an example of a dynamic choice list:
 
 ```json
