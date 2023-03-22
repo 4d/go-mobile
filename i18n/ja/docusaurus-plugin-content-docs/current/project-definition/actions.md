@@ -158,25 +158,25 @@ Zymosian, Elmer
 
 テーブルまたはカレントエンティティがスコープの場合、URLを開くアクションは、他のアクションと同様に、[モバイルアプリのインターフェース](#モバイルアプリ側) において自動的に利用可能です (短いラベルまたは長いラベル)。
 
-You could also choose to display the web page in main menu by choosing Global scope. Then you will be able to select it in "Main Menu" tab.
+また、グローバルスコープを選択することで、Webページへのリンクをメインメニューに表示することもできます。 すると、これを "メインメニュー" タブで選択することができます。
 
 :::note
 
-To close the web page and get back to the mobile app interface, use the `$4d.mobile.dismiss()` function from within the page (see below).
+Webページを閉じてモバイルアプリのインターフェイスに戻るには、ページ内で `$4d.mobile.dismiss()` 関数を使用します (後述参照)。
 
 :::
 
 #### Webサーバー側
 
-The request sent to the server contains the context of the app (current entity and/or dataclass) in the `X-QMobile-Context` header. The content of this header is formatted in JSON and encoded in base64.
+サーバーに送信されるリクエストには、アプリのコンテキスト (カレントエンティティおよび/またはデータクラス) が `X-QMobile-Context` ヘッダーに含まれています。 このヘッダーの内容は JSON 形式で、base64 でエンコードされています。
 
 :::tip
 
-You can get the context information already decoded as object using the [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) component and its [WebHandler class](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md).
+[**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) コンポーネントとその [WebHandler クラス](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md)を使用すると、オブジェクトとしてデコード済みのコンテキスト情報を取得することができます。
 
 :::
 
-Context information can be processed in the web page to return through standard 4D web server features:
+コンテキスト情報を Webページ内で処理して返すには、4D Webサーバーの標準的な機能が使用できます:
 
 - [.shtml テンプレートページ](https://developer.4d.com/docs/ja/WebServer/templates/)
 - [On Web Connection データベースメソッド](https://developer.4d.com/docs/ja/WebServer/httpRequests/#on-web-connection)。
@@ -184,7 +184,7 @@ Context information can be processed in the web page to return through standard 
 
 #### Webエリア側
 
-For your page to interact with the mobile app, some javascript code is automatically provided in the `$4d.mobile` object. This object contains the following properties and functions:
+Webページがモバイルアプリと対話するため、いくつかの javascriptコードが自動的に `$4d.mobile` オブジェクトにて提供されます。 このオブジェクトは、以下のプロパティと関数を持ちます:
 
 | プロパティ      |                  |                               | タイプ      | 詳細                                                                                                                                          |
 | ---------- | ---------------- | ----------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -202,17 +202,17 @@ For your page to interact with the mobile app, some javascript code is automatic
 |            |                  | .verbose(message : string)    | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
 
 
-:::info See also
+:::info こちらもご覧ください
 
-Blog post: [4D for Mobile : Display Web Pages in your Mobile Apps](https://blog.4d.com/4d-for-mobile-di…your-mobile-apps/)
+ブログ記事 [4D for Mobile : モバイルアプリに Webページを表示する](https://blog.4d.com/ja/4d-for-mobile-display-web-pages-in-your-mobile-apps/)
 
 :::
 
 ### On Mobile App Action
 
-The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is available to call all of your 4D methods.
+[`On Mobile App Action`](../4d/on-mobile-app-action.md) データベースメソッドは、4Dメソッドを呼び出すのに利用します。
 
-After creating all of your actions, just click on the **Create** button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
+すべてのアクションを作成したあと、アクションテーブル右下の **作成...** ボタンをクリックすると、作成した全アクション名を含んだ *Case of* コードブロックが *On Mobile App Action* メソッド内に自動生成されます。
 
 :::note 注記
 
@@ -224,11 +224,11 @@ After creating all of your actions, just click on the **Create** button from the
 
 ## ビルトイン入力コントロール
 
-Input controls define how information will be entered by the user in the mobile app, and also how it will be rendered. The Project editor provides basic input controls for regular data types. These controls are built-in and can be directly selected in the "Input Control" menu.
+入力コントロールは、モバイルアプリでユーザーが情報を入力する方法と、その情報をレンダリングする方法を定義します。 プロジェクトエディターには、通常のデータ型用の基本的な入力コントロールが用意されています。 これらビルトインのコントロールは、"入力コントロール" メニューから選択することができます。
 
-You can also define [custom input controls](#custom-input-controls) (see below).
+また、[カスタムの入力コントロール](#カスタム入力コントロール) を定義することができます (後述参照)。
 
-Available built-in input controls depend on the data type:
+選択可能なビルトイン入力コントロールは、データタイプによります:
 
 | データタイプ | 入力コントロール | 詳細                                                                                                                             |
 | ------ | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -262,30 +262,30 @@ Available built-in input controls depend on the data type:
 
 ## カスタム入力コントロール
 
-You can add custom input controls to your mobile project to highly customize interactions with the user. There are two categories of custom input controls:
+モバイルプロジェクトにカスタム入力コントロールを追加して、ユーザーとのインタラクションを高度にカスタマイズすることができます。 カスタムの入力コントロールには、2つのカテゴリーがあります:
 
 - [**選択**](#選択入力コントロール) - 選択する値のリストを表示します (静的または動的)。
 - [**アクション**](#アクション入力コントロール) - Swift や Kotlin のコードを含み、あらゆる関連アクションをおこなうことができます。
 
-You can create custom input controls for both categories. Note that you can also download **action** input controls from the [Input control Github gallery](https://4d-go-mobile.github.io/gallery//#/type/input-control).
+カスタム入力コントロールは両方のカテゴリーで作成することができます。 なお、**アクション** 入力コントロールは、[入力コントロール Github ギャラリー](https://4d-go-mobile.github.io/gallery//#/type/input-control) からもダウンロードすることができます。
 
 ### カスタム入力コントロールの定義
 
-A custom input control is associated to a `manifest.json` file and (optionally) Swift or Kotlin source code. The custom input control files must be stored into a subfolder at the following location:
+カスタム入力コントロールは、`manifest.json` ファイルと、(任意で) Swift または Kotlin のソースコードと紐付けられます。 カスタム入力コントロールファイルは、以下の場所のサブフォルダーに格納する必要があります:
 
 `myProject/Resources/Mobile/inputControls/`
 
-The `manifest.json` file contains several attributes such as **name**, **type**, **format**, etc. depending on the input control category (selection or action).
+`manifest.json` ファイルには、入力コントロールのカテゴリ (選択またはアクション) によって、**name** や **type**、**format** などいくつかの属性が含まれます (後述参照)。
 
 ### 選択入力コントロール
 
-Selection input controls display formatted elements (values, pictures) in your mobile apps. これらの要素は、アクションフォーム内に自動的に含まれます。具体的には選択リストとして表示され、そこから値を選択し、引数として使用することができます。
+選択入力コントロールは、モバイルアプリ内でフォーマットされた要素 (値、ピクチャーなど) を表示します。 これらの要素は、アクションフォーム内に自動的に含まれます。具体的には選択リストとして表示され、そこから値を選択し、引数として使用することができます。
 
-These choice lists can be either **static** or **dynamic**.
+これらの選択リストは、**静的** または **動的** のいずれかです。
 
 #### 静的選択リスト
 
-**Static** choice lists (predefined choices hard coded in json) must be located in a [`manifest.json` file in the "inputControls" folder](#defining-custom-input-controls). この選択リストは以下のような複数の要素から定義されています:
+**静的** な選択リスト (json でハードコードされた定義済み選択肢) は ['inputControls' フォルダー内の `manifest.json`](#カスタム入力コントロールの定義) ファイルに定義します。 この選択リストは以下のような複数の要素から定義されています:
 
 | プロパティ              |            | タイプ                 | 詳細                                                                                                |
 | ------------------ | ---------- | ------------------- | ------------------------------------------------------------------------------------------------- |
@@ -319,7 +319,7 @@ These choice lists can be either **static** or **dynamic**.
 
 #### 動的選択リスト
 
-**Dynamic** choice lists are based on datasource (choices depending on the database content). この方式では、ヘルパーモジュールを使用してフォームフィールドに値を入力することで、データを素早く取得することができます。 モバイルアプリから直接利用可能であるだけでなく、選択リストは常に更新されます。 The [`manifest.json` file](#defining-custom-input-controls) is composed of the following elements:
+**動的 (ダイナミック)** な選択リストは、データソースに基づいた選択リストです (データベースのコンテンツに応じて選択肢が変化します)。 この方式では、ヘルパーモジュールを使用してフォームフィールドに値を入力することで、データを素早く取得することができます。 モバイルアプリから直接利用可能であるだけでなく、選択リストは常に更新されます。 [`manifest.json` ファイル](#カスタム入力コントロールの定義) には、以下のような要素が格納されています:
 
 | プロパティ             | タイプ                 | 詳細                                                                        |
 | ----------------- | ------------------- | ------------------------------------------------------------------------- |
@@ -362,9 +362,9 @@ These choice lists can be either **static** or **dynamic**.
 ```
 
 
-On the Project editor side, once you select your **Input control** format, the **Data Source** will be selectable from a filtered list based on the format you have selected. これでアプリは更新され、使用できます。
+プロジェクトエディター側では、**入力コントロール** フォーマットを選択すると、そのフォーマットに基づいて絞り込まれたリストから **データソース** が選択できます。 これでアプリは更新され、使用できます。
 
-The various formats are illustrated in this animation:
+さまざまなフォーマットを以下のアニメーションで紹介します:
 
 ![カスタム入力](img/Input-controls-iOS-app-side.gif)
 
@@ -374,9 +374,9 @@ The various formats are illustrated in this animation:
 
 カスタムの入力コントロールを使用することで、ネイティブのアプリと容易にやりとりをすることができます。これはネイティブコードを使用した [ラベル & アイコン カスタムフォーマッター](labels-and-icons.md) と同じやり方を踏襲しています。
 
-To do so, you can create your own input controls with native code, or you can download input controls from our [Github gallery](https://4d-go-mobile.github.io/gallery/#/type/input-control), depending on what you need for your app. Drop them into the "inputControls" folder (`mybase/Resources/mobile/inputControls`). するとプロジェクトエディターにて、アクションの引数プロパティ内にある入力コントロールメニューから追加の入力コントロールが利用・選択可能になります。
+これには、アプリでの用途や必要に応じて、ネイティブコードを使用した入力コントロールを独自に作成するほか、GitHub にて公開されている [Github ギャラリー](https://4d-go-mobile.github.io/gallery/#/type/input-control) から入力コントロールをダウンロードすることもできます。 これらは "inputControls" フォルダー (`mybase/Resources/mobile/inputControls`) にドロップして入れます。 するとプロジェクトエディターにて、アクションの引数プロパティ内にある入力コントロールメニューから追加の入力コントロールが利用・選択可能になります。
 
-The [`manifest.json` file](#defining-custom-input-controls) is composed of the following attributes:
+[`manifest.json` ファイル](#カスタム入力コントロールの定義) には、以下のような属性が格納されています:
 
 | プロパティ                   | タイプ                 | 詳細                                                                                     |
 | ----------------------- | ------------------- | -------------------------------------------------------------------------------------- |
@@ -394,7 +394,7 @@ The [`manifest.json` file](#defining-custom-input-controls) is composed of the f
 
 :::info
 
-An example of Kotlin input control definition is provided in [this tutorial](../tutorials/actions/create-kotlin-input.md).
+Kotlin の入力コントロール定義の例は、[このチュートリアル](../tutorials/actions/create-kotlin-input.md) で紹介されています。
 
 :::
 
@@ -498,4 +498,4 @@ $response.errors:=New collection(New object("parameter"; "alphaField"; "message"
 
 こちらの [チュートリアル](../tutorials/actions/getting-started.md) では **アクション定義の手順** について説明しています。
 
-See [this tutorial](../tutorials/actions/create-kotlin-input.md) for an example of custom **Kotlin input control definition**.
+カスタムの **Kotlin 入力コントロール定義の例** については [このチュートリアル](../tutorials/actions/create-kotlin-input.md) を参照ください。
