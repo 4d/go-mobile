@@ -5,7 +5,7 @@ title: アクション
 
 4D モバイルプロジェクトエディターでは、モバイルアプリに含めるアクションを作成することができます。
 
-You can use [preset actions](#preset-actions) or [custom actions](../tutorials/actions/define-first-action.md) and [define their parameters](#add-parameters-to-your-action).
+[プリセットアクション](#プリセットアクション) または [カスタムアクション](../tutorials/actions/define-first-action.md) を使用できるほか、[それら引数を定義](#アクションに引数を追加する) することができます。
 
 4D側では、[On Mobile App Action](../4d/on-mobile-app-action.md) データベースメソッド内で 4Dコードを実行することができます。
 
@@ -23,7 +23,7 @@ You can use [preset actions](#preset-actions) or [custom actions](../tutorials/a
 * **アイコン:** アイコンライブラリーから選択するアイコン。 また、[独自のアイコンを追加](labels-and-icons#カスタムのアイコンを追加する) することもできます。
 * **短いラベルとラベル:** アプリに表示するアクションのラベル
 * **テーブル:** アクションを適用するテーブル
-* **Scope:** Where to use the action, an **entity** , a **table** or **global**.
+* **スコープ:** アクションの適用対象: **カレントエンティティ**、**テーブル**、または **グローバル**
 
 ![アクションセクション](img/Actions-section-4D-for-iOS.png)
 
@@ -156,7 +156,7 @@ Zymosian, Elmer
 
 `/` で始まるパス、つまり [カレントの 4D Webフォルダー](https://developer.4d.com/docs/ja/WebServer/webServerConfig/#ルートフォルダー) を基準とした相対パスしか定義できません。
 
-Like other actions, the Open URL action will be automatically available in the [mobile app interface](#mobile-app-side) (short or long label) if choose to the Table or the Current entity scope.
+テーブルまたはカレントエンティティがスコープの場合、URLを開くアクションは、他のアクションと同様に、[モバイルアプリのインターフェース](#モバイルアプリ側) において自動的に利用可能です (短いラベルまたは長いラベル)。
 
 You could also choose to display the web page in main menu by choosing Global scope. Then you will be able to select it in "Main Menu" tab.
 
