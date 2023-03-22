@@ -257,21 +257,21 @@ Zymosian, Elmer
 
 :::note
 
-To close the web page and get back to the mobile app interface, use the `$4d.mobile.dismiss()` function from within the page (see below).
+Webページを閉じてモバイルアプリのインターフェイスに戻るには、ページ内で `$4d.mobile.dismiss()` 関数を使用します (後述参照)。
 
 :::
 
 #### Webサーバー側
 
-The request sent to the server contains the context of the app (current entity and/or dataclass) in the `X-QMobile-Context` header. The content of this header is formatted in JSON and encoded in base64.
+サーバーに送信されるリクエストには、アプリのコンテキスト (カレントエンティティおよび/またはデータクラス) が `X-QMobile-Context` ヘッダーに含まれています。 このヘッダーの内容は JSON 形式で、base64 でエンコードされています。
 
 :::tip
 
-You can get the context information already decoded as object using the [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) component and its [WebHandler class](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md).
+[**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) コンポーネントとその [WebHandler クラス](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/WebHandler.md)を使用すると、オブジェクトとしてデコード済みのコンテキスト情報を取得することができます。
 
 :::
 
-Context information can be processed in the web page to return through standard 4D web server features:
+コンテキスト情報を Webページ内で処理して返すには、4D Webサーバーの標準的な機能が使用できます:
 
 - [.shtml テンプレートページ](https://developer.4d.com/docs/ja/WebServer/templates/)
 - [On Web Connection データベースメソッド](https://developer.4d.com/docs/ja/WebServer/httpRequests/#on-web-connection)。
@@ -279,7 +279,7 @@ Context information can be processed in the web page to return through standard 
 
 #### Webエリア側
 
-For your page to interact with the mobile app, some javascript code is automatically provided in the `$4d.mobile` object. This object contains the following properties and functions:
+Webページがモバイルアプリと対話するため、いくつかの javascriptコードが自動的に `$4d.mobile` オブジェクトにて提供されます。 このオブジェクトは、以下のプロパティと関数を持ちます:
 
 | プロパティ      |                  |                               | タイプ      | 詳細                                                                                                                                          |
 | ---------- | ---------------- | ----------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -297,9 +297,9 @@ For your page to interact with the mobile app, some javascript code is automatic
 |            |                  | .verbose(message : string)    | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
 
 
-:::info See also
+:::info こちらもご覧ください
 
-Blog post: [4D for Mobile : Display Web Pages in your Mobile Apps](https://blog.4d.com/4d-for-mobile-di…your-mobile-apps/)
+ブログ記事 [4D for Mobile : モバイルアプリに Webページを表示する](https://blog.4d.com/ja/4d-for-mobile-display-web-pages-in-your-mobile-apps/)
 
 :::
 
@@ -307,9 +307,9 @@ Blog post: [4D for Mobile : Display Web Pages in your Mobile Apps](https://blog.
 
 ### On Mobile App Action
 
-The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is available to call all of your 4D methods.
+[`On Mobile App Action`](../4d/on-mobile-app-action.md) データベースメソッドは、4Dメソッドを呼び出すのに利用します。
 
-After creating all of your actions, just click on the **Create** button from the Actions table to automatically generate a *Case of* code block that includes all your action names in the *On Mobile App Action* method.
+すべてのアクションを作成したあと、アクションテーブル右下の **作成...** ボタンをクリックすると、作成した全アクション名を含んだ *Case of* コードブロックが *On Mobile App Action* メソッド内に自動生成されます。
 
 :::note 注記
 
