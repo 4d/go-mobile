@@ -212,7 +212,7 @@ module.exports = {
               banner: 'none',
             },
             '19-R8': {
-              label: 'v19 R8 BETA',
+              label: 'v19 R8',
               banner: 'none',
             },
           },
