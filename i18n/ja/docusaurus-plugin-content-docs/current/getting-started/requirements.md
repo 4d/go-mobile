@@ -84,6 +84,7 @@ iOS 16 および Xcode 14 では、デバイスで開発およびデバッグが
 
 | 4D    | Android Studio                                                   | Windows           |
 | ----- | ---------------------------------------------------------------- | ----------------- |
+| 20.x  | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 | 19 R8 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 | 19 R7 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 | 19 R6 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
