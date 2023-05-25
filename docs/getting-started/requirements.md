@@ -84,22 +84,20 @@ Installing **Android Studio** (which includes **Android SDK**) is required. Vers
 
 | 4D | Android Studio| Windows |
 |---|---|---|
-| 20.x | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
+| 20.x | [Flamingo 2022.2.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
 | 19 R8 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
-| 19 R7 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
-| 19 R6 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
-
 
 <details><summary>Version history</summary>
 
 | 4D | Android Studio| Windows |
 |---|---|---|
+| 19 R7 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
+| 19 R6 | Dolphin 2021.3.1 | Windows 10 64-bit|
 | 19 R5 | [Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 | 19 R4 | Arctic fox 2020.3.1 | Windows 10 64-bit|
 | 19 R3 | Arctic fox 2020.3.1 | Windows 10 64-bit |
 | 19 R2 | 4.1.2 | Windows 10 64-bit |
 </details>
-
 
 :::note notes
 
