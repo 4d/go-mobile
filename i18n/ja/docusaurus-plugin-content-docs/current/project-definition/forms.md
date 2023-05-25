@@ -67,11 +67,6 @@ title: フォーム
 
 ![バーコード検索アプリ](img/text-Qrcode-barcode-search-4D-for-iOS.gif)
 
-:::info 4D for Android
-
-この機能は 4D for Android では現在ご利用いただけません。
-
-:::
 
 ## 詳細フォーム
 

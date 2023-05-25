@@ -11,9 +11,9 @@ Esta sección no está disponible actualmente en 4D for Android.
 
 ## ¿Qué es una notificación push?
 
-En un teléfono móvil, una notificación Push es un mensaje de alerta, recibido a través de una aplicación, que puede abrir, eliminar, autorizar o bloquear. Puede ser muy útil por ejemplo para notificar a los usuarios de la aplicación que hay una nueva versión disponible.
+On a mobile phone, a push notification is an alert message, received via an application, that you can open, delete, allow or block. It can be very useful for example to notify your app users that a new version is available.
 
-Pero, ¿qué pasa con la arquitectura a implementar, para integrar esta funcionalidad en una aplicación móvil? Y ¿Cuál es el proceso de una notificación push, desde la creación hasta la visualización en el teléfono del usuario?
+But what about the architecture to implement, in order to integrate this functionality into a mobile application? And what is the process of a push notification, from creation to display on the user's mobile?
 
 ## Arquitectura técnica
 
@@ -36,7 +36,7 @@ Para enviar notificaciones push, se requiere un archivo de autenticación `AuthK
 
 El componente [4D Mobile App Server](https://github.com/4d-for-ios/4D-Mobile-App-Server/tree/master) ofrece métodos para enviar notificaciones push a uno o varios destinatarios. Para obtener información detallada, consulte la documentación del componente [PushNotification](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md).
 
-Este es un ejemplo simple para enviar una notificación push a `test@4d.com`:
+Here is a simple example of push notification sent to `test@4d.com`:
 
 ```4d
 
@@ -52,29 +52,29 @@ It's as simple as that!
 
 :::consejo
 
-Utilice el componente [**4D Mobile App Server**](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) para adaptar fácilmente notificaciones push a sus propias necesidades. Siéntase libre de usarlo y elegir los aspectos más relevantes para su aplicación. Y por supuesto, todas las contribuciones son bienvenidos a este proyecto, a través de comentarios, informes de errores y aún mejor: "pull requests".
+Utilice el componente [**4D Mobile App Server**](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) para adaptar fácilmente notificaciones push a sus propias necesidades. Feel free to use it and to pick the most relevant aspects for your app. And of course, all contributors are welcome to this project, through feedback, bug reports and even better: pull requests.
 
 :::
 
 ## Notificación push con sincronización de datos
 
-Con una notificación push, también puede lanzar una sincronización para actualizar sus datos.
+With a push notification, you can also launch a synchronization to update your data.
 
-Por ejemplo, si su aplicación tiene una opción de seguimiento de la entrega, la información sobre la entrega se actualizará en la base de datos gracias a una notificación enviada al cliente. Esta notificación, que contiene una solicitud de sincronización de los datos, permitirá al cliente obtener los datos modificados en su teléfono inteligente.
+For example, if your application has a delivery tracking option, the delivery information will be updated in the database thanks to a notification sent to the customer. This notification, containing a request to synchronize the data, will enable the customer to get the modified data on their smartphone.
 
-Para ello utilizando el componente `4D Mobile App Server`, es necesario especificar si se desea forzar la sincronización de los datos en la notificación push. Por lo tanto, simplemente suministre el valor booleano `dataSynchro` en el objeto `userInfo`.
+To do so using the `4D Mobile App Server` component, you need to specify whether or not you want to force data synchronization in your push notification. Therefore, simply provide the `dataSynchro` boolean value in the `userInfo` object.
 
-### Sincronización de datos con una notificación que abre un registro
+### Data synchronization with a notification opening a record
 
-Por defecto, una notificación que abre un registro activa automáticamente una sincronización de datos.
+By default, a notification opening a record automatically triggers a data synchronization.
 
-Por ejemplo, en una aplicación Contact, si se ha modificado la información específica de un contacto (*es decir.* el registro de un contacto, como la dirección o el número de teléfono), el usuario recibe una notificación que abre automáticamente el registro correspondiente y sincroniza los datos contenidos en el mismo. Cuando el usuario abre la notificación, la información del contacto se actualiza completamente.
+For example, in a Contact app, if a contact’s specific information (*i.e.* a contact’s record, such as the address or the phone number) has been modified, the user receives a notification that automatically opens the relevant record and synchronizes the data contained in the record. When the user opens the notification, the contact’s information is fully updated.
 
-Este es un ejemplo del comportamiento por defecto, una petición `dataSynchro` con el método `open()`:
+Here's an example of the default behaviour, a `dataSynchro` request with the `open()` method:
 
 :::nota
 
-Para el método `open()` exclusivamente, este es el comportamiento por defecto. Como resultado, si no especifica el valor booleano `dataSynchro`, es `true` por defecto.
+For `open()` method exclusively, this is the default behaviour. As a result, if you don't specify the `dataSynchro` boolean value, it is `true` by default.
 
 :::
 
@@ -91,7 +91,7 @@ $response:=$pushNotification.open($entity; $notification; $recipients)
 
 ```
 
-Sin embargo, también se puede optar por no forzar una sincronización de datos, evitando `dataSynchro`:
+However, you can also choose not to force a data synchronization, by preventing `dataSynchro`:
 
 ```4d
 
@@ -107,11 +107,11 @@ $response:=$pushNotification.open($entity; $notification; $recipients)
 
 ```
 
-### Sincronización de datos con una simple notificación
+### Data synchronization with a simple notification
 
-También puede solicitar una sincronización para una simple notificación sin abrir un registro específico. Por ejemplo, se han añadido algunas entradas nuevas. Entonces puede informar a su usuario y actualizar los datos sin ninguna manipulación por su parte.
+You can also request a synchronization for a simple notification without opening a specific record. For example, some new entries have been added. You can then inform your user and update the data with no manipulation on their part.
 
-Aquí hay un ejemplo de código que también puede utilizar con otros métodos, siempre y cuando llene el objeto `userInfo` con el valor `dataSynchro`.
+Here is a code example that you can also use with other methods, as long as you fill the `userInfo` object with `dataSynchro` value.
 
 ```4d
 
@@ -129,11 +129,11 @@ $response:=$pushNotification.send($notification; $recipients)
 
 ## Configuración Windows
 
-Los usuarios de Windows necesitan descargar la [última versión de CURL](https://curl.se/download.html) para trabajar en las variables del entorno de su máquina. O pueden insertar curl.exe en la carpeta Resources de su base de producción.
+Windows users need to download the [last CURL version](https://curl.se/download.html) to work on the variables of the environment of their machine. Or they can insert curl.exe in the Resources folder of their production database.
 
 ## Carpeta MobileApps
 
-Tanto si trabaja en Windows como en macOS, tiene que copiar los siguientes archivos de su proyecto de desarrollo a su proyecto de producción:
+Whether you're working on Windows or on macOS, you need to copy the following files from your development project to your production project:
 
 - `4DBASE/MobileApps/ID.BundleID/AuthKey_XXXX.P8`
 - `4DBASE/MobileApps/ID.BundleID/manifest.json`

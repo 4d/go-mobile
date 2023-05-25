@@ -29,14 +29,13 @@ title: 要件
 
 [Apple configurator 2](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344) が Mac にインストールされていること (必須ではありません)。
 
-Installing **Xcode** is required. Version table:
+**Xcode** のインストールは必須です。 バージョン早見表:
 
 | 4D    | Swift | iOS  | Xcode                                                                                                         | macOS   |
 | ----- | ----- | ---- | ------------------------------------------------------------------------------------------------------------- | ------- |
-| 19 R8 | 5.7.2 | 16.0 | [14.2](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14.2/Xcode_14.2.xip) | 12.5    |
+| 20.x  | 5.8   | 16.0 | [14.3](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14.3/Xcode_14.3.xip) | 13.0    |
+| 19 R8 | 5.8   | 16.0 | [14.3](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14.3/Xcode_14.3.xip) | 13.0    |
 | 19 R7 | 5.7.1 | 16.0 | [14.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14.1/Xcode_14.1.xip) | 12.5    |
-| 19 R6 | 5.7   | 16.0 | [14.0](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14/Xcode_14.xip)     | 12.5    |
-| 19 R5 | 5.6.1 | 15.5 | [13.4](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_13.4/Xcode_13.4.xip) | 12.2    |
 | 19.x  | 5.5   | 15.0 | 13.1                                                                                                          | 11.3    |
 | 18.x  | 5.2   | 13.4 | 11.4                                                                                                          | 10.15.2 |
 
@@ -44,6 +43,8 @@ Installing **Xcode** is required. Version table:
 
 | 4D           | Swift | iOS  | Xcode  | macOS   |
 | ------------ | ----- | ---- | ------ | ------- |
+| 19 R6        | 5.7   | 16.0 | 14.0   | 12.5    |
+| 19 R5        | 5.6.1 | 15.5 | 13.4   | 12.2    |
 | 19 R4        | 5.6   | 15.4 | 13.3   | 12.2    |
 | 19 R3        | 5.5.2 | 15.2 | 13.2.1 | 11.3    |
 | 19 R2        | 5.5   | 15.0 | 13.1   | 11.3    |
@@ -79,10 +80,11 @@ iOS 16 および Xcode 14 では、デバイスで開発およびデバッグが
 
 ## Android
 
-Installing **Android Studio** (which includes **Android SDK**) is required. Version table:
+**Android Studio** (**Android SDK** 含む) のインストールは必須です。 バージョン早見表:
 
 | 4D    | Android Studio                                                   | Windows           |
 | ----- | ---------------------------------------------------------------- | ----------------- |
+| 20.x  | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 | 19 R8 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 | 19 R7 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 | 19 R6 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
@@ -109,13 +111,13 @@ Installing **Android Studio** (which includes **Android SDK**) is required. Vers
 
 ### Android Studio の設定
 
-You need to configure your Android Studio to build and debug your projects. Open the Android Studio **Preferences**, select the **Android SDK/SDK Tools** tab and make sure you have checked and installed the following elements:
+プロジェクトをビルドおよびデバッグするには、Android Studio を設定する必要があります。 Android Studio の **Preferences** を開き、**Android SDK/SDK Tools** タブを選択して、以下の要素をチェック＆インストールしていることを確認してください:
 
 - **Android SDK Build Tools 31**
 - **Android SDK Command-line Tools (latest)**。 このチェックボックスを選択すると、4Dモバイルプロジェクトエディターから直接、すべての仮想デバイスを視覚化することができます。
 - **Android Emulator**
 - **Android SDK Platform Tools**
-- **Google USB driver** (only on Windows, required to debug from an Android device)
+- **Google USB driver** (Windowsのみ、Android デバイスからデバッグするのに必要)
 - **Intel x86 Emulator Accelerator (HAXM installer)**
 
 ![Android Studio の設定](img/AndroidCaptureSetting.png)

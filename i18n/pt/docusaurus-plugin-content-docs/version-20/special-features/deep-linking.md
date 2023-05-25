@@ -9,18 +9,18 @@ This feature is currently not available in 4D for Android.
 
 :::
 
-Graças a funcionalidade **deep linking**, é possível partilhar o conteúdo que está vendo com todos os seus colegas. Aqui há uma ilustração que resume o "deep linking":
+Graças a funcionalidade **deep linking**, é possível partilhar o conteúdo que está vendo com todos os seus colegas. Here's an illustration demonstrating deep linking:
 
-![Animação Deep Link](img/4d-for-ios-deeplinking.gif)
+![Deep linking animation](img/4d-for-ios-deeplinking.gif)
 
-Há duas maneiras de implementar "deep linking" em IOS: **"URL scheme"** e **"Universal Links"**. Os "URL schemes" são um método bem conhecido de "deep linking"  e os "Universal links" são o novo método que Apple implementou para conectar facilmente sua página web e sua aplicação sob o mesmo link.
+Há duas maneiras de implementar "deep linking" em IOS: **"URL scheme"** e **"Universal Links"**. While URL schemes are a well-known method for deep linking, Universal links are the new way that Apple has implemented to easily connect your webpage and your app under the same link.
 
 
 ## Comparação de modos deep linking
 
 ### URL Scheme
 
-Aqui há uma comparação entre as duas opções que estão disponíveis no editor de projeto:
+Here is a comparison between the two options which are available in the project editor:
 
 | PRÓS                                | CONTRAS                                           |
 | ----------------------------------- | ------------------------------------------------- |
@@ -30,22 +30,22 @@ Aqui há uma comparação entre as duas opções que estão disponíveis no edit
 
 ### Universal links
 
-| PRÓS                                                 | CONTRAS                                  |
-| ---------------------------------------------------- | ---------------------------------------- |
-| Não requer permissão                                 | Se necessita um backend estático com SSL |
-| Não abre o navegador                                 | Mais complexo de implementar             |
-| Compatível com Android                               |                                          |
-| URL de fallback se a aplicação não estiver instalada |                                          |
+| PRÓS                                | CONTRAS                                  |
+| ----------------------------------- | ---------------------------------------- |
+| Não requer permissão                | Se necessita um backend estático com SSL |
+| Não abre o navegador                | Mais complexo de implementar             |
+| Compatível com Android              |                                          |
+| Fallback URL if app isn't installed |                                          |
 
 ## Esquema URL personalizado
 
-No nível mais simples, os esquemas de URL permitem aos usuários abrir uma aplicação desde outras aplicações. Mas o verdadeiro poder dos esquemas URL está na capacidade de realizar ações específicas a medida que se abre a aplicação.
+At the simplest level, URL schemes allow users to open an app from other apps. But the true power of URL schemes is in the ability to perform specific actions as your app opens.
 
 
 
 ### Esquema de URL personalizado no editor de projeto
 
-É muito simples incluir um esquema URL a sua aplicação móvel. Vamos ver um exemplo:
+It's very simple to include an URL scheme to your mobile app. Let's see an example:
 
 1. Selecione a ação predefinida **Share** da página [**Action**](../project-definition/actions.md) e selecione o alcance:
     *   entidade - para compartilhar o conteúdo de um formulário detalhado
@@ -53,7 +53,7 @@ No nível mais simples, os esquemas de URL permitem aos usuários abrir uma apli
 2. Marque a propriedade **Deep Linking** na seção **Publishing** do editor de projetos.
 3. A informação do esquema URL é preenchido automaticamente com o nome da aplicação definida previamente na página [**General**](../project-definition/general.md). Entretanto, ainda pode ser editado:
 
-![Editor de projeto deep linking](img/deep-linking-project-editor-publishing-section.png)
+![Deep linking Project editor](img/deep-linking-project-editor-publishing-section.png)
 
 4. Preencha seu método **On Mobile App Action**:
 
@@ -90,7 +90,7 @@ $action:=MobileAppServer. Action.new($1) Case of
 
 ## Universal links
 
-Os Universal links oferecem vários benefícios chave que não estão disponíveis com os esquemas de URL personalizados. Específicamente, os links universais são:
+Universal links provide several key benefits that aren't available with custom URL schemes. Specifically, universal links are:
 
 * **Unique**: Diferente de schemes personalizados de  URL , links universais não podem ser reclamadas por outros apps porque usam links padrão  HTTP ou HTTPS para seu website.
 
@@ -104,7 +104,7 @@ Os Universal links oferecem vários benefícios chave que não estão disponíve
 
 ### Links universais no Editor de Projeto
 
-Para incluir os links universais em sua aplicação, o processo é bastante similar ao processo dos esquemas URL:
+To include Universal links into your app, the process is quite similiar to the URL Schemes process:
 
 1. Selecione a ação predefinida **Share** da página [**Action**](../project-definition/actions.md) e selecione o alcance:
     *   entidade - para compartilhar um conteúdo de um formulário detalhado

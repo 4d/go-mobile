@@ -41,7 +41,7 @@ itms-services://?action=download-manifest&url=https://mywebserver.com/manifest.p
 
 *ここで使用している QRコードは有効ではありません。*
 
-## ⒊ iOS にアンタープライズApp をインストールする
+## ⒊ iOS にエンタープライズApp をインストールする
 
 * リンクをクリックするか、QRコードをスキャンして、アプリをインストールします。
 

@@ -67,19 +67,14 @@ La búsqueda de códigos de barras permite dos funcionalidades:
 
 ![Barcode Search app](img/text-Qrcode-barcode-search-4D-for-iOS.gif)
 
-:::información 4D for Android
-
-This feature is currently not available in 4D for Android.
-
-:::
 
 ## Formularios detallados
 
 ![Detail form template selection](img/Forms-section-detail-form-templates-selection-4D-for-iOS.png)
 
-Al igual que con la definición del Formulario Lista, seleccione una plantilla y configure los campos. En formularios detallados, puede añadir tantos campos como desee en su formulario detallado.
+As with the List Form definition, select a template and configure the fields. In detail forms, you can add as many fields as you want onto your detail form.
 
-Tiene varias formas de añadir sus campos en los formularios detallados:
+You have several ways to add your fields in Detail forms:
 
 * Arrastrar y soltar un campo en cualquier lugar de la vista más a la derecha para agregarlo y mostrarlo justo después del último campo añadido o entre cualquier otro campo que ya se muestre.
 
@@ -90,37 +85,37 @@ Tiene varias formas de añadir sus campos en los formularios detallados:
 ![Detail form content definition](img/Forms-section-detail-form-content-definition-4D-for-iOS.png)
 
 
-Puede reordenar sus campos en cualquier momento mediante la función de arrastrar y soltar en el formulario detallado.
+You can reorder your fields at any moment using drag and drop in the detail form.
 
 :::consejo
 
-Si quiere probar otra plantilla después de despachar sus campos, sólo tiene que seleccionarla: los campos previamente seleccionados se trasladan automáticamente por usted a la nueva plantilla en las áreas apropiadas, según la plantilla y los tipos de campo.
+If you want to try another template after dispatching your fields, just select it: previously selected fields are automatically moved for you to the new template in appropriate areas, according to the template and field types.
 
 :::
 
 
 ## Galería
 
-Cuando selecciona una plantilla en la sección de formularios, el icono "Más" está disponible tanto para los formularios lista como para los detallados.
+When you select a template in the form section, a "More" icon is available for both list and detail forms.
 
 ![More template button](img/more.png)
 
 ![More template button](img/Forms-more-button.png)
 
-Basta con hacer clic en ese icono para que aparezca una lista de plantillas adicionales de la Galería 4D mobile:
+Just click on that icon to display a list of additional templates from the 4D mobile Gallery:
 
 ![Template picker more button](img/Forms-template-gallery.png)
 
-Entonces, lo único que tiene que hacer es seleccionar la plantilla que se adapte a sus necesidades y el editor móvil se encargará de todo el proceso de instalación. Por lo tanto, puede comenzar a trabajar directamente en la plantilla, ya que está lista para usar.
+Then, the only thing you have to do is selecting the template that suits your needs and the mobile editor will handle all the installation process. So you can directly start working on the template, as it is ready-to-use.
 
-Se muestra un icono github en la parte superior izquierda de un icono de plantilla en el selector de plantillas Forms para indicar que viene de Github:
+A github icon is displayed at the top left of a template icon in the Forms template picker to indicate that it comes from Github:
 
 ![Add template from gallery](img/indicator-template-github.png)
 
 
 :::consejo
 
-La Galería también está disponible directamente en Github.
+The Gallery is also directly available on Github.
 - [**galería de plantillas de formularios lista**](https://4d-for-ios.github.io/gallery/#/type/list-detail/picker/0)
 - [**galería de plantillas de formularios detallados**](https://4d-for-ios.github.io/gallery/#/type/form-detail/picker/0)
 
@@ -128,7 +123,7 @@ La Galería también está disponible directamente en Github.
 
 ## Crear sus propias plantillas
 
-Si desea personalizar una plantilla descargada o crear sus propias plantillas, **varios tutoriales** pueden guiarle en estas tareas:
+If you want to customize a downloaded template or create your own templates, **several tutorials** can guide you through these tasks:
 
 - [**Personalización de una plantilla de formulario**](../tutorials/gallery/update-gallery-template.md)
 - [**Creación de formularios Lista**](../tutorials/creating-list-forms/list-form-template.md)

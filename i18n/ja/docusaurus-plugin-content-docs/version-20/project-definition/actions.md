@@ -207,9 +207,9 @@ Webページがモバイルアプリと対話するため、いくつかの java
 |            |                  | .verbose(message : string)    | Function | ネイティブアプリで開発者向けのメッセージを表示します                                                                                                                  |
 
 
-:::info See also
+:::info こちらもご覧ください
 
-ブログ記事 [4D for Mobile : モバイルアプリに Webページを表示する](https://blog.4d.com/4d-for-mobile-display-web-pages-in-your-mobile-apps/)
+ブログ記事 [4D for Mobile : モバイルアプリに Webページを表示する](https://blog.4d.com/ja/4d-for-mobile-display-web-pages-in-your-mobile-apps/)
 
 :::
 
