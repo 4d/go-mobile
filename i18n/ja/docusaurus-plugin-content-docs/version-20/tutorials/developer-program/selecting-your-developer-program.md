@@ -26,7 +26,8 @@ title: Apple Developer Program の選択
 
 :::info Free Apple Developer account
 
-Apple Developer Program に無料で参加する場合は、無料の Apple ID を作成し、その ID でサインインするだけです。 その場合は、ステップ 1 と 2 だけをおこない、Xcode > Preferences > Accounts から Apple ID を追加してサインインします。 :::
+Apple Developer Program に無料で参加する場合は、無料の Apple ID を作成し、その ID でサインインするだけです。 その場合は、ステップ 1 と 2 だけをおこない、Xcode > Preferences > Accounts から Apple ID を追加してサインインします。
+:::
 
 ## ⒈ Apple ID を作成する
 
@@ -62,7 +63,7 @@ D-U-N-S番号の申請は [こちら](https://developer.apple.com/enroll/duns-lo
 
 ![D-U-N-S 番号](img/DUNS-Number-Apple-Mail_4D-for-iOS.png)
 
-## ⒊ 登録する
+## ⒊ ⒊ 登録する
 
 **Apple Developer Enterprise Program** および **組織向け Apple Developer Program** については、[こちら](https://developer.apple.com/programs/enterprise/enroll/) でデベロッパー登録することができます。
 
