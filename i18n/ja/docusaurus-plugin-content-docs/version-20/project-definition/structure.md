@@ -3,7 +3,7 @@ id: structure
 title: ストラクチャー
 ---
 
-4Dデータベース内で RESTリソースとして公開されているすべてのテーブルとフィールドがこのページに表示されます。これには (N対1 および 1対N リレーションに基づいた) リレーション属性も含まれます。 実際の表示は、[ORDA のデータストア](https://developer.4d.com/docs/ja/ORDA/overview/) にとても近いものが表示されます。
+4Dデータベース内で RESTリソースとして公開されているすべてのテーブルとフィールドがこのページに表示されます。 これには (N対1 および 1対N リレーションに基づいた) リレーション属性も含まれます。 実際の表示は、[ORDA のデータストア](https://developer.4d.com/docs/ja/ORDA/overview/) にとても近いものが表示されます。
 
 ![ストラクチャーセクション](img/Structure-section-4D-for-iOS.png)
 
@@ -134,7 +134,7 @@ Android でも iOS でも、プロジェクトエディターから設定をす�
 
 :::info
 
-モバイルプロジェクトでは、**スカラー** の計算属性のみがサポートされています。つまり、[`get` 関数](https://developer.4d.com/docs/ja/ORDA/ordaClasses/#function-get-attributename) を使用するとスカラー値 (テキスト、ブール、日付、時間、数値) が返される計算属性である必要があります。
+モバイルプロジェクトでは、**スカラー** の計算属性のみがサポートされています。 つまり、[`get` 関数](https://developer.4d.com/docs/ja/ORDA/ordaClasses/#function-get-attributename) を使用するとスカラー値 (テキスト、ブール、日付、時間、数値) が返される計算属性である必要があります。
 
 :::
 
@@ -221,7 +221,7 @@ Android でも iOS でも、**スカラー** な [**エイリアス属性**](htt
 
 エディターで利用するには、エイリアス属性は **公開** されている必要があります。 これらは *イタリック* で表示されます。
 
-モバイルプロジェクトでは、 **スカラー** のエイリアス属性のみがサポートされています。つまり、ターゲット属性へのパスの最終要素の [kind](https://developer.4d.com/docs/ja/API/DataClassAttributeClass/#kind) は "storage" である必要があります。 それ以外には対応していません。
+モバイルプロジェクトでは、 **スカラー** のエイリアス属性のみがサポートされています。 つまり、ターゲット属性へのパスの最終要素の [kind](https://developer.4d.com/docs/ja/API/DataClassAttributeClass/#kind) は "storage" である必要があります。 それ以外には対応していません。
 
 
 スカラーのエイリアス属性は:
@@ -241,7 +241,7 @@ Android でも iOS でも、**スカラー** な [**エイリアス属性**](htt
 
 ## オブジェクト属性
 
-**ストラクチャー** セクションでは、全ての[型](https://developer.4d.com/go-mobile/ja/docs/project-definition/structure/#supported-field-types) の属性(テキスト、日付、時間、整数)をモバイルプロジェクト内で選択、使用、表示することができます。これには**[オブジェクト属性](https://developer.4d.com/docs/ja/Concepts/object/)** (JSON フォーマット) も含まれます。 フィールドリストの中では、オブジェクト属性は**{}** アイコンで表示されます。
+**ストラクチャー** セクションでは、全ての[型](https://developer.4d.com/go-mobile/ja/docs/project-definition/structure/#supported-field-types) の属性(テキスト、日付、時間、整数)をモバイルプロジェクト内で選択、使用、表示することができます。 フィールドリストの中では、オブジェクト属性は**{}** アイコンで表示されます。
 
 ![ストラクチャーセクション](img/object-attributes-structure.png)
 
