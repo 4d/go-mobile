@@ -135,7 +135,7 @@ Windows users need to download the [last CURL version](https://curl.se/download.
 
 Whether you're working on Windows or on macOS, you need to copy the following files from your development project to your production project:
 
-- `4DBASE/MobileApps/ID.BundleID/AuthKey_XXXX.P8`
-- `4DBASE/MobileApps/ID.BundleID/manifest.json`
+- `4DBASE/MobileApps/ID. BundleID/AuthKey_XXXX.`
+- `4DBASE/MobileApps/ID. BundleID/manifest.json`
 
 
