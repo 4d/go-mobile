@@ -61,7 +61,7 @@ title: セッション管理
 - [On Mobile App Action](../4d/on-mobile-app-action.md) データベースメソッド
 - フォームの [Webエリア](https://github.com/mesopelagique/form-detail-WebArea)
 
-ユーザーセッションを使用すると、[Webエリア](https://github.com/mesopelagique/form-detail-WebArea) の [4Dタグ](https://developer.4d.com/docs/ja/Tags/tags/) を介してユーザーデータを取得・表示することができます。 たとえば、page.shtml フォームに次のようにかけます:
+ユーザーセッションを使用すると、[Webエリア](https://github.com/mesopelagique/form-detail-WebArea) の [4Dタグ](https://developer.4d.com/docs/ja/Tags/tags/) を介してユーザーデータを取得・表示することができます。 たとえば、page.shtml フォームに次のように書けます:
 
 ```html
 <html><body><h1>使用しているメールアドレス: <!--#4DTEXT Session.info.mobile.email--> </h1></body></html>
