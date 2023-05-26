@@ -71,9 +71,9 @@ class PhoneContact(private val view: View) : BaseKotlinInputControl {
                         val hasNumber = cursor.getString(hasPhoneIndex)
                         if (Integer.valueOf(hasNumber) == 1) {
                             contentResolver.query(
-                                ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
+                                ContactsContract. CommonDataKinds.Phone.CONTENT_URI,
                                 null,
-                                ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = " + contactId,
+                                ContactsContract. CommonDataKinds.Phone.CONTACT_ID + " = " + contactId,
                                 null,
                                 null
                             )?.let { numbersCursor ->
@@ -97,13 +97,13 @@ class PhoneContact(private val view: View) : BaseKotlinInputControl {
 
     override fun process(inputValue: Any?, outputCallback: (output: Any) -> Unit) {
         (view.context as PermissionChecker?)?.askPermission(
-            permission = android.Manifest.permission.READ_CONTACTS,
+            permission = android. Manifest.permission.READ_CONTACTS,
             rationale = "Permission required to read contacts" 
         ) { isGranted ->
             if (isGranted) {
                 this.outputCallback = outputCallback
                 (view.context as ActivityResultController?)?.launch(
-                    type = ActivityResultContracts.PickContact(),
+                    type = ActivityResultContracts. PickContact(),
                     input = null,
                     callback = contactPhoneNumberCallback
                 )
@@ -184,7 +184,7 @@ In order to ask user permission in your custom Kotlin input control, check out t
 
 ```kotlin
 (context as PermissionChecker?)?.askPermission(
-    permission = android.Manifest.permission.READ_CONTACTS,
+    permission = android. Manifest.permission.READ_CONTACTS,
     rationale = "Permission required to read contacts" 
 ) { isGranted ->
     if (isGranted) {
@@ -202,7 +202,7 @@ We offer access to `ActivityResultController` that will delegate any `ActivityRe
 
 ```kotlin
 (view.context as ActivityResultController?)?.launch(
-    type = ActivityResultContracts.PickContact(),
+    type = ActivityResultContracts. PickContact(),
     input = null,
     callback = contactPhoneNumberCallback
 )
