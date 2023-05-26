@@ -102,15 +102,15 @@ Identity inspector を開きます。
 
 このチュートリアルでは、画面上でもっと大きく表示されるよう、ボタンの高さを設定します。
 
-⒈ ビューを選択し、Size inspector で高さを 123 から 40 に変更します。
+⒈ ⒈ ビューを選択し、Size inspector で高さを 123 から 40 に変更します。
 
 ![ボタンビューの高さ](img/Button-view-height.png)
 
-⒉ **Top Space Constraint** をダブルクリックし、値を 8 から 0 に変更します。
+⒉ ⒉ **Top Space Constraint** をダブルクリックし、値を 8 から 0 に変更します。
 
 ![上部余白の制約](img/Top-Space-constraint.png)
 
-⒊ 同じことを **Bottom Space Constraint** でおこない、8 から 0 に変更します。
+⒊ ⒊ 同じことを **Bottom Space Constraint** でおこない、8 から 0 に変更します。
 
 下図のようになっていれば成功です:
 
@@ -129,7 +129,7 @@ Identity inspector を開きます。
 
 ### タグを追加する
 
-ストーリーボードの各要素は、オブジェクトID を持ちます。 試しに Field View 2 を選択し、**Identity inspector** を確認してください。オブジェクトID が表示されているはずです:
+ストーリーボードの各要素は、オブジェクトID を持ちます。 試しに Field View 2 を選択し、**Identity inspector** を確認してください。 オブジェクトID が表示されているはずです:
 
 ![オブジェクトID ストーリーボード](img/Custom-button-object-id-storyboard.png)
 
@@ -137,17 +137,17 @@ Identity inspector を開きます。
 
 #### 高さの制約にタグを追加する
 
-⒈ ストーリーボード内で制約のオブジェクトID を選択してコピーします。
+⒈ ⒈ ストーリーボード内で制約のオブジェクトID を選択してコピーします。
 
 ![水平制約オブジェクトのID](img/Horizontal-constraint-object-ID.png)
 
-⒉ XMLファイル内でこの ID を検索し、**TAG-RL-007** (未使用のタグ) で置換します。
+⒉ ⒉ XMLファイル内でこの ID を検索し、**TAG-RL-007** (未使用のタグ) で置換します。
 
-⒊ XMLファイルを保存します。
+⒊ ⒊ XMLファイルを保存します。
 
 ![水平制約のXMLファイル](img/Horizontal-constraint-xml-file.png)
 
-⒋ ストーリーボードのウィンドウにフォーカスを移動し、制約が正しく更新されていることを確認します。
+⒋ ⒋ ストーリーボードのウィンドウにフォーカスを移動し、制約が正しく更新されていることを確認します。
 
 ![水平制約オブジェクトのID更新](img/Horizontal-object-id-updated.png)
 
