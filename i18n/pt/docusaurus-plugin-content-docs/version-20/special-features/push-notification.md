@@ -3,11 +3,6 @@ id: push-notification
 title: Push notifications
 ---
 
-:::informação 4D for Android
-
-This section is currently not available in 4D for Android.
-
-:::
 
 ## O que é uma notificação push?
 
@@ -17,33 +12,52 @@ But what about the architecture to implement, in order to integrate this functio
 
 ## Arquitetura técnica
 
-Esses são os elementos diferentes necessários para criar, enviar e receber uma notificação push móvel:
+Here are the different elements needed to create, send and receive a mobile push notification (example with iOS):
 
 ![Push notification process](img/4D-for-ios-push-notification.png)
 
-## Pré-requisitos
+## Configuration
 
-Para enviar notificações push, é necessário um arquivo de autenticação  `AuthKey_XXXYYY.p8` 8 da Apple.
+In order to send push notifications, you need to generate and reference authentication and configuration files for your project.
 
-1. Gerar e baixar um arquivo chave .p8 está descrito [nesta documentação](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Generate_p8.md).
+1. Generate and download your authentication files:
 
-2. Na página [Publishing](../project-definition/publishing) marque a opção **Push notifications** e selecione seu certificado no projeto móvel.
+- **iOS**: Generate and download a `AuthKey_XXXYYY.p8` authentication key file as described in [this documentation](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Generate_p8.md).
+- **Android**: Configure your Firebase project to get your `google-services.json` file and your `server key` as described in [this documentation](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Conf_firebase.md).
+
+2. In the [Publishing](../project-definition/publishing) page, check the **Push notifications** option and select appropriate files(s) for the mobile project:
+
+- **iOS**: select the `.p8` file
+- **Android**: select the `google-services.json` file
 
 ![Publishing section](img/push-notification-publishing-section.png)
 
 
+3. **Android only**: In the push notification method, reference the `server key` using the following statement:
+
+```4d
+
+$pushNotification.auth.serverKey:="your_server_key"
+
+```
+
+
+
 ## Exemplo básico para gerenciar suas notificações push
 
-O componente [4D Mobile App Server](https://github.com/4d-for-ios/4D-Mobile-App-Server/tree/master) fornece métodos para notificações push para um ou múltiplos recebedores. Para informações detalhadas, veja a documentação de componente [PushNotification ](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md).
+The [4D Mobile App Server](https://github.com/4d/4D-Mobile-App-Server/tree/main) component provides methods to push notifications to one or multiple recipients. For detailed information, please refer to the [PushNotification component documentation](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/PushNotification.md).
 
 Here is a simple example of push notification sent to `test@4d.com`:
 
 ```4d
 
-$pushNotification:=MobileAppServer. PushNotification.new() 
+$target:=New collection("ios";"android")
+$pushNotification:=MobileAppServer. PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification.auth.isDevelopment:=True //iOS only, to remove for production
+$pushNotification.auth.serverKey:="your_server_key" //Android only
 $notification:=New object 
-$notification.title:="Este é o título" 
-$notification.body:="Aqui é o conteúdo da notificação" 
+$notification.title:="This is title" 
+$notification.body:="Here is the content of this notification" 
 $response:=$pushNotification.send($notification;"test@4d.com")
 
 ```
@@ -52,7 +66,7 @@ It's as simple as that!
 
 :::dica
 
-Veja a documentação [**4D Mobile App Server** ](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) para saber mais sobre como adaptar notificações push para suas necessidades. Feel free to use it and to pick the most relevant aspects for your app. And of course, all contributors are welcome to this project, through feedback, bug reports and even better: pull requests.
+Use the [**4D Mobile App Server** component](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/PushNotification.md) to easily adapt the push notifications to your own needs. Feel free to use it and to pick the most relevant aspects for your app. And of course, all contributors are welcome to this project, through feedback, bug reports and even better: pull requests.
 
 :::
 
@@ -80,7 +94,10 @@ For `open()` method exclusively, this is the default behaviour. As a result, if 
 
 ```4d
 
-$pushNotification:=MobileAppServer. PushNotification.new()
+$target:=New collection("ios";"android")
+$pushNotification:=MobileAppServer. PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification.auth.isDevelopment:=True //iOS only
+$pushNotification.auth.serverKey:="your_server_key" //Android only
 
 $notification:=New object
 $notification.title:="This is title" 
@@ -95,7 +112,10 @@ However, you can also choose not to force a data synchronization, by preventing 
 
 ```4d
 
-$pushNotification:=MobileAppServer. PushNotification.new()
+$target:=New collection("ios";"android")
+$pushNotification:=MobileAppServer. PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification.auth.isDevelopment:=True //iOS only
+$pushNotification.auth.serverKey:="your_server_key" //Android only
 
 $notification:=New object
 $notification.title:="This is title" 
@@ -115,7 +135,10 @@ Here is a code example that you can also use with other methods, as long as you 
 
 ```4d
 
-$pushNotification:=MobileAppServer. PushNotification.new()
+$target:=New collection("ios";"android")
+$pushNotification:=MobileAppServer. PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification.auth.isDevelopment:=True //iOS only
+$pushNotification.auth.serverKey:="your_server_key" //Android only
 
 $notification:=New object
 $notification.title:="This is title" 
@@ -135,7 +158,7 @@ Windows users need to download the [last CURL version](https://curl.se/download.
 
 Whether you're working on Windows or on macOS, you need to copy the following files from your development project to your production project:
 
-- `4DBASE/MobileApps/ID.BundleID/AuthKey_XXXX.P8`
-- `4DBASE/MobileApps/ID.BundleID/manifest.json`
+- `4DBASE/MobileApps/ID. BundleID/AuthKey_XXXX.`
+- `4DBASE/MobileApps/ID. BundleID/manifest.json`
 
 
