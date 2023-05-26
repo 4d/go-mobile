@@ -16,7 +16,8 @@ The `On Mobile App Authentication` 4D database method is in charge of managing m
 
 :::nota
 
-A user agent is defined by an application ID, a device ID, and a team ID. These ids are passed to the `On Mobile App Authentication` database method (see below). :::
+A user agent is defined by an application ID, a device ID, and a team ID. These ids are passed to the `On Mobile App Authentication` database method (see below).
+:::
 
 The `On Mobile App Authentication` database method is always called for a first connection, even if the mobile application was built in Guest mode.
 
@@ -27,7 +28,7 @@ The method receives all necessary information from the mobile application in the
   //On Mobile App Authentication database method
 #DECLARE ($mobileInfo : Object) -> $result : Object
 
-  // ...Code for the method
+  // ... Code for the method
 $result:=New object() //do not forget to create the object to return
 
 ```
