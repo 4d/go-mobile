@@ -20,7 +20,7 @@ href="https://github.com/4d-go-mobile/tutorial-OneToManyTitleDefinition/archive/
 
 ![ラベル＆アイコンセクションのリレーションタイトル](img/labels-icons-title-definition.png)
 
-もうお気づきですね！　このように定義すれば、直前の詳細画面に表示されていた従業員の **Name** フィールドに応じて、表示タイトルが変化するようになります。
+このように定義すれば、直前の詳細画面に表示されていた従業員の **Name** フィールドに応じて、表示タイトルが変化するようになります。
 
 ![ラベル＆アイコンセクションのリレーションタイトル](img/relations-title-definition.png)
 

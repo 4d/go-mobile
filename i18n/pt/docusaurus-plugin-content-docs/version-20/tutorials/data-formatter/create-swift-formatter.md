@@ -24,9 +24,7 @@ $Obj.country:="France"
 $Obj.phoneNumber:="+33 1 30 53 92 00" 
 $Obj.website:="fr.4d.com"
 
-$Ent:=ds.Employees.get(4)
-$Ent.Object_Attribute:=$Obj
-$Ent.save()
+$Ent:=ds.
 
 ```
 

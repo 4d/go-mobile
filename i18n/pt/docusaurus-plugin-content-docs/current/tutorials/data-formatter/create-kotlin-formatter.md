@@ -30,13 +30,21 @@ Here is the `PhoneAction.kt` file to dial a phone number value on click on Andro
 ```4d
 package ___PACKAGE___
 
-import android.content.Intent
-import android.net.Uri
-import android.widget.TextView
-import androidx.databinding.BindingAdapter
+import android.content. Intent
+import android.net. Uri
+import android.widget. TextView
+import androidx.databinding. BindingAdapter
 
 @BindingAdapter("phoneAction")
 fun phoneAction(view: TextView, phoneAction: String?) {
+    if (phoneAction.isNullOrEmpty()) return
+    view.text = phoneAction
+    view.setOnClickListener {
+        val dialIntent = Intent(Intent.ACTION_DIAL)
+        dialIntent.data = Uri.parse("tel:$phoneAction")
+        view.context.startActivity(dialIntent)
+    }
+} {
     if (phoneAction.isNullOrEmpty()) return
     view.text = phoneAction
     view.setOnClickListener {

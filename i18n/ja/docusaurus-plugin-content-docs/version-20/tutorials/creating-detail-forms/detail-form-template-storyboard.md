@@ -34,7 +34,7 @@ iOSアプリのカスタム詳細フォームのインターフェースを Xcod
 ![Scroll Viewの位置とサイズ](img/scrollview-position-height-width.png)
 
 
-**Add New Constraints** ボタンをクリックします。左右上下 (Leading・Trailing・Top・Bottom) の余白をそれぞれ 8・8・0・0 に設定し、余白がすべて有効なのを確認して (赤い実線)、確定します:
+**Add New Constraints** ボタンをクリックします。
 
 ![Scroll Viewの制約](img/scrollview-constraints.png)
 
@@ -48,11 +48,11 @@ Stack View の幅と高さは、内包しているオブジェクトによって
 
 ## Stack View に他の View を追加する
 
-**オブジェクトライブラリ** から View をドラッグし、ストーリーボードに追加したばかりの Stack View の上にドロップします。 左側のツリー表示にて、View の名前を **Field View 1** に変更します。名前は、Identity inspector の Document セクションの Label 欄でも変更できます。
+**Field View 2** を選択し、Identity inspector (インターフェースビルダー画面の右側) からオブジェクトID をコピーします。 このプロジェクトの場合、Field View 2 のオブジェクトID は **SiX-3H-lNB** です。
 
 ![Field View 1を追加](img/add-view1-storyboard.png)
 
-**オブジェクトライブラリ** からもう一つ View をドラッグし、今度は画面の左側にツリー表示されているドキュメントのアウトラインに直接ドロップしましょう。Stack View の内部に収まるよう、Field View 1 と同じレベルに挿入してください。その後、ビューの名前を **Field View 2** に変更します。
+**オブジェクトライブラリ** からもう一つ View をドラッグし、今度は画面の左側にツリー表示されているドキュメントのアウトラインに直接ドロップしましょう。 Stack View の内部に収まるよう、Field View 1 と同じレベルに挿入してください。 その後、ビューの名前を **Field View 2** に変更します。
 
 ![Field View 2の追加](img/add-view2-storyboard.png)
 
@@ -83,7 +83,7 @@ Stack View の幅が Scroll View と同じになるよう、制約をもう 1つ
 
 ![Stack Viewの最終的な制約](img/stackview-constraints-final.png)
 
-Stack View にビューを 2つ追加し、制約も設定できました。次は、Field View 1 の作業に移りましょう。
+Stack View にビューを 2つ追加し、制約も設定できました。 次は、Field View 1 の作業に移りましょう。
 
 ## Field View 1 に Image View を追加する
 
@@ -95,7 +95,7 @@ Stack View にビューを 2つ追加し、制約も設定できました。次�
 
 ![Image Viewの位置とサイズ](img/imageview-position-height-width.png)
 
-**Add New Constraints** ボタンをクリックします。左右上下 (Leading・Trailing・Top・Bottom) の余白をそれぞれ 0・0・0・0 に設定し、余白がすべて有効なのを確認して (赤い実線)、確定します:
+**Add New Constraints** ボタンをクリックします。
 
 ![Image Viewの制約](img/imageview-constraints.png)
 
@@ -107,7 +107,7 @@ Stack View にビューを 2つ追加し、制約も設定できました。次�
 
 ### Title ラベル
 
-**オブジェクトライブラリ** から **Label** をドラッグし、Field View 2 の上にドロップします。幅を 343、高さを 22 に設定します。 また、X座標と Y座標の両方を 8 に設定します。
+**オブジェクトライブラリ** から **Label** をドラッグし、Field View 2 の上にドロップします。 幅を 343、高さを 22 に設定します。 また、X座標と Y座標の両方を 8 に設定します。
 
 ![ラベル追加](img/add-label1-storyboard.png)
 
@@ -125,7 +125,7 @@ Title ラベルを複製し、幅を 339、高さを 44 に変更します。 X�
 
 ![内容のラベルフォントと文字カラー](img/content-label-font-and-color.png)
 
-Content とTitle のラベルを両方選択し、**Add New Constraints** ボタンをクリックします。左右上下 (Leading・Trailing・Top・Bottom) の余白をそれぞれ Multiple・8・Multiple・Multiple に設定し、余白がすべて有効なのを確認し (赤い実線)、確定します:
+Content とTitle のラベルを両方選択し、**Add New Constraints** ボタンをクリックします。
 
 ![タイトルラベルと内容ラベルの制約 ](img/titlelabel-contentlabel-contraints.png)
 
@@ -138,7 +138,7 @@ Image View を選択し、**Identity inspector** (ウィンドウ右側パネル
 
 ![ユーザー定義のランタイム属性](img/user-defined-runtime-attributes.png)
 
-* **Key Path**: bindTo から始まるコードでコンポーネントの結合を有効にします: `bindTo.record.___FIELD_1___` と入力します。
+* **Value**: 属性名です。 `___FIELD_1_BINDING_TYPE___` と入力します。
 
 * **Type**: `String`
 
@@ -170,7 +170,7 @@ Image View を選択し、**Identity inspector** (ウィンドウ右側パネル
 
 プロジェクトエディターでフィールドをフォームに複数追加した場合、それに対応して Field View 2 は何度も複製されます。
 
-ストーリーボードの各要素は、オブジェクトID を持ちます。 試しに Field View 2 を選択し、**Identity inspector** を確認してください。オブジェクトID が表示されているはずです:
+ストーリーボードの各要素は、オブジェクトID を持ちます。 試しに Field View 2 を選択し、**Identity inspector** を確認してください。 オブジェクトID が表示されているはずです:
 
 ![オブジェクトID ストーリーボード](img/object-id-storyboard.png)
 
@@ -212,7 +212,7 @@ Image View を選択し、**Identity inspector** (ウィンドウ右側パネル
 
 ![タグの制約](img/duplicated-constraints.png)
 
-View Field 2 と 2つのラベルに対して実行したのと同じ要領で、Identity inspector から 7つある **制約** のオブジェクトID をコピーし、**TAG-FD-004**、**TAG-FD-005**、**TAG-FD-006**、**TAG-FD-007**、**TAG-FD-008**、**TAG-FD-009**、**TAG-FD-010** に変更します。制約は左のツリーから選択すると楽です。
+View Field 2 と 2つのラベルに対して実行したのと同じ要領で、Identity inspector から 7つある **制約** のオブジェクトID をコピーし、**TAG-FD-004**、**TAG-FD-005**、**TAG-FD-006**、**TAG-FD-007**、**TAG-FD-008**、**TAG-FD-009**、**TAG-FD-010** に変更します。
 
 モバイルプロジェクトエディターを開き、フォームセクションで詳細フォームのカスタムテンプレートを選択した上で、"ビルドして実行" を選択します。
 

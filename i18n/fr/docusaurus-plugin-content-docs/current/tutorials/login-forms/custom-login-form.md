@@ -85,9 +85,10 @@ If ($response.success)
     $response.statusText:="You are successfully authenticated"
 Else 
     $response.statusText:="Sorry, you are not authorized to use this application."
-End if 
-
-$0:=$response
+If ($response.success)
+    $response.statusText:="You are successfully authenticated"
+Else 
+    $response.statusText:="Sorry, you are not authorized to use this application."
 ```
 
 

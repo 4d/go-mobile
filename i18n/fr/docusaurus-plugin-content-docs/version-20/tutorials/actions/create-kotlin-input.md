@@ -171,11 +171,12 @@ There are registered permissions which you can simply define with the following:
 ```json
 {
     ...
-    "capabilities" : {
-        "contacts": true,
-        "location": true
-    }
-}
+    (context as PermissionChecker?)?.askPermission(
+    permission = android.Manifest.permission.READ_CONTACTS,
+    rationale = "Permission required to read contacts" 
+) { isGranted ->
+    if (isGranted) {
+        ...
 ```
 
 `contacts` setups `android.permission.READ_CONTACTS` permission. `location` setups `android.permission.ACCESS_COARSE_LOCATION` and `android.permission.ACCESS_FINE_LOCATION` permissions.
@@ -189,8 +190,8 @@ In order to ask user permission in your custom Kotlin input control, check out t
 ) { isGranted ->
     if (isGranted) {
         ...
-    }
-}
+    {
+    ...
 ```
 
 We offer access to `PermissionChecker` that will delegate to the `Activity` the permission request. The `rationale` string will be displayed in case of the user denies the permission request.

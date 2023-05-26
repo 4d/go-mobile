@@ -5,12 +5,11 @@ title: Actions
 
 El editor 4D Mobile Project le permite crear acciones para incluir en su aplicación móvil.
 
-Puede utilizar [acciones preestablecidas](#preset-actions) o [acciones personalizadas](../tutorials/actions/define-first-action.md) y [definir sus parámetros](#add-parameters-to-your-actions).
+You can use [preset actions](#preset-actions) or [custom actions](../tutorials/actions/define-first-action.md) and [define their parameters](#add-parameters-to-your-action).
 
 En el lado 4D, puede ejecutar el código 4D en el método base [On Mobile App Action](../4d/on-mobile-app-action.md).
 
 Las acciones están disponibles automáticamente en la [ interfaz móvil](#mobile-app-side).
-
 
 ## En el editor de proyectos
 
@@ -24,7 +23,7 @@ A continuación, deberá definir lo siguiente:
 * **Iconos:** seleccione un icono para su acción de su librería de iconos. You can also [add your own icon](./labels-and-icons.md#adding-custom-icons).
 * **Etiquetas cortas y largas: **las etiquetas para las acciones que se mostrarán en su aplicación.
 * **Tabla:** seleccione la tabla en la que desea aplicar la acción.
-* **Alcance:** seleccione si desea aplicar la acción en una **entidad** o en una **tabla**.
+* **Scope:** Where to use the action, an **entity** , a **table** or **global**.
 
 ![Action section](img/Actions-section-4D-for-iOS.png)
 
@@ -63,7 +62,6 @@ By default, the Input Control menu displays **selectionControls**. This is a fil
 
 Puede cambiar el orden de los parámetros con solo arrastrar y soltar.
 
-
 ## Acciones predefinidas
 
 Los proyectos 4D mobile incluyen las siguientes acciones predefinidas para gestionar el contenido de su aplicación:
@@ -89,12 +87,9 @@ Esto **creará automáticamente** todos los parámetros en el Editor de proyecto
 
 Para ese tipo de acción, verá que todas las **propiedades** ya están completadas para su conveniencia al lado derecho de la lista de parámetros.
 
-
 ### Acción de edición
 
 La creación de **acciones de edición** sigue el mismo proceso que las acciones de adición, con la excepción de que no podrá definir valores predeterminados desde la sección Acciones.
-
-
 
 ### Acción de eliminación
 
@@ -143,13 +138,11 @@ Para añadir uno o más niveles de ordenación en la lista Criterios de ordenaci
 
 ![sort](img/ascending.png)
 
-
 #### Menú de ordenación en la aplicación móvil
 
 Cuando se define más de una acción de ordenación para una tabla, los usuarios móviles se benefician automáticamente de un menú **de ordenación**. Contiene todas las acciones de ordenación predefinidas:
 
 ![sort](img/sort-go-mobile.gif)
-
 
 > Cuando sólo se define una acción de ordenación para una tabla, el menú **ordenación** no se muestra en la parte de la aplicación móvil.
 
@@ -163,7 +156,9 @@ When you select this action, you have to define the path that will be opened:
 
 You can only define a path starting with `/`, i.e. relative to the [current 4D web folder](https://developer.4d.com/docs/WebServer/webServerConfig.html#root-folder).
 
-This action can be set for any table and any scope (Table or Current entity). Like other actions, the Open URL action will be automatically available in the [mobile app interface](#mobile-app-side) (short or long label).
+Like other actions, the Open URL action will be automatically available in the [mobile app interface](#mobile-app-side) (short or long label) if choose to the Table or the Current entity scope.
+
+You could also choose to display the web page in main menu by choosing Global scope. Then you will be able to select it in "Main Menu" tab.
 
 :::nota
 
@@ -213,8 +208,6 @@ Blog post: [4D for Mobile : Display Web Pages in your Mobile Apps](https://blog.
 
 :::
 
-
-
 ### On Mobile App Action
 
 The [`On Mobile App Action`](../4d/on-mobile-app-action.md) database method is available to call all of your 4D methods.
@@ -228,8 +221,6 @@ After creating all of your actions, just click on the **Create** button from the
 - You can also decide to force close the Edition form using `$result.close:=True`.
 
 :::
-
-
 
 ## Built-in input controls
 
@@ -269,7 +260,6 @@ Available built-in input controls depend on the data type:
 | Imagen    | Default               |                                                                                                                                   |
 |           | Firma                 | Permitir firmar con el dedo                                                                                                       |
 
-
 ## Custom input controls
 
 You can add custom input controls to your mobile project to highly customize interactions with the user. There are two categories of custom input controls:
@@ -286,7 +276,6 @@ A custom input control is associated to a `manifest.json` file and (optionally) 
 `myProject/Resources/Mobile/inputControls/`
 
 The `manifest.json` file contains several attributes such as **name**, **type**, **format**, etc. depending on the input control category (selection or action).
-
 
 ### Selection input controls
 
@@ -307,7 +296,6 @@ These choice lists can be either **static** or **dynamic**.
 | Optional **"format"**  |            | texto              | to select interface: "push" (default if not defined), "segmented", "popover", "sheet", "picker"                                                       |
 | Optional **"assets"**  |            | object             | to adjust the display size (width and height)                                                                                                         |
 |                        | **"size"** | object or integer  | if integer, pass a single value to create a square image; if object, pass the following attributes: <li>"width" (integer)</li><li>"height" (integer)</li> |
-
 
 Here is an example of a manifest.json file containing the contact information of a company's subsidiaries, that can be used as a static choice list:
 

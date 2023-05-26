@@ -16,7 +16,8 @@ title: On Mobile App Authentication
 
 :::note
 
-ユーザーエージェントとはアプリケーションID、デバイスID、そしてチームID によって定義されます。 ID は `On Mobile App Authentication` データベースメソッド に渡されます (後述参照)。 :::
+ユーザーエージェントとはアプリケーションID、デバイスID、そしてチームID によって定義されます。 ID は `On Mobile App Authentication` データベースメソッド に渡されます (後述参照)。
+:::
 
 `On Mobile App Authentication` データベースメソッドは、初回の接続の際には必ず呼び出されます。モバイルアプリがゲストモードでビルドされていた場合でも呼び出されます。
 

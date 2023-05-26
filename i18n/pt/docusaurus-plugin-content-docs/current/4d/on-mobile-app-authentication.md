@@ -27,7 +27,7 @@ The method receives all necessary information from the mobile application in the
   //On Mobile App Authentication database method
 #DECLARE ($mobileInfo : Object) -> $result : Object
 
-  // ...Code for the method
+  // ... Code for the method
 $result:=New object() //do not forget to create the object to return
 
 ```

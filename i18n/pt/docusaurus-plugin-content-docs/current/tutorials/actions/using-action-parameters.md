@@ -177,6 +177,65 @@ $in:=$1
 
 $out:=New object("success";False) If ($in.dataClass#Null)
 
+    $entity:=ds.
+
+        Case of 
+
+    : ($request.action="addTasks")
+
+          // Inserir aqui o código para a ação "Add…"
+
+        $o:=New object(\
+        "dataClass";$context.dataClass;\
+        "parameters";$parameters)
+
+        $result:=addAction ($o)
+
+    : ($request.action="editTasks")
+
+          // Inserir aqui o código para a ação "Edit…"
+
+        $o:=New object(\
+        "dataClass";$context.dataClass;\
+        "ID";$context.entity.primaryKey;\
+        "parameters";$parameters)
+
+        $result:=editAction ($o)
+
+
+    : ($request.action="deleteTasks")
+
+          // Inserir aqui o código para a ação "Remove"
+
+        $o:=New object(\
+        "dataClass";$context.dataClass;\
+        "ID";$context.entity.primaryKey)
+
+        $result:=deleteAction ($o)
+
+    : ($request.action="sendComment")
+
+          // Inserir aqui o código para a ação "Send Comment"
+
+        $o:=New object(\
+        "dataClass";$context.dataClass;\
+        "ID";$context.entity.primaryKey;\
+        "parameters";$parameters)
+
+
+        $result:=sendMail ($o)
+
+    Else 
+
+          // Ação desconhecida
+
+        C_OBJECT($0)
+C_OBJECT($1) C_OBJECT($entity;$in;$out)
+
+$in:=$1
+
+$out:=New object("success";False) If ($in.dataClass#Null)
+
     $entity:=ds. Tasks.new()  //cria uma referência
 
     For each ($key;$in.parameters)

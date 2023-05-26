@@ -12,14 +12,14 @@ In short, the principle is the following:
 
 #### 1. Enable authentication
 
-Select **Authentication** in the Publishing page to use a login form into your app. You can select the **Default** login page or install a custom login page.
+Select **Authentication** in the Publishing page to use a login form into your app. Select **Authentication** in the Publishing page to use a login form into your app.
 
 ![authentication activation](img/authentication.png)
 
 
 #### 2. Enter email address
 
-An email is required when the app is launched. When a user enters their email and clicks on the **Login** button, the [On Mobile App Authentication](../../4d/on-mobile-app-authentication) database method is called and the user's session status should be updated to a "pending" status. A validation email is then sent to the user.
+An email is required when the app is launched. An email is required when the app is launched. A validation email is then sent to the user.
 
 #### 3. Check mailbox and 4. Click on the link
 
@@ -55,11 +55,9 @@ $result:= Mobile App Email Checker($mobileInfo)
 ```4d
 // On Web Connection database method
 
-#DECLARE ($info : Text) 
-Case of 
+#DECLARE ($info : Text) Case of 
 : (Mobile App Active Session($info).success)
-    //add log if you want
-End case 
+    //add log if you want End case 
 
 ```
 
@@ -134,19 +132,14 @@ End if
   $user : Text; $password : Text) 
 
 var $token ; $session : Text
-var $sessionFile ; $sessionObject : Object
-
-If ($url="/activation/@")
+var $sessionFile ; $sessionObject : Object If ($url="/activation/@")
     $token:=Substring($1;13)
 End if 
 
 
-  //get session from ID received from URL
-If (Storage.pendingSessions#Null)
+  //get session from ID received from URL If (Storage.pendingSessions#Null)
     $session:=Storage.pendingSessions[$token]
-End if 
-
-If ($session#"")
+End if If ($session#"")
       //get session folder
     $sessionFile:=Folder(fk mobileApps folder).folder($session).file($token)
     $sessionObject:=JSON Parse($sessionFile.getText())
@@ -168,9 +161,7 @@ If ($session#"")
 
     WEB SEND TEXT("You are successfully authenticated")
 Else 
-    WEB SEND TEXT("Invalid session")
-
-End if 
+    WEB SEND TEXT("Invalid session") End if 
 ```
 
 ## Remote url definition

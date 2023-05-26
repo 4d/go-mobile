@@ -143,7 +143,7 @@ override fun getIconName(): String {
 
 Kotlin入力コントロールに任意のリソースファイルを追加できます。 android フォルダー下の *res* フォルダーに格納されているものはすべて生成されるアプリにコピーされます。
 
-たとえば、Kotlin の `.kt` 入力コントロールは、*res/drawable/your_resource.xml* 内のリソースを使用できます。そのため、*your_resource.xml* ファイルは、*YourInputControl/android/res/drawable/your_resource.xml* になくてはなりません。
+たとえば、Kotlin の `.kt` 入力コントロールは、*res/drawable/your_resource.xml* 内のリソースを使用できます。 そのため、*your_resource.xml* ファイルは、*YourInputControl/android/res/drawable/your_resource.xml* になくてはなりません。
 
 :::info
 
@@ -171,11 +171,12 @@ Kotlin入力コントロールに任意のリソースファイルを追加で�
 ```json
 {
     ...
-    "capabilities" : {
-        "contacts": true,
-        "location": true
-    }
-}
+    (context as PermissionChecker?)?.askPermission(
+    permission = android.Manifest.permission.READ_CONTACTS,
+    rationale = "Permission required to read contacts" 
+) { isGranted ->
+    if (isGranted) {
+        ...
 ```
 
 `contacts` は `android.permission.READ_CONTACTS` の権限を設定します。 `location` は `android.permission.ACCESS_COARSE_LOCATION` および `android.permission.ACCESS_FINE_LOCATION` の権限を設定します。
@@ -189,8 +190,8 @@ Kotlin入力コントロールに任意のリソースファイルを追加で�
 ) { isGranted ->
     if (isGranted) {
         ...
-    }
-}
+    {
+    ...
 ```
 
 権限リクエストを `Activity` に任せるため、`PermissionChecker` へのアクセスを提供しています。 `rationale` の文字列は、ユーザーが権限リクエストを拒否したときに表示されます。

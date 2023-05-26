@@ -231,77 +231,7 @@ Aqui está o código de layout completo nesse estágio:
                 </androidx.cardview.widget. CardView>
 
 
-            </androidx.constraintlayout.widget. ConstraintLayout>
-
-            <!--
-            THE FOLLOWING PART WILL BE DUPLICATED CARD VIEWS FOR EVERY FIELD
-            YOU DROP AT THE BOTTOM OF THE TEMPLATE
-            -->
-
-            <!--FOR_EACH_FIELD-->
-            <!-- EVERYTHING BELOW WILL BE DUPLICATED FOR EACH FIELD YOU DROP AT THE BOTTOM OF THE
-                 TEMPLATE IN THE PROJECT EDITOR -->
-            <androidx.cardview.widget. CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="4dp"
-                android:layout_marginVertical="2dp"
-                card_view:cardCornerRadius="4dp">
-
-                <androidx.constraintlayout.widget. ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/__LABEL_ID__"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:scrollbars="none"
-                        android:text="__LABEL__"
-                        android:textAppearance="@style/TextAppearance. Body1"
-                        android:textColor="?colorPrimary"
-                        app:layout_constraintBottom_toTopOf="@+id/__VALUE_ID__"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:text="My label" />
-
-                    <!--IF_IS_IMAGE-->
-                    <!-- IF THE DROPPED FIELD IS AN IMAGE -->
-                    <ImageView
-                        android:id="@+id/__VALUE_ID__"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:contentDescription="Image"
-                        app:imageUrl="__IMAGE__"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/__LABEL_ID__" />
-                    <!--END_IF_IS_IMAGE-->
-                    <!--IF_IS_NOT_IMAGE-->
-                    <!-- IF THE DROPPED FIELD IS NOT AN IMAGE, THEN IT WILL BE A TEXT VIEW -->
-
-<TextView
-                        android:id="@+id/__VALUE_ID__"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:scrollbars="none"
-                        android:text="__TEXT__"
-                        android:textAlignment="textStart"
-                        android:textAllCaps="false"
-                        android:textAppearance="@style/TextAppearance.
+            </androidx.constraintlayout.widget.
 
 ```
 

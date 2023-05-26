@@ -52,7 +52,7 @@ Here is a simple example of push notification sent to `test@4d.com`:
 ```4d
 
 $target:=New collection("ios";"android")
-$pushNotification:=MobileAppServer.PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification:=MobileAppServer. PushNotification.new("TEAM123456.com.sample.myappname";$target)
 $pushNotification.auth.isDevelopment:=True //iOS only, to remove for production
 $pushNotification.auth.serverKey:="your_server_key" //Android only
 $notification:=New object 
@@ -95,7 +95,7 @@ For `open()` method exclusively, this is the default behaviour. As a result, if 
 ```4d
 
 $target:=New collection("ios";"android")
-$pushNotification:=MobileAppServer.PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification:=MobileAppServer. PushNotification.new("TEAM123456.com.sample.myappname";$target)
 $pushNotification.auth.isDevelopment:=True //iOS only
 $pushNotification.auth.serverKey:="your_server_key" //Android only
 
@@ -103,7 +103,7 @@ $notification:=New object
 $notification.title:="This is title" 
 $notification.body:="Here is the content of this notification" 
 
-$entity:=ds.Employees.get("456456")
+$entity:=ds. Employees.get("456456")
 $response:=$pushNotification.open($entity; $notification; $recipients)
 
 ```
@@ -113,7 +113,7 @@ However, you can also choose not to force a data synchronization, by preventing 
 ```4d
 
 $target:=New collection("ios";"android")
-$pushNotification:=MobileAppServer.PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification:=MobileAppServer. PushNotification.new("TEAM123456.com.sample.myappname";$target)
 $pushNotification.auth.isDevelopment:=True //iOS only
 $pushNotification.auth.serverKey:="your_server_key" //Android only
 
@@ -122,7 +122,7 @@ $notification.title:="This is title"
 $notification.body:="Here is the content of this notification" 
 $notification.userInfo:=New object("dataSynchro"; False)
 
-$entity:=ds.Employees.get("456456")
+$entity:=ds. Employees.get("456456")
 $response:=$pushNotification.open($entity; $notification; $recipients)
 
 ```
@@ -136,7 +136,7 @@ Here is a code example that you can also use with other methods, as long as you 
 ```4d
 
 $target:=New collection("ios";"android")
-$pushNotification:=MobileAppServer.PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification:=MobileAppServer. PushNotification.new("TEAM123456.com.sample.myappname";$target)
 $pushNotification.auth.isDevelopment:=True //iOS only
 $pushNotification.auth.serverKey:="your_server_key" //Android only
 
@@ -158,7 +158,7 @@ Windows users need to download the [last CURL version](https://curl.se/download.
 
 Whether you're working on Windows or on macOS, you need to copy the following files from your development project to your production project:
 
-- `4DBASE/MobileApps/ID.BundleID/AuthKey_XXXX.P8`
-- `4DBASE/MobileApps/ID.BundleID/manifest.json`
+- `4DBASE/MobileApps/ID. BundleID/AuthKey_XXXX.`
+- `4DBASE/MobileApps/ID. BundleID/manifest.json`
 
 

@@ -28,7 +28,7 @@ The database method receives required information from the mobile application in
 ```4d
  //On Mobile App Action database method
 #DECLARE ($mobileInfo : Object) -> $result : Object
-  // ...Code for the method
+  // ... Code for the method
 $result:=New object() //do not forget to create the object to return
 ```
 

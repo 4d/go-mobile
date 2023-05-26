@@ -26,7 +26,7 @@ To enroll in any **Apple Developer Program**, your Apple ID must be associated w
 
 :::info Free Apple Developer account
 
-If you want to join the Apple Developer Program for free, you only need to create a free Apple ID and sign in with it. Therefore, follow only Steps 1 and 2, then launch Xcode > Preferences > Accounts, Add your Apple ID and sign in!
+If you want to join the Apple Developer Program for free, you only need to create a free Apple ID and sign in with it. Therefore, follow only Steps 1 and 2, then launch Xcode > Preferences > Accounts, Add your Apple ID and sign in! :::
 :::
 
 ## PASO 1. Cree su identificación Apple

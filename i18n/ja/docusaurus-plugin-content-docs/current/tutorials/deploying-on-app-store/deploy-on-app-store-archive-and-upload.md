@@ -7,19 +7,19 @@ title: プロジェクトのアーカイブとアップロード
 > 
 > プロジェクトをアーカイブし、App Store Connect にアップロードします。
 
-## ⒈ Xcode の設定
+## ⒈ ⒈ Xcode の設定
 * 個人向けの Apple Developer アカウントを選択した場合、アカウントはすぐに利用できます。
 * 組織向けの Apple Developer アカウントを選択した場合、Apple の承認を待つ必要があります。
 * アカウントにアクセスできるようになったら、Xcode で Preferences > Accounts に追加します。
 * Xcode は、必要な Provisioning Profile と証明書を自動的にインストールします。
 
-## ⒉ Team ID を取得する
+## ⒉ ⒉ Team ID を取得する
 
 * Apple Developer アカウントにログインします。 Team ID は Membership にて確認できます。
 
-![Team ID を取得する](img/Team-ID-4D-for-iOS.png)
+![⒉ Team ID を取得する](img/Team-ID-4D-for-iOS.png)
 
-## ⒊ 4D for iOS の設定
+## ⒊ ⒊ 4D for iOS の設定
 
 * 4D for iOS を起動します。
 * セクションタブにて:
@@ -40,13 +40,13 @@ title: プロジェクトのアーカイブとアップロード
 
 ![ビルドタブ](img/BuildTab.png)
 
-## ⒋ プロジェクトを Xcode で開く
+## ⒋ 4D for iOS プロジェクトエディターのビルドタブで、プロジェクト > プロジェクトをXcodeで開く... をクリックします。
 
-* 4D for iOS プロジェクトエディターのビルドタブで、プロジェクト > プロジェクトをXcodeで開く... をクリックします。
+* ⒋ プロジェクトを Xcode で開く
 
-![プロジェクトを Xcode で開く](img/Open-your-project-Xcode-4D-for-iOS.png)
+![4D for iOS プロジェクトエディターのビルドタブで、プロジェクト > プロジェクトをXcodeで開く... をクリックします。](img/Open-your-project-Xcode-4D-for-iOS.png)
 
-## ⒌ Xcode でプロジェクトをアーカイブする
+## ⒌ ⒌ Xcode でプロジェクトをアーカイブする
 
 * Xcode でツールバーのシミュレーター選択メニューを開き、**Generic iOS Device** を選択します。
 
@@ -54,15 +54,15 @@ title: プロジェクトのアーカイブとアップロード
 
 * 次に、上部メニューから Product をクリックし、**Archive** を選択します。
 
-![Xcode でプロジェクトをアーカイブする](img/Archive-your-Project.png)
+![⒌ Xcode でプロジェクトをアーカイブする](img/Archive-your-Project.png)
 
-## ⒍ プロジェクトを検証する
+## ⒍ ⒍ プロジェクトを検証する
 
 * アーカイブ処理の最後に、作成したアーカイブを表示する Organizer ウィンドウが表示されます。
 
 * **Validate** ボタンをクリックし、検証を開始します。
 
-![プロジェクトを検証する](img/Organizer-Project-Validation.png)
+![⒍ プロジェクトを検証する](img/Organizer-Project-Validation.png)
 
 * App Store での配布オプションを選択します。
 
@@ -84,19 +84,19 @@ title: プロジェクトのアーカイブとアップロード
 
 * **Done** をクリックします。 すると、Organizer ウィンドウに戻ります。
 
-## ⒎ App Store にアップロードする
+## ⒎ ⒎ App Store にアップロードする
 
 検証が完了したら、いよいよ App Store にアプリを追加することができます。
 
 * **Upload to App Store** ボタンをクリックします。
 
-![App Store にアップロードする](img/Upload-to-AppStore.png)
+![⒎ App Store にアップロードする](img/Upload-to-AppStore.png)
 
 * アップロードに成功すると、次のウィンドウが表示されます:
 
 ![アップロード成功](img/upload-Successful.png)
 
-## ⒏ App Store 用のビルドを選択する
+## ⒏ ⒏ App Store 用のビルドを選択する
 
 * App Store Connect で App Store > iOS App からアプリを選択し、ビルドセクションに表示される **+** ボタンをクリックします。
 

@@ -33,7 +33,7 @@ iOSアプリのカスタムリストフォームのインターフェースを X
 
 ![Image Viewの位置とサイズ](img/imageview-position-height-width.png)
 
-**Add New Constraints** (ウィンドウ右下にある T に囲まれた四角のアイコン) ボタンをクリックします。左側の余白 (Leading Space) が 8 と表示されているので、右隣の赤い点線をクリックして (実線に変化します) 余白を有効にします。 次に、Width と Height のチェックボックスをクリックして、幅と高さに固定値の制約を追加し、下の "Add 3 Constraints" ボタンをクリックして確定します。
+**Add New Constraints** ボタンをクリックします。 Height のチェックボックスもクリックして、高さ固定の制約を追加したら、確定します:
 
 ![Image View前の余白](img/imageview-leading-space-width-height.png)
 
@@ -57,7 +57,7 @@ iOSアプリのカスタムリストフォームのインターフェースを X
 
 ![Viewの位置とサイズ](img/view-position-height-width.png)
 
-**Add New Constraints** (ウィンドウ右下にある T に囲まれた四角のアイコン) ボタンをクリックして余白を設定します。左右上下 (Leading・Trailing・Top・Bottom) の余白をそれぞれ 8・11・11・10.67 に設定し、余白がすべて有効なのを確認して (赤い実線)、確定します。
+**Add New Constraints** (ウィンドウ右下にある T に囲まれた四角のアイコン) ボタンをクリックします。
 
 ![Viewの制約](img/view-constraints-storyboard.png)
 
@@ -79,7 +79,7 @@ iOSアプリのカスタムリストフォームのインターフェースを X
 
 ![ラベル高さの制約](img/label-height-constraint-edition.png)
 
-Relation を Equal から **Greater Than or Equal** に変更します。垂直方向に拡張可能にすることで、複数行のラベルにも対応することが狙いです。
+Relation を Equal から **Greater Than or Equal** に変更します。 垂直方向に拡張可能にすることで、複数行のラベルにも対応することが狙いです。
 
 ![ラベル高さの制約をカスタマイズ](img/change-relation-label-height-constraint.png)
 
@@ -95,7 +95,7 @@ Relation を Equal から **Greater Than or Equal** に変更します。垂直�
 
 ![ラベル背景カラーのカスタマイズ](img/label-color-background-color.png)
 
-同じ要領でフォントもカスタマイズすることができます。 両方のラベルを選択し、Font を クリックして Custom を選択します。そうすれば、**Helvetica Neue** のようなフォント名が設定できるようになります。フォントサイズも指定しましょう。
+同じ要領でフォントもカスタマイズすることができます。 両方のラベルを選択し、Font を クリックして Custom を選択します。 そうすれば、**Helvetica Neue** のようなフォント名が設定できるようになります。
 
 ![ラベルフォントのカスタマイズ](img/label-font-custom.png)
 
@@ -119,7 +119,7 @@ Image View を選択し、**Identity inspector** (ウィンドウ右側パネル
 
 ![ユーザー定義のランタイム属性](img/user-defined-runtime-attributes.png)
 
-* **Key Path**: bindTo から始まるコードでコンポーネントの結合を有効にします: `bindTo.record.___FIELD_1___` と入力します。
+* **Value**: 属性名です。 `___FIELD_1_BINDING_TYPE___` と入力します。
 
 * **Type**: `String`
 

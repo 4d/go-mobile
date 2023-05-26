@@ -3,30 +3,23 @@ id: deep-linking
 title: Deep Linking
 ---
 
-:::informação 4D for Android
-
-This feature is currently not available in 4D for Android.
-
-:::
-
-Graças a funcionalidade **deep linking**, é possível partilhar o conteúdo que está vendo com todos os seus colegas. Here's an illustration demonstrating deep linking:
+Thanks to the **deep linking** feature, you can share the content that you're currently viewing with all of your colleagues. Here's an illustration demonstrating deep linking:
 
 ![Deep linking animation](img/4d-for-ios-deeplinking.gif)
 
-Há duas maneiras de implementar "deep linking" em IOS: **"URL scheme"** e **"Universal Links"**. While URL schemes are a well-known method for deep linking, Universal links are the new way that Apple has implemented to easily connect your webpage and your app under the same link.
+There are two ways to implement deep linking in mobile apps: **URL scheme** and **Universal Links**. While URL schemes are a well-known method for deep linking, Universal links are the new way that Apple has implemented to easily connect your webpage and your app under the same link.
 
 
 ## Comparação de modos deep linking
 
-### URL Scheme
-
 Here is a comparison between the two options which are available in the project editor:
+
+### URL Scheme
 
 | PRÓS                                | CONTRAS                                           |
 | ----------------------------------- | ------------------------------------------------- |
 | Fácil de implementar                | Sempre requer permissão                           |
 | Não precisa de um backend adicional | Não funciona se a aplicação não estiver instalada |
-|                                     | Não funciona em Android                           |
 
 ### Universal links
 
@@ -34,7 +27,6 @@ Here is a comparison between the two options which are available in the project 
 | ----------------------------------- | ---------------------------------------- |
 | Não requer permissão                | Se necessita um backend estático com SSL |
 | Não abre o navegador                | Mais complexo de implementar             |
-| Compatível com Android              |                                          |
 | Fallback URL if app isn't installed |                                          |
 
 ## Esquema URL personalizado
@@ -94,9 +86,9 @@ Universal links provide several key benefits that aren't available with custom U
 
 * **Unique**: Diferente de schemes personalizados de  URL , links universais não podem ser reclamadas por outros apps porque usam links padrão  HTTP ou HTTPS para seu website.
 
-* **Secure**: quando os usuários instalam sua aplicação, iOS verifica que seu site web permita que sua aplicação abra URLs em seu nome. Só você pode criar e subir o arquivo que outorga esta permissão a seu servidor web, pelo que a associação de seu website com sua aplicação seja segura.
+* **Secure**: When users install your app, iOS or Android verifies that your website allows your app to open URLs on its behalf. Só você pode criar e subir o arquivo que outorga esta permissão a seu servidor web, pelo que a associação de seu website com sua aplicação seja segura.
 
-* **Flexible**: os links universais funcionam mesmo quando sua aplicação não estiver instalada. Neste caso, ao pressionar um link a seu site web se abre o conteúdo em Safari.
+* **Flexible**: os links universais funcionam mesmo quando sua aplicação não estiver instalada. In this case, tapping a link to your website opens the content in a browser.
 
 * **Simple**: uma única URL funciona tanto para seu site web quanto para sua aplicação.
 
@@ -165,7 +157,7 @@ Como pode ver, essa funcionalidade abre uma grande gama de possibilidades. Deep 
 
 :::dica
 
-Veja a documentação [**4D Mobile App Server** ](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) para saber mais sobre como combinar notificações push com  deep linking.
+Refer to the [**4D Mobile App Server** component documentation](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/PushNotification.md) for more information on how to combine push notifications and deep linking.
 
 :::
 

@@ -3,11 +3,6 @@ id: push-notification
 title: Push notifications
 ---
 
-:::información 4D for Android
-
-Esta sección no está disponible actualmente en 4D for Android.
-
-:::
 
 ## ¿Qué es una notificación push?
 
@@ -17,33 +12,52 @@ But what about the architecture to implement, in order to integrate this functio
 
 ## Arquitectura técnica
 
-Estos son los diferentes elementos necesarios para crear, enviar y recibir una notificación push móvil:
+Here are the different elements needed to create, send and receive a mobile push notification (example with iOS):
 
 ![Push notification process](img/4D-for-ios-push-notification.png)
 
-## Prerrequisitos
+## Configuration
 
-Para enviar notificaciones push, se requiere un archivo de autenticación `AuthKey_XXXYYY.p8` de Apple.
+In order to send push notifications, you need to generate and reference authentication and configuration files for your project.
 
-1. Genere y descargue un archivo de llave .p8 como se describe en [esta documentación](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Generate_p8.md).
+1. Generate and download your authentication files:
 
-2. En la página [Publishing](../project-definition/publishing), marque la opción **Notificaciones push** y seleccione su certificado en el proyecto móvil.
+- **iOS**: Generate and download a `AuthKey_XXXYYY.p8` authentication key file as described in [this documentation](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Generate_p8.md).
+- **Android**: Configure your Firebase project to get your `google-services.json` file and your `server key` as described in [this documentation](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Conf_firebase.md).
+
+2. In the [Publishing](../project-definition/publishing) page, check the **Push notifications** option and select appropriate files(s) for the mobile project:
+
+- **iOS**: select the `.p8` file
+- **Android**: select the `google-services.json` file
 
 ![Publishing section](img/push-notification-publishing-section.png)
 
 
+3. **Android only**: In the push notification method, reference the `server key` using the following statement:
+
+```4d
+
+$pushNotification.auth.serverKey:="your_server_key"
+
+```
+
+
+
 ## Ejemplo básico para gestionar sus notificaciones push
 
-El componente [4D Mobile App Server](https://github.com/4d-for-ios/4D-Mobile-App-Server/tree/master) ofrece métodos para enviar notificaciones push a uno o varios destinatarios. Para obtener información detallada, consulte la documentación del componente [PushNotification](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md).
+The [4D Mobile App Server](https://github.com/4d/4D-Mobile-App-Server/tree/main) component provides methods to push notifications to one or multiple recipients. For detailed information, please refer to the [PushNotification component documentation](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/PushNotification.md).
 
 Here is a simple example of push notification sent to `test@4d.com`:
 
 ```4d
 
-$pushNotification:=MobileAppServer.PushNotification.new() 
+$target:=New collection("ios";"android")
+$pushNotification:=MobileAppServer.PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification.auth.isDevelopment:=True //iOS only, to remove for production
+$pushNotification.auth.serverKey:="your_server_key" //Android only
 $notification:=New object 
-$notification.title:="Este es el título" 
-$notification.body:="Este es el contenido de esta notificación" 
+$notification.title:="This is title" 
+$notification.body:="Here is the content of this notification" 
 $response:=$pushNotification.send($notification;"test@4d.com")
 
 ```
@@ -52,7 +66,7 @@ It's as simple as that!
 
 :::consejo
 
-Utilice el componente [**4D Mobile App Server**](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) para adaptar fácilmente notificaciones push a sus propias necesidades. Feel free to use it and to pick the most relevant aspects for your app. And of course, all contributors are welcome to this project, through feedback, bug reports and even better: pull requests.
+Use the [**4D Mobile App Server** component](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/PushNotification.md) to easily adapt the push notifications to your own needs. Feel free to use it and to pick the most relevant aspects for your app. And of course, all contributors are welcome to this project, through feedback, bug reports and even better: pull requests.
 
 :::
 
@@ -80,11 +94,14 @@ For `open()` method exclusively, this is the default behaviour. As a result, if 
 
 ```4d
 
-$pushNotification:=MobileAppServer.PushNotification.new()
+$target:=New collection("ios";"android")
+$pushNotification:=MobileAppServer.PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification.auth.isDevelopment:=True //iOS only
+$pushNotification.auth.serverKey:="your_server_key" //Android only
 
 $notification:=New object
 $notification.title:="This is title" 
-$notification.body:="Este es el contenido de esta notificación" 
+$notification.body:="Here is the content of this notification" 
 
 $entity:=ds.Employees.get("456456")
 $response:=$pushNotification.open($entity; $notification; $recipients)
@@ -95,11 +112,14 @@ However, you can also choose not to force a data synchronization, by preventing 
 
 ```4d
 
-$pushNotification:=MobileAppServer.PushNotification.new()
+$target:=New collection("ios";"android")
+$pushNotification:=MobileAppServer.PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification.auth.isDevelopment:=True //iOS only
+$pushNotification.auth.serverKey:="your_server_key" //Android only
 
 $notification:=New object
-$notification.title:="Este es el título" 
-$notification.body:="Este es el contenido de esta notificación" 
+$notification.title:="This is title" 
+$notification.body:="Here is the content of this notification" 
 $notification.userInfo:=New object("dataSynchro"; False)
 
 $entity:=ds.Employees.get("456456")
@@ -115,11 +135,14 @@ Here is a code example that you can also use with other methods, as long as you 
 
 ```4d
 
-$pushNotification:=MobileAppServer.PushNotification.new()
+$target:=New collection("ios";"android")
+$pushNotification:=MobileAppServer.PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification.auth.isDevelopment:=True //iOS only
+$pushNotification.auth.serverKey:="your_server_key" //Android only
 
 $notification:=New object
-$notification.title:="Este es el título" 
-$notification.body:="Este es el contenido de esta notificación" 
+$notification.title:="This is title" 
+$notification.body:="Here is the content of this notification" 
 $notification.userInfo:=New object("dataSynchro"; True)
 
 $response:=$pushNotification.send($notification; $recipients)
