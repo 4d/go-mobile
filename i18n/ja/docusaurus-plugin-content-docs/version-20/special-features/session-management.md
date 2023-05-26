@@ -48,12 +48,12 @@ title: セッション管理
 
 ```
 
-デフォルトでは、[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) データベースメソッドによってセッションが認証された場合、"ststus" は自動的に "accepted" に設定されます (`$result.success` は `True`)。 全ユーザーセッションの最初のログインを手動で認証する必要がある場合は、[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) データベースメソッドによって返されるオブジェクトに `$result.verify:=True` を追加します。 これにより、セッションファイルのデフォルトステータス "accepted" が "pending" に変更されます。 詳細については [この例題](../tutorials/login-forms/email#コンポーネントを使用しない場合) を参照ください。
+全ユーザーセッションの最初のログインを手動で認証する必要がある場合は、[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) データベースメソッドによって返されるオブジェクトに `$result.verify:=True` を追加します。 これにより、セッションファイルのデフォルトステータス "accepted" が "pending" に変更されます。 デフォルトでは、[On Mobile App Authentication](../4d/on-mobile-app-authentication.md) データベースメソッドによってセッションが認証された場合、"ststus" は自動的に "accepted" に設定されます (`$result.success` は `True`)。 詳細については [この例題](../tutorials/login-forms/email#コンポーネントを使用しない場合) を参照ください。
 
 
 ## Session オブジェクト
 
-モバイルセッションは、(サーバー上で有効化されていれば) 強力な [4Dユーザーセッション](https://developer.4d.com/docs/ja/WebServer/sessions/) を活用することができます。 この場合、[モバイルセッションファイル](#セッションファイル) に格納された情報をサーバー上の [Session オブジェクト](https://developer.4d.com/docs/ja/API/SessionClass/) に格納することができます。これにより、たとえば同一ユーザーのショッピングカートを Webセッションとモバイルセッションで共有することができます。
+4D for iOS と 4D for Android ではユーザーセッションを管理することができます。 モバイルアプリの体験向上のため、セッションから接続ユーザーに関する情報を取得できます。
 
 モバイルプロジェクトにおいては、[Session オブジェクト](https://developer.4d.com/docs/ja/API/SessionClass/) は自動的に次のコンテキストから利用可能です:
 
@@ -61,7 +61,7 @@ title: セッション管理
 - [On Mobile App Action](../4d/on-mobile-app-action.md) データベースメソッド
 - フォームの [Webエリア](https://github.com/mesopelagique/form-detail-WebArea)
 
-ユーザーセッションを使用すると、[Webエリア](https://github.com/mesopelagique/form-detail-WebArea) の [4Dタグ](https://developer.4d.com/docs/ja/Tags/tags/) を介してユーザーデータを取得・表示することができます。 たとえば、page.shtml フォームに次のようにかけます:
+ユーザーセッションを使用すると、[Webエリア](https://github.com/mesopelagique/form-detail-WebArea) の [4Dタグ](https://developer.4d.com/docs/ja/Tags/tags/) を介してユーザーデータを取得・表示することができます。 たとえば、page.shtml フォームに次のように書けます:
 
 ```html
 <html><body><h1>使用しているメールアドレス: <!--#4DTEXT Session.info.mobile.email--> </h1></body></html>
