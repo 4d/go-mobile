@@ -27,7 +27,7 @@ title: カスタムログインフォーム
 * カスタムログインフォームを追加する
 * QRコードをスキャンするだけで、アプリユーザーがログインできる機能を実装する
 
-まず、スタータープロジェクトをダウンロードします。このプロジェクトには、データベースファイルのほかに、すぐに使える Webページが WebFolderフォルダーに格納されています:
+このプロジェクトには、データベースファイルのほかに、すぐに使える Webページが WebFolderフォルダーに格納されています:
 
 <div className="center-button">
 <a className="button button--primary"
@@ -40,7 +40,7 @@ href="https://github.com/4d-go-mobile/tutorial-CustomLoginForm/archive/main.zip"
 
 :::
 
-## ⒉ カスタムログインフォームを追加する
+## ⒉ ⒉ カスタムログインフォームを追加する
 
 カスタムログインフォームを追加するには、まず *YourDatabase.4dbase/Resources/Mobile/form/login* フォルダーを作成します。
 
@@ -52,7 +52,7 @@ href="https://github.com/4d-go-mobile/tutorial-CustomLoginForm/archive/main.zip"
 
 ![認証](img/authentication-custom.png)
 
-## ⒊ On Mobile App Authentication データベースメソッド
+## ⒊ ⒊ On Mobile App Authentication データベースメソッド
 
 公開ページで、**作成...** ボタンをクリックすると、4Dメソッドエディターで `On Mobile App Authentication` データベースメソッドが開きます。 このような表示になります:
 
@@ -88,10 +88,17 @@ Else
 End if 
 
 $0:=$response
+If ($response.success)
+    $response.statusText:="認証に成功しました"
+Else 
+    $response.statusText:="このアプリを使用する権限がありません"
+End if 
+
+$0:=$response
 ```
 
 
-## ⒋ プロジェクトメソッド
+## ⒋ ⒋ プロジェクトメソッド
 
 ### Authentication メソッド
 
@@ -138,7 +145,7 @@ End if
 
 ### GenerateQRCODE メソッド
 
-ここでは、*vqrCodeData* プロセス変数を生成します。この変数は、ユーザーのメールアドレスと暗号化されたパスワードを含む jsonです。 これらのデータが QRコードに埋め込まれます。
+ここでは、*vqrCodeData* プロセス変数を生成します。 この変数は、ユーザーのメールアドレスと暗号化されたパスワードを含む jsonです。 これらのデータが QRコードに埋め込まれます。
 
 ```4d
 // Storage 変数を使います
@@ -155,7 +162,7 @@ WEB SEND HTTP REDIRECT("/generatedQRCode.shtml")
 ```
 
 
-## ⒌ Webサイト
+## ⒌ ⒌ Webサイト
 
 このチュートリアルでは、WebFolder フォルダーに 3つの htmlページが用意されています:
 
@@ -239,7 +246,7 @@ WEB SEND HTTP REDIRECT("/generatedQRCode.shtml")
 
 プロジェクトエディターから、モバイルアプリを実機にインストールします。
 
-すると、カスタムログインフォームが表示されます。ここで、さきほど生成した QRコードをスキャンすることで、モバイルアプリにログインできます。
+すると、カスタムログインフォームが表示されます。 ここで、さきほど生成した QRコードをスキャンすることで、モバイルアプリにログインできます。
 
 このような結果になります:
 

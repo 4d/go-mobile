@@ -3,11 +3,6 @@ id: push-notification
 title: プッシュ通知
 ---
 
-:::info 4D for Android
-
-このセクションで触れている内容は、4D for Android では現在ご利用いただけません。
-
-:::
 
 ## プッシュ通知とは
 
@@ -17,30 +12,49 @@ title: プッシュ通知
 
 ## 技術的アーキテクチャー
 
-ここでは、モバイルプッシュ通知の作成・送信・受信に必要な各要素について説明します。
+ここでは、モバイルプッシュ通知の作成・送信・受信に必要な各要素について説明します (iOS の例):
 
 ![プッシュ通知の流れ](img/4D-for-ios-push-notification.png)
 
-## システム要件
+## 設定
 
-プッシュ通知を送信するには、Apple社から提供される `AuthKey_XXXYYY.p8` 認証ファイルが必要です。
+プッシュ通知を送信するには、プロジェクトの認証および設定ファイルを生成して参照する必要があります。
 
-1. [このドキュメント](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Generate_p8.md) で説明されているように、.p8 キーファイルを生成してダウンロードします。
+1. 認証ファイルを生成し、ダウンロードします:
 
-2. モバイルプロジェクトの [公開](../project-definition/publishing.md) ページで、**プッシュ通知** オプションにチェックを入れ、証明書を選択します。
+- **iOS**: [このドキュメント](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Generate_p8.md) で説明されているように、`AuthKey_XXXYYY.p8` 認証キーファイルを生成してダウンロードします。
+- **Android**: [このドキュメント](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Conf_firebase.md) で説明されているように、Firebaseプロジェクトを設定して`google-services.json` ファイルと `server key` を取得します。
+
+2. モバイルプロジェクトの [公開](../project-definition/publishing) ページで、**プッシュ通知** オプションにチェックを入れ、適切なファイルを選択します:
+
+- **iOS**: `.p8` ファイルを選択します。
+- **Android**: `google-services.json` ファイルを選択します。
 
 ![公開セクション](img/push-notification-publishing-section.png)
 
 
+3. **Android only**: プッシュ通知メソッドでは、次のステートメントを使用して `server key` を参照します:
+
+```4d
+
+$pushNotification.auth.serverKey:="your_server_key"
+
+```
+
+
+
 ## プッシュ通知の基本的な例
 
-[4D Mobile App Server](https://github.com/4d-for-ios/4D-Mobile-App-Server/tree/master) コンポーネントは、1人以上の受信者にプッシュ通知するためのメソッドを提供しています。 詳細については、[プッシュ通知コンポーネントのドキュメント](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) を参照ください。
+[4D Mobile App Server](https://github.com/4d/4D-Mobile-App-Server/tree/main) コンポーネントは、1人以上の受信者にプッシュ通知するためのメソッドを提供しています。 詳細については、[プッシュ通知コンポーネントのドキュメント](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/PushNotification.md) を参照ください。
 
 以下は、`test@4d.com` にプッシュ通知を送信する簡単な例です:
 
 ```4d
 
-$pushNotification:=MobileAppServer.PushNotification.new() 
+$target:=New collection("ios";"android")
+$pushNotification:=MobileAppServer.PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification.auth.isDevelopment:=True // iOS のみ、本番用は削除
+$pushNotification.auth.serverKey:="your_server_key" // Android のみ
 $notification:=New object 
 $notification.title:="ここがタイトルです" 
 $notification.body:="ここが通知の内容です" 
@@ -52,7 +66,7 @@ $response:=$pushNotification.send($notification;"test@4d.com")
 
 :::tip
 
-[**4D Mobile App Server** コンポーネント](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) を使用すると、プッシュ通知を簡単にニーズに合わせることができます。 アプリに最適な部分を選んで、自由にお使いください。 もちろん、フィードバックやバグレポート、さらにはプルリクエストを通じて、このプロジェクトへの貢献を歓迎します。
+[**4D Mobile App Server** コンポーネント](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/PushNotification.md) を使用すると、プッシュ通知を簡単にニーズに合わせることができます。 アプリに最適な部分を選んで、自由にお使いください。 もちろん、フィードバックやバグレポート、さらにはプルリクエストを通じて、このプロジェクトへの貢献を歓迎します。
 
 :::
 
@@ -70,7 +84,7 @@ $response:=$pushNotification.send($notification;"test@4d.com")
 
 たとえば、連絡先アプリにおいて、連絡先の情報 (住所や電話番号などの連絡先のレコード) が変更された場合、ユーザーは受け取った通知から自動的に当該レコードを開き、そのデータを同期できます。 ユーザーが通知を開くと、連絡先の情報が完全に更新されます。
 
-以下は、デフォルトの動作の例です。`dataSynchro` リクエストと `open()` を組み合わせて使います:
+以下は、デフォルトの動作の例です。 `dataSynchro` リクエストと `open()` を組み合わせて使います:
 
 :::note
 
@@ -80,7 +94,10 @@ $response:=$pushNotification.send($notification;"test@4d.com")
 
 ```4d
 
-$pushNotification:=MobileAppServer.PushNotification.new()
+$target:=New collection("ios";"android")
+$pushNotification:=MobileAppServer.PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification.auth.isDevelopment:=True // iOS のみ
+$pushNotification.auth.serverKey:="your_server_key" // Android のみ
 
 $notification:=New object
 $notification.title:="ここがタイトルです" 
@@ -95,7 +112,10 @@ $response:=$pushNotification.open($entity; $notification; $recipients)
 
 ```4d
 
-$pushNotification:=MobileAppServer.PushNotification.new()
+$target:=New collection("ios";"android")
+$pushNotification:=MobileAppServer.PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification.auth.isDevelopment:=True // iOS のみ
+$pushNotification.auth.serverKey:="your_server_key" // Android のみ
 
 $notification:=New object
 $notification.title:="ここがタイトルです" 
@@ -115,7 +135,10 @@ $response:=$pushNotification.open($entity; $notification; $recipients)
 
 ```4d
 
-$pushNotification:=MobileAppServer.PushNotification.new()
+$target:=New collection("ios";"android")
+$pushNotification:=MobileAppServer.PushNotification.new("TEAM123456.com.sample.myappname";$target)
+$pushNotification.auth.isDevelopment:=True // iOS のみ
+$pushNotification.auth.serverKey:="your_server_key" // Android のみ
 
 $notification:=New object
 $notification.title:="ここがタイトルです" 

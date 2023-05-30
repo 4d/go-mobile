@@ -9,9 +9,9 @@ title: フィルタークエリ
 
 はじめに、*進行中 (In Progress)* の商談だけが表示されるよう、データセクションで **基本的なフィルタークエリ** を設定します。 その後、営業担当者のメールアドレスも条件に含まれるよう、**ユーザー情報に基づくフィルタークエリ** を設定します。
 
-## スタータープロジェクトをダウンロード
+## ⒈ スタータープロジェクトをダウンロード
 
-はじめに、**スタータープロジェクト** をダウンロードします。**4DforiOSQueries.4dbase** サンプルデータベースには、すぐに使えるモバイルアプリプロジェクトが含まれています。
+はじめに、**スタータープロジェクト** をダウンロードします。 **4DforiOSQueries.4dbase** サンプルデータベースには、すぐに使えるモバイルアプリプロジェクトが含まれています。
 
 <div className="center-button">
 <a className="button button--primary"
@@ -33,7 +33,7 @@ href="https://github.com/4d-go-mobile/tutorial-RestrictedQueries/releases/latest
 
 ## フィルタークエリの定義
 
-はじめに、スタータープロジェクトをそのままビルドして実行してみましょう。ログイン画面には営業担当者のメールアドレス "michelle.simpson@mail.com" を入力します。**営業担当者全員の商談がステータスに関係なく** (*済 (Closed)* と *進行中 (In Progress)* の両方が) 表示されることに注目してください。
+ログイン画面には営業担当者のメールアドレス "michelle.simpson@mail.com" を入力します。 **営業担当者全員の商談がステータスに関係なく** (*済 (Closed)* と *進行中 (In Progress)* の両方が) 表示されることに注目してください。
 
 ![クエリフィルターが設定されていないアプリ](img/ios-app-without-queries.png)
 
@@ -44,7 +44,7 @@ href="https://github.com/4d-go-mobile/tutorial-RestrictedQueries/releases/latest
 * **フィールド** ボタンをクリックし、**Status** フィールドを選択します。
 * **比較演算子** ボタンをクリックし、**等しい** を選択します。
 * *進行中* の商談を表示したいので、**&apos;In progress&apos;**と入力します。
-* **検証** ボタンをクリックし、フィルターを確定します。これを忘れてしまうと、アプリがビルドできません。
+* **検証** ボタンをクリックし、フィルターを確定します。 これを忘れてしまうと、アプリがビルドできません。
 
 下図のようになっていることを確認してください。
 
@@ -56,7 +56,7 @@ href="https://github.com/4d-go-mobile/tutorial-RestrictedQueries/releases/latest
 > * 今回のような単純なフィルターの場合、**このテーブルのデータをアプリケーションに埋め込み** チェックボックスによって、データをアプリに埋め込むか、それともログイン後にロードさせるかを選ぶことができます。
 > * ビルドを実行すると、計算された **データサイズ** が画面上で確認できるようになります。
 
-アプリをビルドして実行しましょう。メールアドレス "michelle.simpson@mail.com" を入力してログインすると、今度は *進行中* の商談のみがシミュレーターに表示されます。
+アプリをビルドして実行しましょう。 メールアドレス "michelle.simpson@mail.com" を入力してログインすると、今度は *進行中* の商談のみがシミュレーターに表示されます。
 
 ![単純なクエリフィルターが設定されているアプリ](img/restrited-queries-basic-query.png)
 
@@ -70,7 +70,7 @@ href="https://github.com/4d-go-mobile/tutorial-RestrictedQueries/releases/latest
 * **データ** セクションに移動します。
 * **フィルタークエリ** 欄をクリックすると、**フィールド・比較演算子・演算子ボタン** が表示されます。
 * **演算子** ボタンをクリックし、**AND** を選択します。
-* データベースメソッドの中で参照したいユーザー情報を入力します。ここでは、**:email** です。
+* データベースメソッドの中で参照したいユーザー情報を入力します。 ここでは、**:email** です。
 * **検証** ボタンをクリックして、クエリを検証します。 これを忘れてしまうと，アプリがビルドできません。
 
 ![ユーザー情報に基づくクエリ](img/user-information-query.png)
@@ -84,7 +84,7 @@ Status = 'In Progress' & manager.Email = :email
 > **注記**
 > 
 > * ユーザー情報に基づくクエリが設定されているテーブルの横には **ユーザーアイコン** が表示されます。
-> * ユーザー情報に基づくフィルタークエリを入力して確定したのであれば、[`On Mobile app Authentication`](../../4d/on-mobile-app-authentication.md) データベースメソッドを編集しなければなりません。 **認証メソッドを編集…** ボタンをクリックすると、データベースメソッドの編集ウィンドウが開きます。
+> * ユーザー情報に基づくフィルタークエリを入力して確定したのであれば、[`On Mobile app Authentication`](../../4d/on-mobile-app-authentication.md) データベースメソッドを編集しなければなりません。 **認証メソッドを編集… ** ボタンをクリックすると、データベースメソッドの編集ウィンドウが開きます。
 
 データベースメソッドに以下のコードを追加します。
 
@@ -96,7 +96,7 @@ $response.userInfo:=New object("email";$request.email)
 
 ![ユーザー情報に基づくクエリ](img/database-method-user-information-query.png)
 
-アプリをビルドし、メールアドレスに "michelle.simpson@mail.com"  と入力してログインしてみてください。Michelle Simpsonさんの *"In progress (進行中)"* の商談だけが表示されます。
+アプリをビルドし、メールアドレスに "michelle.simpson@mail.com"  と入力してログインしてみてください。 Michelle Simpsonさんの *"In progress (進行中)"* の商談だけが表示されます。
 
 ![最終結果](img/restricted-queries-final-result.png)
 

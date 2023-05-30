@@ -44,6 +44,14 @@ fun phoneAction(view: TextView, phoneAction: String?) {
         dialIntent.data = Uri.parse("tel:$phoneAction")
         view.context.startActivity(dialIntent)
     }
+} {
+    if (phoneAction.isNullOrEmpty()) return
+    view.text = phoneAction
+    view.setOnClickListener {
+        val dialIntent = Intent(Intent.ACTION_DIAL)
+        dialIntent.data = Uri.parse("tel:$phoneAction")
+        view.context.startActivity(dialIntent)
+    }
 }
 ```
 Putting all that together, you can save this formatter as a **.kt** file in the formatter folder and use it in your mobile project.

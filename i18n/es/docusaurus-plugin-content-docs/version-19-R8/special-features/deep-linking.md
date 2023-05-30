@@ -9,18 +9,18 @@ This feature is currently not available in 4D for Android.
 
 :::
 
-Gracias a la funcionalidad **deep linking**, puede compartir el contenido que está viendo en ese momento con todos sus colegas. Aquí hay una ilustración que demuestra deep linking:
+Gracias a la funcionalidad **deep linking**, puede compartir el contenido que está viendo en ese momento con todos sus colegas. Here's an illustration demonstrating deep linking:
 
 ![Deep linking animation](img/4d-for-ios-deeplinking.gif)
 
-Hay dos maneras de implementar "deep linking" en IOS: **"URL scheme"** y **"Universal Links"**. Mientras que los "URL schemes" son un método bien conocido del "deep linking", los "Universal links" son el nuevo método que Apple ha implementado para conectar fácilmente su página web y su aplicación bajo el mismo enlace.
+Hay dos maneras de implementar "deep linking" en IOS: **"URL scheme"** y **"Universal Links"**. While URL schemes are a well-known method for deep linking, Universal links are the new way that Apple has implemented to easily connect your webpage and your app under the same link.
 
 
 ## Comparación de los modos deep linking
 
 ### Esquema URL
 
-Esta es una comparación entre las dos opciones disponibles en el editor de proyectos:
+Here is a comparison between the two options which are available in the project editor:
 
 | VENTAJAS                            | DESVENTAJAS                                    |
 | ----------------------------------- | ---------------------------------------------- |
@@ -30,22 +30,22 @@ Esta es una comparación entre las dos opciones disponibles en el editor de proy
 
 ### Enlaces universales
 
-| VENTAJAS                                            | DESVENTAJAS                             |
-| --------------------------------------------------- | --------------------------------------- |
-| No requiere permiso                                 | Se necesita un backend estático con SSL |
-| No abre el navegador                                | Más complejo de implementar             |
-| Compatible con Android                              |                                         |
-| URL de retroceso si la aplicación no está instalada |                                         |
+| VENTAJAS                            | DESVENTAJAS                             |
+| ----------------------------------- | --------------------------------------- |
+| No requiere permiso                 | Se necesita un backend estático con SSL |
+| No abre el navegador                | Más complejo de implementar             |
+| Compatible con Android              |                                         |
+| Fallback URL if app isn't installed |                                         |
 
 ## Esquema URL personalizado
 
-Al nivel más simple, los esquemas de URL permiten a los usuarios abrir una aplicación desde otras aplicaciones. Pero el verdadero poder de los esquemas URL está en la capacidad de realizar acciones específicas a medida que se abre la aplicación.
+At the simplest level, URL schemes allow users to open an app from other apps. But the true power of URL schemes is in the ability to perform specific actions as your app opens.
 
 
 
 ### Esquema de URL personalizado en el editor de proyetos
 
-Es muy simple incluir un esquema URL para su aplicación móvil. Veamos un ejemplo:
+It's very simple to include an URL scheme to your mobile app. Let's see an example:
 
 1. Seleccione la acción predefinida **Share** de la página [**Action** ](../project-definition/actions.md) y seleccione el alcance:
     *   entidad - para compartir el contenido de un formulario detallado
@@ -94,7 +94,7 @@ End case
 
 ## Enlaces universales
 
-Los Universal links ofrecen varios beneficios clave que no están disponibles con los esquemas de URL personalizados. Específicamente, los enlaces universales son:
+Universal links provide several key benefits that aren't available with custom URL schemes. Specifically, universal links are:
 
 * **Unique**: a diferencia de los esquemas de URL personalizados, otras aplicaciones no pueden reclamar los enlaces universales porque utilizan enlaces HTTP o HTTPS estándar a su sitio web.
 
@@ -108,7 +108,7 @@ Los Universal links ofrecen varios beneficios clave que no están disponibles co
 
 ### Enlaces universales en el editor de proyectos
 
-Para incluir los enlaces universales en su aplicación, el proceso es bastante similar al proceso de los esquemas URL:
+To include Universal links into your app, the process is quite similiar to the URL Schemes process:
 
 1. Seleccione la acción predefinida **Share** de la página [**Action** ](../project-definition/actions.md) y seleccione el alcance:
     *   entidad - para compartir un contenido de un formulario detallado

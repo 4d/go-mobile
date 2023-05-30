@@ -146,7 +146,7 @@ field comparator value {logicalOperator field comparator value}
 
 - If the entity number matches the filter query: "Entity number that will be embedded into the application : EntityNumber/EntityTotal".
 - If no entity matches the filter query: "No entity will be embedded into the application."
-- If the server is not reachable: "Entity number that will be embedded into the application : N/A. The server is not reachable."
+- "Entity number that will be embedded into the application : N/A. The server is not reachable." If the server is not reachable:
 - If a table filter query has not been validated, the table appears in red in the left Table list ("validated" : false in project.4dmobileapp).
 - If the server returns an error, it is displayed permanently below the query field.
 

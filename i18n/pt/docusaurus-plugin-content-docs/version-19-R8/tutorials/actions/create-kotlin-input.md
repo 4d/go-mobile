@@ -38,16 +38,16 @@ The `PhoneContact.kt` file contains the logic to fetch the number of a contact o
 ```kotlin title="Resources/Mobile/inputControls/input-control-phoneContact/android/inputControlPhoneContact.kt"
 package ___PACKAGE___
 
-import android.net.Uri
-import android.provider.ContactsContract
-import android.view.View
-import androidx.activity.result.contract.ActivityResultContracts
-import com.qmobile.qmobiledatasync.utils.BaseKotlinInputControl
-import com.qmobile.qmobiledatasync.utils.KotlinInputControl
-import com.qmobile.qmobileui.activity.mainactivity.ActivityResultController
-import com.qmobile.qmobileui.activity.mainactivity.MainActivity
-import com.qmobile.qmobileui.ui.SnackbarHelper
-import com.qmobile.qmobileui.utils.PermissionChecker
+import android.net. Uri
+import android.provider. ContactsContract
+import android.view. View
+import androidx.activity.result.contract. ActivityResultContracts
+import com.qmobile.qmobiledatasync.utils. BaseKotlinInputControl
+import com.qmobile.qmobiledatasync.utils. KotlinInputControl
+import com.qmobile.qmobileui.activity.mainactivity. ActivityResultController
+import com.qmobile.qmobileui.activity.mainactivity. MainActivity
+import com.qmobile.qmobileui.ui. SnackbarHelper
+import com.qmobile.qmobileui.utils. PermissionChecker
 
 @KotlinInputControl
 class PhoneContact(private val view: View) : BaseKotlinInputControl {
@@ -65,21 +65,20 @@ class PhoneContact(private val view: View) : BaseKotlinInputControl {
             (view.context as MainActivity?)?.apply {
                 contentResolver.query(contactUri, null, null, null, null)?.let { cursor ->
                     if (cursor.moveToFirst()) {
-                        val contactIdIndex = cursor.getColumnIndex(ContactsContract.Contacts._ID)
-                        val hasPhoneIndex = cursor.getColumnIndex(ContactsContract.Contacts.HAS_PHONE_NUMBER)
+                        val contactIdIndex = cursor.getColumnIndex(ContactsContract. Contacts.HAS_PHONE_NUMBER)
                         val contactId = cursor.getString(contactIdIndex)
                         val hasNumber = cursor.getString(hasPhoneIndex)
                         if (Integer.valueOf(hasNumber) == 1) {
                             contentResolver.query(
-                                ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
+                                ContactsContract. CommonDataKinds. Phone.CONTENT_URI,
                                 null,
-                                ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = " + contactId,
+                                ContactsContract. CommonDataKinds. Phone.CONTACT_ID + " = " + contactId,
                                 null,
                                 null
                             )?.let { numbersCursor ->
                                 while (numbersCursor.moveToNext()) {
                                     val phoneNumberIndex =
-                                        numbersCursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER)
+                                        numbersCursor.getColumnIndex(ContactsContract. CommonDataKinds. Phone.NUMBER)
                                     val phoneNumber = numbersCursor.getString(phoneNumberIndex)
                                     outputCallback(phoneNumber)
                                     break
@@ -97,13 +96,13 @@ class PhoneContact(private val view: View) : BaseKotlinInputControl {
 
     override fun process(inputValue: Any?, outputCallback: (output: Any) -> Unit) {
         (view.context as PermissionChecker?)?.askPermission(
-            permission = android.Manifest.permission.READ_CONTACTS,
+            permission = android. Manifest.permission.READ_CONTACTS,
             rationale = "Permission required to read contacts" 
         ) { isGranted ->
             if (isGranted) {
                 this.outputCallback = outputCallback
                 (view.context as ActivityResultController?)?.launch(
-                    type = ActivityResultContracts.PickContact(),
+                    type = ActivityResultContracts. PickContact(),
                     input = null,
                     callback = contactPhoneNumberCallback
                 )
@@ -184,7 +183,7 @@ In order to ask user permission in your custom Kotlin input control, check out t
 
 ```kotlin
 (context as PermissionChecker?)?.askPermission(
-    permission = android.Manifest.permission.READ_CONTACTS,
+    permission = android. Manifest.permission.READ_CONTACTS,
     rationale = "Permission required to read contacts" 
 ) { isGranted ->
     if (isGranted) {
@@ -198,33 +197,33 @@ We offer access to `PermissionChecker` that will delegate to the `Activity` the 
 
 ### ActivityResultController
 
-We offer access to `ActivityResultController` that will delegate any `ActivityResultContracts` to `MainActivity`. For example, to get a contact from your phone contacts, use `ActivityResultContracts.PickContact()`.
+`ActivityResultContracts. PickContact` of type `ActivityResultContract<Void?, Uri?>`
 
 ```kotlin
 (view.context as ActivityResultController?)?.launch(
-    type = ActivityResultContracts.PickContact(),
+    type = ActivityResultContracts. PickContact(),
     input = null,
     callback = contactPhoneNumberCallback
 )
 ```
 
-`ActivityResultContacts.PickContact()` is of `ActivityResultContract<Void?, Uri?>` type. It means it takes no input, and returns the chosen contact `Uri`. `ActivityResultContracts.TakePicture()` is of `ActivityResultContract<Uri, Boolean>` type. It means it takes an `Uri` to store the image and returns if success or not.
+`ActivityResultContacts. PickContact()` is of `ActivityResultContract<Void?, Uri?>` type. It means it takes no input, and returns the chosen contact `Uri`. `ActivityResultContracts. TakePicture()` is of `ActivityResultContract<Uri, Boolean>` type. It means it takes an `Uri` to store the image and returns if success or not.
 
 The available contracts can be found here: [`https://developer.android.com/reference/androidx/activity/result/contract/ActivityResultContracts`](https://developer.android.com/reference/androidx/activity/result/contract/ActivityResultContracts).
 
 
 We support the following types:
 
-- `ActivityResultContracts.StartActivityForResult` of type `ActivityResultContract<Intent, ActivityResult>`
-- `ActivityResultContracts.StartIntentSenderForResult` of type `ActivityResultContract<IntentSenderRequest, ActivityResult>`
-- `ActivityResultContracts.RequestMultiplePermissions` of type `ActivityResultContract<Array<String>, Map<String, Boolean>>`
-- `ActivityResultContracts.RequestPermission` of type `ActivityResultContract<String, Boolean>`
-- `ActivityResultContracts.TakePicturePreview` of type `ActivityResultContract<Void?, Bitmap?>`
-- `ActivityResultContracts.TakePicture` of type `ActivityResultContract<Uri, Boolean>`
-- `ActivityResultContracts.CaptureVideo` of type `ActivityResultContract<Uri, Boolean>`
+- `ActivityResultContracts. StartActivityForResult` of type `ActivityResultContract<Intent, ActivityResult>`
+- `ActivityResultContracts. StartIntentSenderForResult` of type `ActivityResultContract<IntentSenderRequest, ActivityResult>`
+- `ActivityResultContracts. RequestMultiplePermissions` of type `ActivityResultContract<Array<String>, Map<String, Boolean>>`
+- `ActivityResultContracts. RequestPermission` of type `ActivityResultContract<String, Boolean>`
+- `ActivityResultContracts. TakePicturePreview` of type `ActivityResultContract<Void?, Bitmap?>`
+- `ActivityResultContracts. TakePicture` of type `ActivityResultContract<Uri, Boolean>`
+- `ActivityResultContracts. CaptureVideo` of type `ActivityResultContract<Uri, Boolean>`
 - `ActivityResultContracts.PickContact` of type `ActivityResultContract<Void?, Uri?>`
-- `ActivityResultContracts.GetContent` of type `ActivityResultContract<String, Uri?>`
-- `ActivityResultContracts.GetMultipleContents` of type `ActivityResultContract<String, List<Uri>>`
-- `ActivityResultContracts.OpenDocument` of type `ActivityResultContract<Array<String>, Uri?>`
-- `ActivityResultContracts.OpenMultipleDocuments` of type `ActivityResultContract<Array<String>, List<Uri>>`
-- `ActivityResultContracts.OpenDocumentTree` of type `ActivityResultContract<Uri?, Uri?>`
+- `ActivityResultContracts. GetContent` of type `ActivityResultContract<String, Uri?>`
+- `ActivityResultContracts. GetMultipleContents` of type `ActivityResultContract<String, List<Uri>>`
+- `ActivityResultContracts. OpenDocument` of type `ActivityResultContract<Array<String>, Uri?>`
+- `ActivityResultContracts. OpenMultipleDocuments` of type `ActivityResultContract<Array<String>, List<Uri>>`
+- `ActivityResultContracts. OpenDocumentTree` of type `ActivityResultContract<Uri?, Uri?>`

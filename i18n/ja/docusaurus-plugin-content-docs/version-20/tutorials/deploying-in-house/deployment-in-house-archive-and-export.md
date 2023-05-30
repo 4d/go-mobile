@@ -16,19 +16,19 @@ title: プロジェクトのアーカイブとエクスポート
 > * 512 x 512 px のアイコン
 
 
-## ⒈ Xcode の設定
+## ⒈ ⒈ Xcode の設定
 
 Appleによるアカウントの承認後、Xcode を開き、Preferences > Accounts でApple Enterprise Developer アカウントを追加します。
 
 Xcode は、必要な Provisioning Profile と証明書を自動的にインストールします。
 
-## ⒉ Team ID を取得する
+## ⒉ ⒉ Team ID を取得する
 
 * Apple Developer アカウントにログインします。 Team ID は Membership にて確認できます。
 
-![Team ID を取得する](img/Team-ID-4D-for-iOS.png)
+![⒉ Team ID を取得する](img/Team-ID-4D-for-iOS.png)
 
-## ⒊ 4D for iOS の設定
+## ⒊ ⒊ 4D for iOS の設定
 
 * 4D for iOS を起動します。
 
@@ -43,13 +43,13 @@ Xcode は、必要な Provisioning Profile と証明書を自動的にインス�
 * ビルドタブにて:
     * ビルドして実行: プロジェクトをビルドします。
 
-## ⒋ プロジェクトを Xcode で開く
+## ⒋ 4D for iOS プロジェクトエディターのビルドタブで、プロジェクト > プロジェクトをXcodeで開く... をクリックします。
 
 * 4D for iOS プロジェクトエディターのビルドタブで、**プロジェクト > プロジェクトをXcodeで開く...** をクリックします。
 
 ![プロジェクトをXcodeで開く ](img/Open-your-project-Xcode-4D-for-iOS.png)
 
-## ⒌ Xcode でプロジェクトをアーカイブする
+## ⒌ ⒌ Xcode でプロジェクトをアーカイブする
 
 * Xcode でツールバーのシミュレーター選択メニューを開き、**Generic iOS Device** を選択します。
 
@@ -59,21 +59,21 @@ Xcode は、必要な Provisioning Profile と証明書を自動的にインス�
 
 ![プロジェクトのアーカイブ](img/Archive-your-Project.png)
 
-## ⒍ プロジェクトをエクスポートする
+## ⒍ ⒍ プロジェクトをエクスポートする
 
 * アーカイブ処理の最後に、作成したアーカイブを表示する Organizer ウィンドウが表示されます。
 
 * **Export** をクリックします。
 
-![プロジェクトをエクスポートする](img/Organizer-window-archive.png)
+![⒍ プロジェクトをエクスポートする](img/Organizer-window-archive.png)
 
-## ⒎ 配布方法を選択する
+## ⒎ ⒎ 配布方法を選択する
 
 * **Enterprise** を選択し、**Next** をクリックします。
 
 ![配布方法](img/Distribution-Method-selection.png)
 
-## ⒏ Enterprise distribution options を選択する
+## ⒏ ⒏ Enterprise distribution options を選択する
 
 * オプションはすべてチェックしたままでかまいません。
 
@@ -143,11 +143,11 @@ manifest は、XMLベースのプロパティリストであり、以下を含�
 ```
 
 
-## ⒐ Distribution manifest information
+## ⒐ ⒐ Distribution manifest information
 
 * アプリURL とアイコンURL の入力は、Xcode に任せることをお勧めします。 これらの URL は後で変更することも可能です。
 
-![Distribution manifest information](img/Distribution-manifest-information.png)
+![⒐ Distribution manifest information](img/Distribution-manifest-information.png)
 
 * **Next** をクリックします。
 

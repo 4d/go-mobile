@@ -3,49 +3,41 @@ id: deep-linking
 title: Deep Linking
 ---
 
-:::información 4D for Android
-
-This feature is currently not available in 4D for Android.
-
-:::
-
-Gracias a la funcionalidad **deep linking**, puede compartir el contenido que está viendo en ese momento con todos sus colegas. Aquí hay una ilustración que demuestra deep linking:
+Thanks to the **deep linking** feature, you can share the content that you're currently viewing with all of your colleagues. Here's an illustration demonstrating deep linking:
 
 ![Deep linking animation](img/4d-for-ios-deeplinking.gif)
 
-Hay dos maneras de implementar "deep linking" en IOS: **"URL scheme"** y **"Universal Links"**. Mientras que los "URL schemes" son un método bien conocido del "deep linking", los "Universal links" son el nuevo método que Apple ha implementado para conectar fácilmente su página web y su aplicación bajo el mismo enlace.
+There are two ways to implement deep linking in mobile apps: **URL scheme** and **Universal Links**. While URL schemes are a well-known method for deep linking, Universal links are the new way that Apple has implemented to easily connect your webpage and your app under the same link.
 
 
 ## Comparación de los modos deep linking
 
-### Esquema URL
+Here is a comparison between the two options which are available in the project editor:
 
-Esta es una comparación entre las dos opciones disponibles en el editor de proyectos:
+### Esquema URL
 
 | VENTAJAS                            | DESVENTAJAS                                    |
 | ----------------------------------- | ---------------------------------------------- |
 | Fácil de implementar                | Siempre requiere permiso                       |
 | No se requiere un backend adicional | No funciona si la aplicación no está instalada |
-|                                     | No funciona en Android                         |
 
 ### Enlaces universales
 
-| VENTAJAS                                            | DESVENTAJAS                             |
-| --------------------------------------------------- | --------------------------------------- |
-| No requiere permiso                                 | Se necesita un backend estático con SSL |
-| No abre el navegador                                | Más complejo de implementar             |
-| Compatible con Android                              |                                         |
-| URL de retroceso si la aplicación no está instalada |                                         |
+| VENTAJAS                            | DESVENTAJAS                             |
+| ----------------------------------- | --------------------------------------- |
+| No requiere permiso                 | Se necesita un backend estático con SSL |
+| No abre el navegador                | Más complejo de implementar             |
+| Fallback URL if app isn't installed |                                         |
 
 ## Esquema URL personalizado
 
-Al nivel más simple, los esquemas de URL permiten a los usuarios abrir una aplicación desde otras aplicaciones. Pero el verdadero poder de los esquemas URL está en la capacidad de realizar acciones específicas a medida que se abre la aplicación.
+At the simplest level, URL schemes allow users to open an app from other apps. But the true power of URL schemes is in the ability to perform specific actions as your app opens.
 
 
 
 ### Esquema de URL personalizado en el editor de proyetos
 
-Es muy simple incluir un esquema URL para su aplicación móvil. Veamos un ejemplo:
+It's very simple to include an URL scheme to your mobile app. Let's see an example:
 
 1. Seleccione la acción predefinida **Share** de la página [**Action** ](../project-definition/actions.md) y seleccione el alcance:
     *   entidad - para compartir el contenido de un formulario detallado
@@ -94,13 +86,13 @@ End case
 
 ## Enlaces universales
 
-Los Universal links ofrecen varios beneficios clave que no están disponibles con los esquemas de URL personalizados. Específicamente, los enlaces universales son:
+Universal links provide several key benefits that aren't available with custom URL schemes. Specifically, universal links are:
 
 * **Unique**: a diferencia de los esquemas de URL personalizados, otras aplicaciones no pueden reclamar los enlaces universales porque utilizan enlaces HTTP o HTTPS estándar a su sitio web.
 
-* **Secure**: cuando los usuarios instalan su aplicación, iOS verifica que su sitio web permita que su aplicación abra URLs en su nombre. Sólo usted puede crear y subir el archivo que otorga este permiso a su servidor web, por lo que la asociación de su sitio web con su aplicación es segura.
+* **Secure**: When users install your app, iOS or Android verifies that your website allows your app to open URLs on its behalf. Sólo usted puede crear y subir el archivo que otorga este permiso a su servidor web, por lo que la asociación de su sitio web con su aplicación es segura.
 
-* **Flexible**: los enlaces universales funcionan incluso cuando su aplicación no está instalada. En este caso, al presionar un enlace a su sitio web se abre el contenido en Safari.
+* **Flexible**: los enlaces universales funcionan incluso cuando su aplicación no está instalada. In this case, tapping a link to your website opens the content in a browser.
 
 * **Simple**: una sola URL funciona tanto para su sitio web como para su aplicación.
 
@@ -108,7 +100,7 @@ Los Universal links ofrecen varios beneficios clave que no están disponibles co
 
 ### Enlaces universales en el editor de proyectos
 
-Para incluir los enlaces universales en su aplicación, el proceso es bastante similar al proceso de los esquemas URL:
+To include Universal links into your app, the process is quite similiar to the URL Schemes process:
 
 1. Seleccione la acción predefinida **Share** de la página [**Action** ](../project-definition/actions.md) y seleccione el alcance:
     *   entidad - para compartir un contenido de un formulario detallado
@@ -174,7 +166,7 @@ Como puede ver, esta función abre un gran abanico de posibilidades. Deep linkin
 
 :::consejo
 
-Consulte la documentación del componente [**4D Mobile App Server**](https://github.com/4d-for-ios/4D-Mobile-App-Server/blob/master/Documentation/Classes/PushNotification.md) para obtener más información sobre cómo combinar las notificaciones push y deep linking.
+Refer to the [**4D Mobile App Server** component documentation](https://github.com/4d/4D-Mobile-App-Server/blob/main/Documentation/Classes/PushNotification.md) for more information on how to combine push notifications and deep linking.
 
 :::
 

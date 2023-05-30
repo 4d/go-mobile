@@ -13,9 +13,9 @@ title: テンプレートにアクションを追加する
 
 このチュートリアルでは、どうやって簡単に **カスタムテンプレートにアクションを追加する** かを見ていきます。
 
-## ⒈ スタータープロジェクトをダウンロード
+## ⒈ ⒈ スタータープロジェクトをダウンロード
 
-**スタータープロジェクト** をダウンロードします。これには、以下のものが収録されています:
+**スタータープロジェクト** をダウンロードします。
 
 * リストフォームのカスタムテンプレートが 2つ (TasksList および TasksCollection)
 * 詳細フォームのカスタムテンプレートが 1つ (TasksDetail)
@@ -26,7 +26,7 @@ title: テンプレートにアクションを追加する
 href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1dc5aecfbea62a9999d571cb1a956f1ef6983111.zip">ダウンロード</a>
 </div>
 
-## ⒉ 4D for iOS プロジェクトにカスタムテンプレートを追加
+## ⒉ ⒉ 4D for iOS プロジェクトにカスタムテンプレートを追加
 
 以下の操作でテンプレートをインストールします:
 
@@ -38,7 +38,7 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 
 ![詳細画面のテンプレート](img/Detailform-template.png)
 
-## ⒊ リストフォームにアクションを追加
+## ⒊ ⒊ リストフォームにアクションを追加
 
 2種類のアクションが利用可能です:
 * テーブルアクション
@@ -48,7 +48,7 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 
 ### TasksList カスタムテンプレートにアクションを追加する
 
-#### Ａ テーブルアクションタグを追加
+#### Ａ Ａ テーブルアクションタグを追加
 
 下図のように当該ビューの **Controller** を選択し、Identity inspector を開いて **User Defined Runtime Attributes** に以下の記述を追加します:
 
@@ -59,7 +59,7 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 ![テーブルアクションタグの追加](img/Add-table-tag-taskslist.png)
 
 
-#### Ｂ エンティティアクションタグを追加
+#### Ｂ Ｂ エンティティアクションタグを追加
 
 ツリーを展開して Animatable Table View を選択し、Identity inspector で **User Defined Runtime Attributes** に以下の記述を追加します:
 
@@ -81,7 +81,7 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 
 まず、`list/TasksCollection/Sources/Forms/Tables/___TABLE___/___TABLE___ListForm.Storyboard` ファイルを開きます。
 
-#### Ａ テーブルアクションタグを追加
+#### Ａ Ａ テーブルアクションタグを追加
 
 作業は TasksList カスタムテンプレートの場合とよく似ています。
 
@@ -93,7 +93,7 @@ href="https://github.com/4d-go-mobile/tutorial-AddingActionToTemplates/archive/1
 
 ![リスト画面にテーブルアクションタグを追加](img/Add-collection-table-tag-taskslist.png)
 
-#### Ｂ エンティティアクションタグを追加
+#### Ｂ Ｂ エンティティアクションタグを追加
 
 エンティティアクションを表示する方法は、リスト形式の TableView とグリッド形式の CollectionView で異なります。 後者はスワイプ操作に不向きです。
 
@@ -118,7 +118,7 @@ CollectionView においては操作したいセルに対し、**長押し** ジ
 ![「フォーム」セクション（TasksCollection）](img/listform-taskscollection-forms-section.png)
 
 
-## ⒋ 詳細フォームにアクションを追加
+## ⒋ ⒋ 詳細フォームにアクションを追加
 
 詳細フォームでは、ナビゲーションバーの "**...**" 汎用ボタンを使用することもできますが、**オリジナルのカスタムアクションボタン** を作成することも簡単です。 どちらの場合にも、タグを追加する必要があります。
 

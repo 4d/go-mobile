@@ -321,17 +321,7 @@ Aqui está o código de layout completo nesse estágio:
             android:layout_marginBottom="50dp"
             android:scrollbars="none"
             android:text="__TEXT_3__"
-            android:textAppearance="@style/TextAppearance. Body1"
-            android:textColor="?colorPrimary"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/cardView"
-            app:layout_constraintTop_toBottomOf="@+id/__SPECIFIC_ID_2__"
-            tools:text="My field 3" />
-
-    </androidx.constraintlayout.widget. ConstraintLayout>
-
-    </androidx.cardview.widget.
+            android:textAppearance="@style/TextAppearance.
 
 ```
 

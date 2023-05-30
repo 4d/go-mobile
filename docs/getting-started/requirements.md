@@ -35,7 +35,6 @@ Installing **Xcode** is required. Version table:
 |---|---|---|---|---|
 | 20.x | 5.8 | 16.0 |[14.3](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14.3/Xcode_14.3.xip) |  13.0 |
 | 19 R8 | 5.8 | 16.0 |[14.3](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14.3/Xcode_14.3.xip) |  13.0 |
-| 19 R7 | 5.7.1 | 16.0 |[14.1](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14.1/Xcode_14.1.xip) |  12.5 |
 | 19.x  | 5.5   | 15.0 | 13.1 | 11.3|
 | 18.x  | 5.2   | 13.4 | 11.4 |10.15.2|
 
@@ -43,6 +42,7 @@ Installing **Xcode** is required. Version table:
 
 | 4D | Swift | iOS | Xcode | macOS |
 |---|---|---|---|---|
+| 19 R7 | 5.7.1 | 16.0 |14.1 |  12.5 |
 | 19 R6 | 5.7   | 16.0 | 14.0 | 12.5|
 | 19 R5 | 5.6.1 | 15.5 | 13.4 | 12.2|
 | 19 R4 | 5.6   | 15.4 | 13.3|  12.2 |
@@ -84,22 +84,20 @@ Installing **Android Studio** (which includes **Android SDK**) is required. Vers
 
 | 4D | Android Studio| Windows |
 |---|---|---|
-| 20.x | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
+| 20.x | [Flamingo 2022.2.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
 | 19 R8 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
-| 19 R7 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
-| 19 R6 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
-
 
 <details><summary>Version history</summary>
 
 | 4D | Android Studio| Windows |
 |---|---|---|
+| 19 R7 | [Dolphin 2021.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit|
+| 19 R6 | Dolphin 2021.3.1 | Windows 10 64-bit|
 | 19 R5 | [Arctic fox 2020.3.1](https://developer.android.com/studio/archive) | Windows 10 64-bit |
 | 19 R4 | Arctic fox 2020.3.1 | Windows 10 64-bit|
 | 19 R3 | Arctic fox 2020.3.1 | Windows 10 64-bit |
 | 19 R2 | 4.1.2 | Windows 10 64-bit |
 </details>
-
 
 :::note notes
 

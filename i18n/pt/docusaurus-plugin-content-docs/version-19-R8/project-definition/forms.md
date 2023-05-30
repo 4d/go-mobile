@@ -77,9 +77,9 @@ This feature is currently not available in 4D for Android.
 
 ![Detail form template selection](img/Forms-section-detail-form-templates-selection-4D-for-iOS.png)
 
-Da mesma forma que com Formulários Lista, selecione um modelo e configure os campos. Em formulários detalhados é possível adicionar quantos campos quiser no formulário.
+As with the List Form definition, select a template and configure the fields. In detail forms, you can add as many fields as you want onto your detail form.
 
-Você tem várias maneiras de adicionar seus campos nos formulários Detalhes:
+You have several ways to add your fields in Detail forms:
 
 * Pode arrastar e soltar os campos em qualquer parte na vista SVG para adicionar e exibir logo depois que o último campo tenha sido adicionado ou entre qualquer outros campos que já são exibidos.
 
@@ -90,37 +90,37 @@ Você tem várias maneiras de adicionar seus campos nos formulários Detalhes:
 ![Detail form content definition](img/Forms-section-detail-form-content-definition-4D-for-iOS.png)
 
 
-Pode reordenar seus campos a qualquer momento usando arrastar e soltar no formulário detalhado.
+You can reorder your fields at any moment using drag and drop in the detail form.
 
 :::dica
 
-Se quiser tentar outro modelo depois de enviar seus campos, apenas selecione-os: campos selecionados previamente são movidos automaticamente para você para o novo modelo nas áreas apropriadas de acordo com o modelo e tipos de campos.
+If you want to try another template after dispatching your fields, just select it: previously selected fields are automatically moved for you to the new template in appropriate areas, according to the template and field types.
 
 :::
 
 
 ## Galería
 
-Quando selecionar um modelo na seção formulário um ícone "Mais" está disponível para formulários detalhados ou lista.
+When you select a template in the form section, a "More" icon is available for both list and detail forms.
 
 ![More template button](img/more.png)
 
 ![More template button](img/Forms-more-button.png)
 
-Clique nesse ícone para exibir uma lista de modelos adicionais da Galeria de 4D móvel:
+Just click on that icon to display a list of additional templates from the 4D mobile Gallery:
 
 ![Template picker more button](img/Forms-template-gallery.png)
 
-A única coisa que precisa fazer é selecionar o modelo mais adequado às suas necessidades e o editor móvel vai gerenciar todo o processo de instalação. Portanto pode começar a trabalhar diretamente no modelo, já que é pronto para usar.
+Then, the only thing you have to do is selecting the template that suits your needs and the mobile editor will handle all the installation process. So you can directly start working on the template, as it is ready-to-use.
 
-É mostrado um ícone github na parte superior esquerda de seu ícone de modelo no seletor de modelos Forms para indicar que vem de Github:
+A github icon is displayed at the top left of a template icon in the Forms template picker to indicate that it comes from Github:
 
 ![Add template from gallery](img/indicator-template-github.png)
 
 
 :::dica
 
-A galeria está disponível diretamente em Github.
+The Gallery is also directly available on Github.
 - [**galeria de modelos para formulários lista**](https://4d-for-ios.github.io/gallery/#/type/list-detail/picker/0)
 - [**galeria de modelos para formulários detalhados**](https://4d-for-ios.github.io/gallery/#/type/form-detail/picker/0)
 
@@ -128,7 +128,7 @@ A galeria está disponível diretamente em Github.
 
 ## Criar seus modelos
 
-Se quiser personalizar um modelo baixado ou criar seus modelos, há **vários tutoriais** para guiá-lo nessas tarefas:
+If you want to customize a downloaded template or create your own templates, **several tutorials** can guide you through these tasks:
 
 - [**Personalizar um formulário modelo**](../tutorials/gallery/update-gallery-template.md)
 - [**Criar formulários lista**](../tutorials/creating-list-forms/list-form-template.md)
