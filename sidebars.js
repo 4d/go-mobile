@@ -6,6 +6,7 @@ module.exports = {
       label: 'Getting started',
       items: [
 	            'getting-started/introduction',
+	            'getting-started/installation',
 				'getting-started/requirements'
 	   ]
 	},
