@@ -9,9 +9,9 @@ La funcionalidad **4D go mobile** incluye **4D for iOS** y **4D for Android**.
 
 4D for iOS y 4D for Android le permiten configurar, diseñar, construir y desplegar aplicaciones nativas iOS y/o aplicaciones Android basadas en una base de datos 4D. Una vez generados y desplegados, los clientes móviles pueden conectarse a 4D Server e interactuar con los datos nuevos o existentes sin ningún requisito adicional.
 
-4D for iOS y 4D for Android están incluidos en un único componente 4D integrado. You can create a mobile project and decide to build it for iOS, for Android, or for both.
+4D for iOS and 4D for Android are included in a single 4D component. You can create a mobile project and decide to build it for iOS, for Android, or for both.
 
-The [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) component is also provided and contains useful methods to handle server-side authentication, push notifications, and much more.
+The [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) component is also proposed and contains useful methods to handle server-side authentication, push notifications, and much more.
 
 :::nota
 
@@ -22,7 +22,7 @@ Debe utilizar 4D en macOS para crear aplicaciones iOS.
 
 ## Totalmente integrado en 4D
 
-Con **4D for iOS** y **4D for android**, puede crear fácilmente proyectos móviles directamente desde 4D, sin necesidad de tener experiencia previa en la construcción de aplicaciones móviles nativas.
+Once the 4D Mobile App is [installed](installation.md) in 4D, **4D for iOS** and **4D for android** allow you to easily create mobile projects directly from 4D, without needing any prior expertise building native mobile apps.
 
 ## ORDA
 
