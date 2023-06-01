@@ -19,7 +19,7 @@ You need to install the **4D Mobile App** component in the project(s) where you 
 
 The [4D for Mobile interface](../project-definition/overview.md) is now available in your project.
 
-::: note
+:::note
 
 Alternatively, you can download and install the source files of the 4D for Mobile component, allowing you to customize the component sources under a standard *Contribution License Agreement*. More information is provided in the [4d-mobile-app README file](https://github.com/4d/4D-Mobile-App#4d-mobile-app).
 
