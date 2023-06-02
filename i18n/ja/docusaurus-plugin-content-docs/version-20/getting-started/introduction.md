@@ -9,9 +9,9 @@ title: 4D go mobile について
 
 4D for iOS および 4D for Android を使用すると、4Dデータベースに基づいたネイティブな iOS / Andorid アプリを設定・デザイン・ビルド・配布することができます。 生成後配布されたモバイルクライアントは追加の要件なしに 4D Server に接続し、新規または既存データをやりとりすることができます。
 
-4D for iOS and 4D for Android are included in a single 4D component. モバイルプロジェクトを作成したあとで、iOS用、Android用、あるいは両プラットフォーム用にビルドすることができます。
+4D for iOS および 4D for Android はどちらも単一の 4Dコンポーネントに格納されています。 モバイルプロジェクトを作成したあとで、iOS用、Android用、あるいは両プラットフォーム用にビルドすることができます。
 
-The [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) component is also proposed and contains useful methods to handle server-side authentication, push notifications, and much more.
+また、サーバー側の認証、プッシュ通知などを管理するための有用なメソッドを持つ [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) コンポーネントも利用可能です。
 
 :::note
 
