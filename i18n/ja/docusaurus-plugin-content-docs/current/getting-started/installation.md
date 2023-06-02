@@ -1,6 +1,6 @@
 ---
 id: installation
-title: ⒍ インストール
+title: インストール
 ---
 
 
