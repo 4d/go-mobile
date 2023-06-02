@@ -22,7 +22,7 @@ iOSアプリのビルドには macOS版4D が必要です。
 
 ## 4Dに完全統合
 
-Once the 4D Mobile App is [installed](installation.md) in 4D, **4D for iOS** and **4D for android** allow you to easily create mobile projects directly from 4D, without needing any prior expertise building native mobile apps.
+4D Mobile App を 4D に [インストール](installation.md) すれば、ネイティブなモバイルアプリの制作経験がなくても、**4D for iOS** および **4D for android** を使用してモバイルプロジェクトを 4D から簡単に作成することができます。
 
 ## ORDAで動作
 
