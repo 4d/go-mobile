@@ -5,6 +5,7 @@
       "label": "Comencemos",
       "items": [
         "getting-started/introduction",
+        "getting-started/installation",
         "getting-started/requirements"
       ]
     },

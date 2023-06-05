@@ -9,9 +9,9 @@ title: 4D go mobile について
 
 4D for iOS および 4D for Android を使用すると、4Dデータベースに基づいたネイティブな iOS / Andorid アプリを設定・デザイン・ビルド・配布することができます。 生成後配布されたモバイルクライアントは追加の要件なしに 4D Server に接続し、新規または既存データをやりとりすることができます。
 
-4D for iOS および 4D for Android はどちらも統合された単一の 4Dコンポーネントに格納されています。 モバイルプロジェクトを作成したあとで、iOS用、Android用、あるいは両プラットフォーム用にビルドすることができます。
+4D for iOS および 4D for Android はどちらも単一の 4Dコンポーネントに格納されています。 モバイルプロジェクトを作成したあとで、iOS用、Android用、あるいは両プラットフォーム用にビルドすることができます。
 
-また、サーバー側の認証、プッシュ通知などを管理するための有用なメソッドを持つ [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) コンポーネントも同時に提供されいます。
+また、サーバー側の認証、プッシュ通知などを管理するための有用なメソッドを持つ [**4D Mobile App Server**](https://github.com/4d/4D-Mobile-App-Server#4d-mobile-app-server) コンポーネントも利用可能です。
 
 :::note
 
@@ -22,7 +22,7 @@ iOSアプリのビルドには macOS版4D が必要です。
 
 ## 4Dに完全統合
 
-**4D for iOS** および **4D for android** を使用すれば、ネイティブなモバイルアプリの制作経験がなくても 4D から直接モバイルプロジェクトを簡単に作成することができます。
+4D Mobile App を 4D に [インストール](installation.md) すれば、ネイティブなモバイルアプリの制作経験がなくても、**4D for iOS** および **4D for android** を使用してモバイルプロジェクトを 4D から簡単に作成することができます。
 
 ## ORDAで動作
 
