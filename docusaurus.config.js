@@ -208,7 +208,7 @@ module.exports = {
             "https://github.com/4d/go-mobile/edit/main",
           versions: {
             '20': {
-              label: 'v20 BETA',
+              label: 'v20',
               banner: 'none',
             },
             '19-R8': {
