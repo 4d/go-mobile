@@ -205,3 +205,24 @@ Here is a template example for a `On Mobile App Authentication` database method:
 
 
 ```
+
+
+## Force Login
+
+If you have enabled [Force Login](https://developer.4d.com/docs/REST/authUsers#force-login-mode) in 4D to gain finer control over permissions, you must also authenticate the mobile user — or even the Mobile App Wizard (used for data dumps).
+
+Only for V21
+
+### For Mobile Users (Real Device or Simulator)
+
+In the **On Mobile App Authentication** database method, use [`Session.setPrivileges`](https://developer.4d.com/docs/API/SessionClass.html#setprivileges) to assign privileges to the connected user.
+
+The user must have **read** permissions on the datastore and on all tables used by the mobile app.
+
+If your app performs actions that modify records, the user will also need **write** permissions on the relevant tables.
+
+### For the Mobile App Wizard
+
+When generating a data dump, the **database method is not called**.  
+Therefore, you must manually add **datastore read permissions** in your `roles.json` file for the user `"4DMobileAppDev"` — either on **all tables** or just those used by the mobile app.
+
